@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-22T08:15:30.821462",
+  "timestamp": "2026-06-22T08:30:40.012740",
   "summary": "Key topics today:\n- - Best Local Agents - Jun 2026 (r/LocalLLaMA, 0 pts)\n- - Gemma 4 QAT 31B responds better to KV cache quantization too (r/LocalLLaMA, 0 pts)\n- - GLM-5.2 is on DeepSWE (r/LocalLLaMA, 0 pts)\n- - Local LLM Inference Optimization: The Complete Guide (r/LocalLLaMA, 0 pts)\n- - Do you think dedicated hardware for running local LLMs will become affordable anytime soon? (r/LocalLLaMA, 0 pts)",
   "signals": [
     {
@@ -69,6 +69,14 @@
       "created": "2026-06-22T08:31:36+00:00"
     },
     {
+      "title": "QAT KV cache quantization for Gemma 4 31B is a massive improvement over standard quants",
+      "subreddit": "LocalLLaMA",
+      "score": 0,
+      "comments": 0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucimmq/qat_kv_cache_quantization_for_gemma_4_31b_is_a/",
+      "created": "2026-06-22T12:00:50+00:00"
+    },
+    {
       "title": "Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale",
       "subreddit": "LocalLLaMA",
       "score": 0,
@@ -77,20 +85,12 @@
       "created": "2026-06-22T11:53:42+00:00"
     },
     {
-      "title": "Gemma 4 31B Q6 on Dual 9060 XT",
+      "title": "European inference providers for GLM 5.2, DeepSeek V4 Flash?",
       "subreddit": "LocalLLaMA",
       "score": 0,
       "comments": 0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucenk7/gemma_4_31b_q6_on_dual_9060_xt/",
-      "created": "2026-06-22T08:18:00+00:00"
-    },
-    {
-      "title": "Not a new model, just a Happy Father's Day and a thank you.",
-      "subreddit": "LocalLLaMA",
-      "score": 0,
-      "comments": 0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ubzzib/not_a_new_model_just_a_happy_fathers_day_and_a/",
-      "created": "2026-06-21T20:13:33+00:00"
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uchyti/european_inference_providers_for_glm_52_deepseek/",
+      "created": "2026-06-22T11:27:25+00:00"
     }
   ],
   "x_posts": [],
@@ -98,21 +98,21 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f",
-      "stars": 219637,
+      "stars": 219644,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 199554,
+      "stars": 199561,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent"
     },
     {
       "name": "multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa",
-      "stars": 180158,
+      "stars": 180167,
       "language": "Unknown",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills"
     },
@@ -126,7 +126,7 @@
     {
       "name": "firecrawl/firecrawl",
       "description": "The API to search, scrape, and interact with the web at scale. \ud83d\udd25",
-      "stars": 136641,
+      "stars": 136656,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl"
     },
@@ -140,7 +140,7 @@
     {
       "name": "msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to rea",
-      "stars": 115046,
+      "stars": 115045,
       "language": "Shell",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
@@ -154,7 +154,7 @@
     {
       "name": "bytedance/deer-flow",
       "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories",
-      "stars": 72954,
+      "stars": 72966,
       "language": "Python",
       "url": "https://github.com/bytedance/deer-flow"
     },
@@ -167,8 +167,8 @@
     }
   ],
   "bittensor": {
-    "price": 233.78,
-    "price_change_24h": 0.20053082716641238,
+    "price": 234.47,
+    "price_change_24h": 0.5485407243107903,
     "active_subnets": 5,
     "total_miners": 8870,
     "top_subnets": [

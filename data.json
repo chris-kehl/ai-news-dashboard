@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-22T09:30:29.972836",
-  "summary": "Key topics today:\n- - Best Local Agents - Jun 2026 (r/LocalLLaMA, 0 pts)\n- - Gemma 4 QAT 31B responds better to KV cache quantization too (r/LocalLLaMA, 0 pts)\n- - been tracking EU DDR5 data for 25 days: Prices are dropping, and the DE vs. NL gap is wild (good news for local LLM buil (r/LocalLLaMA, 0 pts)\n- - GLM-5.2 is on DeepSWE (r/LocalLLaMA, 0 pts)\n- - Local LLM Inference Optimization: The Complete Guide (r/LocalLLaMA, 0 pts)",
+  "timestamp": "2026-06-22T09:45:31.050778",
+  "summary": "Key topics today:\n- - Best Local Agents - Jun 2026 (r/LocalLLaMA, 0 pts)\n- - been tracking EU DDR5 data for 25 days: Prices are dropping, and the DE vs. NL gap is wild (good news for local LLM buil (r/LocalLLaMA, 0 pts)\n- - Gemma 4 QAT 31B responds better to KV cache quantization too (r/LocalLLaMA, 0 pts)\n- - GLM-5.2 is on DeepSWE (r/LocalLLaMA, 0 pts)\n- - Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale (r/LocalLLaMA, 0 pts)",
   "signals": [
     {
       "type": "sell",
@@ -21,20 +21,20 @@
       "created": "2026-06-19T21:29:33+00:00"
     },
     {
-      "title": "Gemma 4 QAT 31B responds better to KV cache quantization too",
-      "subreddit": "LocalLLaMA",
-      "score": 0,
-      "comments": 0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucgrxh/gemma_4_qat_31b_responds_better_to_kv_cache/",
-      "created": "2026-06-22T10:23:18+00:00"
-    },
-    {
       "title": "been tracking EU DDR5 data for 25 days: Prices are dropping, and the DE vs. NL gap is wild (good news for local LLM builders in EU)",
       "subreddit": "LocalLLaMA",
       "score": 0,
       "comments": 0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucixz9/been_tracking_eu_ddr5_data_for_25_days_prices_are/",
       "created": "2026-06-22T12:15:55+00:00"
+    },
+    {
+      "title": "Gemma 4 QAT 31B responds better to KV cache quantization too",
+      "subreddit": "LocalLLaMA",
+      "score": 0,
+      "comments": 0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucgrxh/gemma_4_qat_31b_responds_better_to_kv_cache/",
+      "created": "2026-06-22T10:23:18+00:00"
     },
     {
       "title": "GLM-5.2 is on DeepSWE",
@@ -45,20 +45,20 @@
       "created": "2026-06-22T01:39:08+00:00"
     },
     {
-      "title": "Local LLM Inference Optimization: The Complete Guide",
-      "subreddit": "LocalLLaMA",
-      "score": 0,
-      "comments": 0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc3wg9/local_llm_inference_optimization_the_complete/",
-      "created": "2026-06-21T23:01:17+00:00"
-    },
-    {
       "title": "Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale",
       "subreddit": "LocalLLaMA",
       "score": 0,
       "comments": 0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucih9e/ling_and_ring_26_technical_report_efficient_and/",
       "created": "2026-06-22T11:53:42+00:00"
+    },
+    {
+      "title": "Local LLM Inference Optimization: The Complete Guide",
+      "subreddit": "LocalLLaMA",
+      "score": 0,
+      "comments": 0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc3wg9/local_llm_inference_optimization_the_complete/",
+      "created": "2026-06-21T23:01:17+00:00"
     },
     {
       "title": "Do you think dedicated hardware for running local LLMs will become affordable anytime soon?",
@@ -96,9 +96,65 @@
   "x_posts": [],
   "github": [
     {
+      "name": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f",
+      "stars": 219682,
+      "language": "JavaScript",
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars": 199609,
+      "language": "Python",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "name": "multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa",
+      "stars": 180205,
+      "language": "Unknown",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, Notio",
+      "stars": 141027,
+      "language": "Unknown",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "description": "The API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+      "stars": 136730,
+      "language": "TypeScript",
+      "url": "https://github.com/firecrawl/firecrawl"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.",
+      "stars": 115308,
+      "language": "Python",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to rea",
+      "stars": 115060,
+      "language": "Shell",
+      "url": "https://github.com/msitarzewski/agency-agents"
+    },
+    {
+      "name": "google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "stars": 105486,
+      "language": "TypeScript",
+      "url": "https://github.com/google-gemini/gemini-cli"
+    },
+    {
       "name": "bytedance/deer-flow",
       "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories",
-      "stars": 72987,
+      "stars": 72994,
       "language": "Python",
       "url": "https://github.com/bytedance/deer-flow"
     },
@@ -108,67 +164,11 @@
       "stars": 60426,
       "language": "Python",
       "url": "https://github.com/virattt/ai-hedge-fund"
-    },
-    {
-      "name": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM \u9a71\u52a8\u7684\u591a\u5e02\u573a\u80a1\u7968\u667a\u80fd\u5206\u6790\u7cfb\u7edf\uff1a\u591a\u6e90\u884c\u60c5\u3001\u5b9e\u65f6\u65b0\u95fb\u3001\u51b3\u7b56\u770b\u677f\u4e0e\u81ea\u52a8\u63a8\u9001\uff0c\u652f\u6301\u96f6\u6210\u672c\u5b9a\u65f6\u8fd0\u884c\u3002 LLM-powered multi-market stock analysis system with multi-source marke",
-      "stars": 45486,
-      "language": "Python",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-    },
-    {
-      "name": "topoteretes/cognee",
-      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions",
-      "stars": 19056,
-      "language": "Python",
-      "url": "https://github.com/topoteretes/cognee"
-    },
-    {
-      "name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "754 structured cybersecurity skills for AI agents \u00b7 Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3F",
-      "stars": 18239,
-      "language": "Python",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-    },
-    {
-      "name": "vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "stars": 16905,
-      "language": "Python",
-      "url": "https://github.com/vectorize-io/hindsight"
-    },
-    {
-      "name": "calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI codi",
-      "stars": 10684,
-      "language": "Python",
-      "url": "https://github.com/calesthio/OpenMontage"
-    },
-    {
-      "name": "Q00/ouroboros",
-      "description": "Agent OS: Stop prompting. Start specifying.",
-      "stars": 4655,
-      "language": "Python",
-      "url": "https://github.com/Q00/ouroboros"
-    },
-    {
-      "name": "NVIDIA/skills",
-      "description": "AI agent skills published by NVIDIA",
-      "stars": 1617,
-      "language": "Python",
-      "url": "https://github.com/NVIDIA/skills"
-    },
-    {
-      "name": "kernalix7/winpodx",
-      "description": "Windows pod system for Linux",
-      "stars": 1239,
-      "language": "Python",
-      "url": "https://github.com/kernalix7/winpodx"
     }
   ],
   "bittensor": {
-    "price": 234.84,
-    "price_change_24h": -0.10521034374203475,
+    "price": 235.66,
+    "price_change_24h": 0.4184332446128954,
     "active_subnets": 5,
     "total_miners": 8870,
     "top_subnets": [

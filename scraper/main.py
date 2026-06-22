@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from reddit_scraper import get_reddit_posts
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
-from stocks_scraper import get_stocks_data
+from stocks_scraper import get_stocks_data, generate_ticker_json
 from defense_scraper import get_defense_data
 from weather_scraper import get_weather
 from local_news_scraper import get_local_news
@@ -47,6 +47,10 @@ def build_dashboard_data():
     print("\n[4/10] Fetching hottest stocks...")
     stocks_data = get_stocks_data()
     print(f"      Trending: {len(stocks_data.get('trending',[]))}, Meme: {len(stocks_data.get('meme_momentum',[]))}")
+
+    print("\n[4.5/10] Generating market ticker...")
+    ticker_data = generate_ticker_json()
+    print(f"      Ticker items: {len(ticker_data.get('items',[]))}")
     
     print("\n[5/10] Fetching Defense / Geopolitics...")
     defense_data = get_defense_data()
@@ -89,6 +93,7 @@ def build_dashboard_data():
         "crypto": crypto_data,
         "news": news_data.get("all_news", []),
         "stocks": stocks_data,
+        "ticker": ticker_data,
         "defense": defense_data.get("conflicts", []),
         "weather": weather_data,
         "local_news": local_news.get("articles", []),

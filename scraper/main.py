@@ -6,14 +6,22 @@ import sys
 import os
 from datetime import datetime
 
-# Add scraper directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from reddit_scraper import get_reddit_posts
-from x_scraper import get_x_posts
+from crypto_scraper import get_crypto_data as get_crypto
+from ap_news_scraper import get_ap_data
+from stocks_scraper import get_stocks_data
+from defense_scraper import get_defense_data
+from weather_scraper import get_weather
+from local_news_scraper import get_local_news
 from bittensor_scraper import get_bittensor_intelligence
 from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
+
+# Load weather zip from env
+WEATHER_ZIP = os.environ.get("WEATHER_ZIP", "10001")
+NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 
 def build_dashboard_data():
     """Run all scrapers and build the data.json payload."""
@@ -22,25 +30,52 @@ def build_dashboard_data():
     print(f"Time: {datetime.now().isoformat()}")
     print("=" * 50)
     
-    # Fetch data
-    print("\n[1/5] Fetching Reddit posts...")
+    # Fetch all data
+    print("\n[1/10] Fetching Reddit posts...")
     reddit_posts = get_reddit_posts()
     print(f"      Found {len(reddit_posts)} posts")
     
-    print("\n[2/5] Fetching X/Twitter posts...")
-    x_posts = get_x_posts()
-    print(f"      Found {len(x_posts)} posts")
+    print("\n[2/10] Fetching Crypto prices & news...")
+    crypto_data = get_crypto()
+    print(f"      Found {len(crypto_data.get('prices',[]))} coins, {len(crypto_data.get('news',[]))} news items")
     
-    print("\n[3/5] Fetching GitHub trending repos...")
+    print("\n[3/10] Fetching AP News & world headlines...")
+    news_data = get_ap_data()
+    print(f"      Found {len(news_data.get('all_news',[]))} news items")
+    
+    print("\n[4/10] Fetching hottest stocks...")
+    stocks_data = get_stocks_data()
+    print(f"      Trending: {len(stocks_data.get('trending',[]))}, Meme: {len(stocks_data.get('meme_momentum',[]))}")
+    
+    print("\n[5/10] Fetching Defense / Geopolitics...")
+    defense_data = get_defense_data()
+    print(f"      Found {len(defense_data.get('conflicts',[]))} conflict articles")
+    
+    print(f"\n[6/10] Fetching weather for {WEATHER_ZIP}...")
+    weather_data = get_weather(WEATHER_ZIP)
+    city = weather_data.get('city', '')
+    temp = weather_data.get('current', {}).get('temperature', 'N/A')
+    print(f"      {city}: {temp}F")
+    
+    print(f"\n[7/10] Fetching local news...")
+    local_news = {"articles": []}
+    if NEWSAPI_KEY and city:
+        state = weather_data.get('state', '')
+        local_news = get_local_news(city, state, NEWSAPI_KEY)
+        print(f"      Found {len(local_news.get('articles',[]))} local articles")
+    else:
+        print("      Skipped (NEWSAPI_KEY not set)")
+    
+    print("\n[8/10] Fetching GitHub trending repos...")
     github_repos = get_trending_repos()
     print(f"      Found {len(github_repos)} repos")
     
-    print("\n[4/5] Fetching Bittensor intelligence...")
+    print("\n[9/10] Fetching Bittensor intelligence...")
     bittensor_data = get_bittensor_intelligence()
     print(f"      TAO: ${bittensor_data.get('price', 0):.2f}")
     
-    print("\n[5/5] Generating summary...")
-    summary_data = create_daily_summary(reddit_posts, x_posts, github_repos, bittensor_data)
+    print("\n[10/10] Generating summary...")
+    summary_data = create_daily_summary(reddit_posts, [], github_repos, bittensor_data)
     print(f"      Summary length: {len(summary_data['summary'])} chars")
     
     # Build data.json
@@ -49,7 +84,12 @@ def build_dashboard_data():
         "summary": summary_data["summary"],
         "signals": summary_data["signals"],
         "reddit": reddit_posts,
-        "x_posts": x_posts,
+        "crypto": crypto_data,
+        "news": news_data.get("all_news", []),
+        "stocks": stocks_data,
+        "defense": defense_data.get("conflicts", []),
+        "weather": weather_data,
+        "local_news": local_news.get("articles", []),
         "github": github_repos,
         "bittensor": {
             "price": bittensor_data.get("price", 0),
@@ -60,13 +100,12 @@ def build_dashboard_data():
         }
     }
     
-    # Write data.json to parent directory (where index.html is)
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")
     with open(output_path, 'w') as f:
         json.dump(data, f, indent=2)
     
     print(f"\n[OK] Data written to {output_path}")
-    print(f"     {len(reddit_posts)} Reddit, {len(x_posts)} X, {len(github_repos)} GitHub, {len(bittensor_data.get('top_subnets', []))} subnets")
+    print(f"     Reddit: {len(reddit_posts)} | Crypto: {len(crypto_data.get('news',[]))} | News: {len(news_data.get('all_news',[]))} | Stocks: {len(stocks_data.get('trending',[]))} | Defense: {len(defense_data.get('conflicts',[]))} | Weather: {city} {temp}F | GitHub: {len(github_repos)} | Subnets: {len(bittensor_data.get('top_subnets', []))}")
     print("=" * 50)
     
     return data

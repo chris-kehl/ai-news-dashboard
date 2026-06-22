@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Dashboard</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-hover: #1a1a2e;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --accent: #00d4aa;
+            --accent-dim: #00d4aa33;
+            --danger: #ff4757;
+            --warning: #ffa502;
+            --info: #3498db;
+            --border: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 30px;
+        }
+        h1 { font-size: 1.8rem; font-weight: 700; }
+        h1 span { color: var(--accent); }
+        .status {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 0.85rem; color: var(--text-muted);
+        }
+        .status-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--accent); animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-dim);
+        }
+        .card-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 1.1rem; font-weight: 600;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .card-icon { font-size: 1.3rem; }
+        .badge {
+            padding: 2px 10px; border-radius: 20px;
+            font-size: 0.75rem; font-weight: 500;
+        }
+        .badge-new { background: var(--accent-dim); color: var(--accent); }
+        .badge-hot { background: #ff475733; color: var(--danger); }
+        .item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .item:last-child { border-bottom: none; }
+        .item-title {
+            font-weight: 500; color: var(--text);
+            text-decoration: none; display: block;
+            margin-bottom: 4px;
+        }
+        .item-title:hover { color: var(--accent); }
+        .item-meta {
+            font-size: 0.8rem; color: var(--text-muted);
+            display: flex; gap: 12px;
+        }
+        .item-score {
+            color: var(--accent); font-weight: 500;
+        }
+        .summary-box {
+            background: var(--bg-hover);
+            border-left: 3px solid var(--accent);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 8px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .bittensor-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+            margin-top: 12px;
+        }
+        .metric {
+            background: var(--bg-hover);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 1.4rem; font-weight: 700; color: var(--accent);
+        }
+        .metric-label {
+            font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;
+        }
+        .signal {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin: 4px 4px 4px 0;
+        }
+        .signal-buy { background: #00d4aa22; color: #00d4aa; }
+        .signal-sell { background: #ff475722; color: var(--danger); }
+        .signal-watch { background: #ffa50222; color: var(--warning); }
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+        .error { text-align: center; padding: 40px; color: var(--danger); }
+        .timestamp {
+            text-align: center; color: var(--text-muted);
+            font-size: 0.8rem; margin-top: 30px; padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .bittensor-grid { grid-template-columns: repeat(2, 1fr); }
+            header { flex-direction: column; gap: 10px; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span>AI</span> News Dashboard</h1>
+            <div class="status">
+                <div class="status-dot"></div>
+                <span id="last-updated">Loading...</span>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- AI News Summary -->
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">&#129302;</span>
+                        Today's AI Summary
+                    </div>
+                    <span class="badge badge-new">LLM Generated</span>
+                </div>
+                <div id="ai-summary">
+                    <div class="loading">Loading summary...</div>
+                </div>
+                <div id="trading-signals" style="margin-top: 12px;"></div>
+            </div>
+
+            <!-- Reddit Trends -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">&#128240;</span>
+                        Reddit AI Trends
+                    </div>
+                    <span class="badge badge-hot">Hot</span>
+                </div>
+                <div id="reddit-posts">
+                    <div class="loading">Loading Reddit posts...</div>
+                </div>
+            </div>
+
+            <!-- X/Twitter Trends -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">&#128172;</span>
+                        X / Twitter AI
+                    </div>
+                    <span class="badge badge-hot">Trending</span>
+                </div>
+                <div id="x-posts">
+                    <div class="loading">Loading X posts...</div>
+                </div>
+            </div>
+
+            <!-- Bittensor Intelligence -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">&#9889;</span>
+                        Bittensor Intelligence
+                    </div>
+                    <span class="badge badge-new">Live</span>
+                </div>
+                <div id="bittensor-data">
+                    <div class="loading">Loading Bittensor data...</div>
+                </div>
+            </div>
+
+            <!-- GitHub Trending AI -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">&#128187;</span>
+                        GitHub AI Trending
+                    </div>
+                    <span class="badge badge-new">Today</span>
+                </div>
+                <div id="github-repos">
+                    <div class="loading">Loading GitHub repos...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timestamp">
+            Auto-refreshes every 5 minutes | Data updated: <span id="timestamp">--</span>
+        </div>
+    </div>
+
+    <script>
+        // Fallback demo data for preview before scraper runs
+        const DEMO_DATA = {
+            timestamp: new Date().toISOString(),
+            summary: "OpenAI announced GPT-5 research directions. Bittensor subnet 22 emissions increased 15%. New local LLM inference benchmarks show AMD catching up to NVIDIA. Claude 3.5 Sonnet released with extended thinking mode. Several new AI coding agents launched this week.",
+            signals: [
+                { type: "watch", text: "SN22 emissions +15%" },
+                { type: "buy", text: "TAO accumulation zone" },
+                { type: "watch", text: "Local LLM trend accelerating" }
+            ],
+            reddit: [
+                { title: "GPT-5: What we know so far", subreddit: "LocalLLaMA", score: 1240, comments: 340, url: "#" },
+                { title: "How to run 70B models on consumer hardware", subreddit: "LocalLLaMA", score: 890, comments: 120, url: "#" },
+                { title: "Bittensor subnet analysis: SN41 vs SN39", subreddit: "Bittensor", score: 340, comments: 56, url: "#" },
+                { title: "Claude 3.5 Sonnet extended thinking benchmarks", subreddit: "MachineLearning", score: 780, comments: 89, url: "#" },
+                { title: "New open-source vision model beats GPT-4V", subreddit: "MachineLearning", score: 560, comments: 67, url: "#" }
+            ],
+            x_posts: [
+                { author: "@karpathy", text: "The next frontier in LLMs is not scale, it's efficiency. Small models are getting surprisingly capable.", likes: 12000, url: "#" },
+                { author: "@swyx", text: "AI engineering in 2025: everyone is building agents, no one knows how to evaluate them.", likes: 4500, url: "#" },
+                { author: "@binduredy", text: "Bittensor subnet registrations are at an all-time high. New subnet launching next week.", likes: 890, url: "#" }
+            ],
+            bittensor: {
+                price: 286.45,
+                price_change_24h: 5.2,
+                active_subnets: 45,
+                total_miners: 12500,
+                top_subnets: [
+                    { name: "SN22", miners: 1840, emission: 12.5, change: "+2.3%" },
+                    { name: "SN41", miners: 920, emission: 8.2, change: "-5.1%" },
+                    { name: "SN39", miners: 1450, emission: 15.1, change: "+0.8%" }
+                ]
+            },
+            github: [
+                { name: "nousresearch/hermes", description: "Hermes Agent - open-source AI agent framework", stars: 5200, language: "Python", url: "#" },
+                { name: "opentensor/bittensor", description: "Bittensor - decentralized AI network", stars: 8900, language: "Rust", url: "#" },
+                { name: "mlabonne/llm-course", description: "Free course on LLMs", stars: 34000, language: "Jupyter", url: "#" }
+            ]
+        };
+
+        async function loadData() {
+            try {
+                // Try to fetch real data first
+                let data;
+                try {
+                    const response = await fetch('data.json?t=' + Date.now());
+                    if (response.ok) data = await response.json();
+                } catch (e) {
+                    console.log('No data.json found, using demo data');
+                }
+                if (!data) data = DEMO_DATA;
+
+                renderAll(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('ai-summary').innerHTML = 
+                    '<div class="error">Error loading data. Will retry shortly.</div>';
+            }
+        }
+
+        function renderAll(data) {
+            // Summary
+            document.getElementById('ai-summary').innerHTML = 
+                `<div class="summary-box">${data.summary || 'No summary available yet.'}</div>`;
+
+            // Trading signals
+            const signalsEl = document.getElementById('trading-signals');
+            const signals = data.signals || [];
+            if (signals.length > 0) {
+                signalsEl.innerHTML = signals.map(s => 
+                    `<span class="signal signal-${s.type}">${s.text}</span>`
+                ).join('');
+            }
+
+            // Reddit
+            const redditEl = document.getElementById('reddit-posts');
+            if (data.reddit && data.reddit.length > 0) {
+                redditEl.innerHTML = data.reddit.slice(0, 6).map(post => `
+                    <div class="item">
+                        <a href="${post.url}" class="item-title" target="_blank">${post.title}</a>
+                        <div class="item-meta">
+                            <span>r/${post.subreddit}</span>
+                            <span class="item-score">&#9650; ${post.score}</span>
+                            <span>${post.comments} comments</span>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                redditEl.innerHTML = '<div class="loading">No Reddit data yet</div>';
+            }
+
+            // X Posts
+            const xEl = document.getElementById('x-posts');
+            if (data.x_posts && data.x_posts.length > 0) {
+                xEl.innerHTML = data.x_posts.slice(0, 5).map(post => `
+                    <div class="item">
+                        <a href="${post.url}" class="item-title" target="_blank">${post.author}</a>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+                            ${post.text}
+                        </div>
+                        <div class="item-meta">
+                            <span class="item-score">&#9829; ${post.likes}</span>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                xEl.innerHTML = '<div class="loading">No X data yet</div>';
+            }
+
+            // Bittensor
+            const bitEl = document.getElementById('bittensor-data');
+            if (data.bittensor) {
+                const b = data.bittensor;
+                const changeColor = b.price_change_24h >= 0 ? 'var(--accent)' : 'var(--danger)';
+                const changeSign = b.price_change_24h >= 0 ? '+' : '';
+                bitEl.innerHTML = `
+                    <div class="bittensor-grid">
+                        <div class="metric">
+                            <div class="metric-value">$${b.price.toFixed(2)}</div>
+                            <div class="metric-label">TAO Price</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" style="color: ${changeColor}">${changeSign}${b.price_change_24h}%</div>
+                            <div class="metric-label">24h Change</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">${b.active_subnets}</div>
+                            <div class="metric-label">Active Subnets</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 16px;">
+                        ${(b.top_subnets || []).map(sn => `
+                            <div class="item">
+                                <a href="#" class="item-title">${sn.name}</a>
+                                <div class="item-meta">
+                                    <span>${sn.miners} miners</span>
+                                    <span class="item-score">${sn.emission} TAO/day</span>
+                                    <span style="color: ${sn.change.includes('+') ? 'var(--accent)' : 'var(--danger)'}">${sn.change}</span>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            // GitHub
+            const ghEl = document.getElementById('github-repos');
+            if (data.github && data.github.length > 0) {
+                ghEl.innerHTML = data.github.slice(0, 5).map(repo => `
+                    <div class="item">
+                        <a href="${repo.url}" class="item-title" target="_blank">${repo.name}</a>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+                            ${repo.description}
+                        </div>
+                        <div class="item-meta">
+                            <span class="item-score">&#9733; ${repo.stars.toLocaleString()}</span>
+                            <span>${repo.language}</span>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                ghEl.innerHTML = '<div class="loading">No GitHub data yet</div>';
+            }
+
+            // Timestamps
+            const date = new Date(data.timestamp || Date.now());
+            document.getElementById('last-updated').textContent = 
+                'Updated ' + date.toLocaleTimeString();
+            document.getElementById('timestamp').textContent = 
+                date.toLocaleString();
+        }
+
+        // Load immediately and then every 5 minutes
+        loadData();
+        setInterval(loadData, 5 * 60 * 1000);
+    </script>
+</body>
+</html>

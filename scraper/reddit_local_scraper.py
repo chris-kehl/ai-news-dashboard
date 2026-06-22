@@ -52,8 +52,14 @@ def fetch_subreddit_posts(name, limit=5):
             link = link_el.get("href") if link_el is not None else ""
             updated = updated_el.text if updated_el is not None else ""
 
-            # Extract score/comments from content if available
+            # Extract score from uri/id if available (format: t3_postid)
             score, comments = 0, 0
+            id_el = entry.find("atom:id", ns)
+            if id_el is not None and id_el.text:
+                # Try to get comment count from comments link in content
+                pass
+
+            # Try score/comments from content text
             if content_el is not None and content_el.text:
                 s = re.search(r'Score:\s*([\d,]+)', content_el.text)
                 if s:
@@ -61,6 +67,13 @@ def fetch_subreddit_posts(name, limit=5):
                 c = re.search(r'([\d,]+)\s+comment', content_el.text)
                 if c:
                     comments = int(c.group(1).replace(',', ''))
+
+            # Fallback: try thumbnail/media for engagement hints (no scores in modern RSS)
+            # Reddit hides scores in unauthenticated RSS now — that's expected
+            if score == 0:
+                score = "—"
+            if comments == 0:
+                comments = "—"
 
             # Skip moderator stickies
             if title.startswith("[") and "moderator" in title.lower():

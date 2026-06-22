@@ -409,6 +409,19 @@
                 } catch (e) { console.log('No data.json, using demo'); }
                 if (!data) data = DEMO;
                 renderAll(data);
+
+                // On page load: restore persisted zip/location from sessionStorage
+                const savedZip = sessionStorage.getItem('ai-dashboard-zip');
+                if (savedZip) {
+                    const savedCity = sessionStorage.getItem('ai-dashboard-city');
+                    const savedState = sessionStorage.getItem('ai-dashboard-state');
+                    if (savedCity && savedState) {
+                        // Override weather bar with saved location
+                        document.getElementById('weather-location').textContent = `${savedCity}, ${savedState}`;
+                        // Fetch fresh weather + local content for saved zip
+                        loadWeatherFromZip(savedZip);
+                    }
+                }
             } catch (err) {
                 console.error(err);
                 document.getElementById('ai-summary').innerHTML = '<div class="error">Failed to load data</div>';
@@ -587,6 +600,89 @@
             document.getElementById('timestamp').textContent = dt.toLocaleString();
         }
 
+        async function loadLocalNewsAndReddit(city, state) {
+            const container = document.getElementById('local-news');
+            container.innerHTML = '<div class="loading">Loading local news & Reddit...</div>';
+
+            let html = '';
+
+            // Local news via rss2json (WFPL, KY Sports Radio, etc)
+            const feeds = [
+                ['WFPL NPR', 'https://wfpl.org/feed/'],
+                ['KY Sports Radio', 'https://kentuckysportsradio.com/feed/'],
+                ['Forward KY', 'https://forwardky.com/feed/'],
+                ['Lane Report', 'https://www.lanereport.com/feed/'],
+            ];
+            const bingUrl = encodeURIComponent(`https://www.bing.com/news/search?q=${encodeURIComponent(city+' '+state+' news')}&format=rss`);
+
+            // Try Bing News RSS via rss2json
+            try {
+                const br = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${bingUrl}`, {signal: AbortSignal.timeout(8000)});
+                const bd = await br.json();
+                if (bd.items && bd.items.length > 0) {
+                    html += bd.items.slice(0,5).map(n =>
+                        `<div class="item">
+                            <a href="${n.link}" class="item-title" target="_blank">${n.title}</a>
+                            <div class="item-meta"><span>Bing News</span><span>${n.pubDate||''}</span></div>
+                            <div class="item-desc">${(n.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
+                        </div>`).join('');
+                }
+            } catch (e) { console.log('Bing news failed', e); }
+
+            // Regional RSS feeds
+            for (const [label, rssUrl] of feeds) {
+                try {
+                    const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`, {signal: AbortSignal.timeout(8000)});
+                    const d = await r.json();
+                    if (d.items && d.items.length > 0) {
+                        for (const item of d.items.slice(0,2)) {
+                            // Skip if title already shown (simple dedup)
+                            if (html.toLowerCase().includes(item.title.toLowerCase().slice(0,20))) continue;
+                            html += `<div class="item">
+                                <a href="${item.link}" class="item-title" target="_blank">${item.title}</a>
+                                <div class="item-meta"><span>${label}</span><span>${item.pubDate||''}</span></div>
+                                <div class="item-desc">${(item.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
+                            </div>`;
+                        }
+                    }
+                } catch (e) { console.log(label + ' failed', e); }
+            }
+
+            // Local Reddit via rss2json
+            let redditHtml = '';
+            const citySub = city.toLowerCase().replace(/[^a-z0-9]/g,'');
+            const stateSub = state.toLowerCase().replace(/[^a-z0-9]/g,'');
+            const subs = [...new Set([citySub, stateSub])];
+
+            for (const sub of subs) {
+                try {
+                    const rr = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/r/'+sub+'/.rss?limit=5')}`, {signal: AbortSignal.timeout(8000)});
+                    const rd = await rr.json();
+                    if (rd.items && rd.items.length > 0) {
+                        redditHtml += rd.items.slice(0,3).map(p =>
+                            `<div class="item">
+                                <a href="${p.link}" class="item-title" target="_blank">${p.title}</a>
+                                <div class="item-meta">
+                                    <span>r/${sub}</span>
+                                    <span class="item-score">&#9650; —</span>
+                                    <span>— comments</span>
+                                </div>
+                            </div>`).join('');
+                    }
+                } catch (e) { console.log('Reddit r/'+sub+' failed', e); }
+            }
+
+            if (redditHtml) {
+                html += `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--accent);font-weight:600;">${city} Reddit</div>`;
+                html += redditHtml;
+            }
+
+            if (!html) {
+                html = '<div class="loading">No local news found for this zip</div>';
+            }
+            container.innerHTML = html;
+        }
+
         async function loadWeatherFromZip(zip) {
             if (!zip || zip.length < 5) return;
             document.getElementById('weather-location').textContent = 'Loading ' + zip + '...';
@@ -617,6 +713,14 @@
                 document.getElementById('weather-forecast').innerHTML = forecast.map(f =>
                     `<div style="text-align:center;"><div style="font-weight:600;color:var(--text);">${f.name}</div><div>${Math.round(f.temp)}F</div></div>`
                 ).join('');
+
+                // Persist in sessionStorage so refresh keeps this location
+                sessionStorage.setItem('ai-dashboard-zip', zip);
+                sessionStorage.setItem('ai-dashboard-city', city);
+                sessionStorage.setItem('ai-dashboard-state', state);
+
+                // Fetch local news + Reddit for this city/state
+                loadLocalNewsAndReddit(city, state);
             } catch (e) {
                 document.getElementById('weather-location').textContent = 'Weather unavailable';
                 console.error(e);

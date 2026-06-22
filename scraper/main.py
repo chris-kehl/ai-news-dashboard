@@ -57,14 +57,10 @@ def build_dashboard_data():
     city = weather_data.get('city', '')
     temp = weather_data.get('current', {}).get('temperature', 'N/A')
     print(f"      {city}: {temp}F")
-    print(f"\n[7/10] Fetching local news...")
+    print(f"\n[7/10] Fetching local news (multi-source)...")
     state = weather_data.get('state', '')
-    local_news = {"articles": []}
-    if NEWSAPI_KEY and city:
-        local_news = get_local_news(city, state, NEWSAPI_KEY)
-        print(f"      Found {len(local_news.get('articles',[]))} local articles")
-    else:
-        print("      Skipped (NEWSAPI_KEY not set)")
+    local_news = get_local_news(city, state, NEWSAPI_KEY)
+    print(f"      Found {len(local_news.get('articles',[]))} local articles")
     
     print(f"\n[7.5/10] Fetching local Reddit (r/{city.lower()}, r/{state.lower()})...")
     local_reddit = get_local_reddit_from_weather(weather_data, max_posts=6)
@@ -85,6 +81,7 @@ def build_dashboard_data():
     # Build data.json
     data = {
         "timestamp": datetime.now().isoformat(),
+        "zip": WEATHER_ZIP,
         "summary": summary_data["summary"],
         "signals": summary_data["signals"],
         "reddit": reddit_posts,

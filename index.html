@@ -18,6 +18,19 @@
             --info: #3498db;
             --border: #2a2a3a;
         }
+        [data-theme="light"] {
+            --bg: #f5f5f7;
+            --bg-card: #ffffff;
+            --bg-hover: #eef0f5;
+            --text: #1a1a2e;
+            --text-muted: #666;
+            --accent: #007a5e;
+            --accent-dim: #007a5e33;
+            --danger: #d32f2f;
+            --warning: #f57c00;
+            --info: #1976d2;
+            --border: #d0d0e0;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -41,6 +54,17 @@
             background: var(--accent); animation: pulse 2s infinite;
         }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .theme-toggle {
+            background: var(--bg-hover);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
         
         .grid {
             display: grid;
@@ -217,7 +241,7 @@
         .ticker-track {
             display: inline-flex;
             gap: 30px;
-            animation: ticker-scroll 50s linear infinite;
+            animation: ticker-scroll 80s linear infinite;
             white-space: nowrap;
         }
         .ticker-track:hover {
@@ -253,9 +277,12 @@
     <div class="container">
         <header>
             <h1>AI <span>News</span> Dashboard</h1>
-            <div class="status">
-                <div class="status-dot"></div>
-                <span id="last-updated">Loading...</span>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">🌓</button>
+                <div class="status">
+                    <div class="status-dot"></div>
+                    <span id="last-updated">Loading...</span>
+                </div>
             </div>
         </header>
 
@@ -667,10 +694,17 @@
                     `).join('')}
                 </div>`;
 
-            // Timestamps
+            // Timestamps with age badge
             const dt = new Date(d.timestamp || Date.now());
-            document.getElementById('last-updated').textContent = 'Updated ' + dt.toLocaleTimeString();
-            document.getElementById('timestamp').textContent = dt.toLocaleString();
+            const ageMin = Math.floor((Date.now() - dt) / 60000);
+            let ageStr;
+            if (ageMin < 1) ageStr = 'just now';
+            else if (ageMin < 60) ageStr = ageMin + 'm ago';
+            else ageStr = Math.floor(ageMin/60) + 'h ago';
+            const stale = ageMin > 30;
+            document.getElementById('last-updated').textContent = 'Updated ' + ageStr;
+            document.getElementById('last-updated').style.color = stale ? 'var(--danger)' : 'var(--text)';
+            document.getElementById('timestamp').textContent = dt.toLocaleString() + ' (' + ageStr + ')';
         }
 
         async function loadLocalNewsAndReddit(city, state) {
@@ -799,6 +833,28 @@
                 console.error(e);
             }
         }
+
+        // Theme toggle
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme') || 'dark';
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('ai-dashboard-theme', next);
+        }
+        (function initTheme() {
+            const saved = localStorage.getItem('ai-dashboard-theme');
+            if (saved) document.documentElement.setAttribute('data-theme', saved);
+        })();
+
+        // Restore zip + city from previous session
+        (function restoreZip() {
+            const savedZip = sessionStorage.getItem('ai-dashboard-zip');
+            const savedCity = sessionStorage.getItem('ai-dashboard-city');
+            if (savedZip && savedCity) {
+                document.getElementById('zip-input').value = savedZip;
+                loadWeatherFromZip(savedZip);
+            }
+        })();
 
         loadData();
         setInterval(loadData, 5 * 60 * 1000);

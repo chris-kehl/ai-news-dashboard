@@ -1,10 +1,43 @@
-<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>AI Dashboard</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+html[data-theme="light"]{
+  --bg:#f6f7f9;
+  --bg-card:#ffffff;
+  --bg-el:#f0f1f4;
+  --brd:#e5e7eb;
+  --tx:#111827;
+  --tx2:#4b5563;
+  --tx3:#9ca3af;
+}
+html[data-theme="light"] .ticker-bar{background:#eef0f3;border-bottom:1px solid #e5e7eb;}
+html[data-theme="light"] .header{background:#fff;border-bottom:1px solid #e5e7eb;}
+html[data-theme="light"] .card{background:#fff;border:1px solid #e5e7eb;}
+html[data-theme="light"] .card-title{background:#f0f1f4;border-bottom:1px solid #e5e7eb;color:#111827;}
+
+.settings-btn{cursor:pointer;background:none;border:none;color:var(--tx2);font-size:1rem;padding:4px 8px;border-radius:4px;transition:.2s;}
+.settings-btn:hover{color:var(--acc);background:var(--bg-el);}
+.theme-btn{cursor:pointer;background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);padding:4px 12px;border-radius:4px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;transition:.2s;}
+.theme-btn:hover{border-color:var(--acc);color:var(--acc);}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;display:none;align-items:center;justify-content:center;}
+html[data-theme="light"] .modal-overlay{background:rgba(255,255,255,0.7);}
+.modal-overlay.open{display:flex;}
+.modal{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;padding:24px;width:320px;max-width:90vw;}
+.modal h3{margin:0 0 16px;font-size:1rem;}
+.modal-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.modal-row label{font-size:0.8rem;color:var(--tx2);}
+.modal input{background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:6px 10px;border-radius:4px;font-family:inherit;font-size:0.8rem;width:140px;}
+.modal input:focus{outline:none;border-color:var(--acc);}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px;}
+.modal-actions button{padding:6px 14px;border-radius:4px;font-size:0.8rem;cursor:pointer;border:none;}
+.modal-actions .primary{background:var(--acc);color:#000;font-weight:600;}
+.modal-actions .secondary{background:var(--bg-el);color:var(--tx);}
+
 <style>
 :root{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--acc2:#c0842b;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;--bg-purple:rgba(106,95,193,0.08);}
 *{
@@ -231,9 +264,9 @@ body{
 <div class="ticker-bar" id="ticker">Loading markets...</div>
 
 <div class="header">
-  <div class="brand">AI <span>DASHBOARD</span></div>
+  <div style="display:flex;align-items:center;gap:12px;"><button id="theme-btn" class="theme-btn" onclick="toggleTheme()">LIGHT</button><div class="brand">AI <span>DASHBOARD</span></div></div>
   <div style="display:flex;align-items:center;">
-    <div class="clock" id="clock">--:--:-- UTC</div>
+    <div style="display:flex;align-items:center;gap:12px;"><button class="settings-btn" onclick="openSettings()" title="Settings">&#9881;</button><div class="clock" id="clock">--:--:-- UTC</div>
     <div class="age" id="age">stale</div>
   </div>
 </div>
@@ -446,6 +479,42 @@ function renderAll(d){
   document.getElementById('trading-signals').innerHTML=sig.map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>';}).join('')||'<div class="loading">No signals</div>';
 }
 
+
+var currentZip=localStorage.getItem('dash_zip')||'40272';
+var currentCity=localStorage.getItem('dash_city')||'';
+
+function applyTheme(){
+  var t=localStorage.getItem('dash_theme')||'dark';
+  document.documentElement.setAttribute('data-theme',t);
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='light'?'DARK':'LIGHT';
+}
+function toggleTheme(){
+  var t=document.documentElement.getAttribute('data-theme')||'dark';
+  var n=t==='dark'?'light':'dark';
+  localStorage.setItem('dash_theme',n);
+  applyTheme();
+}
+function openSettings(){
+  document.getElementById('settings-modal').classList.add('open');
+  document.getElementById('zip-input').value=currentZip;
+  document.getElementById('city-input').value=currentCity;
+}
+function closeSettings(){
+  document.getElementById('settings-modal').classList.remove('open');
+}
+function saveSettings(){
+  var z=document.getElementById('zip-input').value.trim();
+  var c=document.getElementById('city-input').value.trim();
+  if(!z&&!c){alert('Enter zip or city');return;}
+  currentZip=z||currentZip;
+  currentCity=c;
+  if(z)localStorage.setItem('dash_zip',z);
+  if(c)localStorage.setItem('dash_city',c);
+  closeSettings();
+  loadData();
+}
+
 async function loadData(){
   try{
     const r=await fetch('data.json?v='+Date.now());
@@ -457,6 +526,17 @@ async function loadData(){
 }
 loadData();
 setInterval(loadData,300000);
+applyTheme();
 </script>
-</body>
+<div class="modal-overlay" id="settings-modal" onclick="if(event.target===this)closeSettings()">
+  <div class="modal">
+    <h3>Settings</h3>
+    <div class="modal-row"><label>Zip Code</label><input id="zip-input" placeholder="40272" maxlength="5"></div>
+    <div class="modal-row"><label>City</label><input id="city-input" placeholder="Louisville"></div>
+    <div class="modal-actions">
+      <button class="secondary" onclick="closeSettings()">Cancel</button>
+      <button class="primary" onclick="saveSettings()">Save</button>
+    </div>
+  </div>
+</div></body>
 </html>

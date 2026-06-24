@@ -15,6 +15,7 @@ from stocks_scraper import get_stocks_data, generate_ticker_json
 from defense_scraper import get_defense_data
 from weather_scraper import get_weather
 from local_news_scraper import get_local_news
+from local_channels_scraper import get_local_channel_news
 from reddit_local_scraper import get_local_reddit_from_weather
 from bittensor_scraper import get_bittensor_intelligence
 from github_scraper import get_trending_repos
@@ -66,6 +67,10 @@ def build_dashboard_data():
     local_news = get_local_news(city, state, NEWSAPI_KEY)
     print(f"      Found {len(local_news.get('articles',[]))} local articles")
     
+    
+    print(f"\n[7.5/10] Fetching local TV stations + newspapers...")
+    local_channels = get_local_channel_news(city, state)
+    print(f"      Found {len(local_channels)} articles from local channels")
     print(f"\n[7.5/10] Fetching local Reddit (r/{city.lower()}, r/{state.lower()})...")
     local_reddit = get_local_reddit_from_weather(weather_data, max_posts=6)
     print(f"      Found {len(local_reddit)} local reddit posts")
@@ -97,6 +102,7 @@ def build_dashboard_data():
         "defense": defense_data.get("conflicts", []),
         "weather": weather_data,
         "local_news": local_news.get("articles", []),
+        "local_channels": local_channels,
         "github": github_repos,
         "bittensor": {
             "price": bittensor_data.get("price", 0),

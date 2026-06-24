@@ -609,11 +609,21 @@
                     <div class="item-desc">${n.description || ''}</div>
                 </div>`).join('') || '<div class="loading">No defense data yet</div>';
 
-            // Local News + Local Reddit combined
+            // Local Channels (TV stations + newspapers) + News + Reddit combined
+            const localChannels = d.local_channels || [];
             const localNews = d.local_news || [];
             const localReddit = d.local_reddit || [];
             let localHtml = '';
+            if (localChannels.length > 0) {
+                localHtml += `<div style="font-size:0.75rem;color:var(--accent);font-weight:600;margin-bottom:6px;">📺 TV & Papers</div>`;
+                localHtml += localChannels.slice(0,8).map(n =>
+                    `<div class="item">
+                        <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>
+                        <div class="item-meta"><span>${n.source || 'Local'}</span></div>
+                    </div>`).join('');
+            }
             if (localNews.length > 0) {
+                localHtml += `<div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--accent);font-weight:600;">📰 News & RSS</div>`;
                 localHtml += localNews.slice(0,5).map(n =>
                     `<div class="item">
                         <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>

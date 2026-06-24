@@ -363,7 +363,7 @@ function renderAll(d){
   age.textContent=mins>30?'stale ('+mins+'m)':mins+'m ago';
   age.style.color=mins>30?'var(--danger)':'var(--tx3)';
 
-  var tick=(d.ticker||[]).slice(0,12).map(function(t){
+  var tick=((d.ticker||{}).items||[]).slice(0,12).map(function(t){
     var cls=t.change>=0?'up':'down';
     var sign=t.change>=0?'+':'';
     return '<span>'+t.symbol+': <b class="'+cls+'">'+t.price+' ('+sign+t.change+'%)</b></span>';
@@ -421,18 +421,18 @@ function renderAll(d){
     '<div class="subnet-header"><span>#</span><span>Subnet</span><span>Min</span><span>TAO/d</span><span>24h</span></div>'+
     subs.map(function(sn,i){return '<div class="subnet-row" style="opacity:'+(i>4?0.55:1)+';"><span class="subnet-rank">'+(i+1)+'</span><span class="subnet-name">'+sn.name+'</span><span class="subnet-num">'+(sn.miners?sn.miners.toLocaleString():0)+'</span><span class="subnet-em">'+sn.emission+'</span><span class="subnet-ch" style="color:'+((sn.change||'').includes('+')?'var(--good)':'var(--danger)')+'">'+sn.change+'</span></div>';}).join('')||'<div class="loading">No data</div>';
 
-  var crypto=d.crypto||[];
+  var crypto=(d.crypto||{}).prices||[];
+  var cnews=(d.crypto||{}).news||[];
   document.getElementById('crypto-prices').innerHTML=crypto.slice(0,6).map(function(c){
     var cls=c.change_24h>=0?'up':'down';
     var sign=c.change_24h>=0?'+':'';
     return '<div class="crypto-cell"><span class="crypto-name">'+c.symbol+'</span><span class="crypto-price" style="color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span class="crypto-ch '+cls+'">'+sign+c.change_24h+'%</span></div>';
   }).join('')||'<div class="loading">No crypto data</div>';
 
-  var cnews=(d.crypto_news||[]).slice(0,4);
   document.getElementById('crypto-news').innerHTML=cnews.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+n.source+'</span></div></div>';}).join('')||'<div class="loading">No news</div>';
 
-  var stocks=d.stocks||[];
-  var memes=d.meme_stocks||[];
+  var stocks=(d.stocks||{}).trending||[];
+  var memes=(d.stocks||{}).meme_momentum||[]||[];
   var stockHtml=stocks.slice(0,3).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;"><span style="font-weight:600;font-size:0.8rem;">'+s.ticker+'</span><span style="font-family:JetBrains Mono;font-size:0.75rem;color:var(--acc);">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_pct>0?'var(--good)':'var(--danger)')+'">'+(s.change_pct>0?'+':'')+s.change_pct+'%</span></div>';}).join('')+
     memes.slice(0,2).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;"><span style="font-weight:600;font-size:0.8rem;">'+s.ticker+'</span><span style="font-family:JetBrains Mono;font-size:0.75rem;color:var(--acc);">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_pct>0?'var(--good)':'var(--danger)')+'">'+(s.change_pct>0?'+':'')+s.change_pct+'%</span></div>';}).join('');
   document.getElementById('stocks-trending').innerHTML=stockHtml||'<div class="loading">No stock data</div>';

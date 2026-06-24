@@ -377,7 +377,7 @@
         </div>
 
         <!-- LOCAL NEWS (first row) -->
-        <div class="section-title"><div class="section-title-text"><span>&#127968;</span> Louisville 40272</div></div>
+        <div class="section-title"><div class="section-title-text"><span>&#127968;</span> Location</div></div>
         <div class="grid grid-1" style="margin-bottom: 20px;">
             <div class="card">
                 <div class="card-header">
@@ -666,3 +666,234 @@
             if (localTitle) {
                 localTitle.textContent = cityName + (wTemp ? ' ' + wTemp + 'F' : '') + (wDesc ? ' ' + wDesc : '');
             }
+
+            // Reddit
+            const reddit = d.reddit || [];
+            document.getElementById('reddit-posts').innerHTML = reddit.slice(0,6).map(p =>
+                `<div class="item">
+                    <a href="${p.url}" class="item-title" target="_blank">${p.title}</a>
+                    <div class="item-meta">
+                        <span>r/${p.subreddit}</span>
+                        <span class="item-score">&#9650; ${p.score}</span>
+                        <span>${p.comments} comments</span>
+                    </div>
+                </div>`).join('') || '<div class="loading">No Reddit data yet</div>';
+
+            // GitHub
+            const gh = d.github || [];
+            document.getElementById('github-repos').innerHTML = gh.slice(0,6).map(r =>
+                `<div class="item">
+                    <a href="${r.url}" class="item-title" target="_blank">${r.name}</a>
+                    <div class="item-desc">${r.description || ''}</div>
+                    <div class="item-meta">
+                        <span class="item-score">&#9733; ${(r.stars || 0).toLocaleString()}</span>
+                        <span>${r.language || ''}</span>
+                    </div>
+                </div>`).join('') || '<div class="loading">No GitHub data yet</div>';
+
+            // Bittensor
+            const bit = d.bittensor || {};
+            const cColor = (bit.price_change_24h || 0) >= 0 ? 'var(--accent)' : 'var(--danger)';
+            const cSign = (bit.price_change_24h || 0) >= 0 ? '+' : '';
+            const subnets = (bit.top_subnets || []).sort((a,b) => b.emission - a.emission);
+            document.getElementById('bittensor-data').innerHTML = `
+                <div class="bittensor-grid">
+                    <div class="metric">
+                        <div class="metric-value">$${(bit.price || 0).toFixed(2)}</div>
+                        <div class="metric-label">TAO Price</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value" style="color:${cColor}">${cSign}${(bit.price_change_24h || 0).toFixed(1)}%</div>
+                        <div class="metric-label">24h</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">${bit.active_subnets || 0}</div>
+                        <div class="metric-label">Subnets</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">${(bit.total_miners || 0).toLocaleString()}</div>
+                        <div class="metric-label">Miners</div>
+                    </div>
+                </div>
+                <div style="margin-top:12px;">
+                    <div style="font-size:0.75rem;color:var(--text-muted);font-weight:600;display:grid;grid-template-columns: 28px 1fr 60px 60px 55px;gap:6px;padding:4px 0;border-bottom:1px solid var(--border);">
+                        <span>#</span><span>Subnet</span><span>Miners</span><span>TAO/d</span><span>24h</span>
+                    </div>
+                    ${subnets.map((sn, i) => `
+                        <div style="font-size:0.82rem;display:grid;grid-template-columns: 28px 1fr 60px 60px 55px;gap:6px;padding:5px 0;align-items:center;border-bottom:1px solid var(--border);opacity:${i>4?0.7:1};">
+                            <span style="color:var(--text-muted);font-weight:700;">${i+1}</span>
+                            <span style="font-weight:600;">${sn.name}</span>
+                            <span>${sn.miners?.toLocaleString() || 0}</span>
+                            <span style="color:var(--accent);">${sn.emission}</span>
+                            <span style="color:${(sn.change||'').includes('+')?'var(--accent)':'var(--danger)'}">${sn.change}</span>
+                        </div>
+                    `).join('') || '<div class="loading">No subnet data</div>'}
+                </div>`;
+
+            // Timestamps with age badge
+            const dt = new Date(d.timestamp || Date.now());
+            const ageMin = Math.floor((Date.now() - dt) / 60000);
+            let ageStr;
+            if (ageMin < 1) ageStr = 'just now';
+            else if (ageMin < 60) ageStr = ageMin + 'm ago';
+            else ageStr = Math.floor(ageMin/60) + 'h ago';
+            const stale = ageMin > 30;
+            document.getElementById('last-updated').textContent = 'Updated ' + ageStr;
+            document.getElementById('last-updated').style.color = stale ? 'var(--danger)' : 'var(--text)';
+            document.getElementById('timestamp').textContent = dt.toLocaleString() + ' (' + ageStr + ')';
+        }
+
+        async function loadLocalNewsAndReddit(city, state) {
+            const container = document.getElementById('local-news');
+            container.innerHTML = '<div class="loading">Loading local news & Reddit...</div>';
+
+            let html = '';
+
+            // Local news via rss2json (WFPL, KY Sports Radio, etc)
+            const feeds = [
+                ['WFPL NPR', 'https://wfpl.org/feed/'],
+                ['KY Sports Radio', 'https://kentuckysportsradio.com/feed/'],
+                ['Forward KY', 'https://forwardky.com/feed/'],
+                ['Lane Report', 'https://www.lanereport.com/feed/'],
+            ];
+            const bingUrl = encodeURIComponent(`https://www.bing.com/news/search?q=${encodeURIComponent(city+' '+state+' news')}&format=rss`);
+
+            // Try Bing News RSS via rss2json
+            try {
+                const br = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${bingUrl}`, {signal: AbortSignal.timeout(8000)});
+                const bd = await br.json();
+                if (bd.items && bd.items.length > 0) {
+                    html += bd.items.slice(0,5).map(n =>
+                        `<div class="item">
+                            <a href="${n.link}" class="item-title" target="_blank">${n.title}</a>
+                            <div class="item-meta"><span>Bing News</span><span>${n.pubDate||''}</span></div>
+                            <div class="item-desc">${(n.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
+                        </div>`).join('');
+                }
+            } catch (e) { console.log('Bing news failed', e); }
+
+            // Regional RSS feeds
+            for (const [label, rssUrl] of feeds) {
+                try {
+                    const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`, {signal: AbortSignal.timeout(8000)});
+                    const d = await r.json();
+                    if (d.items && d.items.length > 0) {
+                        for (const item of d.items.slice(0,2)) {
+                            // Skip if title already shown (simple dedup)
+                            if (html.toLowerCase().includes(item.title.toLowerCase().slice(0,20))) continue;
+                            html += `<div class="item">
+                                <a href="${item.link}" class="item-title" target="_blank">${item.title}</a>
+                                <div class="item-meta"><span>${label}</span><span>${item.pubDate||''}</span></div>
+                                <div class="item-desc">${(item.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
+                            </div>`;
+                        }
+                    }
+                } catch (e) { console.log(label + ' failed', e); }
+            }
+
+            // Local Reddit via rss2json
+            let redditHtml = '';
+            const citySub = city.toLowerCase().replace(/[^a-z0-9]/g,'');
+            const stateSub = state.toLowerCase().replace(/[^a-z0-9]/g,'');
+            const subs = [...new Set([citySub, stateSub])];
+
+            for (const sub of subs) {
+                try {
+                    const rr = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/r/'+sub+'/.rss?limit=5')}`, {signal: AbortSignal.timeout(8000)});
+                    const rd = await rr.json();
+                    if (rd.items && rd.items.length > 0) {
+                        redditHtml += rd.items.slice(0,3).map(p =>
+                            `<div class="item">
+                                <a href="${p.link}" class="item-title" target="_blank">${p.title}</a>
+                                <div class="item-meta">
+                                    <span>r/${sub}</span>
+                                    <span class="item-score">&#9650; —</span>
+                                    <span>— comments</span>
+                                </div>
+                            </div>`).join('');
+                    }
+                } catch (e) { console.log('Reddit r/'+sub+' failed', e); }
+            }
+
+            if (redditHtml) {
+                html += `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--accent);font-weight:600;">${city} Reddit</div>`;
+                html += redditHtml;
+            }
+
+            if (!html) {
+                html = '<div class="loading">No local news found for this zip</div>';
+            }
+            container.innerHTML = html;
+        }
+
+        async function loadWeatherFromZip(zip) {
+            if (!zip || zip.length < 5) return;
+            document.getElementById('weather-location').textContent = 'Loading ' + zip + '...';
+            try {
+                const r = await fetch(`https://api.zippopotam.us/us/${zip}`, {mode: 'cors'});
+                if (!r.ok) throw new Error('Invalid zip');
+                const data = await r.json();
+                const place = data.places[0];
+                const lat = parseFloat(place.latitude);
+                const lon = parseFloat(place.longitude);
+                const city = place['place name'];
+                const state = place['state abbreviation'];
+                
+                // Fetch weather from Open-Meteo
+                const wr = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,weather_code&forecast_days=4&timezone=auto&temperature_unit=fahrenheit`);
+                const wd = await wr.json();
+                const cur = wd.current || {};
+                const codes = {0:'Clear',1:'Mainly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',51:'Light drizzle',53:'Drizzle',61:'Light rain',63:'Rain',71:'Light snow',73:'Snow',95:'Thunderstorm'};
+                const forecast = (wd.daily?.time || []).slice(0,4).map((t,i) => ({
+                    name: i===0?'Today':t.slice(5),
+                    temp: wd.daily.temperature_2m_max[i]
+                }));
+                
+                // Update DOM
+                document.getElementById('weather-location').textContent = `${city}, ${state}`;
+                document.getElementById('weather-desc').textContent = codes[cur.weather_code] || '';
+                document.getElementById('weather-temp').textContent = `${Math.round(cur.temperature_2m)}F`;
+                document.getElementById('weather-forecast').innerHTML = forecast.map(f =>
+                    `<div style="text-align:center;"><div style="font-weight:600;color:var(--text);">${f.name}</div><div>${Math.round(f.temp)}F</div></div>`
+                ).join('');
+
+                // Persist in sessionStorage so refresh keeps this location
+                sessionStorage.setItem('ai-dashboard-zip', zip);
+                sessionStorage.setItem('ai-dashboard-city', city);
+                sessionStorage.setItem('ai-dashboard-state', state);
+
+                // Fetch local news + Reddit for this city/state
+                loadLocalNewsAndReddit(city, state);
+            } catch (e) {
+                document.getElementById('weather-location').textContent = 'Weather unavailable';
+                console.error(e);
+            }
+        }
+
+        // Theme toggle
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme') || 'dark';
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('ai-dashboard-theme', next);
+        }
+        (function initTheme() {
+            const saved = localStorage.getItem('ai-dashboard-theme');
+            if (saved) document.documentElement.setAttribute('data-theme', saved);
+        })();
+
+        // Restore zip + city from previous session
+        (function restoreZip() {
+            const savedZip = sessionStorage.getItem('ai-dashboard-zip');
+            const savedCity = sessionStorage.getItem('ai-dashboard-city');
+            if (savedZip && savedCity) {
+                document.getElementById('zip-input').value = savedZip;
+                loadWeatherFromZip(savedZip);
+            }
+        })();
+
+        loadData();
+        setInterval(loadData, 5 * 60 * 1000);
+    </script>
+</body>
+</html>

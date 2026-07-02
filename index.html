@@ -1,823 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI News Dashboard</title>
-    <style>
-        :root {
-            --bg: #0a0a0f;
-            --bg-card: #12121a;
-            --bg-hover: #1a1a2e;
-            --text: #e0e0e0;
-            --text-muted: #888;
-            --accent: #00d4aa;
-            --accent-dim: #00d4aa33;
-            --danger: #ff4757;
-            --warning: #ffa502;
-            --info: #3498db;
-            --border: #2a2a3a;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-        .container { max-width: 1500px; margin: 0 auto; padding: 20px; }
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 30px;
-        }
-        h1 { font-size: 1.8rem; font-weight: 700; }
-        h1 span { color: var(--accent); }
-        .status {
-            display: flex; align-items: center; gap: 8px;
-            font-size: 0.85rem; color: var(--text-muted);
-        }
-        .status-dot {
-            width: 8px; height: 8px; border-radius: 50%;
-            background: var(--accent); animation: pulse 2s infinite;
-        }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .grid-2 { grid-template-columns: repeat(2, 1fr); }
-        .grid-1 { grid-template-columns: 1fr; }
-        
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            transition: transform 0.2s, border-color 0.2s;
-            display: flex;
-            flex-direction: column;
-            max-height: 580px;
-        }
-        .card:hover { transform: translateY(-2px); border-color: var(--accent-dim); }
-        .card-header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 16px;
-            flex-shrink: 0;
-        }
-        .card-content {
-            overflow-y: auto;
-            overflow-x: hidden;
-            flex: 1;
-            padding-right: 8px;
-            margin-right: -8px;
-            scrollbar-width: thin;
-            scrollbar-color: #3a3a4a transparent;
-        }
-        /* WebKit scrollbar */
-        .card-content::-webkit-scrollbar {
-            width: 6px;
-        }
-        .card-content::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .card-content::-webkit-scrollbar-thumb {
-            background: #3a3a4a;
-            border-radius: 3px;
-        }
-        .card-content::-webkit-scrollbar-thumb:hover {
-            background: #4a4a5a;
-        }
-        /* Summary card: taller since it's full-width */
-        .grid-1 .card {
-            max-height: 300px;
-        }
-        .card-title {
-            font-size: 1.1rem; font-weight: 600;
-            display: flex; align-items: center; gap: 8px;
-        }
-        .card-icon { font-size: 1.3rem; }
-        .badge {
-            padding: 2px 10px; border-radius: 20px;
-            font-size: 0.75rem; font-weight: 500;
-        }
-        .badge-new { background: var(--accent-dim); color: var(--accent); }
-        .badge-hot { background: #ff475733; color: var(--danger); }
-        .badge-live { background: #3498db33; color: var(--info); }
-        
-        .item {
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        .item:last-child { border-bottom: none; }
-        .item-title {
-            font-weight: 500; color: var(--text);
-            text-decoration: none; display: block;
-            margin-bottom: 3px; font-size: 0.88rem;
-        }
-        .item-title:hover { color: var(--accent); }
-        .item-meta {
-            font-size: 0.75rem; color: var(--text-muted);
-            display: flex; gap: 12px; flex-wrap: wrap;
-        }
-        .item-score { color: var(--accent); font-weight: 500; }
-        .item-desc {
-            font-size: 0.8rem; color: var(--text-muted);
-            margin-top: 3px; line-height: 1.4;
-        }
-        
-        .summary-box {
-            background: var(--bg-hover);
-            border-left: 3px solid var(--accent);
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            font-size: 0.92rem;
-            line-height: 1.7;
-        }
-        .signal {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin: 4px 4px 4px 0;
-        }
-        .signal-buy { background: #00d4aa22; color: #00d4aa; }
-        .signal-sell { background: #ff475722; color: var(--danger); }
-        .signal-watch { background: #ffa50222; color: var(--warning); }
-        
-        .bittensor-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-            margin-top: 10px;
-        }
-        .metric {
-            background: var(--bg-hover);
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .metric-value {
-            font-size: 1.3rem; font-weight: 700; color: var(--accent);
-        }
-        .metric-label {
-            font-size: 0.7rem; color: var(--text-muted); margin-top: 2px;
-        }
-        
-        .coin-row {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 8px 0; border-bottom: 1px solid var(--border);
-        }
-        .coin-row:last-child { border-bottom: none; }
-        .coin-name { font-weight: 500; font-size: 0.9rem; }
-        .coin-symbol { color: var(--text-muted); font-size: 0.75rem; }
-        .coin-price { font-weight: 600; }
-        .coin-change { font-size: 0.8rem; }
-        .up { color: var(--accent); }
-        .down { color: var(--danger); }
-        
-        .stock-row {
-            display: grid; grid-template-columns: 2fr 1fr 1fr;
-            gap: 8px; padding: 7px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.85rem;
-        }
-        .stock-row:last-child { border-bottom: none; }
-        
-        .loading { text-align: center; padding: 30px; color: var(--text-muted); }
-        .error { text-align: center; padding: 30px; color: var(--danger); }
-        .timestamp {
-            text-align: center; color: var(--text-muted);
-            font-size: 0.8rem; margin-top: 30px; padding-top: 20px;
-            border-top: 1px solid var(--border);
-        }
-        .section-title {
-            font-size: 1.2rem; font-weight: 600;
-            margin: 30px 0 15px 0;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            overflow: hidden;
-        }
-        .section-title-text {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-shrink: 0;
-        }
-        .ticker-wrap {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-            margin-left: 20px;
-        }
-        .ticker-track {
-            display: inline-flex;
-            gap: 30px;
-            animation: ticker-scroll 800s linear infinite;
-            white-space: nowrap;
-            will-change: transform;
-        }
-        .ticker-track:hover {
-            animation-play-state: paused;
-        }
-        .ticker-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        .ticker-symbol { color: var(--text); }
-        .ticker-price { color: var(--accent); }
-        .ticker-change { font-size: 0.8rem; }
-        @keyframes ticker-scroll {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        
-        @media (max-width: 1100px) {
-            .grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .grid, .grid-2 { grid-template-columns: 1fr; }
-            .bittensor-grid { grid-template-columns: repeat(2, 1fr); }
-            header { flex-direction: column; gap: 10px; align-items: flex-start; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>AI Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+[data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;}
+[data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45}
+.ticker-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:6px 20px;font-family:'JetBrains Mono';font-size:0.72rem;color:var(--tx2);overflow:hidden;white-space:nowrap}
+.ticker-bar .up{color:var(--good)}.ticker-bar .down{color:var(--danger)}
+.header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.brand{font-weight:700;font-size:1.1rem}.brand span{color:var(--acc)}
+.header-actions{display:flex;align-items:center;gap:10px}
+.btn{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);font-family:inherit;font-size:0.75rem;padding:5px 12px;border-radius:5px;cursor:pointer;transition:.2s}
+.btn:hover{border-color:var(--acc);color:var(--acc)}
+.mid{font-family:'JetBrains Mono';font-size:0.8rem;color:var(--tx2)}
+.main{max-width:1400px;margin:0 auto;padding:16px 20px;display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.col{display:flex;flex-direction:column;gap:16px}
+.card{background:var(--bg-card);border:1px solid var(--brd);border-radius:6px;overflow:hidden}
+.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 14px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center}
+.card-hd span[data-lbl]{color:var(--tx2);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px}
+.card-bd{padding:12px 14px;max-height:420px;overflow-y:auto}
+.card-bd::-webkit-scrollbar{width:5px}
+.card-bd::-webkit-scrollbar-thumb{background:var(--brd);border-radius:4px}
+.item{padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.item:last-child{border:none}
+.item-title{font-size:0.82rem;font-weight:500;color:var(--tx);text-decoration:none;display:block;margin-bottom:3px}
+.item-title:hover{color:var(--acc)}
+.item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px}
+.score{color:var(--acc);font-size:0.7rem}
+.ld{color:var(--tx3);font-size:0.8rem;padding:14px 0;text-align:center}
+.fc{display:flex;gap:14px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
+.fc::-webkit-scrollbar{display:none}
+.fc span{flex-shrink:0;font-size:0.8rem;color:var(--tx2);white-space:nowrap}
+.fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
+.btm{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:0 20px 20px;max-width:1400px;margin:0 auto}
+.m-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:0.78rem}
+.m-row label{color:var(--tx2)}
+.m-row input{background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:5px 8px;border-radius:4px;font-size:0.78rem;width:120px}
+.m-row input:focus{outline:none;border-color:var(--acc)}
+.mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:center;justify-content:center}
+.mdl.show{display:flex}
+.mdl-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;padding:20px;width:320px}
+.mdl-box h3{margin-bottom:14px}
+@media(max-width:900px){.main{grid-template-columns:1fr}.btm{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>AI <span>News</span> Dashboard</h1>
-            <div class="status">
-                <div class="status-dot"></div>
-                <span id="last-updated">Loading...</span>
-            </div>
-        </header>
+<div class="ticker-bar" id="ticker"><span>Loading...</span></div>
+<div class="header">
+  <div class="header-actions">
+    <button class="btn" id="themeBtn" onclick="toggleTheme()">LIGHT</button>
+    <div class="brand">AI <span>DASHBOARD</span></div>
+  </div>
+  <div class="header-actions">
+    <button class="btn" onclick="openSettings()">&#9881;</button>
+    <div class="mid" id="age">--</div>
+  </div>
+</div>
 
-        <!-- WEATHER BAR -->
-        <div id="weather-bar" style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px 20px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-            <div style="display:flex;align-items:center;gap:12px;">
-                <span style="font-size:1.5rem;">&#127780;</span>
-                <div>
-                    <div id="weather-location" style="font-weight:600;font-size:0.95rem;">Loading weather...</div>
-                    <div id="weather-desc" style="font-size:0.8rem;color:var(--text-muted);">--</div>
-                </div>
-            </div>
-            <div style="display:flex;align-items:center;gap:20px;">
-                <div style="text-align:center;">
-                    <div id="weather-temp" style="font-size:1.4rem;font-weight:700;color:var(--accent);">--</div>
-                    <div style="font-size:0.7rem;color:var(--text-muted);">NOW</div>
-                </div>
-                <div id="weather-forecast" style="display:flex;gap:12px;font-size:0.75rem;color:var(--text-muted);"></div>
-                <div style="display:flex;align-items:center;gap:6px;margin-left:10px;">
-                    <input type="text" id="zip-input" placeholder="Zip" maxlength="5" style="width:60px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg-hover);color:var(--text);font-size:0.85rem;text-align:center;outline:none;" onkeypress="if(event.key==='Enter')loadWeatherFromZip(this.value)">
-                    <button onclick="loadWeatherFromZip(document.getElementById('zip-input').value)" style="padding:6px 10px;border:none;border-radius:6px;background:var(--accent);color:#000;font-size:0.8rem;font-weight:600;cursor:pointer;">Go</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid grid-1" style="margin-bottom: 20px;">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title">
-                        <span class="card-icon">&#129302;</span>
-                        Daily Intelligence Summary
-                    </div>
-                    <span class="badge badge-new">AI-Generated</span>
-                </div>
-                <div id="ai-summary"><div class="loading">Loading summary...</div></div>
-                <div id="trading-signals" style="margin-top: 12px;"></div>
-            </div>
-        </div>
-
-        <!-- TECH + REDDIT (AI row - second) -->
-        <div class="section-title"><span>&#9889;</span> Tech & Decentralized AI</div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128187;</span> GitHub AI Trending</div>
-                    <span class="badge badge-new">Today</span>
-                </div>
-                <div id="github-repos" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#9889;</span> Bittensor Intelligence</div>
-                    <span class="badge badge-live">Live</span>
-                </div>
-                <div id="bittensor-data" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128172;</span> Reddit AI Trends</div>
-                    <span class="badge badge-hot">Hot</span>
-                </div>
-                <div id="reddit-posts" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-        </div>
-
-        <!-- CRYPTO + NEWS (third row) -->
-        <div class="section-title">
-            <div class="section-title-text"><span>&#128176;</span> Crypto & Financial Markets</div>
-            <div class="ticker-wrap"><div class="ticker-track" id="market-ticker"></div></div>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128200;</span> Crypto Prices</div>
-                    <span class="badge badge-live">Live</span>
-                </div>
-                <div id="crypto-prices" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128240;</span> Crypto News</div>
-                    <span class="badge badge-hot">Trending</span>
-                </div>
-                <div id="crypto-news" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128200;</span> Hottest Stocks</div>
-                    <span class="badge badge-hot">Momentum</span>
-                </div>
-                <div id="stocks-trending" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-        </div>
-
-        <!-- NEWS + LOCAL (fourth row) -->
-        <div class="section-title"><span>&#128240;</span> Global News & Intelligence</div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#127760;</span> AP News / World Headlines</div>
-                    <span class="badge badge-new">Latest</span>
-                </div>
-                <div id="ap-news" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#128680;</span> Defense & Conflicts</div>
-                    <span class="badge badge-hot">High Priority</span>
-                </div>
-                <div id="defense-news" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title"><span class="card-icon">&#127968;</span> Local News</div>
-                    <span class="badge badge-new">Near You</span>
-                </div>
-                <div id="local-news" class="card-content"><div class="loading">Loading...</div></div>
-            </div>
-        </div>
-
-        <div class="timestamp">
-            Auto-refreshes every 5 minutes | Data updated: <span id="timestamp">--</span>
-        </div>
+<div class="main">
+<div class="col">
+  <div class="card">
+    <div class="card-hd"><span>&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
+    <div class="card-bd">
+      <div class="fc" id="local-forecast"></div>
+      <div id="local-news" style="margin-top:8px"></div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP</span></div>
+    <div class="card-bd" id="ap-news"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE <span data-lbl>PRIORITY</span></div>
+    <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
+  </div>
+</div>
+<div class="col">
+  <div class="card">
+    <div class="card-hd"><span>&#129302;</span> BITTENSOR SUBNETS <span data-lbl id="subCnt">128</span></div>
+    <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
+    <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+    <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
+    <div class="card-bd" id="stocks"><div class="ld">Loading...</div></div>
+  </div>
+</div>
+</div>
 
-    <script>
-        const DEMO = {
-            timestamp: new Date().toISOString(),
-            summary: "Market alert: TAO up 5.2% on subnet growth. Bitcoin holds above $65k. Reddit buzzing about local LLM benchmarks. AP News: ongoing diplomatic tensions in Middle East. Defense: Ukraine reports drone strikes near Black Sea ports. Stocks: NVDA breaks $140 on AI demand, COIN surges 8%.",
-            signals: [
-                { type: "buy", text: "TAO accumulation zone" },
-                { type: "watch", text: "NVDA earnings this week" },
-                { type: "watch", text: "BTC $65k support test" }
-            ],
-            reddit: [
-                { title: "Best Local Agents - June 2026", subreddit: "LocalLLaMA", score: 1240, comments: 340, url: "#" },
-                { title: "Tokenomics deep dive", subreddit: "Bittensor", score: 340, comments: 56, url: "#" },
-                { title: "Claude extended thinking benchmarks", subreddit: "MachineLearning", score: 780, comments: 89, url: "#" }
-            ],
-            crypto: {
-                prices: [
-                    { name: "Bitcoin", symbol: "BTC", price: 65234, change_24h: 1.2 },
-                    { name: "Ethereum", symbol: "ETH", price: 3456, change_24h: -0.5 },
-                    { name: "Solana", symbol: "SOL", price: 145, change_24h: 3.4 },
-                    { name: "Bittensor", symbol: "TAO", price: 231.91, change_24h: 5.2 }
-                ],
-                news: [
-                    { title: "SEC approves spot Ethereum ETF", url: "#", description: "Major regulatory milestone for ETH..." },
-                    { title: "Bitcoin miners signal accumulation", url: "#", description: "On-chain data shows increased hodling..." }
-                ]
-            },
-            news: [
-                { title: "Diplomatic talks stall in Middle East", url: "#", source: "AP News", category: "world", description: "Efforts to broker ceasefire face new obstacles..." },
-                { title: "EU announces new climate regulations", url: "#", source: "Reuters", category: "politics", description: "Landmark legislation targets 2030 carbon goals..." }
-            ],
-            stocks: {
-                trending: [
-                    { symbol: "NVDA", name: "NVIDIA", price: 142.50, change_percent: 4.2 },
-                    { symbol: "COIN", name: "Coinbase", price: 245, change_percent: 8.1 },
-                    { symbol: "TSLA", name: "Tesla", price: 198, change_percent: -2.3 }
-                ],
-                meme_momentum: [
-                    { symbol: "GME", name: "GameStop", price: 28.50, change_percent: 12.5 },
-                    { symbol: "AMC", name: "AMC", price: 5.20, change_percent: 7.8 }
-                ]
-            },
-            defense: [
-                { title: "Ukraine drones target Black Sea ports", url: "#", source: "Reuters", description: "Overnight strikes reported near Odesa..." },
-                { title: "Israeli strikes in Gaza continue", url: "#", source: "BBC", description: "Civilian casualties reported amid ground operations..." },
-                { title: "China military exercises near Taiwan", url: "#", source: "Defense News", description: "PLA conducts naval drills in contested waters..." }
-            ],
-            bittensor: {
-                price: 231.91,
-                price_change_24h: 5.2,
-                active_subnets: 45,
-                total_miners: 12500,
-                top_subnets: [
-                    { name: "SN22", miners: 1840, emission: 12.5, change: "+2.3%" },
-                    { name: "SN41", miners: 920, emission: 8.2, change: "-5.1%" },
-                    { name: "SN39", miners: 1450, emission: 15.1, change: "+0.8%" }
-                ]
-            },
-            github: [
-                { name: "nousresearch/hermes", description: "Hermes Agent - open-source AI agent framework", stars: 5200, language: "Python", url: "#" },
-                { name: "opentensor/bittensor", description: "Bittensor - decentralized AI network", stars: 8900, language: "Rust", url: "#" }
-            ]
-        };
+<div class="btm">
+  <div class="card">
+    <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
+    <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#129504;</span> DAILY AI SUMMARY</div>
+    <div class="card-bd" id="summary"><div class="ld">Loading...</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
+    <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
+  </div>
+</div>
 
-        async function loadData() {
-            try {
-                let data;
-                try {
-                    const r = await fetch('data.json?t=' + Date.now());
-                    if (r.ok) data = await r.json();
-                } catch (e) { console.log('No data.json, using demo'); }
-                if (!data) data = DEMO;
-                renderAll(data);
+<!-- Modal -->
+<div class="mdl" id="mdl" onclick="if(event.target===this)closeSettings()">
+  <div class="mdl-box">
+    <h3>Settings</h3>
+    <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5"></div>
+    <div class="m-row"><label>City (optional)</label><input id="cityIn" placeholder="Louisville"></div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
+      <button class="btn" onclick="closeSettings()">Cancel</button>
+      <button class="btn" style="background:var(--acc);color:#000;font-weight:700" onclick="saveSettings()">Save</button>
+    </div>
+  </div>
+</div>
 
-                // On page load: restore persisted zip/location from sessionStorage
-                const savedZip = sessionStorage.getItem('ai-dashboard-zip');
-                if (savedZip) {
-                    const savedCity = sessionStorage.getItem('ai-dashboard-city');
-                    const savedState = sessionStorage.getItem('ai-dashboard-state');
-                    if (savedCity && savedState) {
-                        // Override weather bar with saved location
-                        document.getElementById('weather-location').textContent = `${savedCity}, ${savedState}`;
-                        // Fetch fresh weather + local content for saved zip
-                        loadWeatherFromZip(savedZip);
-                    }
-                }
-            } catch (err) {
-                console.error(err);
-                document.getElementById('ai-summary').innerHTML = '<div class="error">Failed to load data</div>';
-            }
-        }
+<script>
+const $=id=>document.getElementById(id);
+function fmtAgo(ts){
+  if(!ts)return'';
+  var d=Date.now()-new Date(ts).getTime();
+  var m=Math.floor(d/60000);
+  if(m<1)return'just now';
+  if(m<60)return m+'m ago';
+  var h=Math.floor(m/60);
+  if(h<24)return h+'h ago';
+  return Math.floor(h/24)+'d ago';
+}
+var z=localStorage.getItem('dash_zip')||'';
+var c=localStorage.getItem('dash_city')||'';
+function applyTheme(){
+  var t=localStorage.getItem('dash_theme')||'dark';
+  document.documentElement.setAttribute('data-theme',t);
+  $('themeBtn').textContent=t==='light'?'DARK':'LIGHT';
+}
+function toggleTheme(){
+  var t=document.documentElement.getAttribute('data-theme')||'dark';
+  var n=t==='dark'?'light':'dark';
+  localStorage.setItem('dash_theme',n);applyTheme();
+}
+function openSettings(){$('mdl').classList.add('show');$('zipIn').value=z;$('cityIn').value=c;}
+function closeSettings(){$('mdl').classList.remove('show');}
+function saveSettings(){
+  var zi=$('zipIn').value.trim(),ci=$('cityIn').value.trim();
+  if(!zi&&!ci){alert('Enter zip code or city');return}
+  if(zi){z=zi;localStorage.setItem('dash_zip',zi)}
+  if(ci){c=ci;localStorage.setItem('dash_city',ci)}
+  closeSettings();loadData();
+}
 
-        function renderAll(d) {
-            // Weather bar
-            const w = d.weather || {};
-            const current = w.current || {};
-            const city = w.city || 'Unknown';
-            const state = w.state || '';
-            const temp = current.temperature || '--';
-            const desc = current.description || '';
-            document.getElementById('weather-location').textContent = `${city}, ${state}`;
-            document.getElementById('weather-desc').textContent = desc;
-            document.getElementById('weather-temp').textContent = typeof temp === 'number' ? `${Math.round(temp)}F` : temp;
-            const forecast = w.forecast || [];
-            document.getElementById('weather-forecast').innerHTML = forecast.slice(0,4).map((f, i) => {
-                const label = i === 0 ? 'Today' : (f.name || f.date || '').slice(0,3);
-                const t = f.temp || f.high || '--';
-                return `<div style="text-align:center;"><div style="font-weight:600;color:var(--text);">${label}</div><div>${typeof t==='number'?Math.round(t):t}F</div></div>`;
-            }).join('') || '<span style="font-size:0.75rem;color:var(--text-muted);">No forecast</span>';
+function renderAll(d){
+  var now=new Date();
+  $('age').textContent=fmtAgo(d.timestamp);
 
-            // Summary
-            document.getElementById('ai-summary').innerHTML =
-                `<div class="summary-box">${d.summary || 'No summary yet.'}</div>`;
-            const sigs = d.signals || [];
-            document.getElementById('trading-signals').innerHTML = sigs.map(s =>
-                `<span class="signal signal-${s.type}">${s.text}</span>`).join('');
+  var t=((d.ticker||{}).items||[]).slice(0,12).map(function(x){
+    var cls=x.change>=0?'up':'down';
+    return'<span>'+x.symbol+': <b class="'+cls+'">'+x.price+' ('+(x.change>=0?'+':'')+x.change+'%)</b></span>';
+  }).join('')||'<span>Markets loading...</span>';
+  $('ticker').innerHTML=t;
 
-            // Crypto prices
-            const crypto = d.crypto || {};
-            const prices = crypto.prices || [];
-            document.getElementById('crypto-prices').innerHTML = prices.map(c => {
-                const cls = c.change_24h >= 0 ? 'up' : 'down';
-                const sign = c.change_24h >= 0 ? '+' : '';
-                return `<div class="coin-row">
-                    <div><div class="coin-name">${c.name}</div><div class="coin-symbol">${c.symbol}</div></div>
-                    <div class="coin-price">$${c.price.toLocaleString()}</div>
-                    <div class="coin-change ${cls}">${sign}${c.change_24h}%</div>
-                </div>`;
-            }).join('') || '<div class="loading">No data</div>';
+  var w=d.weather||{},cur=w.current||{},fc=w.forecast||[];
+  $('localTitle').textContent=(cur.temperature?Math.round(cur.temperature)+'F ':'')+(w.city||'LOCAL')+' NEWS'+(cur.description?' | '+cur.description:'');
+  $('local-forecast').innerHTML=fc.slice(0,5).map(function(f){
+    var cl=f.temp>75?'w':f.temp<55?'c':'';
+    return'<span class="'+cl+'">'+(f.name||'').slice(0,3)+' '+Math.round(f.temp||0)+'F '+(f.description||'')+'</span>';
+  }).join('');
 
-            // Crypto news
-            const cnews = crypto.news || [];
-            document.getElementById('crypto-news').innerHTML = cnews.map(n =>
-                `<div class="item">
-                    <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>
-                    <div class="item-desc">${n.description || ''}</div>
-                </div>`).join('') || '<div class="loading">No data</div>';
+  var lc=d.local_channels||[],lr=d.local_news||[],lred=d.local_reddit||[];
+  var h='';
+  if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;border-bottom:1px solid var(--brd);padding-bottom:4px">TV &amp; Papers</div>'+lc.slice(0,5).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>';}).join('');}
+  if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:10px 0 6px;border-bottom:1px solid var(--brd);padding-bottom:4px">News &amp; RSS</div>'+lr.slice(0,4).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>';}).join('');}
+  if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:10px 0 6px;border-bottom:1px solid var(--brd);padding-bottom:4px">Local Reddit</div>'+lred.slice(0,3).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>';}).join('');}
+  $('local-news').innerHTML=h||'<div class="ld">No local data</div>';
 
-            // Stocks
-            const stocks = d.stocks || {};
-            const trending = (stocks.trending || []).concat(stocks.meme_momentum || []).sort((a,b) => Math.abs(b.change_percent)-Math.abs(a.change_percent));
-            document.getElementById('stocks-trending').innerHTML = `
-                <div class="stock-row" style="font-weight:600;color:var(--text-muted);font-size:0.75rem;">
-                    <span>SYMBOL</span><span>PRICE</span><span>CHG</span>
-                </div>` +
-                trending.slice(0,10).map(s => {
-                    const cls = s.change_percent >= 0 ? 'up' : 'down';
-                    const sign = s.change_percent >= 0 ? '+' : '';
-                    return `<div class="stock-row">
-                        <span>${s.symbol} <small style="color:var(--text-muted)">${s.name || ''}</small></span>
-                        <span>$${s.price}</span>
-                        <span class="${cls}">${sign}${s.change_percent}%</span>
-                    </div>`;
-                }).join('') || '<div class="loading">No data</div>';
+  $('ap-news').innerHTML=(d.news||[]).slice(0,6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>';}).join('')||'<div class="ld">No news</div>';
 
-            // Scrolling market ticker
-            let tickerHtml = [];
+  $('defense-news').innerHTML=(d.defense||[]).slice(0,6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>';}).join('')||'<div class="ld">No data</div>';
 
-            const cryptoSymbols = ['BTC','ETH','XRP','TAO','SOL','LINK','RNDR','FET','GRT','OCEAN'];
-            const cryptoPrices = d.crypto?.prices || [];
-            cryptoSymbols.forEach(sym => {
-                const c = cryptoPrices.find(x => x.symbol === sym);
-                if (c) {
-                    const cls = c.change_24h >= 0 ? 'up' : 'down';
-                    const sign = c.change_24h >= 0 ? '+' : '';
-                    tickerHtml.push(`<span class="ticker-item"><span class="ticker-symbol">${c.symbol}</span><span class="ticker-price">$${c.price.toLocaleString()}</span><span class="ticker-change ${cls}">${sign}${c.change_24h}%</span></span>`);
-                }
-            });
+  var bit=d.bittensor||{},subs=(bit.top_subnets||[]).sort(function(a,b){return b.emission-a.emission;});
+  var cc=bit.price_change_24h>=0?'var(--good)':'var(--danger)';
+  var cs=bit.price_change_24h>=0?'+':'';
+  $('bittensor').innerHTML='<div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">'+
+    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">$'+(bit.price||0).toFixed(2)+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">TAO</div></div>'+
+    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700;color:'+cc+'">'+cs+(bit.price_change_24h||0).toFixed(1)+'%</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">24H</div></div>'+
+    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">'+(bit.active_subnets||0)+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">Subnets</div></div>'+
+    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">'+(bit.total_miners||0).toLocaleString()+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">Miners</div></div>'+
+    '</div>'+
+    '<div style="display:grid;grid-template-columns:28px 1fr 48px 56px 44px;gap:6px;padding:5px 0;font-size:0.65rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd);margin-bottom:4px"><span>#</span><span>Subnet</span><span>Min</span><span>TAO/d</span><span>24h</span></div>'+
+    subs.map(function(s,i){return'<div style="display:grid;grid-template-columns:28px 1fr 48px 56px 44px;gap:6px;padding:4px 0;font-size:0.78rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center;opacity:'+(i>4?0.55:1)+'"><span style="color:var(--tx3);font-size:0.72rem;font-weight:700">'+(i+1)+'</span><span style="font-weight:500">'+s.name+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:var(--tx3)">'+(s.miners||0)+'</span><span style="font-family:JetBrains Mono;color:var(--acc);font-size:0.75rem;font-weight:600">'+s.emission+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+((s.change||'').includes('+')?'var(--good)':'var(--danger)')+'">'+s.change+'</span></div>';}).join('')||'<div class="ld">No data</div>';
+  $('subCnt').textContent=bit.active_subnets||128;
 
-            const bit = d.bittensor || {};
-            if (bit.price && !tickerHtml.some(t => t.includes('>TAO<')) && !tickerHtml.some(t => t.includes('"TAO"'))) {
-                const cls = (bit.price_change_24h || 0) >= 0 ? 'up' : 'down';
-                const sign = (bit.price_change_24h || 0) >= 0 ? '+' : '';
-                tickerHtml.push(`<span class="ticker-item"><span class="ticker-symbol">TAO</span><span class="ticker-price">$${bit.price.toFixed(2)}</span><span class="ticker-change ${cls}">${sign}${bit.price_change_24h}%</span></span>`);
-            }
+  $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>';}).join('')||'<div class="ld">No Reddit data</div>';
 
-            const indexes = d.indexes || [
-                { symbol: 'S&P 500', price: 5450.2, change: 0.45 },
-                { symbol: 'NASDAQ',  price: 17550.3, change: 0.82 },
-                { symbol: 'DOW',     price: 39120.5, change: -0.12 },
-                { symbol: 'VIX',     price: 13.25,   change: -2.1 }
-            ];
-            indexes.forEach(idx => {
-                const cls = idx.change >= 0 ? 'up' : 'down';
-                const sign = idx.change >= 0 ? '+' : '';
-                const priceDisplay = idx.price >= 1000 ? '$' + idx.price.toLocaleString() : '$' + idx.price;
-                tickerHtml.push(`<span class="ticker-item"><span class="ticker-symbol">${idx.symbol}</span><span class="ticker-price">${priceDisplay}</span><span class="ticker-change ${cls}">${sign}${idx.change}%</span></span>`);
-            });
+  var cp=(d.crypto||{}).prices||[];
+  $('crypto-prices').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">'+cp.slice(0,6).map(function(c){return'<div style="background:var(--bg-el);border:1px solid var(--brd);padding:8px 10px;border-radius:4px;display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.75rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>';}).join('')+'</div>'||'<div class="ld">No data</div>';
 
-            const stocks = d.stocks || {};
-            const trending = (stocks.trending || []).concat(stocks.meme_momentum || []).sort((a,b) => Math.abs(b.change_percent)-Math.abs(a.change_percent));
-            trending.slice(0,6).forEach(s => {
-                const cls = s.change_percent >= 0 ? 'up' : 'down';
-                const sign = s.change_percent >= 0 ? '+' : '';
-                tickerHtml.push(`<span class="ticker-item"><span class="ticker-symbol">${s.symbol}</span><span class="ticker-price">$${s.price}</span><span class="ticker-change ${cls}">${sign}${s.change_percent}%</span></span>`);
-            });
+  var st=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
+  $('stocks').innerHTML=st.slice(0,3).map(function(s){return'<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>';}).join('')+mm.slice(0,2).map(function(s){return'<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>';}).join('')||'<div class="ld">No stock data</div>';
 
-            const tStr = tickerHtml.join('');
-            document.getElementById('market-ticker').innerHTML = tStr + tStr;
+  $('github-repos').innerHTML=(d.github||[]).slice(0,6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>';}).join('')||'<div class="ld">No data</div>';
 
-            // AP/News
-            const news = d.news || [];
-            document.getElementById('ap-news').innerHTML = news.slice(0,8).map(n =>
-                `<div class="item">
-                    <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>
-                    <div class="item-meta"><span>${n.source || 'News'}</span><span>${n.category || ''}</span></div>
-                    <div class="item-desc">${n.description || ''}</div>
-                </div>`).join('') || '<div class="loading">No news yet</div>';
+  $('summary').innerHTML='<div style="font-size:0.8rem;line-height:1.55;color:var(--tx2);white-space:pre-wrap">'+((d.summary||'No summary yet.').replace(/\n/g,'<br>'))+'</div>';
 
-            // Defense
-            const defense = d.defense || [];
-            document.getElementById('defense-news').innerHTML = defense.slice(0,8).map(n =>
-                `<div class="item">
-                    <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>
-                    <div class="item-meta"><span>${n.source || 'Defense'}</span></div>
-                    <div class="item-desc">${n.description || ''}</div>
-                </div>`).join('') || '<div class="loading">No defense data yet</div>';
+  $('signals').innerHTML=(d.signals||[]).map(function(s){return'<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>';}).join('')||'<div class="ld">No signals</div>';
+}
 
-            // Local News + Local Reddit combined
-            const localNews = d.local_news || [];
-            const localReddit = d.local_reddit || [];
-            let localHtml = '';
-            if (localNews.length > 0) {
-                localHtml += localNews.slice(0,5).map(n =>
-                    `<div class="item">
-                        <a href="${n.url}" class="item-title" target="_blank">${n.title}</a>
-                        <div class="item-meta"><span>${n.source || 'Local'}</span><span>${n.published || ''}</span></div>
-                        <div class="item-desc">${n.description || ''}</div>
-                    </div>`).join('');
-            }
-            if (localReddit.length > 0) {
-                localHtml += `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--accent);font-weight:600;">${d.weather?.city || 'Local'} Reddit</div>`;
-                localHtml += localReddit.slice(0,5).map(p =>
-                    `<div class="item">
-                        <a href="${p.url}" class="item-title" target="_blank">${p.title}</a>
-                        <div class="item-meta">
-                            <span>r/${p.subreddit}</span>
-                            <span class="item-score">&#9650; ${p.score || 0}</span>
-                            <span>${p.comments || 0} comments</span>
-                        </div>
-                    </div>`).join('');
-            }
-            if (!localHtml) {
-                localHtml = '<div class="loading">Enter zip in weather bar for local news & Reddit</div>';
-            }
-            document.getElementById('local-news').innerHTML = localHtml;
-
-            // Reddit
-            const reddit = d.reddit || [];
-            document.getElementById('reddit-posts').innerHTML = reddit.slice(0,6).map(p =>
-                `<div class="item">
-                    <a href="${p.url}" class="item-title" target="_blank">${p.title}</a>
-                    <div class="item-meta">
-                        <span>r/${p.subreddit}</span>
-                        <span class="item-score">&#9650; ${p.score}</span>
-                        <span>${p.comments} comments</span>
-                    </div>
-                </div>`).join('') || '<div class="loading">No Reddit data yet</div>';
-
-            // GitHub
-            const gh = d.github || [];
-            document.getElementById('github-repos').innerHTML = gh.slice(0,6).map(r =>
-                `<div class="item">
-                    <a href="${r.url}" class="item-title" target="_blank">${r.name}</a>
-                    <div class="item-desc">${r.description || ''}</div>
-                    <div class="item-meta">
-                        <span class="item-score">&#9733; ${(r.stars || 0).toLocaleString()}</span>
-                        <span>${r.language || ''}</span>
-                    </div>
-                </div>`).join('') || '<div class="loading">No GitHub data yet</div>';
-
-            // Bittensor
-            const bit = d.bittensor || {};
-            const cColor = (bit.price_change_24h || 0) >= 0 ? 'var(--accent)' : 'var(--danger)';
-            const cSign = (bit.price_change_24h || 0) >= 0 ? '+' : '';
-            document.getElementById('bittensor-data').innerHTML = `
-                <div class="bittensor-grid">
-                    <div class="metric">
-                        <div class="metric-value">$${(bit.price || 0).toFixed(2)}</div>
-                        <div class="metric-label">TAO Price</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value" style="color:${cColor}">${cSign}${(bit.price_change_24h || 0)}%</div>
-                        <div class="metric-label">24h Change</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">${bit.active_subnets || 0}</div>
-                        <div class="metric-label">Subnets</div>
-                    </div>
-                </div>
-                <div style="margin-top:14px;">
-                    ${(bit.top_subnets || []).map(sn => `
-                        <div class="item">
-                            <a href="#" class="item-title">${sn.name}</a>
-                            <div class="item-meta">
-                                <span>${sn.miners} miners</span>
-                                <span class="item-score">${sn.emission} TAO/d</span>
-                                <span style="color:${(sn.change || '').includes('+')?'var(--accent)':'var(--danger)'}">${sn.change}</span>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>`;
-
-            // Timestamps
-            const dt = new Date(d.timestamp || Date.now());
-            document.getElementById('last-updated').textContent = 'Updated ' + dt.toLocaleTimeString();
-            document.getElementById('timestamp').textContent = dt.toLocaleString();
-        }
-
-        async function loadLocalNewsAndReddit(city, state) {
-            const container = document.getElementById('local-news');
-            container.innerHTML = '<div class="loading">Loading local news & Reddit...</div>';
-
-            let html = '';
-
-            // Local news via rss2json (WFPL, KY Sports Radio, etc)
-            const feeds = [
-                ['WFPL NPR', 'https://wfpl.org/feed/'],
-                ['KY Sports Radio', 'https://kentuckysportsradio.com/feed/'],
-                ['Forward KY', 'https://forwardky.com/feed/'],
-                ['Lane Report', 'https://www.lanereport.com/feed/'],
-            ];
-            const bingUrl = encodeURIComponent(`https://www.bing.com/news/search?q=${encodeURIComponent(city+' '+state+' news')}&format=rss`);
-
-            // Try Bing News RSS via rss2json
-            try {
-                const br = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${bingUrl}`, {signal: AbortSignal.timeout(8000)});
-                const bd = await br.json();
-                if (bd.items && bd.items.length > 0) {
-                    html += bd.items.slice(0,5).map(n =>
-                        `<div class="item">
-                            <a href="${n.link}" class="item-title" target="_blank">${n.title}</a>
-                            <div class="item-meta"><span>Bing News</span><span>${n.pubDate||''}</span></div>
-                            <div class="item-desc">${(n.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
-                        </div>`).join('');
-                }
-            } catch (e) { console.log('Bing news failed', e); }
-
-            // Regional RSS feeds
-            for (const [label, rssUrl] of feeds) {
-                try {
-                    const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`, {signal: AbortSignal.timeout(8000)});
-                    const d = await r.json();
-                    if (d.items && d.items.length > 0) {
-                        for (const item of d.items.slice(0,2)) {
-                            // Skip if title already shown (simple dedup)
-                            if (html.toLowerCase().includes(item.title.toLowerCase().slice(0,20))) continue;
-                            html += `<div class="item">
-                                <a href="${item.link}" class="item-title" target="_blank">${item.title}</a>
-                                <div class="item-meta"><span>${label}</span><span>${item.pubDate||''}</span></div>
-                                <div class="item-desc">${(item.description||'').replace(/<[^>]+>/g,'').slice(0,180)}</div>
-                            </div>`;
-                        }
-                    }
-                } catch (e) { console.log(label + ' failed', e); }
-            }
-
-            // Local Reddit via rss2json
-            let redditHtml = '';
-            const citySub = city.toLowerCase().replace(/[^a-z0-9]/g,'');
-            const stateSub = state.toLowerCase().replace(/[^a-z0-9]/g,'');
-            const subs = [...new Set([citySub, stateSub])];
-
-            for (const sub of subs) {
-                try {
-                    const rr = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/r/'+sub+'/.rss?limit=5')}`, {signal: AbortSignal.timeout(8000)});
-                    const rd = await rr.json();
-                    if (rd.items && rd.items.length > 0) {
-                        redditHtml += rd.items.slice(0,3).map(p =>
-                            `<div class="item">
-                                <a href="${p.link}" class="item-title" target="_blank">${p.title}</a>
-                                <div class="item-meta">
-                                    <span>r/${sub}</span>
-                                    <span class="item-score">&#9650; —</span>
-                                    <span>— comments</span>
-                                </div>
-                            </div>`).join('');
-                    }
-                } catch (e) { console.log('Reddit r/'+sub+' failed', e); }
-            }
-
-            if (redditHtml) {
-                html += `<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--accent);font-weight:600;">${city} Reddit</div>`;
-                html += redditHtml;
-            }
-
-            if (!html) {
-                html = '<div class="loading">No local news found for this zip</div>';
-            }
-            container.innerHTML = html;
-        }
-
-        async function loadWeatherFromZip(zip) {
-            if (!zip || zip.length < 5) return;
-            document.getElementById('weather-location').textContent = 'Loading ' + zip + '...';
-            try {
-                const r = await fetch(`https://api.zippopotam.us/us/${zip}`, {mode: 'cors'});
-                if (!r.ok) throw new Error('Invalid zip');
-                const data = await r.json();
-                const place = data.places[0];
-                const lat = parseFloat(place.latitude);
-                const lon = parseFloat(place.longitude);
-                const city = place['place name'];
-                const state = place['state abbreviation'];
-                
-                // Fetch weather from Open-Meteo
-                const wr = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,weather_code&forecast_days=4&timezone=auto&temperature_unit=fahrenheit`);
-                const wd = await wr.json();
-                const cur = wd.current || {};
-                const codes = {0:'Clear',1:'Mainly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',51:'Light drizzle',53:'Drizzle',61:'Light rain',63:'Rain',71:'Light snow',73:'Snow',95:'Thunderstorm'};
-                const forecast = (wd.daily?.time || []).slice(0,4).map((t,i) => ({
-                    name: i===0?'Today':t.slice(5),
-                    temp: wd.daily.temperature_2m_max[i]
-                }));
-                
-                // Update DOM
-                document.getElementById('weather-location').textContent = `${city}, ${state}`;
-                document.getElementById('weather-desc').textContent = codes[cur.weather_code] || '';
-                document.getElementById('weather-temp').textContent = `${Math.round(cur.temperature_2m)}F`;
-                document.getElementById('weather-forecast').innerHTML = forecast.map(f =>
-                    `<div style="text-align:center;"><div style="font-weight:600;color:var(--text);">${f.name}</div><div>${Math.round(f.temp)}F</div></div>`
-                ).join('');
-
-                // Persist in sessionStorage so refresh keeps this location
-                sessionStorage.setItem('ai-dashboard-zip', zip);
-                sessionStorage.setItem('ai-dashboard-city', city);
-                sessionStorage.setItem('ai-dashboard-state', state);
-
-                // Fetch local news + Reddit for this city/state
-                loadLocalNewsAndReddit(city, state);
-            } catch (e) {
-                document.getElementById('weather-location').textContent = 'Weather unavailable';
-                console.error(e);
-            }
-        }
-
-        loadData();
-        setInterval(loadData, 5 * 60 * 1000);
-    </script>
+async function loadData(){
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();renderAll(d)}
+  catch(e){console.error(e)}
+}
+applyTheme();
+loadData();
+setInterval(loadData,300000);
+</script>
 </body>
 </html>

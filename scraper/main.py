@@ -74,7 +74,7 @@ def build_dashboard_data():
     local_channels = get_local_channel_news(city, state)
     print(f"       Found {len(local_channels)} channel headlines")
 
-    # 3+4. Local X + Reddit via unified scraper (data-universe patterns)
+    # 3+4. Local X & Reddit via unified scraper (data-universe patterns)
     print(f"\n[3/11] Fetching local X & Reddit ({city}, {state})...")
     local_data = get_local_content(city, state, max_x=8, max_reddit=8)
     local_reddit = local_data["reddit_posts"]

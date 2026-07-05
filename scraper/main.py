@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from location_scraper import resolve_location, load_config, save_config
 from reddit_scraper import get_reddit_posts, get_world_reddit_posts
 from x_scraper import get_world_x_posts
+from business_scraper import get_business_data
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
 from stocks_scraper import get_stocks_data, generate_ticker_json
@@ -76,7 +77,11 @@ def build_dashboard_data():
     stocks_data = get_stocks_data()
     ticker_data = generate_ticker_json()
 
-    print("\n[8/13] Crypto...")
+    print("\n[8/13] Business...")
+    business_data = get_business_data()
+    print(f"       {len(business_data)} items")
+
+    print("\n[9/13] Crypto...")
     crypto_data = get_crypto()
 
     print("\n[9/13] Global Reddit...")
@@ -121,6 +126,7 @@ def build_dashboard_data():
         "news": news_data.get("all_news", []),
         "stocks": stocks_data,
         "ticker": ticker_data,
+        "business": business_data,
         "defense": defense_data.get("conflicts", []),
         "weather": weather_data,
         "local_news": get_local_news(CITY, STATE, NEWSAPI_KEY).get("articles", []),

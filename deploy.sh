@@ -18,7 +18,7 @@ git rev-parse --git-dir > /dev/null 2>&1 || {
 }
 
 # Stage data.json and any other changes
-git add data.json index.html
+git add data.json index.html scraper/
 git diff --cached --quiet && {
     echo "No changes to commit."
     exit 0

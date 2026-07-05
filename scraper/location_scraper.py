@@ -75,20 +75,20 @@ def load_config(scraper_dir: str) -> dict:
     if os.path.exists(path):
         try:
             with open(path) as f:
-                return json.load(f)
+                return json.load(f).get("config", {})
         except Exception:
             pass
-    return {"location": {"zip": "40272", "city": "Louisville", "state": "Kentucky", "lat": 38.0846, "lon": -85.851}}
+    return {"zip": "40272", "city": "Louisville", "state": "Kentucky", "lat": 38.0846, "lon": -85.851}
 
 
 def save_config(scraper_dir: str, location: dict) -> None:
     """Write scraper/config.json with new location."""
     path = os.path.join(scraper_dir, "config.json")
     config = load_config(scraper_dir)
-    config["location"] = location
+    config = {**config, **location}
     with open(path, "w") as f:
-        json.dump(config, f, indent=2)
-    print(f"[OK] Config saved: {location['city']}, {location['state']}")
+        json.dump({"config": config}, f, indent=2)
+    print(f"[OK] Config saved: {config.get('city')}, {config.get('state')}")
 
 
 if __name__ == "__main__":

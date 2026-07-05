@@ -6,9 +6,11 @@
 Entry: get_local_content(city, state, max_x=8, max_reddit=8)
 """
 import asyncio, random, re, traceback, datetime as dt
-from typing import List, Dict
+from typing import List, Dict, Optional
 from urllib.parse import quote
 import time, requests, xml.etree.ElementTree as ET, html as html_module
+
+from feed_config import get_subreddits, get_x_queries
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -74,7 +76,7 @@ async def _x_search_nitter(keyword: str, limit: int = 10) -> List[Dict]:
     return posts
 
 
-async def _parse_item(item) -> Dict | None:
+async def _parse_item(item) -> Optional[Dict]:
     try:
         username_el = await item.query_selector(".username")
         username = (await username_el.get_attribute("title")) or "" if username_el else ""
@@ -114,6 +116,7 @@ def get_local_x_posts(city: str, state: str, max_results: int = 8) -> List[Dict]
     if not city:
         return []
     queries = [f'"{city}"', f'"{city}" "{state}"', f'"{state}"']
+    queries += get_x_queries(city, state)
     all_posts, seen = [], set()
     for q in queries:
         posts = _run_async(_x_search_nitter(q, limit=max_results))
@@ -206,18 +209,15 @@ def _scrape_subreddit_rss(sr_name: str, limit: int = 10) -> List[Dict]:
 
 
 def get_local_reddit(city: str, state: str, max_posts: int = 8) -> List[Dict]:
-    subs = []
-    city_sub = _subreddit_name(city)
-    state_sub = _subreddit_name(state)
-    if city_sub: subs.append(city_sub)
-    if state_sub and state_sub != city_sub: subs.append(state_sub)
-
+    subs = get_subreddits(city, state)[:3]  # only top 3 to avoid Reddit rate limits
     all_posts = []
-    for sub in subs:
+    for i, sub in enumerate(subs):
         posts = _scrape_subreddit_rss(sub, limit=10)
-        if posts: all_posts.extend(posts)
-        time.sleep(random.uniform(2, 4))
-
+        if posts:
+            all_posts.extend(posts)
+        # Sleep between requests to keep old.reddit.com happy
+        if i < len(subs) - 1:
+            time.sleep(random.uniform(8, 12))
     all_posts.sort(key=lambda x: int(x["score"]) if isinstance(x["score"], int) else 0, reverse=True)
     return all_posts[:max_posts]
 

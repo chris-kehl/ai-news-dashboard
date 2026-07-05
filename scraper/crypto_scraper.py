@@ -5,6 +5,8 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import json
+import time
+from scraper_utils import fetch_with_retry, load_scraper_cache, save_scraper_cache
 
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0 (Daily digest; bot)"
@@ -12,6 +14,10 @@ HEADERS = {
 
 def get_crypto_prices():
     """Top 10 crypto prices via CoinGecko (free, no key needed)."""
+    cached = load_scraper_cache("crypto_prices", max_age_minutes=10)
+    if cached:
+        print("      Using cached crypto prices")
+        return cached
     try:
         url = "https://api.coingecko.com/api/v3/coins/markets"
         params = {
@@ -22,8 +28,9 @@ def get_crypto_prices():
             "sparkline": "false",
             "price_change_percentage": "24h"
         }
-        r = requests.get(url, params=params, headers=HEADERS, timeout=20)
-        r.raise_for_status()
+        r = fetch_with_retry(url, params=params, headers=HEADERS, timeout=20, max_retries=3, backoff_base=3.0, retry_codes=(429, 403, 502, 503))
+        if r is None:
+            return []
         data = r.json()
         coins = []
         for coin in data:
@@ -35,6 +42,8 @@ def get_crypto_prices():
                 "change_24h": round(change, 2),
                 "market_cap": coin.get("market_cap", 0)
             })
+        if coins:
+            save_scraper_cache("crypto_prices", coins)
         return coins
     except Exception as e:
         print(f"      CoinGecko error: {e}")
@@ -49,8 +58,9 @@ def get_crypto_news():
     news = []
     for feed_url in feeds:
         try:
-            r = requests.get(feed_url, headers=HEADERS, timeout=15)
-            r.raise_for_status()
+            r = fetch_with_retry(feed_url, headers=HEADERS, timeout=15, max_retries=2, backoff_base=2.0, retry_codes=(429, 403, 502))
+            if r is None:
+                continue
             root = ET.fromstring(r.content)
             items = root.findall(".//item")
             for item in items[:8]:
@@ -77,12 +87,22 @@ def get_crypto_news():
     return uniq[:12]
 
 def get_crypto_data(file_path=None):
-    """Master entry: prices + news."""
+    """Master entry: prices + news + DDG fallback if RSS empty."""
     print("[ ] Fetching crypto prices & news...")
+    prices = get_crypto_prices()
+    news = get_crypto_news()
+    # If RSS returned nothing after 2 feeds, hit DDG news for 8 items
+    if not news:
+        try:
+            from ddg_scraper import ddg_crypto_news
+            print("      RSS empty — falling back to DDG crypto news")
+            news = ddg_crypto_news(max_results=8)
+        except Exception as e:
+            print(f"      DDG crypto fallback failed: {e}")
     crypto_data = {
         "timestamp": datetime.utcnow().isoformat(),
-        "prices": get_crypto_prices(),
-        "news": get_crypto_news()
+        "prices": prices,
+        "news": news
     }
     if file_path:
         with open(file_path, "w", encoding="utf-8") as f:

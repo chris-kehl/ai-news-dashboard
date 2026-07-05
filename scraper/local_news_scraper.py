@@ -166,13 +166,9 @@ def feed(url, label, retries=2):
 
 # Kentucky/Louisville-specific feeds (state-weighted)
 # Add your own feeds here for other regions.
-KY_FEEDS = [
-    ("WFPL NPR Louisville", "https://wfpl.org/feed/"),
-    ("Kentucky Sports Radio", "https://kentuckysportsradio.com/feed/"),
-    ("Forward Kentucky", "https://forwardky.com/feed/"),
-    ("The Lane Report", "https://www.lanereport.com/feed/"),
-    ("UK Kentucky Kernel", "https://www.kykernel.com/feed/"),
-]
+KY_FEEDS = []
+
+from feed_config import get_news_feeds
 
 # Generic state-level feeds that exist for most states
 STATE_FEED_TEMPLATES = {
@@ -204,11 +200,43 @@ def get_local_news(city, state, api_key=None):
     state_lower = state.lower().replace(" ", "")
     city_lower = city.lower().replace(" ", "")
 
+    for label, url in get_news_feeds(state):
+        print(f"      Fetching {label}...")
+        f = feed(url, label)
+        _dedup_insert(articles, f, seen)
+        print(f"      {label}: {len(f)} articles")
+
+    # Tier 3b: Hardcoded state-specific fallbacks if still empty
     for label, url in KY_FEEDS:
         print(f"      Fetching {label}...")
         f = feed(url, label)
         _dedup_insert(articles, f, seen)
         print(f"      {label}: {len(f)} articles")
+
+    # Tier 4: DDG fallback if everything above is empty
+    if len(articles) < 3:
+        try:
+            from ddg_scraper import ddg_local_news
+            print(f"      RSS/API sparse — falling back to DDG local news")
+            ddg = ddg_local_news(city, state, max_results=10)
+            for d in ddg:
+                norm_url = _normalize_url(d.get("url", ""))
+                title_key = d.get("title", "").lower().strip()[:40]
+                key = norm_url or title_key
+                if key in seen:
+                    continue
+                seen.add(key)
+                articles.append({
+                    "title": d["title"][:200],
+                    "url": d["url"],
+                    "source": d.get("source", "DDG"),
+                    "published": d.get("published", "")[:16],
+                    "description": d.get("description", "")[:200]
+                })
+                if len(articles) >= 20:
+                    break
+        except Exception as e:
+            print(f"      DDG local fallback failed: {e}")
 
     # Relabel by freshness (most recent first)
     articles = articles[:15]

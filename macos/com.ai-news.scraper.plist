@@ -7,18 +7,16 @@
     
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/anaconda3/bin/python3</string>
-        <string>/Users/chriskehl/ai-news-dashboard/scraper/main.py</string>
+        <string>/bin/bash</string>
+        <string>/Users/chriskehl/ai-news-dashboard/run_scraper.sh</string>
     </array>
     
     <key>WorkingDirectory</key>
-    <string>/Users/chris/ai-news-dashboard</string>
+    <string>/Users/chriskehl/ai-news-dashboard</string>
     
-    <!-- Run every 15 minutes -->
     <key>StartInterval</key>
     <integer>900</integer>
     
-    <!-- Also run at specific times (8am, 12pm, 6pm) -->
     <key>StartCalendarInterval</key>
     <array>
         <dict>

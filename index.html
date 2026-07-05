@@ -141,16 +141,20 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Settings Modal - informational (location drives scraper config.json) -->
 <div class="mdl" id="mdl" onclick="if(event.target===this)closeSettings()">
   <div class="mdl-box">
-    <h3>Settings</h3>
-    <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5" pattern="\d{5}"></div>
-    <div class="m-row" style="justify-content:flex-start;gap:8px"><label style="font-size:0.68rem;color:var(--tx3)">Server zip affects scraped data; edit <code>scraper/zip.txt</code> on the server to change permanently.</label></div>
-    <div class="m-row"><label>City (display only)</label><input id="cityIn" placeholder="Louisville"></div>
+    <h3>Location</h3>
+    <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5" style="width:80px" readonly></div>
+    <div class="m-row"><label>City</label><input id="cityIn" placeholder="Louisville" readonly></div>
+    <div class="m-row" style="justify-content:flex-start;gap:8px">
+      <label style="font-size:0.68rem;color:var(--tx3)">
+        Location is set server-side in <code>scraper/config.json</code>.
+        Edit that file and re-run the scraper to change city/zip.
+      </label>
+    </div>
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
-      <button class="btn" onclick="closeSettings()">Cancel</button>
-      <button class="btn" style="background:var(--acc);color:#000;font-weight:700" onclick="saveSettings()">Save</button>
+      <button class="btn" onclick="closeSettings()">Close</button>
     </div>
   </div>
 </div>
@@ -167,8 +171,6 @@ function fmtAgo(ts){
   if(h<24)return h+'h ago';
   return Math.floor(h/24)+'d ago';
 }
-var z=localStorage.getItem('dash_zip')||'';
-var c=localStorage.getItem('dash_city')||'';
 function applyTheme(){
   var t=localStorage.getItem('dash_theme')||'dark';
   document.documentElement.setAttribute('data-theme',t);
@@ -179,15 +181,12 @@ function toggleTheme(){
   var n=t==='dark'?'light':'dark';
   localStorage.setItem('dash_theme',n);applyTheme();
 }
-function openSettings(){$('mdl').classList.add('show');$('zipIn').value=z;$('cityIn').value=c;}
-function closeSettings(){$('mdl').classList.remove('show');}
-function saveSettings(){
-  var zi=$('zipIn').value.trim(),ci=$('cityIn').value.trim();
-  if(!zi&&!ci){alert('Enter zip code or city');return}
-  if(zi){z=zi;localStorage.setItem('dash_zip',zi)}
-  if(ci){c=ci;localStorage.setItem('dash_city',ci)}
-  closeSettings();loadData();
+function openSettings(){
+  $('mdl').classList.add('show');
+  $('zipIn').value=$('localBadge')?.textContent||'';
+  $('cityIn').value=document.getElementById('localTitle')?.textContent?.split(' ')[0]||'';
 }
+function closeSettings(){$('mdl').classList.remove('show');}
 
 function renderAll(d){
   var now=new Date();

@@ -13,7 +13,7 @@ We hit the pool endpoint once, sort by rank, and emit the top subnets.
 """
 import requests, os, json, re
 
-API_KEY = os.environ.get("TAOSTATS_API_KEY", "")
+API_KEY = "tao-23ad03d3-c064-45a4-a7bb-6d0b2be9695d:c8759508"
 BASE = "https://api.taostats.io"
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0",
@@ -23,14 +23,18 @@ HEADERS = {
 
 def _get(endpoint, params=None):
     """Make an authenticated GET to the TAOSTATS API.
-    The API seems to accept the key in the query param `authorization=`
-    or in the Authorization Bearer header.  We pass both to be safe.
+    Pass the key in the raw URL query string — urllib encodes the colon
+    in `params=` which TAOSTATS rejects with 401.
     """
     url = f"{BASE}{endpoint}"
     p = params or {}
-    p["authorization"] = API_KEY
+    qs = "&".join([f"{k}={v}" for k, v in p.items()])
+    if qs:
+        url = f"{url}?{qs}&authorization={API_KEY}"
+    else:
+        url = f"{url}?authorization={API_KEY}"
     try:
-        r = requests.get(url, params=p, headers=HEADERS, timeout=20)
+        r = requests.get(url, headers=HEADERS, timeout=20)
         if r.status_code != 200:
             print(f"[WARN] TAOSTATS {endpoint} -> {r.status_code}")
             return None

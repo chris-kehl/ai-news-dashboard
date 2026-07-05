@@ -92,10 +92,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
 .fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-.weather-conditions{display:flex;align-items:center;gap:12px;font-size:0.78rem;color:var(--tx2);flex-wrap:wrap;margin-bottom:6px;padding:6px 0;border-bottom:1px solid var(--brd)}
-.weather-conditions .wx-val{font-weight:600;color:var(--tx)}
-.weather-alert{display:none;align-items:center;gap:6px;background:rgba(239,68,68,0.1);border:1px solid var(--danger);border-radius:4px;padding:6px 10px;margin-bottom:8px;font-size:0.72rem;color:var(--danger)}
-.weather-alert.show{display:flex}.weather-alert .wx-icon{font-size:0.9rem}
 
 .bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
 @media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
@@ -174,8 +170,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       <div class="card">
         <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
         <div class="card-bd" id="localCard">
-          <div class="weather-alert" id="weatherAlert" style="display:none">⚠️ <span id="weatherAlertText"></span></div>
-          <div class="weather-conditions" id="weatherConditions"></div>
           <div class="fc" id="local-forecast"></div>
           <div id="local-channels"></div>
           <div id="local-news"></div>
@@ -200,10 +194,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       <div class="card">
         <div class="card-hd"><span>&#129302;</span> BITTENSOR <span data-lbl id="subCnt">--</span></div>
         <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128188;</span> THE BUSINESS SECTION <span data-lbl>BUSINESS</span></div>
-        <div class="card-bd" id="business-news"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
         <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
@@ -310,7 +300,7 @@ function fetchSuggestions(q){
         var admin1=p.admin1||'';
         var stCode=stateToCode(admin1)||admin1;
         var meta=(admin1)+(p.country?', '+p.country:'');
-        return '<div class="loc-sug" data-idx="'+i+'" data-lat="'+p.latitude+'" data-lon="'+p.longitude+'" data-name="'+p.name+'" data-admin1="'+admin1+'" data-country="'+(p.country||'')+'" data-code="'+stCode+'" onclick="selectSuggestion(this)"><span><span class="loc-sug-name">'+p.name+'</span><span class="loc-sug-meta"> \u2014 '+meta+'</span></span><span class="loc-sug-meta">'+p.latitude.toFixed(2)+', '+p.longitude.toFixed(2)+'</span></div>';
+        return '<div class="loc-sug" data-idx="'+i+'" data-lat="'+p.latitude+'" data-lon="'+p.longitude+'" data-name="'+p.name+'" data-admin1="'+admin1+'" data-country="'+(p.country||'')+'" data-code="'+stCode+'" onclick="selectSuggestion(this)"><span><span class="loc-sug-name">'+p.name+'</span><span class="loc-sug-meta"> &mdash; '+meta+'</span></span><span class="loc-sug-meta">'+p.latitude.toFixed(2)+', '+p.longitude.toFixed(2)+'</span></div>';
       }).join('');
       pel.innerHTML=rows;pel.style.display='block';sugIdx=-1;
     }).catch(function(){});
@@ -388,17 +378,12 @@ function stateToCode(name){
   return map[name]||'';
 }
 
-function windDirText(deg){
-  var dirs=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
-  return dirs[Math.round(deg/22.5)%16];
-}
-
 /* ===== WEATHER ===== */
 async function fetchClientWeather(){
   var lat=clientLoc.lat,lon=clientLoc.lon;
   if(!lat||!lon)return;
   try{
-    var url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=5';
+    var url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=5';
     var r=await fetch(url);var d=await r.json();
     var cur=d.current||{};
     var codes={0:"Clear",1:"Mainly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Rime fog",51:"Light drizzle",53:"Drizzle",55:"Heavy drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Light snow",73:"Snow",75:"Heavy snow",77:"Snow grains",80:"Light showers",81:"Showers",82:"Heavy showers",85:"Snow showers",86:"Heavy snow showers",95:"Thunderstorm",96:"Thunderstorm + hail",99:"Heavy thunderstorm"};
@@ -409,7 +394,7 @@ async function fetchClientWeather(){
       var dn=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dd.getDay()];
       forecast.push({name:dn,temp:Math.round((maxs[i]+mins[i])/2),description:codes[wcodes[i]]||''});
     }
-    clientWeather={temperature:cur.temperature_2m,description:codes[cur.weather_code]||'',weather_code:cur.weather_code,humidity:cur.relative_humidity_2m,wind_speed:cur.wind_speed_10m,wind_direction:cur.wind_direction_10m,forecast:forecast};
+    clientWeather={temperature:cur.temperature_2m,description:codes[cur.weather_code]||'',humidity:cur.relative_humidity_2m,wind_speed:cur.wind_speed_10m,forecast:forecast};
     renderLocInput();renderForecast();
   }catch(e){console.error('weather',e)}
 }
@@ -436,36 +421,6 @@ function toggleTheme(){
 function checkStale(){$('locStale').classList.toggle('show',isStale());}
 function renderLocBar(){renderLocInput();}
 function recalcForecastLabels(){renderForecast();}
-
-function renderWeatherConditions(cw){
-  var el=$('weatherConditions');
-  if(!cw||!cw.temperature){el.innerHTML='';return}
-  var items=[];
-  items.push('<span>🌡 <span class="wx-val">'+Math.round(cw.temperature)+'°F</span></span>');
-  if(cw.description)items.push('<span>'+cw.description+'</span>');
-  if(cw.humidity!=null)items.push('<span>💧 <span class="wx-val">'+cw.humidity+'%</span></span>');
-  if(cw.wind_speed!=null){
-    var wdir=cw.wind_direction!=null?windDirText(cw.wind_direction)+' ':'', wspd=Math.round(cw.wind_speed);
-    items.push('<span>🍃 <span class="wx-val">'+wdir+wspd+' mph</span></span>');
-  }
-  el.innerHTML=items.join('');
-}
-
-function renderWeatherAlert(cw){
-  var el=$('weatherAlert');
-  var txt=$('weatherAlertText');
-  if(!cw){el.style.display='none';return}
-  var code=cw.weather_code;
-  // Severe codes from Open-Meteo WMO range that are moderate-or-worse
-  var severe={61:'Rain advisory',63:'Rain warning',65:'Heavy rain warning',71:'Snow advisory',73:'Snow warning',75:'Heavy snow warning',77:'Snow grains advisory',82:'Heavy showers warning',85:'Snow showers advisory',86:'Heavy snow showers warning',95:'Thunderstorm warning',96:'Severe thunderstorm with hail',99:'Severe thunderstorm warning'};
-  if(severe[code]){
-    el.style.display='flex';
-    txt.textContent=severe[code]+' — '+cw.description;
-  }else{
-    el.style.display='none';
-  }
-}
-
 function renderForecast(){
   var cw=clientWeather;var w=serverWeather;
   var fc=(cw&&cw.forecast&&cw.forecast.length)?cw.forecast:(w&&w.forecast?w.forecast:[]);
@@ -478,8 +433,6 @@ function renderForecast(){
   var cityName=clientLoc.city||serverLoc.city||'LOCAL';
   $('localTitle').textContent=(curTemp?curTemp+'\u00B0 ':'')+cityName+' NEWS'+(curDesc?' | '+curDesc:'');
   $('localBadge').textContent=clientLoc.zip||(serverLoc.zip||'');
-  renderWeatherConditions(cw);
-  renderWeatherAlert(cw);
 }
 
 function renderTicker(items){
@@ -545,9 +498,6 @@ function renderAll(d){
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
   $('bittensor').innerHTML=bh;
-
-  var buz=(d.business||[]).slice(0,IS_MOBILE?4:6);
-  $('business-news').innerHTML=buz.map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,IS_MOBILE?4:6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>'}).join('')||'<div class="ld">No Reddit data</div>';
 

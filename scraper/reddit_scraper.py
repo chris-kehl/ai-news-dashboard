@@ -5,7 +5,8 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import time
-from scraper_utils import fetch_with_retry
+import re
+from scraper_utils import fetch_with_retry, DEFAULT_HEADERS
 
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0"
@@ -69,30 +70,32 @@ def get_reddit_posts(subreddits=None, limit=10):
     return posts
 
 def get_world_reddit_posts(limit=5):
-    """Fetch top posts from r/worldnews via public RSS."""
+    """Scrape top posts from old.reddit.com (needs session cookie)."""
     posts = []
     try:
-        r = fetch_with_retry(
-            "https://www.reddit.com/r/worldnews/top/.rss?t=day&limit=15",
-            timeout=15, max_retries=2, backoff_base=2.0
+        sess = requests.Session()
+        sess.headers.update(DEFAULT_HEADERS)
+        # 1. Visit front page to get cookies
+        sess.get("https://old.reddit.com", timeout=20)
+        # 2. Fetch worldnews top
+        r = sess.get(
+            "https://old.reddit.com/r/worldnews/top/?t=day&limit=15",
+            timeout=20
         )
-        if r is None:
+        if r.status_code != 200:
             return []
-        root = ET.fromstring(r.content)
-        for item in root.findall(".//item")[:limit * 2]:
-            title = item.findtext("title", "")
-            link = item.findtext("link", "")
-            pub = item.findtext("pubDate", "")
-            author = item.findtext("{http://purl.org/dc/elements/1.1/}creator", "")
+        for m in re.finditer(r'<a[^>]*class="title[^"]*"[^>]*href="([^"]+)"[^>]*>([^<]*)</a>', r.text, re.IGNORECASE):
+            href = m.group(1).strip()
+            title = m.group(2).strip()
             if not title:
                 continue
+            link = href if href.startswith("http") else f"https://old.reddit.com{href}"
             posts.append({
-                "title": title.strip()[:200],
-                "url": link.strip() if link else "#",
+                "title": title[:200],
+                "url": link,
                 "source": "r/worldnews",
                 "category": "world",
-                "published": pub.strip()[:17] if pub else "",
-                "description": f"u/{author}" if author else ""
+                "description": ""
             })
     except Exception as e:
         print(f"      Reddit worldnews error: {e}")

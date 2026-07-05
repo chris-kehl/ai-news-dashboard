@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from location_scraper import resolve_location, load_config, save_config
 from reddit_scraper import get_reddit_posts, get_world_reddit_posts
 from x_scraper import get_world_x_posts
+from business_scraper import get_business_data
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
 from stocks_scraper import get_stocks_data, generate_ticker_json
@@ -24,7 +25,6 @@ from local_scraper import get_local_content
 from taostats import get_bittensor_data
 from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
-from business_scraper import get_business_data
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -45,7 +45,7 @@ def build_dashboard_data():
     print("=" * 50)
 
     # 1. Weather
-    print(f"\n[1/11] Weather for {CITY} ({WEATHER_ZIP})...")
+    print(f"\n[1/13] Weather for {CITY} ({WEATHER_ZIP})...")
     weather_data = get_weather(WEATHER_ZIP)
     weather_data["city"] = CITY or weather_data.get("city", "")
     weather_data["state"] = STATE or weather_data.get("state", "")
@@ -53,18 +53,18 @@ def build_dashboard_data():
     print(f"       {CITY}, {STATE}: {temp}F")
 
     # 2. Local channels
-    print(f"\n[2/11] Local TV/paper ({CITY})...")
+    print(f"\n[2/13] Local TV/paper ({CITY})...")
     local_channels = get_local_channel_news(CITY, STATE)
     print(f"       Found {len(local_channels)} headlines")
 
     # 3+4. Local X & Reddit
-    print(f"\n[3/11] Local X & Reddit ({CITY}, {STATE})...")
+    print(f"\n[3/13] Local X & Reddit ({CITY}, {STATE})...")
     local_data = get_local_content(CITY, STATE, max_x=8, max_reddit=8)
     local_reddit = local_data.get("reddit_posts", [])
     local_tweets = local_data.get("x_posts", [])
     print(f"       Reddit: {len(local_reddit)} | X: {len(local_tweets)}")
 
-    # 5-11. Aggregated content (global, location-agnostic)
+    # 5-13. Aggregated content (global, location-agnostic)
     print("\n[5/13] AP News...")
     news_data = get_ap_data()
     print(f"       {len(news_data.get('all_news', []))} articles")
@@ -77,7 +77,11 @@ def build_dashboard_data():
     stocks_data = get_stocks_data()
     ticker_data = generate_ticker_json()
 
-    print("\n[8/13] Crypto...")
+    print("\n[8/13] Business...")
+    business_data = get_business_data()
+    print(f"       {len(business_data)} items")
+
+    print("\n[9/13] Crypto...")
     crypto_data = get_crypto()
 
     print("\n[9/13] Global Reddit...")
@@ -91,19 +95,15 @@ def build_dashboard_data():
     world_x_posts = get_world_x_posts()
     print(f"       {len(world_x_posts)} posts")
 
-    print("\n[12/14] GitHub...")
+    print("\n[12/13] GitHub...")
     github_repos = get_trending_repos()
 
-    print("\n[13/14] Business...")
-    business_data = get_business_data()
-    print(f"       {len(business_data)} items")
-
-    print("\n[14/14] Bittensor...")
+    print("\n[13/13] Bittensor...")
     bittensor_data = get_bittensor_data()
     print(f"       TAO: ${bittensor_data.get('price', 0):.2f}")
 
     # Summary
-    print("\n[15] Summary...")
+    print("\n[14] Summary...")
     summary_data = create_daily_summary(reddit_posts, [], github_repos, bittensor_data)
 
     data = {
@@ -126,12 +126,12 @@ def build_dashboard_data():
         "news": news_data.get("all_news", []),
         "stocks": stocks_data,
         "ticker": ticker_data,
+        "business": business_data,
         "defense": defense_data.get("conflicts", []),
         "weather": weather_data,
         "local_news": get_local_news(CITY, STATE, NEWSAPI_KEY).get("articles", []),
         "local_channels": local_channels,
         "github": github_repos,
-        "business": business_data,
         "bittensor": {
             "price": bittensor_data.get("price", 0),
             "price_change_24h": bittensor_data.get("price_change_24h", 0),

@@ -68,8 +68,43 @@ def get_reddit_posts(subreddits=None, limit=10):
             print(f"      DDG AI fallback failed: {e}")
     return posts
 
+def get_world_reddit_posts(limit=5):
+    """Fetch top posts from r/worldnews via public RSS."""
+    posts = []
+    try:
+        r = fetch_with_retry(
+            "https://www.reddit.com/r/worldnews/top/.rss?t=day&limit=15",
+            timeout=15, max_retries=2, backoff_base=2.0
+        )
+        if r is None:
+            return []
+        root = ET.fromstring(r.content)
+        for item in root.findall(".//item")[:limit * 2]:
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            pub = item.findtext("pubDate", "")
+            author = item.findtext("{http://purl.org/dc/elements/1.1/}creator", "")
+            if not title:
+                continue
+            posts.append({
+                "title": title.strip()[:200],
+                "url": link.strip() if link else "#",
+                "source": "r/worldnews",
+                "category": "world",
+                "published": pub.strip()[:17] if pub else "",
+                "description": f"u/{author}" if author else ""
+            })
+    except Exception as e:
+        print(f"      Reddit worldnews error: {e}")
+    return posts[:limit]
+
+
 if __name__ == "__main__":
     posts = get_reddit_posts()
     print(f"Fetched {len(posts)} posts")
     for p in posts[:5]:
         print(f"[{p['score']}] {p['title'][:80]}...")
+    wposts = get_world_reddit_posts()
+    print(f"Fetched {len(wposts)} world posts")
+    for p in wposts[:5]:
+        print(f"[r/worldnews] {p['title'][:80]}...")

@@ -144,6 +144,23 @@ def get_local_x_posts(city, state, max_results=8, fallback_ai=True):
     return all_posts[:max_results]
 
 
+def get_world_x_posts(max_results=5):
+    """Fetch world news tweets via Nitter search (no API key)."""
+    base = _working_nitter()
+    all_posts = []
+    seen = set()
+    for q in ["breaking news", "world news today"]:
+        posts = _search_nitter(base, q, max_results=max_results)
+        for p in posts:
+            key = p["text"].lower()[:40]
+            if key not in seen:
+                seen.add(key)
+                all_posts.append(p)
+        if len(all_posts) >= max_results:
+            break
+    return all_posts[:max_results]
+
+
 if __name__ == "__main__":
     import sys
     city = sys.argv[1] if len(sys.argv) > 1 else "Louisville"
@@ -151,4 +168,8 @@ if __name__ == "__main__":
     posts = get_local_x_posts(city, state)
     print(f"Fetched {len(posts)} posts")
     for p in posts[:5]:
+        print(f"[{p['author']}] {p['text'][:80]}...")
+    wposts = get_world_x_posts()
+    print(f"Fetched {len(wposts)} world posts")
+    for p in wposts[:5]:
         print(f"[{p['author']}] {p['text'][:80]}...")

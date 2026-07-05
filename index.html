@@ -178,8 +178,12 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
         </div>
       </div>
       <div class="card">
-        <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP</span></div>
-        <div class="card-bd" id="ap-news"><div class="ld">Loading...</div></div>
+        <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP / X / REDDIT</span></div>
+        <div class="card-bd" id="world-card">
+          <div id="world-news"></div>
+          <div id="world-reddit"></div>
+          <div id="world-x"></div>
+        </div>
       </div>
       <div class="card">
         <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE <span data-lbl>PRIORITY</span></div>
@@ -190,6 +194,10 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       <div class="card">
         <div class="card-hd"><span>&#129302;</span> BITTENSOR <span data-lbl id="subCnt">--</span></div>
         <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128188;</span> THE BUSINESS SECTION <span data-lbl>BUSINESS</span></div>
+        <div class="card-bd" id="business-news"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
         <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
@@ -462,7 +470,17 @@ function renderAll(d){
   h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(function(x){return'<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
   $('local-x').innerHTML=h||'';
 
-  $('ap-news').innerHTML=(d.news||[]).slice(0,IS_MOBILE?4:6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No news</div>';
+  var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
+  var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
+  var nwx=(d.world_x||[]).slice(0,IS_MOBILE?3:5);
+  var wh='';
+  if(nw.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">AP / RSS</div>'+nw.map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')}
+  $('world-news').innerHTML=wh||'';
+  wh='';if(nwr.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">World Reddit</div>'+nwr.map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')}
+  $('world-reddit').innerHTML=wh||'';
+  wh='';if(nwx.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">X / Twitter</div>'+nwx.map(function(x){return'<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
+  $('world-x').innerHTML=wh||'';
+  if(!nw.length&&!nwr.length&&!nwx.length)$('world-card').innerHTML='<div class="ld">No world news</div>';
 
   $('defense-news').innerHTML=(d.defense||[]).slice(0,IS_MOBILE?4:6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
@@ -484,6 +502,9 @@ function renderAll(d){
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
   $('bittensor').innerHTML=bh;
+
+  var buz=(d.business||[]).slice(0,IS_MOBILE?4:6);
+  $('business-news').innerHTML=buz.map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,IS_MOBILE?4:6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>'}).join('')||'<div class="ld">No Reddit data</div>';
 

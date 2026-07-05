@@ -23,12 +23,11 @@ HEADERS = {
 
 def _get(endpoint, params=None):
     """Make an authenticated GET to the TAOSTATS API.
-    The API seems to accept the key in the query param `authorization=`
-    or in the Authorization Bearer header.  We pass both to be safe.
+    Pass the key in the raw URL query string — urllib encodes the colon
+    in `params=` which TAOSTATS rejects with 401.
     """
     url = f"{BASE}{endpoint}"
     p = params or {}
-    # Manual URL build — urllib encodes colon which TAOSTATS rejects
     qs = "&".join([f"{k}={v}" for k, v in p.items()])
     if qs:
         url = f"{url}?{qs}&authorization={API_KEY}"

@@ -62,17 +62,23 @@ def generate_trading_signals(reddit_posts, x_posts, bittensor_data):
     signals = []
     if bittensor_data:
         price_change = bittensor_data.get("price_change_24h", 0)
+        tao_price = bittensor_data.get("price", 0)
+        # Always emit TAO signal so the card never blanks
         if price_change > 5:
-            signals.append({"type": "buy", "text": f"TAO +{price_change:.1f}% breakout"})
+            signals.append({"type": "buy", "text": f"TAO +{price_change:.1f}% breakout @ ${tao_price:.2f}"})
         elif price_change < -5:
-            signals.append({"type": "watch", "text": f"TAO dip {price_change:.1f}% - accumulation zone"})
+            signals.append({"type": "watch", "text": f"TAO dip {price_change:.1f}% @ ${tao_price:.2f} — accumulation zone"})
+        else:
+            signals.append({"type": "watch", "text": f"TAO flat {price_change:+.1f}% @ ${tao_price:.2f} — hold"})
 
-        for sn in bittensor_data.get("top_subnets", [])[:3]:
+        for sn in bittensor_data.get("top_subnets", [])[:5]:
             ch = sn.get("price_change_24h", 0)
-            if ch > 3:
-                signals.append({"type": "watch", "text": f"{sn['name']} growing +{ch:.1f}%"})
-            elif ch < -5:
-                signals.append({"type": "sell", "text": f"{sn['name']} declining {ch:.1f}%"})
+            if ch > 5:
+                signals.append({"type": "buy", "text": f"{sn['name']} +{ch:.1f}% — strong subnet momentum"})
+            elif ch < -10:
+                signals.append({"type": "sell", "text": f"{sn['name']} {ch:.1f}% — deep subnet drawdown"})
+            elif abs(ch) >= 3:
+                signals.append({"type": "watch", "text": f"{sn['name']} {ch:+.1f}% subnet moving"})
 
     all_text = " ".join([p.get("title", "") for p in reddit_posts[:10]] +
                         [p.get("text", "") for p in x_posts[:5]]).lower()
@@ -80,8 +86,10 @@ def generate_trading_signals(reddit_posts, x_posts, bittensor_data):
         signals.append({"type": "watch", "text": "OpenAI news - AI sector momentum"})
     if any(k in all_text for k in ["local llm", "local inference", "consumer gpu"]):
         signals.append({"type": "watch", "text": "Local AI trend - edge compute plays"})
+    if any(k in all_text for k in ["bitcoin", "btc", "crypto rally", "bull run"]):
+        signals.append({"type": "watch", "text": "Crypto chatter heating up - watch risk-on"})
 
-    return signals[:6]
+    return signals[:8]
 
 
 def create_daily_summary(reddit_posts, x_posts, github_repos, bittensor_data):

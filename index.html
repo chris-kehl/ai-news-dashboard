@@ -10,8 +10,8 @@
 [data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;}
 [data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45}
-.ticker-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:6px 14px;font-family:'JetBrains Mono';font-size:0.7rem;color:var(--tx2);overflow:hidden;white-space:nowrap}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px}
+.ticker-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:6px 14px;font-family:'JetBrains Mono';font-size:0.7rem;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px}
 .ticker-bar .up{color:var(--good)}.ticker-bar .down{color:var(--danger)}
 .header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px}
 .brand{font-weight:700;font-size:1.05rem}.brand span{color:var(--acc)}
@@ -19,12 +19,11 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .btn{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);font-family:inherit;font-size:0.75rem;padding:5px 12px;border-radius:5px;cursor:pointer;transition:.2s}
 .btn:hover{border-color:var(--acc);color:var(--acc)}
 .mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
-.main{max-width:1400px;margin:0 auto;padding:14px;display:grid;grid-template-columns:1fr;gap:14px}
+.main{max-width:1400px;margin:0 auto;padding:14px;display:grid;grid-template-columns:1fr;gap:14px;overflow-x:hidden}
 @media(min-width:700px){.main{grid-template-columns:1fr 1fr}}
 @media(min-width:1100px){.main{grid-template-columns:2fr 1fr}}
 .col{display:flex;flex-direction:column;gap:14px}
 .card{background:var(--bg-card);border:1px solid var(--brd);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
-.ai-top{display:contents} /* placeholder for AI-first ordering */
 .card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 12px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
 .card-hd span[data-lbl]{color:var(--tx2);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px}
 .card-bd{padding:10px 12px;max-height:380px;overflow-y:auto;flex:1}
@@ -37,11 +36,10 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px;flex-wrap:wrap}
 .score{color:var(--acc);font-size:0.7rem}
 .ld{color:var(--tx3);font-size:0.8rem;padding:12px 0;text-align:center}
-.fc{display:flex;gap:12px;overflow-x:auto;padding:6px 0;scrollbar-width:none}
-.fc::-webkit-scrollbar{display:none}
-.fc span{flex-shrink:0;font-size:0.78rem;color:var(--tx2);white-space:nowrap}
+.fc{display:flex;flex-wrap:wrap;gap:8px 14px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
+.fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-.btm{display:grid;grid-template-columns:1fr;gap:14px;padding:0 14px 18px;max-width:1400px;margin:0 auto}
+.btm{display:grid;grid-template-columns:1fr;gap:14px;padding:0 14px 18px;max-width:1400px;margin:0 auto;overflow-x:hidden}
 @media(min-width:700px){.btm{grid-template-columns:1fr 1fr}}
 @media(min-width:1100px){.btm{grid-template-columns:repeat(3,1fr)}}
 .m-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:0.78rem;flex-wrap:wrap;gap:6px}
@@ -61,11 +59,13 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
 .bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.9rem;font-weight:700}
 .bittensor-stat .lbl{font-size:0.62rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
-.subnet-grid{display:grid;grid-template-columns:28px 1fr 44px 44px 48px;gap:5px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
-.subnet-row{display:grid;grid-template-columns:28px 1fr 44px 44px 48px;gap:5px;padding:3px 0;font-size:0.74rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
+.subnet-grid{display:grid;grid-template-columns:32px 1fr 1fr;gap:6px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
+.subnet-row{display:grid;grid-template-columns:32px 1fr 1fr;gap:6px;padding:4px 0;font-size:0.74rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
+.subnet-sub{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:0.65rem;color:var(--tx3)}
 .subnet-row .r{color:var(--tx3);font-size:0.68rem;font-weight:700}
 .subnet-row .up{color:var(--good)}.subnet-row .dn{color:var(--danger)}
 .logo{font-size:1.1rem}
+.wide{grid-column:1/-1}
 </style>
 </head>
 <body>
@@ -78,6 +78,14 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
   <div class="header-actions">
     <button class="btn" onclick="openSettings()">&#9881;</button>
     <div class="mid" id="age">--</div>
+  </div>
+</div>
+
+<!-- DAILY AI SUMMARY — full width, right under header -->
+<div style="max-width:1400px;margin:0 auto;padding:14px 14px 0 14px;overflow-x:hidden">
+  <div class="card wide">
+    <div class="card-hd"><span>&#129504;</span> DAILY AI SUMMARY</div>
+    <div class="card-bd" id="summary"><div class="ld">Loading...</div></div>
   </div>
 </div>
 
@@ -128,10 +136,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
     <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
   </div>
   <div class="card">
-    <div class="card-hd"><span>&#129504;</span> DAILY AI SUMMARY</div>
-    <div class="card-bd" id="summary"><div class="ld">Loading...</div></div>
-  </div>
-  <div class="card">
     <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
     <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
   </div>
@@ -142,7 +146,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
   <div class="mdl-box">
     <h3>Settings</h3>
     <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5" pattern="\d{5}"></div>
-    <div class="m-row" style="justify-content:flex-start;gap:8px"><label style="font-size:0.68rem;color:var(--tx3)">Server zip (affects scraped data) — edit <code>scraper/zip.txt</code> on the server to change permanently.</label></div>
+    <div class="m-row" style="justify-content:flex-start;gap:8px"><label style="font-size:0.68rem;color:var(--tx3)">Server zip affects scraped data; edit <code>scraper/zip.txt</code> on the server to change permanently.</label></div>
     <div class="m-row"><label>City (display only)</label><input id="cityIn" placeholder="Louisville"></div>
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
       <button class="btn" onclick="closeSettings()">Cancel</button>
@@ -249,11 +253,10 @@ function renderAll(d){
     '<div class="bittensor-stat"><div class="num">'+(subs.length||0)+'</div><div class="lbl">Top SN</div></div>'+
     '</div>';
   if(subs.length){
-    bh+='<div class="subnet-grid"><span>#</span><span>Subnet</span><span>Price</span><span>24h</span><span>MktCap</span></div>';
+    bh+='<div class="subnet-grid"><span>#</span><span>Name</span><span>Price / Change</span></div>';
     bh+=subs.slice(0,6).map(function(s,i){
-      var pn=s.price_change_24h>=0?'subnet-row .up':'subnet-row .dn';
       var ccol=s.price_change_24h>=0?'var(--good)':'var(--danger)';
-      return'<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;font-size:0.68rem">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:'+ccol+'">'+(s.price_change_24h>=0?'+':'')+ (s.price_change_24h||0).toFixed(1)+'%</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:var(--tx3)">'+Math.round(s.market_cap||0)+'T</span></div>';
+      return'<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span class="subnet-sub"><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;color:'+ccol+'">'+(s.price_change_24h>=0?'+':'')+ (s.price_change_24h||0).toFixed(1)+'%</span><span style="color:var(--tx3)">mcap '+Math.round(s.market_cap||0)+'T</span></span></div>';
     }).join('');
   }else{
     bh+='<div class="ld">No subnet data</div>';
@@ -263,14 +266,14 @@ function renderAll(d){
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>';}).join('')||'<div class="ld">No Reddit data</div>';
 
   var cp=(d.crypto||{}).prices||[];
-  $('crypto-prices').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">'+cp.slice(0,6).map(function(c){return'<div style="background:var(--bg-el);border:1px solid var(--brd);padding:8px 10px;border-radius:4px;display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.75rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>';}).join('')+'</div>'||'<div class="ld">No data</div>';
+  $('crypto-prices').innerHTML='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px">'+cp.slice(0,6).map(function(c){return'<div style="background:var(--bg-el);border:1px solid var(--brd);padding:8px;border-radius:4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.75rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>';}).join('')+'</div>'||'<div class="ld">No data</div>';
 
   var st=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
   $('stocks').innerHTML=st.slice(0,3).map(function(s){return'<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>';}).join('')+mm.slice(0,2).map(function(s){return'<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>';}).join('')||'<div class="ld">No stock data</div>';
 
   $('github-repos').innerHTML=(d.github||[]).slice(0,6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>';}).join('')||'<div class="ld">No data</div>';
 
-  $('summary').innerHTML='<div style="font-size:0.8rem;line-height:1.55;color:var(--tx2);white-space:pre-wrap">'+((d.summary||'No summary yet.').replace(/\n/g,'<br>'))+'</div>';
+  $('summary').innerHTML='<div style="font-size:0.82rem;line-height:1.6;color:var(--tx2);white-space:pre-wrap">'+((d.summary||'No summary yet.').replace(/\n/g,'<br>'))+'</div>';
 
   $('signals').innerHTML=(d.signals||[]).map(function(s){return'<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>';}).join('')||'<div class="ld">No signals</div>';
 }

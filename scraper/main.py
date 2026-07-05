@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Main orchestrator - runs all scrapers and generates data.json.
 
-Reads zip code from scraper/zip.txt (overrides env var).
+Location config read from scraper/config.json (zip, city, state).
+Falls back to scraper/zip.txt if config.json missing.
 """
 import json, sys, os
 from datetime import datetime
@@ -15,23 +16,37 @@ from stocks_scraper import get_stocks_data, generate_ticker_json
 from defense_scraper import get_defense_data
 from weather_scraper import get_weather
 from local_news_scraper import get_local_news
-from reddit_local_scraper import get_local_reddit_from_weather
 from local_channels_scraper import get_local_channel_news
-from x_scraper import get_local_x_posts
+from local_scraper import get_local_content
 from taostats import get_bittensor_data
 from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
 
-# Zip priority: 1) scraper/zip.txt, 2) WEATHER_ZIP env var, 3) 40272
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Load config.json or fall back to zip.txt
+CONFIG_PATH = os.path.join(SCRAPER_DIR, "config.json")
 ZIP_FILE = os.path.join(SCRAPER_DIR, "zip.txt")
-WEATHER_ZIP = os.environ.get("WEATHER_ZIP", "40272")
-if os.path.exists(ZIP_FILE):
+
+config = {"location": {"zip": "40272", "city": "", "state": ""}}
+if os.path.exists(CONFIG_PATH):
+    try:
+        with open(CONFIG_PATH) as f:
+            loaded = json.load(f)
+            if "location" in loaded:
+                config = loaded
+    except Exception as e:
+        print(f"[WARN] Failed to load config.json: {e}")
+
+WEATHER_ZIP = config.get("location", {}).get("zip", "")
+if not WEATHER_ZIP and os.path.exists(ZIP_FILE):
     try:
         with open(ZIP_FILE) as f:
             WEATHER_ZIP = f.read().strip()
     except Exception:
         pass
+if not WEATHER_ZIP:
+    WEATHER_ZIP = os.environ.get("WEATHER_ZIP", "40272")
 
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 
@@ -48,6 +63,9 @@ def build_dashboard_data():
     weather_data = get_weather(WEATHER_ZIP)
     city = weather_data.get('city', '')
     state = weather_data.get('state', '')
+    # Override with config if explicitly set
+    city = config.get("location", {}).get("city") or city
+    state = config.get("location", {}).get("state") or state
     temp = weather_data.get('current', {}).get('temperature', 'N/A')
     print(f"       {city}, {state}: {temp}F")
 
@@ -56,15 +74,12 @@ def build_dashboard_data():
     local_channels = get_local_channel_news(city, state)
     print(f"       Found {len(local_channels)} channel headlines")
 
-    # 3. Local Reddit
-    print(f"\n[3/11] Fetching local Reddit (r/{city.lower()}, r/{state.lower()})...")
-    local_reddit = get_local_reddit_from_weather(weather_data, max_posts=6)
-    print(f"       Found {len(local_reddit)} local reddit posts")
-
-    # 4. Local X/Twitter
-    print(f"\n[4/11] Fetching local X posts for {city}...")
-    local_tweets = get_local_x_posts(city, state, max_results=8)
-    print(f"       Found {len(local_tweets)} local X posts")
+    # 3+4. Local X + Reddit via unified scraper (data-universe patterns)
+    print(f"\n[3/11] Fetching local X & Reddit ({city}, {state})...")
+    local_data = get_local_content(city, state, max_x=8, max_reddit=8)
+    local_reddit = local_data["reddit_posts"]
+    local_tweets = local_data["x_posts"]
+    print(f"       Found {len(local_reddit)} local reddit posts, {len(local_tweets)} local X posts")
 
     # 5. World news
     print("\n[5/11] Fetching AP News...")

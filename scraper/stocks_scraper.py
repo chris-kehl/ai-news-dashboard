@@ -1,74 +1,82 @@
 #!/usr/bin/env python3
 """Stocks scraper: trending / hottest stocks via free APIs."""
 
-import requests
+import time
 from datetime import datetime
 import json
+from scraper_utils import fetch_json_with_retry, load_scraper_cache, save_scraper_cache
 
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0 (Education; bot)"
 }
 
+
 def get_trending_stocks():
     """Yahoo Finance trending tickers (free, no key)."""
+    cached = load_scraper_cache("trending_stocks", max_age_minutes=15)
+    if cached:
+        print("      Using cached trending tickers")
+        return cached
+    data = fetch_json_with_retry(
+        "https://query1.finance.yahoo.com/v1/finance/trending/US",
+        headers=HEADERS, timeout=15, max_retries=3, backoff_base=3.0
+    )
+    if not data:
+        return []
     try:
-        url = "https://query1.finance.yahoo.com/v1/finance/trending/US"
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        r.raise_for_status()
-        data = r.json()
         quotes = data.get("finance", {}).get("result", [{}])[0].get("quotes", [])
         tickers = [q["symbol"] for q in quotes[:20]]
+        if tickers:
+            save_scraper_cache("trending_stocks", tickers)
         return tickers
     except Exception as e:
-        print(f"      Trending fetch error: {e}")
+        print(f"      Trending parse error: {e}")
         return []
 
+
 def get_stock_info(symbols):
-    """Batch quote for symbols via Yahoo Finance."""
+    """Batch quote for symbols via Yahoo Finance v8 chart."""
     if not symbols:
         return []
-    try:
-        # Yahoo Finance requires cookie + crumb; simpler: use free API alternative
-        # Fallback: use API with no auth
-        url = "https://query1.finance.yahoo.com/v8/finance/chart/"
-        stocks = []
-        # Fetch in batches of 5 to be polite
-        for sym in symbols[:15]:
-            try:
-                chart_url = f"{url}{sym}?interval=1d&range=2d"
-                r = requests.get(chart_url, headers=HEADERS, timeout=10)
-                r.raise_for_status()
-                d = r.json()
-                result = d.get("chart", {}).get("result", [{}])[0]
-                meta = result.get("meta", {})
-                closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
-                if len(closes) >= 2 and closes[-1] and closes[-2]:
-                    change = ((closes[-1] - closes[-2]) / closes[-2]) * 100
-                else:
-                    change = 0
-                stocks.append({
-                    "symbol": sym,
-                    "price": round(closes[-1], 2) if closes else meta.get("regularMarketPrice", 0),
-                    "change_percent": round(change, 2),
-                    "name": meta.get("shortName", sym)
-                })
-            except:
-                continue
-        return stocks
-    except Exception as e:
-        print(f"      Stock info error: {e}")
-        return []
+    stocks = []
+    for sym in symbols[:12]:
+        data = fetch_json_with_retry(
+            f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d",
+            headers=HEADERS, timeout=10, max_retries=2, backoff_base=3.0
+        )
+        if not data:
+            continue
+        try:
+            result = data.get("chart", {}).get("result", [{}])[0]
+            meta = result.get("meta", {})
+            closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+            if len(closes) >= 2 and closes[-1] and closes[-2]:
+                change = ((closes[-1] - closes[-2]) / closes[-2]) * 100
+            else:
+                change = 0
+            stocks.append({
+                "symbol": sym,
+                "price": round(closes[-1], 2) if closes else meta.get("regularMarketPrice", 0),
+                "change_percent": round(change, 2),
+                "name": meta.get("shortName", sym)
+            })
+        except Exception:
+            continue
+        time.sleep(0.4)
+    return stocks
+
 
 def get_meme_stocks():
     """Manually track known meme / momentum stocks."""
     meme = ["GME", "AMC", "BB", "PLTR", "TSLA", "NVDA", "AMD", "COIN", "HOOD", "MSTR"]
     return get_stock_info(meme)
 
+
 def get_stocks_data(file_path=None):
     """Master entry: trending + meme stocks + ticker data."""
     print("[ ] Fetching hottest stocks...")
     trending_tickers = get_trending_stocks()
-    trending = get_stock_info(trending_tickers[:15])
+    trending = get_stock_info(trending_tickers[:12])
     meme = get_meme_stocks()
     data = {
         "timestamp": datetime.utcnow().isoformat(),
@@ -100,18 +108,18 @@ def generate_ticker_json(output_path=None):
         "CSX","NSC","DXCM","KMB","SRE","BDX","LRCX","STZ","HUM","MAR","MCO"
     ]
 
-    # Batch fetch via Yahoo Finance v8 chart (free, no auth)
-    def batch_quotes(symbols, limit=80):
-        """Fetch up to N symbols to avoid rate limits."""
+    # Reduce batch to 40 S&P symbols to stay well under rate limits
+    def batch_quotes(symbols, limit=40):
         quotes = []
         for sym in symbols[:limit]:
+            data = fetch_json_with_retry(
+                f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d",
+                headers=HEADERS, timeout=8, max_retries=2, backoff_base=3.0
+            )
+            if not data:
+                continue
             try:
-                url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d"
-                r = requests.get(url, headers=HEADERS, timeout=8)
-                if not r.ok:
-                    continue
-                d = r.json()
-                result = d.get("chart", {}).get("result", [{}])[0]
+                result = data.get("chart", {}).get("result", [{}])[0]
                 meta = result.get("meta", {})
                 closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
                 price = closes[-1] if closes and closes[-1] else meta.get("regularMarketPrice", 0)
@@ -127,6 +135,7 @@ def generate_ticker_json(output_path=None):
                 })
             except Exception:
                 continue
+            time.sleep(0.25)
         return quotes
 
     # Get crypto prices from CoinGecko
@@ -134,9 +143,9 @@ def generate_ticker_json(output_path=None):
     try:
         url = "https://api.coingecko.com/api/v3/coins/markets"
         params = {"vs_currency":"usd","ids":"bitcoin,ethereum,solana,dogecoin,avalanche-2,chainlink,bittensor","sparkline":"false","price_change_percentage":"24h"}
-        cg = requests.get(url, params=params, headers=HEADERS, timeout=15)
-        if cg.ok:
-            for coin in cg.json():
+        cg = fetch_json_with_retry(url, params=params, headers=HEADERS, timeout=15, max_retries=2, backoff_base=3.0)
+        if cg:
+            for coin in cg:
                 crypto_prices.append({
                     "symbol": coin["symbol"].upper(),
                     "price": coin["current_price"],
@@ -145,8 +154,8 @@ def generate_ticker_json(output_path=None):
     except Exception as e:
         print(f"      Crypto ticker error: {e}")
 
-    # Get S&P stocks
-    sp_quotes = batch_quotes(sp_list, limit=80)
+    # Get S&P stocks (capped batch)
+    sp_quotes = batch_quotes(sp_list, limit=40)
 
     # Combine: crypto first, then S&P
     items = crypto_prices + sp_quotes

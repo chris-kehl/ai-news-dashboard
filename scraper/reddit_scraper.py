@@ -5,6 +5,7 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import time
+from scraper_utils import fetch_with_retry
 
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0"
@@ -20,20 +21,19 @@ def get_hn_posts(limit=15):
     """Fetch HackerNews top stories via RSS."""
     posts = []
     try:
-        r = requests.get("https://news.ycombinator.com/rss", headers=HEADERS, timeout=15)
-        r.raise_for_status()
+        r = fetch_with_retry("https://news.ycombinator.com/rss", headers=HEADERS, timeout=15, max_retries=2, backoff_base=2.0)
+        if r is None:
+            return []
         root = ET.fromstring(r.content)
-        for item in root.findall(".//item")[:30]:  # fetch more, filter later
+        for item in root.findall(".//item")[:30]:
             title = item.findtext("title", "")
             link = item.findtext("link", "")
             dc_date = item.findtext("{http://purl.org/dc/elements/1.1/}date", "")
-            # Score by AI relevance
             score = 0
             title_lower = title.lower()
             for kw in AI_KEYWORDS:
                 if kw in title_lower:
                     score += 1
-            # Boost all, but AI topics rank higher
             posts.append({
                 "title": title.strip()[:200],
                 "subreddit": "HackerNews",
@@ -44,14 +44,29 @@ def get_hn_posts(limit=15):
             })
     except Exception as e:
         print(f"      HN fetch error: {e}")
-    # Sort by AI relevance score
     posts.sort(key=lambda x: x["score"], reverse=True)
     return posts[:limit]
 
 def get_reddit_posts(subreddits=None, limit=10):
-    """Main entry. Reddit is blocked, fallback to HackerNews AI stories."""
-    # Reddit RSS is heavily blocked (403). Use HackerNews as proxy.
-    return get_hn_posts(limit=limit)
+    """Main entry. Reddit is blocked, fallback to HackerNews + DDG."""
+    posts = get_hn_posts(limit=limit)
+    # If HN is empty (rare), try DDG AI news as last resort
+    if not posts:
+        try:
+            from ddg_scraper import ddg_ai_reddit
+            print("      HN empty — falling back to DDG AI news")
+            ddg = ddg_ai_reddit(max_results=limit)
+            posts = [{
+                "title": d["title"],
+                "subreddit": "DDG",
+                "score": 100,
+                "comments": 0,
+                "url": d["url"],
+                "created": d.get("published", "")
+            } for d in ddg[:limit]]
+        except Exception as e:
+            print(f"      DDG AI fallback failed: {e}")
+    return posts
 
 if __name__ == "__main__":
     posts = get_reddit_posts()

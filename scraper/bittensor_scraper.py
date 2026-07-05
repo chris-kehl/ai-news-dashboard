@@ -4,6 +4,7 @@
 import requests
 import json
 from datetime import datetime
+from scraper_utils import fetch_json_with_retry, load_scraper_cache, save_scraper_cache
 
 BITTENSOR_RPC = "https://api.chainweb.com/chainweb/0.0/mainnet01/chain/0/pact"
 # Alternative public endpoints
@@ -14,32 +15,43 @@ TAO_STATS_API = "https://taostats.io/api/"
 
 def get_tao_price():
     """Get TAO price from CoinGecko or similar."""
+    cached = load_scraper_cache("tao_price", max_age_minutes=10)
+    if cached:
+        return cached
     try:
-        response = requests.get(
+        data = fetch_json_with_retry(
             "https://api.coingecko.com/api/v3/simple/price?ids=bittensor&vs_currencies=usd&include_24hr_change=true",
-            timeout=10
+            timeout=10,
+            max_retries=2,
+            backoff_base=3.0
         )
-        data = response.json()
-        return {
+        if not data:
+            return {"price": 0, "price_change_24h": 0}
+        price_data = {
             "price": data["bittensor"]["usd"],
             "price_change_24h": data["bittensor"]["usd_24h_change"]
         }
+        save_scraper_cache("tao_price", price_data)
+        return price_data
     except Exception as e:
         print(f"Price fetch error: {e}")
         return {"price": 0, "price_change_24h": 0}
 
 def get_subnet_data():
     """Fetch subnet data from public sources."""
-    # Try taostats API first
+    cached = load_scraper_cache("subnet_data", max_age_minutes=30)
+    if cached:
+        return cached
     subnet_data = []
     try:
-        response = requests.get(
+        data = fetch_json_with_retry(
             "https://taostats.io/api/subnets",
             headers={"User-Agent": "AI-News-Dashboard/1.0"},
-            timeout=15
+            timeout=15,
+            max_retries=2,
+            backoff_base=3.0
         )
-        if response.status_code == 200:
-            data = response.json()
+        if data:
             for sn in data.get("subnets", [])[:10]:
                 subnet_data.append({
                     "name": f"SN{sn.get('netuid', 0)}",
@@ -51,7 +63,6 @@ def get_subnet_data():
         print(f"Subnet data error: {e}")
     
     if not subnet_data:
-        # Fallback mock data for development
         subnet_data = [
             {"name": "SN1", "miners": 2560, "emission": 18.5, "change": "+1.2%"},
             {"name": "SN22", "miners": 1840, "emission": 12.5, "change": "+2.3%"},
@@ -59,6 +70,8 @@ def get_subnet_data():
             {"name": "SN39", "miners": 1450, "emission": 15.1, "change": "+0.8%"},
             {"name": "SN7", "miners": 2100, "emission": 11.0, "change": "-1.5%"},
         ]
+    else:
+        save_scraper_cache("subnet_data", subnet_data)
     
     return subnet_data
 

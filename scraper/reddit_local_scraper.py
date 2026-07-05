@@ -11,6 +11,7 @@ import re
 import time
 import os
 from datetime import datetime
+from scraper_utils import fetch_with_retry
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
@@ -34,7 +35,9 @@ def fetch_subreddit_posts(name, limit=5):
     url = f"https://old.reddit.com/r/{name}/.rss?limit={limit}"
     posts = []
     try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
+        r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2, backoff_base=3.0, retry_codes=(429, 403, 502))
+        if r is None:
+            return posts, 429
         if r.status_code != 200:
             return posts, r.status_code
 

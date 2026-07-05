@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""Bittensor subnet data via official TAOSTATS REST API.
+
+API Key from dash.taostats.io (free tier = 5 calls/min).
+Base URL: https://api.taostats.io
+Auth header:  Authorization: Bearer <api_key>
+
+Endpoints discovered:
+  GET /api/dtao/pool/latest/v1?authorization=<key>   -> all dTAO pool data (price, market cap, rank, etc.)
+  GET /api/dtao/price/latest/v1?netuid=N             -> price for a specific subnet
+
+We hit the pool endpoint once, sort by rank, and emit the top subnets.
+"""
+import requests, os, json, re
+
+API_KEY = "tao-23ad03d3-c064-45a4-a7bb-6d0b2be9695d:c8759508"
+BASE = "https://api.taostats.io"
+HEADERS = {
+    "User-Agent": "AI-News-Dashboard/1.0",
+    "Accept": "application/json",
+}
+
+
+def _get(endpoint, params=None):
+    """Make an authenticated GET to the TAOSTATS API.
+    Pass the key in the raw URL query string — urllib encodes the colon
+    in `params=` which TAOSTATS rejects with 401.
+    """
+    url = f"{BASE}{endpoint}"
+    p = params or {}
+    qs = "&".join([f"{k}={v}" for k, v in p.items()])
+    if qs:
+        url = f"{url}?{qs}&authorization={API_KEY}"
+    else:
+        url = f"{url}?authorization={API_KEY}"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=20)
+        if r.status_code != 200:
+            print(f"[WARN] TAOSTATS {endpoint} -> {r.status_code}")
+            return None
+        return r.json()
+    except Exception as e:
+        print(f"[WARN] TAOSTATS request failed: {e}")
+        return None
+
+
+def get_subnet_pool_data():
+    """Fetch latest dTAO pool data for every subnet."""
+    return _get("/api/dtao/pool/latest/v1")
+
+
+def get_tao_price():
+    """Fetch TAO / USD price from CoinGecko (free)."""
+    try:
+        r = requests.get(
+            "https://api.coingecko.com/api/v3/simple/price"
+            "?ids=bittensor&vs_currencies=usd&include_24hr_change=true",
+            headers=HEADERS, timeout=10
+        )
+        r.raise_for_status()
+        data = r.json()
+        return data["bittensor"]["usd"], data["bittensor"]["usd_24h_change"]
+    except Exception as e:
+        print(f"[WARN] CoinGecko TAO price failed: {e}")
+        return None, None
+
+
+def format_subnets(pool_json):
+    """Convert raw dTAO pool JSON into dashboard-friendly list."""
+    if not pool_json:
+        return []
+
+    items = pool_json.get("data", [])
+    # Sort by rank ascending (rank 1 = highest performing by market cap / score)
+    items.sort(key=lambda x: x.get("rank", 999))
+
+    out = []
+    for sn in items:
+        netuid = sn.get("netuid", "?")
+        name   = sn.get("name") or f"SN{netuid}"
+        price  = float(sn.get("price", "0"))
+        change = float(sn.get("price_change_1_day", "0"))
+        cap    = float(sn.get("market_cap", "0"))
+        liq    = float(sn.get("liquidity", "0"))
+        buy    = int(sn.get("buys_24_hr", 0))
+        sell   = int(sn.get("sells_24_hr", 0))
+        buyers = int(sn.get("buyers_24_hr", 0))
+        sellers= int(sn.get("sellers_24_hr", 0))
+
+        # Convert raw integer market cap / liquidity to human readable (divided by 1e9 for TAO)
+        # market_cap is in raw tau units, divide by 1e9 for approximate TAO
+        cap_tao = cap / 1e9
+        liq_tao = liq / 1e9
+
+        out.append({
+            "name": name,
+            "netuid": netuid,
+            "price": round(price, 6),
+            "change_24h": round(change, 2),
+            "market_cap": round(cap_tao, 1),
+            "liquidity": round(liq_tao, 1),
+            "rank": sn.get("rank", 0),
+            "buys_24h": buy,
+            "sells_24h": sell,
+            "buyers_24h": buyers,
+            "sellers_24h": sellers,
+        })
+
+    return out
+
+
+def get_bittensor_data():
+    """Full bittensor data bundle for the dashboard.
+    Returns:
+        { price, price_change_24h, active_subnets, total_subnets, top_subnets }
+    """
+    tao_price, tao_change = get_tao_price()
+
+    pool = get_subnet_pool_data()
+    subnets = format_subnets(pool) if pool else []
+
+    # Count subnets where subnet_emission_enabled=true
+    if pool:
+        raw_items = pool.get("data", [])
+        active = sum(1 for s in raw_items if s.get("subnet_emission_enabled"))
+        total  = len(raw_items)
+    else:
+        active = len(subnets)
+        total  = active
+
+    return {
+        "price": tao_price or 0.0,
+        "price_change_24h": tao_change or 0.0,
+        "active_subnets": active,
+        "total_subnets": total,
+        "top_subnets": subnets[:12]
+    }
+
+
+if __name__ == '__main__':
+    import json
+    print(json.dumps(get_bittensor_data(), indent=2))

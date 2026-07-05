@@ -4,6 +4,7 @@
 import requests
 import time
 from datetime import datetime, timedelta
+from scraper_utils import fetch_json_with_retry, load_scraper_cache, save_scraper_cache
 
 HEADERS = {
     "Accept": "application/vnd.github.v3+json",
@@ -12,6 +13,10 @@ HEADERS = {
 
 def get_ai_repos():
     """Fetch top AI repos via GitHub Search API (no bs4 needed)."""
+    cached = load_scraper_cache("github_ai_repos", max_age_minutes=60)
+    if cached:
+        print("      Using cached GitHub repos")
+        return cached
     repos = []
     queries = [
         "topic:llm created:>2024-01-01 sort:stars",
@@ -24,40 +29,43 @@ def get_ai_repos():
 
     for q in queries:
         try:
-            resp = requests.get(
+            data = fetch_json_with_retry(
                 "https://api.github.com/search/repositories",
                 params={"q": q, "per_page": 5},
                 headers=HEADERS,
-                timeout=15
+                timeout=15,
+                max_retries=2,
+                backoff_base=3.0,
+                retry_codes=(429, 403, 502, 503)
             )
-            if resp.status_code == 200:
-                result = resp.json()
-                for item in result.get("items", []):
-                    repos.append({
-                        "name": item["full_name"],
-                        "description": (item.get("description") or "No description")[:130],
-                        "stars": item["stargazers_count"],
-                        "language": item.get("language") or "Unknown",
-                        "url": item["html_url"],
-                        "updated": item.get("updated_at", "")
-                    })
-            else:
-                print(f"      GitHub query '{q[:40]}' returned {resp.status_code}")
-            time.sleep(1.5)  # API rate limit politeness
+            if not data:
+                continue
+            for item in data.get("items", []):
+                repos.append({
+                    "name": item["full_name"],
+                    "description": (item.get("description") or "No description")[:130],
+                    "stars": item["stargazers_count"],
+                    "language": item.get("language") or "Unknown",
+                    "url": item["html_url"],
+                    "updated": item.get("updated_at", "")
+                })
+            time.sleep(2)
         except Exception as e:
             print(f"      GitHub fetch error: {e}")
 
     # Also get recent trending via /search with pushed: date filter
     try:
         week_ago = (datetime.utcnow() - timedelta(days=7)).strftime("%Y-%m-%d")
-        resp = requests.get(
+        data = fetch_json_with_retry(
             "https://api.github.com/search/repositories",
             params={"q": f"stars:>1000 pushed:>{week_ago}", "sort": "updated", "order": "desc", "per_page": 8},
             headers=HEADERS,
-            timeout=15
+            timeout=15,
+            max_retries=2,
+            backoff_base=3.0
         )
-        if resp.status_code == 200:
-            for item in resp.json().get("items", []):
+        if data:
+            for item in data.get("items", []):
                 repos.append({
                     "name": item["full_name"],
                     "description": (item.get("description") or "No description")[:130],
@@ -78,7 +86,10 @@ def get_ai_repos():
             unique.append(r)
 
     unique.sort(key=lambda x: x["stars"], reverse=True)
-    return unique[:12]
+    result = unique[:12]
+    if result:
+        save_scraper_cache("github_ai_repos", result)
+    return result
 
 
 def get_trending_repos(language="python", since="daily"):

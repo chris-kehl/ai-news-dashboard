@@ -210,6 +210,31 @@ def get_local_news(city, state, api_key=None):
         _dedup_insert(articles, f, seen)
         print(f"      {label}: {len(f)} articles")
 
+    # Tier 4: DDG fallback if everything above is empty
+    if len(articles) < 3:
+        try:
+            from ddg_scraper import ddg_local_news
+            print(f"      RSS/API sparse — falling back to DDG local news")
+            ddg = ddg_local_news(city, state, max_results=10)
+            for d in ddg:
+                norm_url = _normalize_url(d.get("url", ""))
+                title_key = d.get("title", "").lower().strip()[:40]
+                key = norm_url or title_key
+                if key in seen:
+                    continue
+                seen.add(key)
+                articles.append({
+                    "title": d["title"][:200],
+                    "url": d["url"],
+                    "source": d.get("source", "DDG"),
+                    "published": d.get("published", "")[:16],
+                    "description": d.get("description", "")[:200]
+                })
+                if len(articles) >= 20:
+                    break
+        except Exception as e:
+            print(f"      DDG local fallback failed: {e}")
+
     # Relabel by freshness (most recent first)
     articles = articles[:15]
 

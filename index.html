@@ -11,43 +11,61 @@
 [data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45}
-.ticker-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:6px 20px;font-family:'JetBrains Mono';font-size:0.72rem;color:var(--tx2);overflow:hidden;white-space:nowrap}
+.ticker-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:6px 14px;font-family:'JetBrains Mono';font-size:0.7rem;color:var(--tx2);overflow:hidden;white-space:nowrap}
 .ticker-bar .up{color:var(--good)}.ticker-bar .down{color:var(--danger)}
-.header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.brand{font-weight:700;font-size:1.1rem}.brand span{color:var(--acc)}
-.header-actions{display:flex;align-items:center;gap:10px}
+.header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px}
+.brand{font-weight:700;font-size:1.05rem}.brand span{color:var(--acc)}
+.header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .btn{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);font-family:inherit;font-size:0.75rem;padding:5px 12px;border-radius:5px;cursor:pointer;transition:.2s}
 .btn:hover{border-color:var(--acc);color:var(--acc)}
-.mid{font-family:'JetBrains Mono';font-size:0.8rem;color:var(--tx2)}
-.main{max-width:1400px;margin:0 auto;padding:16px 20px;display:grid;grid-template-columns:2fr 1fr;gap:16px}
-.col{display:flex;flex-direction:column;gap:16px}
-.card{background:var(--bg-card);border:1px solid var(--brd);border-radius:6px;overflow:hidden}
-.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 14px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center}
+.mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
+.main{max-width:1400px;margin:0 auto;padding:14px;display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:700px){.main{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.main{grid-template-columns:2fr 1fr}}
+.col{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--bg-card);border:1px solid var(--brd);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.ai-top{display:contents} /* placeholder for AI-first ordering */
+.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 12px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
 .card-hd span[data-lbl]{color:var(--tx2);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px}
-.card-bd{padding:12px 14px;max-height:420px;overflow-y:auto}
+.card-bd{padding:10px 12px;max-height:380px;overflow-y:auto;flex:1}
 .card-bd::-webkit-scrollbar{width:5px}
 .card-bd::-webkit-scrollbar-thumb{background:var(--brd);border-radius:4px}
-.item{padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.item{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .item:last-child{border:none}
-.item-title{font-size:0.82rem;font-weight:500;color:var(--tx);text-decoration:none;display:block;margin-bottom:3px}
+.item-title{font-size:0.82rem;font-weight:500;color:var(--tx);text-decoration:none;display:block;margin-bottom:2px}
 .item-title:hover{color:var(--acc)}
-.item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px}
+.item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px;flex-wrap:wrap}
 .score{color:var(--acc);font-size:0.7rem}
-.ld{color:var(--tx3);font-size:0.8rem;padding:14px 0;text-align:center}
-.fc{display:flex;gap:14px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
+.ld{color:var(--tx3);font-size:0.8rem;padding:12px 0;text-align:center}
+.fc{display:flex;gap:12px;overflow-x:auto;padding:6px 0;scrollbar-width:none}
 .fc::-webkit-scrollbar{display:none}
-.fc span{flex-shrink:0;font-size:0.8rem;color:var(--tx2);white-space:nowrap}
+.fc span{flex-shrink:0;font-size:0.78rem;color:var(--tx2);white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-.btm{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:0 20px 20px;max-width:1400px;margin:0 auto}
-.m-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:0.78rem}
+.btm{display:grid;grid-template-columns:1fr;gap:14px;padding:0 14px 18px;max-width:1400px;margin:0 auto}
+@media(min-width:700px){.btm{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.btm{grid-template-columns:repeat(3,1fr)}}
+.m-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:0.78rem;flex-wrap:wrap;gap:6px}
 .m-row label{color:var(--tx2)}
 .m-row input{background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:5px 8px;border-radius:4px;font-size:0.78rem;width:120px}
 .m-row input:focus{outline:none;border-color:var(--acc)}
-.mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:center;justify-content:center}
+.mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:center;justify-content:center;padding:14px}
 .mdl.show{display:flex}
-.mdl-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;padding:20px;width:320px}
-.mdl-box h3{margin-bottom:14px}
-@media(max-width:900px){.main{grid-template-columns:1fr}.btm{grid-template-columns:1fr}}
+.mdl-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;padding:18px;width:100%;max-width:320px}
+.mdl-box h3{margin-bottom:12px;font-size:1rem}
+.x-tweet{padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.x-tweet:last-child{border:none}
+.x-author{font-weight:600;font-size:0.75rem;color:var(--acc)}
+.x-text{font-size:0.78rem;color:var(--tx2);margin-top:2px;line-height:1.4}
+.bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
+@media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
+.bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
+.bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.9rem;font-weight:700}
+.bittensor-stat .lbl{font-size:0.62rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
+.subnet-grid{display:grid;grid-template-columns:28px 1fr 44px 44px 48px;gap:5px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
+.subnet-row{display:grid;grid-template-columns:28px 1fr 44px 44px 48px;gap:5px;padding:3px 0;font-size:0.74rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
+.subnet-row .r{color:var(--tx3);font-size:0.68rem;font-weight:700}
+.subnet-row .up{color:var(--good)}.subnet-row .dn{color:var(--danger)}
+.logo{font-size:1.1rem}
 </style>
 </head>
 <body>
@@ -66,10 +84,13 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 <div class="main">
 <div class="col">
   <div class="card">
-    <div class="card-hd"><span>&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
-    <div class="card-bd">
+    <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
+    <div class="card-bd" style="max-height:420px">
       <div class="fc" id="local-forecast"></div>
-      <div id="local-news" style="margin-top:8px"></div>
+      <div id="local-channels" style="margin-top:6px"></div>
+      <div id="local-news" style="margin-top:6px"></div>
+      <div id="local-reddit" style="margin-top:6px"></div>
+      <div id="local-x" style="margin-top:6px"></div>
     </div>
   </div>
   <div class="card">
@@ -120,8 +141,9 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 <div class="mdl" id="mdl" onclick="if(event.target===this)closeSettings()">
   <div class="mdl-box">
     <h3>Settings</h3>
-    <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5"></div>
-    <div class="m-row"><label>City (optional)</label><input id="cityIn" placeholder="Louisville"></div>
+    <div class="m-row"><label>Zip Code</label><input id="zipIn" placeholder="40272" maxlength="5" pattern="\d{5}"></div>
+    <div class="m-row" style="justify-content:flex-start;gap:8px"><label style="font-size:0.68rem;color:var(--tx3)">Server zip (affects scraped data) — edit <code>scraper/zip.txt</code> on the server to change permanently.</label></div>
+    <div class="m-row"><label>City (display only)</label><input id="cityIn" placeholder="Louisville"></div>
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
       <button class="btn" onclick="closeSettings()">Cancel</button>
       <button class="btn" style="background:var(--acc);color:#000;font-weight:700" onclick="saveSettings()">Save</button>
@@ -174,35 +196,69 @@ function renderAll(d){
   $('ticker').innerHTML=t;
 
   var w=d.weather||{},cur=w.current||{},fc=w.forecast||[];
-  $('localTitle').textContent=(cur.temperature?Math.round(cur.temperature)+'F ':'')+(w.city||'LOCAL')+' NEWS'+(cur.description?' | '+cur.description:'');
+  var cityLabel=(cur.temperature?Math.round(cur.temperature)+'° ':'')+(w.city||'LOCAL')+' NEWS'+(cur.description?' | '+cur.description:'');
+  $('localTitle').textContent=cityLabel;
+  $('localBadge').textContent=w.zip||'LOCAL';
   $('local-forecast').innerHTML=fc.slice(0,5).map(function(f){
     var cl=f.temp>75?'w':f.temp<55?'c':'';
     return'<span class="'+cl+'">'+(f.name||'').slice(0,3)+' '+Math.round(f.temp||0)+'F '+(f.description||'')+'</span>';
   }).join('');
 
-  var lc=d.local_channels||[],lr=d.local_news||[],lred=d.local_reddit||[];
+  // Local Channels
+  var lc=d.local_channels||[],lr=d.local_news||[],lred=d.local_reddit||[],ltw=d.local_tweets||[];
   var h='';
-  if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;border-bottom:1px solid var(--brd);padding-bottom:4px">TV &amp; Papers</div>'+lc.slice(0,5).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>';}).join('');}
-  if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:10px 0 6px;border-bottom:1px solid var(--brd);padding-bottom:4px">News &amp; RSS</div>'+lr.slice(0,4).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>';}).join('');}
-  if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:10px 0 6px;border-bottom:1px solid var(--brd);padding-bottom:4px">Local Reddit</div>'+lred.slice(0,3).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>';}).join('');}
-  $('local-news').innerHTML=h||'<div class="ld">No local data</div>';
+  if(lc.length){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+
+    lc.slice(0,5).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>';}).join('');
+  }
+  $('local-channels').innerHTML=h||'';
+  // Local News
+  h='';
+  if(lr.length){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+
+    lr.slice(0,4).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>';}).join('');
+  }
+  $('local-news').innerHTML=h||'';
+  // Local Reddit
+  h='';
+  if(lred.length){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+
+    lred.slice(0,3).map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>';}).join('');
+  }
+  $('local-reddit').innerHTML=h||'';
+  // Local X/Twitter
+  h='';
+  if(ltw.length){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+
+    ltw.slice(0,5).map(function(x){return'<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>';}).join('');
+  }
+  $('local-x').innerHTML=h||'';
 
   $('ap-news').innerHTML=(d.news||[]).slice(0,6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>';}).join('')||'<div class="ld">No news</div>';
 
   $('defense-news').innerHTML=(d.defense||[]).slice(0,6).map(function(n){return'<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>';}).join('')||'<div class="ld">No data</div>';
 
-  var bit=d.bittensor||{},subs=(bit.top_subnets||[]).sort(function(a,b){return b.emission-a.emission;});
+  var bit=d.bittensor||{},subs=bit.top_subnets||[];
   var cc=bit.price_change_24h>=0?'var(--good)':'var(--danger)';
   var cs=bit.price_change_24h>=0?'+':'';
-  $('bittensor').innerHTML='<div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">'+
-    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">$'+(bit.price||0).toFixed(2)+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">TAO</div></div>'+
-    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700;color:'+cc+'">'+cs+(bit.price_change_24h||0).toFixed(1)+'%</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">24H</div></div>'+
-    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">'+(bit.active_subnets||0)+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">Subnets</div></div>'+
-    '<div style="flex:1;min-width:70px;background:var(--bg-el);border:1px solid var(--brd);padding:10px;text-align:center;border-radius:5px"><div style="font-family:JetBrains Mono;font-size:1rem;font-weight:700">'+(bit.total_miners||0).toLocaleString()+'</div><div style="font-size:0.65rem;color:var(--tx3);text-transform:uppercase;margin-top:2px">Miners</div></div>'+
-    '</div>'+
-    '<div style="display:grid;grid-template-columns:28px 1fr 48px 56px 44px;gap:6px;padding:5px 0;font-size:0.65rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd);margin-bottom:4px"><span>#</span><span>Subnet</span><span>Min</span><span>TAO/d</span><span>24h</span></div>'+
-    subs.map(function(s,i){return'<div style="display:grid;grid-template-columns:28px 1fr 48px 56px 44px;gap:6px;padding:4px 0;font-size:0.78rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center;opacity:'+(i>4?0.55:1)+'"><span style="color:var(--tx3);font-size:0.72rem;font-weight:700">'+(i+1)+'</span><span style="font-weight:500">'+s.name+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:var(--tx3)">'+(s.miners||0)+'</span><span style="font-family:JetBrains Mono;color:var(--acc);font-size:0.75rem;font-weight:600">'+s.emission+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+((s.change||'').includes('+')?'var(--good)':'var(--danger)')+'">'+s.change+'</span></div>';}).join('')||'<div class="ld">No data</div>';
-  $('subCnt').textContent=bit.active_subnets||128;
+  $('subCnt').textContent=(bit.active_subnets||0)+'/'+ (bit.total_subnets||0);
+  var bh='<div class="bittensor-stats">'+
+    '<div class="bittensor-stat"><div class="num">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
+    '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+cs+(bit.price_change_24h||0).toFixed(1)+'%</div><div class="lbl">24H</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+(bit.active_subnets||0)+'</div><div class="lbl">Active SN</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+(subs.length||0)+'</div><div class="lbl">Top SN</div></div>'+
+    '</div>';
+  if(subs.length){
+    bh+='<div class="subnet-grid"><span>#</span><span>Subnet</span><span>Price</span><span>24h</span><span>MktCap</span></div>';
+    bh+=subs.slice(0,6).map(function(s,i){
+      var pn=s.price_change_24h>=0?'subnet-row .up':'subnet-row .dn';
+      var ccol=s.price_change_24h>=0?'var(--good)':'var(--danger)';
+      return'<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;font-size:0.68rem">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:'+ccol+'">'+(s.price_change_24h>=0?'+':'')+ (s.price_change_24h||0).toFixed(1)+'%</span><span style="font-family:JetBrains Mono;font-size:0.65rem;color:var(--tx3)">'+Math.round(s.market_cap||0)+'T</span></div>';
+    }).join('');
+  }else{
+    bh+='<div class="ld">No subnet data</div>';
+  }
+  $('bittensor').innerHTML=bh;
 
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,6).map(function(r){return'<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>';}).join('')||'<div class="ld">No Reddit data</div>';
 

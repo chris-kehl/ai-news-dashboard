@@ -153,10 +153,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 </div>
 
 <div class="container">
-  <div class="card" style="margin-bottom:12px">
-    <div class="card-hd"><span>&#129504;</span> DAILY AI SUMMARY</div>
-    <div class="card-bd" id="summary"><div class="ld">Loading...</div></div>
-  </div>
 
   <div class="grid">
     <div class="col">
@@ -185,7 +181,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
     </div>
     <div class="col">
       <div class="card">
-        <div class="card-hd"><span>&#129302;</span> BITTENSOR <span data-lbl id="subCnt">--</span></div>
+        <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
         <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
@@ -600,20 +596,21 @@ function renderAll(d){
   $('defense-news').innerHTML=(d.defense||[]).slice(0,IS_MOBILE?4:6).map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
   var bit=d.bittensor||{},subs=bit.top_subnets||[];
-  var cc=bit.price_change_24h>=0?'var(--good)':'var(--danger)';
-  var cs=bit.price_change_24h>=0?'+':'';
-  $('subCnt').textContent=(bit.active_subnets||0)+'/'+(bit.total_subnets||0);
+  var activeSubs = bit.active_subnets || subs.length || 0;
+  var totalSubs = bit.total_subnets || subs.length || 0;
+  var cc=(bit.price_change_24h||0)>=0?'var(--good)':'var(--danger)';
+  var cs=(bit.price_change_24h||0)>=0?'+':'';
   var bh='<div class="bittensor-stats">'+
-    '<div class="bittensor-stat"><div class="num">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
-    '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+cs+(bit.price_change_24h||0).toFixed(1)+'%</div><div class="lbl">24H</div></div>'+
-    '<div class="bittensor-stat"><div class="num">'+(bit.active_subnets||0)+'</div><div class="lbl">Active</div></div>'+
-    '<div class="bittensor-stat"><div class="num">'+(subs.length||0)+'</div><div class="lbl">Top</div></div>'+
+    '<div class="bittensor-stat"><div class="num" style="font-size:1.1rem">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
+    '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+(bit.price_change_24h!=null?cs+(bit.price_change_24h).toFixed(1)+'%':'--')+'</div><div class="lbl">24H</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+activeSubs+'</div><div class="lbl">Active</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+totalSubs+'</div><div class="lbl">Subnets</div></div>'+
     '</div>';
   if(subs.length){
-    bh+='<div class="subnet-grid"><span>#</span><span>Name</span><span>Price / Change</span></div>';
+    bh+='<div class="subnet-grid"><span style="text-align:center">#</span><span>Name</span><span style="text-align:right">Price</span></div>';
     bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
-      var ccol=s.price_change_24h>=0?'var(--good)':'var(--danger)';
-      return '<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span class="subnet-sub"><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;color:'+ccol+'">'+(s.price_change_24h>=0?'+':'')+(s.price_change_24h||0).toFixed(1)+'%</span><span style="color:var(--tx3)">mcap '+Math.round(s.market_cap||0)+'T</span></span></div>';
+      var safePrice = (s.price!=null)?s.price.toFixed(4):'--';
+      return '<div class="subnet-row"><span class="r" style="text-align:center">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;text-align:right;font-size:0.72rem">'+safePrice+' TAO</span></div>';
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
   $('bittensor').innerHTML=bh;
@@ -630,8 +627,6 @@ function renderAll(d){
   $('stocks').innerHTML=st.slice(0,3).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')+mm.slice(0,2).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')||'<div class="ld">No stock data</div>';
 
   $('github-repos').innerHTML=(d.github||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
-
-  $('summary').innerHTML='<div class="ai-summary">'+((d.summary||'No summary yet.').replace(/\n/g,'<br>'))+'</div>';
 
   $('signals').innerHTML=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
 }

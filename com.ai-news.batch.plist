@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ai-news.batch</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/chriskehl/ai-news-dashboard/run_batch_scraper.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>30</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/chriskehl/ai-news-dashboard/logs/batch.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/chriskehl/ai-news-dashboard/logs/batch.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/chriskehl/ai-news-dashboard</string>
+</dict>
+</plist>

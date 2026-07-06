@@ -575,7 +575,7 @@ document.addEventListener('click',function(e){if(!e.target.closest('.loc-search-
 
 /* Init */
 loadClientLoc();parseUrlParams();renderLocInput();applyTheme();loadData();
-if(isStale()){fetchLocalContent(clientLoc.city,clientLoc.state);}
+if(clientLoc.city){fetchLocalContent(clientLoc.city,clientLoc.state);}
 fetchFutures();setInterval(fetchFutures,60000);
 setInterval(loadData,300000);
 </script>

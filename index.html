@@ -12,7 +12,6 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px;overflow-x:hidden}
 
-/* ====== LOCATION BAR ====== */
 .loc-bar{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:relative;z-index:110}
 .loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
 .loc-display{cursor:pointer;display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;transition:.2s;flex:1;min-width:0}
@@ -39,7 +38,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .loc-stale{display:none;background:rgba(247,165,29,.12);border-bottom:1px solid rgba(247,165,29,.25);color:var(--acc);font-size:0.75rem;padding:6px 12px;text-align:center}
 .loc-stale.show{display:block}
 
-/* ====== MARQUEE TICKER ====== */
 .ticker-wrap{background:var(--bg-el);border-bottom:1px solid var(--brd);overflow:hidden;white-space:nowrap;position:relative;height:34px;display:flex;align-items:center}
 .ticker-track{display:inline-flex;animation:marquee 90s linear infinite;will-change:transform}
 .ticker-track:hover{animation-play-state:paused}
@@ -49,7 +47,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .ticker-sep{color:var(--brd);font-size:0.6rem}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* ====== HEADER ====== */
 .header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;gap:8px;min-height:42px}
 .brand{font-weight:700;font-size:1rem}.brand span{color:var(--acc)}
 .header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -58,7 +55,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .btn-sm{padding:4px 8px;font-size:0.7rem;min-height:28px}
 .mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
 
-/* ====== LAYOUT ====== */
 .container{max-width:1400px;margin:0 auto;padding:10px 12px;overflow-x:hidden}
 @media(min-width:768px){.container{padding:14px}}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
@@ -120,7 +116,16 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 <!-- LOCATION BAR -->
 <div class="loc-bar">
   <div class="loc-inner">
-    <div class="loc-search-wrap open" id="locSearchWrap" style="flex:1">
+    <div class="loc-display" id="locDisplay" onclick="activateSearchMode()" style="flex:1">
+      <span style="font-size:1.1rem">&#128205;</span>
+      <div style="display:flex;align-items:baseline;gap:6px;min-width:0">
+        <span class="loc-weather" id="locWeather"></span>
+        <span class="loc-city" id="locCity">Loading...</span>
+        <span class="loc-state" id="locState"></span>
+      </div>
+      <span class="loc-edit-icon">&#9998;</span>
+    </div>
+    <div class="loc-search-wrap" id="locSearchWrap" style="flex:1">
       <span style="font-size:1.1rem">&#128205;</span>
       <input class="loc-input" id="locInput" type="text" placeholder="City name" autocomplete="off" oninput="onSearchInput(this.value)" onkeydown="onSearchKey(event)">
       <button class="loc-clear" id="locClear" onclick="clearSearch()" style="display:none">&#10005;</button>
@@ -215,186 +220,250 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 </div>
 
 <script>
+/* ─── EMBEDDED CITY CACHE (52 major cities) ─── */
+var cityCacheData={
+"new_york":{"city":"New York","state":"New York","lat":40.7128,"lon":-74.0060},
+"los_angeles":{"city":"Los Angeles","state":"California","lat":34.0522,"lon":-118.2437},
+"chicago":{"city":"Chicago","state":"Illinois","lat":41.8781,"lon":-87.6298},
+"houston":{"city":"Houston","state":"Texas","lat":29.7604,"lon":-95.3698},
+"phoenix":{"city":"Phoenix","state":"Arizona","lat":33.4484,"lon":-112.0740},
+"philadelphia":{"city":"Philadelphia","state":"Pennsylvania","lat":39.9526,"lon":-75.1652},
+"san_antonio":{"city":"San Antonio","state":"Texas","lat":29.4241,"lon":-98.4936},
+"san_diego":{"city":"San Diego","state":"California","lat":32.7157,"lon":-117.1611},
+"dallas":{"city":"Dallas","state":"Texas","lat":32.7767,"lon":-96.7970},
+"san_jose":{"city":"San Jose","state":"California","lat":37.3382,"lon":-121.8863},
+"austin":{"city":"Austin","state":"Texas","lat":30.2672,"lon":-97.7431},
+"jacksonville":{"city":"Jacksonville","state":"Florida","lat":30.3322,"lon":-81.6557},
+"fort_worth":{"city":"Fort Worth","state":"Texas","lat":32.7555,"lon":-97.3308},
+"columbus":{"city":"Columbus","state":"Ohio","lat":39.9612,"lon":-82.9988},
+"charlotte":{"city":"Charlotte","state":"North Carolina","lat":35.2271,"lon":-80.8431},
+"indianapolis":{"city":"Indianapolis","state":"Indiana","lat":39.7684,"lon":-86.1581},
+"san_francisco":{"city":"San Francisco","state":"California","lat":37.7749,"lon":-122.4194},
+"seattle":{"city":"Seattle","state":"Washington","lat":47.6062,"lon":-122.3321},
+"denver":{"city":"Denver","state":"Colorado","lat":39.7392,"lon":-104.9903},
+"washington_dc":{"city":"Washington DC","state":"District of Columbia","lat":38.9072,"lon":-77.0369},
+"boston":{"city":"Boston","state":"Massachusetts","lat":42.3601,"lon":-71.0589},
+"el_paso":{"city":"El Paso","state":"Texas","lat":31.7619,"lon":-106.4850},
+"nashville":{"city":"Nashville","state":"Tennessee","lat":36.1627,"lon":-86.7816},
+"detroit":{"city":"Detroit","state":"Michigan","lat":42.3314,"lon":-83.0458},
+"oklahoma_city":{"city":"Oklahoma City","state":"Oklahoma","lat":35.4676,"lon":-97.5164},
+"portland":{"city":"Portland","state":"Oregon","lat":45.5152,"lon":-122.6784},
+"las_vegas":{"city":"Las Vegas","state":"Nevada","lat":36.1699,"lon":-115.1398},
+"louisville":{"city":"Louisville","state":"Kentucky","lat":38.2527,"lon":-85.7585},
+"baltimore":{"city":"Baltimore","state":"Maryland","lat":39.2904,"lon":-76.6122},
+"milwaukee":{"city":"Milwaukee","state":"Wisconsin","lat":43.0389,"lon":-87.9065},
+"albuquerque":{"city":"Albuquerque","state":"New Mexico","lat":35.0844,"lon":-106.6504},
+"tucson":{"city":"Tucson","state":"Arizona","lat":32.2226,"lon":-110.9747},
+"fresno":{"city":"Fresno","state":"California","lat":36.7378,"lon":-119.7871},
+"sacramento":{"city":"Sacramento","state":"California","lat":38.5816,"lon":-121.4944},
+"mesa":{"city":"Mesa","state":"Arizona","lat":33.4223,"lon":-111.8226},
+"kansas_city":{"city":"Kansas City","state":"Missouri","lat":39.0997,"lon":-94.5786},
+"atlanta":{"city":"Atlanta","state":"Georgia","lat":33.7490,"lon":-84.3880},
+"long_beach":{"city":"Long Beach","state":"California","lat":33.7701,"lon":-118.1937},
+"colorado_springs":{"city":"Colorado Springs","state":"Colorado","lat":38.8339,"lon":-104.8214},
+"raleigh":{"city":"Raleigh","state":"North Carolina","lat":35.7796,"lon":-78.6382},
+"miami":{"city":"Miami","state":"Florida","lat":25.7617,"lon":-80.1918},
+"virginia_beach":{"city":"Virginia Beach","state":"Virginia","lat":36.8529,"lon":-75.9780},
+"omaha":{"city":"Omaha","state":"Nebraska","lat":41.2565,"lon":-95.9345},
+"oakland":{"city":"Oakland","state":"California","lat":37.8044,"lon":-122.2712},
+"minneapolis":{"city":"Minneapolis","state":"Minnesota","lat":44.9778,"lon":-93.2650},
+"tulsa":{"city":"Tulsa","state":"Oklahoma","lat":36.1540,"lon":-95.9928},
+"wichita":{"city":"Wichita","state":"Kansas","lat":37.6872,"lon":-97.3301},
+"new_orleans":{"city":"New Orleans","state":"Louisiana","lat":29.9511,"lon":-90.0715},
+"cleveland":{"city":"Cleveland","state":"Ohio","lat":41.4993,"lon":-81.6944},
+"london":{"city":"London","state":"United Kingdom","lat":51.5074,"lon":-0.1278},
+"toronto":{"city":"Toronto","state":"Ontario","lat":43.6532,"lon":-79.3832}
+};
+
+/* ─── LIVE CACHE (populated from city_cache.json after load) ─── */
+var cache=JSON.parse(JSON.stringify(cityCacheData));
+var cacheAge={}; /* key -> timestamp of last update */
+
 var IS_MOBILE=window.innerWidth<768;
 var $=function(id){return document.getElementById(id)};
 var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,sugIdx=-1;
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
-var futuresData=[],futuresTimer=null;
-var BRIDGE_REACHABLE=null;
+var futuresData=[];
+var _lastCacheLoad=0;
 
 /* ===== STATE ===== */
 function loadClientLoc(){try{var s=localStorage.getItem('dash_loc');if(s){clientLoc=JSON.parse(s);return}}catch(e){}clientLoc={}}
 function saveClientLoc(){localStorage.setItem('dash_loc',JSON.stringify(clientLoc));}
 function locKey(l){return(l.city||'')+'|'+(l.state||'')+'|'+(l.zip||'');}
-function isStale(){return serverLoc.city && clientLoc.city && locKey(serverLoc)!==locKey(clientLoc);}
+function isStale(){return serverLoc.city&&clientLoc.city&&locKey(serverLoc)!==locKey(clientLoc);}
 
-/* Parse URL params for instant location change */
 function parseUrlParams(){
   var qs=new URLSearchParams(location.search);
-  var city=qs.get('city'), state=qs.get('state'), zip=qs.get('zip');
-  var lat=parseFloat(qs.get('lat')||'0'), lon=parseFloat(qs.get('lon')||'0');
+  var city=qs.get('city'),state=qs.get('state'),zip=qs.get('zip');
+  var lat=parseFloat(qs.get('lat')||'0'),lon=parseFloat(qs.get('lon')||'0');
   if(!city||!state)return;
   clientLoc={city:city,state:state,state_abbrev:stateToCode(state)||state,zip:zip||'',lat:lat,lon:lon,src:'url'};
-  saveClientLoc();
-  fetchClientWeather();checkStale();recalcForecastLabels();
+  saveClientLoc();fetchClientWeather();checkStale();recalcForecastLabels();
   pushLocationToBridge();fetchLocalContent(city,state);
 }
 
-/* ===== BRIDGE + CLIENT FETCH ===== */
-function pushLocationToBridge(){
-  try{if(!clientLoc.city)return;fetch(BRIDGE_URL+'/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})}).catch(function(){});}catch(e){}
+/* ===== CACHE LOADER (runs every 20s in background) ===== */
+function cityToKey(city){
+  return city.toLowerCase().replace(/[^a-z0-9]/g,'_');
 }
 
-function fetchLocalContent(city,state){
-  if(!city)return;
-  clientLocalData={reddit:[],news:[],x:[],channels:[]};
-  renderLocalPlaceholders();
-  // If we already know bridge is unreachable, skip to fallback immediately
-  if(BRIDGE_REACHABLE===false){fetchLocalFallback(city,state);return;}
-  // If unknown, probe bridge with 3s timeout
-  if(BRIDGE_REACHABLE===null){
-    var ctrl=new AbortController();
-    var probeTimer=setTimeout(function(){ctrl.abort();},3000);
-    fetch(BRIDGE_URL+'/local?city=test&state=test&limit=1',{signal:ctrl.signal})
-      .then(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=true;bridgeFetchAll(city,state);})
-      .catch(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=false;fetchLocalFallback(city,state);});
-    return;
+async function loadCityCache(){
+  try{
+    var r=await fetch('city_cache.json?v='+Date.now());
+    if(!r.ok)return;
+    var data=await r.json();
+    var now=Date.now();
+    var staleCutoff=now-86400000; /* 24h in ms */
+    var cleared=0,added=0;
+    for(var k in data){
+      var entry=data[k];
+      try{
+        var ts=new Date(entry.timestamp||0).getTime();
+        if(ts<staleCutoff){cleared++;continue;} /* skip stale */
+        cache[k]=entry;
+        cacheAge[k]=ts;
+        added++;
+      }catch(e){}
+    }
+    /* Remove any keys in live cache that disappeared from file (garbage collect stale >24h) */
+    for(var ck in cache){
+      if(!cache[ck].city){delete cache[ck];continue;} /* sanity */
+      var age=cacheAge[ck]||new Date(cache[ck].timestamp||0).getTime();
+      if(age<staleCutoff){delete cache[ck];delete cacheAge[ck];cleared++;}
+    }
+    _lastCacheLoad=now;
+    /* Refresh local card if current city is now in cache */
+    var ckey=cityToKey(clientLoc.city||'');
+    if(cache[ckey]){renderLocalFromCache(ckey);}
+  }catch(e){console.log('[CACHE] load error',e)}
+}
+
+/* ===== CITY CACHE RENDERER (uses cache instead of live scrape) ===== */
+function renderLocalFromCache(key){
+  var c=cache[key];if(!c)return;
+  /* Weather */
+  var w=c.weather||{};
+  var fc=[];
+  if(w.forecast&&w.forecast.length){
+    fc=w.forecast.slice(0,5).map(function(f){
+      var dd=new Date(f.date+'T00:00:00');
+      var dn=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dd.getDay()];
+      var t=Math.round((f.high+f.low)/2);
+      var cl=t>75?'w':t<55?'c':'';
+      return'<span class="'+cl+'">'+(dn||'').slice(0,3)+' '+t+'F '+(f.description||'')+'</span>';
+    }).join('');
   }
-  bridgeFetchAll(city,state);
-}
+  $('local-forecast').innerHTML=fc;
+  var curTemp=w.temperature?Math.round(w.temperature):(w.current&&w.current.temperature?Math.round(w.current.temperature):0);
+  var curDesc=w.description||(w.current&&w.current.description)||'';
+  $('localTitle').textContent=(curTemp?curTemp+'° ':'')+(c.city)+' NEWS'+(curDesc?' | '+curDesc:'');
+  $('localBadge').textContent=c.state||'';
+  $('locCity').textContent=c.city||'LOCAL';$('locState').textContent=c.state||'';
+  if(curTemp)$('locWeather').textContent=curTemp+'°';else $('locWeather').textContent='';
 
-function bridgeFetchAll(city,state){
-  var done={ch:false,rd:false,ns:false,x:false};
-  function allDone(){fetchLocalFallback(city,state);}
-  // Channels
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=channels&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.channels=j.data||[];renderLocalFromClient();}done.ch=true;if(done.rd&&done.ns&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.ch=true;if(done.rd&&done.ns&&done.x)allDone();});
-  // Reddit
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=reddit&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.reddit=j.data||[];renderLocalFromClient();}done.rd=true;if(done.ch&&done.ns&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.rd=true;if(done.ch&&done.ns&&done.x)allDone();});
-  // News
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=news&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.news=j.data||[];renderLocalFromClient();}done.ns=true;if(done.ch&&done.rd&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.ns=true;if(done.ch&&done.rd&&done.x)allDone();});
-  // X
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=x&limit=5')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.x=j.data||[];renderLocalFromClient();}done.x=true;if(done.ch&&done.rd&&done.ns&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.x=true;if(done.ch&&done.rd&&done.ns)allDone();});
-}
+  /* News */
+  var news=(c.news||[]).slice(0,IS_MOBILE?3:5);
+  var nh='';
+  if(news.length){nh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+news.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-news').innerHTML=nh||'<div class="ld">No cached news</div>';
 
-function renderLocalPlaceholders(){
-  $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
-  $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
-  $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
-}
+  /* Reddit */
+  var red=(c.reddit||[]).slice(0,IS_MOBILE?2:3);
+  var rh='';
+  if(red.length){rh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+red.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+(x.score||0)+'</span><span>r/'+(x.subreddit||'')+'</span></div></div>'}).join('');}
+  $('local-reddit').innerHTML=rh||'<div class="ld">No cached Reddit</div>';
 
-/* Client-side fallback for local content when bridge is unavailable */
-function fetchLocalFallback(city,state){
-  if(clientLocalData.reddit.length>0 && clientLocalData.news.length>0){return;}
-  console.log('[fallback] Fetching local content via CORS proxy for',city,state);
-  // Bing News RSS via allorigins
-  if(!clientLocalData.news.length){
-    var newsUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://www.bing.com/news/search?q='+encodeURIComponent(city+' '+state+' news')+'&format=rss');
-    fetch(newsUrl).then(function(r){return r.text()}).then(function(xml){
-      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
-      var items=Array.from(doc.querySelectorAll('item')).map(function(it){
-        return{title:(it.querySelector('title')||{}).textContent||'',url:(it.querySelector('link')||{}).textContent||'',source:'Bing',published:(it.querySelector('pubDate')||{}).textContent||''};
-      }).filter(function(x){return x.title});
-      clientLocalData.news=items.slice(0,IS_MOBILE?3:5);renderLocalFromClient();
-    }).catch(function(e){console.log('fallback news err',e)});
-  }
-  // Reddit via old.reddit RSS
-  if(!clientLocalData.reddit.length){
-    var sr=city.toLowerCase().replace(/[^a-z0-9]/g,'');
-    var redditUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://old.reddit.com/r/'+sr+'/.rss?limit=8');
-    fetch(redditUrl).then(function(r){return r.text()}).then(function(xml){
-      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
-      var items=Array.from(doc.querySelectorAll('entry')).map(function(it){
-        return{title:(it.querySelector('title')||{}).textContent||'',url:'https://reddit.com'+((it.querySelector('link')||{}).getAttribute('href')||''),subreddit:sr,score:'—'};
-      }).filter(function(x){return x.title});
-      clientLocalData.reddit=items.slice(0,IS_MOBILE?2:3);renderLocalFromClient();
-    }).catch(function(e){console.log('fallback reddit err',e)});
+  /* X */
+  var tw=(c.x_posts||[]).slice(0,IS_MOBILE?3:5);
+  var th='';
+  if(tw.length){th+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
+  $('local-x').innerHTML=th||'<div class="ld">No cached X posts</div>';
+
+  /* Channels */
+  var ch=(c.channels||[]).slice(0,IS_MOBILE?3:5);
+  var chh='';
+  if(ch.length){chh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.map(function(x){return '<div class="item"><a href="'+(x.url||'#')+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-channels').innerHTML=chh||'';
+
+  /* Stale indicator */
+  var ts=c.timestamp?new Date(c.timestamp):null;
+  var ageMin=ts?Math.floor((Date.now()-ts)/60000):999;
+  if(ageMin>30&&ageMin<1440){
+    $('locStale').innerHTML='&#9888; Cache is '+ageMin+'m old. Refreshing...';
+    $('locStale').classList.add('show');
+  } else if(ageMin>=1440){
+    $('locStale').innerHTML='&#9888; Cache >24h old. Fetching fresh data...';
+    $('locStale').classList.add('show');
+  } else {
+    $('locStale').classList.remove('show');
   }
 }
 
-/* Render from bridge/fallback data */
-function renderLocalFromClient(){
-  // Always render if we have data, even when not stale (URL cold-load case)
-  var city=clientLoc.city||serverLoc.city||'LOCAL';
-  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
-  $('localBadge').textContent=clientLoc.zip||'';
-  var rd=clientLocalData.reddit||[],h='';
-  if(rd.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+rd.slice(0,IS_MOBILE?2:3).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('');}
-  $('local-reddit').innerHTML=h||'<div class="ld">No local Reddit found</div>';
-  var ns=clientLocalData.news||[];h='';
-  if(ns.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+ns.slice(0,IS_MOBILE?3:4).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('');}
-  $('local-news').innerHTML=h||'<div class="ld">No local news found</div>';
-  var tw=clientLocalData.x||[];h='';
-  if(tw.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
-  $('local-x').innerHTML=h||'<div class="ld">No local X posts found</div>';
-  var ch=clientLocalData.channels||[];h='';
-  if(ch.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
-  $('local-channels').innerHTML=h||'';
-}
-
-/* ===== LOCATION BAR RENDER ===== */
+/* ===== LOCATION BAR ===== */
 function renderLocInput(){
   var inp=$('locInput');var hasLoc=clientLoc.city||clientLoc.zip;var txt='';
   if(hasLoc){var temp=clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'72° ';txt=temp+(clientLoc.city||'')+(clientLoc.state_abbrev?', '+clientLoc.state_abbrev:(clientLoc.state?', '+clientLoc.state:''));inp.value=txt;inp.readOnly=true;inp.style.cursor='pointer';$('locClear').style.display='none';}
   else{inp.value='';inp.readOnly=false;inp.style.cursor='text';inp.placeholder='City name';$('locClear').style.display='none';}
 }
 function activateSearchMode(){
+  $('locDisplay').style.display='none';$('locSearchWrap').classList.add('open');
   var inp=$('locInput');inp.dataset.mode='search';inp.readOnly=false;inp.style.cursor='text';
   var q=(clientLoc.city||'')+(clientLoc.state?' '+clientLoc.state:'')+(clientLoc.zip?' '+clientLoc.zip:'');
   inp.value=q.trim();inp.focus();inp.select();$('locClear').style.display=inp.value?'block':'none';
 }
-function deactivateSearchMode(){var inp=$('locInput');delete inp.dataset.mode;$('locSugs').style.display='none';sugIdx=-1;renderLocInput();}
+function deactivateSearchMode(){
+  $('locDisplay').style.display='flex';$('locSearchWrap').classList.remove('open');
+  var inp=$('locInput');delete inp.dataset.mode;$('locSugs').style.display='none';sugIdx=-1;renderLocInput();
+}
 
-/* ===== AUTOCOMPLETE ===== */
+/* ===== SEARCH UI ===== */
 var debTimer;
-function onSearchInput(v){clearTimeout(debTimer);$('locClear').style.display=v?'block':'none';if(!v||v.length<2){$('locSugs').style.display='none';return}debTimer=setTimeout(function(){fetchSuggestions(v)},180);}
-function fetchSuggestions(q){
-  if(pendingReq)pendingReq.abort();
-  var ctrl=new AbortController();pendingReq=ctrl;var pel=$('locSugs');
-  var rows='<div class="loc-sug" onclick="useGPS()"><span class="loc-sug-name" style="color:var(--info)">&#127760; Use my location</span></div>';
-  fetch('https://geocoding-api.open-meteo.com/v1/search?name='+encodeURIComponent(q)+'&count=6&language=en&format=json',{signal:ctrl.signal})
-    .then(function(r){return r.json()})
-    .then(function(d){
-      pendingReq=null;var res=d.results||[];
-      if(!res.length){pel.innerHTML=rows+'<div class="loc-sug-empty">No results</div>';pel.style.display='block';return;}
-      rows+=res.map(function(p,i){var admin1=p.admin1||'';var stCode=stateToCode(admin1)||admin1;var meta=(admin1)+(p.country?', '+p.country:'');return '<div class="loc-sug" data-idx="'+i+'" data-lat="'+p.latitude+'" data-lon="'+p.longitude+'" data-name="'+p.name+'" data-admin1="'+admin1+'" data-country="'+(p.country||'')+'" data-code="'+stCode+'" onclick="selectSuggestion(this)"><span><span class="loc-sug-name">'+p.name+'</span><span class="loc-sug-meta"> &mdash; '+meta+'</span></span><span class="loc-sug-meta">'+p.latitude.toFixed(2)+', '+p.longitude.toFixed(2)+'</span></div>';}).join('');
-      pel.innerHTML=rows;pel.style.display='block';sugIdx=-1;
-    }).catch(function(){});
+function onSearchInput(v){clearTimeout(debTimer);$('locClear').style.display=v?'block':'none';if(!v||v.length<2){$('locSugs').style.display='none';return}debTimer=setTimeout(function(){showCitySuggestions(v)},180);}
+function showCitySuggestions(q){
+  var matches=[];
+  var ql=q.toLowerCase();
+  for(var k in cityCacheData){
+    var c=cityCacheData[k];
+    if(c.city.toLowerCase().indexOf(ql)!==-1||c.state.toLowerCase().indexOf(ql)!==-1){matches.push({key:k,name:c.city,state:c.state,lat:c.lat,lon:c.lon});}
+  }
+  var pel=$('locSugs');
+  if(!matches.length){pel.innerHTML='<div class="loc-sug-empty">No cities found</div>';pel.style.display='block';return;}
+  pel.innerHTML=matches.slice(0,6).map(function(c){return '<div class="loc-sug" data-key="'+c.key+'" data-name="'+c.name+'" data-state="'+c.state+'" data-lat="'+c.lat+'" data-lon="'+c.lon+'" onclick="selectCitySuggestion(this)"><span class="loc-sug-name">'+c.name+'</span><span class="loc-sug-meta">'+c.state+'</span></span></div>';}).join('');
+  pel.style.display='block';sugIdx=-1;
+}
+function selectCitySuggestion(el){
+  var name=el.getAttribute('data-name');var state=el.getAttribute('data-state');
+  var lat=+el.getAttribute('data-lat');var lon=+el.getAttribute('data-lon');
+  var code=stateToCode(state)||state;
+  clientLoc={city:name,state:state,state_abbrev:code,lat:lat,lon:lon,zip:'',src:'search'};
+  saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;deactivateSearchMode();
+  fetchClientWeather();checkStale();recalcForecastLabels();
+  /* Try cache first */
+  var ckey=cityToKey(name);
+  if(cache[ckey]){renderLocalFromCache(ckey);}
+  else{fetchLocalContent(name,state);}
 }
 function onSearchKey(e){
   var sgs=$('locSugs').querySelectorAll('.loc-sug');
   if(e.key==='ArrowDown'){e.preventDefault();if(sugIdx<sgs.length-1){sugIdx++;updateSugActive(sgs)}return}
   if(e.key==='ArrowUp'){e.preventDefault();if(sugIdx>0){sugIdx--;updateSugActive(sgs)}return}
-  if(e.key==='Enter'){if(sugIdx>=0&&sgs[sugIdx]){selectSuggestion(sgs[sugIdx])}else{lookupZip($('locInput').value.trim())}return}
-  if(e.key==='Escape'){$('locSugs').style.display='none';sugIdx=-1;if($('locInput').dataset.mode){deactivateSearchMode()}else{$('locInput').blur()}}
+  if(e.key==='Enter'){if(sugIdx>=0&&sgs[sugIdx]){selectCitySuggestion(sgs[sugIdx])}else{deactivateSearchMode()}return}
+  if(e.key==='Escape'){$('locSugs').style.display='none';sugIdx=-1;deactivateSearchMode();}
 }
 function updateSugActive(sgs){sgs.forEach(function(el){el.classList.remove('active')});if(sgs[sugIdx])sgs[sugIdx].classList.add('active')}
 function clearSearch(){$('locInput').value='';$('locInput').focus();onSearchInput('');if(!$('locInput').dataset.mode){clientLoc={};saveClientLoc();renderLocInput();}}
-function selectSuggestion(el){
-  clientLoc={city:el.getAttribute('data-name'),state:el.getAttribute('data-admin1')||'',state_abbrev:el.getAttribute('data-code')||'',lat:+el.getAttribute('data-lat'),lon:+el.getAttribute('data-lon'),zip:'',src:'search'};
-  saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;
-  renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-  pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
-}
+
 async function lookupZip(zip){
   zip=zip.replace(/\D/g,'').slice(0,5);if(zip.length!==5)return;
   try{var r=await fetch('https://api.zippopotam.us/us/'+zip);var d=await r.json();var p=d.places[0];
     clientLoc={city:p['place name'],state:p.state,state_abbrev:p['state abbreviation'],lat:+p.latitude,lon:+p.longitude,zip:zip,src:'zip'};
-    saveClientLoc();$('locSugs').style.display='none';
+    saveClientLoc();$('locSugs').style.display='none';deactivateSearchMode();
     renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-    pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
+    var ckey=cityToKey(clientLoc.city);if(cache[ckey]){renderLocalFromCache(ckey);}else{fetchLocalContent(clientLoc.city,clientLoc.state);}
   }catch(e){$('locSugs').innerHTML='<div class="loc-sug-empty">ZIP not found</div>';$('locSugs').style.display='block';}
 }
 
-/* ===== GPS → CITY ===== */
 function useGPS(){
   var btn=$('locGps');btn.classList.add('spin');$('locSugs').style.display='none';
   if(!navigator.geolocation){btn.classList.remove('spin');return}
@@ -406,12 +475,13 @@ function useGPS(){
         var city=geo.city||geo.locality||'My Location';var state=geo.principalSubdivision||'';
         var code=stateToCode(state)||state;var zip=geo.postcode||'';
         clientLoc={city:city,state:state,state_abbrev:code,lat:lat,lon:lon,zip:zip,src:'gps'};
-        saveClientLoc();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-        pushLocationToBridge();fetchLocalContent(city,state);btn.classList.remove('spin');
+        saveClientLoc();deactivateSearchMode();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+        var ckey=cityToKey(city);if(cache[ckey]){renderLocalFromCache(ckey);}else{fetchLocalContent(city,state);}
+        btn.classList.remove('spin');
       }).catch(function(){
         clientLoc={city:lat.toFixed(4)+', '+lon.toFixed(4),state:'',state_abbrev:'',lat:lat,lon:lon,zip:'',src:'gps'};
-        saveClientLoc();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-        pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);btn.classList.remove('spin');
+        saveClientLoc();deactivateSearchMode();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+        fetchLocalContent(clientLoc.city,clientLoc.state);btn.classList.remove('spin');
       });
   },function(){btn.classList.remove('spin');});
 }
@@ -495,7 +565,11 @@ function renderAll(d){
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
+  /* Use cache for local cards if stale + no local data (batch mode) */
+  var ckey=cityToKey(clientLoc.city||'');
+  if(isStale() && cache[ckey]){
+    renderLocalFromCache(ckey);
+  }else if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
     renderLocalPlaceholders();
   }else if(isStale()){
     renderLocalFromClient();
@@ -549,7 +623,6 @@ function renderAll(d){
   var cp=(d.crypto||{}).prices||[];
   $('crypto-prices').innerHTML='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
 
-  // Business News
   var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
   $('business').innerHTML=biz.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
@@ -568,16 +641,79 @@ async function loadData(){
   catch(e){console.error('loadData',e)}
 }
 
+/* Legacy bridge/fallback (call when cache miss) */
+function pushLocationToBridge(){
+  try{if(!clientLoc.city)return;fetch(BRIDGE_URL+'/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})}).catch(function(){});}catch(e){}
+}
+function fetchLocalContent(city,state){
+  if(!city)return;
+  var ckey=cityToKey(city);
+  if(cache[ckey]){renderLocalFromCache(ckey);return;}
+  /* Fallback: bridge or live scrape */
+  renderLocalPlaceholders();
+  fetchLocalFallback(city,state);
+}
+function renderLocalPlaceholders(){
+  $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
+  $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
+  $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
+}
+function fetchLocalFallback(city,state){
+  if(!clientLocalData.news.length){
+    var newsUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://www.bing.com/news/search?q='+encodeURIComponent(city+' '+state+' news')+'&format=rss');
+    fetch(newsUrl).then(function(r){return r.text()}).then(function(xml){
+      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
+      var items=Array.from(doc.querySelectorAll('item')).map(function(it){
+        return{title:(it.querySelector('title')||{}).textContent||'',url:(it.querySelector('link')||{}).textContent||'',source:'Bing',published:(it.querySelector('pubDate')||{}).textContent||''};
+      }).filter(function(x){return x.title});
+      clientLocalData.news=items.slice(0,IS_MOBILE?3:5);renderLocalFromClient();
+    }).catch(function(e){});
+  }
+  if(!clientLocalData.reddit.length){
+    var sr=city.toLowerCase().replace(/[^a-z0-9]/g,'');
+    var redditUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://old.reddit.com/r/'+sr+'/.rss?limit=8');
+    fetch(redditUrl).then(function(r){return r.text()}).then(function(xml){
+      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
+      var items=Array.from(doc.querySelectorAll('entry')).map(function(it){
+        return{title:(it.querySelector('title')||{}).textContent||'',url:'https://reddit.com'+((it.querySelector('link')||{}).getAttribute('href')||''),subreddit:sr,score:'—'};
+      }).filter(function(x){return x.title});
+      clientLocalData.reddit=items.slice(0,IS_MOBILE?2:3);renderLocalFromClient();
+    }).catch(function(e){});
+  }
+}
+function renderLocalFromClient(){
+  var city=clientLoc.city||serverLoc.city||'LOCAL';
+  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
+  $('localBadge').textContent=clientLoc.zip||'';
+  var rd=clientLocalData.reddit||[],h='';
+  if(rd.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+rd.slice(0,IS_MOBILE?2:3).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('');}
+  $('local-reddit').innerHTML=h||'<div class="ld">No local Reddit found</div>';
+  var ns=clientLocalData.news||[];h='';
+  if(ns.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+ns.slice(0,IS_MOBILE?3:4).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('');}
+  $('local-news').innerHTML=h||'<div class="ld">No local news found</div>';
+  var tw=clientLocalData.x||[];h='';
+  if(tw.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
+  $('local-x').innerHTML=h||'<div class="ld">No local X posts found</div>';
+  var ch=clientLocalData.channels||[];h='';
+  if(ch.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-channels').innerHTML=h||'';
+}
+
 /* Events */
 $('locInput').addEventListener('click',function(e){if(this.readOnly){activateSearchMode()}});
 $('locInput').addEventListener('focus',function(e){if(this.readOnly){activateSearchMode()}});
 document.addEventListener('click',function(e){if(!e.target.closest('.loc-search-wrap')){$('locSugs').style.display='none'}});
 
 /* Init */
-loadClientLoc();parseUrlParams();renderLocInput();applyTheme();loadData();
-if(clientLoc.city){fetchLocalContent(clientLoc.city,clientLoc.state);}
+loadClientLoc();
+if(clientLoc.city){
+  var ckey=cityToKey(clientLoc.city);
+  if(cache[ckey]){renderLocalFromCache(ckey);}
+}
+fetchClientWeather();applyTheme();loadData();
 fetchFutures();setInterval(fetchFutures,60000);
 setInterval(loadData,300000);
+setInterval(loadCityCache,20000); /* Check city_cache.json every 20s */
 </script>
 </body>
 </html>

@@ -251,11 +251,16 @@ function pushLocationToBridge(){
   }catch(e){}
 }
 
-/* Fetch local content from bridge (Reddit/news/X) for the selected city */
-var clientLocalData={reddit:[],news:[],x:[]};
+/* Fetch local content from bridge (Reddit/news/x) for the selected city */
+var clientLocalData={reddit:[],news:[],x:[],channels:[]};
 function fetchLocalContent(city,state){
   if(!city)return;
-  clientLocalData={reddit:[],news:[],x:[]};
+  clientLocalData={reddit:[],news:[],x:[],channels:[]};
+  // Channels
+  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=channels&limit=8')
+    .then(function(r){return r.json()})
+    .then(function(j){if(j.ok){clientLocalData.channels=j.data||[];renderLocalFromClient();}})
+    .catch(function(){});
   // Reddit
   fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=reddit&limit=8')
     .then(function(r){return r.json()})
@@ -309,7 +314,16 @@ function renderLocalFromClient(){
       }).join('');
   }
   $('local-x').innerHTML=h||'<div class="ld">Loading local X posts...</div>';
-  $('local-channels').innerHTML='';
+  // Channels
+  var ch=clientLocalData.channels||[];
+  h='';
+  if(ch.length>0){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'
+      +ch.slice(0,IS_MOBILE?3:5).map(function(x){
+        return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>';
+      }).join('');
+  }
+  $('local-channels').innerHTML=h||'';
 }
 
 /* ===== LOCATION BAR RENDER ===== */
@@ -533,7 +547,7 @@ function renderAll(d){
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0){
+  if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
     // Still fetching fresh local content for selected city
     $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
     $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';

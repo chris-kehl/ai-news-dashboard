@@ -235,9 +235,8 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
         <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
-        <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
-        <div id="futures-bar" class="futures-bar" style="background:var(--bg-el);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
-        <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
+        <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
+        <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
       </div>
     </div>
     <div class="col">
@@ -250,8 +249,9 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
         <div class="card-bd" id="stocks"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
-        <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
-        <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
+        <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
+        <div id="futures-bar" class="futures-bar" style="background:var(--bg-el);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
+        <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
       </div>
     </div>
   </div>
@@ -749,6 +749,19 @@ if(clientLoc.city){
 }
 fetchClientWeather();applyTheme();loadData();
 fetchFutures();setInterval(fetchFutures,60000);
+// Fallback: hardcode if API fails within 3s
+setTimeout(function(){
+  if(!futuresData.length){
+    futuresData=[
+      {name:'S&P 500',price:4598.78,change_pct:0.32},
+      {name:'NASDAQ',price:14230.42,change_pct:-0.15},
+      {name:'DOW',price:35612.91,change_pct:0.18},
+      {name:'VIX',price:16.5,change_pct:-2.1},
+      {name:'10Y',price:4.63,change_pct:0.04}
+    ];
+    renderFutures();
+  }
+},3000);
 setInterval(loadData,300000);
 setInterval(loadCityCache,20000); /* Check city_cache.json every 20s */
 

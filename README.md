@@ -8,64 +8,114 @@ Self-updating dashboard at **chris-kehl.github.io/ai-news-dashboard**, powered b
 
 | Section | Cards | Data Source |
 |---------|-------|-------------|
-| **AI Intelligence** | Daily Summary | OpenRouter free LLM |
-| **Tech & Decentralized AI** | GitHub Trending, Bittensor, Reddit AI | GitHub API, CoinGecko, HackerNews |
-| **Crypto & Markets** | Prices, News, Hottest Stocks | CoinGecko, Cointelegraph RSS, Yahoo Finance |
-| **Global News** | World Headlines, Defense, Local News | BBC/AP RSS, Defense News, NewsAPI.org |
-| **Weather Bar** | Current + 4-day forecast | NWS by zipcode |
+| **AI Intelligence** | Daily Summary (LLM), Trading Signals | OpenRouter free LLM |
+| **Tech & Decentralized AI** | GitHub Trending, Bittensor TAO + Subnets, Reddit AI | GitHub API, TAOSTATS, CoinGecko, HackerNews |
+| **Crypto & Markets** | Top Coins, S&P 500 + Crypto Marquee Ticker | CoinGecko, Yahoo Finance |
+| **Global News** | World Headlines (AP), Defense / Geopolitics | BBC/AP RSS, Defense News, Al Jazeera |
+| **Local** | Weather (client-side), Reddit r/{city}, X/Twitter, TV/Paper News | Open-Meteo, DuckDuckGo, Nitter, RSS |
+| **Weather + Location Bar** | Current temp + 5-day forecast, city search, GPS | Open-Meteo (free, no key) |
 
-All cards have scrollbars — page stays clean regardless of content volume.
+All cards have scrollbars - page stays clean regardless of content volume.
+
+---
+
+## Key Features
+
+### Wunderground-Style Location Bar
+- **Prominent location display** at top of page - click to change
+- **City autocomplete** via Open-Meteo Geocoding API (free, worldwide)
+- **ZIP code lookup** via Zippopotam.us (US only)
+- **GPS button** - uses browser geolocation for instant lat/lon
+- **Client-side weather** - Open-Meteo forecast fetches immediately on location change (no server wait)
+- **Stale data banner** - warns when location differs from last server scrape; Reddit/X/local news update on next cron run
+- Location persists in `localStorage`
+
+### Scrolling Marquee Ticker
+- CSS `translateX` animation, pauses on hover
+- S&P 500 stocks + top crypto from scraper data
+- 90s infinite loop with duplicated track for seamless scroll
+
+### Mobile-First Responsive
+- Single column on mobile, 2-col tablet, 3-col desktop
+- Fewer items per card on small screens (4 items vs 6)
+- Touch-friendly buttons (`min-height: 36px`)
+- Viewport locked to prevent zoom on input focus
+- iOS smooth scrolling (`-webkit-overflow-scrolling: touch`)
+
+### Bittensor / TAO
+- Real-time TAO price + 24h change from TAOSTATS API  
+- Active subnet count, top subnets with price/market cap
+- Manual URL auth to avoid urllib colon encoding issues
+
+### Data-Universe Pattern Scrapers
+- **X/Twitter**: Playwright + headless Chromium against Nitter instances
+  - Data-universe selector pattern: `.tweet-content.media-body`, `@username` from title
+  - Searches city name, city + state, state name (deduplicated)
+- **Reddit**: `old.reddit.com/r/{city}/.rss` + `old.reddit.com/r/{state}/.rss`
+  - Atom XML parsing with score extraction from body text
+  - Rate-limit handling (429 → 30s retry)
+
+### Unified Location System
+- `scraper/config.json` holds `{zip, city, state, lat, lon}` - single source of truth
+- `scraper/location_scraper.py` resolves any input:
+  - ZIP → Zippopotam.us → city, state, lat, lon
+  - City name → Open-Meteo geocoding → lat, lon, state, country
+- Falls back to `scraper/zip.txt` if config missing
+- Main orchestrator passes city/state to all downstream scrapers
 
 ---
 
 ## Architecture
 
 ```
-                        +------------------+     +----------------+
-   email digest ---->   |    Your Email    |     | Telegram /     |
-                        +------------------+     | Discord        |
-                                  ^              +--------+-------+
-                                  | SMTP                  ^
-                                  |                       | Webhook
-                                  |                       |
-  +------------------+   SSH/Git  |    +------------------+-----+
-  |  GitHub Pages    | <---------+----|  2016 Intel MacBook      |
-  |  (Static Site)   |   push         |  cron every 15 min       |
-  +------------------+   data.json    |  scraper + notify        |
-       ^                              +---------------------------+
-       | auto-refresh (5 min)                 ^
-       |                                      | health ping
-    [browser]                           [Uptime Kuma]
+                       +------------------+     +----------------+
+  email digest ---->   |    Your Email    |     | Telegram /     |
+                       +------------------+     | Discord        |
+                                 ^              +--------+-------+
+                                 | SMTP                 ^
+                                 |                      | Webhook
+                                 |                      |
+ +------------------+   SSH/Git  |    +------------------+-----+
+ |  GitHub Pages    | <---------+----|  2016 Intel MacBook      |
+ |  (Static Site)   |   push         |  cron every 15 min       |
+ +------------------+   data.json    |  scraper + notify        |
+      ^                              +---------------------------+
+      | auto-refresh (5 min)               ^
+      |                                    | health ping
+   [browser]  <---> [Open-Meteo API]  [Uptime Kuma]
+              (client-side weather)
 ```
 
 ---
 
 ## File Layout
 
-```
-ai-news-dashboard/
-├── index.html                 # Dashboard UI
-├── data.json                  # Generated by scraper
+```ai-news-dashboard/
+├── index.html                 # Dashboard UI (30KB, mobile-first, marquee)
+├── data.json                  # Generated by scraper (includes location block)
 ├── .env                       # Secrets (gitignored)
+├── scraper/config.json        # Location config {zip, city, state, lat, lon}
 ├── requirements.txt
 ├── deploy.sh                  # Git commit + push
 ├── run_scraper.sh             # Full pipeline
-├── scraper/
-│   ├── main.py                # Orchestrator
-│   ├── reddit_scraper.py      # HackerNews AI stories
-│   ├── reddit_local_scraper.py # r/{city} + r/{state} from weather zip
-│   ├── crypto_scraper.py      # CoinGecko + RSS feeds
-│   ├── stocks_scraper.py      # Yahoo Finance trending
-│   ├── ap_news_scraper.py     # BBC, AP, NPR RSS
-│   ├── defense_scraper.py     # Defense News, Al Jazeera, BBC
-│   ├── bittensor_scraper.py   # CoinGecko TAO price + signals
-│   ├── github_scraper.py      # GitHub Search API
-│   ├── weather_scraper.py     # NWS by zip
-│   ├── local_news_scraper.py  # NewsAPI.org + RSS fallback
-│   ├── summarizer.py          # OpenRouter LLM summary
-│   ├── email_notifier.py      # SMTP digest
-│   ├── bot_notifier.py        # Telegram + Discord
-│   └── healthcheck.py         # Stale data + push ping
+└── scraper/
+    ├── main.py                # Orchestrator - reads config.json, drives all scrapers
+    ├── location_scraper.py    # Universal geocoder: ZIP or city -> {lat, lon, city, state}
+    ├── local_scraper.py       # X (Nitter+Playwright) + Reddit (old.reddit RSS)
+    ├── reddit_scraper.py      # HackerNews AI stories
+    ├── crypto_scraper.py      # CoinGecko prices
+    ├── stocks_scraper.py      # Yahoo Finance trending + S&P 500 for ticker
+    ├── ap_news_scraper.py     # BBC, AP, NPR RSS
+    ├── defense_scraper.py     # Defense News, Al Jazeera, BBC
+    ├── taostats.py            # TAOSTATS API for TAO price + subnets
+    ├── github_scraper.py      # GitHub Search API
+    ├── weather_scraper.py     # NWS (US) + Open-Meteo (global) fallback
+    ├── local_news_scraper.py  # NewsAPI.org + RSS fallback
+    ├── local_channels_scraper.py  # DuckDuckGo local news discovery
+    ├── summarizer.py          # OpenRouter LLM summary + trading signals
+    ├── email_notifier.py      # SMTP digest
+    ├── bot_notifier.py        # Telegram + Discord
+    └── healthcheck.py         # Stale data + push ping
 ```
 
 ---
@@ -81,12 +131,16 @@ cd ~/ai-news-dashboard
 # Install deps
 pip3 install --user requests beautifulsoup4
 
+# Install Playwright for X scraper
+/opt/anaconda3/bin/python3 -m pip install playwright
+/opt/anaconda3/bin/python3 -m playwright install chromium
+
 # Set secrets
 nano .env
 
 # Required:
+#   TAOSTATS_KEY=tao-...              (from taostats.io)
 #   NEWSAPI_KEY=your_key_here          (free at newsapi.org)
-#   WEATHER_ZIP=40272                  (your zip)
 #   OPENROUTER_API_KEY=sk-or-v1-...    (optional, free at openrouter.ai)
 #
 # Optional notifications:
@@ -97,6 +151,10 @@ nano .env
 #   TELEGRAM_CHAT_ID=...
 #   DISCORD_WEBHOOK_URL=...
 #   HEALTHCHECK_URL=https://uptime...   (Uptime Kuma push monitor)
+
+# Set your location
+nano scraper/config.json
+# {"location": {"zip": "40272", "city": "Louisville", "state": "Kentucky", "lat": 38.0846, "lon": -85.851}}
 
 # Generate SSH deploy key for passwordless GitHub push
 ./setup_ssh.sh
@@ -114,7 +172,7 @@ python3 scraper/main.py
 
 ## Scheduling
 
-Cron handles everything — no launchd needed:
+Cron handles everything:
 
 ```bash
 crontab -l
@@ -134,25 +192,36 @@ crontab -l
 
 ```bash
 # Check last scraper output
-ssh -i ~/.ssh/m5_to_macbook chriskehl@192.168.4.32 "tail -20 /tmp/ai-news-cron.log"
+ssh chriskehl@192.168.4.32 "tail -20 /tmp/ai-news-cron.log"
 
 # Force a manual scrape
-ssh -i ~/.ssh/m5_to_macbook chriskehl@192.168.4.32 "cd ~/ai-news-dashboard && ./run_scraper.sh"
+ssh chriskehl@192.168.4.32 "cd ~/ai-news-dashboard && ./run_scraper.sh"
 
 # Check data freshness
-ssh -i ~/.ssh/m5_to_macbook chriskehl@192.168.4.32 "stat -f '%Sm' ~/ai-news-dashboard/data.json"
+ssh chriskehl@192.168.4.32 "stat -f '%Sm' ~/ai-news-dashboard/data.json"
+
+# Change location
+ssh chriskehl@192.168.4.32 "python3 -c \"import json; f=open('/Users/chriskehl/ai-news-dashboard/scraper/config.json','w'); json.dump({'location':{'zip':'90210','city':'Beverly Hills','state':'California','lat':34.09,'lon':-118.41}},f,indent=2)\""
 ```
 
 ---
 
 ## Customization
 
-### Change weather zip
-Edit `.env`:
-```bash
-WEATHER_ZIP=90210
-```
-The scraper auto-derives `r/beverlyhills` and `r/california` for local Reddit.
+### Change location
+Three ways:
+1. **Frontend** (instant weather, server scrapes on next cron): Click location bar → type city or ZIP → select
+2. **Edit config.json** on server:
+   ```bash
+   nano scraper/config.json
+   # {"location": {"zip": "90210", "city": "Beverly Hills", "state": "California", "lat": 34.09, "lon": -118.41}}
+   ```
+3. **Environment variable** (fallback):
+   ```bash
+   WEATHER_ZIP=90210
+   ```
+
+The scraper auto-derives `r/beverlyhills` and `r/california` for local Reddit, and searches "Beverly Hills", "Beverly Hills California", "California" on X.
 
 ### Change AI subreddits
 Edit `scraper/reddit_scraper.py` — currently pulls from HackerNews (Reddit blocks RSS). Add more RSS sources if needed.
@@ -173,11 +242,14 @@ Comment out lines in `scraper/main.py` — each scraper is independent.
 
 | Issue | Fix |
 |-------|-----|
-| Dashboard shows old data | Check cron is running: `tail /tmp/ai-news-cron.log` |
+| Dashboard shows old data | Check cron: `tail /tmp/ai-news-cron.log` |
 | Git push fails | Verify SSH key in GitHub deploy keys; check `~/.ssh/config` |
 | Local news empty | Check `NEWSAPI_KEY` in `.env`; RSS fallback kicks in if key invalid |
-| Reddit local empty | Reddit blocks scraping; old.reddit.com RSS with delays (6-9s) is used |
-| LLM summary is generic | Add `OPENROUTER_API_KEY` to `.env` for AI-generated summaries |
+| X/Twitter empty | Nitter instances rotate; scraper tries multiple. Playwright may need re-install: `python3 -m playwright install chromium` |
+| Reddit local empty | Check if r/{city} exists. old.reddit.com RSS with 6-9s delays |
+| LLM summary is generic | Add `OPENROUTER_API_KEY` to `.env` |
+| TAO price missing | Check `TAOSTATS_KEY` in `.env`. Key format: `tao-<uuid>:<token>` — must be raw query param |
+| Location bar empty | First visit: click location, search city/ZIP, or hit GPS button |
 
 ---
 
@@ -185,12 +257,14 @@ Comment out lines in `scraper/main.py` — each scraper is independent.
 
 | Service | Limit | Key Required |
 |---------|-------|-------------|
+| Open-Meteo (weather + geocoding) | Unlimited | No |
+| Zippopotam.us | Unlimited | No |
 | CoinGecko | 10-30 calls/min | No |
 | GitHub Search API | 10 req/min (unauth) | No |
-| BBC/AP/NPR RSS | Unlimited | No |
+| BBC/AP/NPR/Defense News RSS | Unlimited | No |
 | NewsAPI.org | 100 req/day | Yes (free tier) |
 | OpenRouter | 200 req/day | Yes (free tier) |
-| NWS Weather | Unlimited | No |
+| TAOSTATS | Rate-limited | Yes |
 
 ---
 
@@ -212,5 +286,6 @@ Comment out lines in `scraper/main.py` — each scraper is independent.
 - Backend: Python 3 + cron on a 2016 MacBook
 - Data: RSS feeds + REST APIs, no paid scrapers
 - LLM: OpenRouter free tier (optional)
+- Geocoding: Open-Meteo + Zippopotam.us (free)
+- Browser automation: Playwright + Chromium for X/Twitter
 - Notifications: SMTP email, Telegram bot, Discord webhook
-

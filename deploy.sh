@@ -17,7 +17,7 @@ git rev-parse --git-dir > /dev/null 2>&1 || {
     exit 1
 }
 
-# Stage data.json and any other changes
+# Stage data.json, index.html, and city_cache.json
 git add data.json index.html
 git diff --cached --quiet && {
     echo "No changes to commit."

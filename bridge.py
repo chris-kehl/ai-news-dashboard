@@ -46,6 +46,16 @@ def _get_x_scraper():
         return None
 
 
+def _get_channels_scraper():
+    """get_local_channel_news from local_channels_scraper.py — dynamic TV/paper discovery."""
+    try:
+        from local_channels_scraper import get_local_channel_news
+        return get_local_channel_news
+    except Exception as e:
+        print(f"[bridge] local_channels_scraper unavailable: {e}")
+        return None
+
+
 def _run_ssh(cmd: str, timeout: int = 20) -> tuple:
     res = subprocess.run(
         ["ssh", MACBOOK1, cmd],
@@ -244,6 +254,12 @@ class BridgeHandler(http.server.BaseHTTPRequestHandler):
                     data = fn(city, state, max_results=limit)
                 else:
                     data = [{"error": "ddg_scraper not available"}]
+            elif source == "channels":
+                fn = _get_channels_scraper()
+                if fn:
+                    data = fn(city, state, max_per_station=6, max_sites=6)
+                else:
+                    data = [{"error": "local_channels_scraper not available"}]
             elif source == "x":
                 fn = _get_x_scraper()
                 if fn:

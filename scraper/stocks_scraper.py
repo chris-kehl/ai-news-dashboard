@@ -154,6 +154,33 @@ def generate_ticker_json(output_path=None):
     except Exception as e:
         print(f"      Crypto ticker error: {e}")
 
+    # Explicit TAO fetch via Yahoo Finance (fallback if CoinGecko misses it)
+    tao_included = any(i.get("symbol") == "TAO" for i in crypto_prices)
+    if not tao_included:
+        try:
+            tao_data = fetch_json_with_retry(
+                "https://query1.finance.yahoo.com/v8/finance/chart/TAO-USD?interval=1d&range=2d",
+                headers=HEADERS, timeout=8, max_retries=2, backoff_base=3.0
+            )
+            if tao_data:
+                result = tao_data.get("chart", {}).get("result", [{}])[0]
+                meta = result.get("meta", {})
+                closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+                price = closes[-1] if closes and closes[-1] else meta.get("regularMarketPrice", 0)
+                prev = closes[-2] if len(closes) >= 2 and closes[-2] else meta.get("previousClose", 0)
+                if price:
+                    change = ((price - prev) / prev) * 100 if prev else 0
+                    crypto_prices.insert(0, {
+                        "symbol": "TAO",
+                        "price": round(price, 2),
+                        "change": round(change, 2)
+                    })
+        except Exception:
+            pass
+
+    # Ensure TAO is always first in crypto section
+    crypto_prices.sort(key=lambda x: 0 if x.get("symbol") == "TAO" else 1)
+
     # Get S&P stocks (capped batch)
     sp_quotes = batch_quotes(sp_list, limit=40)
 

@@ -13,12 +13,13 @@ HEADERS = {
 }
 
 def get_crypto_prices():
-    """Top 10 crypto prices via CoinGecko (free, no key needed)."""
+    """Top 10 crypto prices via CoinGecko (free, no key needed) + TAO."""
     cached = load_scraper_cache("crypto_prices", max_age_minutes=10)
     if cached:
         print("      Using cached crypto prices")
         return cached
     try:
+        # Top 10 by market cap + TAO explicitly
         url = "https://api.coingecko.com/api/v3/coins/markets"
         params = {
             "vs_currency": "usd",
@@ -33,15 +34,43 @@ def get_crypto_prices():
             return []
         data = r.json()
         coins = []
+        tao_included = False
         for coin in data:
             change = coin.get("price_change_percentage_24h_in_currency") or coin.get("price_change_percentage_24h") or 0
+            sym = coin["symbol"].upper()
+            if sym == "TAO":
+                tao_included = True
             coins.append({
                 "name": coin["name"],
-                "symbol": coin["symbol"].upper(),
+                "symbol": sym,
                 "price": coin["current_price"],
                 "change_24h": round(change, 2),
                 "market_cap": coin.get("market_cap", 0)
             })
+        # Explicit TAO fetch if not in top 10
+        if not tao_included:
+            try:
+                tao_url = "https://api.coingecko.com/api/v3/coins/markets"
+                tao_params = {
+                    "vs_currency": "usd",
+                    "ids": "bittensor",
+                    "sparkline": "false",
+                    "price_change_percentage": "24h"
+                }
+                tao_r = fetch_with_retry(tao_url, params=tao_params, headers=HEADERS, timeout=15, max_retries=2, backoff_base=3.0)
+                if tao_r:
+                    tao_data = tao_r.json()
+                    for coin in tao_data:
+                        change = coin.get("price_change_percentage_24h_in_currency") or coin.get("price_change_percentage_24h") or 0
+                        coins.insert(0, {
+                            "name": coin["name"],
+                            "symbol": coin["symbol"].upper(),
+                            "price": coin["current_price"],
+                            "change_24h": round(change, 2),
+                            "market_cap": coin.get("market_cap", 0)
+                        })
+            except Exception as e:
+                print(f"      TAO explicit fetch error: {e}")
         if coins:
             save_scraper_cache("crypto_prices", coins)
         return coins

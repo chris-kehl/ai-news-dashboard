@@ -15,12 +15,14 @@ BROWSER = {
 }
 
 NITTER_INSTANCES = [
-    "https://nitter.net",
+    "https://nitter.net",        # Working for RSS (Jul 2025)
     "https://nitter.cz",
     "https://nitter.space",
     "https://nitter.privacydev.net",
     "https://nitter.it",
 ]
+
+NEWS_X_ACCOUNTS = ["BBCWorld", "Reuters", "BreakingNews", "AP"]
 
 AI_ACCOUNTS = ["karpathy", "swyx", "ylecun", "DrJimFan", "sama", "gdb"]
 
@@ -151,54 +153,25 @@ def get_local_x_posts(city, state, max_results=8, fallback_ai=True):
 
 
 def get_world_x_posts(max_results=5):
-    """Fetch world news tweets via Nitter RSS search (no API key)."""
+    """Fetch world news tweets via Nitter RSS - search endpoint broken, use RSS directly."""
     posts = []
     try:
         base = _working_nitter()
-        # Use nitter /search endpoint with query param
-        sess = requests.Session()
-        sess.headers.update(BROWSER)
-        r = sess.get(
-            f"{base}/search?f=tweets&q=breaking+news&since=&until=&near=",
-            timeout=20
-        )
-        if r.status_code == 200 and len(r.text) > 5000:
-            for m in re.finditer(r'<div\s+class="tweet-content[^"]*"[^>]*>.*?<div\s+class="tweet-body">.*?<a\s+href="([^"]+)"[^>]*class="tweet-link"[^>]*>.*?<p\s+class="tweet-content">(.*?)</p>', r.text, re.DOTALL | re.IGNORECASE):
-                tweet_url = m.group(1)
-                tweet_text = re.sub(r'<[^>]+>', '', m.group(2)).strip()
-                if not tweet_text or len(tweet_text) < 10:
-                    continue
-                author_match = re.search(r'/([^/]+)/status/\d+', tweet_url)
-                author = author_match.group(1) if author_match else 'unknown'
-                status_match = re.search(r'/status/(\d+)', tweet_url)
-                if status_match:
-                    tweet_id = status_match.group(1)
-                    full_url = f"https://twitter.com/{author}/status/{tweet_id}"
-                else:
-                    full_url = f"https://twitter.com/{author}"
-                posts.append({
-                    "author": f"@{author}",
-                    "text": tweet_text[:280],
-                    "url": full_url,
-                    "date": "",
-                    "likes": 0,
-                })
+        print(f"      [X World] Using Nitter: {base}")
+        for acct in NEWS_X_ACCOUNTS[:3]:
+            try:
+                more = _fetch_user_rss(base, acct, limit=3)
+                for p in more:
+                    key = p["text"].lower()[:40]
+                    if not any(key == existing["text"].lower()[:40] for existing in posts):
+                        posts.append(p)
                 if len(posts) >= max_results:
                     break
-        # Fallback: news accounts
-        if len(posts) < 2:
-            news_accounts = ["BBCWorld", "Reuters", "BreakingNews", "AP"]
-            for acct in news_accounts:
-                try:
-                    more = _fetch_user_rss(base, acct, limit=2)
-                    for p in more:
-                        key = p["text"].lower()[:40]
-                        if not any(key == existing["text"].lower()[:40] for existing in posts):
-                            posts.append(p)
-                    if len(posts) >= max_results:
-                        break
-                except Exception:
-                    continue
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"      [WARN] {acct} fetch error: {e}")
+                continue
+        print(f"      [X World] Got {len(posts)} posts")
     except Exception as e:
         print(f"[WARN] World X scraper error: {e}")
     return posts[:max_results]

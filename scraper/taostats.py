@@ -65,7 +65,7 @@ def get_tao_price():
         return None, None
 
 
-def format_subnets(pool_json):
+def format_subnets(pool_json, tao_price_usd=0):
     """Convert raw dTAO pool JSON into dashboard-friendly list."""
     if not pool_json:
         return []
@@ -92,10 +92,14 @@ def format_subnets(pool_json):
         cap_tao = cap / 1e9
         liq_tao = liq / 1e9
 
+        # Subnet token price is in TAO units; convert to USD if we know TAO/USD
+        price_usd = price * tao_price_usd if tao_price_usd else 0
+
         out.append({
             "name": name,
             "netuid": netuid,
             "price": round(price, 6),
+            "price_usd": round(price_usd, 4),
             "price_change_24h": round(change, 2),
             "market_cap": round(cap_tao, 1),
             "liquidity": round(liq_tao, 1),
@@ -117,7 +121,7 @@ def get_bittensor_data():
     tao_price, tao_change = get_tao_price()
 
     pool = get_subnet_pool_data()
-    subnets = format_subnets(pool) if pool else []
+    subnets = format_subnets(pool, tao_price or 0) if pool else format_subnets(None)
 
     # Count subnets where subnet_emission_enabled=true
     if pool:

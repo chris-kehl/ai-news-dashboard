@@ -138,7 +138,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
     </div>
     <button class="loc-gps" id="locGps" onclick="useGPS()" title="Use my location">&#127760;</button>
   </div>
-  <div class="loc-stale" id="locStale">&#9888; Location changed. Weather is live. Local news / X / Reddit will update on next server scrape (~15 min).</div>
+  <div class="loc-stale" id="locStale">&#9888; Location changed. Weather is live. Local content loading...</div>
 </div>
 
 <!-- MARQUEE TICKER -->
@@ -225,6 +225,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 var IS_MOBILE=window.innerWidth<768;
 var $=function(id){return document.getElementById(id)};
 var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,sugIdx=-1;
+var BRIDGE_URL='http://127.0.0.1:8787';
 
 /* ===== STATE ===== */
 function loadClientLoc(){
@@ -237,6 +238,79 @@ function loadClientLoc(){
 function saveClientLoc(){localStorage.setItem('dash_loc',JSON.stringify(clientLoc));}
 function locKey(l){return(l.city||'')+'|'+(l.state||'')+'|'+(l.zip||'');}
 function isStale(){return serverLoc.city && clientLoc.city && locKey(serverLoc)!==locKey(clientLoc);}
+
+/* ===== BRIDGE + CLIENT FETCH ===== */
+function pushLocationToBridge(){
+  try{
+    if(!clientLoc.city)return;
+    fetch(BRIDGE_URL+'/update',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})
+    }).catch(function(){});
+  }catch(e){}
+}
+
+/* Fetch local content from bridge (Reddit/news/X) for the selected city */
+var clientLocalData={reddit:[],news:[],x:[]};
+function fetchLocalContent(city,state){
+  if(!city)return;
+  clientLocalData={reddit:[],news:[],x:[]};
+  // Reddit
+  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=reddit&limit=8')
+    .then(function(r){return r.json()})
+    .then(function(j){if(j.ok){clientLocalData.reddit=j.data||[];renderLocalFromClient();}})
+    .catch(function(){});
+  // News
+  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=news&limit=8')
+    .then(function(r){return r.json()})
+    .then(function(j){if(j.ok){clientLocalData.news=j.data||[];renderLocalFromClient();}})
+    .catch(function(){});
+  // X
+  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=x&limit=5')
+    .then(function(r){return r.json()})
+    .then(function(j){if(j.ok){clientLocalData.x=j.data||[];renderLocalFromClient();}})
+    .catch(function(){});
+}
+
+/* When data is stale, render local card from client-fetched content */
+function renderLocalFromClient(){
+  if(!isStale())return; // Server is current — use data.json
+  var city=clientLoc.city||'LOCAL';
+  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'\u00B0 ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
+  $('localBadge').textContent=clientLoc.zip||'';
+  // Reddit
+  var rd=clientLocalData.reddit||[];
+  var h='';
+  if(rd.length>0){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'
+      +rd.slice(0,IS_MOBILE?2:3).map(function(x){
+        return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>';
+      }).join('');
+  }
+  $('local-reddit').innerHTML=h||'<div class="ld">Loading local Reddit...</div>';
+  // News
+  var ns=clientLocalData.news||[];
+  h='';
+  if(ns.length>0){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'
+      +ns.slice(0,IS_MOBILE?3:4).map(function(x){
+        return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>';
+      }).join('');
+  }
+  $('local-news').innerHTML=h||'<div class="ld">Loading local news...</div>';
+  // X
+  var tw=clientLocalData.x||[];
+  h='';
+  if(tw.length>0){
+    h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'
+      +tw.slice(0,IS_MOBILE?3:5).map(function(x){
+        return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>';
+      }).join('');
+  }
+  $('local-x').innerHTML=h||'<div class="ld">Loading local X posts...</div>';
+  $('local-channels').innerHTML='';
+}
 
 /* ===== LOCATION BAR RENDER ===== */
 function renderLocInput(){
@@ -334,6 +408,7 @@ function selectSuggestion(el){
   };
   saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;
   renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+  pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
 }
 async function lookupZip(zip){
   zip=zip.replace(/\D/g,'').slice(0,5);
@@ -345,6 +420,7 @@ async function lookupZip(zip){
     clientLoc={city:p['place name'],state:p.state,state_abbrev:p['state abbreviation'],lat:+p.latitude,lon:+p.longitude,zip:zip,src:'zip'};
     saveClientLoc();$('locSugs').style.display='none';
     renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+    pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
   }catch(e){$('locSugs').innerHTML='<div class="loc-sug-empty">ZIP not found</div>';$('locSugs').style.display='block';}
 }
 
@@ -364,6 +440,7 @@ function useGPS(){
         var zip=geo.postcode||'';
         clientLoc={city:city,state:state,state_abbrev:code,lat:lat,lon:lon,zip:zip,src:'gps'};
         saveClientLoc();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+        pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
         btn.classList.remove('spin');
       }).catch(function(){
         clientLoc={city:lat.toFixed(4)+', '+lon.toFixed(4),state:'',state_abbrev:'',lat:lat,lon:lon,zip:'',src:'gps'};
@@ -456,15 +533,24 @@ function renderAll(d){
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  var h='';
-  if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('')}
-  $('local-channels').innerHTML=h||'';
-  h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('')}
-  $('local-news').innerHTML=h||'';
-  h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('')}
-  $('local-reddit').innerHTML=h||'';
-  h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(function(x){return'<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
-  $('local-x').innerHTML=h||'';
+  if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0){
+    // Still fetching fresh local content for selected city
+    $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
+    $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
+    $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
+  }else if(isStale()){
+    renderLocalFromClient();
+  }else{
+    var h='';
+    if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('')}
+    $('local-channels').innerHTML=h||'';
+    h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('')}
+    $('local-news').innerHTML=h||'';
+    h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(function(x){return'<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('')}
+    $('local-reddit').innerHTML=h||'';
+    h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(function(x){return'<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
+    $('local-x').innerHTML=h||'';
+  }
 
   var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
   var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
@@ -530,6 +616,7 @@ document.addEventListener('click',function(e){if(!e.target.closest('.loc-search-
 
 /* Init */
 loadClientLoc();renderLocInput();applyTheme();loadData();
+if(isStale()){fetchLocalContent(clientLoc.city,clientLoc.state);}
 setInterval(loadData,300000);
 </script>
 </body>

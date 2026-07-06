@@ -221,6 +221,7 @@ var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
 var futuresData=[],futuresTimer=null;
+var BRIDGE_REACHABLE=null;
 
 /* ===== STATE ===== */
 function loadClientLoc(){try{var s=localStorage.getItem('dash_loc');if(s){clientLoc=JSON.parse(s);return}}catch(e){}clientLoc={}}

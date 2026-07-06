@@ -221,6 +221,7 @@ var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
 var futuresData=[],futuresTimer=null;
+var BRIDGE_REACHABLE=null;
 
 /* ===== STATE ===== */
 function loadClientLoc(){try{var s=localStorage.getItem('dash_loc');if(s){clientLoc=JSON.parse(s);return}}catch(e){}clientLoc={}}
@@ -249,6 +250,21 @@ function fetchLocalContent(city,state){
   if(!city)return;
   clientLocalData={reddit:[],news:[],x:[],channels:[]};
   renderLocalPlaceholders();
+  // If we already know bridge is unreachable, skip to fallback immediately
+  if(BRIDGE_REACHABLE===false){fetchLocalFallback(city,state);return;}
+  // If unknown, probe bridge with 3s timeout
+  if(BRIDGE_REACHABLE===null){
+    var ctrl=new AbortController();
+    var probeTimer=setTimeout(function(){ctrl.abort();},3000);
+    fetch(BRIDGE_URL+'/local?city=test&state=test&limit=1',{signal:ctrl.signal})
+      .then(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=true;bridgeFetchAll(city,state);})
+      .catch(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=false;fetchLocalFallback(city,state);});
+    return;
+  }
+  bridgeFetchAll(city,state);
+}
+
+function bridgeFetchAll(city,state){
   var done={ch:false,rd:false,ns:false,x:false};
   function allDone(){fetchLocalFallback(city,state);}
   // Channels
@@ -304,10 +320,10 @@ function fetchLocalFallback(city,state){
   }
 }
 
-/* Render from bridge/fallback data when stale */
+/* Render from bridge/fallback data */
 function renderLocalFromClient(){
-  if(!isStale())return;
-  var city=clientLoc.city||'LOCAL';
+  // Always render if we have data, even when not stale (URL cold-load case)
+  var city=clientLoc.city||serverLoc.city||'LOCAL';
   $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
   $('localBadge').textContent=clientLoc.zip||'';
   var rd=clientLocalData.reddit||[],h='';

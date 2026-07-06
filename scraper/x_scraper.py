@@ -15,21 +15,26 @@ BROWSER = {
 }
 
 NITTER_INSTANCES = [
+    "https://nitter.net",        # Working for RSS (Jul 2025)
     "https://nitter.cz",
-    "https://nitter.privacydev.net",
     "https://nitter.space",
+    "https://nitter.privacydev.net",
     "https://nitter.it",
 ]
+
+NEWS_X_ACCOUNTS = ["BBCWorld", "Reuters", "BreakingNews", "AP"]
 
 AI_ACCOUNTS = ["karpathy", "swyx", "ylecun", "DrJimFan", "sama", "gdb"]
 
 
 def _working_nitter():
     """Find a responding Nitter instance."""
-    for base in random.sample(NITTER_INSTANCES, len(NITTER_INSTANCES)):
+    for base in NITTER_INSTANCES:
         try:
-            r = requests.get(f"{base}/karpathy/rss", headers=BROWSER, timeout=10)
-            if r.status_code == 200 and b"<entry" in r.content:
+            sess = requests.Session()
+            sess.headers.update(BROWSER)
+            r = sess.get(f"{base}/karpathy/rss", timeout=10)
+            if r.status_code == 200 and b"<item>" in r.content:
                 return base
         except Exception:
             continue
@@ -39,8 +44,10 @@ def _working_nitter():
 def _search_nitter(base, query, max_results=10):
     """Search Nitter for tweets matching a query."""
     try:
+        sess = requests.Session()
+        sess.headers.update(BROWSER)
         url = f"{base}/search?f=tweets&q={quote(query)}&since=&until=&near="
-        r = requests.get(url, headers=BROWSER, timeout=20)
+        r = sess.get(url, timeout=20)
         if r.status_code != 200:
             return []
         html = r.text
@@ -80,26 +87,27 @@ def _search_nitter(base, query, max_results=10):
 
 
 def _fetch_user_rss(base, username, limit=5):
-    """Fetch RSS feed for a specific user."""
+    """Fetch RSS feed for a specific user using session."""
     try:
+        sess = requests.Session()
+        sess.headers.update(BROWSER)
         url = f"{base}/{username}/rss"
-        r = requests.get(url, headers=BROWSER, timeout=15)
+        r = sess.get(url, timeout=15)
         if r.status_code != 200:
             return []
         root = ET.fromstring(r.content)
-        ns = {"atom": "http://www.w3.org/2005/Atom"}
         posts = []
-        for entry in root.findall("atom:entry", ns):
-            title = entry.find("atom:title", ns)
-            link = entry.find("atom:link", ns)
-            updated = entry.find("atom:updated", ns)
-            if title is not None and title.text:
-                text = re.sub(r'<[^>]+>', '', title.text).strip()
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "")
+            link  = item.findtext("link", "")
+            pub   = item.findtext("pubDate", "")
+            if title:
+                text = re.sub(r'<[^>]+>', '', title).strip()
                 posts.append({
                     "author": f"@{username}",
                     "text": text[:280],
-                    "url": link.get("href") if link is not None else f"https://twitter.com/{username}",
-                    "date": updated.text if updated is not None else "",
+                    "url": link or f"https://twitter.com/{username}",
+                    "date": pub or "",
                     "likes": 0,
                 })
         return posts[:limit]
@@ -145,20 +153,28 @@ def get_local_x_posts(city, state, max_results=8, fallback_ai=True):
 
 
 def get_world_x_posts(max_results=5):
-    """Fetch world news tweets via Nitter search (no API key)."""
-    base = _working_nitter()
-    all_posts = []
-    seen = set()
-    for q in ["breaking news", "world news today"]:
-        posts = _search_nitter(base, q, max_results=max_results)
-        for p in posts:
-            key = p["text"].lower()[:40]
-            if key not in seen:
-                seen.add(key)
-                all_posts.append(p)
-        if len(all_posts) >= max_results:
-            break
-    return all_posts[:max_results]
+    """Fetch world news tweets via Nitter RSS - search endpoint broken, use RSS directly."""
+    posts = []
+    try:
+        base = _working_nitter()
+        print(f"      [X World] Using Nitter: {base}")
+        for acct in NEWS_X_ACCOUNTS[:3]:
+            try:
+                more = _fetch_user_rss(base, acct, limit=3)
+                for p in more:
+                    key = p["text"].lower()[:40]
+                    if not any(key == existing["text"].lower()[:40] for existing in posts):
+                        posts.append(p)
+                if len(posts) >= max_results:
+                    break
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"      [WARN] {acct} fetch error: {e}")
+                continue
+        print(f"      [X World] Got {len(posts)} posts")
+    except Exception as e:
+        print(f"[WARN] World X scraper error: {e}")
+    return posts[:max_results]
 
 
 if __name__ == "__main__":

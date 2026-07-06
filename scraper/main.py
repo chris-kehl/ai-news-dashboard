@@ -104,7 +104,8 @@ def build_dashboard_data():
 
     # Summary
     print("\n[14] Summary...")
-    summary_data = create_daily_summary(reddit_posts, [], github_repos, bittensor_data)
+    summary_data = create_daily_summary(reddit_posts, [], github_repos, bittensor_data,
+                                        crypto_data=crypto_data, stocks_data=stocks_data)
 
     data = {
         "timestamp": datetime.now().isoformat(),

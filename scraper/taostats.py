@@ -96,7 +96,7 @@ def format_subnets(pool_json):
             "name": name,
             "netuid": netuid,
             "price": round(price, 6),
-            "change_24h": round(change, 2),
+            "price_change_24h": round(change, 2),
             "market_cap": round(cap_tao, 1),
             "liquidity": round(liq_tao, 1),
             "rank": sn.get("rank", 0),

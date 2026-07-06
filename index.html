@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Geek-N-News</title>
+<meta name="description" content="Live local news, weather, Reddit and social feeds by city.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 [data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;--bg-sel:#1a2332}
@@ -51,10 +52,12 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 
 /* ====== HEADER ====== */
 .header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;gap:8px;min-height:42px}
-.brand{font-weight:800;font-size:1rem;color:#fff;background:linear-gradient(135deg,#f59e0b,#f97316,#dc2626);padding:5px 14px;border-radius:8px;letter-spacing:-0.3px;display:inline-flex;align-items:center;gap:6px;text-shadow:0 1px 2px rgba(0,0,0,.3)}
-.brand-pill{font-size:0.55rem;font-weight:800;color:rgba(255,255,255,.9);background:rgba(0,0,0,.2);padding:2px 6px;border-radius:4px;letter-spacing:0.8px;text-transform:uppercase}
-@keyframes pulse-bolt{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.7;transform:scale(1.15)}}
-.brand-bolt{animation:pulse-bolt 1.5s ease-in-out infinite;display:inline-block}
+.brand{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace}
+.brand-mark{width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.brand-mark svg{width:26px;height:26px}
+.brand-text{line-height:1.1}
+.brand-name{font-weight:700;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase}
+.brand-tag{font-size:0.55rem;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;color:var(--tx3);margin-top:1px}
 .header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .btn{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);font-family:inherit;font-size:0.75rem;padding:5px 12px;border-radius:5px;cursor:pointer;transition:.2s;min-height:32px}
 .btn:hover{border-color:var(--acc);color:var(--acc)}
@@ -132,6 +135,8 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .logo{font-size:1.1rem}
 .futures-bar{scrollbar-width:none}
 .futures-bar::-webkit-scrollbar{display:none}
+#business-tickers{scrollbar-width:none}
+#business-tickers::-webkit-scrollbar{display:none}
 </style>
 </head>
 <body>
@@ -156,10 +161,21 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 </div>
 
 <!-- HEADER -->
+<div style="height:2px;background:linear-gradient(90deg,var(--acc),#ff6b35,#dc2626);opacity:.8"></div>
 <div class="header">
   <div class="header-actions">
     <button class="btn" id="themeBtn" onclick="toggleTheme()">LIGHT</button>
-    <div class="brand"><span class="brand-bolt">&#9889;</span> Geek-N-News <span class="brand-pill">beta</span></div>
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="var(--acc)" stroke="var(--acc)" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">Geek-N-News</div>
+        <div class="brand-tag">Beta</div>
+      </div>
+    </div>
   </div>
   <div class="header-actions">
     <div class="mid" id="age">--</div>
@@ -199,6 +215,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       <div class="card">
         <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
         <div id="futures-bar" class="futures-bar" style="background:var(--bg-el);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
+        <div id="business-tickers" style="background:var(--bg-card);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
         <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
       </div>
     </div>
@@ -477,7 +494,7 @@ function renderFutures(){
   el.innerHTML=futuresData.map(function(f){
     var col=f.change_pct>=0?'var(--good)':'var(--danger)';
     var sign=f.change_pct>=0?'+':'';
-    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+f.name+'</span> <span style="color:'+col+'">'+sign+f.change_pct.toFixed(1)+'%</span></span>';
+    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+f.name+'</span> <span>$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:1})+'</span> <span style="color:'+col+'">'+sign+f.change_pct.toFixed(1)+'%</span></span>';
   }).join('<span style="color:var(--brd);margin:0 6px">|</span>');
 }
 
@@ -555,10 +572,13 @@ function renderAll(d){
     '<div class="bittensor-stat"><div class="num">'+(subs.length||0)+'</div><div class="lbl">Top</div></div>'+
     '</div>';
   if(subs.length){
-    bh+='<div class="subnet-grid"><span>#</span><span>Name</span><span>Price / Change</span></div>';
+    bh+='<div class="subnet-grid"><span>#</span><span>Name</span><span>Price (USD) / Change</span></div>';
     bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
       var ccol=s.price_change_24h>=0?'var(--good)':'var(--danger)';
-      return '<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span class="subnet-sub"><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;color:'+ccol+'">'+(s.price_change_24h>=0?'+':'')+(s.price_change_24h||0).toFixed(1)+'%</span><span style="color:var(--tx3)">mcap '+Math.round(s.market_cap||0)+'T</span></span></div>';
+      var csign=s.price_change_24h>=0?'+':'';
+      var priceUsd=s.price_usd||0;
+      var priceStr=s.price?(s.price<0.001?s.price.toFixed(6):s.price.toFixed(3)):'—';
+      return '<div class="subnet-row"><span class="r">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span class="subnet-sub"><span style="font-family:JetBrains Mono">'+priceStr+' <span style="color:var(--tx3)">α</span></span><span style="font-family:JetBrains Mono;color:'+ccol+'">'+csign+(s.price_change_24h||0).toFixed(1)+'%</span>'+(priceUsd?'<span style="font-family:JetBrains Mono;color:var(--tx3)">$'+priceUsd.toFixed(3)+'</span>':'')+'<span style="color:var(--tx3)">mcap '+Math.round(s.market_cap||0)+'T</span></span></div>';
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
   $('bittensor').innerHTML=bh;

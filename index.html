@@ -217,6 +217,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
     </div>
   </div>
   <div class="header-actions">
+    <div id="topMovers" style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono';font-size:0.72rem;white-space:nowrap"></div>
     <div class="mid" id="age">--</div>
   </div>
 </div>
@@ -269,18 +270,15 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
     </div>
     <div class="col">
       <div class="card">
-        <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
-        <div class="card-bd" id="stocks"><div class="ld">Loading...</div></div>
+        <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+        <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
         <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
         <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
       </div>
       <div class="card">
-        <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
-        <div class="index-ticker-wrap" id="indexTickerWrap">
-          <div class="index-ticker-track" id="indexTickerTrack"><span style="padding:0 30px">Loading indexes...</span></div>
-        </div>
+        <div class="card-hd"><span>&#128200;</span> BUSINESS NEWS</div>
         <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
       </div>
     </div>
@@ -712,16 +710,17 @@ function renderAll(d){
 
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>'}).join('')||'<div class="ld">No Reddit data</div>';
 
-  var cp=(d.crypto||{}).prices||[];
-  $('crypto-prices').innerHTML='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  var cp=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
+  $('hot-stocks-left').innerHTML='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">'+(c.change_percent>=0?'+':'')+c.change_percent+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  var topMovers=cp.concat(mm||[]).sort(function(a,b){return Math.abs(b.change_percent)-Math.abs(a.change_percent)}).slice(0,4);
+  $('topMovers').innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<span style="color:var(--tx2)"><span style="font-weight:600;color:var(--tx)">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span></span>'}).join('');
+  $('github-repos').innerHTML=(d.github||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
   var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
   $('business').innerHTML=biz.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
-  var st=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
-  $('stocks').innerHTML=st.slice(0,3).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')+mm.slice(0,2).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')||'<div class="ld">No stock data</div>';
-
-  $('github-repos').innerHTML=(d.github||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  var cry=(d.crypto||{}).prices||[];
+  $('crypto-prices').innerHTML='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
 
   $('signals').innerHTML=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
 }

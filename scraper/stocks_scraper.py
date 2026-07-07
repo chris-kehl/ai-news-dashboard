@@ -159,13 +159,17 @@ def get_stocks_data(file_path=None):
 # ─── Master: Scrolling ticker JSON ────────────────────────────────────────────
 
 def generate_ticker_json(output_path=None):
-    """Generate scrolling ticker: indices + crypto + top movers."""
+    """Generate scrolling ticker: indices + crypto + futures + top movers."""
     print("[ ] Generating market ticker...")
 
     # 1. Market indices via CNBC (reliable)
     indices = cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
 
-    # 2. Crypto via CoinGecko (free, no key)
+    # 2. Futures via Yahoo v8 (works for futures symbols)
+    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "NG=F"]
+    futures = yahoo_charts_batch(futures_symbols, delay=0.25)
+
+    # 3. Crypto via CoinGecko (free, no key)
     crypto_prices = []
     try:
         url = "https://api.coingecko.com/api/v3/coins/markets"
@@ -202,13 +206,19 @@ def generate_ticker_json(output_path=None):
     # Sort by absolute change
     movers = sorted(movers, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10]
 
-    # Build items: indices first, then crypto, then movers
+    # Build items: indices first, then futures, then crypto, then movers
     items = []
     for idx in indices:
         items.append({
             "symbol": idx["symbol"].replace(".", ""),
             "price": idx["price"],
             "change": idx["change_percent"]
+        })
+    for f in futures:
+        items.append({
+            "symbol": f["symbol"],
+            "price": f["price"],
+            "change": f["change_percent"]
         })
     for c in crypto_prices:
         items.append({"symbol": c["symbol"], "price": c["price"], "change": c["change"]})

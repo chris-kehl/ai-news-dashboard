@@ -337,24 +337,7 @@ var $=function(id){return document.getElementById(id)};
 var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,sugIdx=-1;
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
-var futuresData=[];
-var indexData=[
-  {symbol:'S&P 500',price:4598.78,change:0.32},
-  {symbol:'NASDAQ',price:14230.42,change:-0.15},
-  {symbol:'DOW',price:35612.91,change:0.18},
-  {symbol:'RUSSELL 2K',price:1997.55,change:-0.42},
-  {symbol:'VIX',price:16.50,change:-2.10},
-  {symbol:'FTSE 100',price:7689.61,change:0.55},
-  {symbol:'DAX',price:16789.85,change:0.78},
-  {symbol:'NIKKEI 225',price:33485.71,change:-0.63},
-  {symbol:'HANG SENG',price:16890.36,change:1.22},
-  {symbol:'SHANGHAI',price:2967.25,change:-0.18},
-  {symbol:'GOLD',price:2047.30,change:0.45},
-  {symbol:'CRUDE OIL',price:72.45,change:-1.12},
-  {symbol:'10Y YIELD',price:4.63,change:0.04},
-  {symbol:'USD/EUR',price:0.9185,change:-0.22},
-  {symbol:'BTC/USD',price:43250.00,change:1.85}
-];
+var tickerItems=[];
 var _lastCacheLoad=0;
 
 /* ===== STATE ===== */
@@ -573,32 +556,30 @@ async function fetchClientWeather(){
 }
 
 /* ===== INDEX TICKER (business card) ===== */
-function fetchFutures(){
-  // Hardcoded — Yahoo Finance API is blocked by CORS in browser
-  // Prices are illustrative placeholders
-  renderFutures();
-  renderIndexTicker();
-}
 function renderFutures(){
   var el=$('futures-bar');if(!el)return;
-  if(!futuresData.length){el.innerHTML='<span style="color:var(--tx3)">Loading futures...</span>';return}
-  el.innerHTML=futuresData.map(function(f){
-    var col=f.change_pct>=0?'var(--good)':'var(--danger)';
-    var sign=f.change_pct>=0?'+':'';
+  if(!tickerItems.length){el.innerHTML='<span style="color:var(--tx3)">Loading...</span>';return}
+  // Show: indices + futures + gold/oil
+  var idx=tickerItems.filter(function(x){var s=x.symbol;return s==='SPX'||s==='DJI'||s==='IXIC'||s==='VIX'||s==='RUT'||s.indexOf('=F')!==-1||s==='GC=F'||s==='CL=F'});
+  el.innerHTML=idx.map(function(f){
+    var col=f.change>=0?'var(--good)':'var(--danger)';
+    var sign=f.change>=0?'+':'';
+    var sym=f.symbol.replace('=F','');
     var priceStr=f.price?(' $'+f.price.toLocaleString()):'';
-    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+f.name+'</span>'+priceStr+' <span style="color:'+col+'">'+sign+f.change_pct.toFixed(2)+'%</span></span>';
+    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+sym+'</span>'+priceStr+' <span style="color:'+col+'">'+sign+f.change+'%</span></span>';
   }).join('<span style="color:var(--brd);margin:0 6px">|</span>');
 }
 function renderIndexTicker(){
   var track=$('indexTickerTrack');if(!track)return;
-  if(!indexData.length){track.innerHTML='<span style="padding:0 30px">Indexes offline</span>';return}
-  var items=indexData.map(function(x){
+  if(!tickerItems.length){track.innerHTML='<span style="padding:0 30px">Indexes offline</span>';return}
+  var items=tickerItems.filter(function(x){var s=x.symbol;return s!=='TAO'&&s!=='BTC'&&s!=='ETH'&&s!=='SOL'&&s!=='DOGE'&&s!=='LINK'&&s!=='AVAX';}).map(function(x){
     var cls=x.change>=0?'up':'dn';
     var sign=x.change>=0?'+':'';
-    var priceStr=(x.price>=1000)?x.price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):x.price.toFixed(2);
-    return '<div class="index-ticker-item"><span class="sym">'+x.symbol+'</span><span>$'+priceStr+'</span><span class="'+cls+'">'+sign+x.change.toFixed(2)+'%</span></div><span class="index-ticker-sep">&#8226;</span>';
+    var sym=x.symbol;
+    var price=x.price>=1000?x.price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):(x.price||0).toFixed(2);
+    return '<div class="index-ticker-item"><span class="sym">'+sym+'</span><span>'+(x.price>50?'$':'')+price+'</span><span class="'+cls+'">'+sign+x.change+'%</span></div><span class="index-ticker-sep">&#8226;</span>';
   }).join('');
-  track.innerHTML=items+items; // duplicate for seamless loop
+  track.innerHTML=items+items;
 }
 
 /* ===== RENDER HELPERS ===== */
@@ -705,7 +686,7 @@ function renderAll(d){
 }
 
 async function loadData(){
-  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();renderAll(d)}
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);renderFutures();}
   catch(e){console.error('loadData',e)}
 }
 
@@ -779,7 +760,6 @@ if(clientLoc.city){
   if(cache[ckey]){renderLocalFromCache(ckey);}
 }
 fetchClientWeather();applyTheme();loadData();
-fetchFutures();setInterval(fetchFutures,60000);
 setInterval(loadData,300000);
 setInterval(loadCityCache,20000); /* Check city_cache.json every 20s */
 

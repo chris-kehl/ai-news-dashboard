@@ -2,15 +2,15 @@
 <html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Geek-N-News v3.2</title>
+<title>Geek-N-News v3.3</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 [data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;--bg-sel:#1a2332}
 [data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;--bg-sel:#eff6ff}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px;overflow-x:hidden;overflow-wrap:break-word}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;overflow-x:hidden;overflow-wrap:break-word;-webkit-text-size-adjust:100%}
 
 .loc-bar{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:relative;z-index:110}
 .loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
@@ -22,7 +22,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .loc-weather{font-weight:700;color:var(--acc);margin-right:2px}
 .loc-search-wrap{display:none;flex:1;position:relative;align-items:center;gap:6px}
 .loc-search-wrap.open{display:flex}
-.loc-input{width:100%;background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:8px 34px 8px 10px;border-radius:6px;font-size:0.9rem;font-family:inherit;outline:none}
+.loc-input{width:100%;background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:8px 34px 8px 10px;border-radius:6px;font-size:16px;font-family:inherit;outline:none}
 .loc-input:focus{border-color:var(--acc)}
 .loc-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tx3);cursor:pointer;font-size:1rem;padding:2px 6px}
 .loc-gps{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);cursor:pointer;padding:7px 9px;border-radius:6px;font-size:1rem;transition:.2s;display:flex;align-items:center}
@@ -60,7 +60,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .btn-sm{padding:4px 8px;font-size:0.7rem;min-height:28px}
 .mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
 
-.container{max-width:1400px;margin:0 auto;padding:10px 12px;overflow-x:hidden}
+.container{max-width:1400px;margin:0 auto;padding:10px 10px;overflow-x:hidden}
 @media(min-width:768px){.container{padding:14px}}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
@@ -68,7 +68,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .col{display:flex;flex-direction:column;gap:12px}
 @media(min-width:768px){.col{gap:14px}}
 .card{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
-.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 12px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;min-height:40px}
+.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:8px 10px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;min-height:40px}
 .card-hd span[data-lbl]{color:var(--tx2);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.5px}
 .card-bd{padding:10px 12px;max-height:420px;overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch}
 .card-bd::-webkit-scrollbar{width:4px}

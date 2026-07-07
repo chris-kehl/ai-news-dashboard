@@ -1,25 +1,124 @@
 #!/usr/bin/env python3
-"""Stocks scraper: trending / hottest stocks via free APIs."""
+"""Stocks scraper: trending stocks + market indices via Yahoo v8 chart + CNBC quote API."""
 
 import time
 from datetime import datetime
 import json
 from scraper_utils import fetch_json_with_retry, load_scraper_cache, save_scraper_cache
 
-HEADERS = {
-    "User-Agent": "AI-News-Dashboard/1.0 (Education; bot)"
-}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+
+# ─── CNBC Quote API (reliable, no key) ──────────────────────────────────────
+
+def cnbc_quotes(symbols):
+    """Fetch real-time quotes from CNBC public quote endpoint.
+    Symbols like .SPX, .DJI, .IXIC, .VIX, AAPL, TSLA, etc.
+    """
+    if not symbols:
+        return []
+    sym_str = "|".join(symbols)
+    url = (
+        "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
+        f"?symbols={sym_str}&requestMethod=itv&noform=1&partnerId=2"
+        "&fund=1&exthrs=1&output=json&events=1"
+    )
+    data = fetch_json_with_retry(url, headers=HEADERS, timeout=12, max_retries=2, backoff_base=3.0)
+    if not data:
+        return []
+    quotes = []
+    raw = data.get("FormattedQuoteResult", {}).get("FormattedQuote", [])
+    if isinstance(raw, dict):  # single result
+        raw = [raw]
+    for q in raw:
+        try:
+            sym = q.get("symbol", "")
+            last = q.get("last", "0").replace(",", "")
+            change = q.get("change", "0").replace(",", "").replace("+", "")
+            change_pct = q.get("change_pct", "0").replace(",", "").replace("+", "")
+            prev = q.get("previous_day_closing", "0").replace(",", "")
+            # Parse
+            price = float(last) if last else 0
+            prev_close = float(prev) if prev else 0
+            # CNBC change_pct may have %% typo
+            pct_str = change_pct.replace("%", "").replace("%%", "%")
+            try:
+                pct = float(pct_str) if pct_str else 0
+            except:
+                pct = 0
+            if pct == 0 and prev_close and price:
+                pct = round(((price - prev_close) / prev_close) * 100, 2)
+            quotes.append({
+                "symbol": sym,
+                "price": price,
+                "change": round(float(change) if change else 0, 2),
+                "change_percent": pct,
+                "name": q.get("shortName", sym)
+            })
+        except Exception:
+            continue
+    return quotes
 
 
-def get_trending_stocks():
-    """Yahoo Finance trending tickers (free, no key)."""
+# ─── Yahoo Finance v8 Chart (individual symbol) ───────────────────────────────
+
+def yahoo_chart(sym):
+    """Fetch single symbol via Yahoo v8 chart. Returns {symbol, price, change%, name}."""
+    data = fetch_json_with_retry(
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d",
+        headers=HEADERS, timeout=10, max_retries=2, backoff_base=3.0
+    )
+    if not data:
+        return None
+    try:
+        result = data.get("chart", {}).get("result", [{}])[0]
+        meta = result.get("meta", {})
+        closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+        # Use last non-null close as current price
+        price = None
+        for c in reversed(closes):
+            if c is not None:
+                price = c
+                break
+        if price is None:
+            price = meta.get("regularMarketPrice", 0)
+        # Previous close: chartPreviousClose is reliable
+        prev = meta.get("chartPreviousClose", 0)
+        if prev and price:
+            change = ((price - prev) / prev) * 100
+        else:
+            change = 0
+        return {
+            "symbol": sym,
+            "price": round(price, 2) if price else 0,
+            "change": round(price - prev, 2) if price and prev else 0,
+            "change_percent": round(change, 2),
+            "name": meta.get("shortName", sym)
+        }
+    except Exception:
+        return None
+
+
+def yahoo_charts_batch(symbols, delay=0.3):
+    """Fetch multiple symbols via individual v8 calls (batch API is 401)."""
+    out = []
+    for sym in symbols:
+        q = yahoo_chart(sym)
+        if q:
+            out.append(q)
+        time.sleep(delay)
+    return out
+
+
+# ─── Trending tickers ─────────────────────────────────────────────────────────
+
+def get_trending_tickers():
+    """Yahoo trending tickers list (free)."""
     cached = load_scraper_cache("trending_stocks", max_age_minutes=15)
     if cached:
-        print("      Using cached trending tickers")
         return cached
     data = fetch_json_with_retry(
         "https://query1.finance.yahoo.com/v1/finance/trending/US",
-        headers=HEADERS, timeout=15, max_retries=3, backoff_base=3.0
+        headers=HEADERS, timeout=15, max_retries=2, backoff_base=3.0
     )
     if not data:
         return []
@@ -29,55 +128,23 @@ def get_trending_stocks():
         if tickers:
             save_scraper_cache("trending_stocks", tickers)
         return tickers
-    except Exception as e:
-        print(f"      Trending parse error: {e}")
+    except Exception:
         return []
 
 
-def get_stock_info(symbols):
-    """Batch quote for symbols via Yahoo Finance v8 chart."""
-    if not symbols:
-        return []
-    stocks = []
-    for sym in symbols[:12]:
-        data = fetch_json_with_retry(
-            f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d",
-            headers=HEADERS, timeout=10, max_retries=2, backoff_base=3.0
-        )
-        if not data:
-            continue
-        try:
-            result = data.get("chart", {}).get("result", [{}])[0]
-            meta = result.get("meta", {})
-            closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
-            if len(closes) >= 2 and closes[-1] and closes[-2]:
-                change = ((closes[-1] - closes[-2]) / closes[-2]) * 100
-            else:
-                change = 0
-            stocks.append({
-                "symbol": sym,
-                "price": round(closes[-1], 2) if closes else meta.get("regularMarketPrice", 0),
-                "change_percent": round(change, 2),
-                "name": meta.get("shortName", sym)
-            })
-        except Exception:
-            continue
-        time.sleep(0.4)
-    return stocks
+def get_meme_tickers():
+    """Known momentum / meme stocks."""
+    return ["GME", "AMC", "BB", "PLTR", "TSLA", "NVDA", "AMD", "COIN", "HOOD", "MSTR"]
 
 
-def get_meme_stocks():
-    """Manually track known meme / momentum stocks."""
-    meme = ["GME", "AMC", "BB", "PLTR", "TSLA", "NVDA", "AMD", "COIN", "HOOD", "MSTR"]
-    return get_stock_info(meme)
-
+# ─── Master: Hot Stocks card data ─────────────────────────────────────────────
 
 def get_stocks_data(file_path=None):
-    """Master entry: trending + meme stocks + ticker data."""
+    """Trending + meme stocks for the HOT STOCKS card."""
     print("[ ] Fetching hottest stocks...")
-    trending_tickers = get_trending_stocks()
-    trending = get_stock_info(trending_tickers[:12])
-    meme = get_meme_stocks()
+    trending_syms = get_trending_tickers()
+    trending = yahoo_charts_batch(trending_syms[:12], delay=0.25)
+    meme = yahoo_charts_batch(get_meme_tickers(), delay=0.25)
     data = {
         "timestamp": datetime.utcnow().isoformat(),
         "trending": sorted(trending, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10],
@@ -89,60 +156,25 @@ def get_stocks_data(file_path=None):
     return data
 
 
+# ─── Master: Scrolling ticker JSON ────────────────────────────────────────────
+
 def generate_ticker_json(output_path=None):
-    """Generate scrolling ticker JSON: crypto + S&P + trending."""
+    """Generate scrolling ticker: indices + crypto + top movers."""
     print("[ ] Generating market ticker...")
 
-    crypto_coins = ["BTC", "ETH", "SOL", "DOGE", "AVAX", "LINK", "TAO"]
-    sp_list = [
-        "AAPL","MSFT","GOOGL","AMZN","NVDA","META","TSLA","BRK-B","UNH","XOM",
-        "LLY","JPM","V","JNJ","WMT","MA","PG","AVGO","HD","CVX","MRK","ABBV",
-        "PEP","KO","COST","TMO","ADBE","DIS","ABT","WFC","BAC","CSCO","PFE",
-        "CRM","ORCL","ACN","NKE","MCD","CMCSA","TXN","DHR","VZ","NEE","PM",
-        "RTX","HON","LIN","IBM","LOW","UPS","AMGN","CAT","INTC","GS","SPGI",
-        "MDT","BLK","T","BA","DE","LMT","GE","AMAT","NOW","SYK","ISRG","GILD",
-        "BKNG","MMC","TJX","VRTX","PLD","ADI","MDLZ","TMUS","SCHW","CI","AXP",
-        "C","MS","PYPL","CB","SO","REGN","ZTS","BSX","MO","DUK","BMY","PGR",
-        "SLB","TGT","COP","FDX","SBUX","ELV","CL","ICE","APD","ETN","PSA","ITW",
-        "EOG","EW","HCA","NOC","AON","FISV","GD","GM","SHW","OXY","MU","PNC",
-        "CSX","NSC","DXCM","KMB","SRE","BDX","LRCX","STZ","HUM","MAR","MCO"
-    ]
+    # 1. Market indices via CNBC (reliable)
+    indices = cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
 
-    # Reduce batch to 40 S&P symbols to stay well under rate limits
-    def batch_quotes(symbols, limit=40):
-        quotes = []
-        for sym in symbols[:limit]:
-            data = fetch_json_with_retry(
-                f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range=2d",
-                headers=HEADERS, timeout=8, max_retries=2, backoff_base=3.0
-            )
-            if not data:
-                continue
-            try:
-                result = data.get("chart", {}).get("result", [{}])[0]
-                meta = result.get("meta", {})
-                closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
-                price = closes[-1] if closes and closes[-1] else meta.get("regularMarketPrice", 0)
-                prev = closes[-2] if len(closes) >= 2 and closes[-2] else meta.get("previousClose", 0)
-                if price and prev:
-                    change = ((price - prev) / prev) * 100
-                else:
-                    change = 0
-                quotes.append({
-                    "symbol": sym,
-                    "price": round(price, 2) if price else 0,
-                    "change": round(change, 2)
-                })
-            except Exception:
-                continue
-            time.sleep(0.25)
-        return quotes
-
-    # Get crypto prices from CoinGecko
+    # 2. Crypto via CoinGecko (free, no key)
     crypto_prices = []
     try:
         url = "https://api.coingecko.com/api/v3/coins/markets"
-        params = {"vs_currency":"usd","ids":"bitcoin,ethereum,solana,dogecoin,avalanche-2,chainlink,bittensor","sparkline":"false","price_change_percentage":"24h"}
+        params = {
+            "vs_currency": "usd",
+            "ids": "bitcoin,ethereum,solana,dogecoin,avalanche-2,chainlink,bittensor",
+            "sparkline": "false",
+            "price_change_percentage": "24h"
+        }
         cg = fetch_json_with_retry(url, params=params, headers=HEADERS, timeout=15, max_retries=2, backoff_base=3.0)
         if cg:
             for coin in cg:
@@ -154,38 +186,34 @@ def generate_ticker_json(output_path=None):
     except Exception as e:
         print(f"      Crypto ticker error: {e}")
 
-    # Explicit TAO fetch via Yahoo Finance (fallback if CoinGecko misses it)
-    tao_included = any(i.get("symbol") == "TAO" for i in crypto_prices)
-    if not tao_included:
-        try:
-            tao_data = fetch_json_with_retry(
-                "https://query1.finance.yahoo.com/v8/finance/chart/TAO-USD?interval=1d&range=2d",
-                headers=HEADERS, timeout=8, max_retries=2, backoff_base=3.0
-            )
-            if tao_data:
-                result = tao_data.get("chart", {}).get("result", [{}])[0]
-                meta = result.get("meta", {})
-                closes = result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
-                price = closes[-1] if closes and closes[-1] else meta.get("regularMarketPrice", 0)
-                prev = closes[-2] if len(closes) >= 2 and closes[-2] else meta.get("previousClose", 0)
-                if price:
-                    change = ((price - prev) / prev) * 100 if prev else 0
-                    crypto_prices.insert(0, {
-                        "symbol": "TAO",
-                        "price": round(price, 2),
-                        "change": round(change, 2)
-                    })
-        except Exception:
-            pass
-
-    # Ensure TAO is always first in crypto section
+    # Ensure TAO is first
     crypto_prices.sort(key=lambda x: 0 if x.get("symbol") == "TAO" else 1)
 
-    # Get S&P stocks (capped batch)
-    sp_quotes = batch_quotes(sp_list, limit=40)
+    # 3. Top moving stocks: trending + meme, limited to avoid rate limits
+    trending_syms = get_trending_tickers()
+    # Interleave trending + meme to get actual movers
+    combined = []
+    seen = set()
+    for s in trending_syms[:10] + get_meme_tickers():
+        if s not in seen:
+            combined.append(s)
+            seen.add(s)
+    movers = yahoo_charts_batch(combined[:14], delay=0.3)
+    # Sort by absolute change
+    movers = sorted(movers, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10]
 
-    # Combine: crypto first, then S&P
-    items = crypto_prices + sp_quotes
+    # Build items: indices first, then crypto, then movers
+    items = []
+    for idx in indices:
+        items.append({
+            "symbol": idx["symbol"].replace(".", ""),
+            "price": idx["price"],
+            "change": idx["change_percent"]
+        })
+    for c in crypto_prices:
+        items.append({"symbol": c["symbol"], "price": c["price"], "change": c["change"]})
+    for m in movers:
+        items.append({"symbol": m["symbol"], "price": m["price"], "change": m["change_percent"]})
 
     ticker_data = {
         "timestamp": datetime.utcnow().isoformat(),
@@ -205,3 +233,5 @@ if __name__ == "__main__":
     print(f"Trending: {len(data['trending'])}, Meme: {len(data['meme_momentum'])}")
     ticker = generate_ticker_json("ticker.json")
     print(f"Ticker items: {len(ticker['items'])}")
+    for i in ticker["items"][:15]:
+        print(f"  {i['symbol']:8} {str(i['price']):>12}  {i['change']:>+7.2f}%")

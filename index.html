@@ -696,7 +696,7 @@ function renderAll(d){
 }
 
 async function loadData(){
-  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);renderFutures();}
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);renderFutures();renderIndexTicker();}
   catch(e){console.error('loadData',e)}
 }
 

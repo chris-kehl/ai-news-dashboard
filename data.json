@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-06T23:33:04.576118",
+  "timestamp": "2026-07-06T23:47:58.886532",
   "location": {
     "zip": "40272",
     "city": "Louisville",
@@ -11,19 +11,11 @@
   "signals": [
     {
       "type": "watch",
-      "asset": "HYPE",
-      "price": 70.3,
-      "change": -2.01,
-      "category": "crypto",
-      "text": "HYPE -2.0% @ $70.30"
-    },
-    {
-      "type": "watch",
       "asset": "TAO",
-      "price": 210.82,
-      "change": -1.526481364436608,
+      "price": 0.0,
+      "change": 0.0,
       "category": "bittensor",
-      "text": "TAO -1.5% @ $210.82 \u2014 hold"
+      "text": "TAO +0.0% @ $0.00 \u2014 hold"
     },
     {
       "type": "sell",
@@ -42,12 +34,12 @@
       "text": "SOLS -15.1% drop @ $68.05"
     },
     {
-      "type": "buy",
-      "asset": "RIVN",
-      "price": 20.14,
-      "change": 8.11,
+      "type": "sell",
+      "asset": "005930.KS",
+      "price": 290250.0,
+      "change": -8.73,
       "category": "stock",
-      "text": "RIVN +8.1% momentum @ $20.14"
+      "text": "005930.KS -8.7% drop @ $290250.00"
     }
   ],
   "reddit": [
@@ -100,6 +92,22 @@
       "created": ""
     },
     {
+      "title": "Giving a domain a hill to climb: benchmarking as data activation",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://sparsethought.com/2026/07/03/benchmarking-as-data-activation/",
+      "created": ""
+    },
+    {
+      "title": "Kani: A Model Checker for Rust",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://arxiv.org/abs/2607.01504",
+      "created": ""
+    },
+    {
       "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
       "subreddit": "HackerNews",
       "score": 1,
@@ -113,22 +121,6 @@
       "score": 1,
       "comments": 0,
       "url": "https://openwrt.org/toh/openwrt/one",
-      "created": ""
-    },
-    {
-      "title": "How to sequence your own DNA at home",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
-      "created": ""
-    },
-    {
-      "title": "CoMaps \u2013 FOSS Offline Maps",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.comaps.app/",
       "created": ""
     }
   ],
@@ -266,70 +258,70 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-07-07T03:32:43.886563",
+    "timestamp": "2026-07-07T03:47:52.006443",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 210.84,
-        "change_24h": -1.52,
-        "market_cap": 2023098982
+        "price": 210.75,
+        "change_24h": -1.56,
+        "market_cap": 2022899628
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 63267,
-        "change_24h": 0.24,
-        "market_cap": 1268381677427
+        "price": 63141,
+        "change_24h": -0.06,
+        "market_cap": 1266414271629
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1773.41,
-        "change_24h": 0.03,
-        "market_cap": 214001331270
+        "price": 1769.18,
+        "change_24h": -0.39,
+        "market_cap": 213571772062
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999348,
-        "change_24h": 0.03,
-        "market_cap": 184245438698
+        "price": 0.999378,
+        "change_24h": 0.04,
+        "market_cap": 184251460752
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 579.17,
-        "change_24h": -0.68,
-        "market_cap": 78044649557
+        "price": 578.88,
+        "change_24h": -0.82,
+        "market_cap": 78028207338
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999925,
-        "change_24h": 0.02,
-        "market_cap": 73124607881
+        "price": 0.999961,
+        "change_24h": 0.03,
+        "market_cap": 73126853366
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.13,
-        "change_24h": -1.28,
-        "market_cap": 70248111588
+        "change_24h": -1.31,
+        "market_cap": 70240950288
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 81.14,
-        "change_24h": 0.72,
-        "market_cap": 47215788777
+        "price": 81.1,
+        "change_24h": 0.67,
+        "market_cap": 47192489827
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.329536,
+        "price": 0.329734,
         "change_24h": 0.45,
-        "market_cap": 31258276556
+        "market_cap": 31277466643
       },
       {
         "name": "Figure Heloc",
@@ -341,12 +333,18 @@
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 70.3,
-        "change_24h": -2.01,
-        "market_cap": 15629922892
+        "price": 70.24,
+        "change_24h": -1.72,
+        "market_cap": 15624573421
       }
     ],
     "news": [
+      {
+        "title": "L1s face decentralization 'tug-of-war' as adoption grows: Injective CEO",
+        "url": "https://cointelegraph.com/news/injective-ceo-warns-layer-1-chains-risk-sacrificing-decentralization-for-speed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 07 Jul 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/hi-the-blockchain-paradox-decentralization-through-the-centralized-institutions.jpg\" alt=\"L1s face decentralization 'tug-of-war' as"
+      },
       {
         "title": "US Bitcoin reserve hits snag as federal agencies debate for control: Bloomberg",
         "url": "https://cointelegraph.com/news/trumps-bitcoin-reserve-stalled-by-interagency-dispute-over-control-bloomberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -390,12 +388,6 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here\u2019s what happened in crypto today\" class=\"type:primaryImage\"></p><"
       },
       {
-        "title": "Ripple secures full MiCA license for crypto services across Europe",
-        "url": "https://cointelegraph.com/news/ripple-secures-full-mica-license-for-crypto-services-across-europe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 06 Jul 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/hi-why-crypto-refuses-to-comply-with-mica-poland.png\" alt=\"Ripple secures full MiCA license for crypto services across Europe\" clas"
-      },
-      {
         "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out",
         "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out",
         "published": "Mon, 06 Jul 2026 ",
@@ -431,20 +423,28 @@
       "description": "After 10 years as Fifa president, could the Folarin Balogun controversy tip the balance against Gianni Infantino? Don't bet on it."
     },
     {
-      "title": "World Cup fans react to Balogun's one-game ban suspension",
-      "url": "https://www.bbc.co.uk/news/videos/cly77en9z9lo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Mon, 06 Jul 2026 ",
-      "description": "The USA star striker will be available to play at today's match against Belgium after President Trump called Fifa for his ban to be reviewed."
-    },
-    {
       "title": "Prince Harry begins his UK visit with court verdict",
       "url": "https://www.bbc.co.uk/news/articles/ce8mmm5v8j0o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Mon, 06 Jul 2026 ",
       "description": "The Duke of Sussex begins a week of charity engagements and will hear the outcome of his newspaper court battle."
+    },
+    {
+      "title": "Party Rock Anthem singer Lauren Bennett dies aged 37",
+      "url": "https://www.bbc.co.uk/news/articles/c04yywdq69vo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Tue, 07 Jul 2026 ",
+      "description": "Bennett's cause of death was not immediately clear and bandmates from her former group G.R.L say their \"hearts are broken\"."
+    },
+    {
+      "title": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kkrx8jeno?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Mon, 06 Jul 2026 ",
+      "description": "Former prisoners accuse the men of abuse in detention centres and want to see them brought to trial."
     },
     {
       "title": "Phone contract comparisons 'amounted to mis-selling' student loans, MPs say",
@@ -455,14 +455,6 @@
       "description": "A new report says students were not well-enough informed that their loan terms could change retrospectively."
     },
     {
-      "title": "Zelensky to press Nato for air defence systems after intense Russian strikes",
-      "url": "https://www.bbc.co.uk/news/articles/c9d227e5zj6o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Tue, 07 Jul 2026 ",
-      "description": "The Ukrainian president will use the Nato meeting in Turkey to argue he needs more interceptor missiles."
-    },
-    {
       "title": "Women face hidden fertility ceiling despite donor eggs",
       "url": "https://www.bbc.co.uk/news/articles/ckg018w1r02o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
@@ -471,20 +463,20 @@
       "description": "Age-related changes in the womb lining may be the cause and could be treatable in the future, say experts."
     },
     {
+      "title": "Zelensky to press Nato for air defence systems after intense Russian strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c9d227e5zj6o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Tue, 07 Jul 2026 ",
+      "description": "The Ukrainian president will use the Nato meeting in Turkey to argue he needs more interceptor missiles."
+    },
+    {
       "title": "Trump confirms he asked Fifa to review Balogun ban",
       "url": "https://www.bbc.co.uk/sport/football/articles/c1myykx0gmxo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
       "published": "Mon, 06 Jul 2026 ",
       "description": "President Donald Trump confirms he asked Fifa to review United States striker Folarin Balogun's one-match suspension at the World Cup."
-    },
-    {
-      "title": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kkrx8jeno?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Mon, 06 Jul 2026 ",
-      "description": "Former prisoners accuse the men of abuse in detention centres and want to see them brought to trial."
     },
     {
       "title": "Resistance and revenge - Iran wanted to send a message with its farewell to Khamenei",
@@ -568,7 +560,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-07-07T03:31:59.080063",
+    "timestamp": "2026-07-07T03:46:59.709730",
     "trending": [
       {
         "symbol": "SRXH",
@@ -583,16 +575,16 @@
         "name": "Solstice Advanced Materials Inc"
       },
       {
+        "symbol": "005930.KS",
+        "price": 290250.0,
+        "change_percent": -8.73,
+        "name": "SamsungElec"
+      },
+      {
         "symbol": "RIVN",
         "price": 20.14,
         "change_percent": 8.11,
         "name": "Rivian Automotive, Inc."
-      },
-      {
-        "symbol": "005930.KS",
-        "price": 293750.0,
-        "change_percent": -7.63,
-        "name": "SamsungElec"
       },
       {
         "symbol": "OKTA",
@@ -613,16 +605,16 @@
         "name": "Fortinet, Inc."
       },
       {
-        "symbol": "0700.HK",
-        "price": 467.0,
-        "change_percent": 3.32,
-        "name": "TENCENT"
-      },
-      {
         "symbol": "HTZ",
         "price": 2.05,
         "change_percent": -3.3,
         "name": "Hertz Global Holdings, Inc"
+      },
+      {
+        "symbol": "0700.HK",
+        "price": 466.4,
+        "change_percent": 3.19,
+        "name": "TENCENT"
       },
       {
         "symbol": "CIBR",
@@ -695,42 +687,42 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-07-07T03:32:26.541252",
+    "timestamp": "2026-07-07T03:47:31.495637",
     "items": [
       {
         "symbol": "TAO",
-        "price": 210.79,
-        "change": -1.54
+        "price": 210.85,
+        "change": -1.51
       },
       {
         "symbol": "BTC",
-        "price": 63264,
-        "change": 0.24
+        "price": 63143,
+        "change": -0.06
       },
       {
         "symbol": "ETH",
-        "price": 1773.34,
-        "change": 0.02
+        "price": 1769.39,
+        "change": -0.38
       },
       {
         "symbol": "SOL",
-        "price": 81.14,
-        "change": 0.72
+        "price": 81.1,
+        "change": 0.65
       },
       {
         "symbol": "DOGE",
-        "price": 0.075091,
-        "change": -2.83
+        "price": 0.075065,
+        "change": -2.85
       },
       {
         "symbol": "LINK",
-        "price": 7.89,
-        "change": -1.17
+        "price": 7.88,
+        "change": -1.2
       },
       {
         "symbol": "AVAX",
         "price": 6.79,
-        "change": -1.54
+        "change": -1.55
       },
       {
         "symbol": "AAPL",
@@ -956,21 +948,21 @@
       "author": ""
     },
     {
-      "title": "Toyota to invest $3.6 billion to move Tacoma pickup truck production from Mexico to Texas",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kZFFKSW85eVdjX0lJNmp5bDJNVmk4eDRnWTdLSS1MQk1PUW4teUxHSi1GVDUxTURkLVJoMzJidjBUeUNSc1RGaFdWcnh5cmNWeFl2RHE4QzVaVGxDaEtMNXotakRRUk54WVRGVjFscm9uZXJBQ2VFV3NnMzdXT2_SAYQBQVVfeXFMT3EyMGhPZjh1SXI4a1hSOFQwNXZhd180NlFpVFN1WlgtRmtFc0NDWTNvSl91N3lQX0Y0N3o3cjJ4c3oyUEpvZmNJaHVVYUtqa2ZaWXZseHVEVHdMbEVpS0JaX2VJRGF5eFE2R2txMHhLNnNLZ1RpT2pfOEtielBVc3JxVUxT?oc=5",
-      "source": "CNBC",
+      "title": "Stock Market Today: Nasdaq Rises at Start of Busy Week for Tech Stocks \u2014 Live Updates",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFJTZkhkcG5wbHdKMjB6Rlc3MmN1V00xdkVjd200c3FqU3poWndNcTgyT2dCelZCcm9RYkMyRjUybk53LTI0aEpLbk5nOVBZdXVmb2lWUTF6LVZPQXRTbjN1VWxrSTlGXzZZRXY2NTlWMkdmSS1DdzlidDNHR0llWl9mQ2NhMk0?oc=5",
+      "source": "WSJ",
       "category": "business",
-      "published": "Mon, 06 Jul 2026 ",
+      "published": "Tue, 07 Jul 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Stock Market News, July 6, 2026: Dow Rises to Record, Nasdaq Starts Busy Tech Week With Gains",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFJTZkhkcG5wbHdKMjB6Rlc3MmN1V00xdkVjd200c3FqU3poWndNcTgyT2dCelZCcm9RYkMyRjUybk53LTI0aEpLbk5nOVBZdXVmb2lWUTF6LVZPQXRTbjN1VWxrSTlGXzZZRXY2NTlWMkdmSS1DdzlidDNHR0llWl9mQ2NhMk0?oc=5",
-      "source": "WSJ",
+      "title": "Toyota to invest $3.6 billion to move Tacoma pickup truck production from Mexico to Texas",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kZFFKSW85eVdjX0lJNmp5bDJNVmk4eDRnWTdLSS1MQk1PUW4teUxHSi1GVDUxTURkLVJoMzJidjBUeUNSc1RGaFdWcnh5cmNWeFl2RHE4QzVaVGxDaEtMNXotakRRUk54WVRGVjFscm9uZXJBQ2VFV3NnMzdXT2_SAYQBQVVfeXFMT3EyMGhPZjh1SXI4a1hSOFQwNXZhd180NlFpVFN1WlgtRmtFc0NDWTNvSl91N3lQX0Y0N3o3cjJ4c3oyUEpvZmNJaHVVYUtqa2ZaWXZseHVEVHdMbEVpS0JaX2VJRGF5eFE2R2txMHhLNnNLZ1RpT2pfOEtielBVc3JxVUxT?oc=5",
+      "source": "CNBC",
       "category": "business",
-      "published": "Tue, 07 Jul 2026 ",
+      "published": "Mon, 06 Jul 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1026,6 +1018,14 @@
       "relevance_score": 9
     },
     {
+      "title": "Hamas dissolves civilian governing body in Gaza after 20 years",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/hamas-dissolves-civilian-governing-body-in-gaza-after-20-years?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 07 Jul 2026 ",
+      "description": "Hamas has announced the dissolution of its civilian governing body in Gaza after nearly 20 years of administration.",
+      "relevance_score": 8
+    },
+    {
       "title": "Zelensky to press Nato for air defence systems after intense Russian strikes",
       "url": "https://www.bbc.co.uk/news/articles/c9d227e5zj6o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1050,6 +1050,14 @@
       "relevance_score": 7
     },
     {
+      "title": "Anyone who doesn\u2019t feel for Palestinians is not human: Egypt coach Hassan",
+      "url": "https://www.aljazeera.com/sports/2026/7/7/anyone-who-doesnt-feel-for-palestinians-is-not-human-egypt-coach-hassan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 07 Jul 2026 ",
+      "description": "Hossam Hassan uses his FIFA World Cup news conference to raise awareness about the plight of Palestinians in Gaza.",
+      "relevance_score": 6
+    },
+    {
       "title": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
       "url": "https://www.bbc.co.uk/news/articles/cx2kkrx8jeno?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1071,22 +1079,6 @@
       "source": "Al Jazeera",
       "published": "Tue, 07 Jul 2026 ",
       "description": "The Russian navy is carrying a shipment of weapons to help Mali\u2019s government hold off a rebel advance.",
-      "relevance_score": 4
-    },
-    {
-      "title": "Mbappe calls Paraguayan lawmaker \u2018despicable\u2019 over racist attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/mbappe-calls-paraguayan-lawmaker-despicable-over-racist-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Tue, 07 Jul 2026 ",
-      "description": "France captain Kylian Mbappe has condemned racist comments from a Paraguayan senator.",
-      "relevance_score": 4
-    },
-    {
-      "title": "Why el-Obeid matters as Sudan\u2019s war enters a new phase",
-      "url": "https://www.aljazeera.com/news/2026/7/7/why-el-obeid-matters-as-sudans-war-enters-a-new-phase?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Tue, 07 Jul 2026 ",
-      "description": "How fighting for el-Obeid could shape both Sudan&#039;s war and its humanitarian crisis.",
       "relevance_score": 4
     },
     {
@@ -1140,12 +1132,12 @@
   ],
   "weather": {
     "zip": "40272",
-    "timestamp": "2026-07-07T03:30:02.441931",
+    "timestamp": "2026-07-07T03:45:02.014993",
     "city": "Louisville",
     "state": "Kentucky",
     "current": {
       "temperature": 78.8,
-      "description": "Clear",
+      "description": "Mostly Clear",
       "humidity": 83.565344534735,
       "wind_speed": 5.544
     },
@@ -1472,8 +1464,8 @@
     }
   ],
   "bittensor": {
-    "price": 210.82,
-    "price_change_24h": -1.526481364436608,
+    "price": 0.0,
+    "price_change_24h": 0.0,
     "active_subnets": 65,
     "total_subnets": 129,
     "top_subnets": [
@@ -1481,122 +1473,122 @@
         "name": "Root",
         "netuid": 0,
         "price": 1.0,
-        "price_usd": 210.82,
+        "price_usd": 0,
         "price_change_24h": 0.0,
-        "market_cap": 6087401.5,
-        "liquidity": 6644052.7,
+        "market_cap": 6087409.3,
+        "liquidity": 6644060.4,
         "rank": 0,
-        "buys_24h": 949,
-        "sells_24h": 1316,
-        "buyers_24h": 348,
-        "sellers_24h": 389
+        "buys_24h": 950,
+        "sells_24h": 1320,
+        "buyers_24h": 349,
+        "sellers_24h": 388
       },
       {
         "name": "Chutes",
         "netuid": 64,
-        "price": 0.072568,
-        "price_usd": 15.2988,
+        "price": 0.072567,
+        "price_usd": 0,
         "price_change_24h": -0.49,
-        "market_cap": 389475.9,
-        "liquidity": 399037.5,
+        "market_cap": 389476.1,
+        "liquidity": 399036.1,
         "rank": 1,
-        "buys_24h": 171,
-        "sells_24h": 186,
+        "buys_24h": 170,
+        "sells_24h": 185,
         "buyers_24h": 88,
-        "sellers_24h": 103
+        "sellers_24h": 104
       },
       {
         "name": "Targon",
         "netuid": 4,
-        "price": 0.054662,
-        "price_usd": 11.5239,
+        "price": 0.054661,
+        "price_usd": 0,
         "price_change_24h": 0.63,
-        "market_cap": 277990.8,
-        "liquidity": 264409.9,
+        "market_cap": 277984.9,
+        "liquidity": 264407.9,
         "rank": 2,
-        "buys_24h": 120,
+        "buys_24h": 122,
         "sells_24h": 126,
-        "buyers_24h": 89,
-        "sellers_24h": 71
+        "buyers_24h": 91,
+        "sellers_24h": 70
       },
       {
         "name": "lium.io",
         "netuid": 51,
-        "price": 0.052383,
-        "price_usd": 11.0434,
+        "price": 0.052386,
+        "price_usd": 0,
         "price_change_24h": -0.36,
-        "market_cap": 218299.2,
-        "liquidity": 233651.6,
+        "market_cap": 218314.2,
+        "liquidity": 233658.5,
         "rank": 3,
-        "buys_24h": 80,
-        "sells_24h": 119,
-        "buyers_24h": 46,
-        "sellers_24h": 56
+        "buys_24h": 85,
+        "sells_24h": 118,
+        "buyers_24h": 49,
+        "sellers_24h": 55
       },
       {
         "name": "Affine",
         "netuid": 120,
-        "price": 0.055798,
-        "price_usd": 11.7633,
-        "price_change_24h": 0.39,
-        "market_cap": 195473.8,
-        "liquidity": 156190.0,
+        "price": 0.05579,
+        "price_usd": 0,
+        "price_change_24h": 0.34,
+        "market_cap": 195451.6,
+        "liquidity": 156180.8,
         "rank": 4,
         "buys_24h": 110,
-        "sells_24h": 90,
-        "buyers_24h": 70,
-        "sellers_24h": 68
+        "sells_24h": 92,
+        "buyers_24h": 71,
+        "sellers_24h": 69
       },
       {
         "name": "Score",
         "netuid": 44,
-        "price": 0.038629,
-        "price_usd": 8.1438,
+        "price": 0.03863,
+        "price_usd": 0,
         "price_change_24h": -3.26,
-        "market_cap": 189038.1,
-        "liquidity": 130443.0,
+        "market_cap": 189047.3,
+        "liquidity": 130445.9,
         "rank": 5,
-        "buys_24h": 100,
+        "buys_24h": 101,
         "sells_24h": 113,
-        "buyers_24h": 77,
+        "buyers_24h": 78,
         "sellers_24h": 79
       },
       {
         "name": "iota",
         "netuid": 9,
         "price": 0.033964,
-        "price_usd": 7.1603,
-        "price_change_24h": 1.44,
-        "market_cap": 151609.5,
-        "liquidity": 121407.7,
+        "price_usd": 0,
+        "price_change_24h": 1.45,
+        "market_cap": 151610.1,
+        "liquidity": 121408.9,
         "rank": 6,
-        "buys_24h": 166,
+        "buys_24h": 167,
         "sells_24h": 82,
-        "buyers_24h": 71,
+        "buyers_24h": 72,
         "sellers_24h": 58
       },
       {
         "name": "Vanta",
         "netuid": 8,
-        "price": 0.030213,
-        "price_usd": 6.3694,
-        "price_change_24h": -0.22,
-        "market_cap": 143699.1,
-        "liquidity": 161976.6,
+        "price": 0.030212,
+        "price_usd": 0,
+        "price_change_24h": -0.23,
+        "market_cap": 143693.3,
+        "liquidity": 161974.6,
         "rank": 7,
-        "buys_24h": 21,
-        "sells_24h": 57,
-        "buyers_24h": 20,
-        "sellers_24h": 23
+        "buys_24h": 20,
+        "sells_24h": 58,
+        "buyers_24h": 19,
+        "sellers_24h": 24
       },
       {
         "name": "deprecated",
         "netuid": 3,
         "price": 0.022784,
-        "price_usd": 4.8033,
+        "price_usd": 0,
         "price_change_24h": -0.48,
-        "market_cap": 111335.1,
-        "liquidity": 138662.9,
+        "market_cap": 111338.6,
+        "liquidity": 138664.4,
         "rank": 8,
         "buys_24h": 43,
         "sells_24h": 90,
@@ -1606,11 +1598,11 @@
       {
         "name": "Actual",
         "netuid": 95,
-        "price": 0.049358,
-        "price_usd": 10.4057,
-        "price_change_24h": 2.7,
-        "market_cap": 110863.2,
-        "liquidity": 59031.3,
+        "price": 0.049351,
+        "price_usd": 0,
+        "price_change_24h": 2.97,
+        "market_cap": 110850.0,
+        "liquidity": 59026.8,
         "rank": 9,
         "buys_24h": 126,
         "sells_24h": 85,
@@ -1620,29 +1612,29 @@
       {
         "name": "NOVA",
         "netuid": 68,
-        "price": 0.023285,
-        "price_usd": 4.909,
-        "price_change_24h": 0.63,
-        "market_cap": 106017.0,
-        "liquidity": 88404.1,
+        "price": 0.023286,
+        "price_usd": 0,
+        "price_change_24h": 0.62,
+        "market_cap": 106021.5,
+        "liquidity": 88405.7,
         "rank": 10,
-        "buys_24h": 124,
+        "buys_24h": 123,
         "sells_24h": 120,
-        "buyers_24h": 100,
+        "buyers_24h": 99,
         "sellers_24h": 83
       },
       {
         "name": "Gradients",
         "netuid": 56,
-        "price": 0.018046,
-        "price_usd": 3.8045,
-        "price_change_24h": -0.26,
-        "market_cap": 85560.9,
-        "liquidity": 106609.1,
+        "price": 0.018052,
+        "price_usd": 0,
+        "price_change_24h": -0.23,
+        "market_cap": 85588.6,
+        "liquidity": 106625.8,
         "rank": 11,
-        "buys_24h": 20,
+        "buys_24h": 22,
         "sells_24h": 41,
-        "buyers_24h": 18,
+        "buyers_24h": 20,
         "sellers_24h": 28
       }
     ]

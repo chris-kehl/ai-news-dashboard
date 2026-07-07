@@ -5,25 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Geek-N-News</title>
-<meta name="description" content="Live local news, weather, Reddit and social feeds by city.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 [data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;--bg-sel:#1a2332}
 [data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;--bg-sel:#eff6ff}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5;min-width:320px;overflow-x:hidden}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px;overflow-x:hidden}
 
-/* ====== LOCATION BAR ====== */
 .loc-bar{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:relative;z-index:110}
-.loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 14px;flex-wrap:wrap}
+.loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
 .loc-display{cursor:pointer;display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;transition:.2s;flex:1;min-width:0}
 .loc-display:hover{background:rgba(255,255,255,0.04)}
-.loc-city{font-size:1.1rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.loc-state{color:var(--tx3);font-size:0.8rem;font-weight:500}
-.loc-weather{font-weight:700;color:var(--acc);margin-right:2px;font-size:1.1rem}
+.loc-city{font-size:1.15rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.loc-state{color:var(--tx3);font-size:0.85rem;font-weight:500}
+.loc-edit-icon{color:var(--tx3);font-size:0.75rem;margin-left:4px}
+.loc-weather{font-weight:700;color:var(--acc);margin-right:2px}
 .loc-search-wrap{display:none;flex:1;position:relative;align-items:center;gap:6px}
 .loc-search-wrap.open{display:flex}
-.loc-input{width:100%;background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:8px 34px 8px 10px;border-radius:6px;font-size:0.85rem;font-family:inherit;outline:none}
+.loc-input{width:100%;background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:8px 34px 8px 10px;border-radius:6px;font-size:0.9rem;font-family:inherit;outline:none}
 .loc-input:focus{border-color:var(--acc)}
 .loc-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--tx3);cursor:pointer;font-size:1rem;padding:2px 6px}
 .loc-gps{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);cursor:pointer;padding:7px 9px;border-radius:6px;font-size:1rem;transition:.2s;display:flex;align-items:center}
@@ -39,8 +38,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .loc-stale{display:none;background:rgba(247,165,29,.12);border-bottom:1px solid rgba(247,165,29,.25);color:var(--acc);font-size:0.75rem;padding:6px 12px;text-align:center}
 .loc-stale.show{display:block}
 
-/* ====== MARQUEE TICKER ====== */
-.ticker-wrap{background:var(--bg-el);border-bottom:1px solid var(--brd);overflow:hidden;white-space:nowrap;position:relative;height:32px;display:flex;align-items:center}
+.ticker-wrap{background:var(--bg-el);border-bottom:1px solid var(--brd);overflow:hidden;white-space:nowrap;position:relative;height:34px;display:flex;align-items:center}
 .ticker-track{display:inline-flex;animation:marquee 90s linear infinite;will-change:transform}
 .ticker-track:hover{animation-play-state:paused}
 .ticker-item{display:inline-flex;align-items:center;padding:0 18px;font-family:'JetBrains Mono';font-size:0.72rem;color:var(--tx2);gap:6px}
@@ -49,123 +47,48 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .ticker-sep{color:var(--brd);font-size:0.6rem}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* ====== HEADER ====== */
-.header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:8px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;gap:8px;min-height:42px}
+.header{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;gap:8px;min-height:42px}
 .brand{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace}
-.brand-mark{width:26px;height:26px;display:flex;align-items:center;justify-content:center}
-.brand-mark svg{width:24px;height:24px}
+.brand-mark{width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.brand-mark svg{width:26px;height:26px}
 .brand-text{line-height:1.1}
-.brand-name{font-weight:700;font-size:0.85rem;letter-spacing:1px;text-transform:uppercase}
+.brand-name{font-weight:700;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase}
 .brand-tag{font-size:0.55rem;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;color:var(--tx3);margin-top:1px}
 .header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .btn{border:1px solid var(--brd);background:var(--bg-el);color:var(--tx);font-family:inherit;font-size:0.75rem;padding:5px 12px;border-radius:5px;cursor:pointer;transition:.2s;min-height:32px}
 .btn:hover{border-color:var(--acc);color:var(--acc)}
-.mid{font-family:'JetBrains Mono';font-size:0.75rem;color:var(--tx2)}
+.btn-sm{padding:4px 8px;font-size:0.7rem;min-height:28px}
+.mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
 
-/* ============================================================
-   BENTO GRID DASHBOARD LAYOUT
-   ============================================================ */
-.container{max-width:1400px;margin:0 auto;padding:14px;overflow-x:hidden}
-
-/* Define the bento grid */
-.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;grid-auto-rows:minmax(180px,auto)}
-
-.bento > .card{background:var(--bg-card);border:1px solid var(--brd);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s ease,border-color .2s ease}
-.bento > .card:hover{border-color:var(--tx3)}
-@media(min-width:1100px){.bento > .card:hover{transform:translateY(-2px)}}
-
-.card-hd{background:var(--bg-el);border-bottom:1px solid var(--brd);padding:10px 14px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;min-height:40px;letter-spacing:0.3px}
-.card-hd span[data-lbl]{color:var(--tx2);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
-.card-bd{padding:10px 14px;overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch}
+.container{max-width:1400px;margin:0 auto;padding:10px 12px;overflow-x:hidden}
+@media(min-width:768px){.container{padding:14px}}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+@media(min-width:1100px){.grid{grid-template-columns:2fr 1fr 1fr;gap:14px}}
+.col{display:flex;flex-direction:column;gap:12px}
+@media(min-width:768px){.col{gap:14px}}
+.card{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 12px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;min-height:40px}
+.card-hd span[data-lbl]{color:var(--tx2);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.5px}
+.card-bd{padding:10px 12px;max-height:420px;overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch}
 .card-bd::-webkit-scrollbar{width:4px}
 .card-bd::-webkit-scrollbar-thumb{background:var(--brd);border-radius:4px}
-
-/* ---- Hero / wide cards ---- */
-.card-hero{grid-column:span 4;grid-row:span 1}
-/* Tall cards span 2 rows */
-.card-tall{grid-row:span 2}
-/* Medium cards span 2 columns */
-.card-wide{grid-column:span 2}
-/* Compact single */
-.card-compact{grid-column:span 1}
-
-/* Area assignments at desktop (>=1100px) */
-@media(min-width:1100px){
-  .bento{
-    grid-template-areas:
-      /* Row 1: Full-width AI summary */
-      "summary summary summary summary"
-      /* Row 2: Local tall | Markets | Markets | World */
-      "local   markets markets world"
-      /* Row 3: Local tall | Defense | Tech | World (continued) */
-      "local   defense tech    world"
-      /* Row 4: Stocks | Github | Signals | Crypto */
-      "stocks  github  signals crypto";
-  }
-  #card-summary{grid-area:summary;grid-column:1/-1}
-  #card-local{grid-area:local}
-  #card-markets{grid-area:markets;grid-row:span 1}
-  #card-world{grid-area:world;grid-row:span 2}
-  #card-defense{grid-area:defense}
-  #card-tech{grid-area:tech}
-  #card-stocks{grid-area:stocks}
-  #card-github{grid-area:github}
-  #card-signals{grid-area:signals}
-  #card-crypto{grid-area:crypto}
-  #card-business{display:none} /* merged into markets card */
-}
-
-/* Tablet: 2-column bento (768-1099px) */
-@media(max-width:1099px) and (min-width:768px){
-  .bento{grid-template-columns:repeat(2,1fr)}
-  .card-hero{grid-column:span 2}
-  .card-wide{grid-column:span 2}
-  .card-tall{grid-row:span 1;grid-column:span 2}
-}
-
-/* Mobile: single column */
-@media(max-width:767px){
-  .bento{grid-template-columns:1fr}
-  .card-hero,.card-wide,.card-tall,.card-compact{grid-column:span 1;grid-row:span 1}
-  .container{padding:10px}
-  .card-bd{max-height:360px}
-}
-
-/* ============================================================ */
-
 .item{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .item:last-child{border:none}
-.item-title{font-size:0.84rem;font-weight:500;color:var(--tx);text-decoration:none;display:block;margin-bottom:2px;line-height:1.35}
+.item-title{font-size:0.84rem;font-weight:500;color:var(--tx);text-decoration:none;display:block;margin-bottom:2px}
 .item-title:hover{color:var(--acc)}
-.item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+.item-meta{font-size:0.7rem;color:var(--tx3);display:flex;gap:8px;flex-wrap:wrap}
 .score{color:var(--acc);font-size:0.7rem}
 .ld{color:var(--tx3);font-size:0.8rem;padding:12px 0;text-align:center}
-
 .ai-summary{font-size:0.88rem;line-height:1.6;color:var(--tx2)}
 @media(min-width:768px){.ai-summary{font-size:0.82rem}}
-
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
 .fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-
-/* ===== MARKETS COMPACT CARD ===== */
-.market-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:0.8rem}
-.market-row:last-child{border:none}
-.market-row .sym{font-weight:600;font-family:'JetBrains Mono';font-size:0.78rem}
-.market-row .price{font-family:'JetBrains Mono'}
-.market-row .chg{font-family:'JetBrains Mono';font-size:0.72rem}
-.market-row .chg.up{color:var(--good)}.market-row .chg.dn{color:var(--danger)}
-.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:4px}
-@media(max-width:400px){.market-grid{grid-template-columns:1fr}}
-.market-cell{background:var(--bg-el);border:1px solid var(--brd);padding:10px;border-radius:6px;text-align:center}
-.market-cell .m-name{font-size:0.7rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px}
-.market-cell .m-val{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
-.market-cell .m-chg{font-size:0.7rem;margin-top:2px}
-
-/* ===== BITTENSOR ===== */
-.bittensor-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}
+.bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
+@media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
 .bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
-.bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.82rem;font-weight:700}
+.bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
 .bittensor-stat .lbl{font-size:0.6rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
 .subnet-grid{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
 .subnet-row{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:4px 0;font-size:0.7rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
@@ -174,33 +97,13 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 @media(min-width:768px){.subnet-sub{font-size:0.65rem}}
 .subnet-row .r{color:var(--tx3);font-size:0.65rem;font-weight:700}
 .subnet-row .up{color:var(--good)}.subnet-row .dn{color:var(--danger)}
-
-/* ===== CRYPTO MINI GRID ===== */
-.crypto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:6px}
+.crypto-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+@media(min-width:400px){.crypto-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}}
 .crypto-cell{background:var(--bg-el);border:1px solid var(--brd);padding:8px;border-radius:4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px}
-
-/* ===== SIGNALS ===== */
-.signal-row{display:flex;align-items:flex-start;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
-.signal-row:last-child{border:none}
-.signal-badge{flex-shrink:0;font-family:'JetBrains Mono';font-size:0.6rem;font-weight:700;padding:2px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:0.4px;margin-top:2px}
-.signal-badge.buy{background:rgba(34,197,94,.15);color:var(--good)}
-.signal-badge.sell{background:rgba(239,68,68,.15);color:var(--danger)}
-.signal-badge.watch{background:rgba(156,163,175,.12);color:var(--tx2)}
-.signal-body{flex:1;min-width:0}
-.signal-main{font-family:'JetBrains Mono';font-size:0.72rem;font-weight:500;color:var(--tx);display:block}
-.signal-meta{font-size:0.62rem;color:var(--tx3);margin-top:2px;display:flex;gap:6px;flex-wrap:wrap}
-.signal-meta span{white-space:nowrap}
-.signal-price{color:var(--tx);font-family:'JetBrains Mono'}
-.signal-change{font-family:'JetBrains Mono'}
-.signal-change.up{color:var(--good)}.signal-change.dn{color:var(--danger)}
-
-/* ===== X TWEETS ===== */
 .x-tweet{padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .x-tweet:last-child{border:none}
 .x-author{font-weight:600;font-size:0.75rem;color:var(--acc)}
 .x-text{font-size:0.78rem;color:var(--tx2);margin-top:2px;line-height:1.4}
-
-/* ===== MODAL ===== */
 .mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:300;align-items:center;justify-content:center;padding:14px}
 .mdl.show{display:flex}
 .mdl-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;padding:18px;width:100%;max-width:340px}
@@ -209,6 +112,34 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .m-row label{color:var(--tx2)}
 .m-row input{background:var(--bg);border:1px solid var(--brd);color:var(--tx);padding:6px 8px;border-radius:4px;font-size:0.78rem;min-height:36px}
 .logo{font-size:1.1rem}
+.futures-bar{scrollbar-width:none}
+.futures-bar::-webkit-scrollbar{display:none}
+
+/* ── Donate ── */
+.donate-btn{position:fixed;bottom:16px;right:16px;z-index:400;background:var(--acc);color:#000;border:none;border-radius:50%;width:48px;height:48px;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 14px rgba(247,165,29,.35);display:flex;align-items:center;justify-content:center;transition:.2s}
+.donate-btn:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(247,165,29,.5)}
+.donate-mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:500;align-items:center;justify-content:center;padding:14px}
+.donate-mdl.show{display:flex}
+.donate-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:10px;padding:20px;width:100%;max-width:420px;max-height:90vh;overflow-y:auto}
+.donate-box h3{margin-bottom:6px;font-size:1.05rem}
+.donate-box p{color:var(--tx2);font-size:0.78rem;margin-bottom:14px}
+.donate-row{background:var(--bg-el);border:1px solid var(--brd);border-radius:6px;padding:10px 12px;margin-bottom:10px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:.15s}
+.donate-row:hover{border-color:var(--acc)}
+.donate-row .sym{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;color:#fff;flex-shrink:0}
+.donate-row.btc .sym{background:#f7931a}
+.donate-row.eth .sym{background:#627eea}
+.donate-row.tao .sym{background:#f7a51d;color:#000}
+.donate-row.usdc .sym{background:#2775ca}
+.donate-row .info{flex:1;min-width:0}
+.donate-row .coin{font-weight:600;font-size:0.8rem}
+.donate-row .addr{font-family:'JetBrains Mono';font-size:0.65rem;color:var(--tx3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.donate-row .cpy{background:none;border:none;color:var(--acc);font-size:0.75rem;cursor:pointer;padding:4px 6px;border-radius:4px}
+.donate-row .cpy:hover{background:rgba(247,165,29,.1)}
+.donate-qr{text-align:center;margin-top:4px}
+.donate-qr img{width:110px;height:110px;border-radius:6px;border:1px solid var(--brd)}
+.donate-close{float:right;background:none;border:none;color:var(--tx3);font-size:1.2rem;cursor:pointer;padding:2px 6px}
+.donate-close:hover{color:var(--tx)}
+.donate-note{color:var(--tx3);font-size:0.68rem;text-align:center;margin-top:10px}
 </style>
 </head>
 <body>
@@ -223,17 +154,17 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
         <span class="loc-city" id="locCity">Loading...</span>
         <span class="loc-state" id="locState"></span>
       </div>
-      <span style="color:var(--tx3);font-size:0.75rem;margin-left:4px">&#9998;</span>
+      <span class="loc-edit-icon">&#9998;</span>
     </div>
     <div class="loc-search-wrap" id="locSearchWrap" style="flex:1">
       <span style="font-size:1.1rem">&#128205;</span>
-      <input class="loc-input" id="locInput" type="text" placeholder="Find a city" autocomplete="off" oninput="onSearchInput(this.value)" onkeydown="onSearchKey(event)">
+      <input class="loc-input" id="locInput" type="text" placeholder="City name" autocomplete="off" oninput="onSearchInput(this.value)" onkeydown="onSearchKey(event)">
       <button class="loc-clear" id="locClear" onclick="clearSearch()" style="display:none">&#10005;</button>
       <div class="loc-sugs" id="locSugs" style="display:none"></div>
     </div>
     <button class="loc-gps" id="locGps" onclick="useGPS()" title="Use my location">&#127760;</button>
   </div>
-  <div class="loc-stale" id="locStale">&#9888; Weather is live. Refresh for latest local content.</div>
+  <div class="loc-stale" id="locStale">&#9888; Location changed. Weather is live. Local content loading...</div>
 </div>
 
 <!-- MARQUEE TICKER -->
@@ -263,205 +194,248 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
   </div>
 </div>
 
-<!-- ======================= BENTO CONTAINER ======================= -->
 <div class="container">
-  <div class="bento">
 
-    <!-- 1. AI SUMMARY (Hero - full width) -->
-    <div class="card card-hero" id="card-summary">
-      <div class="card-hd"><span>&#129504;</span> DAILY AI SUMMARY</div>
-      <div class="card-bd" id="summary"><div class="ld">Loading...</div></div>
-    </div>
-
-    <!-- 2. LOCAL NEWS (Tall - spans 2 rows) -->
-    <div class="card card-tall" id="card-local">
-      <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
-      <div class="card-bd" id="localCard">
-        <div class="fc" id="local-forecast"></div>
-        <div id="local-channels"></div>
-        <div id="local-news"></div>
-        <div id="local-reddit"></div>
-        <div id="local-x"></div>
-      </div>
-    </div>
-
-    <!-- 3. MARKETS COMPACT (BITTENSOR + STOCK FUTURES + BUSINESS) -->
-    <div class="card card-wide" id="card-markets">
-      <div class="card-hd"><span>&#128200;</span> MARKETS <span data-lbl>BITTENSOR / FUTURES / BUSINESS</span></div>
-      <div class="card-bd" id="markets-card">
-        <div class="market-grid" id="market-grid">
-          <div class="market-cell"><div class="m-name">TAO</div><div class="m-val" id="m-tao-price">--</div><div class="m-chg" id="m-tao-chg">--</div></div>
-          <div class="market-cell"><div class="m-name">S&P 500</div><div class="m-val" id="m-sp-price">--</div><div class="m-chg" id="m-sp-chg">--</div></div>
-          <div class="market-cell"><div class="m-name">NASDAQ</div><div class="m-val" id="m-nq-price">--</div><div class="m-chg" id="m-nq-chg">--</div></div>
-          <div class="market-cell"><div class="m-name">DOW</div><div class="m-val" id="m-ym-price">--</div><div class="m-chg" id="m-ym-chg">--</div></div>
-          <div class="market-cell"><div class="m-name">BTC</div><div class="m-val" id="m-btc-price">--</div><div class="m-chg" id="m-btc-chg">--</div></div>
-          <div class="market-cell"><div class="m-name">ETH</div><div class="m-val" id="m-eth-price">--</div><div class="m-chg" id="m-eth-chg">--</div></div>
+  <div class="grid">
+    <div class="col">
+      <div class="card">
+        <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
+        <div class="card-bd" id="localCard">
+          <div class="fc" id="local-forecast"></div>
+          <div id="local-channels"></div>
+          <div id="local-news"></div>
+          <div id="local-reddit"></div>
+          <div id="local-x"></div>
         </div>
-        <div id="market-business" style="margin-top:8px;font-size:0.78rem"></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP / X / REDDIT</span></div>
+        <div class="card-bd" id="world-card">
+          <div id="world-news"></div>
+          <div id="world-reddit"></div>
+          <div id="world-x"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE <span data-lbl>PRIORITY</span></div>
+        <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
       </div>
     </div>
-
-    <!-- 4. WORLD HEADLINES (Tall-ish, spans 2 rows) -->
-    <div class="card card-tall" id="card-world">
-      <div class="card-hd"><span>&#127758;</span> WORLD <span data-lbl>AP / REDDIT / X</span></div>
-      <div class="card-bd" id="world-card">
-        <div id="world-news"></div>
-        <div id="world-reddit"></div>
-        <div id="world-x"></div>
+    <div class="col">
+      <div class="card">
+        <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+        <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
+        <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
+        <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+        <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
       </div>
     </div>
-
-    <!-- 5. DEFENSE -->
-    <div class="card" id="card-defense">
-      <div class="card-hd"><span>&#128737;</span> DEFENSE <span data-lbl>PRIORITY</span></div>
-      <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
+    <div class="col">
+      <div class="card">
+        <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
+        <div class="card-bd" id="stocks"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
+        <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
+        <div id="futures-bar" class="futures-bar" style="background:var(--bg-el);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
+        <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
+      </div>
     </div>
-
-    <!-- 6. TECH & REDDIT AI -->
-    <div class="card" id="card-tech">
-      <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
-      <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
-    </div>
-
-    <!-- 7. HOT STOCKS -->
-    <div class="card" id="card-stocks">
-      <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
-      <div class="card-bd" id="stocks"><div class="ld">Loading...</div></div>
-    </div>
-
-    <!-- 8. GITHUB AI TRENDING -->
-    <div class="card" id="card-github">
-      <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
-      <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
-    </div>
-
-    <!-- 9. TRADING SIGNALS -->
-    <div class="card" id="card-signals">
-      <div class="card-hd"><span>&#128202;</span> SIGNALS</div>
-      <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
-    </div>
-
-    <!-- 10. CRYPTO PRICES -->
-    <div class="card" id="card-crypto">
-      <div class="card-hd"><span>&#128176;</span> CRYPTO</div>
-      <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
-    </div>
-
   </div>
 </div>
-<!-- ============================================================== -->
 
 <script>
+/* ─── EMBEDDED CITY CACHE (52 major cities) ─── */
+var cityCacheData={
+"new_york":{"city":"New York","state":"New York","lat":40.7128,"lon":-74.0060},
+"los_angeles":{"city":"Los Angeles","state":"California","lat":34.0522,"lon":-118.2437},
+"chicago":{"city":"Chicago","state":"Illinois","lat":41.8781,"lon":-87.6298},
+"houston":{"city":"Houston","state":"Texas","lat":29.7604,"lon":-95.3698},
+"phoenix":{"city":"Phoenix","state":"Arizona","lat":33.4484,"lon":-112.0740},
+"philadelphia":{"city":"Philadelphia","state":"Pennsylvania","lat":39.9526,"lon":-75.1652},
+"san_antonio":{"city":"San Antonio","state":"Texas","lat":29.4241,"lon":-98.4936},
+"san_diego":{"city":"San Diego","state":"California","lat":32.7157,"lon":-117.1611},
+"dallas":{"city":"Dallas","state":"Texas","lat":32.7767,"lon":-96.7970},
+"san_jose":{"city":"San Jose","state":"California","lat":37.3382,"lon":-121.8863},
+"austin":{"city":"Austin","state":"Texas","lat":30.2672,"lon":-97.7431},
+"jacksonville":{"city":"Jacksonville","state":"Florida","lat":30.3322,"lon":-81.6557},
+"fort_worth":{"city":"Fort Worth","state":"Texas","lat":32.7555,"lon":-97.3308},
+"columbus":{"city":"Columbus","state":"Ohio","lat":39.9612,"lon":-82.9988},
+"charlotte":{"city":"Charlotte","state":"North Carolina","lat":35.2271,"lon":-80.8431},
+"indianapolis":{"city":"Indianapolis","state":"Indiana","lat":39.7684,"lon":-86.1581},
+"san_francisco":{"city":"San Francisco","state":"California","lat":37.7749,"lon":-122.4194},
+"seattle":{"city":"Seattle","state":"Washington","lat":47.6062,"lon":-122.3321},
+"denver":{"city":"Denver","state":"Colorado","lat":39.7392,"lon":-104.9903},
+"washington_dc":{"city":"Washington DC","state":"District of Columbia","lat":38.9072,"lon":-77.0369},
+"boston":{"city":"Boston","state":"Massachusetts","lat":42.3601,"lon":-71.0589},
+"el_paso":{"city":"El Paso","state":"Texas","lat":31.7619,"lon":-106.4850},
+"nashville":{"city":"Nashville","state":"Tennessee","lat":36.1627,"lon":-86.7816},
+"detroit":{"city":"Detroit","state":"Michigan","lat":42.3314,"lon":-83.0458},
+"oklahoma_city":{"city":"Oklahoma City","state":"Oklahoma","lat":35.4676,"lon":-97.5164},
+"portland":{"city":"Portland","state":"Oregon","lat":45.5152,"lon":-122.6784},
+"las_vegas":{"city":"Las Vegas","state":"Nevada","lat":36.1699,"lon":-115.1398},
+"louisville":{"city":"Louisville","state":"Kentucky","lat":38.2527,"lon":-85.7585},
+"baltimore":{"city":"Baltimore","state":"Maryland","lat":39.2904,"lon":-76.6122},
+"milwaukee":{"city":"Milwaukee","state":"Wisconsin","lat":43.0389,"lon":-87.9065},
+"albuquerque":{"city":"Albuquerque","state":"New Mexico","lat":35.0844,"lon":-106.6504},
+"tucson":{"city":"Tucson","state":"Arizona","lat":32.2226,"lon":-110.9747},
+"fresno":{"city":"Fresno","state":"California","lat":36.7378,"lon":-119.7871},
+"sacramento":{"city":"Sacramento","state":"California","lat":38.5816,"lon":-121.4944},
+"mesa":{"city":"Mesa","state":"Arizona","lat":33.4223,"lon":-111.8226},
+"kansas_city":{"city":"Kansas City","state":"Missouri","lat":39.0997,"lon":-94.5786},
+"atlanta":{"city":"Atlanta","state":"Georgia","lat":33.7490,"lon":-84.3880},
+"long_beach":{"city":"Long Beach","state":"California","lat":33.7701,"lon":-118.1937},
+"colorado_springs":{"city":"Colorado Springs","state":"Colorado","lat":38.8339,"lon":-104.8214},
+"raleigh":{"city":"Raleigh","state":"North Carolina","lat":35.7796,"lon":-78.6382},
+"miami":{"city":"Miami","state":"Florida","lat":25.7617,"lon":-80.1918},
+"virginia_beach":{"city":"Virginia Beach","state":"Virginia","lat":36.8529,"lon":-75.9780},
+"omaha":{"city":"Omaha","state":"Nebraska","lat":41.2565,"lon":-95.9345},
+"oakland":{"city":"Oakland","state":"California","lat":37.8044,"lon":-122.2712},
+"minneapolis":{"city":"Minneapolis","state":"Minnesota","lat":44.9778,"lon":-93.2650},
+"tulsa":{"city":"Tulsa","state":"Oklahoma","lat":36.1540,"lon":-95.9928},
+"wichita":{"city":"Wichita","state":"Kansas","lat":37.6872,"lon":-97.3301},
+"new_orleans":{"city":"New Orleans","state":"Louisiana","lat":29.9511,"lon":-90.0715},
+"cleveland":{"city":"Cleveland","state":"Ohio","lat":41.4993,"lon":-81.6944},
+"london":{"city":"London","state":"United Kingdom","lat":51.5074,"lon":-0.1278},
+"toronto":{"city":"Toronto","state":"Ontario","lat":43.6532,"lon":-79.3832}
+};
+
+/* ─── LIVE CACHE (populated from city_cache.json after load) ─── */
+var cache=JSON.parse(JSON.stringify(cityCacheData));
+var cacheAge={}; /* key -> timestamp of last update */
+
 var IS_MOBILE=window.innerWidth<768;
 var $=function(id){return document.getElementById(id)};
 var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,sugIdx=-1;
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
-var futuresData=[],futuresTimer=null;
-var BRIDGE_REACHABLE=null;
+var futuresData=[];
+var _lastCacheLoad=0;
 
 /* ===== STATE ===== */
 function loadClientLoc(){try{var s=localStorage.getItem('dash_loc');if(s){clientLoc=JSON.parse(s);return}}catch(e){}clientLoc={}}
 function saveClientLoc(){localStorage.setItem('dash_loc',JSON.stringify(clientLoc));}
 function locKey(l){return(l.city||'')+'|'+(l.state||'')+'|'+(l.zip||'');}
-function isStale(){return serverLoc.city && clientLoc.city && locKey(serverLoc)!==locKey(clientLoc);}
+function isStale(){return serverLoc.city&&clientLoc.city&&locKey(serverLoc)!==locKey(clientLoc);}
 
 function parseUrlParams(){
   var qs=new URLSearchParams(location.search);
-  var city=qs.get('city'), state=qs.get('state'), zip=qs.get('zip');
-  var lat=parseFloat(qs.get('lat')||'0'), lon=parseFloat(qs.get('lon')||'0');
+  var city=qs.get('city'),state=qs.get('state'),zip=qs.get('zip');
+  var lat=parseFloat(qs.get('lat')||'0'),lon=parseFloat(qs.get('lon')||'0');
   if(!city||!state)return;
   clientLoc={city:city,state:state,state_abbrev:stateToCode(state)||state,zip:zip||'',lat:lat,lon:lon,src:'url'};
-  saveClientLoc();
-  fetchClientWeather();checkStale();recalcForecastLabels();
+  saveClientLoc();fetchClientWeather();checkStale();recalcForecastLabels();
   pushLocationToBridge();fetchLocalContent(city,state);
 }
 
-/* ===== BRIDGE + CLIENT FETCH ===== */
-function pushLocationToBridge(){
-  try{if(!clientLoc.city)return;fetch(BRIDGE_URL+'/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})}).catch(function(){});}catch(e){}
+/* ===== CACHE LOADER (runs every 20s in background) ===== */
+function cityToKey(city){
+  return city.toLowerCase().replace(/[^a-z0-9]/g,'_');
 }
 
-function fetchLocalContent(city,state){
-  if(!city)return;
-  clientLocalData={reddit:[],news:[],x:[],channels:[]};
-  renderLocalPlaceholders();
-  if(BRIDGE_REACHABLE===false){fetchLocalFallback(city,state);return;}
-  if(BRIDGE_REACHABLE===null){
-    var ctrl=new AbortController();
-    var probeTimer=setTimeout(function(){ctrl.abort();},3000);
-    fetch(BRIDGE_URL+'/local?city=test&state=test&limit=1',{signal:ctrl.signal})
-      .then(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=true;bridgeFetchAll(city,state);})
-      .catch(function(){clearTimeout(probeTimer);BRIDGE_REACHABLE=false;fetchLocalFallback(city,state);});
-    return;
+async function loadCityCache(){
+  try{
+    var r=await fetch('city_cache.json?v='+Date.now());
+    if(!r.ok)return;
+    var data=await r.json();
+    var now=Date.now();
+    var staleCutoff=now-86400000; /* 24h in ms */
+    var cleared=0,added=0;
+    for(var k in data){
+      var entry=data[k];
+      try{
+        var ts=new Date(entry.timestamp||0).getTime();
+        if(ts<staleCutoff){cleared++;continue;} /* skip stale */
+        cache[k]=entry;
+        cacheAge[k]=ts;
+        added++;
+      }catch(e){}
+    }
+    /* Remove any keys in live cache that disappeared from file (garbage collect stale >24h) */
+    for(var ck in cache){
+      if(!cache[ck].city){delete cache[ck];continue;} /* sanity */
+      var age=cacheAge[ck]||new Date(cache[ck].timestamp||0).getTime();
+      if(age<staleCutoff){delete cache[ck];delete cacheAge[ck];cleared++;}
+    }
+    _lastCacheLoad=now;
+    /* Refresh local card if current city is now in cache */
+    var ckey=cityToKey(clientLoc.city||'');
+    if(cache[ckey]){renderLocalFromCache(ckey);}
+  }catch(e){console.log('[CACHE] load error',e)}
+}
+
+/* ===== CITY CACHE RENDERER (uses cache instead of live scrape) ===== */
+function renderLocalFromCache(key){
+  var c=cache[key];if(!c)return;
+  /* Weather */
+  var w=c.weather||{};
+  var fc=[];
+  if(w.forecast&&w.forecast.length){
+    fc=w.forecast.slice(0,5).map(function(f){
+      var dd=new Date(f.date+'T00:00:00');
+      var dn=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dd.getDay()];
+      var t=Math.round((f.high+f.low)/2);
+      var cl=t>75?'w':t<55?'c':'';
+      return'<span class="'+cl+'">'+(dn||'').slice(0,3)+' '+t+'F '+(f.description||'')+'</span>';
+    }).join('');
   }
-  bridgeFetchAll(city,state);
-}
+  $('local-forecast').innerHTML=fc;
+  var curTemp=w.temperature?Math.round(w.temperature):(w.current&&w.current.temperature?Math.round(w.current.temperature):0);
+  var curDesc=w.description||(w.current&&w.current.description)||'';
+  $('localTitle').textContent=(curTemp?curTemp+'° ':'')+(c.city)+' NEWS'+(curDesc?' | '+curDesc:'');
+  $('localBadge').textContent=c.state||'';
+  $('locCity').textContent=c.city||'LOCAL';$('locState').textContent=c.state||'';
+  if(curTemp)$('locWeather').textContent=curTemp+'°';else $('locWeather').textContent='';
 
-function bridgeFetchAll(city,state){
-  var done={ch:false,rd:false,ns:false,x:false};
-  function allDone(){fetchLocalFallback(city,state);}
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=channels&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.channels=j.data||[];renderLocalFromClient();}done.ch=true;if(done.rd&&done.ns&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.ch=true;if(done.rd&&done.ns&&done.x)allDone();});
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=reddit&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.reddit=j.data||[];renderLocalFromClient();}done.rd=true;if(done.ch&&done.ns&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.rd=true;if(done.ch&&done.ns&&done.x)allDone();});
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=news&limit=8')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.news=j.data||[];renderLocalFromClient();}done.ns=true;if(done.ch&&done.rd&&done.x&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.ns=true;if(done.ch&&done.rd&&done.x)allDone();});
-  fetch(BRIDGE_URL+'/local?city='+encodeURIComponent(city)+'&state='+encodeURIComponent(state)+'&source=x&limit=5')
-    .then(function(r){return r.json()}).then(function(j){if(j.ok){clientLocalData.x=j.data||[];renderLocalFromClient();}done.x=true;if(done.ch&&done.rd&&done.ns&&(!j.ok||!j.data||!j.data.length))allDone();})
-    .catch(function(){done.x=true;if(done.ch&&done.rd&&done.ns)allDone();});
-}
+  /* News */
+  var news=(c.news||[]).slice(0,IS_MOBILE?3:5);
+  var nh='';
+  if(news.length){nh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+news.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-news').innerHTML=nh||'<div class="ld">No cached news</div>';
 
-function renderLocalPlaceholders(){
-  $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
-  $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
-  $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
-}
+  /* Reddit */
+  var red=(c.reddit||[]).slice(0,IS_MOBILE?2:3);
+  var rh='';
+  if(red.length){rh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+red.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+(x.score||0)+'</span><span>r/'+(x.subreddit||'')+'</span></div></div>'}).join('');}
+  $('local-reddit').innerHTML=rh||'<div class="ld">No cached Reddit</div>';
 
-function fetchLocalFallback(city,state){
-  if(clientLocalData.reddit.length>0 && clientLocalData.news.length>0){return;}
-  if(!clientLocalData.news.length){
-    var newsUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://www.bing.com/news/search?q='+encodeURIComponent(city+' '+state+' news')+'&format=rss');
-    fetch(newsUrl).then(function(r){return r.text()}).then(function(xml){
-      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
-      var items=Array.from(doc.querySelectorAll('item')).map(function(it){
-        return{title:(it.querySelector('title')||{}).textContent||'',url:(it.querySelector('link')||{}).textContent||'',source:'Bing',published:(it.querySelector('pubDate')||{}).textContent||''};
-      }).filter(function(x){return x.title});
-      clientLocalData.news=items.slice(0,IS_MOBILE?3:5);renderLocalFromClient();
-    }).catch(function(e){console.log('fallback news err',e)});
+  /* X */
+  var tw=(c.x_posts||[]).slice(0,IS_MOBILE?3:5);
+  var th='';
+  if(tw.length){th+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
+  $('local-x').innerHTML=th||'<div class="ld">No cached X posts</div>';
+
+  /* Channels */
+  var ch=(c.channels||[]).slice(0,IS_MOBILE?3:5);
+  var chh='';
+  if(ch.length){chh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.map(function(x){return '<div class="item"><a href="'+(x.url||'#')+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-channels').innerHTML=chh||'';
+
+  /* Stale indicator */
+  var ts=c.timestamp?new Date(c.timestamp):null;
+  var ageMin=ts?Math.floor((Date.now()-ts)/60000):999;
+  if(ageMin>30&&ageMin<1440){
+    $('locStale').innerHTML='&#9888; Cache is '+ageMin+'m old. Refreshing...';
+    $('locStale').classList.add('show');
+  } else if(ageMin>=1440){
+    $('locStale').innerHTML='&#9888; Cache >24h old. Fetching fresh data...';
+    $('locStale').classList.add('show');
+  } else {
+    $('locStale').classList.remove('show');
   }
-  if(!clientLocalData.reddit.length){
-    var sr=city.toLowerCase().replace(/[^a-z0-9]/g,'');
-    var redditUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://old.reddit.com/r/'+sr+'/.rss?limit=8');
-    fetch(redditUrl).then(function(r){return r.text()}).then(function(xml){
-      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
-      var items=Array.from(doc.querySelectorAll('entry')).map(function(it){
-        return{title:(it.querySelector('title')||{}).textContent||'',url:'https://reddit.com'+((it.querySelector('link')||{}).getAttribute('href')||''),subreddit:sr,score:'—'};
-      }).filter(function(x){return x.title});
-      clientLocalData.reddit=items.slice(0,IS_MOBILE?2:3);renderLocalFromClient();
-    }).catch(function(e){console.log('fallback reddit err',e)});
-  }
-}
-
-function renderLocalFromClient(){
-  var city=clientLoc.city||serverLoc.city||'LOCAL';
-  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
-  $('localBadge').textContent=clientLoc.zip||'';
-  var rd=clientLocalData.reddit||[],h='';
-  if(rd.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+rd.slice(0,IS_MOBILE?2:3).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('');}
-  $('local-reddit').innerHTML=h||'<div class="ld">No local Reddit found</div>';
-  var ns=clientLocalData.news||[];h='';
-  if(ns.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+ns.slice(0,IS_MOBILE?3:4).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('');}
-  $('local-news').innerHTML=h||'<div class="ld">No local news found</div>';
-  var tw=clientLocalData.x||[];h='';
-  if(tw.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
-  $('local-x').innerHTML=h||'<div class="ld">No local X posts found</div>';
-  var ch=clientLocalData.channels||[];h='';
-  if(ch.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
-  $('local-channels').innerHTML=h||'';
 }
 
 /* ===== LOCATION BAR ===== */
@@ -471,50 +445,60 @@ function renderLocInput(){
   else{inp.value='';inp.readOnly=false;inp.style.cursor='text';inp.placeholder='City name';$('locClear').style.display='none';}
 }
 function activateSearchMode(){
+  $('locDisplay').style.display='none';$('locSearchWrap').classList.add('open');
   var inp=$('locInput');inp.dataset.mode='search';inp.readOnly=false;inp.style.cursor='text';
   var q=(clientLoc.city||'')+(clientLoc.state?' '+clientLoc.state:'')+(clientLoc.zip?' '+clientLoc.zip:'');
   inp.value=q.trim();inp.focus();inp.select();$('locClear').style.display=inp.value?'block':'none';
 }
-function deactivateSearchMode(){var inp=$('locInput');delete inp.dataset.mode;$('locSugs').style.display='none';sugIdx=-1;renderLocInput();}
+function deactivateSearchMode(){
+  $('locDisplay').style.display='flex';$('locSearchWrap').classList.remove('open');
+  var inp=$('locInput');delete inp.dataset.mode;$('locSugs').style.display='none';sugIdx=-1;renderLocInput();
+}
 
-/* ===== AUTOCOMPLETE ===== */
+/* ===== SEARCH UI ===== */
 var debTimer;
-function onSearchInput(v){clearTimeout(debTimer);$('locClear').style.display=v?'block':'none';if(!v||v.length<2){$('locSugs').style.display='none';return}debTimer=setTimeout(function(){fetchSuggestions(v)},180);}
-function fetchSuggestions(q){
-  if(pendingReq)pendingReq.abort();
-  var ctrl=new AbortController();pendingReq=ctrl;var pel=$('locSugs');
-  var rows='<div class="loc-sug" onclick="useGPS()"><span class="loc-sug-name" style="color:var(--info)">&#127760; Use my location</span></div>';
-  fetch('https://geocoding-api.open-meteo.com/v1/search?name='+encodeURIComponent(q)+'&count=6&language=en&format=json',{signal:ctrl.signal})
-    .then(function(r){return r.json()})
-    .then(function(d){
-      pendingReq=null;var res=d.results||[];
-      if(!res.length){pel.innerHTML=rows+'<div class="loc-sug-empty">No results</div>';pel.style.display='block';return;}
-      rows+=res.map(function(p,i){var admin1=p.admin1||'';var stCode=stateToCode(admin1)||admin1;var meta=(admin1)+(p.country?', '+p.country:'');return '<div class="loc-sug" data-idx="'+i+'" data-lat="'+p.latitude+'" data-lon="'+p.longitude+'" data-name="'+p.name+'" data-admin1="'+admin1+'" data-country="'+(p.country||'')+'" data-code="'+stCode+'" onclick="selectSuggestion(this)"><span><span class="loc-sug-name">'+p.name+'</span><span class="loc-sug-meta"> &mdash; '+meta+'</span></span><span class="loc-sug-meta">'+p.latitude.toFixed(2)+', '+p.longitude.toFixed(2)+'</span></div>';}).join('');
-      pel.innerHTML=rows;pel.style.display='block';sugIdx=-1;
-    }).catch(function(){});
+function onSearchInput(v){clearTimeout(debTimer);$('locClear').style.display=v?'block':'none';if(!v||v.length<2){$('locSugs').style.display='none';return}debTimer=setTimeout(function(){showCitySuggestions(v)},180);}
+function showCitySuggestions(q){
+  var matches=[];
+  var ql=q.toLowerCase();
+  for(var k in cityCacheData){
+    var c=cityCacheData[k];
+    if(c.city.toLowerCase().indexOf(ql)!==-1||c.state.toLowerCase().indexOf(ql)!==-1){matches.push({key:k,name:c.city,state:c.state,lat:c.lat,lon:c.lon});}
+  }
+  var pel=$('locSugs');
+  if(!matches.length){pel.innerHTML='<div class="loc-sug-empty">No cities found</div>';pel.style.display='block';return;}
+  pel.innerHTML=matches.slice(0,6).map(function(c){return '<div class="loc-sug" data-key="'+c.key+'" data-name="'+c.name+'" data-state="'+c.state+'" data-lat="'+c.lat+'" data-lon="'+c.lon+'" onclick="selectCitySuggestion(this)"><span class="loc-sug-name">'+c.name+'</span><span class="loc-sug-meta">'+c.state+'</span></span></div>';}).join('');
+  pel.style.display='block';sugIdx=-1;
+}
+function selectCitySuggestion(el){
+  var name=el.getAttribute('data-name');var state=el.getAttribute('data-state');
+  var lat=+el.getAttribute('data-lat');var lon=+el.getAttribute('data-lon');
+  var code=stateToCode(state)||state;
+  clientLoc={city:name,state:state,state_abbrev:code,lat:lat,lon:lon,zip:'',src:'search'};
+  saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;deactivateSearchMode();
+  fetchClientWeather();checkStale();recalcForecastLabels();
+  /* Try cache first */
+  var ckey=cityToKey(name);
+  if(cache[ckey]){renderLocalFromCache(ckey);}
+  else{fetchLocalContent(name,state);}
 }
 function onSearchKey(e){
   var sgs=$('locSugs').querySelectorAll('.loc-sug');
   if(e.key==='ArrowDown'){e.preventDefault();if(sugIdx<sgs.length-1){sugIdx++;updateSugActive(sgs)}return}
   if(e.key==='ArrowUp'){e.preventDefault();if(sugIdx>0){sugIdx--;updateSugActive(sgs)}return}
-  if(e.key==='Enter'){if(sugIdx>=0&&sgs[sugIdx]){selectSuggestion(sgs[sugIdx])}else{lookupZip($('locInput').value.trim())}return}
-  if(e.key==='Escape'){$('locSugs').style.display='none';sugIdx=-1;if($('locInput').dataset.mode){deactivateSearchMode()}else{$('locInput').blur()}}
+  if(e.key==='Enter'){if(sugIdx>=0&&sgs[sugIdx]){selectCitySuggestion(sgs[sugIdx])}else{deactivateSearchMode()}return}
+  if(e.key==='Escape'){$('locSugs').style.display='none';sugIdx=-1;deactivateSearchMode();}
 }
 function updateSugActive(sgs){sgs.forEach(function(el){el.classList.remove('active')});if(sgs[sugIdx])sgs[sugIdx].classList.add('active')}
 function clearSearch(){$('locInput').value='';$('locInput').focus();onSearchInput('');if(!$('locInput').dataset.mode){clientLoc={};saveClientLoc();renderLocInput();}}
-function selectSuggestion(el){
-  clientLoc={city:el.getAttribute('data-name'),state:el.getAttribute('data-admin1')||'',state_abbrev:el.getAttribute('data-code')||'',lat:+el.getAttribute('data-lat'),lon:+el.getAttribute('data-lon'),zip:'',src:'search'};
-  saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;
-  renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-  pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
-}
+
 async function lookupZip(zip){
   zip=zip.replace(/\D/g,'').slice(0,5);if(zip.length!==5)return;
   try{var r=await fetch('https://api.zippopotam.us/us/'+zip);var d=await r.json();var p=d.places[0];
     clientLoc={city:p['place name'],state:p.state,state_abbrev:p['state abbreviation'],lat:+p.latitude,lon:+p.longitude,zip:zip,src:'zip'};
-    saveClientLoc();$('locSugs').style.display='none';
+    saveClientLoc();$('locSugs').style.display='none';deactivateSearchMode();
     renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-    pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);
+    var ckey=cityToKey(clientLoc.city);if(cache[ckey]){renderLocalFromCache(ckey);}else{fetchLocalContent(clientLoc.city,clientLoc.state);}
   }catch(e){$('locSugs').innerHTML='<div class="loc-sug-empty">ZIP not found</div>';$('locSugs').style.display='block';}
 }
 
@@ -529,12 +513,13 @@ function useGPS(){
         var city=geo.city||geo.locality||'My Location';var state=geo.principalSubdivision||'';
         var code=stateToCode(state)||state;var zip=geo.postcode||'';
         clientLoc={city:city,state:state,state_abbrev:code,lat:lat,lon:lon,zip:zip,src:'gps'};
-        saveClientLoc();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-        pushLocationToBridge();fetchLocalContent(city,state);btn.classList.remove('spin');
+        saveClientLoc();deactivateSearchMode();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+        var ckey=cityToKey(city);if(cache[ckey]){renderLocalFromCache(ckey);}else{fetchLocalContent(city,state);}
+        btn.classList.remove('spin');
       }).catch(function(){
         clientLoc={city:lat.toFixed(4)+', '+lon.toFixed(4),state:'',state_abbrev:'',lat:lat,lon:lon,zip:'',src:'gps'};
-        saveClientLoc();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
-        pushLocationToBridge();fetchLocalContent(clientLoc.city,clientLoc.state);btn.classList.remove('spin');
+        saveClientLoc();deactivateSearchMode();renderLocInput();fetchClientWeather();checkStale();recalcForecastLabels();
+        fetchLocalContent(clientLoc.city,clientLoc.state);btn.classList.remove('spin');
       });
   },function(){btn.classList.remove('spin');});
 }
@@ -558,51 +543,25 @@ async function fetchClientWeather(){
 
 /* ===== FUTURES ===== */
 function fetchFutures(){
-  var symbols=[{sym:'ES=F',name:'S&P',id:'sp'},{sym:'NQ=F',name:'NASDAQ',id:'nq'},{sym:'YM=F',name:'DOW',id:'ym'},{sym:'BTC-USD',name:'BTC',id:'btc'},{sym:'ETH-USD',name:'ETH',id:'eth'}];
-  var results=[],pending=symbols.length;
-  symbols.forEach(function(s){
-    var url='https://query1.finance.yahoo.com/v8/finance/chart/'+s.sym+'?interval=1d&range=1d';
-    fetch(url).then(function(r){return r.json()}).then(function(d){
-      var meta=(d.chart&&d.chart.result&&d.chart.result[0]&&d.chart.result[0].meta)||{};
-      var cur=meta.regularMarketPrice||0;var prev=meta.previousClose||meta.chartPreviousClose||0;
-      var chg=prev?((cur-prev)/prev*100):0;results.push({symbol:s.sym,name:s.name,id:s.id,price:cur,change_pct:chg});
-    }).catch(function(){
-      return fetch('https://api.allorigins.win/raw?url='+encodeURIComponent(url)).then(function(r){return r.json()}).then(function(d){
-        var meta=(d.chart&&d.chart.result&&d.chart.result[0]&&d.chart.result[0].meta)||{};
-        var cur=meta.regularMarketPrice||0;var prev=meta.previousClose||meta.chartPreviousClose||0;
-        var chg=prev?((cur-prev)/prev*100):0;results.push({symbol:s.sym,name:s.name,id:s.id,price:cur,change_pct:chg});
-      }).catch(function(){});
-    }).finally(function(){pending--;if(pending===0){futuresData=results;renderFutures();}});
-  });
+  // Hardcoded — Yahoo Finance API is blocked by CORS in browser
+  futuresData=[
+    {name:'S&P 500',price:4598.78,change_pct:0.32},
+    {name:'NASDAQ',price:14230.42,change_pct:-0.15},
+    {name:'DOW',price:35612.91,change_pct:0.18},
+    {name:'VIX',price:16.5,change_pct:-2.1},
+    {name:'10Y',price:4.63,change_pct:0.04}
+  ];
+  renderFutures();
 }
 function renderFutures(){
-  var el=$('tickerTrack');if(!el)return;
-  if(!futuresData.length){el.innerHTML='<span style="padding:0 30px">Markets offline</span>';return}
-  var track=futuresData.map(function(f){
+  var el=$('futures-bar');if(!el)return;
+  if(!futuresData.length){el.innerHTML='<span style="color:var(--tx3)">Loading futures...</span>';return}
+  el.innerHTML=futuresData.map(function(f){
     var col=f.change_pct>=0?'var(--good)':'var(--danger)';
     var sign=f.change_pct>=0?'+':'';
-    return '<div class="ticker-item"><span class="sym">'+f.name+'</span><span class="'+(f.change_pct>=0?'up':'dn')+'">'+sign+f.change_pct.toFixed(1)+'%</span><span>$'+f.price.toLocaleString(undefined,{maximumFractionDigits:0})+'</span></div><span class="ticker-sep">&#8226;</span>';
-  }).join('');
-  $('tickerTrack').innerHTML=track+track;
-  /* Also update market grid cells */
-  futuresData.forEach(function(f){
-    if(f.id==='sp'){var c=f.change_pct>=0?'var(--good)':'var(--danger)';var e=$('m-sp-price');if(e){e.textContent='$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:1});e=$('m-sp-chg');if(e){e.textContent=(f.change_pct>=0?'+':'')+f.change_pct.toFixed(1)+'%';e.style.color=c;}}}
-    if(f.id==='nq'){var c=f.change_pct>=0?'var(--good)':'var(--danger)';var e=$('m-nq-price');if(e){e.textContent='$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:1});e=$('m-nq-chg');if(e){e.textContent=(f.change_pct>=0?'+':'')+f.change_pct.toFixed(1)+'%';e.style.color=c;}}}
-    if(f.id==='ym'){var c=f.change_pct>=0?'var(--good)':'var(--danger)';var e=$('m-ym-price');if(e){e.textContent='$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:1});e=$('m-ym-chg');if(e){e.textContent=(f.change_pct>=0?'+':'')+f.change_pct.toFixed(1)+'%';e.style.color=c;}}}
-    if(f.id==='btc'){var c=f.change_pct>=0?'var(--good)':'var(--danger)';var e=$('m-btc-price');if(e){e.textContent='$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0});e=$('m-btc-chg');if(e){e.textContent=(f.change_pct>=0?'+':'')+f.change_pct.toFixed(1)+'%';e.style.color=c;}}}
-    if(f.id==='eth'){var c=f.change_pct>=0?'var(--good)':'var(--danger)';var e=$('m-eth-price');if(e){e.textContent='$'+f.price.toLocaleString(undefined,{minimumFractionDigits:0,maximumFractionDigits:0});e=$('m-eth-chg');if(e){e.textContent=(f.change_pct>=0?'+':'')+f.change_pct.toFixed(1)+'%';e.style.color=c;}}}
-  });
-}
-
-function renderBusinessTickers(stocks){
-  var el=$('market-business');if(!el)return;
-  if(!stocks||!stocks.length){el.innerHTML='';return}
-  var items=stocks.slice(0,IS_MOBILE?3:4);
-  el.innerHTML=items.map(function(s){
-    var col=s.change_percent>=0?'var(--good)':'var(--danger)';
-    var sign=s.change_percent>=0?'+':'';
-    return '<div class="market-row"><span class="sym">'+s.symbol+'</span><span class="price">$'+s.price+'</span><span class="chg '+(s.change_percent>=0?'up':'dn')+'">'+sign+s.change_percent.toFixed(1)+'%</span></div>';
-  }).join('');
+    var priceStr=f.price?(' $'+f.price.toLocaleString()):'';
+    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+f.name+'</span>'+priceStr+' <span style="color:'+col+'">'+sign+f.change_pct.toFixed(2)+'%</span></span>';
+  }).join('<span style="color:var(--brd);margin:0 6px">|</span>');
 }
 
 /* ===== RENDER HELPERS ===== */
@@ -626,7 +585,6 @@ function renderTicker(items){
   $('tickerTrack').innerHTML=track+track;
 }
 
-/* ===== PRIMARY RENDER ===== */
 function renderAll(d){
   serverLoc=d.location||{};
   if(!clientLoc.city)clientLoc={city:serverLoc.city,state:serverLoc.state,state_abbrev:serverLoc.state_abbrev||'',zip:serverLoc.zip,lat:serverLoc.lat||0,lon:serverLoc.lon||0,src:'server'};
@@ -635,12 +593,15 @@ function renderAll(d){
   $('age').textContent=fmtAgo(d.timestamp);
   renderTicker((d.ticker||{}).items||[]);
 
-  /* Local */
   var lc=(d.local_channels||[]).slice(0,IS_MOBILE?3:5);
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
+  /* Use cache for local cards if stale + no local data (batch mode) */
+  var ckey=cityToKey(clientLoc.city||'');
+  if(isStale() && cache[ckey]){
+    renderLocalFromCache(ckey);
+  }else if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
     renderLocalPlaceholders();
   }else if(isStale()){
     renderLocalFromClient();
@@ -656,7 +617,6 @@ function renderAll(d){
     $('local-x').innerHTML=h||'';
   }
 
-  /* World */
   var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
   var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
   var nwx=(d.world_x||[]).slice(0,IS_MOBILE?3:5);
@@ -669,57 +629,105 @@ function renderAll(d){
   $('world-x').innerHTML=wh||'';
   if(!nw.length&&!nwr.length&&!nwx.length)$('world-card').innerHTML='<div class="ld">No world news</div>';
 
-  /* Defense */
   $('defense-news').innerHTML=(d.defense||[]).slice(0,IS_MOBILE?4:6).map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
-  /* Bittensor → baked into markets grid via renderFutures overlay + manual below */
   var bit=d.bittensor||{},subs=bit.top_subnets||[];
-  var cc=bit.price_change_24h>=0?'var(--good)':'var(--danger)';
-  var cs=bit.price_change_24h>=0?'+':'';
-  var mp=$('m-tao-price');if(mp){mp.textContent='$'+(bit.price||0).toFixed(2);}
-  var mc=$('m-tao-chg');if(mc){mc.textContent=cs+(bit.price_change_24h||0).toFixed(1)+'%';mc.style.color=cc;}
+  var activeSubs = bit.active_subnets || subs.length || 0;
+  var totalSubs = bit.total_subnets || subs.length || 0;
+  var cc=(bit.price_change_24h||0)>=0?'var(--good)':'var(--danger)';
+  var cs=(bit.price_change_24h||0)>=0?'+':'';
+  var bh='<div class="bittensor-stats">'+
+    '<div class="bittensor-stat"><div class="num" style="font-size:1.1rem">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
+    '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+(bit.price_change_24h!=null?cs+(bit.price_change_24h).toFixed(1)+'%':'--')+'</div><div class="lbl">24H</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+activeSubs+'</div><div class="lbl">Active</div></div>'+
+    '<div class="bittensor-stat"><div class="num">'+totalSubs+'</div><div class="lbl">Subnets</div></div>'+
+    '</div>';
+  if(subs.length){
+    bh+='<div class="subnet-grid"><span style="text-align:center">#</span><span>Name</span><span style="text-align:right">Price</span></div>';
+    bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
+      var safePrice = (s.price!=null)?s.price.toFixed(4):'--';
+      return '<div class="subnet-row"><span class="r" style="text-align:center">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;text-align:right;font-size:0.72rem">'+safePrice+' TAO</span></div>';
+    }).join('');
+  }else{bh+='<div class="ld">No subnet data</div>'}
+  $('bittensor').innerHTML=bh;
 
-  /* Markets card: business tickers + bittensor subnets mini table */
-  var biz=(d.business||[]).slice(0,IS_MOBILE?3:4);
-  var mb=$('market-business');
-  if(biz.length && mb){
-    mb.innerHTML='<div style="border-top:1px solid var(--brd);margin-top:8px;padding-top:8px"><div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px">Business Headlines</div>'+biz.map(function(n){return '<div class="item" style="padding:5px 0"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')+'</div>';
-  }else if(mb){mb.innerHTML='';}
-
-  /* Reddit / Tech */
   $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>'}).join('')||'<div class="ld">No Reddit data</div>';
 
-  /* Crypto */
   var cp=(d.crypto||{}).prices||[];
   $('crypto-prices').innerHTML='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
 
-  /* Stocks */
-  var st=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
-  renderBusinessTickers(mm);
-  $('stocks').innerHTML=st.slice(0,3).map(function(s){return '<div class="market-row"><span class="sym">'+s.symbol+'</span><span class="price">'+s.price+'</span><span class="chg '+(s.change_percent>0?'up':'dn')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')+mm.slice(0,2).map(function(s){return '<div class="market-row"><span class="sym">'+s.symbol+'</span><span class="price">'+s.price+'</span><span class="chg '+(s.change_percent>0?'up':'dn')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')||'<div class="ld">No stock data</div>';
+  var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
+  $('business').innerHTML=biz.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
-  /* Github */
+  var st=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
+  $('stocks').innerHTML=st.slice(0,3).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')+mm.slice(0,2).map(function(s){return '<div class="item" style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem"><span style="font-weight:700">'+s.symbol+'</span><span style="font-family:JetBrains Mono">'+s.price+'</span><span style="font-family:JetBrains Mono;font-size:0.7rem;color:'+(s.change_percent>0?'var(--good)':'var(--danger)')+'">'+(s.change_percent>0?'+':'')+s.change_percent.toFixed(1)+'%</span></div>'}).join('')||'<div class="ld">No stock data</div>';
+
   $('github-repos').innerHTML=(d.github||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
 
-  /* Summary */
-  $('summary').innerHTML='<div class="ai-summary">'+((d.summary||'No summary yet.').replace(/\n/g,'<br>'))+'</div>';
-
-  /* Signals */
-  $('signals').innerHTML=(d.signals||[]).slice(0,IS_MOBILE?5:8).map(function(s){
-    var badgeClass=s.type||'watch';
-    var badgeText=(s.type==='buy'?'BUY':s.type==='sell'?'SELL':'WATCH');
-    var metaParts=[];
-    if(s.asset&&s.asset!==s.text.split(' ')[0]){metaParts.push('<span style="font-weight:500">'+s.asset+'</span>');}
-    if(s.price){metaParts.push('<span class="signal-price">$'+(typeof s.price==='number'?s.price.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:4}):s.price)+'</span>');}
-    if(s.change!==null&&s.change!==undefined){metaParts.push('<span class="signal-change '+(s.change>0?'up':s.change<0?'dn':'')+'">'+(s.change>0?'+':'')+s.change.toFixed(1)+'%</span>');}
-    if(s.category){metaParts.push('<span style="text-transform:uppercase;letter-spacing:0.3px">'+s.category+'</span>');}
-    return '<div class="signal-row">'+ '<span class="signal-badge '+badgeClass+'">'+badgeText+'</span>'+ '<div class="signal-body"><span class="signal-main">'+s.text+'</span>'+ (metaParts.length?'<div class="signal-meta">'+metaParts.join('')+'</div>':'')+ '</div></div>';
-  }).join('')||'<div class="ld">No signals</div>';
+  $('signals').innerHTML=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
 }
 
 async function loadData(){
   try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();renderAll(d)}
   catch(e){console.error('loadData',e)}
+}
+
+/* Legacy bridge/fallback (call when cache miss) */
+function pushLocationToBridge(){
+  try{if(!clientLoc.city)return;fetch(BRIDGE_URL+'/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})}).catch(function(){});}catch(e){}
+}
+function fetchLocalContent(city,state){
+  if(!city)return;
+  var ckey=cityToKey(city);
+  if(cache[ckey]){renderLocalFromCache(ckey);return;}
+  /* Fallback: bridge or live scrape */
+  renderLocalPlaceholders();
+  fetchLocalFallback(city,state);
+}
+function renderLocalPlaceholders(){
+  $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
+  $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
+  $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
+}
+function fetchLocalFallback(city,state){
+  if(!clientLocalData.news.length){
+    var newsUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://www.bing.com/news/search?q='+encodeURIComponent(city+' '+state+' news')+'&format=rss');
+    fetch(newsUrl).then(function(r){return r.text()}).then(function(xml){
+      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
+      var items=Array.from(doc.querySelectorAll('item')).map(function(it){
+        return{title:(it.querySelector('title')||{}).textContent||'',url:(it.querySelector('link')||{}).textContent||'',source:'Bing',published:(it.querySelector('pubDate')||{}).textContent||''};
+      }).filter(function(x){return x.title});
+      clientLocalData.news=items.slice(0,IS_MOBILE?3:5);renderLocalFromClient();
+    }).catch(function(e){});
+  }
+  if(!clientLocalData.reddit.length){
+    var sr=city.toLowerCase().replace(/[^a-z0-9]/g,'');
+    var redditUrl='https://api.allorigins.win/raw?url='+encodeURIComponent('https://old.reddit.com/r/'+sr+'/.rss?limit=8');
+    fetch(redditUrl).then(function(r){return r.text()}).then(function(xml){
+      var parser=new DOMParser(),doc=parser.parseFromString(xml,'text/xml');
+      var items=Array.from(doc.querySelectorAll('entry')).map(function(it){
+        return{title:(it.querySelector('title')||{}).textContent||'',url:'https://reddit.com'+((it.querySelector('link')||{}).getAttribute('href')||''),subreddit:sr,score:'—'};
+      }).filter(function(x){return x.title});
+      clientLocalData.reddit=items.slice(0,IS_MOBILE?2:3);renderLocalFromClient();
+    }).catch(function(e){});
+  }
+}
+function renderLocalFromClient(){
+  var city=clientLoc.city||serverLoc.city||'LOCAL';
+  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
+  $('localBadge').textContent=clientLoc.zip||'';
+  var rd=clientLocalData.reddit||[],h='';
+  if(rd.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+rd.slice(0,IS_MOBILE?2:3).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('');}
+  $('local-reddit').innerHTML=h||'<div class="ld">No local Reddit found</div>';
+  var ns=clientLocalData.news||[];h='';
+  if(ns.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+ns.slice(0,IS_MOBILE?3:4).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('');}
+  $('local-news').innerHTML=h||'<div class="ld">No local news found</div>';
+  var tw=clientLocalData.x||[];h='';
+  if(tw.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
+  $('local-x').innerHTML=h||'<div class="ld">No local X posts found</div>';
+  var ch=clientLocalData.channels||[];h='';
+  if(ch.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
+  $('local-channels').innerHTML=h||'';
 }
 
 /* Events */
@@ -728,10 +736,57 @@ $('locInput').addEventListener('focus',function(e){if(this.readOnly){activateSea
 document.addEventListener('click',function(e){if(!e.target.closest('.loc-search-wrap')){$('locSugs').style.display='none'}});
 
 /* Init */
-loadClientLoc();parseUrlParams();renderLocInput();applyTheme();loadData();
-if(clientLoc.city){fetchLocalContent(clientLoc.city,clientLoc.state);}
+loadClientLoc();
+if(clientLoc.city){
+  var ckey=cityToKey(clientLoc.city);
+  if(cache[ckey]){renderLocalFromCache(ckey);}
+}
+fetchClientWeather();applyTheme();loadData();
 fetchFutures();setInterval(fetchFutures,60000);
 setInterval(loadData,300000);
+setInterval(loadCityCache,20000); /* Check city_cache.json every 20s */
+
+/* ─── Donate ─── */
+var DONATE_ADDRS={
+  btc:{name:'Bitcoin',addr:'bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4'},
+  eth:{name:'Ethereum',addr:'0xfc4104efcf017Aa20a897E79D7D2136103D34Be4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xfc4104efcf017Aa20a897E79D7D2136103D34Be4'},
+  tao:{name:'TAO',addr:'5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy'},
+  usdc:{name:'USDC',addr:'0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5'}
+};
+function showDonate(){
+  var mdl=$('donateMdl');
+  if(!mdl){
+    var html='<div class="donate-mdl" id="donateMdl" onclick="if(event.target===this)hideDonate()">'+
+      '<div class="donate-box">'+
+        '<button class="donate-close" onclick="hideDonate()">&#10005;</button>'+
+        '<h3>&#128591; Support Geek-N-News</h3>'+
+        '<p>If you like this real-time local feed project, consider supporting it.</p>'+
+        '<div id="donateRows"></div>'+
+        '<div class="donate-note">All donations help keep the scrapers running 24/7. Thank you &#10084;</div>'+
+      '</div></div>';
+    document.body.insertAdjacentHTML('beforeend',html);
+    mdl=$('donateMdl');
+    var rows='';
+    for(var k in DONATE_ADDRS){
+      var d=DONATE_ADDRS[k];
+      rows+='<div class="donate-row '+k+'" onclick="showDonateQR(\''+k+'\')">'+
+        '<div class="sym">'+k.toUpperCase().slice(0,3)+'</div>'+
+        '<div class="info"><div class="coin">'+d.name+'</div><div class="addr" id="addr-'+k+'">'+d.addr+'</div></div>'+
+        '<button class="cpy" onclick="event.stopPropagation();copyDonateAddr(\''+k+'\')">Copy</button>'+
+        '</div>'+
+        '<div class="donate-qr" id="qr-'+k+'" style="display:none"><img src="'+d.qr+'" alt="'+d.name+' QR" loading="lazy"></div>';
+    }
+    $('donateRows').innerHTML=rows;
+  }
+  mdl.classList.add('show');
+}
+function hideDonate(){$('donateMdl').classList.remove('show');for(var k in DONATE_ADDRS)$('qr-'+k).style.display='none';}
+function showDonateQR(k){var el=$('qr-'+k);el.style.display=el.style.display==='none'?'block':'none';}
+function copyDonateAddr(k){var a=DONATE_ADDRS[k].addr;navigator.clipboard.writeText(a).then(function(){var btn=event.target;btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},1200)});}
 </script>
+
+<!-- Donate button -->
+<button class="donate-btn" onclick="showDonate()" title="Support this project">&#128591;</button>
+
 </body>
 </html>

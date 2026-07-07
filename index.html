@@ -10,7 +10,7 @@
 [data-theme="dark"]{--bg:#0b0d10;--bg-card:#111318;--bg-el:#181b22;--brd:#22262e;--acc:#f7a51d;--danger:#ef4444;--good:#22c55e;--info:#3b82f6;--tx:#e8eaed;--tx2:#9ca3af;--tx3:#6b7280;--bg-sel:#1a2332}
 [data-theme="light"]{--bg:#f6f7f9;--bg-card:#fff;--bg-el:#f0f1f4;--brd:#e5e7eb;--acc:#d97706;--danger:#dc2626;--good:#16a34a;--info:#2563eb;--tx:#111827;--tx2:#4b5563;--tx3:#9ca3af;--bg-sel:#eff6ff}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px;margin:0;padding:0;overflow-x:hidden;width:100%;max-width:1200px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.45;min-width:320px;margin:0;padding:0;overflow-x:hidden;width:100%}
 
 .loc-bar{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:relative;z-index:110}
 .loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
@@ -60,12 +60,12 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .btn-sm{padding:4px 8px;font-size:0.7rem;min-height:28px}
 .mid{font-family:'JetBrains Mono';font-size:0.78rem;color:var(--tx2)}
 
-.container{max-width:1400px;margin:0 auto;padding:10px 12px;overflow-x:hidden}
+.container{max-width:1400px;margin:0 auto;padding:10px 12px}
 @media(min-width:768px){.container{padding:14px}}
-.grid{display:grid;grid-template-columns:1fr;gap:12px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;width:100%}
 @media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
 @media(min-width:1100px){.grid{grid-template-columns:1fr 2fr 1fr;gap:14px}}
-.col{display:flex;flex-direction:column;gap:12px}
+.col{display:flex;flex-direction:column;gap:12px;min-width:0}
 @media(min-width:768px){.col{gap:14px}}
 .card{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
 .card-hd{background:rgba(255,255,255,0.03);border-bottom:1px solid var(--brd);padding:10px 12px;font-weight:600;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;min-height:40px}
@@ -140,10 +140,8 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .donate-close{float:right;background:none;border:none;color:var(--tx3);font-size:1.2rem;cursor:pointer;padding:2px 6px}
 .donate-close:hover{color:var(--tx)}
 .donate-note{color:var(--tx3);font-size:0.68rem;text-align:center;margin-top:10px}
-@media (max-width:768px){
-.container{flex-direction:column}
-.card{width:100%}
-h1{font-size:24px}
+@media(max-width:768px){
+.card{min-width:0}
 }
 </style>
 </head>

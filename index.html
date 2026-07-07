@@ -247,7 +247,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       <div class="card">
         <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
         <div class="card-bd" id="localCard">
-          <div class="fc" id="local-forecast"></div>
           <div class="forecast-grid" id="forecast-grid"></div>
           <div id="local-channels"></div>
           <div id="local-news"></div>
@@ -604,16 +603,13 @@ function renderLocBar(){renderLocInput();}
 function recalcForecastLabels(){renderForecast();}
 function renderForecast(){
   var cw=clientWeather;var w=serverWeather;var fc=(cw&&cw.forecast&&cw.forecast.length)?cw.forecast:(w&&w.forecast?w.forecast:[]);
-  // Inline quick forecast (top line)
-  $('local-forecast').innerHTML=fc.slice(0,5).map(function(f){var cl=(f.high||f.temp||0)>75?'w':(f.low||f.temp||0)<55?'c':'';return'<span class="'+cl+'">'+(f.name||'').slice(0,3)+' '+Math.round(f.high||f.temp||0)+'F '+(f.condition||f.description||'').slice(0,12)+'</span>';}).join('');
-  // 5-day grid cards
   var grid=$('forecast-grid');if(!grid)return;
   grid.innerHTML=fc.slice(0,5).map(function(f){
     var dayName=(f.name||'');
     if(dayName.length>3 && dayName!=='Today' && dayName!=='Tonight') dayName=dayName.slice(0,3);
     var hi=Math.round(f.high||f.temp||0);
-    var lo=Math.round(f.low||0);
-    var cond=(f.condition||f.description||'').replace('Chance ','').replace('Slight ','').slice(0,18);
+    var lo=f.low!==undefined&&f.low!==null?Math.round(f.low):'--';
+    var cond=(f.condition||f.description||'').replace('Chance ','').replace('Slight ','').replace('Likely','').replace('then ',' ').slice(0,18);
     var rain=f.qpf>0?f.qpf+'"':(f.pop>20?f.pop+'%':'');
     return '<div class="forecast-day"><div class="day-name">'+dayName+'</div>'+
       '<div class="temps"><span class="high">'+hi+'&deg;</span><span style="color:var(--tx3)">|</span><span class="low">'+lo+'F</span></div>'+

@@ -85,6 +85,19 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
 .fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
+.forecast-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:8px 0;font-size:0.7rem;text-align:center;border-top:1px solid var(--brd);margin-top:6px}
+.forecast-day{display:flex;flex-direction:column;align-items:center;gap:3px}
+.forecast-day .day-name{font-weight:600;color:var(--tx);font-size:0.72rem}
+.forecast-day .temps{display:flex;gap:4px;align-items:center}
+.forecast-day .high{color:#fca5a5;font-weight:600;font-size:0.8rem}
+.forecast-day .low{color:#93c5fd;font-weight:600;font-size:0.8rem}
+.forecast-day .cond{color:var(--tx2);font-size:0.65rem;line-height:1.2;min-height:2.2em}
+.forecast-day .rain{color:var(--acc);font-size:0.62rem}
+.forecast-day .bar{background:var(--brd);height:2px;width:100%;border-radius:1px;margin-top:2px}
+@media(max-width:600px){
+  .forecast-grid{grid-template-columns:repeat(3,1fr)}
+  .forecast-day:nth-child(4),.forecast-day:nth-child(5){display:none}
+}
 .bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
 @media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
 .bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
@@ -234,6 +247,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
         <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
         <div class="card-bd" id="localCard">
           <div class="fc" id="local-forecast"></div>
+          <div class="forecast-grid" id="forecast-grid"></div>
           <div id="local-channels"></div>
           <div id="local-news"></div>
           <div id="local-reddit"></div>
@@ -592,7 +606,23 @@ function renderLocBar(){renderLocInput();}
 function recalcForecastLabels(){renderForecast();}
 function renderForecast(){
   var cw=clientWeather;var w=serverWeather;var fc=(cw&&cw.forecast&&cw.forecast.length)?cw.forecast:(w&&w.forecast?w.forecast:[]);
-  $('local-forecast').innerHTML=fc.slice(0,5).map(function(f){var cl=f.temp>75?'w':f.temp<55?'c':'';return'<span class="'+cl+'">'+(f.name||'').slice(0,3)+' '+Math.round(f.temp||0)+'F '+(f.description||'')+'</span>';}).join('');
+  // Inline quick forecast (top line)
+  $('local-forecast').innerHTML=fc.slice(0,5).map(function(f){var cl=(f.high||f.temp||0)>75?'w':(f.low||f.temp||0)<55?'c':'';return'<span class="'+cl+'">'+(f.name||'').slice(0,3)+' '+Math.round(f.high||f.temp||0)+'F '+(f.condition||f.description||'').slice(0,12)+'</span>';}).join('');
+  // 5-day grid cards
+  var grid=$('forecast-grid');if(!grid)return;
+  grid.innerHTML=fc.slice(0,5).map(function(f){
+    var dayName=(f.name||'');
+    if(dayName.length>3 && dayName!=='Today' && dayName!=='Tonight') dayName=dayName.slice(0,3);
+    var hi=Math.round(f.high||f.temp||0);
+    var lo=Math.round(f.low||0);
+    var cond=(f.condition||f.description||'').replace('Chance ','').replace('Slight ','').slice(0,18);
+    var rain=f.qpf>0?f.qpf+'"':(f.pop>20?f.pop+'%':'');
+    return '<div class="forecast-day"><div class="day-name">'+dayName+'</div>'+
+      '<div class="temps"><span class="high">'+hi+'&deg;</span><span style="color:var(--tx3)">|</span><span class="low">'+lo+'F</span></div>'+
+      '<div class="cond">'+cond+'</div>'+
+      (rain?'<div class="rain">&#x1F4A7; '+rain+'</div>':'')+
+      '</div>';
+  }).join('');
   var curTemp=cw&&cw.temperature?Math.round(cw.temperature):0;var curDesc=cw&&cw.description?cw.description:(w&&w.current&&w.current.description?w.current.description:'');
   var cityName=clientLoc.city||serverLoc.city||'LOCAL';
   $('localTitle').textContent=(curTemp?curTemp+'° ':'')+cityName+' NEWS'+(curDesc?' | '+curDesc:'');

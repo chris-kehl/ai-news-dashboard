@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-07T16:02:19.024217",
+  "timestamp": "2026-07-07T16:19:38.481219",
   "location": {
     "zip": "40272",
     "city": "Louisville",
@@ -1143,54 +1143,80 @@
   ],
   "weather": {
     "zip": "40272",
-    "timestamp": "2026-07-07T20:00:07.501409",
     "city": "Louisville",
-    "state": "Kentucky",
+    "state": "KY",
+    "lat": 38.0846,
+    "lon": -85.851,
     "current": {
       "temperature": 84.2,
       "description": "Mostly Cloudy",
       "humidity": 62.059071991511,
-      "wind_speed": 12.96
+      "wind_speed": 18.504
     },
     "forecast": [
       {
-        "name": "This Afternoon",
-        "temp": 86,
-        "description": "Chance Showers And Thunderstorms",
-        "detailed": "A chance of showers and thunderstorms. Mostly cloudy, with a high near 86. North wind around 5 mph. Chance of precipitat"
-      },
-      {
-        "name": "Tonight",
-        "temp": 70,
-        "description": "Chance Showers And Thunderstorms then Mostly Cloudy",
-        "detailed": "A chance of showers and thunderstorms before 8pm. Mostly cloudy, with a low around 70. North wind 0 to 3 mph. Chance of "
+        "name": "This",
+        "date": "2026-07-07",
+        "high": 86,
+        "low": 70,
+        "condition": "Chance Showers And Thunderstorms",
+        "pop": 44,
+        "qpf": 0.02,
+        "icon": "https://api.weather.gov/icons/land/day/tsra_sct,40?size=medium"
       },
       {
         "name": "Wednesday",
-        "temp": 86,
-        "description": "Patchy Fog then Chance Showers And Thunderstorms",
-        "detailed": "Patchy fog between 8am and 10am, then a chance of showers and thunderstorms. Partly sunny, with a high near 86. West win"
-      },
-      {
-        "name": "Wednesday Night",
-        "temp": 70,
-        "description": "Chance Showers And Thunderstorms",
-        "detailed": "A chance of showers and thunderstorms before 4am. Mostly cloudy, with a low around 70. Southwest wind around 2 mph. Chan"
+        "date": "2026-07-08",
+        "high": 86,
+        "low": 70,
+        "condition": "Patchy Fog then Chance Showers And Thunderstorms",
+        "pop": 54,
+        "qpf": 0.07,
+        "icon": "https://api.weather.gov/icons/land/day/fog/tsra_hi,50?size=medium"
       },
       {
         "name": "Thursday",
-        "temp": 88,
-        "description": "Slight Chance Showers And Thunderstorms",
-        "detailed": "A slight chance of showers and thunderstorms after 8am. Mostly sunny, with a high near 88. Southwest wind 2 to 7 mph. Ch"
+        "date": "2026-07-09",
+        "high": 88,
+        "low": 70,
+        "condition": "Slight Chance Showers And Thunderstorms",
+        "pop": 19,
+        "qpf": 0.01,
+        "icon": "https://api.weather.gov/icons/land/day/tsra_hi,20?size=medium"
       },
       {
-        "name": "Thursday Night",
-        "temp": 72,
-        "description": "Chance Showers And Thunderstorms",
-        "detailed": "A chance of showers and thunderstorms before 2am, then showers and thunderstorms likely. Some of the storms could produc"
+        "name": "Friday",
+        "date": "2026-07-10",
+        "high": 88,
+        "low": 72,
+        "condition": "Showers And Thunderstorms",
+        "pop": 82,
+        "qpf": 1.72,
+        "icon": "https://api.weather.gov/icons/land/day/tsra_sct,80?size=medium"
+      },
+      {
+        "name": "Saturday",
+        "date": "2026-07-11",
+        "high": 86,
+        "low": 71,
+        "condition": "Showers And Thunderstorms Likely",
+        "pop": 79,
+        "qpf": 0.74,
+        "icon": "https://api.weather.gov/icons/land/day/tsra_sct,70?size=medium"
+      },
+      {
+        "name": "Sunday",
+        "date": "2026-07-12",
+        "high": 85,
+        "low": 69,
+        "condition": "Chance Showers And Thunderstorms",
+        "pop": 50,
+        "qpf": 0.25,
+        "icon": "https://api.weather.gov/icons/land/day/tsra_sct,50/tsra_sct,40?size=medium"
       }
     ],
-    "source": "NWS"
+    "source": "NWS",
+    "timestamp": "2026-07-07T20:19:38.471751"
   },
   "local_news": [
     {

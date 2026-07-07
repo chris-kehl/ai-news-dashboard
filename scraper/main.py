@@ -17,6 +17,7 @@ from business_scraper import get_business_data
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
 from stocks_scraper import get_stocks_data, generate_ticker_json
+from alpha_vantage_scraper import get_av_ticker_sentiment_items, add_av_to_ticker
 from defense_scraper import get_defense_data
 from weather_scraper import get_weather
 from local_news_scraper import get_local_news
@@ -76,6 +77,9 @@ def build_dashboard_data():
     print("\n[7/13] Stocks & ticker...")
     stocks_data = get_stocks_data()
     ticker_data = generate_ticker_json()
+    # Inject AV sentiment into ticker items
+    enriched_items = add_av_to_ticker(ticker_data.get("items", []))
+    ticker_data["items"] = enriched_items
 
     print("\n[8/13] Business...")
     business_data = get_business_data()

@@ -1,12 +1,25 @@
 #!/usr/bin/env python3
-"""Reddit scraper - uses HackerNews RSS + keyword scoring since Reddit blocks."""
+"""Reddit scraper — now uses OAuth password grant API client.
 
+Requires env vars:
+    REDDIT_CLIENT_ID
+    REDDIT_CLIENT_SECRET
+    REDDIT_USERNAME
+    REDDIT_PASSWORD
+"""
+
+import time
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
-import time
 import re
 from scraper_utils import fetch_with_retry, DEFAULT_HEADERS
+from reddit_api_client import (
+    get_hot_ai_posts,
+    get_worldnews_posts,
+    get_subreddit_posts,
+    get_token,
+)
 
 HEADERS = {
     "User-Agent": "AI-News-Dashboard/1.0"
@@ -18,11 +31,18 @@ AI_KEYWORDS = [
     "autonomous", "benchmark", "quantiz", "fine-tun", "training"
 ]
 
+
 def get_hn_posts(limit=15):
     """Fetch HackerNews top stories via RSS."""
     posts = []
     try:
-        r = fetch_with_retry("https://news.ycombinator.com/rss", headers=HEADERS, timeout=15, max_retries=2, backoff_base=2.0)
+        r = fetch_with_retry(
+            "https://news.ycombinator.com/rss",
+            headers=HEADERS,
+            timeout=15,
+            max_retries=2,
+            backoff_base=2.0
+        )
         if r is None:
             return []
         root = ET.fromstring(r.content)
@@ -48,43 +68,76 @@ def get_hn_posts(limit=15):
     posts.sort(key=lambda x: x["score"], reverse=True)
     return posts[:limit]
 
+
 def get_reddit_posts(subreddits=None, limit=10):
-    """Main entry. Reddit is blocked, fallback to HackerNews + DDG."""
+    """Main entry: fetch AI-relevant Reddit posts via OAuth API.
+
+    Falls back to HackerNews + DDG on auth failure.
+    """
+    try:
+        posts = get_hot_ai_posts(subreddits=subreddits, limit=limit)
+        if posts:
+            print(f"      Reddit API: {len(posts)} AI posts")
+            return posts
+    except Exception as e:
+        print(f"      Reddit API error: {e}")
+
+    # Fallback chain
     posts = get_hn_posts(limit=limit)
-    # If HN is empty (rare), try DDG AI news as last resort
-    if not posts:
-        try:
-            from ddg_scraper import ddg_ai_reddit
-            print("      HN empty — falling back to DDG AI news")
-            ddg = ddg_ai_reddit(max_results=limit)
-            posts = [{
-                "title": d["title"],
-                "subreddit": "DDG",
-                "score": 100,
-                "comments": 0,
-                "url": d["url"],
-                "created": d.get("published", "")
-            } for d in ddg[:limit]]
-        except Exception as e:
-            print(f"      DDG AI fallback failed: {e}")
+    if posts:
+        print(f"      HN fallback: {len(posts)} posts")
+        return posts
+
+    try:
+        from ddg_scraper import ddg_ai_reddit
+        print("      HN empty — falling back to DDG AI news")
+        ddg = ddg_ai_reddit(max_results=limit)
+        posts = [{
+            "title": d["title"],
+            "subreddit": "DDG",
+            "score": 100,
+            "comments": 0,
+            "url": d["url"],
+            "created": d.get("published", "")
+        } for d in ddg[:limit]]
+    except Exception as e:
+        print(f"      DDG fallback failed: {e}")
     return posts
 
+
 def get_world_reddit_posts(limit=5):
-    """Scrape top posts from old.reddit.com (needs session cookie)."""
+    """Fetch top posts from r/worldnews via OAuth API."""
+    try:
+        posts = get_worldnews_posts(limit=limit, period="day")
+        if posts:
+            print(f"      r/worldnews API: {len(posts)} posts")
+            return [{
+                "title": p["title"],
+                "url": p["url"],
+                "source": "r/worldnews",
+                "category": "world",
+                "description": ""
+            } for p in posts]
+    except Exception as e:
+        print(f"      r/worldnews API error: {e}")
+
+    # HTML fallback only if API fails
     posts = []
     try:
         sess = requests.Session()
         sess.headers.update(DEFAULT_HEADERS)
-        # 1. Visit front page to get cookies
         sess.get("https://old.reddit.com", timeout=20)
-        # 2. Fetch worldnews top
         r = sess.get(
             "https://old.reddit.com/r/worldnews/top/?t=day&limit=15",
             timeout=20
         )
         if r.status_code != 200:
             return []
-        for m in re.finditer(r'<a[^>]*class="title[^"]*"[^>]*href="([^"]+)"[^>]*>([^<]*)</a>', r.text, re.IGNORECASE):
+        for m in re.finditer(
+            r'<a[^>]*class="title[^"]*"[^>]*href="([^"]+)"[^>]*>([^<]*)</a>',
+            r.text,
+            re.IGNORECASE
+        ):
             href = m.group(1).strip()
             title = m.group(2).strip()
             if not title:
@@ -98,7 +151,7 @@ def get_world_reddit_posts(limit=5):
                 "description": ""
             })
     except Exception as e:
-        print(f"      Reddit worldnews error: {e}")
+        print(f"      Reddit worldnews HTML fallback error: {e}")
     return posts[:limit]
 
 

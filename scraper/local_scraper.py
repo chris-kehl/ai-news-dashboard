@@ -11,6 +11,7 @@ from urllib.parse import quote
 import time, requests, xml.etree.ElementTree as ET, html as html_module
 
 from feed_config import get_subreddits, get_x_queries
+from reddit_api_client import get_subreddit_posts
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -209,13 +210,35 @@ def _scrape_subreddit_rss(sr_name: str, limit: int = 10) -> List[Dict]:
 
 
 def get_local_reddit(city: str, state: str, max_posts: int = 8) -> List[Dict]:
-    subs = get_subreddits(city, state)[:3]  # only top 3 to avoid Reddit rate limits
+    """Fetch local subreddit posts via OAuth API, fall back to old RSS."""
+    subs = get_subreddits(city, state)[:3]
+
+    # Try OAuth API first
+    try:
+        from reddit_api_client import get_subreddit_posts, get_token
+        token = get_token()
+        all_posts = []
+        for i, sub in enumerate(subs):
+            posts, status = get_subreddit_posts(sub, sort="hot", limit=10, token=token)
+            if isinstance(status, int) and status == 200:
+                all_posts.extend(posts)
+                print(f"      [Reddit] API: r/{sub} -> {len(posts)} posts")
+            else:
+                print(f"      [Reddit] API: r/{sub} -> status={status}")
+            if i < len(subs) - 1:
+                time.sleep(0.75)
+        if all_posts:
+            all_posts.sort(key=lambda x: x.get("score", 0), reverse=True)
+            return all_posts[:max_posts]
+    except Exception as e:
+        print(f"      [Reddit] API error: {e} — falling back to RSS")
+
+    # RSS fallback
     all_posts = []
     for i, sub in enumerate(subs):
         posts = _scrape_subreddit_rss(sub, limit=10)
         if posts:
             all_posts.extend(posts)
-        # Sleep between requests to keep old.reddit.com happy
         if i < len(subs) - 1:
             time.sleep(random.uniform(8, 12))
     all_posts.sort(key=lambda x: int(x["score"]) if isinstance(x["score"], int) else 0, reverse=True)

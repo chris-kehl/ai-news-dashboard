@@ -64,7 +64,7 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 @media(min-width:768px){.container{padding:14px}}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:768px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}}
-@media(min-width:1100px){.grid{grid-template-columns:2fr 1fr 1fr;gap:14px}}
+@media(min-width:1100px){.grid{grid-template-columns:1fr 2fr 1fr;gap:14px}}
 .col{display:flex;flex-direction:column;gap:12px}
 @media(min-width:768px){.col{gap:14px}}
 .card{background:var(--bg-card);border:1px solid var(--brd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
@@ -204,6 +204,24 @@ h1{font-size:24px}
   <div class="grid">
     <div class="col">
       <div class="card">
+        <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+        <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
+        <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
+        <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+        <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
         <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
         <div class="card-bd" id="localCard">
           <div class="fc" id="local-forecast"></div>
@@ -224,24 +242,6 @@ h1{font-size:24px}
       <div class="card">
         <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE <span data-lbl>PRIORITY</span></div>
         <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-        <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
-        <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
-        <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
-        <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
       </div>
     </div>
     <div class="col">

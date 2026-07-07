@@ -599,7 +599,17 @@ function renderForecast(){
 }
 function renderTicker(items){
   if(!items||!items.length){$('tickerTrack').innerHTML='<span style="padding:0 30px">Markets offline</span>';return}
-  var track=items.map(function(x){var cls=x.change>=0?'up':'dn';var sign=x.change>=0?'+':'';return'<div class="ticker-item"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'%</span><span>$'+x.price+'</span></div><span class="ticker-sep">&#8226;</span>';}).join('');
+  var track=items.map(function(x){
+    var cls=x.change>=0?'up':'dn';
+    var sign=x.change>=0?'+':'';
+    // AV sentiment items: display as ticker + sentiment label + headline, no price
+    if(x.av_news){
+      var color=cls==='up'?'var(--good)':'var(--danger)';
+      return'<div class="ticker-item" style="color:var(--tx2)"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'</span><span style="font-size:0.65rem;color:var(--acc)"> '+x.sentiment_label+'</span><span style="font-size:0.65rem;color:var(--tx3);margin-left:4px">'+(x.headline||'').slice(0,50)+'</span></div><span class="ticker-sep">&#8226;</span>';
+    }
+    // Normal items: symbol + change + price
+    return'<div class="ticker-item"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'%</span><span>$'+x.price+'</span></div><span class="ticker-sep">&#8226;</span>';
+  }).join('');
   $('tickerTrack').innerHTML=track+track;
 }
 

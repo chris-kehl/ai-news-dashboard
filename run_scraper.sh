@@ -14,7 +14,11 @@ else
 fi
 
 # Load env vars
-export $(grep -v '^#' .env | xargs) 2>/dev/null || true
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs) 2>/dev/null || true
+else
+    export $(grep -v '^#' .env.bak | xargs) 2>/dev/null || true
+fi
 
 # Run scraper
 echo "[$(date)] Running scraper with $PYTHON..."

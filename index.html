@@ -115,6 +115,16 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
 .futures-bar{scrollbar-width:none}
 .futures-bar::-webkit-scrollbar{display:none}
 
+/* ── Business card index ticker ── */
+.index-ticker-wrap{background:var(--bg-el);border-bottom:1px solid var(--brd);overflow:hidden;white-space:nowrap;position:relative;height:30px;display:flex;align-items:center}
+.index-ticker-track{display:inline-flex;animation:indexMarquee 60s linear infinite;will-change:transform}
+.index-ticker-track:hover{animation-play-state:paused}
+.index-ticker-item{display:inline-flex;align-items:center;padding:0 16px;font-family:'JetBrains Mono';font-size:0.72rem;color:var(--tx2);gap:6px}
+.index-ticker-item .sym{font-weight:600;color:var(--tx)}
+.index-ticker-item .up{color:var(--good)}.index-ticker-item .dn{color:var(--danger)}
+.index-ticker-sep{color:var(--brd);font-size:0.6rem}
+@keyframes indexMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
 /* ── Donate ── */
 .donate-btn{position:fixed;bottom:16px;right:16px;z-index:400;background:var(--acc);color:#000;border:none;border-radius:50%;width:48px;height:48px;font-size:1.3rem;cursor:pointer;box-shadow:0 4px 14px rgba(247,165,29,.35);display:flex;align-items:center;justify-content:center;transition:.2s}
 .donate-btn:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(247,165,29,.5)}
@@ -253,7 +263,9 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx)
       </div>
       <div class="card">
         <div class="card-hd"><span>&#128176;</span> BUSINESS NEWS</div>
-        <div id="futures-bar" class="futures-bar" style="background:var(--bg-el);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;align-items:center;gap:10px;overflow-x:auto;white-space:nowrap;font-size:0.72rem"></div>
+        <div class="index-ticker-wrap" id="indexTickerWrap">
+          <div class="index-ticker-track" id="indexTickerTrack"><span style="padding:0 30px">Loading indexes...</span></div>
+        </div>
         <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
       </div>
     </div>
@@ -326,6 +338,23 @@ var serverLoc={},clientLoc={},clientWeather={},serverWeather={},pendingReq=null,
 var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
 var futuresData=[];
+var indexData=[
+  {symbol:'S&P 500',price:4598.78,change:0.32},
+  {symbol:'NASDAQ',price:14230.42,change:-0.15},
+  {symbol:'DOW',price:35612.91,change:0.18},
+  {symbol:'RUSSELL 2K',price:1997.55,change:-0.42},
+  {symbol:'VIX',price:16.50,change:-2.10},
+  {symbol:'FTSE 100',price:7689.61,change:0.55},
+  {symbol:'DAX',price:16789.85,change:0.78},
+  {symbol:'NIKKEI 225',price:33485.71,change:-0.63},
+  {symbol:'HANG SENG',price:16890.36,change:1.22},
+  {symbol:'SHANGHAI',price:2967.25,change:-0.18},
+  {symbol:'GOLD',price:2047.30,change:0.45},
+  {symbol:'CRUDE OIL',price:72.45,change:-1.12},
+  {symbol:'10Y YIELD',price:4.63,change:0.04},
+  {symbol:'USD/EUR',price:0.9185,change:-0.22},
+  {symbol:'BTC/USD',price:43250.00,change:1.85}
+];
 var _lastCacheLoad=0;
 
 /* ===== STATE ===== */
@@ -354,27 +383,26 @@ async function loadCityCache(){
     var r=await fetch('city_cache.json?v='+Date.now());
     if(!r.ok)return;
     var data=await r.json();
+    var cities=data.cities||{};
     var now=Date.now();
     var staleCutoff=now-86400000; /* 24h in ms */
     var cleared=0,added=0;
-    for(var k in data){
-      var entry=data[k];
+    for(var k in cities){
+      var entry=cities[k];
       try{
-        var ts=new Date(entry.timestamp||0).getTime();
-        if(ts<staleCutoff){cleared++;continue;} /* skip stale */
+        var ts=new Date(entry.cached_at||0).getTime();
+        if(ts<staleCutoff){cleared++;continue;}
         cache[k]=entry;
         cacheAge[k]=ts;
         added++;
       }catch(e){}
     }
-    /* Remove any keys in live cache that disappeared from file (garbage collect stale >24h) */
     for(var ck in cache){
-      if(!cache[ck].city){delete cache[ck];continue;} /* sanity */
-      var age=cacheAge[ck]||new Date(cache[ck].timestamp||0).getTime();
+      if(!cache[ck].city){delete cache[ck];continue;}
+      var age=cacheAge[ck]||new Date(cache[ck].cached_at||0).getTime();
       if(age<staleCutoff){delete cache[ck];delete cacheAge[ck];cleared++;}
     }
     _lastCacheLoad=now;
-    /* Refresh local card if current city is now in cache */
     var ckey=cityToKey(clientLoc.city||'');
     if(cache[ckey]){renderLocalFromCache(ckey);}
   }catch(e){console.log('[CACHE] load error',e)}
@@ -544,17 +572,12 @@ async function fetchClientWeather(){
   }catch(e){console.error('weather',e)}
 }
 
-/* ===== FUTURES ===== */
+/* ===== INDEX TICKER (business card) ===== */
 function fetchFutures(){
   // Hardcoded — Yahoo Finance API is blocked by CORS in browser
-  futuresData=[
-    {name:'S&P 500',price:4598.78,change_pct:0.32},
-    {name:'NASDAQ',price:14230.42,change_pct:-0.15},
-    {name:'DOW',price:35612.91,change_pct:0.18},
-    {name:'VIX',price:16.5,change_pct:-2.1},
-    {name:'10Y',price:4.63,change_pct:0.04}
-  ];
+  // Prices are illustrative placeholders
   renderFutures();
+  renderIndexTicker();
 }
 function renderFutures(){
   var el=$('futures-bar');if(!el)return;
@@ -565,6 +588,17 @@ function renderFutures(){
     var priceStr=f.price?(' $'+f.price.toLocaleString()):'';
     return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+f.name+'</span>'+priceStr+' <span style="color:'+col+'">'+sign+f.change_pct.toFixed(2)+'%</span></span>';
   }).join('<span style="color:var(--brd);margin:0 6px">|</span>');
+}
+function renderIndexTicker(){
+  var track=$('indexTickerTrack');if(!track)return;
+  if(!indexData.length){track.innerHTML='<span style="padding:0 30px">Indexes offline</span>';return}
+  var items=indexData.map(function(x){
+    var cls=x.change>=0?'up':'dn';
+    var sign=x.change>=0?'+':'';
+    var priceStr=(x.price>=1000)?x.price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):x.price.toFixed(2);
+    return '<div class="index-ticker-item"><span class="sym">'+x.symbol+'</span><span>$'+priceStr+'</span><span class="'+cls+'">'+sign+x.change.toFixed(2)+'%</span></div><span class="index-ticker-sep">&#8226;</span>';
+  }).join('');
+  track.innerHTML=items+items; // duplicate for seamless loop
 }
 
 /* ===== RENDER HELPERS ===== */

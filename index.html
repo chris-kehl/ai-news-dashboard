@@ -261,7 +261,7 @@ html{scrollbar-gutter:stable}
 <main class="container">
 
   <!-- DASHBOARD TAB -->
-  <section id="tab-dashboard" role="tabpanel" aria-labelledby="tab-btn-dashboard" class="tab-panel active">
+  <section id="tab-dashboard" role="tabpanel" aria-labelledby="tab-btn-dashboard" class="tab-panel" hidden>
     <div class="grid">
       <div class="col">
         <div class="card">
@@ -427,7 +427,7 @@ html{scrollbar-gutter:stable}
   </section>
 
   <!-- PONG TAB -->
-  <section id="tab-pong" role="tabpanel" aria-labelledby="tab-btn-pong" class="tab-panel" hidden>
+  <section id="tab-pong" role="tabpanel" aria-labelledby="tab-btn-pong" class="tab-panel active">
     <div class="pong-wrap">
       <div class="pong-hud">
         <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
@@ -520,7 +520,7 @@ var _lastCacheLoad=0;
 
 /* ===== TAB SWITCHING (W3C Tabs Pattern) ===== */
 var tabs=['dashboard','local','world','tech','stocks','pong'];
-var currentTab='dashboard';
+var currentTab='pong';
 
 function switchTab(tabId){
   if(tabId===currentTab)return;
@@ -1059,9 +1059,9 @@ function pongDraw(){
   ctx.fillStyle='#0a0c10';ctx.fillRect(0,0,pong.W,pong.H);
   ctx.strokeStyle='#22262e';ctx.lineWidth=1;
   ctx.beginPath();ctx.moveTo(pong.W/2,0);ctx.lineTo(pong.W/2,pong.H);ctx.stroke();
-  ctx.fillStyle='var(--acc)';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#f7a51d';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
   ctx.fillStyle='#e8eaed';ctx.fillRect(0,pong.compY,pong.paddleW,pong.paddleH);
-  ctx.fillStyle='var(--acc)';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);
+  ctx.fillStyle='#f7a51d';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);
   if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'YOU WIN!':'COMPUTER WINS!',pong.W/2,pong.H/2);}
 }
 

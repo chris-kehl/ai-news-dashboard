@@ -847,11 +847,27 @@ function renderForecast(){
 }
 function renderTicker(items){
   if(!items||!items.length){$('tickerTrack').innerHTML='<span style="padding:0 30px">Markets offline</span>';return}
-  var track=items.map(function(x){
+  var now=new Date();
+  var day=now.getDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+  var hour=now.getHours();
+  var isWeekend=(day===6)||(day===0);
+  var isSundayEvening=(day===0&&hour>=8);
+  var filtered=[];
+  if(!isWeekend){
+    // Mon-Fri: indices + futures + movers (no crypto)
+    filtered=items.filter(function(x){return x.type==='index'||x.type==='future'||x.type==='mover'});
+  }else if(isSundayEvening){
+    // Sun 08:00+: futures only (preview of next week)
+    filtered=items.filter(function(x){return x.type==='future'});
+  }else{
+    // Sat-Sun 07:59: crypto only
+    filtered=items.filter(function(x){return x.type==='crypto'});
+  }
+  if(!filtered.length){filtered=items}
+  var track=filtered.map(function(x){
     var cls=x.change>=0?'up':'dn';
     var sign=x.change>=0?'+':'';
     if(x.av_news){
-      var color=cls==='up'?'var(--good)':'var(--danger)';
       return'<div class="ticker-item" style="color:var(--tx2)"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'</span><span style="font-size:0.65rem;color:var(--acc)"> '+x.sentiment_label+'</span><span style="font-size:0.65rem;color:var(--tx3);margin-left:4px">'+(x.headline||'').slice(0,50)+'</span></div><span class="ticker-sep">&#8226;</span>';
     }
     return'<div class="ticker-item"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'%</span><span>$'+x.price+'</span></div><span class="ticker-sep">&#8226;</span>';

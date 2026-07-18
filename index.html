@@ -101,11 +101,11 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
 .fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-.bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
-@media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
-.bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
-.bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
-.bittensor-stat .lbl{font-size:0.6rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
+.market-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
+@media(min-width:400px){.market-stats{grid-template-columns:repeat(4,1fr)}}
+.market-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
+.market-stat .num{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
+.market-stat .lbl{font-size:0.6rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
 .subnet-grid{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
 .subnet-row{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:4px 0;font-size:0.7rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
 @media(min-width:768px){.subnet-row{font-size:0.74rem}}
@@ -267,8 +267,8 @@ html{scrollbar-gutter:stable}
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-          <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#128200;</span> MAJOR INDEXES</div>
+          <div class="card-bd" id="major-indexes"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
@@ -377,8 +377,8 @@ html{scrollbar-gutter:stable}
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-          <div class="card-bd" id="bittensor-tech"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#128172;</span> MARKET FUTURES</div>
+          <div class="card-bd" id="futures-tech"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
@@ -440,6 +440,7 @@ html{scrollbar-gutter:stable}
       <!-- Pong -->
       <div id="gamePong">
         <div class="pong-hud">
+          <div class="pong-score">LEVEL: <span id="pongLevel">1</span></div>
           <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
@@ -1054,7 +1055,7 @@ function renderLocalFromClient(){
 }
 
 /* ===== PONG GAME ===== */
-var pong={running:false,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15};
+var pong={running:false,level:1,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15,baseSpeed:3.5,compReaction:0.08};
 function pongInit(){
   pong.canvas=$('pongCanvas');
   if(!pong.canvas)return;
@@ -1075,20 +1076,22 @@ function pongStart(){
   if(pong.running)return;
   pong.running=true;pong.winner=null;
   pongResetBall();
-  var st=$('pongStatus');if(st)st.textContent='First to 5 wins!';
+  var st=$('pongStatus');if(st)st.textContent='Level '+pong.level+' — First to 5 wins!';
   pongLoop();
 }
 function pongReset(){
   pong.running=false;if(pong.animId)cancelAnimationFrame(pong.animId);
-  pong.scorePlayer=0;pong.scoreComp=0;pong.winner=null;
+  pong.level=1;pong.scorePlayer=0;pong.scoreComp=0;pong.winner=null;
   $('scorePlayer').textContent='0';$('scoreComp').textContent='0';
+  $('pongLevel').textContent='1';
   $('pongStatus').textContent='Click Start to play';
   pong.playerY=195;pong.compY=195;pongResetBall();pongDraw();
 }
 function pongResetBall(){
   pong.ball.x=pong.W/2;pong.ball.y=pong.H/2;
-  pong.ball.dx=(Math.random()>0.5?1:-1)*(3.5+Math.random()*1.5);
-  pong.ball.dy=(Math.random()>0.5?1:-1)*(2.5+Math.random()*1.5);
+  var s=pong.baseSpeed+(pong.level-1)*0.6;
+  pong.ball.dx=(Math.random()>0.5?1:-1)*(s+Math.random()*1.5);
+  pong.ball.dy=(Math.random()>0.5?1:-1)*(s-1+Math.random()*1.5);
 }
 function pongLoop(){
   if(!pong.running)return;
@@ -1100,7 +1103,9 @@ function pongUpdate(){
   if(b.y-b.r<0||b.y+b.r>pong.H){b.dy=-b.dy;}
   var compCenter=pong.compY+pong.paddleH/2;
   var target=b.y;var diff=target-compCenter;
-  pong.compY+=diff*0.08;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
+  var react=pong.compReaction+(pong.level-1)*0.03;
+  if(react>0.18)react=0.18;
+  pong.compY+=diff*react;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
   if(b.x-b.r<pong.paddleW && b.y>pong.compY && b.y<pong.compY+pong.paddleH){b.dx=Math.abs(b.dx)+pong.speedInc;b.x=pong.paddleW+b.r;}
   if(b.x+b.r>pong.W-pong.paddleW && b.y>pong.playerY && b.y<pong.playerY+pong.paddleH){b.dx=-(Math.abs(b.dx)+pong.speedInc);b.x=pong.W-pong.paddleW-b.r;}
   if(b.x<0){pong.scorePlayer++;$('scorePlayer').textContent=pong.scorePlayer;pongResetBall();if(pong.scorePlayer>=5){pongWin('player');}}
@@ -1110,7 +1115,12 @@ function pongWin(winner){
   pong.running=false;
   pong.winner=winner;
   var st=$('pongStatus');
-  if(st)st.textContent=winner==='player'?'You win!':'Computer wins!';
+  if(st)st.textContent=winner==='player'?'You win Level '+pong.level+'!'+' Level '+(pong.level+1)+' next.':'Computer wins Level '+pong.level+'! Game Over.';
+  if(winner==='player'){
+    pong.level++;
+    $('pongLevel').textContent=pong.level;
+    setTimeout(function(){if(!pong.running){pong.scorePlayer=0;pong.scoreComp=0;$('scorePlayer').textContent='0';$('scoreComp').textContent='0';pongStart();}},1800);
+  }
 }
 function pongDraw(){
   var ctx=pong.ctx;if(!ctx)return;
@@ -1120,7 +1130,7 @@ function pongDraw(){
   ctx.fillStyle='#f7a51d';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
   ctx.fillStyle='#e8eaed';ctx.fillRect(0,pong.compY,pong.paddleW,pong.paddleH);
   ctx.fillStyle='#f7a51d';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);
-  if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'YOU WIN!':'COMPUTER WINS!',pong.W/2,pong.H/2);}
+  if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'LEVEL '+pong.level+' COMPLETE!':'GAME OVER',pong.W/2,pong.H/2);}
 }
 
 /* ===== GAME SWITCHER ===== */

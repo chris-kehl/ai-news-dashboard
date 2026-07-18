@@ -191,6 +191,16 @@ html{scrollbar-gutter:stable}
 .pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
 .game-menu-item{padding:8px 14px;font-size:.78rem;color:var(--tx);cursor:pointer;border-radius:4px;white-space:nowrap}
 .game-menu-item:hover{background:var(--bg-sel);color:var(--acc)}
+
+/* ── Mobile Game Controls ── */
+.game-mobile-ctrls{display:none;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap;user-select:none;-webkit-user-select:none}
+@media(max-width:768px){.game-mobile-ctrls{display:flex}}
+.game-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);font-family:inherit;font-size:1rem;padding:14px 18px;border-radius:8px;cursor:pointer;min-width:64px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.game-btn:active{background:var(--acc);color:#000;border-color:var(--acc)}
+.game-btn-fire{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.4);color:#ef4444}
+.game-btn-fire:active{background:#ef4444;color:#fff}
+.game-btn-wide{min-width:80px}
+@media(max-width:768px){.pong-canvas{max-height:calc(100dvh - 300px)}}
 </style>
 </head>
 <body>
@@ -464,6 +474,11 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="siReset()">Reset</button>
         </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
+        <div class="game-mobile-ctrls" id="siMobileCtrls">
+          <button class="game-btn" onclick="siMoveLeft()">&#8592;</button>
+          <button class="game-btn game-btn-fire" onclick="siFire()">FIRE</button>
+          <button class="game-btn" onclick="siMoveRight()">&#8594;</button>
+        </div>
       </div>
       <!-- Tetris -->
       <div id="gameTetris" style="display:none">
@@ -482,6 +497,12 @@ html{scrollbar-gutter:stable}
           <span style="display:inline-block;margin:0 4px">&#8595; Soft Drop</span>
           <span style="display:inline-block;margin:0 4px">&#60; Rotate</span>
         </div>
+        <div class="game-mobile-ctrls" id="trMobileCtrls">
+          <button class="game-btn" onclick="trMoveLeft()">&#8592;</button>
+          <button class="game-btn" onclick="trDoRotate()">&#8634;</button>
+          <button class="game-btn" onclick="trMoveRight()">&#8594;</button>
+          <button class="game-btn game-btn-wide" onclick="trSoftDrop()">DROP</button>
+        </div>
       </div>
       <!-- Frogger -->
       <div id="gameFrogger" style="display:none">
@@ -497,6 +518,12 @@ html{scrollbar-gutter:stable}
         </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">
           Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
+        </div>
+        <div class="game-mobile-ctrls" id="fgMobileCtrls">
+          <button class="game-btn" onclick="fgMove(0,-40)">&#8593;</button>
+          <button class="game-btn" onclick="fgMove(-40,0)">&#8592;</button>
+          <button class="game-btn" onclick="fgMove(40,0)">&#8594;</button>
+          <button class="game-btn" onclick="fgMove(0,40)">&#8595;</button>
         </div>
       </div>
     </div>
@@ -1169,7 +1196,7 @@ function siResetInvaders(){
   }
   si.stepInterval=45;si.speed=2;si.dir=1;
 }
-function siResize(){var c=$('siCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(720,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*0.75;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function siResize(){var c=$('siCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(720,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?340:290);var wantH=maxW*0.75;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function siStart(){if(si.running)return;si.running=true;si.score=0;si.lives=3;si.bullets=[];si.bombs=[];$('siScore').textContent='0';$('siLives').textContent='3';$('siStatus').textContent='Destroy all invaders!';siResetInvaders();siLoop();}
 function siReset(){si.running=false;if(si.animId)cancelAnimationFrame(si.animId);si.score=0;si.lives=3;si.bullets=[];si.bombs=[];$('siScore').textContent='0';$('siLives').textContent='3';$('siStatus').textContent='Click Start to play';siResetInvaders();siDraw();}
 function siLoop(){if(!si.running)return;siUpdate();siDraw();si.animId=requestAnimationFrame(siLoop);}
@@ -1210,7 +1237,7 @@ var tr={running:false,score:0,level:1,lines:0,W:360,H:720,canvas:null,ctx:null,g
 var trShapes={I:[[1,1,1,1]],O:[[1,1],[1,1]],T:[[0,1,0],[1,1,1]],S:[[0,1,1],[1,1,0]],Z:[[1,1,0],[0,1,1]],J:[[1,0,0],[1,1,1]],L:[[0,0,1],[1,1,1]]};
 function trInit(){tr.canvas=$('trCanvas');if(!tr.canvas)return;tr.ctx=tr.canvas.getContext('2d');trResetGrid();trResize();trDraw();}
 function trResetGrid(){tr.grid=[];for(var y=0;y<24;y++){tr.grid.push(new Array(12).fill(0));}}
-function trResize(){var c=$('trCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(360,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function trResize(){var c=$('trCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(360,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?340:290);var wantH=maxW*2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function trNewPiece(){var keys=Object.keys(trShapes);var k=keys[Math.floor(Math.random()*keys.length)];return{type:k,shape:trShapes[k],x:4,y:0};}
 function trStart(){if(tr.running)return;tr.running=true;tr.score=0;tr.level=1;tr.lines=0;tr.gameOver=false;tr.dropInterval=800;tr.grid=[];for(var y=0;y<24;y++)tr.grid.push(new Array(12).fill(0));tr.cur=trNewPiece();tr.next=trNewPiece();$('trScore').textContent='0';$('trLevel').textContent='1';$('trStatus').textContent='Good luck!';tr.lastDrop=performance.now();trLoop();}
 function trReset(){tr.running=false;if(tr.animId)cancelAnimationFrame(tr.animId);tr.score=0;tr.level=1;tr.lines=0;tr.gameOver=false;tr.grid=[];for(var y=0;y<24;y++)tr.grid.push(new Array(12).fill(0));tr.cur=null;tr.next=null;$('trScore').textContent='0';$('trLevel').textContent='1';$('trStatus').textContent='Click Start to play';trDraw();}
@@ -1233,8 +1260,8 @@ document.addEventListener('keydown',function(e){if(activeGame!=='tetris'||tr.gam
 
 /* ===== FROGGER ===== */
 var fg={running:false,score:0,lives:3,W:600,H:720,canvas:null,ctx:null,frog:{x:300,y:660,w:30,h:20},cars:[],logs:[],home:[false,false,false,false,false],level:1,speed:2,animId:null,lastUpdate:0};
-function fgInit(){fg.canvas=$('fgCanvas');if(!fg.canvas)return;fg.ctx=fg.canvas.getContext('2d');fgResize();fgDraw();}
-function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*1.2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function fgInit(){fg.canvas=$('fgCanvas');if(!fg.canvas)return;fg.ctx=fg.canvas.getContext('2d');fg.canvas.addEventListener('touchstart',function(e){e.preventDefault();fg._ts={x:e.touches[0].clientX,y:e.touches[0].clientY};},{passive:false});fg.canvas.addEventListener('touchend',function(e){e.preventDefault();if(!fg._ts)return;var dx=e.changedTouches[0].clientX-fg._ts.x;var dy=e.changedTouches[0].clientY-fg._ts.y;var t=24;if(Math.abs(dx)>Math.abs(dy)){if(dx>t)fgMove(40,0);else if(dx<-t)fgMove(-40,0);}else{if(dy>t)fgMove(0,40);else if(dy<-t)fgMove(0,-40);}fg._ts=null;},{passive:false});fgResize();fgDraw();}
+function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?360:290);var wantH=maxW*1.2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function fgResetCars(){
   fg.cars=[];
   for(var row=0;row<5;row++){
@@ -1278,7 +1305,7 @@ function fgDraw(){
   ctx.fillStyle='#ef4444';fg.cars.forEach(function(c){ctx.fillRect(c.x,c.y,c.w,c.h);ctx.fillStyle='#b91c1c';ctx.fillRect(c.x+4,c.y+4,c.w-8,c.h-8);ctx.fillStyle='#ef4444';});
   var f=fg.frog;ctx.fillStyle='#22c55e';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2,f.w/2,f.h/2,0,0,Math.PI*2);ctx.fill();
 }
-document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fg.frog.y-=s;}if(e.key==='ArrowDown'){fg.frog.y+=s;}if(e.key==='ArrowLeft'){fg.frog.x-=s;}if(e.key==='ArrowRight'){fg.frog.x+=s;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;});
+document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fgMove(0,-s);}if(e.key==='ArrowDown'){fgMove(0,s);}if(e.key==='ArrowLeft'){fgMove(-s,0);}if(e.key==='ArrowRight'){fgMove(s,0);}});
 
 /* Events */
 $('locInput').addEventListener('click',function(e){if(this.readOnly){activateSearchMode()}});

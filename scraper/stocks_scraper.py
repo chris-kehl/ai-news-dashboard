@@ -166,7 +166,7 @@ def generate_ticker_json(output_path=None):
     indices = cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
 
     # 2. Futures via Yahoo v8 (works for futures symbols)
-    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "NG=F"]
+    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "NG=F"]
     futures = yahoo_charts_batch(futures_symbols, delay=0.25)
 
     # 3. Crypto via CoinGecko (free, no key)
@@ -212,18 +212,20 @@ def generate_ticker_json(output_path=None):
         items.append({
             "symbol": idx["symbol"].replace(".", ""),
             "price": idx["price"],
-            "change": idx["change_percent"]
+            "change": idx["change_percent"],
+            "type": "index"
         })
     for f in futures:
         items.append({
             "symbol": f["symbol"],
             "price": f["price"],
-            "change": f["change_percent"]
+            "change": f["change_percent"],
+            "type": "future"
         })
     for c in crypto_prices:
-        items.append({"symbol": c["symbol"], "price": c["price"], "change": c["change"]})
+        items.append({"symbol": c["symbol"], "price": c["price"], "change": c["change"], "type": "crypto"})
     for m in movers:
-        items.append({"symbol": m["symbol"], "price": m["price"], "change": m["change_percent"]})
+        items.append({"symbol": m["symbol"], "price": m["price"], "change": m["change_percent"], "type": "mover"})
 
     ticker_data = {
         "timestamp": datetime.utcnow().isoformat(),

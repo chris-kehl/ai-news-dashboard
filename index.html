@@ -16,6 +16,21 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 ::-webkit-scrollbar-thumb{background:var(--brd);border-radius:6px}
 ::-webkit-scrollbar-thumb:hover{background:var(--tx3)}
 
+/* ── Tab Navigation (W3C Tabs Pattern) ── */
+.tab-nav{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:sticky;top:42px;z-index:99}
+.tab-nav-inner{max-width:1400px;margin:0 auto;display:flex;gap:2px;padding:6px 12px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.tab-nav-inner::-webkit-scrollbar{display:none}
+.tab-btn{background:transparent;border:none;color:var(--tx3);font-family:inherit;font-size:.78rem;font-weight:500;padding:7px 14px;border-radius:6px;cursor:pointer;transition:.18s;white-space:nowrap;position:relative}
+.tab-btn:hover{color:var(--tx)}
+.tab-btn[aria-selected="true"]{color:var(--acc);background:rgba(247,165,29,.08);font-weight:600}
+.tab-btn[aria-selected="true"]::after{content:'';position:absolute;bottom:-7px;left:10%;width:80%;height:2px;background:var(--acc);border-radius:2px}
+.tab-btn:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+
+/* ── Tab Panels ── */
+.tab-panel{display:none;animation:fadeIn .35s ease}
+.tab-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
 .loc-bar{background:var(--bg-card);border-bottom:1px solid var(--brd);padding:0;position:relative;z-index:110}
 .loc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
 .loc-display{cursor:pointer;display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;transition:.2s;flex:1;min-width:0}
@@ -116,16 +131,6 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .futures-bar{scrollbar-width:none}
 .futures-bar::-webkit-scrollbar{display:none}
 
-/* ── Business card index ticker ── */
-.index-ticker-wrap{background:var(--bg-el);border-bottom:1px solid var(--brd);overflow:hidden;white-space:nowrap;position:relative;height:30px;display:flex;align-items:center}
-.index-ticker-track{display:inline-flex;animation:indexMarquee 60s linear infinite;will-change:transform}
-.index-ticker-track:hover{animation-play-state:paused}
-.index-ticker-item{display:inline-flex;align-items:center;padding:0 16px;font-family:'JetBrains Mono';font-size:0.72rem;color:var(--tx2);gap:6px}
-.index-ticker-item .sym{font-weight:600;color:var(--tx)}
-.index-ticker-item .up{color:var(--good)}.index-ticker-item .dn{color:var(--danger)}
-.index-ticker-sep{color:var(--brd);font-size:0.6rem}
-@keyframes indexMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
 /* ── Donate ── */
 .donate-btn{position:fixed;bottom:16px;right:16px;z-index:400;background:var(--acc);color:#000;border:none;border-radius:50%;width:56px;height:56px;font-size:2rem;cursor:pointer;box-shadow:0 4px 14px rgba(247,165,29,.35);display:flex;align-items:center;justify-content:center;transition:.2s}
 .donate-btn:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(247,165,29,.5)}
@@ -151,80 +156,39 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .donate-close{float:right;background:none;border:none;color:var(--tx3);font-size:1.2rem;cursor:pointer;padding:2px 6px}
 .donate-close:hover{color:var(--tx)}
 .donate-note{color:var(--tx3);font-size:0.68rem;text-align:center;margin-top:10px}
-@media(max-width:768px){
-.card{min-width:0}
-}
+@media(max-width:768px){.card{min-width:0}}
 
 /* ── 2026 Modern Layout ── */
 @property --grad-pos{syntax:'<percentage>';initial-value:0%;inherits:false}
 @property --card-glow{syntax:'<color>';initial-value:transparent;inherits:false}
-
 .header{background:rgba(17,19,24,.85);border-bottom:1px solid var(--brd);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;gap:8px;min-height:42px;backdrop-filter:blur(12px) saturate(1.2);-webkit-backdrop-filter:blur(12px) saturate(1.2)}
-
 .btn{border:none;background:linear-gradient(145deg,var(--bg-el),var(--bg-card));color:var(--tx);font-family:inherit;font-size:.75rem;padding:5px 12px;border-radius:8px;cursor:pointer;transition:.2s;min-height:32px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 1px 2px rgba(0,0,0,.15)}
 .btn:hover{border:none;color:var(--acc);box-shadow:inset 0 1px 0 rgba(247,165,29,.08),0 2px 8px rgba(0,0,0,.2);transform:translateY(-1px)}
 .btn:active{transform:translateY(0)}
-
-@supports (grid-template-rows:masonry){
-  .grid{grid-template-rows:masonry}
-}
-
+@supports (grid-template-rows:masonry){.grid{grid-template-rows:masonry}}
 .card{position:relative;isolation:isolate}
 .card::before{content:'';position:absolute;inset:0;border-radius:14px;padding:1px;background:linear-gradient(var(--grad-pos),rgba(247,165,29,.08),transparent 40%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:-1;transition:--grad-pos .6s ease}
 .card:hover::before{--grad-pos:180deg}
-
-@container (max-width:260px){
-  .card-hd{font-size:.72rem;padding:8px 10px}
-  .card-bd{padding:8px 10px}
-  .item-title{font-size:.78rem}
-}
-
-@keyframes floatUp{0%{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.card{animation:floatUp .45s ease both}
-.col:nth-child(1) .card:nth-child(1){animation-delay:0s}
-.col:nth-child(1) .card:nth-child(2){animation-delay:45ms}
-.col:nth-child(1) .card:nth-child(3){animation-delay:90ms}
-.col:nth-child(1) .card:nth-child(4){animation-delay:135ms}
-.col:nth-child(2) .card:nth-child(1){animation-delay:0s}
-.col:nth-child(2) .card:nth-child(2){animation-delay:60ms}
-.col:nth-child(2) .card:nth-child(3){animation-delay:120ms}
-.col:nth-child(3) .card:nth-child(1){animation-delay:0s}
-.col:nth-child(3) .card:nth-child(2){animation-delay:45ms}
-.col:nth-child(3) .card:nth-child(3){animation-delay:90ms}
-
-/* btn-sm preserved */
 .btn-sm{padding:4px 8px;font-size:.7rem;min-height:28px}
-
-/* 2026 scroll-snap horizontal sections */
-.forecast-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;padding:10px 0;font-size:.7rem;border-top:1px solid var(--brd);margin-top:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.forecast-grid::-webkit-scrollbar{display:none}
-.forecast-day{flex:0 0 72px;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;gap:3px;background:var(--bg-el);border:1px solid var(--brd);border-radius:10px;padding:8px 4px}
-.forecast-day .day-name{font-weight:600;color:var(--tx);font-size:.72rem}
-.forecast-day .temps{display:flex;gap:4px;align-items:center}
-.forecast-day .high{color:#fca5a5;font-weight:600;font-size:.8rem}
-.forecast-day .low{color:#93c5fd;font-weight:600;font-size:.8rem}
-.forecast-day .cond{color:var(--tx2);font-size:.62rem;line-height:1.2;min-height:2.2em;text-align:center}
-.forecast-day .rain{color:var(--acc);font-size:.6rem}
-.forecast-day .bar{background:var(--brd);height:2px;width:100%;border-radius:1px;margin-top:2px}
-
-/* wider gaps, more breathing room */
-@media(min-width:768px){.grid{gap:18px}.container{padding:18px}}
-@media(min-width:1100px){.grid{grid-template-columns:1fr 2.5fr 1fr;gap:20px}}
 
 /* scroll-driven view animations (2026 browsers) */
 @supports (animation-timeline:view()){
-  .card{animation:floatUp auto linear both;animation-timeline:view();animation-range:entry 0% cover 18%}
-  .col:nth-child(1) .card,.col:nth-child(2) .card,.col:nth-child(3) .card{animation-delay:0s}
+  .card{animation:fadeIn auto linear both;animation-timeline:view();animation-range:entry 0% cover 18%}
 }
 
-/* color-scheme support */
 html{color-scheme:dark light}
-
-/* improved focus */
 :focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
-
-/* scrollbar gutter to prevent layout shift */
 html{scrollbar-gutter:stable}
+
+/* ── Pong Game ── */
+.pong-wrap{background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:14px;gap:10px}
+.pong-canvas{width:100%;max-width:720px;height:auto;aspect-ratio:16/10;background:#0a0c10;border:1px solid var(--brd);border-radius:8px;cursor:none;touch-action:none}
+.pong-hud{display:flex;justify-content:space-between;width:100%;max-width:720px;font-family:'JetBrains Mono';font-size:1rem}
+.pong-score{color:var(--tx);font-weight:700}
+.pong-score span{color:var(--acc)}
+.pong-status{color:var(--tx3);font-size:.75rem}
+.pong-ctrl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -281,67 +245,210 @@ html{scrollbar-gutter:stable}
   </div>
 </div>
 
-<div class="container">
-
-  <div class="grid">
-    <div class="col">
-      <div class="card">
-        <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-        <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
-        <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
-        <div class="card-bd" id="reddit-posts"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
-        <div class="card-bd" id="hot-stocks-left"><div class="ld">Loading...</div></div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
-        <div class="card-bd" id="localCard">
-          <div class="forecast-grid" id="forecast-grid"></div>
-          <div id="local-channels"></div>
-          <div id="local-news"></div>
-          <div id="local-reddit"></div>
-          <div id="local-x"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP / X / REDDIT</span></div>
-        <div class="card-bd" id="world-card">
-          <div id="world-news"></div>
-          <div id="world-reddit"></div>
-          <div id="world-x"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE <span data-lbl>PRIORITY</span></div>
-        <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
-        <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
-        <div class="card-bd" id="github-repos"><div class="ld">Loading...</div></div>
-      </div>
-      <div class="card">
-        <div class="card-hd"><span>&#128200;</span> BUSINESS NEWS</div>
-        <div class="card-bd" id="business"><div class="ld">Loading...</div></div>
-      </div>
-    </div>
+<!-- TAB NAVIGATION (W3C Tabs Pattern) -->
+<nav class="tab-nav" role="tablist" aria-label="News categories">
+  <div class="tab-nav-inner">
+    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-dashboard" id="tab-btn-dashboard" tabindex="0">Dashboard</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-local" id="tab-btn-local" tabindex="-1">Local</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-world" id="tab-btn-world" tabindex="-1">World</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-stocks" id="tab-btn-stocks" tabindex="-1">Stocks</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-pong" id="tab-btn-pong" tabindex="-1">Pong</button>
   </div>
-</div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+  <!-- DASHBOARD TAB -->
+  <section id="tab-dashboard" role="tabpanel" aria-labelledby="tab-btn-dashboard" class="tab-panel active">
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+          <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
+          <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+          <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span class="logo">&#127968;</span> <span id="localTitle">LOCAL NEWS</span> <span data-lbl id="localBadge">LOCAL</span></div>
+          <div class="card-bd" id="localCard">
+            <div class="forecast-grid" id="forecast-grid"></div>
+            <div id="local-channels"></div>
+            <div id="local-news"></div>
+            <div id="local-reddit"></div>
+            <div id="local-x"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP / X / REDDIT</span></div>
+          <div class="card-bd" id="world-card">
+            <div id="world-news"></div>
+            <div id="world-reddit"></div>
+            <div id="world-x"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
+          <div class="card-bd" id="hot-stocks-left"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTEL</div>
+          <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL TAB -->
+  <section id="tab-local" role="tabpanel" aria-labelledby="tab-btn-local" class="tab-panel" hidden>
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span class="logo">&#127968;</span> LOCAL WEATHER</div>
+          <div class="card-bd" id="local-weather-detailed"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128240;</span> TV &amp; PAPERS</div>
+          <div class="card-bd" id="local-channels-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128240;</span> LOCAL NEWS</div>
+          <div class="card-bd" id="local-news-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128172;</span> LOCAL REDDIT</div>
+          <div class="card-bd" id="local-reddit-tab"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128172;</span> LOCAL X / TWITTER</div>
+          <div class="card-bd" id="local-x-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORLD TAB -->
+  <section id="tab-world" role="tabpanel" aria-labelledby="tab-btn-world" class="tab-panel" hidden>
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES</div>
+          <div class="card-bd" id="world-news-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128172;</span> WORLD REDDIT</div>
+          <div class="card-bd" id="world-reddit-tab"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128172;</span> X / TWITTER GLOBAL</div>
+          <div class="card-bd" id="world-x-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTELLIGENCE</div>
+          <div class="card-bd" id="defense-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH TAB -->
+  <section id="tab-tech" role="tabpanel" aria-labelledby="tab-btn-tech" class="tab-panel" hidden>
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+          <div class="card-bd" id="bittensor-tech"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
+          <div class="card-bd" id="signals-tech"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
+          <div class="card-bd" id="reddit-tech"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
+          <div class="card-bd" id="github-tech"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
+          <div class="card-bd" id="crypto-tech"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOCKS TAB -->
+  <section id="tab-stocks" role="tabpanel" aria-labelledby="tab-btn-stocks" class="tab-panel" hidden>
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
+          <div class="card-bd" id="hot-stocks-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128200;</span> BUSINESS NEWS</div>
+          <div class="card-bd" id="business-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-hd"><span>&#128200;</span> TOP MOVERS</div>
+          <div class="card-bd" id="top-movers-tab"><div class="ld">Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PONG TAB -->
+  <section id="tab-pong" role="tabpanel" aria-labelledby="tab-btn-pong" class="tab-panel" hidden>
+    <div class="pong-wrap">
+      <div class="pong-hud">
+        <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
+        <div class="pong-status" id="pongStatus">Click Start to play</div>
+        <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
+      </div>
+      <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+      <div class="pong-ctrl">
+        <button class="btn" id="pongStart" onclick="pongStart()">Start Game</button>
+        <button class="btn" onclick="pongReset()">Reset</button>
+      </div>
+      <div style="font-size:.72rem;color:var(--tx3);text-align:center">
+        Move your mouse / touch to control the bottom paddle. First to 5 wins.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Donate button -->
+<button class="donate-btn" onclick="showDonate()" title="Buy me a coffee">&#9749;</button>
 
 <script>
 /* ─── EMBEDDED CITY CACHE (52 major cities) ─── */
@@ -399,9 +506,9 @@ var cityCacheData={
 "toronto":{"city":"Toronto","state":"Ontario","lat":43.6532,"lon":-79.3832}
 };
 
-/* ─── LIVE CACHE (populated from city_cache.json after load) ─── */
+/* ─── LIVE CACHE ─── */
 var cache=JSON.parse(JSON.stringify(cityCacheData));
-var cacheAge={}; /* key -> timestamp of last update */
+var cacheAge={};
 
 var IS_MOBILE=window.innerWidth<768;
 var $=function(id){return document.getElementById(id)};
@@ -410,6 +517,41 @@ var BRIDGE_URL='http://127.0.0.1:8787';
 var clientLocalData={reddit:[],news:[],x:[],channels:[]};
 var tickerItems=[];
 var _lastCacheLoad=0;
+
+/* ===== TAB SWITCHING (W3C Tabs Pattern) ===== */
+var tabs=['dashboard','local','world','tech','stocks','pong'];
+var currentTab='dashboard';
+
+function switchTab(tabId){
+  if(tabId===currentTab)return;
+  var oldBtn=$('tab-btn-'+currentTab);
+  var oldPanel=$('tab-'+currentTab);
+  var newBtn=$('tab-btn-'+tabId);
+  var newPanel=$('tab-'+tabId);
+  if(oldBtn){oldBtn.setAttribute('aria-selected','false');oldBtn.setAttribute('tabindex','-1');}
+  if(oldPanel){oldPanel.classList.remove('active');oldPanel.hidden=true;}
+  if(newBtn){newBtn.setAttribute('aria-selected','true');newBtn.setAttribute('tabindex','0');newBtn.focus();}
+  if(newPanel){newPanel.classList.add('active');newPanel.hidden=false;}
+  currentTab=tabId;
+  if(tabId==='pong'){pongResize();}
+}
+
+function initTabs(){
+  var tabBtns=document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var target=this.getAttribute('aria-controls').replace('tab-','');
+      switchTab(target);
+    });
+    btn.addEventListener('keydown',function(e){
+      var idx=tabs.indexOf(this.getAttribute('aria-controls').replace('tab-',''));
+      if(e.key==='ArrowRight'){e.preventDefault();var ni=(idx+1)%tabs.length;switchTab(tabs[ni]);}
+      if(e.key==='ArrowLeft'){e.preventDefault();var ni=(idx-1+tabs.length)%tabs.length;switchTab(tabs[ni]);}
+      if(e.key==='Home'){e.preventDefault();switchTab(tabs[0]);}
+      if(e.key==='End'){e.preventDefault();switchTab(tabs[tabs.length-1]);}
+    });
+  });
+}
 
 /* ===== STATE ===== */
 function loadClientLoc(){try{var s=localStorage.getItem('dash_loc');if(s){clientLoc=JSON.parse(s);return}}catch(e){}clientLoc={}}
@@ -427,10 +569,8 @@ function parseUrlParams(){
   pushLocationToBridge();fetchLocalContent(city,state);
 }
 
-/* ===== CACHE LOADER (runs every 20s in background) ===== */
-function cityToKey(city){
-  return city.toLowerCase().replace(/[^a-z0-9]/g,'_');
-}
+/* ===== CACHE LOADER ===== */
+function cityToKey(city){return city.toLowerCase().replace(/[^a-z0-9]/g,'_');}
 
 async function loadCityCache(){
   try{
@@ -439,7 +579,7 @@ async function loadCityCache(){
     var data=await r.json();
     var cities=data.cities||{};
     var now=Date.now();
-    var staleCutoff=now-86400000; /* 24h in ms */
+    var staleCutoff=now-86400000;
     var cleared=0,added=0;
     for(var k in cities){
       var entry=cities[k];
@@ -462,10 +602,9 @@ async function loadCityCache(){
   }catch(e){console.log('[CACHE] load error',e)}
 }
 
-/* ===== CITY CACHE RENDERER (uses cache instead of live scrape) ===== */
+/* ===== CITY CACHE RENDERER ===== */
 function renderLocalFromCache(key){
   var c=cache[key];if(!c)return;
-  /* Weather */
   var w=c.weather||{};
   var fc=[];
   if(w.forecast&&w.forecast.length){
@@ -477,49 +616,46 @@ function renderLocalFromCache(key){
       return'<span class="'+cl+'">'+(dn||'').slice(0,3)+' '+t+'F '+(f.description||'')+'</span>';
     }).join('');
   }
-  $('local-forecast').innerHTML=fc;
+  var elFc=$('local-forecast');if(elFc)elFc.innerHTML=fc;
   var curTemp=w.temperature?Math.round(w.temperature):(w.current&&w.current.temperature?Math.round(w.current.temperature):0);
   var curDesc=w.description||(w.current&&w.current.description)||'';
-  $('localTitle').textContent=(curTemp?curTemp+'° ':'')+(c.city)+' NEWS'+(curDesc?' | '+curDesc:'');
-  $('localBadge').textContent=c.state||'';
-  $('locCity').textContent=c.city||'LOCAL';$('locState').textContent=c.state||'';
-  if(curTemp)$('locWeather').textContent=curTemp+'°';else $('locWeather').textContent='';
+  var lt=$('localTitle');if(lt)lt.textContent=(curTemp?curTemp+'° ':'')+(c.city)+' NEWS'+(curDesc?' | '+curDesc:'');
+  var lb=$('localBadge');if(lb)lb.textContent=c.state||'';
+  var lc=$('locCity');if(lc)lc.textContent=c.city||'LOCAL';
+  var ls=$('locState');if(ls)ls.textContent=c.state||'';
+  if(curTemp){var lw=$('locWeather');if(lw)lw.textContent=curTemp+'°';}
 
-  /* News */
   var news=(c.news||[]).slice(0,IS_MOBILE?3:5);
   var nh='';
   if(news.length){nh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+news.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
-  $('local-news').innerHTML=nh||'<div class="ld">No cached news</div>';
+  var ln=$('local-news');if(ln)ln.innerHTML=nh||'<div class="ld">No cached news</div>';
+  var lnt=$('local-news-tab');if(lnt)lnt.innerHTML=nh||'<div class="ld">No cached news</div>';
 
-  /* Reddit */
   var red=(c.reddit||[]).slice(0,IS_MOBILE?2:3);
   var rh='';
   if(red.length){rh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+red.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+(x.score||0)+'</span><span>r/'+(x.subreddit||'')+'</span></div></div>'}).join('');}
-  $('local-reddit').innerHTML=rh||'<div class="ld">No cached Reddit</div>';
+  var lr=$('local-reddit');if(lr)lr.innerHTML=rh||'<div class="ld">No cached Reddit</div>';
+  var lrt=$('local-reddit-tab');if(lrt)lrt.innerHTML=rh||'<div class="ld">No cached Reddit</div>';
 
-  /* X */
   var tw=(c.x_posts||[]).slice(0,IS_MOBILE?3:5);
   var th='';
   if(tw.length){th+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
-  $('local-x').innerHTML=th||'<div class="ld">No cached X posts</div>';
+  var lx=$('local-x');if(lx)lx.innerHTML=th||'<div class="ld">No cached X posts</div>';
+  var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=th||'<div class="ld">No cached X posts</div>';
 
-  /* Channels */
   var ch=(c.channels||[]).slice(0,IS_MOBILE?3:5);
   var chh='';
   if(ch.length){chh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.map(function(x){return '<div class="item"><a href="'+(x.url||'#')+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
-  $('local-channels').innerHTML=chh||'';
+  var lch=$('local-channels');if(lch)lch.innerHTML=chh||'';
+  var lcht=$('local-channels-tab');if(lcht)lcht.innerHTML=chh||'';
 
-  /* Stale indicator */
   var ts=c.timestamp?new Date(c.timestamp):null;
   var ageMin=ts?Math.floor((Date.now()-ts)/60000):999;
-  if(ageMin>30&&ageMin<1440){
-    $('locStale').innerHTML='&#9888; Cache is '+ageMin+'m old. Refreshing...';
-    $('locStale').classList.add('show');
-  } else if(ageMin>=1440){
-    $('locStale').innerHTML='&#9888; Cache >24h old. Fetching fresh data...';
-    $('locStale').classList.add('show');
-  } else {
-    $('locStale').classList.remove('show');
+  var lst=$('locStale');
+  if(lst){
+    if(ageMin>30&&ageMin<1440){lst.innerHTML='&#9888; Cache is '+ageMin+'m old. Refreshing...';lst.classList.add('show');}
+    else if(ageMin>=1440){lst.innerHTML='&#9888; Cache >24h old. Fetching fresh data...';lst.classList.add('show');}
+    else{lst.classList.remove('show');}
   }
 }
 
@@ -562,7 +698,6 @@ function selectCitySuggestion(el){
   clientLoc={city:name,state:state,state_abbrev:code,lat:lat,lon:lon,zip:'',src:'search'};
   saveClientLoc();$('locSugs').style.display='none';sugIdx=-1;deactivateSearchMode();
   fetchClientWeather();checkStale();recalcForecastLabels();
-  /* Try cache first */
   var ckey=cityToKey(name);
   if(cache[ckey]){renderLocalFromCache(ckey);}
   else{fetchLocalContent(name,state);}
@@ -626,33 +761,6 @@ async function fetchClientWeather(){
   }catch(e){console.error('weather',e)}
 }
 
-/* ===== INDEX TICKER (business card) ===== */
-function renderFutures(){
-  var el=$('futures-bar');if(!el)return;
-  if(!tickerItems.length){el.innerHTML='<span style="color:var(--tx3)">Loading...</span>';return}
-  // Show: indices + futures + gold/oil
-  var idx=tickerItems.filter(function(x){var s=x.symbol;return s==='SPX'||s==='DJI'||s==='IXIC'||s==='VIX'||s==='RUT'||s.indexOf('=F')!==-1||s==='GC=F'||s==='CL=F'});
-  el.innerHTML=idx.map(function(f){
-    var col=f.change>=0?'var(--good)':'var(--danger)';
-    var sign=f.change>=0?'+':'';
-    var sym=f.symbol.replace('=F','');
-    var priceStr=f.price?(' $'+f.price.toLocaleString()):'';
-    return '<span style="font-family:JetBrains Mono;font-size:0.72rem;white-space:nowrap"><span style="font-weight:600">'+sym+'</span>'+priceStr+' <span style="color:'+col+'">'+sign+f.change+'%</span></span>';
-  }).join('<span style="color:var(--brd);margin:0 6px">|</span>');
-}
-function renderIndexTicker(){
-  var track=$('indexTickerTrack');if(!track)return;
-  if(!tickerItems.length){track.innerHTML='<span style="padding:0 30px">Indexes offline</span>';return}
-  var items=tickerItems.filter(function(x){var s=x.symbol;return s!=='TAO'&&s!=='BTC'&&s!=='ETH'&&s!=='SOL'&&s!=='DOGE'&&s!=='LINK'&&s!=='AVAX';}).map(function(x){
-    var cls=x.change>=0?'up':'dn';
-    var sign=x.change>=0?'+':'';
-    var sym=x.symbol;
-    var price=x.price>=1000?x.price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):(x.price||0).toFixed(2);
-    return '<div class="index-ticker-item"><span class="sym">'+sym+'</span><span>'+(x.price>50?'$':'')+price+'</span><span class="'+cls+'">'+sign+x.change+'%</span></div><span class="index-ticker-sep">&#8226;</span>';
-  }).join('');
-  track.innerHTML=items+items;
-}
-
 /* ===== RENDER HELPERS ===== */
 function fmtAgo(ts){if(!ts)return'';var d=Date.now()-new Date(ts).getTime();var m=Math.floor(d/60000);if(m<1)return'just now';if(m<60)return m+'m ago';var h=Math.floor(m/60);if(h<24)return h+'h ago';return Math.floor(h/24)+'d ago';}
 function applyTheme(){var t=localStorage.getItem('dash_theme')||'dark';document.documentElement.setAttribute('data-theme',t);$('themeBtn').textContent=t==='light'?'DARK':'LIGHT';}
@@ -678,24 +786,26 @@ function renderForecast(){
   }).join('');
   var curTemp=cw&&cw.temperature?Math.round(cw.temperature):0;var curDesc=cw&&cw.description?cw.description:(w&&w.current&&w.current.description?w.current.description:'');
   var cityName=clientLoc.city||serverLoc.city||'LOCAL';
-  $('localTitle').textContent=(curTemp?curTemp+'° ':'')+cityName+' NEWS'+(curDesc?' | '+curDesc:'');
-  $('localBadge').textContent=clientLoc.zip||(serverLoc.zip||'');
+  var lt=$('localTitle');if(lt)lt.textContent=(curTemp?curTemp+'° ':'')+cityName+' NEWS'+(curDesc?' | '+curDesc:'');
+  var lb=$('localBadge');if(lb)lb.textContent=clientLoc.zip||(serverLoc.zip||'');
 }
 function renderTicker(items){
   if(!items||!items.length){$('tickerTrack').innerHTML='<span style="padding:0 30px">Markets offline</span>';return}
   var track=items.map(function(x){
     var cls=x.change>=0?'up':'dn';
     var sign=x.change>=0?'+':'';
-    // AV sentiment items: display as ticker + sentiment label + headline, no price
     if(x.av_news){
       var color=cls==='up'?'var(--good)':'var(--danger)';
       return'<div class="ticker-item" style="color:var(--tx2)"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'</span><span style="font-size:0.65rem;color:var(--acc)"> '+x.sentiment_label+'</span><span style="font-size:0.65rem;color:var(--tx3);margin-left:4px">'+(x.headline||'').slice(0,50)+'</span></div><span class="ticker-sep">&#8226;</span>';
     }
-    // Normal items: symbol + change + price
     return'<div class="ticker-item"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'%</span><span>$'+x.price+'</span></div><span class="ticker-sep">&#8226;</span>';
   }).join('');
   $('tickerTrack').innerHTML=track+track;
 }
+
+function makeItemHTML(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>';}
+function makeRedditHTML(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>';}
+function makeXTweetHTML(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>';}
 
 function renderAll(d){
   serverLoc=d.location||{};
@@ -709,7 +819,6 @@ function renderAll(d){
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  /* Use cache for local cards if stale + no local data (batch mode) */
   var ckey=cityToKey(clientLoc.city||'');
   if(isStale() && cache[ckey]){
     renderLocalFromCache(ckey);
@@ -719,29 +828,55 @@ function renderAll(d){
     renderLocalFromClient();
   }else{
     var h='';
-    if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('')}
-    $('local-channels').innerHTML=h||'';
-    h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('')}
-    $('local-news').innerHTML=h||'';
-    h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('')}
-    $('local-reddit').innerHTML=h||'';
-    h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
-    $('local-x').innerHTML=h||'';
+    if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(makeItemHTML).join('')}
+    var lch=$('local-channels');if(lch)lch.innerHTML=h||'';
+    var lcht=$('local-channels-tab');if(lcht)lcht.innerHTML=h||'<div class="ld">No data</div>';
+    h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(makeItemHTML).join('')}
+    var ln=$('local-news');if(ln)ln.innerHTML=h||'';
+    var lnt=$('local-news-tab');if(lnt)lnt.innerHTML=h||'<div class="ld">No data</div>';
+    h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(makeRedditHTML).join('')}
+    var lrd=$('local-reddit');if(lrd)lrd.innerHTML=h||'';
+    var lrdt=$('local-reddit-tab');if(lrdt)lrdt.innerHTML=h||'<div class="ld">No data</div>';
+    h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(makeXTweetHTML).join('')}
+    var lx=$('local-x');if(lx)lx.innerHTML=h||'';
+    var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=h||'<div class="ld">No data</div>';
+  }
+
+  /* Weather detailed tab */
+  var lwDet=$('local-weather-detailed');if(lwDet){
+    var w=d.weather||{};
+    var cur=w.current||{};
+    var temp=cur.temperature?Math.round(cur.temperature):0;
+    var desc=cur.description||'';
+    var hum=cur.humidity||0;
+    var wind=cur.wind_speed||0;
+    lwDet.innerHTML='<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;text-align:center">'+
+      '<div class="bittensor-stat"><div class="num">'+temp+'&deg;F</div><div class="lbl">Temp</div></div>'+
+      '<div class="bittensor-stat"><div class="num">'+desc+'</div><div class="lbl">Condition</div></div>'+
+      '<div class="bittensor-stat"><div class="num">'+hum+'%</div><div class="lbl">Humidity</div></div>'+
+      '<div class="bittensor-stat"><div class="num">'+wind+' mph</div><div class="lbl">Wind</div></div>'+
+      '</div>';
   }
 
   var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
   var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
   var nwx=(d.world_x||[]).slice(0,IS_MOBILE?3:5);
   var wh='';
-  if(nw.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">AP / RSS</div>'+nw.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')}
-  $('world-news').innerHTML=wh||'';
+  if(nw.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">AP / RSS</div>'+nw.map(makeItemHTML).join('')}
+  var wn=$('world-news');if(wn)wn.innerHTML=wh||'';
+  var wnt=$('world-news-tab');if(wnt)wnt.innerHTML=wh||'<div class="ld">No data</div>';
   wh='';if(nwr.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">World Reddit</div>'+nwr.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')}
-  $('world-reddit').innerHTML=wh||'';
-  wh='';if(nwx.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">X / Twitter</div>'+nwx.map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('')}
-  $('world-x').innerHTML=wh||'';
-  if(!nw.length&&!nwr.length&&!nwx.length)$('world-card').innerHTML='<div class="ld">No world news</div>';
+  var wrt=$('world-reddit');if(wrt)wrt.innerHTML=wh||'';
+  var wrtt=$('world-reddit-tab');if(wrtt)wrtt.innerHTML=wh||'<div class="ld">No data</div>';
+  wh='';if(nwx.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">X / Twitter</div>'+nwx.map(makeXTweetHTML).join('')}
+  var wx=$('world-x');if(wx)wx.innerHTML=wh||'';
+  var wxt=$('world-x-tab');if(wxt)wxt.innerHTML=wh||'<div class="ld">No data</div>';
+  if(!nw.length&&!nwr.length&&!nwx.length){var wc=$('world-card');if(wc)wc.innerHTML='<div class="ld">No world news</div>';}
 
-  $('defense-news').innerHTML=(d.defense||[]).slice(0,IS_MOBILE?4:6).map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  var dn=(d.defense||[]).slice(0,IS_MOBILE?4:6);
+  var dh=dn.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
+  $('defense-news').innerHTML=dh;
+  var dt=$('defense-tab');if(dt)dt.innerHTML=dh;
 
   var bit=d.bittensor||{},subs=bit.top_subnets||[];
   var activeSubs = bit.active_subnets || subs.length || 0;
@@ -762,30 +897,47 @@ function renderAll(d){
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
   $('bittensor').innerHTML=bh;
+  var btt=$('bittensor-tech');if(btt)btt.innerHTML=bh;
 
-  $('reddit-posts').innerHTML=(d.reddit||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.title+'</a><div class="item-meta"><span class="score">&#9733; '+r.score+'</span><span>r/'+r.subreddit+'</span></div></div>'}).join('')||'<div class="ld">No Reddit data</div>';
+  var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
+  var rh=rp.map(makeRedditHTML).join('')||'<div class="ld">No Reddit data</div>';
+  $('reddit-posts').innerHTML=rh;
+  var rdt=$('reddit-tech');if(rdt)rdt.innerHTML=rh;
 
   var cp=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
-  $('hot-stocks-left').innerHTML='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">'+(c.change_percent>=0?'+':'')+c.change_percent+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  var cph='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">'+(c.change_percent>=0?'+':'')+c.change_percent+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  $('hot-stocks-left').innerHTML=cph;
+  var hst=$('hot-stocks-tab');if(hst)hst.innerHTML=cph;
   var topMovers=cp.concat(mm||[]).sort(function(a,b){return Math.abs(b.change_percent)-Math.abs(a.change_percent)}).slice(0,4);
   $('topMovers').innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<span style="color:var(--tx2)"><span style="font-weight:600;color:var(--tx)">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span></span>'}).join('');
-  $('github-repos').innerHTML=(d.github||[]).slice(0,IS_MOBILE?4:6).map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  var tmt=$('top-movers-tab');if(tmt)tmt.innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span> $'+s.price+'</div>'}).join('')||'<div class="ld">No data</div>';
+
+  var gh=(d.github||[]).slice(0,IS_MOBILE?4:6);
+  var ghh=gh.map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  $('github-repos').innerHTML=ghh;
+  var ght=$('github-tech');if(ght)ght.innerHTML=ghh;
 
   var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
-  $('business').innerHTML=biz.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span><span>'+fmtAgo(n.published)+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  var bzh=biz.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
+  $('business').innerHTML=bzh;
+  var bzt=$('business-tab');if(bzt)bzt.innerHTML=bzh;
 
   var cry=(d.crypto||{}).prices||[];
-  $('crypto-prices').innerHTML='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  var cy='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  $('crypto-prices').innerHTML=cy;
+  var cyt=$('crypto-tech');if(cyt)cyt.innerHTML=cy;
 
-  $('signals').innerHTML=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
+  var sig=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
+  $('signals').innerHTML=sig;
+  var st=$('signals-tech');if(st)st.innerHTML=sig;
 }
 
 async function loadData(){
-  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);renderFutures();renderIndexTicker();}
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);}
   catch(e){console.error('loadData',e)}
 }
 
-/* Legacy bridge/fallback (call when cache miss) */
+/* ===== FALLBACKS ===== */
 function pushLocationToBridge(){
   try{if(!clientLoc.city)return;fetch(BRIDGE_URL+'/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({city:clientLoc.city,state:clientLoc.state,state_abbrev:clientLoc.state_abbrev||'',lat:clientLoc.lat||0,lon:clientLoc.lon||0,zip:clientLoc.zip||''})}).catch(function(){});}catch(e){}
 }
@@ -793,14 +945,12 @@ function fetchLocalContent(city,state){
   if(!city)return;
   var ckey=cityToKey(city);
   if(cache[ckey]){renderLocalFromCache(ckey);return;}
-  /* Fallback: bridge or live scrape */
   renderLocalPlaceholders();
   fetchLocalFallback(city,state);
 }
 function renderLocalPlaceholders(){
-  $('local-channels').innerHTML='';$('local-news').innerHTML='<div class="ld">Loading local news...</div>';
-  $('local-reddit').innerHTML='<div class="ld">Loading local Reddit...</div>';
-  $('local-x').innerHTML='<div class="ld">Loading local X posts...</div>';
+  var ids=['local-channels','local-news','local-reddit','local-x','local-channels-tab','local-news-tab','local-reddit-tab','local-x-tab'];
+  ids.forEach(function(id){var el=$(id);if(el)el.innerHTML='<div class="ld">Loading...</div>';});
 }
 function fetchLocalFallback(city,state){
   if(!clientLocalData.news.length){
@@ -827,20 +977,92 @@ function fetchLocalFallback(city,state){
 }
 function renderLocalFromClient(){
   var city=clientLoc.city||serverLoc.city||'LOCAL';
-  $('localTitle').textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
-  $('localBadge').textContent=clientLoc.zip||'';
+  var lt=$('localTitle');if(lt)lt.textContent=(clientWeather.temperature?Math.round(clientWeather.temperature)+'° ':'')+city+' NEWS'+(clientWeather.description?' | '+clientWeather.description:'');
+  var lb=$('localBadge');if(lb)lb.textContent=clientLoc.zip||'';
   var rd=clientLocalData.reddit||[],h='';
   if(rd.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+rd.slice(0,IS_MOBILE?2:3).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span class="score">&#9733; '+x.score+'</span><span>r/'+x.subreddit+'</span></div></div>'}).join('');}
-  $('local-reddit').innerHTML=h||'<div class="ld">No local Reddit found</div>';
+  var lrd=$('local-reddit');if(lrd)lrd.innerHTML=h||'<div class="ld">No local Reddit found</div>';
+  var lrdt=$('local-reddit-tab');if(lrdt)lrdt.innerHTML=h||'<div class="ld">No local Reddit found</div>';
   var ns=clientLocalData.news||[];h='';
   if(ns.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+ns.slice(0,IS_MOBILE?3:4).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span><span>'+fmtAgo(x.published)+'</span></div></div>'}).join('');}
-  $('local-news').innerHTML=h||'<div class="ld">No local news found</div>';
+  var ln=$('local-news');if(ln)ln.innerHTML=h||'<div class="ld">No local news found</div>';
+  var lnt=$('local-news-tab');if(lnt)lnt.innerHTML=h||'<div class="ld">No local news found</div>';
   var tw=clientLocalData.x||[];h='';
   if(tw.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+tw.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>'}).join('');}
-  $('local-x').innerHTML=h||'<div class="ld">No local X posts found</div>';
+  var lx=$('local-x');if(lx)lx.innerHTML=h||'<div class="ld">No local X posts found</div>';
+  var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=h||'<div class="ld">No local X posts found</div>';
   var ch=clientLocalData.channels||[];h='';
   if(ch.length>0){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+ch.slice(0,IS_MOBILE?3:5).map(function(x){return '<div class="item"><a href="'+x.url+'" class="item-title" target="_blank">'+x.title+'</a><div class="item-meta"><span>'+(x.source||'')+'</span></div></div>'}).join('');}
-  $('local-channels').innerHTML=h||'';
+  var lch=$('local-channels');if(lch)lch.innerHTML=h||'';
+  var lcht=$('local-channels-tab');if(lcht)lcht.innerHTML=h||'';
+}
+
+/* ===== PONG GAME ===== */
+var pong={running:false,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15};
+function pongInit(){
+  pong.canvas=$('pongCanvas');
+  if(!pong.canvas)return;
+  pong.ctx=pong.canvas.getContext('2d');
+  pongResize();
+  pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;});
+  pong.canvas.addEventListener('touchmove',function(e){e.preventDefault();var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.touches[0].clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;},{passive:false});
+  pongDraw();
+}
+function pongResize(){
+  var c=$('pongCanvas');if(!c)return;
+  var wrap=c.parentElement;var maxW=Math.min(720,wrap.clientWidth-28);
+  c.style.width=maxW+'px';c.style.height=(maxW*0.625)+'px';
+}
+function pongStart(){
+  if(pong.running)return;
+  pong.running=true;pong.winner=null;
+  pongResetBall();
+  var st=$('pongStatus');if(st)st.textContent='First to 5 wins!';
+  pongLoop();
+}
+function pongReset(){
+  pong.running=false;if(pong.animId)cancelAnimationFrame(pong.animId);
+  pong.scorePlayer=0;pong.scoreComp=0;pong.winner=null;
+  $('scorePlayer').textContent='0';$('scoreComp').textContent='0';
+  $('pongStatus').textContent='Click Start to play';
+  pong.playerY=195;pong.compY=195;pongResetBall();pongDraw();
+}
+function pongResetBall(){
+  pong.ball.x=pong.W/2;pong.ball.y=pong.H/2;
+  pong.ball.dx=(Math.random()>0.5?1:-1)*(3.5+Math.random()*1.5);
+  pong.ball.dy=(Math.random()>0.5?1:-1)*(2.5+Math.random()*1.5);
+}
+function pongLoop(){
+  if(!pong.running)return;
+  pongUpdate();pongDraw();
+  pong.animId=requestAnimationFrame(pongLoop);
+}
+function pongUpdate(){
+  var b=pong.ball;b.x+=b.dx;b.y+=b.dy;
+  if(b.y-b.r<0||b.y+b.r>pong.H){b.dy=-b.dy;}
+  var compCenter=pong.compY+pong.paddleH/2;
+  var target=b.y;var diff=target-compCenter;
+  pong.compY+=diff*0.08;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
+  if(b.x-b.r<pong.paddleW && b.y>pong.compY && b.y<pong.compY+pong.paddleH){b.dx=Math.abs(b.dx)+pong.speedInc;b.x=pong.paddleW+b.r;}
+  if(b.x+b.r>pong.W-pong.paddleW && b.y>pong.playerY && b.y<pong.playerY+pong.paddleH){b.dx=-(Math.abs(b.dx)+pong.speedInc);b.x=pong.W-pong.paddleW-b.r;}
+  if(b.x<0){pong.scorePlayer++;$('scorePlayer').textContent=pong.scorePlayer;pongResetBall();if(pong.scorePlayer>=5){pongWin('player');}}
+  if(b.x>pong.W){pong.scoreComp++;$('scoreComp').textContent=pong.scoreComp;pongResetBall();if(pong.scoreComp>=5){pongWin('comp');}}
+}
+function pongWin(winner){
+  pong.running=false;
+  pong.winner=winner;
+  var st=$('pongStatus');
+  if(st)st.textContent=winner==='player'?'You win!':'Computer wins!';
+}
+function pongDraw(){
+  var ctx=pong.ctx;if(!ctx)return;
+  ctx.fillStyle='#0a0c10';ctx.fillRect(0,0,pong.W,pong.H);
+  ctx.strokeStyle='#22262e';ctx.lineWidth=1;
+  ctx.beginPath();ctx.moveTo(pong.W/2,0);ctx.lineTo(pong.W/2,pong.H);ctx.stroke();
+  ctx.fillStyle='var(--acc)';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#e8eaed';ctx.fillRect(0,pong.compY,pong.paddleW,pong.paddleH);
+  ctx.fillStyle='var(--acc)';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);
+  if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'YOU WIN!':'COMPUTER WINS!',pong.W/2,pong.H/2);}
 }
 
 /* Events */
@@ -854,11 +1076,12 @@ if(clientLoc.city){
   var ckey=cityToKey(clientLoc.city);
   if(cache[ckey]){renderLocalFromCache(ckey);}
 }
-fetchClientWeather();applyTheme();loadData();
+fetchClientWeather();applyTheme();loadData();initTabs();pongInit();
 setInterval(loadData,300000);
-setInterval(loadCityCache,20000); /* Check city_cache.json every 20s */
+setInterval(loadCityCache,20000);
+window.addEventListener('resize',function(){IS_MOBILE=window.innerWidth<768;pongResize();});
 
-/* ─── Donate ─── */
+/* ===== Donate ===== */
 var DONATE_ADDRS={
   btc:{name:'Bitcoin',addr:'bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4'},
   eth:{name:'Ethereum',addr:'0xfc4104efcf017Aa20a897E79D7D2136103D34Be4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xfc4104efcf017Aa20a897E79D7D2136103D34Be4'},
@@ -892,13 +1115,9 @@ function showDonate(){
   }
   mdl.classList.add('show');
 }
-function hideDonate(){$('donateMdl').classList.remove('show');for(var k in DONATE_ADDRS)$('qr-'+k).style.display='none';}
-function showDonateQR(k){var el=$('qr-'+k);el.style.display=el.style.display==='none'?'block':'none';}
+function hideDonate(){$('donateMdl').classList.remove('show');for(var k in DONATE_ADDRS)if($('qr-'+k))$('qr-'+k).style.display='none';}
+function showDonateQR(k){var el=$('qr-'+k);if(el)el.style.display=el.style.display==='none'?'block':'none';}
 function copyDonateAddr(k){var a=DONATE_ADDRS[k].addr;navigator.clipboard.writeText(a).then(function(){var btn=event.target;btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},1200)});}
 </script>
-
-<!-- Donate button -->
-<button class="donate-btn" onclick="showDonate()" title="Buy me a coffee">&#9749;</button>
-
 </body>
 </html>

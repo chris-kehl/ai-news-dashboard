@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="max-age=300, must-revalidate">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Geek-N-News</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -92,11 +96,6 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .item-title:hover{color:var(--acc)}.item-meta{font-size:.7rem;color:var(--tx3);display:flex;gap:8px;flex-wrap:wrap}
 .score{color:var(--acc);font-size:0.7rem}
 .ld{color:var(--tx3);font-size:0.8rem;padding:12px 0;text-align:center}
-.sk{background:linear-gradient(90deg,var(--bg-el) 25%,var(--bg-card) 50%,var(--bg-el) 75%);background-size:200% 100%;animation:shimmer 1.2s infinite;border-radius:4px;height:14px;margin:8px 0}
-.sk-sm{width:60%}
-.sk-md{width:85%}
-.sk-lg{width:100%}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .ai-summary{font-size:0.88rem;line-height:1.6;color:var(--tx2)}
 @media(min-width:768px){.ai-summary{font-size:0.82rem}}
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
@@ -192,16 +191,6 @@ html{scrollbar-gutter:stable}
 .pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
 .game-menu-item{padding:8px 14px;font-size:.78rem;color:var(--tx);cursor:pointer;border-radius:4px;white-space:nowrap}
 .game-menu-item:hover{background:var(--bg-sel);color:var(--acc)}
-
-/* ── Mobile Game Controls ── */
-.game-mobile-ctrls{display:none;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap;user-select:none;-webkit-user-select:none}
-@media(max-width:768px){.game-mobile-ctrls{display:flex}}
-.game-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);font-family:inherit;font-size:1rem;padding:14px 18px;border-radius:8px;cursor:pointer;min-width:64px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.game-btn:active{background:var(--acc);color:#000;border-color:var(--acc)}
-.game-btn-fire{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.4);color:#ef4444}
-.game-btn-fire:active{background:#ef4444;color:#fff}
-.game-btn-wide{min-width:80px}
-@media(max-width:768px){.pong-canvas{max-height:calc(100dvh - 300px)}}
 </style>
 </head>
 <body>
@@ -266,7 +255,7 @@ html{scrollbar-gutter:stable}
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-world" id="tab-btn-world" tabindex="-1">World</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-stocks" id="tab-btn-stocks" tabindex="-1">Stocks</button>
-    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-games" id="tab-btn-games" tabindex="0">Games</button>
+    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="0">Chutes</button>
   </div>
 </nav>
 
@@ -279,15 +268,15 @@ html{scrollbar-gutter:stable}
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-          <div class="card-bd" id="bittensor"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
-          <div class="card-bd" id="signals"><div class="sk sk-md"></div><div class="sk sk-lg"></div></div>
+          <div class="card-bd" id="signals"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
-          <div class="card-bd" id="crypto-prices"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="crypto-prices"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
@@ -304,20 +293,20 @@ html{scrollbar-gutter:stable}
         <div class="card">
           <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES <span data-lbl>AP / X / REDDIT</span></div>
           <div class="card-bd" id="world-card">
-            <div id="world-news"><div class="sk sk-md"></div><div class="sk sk-lg"></div></div>
-            <div id="world-reddit"><div class="sk sk-sm"></div><div class="sk sk-md"></div></div>
-            <div id="world-x"><div class="sk sk-sm"></div></div>
+            <div id="world-news"></div>
+            <div id="world-reddit"></div>
+            <div id="world-x"></div>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
-          <div class="card-bd" id="hot-stocks-left"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="hot-stocks-left"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128737;</span> DEFENSE &amp; INTEL</div>
-          <div class="card-bd" id="defense-news"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
         </div>
       </div>
     </div>
@@ -361,17 +350,17 @@ html{scrollbar-gutter:stable}
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#127758;</span> WORLD HEADLINES</div>
-          <div class="card-bd" id="world-news-tab"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="world-news-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128172;</span> WORLD REDDIT</div>
-          <div class="card-bd" id="world-reddit-tab"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="world-reddit-tab"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128172;</span> X / TWITTER GLOBAL</div>
-          <div class="card-bd" id="world-x-tab"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="world-x-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
@@ -389,27 +378,27 @@ html{scrollbar-gutter:stable}
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
-          <div class="card-bd" id="bittensor-tech"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="bittensor-tech"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
-          <div class="card-bd" id="signals-tech"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="signals-tech"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128640;</span> TECH &amp; REDDIT AI</div>
-          <div class="card-bd" id="reddit-tech"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="reddit-tech"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128170;</span> GITHUB AI TRENDING</div>
-          <div class="card-bd" id="github-tech"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="github-tech"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128176;</span> CRYPTO PRICES</div>
-          <div class="card-bd" id="crypto-tech"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="crypto-tech"><div class="ld">Loading...</div></div>
         </div>
       </div>
     </div>
@@ -421,27 +410,27 @@ html{scrollbar-gutter:stable}
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
-          <div class="card-bd" id="hot-stocks-tab"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="hot-stocks-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128200;</span> BUSINESS NEWS</div>
-          <div class="card-bd" id="business-tab"><div class="sk sk-md"></div><div class="sk sk-lg"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="business-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-hd"><span>&#128200;</span> TOP MOVERS</div>
-          <div class="card-bd" id="top-movers-tab"><div class="sk sk-md"></div><div class="sk sk-sm"></div></div>
+          <div class="card-bd" id="top-movers-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CHUTES (Gaming) TAB -->
-  <section id="tab-games" role="tabpanel" aria-labelledby="tab-btn-games" class="tab-panel active">
-    <div class="pong-wrap" id="gamesWrap">
+  <section id="tab-chutes" role="tabpanel" aria-labelledby="tab-btn-chutes" class="tab-panel active">
+    <div class="pong-wrap" id="chutesWrap">
       <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:6px" id="gameMenu">
         <button class="btn" id="gmPong" onclick="loadGame('pong')">Pong</button>
         <button class="btn" id="gmInvaders" onclick="loadGame('invaders')">Space Invaders</button>
@@ -475,11 +464,6 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="siReset()">Reset</button>
         </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
-        <div class="game-mobile-ctrls" id="siMobileCtrls">
-          <button class="game-btn" onclick="siMoveLeft()">&#8592;</button>
-          <button class="game-btn game-btn-fire" onclick="siFire()">FIRE</button>
-          <button class="game-btn" onclick="siMoveRight()">&#8594;</button>
-        </div>
       </div>
       <!-- Tetris -->
       <div id="gameTetris" style="display:none">
@@ -498,12 +482,6 @@ html{scrollbar-gutter:stable}
           <span style="display:inline-block;margin:0 4px">&#8595; Soft Drop</span>
           <span style="display:inline-block;margin:0 4px">&#60; Rotate</span>
         </div>
-        <div class="game-mobile-ctrls" id="trMobileCtrls">
-          <button class="game-btn" onclick="trMoveLeft()">&#8592;</button>
-          <button class="game-btn" onclick="trDoRotate()">&#8634;</button>
-          <button class="game-btn" onclick="trMoveRight()">&#8594;</button>
-          <button class="game-btn game-btn-wide" onclick="trSoftDrop()">DROP</button>
-        </div>
       </div>
       <!-- Frogger -->
       <div id="gameFrogger" style="display:none">
@@ -519,12 +497,6 @@ html{scrollbar-gutter:stable}
         </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">
           Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
-        </div>
-        <div class="game-mobile-ctrls" id="fgMobileCtrls">
-          <button class="game-btn" onclick="fgMove(0,-40)">&#8593;</button>
-          <button class="game-btn" onclick="fgMove(-40,0)">&#8592;</button>
-          <button class="game-btn" onclick="fgMove(40,0)">&#8594;</button>
-          <button class="game-btn" onclick="fgMove(0,40)">&#8595;</button>
         </div>
       </div>
     </div>
@@ -603,8 +575,8 @@ var tickerItems=[];
 var _lastCacheLoad=0;
 
 /* ===== TAB SWITCHING (W3C Tabs Pattern) ===== */
-var tabs=['dashboard','local','world','tech','stocks','games'];
-var currentTab='games';
+var tabs=['dashboard','local','world','tech','stocks','chutes'];
+var currentTab='chutes';
 
 function switchTab(tabId){
   if(tabId===currentTab)return;
@@ -875,27 +847,11 @@ function renderForecast(){
 }
 function renderTicker(items){
   if(!items||!items.length){$('tickerTrack').innerHTML='<span style="padding:0 30px">Markets offline</span>';return}
-  var now=new Date();
-  var day=now.getDay(); // 0=Sun, 1=Mon, ..., 6=Sat
-  var hour=now.getHours();
-  var isWeekend=(day===6)||(day===0);
-  var isSundayEvening=(day===0&&hour>=8);
-  var filtered=[];
-  if(!isWeekend){
-    // Mon-Fri: indices + futures + movers (no crypto)
-    filtered=items.filter(function(x){return x.type==='index'||x.type==='future'||x.type==='mover'});
-  }else if(isSundayEvening){
-    // Sun 08:00+: futures only (preview of next week)
-    filtered=items.filter(function(x){return x.type==='future'});
-  }else{
-    // Sat-Sun 07:59: crypto only
-    filtered=items.filter(function(x){return x.type==='crypto'});
-  }
-  if(!filtered.length){filtered=items}
-  var track=filtered.map(function(x){
+  var track=items.map(function(x){
     var cls=x.change>=0?'up':'dn';
     var sign=x.change>=0?'+':'';
     if(x.av_news){
+      var color=cls==='up'?'var(--good)':'var(--danger)';
       return'<div class="ticker-item" style="color:var(--tx2)"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'</span><span style="font-size:0.65rem;color:var(--acc)"> '+x.sentiment_label+'</span><span style="font-size:0.65rem;color:var(--tx3);margin-left:4px">'+(x.headline||'').slice(0,50)+'</span></div><span class="ticker-sep">&#8226;</span>';
     }
     return'<div class="ticker-item"><span class="sym">'+x.symbol+'</span><span class="'+cls+'">'+sign+x.change+'%</span><span>$'+x.price+'</span></div><span class="ticker-sep">&#8226;</span>';
@@ -1186,9 +1142,6 @@ var si={running:false,score:0,lives:3,W:720,H:540,canvas:null,ctx:null,px:360,pw
 function siInit(){
   si.canvas=$('siCanvas');if(!si.canvas)return;
   si.ctx=si.canvas.getContext('2d');
-  si.canvas.addEventListener('touchstart',function(e){e.preventDefault();si._tsx=e.touches[0].clientX;},{passive:false});
-  si.canvas.addEventListener('touchmove',function(e){e.preventDefault();var dx=e.touches[0].clientX-si._tsx;if(Math.abs(dx)>20){si.px+=dx>0?18:-18;si._tsx=e.touches[0].clientX;if(si.px<0)si.px=0;if(si.px>si.W-si.pw)si.px=si.W-si.pw;}},{passive:false});
-  si.canvas.addEventListener('touchend',function(e){e.preventDefault();si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});},{passive:false});
   siResetInvaders();siResize();siDraw();
 }
 function siResetInvaders(){
@@ -1200,7 +1153,7 @@ function siResetInvaders(){
   }
   si.stepInterval=45;si.speed=2;si.dir=1;
 }
-function siResize(){var c=$('siCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(720,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?340:290);var wantH=maxW*0.75;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function siResize(){var c=$('siCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(720,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*0.75;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function siStart(){if(si.running)return;si.running=true;si.score=0;si.lives=3;si.bullets=[];si.bombs=[];$('siScore').textContent='0';$('siLives').textContent='3';$('siStatus').textContent='Destroy all invaders!';siResetInvaders();siLoop();}
 function siReset(){si.running=false;if(si.animId)cancelAnimationFrame(si.animId);si.score=0;si.lives=3;si.bullets=[];si.bombs=[];$('siScore').textContent='0';$('siLives').textContent='3';$('siStatus').textContent='Click Start to play';siResetInvaders();siDraw();}
 function siLoop(){if(!si.running)return;siUpdate();siDraw();si.animId=requestAnimationFrame(siLoop);}
@@ -1219,9 +1172,6 @@ function siUpdate(){
   si.bombTimer++;
   if(si.bombTimer>60){si.bombTimer=0;var alive=si.inv.filter(function(i){return i.alive});if(alive.length){var shooter=alive[Math.floor(Math.random()*alive.length)];si.bombs.push({x:shooter.x+shooter.w/2,y:shooter.y+shooter.h});}}
   si.bombs.forEach(function(b){b.y+=4;});
-function siMoveLeft(){si.px=Math.max(0,si.px-30);if(!si.running)siDraw();}
-function siMoveRight(){si.px=Math.min(si.W-si.pw,si.px+30);if(!si.running)siDraw();}
-function siFire(){si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});if(!si.running)siDraw();}
   si.bombs=si.bombs.filter(function(b){return b.y<si.H+10;});
   si.bombs.forEach(function(b){if(b.x>si.px&&b.x<si.px+si.pw&&b.y>si.H-20&&b.y<si.H){si.lives--;b.y=si.H+20;$('siLives').textContent=si.lives;if(si.lives<=0){si.running=false;$('siStatus').textContent='Game Over! Score: '+si.score;return;}};});
   si.inv.forEach(function(i){if(i.alive&&i.y>si.H-60){si.running=false;$('siStatus').textContent='Invaders Landed! Game Over.';}});
@@ -1244,7 +1194,7 @@ var tr={running:false,score:0,level:1,lines:0,W:360,H:720,canvas:null,ctx:null,g
 var trShapes={I:[[1,1,1,1]],O:[[1,1],[1,1]],T:[[0,1,0],[1,1,1]],S:[[0,1,1],[1,1,0]],Z:[[1,1,0],[0,1,1]],J:[[1,0,0],[1,1,1]],L:[[0,0,1],[1,1,1]]};
 function trInit(){tr.canvas=$('trCanvas');if(!tr.canvas)return;tr.ctx=tr.canvas.getContext('2d');trResetGrid();trResize();trDraw();}
 function trResetGrid(){tr.grid=[];for(var y=0;y<24;y++){tr.grid.push(new Array(12).fill(0));}}
-function trResize(){var c=$('trCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(360,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?340:290);var wantH=maxW*2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function trResize(){var c=$('trCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(360,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function trNewPiece(){var keys=Object.keys(trShapes);var k=keys[Math.floor(Math.random()*keys.length)];return{type:k,shape:trShapes[k],x:4,y:0};}
 function trStart(){if(tr.running)return;tr.running=true;tr.score=0;tr.level=1;tr.lines=0;tr.gameOver=false;tr.dropInterval=800;tr.grid=[];for(var y=0;y<24;y++)tr.grid.push(new Array(12).fill(0));tr.cur=trNewPiece();tr.next=trNewPiece();$('trScore').textContent='0';$('trLevel').textContent='1';$('trStatus').textContent='Good luck!';tr.lastDrop=performance.now();trLoop();}
 function trReset(){tr.running=false;if(tr.animId)cancelAnimationFrame(tr.animId);tr.score=0;tr.level=1;tr.lines=0;tr.gameOver=false;tr.grid=[];for(var y=0;y<24;y++)tr.grid.push(new Array(12).fill(0));tr.cur=null;tr.next=null;$('trScore').textContent='0';$('trLevel').textContent='1';$('trStatus').textContent='Click Start to play';trDraw();}
@@ -1267,8 +1217,8 @@ document.addEventListener('keydown',function(e){if(activeGame!=='tetris'||tr.gam
 
 /* ===== FROGGER ===== */
 var fg={running:false,score:0,lives:3,W:600,H:720,canvas:null,ctx:null,frog:{x:300,y:660,w:30,h:20},cars:[],logs:[],home:[false,false,false,false,false],level:1,speed:2,animId:null,lastUpdate:0};
-function fgInit(){fg.canvas=$('fgCanvas');if(!fg.canvas)return;fg.ctx=fg.canvas.getContext('2d');fg.canvas.addEventListener('touchstart',function(e){e.preventDefault();fg._ts={x:e.touches[0].clientX,y:e.touches[0].clientY};},{passive:false});fg.canvas.addEventListener('touchend',function(e){e.preventDefault();if(!fg._ts)return;var dx=e.changedTouches[0].clientX-fg._ts.x;var dy=e.changedTouches[0].clientY-fg._ts.y;var t=24;if(Math.abs(dx)>Math.abs(dy)){if(dx>t)fgMove(40,0);else if(dx<-t)fgMove(-40,0);}else{if(dy>t)fgMove(0,40);else if(dy<-t)fgMove(0,-40);}fg._ts=null;},{passive:false});fgResize();fgDraw();}
-function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-(window.innerWidth<768?360:290);var wantH=maxW*1.2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function fgInit(){fg.canvas=$('fgCanvas');if(!fg.canvas)return;fg.ctx=fg.canvas.getContext('2d');fgResize();fgDraw();}
+function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*1.2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
 function fgResetCars(){
   fg.cars=[];
   for(var row=0;row<5;row++){
@@ -1301,7 +1251,6 @@ function fgUpdate(){
   if(f.y<360&&f.y>60){fg.logs.forEach(function(l){if(f.x+10>l.x&&f.x<f.x+l.w&&f.y+4>l.y&&f.y+l.h-4<l.y+l.h){onLog=true;f.x+=l.speed;}});if(!onLog){fgDie();}}
   if(f.y<60){var homeIdx=Math.floor(f.x/120);if(homeIdx>=0&&homeIdx<5&&f.x>homeIdx*120+30&&f.x<homeIdx*120+90){if(fg.home[homeIdx]){fgDie();}else{fg.home[homeIdx]=true;fg.score+=100*fg.level;fg.frog={x:300,y:660,w:30,h:20};$('fgScore').textContent=fg.score;if(fg.home.every(function(h){return h;})){fg.level++;fg.speed+=0.4;fg.home=[false,false,false,false,false];$('fgStatus').textContent='Level '+fg.level+'!';fgResetCars();fgResetLogs();}}}else{fgDie();}}
 }
-function fgMove(dx,dy){if(!fg.running)return;fg.frog.x+=dx;fg.frog.y+=dy;if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;}
 function fgDie(){fg.lives--;if(fg.lives<=0){fg.running=false;$('fgStatus').textContent='Game Over! Score: '+fg.score;return;}fg.frog={x:300,y:660,w:30,h:20};$('fgLives').textContent=fg.lives;}
 function fgDraw(){
   var ctx=fg.ctx;if(!ctx)return;
@@ -1313,7 +1262,7 @@ function fgDraw(){
   ctx.fillStyle='#ef4444';fg.cars.forEach(function(c){ctx.fillRect(c.x,c.y,c.w,c.h);ctx.fillStyle='#b91c1c';ctx.fillRect(c.x+4,c.y+4,c.w-8,c.h-8);ctx.fillStyle='#ef4444';});
   var f=fg.frog;ctx.fillStyle='#22c55e';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2,f.w/2,f.h/2,0,0,Math.PI*2);ctx.fill();
 }
-document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fgMove(0,-s);}if(e.key==='ArrowDown'){fgMove(0,s);}if(e.key==='ArrowLeft'){fgMove(-s,0);}if(e.key==='ArrowRight'){fgMove(s,0);}});
+document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fg.frog.y-=s;}if(e.key==='ArrowDown'){fg.frog.y+=s;}if(e.key==='ArrowLeft'){fg.frog.x-=s;}if(e.key==='ArrowRight'){fg.frog.x+=s;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;});
 
 /* Events */
 $('locInput').addEventListener('click',function(e){if(this.readOnly){activateSearchMode()}});
@@ -1368,10 +1317,6 @@ function showDonate(){
 function hideDonate(){$('donateMdl').classList.remove('show');for(var k in DONATE_ADDRS)if($('qr-'+k))$('qr-'+k).style.display='none';}
 function showDonateQR(k){var el=$('qr-'+k);if(el)el.style.display=el.style.display==='none'?'block':'none';}
 function copyDonateAddr(k){var a=DONATE_ADDRS[k].addr;navigator.clipboard.writeText(a).then(function(){var btn=event.target;btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},1200)});}
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8">
 </script>
 </body>
 </html>

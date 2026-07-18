@@ -1187,7 +1187,7 @@ function siDraw(){
   ctx.fillStyle='#ef4444';
   si.bombs.forEach(function(b){ctx.beginPath();ctx.arc(b.x,b.y,3,0,Math.PI*2);ctx.fill();});
 }
-document.addEventListener('keydown',function(e){if(activeGame!=='invaders')return;if(['ArrowLeft','ArrowRight',' '].indexOf(e.key)>-1)e.preventDefault();if(e.key==='ArrowLeft'){si.px=Math.max(0,si.px-20);}if(e.key==='ArrowRight'){si.px=Math.min(si.W-si.pw,si.px+20);}if(e.key===' '){si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}});
+document.addEventListener('keydown',function(e){if(activeGame!=='invaders')return;if(['ArrowLeft','ArrowRight','ArrowUp',' '].indexOf(e.key)>-1)e.preventDefault();if(e.key==='ArrowLeft'){si.px=Math.max(0,si.px-20);}if(e.key==='ArrowRight'){si.px=Math.min(si.W-si.pw,si.px+20);}if(e.key===' '||e.key==='ArrowUp'){si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}});
 
 /* ===== TETRIS ===== */
 var tr={running:false,score:0,level:1,lines:0,W:360,H:720,canvas:null,ctx:null,grid:[],cur:null,next:null,dropTimer:0,dropInterval:800,lastDrop:0,gameOver:false,animId:null,colors:{'I':'#ef4444','O':'#f7a51d','T':'#3b82f6','S':'#22c55e','Z':'#8b5cf6','J':'#06b6d4','L':'#f97316'}};

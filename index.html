@@ -189,6 +189,8 @@ html{scrollbar-gutter:stable}
 .pong-status{color:var(--tx3);font-size:.75rem}
 .pong-ctrl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
 .pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
+.game-menu-item{padding:8px 14px;font-size:.78rem;color:var(--tx);cursor:pointer;border-radius:4px;white-space:nowrap}
+.game-menu-item:hover{background:var(--bg-sel);color:var(--acc)}
 </style>
 </head>
 <body>
@@ -253,7 +255,7 @@ html{scrollbar-gutter:stable}
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-world" id="tab-btn-world" tabindex="-1">World</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-stocks" id="tab-btn-stocks" tabindex="-1">Stocks</button>
-    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-pong" id="tab-btn-pong" tabindex="0">Pong</button>
+    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="0">Chutes</button>
   </div>
 </nav>
 
@@ -426,25 +428,79 @@ html{scrollbar-gutter:stable}
     </div>
   </section>
 
-  <!-- PONG TAB -->
-  <section id="tab-pong" role="tabpanel" aria-labelledby="tab-btn-pong" class="tab-panel active">
-    <div class="pong-wrap">
-      <div class="pong-hud">
-        <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
-        <div class="pong-status" id="pongStatus">Click Start to play</div>
-        <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
+  <!-- CHUTES (Gaming) TAB -->
+  <section id="tab-chutes" role="tabpanel" aria-labelledby="tab-btn-chutes" class="tab-panel active">
+    <div class="pong-wrap" id="chutesWrap">
+      <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:6px" id="gameMenu">
+        <button class="btn" id="gmPong" onclick="loadGame('pong')">Pong</button>
+        <button class="btn" id="gmInvaders" onclick="loadGame('invaders')">Space Invaders</button>
+        <button class="btn" id="gmTetris" onclick="loadGame('tetris')">Tetris</button>
+        <button class="btn" id="gmFrogger" onclick="loadGame('frogger')">Frogger</button>
       </div>
-      <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
-      <div class="pong-ctrl">
-        <button class="btn" id="pongStart" onclick="pongStart()">Start Game</button>
-        <button class="btn" onclick="pongReset()">Reset</button>
+      <!-- Pong -->
+      <div id="gamePong">
+        <div class="pong-hud">
+          <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
+          <div class="pong-status" id="pongStatus">Click Start to play</div>
+          <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
+        </div>
+        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+        <div class="pong-ctrl">
+          <button class="btn" onclick="pongStart()">Start Game</button>
+          <button class="btn" onclick="pongReset()">Reset</button>
+        </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">Move your mouse / touch to control the bottom paddle. First to 5 wins.</div>
       </div>
-      <div style="font-size:.72rem;color:var(--tx3);text-align:center">
-        Move your mouse / touch to control the bottom paddle. First to 5 wins.
+      <!-- Space Invaders -->
+      <div id="gameInvaders" style="display:none">
+        <div class="pong-hud">
+          <div class="pong-score">SCORE: <span id="siScore">0</span></div>
+          <div class="pong-status" id="siStatus">Click Start to play</div>
+          <div class="pong-score">LIVES: <span id="siLives">3</span></div>
+        </div>
+        <canvas id="siCanvas" class="pong-canvas" width="720" height="540"></canvas>
+        <div class="pong-ctrl">
+          <button class="btn" onclick="siStart()">Start Game</button>
+          <button class="btn" onclick="siReset()">Reset</button>
+        </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
+      </div>
+      <!-- Tetris -->
+      <div id="gameTetris" style="display:none">
+        <div class="pong-hud">
+          <div class="pong-score">SCORE: <span id="trScore">0</span></div>
+          <div class="pong-status" id="trStatus">Click Start to play</div>
+          <div class="pong-score">LEVEL: <span id="trLevel">1</span></div>
+        </div>
+        <canvas id="trCanvas" class="pong-canvas" width="360" height="720"></canvas>
+        <div class="pong-ctrl">
+          <button class="btn" onclick="trStart()">Start Game</button>
+          <button class="btn" onclick="trReset()">Reset</button>
+        </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
+          <span style="display:inline-block;margin:0 4px">&#8592; &#8594; Move</span>
+          <span style="display:inline-block;margin:0 4px">&#8595; Soft Drop</span>
+          <span style="display:inline-block;margin:0 4px">&#60; Rotate</span>
+        </div>
+      </div>
+      <!-- Frogger -->
+      <div id="gameFrogger" style="display:none">
+        <div class="pong-hud">
+          <div class="pong-score">SCORE: <span id="fgScore">0</span></div>
+          <div class="pong-status" id="fgStatus">Click Start to play</div>
+          <div class="pong-score">LIVES: <span id="fgLives">3</span></div>
+        </div>
+        <canvas id="fgCanvas" class="pong-canvas" width="600" height="720"></canvas>
+        <div class="pong-ctrl">
+          <button class="btn" onclick="fgStart()">Start Game</button>
+          <button class="btn" onclick="fgReset()">Reset</button>
+        </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
+          Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
+        </div>
       </div>
     </div>
   </section>
-
 </main>
 
 <!-- Donate button -->
@@ -519,8 +575,8 @@ var tickerItems=[];
 var _lastCacheLoad=0;
 
 /* ===== TAB SWITCHING (W3C Tabs Pattern) ===== */
-var tabs=['dashboard','local','world','tech','stocks','pong'];
-var currentTab='pong';
+var tabs=['dashboard','local','world','tech','stocks','chutes'];
+var currentTab='chutes';
 
 function switchTab(tabId){
   if(tabId===currentTab)return;

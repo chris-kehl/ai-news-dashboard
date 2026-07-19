@@ -521,6 +521,16 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="fgStart()">Start Game</button>
           <button class="btn" onclick="fgReset()">Reset</button>
         </div>
+        <div class="mobile-ctrl" id="fgMobileCtrl">
+          <div class="dpad">
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('up');" onmousedown="fgInput('up')">&#9650;</button>
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('left');" onmousedown="fgInput('left')">&#9664;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('down');" onmousedown="fgInput('down')">&#9660;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('right');" onmousedown="fgInput('right')">&#9654;</button>
+          </div>
+        </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">
           Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
         </div>
@@ -1298,6 +1308,12 @@ function fgDraw(){
   var f=fg.frog;ctx.fillStyle='#22c55e';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2,f.w/2,f.h/2,0,0,Math.PI*2);ctx.fill();
 }
 document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fg.frog.y-=s;}if(e.key==='ArrowDown'){fg.frog.y+=s;}if(e.key==='ArrowLeft'){fg.frog.x-=s;}if(e.key==='ArrowRight'){fg.frog.x+=s;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;});
+
+/* Mobile touch control helpers */
+function siMove(dir){if(activeGame!=='invaders')return;if(dir===-1){si.px=Math.max(0,si.px-20);}else if(dir===1){si.px=Math.min(si.W-si.pw,si.px+20);}}
+function siFire(){if(activeGame!=='invaders')return;si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}
+function trInput(act){if(activeGame!=='tetris'||tr.gameOver||!tr.running)return;if(act==='left'){tr.cur.x--;if(trCollide())tr.cur.x++;}else if(act==='right'){tr.cur.x++;if(trCollide())tr.cur.x--;}else if(act==='down'){trDrop();}else if(act==='up'){trRotate();}}
+function fgInput(dir){if(activeGame!=='frogger'||!fg.running)return;var s=40;if(dir==='up'){fg.frog.y-=s;}else if(dir==='down'){fg.frog.y+=s;}else if(dir==='left'){fg.frog.x-=s;}else if(dir==='right'){fg.frog.x+=s;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;}
 
 /* Events */
 $('locInput').addEventListener('click',function(e){if(this.readOnly){activateSearchMode()}});

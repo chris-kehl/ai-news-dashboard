@@ -521,28 +521,8 @@ html{scrollbar-gutter:stable}
       </div>
       <!-- Frogger -->
       <div id="gameFrogger" style="display:none">
-        <div class="pong-hud">
-          <div class="pong-score">SCORE: <span id="fgScore">0</span></div>
-          <div class="pong-status" id="fgStatus">Click Start to play</div>
-          <div class="pong-score">LIVES: <span id="fgLives">3</span></div>
-        </div>
-        <canvas id="fgCanvas" class="pong-canvas" width="600" height="700"></canvas>
-        <div class="pong-ctrl">
-          <button class="btn" onclick="fgStart()">Start Game</button>
-          <button class="btn" onclick="fgReset()">Reset</button>
-        </div>
-        <div class="mobile-ctrl" id="fgMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('up');" onmousedown="fgInput('up')">&#9650;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('left');" onmousedown="fgInput('left')">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('down');" onmousedown="fgInput('down')">&#9660;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('right');" onmousedown="fgInput('right')">&#9654;</button>
-          </div>
-        </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
-          Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
+        <div style="width:100%;max-width:720px;height:400px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;margin-top:10px">
+          <div style="font-size:3rem;font-weight:800;color:var(--tx3);text-align:center;letter-spacing:6px">UNDER<br>CONSTRUCTION</div>
         </div>
       </div>
     </div>

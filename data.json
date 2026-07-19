@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-19T14:02:45.381847",
+  "timestamp": "2026-07-19T14:18:04.147244",
   "location": {
     "zip": "40272",
     "city": "Louisville",
@@ -7,7 +7,7 @@
     "lat": 38.0846,
     "lon": -85.851
   },
-  "summary": "Key topics today:\n- - OpenAI reduces Codex Model Context Size from 372k to 272k (r/HackerNews, 301 pts)\n- - Claude Code uses Bun written in Rust now (r/HackerNews, 101 pts)\n- - Holding the LLM Stack in Your Head (r/HackerNews, 101 pts)\n- - Moonshot AI suspends new subscriptions due to Kimi K3 demand (r/HackerNews, 101 pts)\n- - Ollama: All Aboard Open Models (r/HackerNews, 101 pts)",
+  "summary": "Key topics today:\n- - OpenAI reduces Codex Model Context Size from 372k to 272k (r/HackerNews, 301 pts)\n- - Claude Code uses Bun written in Rust now (r/HackerNews, 101 pts)\n- - Moonshot AI suspends new subscriptions due to Kimi K3 demand (r/HackerNews, 101 pts)\n- - Qwen 3.8 (r/HackerNews, 1 pts)\n- - HMD Touch 4G (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "sell",
@@ -40,14 +40,6 @@
       "change": null,
       "category": "sentiment",
       "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
-    },
-    {
-      "type": "watch",
-      "asset": "EDGE AI",
-      "price": null,
-      "change": null,
-      "category": "sentiment",
-      "text": "Edge AI trend \u2014 local inference plays"
     }
   ],
   "reddit": [
@@ -68,27 +60,11 @@
       "created": ""
     },
     {
-      "title": "Holding the LLM Stack in Your Head",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://thegustafson.com/series",
-      "created": ""
-    },
-    {
       "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
-      "created": ""
-    },
-    {
-      "title": "Ollama: All Aboard Open Models",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://ollama.com/blog/all-aboard-open-models",
       "created": ""
     },
     {
@@ -129,6 +105,22 @@
       "score": 1,
       "comments": 0,
       "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+      "created": ""
+    },
+    {
+      "title": "Blender 5.2 LTS",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.blender.org/download/releases/5-2/",
+      "created": ""
+    },
+    {
+      "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=48968606",
       "created": ""
     }
   ],
@@ -339,70 +331,70 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-07-19T18:02:36.278519",
+    "timestamp": "2026-07-19T18:17:35.255437",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 196.59,
-        "change_24h": 1.09,
-        "market_cap": 1887130063
+        "price": 196.21,
+        "change_24h": 0.91,
+        "market_cap": 1883397544
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 64501,
-        "change_24h": 0.11,
-        "market_cap": 1293856413043
+        "price": 64425,
+        "change_24h": -0.01,
+        "market_cap": 1292430600733
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1866.12,
-        "change_24h": 0.86,
-        "market_cap": 225215201479
+        "price": 1861.44,
+        "change_24h": 0.63,
+        "market_cap": 224658794316
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999238,
-        "change_24h": -0.0,
-        "market_cap": 184078621841
+        "price": 0.999215,
+        "change_24h": -0.01,
+        "market_cap": 184078769028
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 567.93,
-        "change_24h": -0.47,
-        "market_cap": 75630492729
+        "price": 567.09,
+        "change_24h": -0.54,
+        "market_cap": 75524208087
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999768,
-        "change_24h": -0.0,
-        "market_cap": 73279917566
+        "price": 0.999895,
+        "change_24h": 0.01,
+        "market_cap": 73286433776
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.094,
-        "change_24h": 0.15,
-        "market_cap": 68344228943
+        "price": 1.092,
+        "change_24h": 0.05,
+        "market_cap": 68229125218
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 75.92,
-        "change_24h": 0.84,
-        "market_cap": 44240898349
+        "price": 75.63,
+        "change_24h": 0.48,
+        "market_cap": 44070234066
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.326705,
-        "change_24h": 0.62,
-        "market_cap": 30995355272
+        "price": 0.326606,
+        "change_24h": 0.59,
+        "market_cap": 30982558681
       },
       {
         "name": "Figure Heloc",
@@ -414,9 +406,9 @@
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 60.79,
-        "change_24h": 1.57,
-        "market_cap": 13523100324
+        "price": 60.61,
+        "change_24h": 1.24,
+        "market_cap": 13484066074
       }
     ],
     "news": [
@@ -496,7 +488,7 @@
   },
   "news": [
     {
-      "title": "Burnham to promise 'more breathing room' as he takes over as PM",
+      "title": "Burnham to promise 'more breathing room' in first speech as PM",
       "url": "https://www.bbc.co.uk/news/articles/cy8m7k98p3no?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -641,7 +633,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-07-19T18:01:46.021704",
+    "timestamp": "2026-07-19T18:16:44.410808",
     "trending": [
       {
         "symbol": "INOD",
@@ -693,25 +685,25 @@
         "name": "Modine Manufacturing Company"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 75.92,
-        "change": 0.46,
-        "change_percent": 0.61,
-        "name": "Solana USD"
+        "symbol": "BTC-USD",
+        "price": 64396.31,
+        "change": -400.29,
+        "change_percent": -0.62,
+        "name": "Bitcoin USD"
       },
       {
         "symbol": "BTC-CAD",
-        "price": 90486.29,
-        "change": -407.15,
-        "change_percent": -0.45,
+        "price": 90383.34,
+        "change": -510.1,
+        "change_percent": -0.56,
         "name": "Bitcoin CAD"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 64510.0,
-        "change": -286.6,
-        "change_percent": -0.44,
-        "name": "Bitcoin USD"
+        "symbol": "SOL-USD",
+        "price": 75.55,
+        "change": 0.09,
+        "change_percent": 0.12,
+        "name": "Solana USD"
       }
     ],
     "meme_momentum": [
@@ -788,7 +780,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-07-19T18:02:12.772869",
+    "timestamp": "2026-07-19T18:17:12.661185",
     "items": [
       {
         "symbol": "SPX",
@@ -870,44 +862,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 196.61,
-        "change": 1.11,
+        "price": 196.27,
+        "change": 0.94,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64501,
-        "change": 0.11,
+        "price": 64402,
+        "change": -0.05,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1866.12,
-        "change": 0.86,
+        "price": 1860.76,
+        "change": 0.59,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.92,
-        "change": 0.84,
+        "price": 75.63,
+        "change": 0.47,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.072209,
-        "change": -0.15,
+        "price": 0.072032,
+        "change": -0.34,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.33,
-        "change": 0.44,
+        "price": 8.31,
+        "change": 0.18,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.47,
-        "change": -1.41,
+        "price": 6.44,
+        "change": -1.79,
         "type": "crypto"
       },
       {
@@ -965,9 +957,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 75.89,
-        "change": 0.57,
+        "symbol": "BTC-USD",
+        "price": 64397.1,
+        "change": -0.62,
         "type": "mover"
       }
     ]
@@ -1151,10 +1143,10 @@
     "lat": 38.0846,
     "lon": -85.851,
     "current": {
-      "temperature": 84.2,
+      "temperature": 86.0,
       "description": "Mostly Cloudy",
-      "humidity": 70.108741837117,
-      "wind_speed": 7.416
+      "humidity": 66.179964877284,
+      "wind_speed": 0
     },
     "forecast": [
       {
@@ -1219,9 +1211,23 @@
       }
     ],
     "source": "NWS",
-    "timestamp": "2026-07-19T18:00:05.342300"
+    "timestamp": "2026-07-19T18:15:05.153522"
   },
   "local_news": [
+    {
+      "title": "Mizzou Hoops Player Review: Mark Mitchell",
+      "url": "https://www.rockmnation.com/missouri-tigers-basketball/150632/mizzou-hoops-player-review-mark-mitchell",
+      "source": "Rockmnation.com",
+      "published": "2026-07-18T18:17",
+      "description": "Mitchell was the team MVP, and an easy guy to cheer for."
+    },
+    {
+      "title": "Iceberg lettuce recalled in 27 states due to potential cyclospora contamination | CNN",
+      "url": "https://www.cnn.com/2026/07/18/health/cyclospora-taylor-farms-lettuce-recall",
+      "source": "CNN",
+      "published": "2026-07-18T18:06",
+      "description": "Produce supplier Taylor Farms is recalling iceberg lettuce shipped to 27 US states because of potential contamination with cyclospora, the parasite causing thousands of cases of diarrhea across the co"
+    },
     {
       "title": "Nick Fuentes Blurts \u2018Guilty!\u2019 To Bill Maher \u2018Hitler\u2019 Accusation",
       "url": "https://www.mediaite.com/media/entertainment/nick-fuentes-blurts-guilty-to-bill-maher-hitler-accusation/",
@@ -1277,20 +1283,6 @@
       "source": "USA Today",
       "published": "2026-07-18T16:42",
       "description": "Michigan State basketball has reportedly started to show interest in a high-level, near five-star prospect in the 2027 class"
-    },
-    {
-      "title": "Kentucky Wildcats 'locked in' for visit with elite five-star forward",
-      "url": "https://ukwildcatswire.usatoday.com/story/sports/college/kentucky/mens-basketball/2026/07/18/kentucky-wildcats-locked-in-for-visit-with-elite-five-star-forward/90966427007/",
-      "source": "USA Today",
-      "published": "2026-07-18T16:27",
-      "description": "The Kentucky Wildcats will undoubtedly get a shot to impressive Paul Osaruyi, one of the premier power forwards in the Class of 2027."
-    },
-    {
-      "title": "Euro 1972 BMW 3.0CSi",
-      "url": "https://bringatrailer.com/listing/1972-bmw-3-0csi-45/",
-      "source": "Bringatrailer.com",
-      "published": "2026-07-18T16:18",
-      "description": "This 1972 BMW 3.0CSi was first registered in Switzerland and spent time in Holland and Ireland before moving to the US. Refurbished in 2013, the car is finished in Verona over black leather, and power"
     },
     {
       "title": "At the World Cup, has 'VAR' gone too far? Some fans say it's ruining the tournament",
@@ -1370,6 +1362,11 @@
       "source": "WDRB"
     },
     {
+      "title": "Man killed, another hospitalized after downtown Louisville shooting Sunday morning",
+      "url": "https://wdrb.com/news/crime-reports/man-killed-another-hospitalized-after-downtown-louisville-shooting-sunday-morning/article_4e93b10e-fb25-4fce-9db2-ce9a1de5c94b.html",
+      "source": "WDRB"
+    },
+    {
       "title": "US military launches new airstrikes to 'swiftly punish' Iran for deaths of US troops",
       "url": "https://wdrb.com/news/national/us-military-launches-new-airstrikes-to-swiftly-punish-iran-for-deaths-of-us-troops/article_8395a8b6-1229-55b6-a030-f4458ea97fed.html",
       "source": "WDRB"
@@ -1383,101 +1380,96 @@
       "title": "Twin sisters accused of stalking, threatening Louisville corrections officers for weeks",
       "url": "https://wdrb.com/news/crime-reports/twin-sisters-accused-of-stalking-threatening-louisville-corrections-officers-for-weeks/article_8c3102ea-7420-41b6-9b22-521205d91030.html",
       "source": "WDRB"
-    },
-    {
-      "title": "Louisville man accused of tying up, assaulting woman in the Shawnee neighborhood",
-      "url": "https://wdrb.com/news/crime-reports/louisville-man-accused-of-tying-up-assaulting-woman-in-the-shawnee-neighborhood/article_2290215f-6293-452e-a616-04b4f97f357c.html",
-      "source": "WDRB"
     }
   ],
   "github": [
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 231142,
+      "stars": 231173,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-07-19T16:55:32Z"
+      "updated": "2026-07-19T18:16:24Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 217163,
+      "stars": 217177,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-07-19T16:59:24Z"
+      "updated": "2026-07-19T18:12:06Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 185613,
+      "stars": 185616,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-07-19T16:58:01Z"
+      "updated": "2026-07-19T18:00:18Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 162735,
+      "stars": 162737,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-07-19T16:34:36Z"
+      "updated": "2026-07-19T17:40:39Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "The API to search, scrape, and interact with the web at scale. \ud83d\udd25",
-      "stars": 153062,
+      "stars": 153082,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-07-19T17:00:59Z"
+      "updated": "2026-07-19T18:17:14Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 145954,
+      "stars": 145963,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-07-19T17:01:19Z"
+      "updated": "2026-07-19T18:13:10Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 142089,
+      "stars": 142090,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-07-19T16:34:23Z"
+      "updated": "2026-07-19T17:05:03Z"
     },
     {
       "name": "browser-use/browser-use",
       "description": "\ud83c\udf10 Make websites accessible for AI agents. Automate tasks online with ease.",
-      "stars": 105545,
+      "stars": 105549,
       "language": "Python",
       "url": "https://github.com/browser-use/browser-use",
-      "updated": "2026-07-19T16:46:48Z"
+      "updated": "2026-07-19T17:56:57Z"
     },
     {
       "name": "TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "stars": 93671,
+      "stars": 93675,
       "language": "Python",
       "url": "https://github.com/TauricResearch/TradingAgents",
-      "updated": "2026-07-19T16:49:51Z"
+      "updated": "2026-07-19T17:36:16Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 71508,
+      "stars": 71510,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-07-19T16:57:32Z"
+      "updated": "2026-07-19T18:05:20Z"
     },
     {
       "name": "santifer/career-ops",
       "description": "Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications \u2014 runs locally in your AI codi",
-      "stars": 60592,
+      "stars": 60595,
       "language": "JavaScript",
       "url": "https://github.com/santifer/career-ops",
-      "updated": "2026-07-19T16:39:34Z"
+      "updated": "2026-07-19T18:16:32Z"
     },
     {
       "name": "meilisearch/meilisearch",
@@ -1489,8 +1481,8 @@
     }
   ],
   "bittensor": {
-    "price": 196.6,
-    "price_change_24h": 1.0963719327228114,
+    "price": 196.24,
+    "price_change_24h": 0.9263744593669415,
     "active_subnets": 72,
     "total_subnets": 129,
     "top_subnets": [
@@ -1498,168 +1490,168 @@
         "name": "Root",
         "netuid": 0,
         "price": 1.0,
-        "price_usd": 196.6,
+        "price_usd": 196.24,
         "price_change_24h": 0.0,
-        "market_cap": 6100081.0,
-        "liquidity": 6656732.2,
+        "market_cap": 6100084.9,
+        "liquidity": 6656736.1,
         "rank": 0,
-        "buys_24h": 477,
-        "sells_24h": 785,
-        "buyers_24h": 223,
-        "sellers_24h": 198
+        "buys_24h": 479,
+        "sells_24h": 581,
+        "buyers_24h": 226,
+        "sellers_24h": 201
       },
       {
         "name": "Chutes",
         "netuid": 64,
-        "price": 0.078298,
-        "price_usd": 15.3935,
-        "price_change_24h": -0.09,
-        "market_cap": 428172.6,
-        "liquidity": 416518.1,
+        "price": 0.078315,
+        "price_usd": 15.3685,
+        "price_change_24h": -0.08,
+        "market_cap": 428270.5,
+        "liquidity": 416564.2,
         "rank": 1,
-        "buys_24h": 187,
+        "buys_24h": 185,
         "sells_24h": 185,
-        "buyers_24h": 124,
+        "buyers_24h": 122,
         "sellers_24h": 97
       },
       {
         "name": "Targon",
         "netuid": 4,
-        "price": 0.05438,
-        "price_usd": 10.691,
-        "price_change_24h": 1.33,
-        "market_cap": 282026.7,
-        "liquidity": 265156.2,
+        "price": 0.054389,
+        "price_usd": 10.6732,
+        "price_change_24h": 1.32,
+        "market_cap": 282078.4,
+        "liquidity": 265179.4,
         "rank": 2,
-        "buys_24h": 170,
-        "sells_24h": 116,
-        "buyers_24h": 109,
+        "buys_24h": 166,
+        "sells_24h": 115,
+        "buyers_24h": 108,
         "sellers_24h": 42
       },
       {
         "name": "lium.io",
         "netuid": 51,
-        "price": 0.061376,
-        "price_usd": 12.0666,
+        "price": 0.061379,
+        "price_usd": 12.045,
         "price_change_24h": -0.41,
-        "market_cap": 262123.1,
-        "liquidity": 254530.2,
+        "market_cap": 262138.8,
+        "liquidity": 254536.6,
         "rank": 3,
-        "buys_24h": 145,
-        "sells_24h": 138,
-        "buyers_24h": 100,
-        "sellers_24h": 79
+        "buys_24h": 140,
+        "sells_24h": 137,
+        "buyers_24h": 97,
+        "sellers_24h": 78
       },
       {
         "name": "Affine",
         "netuid": 120,
-        "price": 0.057133,
-        "price_usd": 11.2323,
-        "price_change_24h": 0.77,
-        "market_cap": 206113.6,
-        "liquidity": 160170.7,
+        "price": 0.057135,
+        "price_usd": 11.2123,
+        "price_change_24h": 0.76,
+        "market_cap": 206129.4,
+        "liquidity": 160176.6,
         "rank": 4,
-        "buys_24h": 97,
+        "buys_24h": 93,
         "sells_24h": 85,
-        "buyers_24h": 72,
+        "buyers_24h": 71,
         "sellers_24h": 68
       },
       {
         "name": "Score",
         "netuid": 44,
-        "price": 0.036802,
-        "price_usd": 7.2353,
-        "price_change_24h": 1.16,
-        "market_cap": 183601.4,
-        "liquidity": 128340.8,
+        "price": 0.036803,
+        "price_usd": 7.2223,
+        "price_change_24h": 1.15,
+        "market_cap": 183609.1,
+        "liquidity": 128343.7,
         "rank": 5,
-        "buys_24h": 108,
-        "sells_24h": 85,
-        "buyers_24h": 58,
+        "buys_24h": 101,
+        "sells_24h": 82,
+        "buyers_24h": 56,
         "sellers_24h": 36
       },
       {
         "name": "iota",
         "netuid": 9,
         "price": 0.032871,
-        "price_usd": 6.4624,
+        "price_usd": 6.4506,
         "price_change_24h": -0.18,
-        "market_cap": 148796.5,
-        "liquidity": 119778.8,
+        "market_cap": 148794.2,
+        "liquidity": 119778.9,
         "rank": 6,
-        "buys_24h": 43,
+        "buys_24h": 40,
         "sells_24h": 56,
         "buyers_24h": 33,
-        "sellers_24h": 37
+        "sellers_24h": 38
       },
       {
         "name": "Vanta",
         "netuid": 8,
-        "price": 0.029409,
-        "price_usd": 5.7818,
+        "price": 0.02941,
+        "price_usd": 5.7714,
         "price_change_24h": -0.77,
-        "market_cap": 141904.7,
-        "liquidity": 160262.7,
+        "market_cap": 141910.3,
+        "liquidity": 160265.4,
         "rank": 7,
-        "buys_24h": 40,
+        "buys_24h": 35,
         "sells_24h": 47,
-        "buyers_24h": 23,
+        "buyers_24h": 22,
         "sellers_24h": 21
       },
       {
         "name": "deprecated",
         "netuid": 3,
-        "price": 0.0224,
-        "price_usd": 4.4038,
+        "price": 0.022401,
+        "price_usd": 4.3959,
         "price_change_24h": 0.34,
-        "market_cap": 111772.2,
-        "liquidity": 138100.4,
+        "market_cap": 111777.1,
+        "liquidity": 138102.8,
         "rank": 8,
-        "buys_24h": 21,
+        "buys_24h": 17,
         "sells_24h": 33,
-        "buyers_24h": 16,
+        "buyers_24h": 15,
         "sellers_24h": 17
       },
       {
         "name": "Actual",
         "netuid": 95,
         "price": 0.046867,
-        "price_usd": 9.2141,
-        "price_change_24h": 1.74,
-        "market_cap": 107771.8,
-        "liquidity": 57522.5,
+        "price_usd": 9.1972,
+        "price_change_24h": 1.73,
+        "market_cap": 107774.4,
+        "liquidity": 57522.2,
         "rank": 9,
-        "buys_24h": 55,
+        "buys_24h": 52,
         "sells_24h": 81,
-        "buyers_24h": 41,
+        "buyers_24h": 40,
         "sellers_24h": 41
       },
       {
         "name": "NOVA",
         "netuid": 68,
-        "price": 0.021858,
-        "price_usd": 4.2974,
-        "price_change_24h": 0.17,
-        "market_cap": 101726.7,
-        "liquidity": 86273.8,
+        "price": 0.021837,
+        "price_usd": 4.2853,
+        "price_change_24h": 0.07,
+        "market_cap": 101629.7,
+        "liquidity": 86232.4,
         "rank": 10,
-        "buys_24h": 28,
+        "buys_24h": 25,
         "sells_24h": 44,
-        "buyers_24h": 23,
+        "buyers_24h": 22,
         "sellers_24h": 30
       },
       {
         "name": "Gradients",
         "netuid": 56,
-        "price": 0.017367,
-        "price_usd": 3.4144,
-        "price_change_24h": -0.1,
-        "market_cap": 83730.9,
-        "liquidity": 105058.6,
+        "price": 0.017368,
+        "price_usd": 3.4082,
+        "price_change_24h": -0.11,
+        "market_cap": 83732.5,
+        "liquidity": 105059.1,
         "rank": 11,
-        "buys_24h": 17,
+        "buys_24h": 14,
         "sells_24h": 16,
-        "buyers_24h": 12,
+        "buyers_24h": 11,
         "sellers_24h": 12
       }
     ]

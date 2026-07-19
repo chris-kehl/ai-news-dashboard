@@ -191,6 +191,15 @@ html{scrollbar-gutter:stable}
 .pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
 .game-menu-item{padding:8px 14px;font-size:.78rem;color:var(--tx);cursor:pointer;border-radius:4px;white-space:nowrap}
 .game-menu-item:hover{background:var(--bg-sel);color:var(--acc)}
+
+/* ── Mobile Game Controls ── */
+.mobile-ctrl{display:none;justify-content:center;gap:6px;padding:8px 0;flex-shrink:0}
+.dpad{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(2,48px);gap:4px;justify-items:center}
+.dpad .dp-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);border-radius:8px;font-size:1.2rem;width:52px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
+.dpad .dp-btn:active{background:var(--bg-sel);border-color:var(--acc);color:var(--acc)}
+.dpad .dp-empty{visibility:hidden}
+.fire-row{display:flex;gap:6px}
+@media(max-width:768px){.mobile-ctrl{display:flex}}
 </style>
 </head>
 <body>
@@ -464,6 +473,16 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="siStart()">Start Game</button>
           <button class="btn" onclick="siReset()">Reset</button>
         </div>
+        <div class="mobile-ctrl" id="siMobileCtrl">
+          <div class="dpad">
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(0);" onmousedown="siMove(0)">&#9650;</button>
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(-1);" onmousedown="siMove(-1)">&#9664;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();siFire();" onmousedown="siFire()">&#128165;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(1);" onmousedown="siMove(1)">&#9654;</button>
+          </div>
+        </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
       </div>
       <!-- Tetris -->
@@ -478,11 +497,17 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="trStart()">Start Game</button>
           <button class="btn" onclick="trReset()">Reset</button>
         </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
-          <span style="display:inline-block;margin:0 4px">&#8592; &#8594; Move</span>
-          <span style="display:inline-block;margin:0 4px">&#8595; Soft Drop</span>
-          <span style="display:inline-block;margin:0 4px">&#60; Rotate</span>
+        <div class="mobile-ctrl" id="trMobileCtrl">
+          <div class="dpad">
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('up');" onmousedown="trInput('up')">&#8635;</button>
+            <div class="dp-empty"></div>
+            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('left');" onmousedown="trInput('left')">&#9664;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('down');" onmousedown="trInput('down')">&#9660;</button>
+            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('right');" onmousedown="trInput('right')">&#9654;</button>
+          </div>
         </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">&#8592; &#8594; Move | &#8595; Soft Drop | &#8635; Rotate</div>
       </div>
       <!-- Frogger -->
       <div id="gameFrogger" style="display:none">

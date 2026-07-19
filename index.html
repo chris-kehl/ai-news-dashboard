@@ -200,6 +200,11 @@ html{scrollbar-gutter:stable}
 .dpad .dp-empty{visibility:hidden}
 .fire-row{display:flex;gap:6px}
 @media(max-width:768px){.mobile-ctrl{display:flex}}
+.pong-area{display:flex;gap:8px;align-items:stretch;width:100%;max-width:720px;position:relative}
+.pong-slider{display:none;width:44px;background:var(--bg-el);border:1px solid var(--brd);border-radius:8px;touch-action:none;position:relative;flex-shrink:0}
+.pong-slider-track{width:100%;height:100%;position:relative}
+.pong-slider-thumb{width:36px;height:48px;background:var(--acc);border-radius:6px;position:absolute;left:4px;top:50%;transform:translateY(-50%);opacity:.85}
+@media(max-width:768px){.pong-slider{display:block}}
 </style>
 </head>
 <body>
@@ -454,7 +459,12 @@ html{scrollbar-gutter:stable}
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
         </div>
-        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+        <div class="pong-area">
+          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+          <div class="pong-slider" id="pongSlider">
+            <div class="pong-slider-track" id="pongTrack"><div class="pong-slider-thumb" id="pongThumb"></div></div>
+          </div>
+        </div>
         <div class="pong-ctrl">
           <button class="btn" onclick="pongStart()">Start Game</button>
           <button class="btn" onclick="pongReset()">Reset</button>
@@ -1098,6 +1108,13 @@ function pongInit(){
   pongResize();
   pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;});
   pong.canvas.addEventListener('touchmove',function(e){e.preventDefault();var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.touches[0].clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;},{passive:false});
+  var track=$('pongTrack');
+  if(track){
+    function pongSliderMove(e){var rect=track.getBoundingClientRect();var clientY=e.touches?e.touches[0].clientY:e.clientY;var ratio=(clientY-rect.top)/rect.height;if(ratio<0)ratio=0;if(ratio>1)ratio=1;pong.playerY=ratio*(pong.H-pong.paddleH);var thumb=$('pongThumb');if(thumb){var trH=rect.height||2;thumb.style.top=(ratio*(trH-48))+'px';}}
+    track.addEventListener('touchmove',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+    track.addEventListener('touchstart',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+    track.addEventListener('mousemove',pongSliderMove);
+  }
   pongDraw();
 }
 function pongResize(){

@@ -516,7 +516,7 @@ html{scrollbar-gutter:stable}
           <div class="pong-status" id="fgStatus">Click Start to play</div>
           <div class="pong-score">LIVES: <span id="fgLives">3</span></div>
         </div>
-        <canvas id="fgCanvas" class="pong-canvas" width="600" height="720"></canvas>
+        <canvas id="fgCanvas" class="pong-canvas" width="600" height="700"></canvas>
         <div class="pong-ctrl">
           <button class="btn" onclick="fgStart()">Start Game</button>
           <button class="btn" onclick="fgReset()">Reset</button>
@@ -1277,7 +1277,7 @@ function fgResetCars(){
 function fgResetLogs(){
   fg.logs=[];
   for(var row=0;row<5;row++){
-    var laneY=360-row*60;
+    var laneY=320-row*60;
     var count=2+Math.floor(Math.random()*2);
     for(var i=0;i<count;i++){
       fg.logs.push({x:(i*220)+Math.random()*60,y:laneY,w:80+Math.random()*40,h:28,speed:(1+Math.random()*fg.speed)*(row%2===0?1:-1)});
@@ -1293,8 +1293,14 @@ function fgUpdate(){
   var f=fg.frog;
   fg.cars.forEach(function(c){if(f.x+10<c.x+c.w&&f.x+f.w-10>c.x&&f.y+4<c.y+c.h&&f.y+f.h-4>c.y){fgDie();}});
   var onLog=false;
-  if(f.y<360&&f.y>60){fg.logs.forEach(function(l){if(f.x+10>l.x&&f.x<f.x+l.w&&f.y+4>l.y&&f.y+l.h-4<l.y+l.h){onLog=true;f.x+=l.speed;}});if(!onLog){fgDie();}}
-  if(f.y<60){var homeIdx=Math.floor(f.x/120);if(homeIdx>=0&&homeIdx<5&&f.x>homeIdx*120+30&&f.x<homeIdx*120+90){if(fg.home[homeIdx]){fgDie();}else{fg.home[homeIdx]=true;fg.score+=100*fg.level;fg.frog={x:300,y:660,w:30,h:20};$('fgScore').textContent=fg.score;if(fg.home.every(function(h){return h;})){fg.level++;fg.speed+=0.4;fg.home=[false,false,false,false,false];$('fgStatus').textContent='Level '+fg.level+'!';fgResetCars();fgResetLogs();}}}else{fgDie();}}
+  var fc=f.y+f.h/2;
+  if(fc>=60&&fc<360){
+    fg.logs.forEach(function(l){
+      if(f.x+f.w/2>l.x&&f.x+f.w/2<l.x+l.w&&fc>l.y&&fc<l.y+l.h){onLog=true;f.x+=l.speed;}
+    });
+    if(!onLog){fgDie();}
+  }
+  if(fc<60&&f.y+f.h>10){var homeIdx=Math.floor(f.x/120);if(homeIdx>=0&&homeIdx<5&&f.x>homeIdx*120+30&&f.x<homeIdx*120+90){if(fg.home[homeIdx]){fgDie();}else{fg.home[homeIdx]=true;fg.score+=100*fg.level;fg.frog={x:300,y:660,w:30,h:20};$('fgScore').textContent=fg.score;if(fg.home.every(function(h){return h;})){fg.level++;fg.speed+=0.4;fg.home=[false,false,false,false,false];$('fgStatus').textContent='Level '+fg.level+'!';fgResetCars();fgResetLogs();}}}else{fgDie();}}
 }
 function fgDie(){fg.lives--;if(fg.lives<=0){fg.running=false;$('fgStatus').textContent='Game Over! Score: '+fg.score;return;}fg.frog={x:300,y:660,w:30,h:20};$('fgLives').textContent=fg.lives;}
 function fgDraw(){

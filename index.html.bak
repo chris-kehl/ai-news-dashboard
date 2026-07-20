@@ -101,11 +101,11 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .fc{display:flex;flex-wrap:wrap;gap:6px 12px;padding:6px 0;font-size:0.78rem;color:var(--tx2)}
 .fc span{white-space:nowrap}
 .fc .w{color:#fca5a5}.fc .c{color:#93c5fd}
-.market-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
-@media(min-width:400px){.market-stats{grid-template-columns:repeat(4,1fr)}}
-.market-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
-.market-stat .num{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
-.market-stat .lbl{font-size:0.6rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
+.bittensor-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:10px}
+@media(min-width:400px){.bittensor-stats{grid-template-columns:repeat(4,1fr)}}
+.bittensor-stat{background:var(--bg-el);border:1px solid var(--brd);padding:8px;text-align:center;border-radius:4px}
+.bittensor-stat .num{font-family:'JetBrains Mono';font-size:0.85rem;font-weight:700}
+.bittensor-stat .lbl{font-size:0.6rem;color:var(--tx3);text-transform:uppercase;margin-top:2px}
 .subnet-grid{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:5px 0;font-size:0.62rem;text-transform:uppercase;color:var(--tx3);border-bottom:1px solid var(--brd)}
 .subnet-row{display:grid;grid-template-columns:28px 1fr 1fr;gap:6px;padding:4px 0;font-size:0.7rem;border-bottom:1px solid rgba(255,255,255,0.03);align-items:center}
 @media(min-width:768px){.subnet-row{font-size:0.74rem}}
@@ -191,20 +191,6 @@ html{scrollbar-gutter:stable}
 .pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
 .game-menu-item{padding:8px 14px;font-size:.78rem;color:var(--tx);cursor:pointer;border-radius:4px;white-space:nowrap}
 .game-menu-item:hover{background:var(--bg-sel);color:var(--acc)}
-
-/* ── Mobile Game Controls ── */
-.mobile-ctrl{display:none;justify-content:center;gap:6px;padding:8px 0;flex-shrink:0}
-.dpad{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(2,48px);gap:4px;justify-items:center}
-.dpad .dp-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);border-radius:8px;font-size:1.2rem;width:52px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
-.dpad .dp-btn:active{background:var(--bg-sel);border-color:var(--acc);color:var(--acc)}
-.dpad .dp-empty{visibility:hidden}
-.fire-row{display:flex;gap:6px}
-@media(max-width:768px){.mobile-ctrl{display:flex}}
-.pong-area{display:flex;gap:8px;align-items:stretch;width:100%;max-width:720px;position:relative}
-.pong-slider{display:none;width:44px;background:var(--bg-el);border:1px solid var(--brd);border-radius:8px;touch-action:none;position:relative;flex-shrink:0}
-.pong-slider-track{width:100%;height:100%;position:relative}
-.pong-slider-thumb{width:36px;height:48px;background:var(--acc);border-radius:6px;position:absolute;left:4px;top:50%;transform:translateY(-50%);opacity:.85}
-@media(max-width:768px){.pong-slider{display:block}}
 </style>
 </head>
 <body>
@@ -268,8 +254,8 @@ html{scrollbar-gutter:stable}
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-local" id="tab-btn-local" tabindex="-1">Local</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-world" id="tab-btn-world" tabindex="-1">World</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
-    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sticky" id="tab-btn-sticky" tabindex="-1">CNBC · Yahoo · Bloomberg</button>
-    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="0">Games vs Chutes</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-stocks" id="tab-btn-stocks" tabindex="-1">Stocks</button>
+    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="0">Chutes</button>
   </div>
 </nav>
 
@@ -281,8 +267,8 @@ html{scrollbar-gutter:stable}
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#128200;</span> MAJOR INDEXES</div>
-          <div class="card-bd" id="major-indexes"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+          <div class="card-bd" id="bittensor"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
@@ -391,8 +377,8 @@ html{scrollbar-gutter:stable}
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#128172;</span> MARKET FUTURES</div>
-          <div class="card-bd" id="futures-tech"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#129302;</span> BITTENSOR</div>
+          <div class="card-bd" id="bittensor-tech"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd"><span>&#128202;</span> TRADING SIGNALS</div>
@@ -418,29 +404,25 @@ html{scrollbar-gutter:stable}
     </div>
   </section>
 
-  <!-- STICKY TAB: CNBC · Yahoo Finance · Bloomberg · WSB -->
-  <section id="tab-sticky" role="tabpanel" aria-labelledby="tab-btn-sticky" class="tab-panel" hidden>
+  <!-- STOCKS TAB -->
+  <section id="tab-stocks" role="tabpanel" aria-labelledby="tab-btn-stocks" class="tab-panel" hidden>
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#128200;</span> CNBC <span data-lbl>LIVE</span></div>
-          <div class="card-bd" id="sticky-cnbc"><div class="ld">Loading...</div></div>
-        </div>
-        <div class="card">
-          <div class="card-hd"><span>&#128176;</span> WALL STREET BETS <span data-lbl>REDDIT</span></div>
-          <div class="card-bd" id="sticky-wsb"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#128200;</span> HOT STOCKS</div>
+          <div class="card-bd" id="hot-stocks-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#128200;</span> YAHOO FINANCE <span data-lbl>LIVE</span></div>
-          <div class="card-bd" id="sticky-yahoo"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#128200;</span> BUSINESS NEWS</div>
+          <div class="card-bd" id="business-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <div class="card-hd"><span>&#128200;</span> BLOOMBERG <span data-lbl>LIVE</span></div>
-          <div class="card-bd" id="sticky-bloomberg"><div class="ld">Loading...</div></div>
+          <div class="card-hd"><span>&#128200;</span> TOP MOVERS</div>
+          <div class="card-bd" id="top-movers-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
     </div>
@@ -458,17 +440,11 @@ html{scrollbar-gutter:stable}
       <!-- Pong -->
       <div id="gamePong">
         <div class="pong-hud">
-          <div class="pong-score">LEVEL: <span id="pongLevel">1</span></div>
           <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
         </div>
-        <div class="pong-area">
-          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
-          <div class="pong-slider" id="pongSlider">
-            <div class="pong-slider-track" id="pongTrack"><div class="pong-slider-thumb" id="pongThumb"></div></div>
-          </div>
-        </div>
+        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
         <div class="pong-ctrl">
           <button class="btn" onclick="pongStart()">Start Game</button>
           <button class="btn" onclick="pongReset()">Reset</button>
@@ -487,16 +463,6 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="siStart()">Start Game</button>
           <button class="btn" onclick="siReset()">Reset</button>
         </div>
-        <div class="mobile-ctrl" id="siMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(0);" onmousedown="siMove(0)">&#9650;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(-1);" onmousedown="siMove(-1)">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siFire();" onmousedown="siFire()">&#128165;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(1);" onmousedown="siMove(1)">&#9654;</button>
-          </div>
-        </div>
         <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
       </div>
       <!-- Tetris -->
@@ -511,22 +477,26 @@ html{scrollbar-gutter:stable}
           <button class="btn" onclick="trStart()">Start Game</button>
           <button class="btn" onclick="trReset()">Reset</button>
         </div>
-        <div class="mobile-ctrl" id="trMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('up');" onmousedown="trInput('up')">&#8635;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('left');" onmousedown="trInput('left')">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('down');" onmousedown="trInput('down')">&#9660;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('right');" onmousedown="trInput('right')">&#9654;</button>
-          </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
+          <span style="display:inline-block;margin:0 4px">&#8592; &#8594; Move</span>
+          <span style="display:inline-block;margin:0 4px">&#8595; Soft Drop</span>
+          <span style="display:inline-block;margin:0 4px">&#60; Rotate</span>
         </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">&#8592; &#8594; Move | &#8595; Soft Drop | &#8635; Rotate</div>
       </div>
       <!-- Frogger -->
       <div id="gameFrogger" style="display:none">
-        <div style="width:100%;max-width:720px;height:400px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;margin-top:10px">
-          <div style="font-size:3rem;font-weight:800;color:var(--tx3);text-align:center;letter-spacing:6px">UNDER<br>CONSTRUCTION</div>
+        <div class="pong-hud">
+          <div class="pong-score">SCORE: <span id="fgScore">0</span></div>
+          <div class="pong-status" id="fgStatus">Click Start to play</div>
+          <div class="pong-score">LIVES: <span id="fgLives">3</span></div>
+        </div>
+        <canvas id="fgCanvas" class="pong-canvas" width="600" height="720"></canvas>
+        <div class="pong-ctrl">
+          <button class="btn" onclick="fgStart()">Start Game</button>
+          <button class="btn" onclick="fgReset()">Reset</button>
+        </div>
+        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
+          Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
         </div>
       </div>
     </div>
@@ -605,7 +575,7 @@ var tickerItems=[];
 var _lastCacheLoad=0;
 
 /* ===== TAB SWITCHING (W3C Tabs Pattern) ===== */
-var tabs=['dashboard','local','world','tech','sticky','chutes'];
+var tabs=['dashboard','local','world','tech','stocks','chutes'];
 var currentTab='chutes';
 
 function switchTab(tabId){
@@ -1016,14 +986,6 @@ function renderAll(d){
   var sig=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
   $('signals').innerHTML=sig;
   var st=$('signals-tech');if(st)st.innerHTML=sig;
-
-  /* ===== STICKY TAB: CNBC · Yahoo · Bloomberg · WSB ===== */
-  var sticky=d.sticky||{};
-  var scn=sticky.cnbc||[],syf=sticky.yahoo_finance||[],sbl=sticky.bloomberg||[],swb=sticky.wallstreetbets||[];
-  var sct=$('sticky-cnbc');if(sct)sct.innerHTML=scn.map(makeItemHTML).join('')||'<div class="ld">No CNBC data</div>';
-  var syt=$('sticky-yahoo');if(syt)syt.innerHTML=syf.map(makeItemHTML).join('')||'<div class="ld">No Yahoo data</div>';
-  var sbt=$('sticky-bloomberg');if(sbt)sbt.innerHTML=sbl.map(makeItemHTML).join('')||'<div class="ld">No Bloomberg data</div>';
-  var swt=$('sticky-wsb');if(swt)swt.innerHTML=swb.map(function(p){return'<div class="item"><a href="'+p.url+'" class="item-title" target="_blank">'+p.title+'</a><div class="item-meta"><span class="score">↑ '+p.score+'</span><span>r/wallstreetbets</span></div></div>'}).join('')||'<div class="ld">No WSB data</div>';
 }
 
 async function loadData(){
@@ -1092,7 +1054,7 @@ function renderLocalFromClient(){
 }
 
 /* ===== PONG GAME ===== */
-var pong={running:false,level:1,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15,baseSpeed:3.5,compReaction:0.08};
+var pong={running:false,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15};
 function pongInit(){
   pong.canvas=$('pongCanvas');
   if(!pong.canvas)return;
@@ -1100,13 +1062,6 @@ function pongInit(){
   pongResize();
   pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;});
   pong.canvas.addEventListener('touchmove',function(e){e.preventDefault();var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.touches[0].clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;},{passive:false});
-  var track=$('pongTrack');
-  if(track){
-    function pongSliderMove(e){var rect=track.getBoundingClientRect();var clientY=e.touches?e.touches[0].clientY:e.clientY;var ratio=(clientY-rect.top)/rect.height;if(ratio<0)ratio=0;if(ratio>1)ratio=1;pong.playerY=ratio*(pong.H-pong.paddleH);var thumb=$('pongThumb');if(thumb){var trH=rect.height||2;thumb.style.top=(ratio*(trH-48))+'px';}}
-    track.addEventListener('touchmove',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
-    track.addEventListener('touchstart',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
-    track.addEventListener('mousemove',pongSliderMove);
-  }
   pongDraw();
 }
 function pongResize(){
@@ -1120,22 +1075,20 @@ function pongStart(){
   if(pong.running)return;
   pong.running=true;pong.winner=null;
   pongResetBall();
-  var st=$('pongStatus');if(st)st.textContent='Level '+pong.level+' — First to 5 wins!';
+  var st=$('pongStatus');if(st)st.textContent='First to 5 wins!';
   pongLoop();
 }
 function pongReset(){
   pong.running=false;if(pong.animId)cancelAnimationFrame(pong.animId);
-  pong.level=1;pong.scorePlayer=0;pong.scoreComp=0;pong.winner=null;
+  pong.scorePlayer=0;pong.scoreComp=0;pong.winner=null;
   $('scorePlayer').textContent='0';$('scoreComp').textContent='0';
-  $('pongLevel').textContent='1';
   $('pongStatus').textContent='Click Start to play';
   pong.playerY=195;pong.compY=195;pongResetBall();pongDraw();
 }
 function pongResetBall(){
   pong.ball.x=pong.W/2;pong.ball.y=pong.H/2;
-  var s=pong.baseSpeed+(pong.level-1)*0.6;
-  pong.ball.dx=(Math.random()>0.5?1:-1)*(s+Math.random()*1.5);
-  pong.ball.dy=(Math.random()>0.5?1:-1)*(s-1+Math.random()*1.5);
+  pong.ball.dx=(Math.random()>0.5?1:-1)*(3.5+Math.random()*1.5);
+  pong.ball.dy=(Math.random()>0.5?1:-1)*(2.5+Math.random()*1.5);
 }
 function pongLoop(){
   if(!pong.running)return;
@@ -1147,9 +1100,7 @@ function pongUpdate(){
   if(b.y-b.r<0||b.y+b.r>pong.H){b.dy=-b.dy;}
   var compCenter=pong.compY+pong.paddleH/2;
   var target=b.y;var diff=target-compCenter;
-  var react=pong.compReaction+(pong.level-1)*0.03;
-  if(react>0.18)react=0.18;
-  pong.compY+=diff*react;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
+  pong.compY+=diff*0.08;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
   if(b.x-b.r<pong.paddleW && b.y>pong.compY && b.y<pong.compY+pong.paddleH){b.dx=Math.abs(b.dx)+pong.speedInc;b.x=pong.paddleW+b.r;}
   if(b.x+b.r>pong.W-pong.paddleW && b.y>pong.playerY && b.y<pong.playerY+pong.paddleH){b.dx=-(Math.abs(b.dx)+pong.speedInc);b.x=pong.W-pong.paddleW-b.r;}
   if(b.x<0){pong.scorePlayer++;$('scorePlayer').textContent=pong.scorePlayer;pongResetBall();if(pong.scorePlayer>=5){pongWin('player');}}
@@ -1159,12 +1110,7 @@ function pongWin(winner){
   pong.running=false;
   pong.winner=winner;
   var st=$('pongStatus');
-  if(st)st.textContent=winner==='player'?'You win Level '+pong.level+'!'+' Level '+(pong.level+1)+' next.':'Computer wins Level '+pong.level+'! Game Over.';
-  if(winner==='player'){
-    pong.level++;
-    $('pongLevel').textContent=pong.level;
-    setTimeout(function(){if(!pong.running){pong.scorePlayer=0;pong.scoreComp=0;$('scorePlayer').textContent='0';$('scoreComp').textContent='0';pongStart();}},1800);
-  }
+  if(st)st.textContent=winner==='player'?'You win!':'Computer wins!';
 }
 function pongDraw(){
   var ctx=pong.ctx;if(!ctx)return;
@@ -1174,7 +1120,7 @@ function pongDraw(){
   ctx.fillStyle='#f7a51d';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
   ctx.fillStyle='#e8eaed';ctx.fillRect(0,pong.compY,pong.paddleW,pong.paddleH);
   ctx.fillStyle='#f7a51d';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);
-  if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'LEVEL '+pong.level+' COMPLETE!':'GAME OVER',pong.W/2,pong.H/2);}
+  if(pong.winner){ctx.fillStyle='#e8eaed';ctx.font='bold 28px Inter';ctx.textAlign='center';ctx.fillText(pong.winner==='player'?'YOU WIN!':'COMPUTER WINS!',pong.W/2,pong.H/2);}
 }
 
 /* ===== GAME SWITCHER ===== */
@@ -1241,7 +1187,7 @@ function siDraw(){
   ctx.fillStyle='#ef4444';
   si.bombs.forEach(function(b){ctx.beginPath();ctx.arc(b.x,b.y,3,0,Math.PI*2);ctx.fill();});
 }
-document.addEventListener('keydown',function(e){if(activeGame!=='invaders')return;if(['ArrowLeft','ArrowRight','ArrowUp',' '].indexOf(e.key)>-1)e.preventDefault();if(e.key==='ArrowLeft'){si.px=Math.max(0,si.px-20);}if(e.key==='ArrowRight'){si.px=Math.min(si.W-si.pw,si.px+20);}if(e.key===' '||e.key==='ArrowUp'){si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}});
+document.addEventListener('keydown',function(e){if(activeGame!=='invaders')return;if(['ArrowLeft','ArrowRight',' '].indexOf(e.key)>-1)e.preventDefault();if(e.key==='ArrowLeft'){si.px=Math.max(0,si.px-20);}if(e.key==='ArrowRight'){si.px=Math.min(si.W-si.pw,si.px+20);}if(e.key===' '){si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}});
 
 /* ===== TETRIS ===== */
 var tr={running:false,score:0,level:1,lines:0,W:360,H:720,canvas:null,ctx:null,grid:[],cur:null,next:null,dropTimer:0,dropInterval:800,lastDrop:0,gameOver:false,animId:null,colors:{'I':'#ef4444','O':'#f7a51d','T':'#3b82f6','S':'#22c55e','Z':'#8b5cf6','J':'#06b6d4','L':'#f97316'}};
@@ -1270,58 +1216,53 @@ function trDraw(){
 document.addEventListener('keydown',function(e){if(activeGame!=='tetris'||tr.gameOver||!tr.running)return;if(['ArrowLeft','ArrowRight','ArrowDown','ArrowUp',' '].indexOf(e.key)>-1)e.preventDefault();if(e.key==='ArrowLeft'){tr.cur.x--;if(trCollide())tr.cur.x++;}if(e.key==='ArrowRight'){tr.cur.x++;if(trCollide())tr.cur.x--;}if(e.key==='ArrowDown'){trDrop();}if(e.key==='ArrowUp'||e.key===' '){trRotate();}});
 
 /* ===== FROGGER ===== */
-var fg={running:false,score:0,lives:3,W:600,H:700,canvas:null,ctx:null,frog:{x:285,y:660,w:30,h:20},cars:[],logs:[],home:[false,false,false,false,false],level:1,speed:2,animId:null,lastUpdate:0};
-var fgY={home:10,water:60,street:360,safe:660};
-var fgL=[0,40,100,160,220,280,340];
-var fgH=40,fgDrop=60;
+var fg={running:false,score:0,lives:3,W:600,H:720,canvas:null,ctx:null,frog:{x:300,y:660,w:30,h:20},cars:[],logs:[],home:[false,false,false,false,false],level:1,speed:2,animId:null,lastUpdate:0};
 function fgInit(){fg.canvas=$('fgCanvas');if(!fg.canvas)return;fg.ctx=fg.canvas.getContext('2d');fgResize();fgDraw();}
-function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*1.15;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
-function fgResetCars(){fg.cars=[];for(var row=0;row<5;row++){var Y=fgL[row+1]+(fgH-30)/2;var cnt=2+Math.floor(Math.random()*2);for(var i=0;i<cnt;i++){fg.cars.push({x:(i*220)+Math.random()*60,y:Y,w:50+Math.random()*30,h:24,speed:(1.2+Math.random()*fg.speed)*(row%2===0?1:-1)});}}}
-function fgResetLogs(){fg.logs=[];for(var row=0;row<5;row++){var Y=fgL[row+1]+(fgH-24)/2;var cnt=2+Math.floor(Math.random()*2);for(var i=0;i<cnt;i++){fg.logs.push({x:(i*240)+Math.random()*80,y:Y,w:100+Math.random()*50,h:24,speed:(0.8+Math.random()*fg.speed)*(row%2===0?1:-1)});}}}
-function fgStart(){if(fg.running)return;fg.running=true;fg.score=0;fg.lives=3;fg.level=1;fg.speed=2;fg.home=[false,false,false,false,false];fg.frog={x:285,y:660,w:30,h:20};fgResetCars();fgResetLogs();$('fgScore').textContent='0';$('fgLives').textContent='3';$('fgStatus').textContent='Get home!';fg.lastUpdate=performance.now();fgLoop();}
-function fgReset(){fg.running=false;if(fg.animId)cancelAnimationFrame(fg.animId);fg.score=0;fg.lives=3;fg.level=1;fg.speed=2;fg.home=[false,false,false,false,false];fg.frog={x:285,y:660,w:30,h:20};fg.cars=[];fg.logs=[];$('fgScore').textContent='0';$('fgLives').textContent='3';$('fgStatus').textContent='Click Start to play';fgDraw();}
+function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);var availH=window.innerHeight-290;var wantH=maxW*1.2;var h=Math.min(availH,wantH);c.style.width=maxW+'px';c.style.height=h+'px';}
+function fgResetCars(){
+  fg.cars=[];
+  for(var row=0;row<5;row++){
+    var laneY=fg.H-100-row*60;
+    var count=2+Math.floor(Math.random()*2);
+    for(var i=0;i<count;i++){
+      fg.cars.push({x:(i*240)+Math.random()*80,y:laneY,w:50+Math.random()*30,h:24,speed:(1+Math.random()*fg.speed)*(row%2===0?1:-1),type:row%3});
+    }
+  }
+}
+function fgResetLogs(){
+  fg.logs=[];
+  for(var row=0;row<5;row++){
+    var laneY=360-row*60;
+    var count=2+Math.floor(Math.random()*2);
+    for(var i=0;i<count;i++){
+      fg.logs.push({x:(i*220)+Math.random()*60,y:laneY,w:80+Math.random()*40,h:28,speed:(1+Math.random()*fg.speed)*(row%2===0?1:-1)});
+    }
+  }
+}
+function fgStart(){if(fg.running)return;fg.running=true;fg.score=0;fg.lives=3;fg.level=1;fg.speed=2;fg.home=[false,false,false,false,false];fg.frog={x:300,y:660,w:30,h:20};fgResetCars();fgResetLogs();$('fgScore').textContent='0';$('fgLives').textContent='3';$('fgStatus').textContent='Get home!';fg.lastUpdate=performance.now();fgLoop();}
+function fgReset(){fg.running=false;if(fg.animId)cancelAnimationFrame(fg.animId);fg.score=0;fg.lives=3;fg.level=1;fg.speed=2;fg.home=[false,false,false,false,false];fg.frog={x:300,y:660,w:30,h:20};fg.cars=[];fg.logs=[];$('fgScore').textContent='0';$('fgLives').textContent='3';$('fgStatus').textContent='Click Start to play';fgDraw();}
 function fgLoop(ts){if(!fg.running)return;var now=ts||performance.now();if(now-fg.lastUpdate>16){fg.lastUpdate=now;fgUpdate();}fgDraw();fg.animId=requestAnimationFrame(fgLoop);}
-function fgNearestLaneY(y){var best=660;var d=999;for(var i=0;i<fgL.length;i++){var D=Math.abs(y-fgL[i]);if(D<d){d=D;best=fgL[i];}}return best;}
-function fgLaneIdx(y){for(var i=0;i<fgL.length;i++){if(Math.abs(y-fgL[i])<15)return i;}return 6;}
 function fgUpdate(){
   fg.cars.forEach(function(c){c.x+=c.speed;if(c.x>fg.W+100)c.x=-100;if(c.x<-100)c.x=fg.W+100;});
   fg.logs.forEach(function(l){l.x+=l.speed;if(l.x>fg.W+150)l.x=-150;if(l.x<-150)l.x=fg.W+150;});
   var f=fg.frog;
-  var row=fgLaneIdx(f.y);
-  if(row>=1&&row<=5){/*water*/
-    var onLog=false;
-    fc=f.y+f.h/2;
-    fg.logs.forEach(function(l){if(f.x+f.w/2>l.x&&f.x+f.w/2<l.x+l.w&&Math.abs(fc-(l.y+l.h/2))<15){onLog=true;f.x+=l.speed;}});
-    if(!onLog){fgDie();}
-    if(f.x<0||f.x+f.w>fg.W){fgDie();}
-  }else if(row===0){/*home*/
-    var hx=Math.floor(f.x/120);
-    if(hx>=0&&hx<5&&f.x>hx*120+35&&f.x+f.w<hx*120+85){if(fg.home[hx]){fgDie();}else{fg.home[hx]=true;fg.score+=100*fg.level;fg.frog={x:285,y:660,w:30,h:20};$('fgScore').textContent=fg.score;if(fg.home.every(function(h){return h;})){fg.level++;fg.speed+=0.4;fg.home=[false,false,false,false,false];$('fgStatus').textContent='Level '+fg.level+'!';fgResetCars();fgResetLogs();}}}else{fgDie();}
-  }else if(row>=7&&row<=10){/*street*/
-    fg.cars.forEach(function(c){if(f.x+6<c.x+c.w&&f.x+f.w-6>c.x&&f.y+4<c.y+c.h&&f.y+f.h-4>c.y){fgDie();}});
-  }
+  fg.cars.forEach(function(c){if(f.x+10<c.x+c.w&&f.x+f.w-10>c.x&&f.y+4<c.y+c.h&&f.y+f.h-4>c.y){fgDie();}});
+  var onLog=false;
+  if(f.y<360&&f.y>60){fg.logs.forEach(function(l){if(f.x+10>l.x&&f.x<f.x+l.w&&f.y+4>l.y&&f.y+l.h-4<l.y+l.h){onLog=true;f.x+=l.speed;}});if(!onLog){fgDie();}}
+  if(f.y<60){var homeIdx=Math.floor(f.x/120);if(homeIdx>=0&&homeIdx<5&&f.x>homeIdx*120+30&&f.x<homeIdx*120+90){if(fg.home[homeIdx]){fgDie();}else{fg.home[homeIdx]=true;fg.score+=100*fg.level;fg.frog={x:300,y:660,w:30,h:20};$('fgScore').textContent=fg.score;if(fg.home.every(function(h){return h;})){fg.level++;fg.speed+=0.4;fg.home=[false,false,false,false,false];$('fgStatus').textContent='Level '+fg.level+'!';fgResetCars();fgResetLogs();}}}else{fgDie();}}
 }
-function fgDie(){fg.lives--;if(fg.lives<=0){fg.running=false;$('fgStatus').textContent='Game Over! Score: '+fg.score;return;}fg.frog={x:285,y:660,w:30,h:20};$('fgLives').textContent=fg.lives;}
+function fgDie(){fg.lives--;if(fg.lives<=0){fg.running=false;$('fgStatus').textContent='Game Over! Score: '+fg.score;return;}fg.frog={x:300,y:660,w:30,h:20};$('fgLives').textContent=fg.lives;}
 function fgDraw(){
   var ctx=fg.ctx;if(!ctx)return;
   ctx.fillStyle='#0a0c10';ctx.fillRect(0,0,fg.W,fg.H);
-  /*home row*/ctx.fillStyle='#1a2e1a';ctx.fillRect(0,fgY.home,fg.W,50);
-  /*water row*/ ctx.fillStyle='#111318';ctx.fillRect(0,fgY.water,fg.W,300);
-  for(var i=0;i<5;i++){ctx.fillStyle='#1c5e1c';ctx.fillRect(i*120+15,fgY.home+5,90,40);ctx.fillStyle='#22c55e';if(fg.home[i]){ctx.fillRect(i*120+45,fgY.home+12,30,26);}ctx.fillStyle='#1c5e1c';}
-  /*safe*/      ctx.fillStyle='#2a3a1a';ctx.fillRect(0,360,fg.W,50);
-  /*street*/     ctx.fillStyle='#1a1a1a';ctx.fillRect(0,410,fg.W,250);
-  /*start*/      ctx.fillStyle='#2a3a1a';ctx.fillRect(0,fgY.safe,fg.W,40);
-  /*logs*/       ctx.fillStyle='#5c3a1a';fg.logs.forEach(function(l){ctx.fillRect(l.x,l.y,l.w,l.h);ctx.fillStyle='#7a522a';ctx.fillRect(l.x+2,l.y+2,l.w-4,l.h-4);ctx.fillStyle='#5c3a1a';});
-  /*cars*/       fg.cars.forEach(function(c){var ca=['#ef4444','#3b82f6','#f59e0b','#a855f7'][c.type%4];ctx.fillStyle=ca;ctx.fillRect(c.x,c.y,c.w,c.h);ctx.fillStyle='#fff';ctx.fillRect(c.x+4,c.y+4,c.w-8,c.h-8);ctx.fillStyle=ca;});
-  /*frog*/       var f=fg.frog;ctx.fillStyle='#22c55e';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2,f.w/2,f.h/2,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#4ade80';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2-2,f.w/3,f.h/3,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#1a3a1a';for(var i=0;i<5;i++){ctx.fillRect(i*120+10,10,100,40);ctx.fillStyle='#22c55e';if(fg.home[i]){ctx.fillRect(i*120+45,20,30,20);}ctx.fillStyle='#1a3a1a';}
+  ctx.fillStyle='#111318';ctx.fillRect(0,60,fg.W,300);
+  ctx.fillStyle='#f7a51d';ctx.fillRect(0,360,fg.W,fg.H-360);
+  ctx.fillStyle='#5c3a1a';fg.logs.forEach(function(l){ctx.fillRect(l.x,l.y,l.w,l.h);});
+  ctx.fillStyle='#ef4444';fg.cars.forEach(function(c){ctx.fillRect(c.x,c.y,c.w,c.h);ctx.fillStyle='#b91c1c';ctx.fillRect(c.x+4,c.y+4,c.w-8,c.h-8);ctx.fillStyle='#ef4444';});
+  var f=fg.frog;ctx.fillStyle='#22c55e';ctx.beginPath();ctx.ellipse(f.x+f.w/2,f.y+f.h/2,f.w/2,f.h/2,0,0,Math.PI*2);ctx.fill();
 }
-document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var Sp=12;if(e.key==='ArrowUp'){fg.frog.y=Math.max(fg.frog.y-fgDrop,fgY.home);}if(e.key==='ArrowDown'){fg.frog.y=Math.min(fg.frog.y+fgDrop,fgY.safe);}if(e.key==='ArrowLeft'){fg.frog.x-=Sp;}if(e.key==='ArrowRight'){fg.frog.x+=Sp;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;});
-
-/* Mobile touch control helpers */
-function siMove(dir){if(activeGame!=='invaders')return;if(dir===-1){si.px=Math.max(0,si.px-20);}else if(dir===1){si.px=Math.min(si.W-si.pw,si.px+20);}}
-function siFire(){if(activeGame!=='invaders')return;si.bullets.push({x:si.px+si.pw/2,y:si.H-20,hit:false});}
-function trInput(act){if(activeGame!=='tetris'||tr.gameOver||!tr.running)return;if(act==='left'){tr.cur.x--;if(trCollide())tr.cur.x++;}else if(act==='right'){tr.cur.x++;if(trCollide())tr.cur.x--;}else if(act==='down'){trDrop();}else if(act==='up'){trRotate();}}
-function fgInput(dir){if(activeGame!=='frogger'||!fg.running)return;if(dir==='up'){fg.frog.y=Math.max(fg.frog.y-fgDrop,fgY.home);}if(dir==='down'){fg.frog.y=Math.min(fg.frog.y+fgDrop,fgY.safe);}if(dir==='left'){fg.frog.x-=12;}if(dir==='right'){fg.frog.x+=12;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;}
+document.addEventListener('keydown',function(e){if(activeGame!=='frogger'||!fg.running)return;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].indexOf(e.key)>-1)e.preventDefault();var s=40;if(e.key==='ArrowUp'){fg.frog.y-=s;}if(e.key==='ArrowDown'){fg.frog.y+=s;}if(e.key==='ArrowLeft'){fg.frog.x-=s;}if(e.key==='ArrowRight'){fg.frog.x+=s;}if(fg.frog.x<0)fg.frog.x=0;if(fg.frog.x>fg.W-fg.frog.w)fg.frog.x=fg.W-fg.frog.w;if(fg.frog.y<0)fg.frog.y=0;if(fg.frog.y>fg.H-fg.frog.h)fg.frog.y=fg.H-fg.frog.h;});
 
 /* Events */
 $('locInput').addEventListener('click',function(e){if(this.readOnly){activateSearchMode()}});

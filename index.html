@@ -985,6 +985,11 @@ function renderAll(d){
   $('bittensor').innerHTML=bh;
   var btt=$('bittensor-tech');if(btt)btt.innerHTML=bh;
 
+  /* Futures for tech tab */
+  var fut=(d.futures||[]).slice(0,IS_MOBILE?4:6);
+  var fth=fut.map(function(f){return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+f.symbol+'</span> <span class="'+(f.change_percent>=0?'up':'dn')+'">'+(f.change_percent>=0?'+':'')+f.change_percent.toFixed(1)+'%</span> $'+f.price+'</div>'}).join('')||'<div class="ld">No futures data</div>';
+  var ft=$('futures-tech');if(ft)ft.innerHTML=fth;
+
   var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
   var rh=rp.map(makeRedditHTML).join('')||'<div class="ld">No Reddit data</div>';
   $('reddit-posts').innerHTML=rh;

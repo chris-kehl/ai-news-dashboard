@@ -1032,7 +1032,12 @@ function renderAll(d){
 }
 
 async function loadData(){
-  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);}
+  /* Show cached data immediately so user never stares at Loading */
+  var cached=null;
+  try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
+  if(cached){try{tickerItems=(cached.ticker||{}).items||[];renderAll(cached);}catch(e){console.error('render cached',e);}}
+  /* Fetch fresh */
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);try{localStorage.setItem('dash_data',JSON.stringify(d));}catch(e){}}
   catch(e){console.error('loadData',e)}
 }
 

@@ -16,7 +16,7 @@ from x_scraper import get_world_x_posts
 from business_scraper import get_business_data
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
-from stocks_scraper import get_stocks_data, generate_ticker_json
+from stocks_scraper import get_stocks_data, generate_ticker_json, get_futures_data
 from alpha_vantage_scraper import get_av_ticker_sentiment_items, add_av_to_ticker
 from defense_scraper import get_defense_data
 from weather_scraper import get_weather
@@ -77,7 +77,9 @@ def build_dashboard_data():
 
     print("\n[7/13] Stocks & ticker...")
     stocks_data = get_stocks_data()
+    futures_data = get_futures_data()
     ticker_data = generate_ticker_json()
+
     # Inject AV sentiment into ticker items
     enriched_items = add_av_to_ticker(ticker_data.get("items", []))
     ticker_data["items"] = enriched_items
@@ -143,6 +145,7 @@ def build_dashboard_data():
         "github": github_repos,
         "bittensor": bittensor_data,
         "sticky": sticky_data,
+        "futures": futures_data,
     }
 
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")

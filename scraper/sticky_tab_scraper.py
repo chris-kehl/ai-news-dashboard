@@ -52,8 +52,10 @@ def get_yahoo_finance(limit=8):
     return _extract_rss_items("https://finance.yahoo.com/news/rssindex", limit, "Yahoo Finance")
 
 # ===== Bloomberg =====
+import os, time
+
 def get_bloomberg(limit=8):
-    """Bloomberg RSS (markets + tech sections)."""
+    """Bloomberg RSS (markets + tech sections). Falls back to Bing news search if RSS fails."""
     urls = [
         "https://feeds.bloomberg.com/business/news.rss",
         "https://feeds.bloomberg.com/technology/news.rss",
@@ -67,18 +69,32 @@ def get_bloomberg(limit=8):
     for it in sorted(all_items, key=lambda x: x.get("published",""), reverse=True):
         if it["url"] not in seen:
             seen.add(it["url"]); deduped.append(it)
+    # If RSS is empty, fallback to Bing/DDG search for Bloomberg headlines
+    if not deduped:
+        try:
+            from ddg_scraper import ddg_news
+            results = ddg_news("Bloomberg markets OR finance", max_results=limit, cache_key="bloomberg_ddg")
+            for r in results:
+                deduped.append({
+                    "title": r.get("title", "")[:200],
+                    "url": r.get("url", "").strip() or "#",
+                    "source": "Bloomberg",
+                    "published": r.get("published", "")[:20],
+                    "description": r.get("description", "")[:300],
+                })
+        except Exception as e:
+            print(f"      Bloomberg fallback error: {e}")
     return deduped[:limit]
 
 # ===== WALL STREET BETS =====
 def get_wsb_posts(limit=10):
     """r/wallstreetbets hot posts via Reddit OAuth API.
-    Falls back to HTML scrape if OAuth is not configured."""
+    Falls back to public JSON API or DDG if OAuth is not configured."""
     try:
         from reddit_api_client import get_subreddit_posts
         posts = get_subreddit_posts("wallstreetbets", limit=limit*2, period="day")
         result = []
         for p in posts:
-            # Filter noise: require some engagement or flair
             score = p.get("score", 0)
             if score < 10: continue
             result.append({
@@ -90,31 +106,62 @@ def get_wsb_posts(limit=10):
             if len(result) >= limit: break
         return result
     except Exception as e:
-        print(f"      WSB OAuth failed: {e}, trying HTML fallback")
+        print(f"      WSB OAuth failed: {e}, trying public JSON API")
 
-    # HTML fallback via old.reddit
-    items = []
+    # Public JSON API fallback (no auth required)
     try:
         import requests
-        sess = requests.Session()
-        sess.headers.update({**DEFAULT_HEADERS, **HEADERS})
-        sess.get("https://old.reddit.com", timeout=15)
-        r = sess.get("https://old.reddit.com/r/wallstreetbets/hot/?limit=25", timeout=15)
-        for m in re.finditer(
-            r'<a[^>]*class="title[^"]*"[^>]*href="([^"]+)"[^>]*>([^<]*)</a>.*?data-ups="(\d+)"',
-            r.text, re.IGNORECASE | re.DOTALL
-        ):
-            href, title, score = m.group(1).strip(), m.group(2).strip(), int(m.group(3))
-            if not title or score < 10: continue
-            link = href if href.startswith("http") else f"https://old.reddit.com{href}"
-            items.append({
-                "title": title[:200], "url": link, "source": "r/wallstreetbets",
-                "published": "", "score": score, "comments": 0, "description": ""
-            })
-            if len(items) >= limit: break
+        r = requests.get(
+            "https://www.reddit.com/r/wallstreetbets/hot.json?limit=25",
+            headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"},
+            timeout=15
+        )
+        if r.status_code == 200:
+            data = r.json()
+            result = []
+            for child in data.get("data", {}).get("children", []):
+                p = child.get("data", {})
+                score = p.get("score", 0)
+                if score < 10: continue
+                result.append({
+                    "title": p.get("title", "")[:200],
+                    "url": "https://reddit.com" + p.get("permalink", ""),
+                    "source": "r/wallstreetbets",
+                    "published": "",
+                    "score": score,
+                    "comments": p.get("num_comments", 0),
+                    "description": ""
+                })
+                if len(result) >= limit: break
+            if result:
+                return result
     except Exception as e:
-        print(f"      WSB HTML fallback error: {e}")
-    return items
+        print(f"      WSB JSON fallback error: {e}")
+
+    # DDG news search fallback
+    try:
+        from ddg_scraper import ddg_news
+        results = ddg_news("wallstreetbets OR WSB stock picks", max_results=limit, cache_key="wsb_ddg")
+        if results:
+            return [{
+                "title": r.get("title", "")[:200],
+                "url": r.get("url", "").strip() or "#",
+                "source": "r/wallstreetbets",
+                "published": r.get("published", "")[:20],
+                "score": "—",
+                "comments": 0,
+                "description": ""
+            } for r in results]
+    except Exception as e:
+        print(f"      WSB DDG fallback error: {e}")
+
+    # Final fallback: Google News RSS for wallstreetbets mentions
+    print("      Trying Google News RSS fallback...")
+    return _extract_rss_items(
+        "https://news.google.com/rss/search?q=wallstreetbets&hl=en-US&gl=US&ceid=US:en",
+        limit, "r/wallstreetbets"
+    )
+    return []
 
 # ===== COMBINED STICKY TAB DATA =====
 def get_sticky_tab_data():

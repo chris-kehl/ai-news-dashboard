@@ -156,6 +156,19 @@ def get_stocks_data(file_path=None):
     return data
 
 
+def get_indices_data():
+    """Fetch major stock index spot prices via CNBC (reliable, no key)."""
+    print("[ ] Fetching major index spot prices...")
+    return cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
+
+
+def get_futures_data():
+    """Fetch index futures via Yahoo v8."""
+    print("[ ] Fetching index futures...")
+    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "NG=F"]
+    return yahoo_charts_batch(futures_symbols, delay=0.25)
+
+
 # ─── Master: Scrolling ticker JSON ────────────────────────────────────────────
 
 def generate_ticker_json(output_path=None):

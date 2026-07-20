@@ -23,9 +23,10 @@ from weather_scraper import get_weather
 from local_news_scraper import get_local_news
 from local_channels_scraper import get_local_channel_news
 from local_scraper import get_local_content
-from taostats import get_bittensor_data
 from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
+from taostats import get_bittensor_data
+from sticky_tab_scraper import get_sticky_tab_data
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -65,7 +66,7 @@ def build_dashboard_data():
     local_tweets = local_data.get("x_posts", [])
     print(f"       Reddit: {len(local_reddit)} | X: {len(local_tweets)}")
 
-    # 5-13. Aggregated content (global, location-agnostic)
+    # 5-12. Aggregated content (global, location-agnostic)
     print("\n[5/13] AP News...")
     news_data = get_ap_data()
     print(f"       {len(news_data.get('all_news', []))} articles")
@@ -102,13 +103,16 @@ def build_dashboard_data():
     print("\n[12/13] GitHub...")
     github_repos = get_trending_repos()
 
-    print("\n[13/13] Bittensor...")
+    print("\n[12/13] Market Data...")
     bittensor_data = get_bittensor_data()
     print(f"       TAO: ${bittensor_data.get('price', 0):.2f}")
 
+    print("\n[13/13] Sticky tab feeds...")
+    sticky_data = get_sticky_tab_data()
+
     # Summary
     print("\n[14] Summary...")
-    summary_data = create_daily_summary(reddit_posts, [], github_repos, bittensor_data,
+    summary_data = create_daily_summary(reddit_posts, [], github_repos,
                                         crypto_data=crypto_data, stocks_data=stocks_data)
 
     data = {
@@ -137,13 +141,8 @@ def build_dashboard_data():
         "local_news": get_local_news(CITY, STATE, NEWSAPI_KEY).get("articles", []),
         "local_channels": local_channels,
         "github": github_repos,
-        "bittensor": {
-            "price": bittensor_data.get("price", 0),
-            "price_change_24h": bittensor_data.get("price_change_24h", 0),
-            "active_subnets": bittensor_data.get("active_subnets", 0),
-            "total_subnets": bittensor_data.get("total_subnets", 0),
-            "top_subnets": bittensor_data.get("top_subnets", [])
-        }
+        "bittensor": bittensor_data,
+        "sticky": sticky_data,
     }
 
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")

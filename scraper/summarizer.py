@@ -58,7 +58,7 @@ def generate_basic_summary(content: str) -> str:
     return "No summary available. Scraper needs configuration."
 
 
-def generate_trading_signals(reddit_posts, x_posts, bittensor_data, crypto_data=None, stocks_data=None):
+def generate_trading_signals(reddit_posts, x_posts, indices_data=None, futures_data=None, crypto_data=None, stocks_data=None):
     signals = []
 
     # ── CRYPTO LEADERS / LAGGARDS ──
@@ -98,50 +98,48 @@ def generate_trading_signals(reddit_posts, x_posts, bittensor_data, crypto_data=
                     "text": f"{sym} {ch:+.1f}% @ ${pr:,.2f}"
                 })
 
-    # ── TAO / BITTENSOR ──
-    if bittensor_data:
-        price_change = bittensor_data.get("price_change_24h", 0)
-        tao_price = bittensor_data.get("price", 0)
-        if price_change > 5:
-            signals.append({
-                "type": "buy", "asset": "TAO", "price": tao_price,
-                "change": price_change, "category": "bittensor",
-                "text": f"TAO +{price_change:.1f}% breakout @ ${tao_price:.2f}"
-            })
-        elif price_change < -5:
-            signals.append({
-                "type": "watch", "asset": "TAO", "price": tao_price,
-                "change": price_change, "category": "bittensor",
-                "text": f"TAO dip {price_change:.1f}% @ ${tao_price:.2f} — accumulation zone"
-            })
-        else:
-            signals.append({
-                "type": "watch", "asset": "TAO", "price": tao_price,
-                "change": price_change, "category": "bittensor",
-                "text": f"TAO {price_change:+.1f}% @ ${tao_price:.2f} — hold"
-            })
+    # ── MAJOR INDEXES ──
+    if indices_data:
+        for idx in indices_data[:5]:
+            ch = idx.get("change_percent", 0)
+            sym = idx.get("symbol", "").replace(".", "")
+            pr = idx.get("price", 0)
+            if ch > 1.5:
+                signals.append({
+                    "type": "buy", "asset": sym, "price": pr,
+                    "change": ch, "category": "index",
+                    "text": f"{sym} +{ch:.1f}% strong open"
+                })
+            elif ch < -1.5:
+                signals.append({
+                    "type": "sell", "asset": sym, "price": pr,
+                    "change": ch, "category": "index",
+                    "text": f"{sym} {ch:.1f}% selloff"
+                })
+            elif abs(ch) >= 0.5:
+                signals.append({
+                    "type": "watch", "asset": sym, "price": pr,
+                    "change": ch, "category": "index",
+                    "text": f"{sym} {ch:+.1f}%"
+                })
 
-        for sn in bittensor_data.get("top_subnets", [])[:4]:
-            ch = sn.get("price_change_24h", 0)
-            name = sn.get("name", "")
-            price = sn.get("price", 0)
-            if ch > 5:
+    # ── FUTURES ──
+    if futures_data:
+        for fut in futures_data[:5]:
+            ch = fut.get("change_percent", 0)
+            sym = fut.get("symbol", "")
+            pr = fut.get("price", 0)
+            if ch > 1:
                 signals.append({
-                    "type": "buy", "asset": name, "price": price,
-                    "change": ch, "category": "subnet",
-                    "text": f"{name} +{ch:.1f}% — strong subnet momentum"
+                    "type": "watch", "asset": sym, "price": pr,
+                    "change": ch, "category": "future",
+                    "text": f"{sym} +{ch:.1f}% pre-market"
                 })
-            elif ch < -10:
+            elif ch < -1:
                 signals.append({
-                    "type": "sell", "asset": name, "price": price,
-                    "change": ch, "category": "subnet",
-                    "text": f"{name} {ch:.1f}% — deep subnet drawdown"
-                })
-            elif abs(ch) >= 3:
-                signals.append({
-                    "type": "watch", "asset": name, "price": price,
-                    "change": ch, "category": "subnet",
-                    "text": f"{name} {ch:+.1f}% subnet moving"
+                    "type": "watch", "asset": sym, "price": pr,
+                    "change": ch, "category": "future",
+                    "text": f"{sym} {ch:.1f}% pre-market"
                 })
 
     # ── STOCK MOMENTUM ──
@@ -203,7 +201,7 @@ def generate_trading_signals(reddit_posts, x_posts, bittensor_data, crypto_data=
     return signals[:10]
 
 
-def create_daily_summary(reddit_posts, x_posts, github_repos, bittensor_data,
+def create_daily_summary(reddit_posts, x_posts, github_repos, indices_data=None, futures_data=None,
                          crypto_data=None, stocks_data=None):
     content_parts = []
 
@@ -219,26 +217,25 @@ def create_daily_summary(reddit_posts, x_posts, github_repos, bittensor_data,
     for r in github_repos[:5]:
         content_parts.append(f"- {r['name']}: {r.get('description','')[:100]} ({r['stars']} stars)")
 
-    content_parts.append("\nBITTENSOR:")
-    if bittensor_data:
-        content_parts.append(f"- TAO: ${bittensor_data.get('price', 0):.2f} ({bittensor_data.get('price_change_24h', 0):+.1f}%)")
-        for sn in bittensor_data.get("top_subnets", [])[:3]:
-            content_parts.append(
-                f"- {sn['name']}: price ${sn.get('price',0)} ({sn.get('price_change_24h',0):+.1f}%), "
-                f"rank #{sn.get('rank','?')}, mcap {sn.get('market_cap',0):.0f}TAO"
-            )
+    content_parts.append("\nMARKETS:")
+    if indices_data:
+        for idx in indices_data[:3]:
+            content_parts.append(f"- {idx.get('symbol','')}: {idx.get('price',0):,.2f} ({idx.get('change_percent',0):+.1f}%)")
+    if futures_data:
+        for fut in futures_data[:3]:
+            content_parts.append(f"- {fut.get('symbol','')}: {fut.get('price',0):,.2f} ({fut.get('change_percent',0):+.1f}%)")
 
     full_content = "\n".join(content_parts)
     summary = summarize_with_openrouter(full_content)
-    signals = generate_trading_signals(reddit_posts, x_posts, bittensor_data,
-                                       crypto_data=crypto_data, stocks_data=stocks_data)
+    signals = generate_trading_signals(reddit_posts, x_posts, indices_data=indices_data,
+                                       futures_data=futures_data, crypto_data=crypto_data, stocks_data=stocks_data)
 
     return {"summary": summary, "signals": signals}
 
 
-def create_daily_summary_legacy(reddit_posts, x_posts, github_repos, bittensor_data):
+def create_daily_summary_legacy(reddit_posts, x_posts, github_repos, indices_data=None, futures_data=None):
     """Legacy compatibility: delegates to new signature."""
-    return create_daily_summary(reddit_posts, x_posts, github_repos, bittensor_data)
+    return create_daily_summary(reddit_posts, x_posts, github_repos, indices_data=indices_data, futures_data=futures_data)
 
 
 if __name__ == "__main__":

@@ -982,7 +982,7 @@ function renderAll(d){
       return '<div class="subnet-row"><span class="r" style="text-align:center">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;text-align:right;font-size:0.72rem">'+safePrice+' TAO</span></div>';
     }).join('');
   }else{bh+='<div class="ld">No subnet data</div>'}
-  $('bittensor-stats').innerHTML=bh;
+  var bs=$('bittensor-stats');if(bs)bs.innerHTML=bh;
   var btt=$('bittensor-tech');if(btt)btt.innerHTML=bh;
 
   /* Futures for tech tab */

@@ -620,6 +620,11 @@ function switchTab(tabId){
   if(newPanel){newPanel.classList.add('active');newPanel.hidden=false;}
   currentTab=tabId;
   if(tabId==='pong'){pongResize();}
+  /* ensure cached data is rendered so user never sees stale Loading... */
+  var cached=null;try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
+  if(cached){try{renderAll(cached);}catch(e){}}
+  /* also kick fresh fetch in background */
+  loadData();
 }
 
 function initTabs(){

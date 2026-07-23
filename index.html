@@ -622,6 +622,8 @@ function switchTab(tabId){
   if(tabId==='pong'){pongResize();}
   /* ensure cached data is rendered so user never sees stale Loading... */
   var cached=null;try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
+  if(tabId==='sticky'){if(cached){renderSticky(cached);}loadData();return;}
+  if(tabId==='tech'){if(cached){renderTech(cached);}loadData();return;}
   if(cached){try{renderAll(cached);}catch(e){}}
   /* also kick fresh fetch in background */
   loadData();
@@ -1034,6 +1036,36 @@ function renderAll(d){
   var syt=$('sticky-yahoo');if(syt)syt.innerHTML=syf.map(makeItemHTML).join('')||'<div class="ld">No Yahoo data</div>';
   var sbt=$('sticky-bloomberg');if(sbt)sbt.innerHTML=sbl.map(makeItemHTML).join('')||'<div class="ld">No Bloomberg data</div>';
   var swt=$('sticky-wsb');if(swt)swt.innerHTML=swb.map(function(p){return'<div class="item"><a href="'+p.url+'" class="item-title" target="_blank">'+p.title+'</a><div class="item-meta"><span class="score">↑ '+p.score+'</span><span>r/wallstreetbets</span></div></div>'}).join('')||'<div class="ld">No WSB data</div>';
+}
+
+function renderSticky(d){
+  var sticky=(d||{}).sticky||{};
+  var scn=sticky.cnbc||[],syf=sticky.yahoo_finance||[],sbl=sticky.bloomberg||[],swb=sticky.wallstreetbets||[];
+  var sct=$('sticky-cnbc');if(sct)sct.innerHTML=scn.map(makeItemHTML).join('')||'<div class="ld">No CNBC data</div>';
+  var syt=$('sticky-yahoo');if(syt)syt.innerHTML=syf.map(makeItemHTML).join('')||'<div class="ld">No Yahoo data</div>';
+  var sbt=$('sticky-bloomberg');if(sbt)sbt.innerHTML=sbl.map(makeItemHTML).join('')||'<div class="ld">No Bloomberg data</div>';
+  var swt=$('sticky-wsb');if(swt)swt.innerHTML=swb.map(function(p){return'<div class="item"><a href="'+p.url+'" class="item-title" target="_blank">'+p.title+'</a><div class="item-meta"><span class="score">↑ '+p.score+'</span><span>r/wallstreetbets</span></div></div>'}).join('')||'<div class="ld">No WSB data</div>';
+}
+function renderTech(d){
+  d=d||{};
+  var fut=(d.futures||[]).slice(0,IS_MOBILE?4:6);
+  var fth=fut.map(function(f){return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+f.symbol+'</span> <span class="'+(f.change_percent>=0?'up':'dn')+'">'+(f.change_percent>=0?'+':'')+f.change_percent.toFixed(1)+'%</span> $'+f.price+'</div>'}).join('')||'<div class="ld">No futures data</div>';
+  var ft=$('futures-tech');if(ft)ft.innerHTML=fth;
+
+  var sig=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
+  var st=$('signals-tech');if(st)st.innerHTML=sig;
+
+  var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
+  var rh=rp.map(makeRedditHTML).join('')||'<div class="ld">No Reddit data</div>';
+  var rdt=$('reddit-tech');if(rdt)rdt.innerHTML=rh;
+
+  var gh=(d.github||[]).slice(0,IS_MOBILE?4:6);
+  var ghh=gh.map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+  var ght=$('github-tech');if(ght)ght.innerHTML=ghh;
+
+  var cry=(d.crypto||{}).prices||[];
+  var cy='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+  var cyt=$('crypto-tech');if(cyt)cyt.innerHTML=cy;
 }
 
 async function loadData(){

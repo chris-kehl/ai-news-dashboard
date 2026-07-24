@@ -901,14 +901,16 @@ function makeRedditHTML(r){return '<div class="item"><a href="'+r.url+'" class="
 function makeXTweetHTML(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>';}
 
 function renderAll(d){
-  serverLoc=d.location||{};
-  if(!clientLoc.city)clientLoc={city:serverLoc.city,state:serverLoc.state,state_abbrev:serverLoc.state_abbrev||'',zip:serverLoc.zip,lat:serverLoc.lat||0,lon:serverLoc.lon||0,src:'server'};
-  serverWeather=d.weather||{};
-  renderLocBar();renderForecast();
-  $('age').textContent=fmtAgo(d.timestamp);
-  renderTicker((d.ticker||{}).items||[]);
+  try{
+    serverLoc=d.location||{};
+    if(!clientLoc.city)clientLoc={city:serverLoc.city,state:serverLoc.state,state_abbrev:serverLoc.state_abbrev||'',zip:serverLoc.zip,lat:serverLoc.lat||0,lon:serverLoc.lon||0,src:'server'};
+    serverWeather=d.weather||{};
+    renderLocBar();renderForecast();
+    var ageEl=$('age');if(ageEl)ageEl.textContent=fmtAgo(d.timestamp);
+    renderTicker((d.ticker||{}).items||[]);
+  }catch(e){console.error('renderAll header',e);}
 
-  var lc=(d.local_channels||[]).slice(0,IS_MOBILE?3:5);
+  try{  var lc=(d.local_channels||[]).slice(0,IS_MOBILE?3:5);
   var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
   var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
   var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
@@ -933,7 +935,7 @@ function renderAll(d){
     h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(makeXTweetHTML).join('')}
     var lx=$('local-x');if(lx)lx.innerHTML=h||'';
     var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=h||'<div class="ld">No data</div>';
-  }
+  }catch(e){console.error('renderAll local',e);}
 
   /* Weather detailed tab */
   var lwDet=$('local-weather-detailed');if(lwDet){
@@ -1073,7 +1075,7 @@ async function loadData(){
   try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
   var hasCache=cached && Object.keys(cached).length>0;
   if(hasCache){try{tickerItems=(cached.ticker||{}).items||[];renderAll(cached);}catch(e){console.error('render cached',e);}}
-  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];renderAll(d);try{localStorage.setItem('dash_data',JSON.stringify(d));}catch(e){}}
+  try{var r=await fetch('data.json?v='+Date.now());var d=await r.json();tickerItems=(d.ticker||{}).items||[];try{renderAll(d);}catch(e){console.error('renderAll error',e);}try{localStorage.setItem('dash_data',JSON.stringify(d));}catch(e){}}
   catch(e){
     console.error('loadData',e);
     if(!hasCache){try{renderAll({});}catch(e2){}}

@@ -901,6 +901,7 @@ function makeRedditHTML(r){return '<div class="item"><a href="'+r.url+'" class="
 function makeXTweetHTML(x){return '<div class="x-tweet"><div class="x-author">'+(x.author||'')+'</div><div class="x-text">'+x.text+'</div></div>';}
 
 function renderAll(d){
+  d=d||{};
   try{
     serverLoc=d.location||{};
     if(!clientLoc.city)clientLoc={city:serverLoc.city,state:serverLoc.state,state_abbrev:serverLoc.state_abbrev||'',zip:serverLoc.zip,lat:serverLoc.lat||0,lon:serverLoc.lon||0,src:'server'};
@@ -910,134 +911,157 @@ function renderAll(d){
     renderTicker((d.ticker||{}).items||[]);
   }catch(e){console.error('renderAll header',e);}
 
-  try{  var lc=(d.local_channels||[]).slice(0,IS_MOBILE?3:5);
-  var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
-  var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
-  var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
-  var ckey=cityToKey(clientLoc.city||'');
-  if(isStale() && cache[ckey]){
-    renderLocalFromCache(ckey);
-  }else if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
-    renderLocalPlaceholders();
-  }else if(isStale()){
-    renderLocalFromClient();
-  }else{
-    var h='';
-    if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(makeItemHTML).join('')}
-    var lch=$('local-channels');if(lch)lch.innerHTML=h||'';
-    var lcht=$('local-channels-tab');if(lcht)lcht.innerHTML=h||'<div class="ld">No data</div>';
-    h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(makeItemHTML).join('')}
-    var ln=$('local-news');if(ln)ln.innerHTML=h||'';
-    var lnt=$('local-news-tab');if(lnt)lnt.innerHTML=h||'<div class="ld">No data</div>';
-    h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(makeRedditHTML).join('')}
-    var lrd=$('local-reddit');if(lrd)lrd.innerHTML=h||'';
-    var lrdt=$('local-reddit-tab');if(lrdt)lrdt.innerHTML=h||'<div class="ld">No data</div>';
-    h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(makeXTweetHTML).join('')}
-    var lx=$('local-x');if(lx)lx.innerHTML=h||'';
-    var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=h||'<div class="ld">No data</div>';
+  try{
+    var lc=(d.local_channels||[]).slice(0,IS_MOBILE?3:5);
+    var lr=(d.local_news||[]).slice(0,IS_MOBILE?3:4);
+    var lred=(d.local_reddit||[]).slice(0,IS_MOBILE?2:3);
+    var ltw=(d.local_tweets||[]).slice(0,IS_MOBILE?3:5);
+    var ckey=cityToKey(clientLoc.city||'');
+    if(isStale() && cache[ckey]){
+      renderLocalFromCache(ckey);
+    }else if(isStale() && clientLocalData.reddit.length===0 && clientLocalData.news.length===0 && clientLocalData.x.length===0 && clientLocalData.channels.length===0){
+      renderLocalPlaceholders();
+    }else if(isStale()){
+      renderLocalFromClient();
+    }else{
+      var h='';
+      if(lc.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">TV & Papers</div>'+lc.map(makeItemHTML).join('')}
+      var lch=$('local-channels');if(lch)lch.innerHTML=h||'';
+      var lcht=$('local-channels-tab');if(lcht)lcht.innerHTML=h||'<div class="ld">No data</div>';
+      h='';if(lr.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">News & RSS</div>'+lr.map(makeItemHTML).join('')}
+      var ln=$('local-news');if(ln)ln.innerHTML=h||'';
+      var lnt=$('local-news-tab');if(lnt)lnt.innerHTML=h||'<div class="ld">No data</div>';
+      h='';if(lred.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local Reddit</div>'+lred.map(makeRedditHTML).join('')}
+      var lrd=$('local-reddit');if(lrd)lrd.innerHTML=h||'';
+      var lrdt=$('local-reddit-tab');if(lrdt)lrdt.innerHTML=h||'<div class="ld">No data</div>';
+      h='';if(ltw.length){h+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">Local X / Twitter</div>'+ltw.map(makeXTweetHTML).join('')}
+      var lx=$('local-x');if(lx)lx.innerHTML=h||'';
+      var lxt=$('local-x-tab');if(lxt)lxt.innerHTML=h||'<div class="ld">No data</div>';
+    }
   }catch(e){console.error('renderAll local',e);}
 
-  /* Weather detailed tab */
-  var lwDet=$('local-weather-detailed');if(lwDet){
-    var w=d.weather||{};
-    var cur=w.current||{};
-    var temp=cur.temperature?Math.round(cur.temperature):0;
-    var desc=cur.description||'';
-    var hum=cur.humidity||0;
-    var wind=cur.wind_speed||0;
-    lwDet.innerHTML='<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;text-align:center">'+
-      '<div class="bittensor-stat"><div class="num">'+temp+'&deg;F</div><div class="lbl">Temp</div></div>'+
-      '<div class="bittensor-stat"><div class="num">'+desc+'</div><div class="lbl">Condition</div></div>'+
-      '<div class="bittensor-stat"><div class="num">'+hum+'%</div><div class="lbl">Humidity</div></div>'+
-      '<div class="bittensor-stat"><div class="num">'+wind+' mph</div><div class="lbl">Wind</div></div>'+
+  try{
+    var lwDet=$('local-weather-detailed');if(lwDet){
+      var w=d.weather||{};
+      var cur=w.current||{};
+      var temp=cur.temperature?Math.round(cur.temperature):0;
+      var desc=cur.description||'';
+      var hum=cur.humidity||0;
+      var wind=cur.wind_speed||0;
+      lwDet.innerHTML='<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;text-align:center">'+
+        '<div class="bittensor-stat"><div class="num">'+temp+'&deg;F</div><div class="lbl">Temp</div></div>'+
+        '<div class="bittensor-stat"><div class="num">'+desc+'</div><div class="lbl">Condition</div></div>'+
+        '<div class="bittensor-stat"><div class="num">'+hum+'%</div><div class="lbl">Humidity</div></div>'+
+        '<div class="bittensor-stat"><div class="num">'+wind+' mph</div><div class="lbl">Wind</div></div>'+
+        '</div>';
+    }
+  }catch(e){console.error('renderAll weather',e);}
+
+  try{
+    var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
+    var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
+    var nwx=(d.world_x||[]).slice(0,IS_MOBILE?3:5);
+    var wh='';
+    if(nw.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">AP / RSS</div>'+nw.map(makeItemHTML).join('')}
+    var wn=$('world-news');if(wn)wn.innerHTML=wh||'';
+    var wnt=$('world-news-tab');if(wnt)wnt.innerHTML=wh||'<div class="ld">No data</div>';
+    wh='';if(nwr.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">World Reddit</div>'+nwr.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')}
+    var wrt=$('world-reddit');if(wrt)wrt.innerHTML=wh||'';
+    var wrtt=$('world-reddit-tab');if(wrtt)wrtt.innerHTML=wh||'<div class="ld">No data</div>';
+    wh='';if(nwx.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">X / Twitter</div>'+nwx.map(makeXTweetHTML).join('')}
+    var wx=$('world-x');if(wx)wx.innerHTML=wh||'';
+    var wxt=$('world-x-tab');if(wxt)wxt.innerHTML=wh||'<div class="ld">No data</div>';
+    if(!nw.length&&!nwr.length&&!nwx.length){var wc=$('world-card');if(wc)wc.innerHTML='<div class="ld">No world news</div>';}
+  }catch(e){console.error('renderAll world',e);}
+
+  try{
+    var dn=(d.defense||[]).slice(0,IS_MOBILE?4:6);
+    var dh=dn.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
+    var dnEl=$('defense-news');if(dnEl)dnEl.innerHTML=dh;
+    var dt=$('defense-tab');if(dt)dt.innerHTML=dh;
+  }catch(e){console.error('renderAll defense',e);}
+
+  try{
+    var bit=d.bittensor||{},subs=bit.top_subnets||[];
+    var activeSubs=bit.active_subnets||subs.length||0;
+    var totalSubs=bit.total_subnets||subs.length||0;
+    var cc=(bit.price_change_24h||0)>=0?'var(--good)':'var(--danger)';
+    var cs=(bit.price_change_24h||0)>=0?'+':'';
+    var bh='<div class="bittensor-stats">'+
+      '<div class="bittensor-stat"><div class="num" style="font-size:1.1rem">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
+      '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+(bit.price_change_24h!=null?cs+(bit.price_change_24h).toFixed(1)+'%':'--')+'</div><div class="lbl">24H</div></div>'+
+      '<div class="bittensor-stat"><div class="num">'+activeSubs+'</div><div class="lbl">Active</div></div>'+
+      '<div class="bittensor-stat"><div class="num">'+totalSubs+'</div><div class="lbl">Subnets</div></div>'+
       '</div>';
-  }
+    if(subs.length){
+      bh+='<div class="subnet-grid"><span style="text-align:center">#</span><span>Name</span><span style="text-align:right">Price</span></div>';
+      bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
+        var safePrice=(s.price!=null)?s.price.toFixed(4):'--';
+        return '<div class="subnet-row"><span class="r" style="text-align:center">'+i+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;text-align:right;font-size:0.72rem">'+safePrice+' TAO</span></div>';
+      }).join('');
+    }else{bh+='<div class="ld">No subnet data</div>'}
+    var bs=$('bittensor-stats');if(bs)bs.innerHTML=bh;
+    var btt=$('bittensor-tech');if(btt)btt.innerHTML=bh;
+  }catch(e){console.error('renderAll bittensor',e);}
 
-  var nw=(d.news||[]).slice(0,IS_MOBILE?4:6);
-  var nwr=(d.world_reddit||[]).slice(0,IS_MOBILE?3:5);
-  var nwx=(d.world_x||[]).slice(0,IS_MOBILE?3:5);
-  var wh='';
-  if(nw.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;border-bottom:1px solid var(--brd);padding-bottom:3px">AP / RSS</div>'+nw.map(makeItemHTML).join('')}
-  var wn=$('world-news');if(wn)wn.innerHTML=wh||'';
-  var wnt=$('world-news-tab');if(wnt)wnt.innerHTML=wh||'<div class="ld">No data</div>';
-  wh='';if(nwr.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">World Reddit</div>'+nwr.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')}
-  var wrt=$('world-reddit');if(wrt)wrt.innerHTML=wh||'';
-  var wrtt=$('world-reddit-tab');if(wrtt)wrtt.innerHTML=wh||'<div class="ld">No data</div>';
-  wh='';if(nwx.length){wh+='<div style="font-size:0.68rem;color:var(--tx3);text-transform:uppercase;letter-spacing:0.4px;margin:8px 0 4px;border-bottom:1px solid var(--brd);padding-bottom:3px">X / Twitter</div>'+nwx.map(makeXTweetHTML).join('')}
-  var wx=$('world-x');if(wx)wx.innerHTML=wh||'';
-  var wxt=$('world-x-tab');if(wxt)wxt.innerHTML=wh||'<div class="ld">No data</div>';
-  if(!nw.length&&!nwr.length&&!nwx.length){var wc=$('world-card');if(wc)wc.innerHTML='<div class="ld">No world news</div>';}
+  try{
+    var fut=(d.futures||[]).slice(0,IS_MOBILE?4:6);
+    var fth=fut.map(function(f){return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+f.symbol+'</span> <span class="'+(f.change_percent>=0?'up':'dn')+'">'+(f.change_percent>=0?'+':'')+f.change_percent.toFixed(1)+'%</span> $'+f.price+'</div>'}).join('')||'<div class="ld">No futures data</div>';
+    var ft=$('futures-tech');if(ft)ft.innerHTML=fth;
+  }catch(e){console.error('renderAll futures',e);}
 
-  var dn=(d.defense||[]).slice(0,IS_MOBILE?4:6);
-  var dh=dn.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
-  $('defense-news').innerHTML=dh;
-  var dt=$('defense-tab');if(dt)dt.innerHTML=dh;
+  try{
+    var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
+    var rh=rp.map(makeRedditHTML).join('')||'<div class="ld">No Reddit data</div>';
+    var rpEl=$('reddit-posts');if(rpEl)rpEl.innerHTML=rh;
+    var rdt=$('reddit-tech');if(rdt)rdt.innerHTML=rh;
+  }catch(e){console.error('renderAll reddit',e);}
 
-  var bit=d.bittensor||{},subs=bit.top_subnets||[];
-  var activeSubs = bit.active_subnets || subs.length || 0;
-  var totalSubs = bit.total_subnets || subs.length || 0;
-  var cc=(bit.price_change_24h||0)>=0?'var(--good)':'var(--danger)';
-  var cs=(bit.price_change_24h||0)>=0?'+':'';
-  var bh='<div class="bittensor-stats">'+
-    '<div class="bittensor-stat"><div class="num" style="font-size:1.1rem">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
-    '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+(bit.price_change_24h!=null?cs+(bit.price_change_24h).toFixed(1)+'%':'--')+'</div><div class="lbl">24H</div></div>'+
-    '<div class="bittensor-stat"><div class="num">'+activeSubs+'</div><div class="lbl">Active</div></div>'+
-    '<div class="bittensor-stat"><div class="num">'+totalSubs+'</div><div class="lbl">Subnets</div></div>'+
-    '</div>';
-  if(subs.length){
-    bh+='<div class="subnet-grid"><span style="text-align:center">#</span><span>Name</span><span style="text-align:right">Price</span></div>';
-    bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
-      var safePrice = (s.price!=null)?s.price.toFixed(4):'--';
-      return '<div class="subnet-row"><span class="r" style="text-align:center">'+(i+1)+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="font-family:JetBrains Mono;text-align:right;font-size:0.72rem">'+safePrice+' TAO</span></div>';
-    }).join('');
-  }else{bh+='<div class="ld">No subnet data</div>'}
-  var bs=$('bittensor-stats');if(bs)bs.innerHTML=bh;
-  var btt=$('bittensor-tech');if(btt)btt.innerHTML=bh;
+  try{
+    var cp=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
+    var cph='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">'+(c.change_percent>=0?'+':'')+c.change_percent+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+    var hsl=$('hot-stocks-left');if(hsl)hsl.innerHTML=cph;
+    var hst=$('hot-stocks-tab');if(hst)hst.innerHTML=cph;
+    var topMovers=cp.concat(mm||[]).sort(function(a,b){return Math.abs(b.change_percent)-Math.abs(a.change_percent)}).slice(0,4);
+    var tmEl=$('topMovers');if(tmEl)tmEl.innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<span style="color:var(--tx2)"><span style="font-weight:600;color:var(--tx)">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span></span>'}).join('');
+    var tmt=$('top-movers-tab');if(tmt)tmt.innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span> $'+s.price+'</div>'}).join('')||'<div class="ld">No data</div>';
+  }catch(e){console.error('renderAll stocks',e);}
 
-  /* Futures for tech tab */
-  var fut=(d.futures||[]).slice(0,IS_MOBILE?4:6);
-  var fth=fut.map(function(f){return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+f.symbol+'</span> <span class="'+(f.change_percent>=0?'up':'dn')+'">'+(f.change_percent>=0?'+':'')+f.change_percent.toFixed(1)+'%</span> $'+f.price+'</div>'}).join('')||'<div class="ld">No futures data</div>';
-  var ft=$('futures-tech');if(ft)ft.innerHTML=fth;
+  try{
+    var gh=(d.github||[]).slice(0,IS_MOBILE?4:6);
+    var ghh=gh.map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
+    var grEl=$('github-repos');if(grEl)grEl.innerHTML=ghh;
+    var ght=$('github-tech');if(ght)ght.innerHTML=ghh;
+  }catch(e){console.error('renderAll github',e);}
 
-  var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
-  var rh=rp.map(makeRedditHTML).join('')||'<div class="ld">No Reddit data</div>';
-  $('reddit-posts').innerHTML=rh;
-  var rdt=$('reddit-tech');if(rdt)rdt.innerHTML=rh;
+  try{
+    var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
+    var bzh=biz.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
+    var busEl=$('business');if(busEl)busEl.innerHTML=bzh;
+    var bzt=$('business-tab');if(bzt)bzt.innerHTML=bzh;
+  }catch(e){console.error('renderAll business',e);}
 
-  var cp=(d.stocks||{}).trending||[],mm=(d.stocks||{}).meme_momentum||[];
-  var cph='<div class="crypto-grid">'+cp.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_percent>=0?'var(--good)':'var(--danger)')+'">'+(c.change_percent>=0?'+':'')+c.change_percent+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
-  $('hot-stocks-left').innerHTML=cph;
-  var hst=$('hot-stocks-tab');if(hst)hst.innerHTML=cph;
-  var topMovers=cp.concat(mm||[]).sort(function(a,b){return Math.abs(b.change_percent)-Math.abs(a.change_percent)}).slice(0,4);
-  $('topMovers').innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<span style="color:var(--tx2)"><span style="font-weight:600;color:var(--tx)">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span></span>'}).join('');
-  var tmt=$('top-movers-tab');if(tmt)tmt.innerHTML=topMovers.map(function(s){var cls=s.change_percent>=0?'up':'dn';var sign=s.change_percent>=0?'+':'';return '<div style="font-family:JetBrains Mono;font-size:0.78rem;padding:5px 0;border-bottom:1px solid var(--brd)"><span style="font-weight:600">'+s.symbol+'</span> <span class="'+cls+'">'+sign+s.change_percent.toFixed(1)+'%</span> $'+s.price+'</div>'}).join('')||'<div class="ld">No data</div>';
+  try{
+    var cry=(d.crypto||{}).prices||[];
+    var cy='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
+    var cpEl=$('crypto-prices');if(cpEl)cpEl.innerHTML=cy;
+    var cyt=$('crypto-tech');if(cyt)cyt.innerHTML=cy;
+  }catch(e){console.error('renderAll crypto',e);}
 
-  var gh=(d.github||[]).slice(0,IS_MOBILE?4:6);
-  var ghh=gh.map(function(r){return '<div class="item"><a href="'+r.url+'" class="item-title" target="_blank">'+r.name+'</a><div class="item-meta"><span class="score">&#9733; '+(r.stars||0).toLocaleString()+'</span><span>'+(r.language||'')+'</span></div></div>'}).join('')||'<div class="ld">No data</div>';
-  $('github-repos').innerHTML=ghh;
-  var ght=$('github-tech');if(ght)ght.innerHTML=ghh;
+  try{
+    var sig=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
+    var sigEl=$('signals');if(sigEl)sigEl.innerHTML=sig;
+    var st=$('signals-tech');if(st)st.innerHTML=sig;
+  }catch(e){console.error('renderAll signals',e);}
 
-  var biz=(d.business||[]).slice(0,IS_MOBILE?4:6);
-  var bzh=biz.map(makeItemHTML).join('')||'<div class="ld">No data</div>';
-  $('business').innerHTML=bzh;
-  var bzt=$('business-tab');if(bzt)bzt.innerHTML=bzh;
-
-  var cry=(d.crypto||{}).prices||[];
-  var cy='<div class="crypto-grid">'+cry.slice(0,IS_MOBILE?4:6).map(function(c){return '<div class="crypto-cell"><span style="font-weight:600;font-size:0.75rem">'+c.symbol+'</span><span style="font-family:JetBrains Mono;font-size:0.72rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">$'+c.price+'</span><span style="font-family:JetBrains Mono;font-size:0.62rem;color:'+(c.change_24h>=0?'var(--good)':'var(--danger)')+'">'+(c.change_24h>=0?'+':'')+c.change_24h+'%</span></div>'}).join('')+'</div>'||'<div class="ld">No data</div>';
-  $('crypto-prices').innerHTML=cy;
-  var cyt=$('crypto-tech');if(cyt)cyt.innerHTML=cy;
-
-  var sig=(d.signals||[]).map(function(s){return '<div style="font-family:JetBrains Mono;font-size:0.75rem;padding:6px 0;border-bottom:1px solid var(--brd);color:'+(s.type==='buy'?'var(--good)':s.type==='sell'?'var(--danger)':'var(--tx2)')+'">'+s.text+'</div>'}).join('')||'<div class="ld">No signals</div>';
-  $('signals').innerHTML=sig;
-  var st=$('signals-tech');if(st)st.innerHTML=sig;
-
-  /* ===== STICKY TAB: CNBC · Yahoo · Bloomberg · WSB ===== */
-  var sticky=d.sticky||{};
-  var scn=sticky.cnbc||[],syf=sticky.yahoo_finance||[],sbl=sticky.bloomberg||[],swb=sticky.wallstreetbets||[];
-  var sct=$('sticky-cnbc');if(sct)sct.innerHTML=scn.map(makeItemHTML).join('')||'<div class="ld">No CNBC data</div>';
-  var syt=$('sticky-yahoo');if(syt)syt.innerHTML=syf.map(makeItemHTML).join('')||'<div class="ld">No Yahoo data</div>';
-  var sbt=$('sticky-bloomberg');if(sbt)sbt.innerHTML=sbl.map(makeItemHTML).join('')||'<div class="ld">No Bloomberg data</div>';
-  var swt=$('sticky-wsb');if(swt)swt.innerHTML=swb.map(function(p){return'<div class="item"><a href="'+p.url+'" class="item-title" target="_blank">'+p.title+'</a><div class="item-meta"><span class="score">↑ '+p.score+'</span><span>r/wallstreetbets</span></div></div>'}).join('')||'<div class="ld">No WSB data</div>';
+  try{
+    var sticky=d.sticky||{};
+    var scn=sticky.cnbc||[],syf=sticky.yahoo_finance||[],sbl=sticky.bloomberg||[],swb=sticky.wallstreetbets||[];
+    var sct=$('sticky-cnbc');if(sct)sct.innerHTML=scn.map(makeItemHTML).join('')||'<div class="ld">No CNBC data</div>';
+    var syt=$('sticky-yahoo');if(syt)syt.innerHTML=syf.map(makeItemHTML).join('')||'<div class="ld">No Yahoo data</div>';
+    var sbt=$('sticky-bloomberg');if(sbt)sbt.innerHTML=sbl.map(makeItemHTML).join('')||'<div class="ld">No Bloomberg data</div>';
+    var swt=$('sticky-wsb');if(swt)swt.innerHTML=swb.map(function(p){return'<div class="item"><a href="'+p.url+'" class="item-title" target="_blank">'+p.title+'</a><div class="item-meta"><span class="score">↑ '+p.score+'</span><span>r/wallstreetbets</span></div></div>'}).join('')||'<div class="ld">No WSB data</div>';
+  }catch(e){console.error('renderAll sticky',e);}
 }
 
 function renderSticky(d){

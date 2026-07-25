@@ -15,6 +15,7 @@ from alpha_vantage_scraper import add_av_to_ticker
 from defense_scraper import get_defense_data
 from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
+from nasdaq_scraper import get_nasdaq_data
 from sticky_tab_scraper import get_sticky_tab_data
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -69,10 +70,9 @@ def build_dashboard_data():
     print("\n[10/11] GitHub...")
     github_repos = get_trending_repos()
 
-    print("\n[11/11] NASDAQ summary...")
-    # NASDAQ analysis placeholder — will be populated by manual analysis or AI summarizer
-    nasdaq_summary = "NASDAQ weekly outlook loading..."
-    print(f"       NASDAQ analysis placeholder set")
+    print("\n[11/11] NASDAQ data...")
+    nasdaq_data = get_nasdaq_data()
+    print(f"       NASDAQ: ${nasdaq_data.get('price', 0):,.2f}  {nasdaq_data.get('signal', '?')}  ({nasdaq_data.get('changePercent', 0):+.2f}%)")
 
     print("\n[12/11] Sticky tab feeds...")
     sticky_data = get_sticky_tab_data()
@@ -97,7 +97,7 @@ def build_dashboard_data():
         "tech_business": tech_business_data,
         "defense": defense_data.get("conflicts", []),
         "github": github_repos,
-        "nasdaq_summary": nasdaq_summary,
+        "nasdaq_data": nasdaq_data,
         "sticky": sticky_data,
         "futures": futures_data,
     }

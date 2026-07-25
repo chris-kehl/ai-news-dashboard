@@ -559,11 +559,15 @@ function renderAll(d){
 
   try{
     var stocks=d.stocks||{};
+    var DOW30=['AAPL','AMGN','AMZN','AXP','BA','CAT','CRM','CSCO','CVX','DIS','GS','HD','HON','IBM','INTC','JNJ','JPM','KO','MCD','MMM','MRK','MSFT','NKE','PG','SHW','TRV','UNH','V','VZ','WMT'];
+    var cryptoSyms=['BTC','ETH','SOL','XRP','DOGE','ADA','AVAX','LINK','TAO','SHIB','FIGR_HELOC','PEPE'];
     var tr=stocks.trending||[];
-    renderStockRows(tr, 'trending-stocks');
-    var mm=stocks.meme_momentum||[];
-    var allMovers=tr.concat(mm||[]).sort(function(a,b){return Math.abs(b.change_percent)-Math.abs(a.change_percent);});
-    renderMovers(allMovers, 'top-movers');
+    var dowGainers=tr.filter(function(s){
+      var sym=(s.symbol||'').toUpperCase();
+      return DOW30.indexOf(sym)>=0 && cryptoSyms.indexOf(sym)<0;
+    }).sort(function(a,b){return (b.change_percent||0)-(a.change_percent||0);});
+    renderStockRows(dowGainers, 'trending-stocks');
+    renderMovers(dowGainers, 'top-movers');
   }catch(e){console.error('stocks',e);}
 
   try{

@@ -533,13 +533,12 @@ function renderAll(d){
   try{renderIndices(d);}catch(e){console.error('indices',e);}
 
   try{
-    var stocks=d.stocks||{};
-    var dow30=stocks.dow30||[];
     var cryptoSyms=['BTC','ETH','SOL','XRP','DOGE','ADA','AVAX','LINK','TAO','SHIB','FIGR_HELOC','PEPE'];
+    var dow30=(d.stocks||{}).dow30||[];
     var dowFiltered=dow30.filter(function(s){return cryptoSyms.indexOf((s.symbol||'').toUpperCase())<0;});
     renderStockRows(dowFiltered, 'trending-stocks');
     var cry=(d.crypto||{}).prices||[];
-    renderMovers(cry, 'top-movers');
+    renderMovers(cry.sort(function(a,b){return Math.abs(b.change_24h||0)-Math.abs(a.change_24h||0);}), 'top-movers');
   }catch(e){console.error('stocks',e);}
 
   try{

@@ -132,6 +132,15 @@ def get_trending_tickers():
         return []
 
 
+def get_dow30_data():
+    """Fetch Dow 30 stocks specifically."""
+    print("[ ] Fetching Dow 30 stocks...")
+    DOW30 = ["AAPL", "AMGN", "AMZN", "AXP", "BA", "CAT", "CRM", "CSCO", "CVX", "DIS",
+             "GS", "HD", "HON", "IBM", "INTC", "JNJ", "JPM", "KO", "MCD", "MMM",
+             "MRK", "MSFT", "NKE", "PG", "SHW", "TRV", "UNH", "V", "VZ", "WMT"]
+    return yahoo_charts_batch(DOW30, delay=0.2)
+
+
 def get_meme_tickers():
     """Known momentum / meme stocks."""
     return ["GME", "AMC", "BB", "PLTR", "TSLA", "NVDA", "AMD", "COIN", "HOOD", "MSTR"]
@@ -145,6 +154,7 @@ def get_stocks_data(file_path=None):
     trending_syms = get_trending_tickers()
     trending = yahoo_charts_batch(trending_syms[:12], delay=0.25)
     meme = yahoo_charts_batch(get_meme_tickers(), delay=0.25)
+    dow30 = get_dow30_data()
 
     # Always ensure S&P 500, Russell 2000, and Dow Jones are present
     indices = get_indices_data()
@@ -179,7 +189,8 @@ def get_stocks_data(file_path=None):
     data = {
         "timestamp": datetime.utcnow().isoformat(),
         "trending": sorted(trending, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:15],
-        "meme_momentum": sorted(meme, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10]
+        "meme_momentum": sorted(meme, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10],
+        "dow30": sorted(dow30, key=lambda x: x.get("change_percent", 0), reverse=True)[:30]
     }
     if file_path:
         with open(file_path, "w", encoding="utf-8") as f:

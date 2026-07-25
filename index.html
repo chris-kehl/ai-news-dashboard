@@ -110,10 +110,13 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .sub-tab-btn[aria-selected="true"]{color:var(--acc);background:rgba(247,165,29,.08);font-weight:600}
 .sub-tab-panel{display:none;animation:fadeIn .35s ease}
 .sub-tab-panel.active{display:block}
-.tv-frame{width:100%;height:620px;border:1px solid var(--brd);border-radius:10px;background:var(--bg-card)}
-.tv-link{display:block;text-align:center;padding:10px;color:var(--acc);font-size:.85rem;text-decoration:none;margin-top:4px}
-.tv-link:hover{text-decoration:underline}
-@media(max-width:768px){.tv-frame{height:420px}}
+.tv-card{display:flex;align-items:center;gap:14px;background:var(--bg-card);border:1px solid var(--brd);border-radius:10px;padding:18px 20px;text-decoration:none;transition:.18s}
+.tv-card:hover{border-color:var(--acc);background:var(--bg-el)}
+.tv-card-icon{font-size:1.6rem;flex-shrink:0}
+.tv-card-title{flex:1;font-size:.92rem;font-weight:600;color:var(--tx)}
+.tv-card-url{font-size:.75rem;color:var(--tx3);flex-shrink:0}
+.tv-card-arrow{font-size:1.2rem;color:var(--acc);flex-shrink:0}
+@media(max-width:768px){.tv-card{flex-direction:column;align-items:flex-start;gap:6px}}
 
 /* ── Games ── */
 .pong-wrap{background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:14px;gap:10px}
@@ -203,20 +206,36 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC</button>
     </div>
     <div id="sub-tab-spx" class="sub-tab-panel active">
-      <iframe class="tv-frame" src="https://www.tradingview.com/chart/SPX/CL1tkBUZ-S-P-500-BEARISH-for-week-27-31-July/" title="S&P 500 Chart"></iframe>
-      <a class="tv-link" href="https://www.tradingview.com/chart/SPX/CL1tkBUZ-S-P-500-BEARISH-for-week-27-31-July/" target="_blank">Open S&P 500 chart on TradingView &#8599;</a>
+      <a class="tv-card" href="https://www.tradingview.com/chart/SPX/CL1tkBUZ-S-P-500-BEARISH-for-week-27-31-July/" target="_blank" rel="noopener">
+        <div class="tv-card-icon">&#128202;</div>
+        <div class="tv-card-title">S&P 500 - BEARISH for week 27-31 July</div>
+        <div class="tv-card-url">TradingView</div>
+        <div class="tv-card-arrow">&#8599;</div>
+      </a>
     </div>
     <div id="sub-tab-rty" class="sub-tab-panel">
-      <iframe class="tv-frame" src="https://www.tradingview.com/chart/RTY/4VXEztwD-Russel-2000-week-of-25-31-July-Bearish/" title="Russell 2000 Chart"></iframe>
-      <a class="tv-link" href="https://www.tradingview.com/chart/RTY/4VXEztwD-Russel-2000-week-of-25-31-July-Bearish/" target="_blank">Open Russell 2000 chart on TradingView &#8599;</a>
+      <a class="tv-card" href="https://www.tradingview.com/chart/RTY/4VXEztwD-Russel-2000-week-of-25-31-July-Bearish/" target="_blank" rel="noopener">
+        <div class="tv-card-icon">&#128202;</div>
+        <div class="tv-card-title">Russell 2000 - Bearish week of 25-31 July</div>
+        <div class="tv-card-url">TradingView</div>
+        <div class="tv-card-arrow">&#8599;</div>
+      </a>
     </div>
     <div id="sub-tab-acwx" class="sub-tab-panel">
-      <iframe class="tv-frame" src="https://www.tradingview.com/chart/ACWX/RunwsRVt-Emerging-Markets-ex-US-Bearish-for-upcoming-week-27-31-July/" title="ACWX Chart"></iframe>
-      <a class="tv-link" href="https://www.tradingview.com/chart/ACWX/RunwsRVt-Emerging-Markets-ex-US-Bearish-for-upcoming-week-27-31-July/" target="_blank">Open ACWX chart on TradingView &#8599;</a>
+      <a class="tv-card" href="https://www.tradingview.com/chart/ACWX/RunwsRVt-Emerging-Markets-ex-US-Bearish-for-upcoming-week-27-31-July/" target="_blank" rel="noopener">
+        <div class="tv-card-icon">&#128202;</div>
+        <div class="tv-card-title">ACWX (Emerging Markets ex US) - Bearish for upcoming week 27-31 July</div>
+        <div class="tv-card-url">TradingView</div>
+        <div class="tv-card-arrow">&#8599;</div>
+      </a>
     </div>
     <div id="sub-tab-emxc" class="sub-tab-panel">
-      <iframe class="tv-frame" src="https://www.tradingview.com/chart/EMXC/Nac3DHPp-Emerging-Markets-ex-China-EMXC-Bearish/" title="EMXC Chart"></iframe>
-      <a class="tv-link" href="https://www.tradingview.com/chart/EMXC/Nac3DHPp-Emerging-Markets-ex-China-EMXC-Bearish/" target="_blank">Open EMXC chart on TradingView &#8599;</a>
+      <a class="tv-card" href="https://www.tradingview.com/chart/EMXC/Nac3DHPp-Emerging-Markets-ex-China-EMXC-Bearish/" target="_blank" rel="noopener">
+        <div class="tv-card-icon">&#128202;</div>
+        <div class="tv-card-title">EMXC (Emerging Markets ex China) - BEARISH</div>
+        <div class="tv-card-url">TradingView</div>
+        <div class="tv-card-arrow">&#8599;</div>
+      </a>
     </div>
   </section>
 

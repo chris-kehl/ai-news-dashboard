@@ -136,6 +136,11 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 </head>
 <body>
 
+<!-- DISCLAIMER -->
+<div style="text-align:center;font-size:.68rem;color:var(--tx3);padding:10px 12px;background:var(--bg-card);border-bottom:1px solid var(--brd)">
+  <strong>Disclaimer</strong>: The content on this site is for informational and educational purposes only and does not constitute financial advice, investment recommendations, or an offer to buy or sell any securities. Past performance is not indicative of future results. Consult a qualified financial advisor before making any investment decisions. All data is sourced from third-party APIs and may be delayed or inaccurate.
+</div>
+
 <!-- TICKER -->
 <div class="ticker-wrap"><div class="ticker-track" id="tickerTrack"></div></div>
 
@@ -231,8 +236,8 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
     <div class="grid">
       <div class="col">
         <div class="card">
-          <div class="card-hd">&#128200; BITTENSOR</div>
-          <div class="card-bd" id="bittensor-tech"><div class="ld">Loading...</div></div>
+          <div class="card-hd">&#128200; NASDAQ ANALYSIS</div>
+          <div class="card-bd" id="nasdaq-tech"><div class="ld">Loading...</div></div>
         </div>
         <div class="card">
           <div class="card-hd">&#128293; HOT STOCKS</div>
@@ -247,6 +252,10 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         <div class="card">
           <div class="card-hd">&#128172; REDDIT</div>
           <div class="card-bd" id="reddit-tech"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-hd">&#128240; TECH BUSINESS</div>
+          <div class="card-bd" id="tech-business-tab"><div class="ld">Loading...</div></div>
         </div>
       </div>
       <div class="col">
@@ -586,25 +595,16 @@ function renderAll(d){
   }catch(e){console.error('defense',e);}
 
   try{
-    var bit=d.bittensor||{},subs=bit.top_subnets||[];
-    var activeSubs=bit.active_subnets||subs.length||0;
-    var totalSubs=bit.total_subnets||subs.length||0;
-    var cc=(bit.price_change_24h||0)>=0?'var(--good)':'var(--danger)';
-    var cs=(bit.price_change_24h||0)>=0?'+':'';
-    var bh='<div class="bittensor-stats">'+
-      '<div class="bittensor-stat"><div class="num" style="font-size:1.1rem">$'+(bit.price||0).toFixed(2)+'</div><div class="lbl">TAO</div></div>'+
-      '<div class="bittensor-stat"><div class="num" style="color:'+cc+'">'+(bit.price_change_24h!=null?cs+(bit.price_change_24h).toFixed(1)+'%':'--')+'</div><div class="lbl">24H</div></div>'+
-      '<div class="bittensor-stat"><div class="num">'+activeSubs+'</div><div class="lbl">Active</div></div>'+
-      '<div class="bittensor-stat"><div class="num">'+totalSubs+'</div><div class="lbl">Subnets</div></div>'+
-      '</div>';
-    if(subs.length){
-      bh+='<div class="stock-row" style="font-size:.68rem;color:var(--tx3);text-transform:uppercase;border-bottom:1px solid var(--brd);padding-bottom:4px;margin-bottom:4px"><span>#</span><span>Name</span><span style="text-align:right">Price</span></div>';
-      bh+=subs.slice(0,IS_MOBILE?4:6).map(function(s,i){
-        return '<div class="stock-row"><span style="text-align:center">'+i+'</span><span style="font-weight:500">'+(s.name||'')+'</span><span style="text-align:right">'+((s.price!=null)?s.price.toFixed(4):'--')+' TAO</span></div>';
-      }).join('');
-    }
-    $('bittensor-tech').innerHTML=bh;
-  }catch(e){console.error('bittensor',e);}
+    var nasdaqHtml='<a class="tv-link" href="https://www.tradingview.com/chart/.IXIC/" target="_blank" rel="noopener">NASDAQ Composite Analysis ↗</a>'+
+      '<iframe class="tv-frame" style="height:320px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-nasdaq&symbol=IXIC&interval=D&timezone=Etc%2FUTC&theme=dark&style=1&locale=en&toolbarbg=f1f3f6&hide_top_toolbar=1&hide_legend=0&save_image=0&calendar=0&details=1&hideideas=1&enable_publishing=false&allow_symbol_change=false" title="NASDAQ Widget"></iframe>'+
+      '<div class="tv-desc" style="font-size:.82rem;padding-top:8px">'+(d.nasdaq_summary||'NASDAQ weekly outlook loading...')+'</div>';
+    $('nasdaq-tech').innerHTML=nasdaqHtml;
+  }catch(e){console.error('nasdaq',e);}
+
+  try{
+    var techNews=(d.tech_business||[]).slice(0,IS_MOBILE?4:6);
+    $('tech-business-tab').innerHTML=techNews.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')||'<div class="ld">No tech news</div>';
+  }catch(e){console.error('tech_business',e);}
 
   try{
     var rp=(d.reddit||[]).slice(0,IS_MOBILE?4:6);
@@ -898,8 +898,5 @@ function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;va
 pongInit();siInit();trInit();fgInit();
 window.addEventListener('resize',function(){pongResize();siResize();trResize();fgResize();});
 </script>
-<footer style="text-align:center;font-size:.68rem;color:var(--tx3);padding:20px 0;border-top:1px solid var(--brd);margin-top:24px">
-  <strong>Disclaimer</strong>: The content on this site is for informational and educational purposes only and does not constitute financial advice, investment recommendations, or an offer to buy or sell any securities. Past performance is not indicative of future results. Consult a qualified financial advisor before making any investment decisions. All data is sourced from third-party APIs and may be delayed or inaccurate.
-</footer>
 </body>
 </html>

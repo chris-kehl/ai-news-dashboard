@@ -115,28 +115,45 @@ def _get_ddg_business(limit=6):
         return []
 
 
+def get_tech_business_data(limit_per_source=8):
+    """Fetch tech business news from Google News Technology RSS + Reddit tech."""
+    print("\n[TECH] Fetching tech business section...")
+    GOOGLE_NEWS_TECH = "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en"
+    tech_items = _parse_google_news_rss(GOOGLE_NEWS_TECH, limit=limit_per_source)
+    print(f"       Google News tech business: {len(tech_items)}")
+
+    reddit_tech = []
+    try:
+        reddit_tech = _parse_reddit_rss("https://www.reddit.com/r/technology/top/.rss?t=day&limit=15", "r/technology", limit=limit_per_source)
+        time.sleep(0.5)
+    except Exception as e:
+        print(f"       Reddit tech error: {e}")
+    print(f"       Reddit tech: {len(reddit_tech)}")
+
+    seen = set()
+    merged = []
+    for it in tech_items + reddit_tech:
+        key = it["title"].lower()[:60]
+        if key not in seen:
+            seen.add(key)
+            merged.append(it)
+    return merged[:limit_per_source * 2]
+
+
 def get_business_data(limit_per_source=8):
     """Aggregate business headlines from Google News + Reddit + DDG."""
     print("\n[BUSINESS] Fetching business section...")
-
-    # 1. Google News (primary — most reliable)
     gn_items = _parse_google_news_rss(GOOGLE_NEWS_BUSINESS, limit=limit_per_source)
     print(f"       Google News business: {len(gn_items)}")
-
-    # 2. Reddit (secondary)
     reddit_items = []
     for url, name in REDDIT_FEEDS:
         reddit_items.extend(_parse_reddit_rss(url, name, limit=limit_per_source))
         time.sleep(0.5)
     print(f"       Reddit business: {len(reddit_items)}")
-
-    # 3. DDG fallback (only if primary sources are weak)
     ddg_items = []
     if len(gn_items) < 3:
         ddg_items = _get_ddg_business(limit=limit_per_source)
         print(f"       DDG business fallback: {len(ddg_items)}")
-
-    # Merge with dedup — Google News first (highest quality), then Reddit, then DDG
     seen = set()
     merged = []
     for it in gn_items + reddit_items + ddg_items:
@@ -144,7 +161,6 @@ def get_business_data(limit_per_source=8):
         if key not in seen:
             seen.add(key)
             merged.append(it)
-
     return merged[:limit_per_source * 2]
 
 

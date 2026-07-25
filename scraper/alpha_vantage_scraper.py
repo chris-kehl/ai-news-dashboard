@@ -148,7 +148,7 @@ def add_av_to_ticker(ticker_items: list, max_sentiment: int = 12):
     for e in enriched:
         if "category" not in e:
             sym = e.get("symbol", "")
-            if sym in ("SPX", "DJI", "IXIC", "VIX", "RUT"):
+            if sym in ("SPX", "DJI", "NDX", "VIX", "RUT"):
                 e["category"] = "index"
             elif sym.endswith("=F"):
                 e["category"] = "futures"

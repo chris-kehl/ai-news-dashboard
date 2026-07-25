@@ -12,7 +12,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleW
 
 def cnbc_quotes(symbols):
     """Fetch real-time quotes from CNBC public quote endpoint.
-    Symbols like .SPX, .DJI, .IXIC, .VIX, AAPL, TSLA, etc.
+    Symbols like .SPX, .DJI, .NDX, .VIX, AAPL, TSLA, etc.
     """
     if not symbols:
         return []
@@ -179,7 +179,7 @@ def get_stocks_data(file_path=None):
     for item in trending:
         sym = item.get("symbol", "")
         # Normalize Yahoo index symbols to our canonical CNBC form
-        canonical = { "^GSPC": ".SPX", "^RUT": ".RUT", "^DJI": ".DJI", "^IXIC": ".IXIC" }.get(sym, sym)
+        canonical = { "^GSPC": ".SPX", "^RUT": ".RUT", "^DJI": ".DJI", "^NDX": ".NDX" }.get(sym, sym)
         if canonical not in seen:
             seen.add(canonical)
             item["symbol"] = canonical  # update symbol to canonical form
@@ -201,7 +201,7 @@ def get_stocks_data(file_path=None):
 def get_indices_data():
     """Fetch major stock index spot prices via CNBC (reliable, no key)."""
     print("[ ] Fetching major index spot prices...")
-    return cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
+    return cnbc_quotes([".SPX", ".DJI", ".NDX", ".VIX", ".RUT"])
 
 
 def get_futures_data():
@@ -218,7 +218,7 @@ def generate_ticker_json(output_path=None):
     print("[ ] Generating market ticker...")
 
     # 1. Market indices via CNBC (reliable)
-    indices = cnbc_quotes([".SPX", ".DJI", ".IXIC", ".VIX", ".RUT"])
+    indices = cnbc_quotes([".SPX", ".DJI", ".NDX", ".VIX", ".RUT"])
 
     # 2. Futures via Yahoo v8 (works for futures symbols)
     futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "NG=F"]

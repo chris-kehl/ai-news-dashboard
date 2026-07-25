@@ -140,14 +140,45 @@ def get_meme_tickers():
 # ─── Master: Hot Stocks card data ─────────────────────────────────────────────
 
 def get_stocks_data(file_path=None):
-    """Trending + meme stocks for the HOT STOCKS card."""
+    """Trending + meme stocks for the HOT STOCKS card. Always includes S&P 500, Russell 2000, and Dow Jones."""
     print("[ ] Fetching hottest stocks...")
     trending_syms = get_trending_tickers()
     trending = yahoo_charts_batch(trending_syms[:12], delay=0.25)
     meme = yahoo_charts_batch(get_meme_tickers(), delay=0.25)
+
+    # Always ensure S&P 500, Russell 2000, and Dow Jones are present
+    indices = get_indices_data()
+    index_symbols = {".SPX", ".RUT", ".DJI"}
+    for idx in indices:
+        sym = idx.get("symbol", "")
+        if sym in index_symbols:
+            idx["change"] = idx.get("change", 0)
+            trending.append(idx)
+            index_symbols.discard(sym)
+    # Fallback Yahoo fetch for any missing index (Yahoo uses ^ prefix for indices)
+    fallback_map = {".SPX": "^GSPC", ".RUT": "^RUT", ".DJI": "^DJI"}
+    for leftover in index_symbols:
+        q = yahoo_chart(fallback_map.get(leftover, leftover))
+        if q:
+            q["symbol"] = leftover  # show .SPX etc in output
+            trending.append(q)
+
+    # Remove duplicate indices (^DJI when .DJI already present, etc.)
+    seen = set()
+    deduped = []
+    for item in trending:
+        sym = item.get("symbol", "")
+        # Normalize Yahoo index symbols to our canonical CNBC form
+        canonical = { "^GSPC": ".SPX", "^RUT": ".RUT", "^DJI": ".DJI", "^IXIC": ".IXIC" }.get(sym, sym)
+        if canonical not in seen:
+            seen.add(canonical)
+            item["symbol"] = canonical  # update symbol to canonical form
+            deduped.append(item)
+    trending = deduped
+
     data = {
         "timestamp": datetime.utcnow().isoformat(),
-        "trending": sorted(trending, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10],
+        "trending": sorted(trending, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:15],
         "meme_momentum": sorted(meme, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10]
     }
     if file_path:

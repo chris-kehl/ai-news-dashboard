@@ -103,21 +103,33 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 @keyframes tick{to{transform:translateX(-100%)}}
 .ticker-wrap:hover .ticker-track{animation-play-state:paused}
 
-|/* ── Game Styles ── */
-|.pong-wrap{background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:14px;gap:10px}
-|.pong-canvas{width:100%;max-width:720px;height:auto;max-height:calc(100vh - 280px);background:#0a0c10;border:1px solid var(--brd);border-radius:8px;cursor:none;touch-action:none;flex-shrink:1}
-|.pong-hud{display:flex;justify-content:space-between;width:100%;max-width:720px;font-family:'JetBrains Mono';font-size:1rem;flex-shrink:0}
-|.pong-score{color:var(--tx);font-weight:700}
-|.pong-score span{color:var(--acc)}
-|.pong-status{color:var(--tx3);font-size:.75rem}
-|.pong-ctrl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;flex-shrink:0}
-|.pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
-|.mobile-ctrl{display:none;justify-content:center;gap:6px;padding:8px 0;flex-shrink:0}
-|.dpad{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(2,48px);gap:4px;justify-items:center}
-|.dpad .dp-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);border-radius:8px;font-size:1.2rem;width:52px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
-|.dpad .dp-btn:active{background:var(--bg-sel);border-color:var(--acc);color:var(--acc)}
-|.dpad .dp-empty{visibility:hidden}
-|@media(max-width:768px){.mobile-ctrl{display:flex}}
+/* ── Sub-tabs (Market Analysis) ── */
+.sub-tab-nav{display:flex;gap:4px;padding:8px 0 12px;border-bottom:1px solid var(--brd);margin-bottom:12px;flex-wrap:wrap}
+.sub-tab-btn{background:transparent;border:none;color:var(--tx3);font-family:inherit;font-size:.85rem;font-weight:500;padding:7px 16px;border-radius:6px;cursor:pointer;transition:.18s;white-space:nowrap}
+.sub-tab-btn:hover{color:var(--tx)}
+.sub-tab-btn[aria-selected="true"]{color:var(--acc);background:rgba(247,165,29,.08);font-weight:600}
+.sub-tab-panel{display:none;animation:fadeIn .35s ease}
+.sub-tab-panel.active{display:block}
+.tv-frame{width:100%;height:620px;border:1px solid var(--brd);border-radius:10px;background:var(--bg-card)}
+.tv-link{display:block;text-align:center;padding:10px;color:var(--acc);font-size:.85rem;text-decoration:none;margin-top:4px}
+.tv-link:hover{text-decoration:underline}
+@media(max-width:768px){.tv-frame{height:420px}}
+
+/* ── Games ── */
+.pong-wrap{background:var(--bg-card);border:1px solid var(--brd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:14px;gap:10px}
+.pong-canvas{width:100%;max-width:720px;height:auto;max-height:calc(100vh - 280px);background:#0a0c10;border:1px solid var(--brd);border-radius:8px;cursor:none;touch-action:none;flex-shrink:1}
+.pong-hud{display:flex;justify-content:space-between;width:100%;max-width:720px;font-family:'JetBrains Mono';font-size:1rem;flex-shrink:0}
+.pong-score{color:var(--tx);font-weight:700}
+.pong-score span{color:var(--acc)}
+.pong-status{color:var(--tx3);font-size:.75rem}
+.pong-ctrl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;flex-shrink:0}
+.pong-ctrl .btn{min-height:36px;padding:6px 18px;font-size:.8rem}
+.mobile-ctrl{display:none;justify-content:center;gap:6px;padding:8px 0;flex-shrink:0}
+.dpad{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(2,48px);gap:4px;justify-items:center}
+.dpad .dp-btn{background:var(--bg-el);border:1px solid var(--brd);color:var(--tx);border-radius:8px;font-size:1.2rem;width:52px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
+.dpad .dp-btn:active{background:var(--bg-sel);border-color:var(--acc);color:var(--acc)}
+.dpad .dp-empty{visibility:hidden}
+@media(max-width:768px){.mobile-ctrl{display:flex}}
 </style>
 </head>
 <body>
@@ -129,6 +141,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 <nav class="tab-nav" role="tablist" aria-label="Categories">
   <div class="tab-nav-inner">
     <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-market" id="tab-btn-market" tabindex="0">Market</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-market-analysis" id="tab-btn-market-analysis" tabindex="-1">Market Analysis</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sticky" id="tab-btn-sticky" tabindex="-1">CNBC · Yahoo · Bloomberg</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="-1">Games vs Chutes</button>
@@ -178,6 +191,32 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
           <div class="card-bd" id="defense-news"><div class="ld">Loading...</div></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- MARKET ANALYSIS TAB -->
+  <section id="tab-market-analysis" role="tabpanel" aria-labelledby="tab-btn-market-analysis" class="tab-panel" hidden>
+    <div class="sub-tab-nav" role="tablist" aria-label="Market Analysis Indices">
+      <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&P 500</button>
+      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000</button>
+      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-acwx" onclick="switchSubTab('acwx')">ACWX</button>
+      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC</button>
+    </div>
+    <div id="sub-tab-spx" class="sub-tab-panel active">
+      <iframe class="tv-frame" src="https://www.tradingview.com/chart/SPX/CL1tkBUZ-S-P-500-BEARISH-for-week-27-31-July/" title="S&P 500 Chart"></iframe>
+      <a class="tv-link" href="https://www.tradingview.com/chart/SPX/CL1tkBUZ-S-P-500-BEARISH-for-week-27-31-July/" target="_blank">Open S&P 500 chart on TradingView &#8599;</a>
+    </div>
+    <div id="sub-tab-rty" class="sub-tab-panel">
+      <iframe class="tv-frame" src="https://www.tradingview.com/chart/RTY/4VXEztwD-Russel-2000-week-of-25-31-July-Bearish/" title="Russell 2000 Chart"></iframe>
+      <a class="tv-link" href="https://www.tradingview.com/chart/RTY/4VXEztwD-Russel-2000-week-of-25-31-July-Bearish/" target="_blank">Open Russell 2000 chart on TradingView &#8599;</a>
+    </div>
+    <div id="sub-tab-acwx" class="sub-tab-panel">
+      <iframe class="tv-frame" src="https://www.tradingview.com/chart/ACWX/RunwsRVt-Emerging-Markets-ex-US-Bearish-for-upcoming-week-27-31-July/" title="ACWX Chart"></iframe>
+      <a class="tv-link" href="https://www.tradingview.com/chart/ACWX/RunwsRVt-Emerging-Markets-ex-US-Bearish-for-upcoming-week-27-31-July/" target="_blank">Open ACWX chart on TradingView &#8599;</a>
+    </div>
+    <div id="sub-tab-emxc" class="sub-tab-panel">
+      <iframe class="tv-frame" src="https://www.tradingview.com/chart/EMXC/Nac3DHPp-Emerging-Markets-ex-China-EMXC-Bearish/" title="EMXC Chart"></iframe>
+      <a class="tv-link" href="https://www.tradingview.com/chart/EMXC/Nac3DHPp-Emerging-Markets-ex-China-EMXC-Bearish/" target="_blank">Open EMXC chart on TradingView &#8599;</a>
     </div>
   </section>
 
@@ -378,7 +417,7 @@ var $=function(id){return document.getElementById(id)};
 var IS_MOBILE=window.innerWidth<768;
 
 /* ===== TABS ===== */
-var tabs=['market','tech','sticky','chutes'];
+var tabs=['market','market-analysis','tech','sticky','chutes'];
 var currentTab='market';
 
 function switchTab(tabId){
@@ -394,6 +433,21 @@ function switchTab(tabId){
   var cached=null;try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
   if(cached){try{renderAll(cached);}catch(e){console.error(e);}}
   loadData();
+}
+
+/* ===== SUB-TABS (Market Analysis) ===== */
+var currentSubTab='spx';
+function switchSubTab(subId){
+  if(subId===currentSubTab)return;
+  var oldPanel=$('sub-tab-'+currentSubTab);
+  var newPanel=$('sub-tab-'+subId);
+  var oldBtn=document.querySelector('.sub-tab-btn[aria-controls="sub-tab-'+currentSubTab+'"]');
+  var newBtn=document.querySelector('.sub-tab-btn[aria-controls="sub-tab-'+subId+'"]');
+  if(oldPanel){oldPanel.classList.remove('active');}
+  if(newPanel){newPanel.classList.add('active');}
+  if(oldBtn){oldBtn.setAttribute('aria-selected','false');}
+  if(newBtn){newBtn.setAttribute('aria-selected','true');}
+  currentSubTab=subId;
 }
 
 function initTabs(){

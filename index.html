@@ -137,6 +137,32 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .pong-slider-track{width:100%;height:100%;position:relative}
 .pong-slider-thumb{width:36px;height:48px;background:var(--acc);border-radius:6px;position:absolute;left:4px;top:50%;transform:translateY(-50%);opacity:.85}
 @media(max-width:768px){.pong-slider{display:block}}
+
+/* ── Donate ── */
+.donate-btn{position:fixed;bottom:16px;right:16px;z-index:400;background:var(--acc);color:#000;border:none;border-radius:50%;width:56px;height:56px;font-size:2rem;cursor:pointer;box-shadow:0 4px 14px rgba(247,165,29,.35);display:flex;align-items:center;justify-content:center;transition:.2s}
+.donate-btn:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(247,165,29,.5)}
+.donate-mdl{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:500;align-items:center;justify-content:center;padding:14px}
+.donate-mdl.show{display:flex}
+.donate-box{background:var(--bg-card);border:1px solid var(--brd);border-radius:10px;padding:20px;width:100%;max-width:420px;max-height:90vh;overflow-y:auto}
+.donate-box h3{margin-bottom:6px;font-size:1.05rem}
+.donate-box p{color:var(--tx2);font-size:0.78rem;margin-bottom:14px}
+.donate-row{background:var(--bg-el);border:1px solid var(--brd);border-radius:6px;padding:10px 12px;margin-bottom:10px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:.15s}
+.donate-row:hover{border-color:var(--acc)}
+.donate-row .sym{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;color:#fff;flex-shrink:0}
+.donate-row.btc .sym{background:#f7931a}
+.donate-row.eth .sym{background:#627eea}
+.donate-row.tao .sym{background:#f7a51d;color:#000}
+.donate-row.usdc .sym{background:#2775ca}
+.donate-row .info{flex:1;min-width:0}
+.donate-row .coin{font-weight:600;font-size:0.8rem}
+.donate-row .addr{font-family:'JetBrains Mono';font-size:0.65rem;color:var(--tx3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.donate-row .cpy{background:none;border:none;color:var(--acc);font-size:0.75rem;cursor:pointer;padding:4px 6px;border-radius:4px}
+.donate-row .cpy:hover{background:rgba(247,165,29,.1)}
+.donate-qr{text-align:center;margin-top:4px}
+.donate-qr img{width:110px;height:110px;border-radius:6px;border:1px solid var(--brd)}
+.donate-close{float:right;background:none;border:none;color:var(--tx3);font-size:1.2rem;cursor:pointer;padding:2px 6px}
+.donate-close:hover{color:var(--tx)}
+.donate-note{color:var(--tx3);font-size:0.68rem;text-align:center;margin-top:10px}
 </style>
 </head>
 <body>
@@ -145,6 +171,9 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 <div style="text-align:center;font-size:.68rem;color:var(--tx3);padding:10px 12px;background:var(--bg-card);border-bottom:1px solid var(--brd)">
   <strong>Disclaimer</strong>: The content on this site is for informational and educational purposes only and does not constitute financial advice, investment recommendations, or an offer to buy or sell any securities. Past performance is not indicative of future results. Consult a qualified financial advisor before making any investment decisions. All data is sourced from third-party APIs and may be delayed or inaccurate.
 </div>
+
+<!-- Donate button -->
+<button class="donate-btn" onclick="showDonate()" title="Buy me a coffee">&#9749;</button>
 
 <!-- TICKER -->
 <div class="ticker-wrap"><div class="ticker-track" id="tickerTrack"></div></div>
@@ -963,6 +992,45 @@ function fgDraw(){
   ctx.fillStyle='#22c55e';ctx.beginPath();ctx.arc(fg.frog.x+fg.frog.w/2,fg.frog.y+fg.frog.h/2,15,0,Math.PI*2);ctx.fill();
 }
 function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;var maxW=Math.min(600,wrap.clientWidth-28);c.style.width=maxW+'px';c.style.height=(maxW*1.17)+'px';}
+
+/* ===== Donate ===== */
+var DONATE_ADDRS={
+  btc:{name:'Bitcoin',addr:'bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4'},
+  eth:{name:'Ethereum',addr:'0xfc4104efcf017Aa20a897E79D7D2136103D34Be4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xfc4104efcf017Aa20a897E79D7D2136103D34Be4'},
+  tao:{name:'TAO',addr:'5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy'},
+  usdc:{name:'USDC',addr:'0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5'}
+};
+function showDonate(){
+  var mdl=$('donateMdl');
+  if(!mdl){
+    var html='<div class="donate-mdl" id="donateMdl" onclick="if(event.target===this)hideDonate()">'+
+      '<div class="donate-box">'+
+        '<button class="donate-close" onclick="hideDonate()">&#10005;</button>'+
+        '<h3>&#9749; Buy Me a Coffee</h3>'+
+        '<p>If you like this real-time local feed project, consider buying me a coffee.</p>'+
+        '<div id="donateRows"></div>'+
+        '<div class="donate-note">All donations help keep the scrapers running 24/7. Thank you &#10084;</div>'+
+      '</div></div>';
+    document.body.insertAdjacentHTML('beforeend',html);
+    mdl=$('donateMdl');
+    var rows='';
+    for(var k in DONATE_ADDRS){
+      var d=DONATE_ADDRS[k];
+      rows+='<div class="donate-row '+k+'" onclick="showDonateQR(\''+k+'\')">'+
+        '<div class="sym">'+k.toUpperCase().slice(0,3)+'</div>'+
+        '<div class="info"><div class="coin">'+d.name+'</div><div class="addr" id="addr-'+k+'">'+d.addr+'</div></div>'+
+        '<button class="cpy" onclick="event.stopPropagation();copyDonateAddr(\''+k+'\')">Copy</button>'+
+        '</div>'+
+        '<div class="donate-qr" id="qr-'+k+'" style="display:none"><img src="'+d.qr+'" alt="'+d.name+' QR" loading="lazy"></div>';
+    }
+    $('donateRows').innerHTML=rows;
+  }
+  mdl.classList.add('show');
+}
+function hideDonate(){$('donateMdl').classList.remove('show');for(var k in DONATE_ADDRS)if($('qr-'+k))$('qr-'+k).style.display='none';}
+function showDonateQR(k){var el=$('qr-'+k);if(el)el.style.display=el.style.display==='none'?'block':'none';}
+function copyDonateAddr(k){var a=DONATE_ADDRS[k].addr;navigator.clipboard.writeText(a).then(function(){var btn=event.target;btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},1200)});}
+
 pongInit();siInit();trInit();fgInit();
 window.addEventListener('resize',function(){pongResize();siResize();trResize();fgResize();});
 </script>

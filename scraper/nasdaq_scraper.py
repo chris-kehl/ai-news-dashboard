@@ -1,32 +1,12 @@
 #!/usr/bin/env python3
-"""NASDAQ Composite scraper.  Uses Yahoo Finance (free-ish, no key needed).
+"""NASDAQ (Nasdaq-100 / NDX) data provider.
 
-Returns:
-    {
-      "price": float,
-      "change": float,
-      "changePercent": float,
-      "signal": "BULLISH" | "BEARISH" | "NEUTRAL",
-      "analysis": str,  # weekly outlook text
-    }
+Reads from the existing scraper/ticker.json (already fetched by stocks_scraper.py
+via CNBC). Computes bullish/bearish signal and generates analysis text.
+No extra HTTP calls — avoids 429s.
 """
-import json, os, requests
-
-_NASDAQ_TICKER = "^NDX"
-_YF_URL = (
-    "https://query1.finance.yahoo.com/v8/finance/chart/"
-    "^NDX?interval=1d&range=3mo&indicators=quote&includeAdjustedClose=true"
-)
-_BROWSER_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Accept": "application/json",
-}
-
-
-def _ma(prices, window):
-    if len(prices) < window:
-        return None
-    return sum(prices[-window:]) / window
+import json
+import os
 
 
 def get_nasdaq_data():
@@ -39,56 +19,49 @@ def get_nasdaq_data():
         "timestamp": None,
     }
     try:
-        r = requests.get(_YF_URL, headers=_BROWSER_HEADERS, timeout=20)
-        r.raise_for_status()
-        j = r.json()
-        chart = j.get("chart", {}).get("result", [{}])[0]
-        meta = chart.get("meta", {})
-        closes = chart.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+        ticker_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ticker.json")
+        with open(ticker_path, "r") as f:
+            ticker = json.load(f)
 
-        # current price
-        price = meta.get("regularMarketPrice")
-        prev_close = meta.get("chartPreviousClose")
-        if price is None and closes:
-            price = closes[-1]
-        if prev_close is None and len(closes) >= 2:
-            prev_close = closes[-2]
-
-        if price is not None:
-            result["price"] = round(float(price), 2)
-        if prev_close and price:
-            result["change"] = round(float(price) - float(prev_close), 2)
-            result["changePercent"] = round(
-                (float(price) - float(prev_close)) / float(prev_close) * 100, 2
+        items = ticker.get("items", [])
+        nitem = next((i for i in items if i.get("symbol") == "NDX"), None)
+        if not nitem:
+            # Fallback: try .NDX or IXIC
+            nitem = next(
+                (i for i in items if i.get("symbol") in (".NDX", "NDX", "IXIC", ".IXIC")), None
             )
+        if not nitem:
+            return result
 
-        # signal: vs 20-day & 50-day moving averages
-        if len(closes) >= 50 and all(c is not None for c in closes[-50:]):
-            ma20 = _ma(closes, 20)
-            ma50 = _ma(closes, 50)
-            last = closes[-1]
-            if ma20 and ma50 and last:
-                if last > ma20 > ma50:
-                    result["signal"] = "BULLISH"
-                elif last < ma20 < ma50:
-                    result["signal"] = "BEARISH"
-                else:
-                    result["signal"] = "NEUTRAL"
+        price = nitem.get("price")
+        change_pct = nitem.get("change")
 
-                direction = result["signal"]
-                if direction == "BULLISH":
-                    result["analysis"] = f"NASDAQ ({result['price']:,.2f}) is trading above both its 20-day ({ma20:,.0f}) and 50-day ({ma50:,.0f}) MAs — a bullish setup. If momentum holds, expect a test of recent highs this week. Watch resistance at Fib extensions and tech earnings calendar."
-                elif direction == "BEARISH":
-                    result["analysis"] = f"NASDAQ ({result['price']:,.2f}) is below the 20-day ({ma20:,.0f}) and 50-day ({ma50:,.0f}) MAs — bearish posture. Risk is to the downside; a break below the 50-day could target the next Fib retracement level. Monitor yields and macro headlines."
-                else:
-                    result["analysis"] = f"NASDAQ ({result['price']:,.2f}) is mixed vs the 20-day ({ma20:,.0f}) and 50-day ({ma50:,.0f}) MAs — sideways consolidation likely this week. Range-bound until a clear breakout above resistance or breakdown below support."
+        result["price"] = round(price, 2) if price is not None else None
+        result["changePercent"] = round(change_pct, 2) if change_pct is not None else None
 
-        result["timestamp"] = chart.get("meta", {}).get("regularMarketTime")
+        if change_pct is not None:
+            result["change"] = round(change_pct, 2)
+            if change_pct > 0.5:
+                result["signal"] = "BULLISH"
+                result[
+                    "analysis"
+                ] = f"NASDAQ-100 (NDX) at {result['price']:,.2f}, up {change_pct:+.2f}% today — momentum is positive. If this continues, expect a test of recent highs into week-end. Monitor tech earnings and yields for confirmation."
+            elif change_pct < -0.5:
+                result["signal"] = "BEARISH"
+                result[
+                    "analysis"
+                ] = f"NASDAQ-100 (NDX) at {result['price']:,.2f}, down {change_pct:.2f}% today — under pressure. Risk is to the downside with potential for a retest of support. Watch macro headlines and yield moves for reversal signals."
+            else:
+                result["signal"] = "NEUTRAL"
+                result[
+                    "analysis"
+                ] = f"NASDAQ-100 (NDX) at {result['price']:,.2f}, nearly flat ({change_pct:+.2f}%) — consolidation mode this week. A breakout above resistance or breakdown below support will set the next direction."
 
     except Exception as e:
-        print(f"      NASDAQ scraper error: {e}")
+        print(f"      NASDAQ data error: {e}")
     return result
 
 
 if __name__ == "__main__":
+    import json
     print(json.dumps(get_nasdaq_data(), indent=2))

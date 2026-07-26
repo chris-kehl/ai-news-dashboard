@@ -236,9 +236,9 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
     </div>
 
     <div class="card" style="margin-top:22px">
-      <div class="card-hd">&#128172; MARKET COMMENTS</div>
-      <div class="card-bd" style="padding:0">
-        <iframe src="https://github.com/chris-kehl/ai-news-dashboard/discussions/categories/general" width="100%" height="600" style="border:none;"></iframe>
+      <div class="card-hd">&#128172; COMMUNITY POLL</div>
+      <div class="card-bd" id="market-poll" style="padding:16px">
+        <div class="ld">Loading poll...</div>
       </div>
     </div>
   </section>
@@ -692,10 +692,30 @@ function renderTicker(items){
   }).join('');
 }
 
+/* ===== GITHUB DISCUSSION POLL ===== */
+async function loadMarketPoll(){
+  var el=$('market-poll');if(!el)return;
+  try{
+    var r=await fetch('https://api.github.com/repos/chris-kehl/ai-news-dashboard/discussions/4');
+    var d=await r.json();
+    var html='<div style="margin-bottom:12px;font-weight:600;font-size:1.05rem">'+escapeHtml(d.title)+'</div>'+
+      '<div style="color:var(--tx2);font-size:.85rem;margin-bottom:16px">'+escapeHtml(d.body)+'</div>'+
+      '<div style="display:flex;gap:12px;flex-wrap:wrap">'+
+      '<a href="'+d.html_url+'" target="_blank" rel="noopener" class="btn" style="background:var(--accent);color:#fff;padding:8px 18px;border-radius:6px;text-decoration:none;font-size:.85rem;font-weight:600">&#9745; Vote on GitHub</a>'+
+      '<a href="'+d.html_url+'" target="_blank" rel="noopener" style="padding:8px 18px;border-radius:6px;text-decoration:none;font-size:.85rem;font-weight:600;border:1px solid var(--accent);color:var(--accent)">&#128172; View Discussion</a>'+
+      '</div>'+
+      '<div style="margin-top:14px;font-size:.75rem;color:var(--tx3)">&#128100; @'+escapeHtml(d.user.login)+' &middot; '+fmtDate(d.created_at)+'</div>';
+    el.innerHTML=html;
+  }catch(e){console.error('poll',e);el.innerHTML='<div class="ld">Poll unavailable</div>';}
+}
+function escapeHtml(s){if(!s)return'';return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fmtDate(iso){if(!iso)return'';var d=new Date(iso);return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
+
 /* ===== INIT ===== */
 document.addEventListener('DOMContentLoaded',function(){
   initTabs();
   loadData();
+  loadMarketPoll();
   var refresh=parseInt(localStorage.getItem('refresh')||'15',10);
   setInterval(loadData,refresh*60*1000);
 });

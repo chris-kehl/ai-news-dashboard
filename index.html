@@ -377,12 +377,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
         </div>
-        <div class="pong-area">
-          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
-          <div class="pong-slider" id="pongSlider">
-            <div class="pong-slider-track" id="pongTrack"><div class="pong-slider-thumb" id="pongThumb"></div></div>
-          </div>
-        </div>
+        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
         <div class="pong-ctrl">
           <button class="btn" onclick="pongStart()">Start Game</button>
           <button class="btn" onclick="pongReset()">Reset</button>

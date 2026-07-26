@@ -622,6 +622,11 @@ function renderAll(d){
   }catch(e){console.error('nasdaq',e);}
 
   try{
+    var nd100=(d.stocks||{}).nd100||[];
+    renderStockRows(nd100.slice(0,IS_MOBILE?5:8), 'hot-stocks-tab');
+  }catch(e){console.error('hot-stocks',e);}
+
+  try{
     var techNews=(d.tech_business||[]).slice(0,IS_MOBILE?4:6);
     $('tech-business-tab').innerHTML=techNews.map(function(n){return '<div class="item"><a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a><div class="item-meta"><span>'+(n.source||'')+'</span></div></div>'}).join('')||'<div class="ld">No tech news</div>';
   }catch(e){console.error('tech_business',e);}

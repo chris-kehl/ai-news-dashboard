@@ -141,6 +141,16 @@ def get_dow30_data():
     return yahoo_charts_batch(DOW30, delay=0.2)
 
 
+def get_nd100_stocks():
+    """Fetch top Nasdaq-100 weighted components via Yahoo charts."""
+    print("[ ] Fetching Nasdaq-100 components...")
+    NDX_TOP = [
+        "AAPL", "MSFT", "NVDA", "AMZN", "META", "GOOGL", "TSLA", "AVGO",
+        "PEP", "COST", "ADBE", "CSCO", "TMO", "CMCSA", "AMD", "NKE",
+        "TXN", "AMGN", "HON", "INTU"
+    ]
+    return yahoo_charts_batch(NDX_TOP, delay=0.15)
+
 def get_meme_tickers():
     """Known momentum / meme stocks."""
     return ["GME", "AMC", "BB", "PLTR", "TSLA", "NVDA", "AMD", "COIN", "HOOD", "MSTR"]
@@ -186,11 +196,14 @@ def get_stocks_data(file_path=None):
             deduped.append(item)
     trending = deduped
 
+    nd100 = get_nd100_stocks()
+
     data = {
         "timestamp": datetime.utcnow().isoformat(),
         "trending": sorted(trending, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:15],
         "meme_momentum": sorted(meme, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:10],
-        "dow30": sorted(dow30, key=lambda x: x.get("change_percent", 0), reverse=True)[:30]
+        "dow30": sorted(dow30, key=lambda x: x.get("change_percent", 0), reverse=True)[:30],
+        "nd100": sorted(nd100, key=lambda x: abs(x.get("change_percent", 0)), reverse=True)[:20]
     }
     if file_path:
         with open(file_path, "w", encoding="utf-8") as f:

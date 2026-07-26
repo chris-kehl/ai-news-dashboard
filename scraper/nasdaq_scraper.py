@@ -14,8 +14,8 @@ def get_nasdaq_data():
         "price": None,
         "change": None,
         "changePercent": None,
-        "signal": "NEUTRAL",
-        "analysis": "NASDAQ weekly outlook loading...",
+        "signal": "BEARISH",
+        "analysis": "NASDAQ Bearish View for week ending 27-31 July — Weekly outlook projects downside continuation into month-end. See full chart at https://www.tradingview.com/chart/NDX/788pjxnK/",
         "timestamp": None,
     }
     try:

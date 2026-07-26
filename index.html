@@ -151,8 +151,9 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .donate-row .sym{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;color:#fff;flex-shrink:0}
 .donate-row.btc .sym{background:#f7931a}
 .donate-row.eth .sym{background:#627eea}
-.donate-row.tao .sym{background:#f7a51d;color:#000}
+.donate-row.usdt .sym{background:#26a17b}
 .donate-row.usdc .sym{background:#2775ca}
+.donate-row.tao .sym{background:#f7a51d;color:#000}
 .donate-row .info{flex:1;min-width:0}
 .donate-row .coin{font-weight:600;font-size:0.8rem}
 .donate-row .addr{font-family:'JetBrains Mono';font-size:0.65rem;color:var(--tx3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
@@ -997,8 +998,9 @@ function fgResize(){var c=$('fgCanvas');if(!c)return;var wrap=c.parentElement;va
 var DONATE_ADDRS={
   btc:{name:'Bitcoin',addr:'bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1qf6negv8a37054dz4ha9vr2qcnwmmkpwld3c2c4'},
   eth:{name:'Ethereum',addr:'0xfc4104efcf017Aa20a897E79D7D2136103D34Be4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xfc4104efcf017Aa20a897E79D7D2136103D34Be4'},
-  tao:{name:'TAO',addr:'5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy'},
-  usdc:{name:'USDC',addr:'0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5'}
+  usdt:{name:'USDT (ERC-20)',addr:'0xfc4104efcf017Aa20a897E79D7D2136103D34Be4',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xfc4104efcf017Aa20a897E79D7D2136103D34Be4'},
+  usdc:{name:'USDC',addr:'0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x1ca2e95Dce7F452977013961dA86C21C9B2fB4B5'},
+  tao:{name:'TAO',addr:'5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy',qr:'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=5CCferEiBZp21nhEpHaaamBAzLvbKGQS5mJUn541sAMCVAYy'}
 };
 function showDonate(){
   var mdl=$('donateMdl');

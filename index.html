@@ -347,7 +347,12 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
         </div>
-        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+        <div class="pong-area">
+          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+          <div class="pong-slider" id="pongSlider">
+            <div class="pong-slider-track" id="pongTrack"><div class="pong-slider-thumb" id="pongThumb"></div></div>
+          </div>
+        </div>
         <div class="pong-ctrl">
           <button class="btn" onclick="pongStart()">Start Game</button>
           <button class="btn" onclick="pongReset()">Reset</button>
@@ -704,6 +709,13 @@ function pongInit(){
   pongResize();
   pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;});
   pong.canvas.addEventListener('touchmove',function(e){e.preventDefault();var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.touches[0].clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;},{passive:false});
+  var track=$('pongTrack');
+  if(track){
+    function pongSliderMove(e){var rect=track.getBoundingClientRect();var clientY=e.touches?e.touches[0].clientY:e.clientY;var ratio=(clientY-rect.top)/rect.height;if(ratio<0)ratio=0;if(ratio>1)ratio=1;pong.playerY=ratio*(pong.H-pong.paddleH);var thumb=$('pongThumb');if(thumb){var trH=rect.height||2;thumb.style.top=(ratio*(trH-48))+'px';}}
+    track.addEventListener('touchmove',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+    track.addEventListener('touchstart',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+    track.addEventListener('mousemove',pongSliderMove);
+  }
   pongDraw();
 }
 function pongResize(){

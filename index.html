@@ -132,6 +132,11 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 .dpad .dp-btn:active{background:var(--bg-sel);border-color:var(--acc);color:var(--acc)}
 .dpad .dp-empty{visibility:hidden}
 @media(max-width:768px){.mobile-ctrl{display:flex}}
+.pong-area{display:flex;gap:8px;align-items:stretch;width:100%;max-width:720px;position:relative}
+.pong-slider{display:none;width:44px;background:var(--bg-el);border:1px solid var(--brd);border-radius:8px;touch-action:none;position:relative;flex-shrink:0}
+.pong-slider-track{width:100%;height:100%;position:relative}
+.pong-slider-thumb{width:36px;height:48px;background:var(--acc);border-radius:6px;position:absolute;left:4px;top:50%;transform:translateY(-50%);opacity:.85}
+@media(max-width:768px){.pong-slider{display:block}}
 </style>
 </head>
 <body>

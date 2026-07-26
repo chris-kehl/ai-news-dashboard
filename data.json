@@ -1,7 +1,15 @@
 {
-  "timestamp": "2026-07-25T23:32:58.491471",
-  "summary": "Key topics today:\n- - The new rules of context engineering for Claude 5 generation models (r/HackerNews, 201 pts)\n- - Cloudflare's new AI traffic options for customers (r/HackerNews, 101 pts)\n- - Running a 28.9M parameter LLM on an $8 microcontroller (r/HackerNews, 101 pts)\n- - LLM Usage in Debian: Three Proposals (r/HackerNews, 101 pts)\n- - Open-weight AI is having its Kubernetes moment (r/HackerNews, 101 pts)",
+  "timestamp": "2026-07-25T23:47:53.240440",
+  "summary": "Key topics today:\n- - The new rules of context engineering for Claude 5 generation models (r/HackerNews, 201 pts)\n- - Cloudflare's new AI traffic options for customers (r/HackerNews, 101 pts)\n- - Running a 28.9M parameter LLM on an $8 microcontroller (r/HackerNews, 101 pts)\n- - Rethinking Legal Education in the AI Era (r/HackerNews, 101 pts)\n- - Open-weight AI is having its Kubernetes moment (r/HackerNews, 101 pts)",
   "signals": [
+    {
+      "type": "watch",
+      "asset": "FIGR_HELOC",
+      "price": 1.034,
+      "change": 2.9,
+      "category": "crypto",
+      "text": "FIGR_HELOC +2.9% @ $1.03"
+    },
     {
       "type": "sell",
       "asset": "TSLA",
@@ -14,9 +22,9 @@
       "type": "buy",
       "asset": "SHIB-USD",
       "price": 0.0,
-      "change": 7.95,
+      "change": 10.2,
       "category": "stock",
-      "text": "SHIB-USD +8.0% momentum @ $0.00"
+      "text": "SHIB-USD +10.2% momentum @ $0.00"
     },
     {
       "type": "sell",
@@ -61,11 +69,11 @@
       "created": ""
     },
     {
-      "title": "LLM Usage in Debian: Three Proposals",
+      "title": "Rethinking Legal Education in the AI Era",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://www.debian.org/vote/2026/vote_002",
+      "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
       "created": ""
     },
     {
@@ -77,11 +85,11 @@
       "created": ""
     },
     {
-      "title": "Rethinking Legal Education in the AI Era",
+      "title": "LLM Usage in Debian: Three Proposals",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
+      "url": "https://www.debian.org/vote/2026/vote_002",
       "created": ""
     },
     {
@@ -93,6 +101,14 @@
       "created": ""
     },
     {
+      "title": "Show HN: I mapped every US golf course \u2013 16k+ courses, free, no signup",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://golfcoursebrowser.com/",
+      "created": ""
+    },
+    {
       "title": "Stolen Buttons",
       "subreddit": "HackerNews",
       "score": 1,
@@ -101,19 +117,11 @@
       "created": ""
     },
     {
-      "title": "Systems and Delays",
+      "title": "An ESP32 based plane radar for my desk",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://martin.janiczek.cz/2026/07/24/systems-and-delays.html",
-      "created": ""
-    },
-    {
-      "title": "Show HN: I mapped every US golf course \u2013 16k+ courses, free, no signup",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://golfcoursebrowser.com/",
+      "url": "https://blog.ktz.me/esp32-plane-radar/",
       "created": ""
     }
   ],
@@ -192,84 +200,84 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-07-26T03:32:39.423022",
+    "timestamp": "2026-07-26T03:47:36.624507",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 192.69,
+        "price": 193.95,
         "change_24h": 0.3,
-        "market_cap": 1849327316
+        "market_cap": 1861552779
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 64484,
+        "price": 64501,
         "change_24h": 0.7,
-        "market_cap": 1293693814928
+        "market_cap": 1293988816823
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1879.29,
-        "change_24h": 1.16,
-        "market_cap": 226804713952
+        "price": 1880.96,
+        "change_24h": 1.1,
+        "market_cap": 227009400029
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999062,
-        "change_24h": -0.0,
-        "market_cap": 183984344652
+        "price": 0.999235,
+        "change_24h": 0,
+        "market_cap": 184014457737
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 569.77,
+        "price": 569.81,
         "change_24h": 0.9,
-        "market_cap": 75872437324
+        "market_cap": 75880367323
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999956,
-        "change_24h": -0.01,
-        "market_cap": 72534092120
+        "price": 0.999779,
+        "change_24h": 0,
+        "market_cap": 72525728970
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.1,
-        "change_24h": 0.67,
-        "market_cap": 68762380699
+        "change_24h": 0.7,
+        "market_cap": 68820536074
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 74.86,
-        "change_24h": 0.94,
-        "market_cap": 43641048160
+        "price": 74.9,
+        "change_24h": 1.0,
+        "market_cap": 43669849702
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.331111,
-        "change_24h": 0.43,
-        "market_cap": 31415808790
+        "price": 0.331076,
+        "change_24h": 0,
+        "market_cap": 31413385900
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
-        "price": 1.033,
-        "change_24h": 1.64,
-        "market_cap": 21174041044
+        "price": 1.034,
+        "change_24h": 2.9,
+        "market_cap": 21189353411
       },
       {
-        "name": "Hyperliquid",
-        "symbol": "HYPE",
-        "price": 58.45,
-        "change_24h": 1.74,
-        "market_cap": 13002710033
+        "name": "WhiteBIT Coin",
+        "symbol": "WBT",
+        "price": 56.24,
+        "change_24h": 0.7,
+        "market_cap": 16534932276
       }
     ],
     "news": [
@@ -494,13 +502,13 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-07-26T03:31:20.036353",
+    "timestamp": "2026-07-26T03:46:17.756875",
     "trending": [
       {
         "symbol": "SHIB-USD",
         "price": 0.0,
         "change": 0.0,
-        "change_percent": 7.95,
+        "change_percent": 10.2,
         "name": "Shiba Inu USD"
       },
       {
@@ -528,7 +536,7 @@
         "symbol": "DOGE-USD",
         "price": 0.07,
         "change": 0.0,
-        "change_percent": 0.82,
+        "change_percent": 1.08,
         "name": "Dogecoin USD"
       },
       {
@@ -540,9 +548,9 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 74.84,
-        "change": 0.41,
-        "change_percent": 0.55,
+        "price": 74.91,
+        "change": 0.48,
+        "change_percent": 0.64,
         "name": "Solana USD"
       },
       {
@@ -567,6 +575,13 @@
         "name": "DJIA"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 1881.18,
+        "change": 7.95,
+        "change_percent": 0.42,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": ".RUT",
         "price": 2929.999,
         "change": -10.16,
@@ -574,24 +589,17 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 1879.45,
-        "change": 6.22,
-        "change_percent": 0.33,
-        "name": "Ethereum USD"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 64495.56,
-        "change": 184.84,
-        "change_percent": 0.29,
+        "price": 64491.07,
+        "change": 180.35,
+        "change_percent": 0.28,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.1,
         "change": 0.0,
-        "change_percent": 0.2,
+        "change_percent": 0.28,
         "name": "XRP USD"
       },
       {
@@ -888,7 +896,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-07-26T03:32:02.405518",
+    "timestamp": "2026-07-26T03:47:01.307976",
     "items": [
       {
         "symbol": "SPX",
@@ -970,37 +978,37 @@
       },
       {
         "symbol": "TAO",
-        "price": 192.77,
+        "price": 194.0,
         "change": 0.3,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64502,
+        "price": 64501,
         "change": 0.7,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1879.87,
+        "price": 1880.96,
         "change": 1.1,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 74.88,
+        "price": 74.9,
         "change": 1.0,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.072369,
+        "price": 0.072469,
         "change": 4.1,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.41,
+        "price": 8.42,
         "change": 1.1,
         "type": "crypto"
       },
@@ -1013,7 +1021,7 @@
       {
         "symbol": "SHIB-USD",
         "price": 0.0,
-        "change": 7.95,
+        "change": 10.2,
         "type": "mover"
       },
       {
@@ -1035,6 +1043,12 @@
         "type": "mover"
       },
       {
+        "symbol": "DOGE-USD",
+        "price": 0.07,
+        "change": 1.24,
+        "type": "mover"
+      },
+      {
         "symbol": "GME",
         "price": 21.35,
         "change": -1.16,
@@ -1047,12 +1061,6 @@
         "type": "mover"
       },
       {
-        "symbol": "DOGE-USD",
-        "price": 0.07,
-        "change": 0.89,
-        "type": "mover"
-      },
-      {
         "symbol": "MMM",
         "price": 169.59,
         "change": -0.69,
@@ -1060,8 +1068,8 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 74.85,
-        "change": 0.56,
+        "price": 74.89,
+        "change": 0.62,
         "type": "mover"
       },
       {
@@ -1186,9 +1194,9 @@
       "author": ""
     },
     {
-      "title": "Librarians are hosting viral \u2018Avoiding AI\u2019 workshops for people who are fed up with Big Tech",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYm9aNUphdWpyODRKZmpPMm1sQXBNVzB6UVRaMjN1OTZZT2ZCTGhjZW5NR3dTaEpYUmEwekttbjI2aENySDdGTk14V2lyenJqMVpEU1NGYy1KQW5vTkJMaVRZM3hfZVh3cXdKSFQ2bWk3Xy1Da0pvVlhXdDNNMF9Dd2Y1RW42d1lpNjdHdFQ0WU5WZkZISWFkeVZZVkZ3SkEtUUY4bHlKZ2xaYmhFN2JtbENQTFlhR25PTDZjU1lDM1lWbzg?oc=5",
-      "source": "TechCrunch",
+      "title": "5 Android phones you should buy instead of the Galaxy Z Fold 8 Ultra",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWpUWjJUWG03NkxXdFIxUGdCWElCMl9hdVYzSzZOLTV5Tjl6a1FLa19iNmh4S2NQZl9KR3RWSDNxN2NPbTB5cDBwZlFybERRRmlRVW9PZGFlYllRRFhFSFZfNjJkcDh6OC1BQjExaFVEczJ3cjUtUDdraHB1bEFVWUREQ0pqWEpSbFFVYw?oc=5",
+      "source": "Android Authority",
       "category": "business",
       "published": "Sat, 25 Jul 2026 ",
       "description": "",
@@ -1206,9 +1214,9 @@
       "author": ""
     },
     {
-      "title": "5 Android phones you should buy instead of the Galaxy Z Fold 8 Ultra",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWpUWjJUWG03NkxXdFIxUGdCWElCMl9hdVYzSzZOLTV5Tjl6a1FLa19iNmh4S2NQZl9KR3RWSDNxN2NPbTB5cDBwZlFybERRRmlRVW9PZGFlYllRRFhFSFZfNjJkcDh6OC1BQjExaFVEczJ3cjUtUDdraHB1bEFVWUREQ0pqWEpSbFFVYw?oc=5",
-      "source": "Android Authority",
+      "title": "The Tactical Tank Turns Splatoon Raiders Into Vampire Survivors",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTG1WSDVCZDVEOVNiLWtXNm9XdXJwNXVKblpyVHZ3NGRlV01feUZ4QWVQODkyOURzamVlZEJtb3BTdmpWUU1ETVdxUHlXc0wzelRvNmtuSUFNVnlBN2JJZmFWTWhWUU9YNTdwRzlialh3RGs0OGtEd2QtcGdzeXVZU0FkWU5RVjhvT0RPUWFEYlV5anozbXB4Qw?oc=5",
+      "source": "Kotaku",
       "category": "business",
       "published": "Sat, 25 Jul 2026 ",
       "description": "",
@@ -1216,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "The Tactical Tank Turns Splatoon Raiders Into Vampire Survivors",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTG1WSDVCZDVEOVNiLWtXNm9XdXJwNXVKblpyVHZ3NGRlV01feUZ4QWVQODkyOURzamVlZEJtb3BTdmpWUU1ETVdxUHlXc0wzelRvNmtuSUFNVnlBN2JJZmFWTWhWUU9YNTdwRzlialh3RGs0OGtEd2QtcGdzeXVZU0FkWU5RVjhvT0RPUWFEYlV5anozbXB4Qw?oc=5",
-      "source": "Kotaku",
+      "title": "Librarians are hosting viral \u2018Avoiding AI\u2019 workshops for people who are fed up with Big Tech",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYm9aNUphdWpyODRKZmpPMm1sQXBNVzB6UVRaMjN1OTZZT2ZCTGhjZW5NR3dTaEpYUmEwekttbjI2aENySDdGTk14V2lyenJqMVpEU1NGYy1KQW5vTkJMaVRZM3hfZVh3cXdKSFQ2bWk3Xy1Da0pvVlhXdDNNMF9Dd2Y1RW42d1lpNjdHdFQ0WU5WZkZISWFkeVZZVkZ3SkEtUUY4bHlKZ2xaYmhFN2JtbENQTFlhR25PTDZjU1lDM1lWbzg?oc=5",
+      "source": "TechCrunch",
       "category": "business",
       "published": "Sat, 25 Jul 2026 ",
       "description": "",
@@ -1516,45 +1524,24 @@
         "description": ""
       },
       {
-        "title": "Edwards, The 'Cleanest Large-Cap Medtech Story,' Reverses After Quarterly Beat",
-        "url": "https://www.investors.com/news/technology/edwards-lifesciences-stock-edwards-lifesciences-earnings-q2-2026/?src=A00220&yptr=yahoo",
+        "title": "AMD Stock Scores Price-Target Hikes On AI Computer News",
+        "url": "https://www.investors.com/news/technology/amd-stock-advancing-ai-2026-price-target-hikes/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
-        "published": "2026-07-24T20:19:02+00:00",
+        "published": "2026-07-24T20:33:27+00:00",
         "description": ""
       },
       {
-        "title": "Stock market today: Nasdaq slips, Dow and S&P 500 recover to close a volatile week on Wall Street",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html",
+        "title": "Ahead of Amazon Earnings, Here's What Barchart Data Says Comes Next for AMZN Stock",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/ahead-amazon-earnings-heres-barchart-203133815.html",
         "source": "Yahoo Finance",
-        "published": "2026-07-24T08:18:54+00:00",
+        "published": "2026-07-24T20:31:33+00:00",
         "description": ""
       },
       {
-        "title": "Stock Market Today: Nasdaq Sinks As Sellers Hit Memory Chips; Oil, Yields Slide",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-intel-stock/?src=A00220&yptr=yahoo",
+        "title": "What is an add-on CD?",
+        "url": "https://finance.yahoo.com/personal-finance/banking/article/add-on-cd-161023475.html",
         "source": "Yahoo Finance",
-        "published": "2026-07-24T20:25:32+00:00",
-        "description": ""
-      },
-      {
-        "title": "2026\u2019s decacorn class on track to surpass 2021 record",
-        "url": "https://finance.yahoo.com/small-business/articles/2026-decacorn-class-track-surpass-202603910.html",
-        "source": "Yahoo Finance",
-        "published": "2026-07-24T20:26:03+00:00",
-        "description": ""
-      },
-      {
-        "title": "Spending Worries Weigh On Tech Shares",
-        "url": "https://www.wsj.com/finance/stocks/spending-worries-weigh-on-tech-shares-5a6ba62e?siteid=yhoof2&yptr=yahoo",
-        "source": "Yahoo Finance",
-        "published": "2026-07-24T20:20:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Oil-Fueled Inflation Fears Pin Gold Near $4,000",
-        "url": "https://finance.yahoo.com/markets/commodities/articles/oil-fueled-inflation-fears-pin-202555065.html",
-        "source": "Yahoo Finance",
-        "published": "2026-07-24T20:25:55+00:00",
+        "published": "2024-08-08T16:10:23+00:00",
         "description": ""
       },
       {
@@ -1562,6 +1549,27 @@
         "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-tech-heavy-nasdaq-climbs-ahead-of-big-tech-earnings-kickoff-164334720.html",
         "source": "Yahoo Finance",
         "published": "2026-07-20T16:43:34+00:00",
+        "description": ""
+      },
+      {
+        "title": "Intel\u2019s Strong Earnings Couldn\u2019t Save the Stock From an AI Spending Panic",
+        "url": "https://www.barrons.com/articles/intel-stock-price-earnings-ai-panic-0c53fe8c?siteid=yhoof2&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-07-24T20:31:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Verizon Communications Inc. Q2 2026 Earnings Call Summary",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/verizon-communications-inc-q2-2026-204228947.html",
+        "source": "Yahoo Finance",
+        "published": "2026-07-24T20:42:28+00:00",
+        "description": ""
+      },
+      {
+        "title": "World Acceptance Corporation Q1 2027 Earnings Call Summary",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/world-acceptance-corporation-q1-2027-204253996.html",
+        "source": "Yahoo Finance",
+        "published": "2026-07-24T20:42:53+00:00",
         "description": ""
       }
     ],

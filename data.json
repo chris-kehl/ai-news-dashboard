@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-08-01T15:01:25.751093",
-  "summary": "Key topics today:\n- - Explorative modeling: Train on the best of K guesses (r/HackerNews, 101 pts)\n- - Flint: A Visualization Language for the AI Era (r/HackerNews, 101 pts)\n- - qm \u2013 Multiplayer agent harness for work (r/HackerNews, 101 pts)\n- - NetBSD 11.0 Released (r/HackerNews, 1 pts)\n- - The Art of 64-bit Assembly (r/HackerNews, 1 pts)",
+  "timestamp": "2026-08-01T15:16:26.383369",
+  "summary": "Key topics today:\n- - Explorative modeling: Train on the best of K guesses (r/HackerNews, 101 pts)\n- - Flint: A Visualization Language for the AI Era (r/HackerNews, 101 pts)\n- - qm \u2013 Multiplayer agent harness for work (r/HackerNews, 101 pts)\n- - NetBSD 11.0 Released (r/HackerNews, 1 pts)\n- - Postmortem for Kernel Soundness Bug #14576 (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "SOL",
-      "price": 70.99,
+      "price": 71.24,
       "change": -3.2,
       "category": "crypto",
-      "text": "SOL -3.2% @ $70.99"
+      "text": "SOL -3.2% @ $71.24"
+    },
+    {
+      "type": "watch",
+      "asset": "TAO",
+      "price": 190.91,
+      "change": -3.1,
+      "category": "crypto",
+      "text": "TAO -3.1% @ $190.91"
     },
     {
       "type": "watch",
       "asset": "BNB",
-      "price": 575.84,
+      "price": 576.79,
       "change": -2.2,
       "category": "crypto",
-      "text": "BNB -2.2% @ $575.84"
-    },
-    {
-      "type": "watch",
-      "asset": "ETH",
-      "price": 1834.01,
-      "change": -2.1,
-      "category": "crypto",
-      "text": "ETH -2.1% @ $1,834.01"
+      "text": "BNB -2.2% @ $576.79"
     },
     {
       "type": "buy",
@@ -85,6 +85,14 @@
       "created": ""
     },
     {
+      "title": "Postmortem for Kernel Soundness Bug #14576",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+      "created": ""
+    },
+    {
       "title": "The Art of 64-bit Assembly",
       "subreddit": "HackerNews",
       "score": 1,
@@ -114,14 +122,6 @@
       "score": 1,
       "comments": 0,
       "url": "https://github.com/BurntSushi/ripgrep/issues/3494",
-      "created": ""
-    },
-    {
-      "title": "Postmortem for Kernel Soundness Bug #14576",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
       "created": ""
     },
     {
@@ -208,84 +208,84 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-01T19:01:00.227745",
+    "timestamp": "2026-08-01T19:16:02.632871",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 190.42,
-        "change_24h": -1.1,
-        "market_cap": 1823547159
+        "price": 190.91,
+        "change_24h": -3.1,
+        "market_cap": 1832232105
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 62507,
+        "price": 62534,
         "change_24h": -1.1,
-        "market_cap": 1254031421578
+        "market_cap": 1254573577523
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1834.01,
+        "price": 1837.39,
         "change_24h": -2.1,
-        "market_cap": 221289973979
+        "market_cap": 221718024910
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999314,
+        "price": 0.999283,
         "change_24h": 0,
-        "market_cap": 183331766918
+        "market_cap": 183324848943
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 575.84,
+        "price": 576.79,
         "change_24h": -2.2,
-        "market_cap": 76668444382
+        "market_cap": 76805197520
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999677,
+        "price": 0.999649,
         "change_24h": 0,
-        "market_cap": 71969531272
+        "market_cap": 71966372395
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.053,
+        "price": 1.054,
         "change_24h": -1.5,
-        "market_cap": 65826208631
+        "market_cap": 65879901114
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 70.99,
+        "price": 71.24,
         "change_24h": -3.2,
-        "market_cap": 41238095705
+        "market_cap": 41393170225
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.327361,
+        "price": 0.327429,
         "change_24h": 0.3,
-        "market_cap": 31056701740
+        "market_cap": 31072791170
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.016,
         "change_24h": -2.1,
-        "market_cap": 21153427971
+        "market_cap": 21157600989
       },
       {
         "name": "WhiteBIT Coin",
         "symbol": "WBT",
-        "price": 54.47,
+        "price": 54.5,
         "change_24h": -1.2,
-        "market_cap": 16007485080
+        "market_cap": 16019267856
       }
     ],
     "news": [
@@ -510,49 +510,35 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-08-01T19:00:38.960716",
+    "timestamp": "2026-08-01T19:15:41.549672",
     "trending": [
       {
-        "symbol": "GFS",
-        "price": 49.99,
-        "change": 2.92,
-        "change_percent": 6.2,
-        "name": "GlobalFoundries Inc."
-      },
-      {
-        "symbol": "JPY=X",
-        "price": 157.4,
-        "change": -5.9,
-        "change_percent": -3.61,
-        "name": "USD/JPY"
-      },
-      {
         "symbol": "SOL-USD",
-        "price": 70.99,
-        "change": -1.8,
-        "change_percent": -2.47,
+        "price": 71.19,
+        "change": -1.6,
+        "change_percent": -2.2,
         "name": "Solana USD"
       },
       {
         "symbol": "DOGE-USD",
         "price": 0.07,
         "change": -0.0,
-        "change_percent": -1.55,
+        "change_percent": -1.45,
         "name": "Dogecoin USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 1835.3,
-        "change": -25.05,
-        "change_percent": -1.35,
+        "price": 1835.81,
+        "change": -24.54,
+        "change_percent": -1.32,
         "name": "Ethereum USD"
       },
       {
-        "symbol": "SCHD",
-        "price": 33.47,
-        "change": -0.36,
-        "change_percent": -1.06,
-        "name": "Schwab US Dividend Equity ETF"
+        "symbol": "GC=F",
+        "price": 4049.1,
+        "change": -51.0,
+        "change_percent": -1.24,
+        "name": "Gold Aug 26"
       },
       {
         "symbol": "MMM",
@@ -572,7 +558,7 @@
         "symbol": "XRP-USD",
         "price": 1.05,
         "change": -0.01,
-        "change_percent": -0.75,
+        "change_percent": -0.76,
         "name": "XRP USD"
       },
       {
@@ -590,13 +576,6 @@
         "name": "DJIA"
       },
       {
-        "symbol": "BTC-CAD",
-        "price": 87678.45,
-        "change": -458.66,
-        "change_percent": -0.52,
-        "name": "Bitcoin CAD"
-      },
-      {
         "symbol": ".RUT",
         "price": 2931.339,
         "change": -14.76,
@@ -605,10 +584,31 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 62509.84,
-        "change": -303.91,
-        "change_percent": -0.48,
+        "price": 62518.58,
+        "change": -295.17,
+        "change_percent": -0.47,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "BTC-CAD",
+        "price": 87720.38,
+        "change": -416.74,
+        "change_percent": -0.47,
+        "name": "Bitcoin CAD"
+      },
+      {
+        "symbol": "BRK-B",
+        "price": 511.54,
+        "change": 2.38,
+        "change_percent": 0.47,
+        "name": "Berkshire Hathaway Inc. New"
+      },
+      {
+        "symbol": "BTC-EUR",
+        "price": 54259.62,
+        "change": -188.21,
+        "change_percent": -0.35,
+        "name": "Bitcoin EUR"
       },
       {
         "symbol": "ARCC",
@@ -1046,7 +1046,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-01T19:00:55.937980",
+    "timestamp": "2026-08-01T19:15:58.336199",
     "items": [
       {
         "symbol": "SPX",
@@ -1128,43 +1128,43 @@
       },
       {
         "symbol": "TAO",
-        "price": 190.47,
+        "price": 190.91,
         "change": -3.1,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 62507,
+        "price": 62534,
         "change": -1.1,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1834.01,
+        "price": 1837.39,
         "change": -2.1,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.99,
+        "price": 71.24,
         "change": -3.2,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.068457,
+        "price": 0.068575,
         "change": -2.4,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 7.95,
+        "price": 8.01,
         "change": -2.8,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.09,
+        "price": 6.15,
         "change": -5.6,
         "type": "crypto"
       },
@@ -1175,12 +1175,6 @@
         "type": "mover"
       },
       {
-        "symbol": "GFS",
-        "price": 49.99,
-        "change": 6.2,
-        "type": "mover"
-      },
-      {
         "symbol": "AMC",
         "price": 2.82,
         "change": 2.55,
@@ -1188,26 +1182,20 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 71.07,
-        "change": -2.36,
+        "price": 71.18,
+        "change": -2.21,
         "type": "mover"
       },
       {
         "symbol": "DOGE-USD",
         "price": 0.07,
-        "change": -1.47,
+        "change": -1.44,
         "type": "mover"
       },
       {
         "symbol": "ETH-USD",
-        "price": 1836.08,
-        "change": -1.3,
-        "type": "mover"
-      },
-      {
-        "symbol": "SCHD",
-        "price": 33.47,
-        "change": -1.06,
+        "price": 1835.96,
+        "change": -1.31,
         "type": "mover"
       },
       {
@@ -1219,13 +1207,25 @@
       {
         "symbol": "XRP-USD",
         "price": 1.05,
-        "change": -0.73,
+        "change": -0.79,
+        "type": "mover"
+      },
+      {
+        "symbol": "ET",
+        "price": 20.36,
+        "change": 0.79,
         "type": "mover"
       },
       {
         "symbol": "GME",
         "price": 21.72,
         "change": -0.55,
+        "type": "mover"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 62484.17,
+        "change": -0.52,
         "type": "mover"
       }
     ]
@@ -1242,9 +1242,9 @@
       "author": ""
     },
     {
-      "title": "Trump offering early access to online posts in move seen as corruption",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWmtjdGg0TXZraHJrMW4xckFMUFd6dFlPeGpJMEY4MUFvaU0zRjFWQmxkSElmS05yZ1RQX0JuTDFwZDVwNGFxdGZuOVNtUHJETENqTEZTS0U4Ny11cGtQUm1JUlVNWm9ZOWwyY1Q3WGV6WjB1QkRmSDI3TEZDR2dJWFA0cEJEQQ?oc=5",
-      "source": "The Guardian",
+      "title": "How Citadel\u2019s Situational Awareness deal helped avert a $3T AI selloff",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWJuV1lMenRtZUtfSjMwbWhJclI5OHRxMGx2SmlQOE11NlNRQ2Y1NWNHdTRfcERhREtWVk8tV2dvanJINW9xSEFjRmFtRU4wZnVmSWNDQUo4clFGR3Z4MUU3RDZENDZpb0FQeUItelpWWkJwWWZmb3RybHZBbTRHRGZHMk83MWh6VXJycktQRGpzQ2JyTlQ2R1NHd0VBSUNEUmpRQVpLNXM5OWM?oc=5",
+      "source": "Seeking Alpha",
       "category": "business",
       "published": "Sat, 01 Aug 2026 ",
       "description": "",
@@ -1252,9 +1252,9 @@
       "author": ""
     },
     {
-      "title": "How Citadel\u2019s Situational Awareness deal helped avert a $3T AI selloff",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWJuV1lMenRtZUtfSjMwbWhJclI5OHRxMGx2SmlQOE11NlNRQ2Y1NWNHdTRfcERhREtWVk8tV2dvanJINW9xSEFjRmFtRU4wZnVmSWNDQUo4clFGR3Z4MUU3RDZENDZpb0FQeUItelpWWkJwWWZmb3RybHZBbTRHRGZHMk83MWh6VXJycktQRGpzQ2JyTlQ2R1NHd0VBSUNEUmpRQVpLNXM5OWM?oc=5",
-      "source": "Seeking Alpha",
+      "title": "Trump offering early access to online posts in move seen as corruption",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWmtjdGg0TXZraHJrMW4xckFMUFd6dFlPeGpJMEY4MUFvaU0zRjFWQmxkSElmS05yZ1RQX0JuTDFwZDVwNGFxdGZuOVNtUHJETENqTEZTS0U4Ny11cGtQUm1JUlVNWm9ZOWwyY1Q3WGV6WjB1QkRmSDI3TEZDR2dJWFA0cEJEQQ?oc=5",
+      "source": "The Guardian",
       "category": "business",
       "published": "Sat, 01 Aug 2026 ",
       "description": "",
@@ -1282,16 +1282,6 @@
       "author": ""
     },
     {
-      "title": "Americans are rolling record debt into new vehicles. These top the list",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTE9QUTdTSlprRDBoR3lGOTVYd0Rqc3hRYURoZFlZWVBwbHQ0VjJUaWVsbGdxdEFDVTZZMlJPSnNFRHJuM1VLeDZWNTRxRWp5b1VhdmtjM25kVjJKeldacXRoaEo2NHJYdHBVemF5aHB2QkRGQWk0Q0IweFNLYzkxa0padC1wUWI4bnlwV2xsQ2VJelhXWWU5ZE9MMFkwUQ?oc=5",
-      "source": "USA Today",
-      "category": "business",
-      "published": "Sat, 01 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "DeepSeek founder Liang Wenfeng says his workers don't do overtime or even have KPIs",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObF9CU2JteHZXY0dXd1dIVVBRS2E5LTl6UTFsZUczNzNsX3lrM2sybEhsdVlDWnpzTUszazAtTC00Qllzb0tNc3Zpa2xqNy1iT09MdWw5c0phU1I0RXJTNFVvSy1DTTA3N3hVNG5MaGM3eUJrRjR0ZFVpckJqRVZWWXZaYlZZSzNGZHhFUVktWGJaUFVDOXplQWZfM0hjMjBGT3ZBQ0hLLTRqdjZUWkdTajN5Yw?oc=5",
       "source": "Fortune",
@@ -1310,15 +1300,25 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "President Donald Trump Just Threw the Federal Reserve Under the Bus Yet Again Over Interest Rates",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY1o0QWRTZjdhclhsbEZhRzVESkhLeVg4WWNVX1dweWhaWUJZblJPam5qQ1BIMTVrNjN3VENEbXFpeHVpUHg3WHpmYjNhY0VOYkhQbXhYQmg1RDVVU21fMnZvZVV4bFJ3STZXRVpzanNubjFQVExQeG55ODY0dUxkRGtvd2VOVFV1c1dJX01XV2Y3T1hTTWtycGVmLWtPWDg?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sat, 01 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
   "tech_business": [
     {
-      "title": "Google Briefly Turned Google Earth Into an AI Slop Factory",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSDBYMFQ4RXZqeWpDN2JjUExodEdZSVNOQzhFOTVrdk5BR01XSWpLUi1UbGNGdWZUdkh5azVLMm1TU21vbWk1TTlvNjlZa2dGQWpjQVFXS0dsWFFUdFB5WXdnUU0wMDlNMk5hWWx1NjY1SEVpNG9uemNuRF9MT1VnX0oyUmh5ZjI5NHhEUzhJUDZyVGc?oc=5",
-      "source": "Gizmodo",
+      "title": "Alphabet rolls back AI image generation in Google Earth over policy violations",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcW44Z0xhdlhwQVJJQUZKdVM2RkRZM1Fsa2VKVXFWdFFfZ1piUmhfazYwdkpEcFFGODNyZTRVUE9meXBwWElKZXIzU3dEZnUxd0xDdlYwNWo4aHFTMlJudmdLMHVCdTJLbHl6NUdVaXNVcUxLR24yOVR5Tzkzd09hNWV3cGx0V2Z5cGpwWHE5Q1hidl9rZ29idFZCbXBMMG9zYVNoYzU4UlpGa3RkVzQ1M1J5RDEzSGhHQ290am5MUi1uRDRkTjNrajFfdkNUZmM?oc=5",
+      "source": "Reuters",
       "category": "business",
-      "published": "Sat, 01 Aug 2026 ",
+      "published": "Fri, 31 Jul 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1452,6 +1452,14 @@
       "relevance_score": 7
     },
     {
+      "title": "Palestinian children among those detained in Israeli West Bank raids",
+      "url": "https://www.aljazeera.com/news/2026/8/1/palestinian-children-among-those-detained-in-israeli-west-bank-raids?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 01 Aug 2026 ",
+      "description": "Settler violence escalates, with illegal outposts and frequent attacks reported across Ramallah, Hebron and Nablus.",
+      "relevance_score": 7
+    },
+    {
       "title": "US strikes $58.6 billion Patriot missile deal amid rising stockpile concerns",
       "url": "https://www.defensenews.com/industry/techwatch/2026/07/30/us-strikes-586-billion-patriot-missile-deal-amid-rising-stockpile-concerns/",
       "source": "Defense News",
@@ -1504,18 +1512,18 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 236792,
+      "stars": 236805,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-08-01T17:57:23Z"
+      "updated": "2026-08-01T19:11:19Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 223759,
+      "stars": 223780,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-08-01T18:00:48Z"
+      "updated": "2026-08-01T19:11:32Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1536,66 +1544,66 @@
     {
       "name": "firecrawl/firecrawl",
       "description": "The API to search, scrape, and interact with the web at scale. \ud83d\udd25",
-      "stars": 158995,
+      "stars": 159018,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-08-01T17:59:07Z"
+      "updated": "2026-08-01T19:09:21Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 147534,
+      "stars": 147539,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-08-01T17:56:51Z"
+      "updated": "2026-08-01T19:10:17Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 143172,
+      "stars": 143175,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-08-01T17:28:06Z"
+      "updated": "2026-08-01T19:08:46Z"
     },
     {
       "name": "browser-use/browser-use",
       "description": "\ud83c\udf10 Make websites accessible for AI agents. Automate tasks online with ease.",
-      "stars": 107503,
+      "stars": 107505,
       "language": "Python",
       "url": "https://github.com/browser-use/browser-use",
-      "updated": "2026-08-01T17:44:20Z"
+      "updated": "2026-08-01T19:08:16Z"
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
       "description": "\u5229\u7528 AI \u5927\u6a21\u578b\u548c\u81ea\u52a8\u5316\u5de5\u4f5c\u6d41\uff0c\u6839\u636e\u4e3b\u9898\u6216\u5173\u952e\u8bcd\u4e00\u952e\u751f\u6210\u9ad8\u6e05\u77ed\u89c6\u9891\u3002Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "stars": 100976,
+      "stars": 100982,
       "language": "Python",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "updated": "2026-08-01T17:51:36Z"
+      "updated": "2026-08-01T19:09:42Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 72922,
+      "stars": 72923,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-08-01T17:59:22Z"
+      "updated": "2026-08-01T18:33:38Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 63824,
+      "stars": 63856,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-08-01T18:00:32Z"
+      "updated": "2026-08-01T19:15:54Z"
     },
     {
       "name": "santifer/career-ops",
       "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, ",
-      "stars": 62459,
+      "stars": 62462,
       "language": "JavaScript",
       "url": "https://github.com/santifer/career-ops",
-      "updated": "2026-08-01T17:43:45Z"
+      "updated": "2026-08-01T19:02:51Z"
     }
   ],
   "nasdaq_data": {
@@ -1667,10 +1675,10 @@
     ],
     "yahoo_finance": [
       {
-        "title": "Want to trade SpaceX for Apple? 1inch says skip the dollars",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/want-trade-spacex-apple-1inch-194500911.html",
+        "title": "Vanguard VONG vs VBK: Is a Small Cap ETF the Better Buy Over a Large Cap Fund in 2026?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/vanguard-vong-vs-vbk-small-184801383.html",
         "source": "Yahoo Finance",
-        "published": "2026-07-31T19:45:00+00:00",
+        "published": "2026-08-01T18:48:01+00:00",
         "description": ""
       },
       {
@@ -1702,10 +1710,10 @@
         "description": ""
       },
       {
-        "title": "J.P. Morgan drops Fed rate bombshell over Warsh, inflation",
-        "url": "https://finance.yahoo.com/economy/policy/articles/j-p-morgan-drops-fed-060300978.html",
+        "title": "Most Income Investors Have Never Heard of These 3 Bond ETFs Paying Over 10 Percent Monthly",
+        "url": "https://finance.yahoo.com/markets/options/articles/most-income-investors-never-heard-183352042.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-01T06:03:00+00:00",
+        "published": "2026-08-01T18:33:52+00:00",
         "description": ""
       },
       {
@@ -1725,11 +1733,11 @@
     ],
     "bloomberg": [
       {
-        "title": "July 2026 Global Regulatory Brief: Model risk, capital markets reform and AI innovation",
-        "url": "https://www.bloomberg.com/professional/insights/regulation/july-2026-global-regulatory-brief-model-risk-capital-markets-reform-and-ai-innovation/",
+        "title": "Bloomberg to Buy Private Markets Data Platform Canoe Intelligence",
+        "url": "https://www.wealthmanagement.com/alternative-investments/bloomberg-acquires-canoe-intelligence-for-ai-data",
         "source": "Bloomberg",
-        "published": "2026-07-22T18:46:00+",
-        "description": "Recent periods of financial stress and the proliferation of risks across the financial system are fueling the development of regulatory initiatives to strengthen requirements and promote international best practice."
+        "published": "2026-07-29T12:00:00+",
+        "description": "Bloomberg's acquisition of Canoe Intelligence will integrate the two firms' private markets data and analysis tools"
       },
       {
         "title": "Bloomberg to Acquire Canoe Intelligence, Taking a Defining Step in Its Mission to Transform Private Markets Investing",
@@ -1739,18 +1747,18 @@
         "description": "Transaction will accelerate end-to-end intelligence across public and private markets from pre-investment to portfolio oversight with AI-driven insights for investors"
       },
       {
+        "title": "July 2026 Global Regulatory Brief: Model risk, capital markets reform and AI innovation",
+        "url": "https://www.bloomberg.com/professional/insights/regulation/july-2026-global-regulatory-brief-model-risk-capital-markets-reform-and-ai-innovation/",
+        "source": "Bloomberg",
+        "published": "2026-07-22T18:46:00+",
+        "description": "Recent periods of financial stress and the proliferation of risks across the financial system are fueling the development of regulatory initiatives to strengthen requirements and promote international best practice."
+      },
+      {
         "title": "Abaxx Exchange Market Data Now Available via Bloomberg Solutions",
         "url": "https://finance.yahoo.com/markets/commodities/articles/abaxx-exchange-market-data-now-113000381.html",
         "source": "Bloomberg",
         "published": "2026-07-29T11:31:00+",
         "description": "Real-time and end-of-day pricing data is accessible on the Bloomberg Terminal, as well as via Bloomberg Data License and B-PIPE.TORONTO, July 29, 2026 (GLOBE NEWSWIRE) -- Abaxx Technologies Inc. (TSX:ABXX)(OTCQX:ABXXF) (\"Abaxx\" or the \"Company\"),"
-      },
-      {
-        "title": "CoreWeave's Wild Stock Ride Takes Toll on Its Cost to Finance AI",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-30/coreweave-s-wild-stock-ride-takes-toll-on-its-cost-to-finance-ai",
-        "source": "Bloomberg",
-        "published": "2026-07-30T22:09:00+",
-        "description": "CoreWeave Inc. is no stranger to shaking off wild stock-market swings like those of the past few days, when its shares plunged to their lowest level in 14 months only to then stage their sharpest rally of the year."
       },
       {
         "title": "As Geopolitical Forces Shape Australian Markets, Mitrade Announces Bloomberg.com Partnership for a Better-Informed Financial World",
@@ -1760,11 +1768,11 @@
         "description": "MELBOURNE, Australia, July 30, 2026 /PRNewswire/ -- Global broker\u00a0Mitrade today announced a partnership with Bloomberg.com\u00a0as geopolitical developments influence Australian currency, commodity and equity markets."
       },
       {
-        "title": "Bloomberg Expands Electronic Trading for Onshore-Listed Australian ETFs, Options and Futures",
-        "url": "https://www.aol.com/articles/bloomberg-expands-electronic-trading-onshore-203000000.html",
+        "title": "Exclusive: Yahoo Finance is building a Bloomberg Terminal for everyone else",
+        "url": "https://www.msn.com/en-us/news/technology/exclusive-yahoo-finance-is-building-a-bloomberg-terminal-for-everyone-else/ar-AA23yd6t",
         "source": "Bloomberg",
-        "published": "2026-07-30T20:31:00+",
-        "description": "Bloomberg today announced an expansion of its electronic trading capabilities for the Australian markets, enabling eligible onshore participants to electronically negotiate Australian-listed exchange-traded funds (ETFs) using Bloomberg's Request-for-Quote (RFQe) workflow,"
+        "published": "2026-05-19T10:00:00+",
+        "description": "Any finance professional who has used the Bloomberg Terminal's brightly colored keyboard knows a secret: if you figure out the right question to ask, data is at your fingertips. For decades, the Terminal has been the gold standard of financial research ..."
       },
       {
         "title": "Vietnam, Bloomberg seek deeper ties to boost financial market development",
@@ -1774,11 +1782,11 @@
         "description": "Deputy Finance Minister Tran Quoc Phuong held a working session with Bing Li, Head of Asia-Pacific for Bloomberg, To discuss bilateral cooperation in financial market development, international investor connectivity,"
       },
       {
-        "title": "Exclusive: Yahoo Finance is building a Bloomberg Terminal for everyone else",
-        "url": "https://www.msn.com/en-us/news/technology/exclusive-yahoo-finance-is-building-a-bloomberg-terminal-for-everyone-else/ar-AA23yd6t",
+        "title": "Bloomberg Expands Electronic Trading for Onshore-Listed Australian ETFs, Options and Futures",
+        "url": "https://www.aol.com/articles/bloomberg-expands-electronic-trading-onshore-203000000.html",
         "source": "Bloomberg",
-        "published": "2026-05-19T10:00:00+",
-        "description": "Any finance professional who has used the Bloomberg Terminal's brightly colored keyboard knows a secret: if you figure out the right question to ask, data is at your fingertips. For decades, the Terminal has been the gold standard of financial research ..."
+        "published": "2026-07-30T20:31:00+",
+        "description": "Bloomberg today announced an expansion of its electronic trading capabilities for the Australian markets, enabling eligible onshore participants to electronically negotiate Australian-listed exchange-traded funds (ETFs) using Bloomberg's Request-for-Quote (RFQe) workflow,"
       }
     ],
     "wallstreetbets": [

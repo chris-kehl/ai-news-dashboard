@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-02T13:31:41.103197",
-  "summary": "Key topics today:\n- - Karpathy\u2019s Pelican (r/HackerNews, 1 pts)\n- - How the words we teach English language learners changed (r/HackerNews, 1 pts)\n- - Show HN: Kakehashi \u2013 Experimental userspace to run macOS binaries on Linux ARM (r/HackerNews, 1 pts)\n- - Show HN: NixOS-DGX-Spark \u2013 Nix and NixOS on the DGX Spark (r/HackerNews, 1 pts)\n- - Twenty Years of RISC OS Open (r/HackerNews, 1 pts)",
+  "timestamp": "2026-08-02T13:38:23.202657",
+  "summary": "Key topics today:\n- - How the words we teach English language learners changed (r/HackerNews, 1 pts)\n- - Karpathy\u2019s Pelican (r/HackerNews, 1 pts)\n- - Show HN: Kakehashi \u2013 Experimental userspace to run macOS binaries on Linux ARM (r/HackerNews, 1 pts)\n- - Twenty Years of RISC OS Open (r/HackerNews, 1 pts)\n- - Show HN: NixOS-DGX-Spark \u2013 Nix and NixOS on the DGX Spark (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -9,14 +9,6 @@
       "change": -3.1,
       "category": "crypto",
       "text": "FIGR_HELOC -3.1% @ $1.00"
-    },
-    {
-      "type": "buy",
-      "asset": "STRL",
-      "price": 596.77,
-      "change": 20.74,
-      "category": "stock",
-      "text": "STRL +20.7% momentum @ $596.77"
     },
     {
       "type": "buy",
@@ -33,23 +25,31 @@
       "change": 8.83,
       "category": "stock",
       "text": "BB +8.8% momentum @ $8.50"
+    },
+    {
+      "type": "sell",
+      "asset": "COIN",
+      "price": 146.26,
+      "change": -8.64,
+      "category": "stock",
+      "text": "COIN -8.6% drop @ $146.26"
     }
   ],
   "reddit": [
-    {
-      "title": "Karpathy\u2019s Pelican",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://twitter.com/karpathy/status/2083749667410727319",
-      "created": ""
-    },
     {
       "title": "How the words we teach English language learners changed",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://pudding.cool/2026/07/essential-words/",
+      "created": ""
+    },
+    {
+      "title": "Karpathy\u2019s Pelican",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://twitter.com/karpathy/status/2083749667410727319",
       "created": ""
     },
     {
@@ -61,19 +61,19 @@
       "created": ""
     },
     {
-      "title": "Show HN: NixOS-DGX-Spark \u2013 Nix and NixOS on the DGX Spark",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/graham33/nixos-dgx-spark",
-      "created": ""
-    },
-    {
       "title": "Twenty Years of RISC OS Open",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
+      "created": ""
+    },
+    {
+      "title": "Show HN: NixOS-DGX-Spark \u2013 Nix and NixOS on the DGX Spark",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/graham33/nixos-dgx-spark",
       "created": ""
     },
     {
@@ -93,19 +93,19 @@
       "created": ""
     },
     {
-      "title": "Meshdiff \u2013 visually compare two STL versions in the browser, client-side",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://meshdiff.com/",
-      "created": ""
-    },
-    {
       "title": "GE-97 Terminal: The Old Internet",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://ge97.com/",
+      "created": ""
+    },
+    {
+      "title": "Meshdiff \u2013 visually compare two STL versions in the browser, client-side",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://meshdiff.com/",
       "created": ""
     },
     {
@@ -192,7 +192,7 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-02T17:31:22.784174",
+    "timestamp": "2026-08-02T17:37:57.915648",
     "prices": [
       {
         "name": "Bittensor",
@@ -494,20 +494,13 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-08-02T17:30:41.599785",
+    "timestamp": "2026-08-02T17:37:17.013268",
     "trending": [
-      {
-        "symbol": "STRL",
-        "price": 596.77,
-        "change": 102.53,
-        "change_percent": 20.74,
-        "name": "Sterling Infrastructure, Inc."
-      },
       {
         "symbol": "ADA-USD",
         "price": 0.19,
         "change": 0.01,
-        "change_percent": 8.31,
+        "change_percent": 8.6,
         "name": "Cardano USD"
       },
       {
@@ -518,31 +511,45 @@
         "name": "Nano Nuclear Energy Inc."
       },
       {
+        "symbol": "LHX",
+        "price": 277.06,
+        "change": -20.47,
+        "change_percent": -6.88,
+        "name": "L3Harris Technologies, Inc."
+      },
+      {
         "symbol": "XRP-USD",
         "price": 1.08,
         "change": 0.02,
-        "change_percent": 2.02,
+        "change_percent": 2.03,
         "name": "XRP USD"
       },
       {
-        "symbol": "DOGE-USD",
-        "price": 0.07,
-        "change": 0.0,
-        "change_percent": 1.89,
-        "name": "Dogecoin USD"
-      },
-      {
         "symbol": "SOL-USD",
-        "price": 73.19,
-        "change": 1.32,
-        "change_percent": 1.84,
+        "price": 73.26,
+        "change": 1.39,
+        "change_percent": 1.94,
         "name": "Solana USD"
       },
       {
+        "symbol": "KSPI",
+        "price": 88.78,
+        "change": 1.64,
+        "change_percent": 1.88,
+        "name": "Joint Stock Company Kaspi.kz - "
+      },
+      {
+        "symbol": "KO",
+        "price": 87.59,
+        "change": -1.49,
+        "change_percent": -1.67,
+        "name": "Coca-Cola Company (The)"
+      },
+      {
         "symbol": "ETH-USD",
-        "price": 1864.74,
-        "change": 21.32,
-        "change_percent": 1.16,
+        "price": 1866.35,
+        "change": 22.93,
+        "change_percent": 1.24,
         "name": "Ethereum USD"
       },
       {
@@ -553,18 +560,18 @@
         "name": "Starbucks Corporation"
       },
       {
-        "symbol": "BTC-CAD",
-        "price": 88711.61,
-        "change": 645.26,
-        "change_percent": 0.73,
-        "name": "Bitcoin CAD"
+        "symbol": "BTC-USD",
+        "price": 63249.61,
+        "change": 486.29,
+        "change_percent": 0.77,
+        "name": "Bitcoin USD"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 63215.64,
-        "change": 452.32,
-        "change_percent": 0.72,
-        "name": "Bitcoin USD"
+        "symbol": "BTC-CAD",
+        "price": 88727.25,
+        "change": 660.9,
+        "change_percent": 0.75,
+        "name": "Bitcoin CAD"
       },
       {
         "symbol": ".SPX",
@@ -586,13 +593,6 @@
         "change": -14.76,
         "change_percent": -0.5,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 123.06,
-        "change": 0.06,
-        "change_percent": 0.05,
-        "name": "Palantir Technologies Inc."
       },
       {
         "symbol": "CL=F",
@@ -1030,7 +1030,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-02T17:30:59.076437",
+    "timestamp": "2026-08-02T17:37:34.246428",
     "items": [
       {
         "symbol": "SPX",
@@ -1112,43 +1112,43 @@
       },
       {
         "symbol": "TAO",
-        "price": 192.34,
+        "price": 192.27,
         "change": -0.1,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 63226,
+        "price": 63243,
         "change": 0.4,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1864.88,
+        "price": 1865.73,
         "change": -0.4,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 73.2,
+        "price": 73.23,
         "change": 0.5,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.070346,
+        "price": 0.070401,
         "change": 0.3,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.3,
+        "price": 8.31,
         "change": 2.2,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.6,
+        "price": 6.62,
         "change": 3.3,
         "type": "crypto"
       },
@@ -1161,7 +1161,7 @@
       {
         "symbol": "ADA-USD",
         "price": 0.19,
-        "change": 8.37,
+        "change": 8.66,
         "type": "mover"
       },
       {
@@ -1179,19 +1179,19 @@
       {
         "symbol": "XRP-USD",
         "price": 1.08,
-        "change": 2.04,
+        "change": 2.01,
+        "type": "mover"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 73.27,
+        "change": 1.95,
         "type": "mover"
       },
       {
         "symbol": "KSPI",
         "price": 88.78,
         "change": 1.88,
-        "type": "mover"
-      },
-      {
-        "symbol": "SOL-USD",
-        "price": 73.21,
-        "change": 1.87,
         "type": "mover"
       },
       {
@@ -1202,8 +1202,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 1865.51,
-        "change": 1.2,
+        "price": 1866.46,
+        "change": 1.25,
         "type": "mover"
       },
       {
@@ -1215,6 +1215,16 @@
     ]
   },
   "business": [
+    {
+      "title": "Powerball Jackpot Nears $750 Million\u2014Here\u2019s What A Winner Would Take Home After Taxes",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeEgtVW16X1lLel9GNDI3a3ppcm5FTkZJZzl4NEpIR0JLWTN6YUpLZ2RySVJJQUJJYUEyVW1YQUVZUHkybzZaUzdmOXlTVF9rcGQ3TkplVEtoZHZTRC1PVHk5aHZudHNzMTRPSDJ0X1JlUVZfLWJWaERJczRSX3ZZTzBlUzFZVGFFVGh3X1dvbnI1UXBXNF9zVURmVHlqTTNQLVNteUJ0U1VGX0xva2tWME9hcFlYU1VrVzdXeG0zRVNlOEZvMWh5Y3FuQ2QyZXlleFE?oc=5",
+      "source": "Forbes",
+      "category": "business",
+      "published": "Sun, 02 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
     {
       "title": "WestJet strike cancels more than 300 flights across Canada",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkVmVrenFIbjdQMUw0eTliWlRYRnVNY1FjS284RTliY0R1THBZdzdndEZtX1V6cUdiNTdHczNKaHRsZDY4aUpTbFdWeTNNLWhQMEZLVjk3WG5XZw?oc=5",
@@ -1284,16 +1294,6 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "Powerball Jackpot Grows to $748 Million\u2014Here\u2019s How Much A Winner Could Take Home After Taxes",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeEgtVW16X1lLel9GNDI3a3ppcm5FTkZJZzl4NEpIR0JLWTN6YUpLZ2RySVJJQUJJYUEyVW1YQUVZUHkybzZaUzdmOXlTVF9rcGQ3TkplVEtoZHZTRC1PVHk5aHZudHNzMTRPSDJ0X1JlUVZfLWJWaERJczRSX3ZZTzBlUzFZVGFFVGh3X1dvbnI1UXBXNF9zVURmVHlqTTNQLVNteUJ0U1VGX0xva2tWME9hcFlYU1VrVzdXeG0zRVNlOEZvMWh5Y3FuQ2QyZXlleFE?oc=5",
-      "source": "Forbes",
-      "category": "business",
-      "published": "Sun, 02 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
@@ -1328,21 +1328,21 @@
       "author": ""
     },
     {
-      "title": "Deals: Samsung Galaxy S26 Ultra discounted, Galaxy Z Fold8 series up for pre-order - GSMArena.com news",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWll6Smx2Z0dsYy00WThIMHZGN242YzZzNlBRLXBmUVRiWDhFcUp1d0x1eTZ6TElodlpXeEp5cFpYUHFwWXdWR1VDZ3dNWjZqZ2Y2SHRxUlFRR1lNYlhKZlhUd1BlOFo3aFNMa2owYmlQWU1BWlRzT3dyNXRMM2pfWW8wbnVRZFkybFY2NFh6WUh3b2RfUHI4LUV5U0lfb3IwRVRHaDF6eF9LWTBjMWM4aWdBSUlUWlU4M0Zn0gG3AUFVX3lxTE1ETG5nOWhCNlI4TG9ncy1RZnp0d0hyYXl3Z2Z2am9tQlZQajNMSXg1Zy1zSlk4ZG05cDlmMHllWTZBeVNEeFdPQkh1a0JkdlNwM3J6WVdiYTFjV1JfTVdaRlNTR3FiZDRQaHVqVzFiQTJnVGs4STlfUFpNYzNoZHRob3ZXQlhvU0JvRzlERHF4cUtTc3F2MzNaSjNYM2xFVmNUeWNRME5TUEdqcFVDVGljYjB5eHdKWQ?oc=5",
-      "source": "GSMArena.com",
-      "category": "business",
-      "published": "Sat, 01 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Samsung One UI 9.5 spotted as Galaxy Z Fold 8 nears retail launch",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaDJKSmpJbWhBanhHcEYzNmhfWmVsenQtS09HdmgyWGhGTlJaZ0RMVzdXeDcwNmpkSDBWLXlMemJNckdVenZXT0I2M25YaXh2cmtYTkpSN21FX1NhSlNpa19CSmdBTlJvd0JMWVBEemM0aWVKU2xnWFRvVHFBNTZVQklaZHFPb0c3b2VnZA?oc=5",
       "source": "SamMobile",
       "category": "business",
       "published": "Sun, 02 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Deals: Samsung Galaxy S26 Ultra discounted, Galaxy Z Fold8 series up for pre-order - GSMArena.com news",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWll6Smx2Z0dsYy00WThIMHZGN242YzZzNlBRLXBmUVRiWDhFcUp1d0x1eTZ6TElodlpXeEp5cFpYUHFwWXdWR1VDZ3dNWjZqZ2Y2SHRxUlFRR1lNYlhKZlhUd1BlOFo3aFNMa2owYmlQWU1BWlRzT3dyNXRMM2pfWW8wbnVRZFkybFY2NFh6WUh3b2RfUHI4LUV5U0lfb3IwRVRHaDF6eF9LWTBjMWM4aWdBSUlUWlU4M0Zn0gG3AUFVX3lxTE1ETG5nOWhCNlI4TG9ncy1RZnp0d0hyYXl3Z2Z2am9tQlZQajNMSXg1Zy1zSlk4ZG05cDlmMHllWTZBeVNEeFdPQkh1a0JkdlNwM3J6WVdiYTFjV1JfTVdaRlNTR3FiZDRQaHVqVzFiQTJnVGs4STlfUFpNYzNoZHRob3ZXQlhvU0JvRzlERHF4cUtTc3F2MzNaSjNYM2xFVmNUeWNRME5TUEdqcFVDVGljYjB5eHdKWQ?oc=5",
+      "source": "GSMArena.com",
+      "category": "business",
+      "published": "Sat, 01 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1368,11 +1368,11 @@
       "author": ""
     },
     {
-      "title": "Samsung Galaxy S27 Ultra leak reveals massive camera and battery overhaul",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWEhNbXp4d1dLMGhROVIxWjJPTkpXeVNTSTJtdS1JZkRSV3ZTSHlSb0ZTWWJDS3Q3cmxNcGUwZFdOaXBvTFFja2VGSnYwSFNnaEJJNTFfMElDbGJvdHV4WWs2UmxWSWcwVzI1T2JFZ0RUNUxWb1pWSXJxUjdidzRhbWJkX2hRUGRXak5PZmtxNVNvUmE4b2lUdTVHbXU3aWhfMmFLYS1vV1czVXk4QV9HWUhYMTlnTjN2bzVtZFlzeWlFdWJT?oc=5",
-      "source": "Android Central",
+      "title": "Xgimi MemoMind One Review: You Don\u2019t Want Smart Glasses That Record Everything You Say",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNYUVNZUdFRHNXaG92OWF4UGk2Q1NOdFJaLWdkRUZaekdqS3VsT1p3S1VtSEt3em12QUwtQ3RMckgwdTc2Wkd1NnFnb3k0MThNam9sRlFmQkVOcS1ZcS1xVjZmb3VRcU5fczZYNW1BMWVXWWRHeUwwS0c4cmk3d0EwX0lXWmlQZE9DS083VV80aGVaQVdBVEV0cVhtTE1ESWM?oc=5",
+      "source": "gizmodo.com",
       "category": "business",
-      "published": "Sat, 01 Aug 2026 ",
+      "published": "Sun, 02 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1775,22 +1775,74 @@
     ],
     "wallstreetbets": [
       {
-        "title": "Meme stocks and mega-IPOs: How the WallStreetBets crowd is playing the wild 2026 stock market",
-        "url": "https://www.msn.com/en-us/money/top-stocks/meme-stocks-and-mega-ipos-how-the-wallstreetbets-crowd-is-playing-the-wild-2026-stock-market/ar-AA26RW4n",
+        "title": "Discord bans r/WallStreetBets server for 'hateful and discriminatory content' - Mashable",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wY0xxMy1BSGF2NjlheTRIZDkxLTRYdk1YVEJWbDB0OTNvMlc3UDdXa3U3cC00bUpKUkducm5EWVhhOS1pd1VTZkFyRDJnSmlPMkNWeWlFZFFzNW9IUTYwSTBqbE45SkNqQTFzLTBNbmpQY0Fx?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-30T09:40:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-07-31T22:00:00",
+        "description": "Discord bans r/WallStreetBets server for 'hateful and discriminatory content'&nbsp;&nbsp;Mashable"
       },
       {
-        "title": "Reddit Wants to 'Save Wendy's': Inside the Meme-Stock Rally Hunting a 29% Short",
-        "url": "https://www.aol.com/articles/reddit-wants-save-wendy-inside-161925000.html",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Amazon.com to Advance, Reddit to Decline - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZjRnWEsyMHF5RldoNWdpU0tVMXdaS3FuZjQ5aThaT1gwMkEtY2VTQ3lnNkowb3JmM2VxMFNnZjFqSkRRc0dqcjNKclN2c1pKbHBPM1kwckhNSWJXZ0o4UjVlYnR4YWFtSXlySTVQMDFqN1VON0JBUDFweWpQZnI5TEppeElNYmp3RXNhV19HZmF1THBLTGd4RENpRTdqN1o3QU9KSU15TzMzUnZ0LUtCMEN0RjZiUG9Sa0k4NnR1cXdFZzU4MjNJaFdrQk1vU25rclZCd1RUSEZzZzVTNjI0TUR4dVRBSklaalE?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-25T16:19:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-07-31T10:52:33",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Amazon.com to Advance, Reddit to Decline&nbsp;&nbsp;Moomoo"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Amazon.com to Advance, Reddit to Decline - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZldRVG40ZnlmTE9PU0VSTVJ5aGpsRmF0bUM1MExpUFRfYnY3M1kyN3pjSXBuOEUySkV6dWxKUzUtSDA0VUF2V29VNWdUbjU0a01zRm9tdi1YRDJadHNvY1Y0M2ZRLWlCejYyMG8wbFNMaUpoZU1CRWIxZmpyeXlHTEtMM3B4VHFtcWh0bEp1RUxCbWl4RWxNOVdIMkx2c2R0NmUwZlVyVHlCOUdqRmFOZGxWMlNHVU5LT3ZrTGI2b0hoZnFBMVItUmxVSWJJUDUwdGhOdW9pYkNWV3ZIR2dzbGYxSQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-07-31T11:04:58",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Amazon.com to Advance, Reddit to Decline&nbsp;&nbsp;marketscreener.com"
+      },
+      {
+        "title": "WallStreetBets Favorites Bounced Back In Premarket Trading - Finimize",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd2gwVTNCa1gxWkxKVTNFREx3UWtwODNkWlRjZUI0MjVNZEpfUkJfaU9oRlpNblZLai0ybml5V2FhbXlfeWlXa1hFa0kwUTZRUEN5R0NjYURhT3FTREJfTXlFUkpGZ09JUXBlaFA4aVlVSlluLUo1NnYteWN6cVNySlJnNXlZZ2dyY2ZkWjNMQXI?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-07-29T11:54:44",
+        "description": "WallStreetBets Favorites Bounced Back In Premarket Trading&nbsp;&nbsp;Finimize"
+      },
+      {
+        "title": "WallStreetBets versus the SEC - Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxaHlZeGtfeUFCOGZQaG5OUnBGOVRJa1B6eHF0SW5FQWN1elQzVjA0YVRSWDd0TnFONE8xQTIyZHJfV3FBbzh4aEhRQVNZMGtNaWt0cTNHUUVMX3pyT3dHVmFkNWJ4V3E0WVJGZlUtc0o?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-15T07:00:00",
+        "description": "WallStreetBets versus the SEC&nbsp;&nbsp;Financial Times"
+      },
+      {
+        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-02T07:00:00",
+        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+      },
+      {
+        "title": "Wendy\u2019s Stock Climbs 30% as WallStreetBets Targets a GameStop Repeat - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNktDVkdBbDVPZldsdXNCQlVndnktbXFSV25YRHFKSkNYZzF5Q25iQTRkWXNEb2NjeEdabm02Vjl2WTNsWFVkem50OEJreloyVlVybDdYdS0tbXRiOGc5TVRhREtCMW1nRENud1N3RkJtM05VQXJfR2RBZUhsWWNvYXo2Q180VU01UDhVV1J3cHBscWtOTi00b3Q4MjZ0UXV3bmdJ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-06-24T07:00:00",
+        "description": "Wendy\u2019s Stock Climbs 30% as WallStreetBets Targets a GameStop Repeat&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Wall Street Bets: Las Vegas Sands, Boyd, Monarch Casino - CDC Gaming",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMkFmdjBmWFdHVDhRSWY3QVVKSElUN2xOanlTT2xhMkd2bnNKbFdCTjh4MXVaMXN1TnBtZ1dXdlh5OGhvejJZSC1uMzF0VUlFWWRvaF95cjFmYmd2NjFCQ2ZYdmc4Z3BzWkRjd3BiVDAwWm51c240eF81ZlRqbEdNcg?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-07-27T14:04:45",
+        "description": "Wall Street Bets: Las Vegas Sands, Boyd, Monarch Casino&nbsp;&nbsp;CDC Gaming"
+      },
+      {
+        "title": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow - Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWlGa2VFZEtfUjBPVDJKZUVxOHUtTDVqN21tVTNyWHdscnR6YVExWTFGU0htYjBDZDltUVBCVkpNT0oyaWZsd01Xc2hDeUU4cDdmb0hBY0Q2dnRGUmYzMGY5c2psLUx5ckNmdFJPX2lpa3plRF8yTEtYak1tOURwMEFRZ1gxeUpuYTdRbVoyQWpZOEdOQTZnRjNObGMxY0lobHZpLUJWMi01dGJCVEJtRUdpUXE?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-07-02T07:00:00",
+        "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;Bloomberg"
+      },
+      {
+        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-14T07:00:00",
+        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       }
     ]
   },

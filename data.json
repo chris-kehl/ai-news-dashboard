@@ -1,23 +1,7 @@
 {
-  "timestamp": "2026-08-03T17:16:08.867881",
-  "summary": "Key topics today:\n- - AirLLM 70B inference with single 4GB GPU (r/HackerNews, 301 pts)\n- - Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding agents (r/HackerNews, 101 pts)\n- - Prevent cognitive debt by manually retyping LLM-generated code (r/HackerNews, 101 pts)\n- - SQLite Critical CVEs or LLM Slop? (r/HackerNews, 101 pts)\n- - Show HN: Product analytics (and evals) for agent sessions on your MCP (r/HackerNews, 101 pts)",
+  "timestamp": "2026-08-03T17:28:35.908362",
+  "summary": "Key topics today:\n- - AirLLM 70B inference with single 4GB GPU (r/HackerNews, 301 pts)\n- - LLMs reward expertise (r/HackerNews, 101 pts)\n- - Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding agents (r/HackerNews, 101 pts)\n- - Show HN: Product analytics (and evals) for agent sessions on your MCP (r/HackerNews, 101 pts)\n- - Prevent cognitive debt by manually retyping LLM-generated code (r/HackerNews, 101 pts)",
   "signals": [
-    {
-      "type": "buy",
-      "asset": "RITR",
-      "price": 0.34,
-      "change": 442.54,
-      "category": "stock",
-      "text": "RITR +442.5% momentum @ $0.34"
-    },
-    {
-      "type": "buy",
-      "asset": "HYFM",
-      "price": 2.15,
-      "change": 263.18,
-      "category": "stock",
-      "text": "HYFM +263.2% momentum @ $2.15"
-    },
     {
       "type": "buy",
       "asset": "CRWV",
@@ -25,6 +9,22 @@
       "change": 16.05,
       "category": "stock",
       "text": "CRWV +16.1% momentum @ $85.76"
+    },
+    {
+      "type": "sell",
+      "asset": "GME",
+      "price": 19.06,
+      "change": -12.89,
+      "category": "stock",
+      "text": "GME -12.9% drop @ $19.06"
+    },
+    {
+      "type": "sell",
+      "asset": "GME",
+      "price": 19.06,
+      "change": -12.89,
+      "category": "stock",
+      "text": "GME -12.9% drop @ $19.06"
     }
   ],
   "reddit": [
@@ -37,11 +37,27 @@
       "created": ""
     },
     {
+      "title": "LLMs reward expertise",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+      "created": ""
+    },
+    {
       "title": "Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding agents",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://hoplite.sh",
+      "created": ""
+    },
+    {
+      "title": "Show HN: Product analytics (and evals) for agent sessions on your MCP",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://armature.tech/",
       "created": ""
     },
     {
@@ -58,14 +74,6 @@
       "score": 101,
       "comments": 0,
       "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
-      "created": ""
-    },
-    {
-      "title": "Show HN: Product analytics (and evals) for agent sessions on your MCP",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://armature.tech/",
       "created": ""
     },
     {
@@ -98,14 +106,6 @@
       "score": 1,
       "comments": 0,
       "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
-      "created": ""
-    },
-    {
-      "title": "200 Milliseconds",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://200ms.thenodebook.com",
       "created": ""
     }
   ],
@@ -170,98 +170,98 @@
     },
     {
       "author": "@Reuters",
-      "text": "Romanian carmakers Dacia, Ford stop production until Aug 19 as power crisis looms-PM http://reut.rs/4w7uWR3 http://reut.rs/4w7uWR3",
-      "url": "https://nitter.net/Reuters/status/2084385090079973422#m",
-      "date": "Mon, 03 Aug 2026 21:05:06 GMT",
+      "text": "US shakes up currency markets with unusual yen-buying via selling euros http://reut.rs/4w35qfC http://reut.rs/4w35qfC",
+      "url": "https://nitter.net/Reuters/status/2084387613775933809#m",
+      "date": "Mon, 03 Aug 2026 21:15:07 GMT",
       "likes": 0
     },
     {
       "author": "@Reuters",
-      "text": "Making sense of the Trump Treasury\u2019s odd FX intervention http://reut.rs/4fOyh1f http://reut.rs/4fOyh1f",
-      "url": "https://nitter.net/Reuters/status/2084383934108885474#m",
-      "date": "Mon, 03 Aug 2026 21:00:30 GMT",
+      "text": "China steps up protection for chip designs in revised regulations http://reut.rs/4wGQZiy http://reut.rs/4wGQZiy",
+      "url": "https://nitter.net/Reuters/status/2084386355673436167#m",
+      "date": "Mon, 03 Aug 2026 21:10:07 GMT",
       "likes": 0
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-03T21:16:02.920405",
+    "timestamp": "2026-08-03T21:28:29.680691",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 192.11,
+        "price": 191.79,
         "change_24h": -0.7,
-        "market_cap": 1843923926
+        "market_cap": 1841235865
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 63674,
+        "price": 63660,
         "change_24h": 0.5,
-        "market_cap": 1277880896215
+        "market_cap": 1277414383528
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1865.43,
+        "price": 1863.89,
         "change_24h": -0.7,
-        "market_cap": 225137552782
+        "market_cap": 224940275014
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.9992,
+        "price": 0.999168,
         "change_24h": 0,
-        "market_cap": 183266717655
+        "market_cap": 183261571400
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 589.81,
+        "price": 589.43,
         "change_24h": 0.3,
-        "market_cap": 78539029003
+        "market_cap": 78513039176
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999581,
+        "price": 0.99957,
         "change_24h": 0,
-        "market_cap": 72110145608
+        "market_cap": 72086562367
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.08,
         "change_24h": 0.1,
-        "market_cap": 67576400305
+        "market_cap": 67543808198
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 73.72,
+        "price": 73.67,
         "change_24h": 0.2,
-        "market_cap": 42852193044
+        "market_cap": 42825696985
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.328656,
+        "price": 0.32857,
         "change_24h": 0.4,
-        "market_cap": 31182106582
+        "market_cap": 31181227280
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.006,
         "change_24h": 0.6,
-        "market_cap": 20930546699
+        "market_cap": 20931214210
       },
       {
         "name": "WhiteBIT Coin",
         "symbol": "WBT",
-        "price": 55.22,
+        "price": 55.2,
         "change_24h": 0.1,
-        "market_cap": 16233134753
+        "market_cap": 16224785653
       }
     ],
     "news": [
@@ -461,6 +461,14 @@
       "description": "35-year-old Jordan Salinas was seen on video returning fire as a gunman carried out a deadly shooting out an In-N-Out restaurant in Twin Falls, Idaho."
     },
     {
+      "title": "House Ethics panel recommends censure for Chuck Edwards after harassment allegations",
+      "url": "https://www.npr.org/2026/08/03/nx-s1-5918341/chuck-edwards-ethics-report",
+      "source": "Npr",
+      "category": "npr",
+      "published": "Mon, 03 Aug 2026 ",
+      "description": "After a months-long investigation, the ethics committee recommended censure for Edwards because of \"persistent unprofessional and inappropriate conduct towards two young female staffers.\""
+    },
+    {
       "title": "Ripple effects: After Hearn, three others have their Reflecting Pool charges dropped",
       "url": "https://www.npr.org/2026/08/03/nx-s1-5918001/reflecting-pool-vandalism-charges-dropped",
       "source": "Npr",
@@ -475,33 +483,11 @@
       "category": "npr",
       "published": "Mon, 03 Aug 2026 ",
       "description": "For years, many Cubans hoping to leave the island looked to the United States. Now, with legal pathways largely closed, a growing number are heading to Brazil instead."
-    },
-    {
-      "title": "Photos: Wildfires in Spokane lead to thousands of evacuations",
-      "url": "https://www.npr.org/sections/the-picture-show/2026/08/03/g-s1-137003/photos-wildfires-in-spokane-lead-to-thousands-of-evacuations",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Mon, 03 Aug 2026 ",
-      "description": "Wildfires in Spokane have destroyed hundreds of homes and led to evacuation orders for 60,000 people."
     }
   ],
   "stocks": {
-    "timestamp": "2026-08-03T21:15:41.143988",
+    "timestamp": "2026-08-03T21:28:06.183398",
     "trending": [
-      {
-        "symbol": "RITR",
-        "price": 0.34,
-        "change": 0.28,
-        "change_percent": 442.54,
-        "name": "Reitar Logtech Holdings Limited"
-      },
-      {
-        "symbol": "HYFM",
-        "price": 2.15,
-        "change": 1.56,
-        "change_percent": 263.18,
-        "name": "Hydrofarm Holdings Group, Inc."
-      },
       {
         "symbol": "CRWV",
         "price": 85.76,
@@ -524,25 +510,11 @@
         "name": "Oracle Corporation"
       },
       {
-        "symbol": "ONDS",
-        "price": 8.37,
-        "change": 0.79,
-        "change_percent": 10.42,
-        "name": "Ondas Inc"
-      },
-      {
         "symbol": "SOFI",
         "price": 18.03,
         "change": 1.56,
         "change_percent": 9.47,
         "name": "SoFi Technologies, Inc."
-      },
-      {
-        "symbol": "AZN",
-        "price": 157.97,
-        "change": -13.37,
-        "change_percent": -7.8,
-        "name": "AstraZeneca PLC"
       },
       {
         "symbol": "SNAP",
@@ -552,11 +524,32 @@
         "name": "Snap Inc."
       },
       {
-        "symbol": "BA",
-        "price": 233.49,
-        "change": 12.59,
-        "change_percent": 5.7,
-        "name": "Boeing Company (The)"
+        "symbol": "STRL",
+        "price": 611.47,
+        "change": 30.74,
+        "change_percent": 5.29,
+        "name": "Sterling Infrastructure, Inc."
+      },
+      {
+        "symbol": "POWL",
+        "price": 219.72,
+        "change": 10.42,
+        "change_percent": 4.98,
+        "name": "Powell Industries, Inc."
+      },
+      {
+        "symbol": "ON",
+        "price": 80.4,
+        "change": -3.34,
+        "change_percent": -3.99,
+        "name": "ON Semiconductor Corporation"
+      },
+      {
+        "symbol": "WHR",
+        "price": 39.21,
+        "change": 1.14,
+        "change_percent": 2.99,
+        "name": "Whirlpool Corporation"
       },
       {
         "symbol": "PLTR",
@@ -564,6 +557,13 @@
         "change": 3.39,
         "change_percent": 2.77,
         "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "VRTX",
+        "price": 470.72,
+        "change": -10.98,
+        "change_percent": -2.28,
+        "name": "Vertex Pharmaceuticals Incorpor"
       },
       {
         "symbol": ".RUT",
@@ -588,9 +588,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 63660.01,
-        "change": 178.01,
-        "change_percent": 0.28,
+        "price": 63664.55,
+        "change": 182.55,
+        "change_percent": 0.29,
         "name": "Bitcoin USD"
       }
     ],
@@ -1022,7 +1022,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-03T21:15:58.841118",
+    "timestamp": "2026-08-03T21:28:24.149478",
     "items": [
       {
         "symbol": "SPX",
@@ -1104,31 +1104,31 @@
       },
       {
         "symbol": "TAO",
-        "price": 192.11,
+        "price": 191.79,
         "change": -0.7,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 63674,
+        "price": 63673,
         "change": 0.5,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1865.43,
+        "price": 1864.34,
         "change": -0.7,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 73.72,
+        "price": 73.69,
         "change": 0.2,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.070391,
+        "price": 0.070352,
         "change": -0.3,
         "type": "crypto"
       },
@@ -1143,18 +1143,6 @@
         "price": 6.56,
         "change": -0.3,
         "type": "crypto"
-      },
-      {
-        "symbol": "RITR",
-        "price": 0.34,
-        "change": 442.54,
-        "type": "mover"
-      },
-      {
-        "symbol": "HYFM",
-        "price": 2.15,
-        "change": 263.18,
-        "type": "mover"
       },
       {
         "symbol": "CRWV",
@@ -1175,15 +1163,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SOFI",
-        "price": 18.03,
-        "change": 9.47,
-        "type": "mover"
-      },
-      {
-        "symbol": "AZN",
-        "price": 157.97,
-        "change": -7.8,
+        "symbol": "SNAP",
+        "price": 5.04,
+        "change": 7.46,
         "type": "mover"
       },
       {
@@ -1193,15 +1175,33 @@
         "type": "mover"
       },
       {
-        "symbol": "BA",
-        "price": 233.49,
-        "change": 5.7,
+        "symbol": "STRL",
+        "price": 611.47,
+        "change": 5.29,
         "type": "mover"
       },
       {
         "symbol": "TSLA",
         "price": 322.08,
         "change": 4.28,
+        "type": "mover"
+      },
+      {
+        "symbol": "ON",
+        "price": 80.4,
+        "change": -3.99,
+        "type": "mover"
+      },
+      {
+        "symbol": "WHR",
+        "price": 39.21,
+        "change": 2.99,
+        "type": "mover"
+      },
+      {
+        "symbol": "AMC",
+        "price": 2.85,
+        "change": 2.89,
         "type": "mover"
       }
     ]
@@ -1211,16 +1211,6 @@
       "title": "The message beneath the yen intervention",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1XMVMyZ0FST1BxZGNEcVU0aHRCUV9DaTJvMlYteG1MWWtKVnF1MUU2SU5CQjdkSkdXNXBCVGZ0MzRadUZyY1RCSFowazRMN2xZYnRyT3RlVjQ1ME1kcVN6TmIzTmpudzRlcWRR?oc=5",
       "source": "Axios",
-      "category": "business",
-      "published": "Mon, 03 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "US stocks rally near a record as falling oil prices ease Wall Street\u2019s worries about inflation",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWTMweFRadm51ZDBCVG5fZlAzdEFVZGZpZ2dVcVdsb0dfRHI4M3VzTWI4YllxTDBQUzJNUDQwLXFjZnVMMG43aW0zbnJ1ZmxyODhmdk1zeXhIVmdxc2F4OUlPNWZ6MFFZRTlKNnduenlqcjJDQ3JNWHpuZFBpejZmTXVva3ZwTWg1cnduR2hhMTJQYmVVZ3JacklNYw?oc=5",
-      "source": "AP News",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
       "description": "",
@@ -1238,8 +1228,18 @@
       "author": ""
     },
     {
-      "title": "US FAA certifies Boeing 737 MAX 7 in win for planemaker",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObm5abmxuWVVCMWR2ZDdDaTFWSnJ5SEYxZnc5MFg0Qko5RkJWMGZpTndzclotOVAza0ZYRHJoTmpUZk1yclB4MnZxUFlYanVwbnlGd3JaNk5sZ2YxbjliM3EyVk55bUtEZU9mQWNRR214WTlQRVdTRXAwbVdGRzdYdE1CY0hrOXlIWjRlV0V0VGg2d05qLUJzT05iQ0oyaS13UFM4azRFMXF2T2ZOUEhPT2hJblN1bUozNlc1SkNn?oc=5",
+      "title": "US stocks rally near a record as falling oil prices ease Wall Street\u2019s worries about inflation",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWTMweFRadm51ZDBCVG5fZlAzdEFVZGZpZ2dVcVdsb0dfRHI4M3VzTWI4YllxTDBQUzJNUDQwLXFjZnVMMG43aW0zbnJ1ZmxyODhmdk1zeXhIVmdxc2F4OUlPNWZ6MFFZRTlKNnduenlqcjJDQ3JNWHpuZFBpejZmTXVva3ZwTWg1cnduR2hhMTJQYmVVZ3JacklNYw?oc=5",
+      "source": "AP News",
+      "category": "business",
+      "published": "Mon, 03 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Trump blasts Exxon, Chevron for making 'too much money,' demands lower gasoline prices",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSlhBWjU3Vnk4RkhNa1N0cExPUjhxenRiTGVQbVVzakwxRWdhMU9ieVZvSm5fZU4yYkJaREVJR3ltYUhXZW1JYkx6c1lJS1ZYVkM4WVZZSGQza3ZQMDVTYVg5ZktqbGh6RjhWN2wzRTNZUDg0U0JEU2R3N3U2NkVmYjNlOFhHTHFUYmd1QzFGRlg1V2lzWnhabkVVLUt3YmVQS0dGeUwtUnVKb2xMZjQzOGZvY0NKQQ?oc=5",
       "source": "Reuters",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
@@ -1248,8 +1248,8 @@
       "author": ""
     },
     {
-      "title": "Trump says Exxon and Chevron made 'too much money' off high oil prices during Iran conflict: 'I don't like it'",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObk5LNVZzcGxBT29HZWR0Z2laYVRPNGtNLUhzcTVodmxTdkt2dDR3QnVTRHlnaC03a1dnd0oyYldtOWx6SWxmTXl4VnVmZUY3aTduN2xsdVJVWnVvbjdram1sSzRPMXExWjM1amFqWVNLbGZxMmxtQXVLVEtod1ZTcVdYMEJDUVRLd1JNXzh6T3Q1QmNhd1BTcnZMczlLZU9sSGFMUnZTZE13eHh0R2Zud0lFM0lhWHEwOXhrM0N0emo1emVZazhOUzJyblN5VlQ3NTlTazA2Z3nSAd4BQVVfeXFMT3V4OWU0RTlMeExsOHFzU0ZPX3J2ZHpKVEdJNlpYRGJmdWpXbFN1Nm8zZmptTWdpWkZ5ejdfUGV0TWRHWjhzel9yLVFWWjJmV3RPLVVxTjZmWmZzYWxKVndYZVI3OTQwV1NKMDNVdVBzQlVNbFVGZ2s1QVBLZ2NUZHJuaEZEcjJOZzNrWlFLVUNKTkhobFROa2VXejVSRVM5cklXOHhvd0VUeHlKRml1TDdNNThsZjN2NmhJODZOUVZXb3ljbVlST0MycE5oa3JoVjFWeVhKajk1OTFYR0ln?oc=5",
+      "title": "FAA clears smallest Boeing 737 Max to fly after years of delays",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4zRGI2c1A2SHF1Yzd6LWRmQ2Qza09qanNLeVpkcUk5M3EtWUY2ZlBBZzkxLXNMWDZhZEFMZFFkdXpNVnNIV0R6d2M2ZDlsVUctQWhzOENEc3g5Qm9LdmlOeHpCWkFabmNwLVdOSTh1UWd6blo3ci0yb9IBfkFVX3lxTE5XMjhubVV6SHlNTlhYeTZ3Q3dpaGRkN09Zcy14Y0dETGJwcVBQX1BfWVJMdnJSam1hTnZ4NTNoQ1RRUkp4ZGhBOVFVRk1UNXZyVmIzamczbFUyYTBJOFMxenJYR2xQUHRJRzU3Z1YwQk9MN0hITThPN3FnMW9CUQ?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
@@ -1290,16 +1290,6 @@
   ],
   "tech_business": [
     {
-      "title": "Microsoft is bringing Xbox 360 games to PC",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa0lzZm5qbUNVVk00MkRfd1FiWkR4LVN3Z2lhTU50dXhGbzNiTU95UFJXOHI0d3g1dlQ1clhUNTdrN1NYQW9KTlBhbVBNVWl0NGl2RGRQcnlVcVZSa2xsQlNPaV9KT3hJUVVqbzh1QnNaX1YyQXNuOWRWQmQybjJoWWJ1cExFWE5pSTFtZVhoRQ?oc=5",
-      "source": "The Verge",
-      "category": "business",
-      "published": "Mon, 03 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Google Health 5.05 rolling out: Apple Health sync & bug fixes",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rcWd4MVJsSU1CNjFpc3BPWU41SlNWYW5IVmNBb1JnVVBvWXBkSk1uUjdSc193WElMU3BVTUdRZ2RxY0dxNkpfV2JBRkFtQTVWeFhYSmg0NkF3dWd1V3FYazltc0FUU2lZNDBQMEt4aExlcTlYM0E?oc=5",
       "source": "9to5Google",
@@ -1320,9 +1310,19 @@
       "author": ""
     },
     {
-      "title": "Samsung bans smart TV apps that share users\u2019 internet connections with strangers",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGVaNGs3dkw2WTFIc1JkU1UzemRBRlpfZjVqVFhDX0x4ZjQyai1rTzctbGllbXljQWZvMHlwLWZYbnFpTWdNR3JJTTFKY0pUSEt2WUNweDdSTzViQ1d5QlRpY3lrWmJWZmZpczNlRk9qdy1Mak4wZV9IR09BOW4xd2VrYTVvVnF3RFg5UE5TUm9jMDkwTEc3bjd0T1VwZjBoNUQ0WEllX1hpeHhyWXM1Xy1BY1E?oc=5",
-      "source": "TechCrunch",
+      "title": "Microsoft is bringing Xbox 360 games to PC",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa0lzZm5qbUNVVk00MkRfd1FiWkR4LVN3Z2lhTU50dXhGbzNiTU95UFJXOHI0d3g1dlQ1clhUNTdrN1NYQW9KTlBhbVBNVWl0NGl2RGRQcnlVcVZSa2xsQlNPaV9KT3hJUVVqbzh1QnNaX1YyQXNuOWRWQmQybjJoWWJ1cExFWE5pSTFtZVhoRQ?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 03 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "[Interview] [Galaxy Unpacked July 2026] Inside the Design Behind the Latest Galaxy Z Series and Galaxy Watch",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORUR1SXduZE5nOEM5dmZ5UVg0UElSRUFncFBMaGVqRURzQWJRSzV2cC12bmRBY3ROam84NzYxdW5heFJGRWgzekRTdU9YckdhQ0E2c2Izb2gzcVZLZmlza2k2WEduaUhiTlREMFp3SjhXVXpMdlI5a2FOb2docjlpdDRoOURzSVhCXzgxZnMxTWh2SjVCeENFZ1VONmU2ZzJyQVNtNGx3WU1kdjlKa09TNU5GZlZmZWdrM1BSVC0yMjU3eUNadlVCQ1EzcGE?oc=5",
+      "source": "samsung.com",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
       "description": "",
@@ -1340,9 +1340,9 @@
       "author": ""
     },
     {
-      "title": "Samsung Galaxy Z Fold 8 Ultra Review: Nice Upgrades, But Not Quite Ultra",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBJQkN5V3N1Wno3MkdxaEZZRGEtMjBodEdCTjdFazNUaVVlUFZ0MUJOZXVFNUpEY0R3QlBEVnFLM2l3YWFlVDFqRXlwc3JrZ20yak5WVjBjNGNaWXp3dGlYWnU5d2Y3QnJ6MEprTURHYnlmelE2X1JidmRR?oc=5",
-      "source": "Engadget",
+      "title": "The first-gen Kindle Scribe is a big e-reader and digital notebook that\u2019s $150 refurbished",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRXE2NmdaVXl6OUdTZTc1aEpaU0lwdE1PM2FiYzV1TEREbzJjM08teWxXdGYxdnNlcHVVUVJNcGIzQWpuUm5aRm00ZXhIeE9KdEN4Yk1YVkF6R21SZE82UTNZSHhMY3JZdjBLemNRXzFzRzkyN0JVa0thT09OMExlQ0EzSXNkZVdDRUlzUTh3?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
       "description": "",
@@ -1350,9 +1350,9 @@
       "author": ""
     },
     {
-      "title": "The first-gen Kindle Scribe is a big e-reader and digital notebook that\u2019s $150 refurbished",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRXE2NmdaVXl6OUdTZTc1aEpaU0lwdE1PM2FiYzV1TEREbzJjM08teWxXdGYxdnNlcHVVUVJNcGIzQWpuUm5aRm00ZXhIeE9KdEN4Yk1YVkF6R21SZE82UTNZSHhMY3JZdjBLemNRXzFzRzkyN0JVa0thT09OMExlQ0EzSXNkZVdDRUlzUTh3?oc=5",
-      "source": "The Verge",
+      "title": "Galaxy Z Flip 8 Review: I Adore the Thin Look, but Not the Price",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUTlMelAyNkFNcUNqaTF3clF4ZDM3aWd0YW0zYU9sRFYyTWVnaTFXZnp0VllJakNQclN4SXJJMHMzV0d3U3N2WU9lLWNKQW1sdGF5OGVNNmdHQ0ZqQlF4QzBubkg5c0JGUFRiaVd3N1BYM0k0OFVMZ3ZWaC1YMS1pSjBud2pXNEdYMFhmRDNMS2tmMjc3dFNDSTRGYTQ?oc=5",
+      "source": "CNET",
       "category": "business",
       "published": "Mon, 03 Aug 2026 ",
       "description": "",
@@ -1665,8 +1665,15 @@
         "description": ""
       },
       {
-        "title": "The tech stock dumpster fire should remind you of this important investing lesson",
-        "url": "https://finance.yahoo.com/markets/article/the-tech-stock-dumpster-fire-should-remind-you-of-this-important-investing-lesson-123000193.html",
+        "title": "3 brilliant quotes on the challenge of valuing companies",
+        "url": "https://finance.yahoo.com/economy/article/3-brilliant-quotes-on-the-challenge-of-valuing-companies-123224694.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-02T12:32:24+00:00",
+        "description": ""
+      },
+      {
+        "title": "South Dakota couple built a 3,600 sq. ft. home for $410,000 \u2014 but 3 advantages helped make it possible",
+        "url": "https://finance.yahoo.com/real-estate/articles/south-dakota-couple-built-3-123000126.html",
         "source": "Yahoo Finance",
         "published": "2026-08-02T12:30:00+00:00",
         "description": ""
@@ -1679,24 +1686,17 @@
         "description": ""
       },
       {
-        "title": "South Dakota couple built a 3,600 sq. ft. home for $410,000 \u2014 but 3 advantages helped make it possible",
-        "url": "https://finance.yahoo.com/real-estate/articles/south-dakota-couple-built-3-123000126.html",
+        "title": "The tech stock dumpster fire should remind you of this important investing lesson",
+        "url": "https://finance.yahoo.com/markets/article/the-tech-stock-dumpster-fire-should-remind-you-of-this-important-investing-lesson-123000193.html",
         "source": "Yahoo Finance",
         "published": "2026-08-02T12:30:00+00:00",
         "description": ""
       },
       {
-        "title": "3 brilliant quotes on the challenge of valuing companies",
-        "url": "https://finance.yahoo.com/economy/article/3-brilliant-quotes-on-the-challenge-of-valuing-companies-123224694.html",
+        "title": "Is Apple Stock a Buy on the Dip as iPhone Sales Surge?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-buy-dip-iphone-123500089.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-02T12:32:24+00:00",
-        "description": ""
-      },
-      {
-        "title": "IonQ vs. Alphabet:  What Revenue Trends Reveal About the Quantum Computing Chipmaker and the Artificial Intelligence Giant",
-        "url": "https://finance.yahoo.com/technology/ai/articles/ionq-vs-alphabet-revenue-trends-122501708.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-02T12:25:01+00:00",
+        "published": "2026-08-02T12:35:00+00:00",
         "description": ""
       },
       {
@@ -1809,13 +1809,6 @@
         "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;Bloomberg"
       },
       {
-        "title": "Reddit Tightens WallStreetBets Control As Enterprise Integrations Gain Traction - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR3ZvVkJpb3hvN3NQLXlHeUlkTjhubFJPVV8zR3RjM3RjRENKQl91anhoNzNmYS1RdXpYUlhKUzJ4bl8yQ2R3U1VfaGFhUDYxbFhSWE1Pamg1alhVM1FjanA4MnNiR05BZ3FwSWRieTNkbVhVZVJPVWNxSnI4eW11MGhXaTZJN2toYlNqZUpDLTZma25jTlVHMmxGcw?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-01-28T08:00:00",
-        "description": "Reddit Tightens WallStreetBets Control As Enterprise Integrations Gain Traction&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
         "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
         "source": "r/wallstreetbets",
@@ -1828,6 +1821,13 @@
         "source": "r/wallstreetbets",
         "published": "2026-05-13T07:00:00",
         "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
+      },
+      {
+        "title": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWmlPLUhzT0ZnOW1VZFRnQTc1ME42UEdiRUhWT2t5c1E1a0VEMjFOOE83blgycmc1MlFydnprSVo4QVhzd1NHOXZkY2hBSkVpWUJ0MVk2N0FiY2ZDVEV3dm1mMGRUd05ONUp0cHZxMTJQRFRVN3h2a3BtNjloNkh2ZHFuX3F4aUg4bTJ0M0ViRQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-01-29T08:00:00",
+        "description": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Amazon.com to Advance, Reddit to Decline - marketscreener.com",

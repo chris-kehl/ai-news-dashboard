@@ -17,6 +17,7 @@ from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
 from nasdaq_scraper import get_nasdaq_data
 from sticky_tab_scraper import get_sticky_tab_data
+from tech_analysis_scraper import get_tech_analysis
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -74,6 +75,14 @@ def build_dashboard_data():
     nasdaq_data = get_nasdaq_data()
     print(f"       NASDAQ: ${nasdaq_data.get('price', 0):,.2f}  {nasdaq_data.get('signal', '?')}  ({nasdaq_data.get('changePercent', 0):+.2f}%)")
 
+    print("\n[11b/11] Advanced Tech Analysis (earnings + technicals)...")
+    tech_analysis_data = get_tech_analysis()
+    if tech_analysis_data:
+        print(f"       Tech sector tone: {tech_analysis_data.get('tone', '?')}  Avg: {tech_analysis_data.get('avg_score', 0)}/100")
+        print(f"       Top picks: {', '.join(tech_analysis_data.get('top_picks', []))}")
+    else:
+        print("       Skipped (no AV key or rate limited)")
+
     print("\n[12/11] Sticky tab feeds...")
     sticky_data = get_sticky_tab_data()
 
@@ -100,6 +109,7 @@ def build_dashboard_data():
         "nasdaq_data": nasdaq_data,
         "sticky": sticky_data,
         "futures": futures_data,
+        "tech_analysis": tech_analysis_data,
     }
 
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")

@@ -602,12 +602,13 @@ function renderMovers(items, elId){
   var el=$(elId);if(!el)return;
   if(!items||!items.length){el.innerHTML='<div class="ld">No data</div>';return;}
   el.innerHTML='<div class="mover-grid">'+items.slice(0,IS_MOBILE?6:12).map(function(s){
-    var cls=(s.change_percent||0)>=0?'up':'dn';
-    var sign=(s.change_percent||0)>=0?'+':'';
+    var chg = s.change_percent !== undefined ? s.change_percent : (s.change_24h || 0);
+    var cls=chg>=0?'up':'dn';
+    var sign=chg>=0?'+':'';
     return '<div class="mover-cell">'+
       '<div class="mover-symbol">'+s.symbol+'</div>'+
       '<div class="mover-price">$'+s.price+'</div>'+
-      '<div class="mover-pct '+cls+'">'+sign+s.change_percent.toFixed(1)+'%</div>'+
+      '<div class="mover-pct '+cls+'">'+sign+parseFloat(chg).toFixed(1)+'%</div>'+
       '</div>';
   }).join('')+'</div>';
 }

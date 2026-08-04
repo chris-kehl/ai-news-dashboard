@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T07:16:11.526723",
+  "timestamp": "2026-08-04T07:19:47.684815",
   "summary": "Key topics today:\n- - LLMs reward expertise (r/HackerNews, 101 pts)\n- - Prevent cognitive debt by manually retyping LLM-generated code (r/HackerNews, 101 pts)\n- - Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding agents (r/HackerNews, 101 pts)\n- - FFmpeg 9.0 (r/HackerNews, 1 pts)\n- - DeepSeek V4 Flash on a Single AMD MI300X (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -19,20 +19,20 @@
       "text": "COIN -10.6% drop @ $146.26"
     },
     {
+      "type": "buy",
+      "asset": "COHR",
+      "price": 262.89,
+      "change": 5.55,
+      "category": "stock",
+      "text": "COHR +5.5% momentum @ $262.89"
+    },
+    {
       "type": "watch",
       "asset": "AAOI",
       "price": 94.32,
       "change": 4.67,
       "category": "stock",
       "text": "AAOI +4.7% @ $94.32"
-    },
-    {
-      "type": "watch",
-      "asset": "MSTR",
-      "price": 93.28,
-      "change": -4.56,
-      "category": "stock",
-      "text": "MSTR -4.6% @ $93.28"
     }
   ],
   "reddit": [
@@ -192,7 +192,7 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-04T11:16:04.034719",
+    "timestamp": "2026-08-04T11:19:19.225898",
     "prices": [
       {
         "name": "Bittensor",
@@ -494,8 +494,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-08-04T11:15:40.458132",
+    "timestamp": "2026-08-04T11:18:58.534994",
     "trending": [
+      {
+        "symbol": "COHR",
+        "price": 262.89,
+        "change": 13.83,
+        "change_percent": 5.55,
+        "name": "Coherent Corp."
+      },
       {
         "symbol": "AAOI",
         "price": 94.32,
@@ -504,11 +511,18 @@
         "name": "Applied Optoelectronics, Inc."
       },
       {
-        "symbol": "SPCX",
-        "price": 108.37,
-        "change": -3.83,
-        "change_percent": -3.41,
-        "name": "Space Exploration Technologies "
+        "symbol": "SPOT",
+        "price": 499.94,
+        "change": -22.67,
+        "change_percent": -4.34,
+        "name": "Spotify Technology S.A."
+      },
+      {
+        "symbol": "POET",
+        "price": 6.99,
+        "change": -0.29,
+        "change_percent": -3.98,
+        "name": "POET Technologies Inc."
       },
       {
         "symbol": "GRAB",
@@ -518,13 +532,6 @@
         "name": "Grab Holdings Limited"
       },
       {
-        "symbol": "WIX",
-        "price": 55.03,
-        "change": -1.65,
-        "change_percent": -2.91,
-        "name": "Wix.com Ltd."
-      },
-      {
         "symbol": "ON",
         "price": 81.61,
         "change": -2.13,
@@ -532,11 +539,11 @@
         "name": "ON Semiconductor Corporation"
       },
       {
-        "symbol": "AMD",
-        "price": 476.15,
-        "change": -9.24,
-        "change_percent": -1.9,
-        "name": "Advanced Micro Devices, Inc."
+        "symbol": "MRVL",
+        "price": 187.56,
+        "change": 4.26,
+        "change_percent": 2.32,
+        "name": "Marvell Technology, Inc."
       },
       {
         "symbol": ".RUT",
@@ -546,11 +553,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "ENSC",
-        "price": 0.25,
-        "change": -0.0,
-        "change_percent": -1.56,
-        "name": "Ensysce Biosciences, Inc."
+        "symbol": "ADM",
+        "price": 79.27,
+        "change": -1.34,
+        "change_percent": -1.66,
+        "name": "Archer-Daniels-Midland Company"
       },
       {
         "symbol": ".SPX",
@@ -567,25 +574,11 @@
         "name": "DJIA"
       },
       {
-        "symbol": "ASTS",
-        "price": 58.98,
-        "change": 0.54,
-        "change_percent": 0.92,
-        "name": "AST SpaceMobile, Inc."
-      },
-      {
-        "symbol": "MCD",
-        "price": 270.64,
-        "change": 2.2,
-        "change_percent": 0.82,
-        "name": "McDonald's Corporation"
-      },
-      {
-        "symbol": "GME",
-        "price": 21.72,
-        "change": -0.16,
-        "change_percent": -0.73,
-        "name": "GameStop Corporation"
+        "symbol": "CAT",
+        "price": 814.81,
+        "change": 5.67,
+        "change_percent": 0.7,
+        "name": "Caterpillar, Inc."
       },
       {
         "symbol": "PLTR",
@@ -595,11 +588,18 @@
         "name": "Palantir Technologies Inc."
       },
       {
-        "symbol": "SNAP",
-        "price": 4.69,
-        "change": 0.0,
-        "change_percent": 0.0,
-        "name": "Snap Inc."
+        "symbol": "PFE",
+        "price": 25.01,
+        "change": 0.1,
+        "change_percent": 0.4,
+        "name": "Pfizer, Inc."
+      },
+      {
+        "symbol": "MRK",
+        "price": 130.2,
+        "change": 0.41,
+        "change_percent": 0.32,
+        "name": "Merck & Company, Inc."
       }
     ],
     "meme_momentum": [
@@ -1030,7 +1030,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-04T11:15:57.517396",
+    "timestamp": "2026-08-04T11:19:15.374268",
     "items": [
       {
         "symbol": "SPX",
@@ -1070,73 +1070,73 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 29138.25,
-        "change": 0.85,
+        "price": 29130.5,
+        "change": 0.83,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 53684.0,
-        "change": 0.66,
+        "price": 53716.0,
+        "change": 0.72,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2991.5,
-        "change": 0.07,
+        "price": 2992.1,
+        "change": 0.09,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 80.81,
-        "change": 0.59,
+        "price": 80.54,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4109.9,
-        "change": 1.89,
+        "price": 4109.4,
+        "change": 1.88,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 59.03,
-        "change": 2.35,
+        "price": 59.05,
+        "change": 2.4,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.74,
-        "change": -1.33,
+        "change": -1.4,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 190.72,
+        "price": 190.56,
         "change": 1.1,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 63679,
+        "price": 63662,
         "change": 1.6,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1865.01,
+        "price": 1864.85,
         "change": 0.9,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 73.52,
+        "price": 73.5,
         "change": 1.3,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.070269,
+        "price": 0.07024,
         "change": 1.0,
         "type": "crypto"
       },
@@ -1256,6 +1256,26 @@
       "author": ""
     },
     {
+      "title": "Powerball $753M jackpot winning numbers: Monday, Aug. 3, 2026",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMXFNQk1TQ2NkMVVYcDFYNkE3YXZZaUtPRHM3VEprRjZoMFBQVEJoTFhqQWVSUkxVR3JVcmd5aTZXYklNQzhaVFZTWFBRYktuVzcxdklJUThKRDg5TVBNTk05eEtWeVJvMk95Z3ZBYUVZdHZ4X2lRVjdzV21LU29aSnlWSXpEVVF3NWFiMGZyTWpmS1J3TG1PSVlXWW4xdHFpcXdqcFJrNUE0Ynd1NGF0cVZZN3p3WEJiaWg4VEFHbGtjX2Y3WnhJdmFXODg?oc=5",
+      "source": "abc10.com",
+      "category": "business",
+      "published": "Tue, 04 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Palantir stock jumps after 'otherworldly' quarter as US commercial business booms",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWS1OS2YydzNFVzR5RXc5a1hURTV5Z1NEbUwwOUtFZ0hvZTlEcmprblVXdDFwSndydFZ5ZGlOMGNVbW1qbmQ2WXAxSk5aUTl5blBFX3czdFhKVUptY3N4UXc4ZEVaUktfZjZkMk5xWDhwU25LTFFOMUUyMFM1LXcweTl5TjZoWnI2SVF6d2VURmwtUVNaSmNGUFd2TG5XMUlNM1N0c0NtVGNkbnA3OWdBcEh6MVJ0WnBueVJfR3VPSXNvOHV5bFptWmNHZWI5bGxoRXZLY0wzdUg4QjA?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Tue, 04 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Stock Market Today: Stock Futures Gain, Oil Ticks Up \u2014 Live Updates",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOT2M5QlBwRnpxZVFMa3pFM3IwTzVrM3FBVzltUnpwWUhlcnNPWG4yZDgzNE1RdVRTVzNRc2V5VjIwRWRwQk9fZTN1QURfVVhXbktHaFM4azFBNGdTTUIwVDZhZ3hwc2loV0hOaTU0NVBkR3lPVjVxNXZEemxsYTRNUlFzdUU?oc=5",
       "source": "wsj.com",
@@ -1266,31 +1286,11 @@
       "author": ""
     },
     {
-      "title": "Palantir (PLTR) Stock Jumps After Strong Earnings",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5fSGx0UDJVWEcwZmdhbUFEZXUySFZQT0RZUVNEY0Vhb3J5RFVMWGQ2SHJlTWMydjg1TE1jMDdIX1VleGNxZkJsaVhxVkF2VUphTU9PWVF3YUlhRGM1cnpXbXhmTVBaVjZRSlZ1a3U0MFBKcm9hbG14YXpfOA?oc=5",
-      "source": "Barron's",
+      "title": "BP profits more than double as Iran war sends oil prices soaring",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa0JKTElES1E5UThsUURZVlBoeXRucEtsa0U1bnhaNmVvR2Qtd3h0NlhuN0ZqTWcxRjYyUDN2TEJrTU5IRnVGY3UyaE84QnV3TDdZNmZLX3Q2cTJ4bUtvTXduWHE4TmhtRHhxQm5TNFo3NElLWnhsUC1KZ1FndVU1T09ka1A4ekk2eW1zTEhR?oc=5",
+      "source": "The Guardian",
       "category": "business",
       "published": "Tue, 04 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Powerball jackpot hits $748M. Check Monday's winning numbers",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZDZadU9ibXlweG4wOERReVNya3c1Q0JuM05ycG1oeHBQOUk1Tl9OZE5GcUYtMDBkdUQ4cjdpR0pjaWpGLWwtcktPR2NCeVF4cUFQRWROQWZZQ3R5TnluUDFQMFZEckdPbjYxNmladi1Jc2xGVUtCaGVuNW41ckZGN1FOMUF1d2NWYWo2SHNHdkVTeHM?oc=5",
-      "source": "Yahoo",
-      "category": "business",
-      "published": "Tue, 04 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Two people in Michigan have died amid cyclosporiasis outbreak, perhaps first in US",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX0pLSjBDZFhiRktTU0NjZjRmUXNjZXY2d21KeHcwWkx0dG96Z1B0amZTd0lWU2ExemM0blc3WVNHUDcxeV85UkVWVTdWQzgwby1GR3dVblpmX3R3Y0M3OFY2NGxFTmNNSEZ4SGlOT0JhU1pENHJpVDVDLTAzZm15SVJ4RjVlQUNpZFRBOE5JS1oyQXg4cVJrQVREaHhKYWlEanVYSmxoUU9hMU5lMnFucGlNMS1pV2NBZHZxd2k3a1RZQk4xWGVHRVNwei1zRXpsVy1nVDhaZmdkdHFMNlpn?oc=5",
-      "source": "The Detroit News",
-      "category": "business",
-      "published": "Mon, 03 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1604,7 +1604,7 @@
         "title": "McDonald's earnings beat estimates, chain announces new U.S. head to accelerate growth",
         "url": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html",
         "source": "CNBC",
-        "published": "2026-08-04T11:15:31",
+        "published": "2026-08-04T11:15:52",
         "description": "McDonald's stock has fallen more than 11% this year, dragging its market cap down to roughly $191 billion."
       },
       {
@@ -1629,6 +1629,13 @@
         "description": "President Donald Trump has warned that the latest round of negotiations with Iran are the \"last chance\" to bring an end to the five-month conflict."
       },
       {
+        "title": "Wayfair posts strongest U.S. growth since 2020",
+        "url": "https://www.cnbc.com/2026/08/04/wayfair-w-earnings-q2-2026.html",
+        "source": "CNBC",
+        "published": "2026-08-04T11:03:25",
+        "description": "Wayfair, a pandemic darling that's seen sales slow since lockdown orders were lifted, posted its strongest U.S. growth since 2020 during its second quarter."
+      },
+      {
         "title": "Merck hikes revenue outlook as new drug sales grow, but cuts profit guidance due to deal charges",
         "url": "https://www.cnbc.com/2026/08/04/merck-mrk-earnings-q2-2026.html",
         "source": "CNBC",
@@ -1648,13 +1655,6 @@
         "source": "CNBC",
         "published": "2026-08-03T23:20:54",
         "description": "Treasury Secretary Scott Bessent wants to defend the yen without selling Treasurys into a sensitive U.S. bond market. The Federal Reserve could help."
-      },
-      {
-        "title": "Trump says Exxon and Chevron made 'too much money' off high oil prices during Iran conflict: 'I don't like it'",
-        "url": "https://www.cnbc.com/2026/08/03/trump-says-exxon-and-chevron-made-too-much-money-off-high-oil-prices-during-iran-conflict-i-dont-like-it.html",
-        "source": "CNBC",
-        "published": "2026-08-03T20:02:34",
-        "description": "U.S. crude oil prices have gained about 20% since the U.S. and Israel attacked Iran on Feb. 28."
       }
     ],
     "yahoo_finance": [
@@ -1849,58 +1849,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7643.5,
-      "change": 15.25,
-      "change_percent": 0.2,
+      "price": 7642.5,
+      "change": 14.25,
+      "change_percent": 0.19,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29137.75,
-      "change": 246.0,
-      "change_percent": 0.85,
+      "price": 29129.75,
+      "change": 238.0,
+      "change_percent": 0.82,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 53680.0,
-      "change": 346.0,
-      "change_percent": 0.65,
+      "price": 53711.0,
+      "change": 377.0,
+      "change_percent": 0.71,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2991.5,
-      "change": 2.2,
-      "change_percent": 0.07,
+      "price": 2992.2,
+      "change": 2.9,
+      "change_percent": 0.1,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 80.85,
-      "change": 0.51,
-      "change_percent": 0.63,
+      "price": 80.49,
+      "change": 0.15,
+      "change_percent": 0.19,
       "name": "Crude Oil Sep 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4109.9,
-      "change": 76.2,
-      "change_percent": 1.89,
+      "price": 4109.4,
+      "change": 75.7,
+      "change_percent": 1.88,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 59.03,
-      "change": 1.36,
-      "change_percent": 2.35,
+      "price": 59.05,
+      "change": 1.38,
+      "change_percent": 2.4,
       "name": "Silver Sep 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.74,
       "change": -0.04,
-      "change_percent": -1.33,
+      "change_percent": -1.4,
       "name": "Natural Gas Sep 26"
     }
   ]

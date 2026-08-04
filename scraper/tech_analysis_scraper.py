@@ -1,92 +1,177 @@
 #!/usr/bin/env python3
-"""Advanced tech-sector analysis: earnings + technicals + sentiment scoring.
+"""
+Advanced tech-sector analysis: earnings + technicals + sentiment scoring.
 
-Reads ALPHA_VANTAGE_API_KEY from environment (loaded by run_scraper.sh).
-Fetches earnings, SMA(20), RSI(14), MACD, and latest quote for top 10 tech tickers.
-Generates composite 0-100 score and BUY/SELL/NEUTRAL signals.
+Uses Yahoo Finance FREE endpoints (no API key needed).
+Fetches 60 days of OHLCV history, computes SMA(20), RSI(14), MACD,
+gets earnings history, latest quote, and generates composite 0-100 scores.
 
 Tickers: AAPL, AMZN, MSFT, NVDA, GOOGL, META, TSLA, AMD, AVGO, NFLX
 """
 import json
-import os
+import requests
 import time
 from datetime import datetime
-import requests
 
-AV_KEY = os.getenv("ALPHA_VANTAGE_API_KEY", "")
-BASE = "https://www.alphavantage.co/query"
 TECH_TICKERS = ["AAPL", "AMZN", "MSFT", "NVDA", "GOOGL", "META", "TSLA", "AMD", "AVGO", "NFLX"]
-RATE_LIMIT_DELAY = 13  # free tier: 5 calls/min
+RATE_LIMIT_DELAY = 2  # Yahoo is tolerant but be polite
 
 
-def av_get(params):
-    params["apikey"] = AV_KEY
+def yf_chart(ticker, range_days=60):
+    """Fetch daily OHLCV from Yahoo Finance v8 chart API. No key needed."""
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+        f"?interval=1d&range={range_days}d"
+    )
     try:
-        r = requests.get(BASE, params=params, timeout=30)
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
         data = r.json()
-        if "Note" in data or "Information" in data:
-            print("      AV rate limit: " + str(data.get("Note", data.get("Information", "")))[:60])
-            return {}
-        return data
+        result = data.get("chart", {}).get("result", [])
+        if not result:
+            return []
+        timestamps = result[0].get("timestamp", [])
+        quote = result[0].get("indicators", {}).get("quote", [{}])[0]
+        closes = quote.get("close", [])
+        volumes = quote.get("volume", [])
+        out = []
+        for i in range(len(timestamps)):
+            if closes[i] is not None:
+                out.append({
+                    "date": datetime.fromtimestamp(timestamps[i]).strftime("%Y-%m-%d"),
+                    "close": float(closes[i]),
+                    "volume": int(volumes[i]) if volumes[i] else 0,
+                })
+        return out
     except Exception as e:
-        print(f"      AV error: {e}")
+        print(f"      YF chart error for {ticker}: {e}")
+        return []
+
+
+def yf_quote(ticker):
+    """Fetch latest quote from Yahoo Finance. No key needed."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?interval=1d&range=1d"
+    try:
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        data = r.json()
+        result = data.get("chart", {}).get("result", [])
+        if not result:
+            return {}
+        meta = result[0].get("meta", {})
+        if meta.get("chartPreviousClose"):
+            chg = ((meta.get("regularMarketPrice", 0) - meta.get("chartPreviousClose", 0))
+                   / meta.get("chartPreviousClose", 1) * 100)
+        else:
+            chg = 0
+        return {
+            "price": meta.get("regularMarketPrice"),
+            "prev_close": meta.get("chartPreviousClose"),
+            "change_pct": chg,
+        }
+    except Exception as e:
+        print(f"      YF quote error for {ticker}: {e}")
         return {}
 
 
-def fetch_earnings(ticker):
-    data = av_get({"function": "EARNINGS", "symbol": ticker})
-    q = data.get("quarterlyEarnings", [])
-    if not q:
+def yf_earnings(ticker):
+    """Fetch earnings history from Yahoo Finance. No key needed."""
+    url = (
+        f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{ticker}"
+        f"?modules=earningsHistory"
+    )
+    try:
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        data = r.json()
+        hist = (
+            data.get("quoteSummary", {}).get("result", [{}])[0]
+            .get("earningsHistory", {}).get("history", [])
+        )
+        if not hist:
+            return {}
+        latest = hist[0]
+        prev = hist[1] if len(hist) > 1 else {}
+        eps = latest.get("epsActual", {}).get("raw")
+        est = latest.get("epsEstimate", {}).get("raw")
+        surprise = latest.get("surprisePercent", {}).get("raw")
+        prev_surprise = prev.get("surprisePercent", {}).get("raw")
+        return {
+            "reported_eps": round(eps, 2) if eps else None,
+            "estimated_eps": round(est, 2) if est else None,
+            "surprise_pct": round(surprise * 100, 2) if surprise else None,
+            "report_date": latest.get("quarter", {}).get("fmt", ""),
+            "prev_surprise_pct": round(prev_surprise * 100, 2) if prev_surprise else None,
+        }
+    except Exception as e:
+        print(f"      YF earnings error for {ticker}: {e}")
         return {}
-    latest = q[0]
-    prev = q[1] if len(q) > 1 else {}
-    return {
-        "reported_eps": latest.get("reportedEPS"),
-        "estimated_eps": latest.get("estimatedEPS"),
-        "surprise_pct": latest.get("surprisePercentage"),
-        "report_date": latest.get("fiscalDateEnding"),
-        "prev_surprise_pct": prev.get("surprisePercentage"),
-    }
+
+
+def calc_sma(prices, period=20):
+    if len(prices) < period:
+        return None
+    return sum(p["close"] for p in prices[-period:]) / period
+
+
+def calc_rsi(prices, period=14):
+    if len(prices) < period + 1:
+        return None
+    gains, losses = [], []
+    for i in range(1, period + 1):
+        change = prices[-i]["close"] - prices[-(i + 1)]["close"]
+        gains.append(max(change, 0))
+        losses.append(abs(min(change, 0)))
+    avg_gain = sum(gains) / period
+    avg_loss = sum(losses) / period
+    if avg_loss == 0:
+        return 100.0
+    rs = avg_gain / avg_loss
+    return 100 - (100 / (1 + rs))
+
+
+def calc_macd(prices):
+    """Calculate MACD using EMA(12), EMA(26), signal EMA(9)."""
+    closes = [p["close"] for p in prices]
+    if len(closes) < 26:
+        return None, None, None
+
+    def ema(data, period):
+        multiplier = 2 / (period + 1)
+        ema_values = [sum(data[:period]) / period]
+        for price in data[period:]:
+            ema_values.append((price - ema_values[-1]) * multiplier + ema_values[-1])
+        return ema_values
+
+    ema12 = ema(closes, 12)
+    ema26 = ema(closes, 26)
+    macd_line = [e12 - e26 for e12, e26 in zip(ema12[-len(ema26):], ema26)]
+    signal_line = ema(macd_line, 9)
+    histogram = [m - s for m, s in zip(macd_line[-len(signal_line):], signal_line)]
+
+    return macd_line[-1], signal_line[-1], histogram[-1]
 
 
 def fetch_technicals(ticker):
-    results = {}
-    # SMA(20)
-    sma = av_get({
-        "function": "SMA", "symbol": ticker, "interval": "daily",
-        "time_period": "20", "series_type": "close",
-    })
-    ss = sma.get("Technical Analysis: SMA", {})
-    if ss:
-        ld = max(ss.keys())
-        results["sma20"] = float(ss[ld]["SMA"])
-    # RSI(14)
-    rsi = av_get({
-        "function": "RSI", "symbol": ticker, "interval": "daily",
-        "time_period": "14", "series_type": "close",
-    })
-    rs = rsi.get("Technical Analysis: RSI", {})
-    if rs:
-        ld = max(rs.keys())
-        results["rsi14"] = float(rs[ld]["RSI"])
-    # MACD
-    macd = av_get({
-        "function": "MACD", "symbol": ticker, "interval": "daily",
-        "series_type": "close", "fastperiod": "12", "slowperiod": "26", "signalperiod": "9",
-    })
-    ms = macd.get("Technical Analysis: MACD", {})
-    if ms:
-        ld = max(ms.keys())
-        m = ms[ld]
-        results["macd"] = float(m["MACD"])
-        results["macd_signal"] = float(m["MACD_Signal"])
-        results["macd_hist"] = float(m["MACD_Hist"])
-    # Quote
-    quote = av_get({"function": "GLOBAL_QUOTE", "symbol": ticker})
-    gq = quote.get("Global Quote", {})
-    if gq:
-        results["price"] = float(gq.get("05. price", 0))
-        results["change_pct"] = float(gq.get("10. change percent", "0").replace("%", ""))
+    """Fetch history + quote, compute SMA/RSI/MACD."""
+    hist = yf_chart(ticker, range_days=60)
+    time.sleep(RATE_LIMIT_DELAY)
+    quote = yf_quote(ticker)
+
+    if not hist:
+        return quote
+
+    results = dict(quote)
+    sma20 = calc_sma(hist, 20)
+    rsi14 = calc_rsi(hist, 14)
+    macd_val, macd_sig, macd_hist = calc_macd(hist)
+
+    if sma20 is not None:
+        results["sma20"] = round(sma20, 2)
+    if rsi14 is not None:
+        results["rsi14"] = round(rsi14, 2)
+    if macd_val is not None:
+        results["macd"] = round(macd_val, 4)
+        results["macd_signal"] = round(macd_sig, 4)
+        results["macd_hist"] = round(macd_hist, 4)
+
     return results
 
 
@@ -131,7 +216,7 @@ def compute_score(ticker, earnings, tech):
 
     # Earnings (30 pts max)
     earn_score = 0
-    if earnings.get("surprise_pct"):
+    if earnings.get("surprise_pct") is not None:
         sp = float(earnings["surprise_pct"])
         if sp > 5:
             earn_score = 25
@@ -145,7 +230,7 @@ def compute_score(ticker, earnings, tech):
         else:
             earn_score = -20
             factors.append(f"earnings miss {sp}%")
-        if earnings.get("prev_surprise_pct"):
+        if earnings.get("prev_surprise_pct") is not None:
             ps = float(earnings["prev_surprise_pct"])
             if ps > 0 and earn_score > 0:
                 earn_score += 5
@@ -201,17 +286,13 @@ def compute_score(ticker, earnings, tech):
 
 
 def get_tech_analysis():
-    if not AV_KEY:
-        print("      ALPHA_VANTAGE_API_KEY missing — skipping tech analysis")
-        return {}
-
     results = []
-    print("      Fetching tech analysis (Alpha Vantage)...")
+    print("      Fetching tech analysis (Yahoo Finance — no key needed)...")
 
     for i, ticker in enumerate(TECH_TICKERS):
-        print(f"      [{i+1}/{len(TECH_TICKERS)}] {ticker} ...", end=" ")
+        print(f"      [{i + 1}/{len(TECH_TICKERS)}] {ticker} ...", end=" ", flush=True)
         try:
-            earnings = fetch_earnings(ticker)
+            earnings = yf_earnings(ticker)
             time.sleep(RATE_LIMIT_DELAY)
             tech = fetch_technicals(ticker)
             time.sleep(RATE_LIMIT_DELAY)

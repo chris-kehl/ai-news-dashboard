@@ -293,6 +293,15 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             <div class="tv-desc" style="font-size:.82rem;padding-top:10px" id="nasdaq-analysis">NASDAQ-100 outlook for the week of 3–7 August 2026. NDX at 25,744.34, down -1.44% today — price action remains under pressure. Immediate support zone needs to hold or risk accelerates to the next down-leg. RSI and MACD suggest continued weakness. Upside is capped near prior support-turned-resistance. Reclaim 26,130 on a close to flip bias. Watch macro events and large-cap tech for catalysts.</div>
           </div>
         </div>
+
+        <!-- NEW: Advanced Tech Analysis -->
+        <div class="card">
+          <div class="card-hd">&#129302; ADVANCED TECH ANALYSIS</div>
+          <div class="card-bd" id="advanced-tech-analysis" style="padding:12px">
+            <div class="ld">Loading...</div>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-hd">&#128293; HOT STOCKS</div>
           <div class="card-bd" id="hot-stocks-tab"><div class="ld">Loading...</div></div>
@@ -663,6 +672,42 @@ function renderAll(d){
     if(nd.analysis) $('nasdaq-analysis').textContent=nd.analysis;
     else if(d.nasdaq_summary) $('nasdaq-analysis').textContent=d.nasdaq_summary;
   }catch(e){console.error('nasdaq',e);}
+
+  // Advanced Tech Analysis (earnings + technicals + sentiment scoring)
+  try{
+    var ta=d.tech_analysis||{};
+    if(ta.tickers && ta.tickers.length>0){
+      var tickers=ta.tickers;
+      var taHtml='<div style="margin-bottom:14px">'+
+        '<div style="font-size:1.1rem;font-weight:700">Tech Sector — '+ta.tone+'</div>'+
+        '<div style="font-size:.75rem;color:var(--tx3);margin-top:4px">Avg Score '+ta.avg_score+'/100 | '+ta.bullish_count+' Bullish / '+ta.bearish_count+' Bearish</div>'+
+      '</div>'+
+      '<table style="width:100%;font-size:.72rem;border-collapse:collapse">'+
+      '<tr style="color:var(--tx3);text-align:left;border-bottom:1px solid var(--br)">'+
+        '<th>Ticker</th><th>Price</th><th>Today</th><th>Signal</th><th>Score</th><th>Key Factors</th>'+
+      '</tr>';
+      for(var ti=0;ti<tickers.length;ti++){
+        var t=tickers[ti];
+        var tPrice=t.price?'$'+t.price.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}):'--';
+        var tChg=t.change_pct!==undefined?t.change_pct:0;
+        var tCls=tChg>=0?'up':'dn';
+        var tSign=tChg>=0?'+':'';
+        var factors=t.factors?t.factors.slice(0,3).join(', '):'--';
+        taHtml+='<tr style="border-bottom:1px solid var(--br-light)">'+
+          '<td style="font-weight:700">'+t.ticker+'</td>'+
+          '<td>'+tPrice+'</td>'+
+          '<td class="'+tCls+'">'+tSign+tChg.toFixed(2)+'%</td>'+
+          '<td style="color:'+(t.color||'var(--tx2)')+';font-weight:700">'+t.signal+'</td>'+
+          '<td>'+t.score+'</td>'+
+          '<td style="font-size:.65rem;color:var(--tx3)">'+factors+'</td>'+
+        '</tr>';
+      }
+      taHtml+='</table>';
+      $('advanced-tech-analysis').innerHTML=taHtml;
+    } else {
+      $('advanced-tech-analysis').innerHTML='<div class="ld">Advanced analysis unavailable</div>';
+    }
+  }catch(e){console.error('tech_analysis',e);}
 
   try{
     var nd100=(d.stocks||{}).nd100||[];

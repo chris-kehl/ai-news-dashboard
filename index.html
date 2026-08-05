@@ -388,7 +388,14 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
           <div class="pong-status" id="pongStatus">Click Start to play</div>
           <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
         </div>
-        <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+        <div class="pong-area">
+          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
+          <div class="pong-slider" id="pongSliderWrap">
+            <div class="pong-slider-track" id="pongTrack">
+              <div class="pong-slider-thumb" id="pongThumb"></div>
+            </div>
+          </div>
+        </div>
         <div class="pong-ctrl">
           <button class="btn" onclick="pongStart()">Start Game</button>
           <button class="btn" onclick="pongReset()">Reset</button>
@@ -794,20 +801,27 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 
 /* ===== PONG GAME ===== */
-var pong={running:false,level:1,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.15,baseSpeed:3.5,compReaction:0.08};
+var pong={running:false,level:1,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.25,baseSpeed:3.5,compReaction:0.08};
 function pongInit(){
   pong.canvas=$('pongCanvas');
   if(!pong.canvas)return;
   pong.ctx=pong.canvas.getContext('2d');
   pongResize();
-  pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;});
-  pong.canvas.addEventListener('touchmove',function(e){e.preventDefault();var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;pong.playerY=(e.touches[0].clientY-rect.top)*scaleY-pong.paddleH/2;if(pong.playerY<0)pong.playerY=0;if(pong.playerY>pong.H-pong.paddleH)pong.playerY=pong.H-pong.paddleH;},{passive:false});
+  // Mouse on canvas for desktop
+  pong.canvas.addEventListener('mousemove',function(e){var rect=pong.canvas.getBoundingClientRect();var scaleY=pong.H/rect.height;var raw=(e.clientY-rect.top)*scaleY-pong.paddleH/2;pong.playerY=Math.max(0,Math.min(raw,pong.H-pong.paddleH));});
+  // Slider track for mobile
   var track=$('pongTrack');
   if(track){
-    function pongSliderMove(e){var rect=track.getBoundingClientRect();var clientY=e.touches?e.touches[0].clientY:e.clientY;var ratio=(clientY-rect.top)/rect.height;if(ratio<0)ratio=0;if(ratio>1)ratio=1;pong.playerY=ratio*(pong.H-pong.paddleH);var thumb=$('pongThumb');if(thumb){var trH=rect.height||2;thumb.style.top=(ratio*(trH-48))+'px';}}
+    function pongSliderMove(e){var rect=track.getBoundingClientRect();var clientY=e.touches?e.touches[0].clientY:e.clientY;var ratio=(clientY-rect.top)/rect.height;ratio=Math.max(0,Math.min(1,ratio));pong.playerY=ratio*(pong.H-pong.paddleH);var thumb=$('pongThumb');if(thumb){var trH=rect.height||2;thumb.style.top=(ratio*trH)+'px';}}
     track.addEventListener('touchmove',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
     track.addEventListener('touchstart',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
     track.addEventListener('mousemove',pongSliderMove);
+    // Slider also responds on parent wrap for more forgiving touch
+    var wrap=$('pongSliderWrap');
+    if(wrap){
+      wrap.addEventListener('touchmove',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+      wrap.addEventListener('touchstart',function(e){e.preventDefault();pongSliderMove(e);},{passive:false});
+    }
   }
   pongDraw();
 }
@@ -822,7 +836,7 @@ function pongStart(){
   if(pong.running)return;
   pong.running=true;pong.winner=null;
   pongResetBall();
-  var st=$('pongStatus');if(st)st.textContent='Level '+pong.level+' - First to 5 wins!';
+  var st=$('pongStatus');if(st)st.textContent='Level '+pong.level+' — First to 5 wins!';
   pongLoop();
 }
 function pongReset(){
@@ -835,9 +849,12 @@ function pongReset(){
 }
 function pongResetBall(){
   pong.ball.x=pong.W/2;pong.ball.y=pong.H/2;
-  var s=pong.baseSpeed+(pong.level-1)*0.6;
-  pong.ball.dx=(Math.random()>0.5?1:-1)*(s+Math.random()*1.5);
-  pong.ball.dy=(Math.random()>0.5?1:-1)*(s-1+Math.random()*1.5);
+  var s=pong.baseSpeed+(pong.level-1)*1.0; // +1.0 speed per level
+  var spd=Math.max(s,3.5);
+  var angle=(Math.random()*0.6)-0.3; // slight vertical variation
+  pong.ball.dx=(Math.random()>0.5?1:-1)*spd;
+  pong.ball.dy=(Math.random()>0.5?1:-1)*(spd*0.5+Math.random()*1.5);
+  if(Math.abs(pong.ball.dy)<1)pong.ball.dy=1.5;
 }
 function pongLoop(){
   if(!pong.running)return;
@@ -847,13 +864,22 @@ function pongLoop(){
 function pongUpdate(){
   var b=pong.ball;b.x+=b.dx;b.y+=b.dy;
   if(b.y-b.r<0||b.y+b.r>pong.H){b.dy=-b.dy;}
+  // Computer AI
   var compCenter=pong.compY+pong.paddleH/2;
   var target=b.y;var diff=target-compCenter;
-  var react=pong.compReaction+(pong.level-1)*0.03;
-  if(react>0.18)react=0.18;
+  var react=pong.compReaction+(pong.level-1)*0.04;
+  if(react>0.22)react=0.22;
   pong.compY+=diff*react;if(pong.compY<0)pong.compY=0;if(pong.compY>pong.H-pong.paddleH)pong.compY=pong.H-pong.paddleH;
-  if(b.x-b.r<pong.paddleW&&b.y>pong.compY&&b.y<pong.compY+pong.paddleH){b.dx=Math.abs(b.dx)+pong.speedInc;b.x=pong.paddleW+b.r;}
-  if(b.x+b.r>pong.W-pong.paddleW&&b.y>pong.playerY&&b.y<pong.playerY+pong.paddleH){b.dx=-(Math.abs(b.dx)+pong.speedInc);b.x=pong.W-pong.paddleW-b.r;}
+  // Paddle collisions with speed boost
+  if(b.x-b.r<pong.paddleW&&b.y>pong.compY&&b.y<pong.compY+pong.paddleH){
+    b.dx=Math.abs(b.dx)+pong.speedInc+(pong.level-1)*0.1;
+    b.x=pong.paddleW+b.r;
+  }
+  if(b.x+b.r>pong.W-pong.paddleW&&b.y>pong.playerY&&b.y<pong.playerY+pong.paddleH){
+    b.dx=-(Math.abs(b.dx)+pong.speedInc+(pong.level-1)*0.1);
+    b.x=pong.W-pong.paddleW-b.r;
+  }
+  // Scoring
   if(b.x<0){pong.scorePlayer++;$('scorePlayer').textContent=pong.scorePlayer;pongResetBall();if(pong.scorePlayer>=5){pongWin('player');}}
   if(b.x>pong.W){pong.scoreComp++;$('scoreComp').textContent=pong.scoreComp;pongResetBall();if(pong.scoreComp>=5){pongWin('comp');}}
 }
@@ -873,6 +899,8 @@ function pongDraw(){
   ctx.fillStyle='#0a0c10';ctx.fillRect(0,0,pong.W,pong.H);
   ctx.strokeStyle='#22262e';ctx.lineWidth=1;
   ctx.beginPath();ctx.moveTo(pong.W/2,0);ctx.lineTo(pong.W/2,pong.H);ctx.stroke();
+  // Dashed center line
+  ctx.setLineDash([8,8]);ctx.beginPath();ctx.moveTo(pong.W/2,0);ctx.lineTo(pong.W/2,pong.H);ctx.stroke();ctx.setLineDash([]);
   ctx.fillStyle='#f7a51d';ctx.beginPath();ctx.arc(pong.ball.x,pong.ball.y,pong.ball.r,0,Math.PI*2);ctx.fill();
   ctx.fillStyle='#e8eaed';ctx.fillRect(0,pong.compY,pong.paddleW,pong.paddleH);
   ctx.fillStyle='#f7a51d';ctx.fillRect(pong.W-pong.paddleW,pong.playerY,pong.paddleW,pong.paddleH);

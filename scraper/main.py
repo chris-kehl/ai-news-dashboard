@@ -18,6 +18,7 @@ from summarizer import create_daily_summary
 from nasdaq_scraper import get_nasdaq_data
 from sticky_tab_scraper import get_sticky_tab_data
 from tech_analysis_scraper import get_tech_analysis
+from weekly_pick_scraper import get_weekly_pick
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -86,8 +87,16 @@ def build_dashboard_data():
     print("\n[12/11] Sticky tab feeds...")
     sticky_data = get_sticky_tab_data()
 
+    print("\n[13/11] Weekly AI Pick (crypto + stocks + ETFs + metals)...")
+    weekly_pick_data = get_weekly_pick()
+    if weekly_pick_data:
+        top = weekly_pick_data.get('top_pick', {})
+        print(f"       Top Pick: {top.get('name', '?')} ({top.get('ticker', '?')}) — Score: {top.get('score', 0)}/100")
+    else:
+        print("       No weekly pick data available")
+
     # Summary
-    print("\n[13] Summary...")
+    print("\n[14] Summary...")
     summary_data = create_daily_summary(reddit_posts, [], github_repos,
                                         crypto_data=crypto_data, stocks_data=stocks_data)
 
@@ -110,6 +119,7 @@ def build_dashboard_data():
         "sticky": sticky_data,
         "futures": futures_data,
         "tech_analysis": tech_analysis_data,
+        "weekly_pick": weekly_pick_data,
     }
 
     output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data.json")

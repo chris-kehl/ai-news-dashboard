@@ -69,6 +69,19 @@ def run_update():
     }
 
     outfile = os.path.join(os.path.dirname(__file__), '..', 'data.json')
+    
+    # Preserve weekly_pick from existing data if new pick is empty
+    if not weekly_pick_data or not weekly_pick_data.get('top_pick', {}).get('name'):
+        try:
+            with open(outfile, 'r') as f:
+                old_data = json.load(f)
+            old_wp = old_data.get('weekly_pick')
+            if old_wp and old_wp.get('top_pick', {}).get('name'):
+                data['weekly_pick'] = old_wp
+                print("      [weekly_pick] Preserved existing pick")
+        except Exception:
+            pass
+
     with open(outfile, 'w') as f:
         json.dump(data, f, indent=2)
     print(f"[OK] Written to {outfile}")

@@ -1,0 +1,1 @@
+* 12-18 * * 1 cd /Users/chris/ai-news-dashboard && python3 scraper/weekly_pick_scraper.py > /dev/null 2>&1 && cd /Users/chris/ai-news-dashboard && git add data.json && git commit -m "weekly: regenerate AI weekly pick" && git push

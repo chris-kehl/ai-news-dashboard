@@ -11,6 +11,7 @@ import json
 import os
 import requests
 import time
+import sys
 from datetime import datetime
 
 # ===== CONFIG =====
@@ -180,6 +181,30 @@ def generate_rationale(pick, all_results):
 
 
 def get_weekly_pick():
+    """Analyze all assets and return top weekly pick. Only runs on Monday afternoons.
+    Otherwise returns cached pick from data.json."""
+    now = datetime.now()
+    is_monday = now.weekday() == 0  # Monday = 0
+    is_afternoon = 12 <= now.hour < 18
+    data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data.json")
+
+    # If not Monday afternoon, try to return cached pick
+    if not (is_monday and is_afternoon):
+        try:
+            with open(data_path, 'r') as f:
+                cached = json.load(f)
+            wp = cached.get('weekly_pick')
+            if wp and wp.get('top_pick', {}).get('name'):
+                # Check if cached pick is from this week (Monday or later)
+                cached_time = datetime.fromisoformat(wp.get('generated_at', '2020-01-01'))
+                day_diff = (now - cached_time).days
+                if day_diff < 7:
+                    print("      [weekly_pick] Using cached pick (runs Mon 12-6pm only)")
+                    return wp
+        except Exception:
+            pass
+
+    # Monday afternoon — generate fresh pick
     print("      Analyzing weekly picks...")
     results = []
     for ticker, name, category in ASSETS:

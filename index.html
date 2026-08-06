@@ -183,7 +183,6 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 <nav class="tab-nav" role="tablist" aria-label="Categories">
   <div class="tab-nav-inner">
     <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-market" id="tab-btn-market" tabindex="0">Market</button>
-    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-market-analysis" id="tab-btn-market-analysis" tabindex="-1">Market Analysis</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sticky" id="tab-btn-sticky" tabindex="-1">CNBC · Yahoo · Bloomberg</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="-1">Games vs Chutes</button>
@@ -234,74 +233,41 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- MARKET ANALYSIS TAB -->
-  <section id="tab-market-analysis" role="tabpanel" aria-labelledby="tab-btn-market-analysis" class="tab-panel" hidden>
-    <div class="sub-tab-nav" role="tablist" aria-label="Market Analysis Indices">
-      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-pick" onclick="switchSubTab('pick')">AI Weekly Pick</button>
-      <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&P 500 (BULLISH)</button>
-      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000</button>
-      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-acwx" onclick="switchSubTab('acwx')">ACWX (BULLISH)</button>
-      <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC (NEUTRAL)</button>
-    </div>
-
-    <!-- AI Weekly Pick Sub-tab -->
-    <div id="sub-tab-pick" class="sub-tab-panel">
-      <div id="weekly-pick-loading" class="ld" style="padding:20px;text-align:center">Loading AI's weekly pick...</div>
-      <div id="weekly-pick-content" style="display:none">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px">
-          <div style="font-size:2rem;font-weight:800;color:var(--acc)">&#128102; AI'S WEEKLY PICK</div>
-          <div id="weekly-pick-label" style="font-size:.78rem;color:var(--tx3);background:var(--bg-el);padding:4px 10px;border-radius:6px"></div>
+    <!-- MARKET ANALYSIS: CHARTS + POLL -->
+    <div class="card" style="margin-top:12px">
+      <div class="card-hd">&#128202; MARKET ANALYSIS — CHARTS</div>
+      <div class="card-bd">
+        <div class="sub-tab-nav" role="tablist" aria-label="Market Analysis Indices">
+          <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&amp;P 500 (BULLISH)</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-acwx" onclick="switchSubTab('acwx')">ACWX (BULLISH)</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC (NEUTRAL)</button>
         </div>
-        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px">
-          <div style="flex:1;min-width:240px">
-            <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">--</div>
-            <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">--</div>
-            <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">--</div>
-            <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
-              <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">--</span></div>
-              <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">--</span></div>
-              <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">--</span></div>
-            </div>
-          </div>
-          <div style="min-width:150px">
-            <div style="font-size:.75rem;color:var(--tx3);text-transform:uppercase;margin-bottom:4px">Weekly Score</div>
-            <div style="font-size:3rem;font-weight:800;color:var(--good)" id="weekly-pick-score">--</div>
-            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-category">--</div>
-          </div>
+        <div id="sub-tab-spx" class="sub-tab-panel active">
+          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=SPX" target="_blank" rel="noopener">S&amp;P 500 — BULLISH for the week 3–7 August ↗</a>
+          <img class="tv-img" src="https://s3.tradingview.com/h/hPxW9y1P_big.png" alt="S&amp;P 500 chart">
+          <div class="tv-desc"><strong>Bias: BULLISH</strong> — S&amp;P 500 closed the prior week at 7,485, down 0.70% on light volume — a shallow pullback within the broader uptrend context. The weekly structure remains intact above the rising 50-day MA (~7,320) and the July breakout zone. ES futures are catching a bid pre-market (+0.88%), suggesting accumulation ahead of the open. This week setup favors a rebound toward 7,600 resistance, with a break above opening the door to 7,700+. Key tailwinds: strong mega-cap earnings (AAPL, AMZN, MSFT), resilient consumer data, and fading Fed-hike fears. The 20-day MA at 7,450 is the first support to defend. A close below 7,400 would invalidate the bullish thesis and flip the bias to neutral.</div>
         </div>
-        <div style="font-size:.9rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd)" id="weekly-pick-rationale"></div>
-        <div style="font-size:.75rem;color:var(--tx3);margin-top:12px" id="weekly-pick-when"></div>
-        <div style="font-size:.65rem;color:var(--tx3);margin-top:8px;padding-top:8px;border-top:1px solid var(--brd);text-align:center">
-          Free analysis based on Yahoo Finance public data. Auto-generated every Monday afternoon. Not financial advice.
+        <div id="sub-tab-rty" class="sub-tab-panel">
+          <a class="tv-link" href="https://www.tradingview.com/chart/RTY/OJkklJw1-Russel-2000-week-2-7-August-2026/" target="_blank" rel="noopener">Russell 2000 — week 2-7 August 2026 ↗</a>
+          <img class="tv-img" src="https://s3.tradingview.com/o/OJkklJw1_big.png" alt="Russell 2000 chart">
+          <div class="tv-desc">Russell 2000 outlook for the week of 2-7 August 2026. See the full technical analysis via the chart link above.</div>
+        </div>
+        <div id="sub-tab-acwx" class="sub-tab-panel">
+          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AACWX" target="_blank" rel="noopener">ACWX (Emerging Markets ex US) — BULLISH 3–7 August 2026 ↗</a>
+          <img class="tv-img" src="https://s3.tradingview.com/2/2gz7I3hC_big.png" alt="ACWX chart">
+          <div class="tv-desc"><strong>Bias: BULLISH</strong> — ACWX is showing relative-strength improvement as dollar softness fuels emerging-market outperformance. Price is coiling above the 50-day MA after a multi-week base; a break above recent highs opens a run toward the upper Bollinger Band. RSI is climbing out of oversold territory and MACD is curling — early momentum signals. The risk-reward is favorable here with a tight stop just below the 200-day. Upside targets: +3–5% on a confirmed breakout. Watch the DXY: further weakness accelerates EM inflows.</div>
+        </div>
+        <div id="sub-tab-emxc" class="sub-tab-panel">
+          <a class="tv-link" href="https://www.tradingview.com/chart/EMXC/k5zwhlpD-EMXC-Neutral-3-7-August/" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Neutral 3–7 August ↗</a>
+          <img class="tv-img" src="https://s3.tradingview.com/k/k5zwhlpD_big.png" alt="EMXC chart">
+          <div class="tv-desc"><strong>Bias: NEUTRAL</strong> — EMXC sits in a holding pattern. India and Brazil are constructive but Korea/Taiwan chip exposure drags as semis consolidate. China-exclusion keeps the fund insulated from mainland policy noise, but it also means missing any Chinese stimulus-driven rallies. Price is sandwiched between the 20-day (resistance) and 50-day (support) — a textbook neutral zone. Direction resolves on a close above or below either band. Catalysts: Taiwan Semi guidance, India services PMI, US-China tariff headlines. No edge here until a breakout — wait for confirmation.</div>
         </div>
       </div>
     </div>
 
-    <div id="sub-tab-spx" class="sub-tab-panel active">
-      <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=SPX" target="_blank" rel="noopener">S&amp;P 500 — BULLISH for the week 3–7 August ↗</a>
-      <img class="tv-img" src="https://s3.tradingview.com/h/hPxW9y1P_big.png" alt="S&P 500 chart">
-      <div class="tv-desc"><strong>Bias: BULLISH</strong> — S&amp;P 500 closed the prior week at 7,485, down 0.70% on light volume — a shallow pullback within the broader uptrend context. The weekly structure remains intact above the rising 50-day MA (~7,320) and the July breakout zone. ES futures are catching a bid pre-market (+0.88%), suggesting accumulation ahead of the open. This week setup favors a rebound toward 7,600 resistance, with a break above opening the door to 7,700+. Key tailwinds: strong mega-cap earnings (AAPL, AMZN, MSFT), resilient consumer data, and fading Fed-hike fears. The 20-day MA at 7,450 is the first support to defend. A close below 7,400 would invalidate the bullish thesis and flip the bias to neutral.</div>
-    </div>
-    <div id="sub-tab-rty" class="sub-tab-panel">
-      <a class="tv-link" href="https://www.tradingview.com/chart/RTY/OJkklJw1-Russel-2000-week-2-7-August-2026/" target="_blank" rel="noopener">Russell 2000 — week 2-7 August 2026 ↗</a>
-      <img class="tv-img" src="https://s3.tradingview.com/o/OJkklJw1_big.png" alt="Russell 2000 chart">
-      <div class="tv-desc">Russell 2000 outlook for the week of 2-7 August 2026. See the full technical analysis via the chart link above.</div>
-    </div>
-    <div id="sub-tab-acwx" class="sub-tab-panel">
-      <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AACWX" target="_blank" rel="noopener">ACWX (Emerging Markets ex US) — BULLISH 3–7 August 2026 ↗</a>
-      <img class="tv-img" src="https://s3.tradingview.com/2/2gz7I3hC_big.png" alt="ACWX chart">
-      <div class="tv-desc"><strong>Bias: BULLISH</strong> — ACWX is showing relative-strength improvement as dollar softness fuels emerging-market outperformance. Price is coiling above the 50-day MA after a multi-week base; a break above recent highs opens a run toward the upper Bollinger Band. RSI is climbing out of oversold territory and_MACD is curling — early momentum signals. The risk-reward is favorable here with a tight stop just below the 200-day. Upside targets: +3–5% on a confirmed breakout. Watch the DXY: further weakness accelerates EM inflows.</div>
-    </div>
-
-    <div id="sub-tab-emxc" class="sub-tab-panel">
-      <a class="tv-link" href="https://www.tradingview.com/chart/EMXC/k5zwhlpD-EMXC-Neutral-3-7-August/" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Neutral 3–7 August ↗</a>
-      <img class="tv-img" src="https://s3.tradingview.com/k/k5zwhlpD_big.png" alt="EMXC chart">
-      <div class="tv-desc"><strong>Bias: NEUTRAL</strong> — EMXC sits in a holding pattern. India and Brazil are constructive but Korea/Taiwan chip exposure drags as semis consolidate. China-exclusion keeps the fund insulated from mainland policy noise, but it also means missing any Chinese stimulus-driven rallies. Price is sandwiched between the 20-day (resistance) and 50-day (support) — a textbook neutral zone. Direction resolves on a close above or below either band. Catalysts: Taiwan Semi guidance, India services PMI, US-China tariff headlines. No edge here until a breakout — wait for confirmation.</div>
-    </div>
-
-    <div class="card" style="margin-top:22px">
+    <div class="card" style="margin-top:12px">
       <div class="card-hd">&#128172; COMMUNITY POLL</div>
       <div class="card-bd" id="market-poll" style="padding:16px">
         <div class="ld">Loading poll...</div>
@@ -536,7 +502,7 @@ var $=function(id){return document.getElementById(id)};
 var IS_MOBILE=window.innerWidth<768;
 
 /* ===== TABS ===== */
-var tabs=['market','market-analysis','tech','sticky','chutes'];
+var tabs=['market','tech','sticky','chutes'];
 var currentTab='market';
 
 function switchTab(tabId){

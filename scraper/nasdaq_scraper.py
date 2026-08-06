@@ -3,9 +3,15 @@ import os
 import requests
 from datetime import datetime
 
-def yf_ndx_data(range_days=60):
-    url = ("https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX"
-           "?interval=1d&range=" + str(range_days) + "d")
+def yf_ticker_data(ticker, range_days=60):
+    """Fetch v8 data for any ticker."""
+    url = (
+        "https://query1.finance.yahoo.com/v8/finance/chart/"
+        + ticker
+        + "?interval=1d&range="
+        + str(range_days)
+        + "d"
+    )
     try:
         r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
         data = r.json()
@@ -26,18 +32,29 @@ def yf_ndx_data(range_days=60):
                     "volume": int(volumes[i]) if volumes[i] else 0,
                 })
         return {
+            "ticker": ticker,
             "price": meta.get("regularMarketPrice"),
             "prev_close": meta.get("chartPreviousClose"),
-            "change_pct": (
-                (meta.get("regularMarketPrice", 0) - meta.get("chartPreviousClose", 0))
-                / meta.get("chartPreviousClose", 1) * 100
-                if meta.get("chartPreviousClose") else 0
-            ),
+            "change_pct": None,  # computed from history below
             "history": history,
         }
     except Exception as e:
-        print("YF NDX error: " + str(e))
+        print("YF " + ticker + " error: " + str(e))
         return None
+
+
+def yf_ndx_data(range_days=60):
+    # Try NDX direct first, then QQQ as proxy
+    data = yf_ticker_data("^NDX", range_days)
+    if data and data.get("price") is not None:
+        return data
+    data = yf_ticker_data("QQQ", range_days)
+    if data and data.get("price") is not None:
+        # QQQ tracks NDX roughly 1/40th the value; optionally normalize
+        data["is_proxy"] = True
+        data["proxy_ticker"] = "QQQ"
+        return data
+    return None
 
 def calc_sma(prices, period=20):
     if len(prices) < period:
@@ -106,8 +123,14 @@ def get_nasdaq_data():
             return result
 
         price = data["price"]
-        change_pct = data["change_pct"]
         history = data.get("history", [])
+        # Compute change_pct from last two history entries (Yahoo's meta value is often stale)
+        if len(history) >= 2:
+            last_close = history[-1]["close"]
+            prev_close = history[-2]["close"]
+            change_pct = ((last_close - prev_close) / prev_close) * 100 if prev_close else 0
+        else:
+            change_pct = 0
         result["price"] = round(price, 2) if price else None
         result["change"] = round(change_pct, 2) if change_pct else None
         result["changePercent"] = round(change_pct, 2) if change_pct else None

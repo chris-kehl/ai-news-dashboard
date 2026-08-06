@@ -201,6 +201,45 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       <div class="index-tile"><div class="index-name">Dow Jones</div><div class="index-price ld">--</div><div class="index-change">--</div></div>
     </div>
 
+    <!-- AI Weekly Pick Banner -->
+    <div id="weekly-pick-banner" style="display:none;margin-top:12px">
+      <div class="card" style="border:1px solid var(--acc);overflow:hidden">
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(247,165,29,.06);border-bottom:1px solid rgba(247,165,29,.2);flex-wrap:wrap">
+          <div style="font-size:.72rem;font-weight:700;color:var(--acc);text-transform:uppercase;letter-spacing:.5px">&#129302; AI's Weekly Pick</div>
+          <div style="flex:1"></div>
+          <div id="weekly-pick-banner-label" style="font-size:.65rem;color:var(--tx3)"></div>
+        </div>
+        <div style="padding:12px 14px">
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div style="font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace" id="weekly-pick-banner-name">--</div>
+            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-banner-ticker">--</div>
+            <div style="flex:1"></div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="text-align:center">
+                <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Score</div>
+                <div style="font-size:1.4rem;font-weight:800;color:var(--good)" id="weekly-pick-banner-score">--</div>
+              </div>
+              <div style="width:1px;height:28px;background:var(--brd)"></div>
+              <div style="text-align:center">
+                <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Price</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-price">--</div>
+              </div>
+              <div style="width:1px;height:28px;background:var(--brd)"></div>
+              <div style="text-align:center">
+                <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">7D</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-7d">--</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:0 14px 10px">
+          <a href="#" onclick="var t=btn('tab-market-analysis');btn('tab-btn-market-analysis');switchSubTab('pick');return false;" style="font-size:.75rem;font-weight:500;color:var(--acc);text-decoration:none;display:inline-flex;align-items:center;gap:6px">
+            Read full technical analysis &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="grid">
       <div class="col">
         <div class="card">
@@ -737,6 +776,21 @@ function renderAll(d){
       $('weekly-pick-when').textContent='Generated: '+(wp.generated_at||'');
       $('weekly-pick-loading').style.display='none';
       $('weekly-pick-content').style.display='block';
+      // Banner on Home tab (Market panel)
+      try{
+        var banner=$('weekly-pick-banner');
+        if(banner){
+          $('weekly-pick-banner-name').textContent=topPick.name;
+          $('weekly-pick-banner-ticker').textContent=topPick.ticker;
+          $('weekly-pick-banner-score').textContent=topPick.score;
+          $('weekly-pick-banner-score').style.color=topPick.score>=60?'var(--good)':topPick.score>=45?'var(--accent)':'var(--danger)';
+          $('weekly-pick-banner-price').textContent='$'+(topPick.price||0).toLocaleString();
+          var bc7=topPick.change_7d||0;
+          $('weekly-pick-banner-7d').innerHTML='<span style="color:'+(bc7>=0?'var(--good)':'var(--danger)')+'">'+(bc7>=0?'+':'')+bc7.toFixed(1)+'%</span>';
+          $('weekly-pick-banner-label').textContent=wp.week_label||'This Week';
+          banner.style.display='block';
+        }
+      }catch(bannerErr){console.error('weekly banner',bannerErr);}
     } else {
       $('weekly-pick-loading').textContent='Weekly pick unavailable';
     }

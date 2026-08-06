@@ -239,11 +239,46 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       <div class="card-hd">&#128202; MARKET ANALYSIS — CHARTS</div>
       <div class="card-bd">
         <div class="sub-tab-nav" role="tablist" aria-label="Market Analysis Indices">
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-pick" onclick="switchSubTab('pick')">&#129302; AI Weekly Pick</button>
           <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&amp;P 500 (BULLISH)</button>
           <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000</button>
           <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-acwx" onclick="switchSubTab('acwx')">ACWX (BULLISH)</button>
           <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC (NEUTRAL)</button>
         </div>
+
+        <!-- AI Weekly Pick -->
+        <div id="sub-tab-pick" class="sub-tab-panel">
+          <div id="weekly-pick-loading" class="ld" style="padding:20px;text-align:center">Loading AI's weekly pick...</div>
+          <div id="weekly-pick-content" style="display:none">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+              <div style="font-size:2rem;font-weight:800;color:var(--acc)">&#129302; AI'S WEEKLY PICK</div>
+              <div id="weekly-pick-label" style="font-size:.78rem;color:var(--tx3);background:var(--bg-el);padding:4px 10px;border-radius:6px"></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px">
+              <div style="flex:1;min-width:240px">
+                <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">--</div>
+                <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">--</div>
+                <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">--</div>
+                <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
+                  <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">--</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">--</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">--</span></div>
+                </div>
+              </div>
+              <div style="min-width:150px;text-align:center">
+                <div style="font-size:.75rem;color:var(--tx3);text-transform:uppercase;margin-bottom:4px">Weekly Score</div>
+                <div style="font-size:3rem;font-weight:800;color:var(--good)" id="weekly-pick-score">--</div>
+                <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-category">--</div>
+              </div>
+            </div>
+            <pre id="weekly-pick-rationale" style="font-size:.9rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd);white-space:pre-line;font-family:inherit;color:var(--tx);margin:0;overflow-x:auto"></pre>
+            <div style="font-size:.75rem;color:var(--tx3);margin-top:12px" id="weekly-pick-when"></div>
+            <div style="font-size:.65rem;color:var(--tx3);margin-top:8px;padding-top:8px;border-top:1px solid var(--brd);text-align:center">
+              Free analysis based on Yahoo Finance public data. Auto-generated every Monday afternoon. Not financial advice.
+            </div>
+          </div>
+        </div>
+
         <div id="sub-tab-spx" class="sub-tab-panel active">
           <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=SPX" target="_blank" rel="noopener">S&amp;P 500 — BULLISH for the week 3–7 August ↗</a>
           <img class="tv-img" src="https://s3.tradingview.com/h/hPxW9y1P_big.png" alt="S&amp;P 500 chart">

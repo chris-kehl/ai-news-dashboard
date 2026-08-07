@@ -315,6 +315,25 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
               </div>
             </div>
             <pre id="weekly-pick-rationale" style="font-size:.9rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd);white-space:pre-line;font-family:inherit;color:var(--tx);margin:0;overflow-x:auto"></pre>
+            <div id="weekly-pick-comparison" style="margin-top:16px;display:none">
+              <div style="font-size:.9rem;font-weight:700;margin-bottom:8px">&#127942; Top 5 Weekly Picks</div>
+              <div style="overflow-x:auto">
+                <table style="width:100%;font-size:.75rem;border-collapse:collapse" id="weekly-pick-table">
+                  <tr style="text-align:left;border-bottom:1px solid var(--brd);color:var(--tx3)">
+                    <th style="padding:6px 4px">Rank</th>
+                    <th style="padding:6px 4px">Asset</th>
+                    <th style="padding:6px 4px">Ticker</th>
+                    <th style="padding:6px 4px">Category</th>
+                    <th style="padding:6px 4px">Score</th>
+                    <th style="padding:6px 4px">Price</th>
+                    <th style="padding:6px 4px">7D</th>
+                    <th style="padding:6px 4px">30D</th>
+                    <th style="padding:6px 4px">RSI</th>
+                    <th style="padding:6px 4px">Key Factors</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
             <div style="font-size:.75rem;color:var(--tx3);margin-top:12px" id="weekly-pick-when"></div>
             <div style="font-size:.65rem;color:var(--tx3);margin-top:8px;padding-top:8px;border-top:1px solid var(--brd);text-align:center">
               Free analysis based on Yahoo Finance public data. Auto-generated every Monday afternoon. Not financial advice.
@@ -808,6 +827,42 @@ function renderAll(d){
       $('weekly-pick-rsi').textContent=topPick.rsi?topPick.rsi.toFixed(1):'--';
       $('weekly-pick-rationale').textContent=wp.rationale||'';
       $('weekly-pick-when').textContent='Generated: '+(wp.generated_at||'');
+      // Top 5 comparison table
+      try{
+        var topFive=wp.top_five||[];
+        if(topFive.length>0){
+          var tbl=$('weekly-pick-table');
+          // rebuild header + rows
+          var thHtml='<tr style="text-align:left;border-bottom:1px solid var(--brd);color:var(--tx3)">'+
+            '<th style="padding:6px 4px">Rank</th><th style="padding:6px 4px">Asset</th><th style="padding:6px 4px">Ticker</th>'+
+            '<th style="padding:6px 4px">Category</th><th style="padding:6px 4px">Score</th><th style="padding:6px 4px">Price</th>'+
+            '<th style="padding:6px 4px">7D</th><th style="padding:6px 4px">30D</th><th style="padding:6px 4px">RSI</th>'+
+            '<th style="padding:6px 4px">Key Factors</th></tr>';
+          for(var fi=0;fi<topFive.length;fi++){
+            var a=topFive[fi];
+            var aCls=(a.change_7d||0)>=0?'up':'dn';
+            var aSign=(a.change_7d||0)>=0?'+':'';
+            var aCls30=(a.change_30d||0)>=0?'up':'dn';
+            var aSign30=(a.change_30d||0)>=0?'+':'';
+            var factors=(a.factors||[]).slice(0,2).join(', ')||'--';
+            var scoreColor=a.score>=70?'var(--good)':a.score>=50?'var(--acc)':'var(--danger)';
+            thHtml+='<tr style="border-bottom:1px solid var(--brd)">'+
+              '<td style="padding:6px 4px;font-weight:700">#'+(fi+1)+'</td>'+
+              '<td style="padding:6px 4px">'+(a.name||'')+'</td>'+
+              '<td style="padding:6px 4px;font-family:JetBrains Mono;font-weight:600">'+(a.ticker||'')+'</td>'+
+              '<td style="padding:6px 4px;color:var(--tx3)">'+(a.category||'')+'</td>'+
+              '<td style="padding:6px 4px;font-weight:700;color:'+scoreColor+'">'+(a.score||0)+'</td>'+
+              '<td style="padding:6px 4px;font-family:JetBrains Mono">$'+(a.price||0).toLocaleString()+'</td>'+
+              '<td style="padding:6px 4px" class="'+aCls+'">'+aSign+(a.change_7d||0).toFixed(1)+'%</td>'+
+              '<td style="padding:6px 4px" class="'+aCls30+'">'+aSign30+(a.change_30d||0).toFixed(1)+'%</td>'+
+              '<td style="padding:6px 4px">'+(a.rsi?a.rsi.toFixed(1):'--')+'</td>'+
+              '<td style="padding:6px 4px;font-size:.65rem;color:var(--tx3)">'+factors+'</td>'+
+              '</tr>';
+          }
+          tbl.innerHTML=thHtml;
+          $('weekly-pick-comparison').style.display='block';
+        }
+      }catch(compErr){console.error('top5 comparison',compErr);}
       $('weekly-pick-loading').style.display='none';
       $('weekly-pick-content').style.display='block';
       // Banner on Home tab (Market panel)

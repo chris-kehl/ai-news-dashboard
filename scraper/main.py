@@ -10,7 +10,7 @@ from x_scraper import get_world_x_posts
 from business_scraper import get_business_data, get_tech_business_data
 from crypto_scraper import get_crypto_data as get_crypto
 from ap_news_scraper import get_ap_data
-from stocks_scraper import get_stocks_data, generate_ticker_json, get_futures_data
+from stocks_scraper import get_stocks_data, generate_ticker_json, get_futures_data, get_metals_data
 from alpha_vantage_scraper import add_av_to_ticker
 from defense_scraper import get_defense_data
 from github_scraper import get_trending_repos
@@ -38,9 +38,10 @@ def build_dashboard_data():
     defense_data = get_defense_data()
     print(f"       {len(defense_data.get('conflicts', []))} articles")
 
-    print("\n[3/11] Stocks & ticker...")
+    print("\n[3/11] Stocks, metals & ticker...")
     stocks_data = get_stocks_data()
     futures_data = get_futures_data()
+    metals_data = get_metals_data()
     ticker_data = generate_ticker_json()
 
     # Inject AV sentiment into ticker items
@@ -118,6 +119,7 @@ def build_dashboard_data():
         "nasdaq_data": nasdaq_data,
         "sticky": sticky_data,
         "futures": futures_data,
+        "metals": metals_data,
         "tech_analysis": tech_analysis_data,
         "weekly_pick": weekly_pick_data,
     }

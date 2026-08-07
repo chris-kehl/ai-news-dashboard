@@ -263,6 +263,10 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       </div>
       <div class="col">
         <div class="card">
+          <div class="card-hd">&#128863; PRECIOUS METALS</div>
+          <div class="card-bd" id="precious-metals"><div class="ld">Loading...</div></div>
+        </div>
+        <div class="card">
           <div class="card-hd">&#128200; FUTURES</div>
           <div class="card-bd" id="futures-market"><div class="ld">Loading...</div></div>
         </div>
@@ -757,6 +761,12 @@ function renderAll(d){
     $('futures-market').innerHTML=fth;
     $('futures-tech').innerHTML=fth;
   }catch(e){console.error('futures',e);}
+
+  try{
+    var mt=(d.metals||[]).slice(0,IS_MOBILE?4:6);
+    var mtItems=mt.map(function(m){return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--brd);font-family:JetBrains Mono;font-size:.82rem"><span style="font-weight:600">'+(m.name||m.symbol)+'</span><span style="display:flex;gap:10px"><span>$'+m.price+'</span><span class="'+(m.change_percent>=0?'up':'dn')+'">'+(m.change_percent>=0?'+':'')+m.change_percent.toFixed(1)+'%</span></span></div>'}).join('')||'<div class="ld">No metal data</div>';
+    $('precious-metals').innerHTML=mtItems;
+  }catch(e){console.error('metals',e);}
 
   try{
     var dn=(d.defense||[]).slice(0,IS_MOBILE?4:6);

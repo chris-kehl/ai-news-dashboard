@@ -218,10 +218,21 @@ def get_indices_data():
 
 
 def get_futures_data():
-    """Fetch index futures via Yahoo v8."""
-    print("[ ] Fetching index futures...")
-    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "NG=F"]
+    """Fetch index futures + commodities via Yahoo v8."""
+    print("[ ] Fetching index futures and commodities...")
+    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "PL=F", "PA=F", "NG=F"]
     return yahoo_charts_batch(futures_symbols, delay=0.25)
+
+
+def get_metals_data():
+    """Fetch precious metals futures: Gold, Silver, Platinum, Palladium."""
+    print("[ ] Fetching precious metals...")
+    metals_symbols = ["GC=F", "SI=F", "PL=F", "PA=F"]
+    metals = yahoo_charts_batch(metals_symbols, delay=0.25)
+    name_map = {"GC=F": "Gold", "SI=F": "Silver", "PL=F": "Platinum", "PA=F": "Palladium"}
+    for m in metals:
+        m["name"] = name_map.get(m["symbol"], m["symbol"])
+    return metals
 
 
 # ─── Master: Scrolling ticker JSON ────────────────────────────────────────────
@@ -234,7 +245,7 @@ def generate_ticker_json(output_path=None):
     indices = cnbc_quotes([".SPX", ".DJI", ".NDX", ".VIX", ".RUT"])
 
     # 2. Futures via Yahoo v8 (works for futures symbols)
-    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "NG=F"]
+    futures_symbols = ["ES=F", "NQ=F", "YM=F", "RTY=F", "CL=F", "GC=F", "SI=F", "PL=F", "PA=F", "NG=F"]
     futures = yahoo_charts_batch(futures_symbols, delay=0.25)
 
     # 3. Crypto via CoinGecko (free, no key)

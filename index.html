@@ -654,6 +654,9 @@ function goToWeeklyPick(){
   if(pPanel){pPanel.classList.add('active');}
   if(pBtn){pBtn.setAttribute('aria-selected','true');}
   currentSubTab='pick';
+  // Step 3: scroll weekly pick into view
+  var pickEl=$('sub-tab-pick');
+  if(pickEl){pickEl.scrollIntoView({behavior:'smooth',block:'start'});}
 }
 
 function initTabs(){

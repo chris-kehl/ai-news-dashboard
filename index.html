@@ -233,7 +233,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
           </div>
         </div>
         <div style="padding:0 14px 10px">
-          <a href="#market-analysis" onclick="switchTab('market');setTimeout(function(){switchSubTab('pick');},50);return false;" style="font-size:.75rem;font-weight:500;color:var(--acc);text-decoration:none;display:inline-flex;align-items:center;gap:6px">
+          <a href="#" onclick="goToWeeklyPick();return false;" style="font-size:.75rem;font-weight:500;color:var(--acc);text-decoration:none;display:inline-flex;align-items:center;gap:6px">
             Read full technical analysis &rarr;
           </a>
         </div>
@@ -607,6 +607,30 @@ function switchSubTab(subId){
   if(oldBtn){oldBtn.setAttribute('aria-selected','false');}
   if(newBtn){newBtn.setAttribute('aria-selected','true');}
   currentSubTab=subId;
+}
+
+function goToWeeklyPick(){
+  // Step 1: switch main tab to Market
+  ['market','tech','sticky','chutes'].forEach(function(id){
+    var btn=$('tab-btn-'+id), panel=$('tab-'+id);
+    if(btn){btn.setAttribute('aria-selected','false');btn.setAttribute('tabindex','-1');}
+    if(panel){panel.classList.remove('active');panel.hidden=true;}
+  });
+  var mBtn=$('tab-btn-market'), mPanel=$('tab-market');
+  if(mBtn){mBtn.setAttribute('aria-selected','true');mBtn.setAttribute('tabindex','0');mBtn.focus();}
+  if(mPanel){mPanel.classList.add('active');mPanel.hidden=false;}
+  currentTab='market';
+  // Step 2: switch sub-tab to Pick (forcibly reset all first)
+  ['pick','spx','rty','acwx','emxc'].forEach(function(id){
+    var panel=$('sub-tab-'+id);
+    var btn=document.querySelector('.sub-tab-btn[aria-controls="sub-tab-'+id+'"]');
+    if(panel){panel.classList.remove('active');}
+    if(btn){btn.setAttribute('aria-selected','false');}
+  });
+  var pPanel=$('sub-tab-pick'), pBtn=document.querySelector('.sub-tab-btn[aria-controls="sub-tab-pick"]');
+  if(pPanel){pPanel.classList.add('active');}
+  if(pBtn){pBtn.setAttribute('aria-selected','true');}
+  currentSubTab='pick';
 }
 
 function initTabs(){

@@ -8,7 +8,7 @@ import asyncio
 import json
 import re
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
@@ -261,10 +261,84 @@ async def fetch_marketwatch(session: aiohttp.ClientSession) -> List[dict]:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  Reddit — currently blocked by 403. Kept for future if they re-open.
+#  REDDIT via RSS (WSB only — works! Other subs hit 429 rate limit)
 # ═══════════════════════════════════════════════════════════════════════════════
+async def fetch_wsb_rss(session: aiohttp.ClientSession, limit: int = 50) -> List[dict]:
+    """Fetch WSB posts via Reddit RSS feed. No auth needed, works reliably."""
+    url = f"https://www.reddit.com/r/wallstreetbets/new/.rss?limit={limit}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; NewsBot/1.0)",
+        "Accept": "application/rss+xml, application/xml",
+    }
+    try:
+        async with session.get(url, headers=headers, timeout=TIMEOUT) as r:
+            if r.status != 200:
+                print(f"      [reddit] WSB RSS HTTP {r.status}")
+                return []
+            text = await r.text()
+            entries = text.split("<entry>")[1:]
+            posts = []
+            for entry in entries:
+                title_m = re.search(r"<title>([^<]+)</title>", entry)
+                pub_m = re.search(r"<published>([^<]+)</published>", entry)
+                content_m = re.search(
+                    r'<content type="html">(.+?)</content>', entry, re.DOTALL
+                )
+
+                if not (title_m and pub_m):
+                    continue
+
+                # Parse timestamp
+                dt_str = pub_m.group(1).replace("Z", "+00:00")
+                try:
+                    dt = datetime.fromisoformat(dt_str)
+                    now = datetime.now(timezone.utc)
+                    age_hours = max(0.1, (now - dt).total_seconds() / 3600)
+                except Exception:
+                    age_hours = 12.0
+
+                # Recency weight: newest = 4x boost, decays to 1x at 24h+
+                recency_weight = min(4.0, 1.0 + (24 / max(1, age_hours)))
+
+                title = title_m.group(1)
+
+                # Extract body text from escaped HTML content
+                body = ""
+                if content_m:
+                    raw = content_m.group(1)
+                    raw = (
+                        raw.replace("&lt;", "<")
+                        .replace("&gt;", ">")
+                        .replace("&amp;", "&")
+                        .replace("&quot;", '\"')
+                        .replace("&#32;", " ")
+                    )
+                    body = re.sub(r"<[^>]+>", " ", raw)
+                    body = re.sub(r"\s+", " ", body).strip()
+
+                full_text = title
+                if body and len(body) > 20:
+                    full_text += " " + body[:500]
+
+                posts.append({
+                    "text": full_text,
+                    "weight": recency_weight,
+                    "source": "reddit_wallstreetbets",
+                    "age_hours": round(age_hours, 1),
+                })
+
+            # Sort newest first
+            posts.sort(key=lambda x: x.get("age_hours", 99))
+            print(f"      [reddit] WSB RSS: {len(posts)} posts (recency-weighted)")
+            return posts
+    except Exception as e:
+        print(f"      [reddit] WSB RSS error: {e}")
+        return []
+
+
+# Legacy: Reddit JSON API — currently blocked by 403/429
 async def fetch_reddit_sub(session: aiohttp.ClientSession, subreddit: str, limit: int = 25):
-    """Reddit JSON API — currently returns 403 without OAuth."""
+    """Reddit JSON API — currently returns 403 without OAuth. Use RSS instead for WSB."""
     url = f"https://www.reddit.com/r/{subreddit}/new.json?limit={limit}"
     try:
         async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
@@ -361,7 +435,7 @@ class SentimentScorer:
                 "source": source,
             })
 
-    # ── Fetch orchestrator (only free paths that work) ────────────────────────
+    # ── Fetch orchestrator (all working free sources) ─────────────────────────
     async def fetch_all(self, session: aiohttp.ClientSession):
         """Fetch from all working free sources."""
         sources = [
@@ -370,7 +444,7 @@ class SentimentScorer:
             ("247wallst", fetch_247wallst),
             ("marketwatch", fetch_marketwatch),
         ]
-        
+
         total_items = 0
         for name, fn in sources:
             try:
@@ -382,20 +456,27 @@ class SentimentScorer:
             except Exception as e:
                 print(f"      [sentiment] {name} failed: {e}")
 
-        # Reddit (attempt but expect 403)
-        reddit_total = 0
-        for sub in ["wallstreetbets", "stocks", "investing", "cryptocurrency"]:
+        # ── WSB via RSS (works!) ──────────────────────────────────────────────
+        try:
+            wsb_posts = await fetch_wsb_rss(session, limit=50)
+            for post in wsb_posts:
+                self.process_item(post)
+            total_items += len(wsb_posts)
+            print(f"      [sentiment] Reddit WSB: processed {len(wsb_posts)} posts")
+        except Exception as e:
+            print(f"      [sentiment] WSB RSS failed: {e}")
+
+        # Fallback: attempt other Reddit subs via JSON (rarely works)
+        for sub in ["stocks", "investing", "cryptocurrency"]:
             try:
                 posts = await fetch_reddit_sub(session, sub, limit=25)
                 for post in posts:
                     self.process_item(post)
-                reddit_total += len(posts)
+                total_items += len(posts)
+                if posts:
+                    print(f"      [sentiment] Reddit r/{sub}: processed {len(posts)} posts")
             except Exception:
                 pass
-        if reddit_total > 0:
-            print(f"      [sentiment] Reddit: processed {reddit_total} posts")
-        else:
-            print("      [sentiment] Reddit: blocked (403) — using news-only sentiment")
 
         print(f"      [sentiment] Total items processed: {total_items}")
 

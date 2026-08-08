@@ -24,6 +24,7 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
+from typing import Dict
 
 try:
     import aiohttp
@@ -31,6 +32,16 @@ try:
 except ImportError:
     print("pip install aiohttp aiofiles")
     raise
+
+# ─── Load sentiment module ──────────────────────────────────────────────────
+_sentiment_path = Path(__file__).resolve().parent
+if str(_sentiment_path) not in sys.path:
+    sys.path.insert(0, str(_sentiment_path))
+try:
+    from sentiment_analyzer import fetch_sentiment, SentimentScorer
+except ImportError:
+    print("WARNING: sentiment_analyzer.py not found — running without sentiment")
+    fetch_sentiment = None
 
 # ─── Paths ──────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
@@ -602,7 +613,7 @@ def analyze_one(ticker, name, category, closes):
 
 
 # ─── Rationale generator ────────────────────────────────────────────────────
-def generate_rationale(pick, all_results):
+def generate_rationale(pick, all_results, total_mentions=0, top_sent=None):
     ticker = pick["ticker"]
     name = pick["name"]
     cat = pick["category"]
@@ -614,6 +625,7 @@ def generate_rationale(pick, all_results):
     sma20 = pick.get("sma20")
     sma50 = pick.get("sma50")
     factors = pick["factors"]
+    top_sent = top_sent or {}
 
     def avg_score(filter_fn):
         vals = [r["score"] for r in all_results if filter_fn(r)]
@@ -658,11 +670,34 @@ def generate_rationale(pick, all_results):
 
     comp = f"Cohort avg ({cat}): {cohort_avg}/100. Overall universe avg: {overall_avg}/100."
 
+    # Sentiment section
+    sent_lines = []
+    if pick.get("sentiment_score"):
+        sent = pick["sentiment_score"]
+        polarity = pick.get("sentiment_polarity", 0)
+        mentions = pick.get("sentiment_mentions", 0)
+        sent_lines.append(
+            f"- Sentiment: {sent:.0f}/100 (polarity={polarity:+.2f}, {mentions} mentions)"
+        )
+        if sent >= 60:
+            sent_lines.append("  Social buzz is bullish — community driving momentum.")
+        elif sent < 40:
+            sent_lines.append("  Social buzz tilts bearish — watch for contrarian bounce.")
+        else:
+            sent_lines.append("  Sentiment neutral — price-driven, not hype-driven.")
+    else:
+        sent_lines.append("- Sentiment: no social data this week")
+
+    if top_sent and total_mentions > 0:
+        src_list = ", ".join(top_sent.get("sources", {}).keys())
+        sent_lines.append(f"- Sources: {src_list}")
+
     return (
         f"**{conviction}: {name} ({ticker})** — ${price:,.4f}\n\n"
         f"{tone}\n\n"
         f"Key drivers: {bull_text}.\n\n"
         f"**Technical Setup**\n" + "\n".join(tech_lines) + "\n\n"
+        f"**Sentiment & Social Signals**\n" + "\n".join(sent_lines) + "\n\n"
         f"**Trade Plan**\n"
         f"Entry: Current levels or pullback to SMA20.\n"
         f"Stop-loss: Daily close below SMA20 or prior swing low.\n"
@@ -670,7 +705,7 @@ def generate_rationale(pick, all_results):
         f"Position size: Size to volatility — max 5% for high-vol names, 2% for crypto.\n\n"
         f"**Why {name}?**\n"
         f"Top score of {score} across {total} tracked assets ({comp})\n\n"
-        f"*Not financial advice. Data from Yahoo Finance v8 public API. DYOR.*"
+        f"*Not financial advice. Data from Yahoo Finance v8 + public social feeds. DYOR.*"
     )
 
 
@@ -711,17 +746,47 @@ async def main():
 
         print(f"      [weekly_pick] Total to analyze: {len(universe)}")
 
-        # Fetch all histories in batches
+        # ── Fetch all sentiments from Reddit, CNBC, Yahoo ────────────────
+        sentiment_scores = {}
+        if fetch_sentiment:
+            print(f"      [weekly_pick] Fetching multi-source sentiment...")
+            try:
+                sentiment_scores = await fetch_sentiment(
+                    session, set(t.upper() for t, _, _ in universe)
+                )
+                print(
+                    f"      [weekly_pick] Sentiment data for {len(sentiment_scores)} tickers"
+                )
+            except Exception as e:
+                print(f"      [weekly_pick] Sentiment fetch failed: {e}")
+
+        # Fetch all price histories in batches
         tickers = [t for t, _, _ in universe]
         histories = await batch_fetch(session, tickers)
 
-        # Analyze each
+        # Analyze each + blend sentiment with technical
         results = []
         for t, n, c in universe:
             closes = histories.get(t, [])
-            r = analyze_one(t, n, c, closes)
-            if r:
-                results.append(r)
+            tech = analyze_one(t, n, c, closes)
+            if not tech:
+                continue
+            # ── Blend sentiment (25%) + technical (75%) ────────────────
+            sent_entry = sentiment_scores.get(t.upper(), {}) or {}
+            sent_score = sent_entry.get("sentiment_score")
+            if sent_score is not None:
+                blended = round(tech["score"] * 0.70 + sent_score * 0.30, 1)
+                tech["score"] = max(0, min(100, blended))
+                tech["sentiment_score"] = sent_score
+                tech["sentiment_mentions"] = sent_entry.get("mentions", 0)
+                tech["sentiment_polarity"] = sent_entry.get("avg_polarity", 0)
+                if sent_score >= 60:
+                    tech["factors"].insert(0, f"🗣️ Bullish buzz {sent_score:.0f}")
+                elif sent_score < 40:
+                    tech["factors"].append(f"🐻 Bearish buzz {sent_score:.0f}")
+                else:
+                    tech["factors"].append(f"😐 Neutral buzz {sent_score:.0f}")
+            results.append(tech)
 
         print(f"      [weekly_pick] Valid results: {len(results)}")
 
@@ -732,13 +797,26 @@ async def main():
         results.sort(key=lambda x: x["score"], reverse=True)
         pick = results[0]
 
+        # Sentiment mention count for rationale
+        total_mentions = sum(
+            s.get("mentions", 0) for s in sentiment_scores.values()
+        )
+        top_sent = sentiment_scores.get(pick["ticker"].upper(), {})
+
         wp = {
             "generated_at": now.isoformat(),
             "week_label": now.strftime("Week of %b %-d, %Y"),
             "top_pick": pick,
             "top_five": results[:5],
             "all_assets": results,
-            "rationale": generate_rationale(pick, results),
+            "rationale": generate_rationale(pick, results, total_mentions, top_sent),
+            "sentiment_summary": {
+                "assets_with_sentiment": len(sentiment_scores),
+                "total_mentions": total_mentions,
+                "sources": list(
+                    set(src for s in sentiment_scores.values() for src in s.get("sources", {}).keys())
+                ) or ["none"],
+            },
             "universe_summary": {
                 "total": len(universe),
                 "valid": len(results),

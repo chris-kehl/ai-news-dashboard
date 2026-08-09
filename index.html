@@ -317,6 +317,13 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
               </div>
             </div>
             <pre id="weekly-pick-rationale" style="font-size:.9rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd);white-space:pre-line;font-family:inherit;color:var(--tx);margin:0;overflow-x:auto"></pre>
+            <!-- Weekly Pick Chart -->
+            <div id="weekly-pick-chart-wrap" style="margin-top:16px;display:none">
+              <div style="font-size:.85rem;font-weight:700;color:var(--acc);margin-bottom:8px">
+                &#128200; Technical Chart — 6-Month Price Action & Forecast
+              </div>
+              <img id="weekly-pick-chart-img" src="" alt="Weekly Pick Chart" style="width:100%;border-radius:8px;border:1px solid var(--brd);background:var(--bg-el)" onerror="this.parentElement.style.display='none'">
+            </div>
             <div id="weekly-pick-comparison" style="margin-top:16px;display:none">
               <div style="font-size:.9rem;font-weight:700;margin-bottom:8px">&#127942; Top 5 Weekly Picks</div>
               <div style="overflow-x:auto">
@@ -344,23 +351,31 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         </div>
 
         <div id="sub-tab-spx" class="sub-tab-panel active">
-          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=SPX" target="_blank" rel="noopener">S&amp;P 500 — Live Chart ↗</a>
-          <img class="tv-img" src="https://charts.tradingview.com/tv/country_us/reuters/SPX.png" alt="S&amp;P 500 chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Live chart: click link above</div>')">
-          <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — S&P 500 at 7,758, +3.58% over 5 sessions. The index is above its 20-day moving average. Key level: hold above prior highs for continuation toward 7,700+. Risk: earnings dispersion and Fed-speak.</div>
+          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=SPX" target="_blank" rel="noopener">S&amp;P 500 — Open Full Chart ↗</a>
+          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
+            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-spx&symbol=SPX&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          </div>
+          <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — S&amp;P 500 at 7,757.64, +1.63% over 5 sessions. The index is above its 20-day moving average. Key level: hold above prior highs for continuation toward 7,900+. Risk: earnings dispersion and Fed-speak.</div>
         </div>
         <div id="sub-tab-rty" class="sub-tab-panel">
           <a class="tv-link" href="https://www.tradingview.com/chart/RTY/zszR1Ut7-Russel-2000-Bullish-for-week-10-14-August-2026/" target="_blank" rel="noopener">Russell 2000 — Bullish week 10-14 August 2026 ↗</a>
-          <img class="tv-img" src="https://charts.tradingview.com/tv/country_us/reuters/RTY.png" alt="Russell 2000 chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Live chart: click link above</div>')">
+          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
+            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-rty&symbol=RTY&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          </div>
           <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — Russell 2000 at $3,034.49, +3.52% over 5 sessions. Small-caps are building momentum above the 10-day MA. Target on continuation: $3,095. Stop: close below $2,943. Risk: SPX correlation drag if large-caps sell off.</div>
         </div>
         <div id="sub-tab-acwx" class="sub-tab-panel">
-          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AACWX" target="_blank" rel="noopener">ACWX (MSCI ACWI ex-US) — BULLISH for the week 10–14 August ↗</a>
-          <img class="tv-img" src="https://charts.tradingview.com/tv/country_us/reuters/AMEX_ACWX.png" alt="ACWX chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Live chart: click link above</div>')">
+          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AACWX" target="_blank" rel="noopener">ACWX (MSCI ACWI ex-US) — Open Full Chart ↗</a>
+          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
+            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-acwx&symbol=AMEX%3AACWX&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          </div>
           <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — ACWX at $77.41, +2.87% over 5 sessions. Price is pressing the 52-week high — a breakout opens a measured move. Tailwind: dollar softness / Fed-cut pricing. Risk: DXY snap-back. Stop: close below $74.31.</div>
         </div>
         <div id="sub-tab-emxc" class="sub-tab-panel">
-          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AEMXC" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Live Chart ↗</a>
-          <img class="tv-img" src="https://charts.tradingview.com/tv/country_us/reuters/AMEX_EMXC.png" alt="EMXC chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Live chart: click link above</div>')">
+          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AEMXC" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Open Full Chart ↗</a>
+          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
+            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-emxc&symbol=AMEX%3AEMXC&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          </div>
           <div class="tv-desc"><strong>Bias: NEUTRAL — Score 4.5/10</strong> — EMXC at $94.72, +2.82% over 5 sessions. Chopping in a tight range with semi-weight dragging. No directional edge yet. Flip bullish above $96.61; flip bearish below $91.88. Catalysts: Samsung/Hynix guidance, India PMI.</div>
         </div>
       </div>
@@ -846,6 +861,16 @@ function renderAll(d){
         sentBadge.style.display='none';
       }
       $('weekly-pick-rationale').textContent=wp.rationale||'';
+      // Weekly Pick Chart — cache-bust by week label to force refresh on new pick
+      try{
+        var chartWrap=$('weekly-pick-chart-wrap');
+        var chartImg=$('weekly-pick-chart-img');
+        if(chartWrap && chartImg){
+          var cacheKey=wp.week_label?(wp.week_label.replace(/[^a-z0-9]/gi,'')):Date.now();
+          chartImg.src='weekly_pick_chart.png?v='+cacheKey;
+          chartWrap.style.display='block';
+        }
+      }catch(chErr){console.error('weekly-pick-chart',chErr);}
       $('weekly-pick-when').textContent='Generated: '+(wp.generated_at||'');
       // Top 5 comparison table
       try{

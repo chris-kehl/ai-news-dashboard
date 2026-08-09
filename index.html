@@ -306,12 +306,14 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
                   <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">--</span></div>
                   <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">--</span></div>
                   <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">--</span></div>
+                <div style="font-size:.85rem;color:var(--tx3)">Buzz: <span id="weekly-pick-sent" style="font-weight:600">--</span></div>
                 </div>
               </div>
               <div style="min-width:150px;text-align:center">
                 <div style="font-size:.75rem;color:var(--tx3);text-transform:uppercase;margin-bottom:4px">Weekly Score</div>
                 <div style="font-size:3rem;font-weight:800;color:var(--good)" id="weekly-pick-score">--</div>
                 <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-category">--</div>
+                <div id="weekly-pick-sent-badge" style="display:none;margin-top:4px;font-size:.7rem;padding:2px 8px;border-radius:4px;background:var(--bg-el);color:var(--tx3)">Social</div>
               </div>
             </div>
             <pre id="weekly-pick-rationale" style="font-size:.9rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd);white-space:pre-line;font-family:inherit;color:var(--tx);margin:0;overflow-x:auto"></pre>
@@ -828,6 +830,21 @@ function renderAll(d){
       var c30=topPick.change_30d||0;
       $('weekly-pick-chg30d').innerHTML='<span style="color:'+(c30>=0?'var(--good)':'var(--danger)')+'">'+(c30>=0?'+':'')+c30.toFixed(1)+'%</span>';
       $('weekly-pick-rsi').textContent=topPick.rsi?topPick.rsi.toFixed(1):'--';
+      // Sentiment display
+      var sent=topPick.sentiment_score;
+      var sentEl=$('weekly-pick-sent');
+      var sentBadge=$('weekly-pick-sent-badge');
+      if(sent!=null){
+        var sColor=sent>=60?'var(--good)':sent>=40?'var(--accent)':'var(--danger)';
+        sentEl.innerHTML='<span style="color:'+sColor+'">'+sent.toFixed(0)+'/100</span> ('+(topPick.sentiment_mentions||0)+' mentions)';
+        sentBadge.style.display='inline-block';
+        sentBadge.style.color=sColor;
+        sentBadge.style.border='1px solid '+sColor;
+        sentBadge.textContent='🗣️ '+(topPick.sentiment_mentions||0)+' social mention'+(topPick.sentiment_mentions===1?'':'s');
+      }else{
+        sentEl.textContent='--';
+        sentBadge.style.display='none';
+      }
       $('weekly-pick-rationale').textContent=wp.rationale||'';
       $('weekly-pick-when').textContent='Generated: '+(wp.generated_at||'');
       // Top 5 comparison table

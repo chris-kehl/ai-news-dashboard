@@ -291,58 +291,66 @@ CRYPTO = [
 
 # ─── Helpers ────────────────────────────────────────────────────────────────
 async def fetch_wiki_sp500(session: aiohttp.ClientSession) -> list:
-    """Scrape S&P 500 constituents from Wikipedia."""
-    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    """Scrape S&P 500 constituents from stockanalysis.com."""
     try:
+        url = "https://stockanalysis.com/list/sp-500-stocks/"
         async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
             text = await r.text()
             import re
-            # Find the first wikitable and extract tickers
-            # Each row has format: <td><a href="...">TICKER</a></td>
-            tickers = re.findall(
-                r'<a[^>]+href="/wiki/[^"]+"[^>]*>([A-Z\.]+)</a>',
-                text[:60000]  # first 60K chars to avoid footnotes
+            matches = re.findall(
+                r'<a href="/stocks/([a-z\.\-]+)/">([A-Z\-]{1,6})</a>',
+                text, re.IGNORECASE
             )
-            # Deduplicate and filter
             seen = set()
             result = []
-            for t in tickers:
-                t = t.replace(".", "-")  # BRK.B -> BRK-B for Yahoo
-                if t not in seen and len(t) <= 6:
+            for _, ticker in matches:
+                t = ticker.upper()
+                if t not in seen:
                     seen.add(t)
                     result.append(t)
             print(f"      [wiki] Fetched {len(result)} S&P 500 tickers")
-            return result[:505]  # cap at 505 (some Wikioedia drift)
+            return result
     except Exception as e:
         print(f"      [wiki] ERROR fetching S&P 500: {e}")
         return []
 
 
 async def fetch_sa_russell2k(session: aiohttp.ClientSession) -> list:
-    """Scrape Russell 2000 constituents from stockanalysis.com."""
+    """Scrape Russell 2000 constituents from available sources."""
     tickers = []
-    # StockAnalysis paginates; try first few pages
-    for page in range(1, 6):
-        url = f"https://stockanalysis.com/etf/iwm/holdings/?page={page}"
-        try:
-            async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-                text = await r.text()
-                import re
-                # Each row has ticker in first link
-                matches = re.findall(
-                    r'"symbol":"([A-Z\-]+)"',
-                    text
-                )
-                for m in matches:
-                    if m not in tickers and len(m) <= 6:
-                        tickers.append(m)
-                print(f"      [sa] Page {page}: {len(matches)} tickers, total {len(tickers)}")
-                if not matches:
-                    break
-        except Exception as e:
-            print(f"      [sa] Page {page} error: {e}")
-            break
-    print(f"      [sa] Total Russell 2000 tickers fetched: {len(tickers)}")
+    seen = set()
+
+    # Try IWM holdings (only shows top ~25 visible, but it's a start)
+    try:
+        url = "https://stockanalysis.com/etf/iwm/holdings/"
+        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
+            text = await r.text()
+            import re
+            links = re.findall(r'href="/stocks/([^"]+)/"', text)
+            for s in links:
+                s = s.upper()
+                if len(s) <= 6 and s not in seen and s.replace('.', '').replace('-', '').isalnum():
+                    seen.add(s)
+                    tickers.append(s)
+    except Exception:
+        pass
+
+    # Also try VWO for broader small cap
+    try:
+        url = "https://stockanalysis.com/etf/vtwo/holdings/"
+        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
+            text = await r.text()
+            import re
+            links = re.findall(r'href="/stocks/([^"]+)/"', text)
+            for s in links:
+                s = s.upper()
+                if len(s) <= 6 and s not in seen and s.replace('.', '').replace('-', '').isalnum():
+                    seen.add(s)
+                    tickers.append(s)
+    except Exception:
+        pass
+
+    print(f"      [sa] Top holdings tickers from IWM/VTWO: {len(tickers)}")
     return tickers
 
 
@@ -752,7 +760,7 @@ async def main():
     is_afternoon = 12 <= now.hour < 23
 
     # Load cached pick if not Monday afternoon
-    if not (is_monday and is_afternoon) and DATA_PATH.exists():
+    if DATA_PATH.exists():
         try:
             with open(DATA_PATH) as f:
                 cached = json.load(f)

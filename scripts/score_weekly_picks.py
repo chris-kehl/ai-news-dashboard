@@ -5,7 +5,7 @@ Fetches data for all tickers in universe.jsonl, calculates composite scores,
 and outputs top picks with rationale. Run Sundays at 3pm after market-data update.
 """
 
-import json, time, urllib.request, urllib.error, math
+import json, time, urllib.request, urllib.error, math, sys, subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -252,7 +252,15 @@ def main():
     
     print(f"\nScores saved to {SCORES_PATH}")
     
-    # Also inject into data.json for dashboard rendering
+    # Auto-generate chart for top pick
+    try:
+        import subprocess
+        chart_script = Path(__file__).resolve().parent / "generate_weekly_chart.py"
+        subprocess.run([sys.executable, str(chart_script)], check=False, timeout=120)
+    except Exception as e:
+        print(f"Chart generation warning: {e}", file=sys.stderr)
+    
+    # Inject into data.json for dashboard
     inject_into_data_json(output)
     
     return scored[:5]

@@ -20,31 +20,26 @@ HEADERS = {
 }
 
 async def fetch_sp500(session: aiohttp.ClientSession) -> list:
-    """Scrape S&P 500 constituents from Wikipedia."""
-    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    """Scrape S&P 500 constituents from stockanalysis.com."""
     try:
-        async with session.get(url, headers=HEADERS, timeout=aiohttp.ClientTimeout(total=15)) as r:
+        url = "https://stockanalysis.com/list/sp-500-stocks/"
+        async with session.get(url, headers=HEADERS, timeout=aiohttp.ClientTimeout(total=20)) as r:
             if r.status != 200:
                 return []
             text = await r.text()
-            # Find the constituent table
-            tbody = re.search(r'<tbody[^>]*>(.*?)</tbody>', text, re.DOTALL)
-            if not tbody:
-                return []
-            # Extract ticker symbols from the first column links
-            tickers = re.findall(r'<a[^>]*href="/wiki/[^"]*"[^>]*title="[^"]*">([A-Z]{1,5})</a>', tbody.group(1))
-            # Remove Wikipedia article links that aren't tickers
-            tickers = [t for t in tickers if t not in {"NYSE", "NASDAQ", "ETF", "INDEX", "THE", "AND"}]
-            # Wikipedia has some non-ticker links — filter anything > 5 chars or < 1
-            tickers = [t for t in tickers if 1 <= len(t) <= 5]
-            # Deduplicate preserving order
+            import re
+            matches = re.findall(
+                r'<a href="/stocks/([a-z\.\-]+)/">([A-Z\-]{1,6})</a>',
+                text, re.IGNORECASE
+            )
             seen = set()
             result = []
-            for t in tickers:
+            for _, ticker in matches:
+                t = ticker.upper()
                 if t not in seen:
                     seen.add(t)
                     result.append(t)
-            print(f"      [sp500] Scraped {len(result)} tickers from Wikipedia")
+            print(f"      [sp500] Scraped {len(result)} tickers from stockanalysis.com")
             return result
     except Exception as e:
         print(f"      [sp500] Error: {e}")
@@ -52,35 +47,27 @@ async def fetch_sp500(session: aiohttp.ClientSession) -> list:
 
 
 async def fetch_russell2k(session: aiohttp.ClientSession) -> list:
-    """Scrape Russell 2000 from stockanalysis.com (paginated)."""
+    """Scrape Russell 2000 from IWM/VTWO ETF holdings (top holdings visible)."""
     tickers = []
-    try:
-        for page in range(1, 21):  # 20 pages × ~100 = 2,000 tickers
-            url = f"https://stockanalysis.com/list/russell-2000-stocks/?page={page}"
+    seen = set()
+
+    for etf in ["iwm", "vtwo"]:
+        try:
+            url = f"https://stockanalysis.com/etf/{etf}/holdings/"
             async with session.get(url, headers=HEADERS, timeout=aiohttp.ClientTimeout(total=20)) as r:
-                if r.status != 200:
-                    break
                 text = await r.text()
-                # Match the stock links
-                page_tickers = re.findall(r'href="/stock/([a-z0-9\-]+)/"', text, re.IGNORECASE)
-                page_tickers = [t.upper().replace('-', '.') for t in page_tickers]
-                if not page_tickers:
-                    break
-                tickers.extend(page_tickers)
-                print(f"      [russell] Page {page}: {len(page_tickers)} tickers")
-        
-        # Deduplicate
-        seen = set()
-        result = []
-        for t in tickers:
-            if t not in seen and t not in {"PAGE", "STOCK"}:
-                seen.add(t)
-                result.append(t)
-        print(f"      [russell] Total scraped: {len(result)}")
-        return result
-    except Exception as e:
-        print(f"      [russell] Error: {e}")
-        return []
+                import re
+                links = re.findall(r'href="/stocks/([^"]+)/"', text)
+                for s in links:
+                    s = s.upper().replace('-', '.')
+                    if len(s) <= 6 and s not in seen and s.replace('.', '').isalnum():
+                        seen.add(s)
+                        tickers.append(s)
+        except Exception:
+            pass
+
+    print(f"      [russell] Holdings tickers: {len(tickers)}")
+    return tickers
 
 
 async def fetch_etfs(session: aiohttp.ClientSession) -> list:

@@ -68,11 +68,16 @@ ax.axhline(y=current, color=muted_color, linestyle="-", linewidth=0.8, alpha=0.5
 # ============================================================
 # 5. Bullish forecast annotations
 # ============================================================
-# Fib / measured-move target zones based on structure
-# Current ~77.41, 52w high ~77.64.  A measured move from the July base (~73.5)
-# to 77.65 breakout gives target ~80.5
-forecast_target = 80.50
-support_zone = 75.20
+# Dynamic support = actual 50-day MA; forecast based on distance to 52w high
+support_zone = round(hist["MA50"].dropna().iloc[-1], 2)
+
+pct_to_high = (w52_high - current) / current * 100 if current else 0
+if abs(pct_to_high) < 3:
+    forecast_target = round(current * 1.03, 2)
+elif pct_to_high > 10:
+    forecast_target = round(current * 1.05, 2)
+else:
+    forecast_target = round(current * 1.04, 2)
 
 # Forecast arrow zone (right side of chart)
 forecast_start = hist.index[-1]
@@ -83,17 +88,18 @@ ax.fill_between([forecast_start, forecast_end], current, forecast_target,
                 color=bullish_color, alpha=0.08)
 
 # Target annotation
-ax.annotate("FORECAST TARGET\n$80.50  (+3.9%)",
+target_pct = round((forecast_target - current) / current * 100, 1)
+ax.annotate(f"FORECAST TARGET\n${forecast_target}  (+{target_pct}%)",
             xy=(forecast_end, forecast_target),
-            xytext=(forecast_end - timedelta(days=10), forecast_target + 1.2),
+            xytext=(forecast_end - timedelta(days=10), forecast_target + (current * 0.015)),
             arrowprops=dict(arrowstyle="->", color=bullish_color, lw=1.5),
             color=bullish_color, fontsize=10, fontweight="bold",
             ha="center", va="bottom")
 
 # Support annotation
-ax.annotate("KEY SUPPORT\n$75.20 (50-D MA)",
+ax.annotate(f"KEY SUPPORT\n${support_zone} (50-D MA)",
             xy=(hist.index[-20], support_zone),
-            xytext=(hist.index[-40], support_zone - 2.5),
+            xytext=(hist.index[-40], support_zone - (current * 0.03)),
             arrowprops=dict(arrowstyle="->", color=ma50_color, lw=1.2),
             color=ma50_color, fontsize=9, fontweight="bold",
             ha="center", va="top")

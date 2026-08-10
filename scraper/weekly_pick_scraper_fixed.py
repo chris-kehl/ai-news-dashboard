@@ -29,9 +29,8 @@ from typing import Dict
 try:
     import aiohttp
     import aiofiles
-    import yfinance as yf
 except ImportError:
-    print("pip install aiohttp aiofiles yfinance")
+    print("pip install aiohttp aiofiles")
     raise
 
 # ─── Load sentiment module ──────────────────────────────────────────────────
@@ -347,58 +346,43 @@ async def fetch_sa_russell2k(session: aiohttp.ClientSession) -> list:
 
 
 async def fetch_wiki_etfs(session: aiohttp.ClientSession) -> list:
-    """Scrape comprehensive ETF list from stockanalysis.com (5,500+ ETFs).
-
-    Returns list of (ticker, name) tuples sorted by AUM (largest first).
-    Uses cache after first scrape to avoid repeated network calls.
-    """
-    # Check cache first
-    cache_file = CACHE_DIR / "all_etfs.json"
-    if cache_file.exists() and cache_file.stat().st_size > 100000:
-        try:
-            with open(cache_file) as f:
-                cached = json.load(f)
-            if len(cached) >= 1000:
-                print(f"      [wiki] Using cached ETF list ({len(cached)} tickers)")
-                return [(e["s"], e["n"]) for e in cached]
-        except Exception:
-            pass
-
-    all_etfs = []
-    seen = set()
-
+    """Scrape list of US ETFs from Wikipedia."""
+    url = "https://en.wikipedia.org/wiki/List_of_American_exchange-traded_funds"
     try:
-        for page in range(1, 21):  # Top ~2,000 ETFs by AUM
-            url = f"https://stockanalysis.com/etf/?page={page}"
-            async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-                if r.status != 200:
-                    break
-                text = await r.text()
-                import re
-                matches = re.findall(r'\{s:"([A-Z]{1,5})",n:"([^"]+)"', text)
-                for sym, name in matches:
-                    if sym not in seen:
-                        seen.add(sym)
-                        all_etfs.append((sym, name))
-                if not matches:
-                    break
-                if page % 5 == 0:
-                    await asyncio.sleep(0.5)  # be polite
+        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
+            text = await r.text()
+            import re
+            # ETFs are listed in tables with format TICKER (Name) in text
+            # More robust: find pattern like "(TICKER)" near "ETF"
+            # Actually Wikipedia tables have columns: Ticker, ETF, etc.
+            # Let's grab tickers from the first large table
+            tickers = re.findall(
+                r'<td[^>]*>\s*<a[^>]+href="[^"]*"[^>]*>([A-Z]{1,5})</a>\s*</td>',
+                text[:120000]
+            )
+            # Deduplicate
+            seen = set()
+            result = []
+            for t in tickers:
+                if t not in seen and t != "ETF":
+                    seen.add(t)
+                    result.append(t)
+            # Fallback: also try to find tickers in a different pattern
+            if len(result) < 50:
+                alt = re.findall(
+                    r'\(([A-Z]{2,5})\).*?(?:ETF|Fund|Index)',
+                    text[:120000],
+                    re.IGNORECASE
+                )
+                for a in alt:
+                    if a not in seen and a not in {"ETF", "the", "NYSE"}:
+                        seen.add(a)
+                        result.append(a)
+            print(f"      [wiki] Fetched {len(result)} ETF tickers")
+            return result
     except Exception as e:
         print(f"      [wiki] ERROR fetching ETFs: {e}")
-
-    # Fallback to your existing comprehensive cache if scrape fails
-    if len(all_etfs) < 500 and cache_file.exists():
-        try:
-            with open(cache_file) as f:
-                cached = json.load(f)
-            all_etfs = [(e["s"], e["n"]) for e in cached if e["s"] not in seen]
-            print(f"      [wiki] Fallback to cached list ({len(all_etfs)} tickers)")
-        except Exception:
-            pass
-
-    print(f"      [wiki] Fetched {len(all_etfs)} ETF tickers")
-    return all_etfs
+        return []
 
 
 async def build_asset_universe(session: aiohttp.ClientSession) -> list:
@@ -435,19 +419,11 @@ async def build_asset_universe(session: aiohttp.ClientSession) -> list:
 
     # Even if R2K scrape fails, we have thousands of S&P 500 stocks already
 
-    # 3. ETFs (scrape + hardcoded fallback)
+    # 3. ETFs
     etf_tickers = await fetch_wiki_etfs(session)
-    for t, name in etf_tickers:
-        add(t, name, "ETF")
+    for t in etf_tickers:
+        add(t, t, "ETF")
     for t, name, cat in FALLBACK_ETFS:
-        add(t, name, cat)  # these include category overrides like "Crypto ETF", "Leveraged ETF"
-    
-    # 4. Precious metals
-    for t, name, cat in METALS:
-        add(t, name, cat)
-    
-    # 5. Crypto
-    for t, name, cat in CRYPTO:
         add(t, name, cat)
 
     # Remove duplicates aggressively — SPY, QQQ etc. appear in multiple lists
@@ -455,58 +431,46 @@ async def build_asset_universe(session: aiohttp.ClientSession) -> list:
     return assets
 
 
-# ─── Yahoo Finance fetcher (yfinance-based) ─────────────────────────────────
-from concurrent.futures import ThreadPoolExecutor
-
-def _yf_fetch_sync(ticker: str, days: int = 35) -> list:
-    """Sync fetch via yfinance — bypasses Yahoo cookie wall."""
+# ─── Yahoo Finance fetcher (async batched) ──────────────────────────────────
+async def fetch_yf_history(session: aiohttp.ClientSession, ticker: str, days: int = 35) -> list:
+    """Fetch daily closes from YF chart endpoint."""
+    t = ticker.upper()
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{t}"
+        f"?interval=1d&range={days}d"
+    )
     try:
-        t = yf.Ticker(ticker)
-        # Use '1y' period to get enough history, then trim
-        data = t.history(period="3mo", interval="1d")
-        if data.empty:
-            return []
-        closes = data["Close"].dropna().tolist()
-        # Trim to requested days
-        target = min(days, len(closes))
-        closes = closes[-target:]
-        return [float(c) for c in closes]
+        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
+            if r.status != 200:
+                return []
+            data = await r.json()
+            result = data.get("chart", {}).get("result", [])
+            if not result:
+                return []
+            q = result[0].get("indicators", {}).get("quote", [{}])[0]
+            closes = [float(c) for c in q.get("close", []) if c is not None]
+            return closes
     except Exception:
         return []
 
 
-async def fetch_yf_history(session, ticker: str, days: int = 35) -> list:
-    """Async wrapper around sync yfinance fetch."""
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, _yf_fetch_sync, ticker, days)
-
-
 async def batch_fetch(session, tickers: list, days: int = 35) -> dict:
-    """Fetch histories via ThreadPoolExecutor + yfinance."""
+    """Fetch histories in batches with delay. Returns {ticker: closes}."""
     results = {}
-    loop = asyncio.get_event_loop()
-    
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        # Submit all
-        futures = {
-            t: loop.run_in_executor(pool, _yf_fetch_sync, t, days)
-            for t in tickers
-        }
-        
-        # Gather with progress
-        done = 0
-        total = len(tickers)
-        for t, fut in futures.items():
-            try:
-                closes = await fut
-                if closes and len(closes) >= 5:
-                    results[t] = closes
-            except Exception:
-                pass
-            done += 1
-            if done % 30 == 0:
-                print(f"      [batch] {done}/{total} done, valid={len(results)}")
-    
+    for i in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[i:i + BATCH_SIZE]
+        tasks = [fetch_yf_history(session, t, days) for t in batch]
+        batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+        for t, closes in zip(batch, batch_results):
+            if isinstance(closes, list) and len(closes) >= 5:
+                results[t] = closes
+        # Small delay between batches to stay polite
+        if i + BATCH_SIZE < len(tickers):
+            await asyncio.sleep(BATCH_DELAY)
+        # Progress
+        if (i // BATCH_SIZE) % 5 == 0:
+            print(f"      [batch] {min(i + BATCH_SIZE, len(tickers))}/{len(tickers)} done, "
+                  f"valid={len(results)}")
     print(f"      [batch] Final valid histories: {len(results)}/{len(tickers)}")
     return results
 
@@ -772,9 +736,17 @@ async def main():
         # Build universe
         universe = await build_asset_universe(session)
 
-        print(f"      [weekly_pick] Universe built: {len(universe)} unique assets")
+        # Add metals & crypto
+        for t, n, c in METALS:
+            if t not in [u[0] for u in universe]:
+                universe.append((t, n, c))
+        for t, n, c in CRYPTO:
+            if t not in [u[0] for u in universe]:
+                universe.append((t, n, c))
 
-        # Fetch all sentiments from Reddit, CNBC, Yahoo...
+        print(f"      [weekly_pick] Total to analyze: {len(universe)}")
+
+        # ── Fetch all sentiments from Reddit, CNBC, Yahoo ────────────────
         sentiment_scores = {}
         if fetch_sentiment:
             print(f"      [weekly_pick] Fetching multi-source sentiment...")
@@ -886,7 +858,7 @@ if __name__ == "__main__":
 # ─── Chart generation helper ───────────────────────────────────────────────
 
 def _generate_chart(wp: dict) -> bool:
-    """Trigger weekly-pick chart generation in a subprocess using venv Python."""
+    """Trigger weekly-pick chart generation in a subprocess."""
     import subprocess
     chart_script = Path(__file__).resolve().parent.parent / "scripts" / "generate_weekly_pick_chart.py"
     if not chart_script.exists():
@@ -897,16 +869,9 @@ def _generate_chart(wp: dict) -> bool:
     name = top.get("name", ticker or "Weekly Pick")
     week_label = wp.get("week_label", "This Week")
     price = top.get("price", 0)
-
-    # Use the project's venv Python (has matplotlib installed)
-    venv_python = Path(__file__).resolve().parent.parent / "venv" / "bin" / "python"
-    if not venv_python.exists():
-        venv_python = Path(__file__).resolve().parent.parent / "venv" / "bin" / "python3"
-    python_cmd = str(venv_python) if venv_python.exists() else sys.executable
-
     try:
         result = subprocess.run(
-            [python_cmd, str(chart_script)],
+            [sys.executable, str(chart_script)],
             capture_output=True, text=True, timeout=60
         )
         if result.returncode == 0:
@@ -914,14 +879,6 @@ def _generate_chart(wp: dict) -> bool:
             return True
         else:
             print(f"      [weekly_pick] Chart generation failed: {result.stderr.strip()}")
-            # Fallback: try with pip-installed matplotlib on system python
-            try:
-                result2 = subprocess.run(
-                    [sys.executable, "-m", "pip", "install", "matplotlib", "-q"],
-                    capture_output=True, text=True, timeout=120
-                )
-            except Exception:
-                pass
             return False
     except Exception as e:
         print(f"      [weekly_pick] Chart generation error: {e}")

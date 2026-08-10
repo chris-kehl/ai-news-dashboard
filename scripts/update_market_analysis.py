@@ -143,14 +143,40 @@ def patch_html(path: Path):
         else:
             print(f"  WARN: no patch match for {ticker_sym}")
     
+    # Update market analysis timestamps in HTML
+    now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M %Z")
+    ma_ids = ["spx", "rty", "acwx", "emxc"]
+    for ma_id in ma_ids:
+        pattern = rf'(<div class="ma-timestamp" id="ma-ts-{ma_id}">)(.*?)(</div>)'
+        replacement = rf'\1📊 Analysis last updated: {now_str}\3'
+        html = re.sub(pattern, replacement, html, count=1)
+
     path.write_text(html)
     print(f"Wrote updated HTML to {path}")
+
+
+def update_data_json():
+    """Update data.json with the market_analysis_updated timestamp."""
+    data_path = HTML_PATH.parent / "data.json"
+    try:
+        with open(data_path, 'r') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"WARN: could not read data.json: {e}")
+        return
+    data["market_analysis_updated"] = datetime.datetime.now().isoformat()
+    try:
+        with open(data_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Updated market_analysis_updated in {data_path}")
+    except Exception as e:
+        print(f"WARN: could not write data.json: {e}")
 
 
 def git_push():
     import subprocess
     wd = HTML_PATH.parent
-    subprocess.run(["git", "add", "index.html"], cwd=wd, check=True)
+    subprocess.run(["git", "add", "index.html", "data.json"], cwd=wd, check=True)
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
     subprocess.run(["git", "commit", "-m", f"Auto-update Market Analysis ({date_str})"], cwd=wd, check=False)
     subprocess.run(["git", "push", "origin", "main"], cwd=wd, check=False)
@@ -160,4 +186,5 @@ def git_push():
 if __name__ == "__main__":
     print(f"Market Analysis Auto-Update — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
     patch_html(HTML_PATH)
+    update_data_json()
     git_push()

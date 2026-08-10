@@ -86,10 +86,10 @@ def run_update():
         json.dump(data, f, indent=2)
     print(f"[OK] Written to {outfile}")
 
-    # Git push
+    # Git push — include chart images so they deploy to GitHub Pages
     try:
         repo_dir = os.path.join(os.path.dirname(__file__), '..')
-        subprocess.run(['git', 'add', 'data.json'], cwd=repo_dir, check=True)
+        subprocess.run(['git', 'add', 'data.json', 'weekly_pick_chart.png', 'acwx_chart.png'], cwd=repo_dir, check=False)
         subprocess.run(['git', 'commit', '-m', f'data: update {datetime.now().strftime("%Y-%m-%d %H:%M")}'], cwd=repo_dir, check=True)
         subprocess.run(['git', 'push'], cwd=repo_dir, check=True)
         print("[OK] Pushed to GitHub")

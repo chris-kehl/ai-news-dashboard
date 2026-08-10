@@ -29,9 +29,8 @@ from typing import Dict
 try:
     import aiohttp
     import aiofiles
-    import yfinance as yf
 except ImportError:
-    print("pip install aiohttp aiofiles yfinance")
+    print("pip install aiohttp aiofiles")
     raise
 
 # ─── Load sentiment module ──────────────────────────────────────────────────
@@ -432,58 +431,46 @@ async def build_asset_universe(session: aiohttp.ClientSession) -> list:
     return assets
 
 
-# ─── Yahoo Finance fetcher (yfinance-based) ─────────────────────────────────
-from concurrent.futures import ThreadPoolExecutor
-
-def _yf_fetch_sync(ticker: str, days: int = 35) -> list:
-    """Sync fetch via yfinance — bypasses Yahoo cookie wall."""
+# ─── Yahoo Finance fetcher (async batched) ──────────────────────────────────
+async def fetch_yf_history(session: aiohttp.ClientSession, ticker: str, days: int = 35) -> list:
+    """Fetch daily closes from YF chart endpoint."""
+    t = ticker.upper()
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{t}"
+        f"?interval=1d&range={days}d"
+    )
     try:
-        t = yf.Ticker(ticker)
-        # Use '1y' period to get enough history, then trim
-        data = t.history(period="3mo", interval="1d")
-        if data.empty:
-            return []
-        closes = data["Close"].dropna().tolist()
-        # Trim to requested days
-        target = min(days, len(closes))
-        closes = closes[-target:]
-        return [float(c) for c in closes]
+        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
+            if r.status != 200:
+                return []
+            data = await r.json()
+            result = data.get("chart", {}).get("result", [])
+            if not result:
+                return []
+            q = result[0].get("indicators", {}).get("quote", [{}])[0]
+            closes = [float(c) for c in q.get("close", []) if c is not None]
+            return closes
     except Exception:
         return []
 
 
-async def fetch_yf_history(session, ticker: str, days: int = 35) -> list:
-    """Async wrapper around sync yfinance fetch."""
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, _yf_fetch_sync, ticker, days)
-
-
 async def batch_fetch(session, tickers: list, days: int = 35) -> dict:
-    """Fetch histories via ThreadPoolExecutor + yfinance."""
+    """Fetch histories in batches with delay. Returns {ticker: closes}."""
     results = {}
-    loop = asyncio.get_event_loop()
-    
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        # Submit all
-        futures = {
-            t: loop.run_in_executor(pool, _yf_fetch_sync, t, days)
-            for t in tickers
-        }
-        
-        # Gather with progress
-        done = 0
-        total = len(tickers)
-        for t, fut in futures.items():
-            try:
-                closes = await fut
-                if closes and len(closes) >= 5:
-                    results[t] = closes
-            except Exception:
-                pass
-            done += 1
-            if done % 30 == 0:
-                print(f"      [batch] {done}/{total} done, valid={len(results)}")
-    
+    for i in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[i:i + BATCH_SIZE]
+        tasks = [fetch_yf_history(session, t, days) for t in batch]
+        batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+        for t, closes in zip(batch, batch_results):
+            if isinstance(closes, list) and len(closes) >= 5:
+                results[t] = closes
+        # Small delay between batches to stay polite
+        if i + BATCH_SIZE < len(tickers):
+            await asyncio.sleep(BATCH_DELAY)
+        # Progress
+        if (i // BATCH_SIZE) % 5 == 0:
+            print(f"      [batch] {min(i + BATCH_SIZE, len(tickers))}/{len(tickers)} done, "
+                  f"valid={len(results)}")
     print(f"      [batch] Final valid histories: {len(results)}/{len(tickers)}")
     return results
 

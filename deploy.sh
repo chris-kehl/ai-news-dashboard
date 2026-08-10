@@ -17,8 +17,8 @@ git rev-parse --git-dir > /dev/null 2>&1 || {
     exit 1
 }
 
-# Stage data.json, index.html, and city_cache.json
-git add data.json index.html
+# Stage data.json, index.html, and chart images
+git add data.json index.html weekly_pick_chart.png acwx_chart.png 2>/dev/null || true
 git diff --cached --quiet && {
     echo "No changes to commit."
     exit 0

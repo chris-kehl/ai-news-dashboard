@@ -79,6 +79,10 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 
 .ld{color:var(--tx3);font-size:.8rem;padding:12px 0;text-align:center}
 .up{color:var(--good)}.dn{color:var(--danger)}
+.tab-timestamp{font-size:.68rem;color:var(--tx3);text-align:right;padding:4px 0 8px;margin-bottom:4px;font-family:'JetBrains Mono',monospace}
+.tab-timestamp::before{content:'⏱ ';color:var(--tx3)}
+.ma-timestamp{font-size:.68rem;color:var(--tx3);padding:6px 0 0;text-align:right;font-family:'JetBrains Mono',monospace;border-top:1px solid var(--brd);margin-top:10px}
+.ma-timestamp::before{content:'📊 Analysis last updated: ';color:var(--tx3)}
 
 /* ── Settings ── */
 .settings-btn{position:fixed;bottom:16px;right:16px;width:42px;height:42px;border-radius:50%;background:var(--bg-card);border:1px solid var(--brd);color:var(--tx);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:200;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:.2s}
@@ -194,6 +198,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 
   <!-- MARKET TAB -->
   <section id="tab-market" role="tabpanel" aria-labelledby="tab-btn-market" class="tab-panel active">
+    <div class="tab-timestamp" id="ts-market">⏱ Updated: --</div>
     <!-- Major Indices -->
     <div class="indices-banner" id="indicesBanner">
       <div class="index-tile"><div class="index-name">S&P 500</div><div class="index-price ld">--</div><div class="index-change">--</div></div>
@@ -356,6 +361,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-spx&symbol=AMEX%3ASPY&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
           </div>
           <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — S&amp;P 500 (SPY) at 775.33, +1.63% over 5 sessions. The index is above its 20-day moving average. Key level: hold above prior highs for continuation toward 7,900+. Risk: earnings dispersion and Fed-speak.</div>
+          <div class="ma-timestamp" id="ma-ts-spx">📊 Analysis last updated: --</div>
         </div>
         <div id="sub-tab-rty" class="sub-tab-panel">
           <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=AMEX%3AIWM" target="_blank" rel="noopener">Russell 2000 (IWM) — Open Full Chart ↗</a>
@@ -363,6 +369,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-rty&symbol=AMEX%3AIWM&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
           </div>
           <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — Russell 2000 (IWM) at $301.56, +3.52% over 5 sessions. Small-caps are building momentum above the 10-day MA. Target on continuation: $308. Stop: close below $294. Risk: SPX correlation drag if large-caps sell off.</div>
+          <div class="ma-timestamp" id="ma-ts-rty">📊 Analysis last updated: --</div>
         </div>
         <div id="sub-tab-acwx" class="sub-tab-panel">
           <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=NASDAQ%3AACWX" target="_blank" rel="noopener">iShares MSCI ACWI ex U.S. ETF (ACWX) — Open Full Chart ↗</a>
@@ -370,6 +377,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-acwx&symbol=NASDAQ%3AACWX&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
           </div>
           <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — ACWX at $77.41, +13.17% year to date (+$9.01). The iShares MSCI ACWI ex U.S. ETF has broken out to fresh highs on dollar softness and Fed-cut pricing. International equities are catching a tailwind as DXY weakens. Risk: DXY snap-back or geopolitical flare-ups. Stop: close below $74.31. Target: $81.00 on continuation.</div>
+          <div class="ma-timestamp" id="ma-ts-acwx">📊 Analysis last updated: --</div>
         </div>
         <div id="sub-tab-emxc" class="sub-tab-panel">
           <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=NYSEARCA%3AEMXC" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Open Full Chart ↗</a>
@@ -377,6 +385,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-emxc&symbol=NYSEARCA%3AEMXC&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
           </div>
           <div class="tv-desc"><strong>Bias: NEUTRAL — Score 4.5/10</strong> — EMXC at $94.72, +2.82% over 5 sessions. Chopping in a tight range with semi-weight dragging. No directional edge yet. Flip bullish above $96.61; flip bearish below $91.88. Catalysts: Samsung/Hynix guidance, India PMI.</div>
+          <div class="ma-timestamp" id="ma-ts-emxc">📊 Analysis last updated: --</div>
         </div>
       </div>
     </div>
@@ -391,6 +400,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 
   <!-- TECH TAB -->
   <section id="tab-tech" role="tabpanel" aria-labelledby="tab-btn-tech" class="tab-panel" hidden>
+    <div class="tab-timestamp" id="ts-tech">⏱ Updated: --</div>
     <div class="grid">
       <div class="col">
         <div class="card">
@@ -453,6 +463,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
 
   <!-- STICKY TAB: CNBC · Yahoo · Bloomberg · WSB -->
   <section id="tab-sticky" role="tabpanel" aria-labelledby="tab-btn-sticky" class="tab-panel" hidden>
+    <div class="tab-timestamp" id="ts-sticky">⏱ Updated: --</div>
     <div class="grid">
       <div class="col">
         <div class="card">
@@ -490,6 +501,7 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
   <!-- GAMES VS CHUTES TAB -->
   <!-- CHUTES (Gaming) TAB -->
   <section id="tab-chutes" role="tabpanel" aria-labelledby="tab-btn-chutes" class="tab-panel" hidden>
+    <div class="tab-timestamp" id="ts-chutes">⏱ Updated: --</div>
     <div class="pong-wrap" id="chutesWrap">
       <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:6px" id="gameMenu">
         <button class="btn" id="gmPong" onclick="loadGame('pong')">Pong</button>
@@ -1010,6 +1022,8 @@ function renderAll(d){
     tickerItems=(d.ticker||{}).items||[];
     renderTicker(tickerItems);
   }catch(e){console.error('ticker',e);}
+
+  updateTimestamps(d);
 }
 
 /* ===== TICKER ===== */
@@ -1028,15 +1042,43 @@ function renderTicker(items){
 async function loadMarketPoll(){
   var el=$('market-poll');if(!el)return;
   try{
+    // Grab current weekly pick symbol from data.json so poll adapts dynamically
+    var weeklyPick=null;
+    try{
+      var dr=await fetch('data.json?v='+Date.now());
+      var dd=await dr.json();
+      weeklyPick=(dd.weekly_pick||{}).top_pick||{};
+    }catch(e){console.warn('weekly pick fetch',e);}
+
+    var pollTitle, pollBody;
+    if(weeklyPick.ticker){
+      pollTitle='🤖 AI Weekly Pick — '+weeklyPick.ticker;
+      pollBody='This week\'s AI pick is **'+weeklyPick.ticker+'** ('+(weeklyPick.name||'')+') with a score of **'+(weeklyPick.score||0)+'/100**.'+
+        '\n\nDo you think '+weeklyPick.ticker+' will beat the market this week? Cast your vote and leave your prediction.';
+    } else {
+      pollTitle='📊 Weekly Market Poll';
+      pollBody='Cast your vote on this week\'s market sentiment and share your thoughts on the AI pick.';
+    }
+
+    // Fall back to loading a GitHub discussion for the voting infrastructure
     var r=await fetch('https://api.github.com/repos/chris-kehl/ai-news-dashboard/discussions/4');
     var d=await r.json();
-    var html='<div style="margin-bottom:12px;font-weight:600;font-size:1.05rem">'+escapeHtml(d.title)+'</div>'+
-      '<div style="color:var(--tx2);font-size:.85rem;margin-bottom:16px">'+escapeHtml(d.body)+'</div>'+
+
+    var html='<div style="margin-bottom:12px;font-weight:600;font-size:1.05rem">'+escapeHtml(pollTitle)+'</div>'+
+      '<div style="color:var(--tx2);font-size:.85rem;margin-bottom:16px;white-space:pre-wrap">'+escapeHtml(pollBody)+'</div>'+
       '<div style="display:flex;gap:12px;flex-wrap:wrap">'+
       '<a href="'+d.html_url+'" target="_blank" rel="noopener" class="btn" style="background:var(--accent);color:#fff;padding:8px 18px;border-radius:6px;text-decoration:none;font-size:.85rem;font-weight:600">&#9745; Vote on GitHub</a>'+
       '<a href="'+d.html_url+'" target="_blank" rel="noopener" style="padding:8px 18px;border-radius:6px;text-decoration:none;font-size:.85rem;font-weight:600;border:1px solid var(--accent);color:var(--accent)">&#128172; View Discussion</a>'+
-      '</div>'+
-      '<div style="margin-top:14px;font-size:.75rem;color:var(--tx3)">&#128100; @'+escapeHtml(d.user.login)+' &middot; '+fmtDate(d.created_at)+'</div>';
+      '</div>';
+    // If we have a weekly pick, append its details
+    if(weeklyPick.ticker){
+      html+='<div style="margin-top:14px;padding:10px 12px;background:var(--bg-el);border:1px solid var(--brd);border-radius:8px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">'+
+        '<div style="font-size:1.3rem;font-weight:800;font-family:JetBrains Mono">'+weeklyPick.ticker+'</div>'+
+        '<div style="font-size:.75rem;color:var(--tx3)">'+(weeklyPick.name||'')+' · Score '+(weeklyPick.score||0)+' · 7D '+
+        '<span style="color:'+((weeklyPick.change_7d||0)>=0?'var(--good)':'var(--danger)')+'">'+((weeklyPick.change_7d||0)>=0?'+':'')+(weeklyPick.change_7d||0).toFixed(1)+'%</span></div>'+
+        '</div>';
+    }
+    html+='<div style="margin-top:14px;font-size:.75rem;color:var(--tx3)">&#128100; @'+escapeHtml(d.user.login)+' &middot; '+fmtDate(d.created_at)+'</div>';
     el.innerHTML=html;
   }catch(e){console.error('poll',e);el.innerHTML='<div class="ld">Poll unavailable</div>';}
 }
@@ -1051,6 +1093,38 @@ document.addEventListener('DOMContentLoaded',function(){
   var refresh=parseInt(localStorage.getItem('refresh')||'15',10);
   setInterval(loadData,refresh*60*1000);
 });
+
+/* ===== TIMESTAMPS ===== */
+function setTabTimestamp(elId, isoStr){
+  var el=$(elId); if(!el||!isoStr)return;
+  var d=new Date(isoStr);
+  var now=new Date();
+  var diffMin=Math.floor((now-d)/60000);
+  var timeStr;
+  if(diffMin<1) timeStr='just now';
+  else if(diffMin<60) timeStr=diffMin+' min ago';
+  else if(diffMin<1440) timeStr=Math.floor(diffMin/60)+' hr ago';
+  else timeStr=Math.floor(diffMin/1440)+' days ago';
+  var localeStr=d.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  el.textContent='⏱ Updated: '+localeStr+' ('+timeStr+')';
+}
+function updateTimestamps(d){
+  d=d||{};
+  var ts=d.timestamp||d.last_updated||d.generated_at;
+  if(!ts) ts=new Date().toISOString();
+  setTabTimestamp('ts-market',ts);
+  setTabTimestamp('ts-tech',ts);
+  setTabTimestamp('ts-sticky',ts);
+  setTabTimestamp('ts-chutes',ts);
+  // Market Analysis sub-tab timestamps: use market_analysis_updated if present, else data timestamp
+  var maTs=d.market_analysis_updated||ts;
+  var maElSpx=$('ma-ts-spx'), maElRty=$('ma-ts-rty'), maElAcwx=$('ma-ts-acwx'), maElEmxc=$('ma-ts-emxc');
+  var maLabel='📊 Analysis last updated: '+new Date(maTs).toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});
+  if(maElSpx) maElSpx.textContent=maLabel;
+  if(maElRty) maElRty.textContent=maLabel;
+  if(maElAcwx) maElAcwx.textContent=maLabel;
+  if(maElEmxc) maElEmxc.textContent=maLabel;
+}
 
 /* ===== PONG GAME ===== */
 var pong={running:false,level:1,scorePlayer:0,scoreComp:0,winner:null,canvas:null,ctx:null,W:720,H:450,ball:{x:360,y:225,dx:4,dy:3,r:6},paddleH:60,paddleW:10,playerY:195,compY:195,animId:null,speedInc:0.25,baseSpeed:3.5,compReaction:0.08};

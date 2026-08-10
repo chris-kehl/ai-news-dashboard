@@ -252,7 +252,81 @@ def main():
     
     print(f"\nScores saved to {SCORES_PATH}")
     
+    # Also inject into data.json for dashboard rendering
+    inject_into_data_json(output)
+    
     return scored[:5]
+
+
+def inject_into_data_json(scores_output):
+    """Merge weekly pick into data.json so the dashboard picks it up."""
+    DATA_JSON_PATH = Path.home() / "ai-news-dashboard" / "data.json"
+    try:
+        with open(DATA_JSON_PATH, "r") as f:
+            data = json.load(f)
+    except Exception:
+        data = {}
+    
+    top = scores_output["top_picks"][0]
+    factors = top["factors"]
+    
+    weekly_pick = {
+        "week_label": datetime.now().strftime("Week of %b %d, %Y"),
+        "generated_at": scores_output["generated_at"],
+        "top_pick": {
+            "ticker": top["ticker"],
+            "name": top["name"],
+            "price": factors["price"],
+            "score": top["score"],
+            "category": top.get("category", ""),
+            "change_7d": factors["chg_5d"],
+            "change_30d": factors["chg_20d"],
+            "rsi": factors["rsi"],
+            "factors": [f"Momentum:{factors['momentum']}", f"Trend:{factors['trend']}", f"RSI:{factors['rsi_score']}", f"Vol:{factors['vol_score']}/{factors['vol_adj']}"],
+        },
+        "rationale": build_rationale(top, factors),
+        "top_five": [],
+    }
+    
+    for i in range(min(5, len(scores_output["top_picks"]))):
+        p = scores_output["top_picks"][i]
+        f = p["factors"]
+        weekly_pick["top_five"].append({
+            "ticker": p["ticker"],
+            "name": p["name"][:40],
+            "price": f["price"],
+            "score": p["score"],
+            "category": p.get("category", ""),
+            "change_7d": f["chg_5d"],
+            "change_30d": f["chg_20d"],
+            "rsi": f["rsi"],
+            "factors": [f"Momentum:{f['momentum']}", f"Trend:{f['trend']}", f"RSI:{f['rsi_score']}", f"Vol:{f['vol_score']}"],
+        })
+    
+    data["weekly_pick"] = weekly_pick
+    with open(DATA_JSON_PATH, "w") as f:
+        json.dump(data, f, indent=2)
+    print(f"Injected weekly_pick into {DATA_JSON_PATH}")
+
+
+def build_rationale(top, factors):
+    return f"""AI Technical Analysis for {top['name']} ({top['ticker']})
+
+Score: {top['score']}/100 (Composite across 5 factors)
+
+MOMENTUM ({factors['momentum']}/30): 5-day return of {factors['chg_5d']}%, 20-day return of {factors['chg_20d']}%. {'Strong' if factors['chg_5d'] > 2 else 'Moderate' if factors['chg_5d'] > 0 else 'Weak'} directional momentum.
+
+TREND ({factors['trend']}/25): Price ${factors['price']} vs SMA50. {'Above' if factors['trend'] >= 15 else 'Below'} key moving averages. {'Bullish alignment' if factors['trend'] >= 20 else 'Mixed alignment'} across 10/20/50-day MAs.
+
+RSI ({factors['rsi_score']}/15): RSI at {factors['rsi']}. {'Neutral zone — room to run' if 40 < factors['rsi'] < 60 else 'Overbought' if factors['rsi'] >= 75 else 'Oversold bounce potential' if factors['rsi'] <= 30 else 'Momentum room'}.
+
+VOLUME ({factors['vol_score']}/15): {'Above-average' if factors['vol_score'] >= 10 else 'Below-average' if factors['vol_score'] <= 4 else 'Average'} volume confirmation.
+
+VOLATILITY ({factors['vol_adj']}/15): {factors.get('volatility', 'N/A')}% daily vol. {'Low and stable — controlled risk' if factors.get('volatility', 0) < 2 else 'Moderate' if factors.get('volatility', 0) < 3.5 else 'Elevated — use tight stops'}.
+
+OUTLOOK: {'BULLISH setup with strong momentum and trend alignment. Look for continuation toward new highs.' if top['score'] >= 70 else 'Moderately bullish — momentum building but watch for resistance.' if top['score'] >= 60 else 'NEUTRAL — mixed signals, avoid directional bets.'} Risk: broader market correlation, earnings surprises, macro shocks.
+
+Disclaimer: Auto-generated from Yahoo Finance data. Not financial advice."""
 
 
 if __name__ == "__main__":

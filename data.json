@@ -1,42 +1,415 @@
 {
-  "timestamp": "2026-08-11T18:07:53.720099",
-  "summary": "No summary available. Scraper needs configuration.",
-  "signals": [],
-  "reddit": [],
-  "world_reddit": [],
-  "world_x": [],
+  "timestamp": "2026-08-11T18:08:25.923542",
+  "summary": "Key topics today:\n- - Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp (r/HackerNews, 201 pts)\n- - Nvidia Nemotron 3.5 Lightning and NeMo Switchyard (r/HackerNews, 101 pts)\n- - Stealing Reasoning Traces from Proprietary LLM APIs (r/HackerNews, 101 pts)\n- - OpenAI\u2019s head of ethics leaves less than a year after joining (r/HackerNews, 101 pts)\n- - Suzanne: AI tool for designing and manufacturing physical products (r/HackerNews, 101 pts)",
+  "signals": [
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+      "created": ""
+    },
+    {
+      "title": "Nvidia Nemotron 3.5 Lightning and NeMo Switchyard",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/",
+      "created": ""
+    },
+    {
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://stolen-thoughts.com/",
+      "created": ""
+    },
+    {
+      "title": "OpenAI\u2019s head of ethics leaves less than a year after joining",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+      "created": ""
+    },
+    {
+      "title": "Suzanne: AI tool for designing and manufacturing physical products",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.suzanne3d.com/",
+      "created": ""
+    },
+    {
+      "title": "Nvidia's Risky Business",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://stratechery.com/2026/nvidias-risky-business/",
+      "created": ""
+    },
+    {
+      "title": "Emergent Introspective Awareness in Large Language Models",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://arxiv.org/abs/2601.01828",
+      "created": ""
+    },
+    {
+      "title": "H3-metal \u2013 Native MiniMax-H3 inference for Apple Silicon",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://github.com/antirez/h3.c",
+      "created": ""
+    },
+    {
+      "title": "Compression is prediction",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://ngrok.com/blog/compression-is-prediction",
+      "created": ""
+    },
+    {
+      "title": "Mojo 1.0",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "created": ""
+    }
+  ],
+  "world_reddit": [
+    {
+      "title": "Ukraine destroys air defenses protecting Putin's palace near Gelendzhik, Russian media report",
+      "url": "https://newsukraine.rbc.ua/news/ukraine-destroys-air-defenses-protecting-1786377788.html",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "US intelligence \u2018believes Russia was behind Leipzig airport drone bomb\u2019",
+      "url": "https://www.theguardian.com/world/2026/aug/10/us-intelligence-russia-leipzig-airport-drone-bomb?CMP=share_btn_url",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "Syria sentences Assad to death",
+      "url": "https://www.telegraph.co.uk/world-news/2026/08/11/syria-sentences-assad-to-death/?WT.mc_id=tmgoff_reddit_news/2026/08/11/syria-sentences-assad-to-death/&amp;accesscontrol=facebookchannel_open",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "US fired on Panama-flagged ship that tried to break blockade of Iranian ports, WSJ reports citing US official",
+      "url": "https://www.reuters.com/world/americas/us-fired-panama-flagged-ship-that-tried-break-blockade-iranian-ports-wsj-reports-2026-08-11/",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "\u2018Don\u2019t Go Outside or Look Through Windows\u2019: Russian City Locked Down for Putin Visit",
+      "url": "https://www.kyivpost.com/post/82124",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    }
+  ],
+  "world_x": [
+    {
+      "author": "@BBCWorld",
+      "text": "Anguish of Colombian brother at rubble of building being searched for earthquake survivors https://bbc.in/4wWElMD",
+      "url": "https://nitter.net/BBCWorld/status/2087292521873391959#m",
+      "date": "Tue, 11 Aug 2026 21:38:11 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "Inside the Secret Service 'shell game' to hide US presidents in plain sight https://bbc.in/4wjmvSz",
+      "url": "https://nitter.net/BBCWorld/status/2087278338045825141#m",
+      "date": "Tue, 11 Aug 2026 20:41:50 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "US says helicopter fired missiles to disable ship breaking Iran blockade https://bbc.in/4g520Dk",
+      "url": "https://nitter.net/BBCWorld/status/2087269888515555330#m",
+      "date": "Tue, 11 Aug 2026 20:08:15 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Hims & Hers shares slide as costly weight-loss push squeezes margins http://reut.rs/3RXubvT http://reut.rs/3RXubvT",
+      "url": "https://nitter.net/Reuters/status/2087295539368927300#m",
+      "date": "Tue, 11 Aug 2026 21:50:11 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "US auto loans hit record high in second quarter, New York Fed says http://reut.rs/45n9OeB http://reut.rs/45n9OeB",
+      "url": "https://nitter.net/Reuters/status/2087294294759473228#m",
+      "date": "Tue, 11 Aug 2026 21:45:14 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-08-11T21:48:28.573105",
+    "timestamp": "2026-08-11T22:07:24.737070",
     "prices": [],
     "news": []
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-08-11T20:58:36.190215",
+    "timestamp": "2026-08-11T21:15:34.227920",
     "trending": [],
     "meme_momentum": [],
     "dow30": [],
     "nd100": []
   },
   "ticker": {
-    "timestamp": "2026-08-11T21:38:33.286988",
+    "timestamp": "2026-08-11T21:55:31.294179",
     "items": []
   },
   "business": [],
   "tech_business": [],
   "defense": [],
-  "github": [],
+  "github": [
+    {
+      "name": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
+      "stars": 239463,
+      "language": "JavaScript",
+      "url": "https://github.com/affaan-m/ECC",
+      "updated": "2026-08-11T22:06:43Z"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars": 228989,
+      "language": "Python",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "updated": "2026-08-11T22:05:50Z"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
+      "stars": 186527,
+      "language": "Python",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "updated": "2026-08-11T21:56:42Z"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "description": "The context API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+      "stars": 165835,
+      "language": "TypeScript",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "updated": "2026-08-11T22:05:20Z"
+    },
+    {
+      "name": "huggingface/transformers",
+      "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
+      "stars": 163765,
+      "language": "Python",
+      "url": "https://github.com/huggingface/transformers",
+      "updated": "2026-08-11T22:07:21Z"
+    },
+    {
+      "name": "open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "stars": 148505,
+      "language": "Python",
+      "url": "https://github.com/open-webui/open-webui",
+      "updated": "2026-08-11T22:06:12Z"
+    },
+    {
+      "name": "langchain-ai/langchain",
+      "description": "The agent engineering platform.",
+      "stars": 143996,
+      "language": "Python",
+      "url": "https://github.com/langchain-ai/langchain",
+      "updated": "2026-08-11T21:57:09Z"
+    },
+    {
+      "name": "browser-use/browser-use",
+      "description": "\ud83c\udf10 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "stars": 108816,
+      "language": "Python",
+      "url": "https://github.com/browser-use/browser-use",
+      "updated": "2026-08-11T22:01:00Z"
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
+      "stars": 105304,
+      "language": "Python",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "updated": "2026-08-11T22:04:23Z"
+    },
+    {
+      "name": "shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
+      "stars": 73870,
+      "language": "Python",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "updated": "2026-08-11T19:05:56Z"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
+      "stars": 70698,
+      "language": "Python",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "updated": "2026-08-11T22:05:29Z"
+    },
+    {
+      "name": "santifer/career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, ",
+      "stars": 63525,
+      "language": "JavaScript",
+      "url": "https://github.com/santifer/career-ops",
+      "updated": "2026-08-11T21:47:22Z"
+    }
+  ],
   "nasdaq_data": {
-    "price": 25744.34,
-    "change": -1.44,
-    "changePercent": -1.44,
-    "signal": "NEUTRAL",
-    "analysis": "NASDAQ-100 data unavailable.",
-    "timestamp": "2026-08-11T18:02:32.932162"
+    "price": 29525.48,
+    "change": -0.33,
+    "changePercent": -0.33,
+    "signal": "BEARISH",
+    "analysis": "NASDAQ-100 (NDX) Tue 11 Aug: 29,525.48, down -0.33% -- BEARISH. modest -0.33% down. Counter: price above SMA20, RSI 55.0 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
+    "timestamp": "2026-08-11T18:08:17.823376"
   },
   "sticky": {
-    "cnbc": [],
-    "yahoo_finance": [],
+    "cnbc": [
+      {
+        "title": "CoreWeave stock pops 13% as revenue doubles on accelerating AI infrastructure demand",
+        "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
+        "source": "CNBC",
+        "published": "2026-08-11T22:02:10",
+        "description": "CoreWeave's revenue is surging as the AI boom continues, but the company is also sitting on $35 billion in debt."
+      },
+      {
+        "title": "Trump says NYC pied-\u00e0-terre tax 'must be stopped,' eyes federal block",
+        "url": "https://www.cnbc.com/2026/08/11/trump-nyc-pied-a-terre-tax-mamdani-lawsuit.html",
+        "source": "CNBC",
+        "published": "2026-08-11T18:10:10",
+        "description": "Trump in a Truth Social post called Mamdani's pied-\u00e0-terre tax a \"dangerous political 'experiment' in New York will destroy\" the city and state."
+      },
+      {
+        "title": "Why Jensen Huang\u2019s $500 billion AI financing plan faces a big risk from China",
+        "url": "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html",
+        "source": "CNBC",
+        "published": "2026-08-11T21:01:13",
+        "description": "Nvidia CEO Jensen Huang is pitching GPUs as long-term collateral to unlock $500 billion in funding. The question is how fast will his chips depreciate?"
+      },
+      {
+        "title": "GM reaches up to $4.5 billion parts deal designed to avoid supply chain troubles",
+        "url": "https://www.cnbc.com/2026/08/11/gm-makes-4point5-billion-parts-deal-to-bolster-supply-chain.html",
+        "source": "CNBC",
+        "published": "2026-08-11T21:15:01",
+        "description": "The deal follows years of global automotive supply chain issues for GM and other companies."
+      },
+      {
+        "title": "An inflation report Wednesday should be a big deal for the Fed. Here's what to expect",
+        "url": "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html",
+        "source": "CNBC",
+        "published": "2026-08-11T18:34:41",
+        "description": "The consumer price index is expected to show only a modest increase for July."
+      },
+      {
+        "title": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
+        "url": "https://www.cnbc.com/2026/08/11/ai-computing-power-becomes-a-tradable-asset-class-as-cme-starts-futures.html",
+        "source": "CNBC",
+        "published": "2026-08-11T18:09:08",
+        "description": "The exchange is partnering with Silicon Data to introduce two compute futures contracts on Oct. 5, pending regulatory review."
+      },
+      {
+        "title": "Trump administration ends Medicaid, CHIP funding for gender-affirming care for children",
+        "url": "https://www.cnbc.com/2026/08/11/trump-medicaid-chip-funding-gender-affirming-care-children.html",
+        "source": "CNBC",
+        "published": "2026-08-11T21:36:03",
+        "description": "Federal dollars in the two health insurance programs would not go toward gender-affirming care, but states could still cover the treatments."
+      },
+      {
+        "title": "Trump wants to split the MMR vaccine. Experts say that's unlikely \u2014 and comes with consequences",
+        "url": "https://www.cnbc.com/2026/08/11/mmr-vaccine-trump-wants-to-split-childhood-shot-up.html",
+        "source": "CNBC",
+        "published": "2026-08-11T16:50:04",
+        "description": "Doctors and other experts say that splitting the measles, mumps and rubella shot has no scientific basis and is unlikely to get off the ground."
+      }
+    ],
+    "yahoo_finance": [
+      {
+        "title": "Billionaire sues ex-employee over alleged theft",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/billionaire-sues-ex-employee-over-005000617.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-11T00:50:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "What Makes Cerebras Systems (CBRS) a Bullish Bet?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/makes-cerebras-systems-cbrs-bullish-133954698.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T13:39:54+00:00",
+        "description": ""
+      },
+      {
+        "title": "Ryanair\u2019s Profits Slumped, but Is the Market Overlooking Its Biggest Advantage?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/ryanair-profits-slumped-market-overlooking-134026952.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T13:40:26+00:00",
+        "description": ""
+      },
+      {
+        "title": "Chip equipment stocks rise after Taiwan Semiconductor revenue surges 45%",
+        "url": "https://finance.yahoo.com/markets/stocks/article/chip-equipment-stocks-rise-after-taiwan-semiconductor-revenue-surges-45-133813616.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T13:38:13+00:00",
+        "description": ""
+      },
+      {
+        "title": "Are Wall Street Analysts Bullish on Corteva Stock?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-bullish-corteva-133419231.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T13:34:19+00:00",
+        "description": ""
+      },
+      {
+        "title": "Daily Spotlight: Sovereign Debt Yields",
+        "url": "https://finance.yahoo.com/research/reports/ARGUS_47879_MarketOutlook_1786447655000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+        "source": "Yahoo Finance",
+        "published": "2026-08-11T11:27:35+00:00",
+        "description": ""
+      },
+      {
+        "title": "Another grocery chain quietly shuts down more stores",
+        "url": "https://finance.yahoo.com/real-estate/articles/another-grocery-chain-quietly-shuts-140700813.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-11T14:07:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "American Airlines vs. easyJet: Which Airline is Better Positioned to Handle Higher Fuel Costs?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/american-airlines-vs-easyjet-airline-134126985.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T13:41:26+00:00",
+        "description": ""
+      }
+    ],
     "bloomberg": [],
     "wallstreetbets": [
       {

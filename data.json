@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-08-11T06:16:46.380154",
+  "timestamp": "2026-08-11T06:31:50.565675",
   "summary": "Key topics today:\n- - Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots (r/HackerNews, 201 pts)\n- - Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models (r/HackerNews, 201 pts)\n- - Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows (r/HackerNews, 201 pts)\n- - H3-metal \u2013 Native MiniMax-H3 inference for Apple Silicon (r/HackerNews, 101 pts)\n- - As AI eats the web, the internet\u2019s collective memory is disappearing (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "XRP",
-      "price": 1.004,
+      "price": 1.003,
       "change": -2.6,
       "category": "crypto",
       "text": "XRP -2.6% @ $1.00"
@@ -13,10 +13,18 @@
     {
       "type": "watch",
       "asset": "ETH",
-      "price": 1884.2,
+      "price": 1884.25,
       "change": -2.2,
       "category": "crypto",
-      "text": "ETH -2.2% @ $1,884.20"
+      "text": "ETH -2.2% @ $1,884.25"
+    },
+    {
+      "type": "buy",
+      "asset": "SCKT",
+      "price": 2.13,
+      "change": 446.15,
+      "category": "stock",
+      "text": "SCKT +446.1% momentum @ $2.13"
     },
     {
       "type": "sell",
@@ -33,14 +41,6 @@
       "change": 22.35,
       "category": "stock",
       "text": "FSLY +22.4% momentum @ $27.75"
-    },
-    {
-      "type": "buy",
-      "asset": "ACHR",
-      "price": 6.26,
-      "change": 19.69,
-      "category": "stock",
-      "text": "ACHR +19.7% momentum @ $6.26"
     },
     {
       "type": "watch",
@@ -194,84 +194,84 @@
     },
     {
       "author": "@Reuters",
-      "text": "Financials lead Indian shares lower as higher crude prices spur caution http://reut.rs/4cyhJJT http://reut.rs/4cyhJJT",
-      "url": "https://nitter.net/Reuters/status/2087119387622813937#m",
-      "date": "Tue, 11 Aug 2026 10:10:13 GMT",
+      "text": "Yen on defensive as intervention impact fades; Aussie steady after RBA http://reut.rs/4fREv1J http://reut.rs/4fREv1J",
+      "url": "https://nitter.net/Reuters/status/2087123150018424902#m",
+      "date": "Tue, 11 Aug 2026 10:25:10 GMT",
       "likes": 0
     },
     {
       "author": "@Reuters",
-      "text": "Malaysia's June industrial production up 6.5%, below forecast http://reut.rs/4wljLnU http://reut.rs/4wljLnU",
-      "url": "https://nitter.net/Reuters/status/2087118120771084430#m",
-      "date": "Tue, 11 Aug 2026 10:05:11 GMT",
+      "text": "Gold eases from over two-month high as rising oil prices cloud rate outlook http://reut.rs/3TTQzqw http://reut.rs/3TTQzqw",
+      "url": "https://nitter.net/Reuters/status/2087120635914805507#m",
+      "date": "Tue, 11 Aug 2026 10:15:11 GMT",
       "likes": 0
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-11T10:16:22.909950",
+    "timestamp": "2026-08-11T10:31:23.808579",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 199.85,
+        "price": 200.43,
         "change_24h": -1.3,
-        "market_cap": 1918082194
+        "market_cap": 1923368802
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 64195,
+        "price": 64212,
         "change_24h": -1.4,
-        "market_cap": 1288391320145
+        "market_cap": 1288648705176
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1884.2,
+        "price": 1884.25,
         "change_24h": -2.2,
-        "market_cap": 227404972620
+        "market_cap": 227377441433
       },
       {
         "name": "Tether",
         "symbol": "USDT",
         "price": 0.999194,
         "change_24h": 0,
-        "market_cap": 183098033019
+        "market_cap": 183097663265
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 606.34,
+        "price": 606.8,
         "change_24h": 0.4,
-        "market_cap": 80739455009
+        "market_cap": 80808878639
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999665,
+        "price": 0.999638,
         "change_24h": 0,
-        "market_cap": 72116057556
+        "market_cap": 72113832548
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.004,
+        "price": 1.003,
         "change_24h": -2.6,
-        "market_cap": 62792945880
+        "market_cap": 62704658916
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 75.8,
+        "price": 75.87,
         "change_24h": -1.5,
-        "market_cap": 44164544474
+        "market_cap": 44196535532
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.335369,
+        "price": 0.337093,
         "change_24h": 1.3,
-        "market_cap": 31824031608
+        "market_cap": 31991766538
       },
       {
         "name": "Figure Heloc",
@@ -283,12 +283,18 @@
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 55.19,
+        "price": 55.17,
         "change_24h": 0.9,
-        "market_cap": 12277565343
+        "market_cap": 12273572714
       }
     ],
     "news": [
+      {
+        "title": "Coldcard hack losses: How investigators trace stolen Bitcoin",
+        "url": "https://cointelegraph.com/news/coldcard-losses-how-investigators-trace-stolen-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/coldcard-screen-edit.png\" alt=\"Coldcard hack losses: How investigators trace stolen Bitcoin\" class=\"type:primaryImage\"></p><p>The C"
+      },
       {
         "title": "Keel shuts US Bitcoin mining operations as Q2 revenue falls 50%",
         "url": "https://cointelegraph.com/news/keel-shuts-bitcoin-mining-ai-pivot-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -332,10 +338,10 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/white-house-crypto-clarity.jpg\" alt=\"White House vows to get CLARITY across \u2018finish line\u2019 in September\" class=\"type:primaryImage\"><"
       },
       {
-        "title": "Trump Media to revamp crypto treasury strategy after $238M Q2 loss",
-        "url": "https://cointelegraph.com/news/trump-media-crypto-treasury-strategy-after-238m-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "Luke Dashjr removed as Bitcoin BIP editor after controversial BIP-110 fork stalls",
+        "url": "https://www.coindesk.com/tech/2026/08/11/luke-dashjr-removed-as-bitcoin-bip-editor-after-controversial-bip-110-fork-stalls",
         "published": "Tue, 11 Aug 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/trump-bitcoin.jpg\" alt=\"Trump Media to revamp crypto treasury strategy after $238M Q2 loss\" class=\"type:primaryImage\"></p><p>Trump"
+        "description": "Dashjr said he is taking a sabbatical from his role as chair and chief technology officer of mining pool Ocean."
       },
       {
         "title": "Nvidia\u2019s $500 billion AI infrastructure push leaves crypto compute further behind",
@@ -344,22 +350,16 @@
         "description": "Nvidia has signed memorandums of understanding with six major Wall Street firms to establish \"AI compute\" as a bankable infrastructure asset."
       },
       {
+        "title": "UK lawmakers question lenders over lack of banking for the country\u2019s crypto firms",
+        "url": "https://www.coindesk.com/policy/2026/08/11/uk-lawmakers-question-lenders-over-lack-of-banking-for-the-country-s-crypto-firms",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "The U.K.\u2019s Crypto and Digital Assets All-Party Parliamentary Group asked banks to explain their approach to providing banking services to crypto and digital asset businesses."
+      },
+      {
         "title": "Riot Platforms surges 20% in pre-market trading on $9.1 billion Anthropic deal",
         "url": "https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal",
         "published": "Tue, 11 Aug 2026 ",
         "description": "The bitcoin miner\u2019s 20-year agreement highlights an industry-wide shift toward AI infrastructure revenue."
-      },
-      {
-        "title": "A $2 trillion asset class is getting a new blockchain rail",
-        "url": "https://www.coindesk.com/markets/2026/08/11/emb-7-00-utc-a-usd2-trillion-asset-class-is-getting-a-new-blockchain-rail",
-        "published": "Tue, 11 Aug 2026 ",
-        "description": "ADI Chain and Shipfinex are partnering to tokenize commercial ships, aiming to open the $680B ship-finance market to wider capital pool."
-      },
-      {
-        "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
-        "url": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
-        "published": "Tue, 11 Aug 2026 ",
-        "description": "The project said it will pay 10% of recovered funds, up to 3 BTC, after attackers stole LND credentials and drained merchant Lightning wallets last week."
       }
     ]
   },
@@ -510,8 +510,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-08-11T10:15:40.940871",
+    "timestamp": "2026-08-11T10:30:41.517527",
     "trending": [
+      {
+        "symbol": "SCKT",
+        "price": 2.13,
+        "change": 1.74,
+        "change_percent": 446.15,
+        "name": "Socket Mobile, Inc."
+      },
       {
         "symbol": "SION",
         "price": 4.5,
@@ -548,6 +555,13 @@
         "name": "Hims & Hers Health, Inc."
       },
       {
+        "symbol": "BW",
+        "price": 8.88,
+        "change": -0.5,
+        "change_percent": -5.33,
+        "name": "Babcock & Wilcox Enterprises, I"
+      },
+      {
         "symbol": "DJT",
         "price": 9.39,
         "change": -0.5,
@@ -562,39 +576,25 @@
         "name": "Fermi Inc."
       },
       {
-        "symbol": "O39.SI",
-        "price": 31.36,
-        "change": 1.06,
-        "change_percent": 3.5,
-        "name": "OCBC Bank"
+        "symbol": "ONON",
+        "price": 38.78,
+        "change": 1.44,
+        "change_percent": 3.86,
+        "name": "On Holding AG"
       },
       {
-        "symbol": "CL=F",
-        "price": 84.23,
-        "change": 2.1,
-        "change_percent": 2.56,
-        "name": "Crude Oil Sep 26"
-      },
-      {
-        "symbol": "D05.SI",
-        "price": 76.99,
-        "change": 0.66,
-        "change_percent": 0.86,
-        "name": "DBS"
+        "symbol": "SE",
+        "price": 114.8,
+        "change": 3.8,
+        "change_percent": 3.42,
+        "name": "Sea Limited"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.0,
         "change": -0.01,
-        "change_percent": -0.83,
+        "change_percent": -0.79,
         "name": "XRP USD"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 1883.31,
-        "change": 12.03,
-        "change_percent": 0.64,
-        "name": "Ethereum USD"
       },
       {
         "symbol": ".RUT",
@@ -1046,7 +1046,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-11T10:15:59.828948",
+    "timestamp": "2026-08-11T10:31:00.439097",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,8 +1068,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.53,
-        "change": 0.45,
+        "price": 15.51,
+        "change": 0.32,
         "type": "index"
       },
       {
@@ -1080,97 +1080,97 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7776.75,
-        "change": 0.0,
+        "price": 7778.5,
+        "change": 0.02,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29762.25,
-        "change": 0.08,
+        "price": 29776.25,
+        "change": 0.13,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 53999.0,
-        "change": -0.12,
+        "price": 53993.0,
+        "change": -0.13,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 3022.9,
-        "change": -0.07,
+        "price": 3023.5,
+        "change": -0.05,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 84.19,
-        "change": 2.51,
+        "price": 84.08,
+        "change": 2.37,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4431.3,
-        "change": 1.59,
+        "price": 4431.6,
+        "change": 1.6,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 65.05,
-        "change": -0.09,
+        "price": 65.11,
+        "change": 0.01,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1777.4,
-        "change": 1.89,
+        "price": 1774.2,
+        "change": 1.7,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1386.0,
-        "change": 0.64,
+        "price": 1383.5,
+        "change": 0.46,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.77,
-        "change": -0.86,
+        "price": 2.76,
+        "change": -1.22,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 199.93,
+        "price": 200.32,
         "change": -1.3,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64195,
+        "price": 64212,
         "change": -1.4,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1884.2,
+        "price": 1884.25,
         "change": -2.2,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.8,
+        "price": 75.87,
         "change": -1.5,
         "type": "crypto"
       },
       {
         "symbol": "DOGE",
-        "price": 0.070444,
+        "price": 0.070337,
         "change": 0.7,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.64,
+        "price": 8.65,
         "change": 5.6,
         "type": "crypto"
       },
@@ -1181,9 +1181,9 @@
         "type": "crypto"
       },
       {
-        "symbol": "SION",
-        "price": 4.5,
-        "change": -90.93,
+        "symbol": "SCKT",
+        "price": 2.13,
+        "change": 446.15,
         "type": "mover"
       },
       {
@@ -1235,9 +1235,9 @@
         "type": "mover"
       },
       {
-        "symbol": "CL=F",
-        "price": 84.1,
-        "change": 2.4,
+        "symbol": "ONON",
+        "price": 38.78,
+        "change": 3.86,
         "type": "mover"
       }
     ]
@@ -1274,6 +1274,16 @@
       "author": ""
     },
     {
+      "title": "Nvidia gets $500bn from Wall Street giants to develop AI projects",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pdllDOThpUGV1eUpPVjlrcXlZNm5Kd3pCMTFiQ2hxSGl2WXphVmhaa3BqYVBXbWkwMnFtYjdoSnY1QXo4Tl9uSG80ZGRNNXJIc0JvN0FDMEJQUQ?oc=5",
+      "source": "BBC",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Oil Holds Gains, Asian Stocks Set for Muted Open: Markets Wrap",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlJpVmZYZDhTZ08wa2dLanBWS3dhT2tnaFlMRDJrTVkzNTB3cXJrcDVhVzg0Y0o1TmxLQXp1MXZvd3R5YzhuWXZEMTNyMTk0Y3lXaDVVVmdhZnBJMVlfZFpJd2ctUjZuSm14UlVNd1hTdnhRR2d0OGZSaC1wWWZtSVlPcC1OMng1OGJJSnVIUHBtRnZv?oc=5",
       "source": "Bloomberg.com",
@@ -1294,31 +1304,21 @@
       "author": ""
     },
     {
-      "title": "Nvidia gets $500bn from Wall Street giants to develop AI projects",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pdllDOThpUGV1eUpPVjlrcXlZNm5Kd3pCMTFiQ2hxSGl2WXphVmhaa3BqYVBXbWkwMnFtYjdoSnY1QXo4Tl9uSG80ZGRNNXJIc0JvN0FDMEJQUQ?oc=5",
-      "source": "BBC",
-      "category": "business",
-      "published": "Mon, 10 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Shake Shack says tech glitch explains viral no-tip video",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLUNYcjd3bTRiLV9UVUFmcEF5NFNXQUFIUVZTOEtadDhaY3o4MGkyOUNJQXNQRTYxcFNlYlBKV1NDNUVzX1FPLTRaSlpBQVVhZDUwaV9hTjhCY05oUkVBUnBhYlFkaVh6ZTFYU0hRZmZTcjFFSkt3M1RvdFNnWlNKdlhNSnlSUjBGYTdEZWlmb9IBlAFBVV95cUxOYUQ1SmgwekhNZXQ5LWRPb3RidXZOSXBRUURHN0NDQ19qTm5BaUdGVUk0RHhaT2xGMGI1VVpYVVRXc1JWcDZVNThvQlQ2VE16d3VnSHo3MjFQYjc0SzBUaUk5SFRPVDNtelFndUdueTVQeTNDdC1uS1VxR01kdXN6SDhOTlRFZlZsX3gzV28yQUpOVUMw?oc=5",
-      "source": "NewsNation",
-      "category": "business",
-      "published": "Mon, 10 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Salmonella outbreak casts spotlight on Taylor Farms as food safety crisis deepens",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYWxzbTNMRWZZRmV4dXFXTW5wQjdhQjh4c1NVcFhVMHA4LXNnT3FEM0hvWWQyQmQ4OFBrNHVWSjRtdzdLdE1nWlo1bnFqQWxzY1lZTWJhX2E5VXhhT1Q3TEYwc0lQamlFWmgtX1NHTXA2Ykp1bUdJMEg4OGlRMkxqbm5jQQ?oc=5",
       "source": "Axios",
       "category": "business",
       "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Viral video ignites Shake Shack pricing debate",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPelBtTXhpVUt5S1Q1d1RNNzUwaTNFbk5IeG1lT1pwLVlndlJRSkVROGVGTU0xZHFqT3JmTzJJRHNZSkhKM25sZkU0cmoyajA4MHBRTGUxSzlwZm9veDlBWkxuWU9tYU4zVUZKRkJ5X1lKNFVhVHZ2RnBxZjk5ME56STZkMHB4NHJzMWE3eWg1RkhjMXQzdEY5RlBFbWY2RUJTNWVTd1NBNFpKYnpJbHN5bDlWa2FGdw?oc=5",
+      "source": "USA Today",
+      "category": "business",
+      "published": "Tue, 11 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1366,9 +1366,9 @@
       "author": ""
     },
     {
-      "title": "Ars Live: Ross Scott discusses the Stop Killing Games movement",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY3MxWUJxSG1PRmdtS212aXFqeHhPdFg0VG9Qc3VwX0hXbGppQ0VNLVVKVmVZekg0TGxoQVh6cFRnWVBGQWRJTURPcmhQcXRqRGZGMmlrX0Zmc2ZuZjk2WjE0dmMtMEQ0Y1ZvZzNXWjBMaXFFVnpndUZmSlFnV2tfOTI5bjdrR240M2RMeGdCS3FMWVpoZ1lyaEVtdjRpckJ5MW8w?oc=5",
-      "source": "Ars Technica",
+      "title": "Apple Users Face Major iPhone 18 Shock",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX0NHa3VOc0l5dWFZWl9lS3FRMlZWTWJPRUFJLWhDUmVnTFFEQjVnMGJoM3FpYlpnVEJTWERxT0ZLTWk2U2VTdl82SXJHQ3BOZ3U2THVjTklBLTZPd1FFU2tLSDNKejhNYzdpcWk0c0x4Z0ZsZDZTV2w2NndWekk0Sy1zb01mUVNoR1dmNkltME9CRENUQW1RMzNn?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Mon, 10 Aug 2026 ",
       "description": "",
@@ -1376,9 +1376,9 @@
       "author": ""
     },
     {
-      "title": "Apple Users Face Major iPhone 18 Shock",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX0NHa3VOc0l5dWFZWl9lS3FRMlZWTWJPRUFJLWhDUmVnTFFEQjVnMGJoM3FpYlpnVEJTWERxT0ZLTWk2U2VTdl82SXJHQ3BOZ3U2THVjTklBLTZPd1FFU2tLSDNKejhNYzdpcWk0c0x4Z0ZsZDZTV2w2NndWekk0Sy1zb01mUVNoR1dmNkltME9CRENUQW1RMzNn?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Ars Live: Ross Scott discusses the Stop Killing Games movement",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY3MxWUJxSG1PRmdtS212aXFqeHhPdFg0VG9Qc3VwX0hXbGppQ0VNLVVKVmVZekg0TGxoQVh6cFRnWVBGQWRJTURPcmhQcXRqRGZGMmlrX0Zmc2ZuZjk2WjE0dmMtMEQ0Y1ZvZzNXWjBMaXFFVnpndUZmSlFnV2tfOTI5bjdrR240M2RMeGdCS3FMWVpoZ1lyaEVtdjRpckJ5MW8w?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Mon, 10 Aug 2026 ",
       "description": "",
@@ -1608,7 +1608,7 @@
     "changePercent": -0.34,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 11 Aug: 29,621.81, down -0.34% -- BEARISH. modest -0.34% down. Counter: price above SMA20, RSI 54.4 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-08-11T06:16:42.967604"
+    "timestamp": "2026-08-11T06:31:27.155402"
   },
   "sticky": {
     "cnbc": [
@@ -1623,7 +1623,7 @@
         "title": "'That's a good idea': U.S. and Iran trade reparation demands as Hormuz deal hopes fade",
         "url": "https://www.cnbc.com/2026/08/11/us-iran-war-trump-hormuz-control-reparation-talks-.html",
         "source": "CNBC",
-        "published": "2026-08-11T09:46:04",
+        "published": "2026-08-11T10:18:33",
         "description": "The dueling positions Washington and Tehran staked out showed how far apart the two sides remain even as both talked of winding down regional hostilities."
       },
       {
@@ -1634,18 +1634,25 @@
         "description": "Technology giants have shelled out trillions to support insatiable AI demand and the infrastructure buildout."
       },
       {
+        "title": "Hotel giant says \u2018growing middle class\u2019 boosted hotel demand despite Middle East hit",
+        "url": "https://www.cnbc.com/2026/08/11/ihg-profit-us-travel-middle-east.html",
+        "source": "CNBC",
+        "published": "2026-08-11T10:06:07",
+        "description": "IHG reported higher first-half profit as U.S. demand accelerated and Middle East disruption weighed on travel."
+      },
+      {
+        "title": "Zelenskyy warns Putin is preparing for escalation by bringing in North Korean military equipment",
+        "url": "https://www.cnbc.com/2026/08/11/ukraine-war-zelenskyy-russia-putin-north-korea.html",
+        "source": "CNBC",
+        "published": "2026-08-11T08:20:02",
+        "description": "His comments come shortly after deadly Russian attacks on cities across Ukraine overnight."
+      },
+      {
         "title": "Eli Lilly takes weight-loss pill battle global with first Foundayo approval outside U.S.",
         "url": "https://www.cnbc.com/2026/08/11/foundayo-eli-lilly-wegovy-pill-uk.html",
         "source": "CNBC",
         "published": "2026-08-11T09:27:44",
         "description": "Lilly's Foundayo wins U.K. approval, taking its weight-loss pill battle with Novo Nordisk's Wegovy beyond the U.S. market."
-      },
-      {
-        "title": "U.S. oil tops $84 as Hormuz deal hopes dwindle and deadlock deepens",
-        "url": "https://www.cnbc.com/2026/08/11/oil-prices-today-us-crude-84.html",
-        "source": "CNBC",
-        "published": "2026-08-11T09:12:25",
-        "description": "U.S. crude is back above $84 as last week's anticipation of a U.S.-Iran deal dissipates."
       },
       {
         "title": "Trump Media posts $238 million second-quarter loss as crypto declines",
@@ -1660,33 +1667,26 @@
         "source": "CNBC",
         "published": "2026-08-10T22:15:31",
         "description": "OpenAI's tender offer has been in the works since the company closed its record-breaking $122 billion funding round in March."
-      },
-      {
-        "title": "U.S. judge ends graft case against Indian billionaire Gautam Adani",
-        "url": "https://www.cnbc.com/2026/08/11/us-judge-ends-graft-case-against-indian-billionaire-gautam-adani.html",
-        "source": "CNBC",
-        "published": "2026-08-11T09:57:10",
-        "description": "A U.S. federal judge has approved the Department of Justice's decision to dismiss the criminal probe against Indian billionaire Gautam Adani on graft charges."
       }
     ],
     "yahoo_finance": [
       {
-        "title": "Best CD rates today, Tuesday, August 11, 2026: Lock in up to 4.15% APY today on a 14-month CD",
-        "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-tuesday-august-11-2026-lock-in-up-to-415-apy-today-on-a-14-month-cd-100000232.html",
+        "title": "Samsung SDI takes full control of GM\u2019s Indiana battery plant",
+        "url": "https://finance.yahoo.com/energy/articles/samsung-sdi-takes-full-control-102314096.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-11T10:00:00+00:00",
+        "published": "2026-08-11T10:23:14+00:00",
+        "description": ""
+      },
+      {
+        "title": "US fuel sales to Cuban business bring a glimpse of capitalism to Havana",
+        "url": "https://finance.yahoo.com/news/us-fuel-sales-cuban-business-100512481.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-11T10:18:54+00:00",
         "description": ""
       },
       {
         "title": "HELOC and home equity loan rates today, Tuesday, August 11, 2026: Besides rates, how to choose between a HELOC or HEL",
         "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-today-tuesday-august-11-2026-besides-rates-how-to-choose-between-a-heloc-or-hel-100000351.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-10T10:00:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Best high-yield savings interest rates today, Tuesday, August 11, 2026: Earn up to 4.15% APY with an HYSA",
-        "url": "https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-tuesday-august-11-2026-earn-up-to-415-apy-with-an-hysa-100000399.html",
         "source": "Yahoo Finance",
         "published": "2026-08-10T10:00:00+00:00",
         "description": ""
@@ -1699,31 +1699,31 @@
         "description": ""
       },
       {
-        "title": "Intel's huge rally is helping pay for its AI comeback: Chart of the Day",
-        "url": "https://finance.yahoo.com/markets/article/intels-huge-rally-is-helping-pay-for-its-ai-comeback-chart-of-the-day-100000146.html",
+        "title": "Best high-yield savings interest rates today, Tuesday, August 11, 2026: Earn up to 4.15% APY with an HYSA",
+        "url": "https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-tuesday-august-11-2026-earn-up-to-415-apy-with-an-hysa-100000399.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-10T10:00:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Rocket Lab Stock Fell Nearly 50% From Its Record High. History Says Do This Next.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-stock-fell-nearly-101000597.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-11T10:10:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Best CD rates today, Tuesday, August 11, 2026: Lock in up to 4.15% APY today on a 14-month CD",
+        "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-tuesday-august-11-2026-lock-in-up-to-415-apy-today-on-a-14-month-cd-100000232.html",
         "source": "Yahoo Finance",
         "published": "2026-08-11T10:00:00+00:00",
         "description": ""
       },
       {
-        "title": "The Dow Is Outperforming the S&P 500 and Nasdaq in 2026. 3 Unstoppable Dow Stocks to Buy in August.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/dow-outperforming-p-500-nasdaq-095000218.html",
+        "title": "Intel's huge rally is helping pay for its AI comeback: Chart of the Day",
+        "url": "https://finance.yahoo.com/markets/article/intels-huge-rally-is-helping-pay-for-its-ai-comeback-chart-of-the-day-100000146.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-11T09:50:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Dave Ramsey warns nearly 50% of Americans make 1 big Social Security mistake \u2014 here's how to fix it in 3 steps",
-        "url": "https://finance.yahoo.com/markets/articles/dave-ramsey-warns-nearly-50-091000204.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-11T09:10:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Trump Media's quarterly loss widens to $238 million from $20 million a year earlier",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/trump-medias-quarterly-loss-widens-085624345.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-11T08:56:24+00:00",
+        "published": "2026-08-11T10:00:00+00:00",
         "description": ""
       }
     ],
@@ -1861,72 +1861,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7776.5,
-      "change": -0.25,
-      "change_percent": -0.0,
+      "price": 7778.25,
+      "change": 1.5,
+      "change_percent": 0.02,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29760.75,
-      "change": 23.75,
-      "change_percent": 0.08,
+      "price": 29774.75,
+      "change": 37.75,
+      "change_percent": 0.13,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 53999.0,
-      "change": -64.0,
-      "change_percent": -0.12,
+      "price": 53993.0,
+      "change": -70.0,
+      "change_percent": -0.13,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 3022.9,
-      "change": -2.1,
-      "change_percent": -0.07,
+      "price": 3023.4,
+      "change": -1.6,
+      "change_percent": -0.05,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 84.19,
-      "change": 2.06,
-      "change_percent": 2.51,
+      "price": 84.12,
+      "change": 1.99,
+      "change_percent": 2.42,
       "name": "Crude Oil Sep 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4431.3,
-      "change": 69.5,
-      "change_percent": 1.59,
+      "price": 4431.6,
+      "change": 69.8,
+      "change_percent": 1.6,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 65.05,
-      "change": -0.06,
-      "change_percent": -0.09,
+      "price": 65.11,
+      "change": 0.0,
+      "change_percent": 0.01,
       "name": "Silver Sep 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1777.4,
-      "change": 32.9,
-      "change_percent": 1.89,
+      "price": 1774.2,
+      "change": 29.7,
+      "change_percent": 1.7,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1386.0,
-      "change": 8.8,
-      "change_percent": 0.64,
+      "price": 1383.5,
+      "change": 6.3,
+      "change_percent": 0.46,
       "name": "Palladium Sep 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.77,
-      "change": -0.02,
-      "change_percent": -0.79,
+      "price": 2.76,
+      "change": -0.03,
+      "change_percent": -1.22,
       "name": "Natural Gas Sep 26"
     }
   ],

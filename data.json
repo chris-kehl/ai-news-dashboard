@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T18:08:41.542583",
+  "timestamp": "2026-08-11T18:08:50.968990",
   "summary": "Key topics today:\n- - Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp (r/HackerNews, 201 pts)\n- - Nvidia Nemotron 3.5 Lightning and NeMo Switchyard (r/HackerNews, 101 pts)\n- - Stealing Reasoning Traces from Proprietary LLM APIs (r/HackerNews, 101 pts)\n- - OpenAI\u2019s head of ethics leaves less than a year after joining (r/HackerNews, 101 pts)\n- - Suzanne: AI tool for designing and manufacturing physical products (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -184,7 +184,7 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-11T22:08:35.976236",
+    "timestamp": "2026-08-11T22:08:45.649027",
     "prices": [
       {
         "name": "Bittensor",
@@ -341,15 +341,99 @@
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-08-11T21:43:34.875263",
+    "timestamp": "2026-08-11T22:00:33.805729",
     "trending": [],
     "meme_momentum": [],
     "dow30": [],
     "nd100": []
   },
   "ticker": {
-    "timestamp": "2026-08-11T22:08:09.613555",
+    "timestamp": "2026-08-11T22:08:21.416001",
     "items": [
+      {
+        "symbol": "SPX",
+        "price": 7728.2,
+        "change": -0.32,
+        "type": "index"
+      },
+      {
+        "symbol": "DJI",
+        "price": 53791.85,
+        "change": -0.34,
+        "type": "index"
+      },
+      {
+        "symbol": "NDX",
+        "price": 29525.479,
+        "change": -0.33,
+        "type": "index"
+      },
+      {
+        "symbol": "VIX",
+        "price": 15.28,
+        "change": -1.16,
+        "type": "index"
+      },
+      {
+        "symbol": "RUT",
+        "price": 3027.115,
+        "change": 0.32,
+        "type": "index"
+      },
+      {
+        "symbol": "ES=F",
+        "price": 7753.25,
+        "change": -0.3,
+        "type": "future"
+      },
+      {
+        "symbol": "NQ=F",
+        "price": 29646.75,
+        "change": -0.3,
+        "type": "future"
+      },
+      {
+        "symbol": "YM=F",
+        "price": 53904.0,
+        "change": -0.29,
+        "type": "future"
+      },
+      {
+        "symbol": "RTY=F",
+        "price": 3035.8,
+        "change": 0.36,
+        "type": "future"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 83.23,
+        "change": 1.34,
+        "type": "future"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4427.8,
+        "change": 1.51,
+        "type": "future"
+      },
+      {
+        "symbol": "SI=F",
+        "price": 64.86,
+        "change": -0.38,
+        "type": "future"
+      },
+      {
+        "symbol": "PL=F",
+        "price": 1754.1,
+        "change": 0.55,
+        "type": "future"
+      },
+      {
+        "symbol": "PA=F",
+        "price": 1367.5,
+        "change": -0.7,
+        "type": "future"
+      },
       {
         "symbol": "NG=F",
         "price": 2.75,
@@ -729,7 +813,7 @@
     "changePercent": -0.33,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 11 Aug: 29,525.48, down -0.33% -- BEARISH. modest -0.33% down. Counter: price above SMA20, RSI 55.0 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-08-11T18:08:39.427971"
+    "timestamp": "2026-08-11T18:08:48.844763"
   },
   "sticky": {
     "cnbc": [
@@ -922,7 +1006,36 @@
       }
     ]
   },
-  "futures": [],
+  "futures": [
+    {
+      "symbol": "SI=F",
+      "price": 64.86,
+      "change": -0.25,
+      "change_percent": -0.38,
+      "name": "Silver Sep 26"
+    },
+    {
+      "symbol": "PL=F",
+      "price": 1754.1,
+      "change": 9.6,
+      "change_percent": 0.55,
+      "name": "Platinum Oct 26"
+    },
+    {
+      "symbol": "PA=F",
+      "price": 1367.5,
+      "change": -9.7,
+      "change_percent": -0.7,
+      "name": "Palladium Sep 26"
+    },
+    {
+      "symbol": "NG=F",
+      "price": 2.75,
+      "change": -0.05,
+      "change_percent": -1.65,
+      "name": "Natural Gas Sep 26"
+    }
+  ],
   "weekly_pick": {
     "week_label": "Week of Aug 10, 2026",
     "generated_at": "2026-08-10T18:21:51.595839",

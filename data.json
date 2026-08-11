@@ -1,51 +1,533 @@
 {
-  "timestamp": "2026-08-11T02:39:19.311286",
-  "summary": "Key topics today:\n- - affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research (239308 stars)\n- - NousResearch/hermes-agent: The agent that grows with you (228611 stars)\n- - Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi (186508 stars)\n- - firecrawl/firecrawl: The context API to search, scrape, and interact with the web at scale. \ud83d\udd25 (165328 stars)\n- - huggingface/transformers: \ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, (163574 stars)",
-  "signals": [],
-  "reddit": [],
-  "world_reddit": [],
+  "timestamp": "2026-08-11T02:39:24.228599",
+  "summary": "Key topics today:\n- - Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots (r/HackerNews, 201 pts)\n- - Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models (r/HackerNews, 201 pts)\n- - Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows (r/HackerNews, 201 pts)\n- - Launch HN: Stoa Markets (YC S26) \u2013 A Marketplace for GPUs and AI Servers (r/HackerNews, 201 pts)\n- - H3-metal \u2013 Native MiniMax-H3 inference for Apple Silicon (r/HackerNews, 101 pts)",
+  "signals": [
+    {
+      "type": "watch",
+      "asset": "HYPE",
+      "price": 55.25,
+      "change": 2.4,
+      "category": "crypto",
+      "text": "HYPE +2.4% @ $55.25"
+    },
+    {
+      "type": "watch",
+      "asset": "ETH",
+      "price": 1870.65,
+      "change": -2.2,
+      "category": "crypto",
+      "text": "ETH -2.2% @ $1,870.65"
+    },
+    {
+      "type": "watch",
+      "asset": "XRP",
+      "price": 1.005,
+      "change": -2.1,
+      "category": "crypto",
+      "text": "XRP -2.1% @ $1.00"
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://cactuscompute.com/needle",
+      "created": ""
+    },
+    {
+      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "created": ""
+    },
+    {
+      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "created": ""
+    },
+    {
+      "title": "Launch HN: Stoa Markets (YC S26) \u2013 A Marketplace for GPUs and AI Servers",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://www.stoaexchange.com",
+      "created": ""
+    },
+    {
+      "title": "H3-metal \u2013 Native MiniMax-H3 inference for Apple Silicon",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://github.com/antirez/h3.c",
+      "created": ""
+    },
+    {
+      "title": "DeepSeek: Reverse Engineering an AI Assistant by Interviewing Itself",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://manish.sh/writings/models/inside-deepseek-reverse-engineering-an-ai-assistant-by-interviewing-itself",
+      "created": ""
+    },
+    {
+      "title": "LFM2.5 2.6B model competitive with 4x larger models",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "created": ""
+    },
+    {
+      "title": "Rust SIMD on the GPU",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
+      "created": ""
+    },
+    {
+      "title": "What's the best programming language for coding agents?",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "http://danluu.com/pl-tokens/",
+      "created": ""
+    },
+    {
+      "title": "Humanising LLM Outputs Is Dumb",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+      "created": ""
+    }
+  ],
+  "world_reddit": [
+    {
+      "title": "Germany Expels Hundreds of Russians as Covert Embassy Operations Unravel",
+      "url": "https://united24media.com/world/germany-expels-hundreds-of-russians-as-covert-embassy-operations-unravel-21534",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "Zelenskyy: Russia has received ballistic missiles from North Korea and is preparing to deploy additional contingent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/08/10/8048155/",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "Iran Insists Strait of Hormuz Will Stay Closed Until Trump Agrees to Demands",
+      "url": "https://www.nytimes.com/2026/08/10/world/middleeast/iran-strait-of-hormuz-us-oman-talks.html",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "Russia's Supreme Court bars only 'pro-peace' party from parliamentary elections",
+      "url": "https://kyivindependent.com/russias-supreme-court-bars-only-pro-peace-party-from-parliamentary-elections/",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    },
+    {
+      "title": "American oil company prepares drilling in Greenland \u2013 without a permit",
+      "url": "https://www.theguardian.com/world/2026/aug/08/greenland-iwarning-trump-linked-oil-firm-prepares-drill?CMP=Share_iOSApp_Other",
+      "source": "r/worldnews",
+      "category": "world",
+      "description": ""
+    }
+  ],
   "world_x": [
     {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Don Nelson, the second-winningest coach in NBA history who won five championships as a player with the Boston Celtics, has died at 86. https://www.nbcnews.com/news/us-news/don-nelson-second-winningest-coach-nba-history-dies-86-rcna591608?taid=6a78d0f573bffa000183aeee&ut",
-      "url": "https://nitter.net/BreakingNews/status/2086530908971008422#m",
-      "date": "Sun, 09 Aug 2026 19:11:49 GMT",
+      "author": "@BBCWorld",
+      "text": "A burial row over Zambia's late president has turned its election into a hot contest https://bbc.in/4wgFbTf",
+      "url": "https://nitter.net/BBCWorld/status/2087042731541512355#m",
+      "date": "Tue, 11 Aug 2026 05:05:37 GMT",
       "likes": 0
     },
     {
-      "author": "@BreakingNews",
-      "text": "PROJECTION: Trump-backed GOP Rep. Andy Ogles falls to a challenger backed by Tennessee\u2019s governor, becoming the ninth House member to lose a primary this year. https://www.nbcnews.com/politics/2026-election/rep-andy-ogles-loses-republican-primary-tennessee-rcna591185?taid=6a7540a",
-      "url": "https://nitter.net/BreakingNews/status/2085551334346907724#m",
-      "date": "Fri, 07 Aug 2026 02:19:20 GMT",
+      "author": "@BBCWorld",
+      "text": "The lonely Chinese men being conned by fake brides https://bbc.in/4fP3uTc",
+      "url": "https://nitter.net/BBCWorld/status/2086937399779631129#m",
+      "date": "Mon, 10 Aug 2026 22:07:04 GMT",
       "likes": 0
     },
     {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Todd Blanche reaches a deal with the GOP senators blocking his AG nomination, signing an order to end the \u201canti-weaponization\u201d fund. https://www.nbcnews.com/politics/congress/acting-ag-todd-blanche-reaches-deal-holdout-senators-end-18b-anti-weap-rcna590525?taid=6a701046",
-      "url": "https://nitter.net/BreakingNews/status/2084124995836428775#m",
-      "date": "Mon, 03 Aug 2026 03:51:34 GMT",
+      "author": "@BBCWorld",
+      "text": "Man dies in Cavan crash involving car and van https://bbc.in/3RZbTdI",
+      "url": "https://nitter.net/BBCWorld/status/2086936286368088572#m",
+      "date": "Mon, 10 Aug 2026 22:02:38 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Taiwan, South Korea drive Asian equity outflows in July as AI worries bite http://reut.rs/45oVnqq http://reut.rs/45oVnqq",
+      "url": "https://nitter.net/Reuters/status/2087062748395958474#m",
+      "date": "Tue, 11 Aug 2026 06:25:09 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "China's test of a nuclear-capable missile last month has exposed the limits of Pacific leaders' ambition to make the region an \u2018Ocean of Peace,\u2019 free from the crossfire of major-power rivalry https://reut.rs/3S7jR4v",
+      "url": "https://nitter.net/Reuters/status/2087062720692511055#m",
+      "date": "Tue, 11 Aug 2026 06:25:03 GMT",
       "likes": 0
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-11T06:33:27.478647",
-    "prices": [],
-    "news": []
+    "timestamp": "2026-08-11T06:39:00.807703",
+    "prices": [
+      {
+        "name": "Bittensor",
+        "symbol": "TAO",
+        "price": 198.76,
+        "change_24h": -1.4,
+        "market_cap": 1907550926
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "price": 63855,
+        "change_24h": -1.6,
+        "market_cap": 1281505498202
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "price": 1870.65,
+        "change_24h": -2.2,
+        "market_cap": 225769432788
+      },
+      {
+        "name": "Tether",
+        "symbol": "USDT",
+        "price": 0.999108,
+        "change_24h": 0,
+        "market_cap": 183085186730
+      },
+      {
+        "name": "BNB",
+        "symbol": "BNB",
+        "price": 598.57,
+        "change_24h": -0.4,
+        "market_cap": 79718484903
+      },
+      {
+        "name": "USDC",
+        "symbol": "USDC",
+        "price": 0.999633,
+        "change_24h": 0,
+        "market_cap": 72182474853
+      },
+      {
+        "name": "XRP",
+        "symbol": "XRP",
+        "price": 1.005,
+        "change_24h": -2.1,
+        "market_cap": 62935405966
+      },
+      {
+        "name": "Solana",
+        "symbol": "SOL",
+        "price": 75.81,
+        "change_24h": -1.0,
+        "market_cap": 44182061234
+      },
+      {
+        "name": "TRON",
+        "symbol": "TRX",
+        "price": 0.331417,
+        "change_24h": 0.5,
+        "market_cap": 31450788599
+      },
+      {
+        "name": "Figure Heloc",
+        "symbol": "FIGR_HELOC",
+        "price": 1.003,
+        "change_24h": 0.2,
+        "market_cap": 21140686240
+      },
+      {
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "price": 55.25,
+        "change_24h": 2.4,
+        "market_cap": 12289959938
+      }
+    ],
+    "news": [
+      {
+        "title": "South Korea drops Travel Rule threshold for crypto transfers",
+        "url": "https://cointelegraph.com/news/south-korea-travel-rule-threshold-crypto-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/south-korea-coin.jpg\" alt=\"South Korea drops Travel Rule threshold for crypto transfers\" class=\"type:primaryImage\"></p><p>South Kor"
+      },
+      {
+        "title": "Payments platform Decta explores stablecoin-enabled treasury settlement",
+        "url": "https://cointelegraph.com/news/payments-platform-decta-explores-stablecoin-enabled-treasury-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/hi-stablecoins-turn-a-corner-driven-by-the-acceptance-of-financial-institutions.jpg\" alt=\"Payments platform Decta explores stableco"
+      },
+      {
+        "title": "Here\u2019s what happened in crypto today",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here\u2019s what happened in crypto today\" class=\"type:primaryImage\"></p><"
+      },
+      {
+        "title": "Luke Dashjr removed as Bitcoin Improvement Proposal editor",
+        "url": "https://cointelegraph.com/news/luke-dashjr-removed-as-bitcoin-proposal-editor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/hi-how-different-exchanges-are-responding-to-bitcoin-fork.jpg\" alt=\"Luke Dashjr removed as Bitcoin Improvement Proposal editor\" cla"
+      },
+      {
+        "title": "White House vows to get CLARITY across \u2018finish line\u2019 in September",
+        "url": "https://cointelegraph.com/news/white-house-clarity-across-finish-line-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/white-house-crypto-clarity.jpg\" alt=\"White House vows to get CLARITY across \u2018finish line\u2019 in September\" class=\"type:primaryImage\"><"
+      },
+      {
+        "title": "Trump Media to revamp crypto treasury strategy after $238M Q2 loss",
+        "url": "https://cointelegraph.com/news/trump-media-crypto-treasury-strategy-after-238m-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/trump-bitcoin.jpg\" alt=\"Trump Media to revamp crypto treasury strategy after $238M Q2 loss\" class=\"type:primaryImage\"></p><p>Trump"
+      },
+      {
+        "title": "Thailand\u2019s 0% crypto tax. Bitcoin Red Team forced to use Chinese AI: Asia Express",
+        "url": "https://cointelegraph.com/magazine/thailands-0-crypto-tax-bitcoin-red-team-forced-to-use-chinese-ai-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/asia-express-8.jpg\" alt=\"Thailand\u2019s 0% crypto tax. Bitcoin Red Team forced to use Chinese AI: Asia Express\" class=\"type:primaryImag"
+      },
+      {
+        "title": "Judge stays CFTC\u2019s case against US soldier over prediction market bets",
+        "url": "https://cointelegraph.com/news/cftc-us-solider-insider-trading-polymarket-nicolas-maduro?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 10 Aug 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/judge-hammer-regulation-cftc-1.jpg\" alt=\"Judge stays CFTC\u2019s case against US soldier over prediction market bets\" class=\"type:primar"
+      },
+      {
+        "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
+        "url": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "The project said it will pay 10% of recovered funds, up to 3 BTC, after attackers stole LND credentials and drained merchant Lightning wallets last week."
+      },
+      {
+        "title": "Bitcoin\u2019s BIP-110 fork is 300 blocks behind BTC and six years from fixing itself",
+        "url": "https://www.coindesk.com/tech/2026/08/11/bitcoin-s-bip-110-fork-is-300-blocks-behind-btc-and-six-years-from-fixing-itself",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "The breakaway chain has produced two blocks since splitting off on Saturday. Bitcoin has produced more than 300 in the same stretch."
+      },
+      {
+        "title": "XRP, ether lead crypto losses as traders eye $70,000 bitcoin next",
+        "url": "https://www.coindesk.com/markets/2026/08/11/xrp-ether-lead-crypto-losses-as-traders-eye-usd70-000-bitcoin-next",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "Bitcoin failed to hold $65,000 for a fourth day as an oil rally revived inflation worries before Wednesday's U.S. price data."
+      },
+      {
+        "title": "U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings",
+        "url": "https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings",
+        "published": "Tue, 11 Aug 2026 ",
+        "description": "The Securities and Exchange Commission will vote this week to start its first major crypto rulemaking process."
+      }
+    ]
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-08-11T05:43:35.346661",
+    "timestamp": "2026-08-11T06:00:34.039912",
     "trending": [],
     "meme_momentum": [],
     "dow30": [],
     "nd100": []
   },
   "ticker": {
-    "timestamp": "2026-08-11T06:23:32.239169",
-    "items": []
+    "timestamp": "2026-08-11T06:38:54.158399",
+    "items": [
+      {
+        "symbol": "HOOD",
+        "price": 94.52,
+        "change": 4.2,
+        "type": "mover"
+      },
+      {
+        "symbol": "MSTR",
+        "price": 97.33,
+        "change": 0.5,
+        "type": "mover"
+      }
+    ]
   },
-  "business": [],
-  "tech_business": [],
+  "business": [
+    {
+      "title": "Trump Media reports $238m loss as crypto falls",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tQ2dzN2xtLWlYbWhNZlktMmczZW0yNmswNEhfcUJBX2hkS0ZhRWNGQ0dmYkFweTg0UlhIdG9xNC1PQzJFQnhMZWRBbHNBcHZJLUpWUnVPQ0EwZw?oc=5",
+      "source": "BBC",
+      "category": "business",
+      "published": "Tue, 11 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Here\u2019s Why Nvidia Stock Is Down Today",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORnVlbW1pSGlNdkVWNVo2bTdHRTdTM29vRUxMckNQVVFKWGRtQXlSVFJobGwzSnI4eUxlc0JWZ1RZUzdmUFFXVEVETGNKLWRkRzgtWGJXczFITFhIcGZTNlBkZF9KMmh0SjI2Ty1XYkVUajNDUV92YWJNZ0xtVTZveUtYSVFXVDJIX1pXSlRJLUZfdmttQmUzZGVKNFpmYm9fcTJKZGlqTjd4OTdqN2prNVdUZkl5QW5ZT2dULThzSGx5b2pxUUh3NDNUQ0FHTHdwZzZ2MlF0TEdWNHNFWUJGeFFwS3hISno5X01fSjNLc1psZw?oc=5",
+      "source": "Forbes",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Mark Zuckerberg Says He\u2019s Surprised the \u2018Discourse\u2019 From AI Companies \u2018Is So Filled With Doom\u2019",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMEY1emxuTDNTcngwZVRqTVdYTTNFdmliYXZ1bmUzUTRtSlJHeVlWRTd2SHpJUm1SVjJocWRZRDlTNnhKT1NtZVRvTEcwNHNTeGcwbUlIOE5oVHczUWR3VWZPSGJINTROTUlZOFpQWXhVOF8zd25seVkzRndWZkF1bk5LcmZndw?oc=5",
+      "source": "Variety",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Intel plans $15 billion share sale as turnaround rally lifts stock",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWmlPY1Jtc3A4X2YxbXFKRmx6eUpMRGhzeTJCXzRwdVlIbzkyZVgzdFBONFRrRVZuOGNtTzQtSXRfd3MySUhnT1JWc3NBS1BYS2JlcDlVUUcydnRacHdzaE9WRmI5NWpvUHYxa1lRamVvZmpwSnBTdl9ueGZWdXJmTGcwSnBoa3g1UnJMT05VRUlyaTdsNGx0dlhjUVV6QXcweFVvaUhwV3dkdnBTWWJRT2x6VXNSa2FrSGVjRUx3?oc=5",
+      "source": "Reuters",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Asian stocks mixed as Korea gains, China slips; RBA decision in focus",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSXBSUTJiU2c5Vk9UaFJQSDZ5VXFzVEF5TFNQLVJQNjJtZm9FX3N1VGJTY0V0cXl0NzltUndDSDA4LVdlMnFRUi1QTlEyeVB4Wnpaa1oySWo5YnhTT3VhT2Q4cERJSjJER3dKQTRsTTNUSWwyZy1FM0g2c0l4Mm0tWWxGM3dDN0daSmEyc1hVU0FhV3poeWF4Ri02VXpjVUhLY3o4ako2U1hSWk1Pcng3VDRfbVFQZ0xTSnpETDZEb0hmZw?oc=5",
+      "source": "Investing.com",
+      "category": "business",
+      "published": "Tue, 11 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Someone in Sugar Land just collected a sweet Powerball payday",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbGVlVk1NRFExbGpNZ1JpTnJaN3FRUHUyWlVkOVVJV1BuS1NabF9RaDFpaGJCeGVHWl9HMGFtLXdoQ2YwSUhINUhJWHh1dG8zdEJvekp3eldvVFRUc3VvYU5RRHVlSnIyYWhYMlZOakJyem1nUjJMSElqVTBvMGlyNUZHeVhzQWNjQTVKVmNvU2w0dXpQS2VwQ3JnaG5ZY3g1aXkyT1NRUFBBZVVRZkdweVc2cDJvVl9aOVZXTDVFUQ?oc=5",
+      "source": "KHOU",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Shake Shack says tech glitch explains viral no-tip video",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLUNYcjd3bTRiLV9UVUFmcEF5NFNXQUFIUVZTOEtadDhaY3o4MGkyOUNJQXNQRTYxcFNlYlBKV1NDNUVzX1FPLTRaSlpBQVVhZDUwaV9hTjhCY05oUkVBUnBhYlFkaVh6ZTFYU0hRZmZTcjFFSkt3M1RvdFNnWlNKdlhNSnlSUjBGYTdEZWlmb9IBlAFBVV95cUxOYUQ1SmgwekhNZXQ5LWRPb3RidXZOSXBRUURHN0NDQ19qTm5BaUdGVUk0RHhaT2xGMGI1VVpYVVRXc1JWcDZVNThvQlQ2VE16d3VnSHo3MjFQYjc0SzBUaUk5SFRPVDNtelFndUdueTVQeTNDdC1uS1VxR01kdXN6SDhOTlRFZlZsX3gzV28yQUpOVUMw?oc=5",
+      "source": "NewsNation",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Rocket Lab Stock Pares Losses After Mixed Earnings Report",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtSmtXdmVEUU1UdGdJM2htVGo3OEhMeDdLZndCUmlQbGxVcXUzaFhhd1ZubFpqT3FOZWs5MFYwS2VFSEZwaG9iR01MVGV1LUdzRG5RWmRLVWlEZzZhWWJPRGpIOXJpeW5KeFJ6REpaNWpoRjBGT3BJYUYySFFkdw?oc=5",
+      "source": "Barron's",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    }
+  ],
+  "tech_business": [
+    {
+      "title": "What to expect from Google\u2019s 2026 Pixel hardware launch event",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONl90WVg3SjEyRlJZcEVOUm9hb3U4Q3ZqNkFBT2g2WTNLanRSVWp2UGdtb3YybU1CMjl1RlUxbEwxNUlWUUFSWVdyUHlQTG9vSmE5OUxRLXpjWlQ5R1hyRHpmV2lHaUNCZ3hKbkVUSEFFRzJuTUtweVR6aWN4YXJrRmlIc1JlMkhZUkNXWQ?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "iPhone 18 Pro BOM cost estimated to be up by 40% - GSMArena.com news",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOam14NWZ1bFNiUVJuNVBZZmtkbkFhMkJHS09JMVE5TW5OVlBCS29xc3FPaV9GdG5td21PV0FvQ1dEUUgxbzBBdUJubnpsNHlkUExYM1lnZ2YwZE1XWW5xbzdmN3dTeFFmS0xJTmRvampQRkt3amgySHhDc2lVTVNaa05XSjRjZDM0TmRlemFzN3h0X0NYS2hGSVljRFpKZk9BX0RWTdIBoAFBVV95cUxQQmh0cEZQV2tiN1RtYTVtQXhhQXFlVXZ2UFU5aUFBaXJVenFvVHhVd0FxQ0lmMjFISkxVcnpMVG5PWm9iVEF5YUZkS2dFXzVRb3lyMGZ6R2Uybk1VNHl6azItQllSQlZaUTB1UnE5c1VrYVltbjZiTHRkWGtvR1NnYnBzek0xeXlhTWgxeFVXMXBOOHdEQkt4ejRZdnNjNWN4?oc=5",
+      "source": "GSMArena.com",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Nearly 100 never-before-seen Nintendo cartridges found in Wisconsin game shop",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNU4tV29iMlFVcXJIeTJDNUFRVnZnd25NTDRNbTFnbXhhblZwLVFqUnZjR051cnp1ZGpvVVV6WU1ZMFBGeWxfZTJWa3U4Sk1WcVU4SDVGOXFGS25lSlowY1ZGbmJISjZCaG5pX2t2Z0Z4elk0bUNlaUZUWW93U1NXN1pJRHlZOEJDbW9Xbjh0V0RGaDlxWWfSAZsBQVVfeXFMT3RqNUJ6WUpaOEpOQTFKekZGSFQ2bm9sSlVtaDZPZGpYTWgxcXRPYmVFdFFVaW1HUjQzeUVBSUVWVHBkZWR3R3NfMmtkVDZ0LUhyRUs3QnFpa05PdFdGVkpPeVNQdURSeENkbXA2cGxobDBOa1gtQ0I3eHdYUFk0T0VLbW9ud3c2YWxtSm1MNkM3Z2RuVnR1WWlXOXc?oc=5",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Samsung will reportedly make an extra one million Galaxy Z Fold 8 units",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVUc4ak1ZTUl6LTBMSEJxbGNRa3BOUF91bnVWaVlUNS1UTFhyMVJUSHlqZERQU1JDN19nT1U0Wk50WnJxcmJqbTNhN3JlWThjQVpIX0tzRmhoUkZ0YVN1c2N5YmYyYVQxQS1UZ1Q5Y3VUVUNMMmxteDJTdklYcEJ6V3RFRQ?oc=5",
+      "source": "9to5Google",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Sean Murray reflects on 10 years of No Man's Sky, its future, and why Hello Games' \"redemption arc\" narrative \"isn't really the story\" of the developer",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdmgxTUhPdUE1NmozZmhOWjg5Umduc3RSQ0g0ZU15NmJ6UEs1cEtQRk5YZ3BQRzVneTR3VC1fNnQxQWcyRXRibnRmZlpjY21iVVZySlRpeEcyM2ljWVFEdWk5UkdFN2l4eF9QR2ZJc2JwOC1GVzllU3FvSTdtSEZFWVFpaGdGdw?oc=5",
+      "source": "Eurogamer.net",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "New \"Madden 27\" turns you into a news junkie",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMDJDOUFnOXFIRFpRZ0M3YnY4RkEtNUVtOEMxVkZnYWUtbWE4amk3OHY2cmRwRGFLeFFZM1drOHF6ajNwdUd4TkVKWThjU2RpMlN2QmRQZW0xb0RoXzh3QU4taE1sbEl6S0dWRWtnZElPQ2dYWGd4UXYzdlMtYWstNURxMA?oc=5",
+      "source": "Axios",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Mark Zuckerberg doesn\u2019t understand how to live",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPanp4N1pyTFNXeE5WRTRhV0gxaUpQbC1Pc1NVYTZHNmJPU1hobm1xNE03b3RLOXlFaEYtX3o0SkNrUXNBeTE1eUtsNzlMdkxLUEQtQjJQTzItNFRwamFIVWRuTWV0cDgtbHdxNDhoTVhaUmVya0hlbEoxQzFBR3FUZkp1ZU1VY3Bmdm1aMXZWbTZaV3dkUl9oR2ZRdEtDV3c?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Badgermole Cub, Gran-Gran, Stormchaser\u2019s Talent Banned In Standard",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTjFLaU5XSTYzWUJXSWhyNGx1dTBCZUVLZGFzaHZNbUNwSEZEOU1iNDc1QlFSUWFJVnJvQjVFMVZfWllMUlZSMnZaUUdmQll2a1FPZTRzV01aTDJUWTRhOHFRLXFuQk5PZmtrREw4eUYxRXhwbnJlWGFMeUVITUtDRXppbnJKSW5xQjdkSnRlX0dxUmdna0JPRE5MVmdMYkFPMzFPcHlWTklhWlpqN3lsbTd6NEM1T2twZ3RR?oc=5",
+      "source": "Star City Games",
+      "category": "business",
+      "published": "Mon, 10 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    }
+  ],
   "defense": [],
   "github": [
     {
@@ -59,10 +541,10 @@
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 228611,
+      "stars": 228612,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-08-11T06:38:25Z"
+      "updated": "2026-08-11T06:39:03Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -151,7 +633,7 @@
     "changePercent": -0.34,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 11 Aug: 29,621.81, down -0.34% -- BEARISH. modest -0.34% down. Counter: price above SMA20, RSI 54.4 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-08-11T02:39:12.709646"
+    "timestamp": "2026-08-11T02:39:22.331976"
   },
   "sticky": {
     "cnbc": [
@@ -235,24 +717,10 @@
         "description": ""
       },
       {
-        "title": "P&G\u2019s (PG) $3.8B Wellness Deal Collides With a Costly Outlook",
-        "url": "https://finance.yahoo.com/healthcare/articles/p-g-pg-3-8b-183514791.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-09T18:35:14+00:00",
-        "description": ""
-      },
-      {
         "title": "Dear Circle Stock Fans, Mark Your Calendars for September 16",
         "url": "https://finance.yahoo.com/markets/crypto/articles/dear-circle-stock-fans-mark-193002443.html",
         "source": "Yahoo Finance",
         "published": "2026-08-09T19:30:02+00:00",
-        "description": ""
-      },
-      {
-        "title": "Atlassian Jumped More Than 30% After Guiding Next Year's Growth Down to 18%. The Market Bought the Margins.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/atlassian-jumped-more-30-guiding-185200611.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-09T18:52:00+00:00",
         "description": ""
       },
       {
@@ -263,10 +731,24 @@
         "description": ""
       },
       {
+        "title": "Atlassian Jumped More Than 30% After Guiding Next Year's Growth Down to 18%. The Market Bought the Margins.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/atlassian-jumped-more-30-guiding-185200611.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-09T18:52:00+00:00",
+        "description": ""
+      },
+      {
         "title": "Berkshire breaks 14-quarter selling streak with $23.5B of stock buys \u2014 $10B went to 1 company at a private price",
         "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-breaks-14-quarter-selling-194000465.html",
         "source": "Yahoo Finance",
         "published": "2026-08-09T19:40:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "P&G\u2019s (PG) $3.8B Wellness Deal Collides With a Costly Outlook",
+        "url": "https://finance.yahoo.com/healthcare/articles/p-g-pg-3-8b-183514791.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-09T18:35:14+00:00",
         "description": ""
       }
     ],

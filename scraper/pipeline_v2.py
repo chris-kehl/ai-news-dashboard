@@ -181,6 +181,30 @@ def main():
     top = results[0]
     top5 = results[:5]
     
+    # ── Best ETF of the Week ──
+    etf_only = [r for r in results if r["category"] in {"ETF","Crypto ETF","Precious Metal","Leveraged ETF","Volatility ETF"}]
+    if etf_only:
+        etf_only.sort(key=lambda x: x["score"], reverse=True)
+        best_etf = etf_only[0]
+    else:
+        best_etf = None
+    
+    etf_rationale = None
+    if best_etf:
+        etf_rationale = (
+            f"**BEST ETF: {best_etf['name']} ({best_etf['ticker']})** — ${best_etf['price']}\n\n"
+            f"Combined score: **{best_etf['score']}/100** across {len(etf_only)} ETF-type assets.\n\n"
+            f"**Signal Breakdown:**\n"
+            f"• Technical: {best_etf['technical']}/100\n"
+            f"• Momentum: {best_etf['momentum']}/100 ({best_etf['change_7d']:+.1f}% week, {best_etf['change_30d']:+.1f}% month)\n"
+            f"• Sentiment: {best_etf['sentiment']}/100\n"
+            f"• Volatility: {best_etf['volatility']}/100\n\n"
+            f"**Key Drivers:**\n" + "\n".join(f"• {f}" for f in best_etf['factors'][:6]) + "\n\n"
+            f"**Trade Plan:** Entry at current or SMA20 (${best_etf['sma20'] or 'N/A'}).\n"
+            f"Stop: Close below SMA20 or -5%. Target: continuation.\n\n"
+            f"*Not financial advice. DYOR.*"
+        )
+
     rationale = (
         f"**HIGHEST CONVICTION: {top['name']} ({top['ticker']})** — ${top['price']}\n\n"
         f"Combined score: **{top['score']}/100** (analyzed {len(results)} premium assets).\n\n"
@@ -210,6 +234,19 @@ def main():
             },
             "sentiment_score": top["sentiment"],
         },
+        "best_etf_of_week": {
+            "name": best_etf["ticker"], "display_name": best_etf["name"],
+            "price": best_etf["price"], "category": best_etf["category"],
+            "signal": "BULLISH" if best_etf["score"]>65 else "NEUTRAL-BULLISH" if best_etf["score"]>55 else "NEUTRAL",
+            "score": best_etf["score"], "rationale": etf_rationale,
+            "change_7d": best_etf["change_7d"], "change_30d": best_etf["change_30d"],
+            "rsi": best_etf["rsi"], "sma20": best_etf["sma20"],
+            "factors": best_etf["factors"],
+            "sub_scores": {
+                "technical": best_etf["technical"], "momentum": best_etf["momentum"],
+                "sentiment": best_etf["sentiment"], "volatility": best_etf["volatility"],
+            },
+        } if best_etf else None,
         "top_five": [
             {"ticker":r["ticker"], "name":r["name"], "category":r["category"],
              "score":r["score"], "price":r["price"], "change_7d":r["change_7d"],

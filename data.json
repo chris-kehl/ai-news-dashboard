@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T18:09:10.230693",
+  "timestamp": "2026-08-11T18:09:18.241730",
   "summary": "Key topics today:\n- - Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp (r/HackerNews, 201 pts)\n- - Nvidia Nemotron 3.5 Lightning and NeMo Switchyard (r/HackerNews, 101 pts)\n- - Stealing Reasoning Traces from Proprietary LLM APIs (r/HackerNews, 101 pts)\n- - OpenAI\u2019s head of ethics leaves less than a year after joining (r/HackerNews, 101 pts)\n- - Suzanne: AI tool for designing and manufacturing physical products (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -17,6 +17,14 @@
       "change": 2.0,
       "category": "crypto",
       "text": "BNB +2.0% @ $612.35"
+    },
+    {
+      "type": "watch",
+      "asset": "MSTR",
+      "price": 96.09,
+      "change": -3.92,
+      "category": "stock",
+      "text": "MSTR -3.9% @ $96.09"
     },
     {
       "type": "watch",
@@ -184,7 +192,7 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-11T22:09:04.913320",
+    "timestamp": "2026-08-11T22:09:13.001167",
     "prices": [
       {
         "name": "Bittensor",
@@ -341,7 +349,7 @@
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-08-11T22:08:24.325607",
+    "timestamp": "2026-08-11T22:08:32.659792",
     "trending": [
       {
         "symbol": ".DJI",
@@ -365,8 +373,30 @@
         "name": "RUSS 2K"
       }
     ],
-    "meme_momentum": [],
+    "meme_momentum": [
+      {
+        "symbol": "MSTR",
+        "price": 96.09,
+        "change": -3.92,
+        "change_percent": -3.92,
+        "name": "Strategy Inc"
+      }
+    ],
     "dow30": [
+      {
+        "symbol": "CVX",
+        "price": 196.66,
+        "change": 10.1,
+        "change_percent": 5.41,
+        "name": "Chevron Corporation"
+      },
+      {
+        "symbol": "CRM",
+        "price": 197.47,
+        "change": 4.73,
+        "change_percent": 2.45,
+        "name": "Salesforce, Inc."
+      },
       {
         "symbol": "MRK",
         "price": 130.42,
@@ -387,6 +417,13 @@
         "change": 1.41,
         "change_percent": 1.26,
         "name": "Walmart Inc."
+      },
+      {
+        "symbol": "AMGN",
+        "price": 414.3,
+        "change": 3.35,
+        "change_percent": 0.82,
+        "name": "Amgen Inc."
       },
       {
         "symbol": "MSFT",
@@ -417,6 +454,13 @@
         "name": "Johnson & Johnson"
       },
       {
+        "symbol": "CAT",
+        "price": 843.37,
+        "change": 1.18,
+        "change_percent": 0.14,
+        "name": "Caterpillar, Inc."
+      },
+      {
         "symbol": "MMM",
         "price": 183.13,
         "change": 0.23,
@@ -431,11 +475,25 @@
         "name": "Visa Inc."
       },
       {
+        "symbol": "AXP",
+        "price": 340.81,
+        "change": -0.1,
+        "change_percent": -0.03,
+        "name": "American Express Company"
+      },
+      {
         "symbol": "MCD",
         "price": 274.15,
         "change": -0.33,
         "change_percent": -0.12,
         "name": "McDonald's Corporation"
+      },
+      {
+        "symbol": "HD",
+        "price": 354.48,
+        "change": -1.14,
+        "change_percent": -0.32,
+        "name": "Home Depot, Inc. (The)"
       },
       {
         "symbol": "PG",
@@ -445,11 +503,39 @@
         "name": "Procter & Gamble Company (The)"
       },
       {
+        "symbol": "BA",
+        "price": 233.24,
+        "change": -1.18,
+        "change_percent": -0.5,
+        "name": "Boeing Company (The)"
+      },
+      {
+        "symbol": "GS",
+        "price": 1034.41,
+        "change": -5.2,
+        "change_percent": -0.5,
+        "name": "Goldman Sachs Group, Inc. (The)"
+      },
+      {
         "symbol": "KO",
         "price": 86.48,
         "change": -0.57,
         "change_percent": -0.65,
         "name": "Coca-Cola Company (The)"
+      },
+      {
+        "symbol": "AMZN",
+        "price": 272.27,
+        "change": -2.21,
+        "change_percent": -0.81,
+        "name": "Amazon.com, Inc."
+      },
+      {
+        "symbol": "CSCO",
+        "price": 120.43,
+        "change": -1.0,
+        "change_percent": -0.82,
+        "name": "Cisco Systems, Inc."
       },
       {
         "symbol": "NKE",
@@ -466,6 +552,13 @@
         "name": "UnitedHealth Group Incorporated"
       },
       {
+        "symbol": "DIS",
+        "price": 103.53,
+        "change": -1.38,
+        "change_percent": -1.32,
+        "name": "Walt Disney Company (The)"
+      },
+      {
         "symbol": "SHW",
         "price": 364.42,
         "change": -5.31,
@@ -478,6 +571,13 @@
         "change": -8.7,
         "change_percent": -2.26,
         "name": "The Travelers Companies, Inc."
+      },
+      {
+        "symbol": "AAPL",
+        "price": 304.91,
+        "change": -8.42,
+        "change_percent": -2.69,
+        "name": "Apple Inc."
       },
       {
         "symbol": "INTC",
@@ -638,7 +738,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-11T22:08:42.370441",
+    "timestamp": "2026-08-11T22:08:50.320620",
     "items": [
       {
         "symbol": "SPX",
@@ -1103,7 +1203,7 @@
     "changePercent": -0.33,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 11 Aug: 29,525.48, down -0.33% -- BEARISH. modest -0.33% down. Counter: price above SMA20, RSI 55.0 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-08-11T18:09:08.393873"
+    "timestamp": "2026-08-11T18:09:16.318036"
   },
   "sticky": {
     "cnbc": [
@@ -1173,31 +1273,31 @@
         "description": ""
       },
       {
-        "title": "What Makes Cerebras Systems (CBRS) a Bullish Bet?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/makes-cerebras-systems-cbrs-bullish-133954698.html",
+        "title": "EUR/USD, GBP/USD, and USD/CAD \u2013 Short-Term Forecast for 10/8/2026",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/eur-usd-gbp-usd-usd-135647672.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-10T13:39:54+00:00",
+        "published": "2026-08-10T13:56:47+00:00",
         "description": ""
       },
       {
-        "title": "Ryanair\u2019s Profits Slumped, but Is the Market Overlooking Its Biggest Advantage?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/ryanair-profits-slumped-market-overlooking-134026952.html",
+        "title": "Nu Holdings (NU) Could Rebound Despite Asset Quality Concerns",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nu-holdings-nu-could-rebound-135412133.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-10T13:40:26+00:00",
+        "published": "2026-08-10T13:54:12+00:00",
         "description": ""
       },
       {
-        "title": "Chip equipment stocks rise after Taiwan Semiconductor revenue surges 45%",
-        "url": "https://finance.yahoo.com/markets/stocks/article/chip-equipment-stocks-rise-after-taiwan-semiconductor-revenue-surges-45-133813616.html",
+        "title": "AI Adoption Is Driving Stronger Demand for Palo Alto Networks (PANW)",
+        "url": "https://finance.yahoo.com/technology/ai/articles/ai-adoption-driving-stronger-demand-135203323.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-10T13:38:13+00:00",
+        "published": "2026-08-10T13:52:03+00:00",
         "description": ""
       },
       {
-        "title": "Are Wall Street Analysts Bullish on Corteva Stock?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-bullish-corteva-133419231.html",
+        "title": "Bullish Oil Bets Shrink for a Second Week Running, COT Data Show",
+        "url": "https://finance.yahoo.com/markets/commodities/articles/bullish-oil-bets-shrink-second-140000926.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-10T13:34:19+00:00",
+        "published": "2026-08-10T14:00:00+00:00",
         "description": ""
       },
       {
@@ -1215,10 +1315,10 @@
         "description": ""
       },
       {
-        "title": "American Airlines vs. easyJet: Which Airline is Better Positioned to Handle Higher Fuel Costs?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/american-airlines-vs-easyjet-airline-134126985.html",
+        "title": "Palantir Technologies (PLTR) Turning AI Demand\u00a0into\u00a0Profitable Growth",
+        "url": "https://finance.yahoo.com/technology/ai/articles/palantir-pltr-turning-ai-demand-134658026.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-10T13:41:26+00:00",
+        "published": "2026-08-10T13:46:58+00:00",
         "description": ""
       }
     ],

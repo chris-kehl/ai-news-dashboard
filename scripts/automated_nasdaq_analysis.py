@@ -6,6 +6,7 @@ Run this on macbook1 every 15 minutes via cron:
 """
 import json, os, sys, subprocess
 from datetime import datetime
+from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scraper'))
 
@@ -22,6 +23,19 @@ from summarizer import create_daily_summary
 from nasdaq_scraper import get_nasdaq_data
 from sticky_tab_scraper import get_sticky_tab_data
 from weekly_pick_scraper import get_weekly_pick
+
+def load_cached_pick():
+    """Load weekly_pick from the reliable cache."""
+    cache_path = Path(__file__).resolve().parent.parent / ".cache" / "weekly_pick_cache.json"
+    try:
+        with open(cache_path) as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+def should_regenerate(now):
+    """Only regenerate weekly pick on Monday 11am-5pm."""
+    return now.weekday() == 0 and 11 <= now.hour <= 17
 
 def run_update():
     print(f"\n{'='*50}\nStandalone Update — {datetime.now().isoformat()}\n{'='*50}")
@@ -42,7 +56,82 @@ def run_update():
     github_repos = get_trending_repos()
     nasdaq_data = get_nasdaq_data()
     sticky_data = get_sticky_tab_data()
-    weekly_pick_data = get_weekly_pick()
+
+    # Weekly Pick: use reliable cache, only regen on Monday
+    now = datetime.now()
+    cached_pick = load_cached_pick()
+    weekly_pick_data = cached_pick
+
+    if should_regenerate(now):
+        print("      [weekly_pick] Monday regen window — running get_weekly_pick()")
+        try:
+            fresh = get_weekly_pick()
+            if fresh and fresh.get('top_pick', {}).get('name'):
+                weekly_pick_data = fresh
+                # Save to cache
+                cache_path = Path(__file__).resolve().parent.parent / ".cache" / "weekly_pick_cache.json"
+                with open(cache_path, "w") as f:
+                    json.dump(fresh, f, indent=2, default=str)
+                print("      [weekly_pick] Fresh pick generated and cached")
+        except Exception as e:
+            print(f"      [weekly_pick] Regen failed: {e}, using cached")
+    else:
+        if cached_pick:
+            print(f"      [weekly_pick] Using cached pick: {cached_pick['week_label']}")
+        else:
+            print("      [weekly_pick] No cache available")
+
+    summary_data = create_daily_summary(reddit_posts, [], github_repos,
+                                        crypto_data=crypto_data, stocks_data=stocks_data)
+
+    data = {
+        "timestamp": datetime.now().isoformat(),
+        "summary": summary_data["summary"],
+        "signals": summary_data["signals"],
+        "reddit": reddit_posts,
+        "world_reddit": world_reddit_posts,
+        "world_x": world_x_posts,
+        "crypto": crypto_data,
+        "news": news_data.get("all_news", []),
+        "stocks": stocks_data,
+        "ticker": ticker_data,
+        "business": business_data,
+        "tech_business": tech_business_data,
+        "defense": defense_data.get("conflicts", []),
+        "github": github_repos,
+        "nasdaq_data": nasdaq_data,
+        "sticky": sticky_data,
+        "futures": futures_data,
+        "weekly_pick": weekly_pick_data,
+    }
+
+    outfile = os.path.join(os.path.dirname(__file__), '..', 'data.json')
+
+    # Always preserve weekly_pick from cache if it's empty
+    if not data.get('weekly_pick') or not data['weekly_pick'].get('top_pick', {}).get('name'):
+        try:
+            with open(outfile, 'r') as f:
+                old_data = json.load(f)
+            old_wp = old_data.get('weekly_pick')
+            if old_wp and old_wp.get('top_pick', {}).get('name'):
+                data['weekly_pick'] = old_wp
+                print(f"      [weekly_pick] Preserved existing: {old_wp['top_pick']['name']}")
+        except Exception:
+            pass
+
+    with open(outfile, 'w') as f:
+        json.dump(data, f, indent=2)
+    print(f"[OK] Written to {outfile}")
+
+    # Git push
+    try:
+        repo_dir = os.path.join(os.path.dirname(__file__), '..')
+        subprocess.run(['git', 'add', 'data.json'], cwd=repo_dir, check=False)
+        subprocess.run(['git', 'commit', '-m', f'data: update {datetime.now().strftime("%Y-%m-%d %H:%M")}'], cwd=repo_dir, check=True)
+        subprocess.run(['git', 'push'], cwd=repo_dir, check=True)
+        print("[OK] Pushed to GitHub")
+    except subprocess.CalledProcessError as e:
+        print(f"[WARN] Git push failed: {e}")
 
     summary_data = create_daily_summary(reddit_posts, [], github_repos,
                                         crypto_data=crypto_data, stocks_data=stocks_data)

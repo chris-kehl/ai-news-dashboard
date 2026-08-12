@@ -775,6 +775,17 @@ async function loadData(){
     var r=await fetch('data.json?v='+Date.now());
     var d=await r.json();
     tickerItems=(d.ticker||{}).items||[];
+
+    // CRITICAL: override stale data.json weekly_pick with standalone weekly_pick.json
+    try{
+      var wr=await fetch('weekly_pick.json?t='+Date.now());
+      var wd=await wr.json();
+      if(wd && wd.top_pick && wd.top_pick.name){
+        d.weekly_pick = wd;
+        console.log('[weekly_pick] loaded from weekly_pick.json:', wd.top_pick.name);
+      }
+    }catch(wpErr){console.log('[weekly_pick] no weekly_pick.json, using data.json fallback');}
+
     try{renderAll(d);}catch(e){console.error('renderAll error',e);}
     try{localStorage.setItem('dash_data',JSON.stringify(d));}catch(e){}
   }catch(e){console.error('fetch',e);}
@@ -1533,3 +1544,4 @@ window.addEventListener('resize',function(){pongResize();siResize();trResize();f
 </script>
 </body>
 </html>/* cache-bust: 1786102456 */
+/* cache-bust: 1786526875 */

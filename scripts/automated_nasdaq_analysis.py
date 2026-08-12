@@ -58,27 +58,39 @@ def run_update():
     nasdaq_data = get_nasdaq_data()
     sticky_data = get_sticky_tab_data()
 
-    # Weekly Pick: cache-first, only regen Monday 11am-5pm
+    # Weekly Pick: prefer standalone weekly_pick.json (from pipeline_v2), else cache, else old
     now = datetime.now()
-    cached_pick = load_cached_pick()
-    weekly_pick_data = cached_pick
+    weekly_pick_data = None
 
-    if should_regenerate(now):
-        print("      [weekly_pick] Monday regen window")
+    # 1. Try standalone file (pipeline_v2 writes this)
+    wp_file = ROOT / "weekly_pick.json"
+    try:
+        with open(wp_file) as f:
+            wp_json = json.load(f)
+        if wp_json.get('top_pick',{}).get('name'):
+            weekly_pick_data = wp_json
+            print(f"      [weekly_pick] Using weekly_pick.json: {wp_json['top_pick']['name']}")
+    except Exception:
+        pass
+
+    # 2. Fallback to cache
+    if not weekly_pick_data:
+        cached_pick = load_cached_pick()
+        if cached_pick:
+            weekly_pick_data = cached_pick
+            print(f"      [weekly_pick] Using cache: {cached_pick['week_label']}")
+
+    # 3. Monday regen via old get_weekly_pick
+    if not weekly_pick_data and should_regenerate(now):
+        print("      [weekly_pick] Monday fallback to get_weekly_pick()")
         try:
             fresh = get_weekly_pick()
             if fresh and fresh.get('top_pick', {}).get('name'):
                 weekly_pick_data = fresh
                 with open(CACHE_DIR / "weekly_pick_cache.json", "w") as f:
                     json.dump(fresh, f, indent=2, default=str)
-                print(f"      [weekly_pick] New pick: {fresh['top_pick']['name']}")
         except Exception as e:
-            print(f"      [weekly_pick] Regen failed: {e}")
-    else:
-        if cached_pick:
-            print(f"      [weekly_pick] Using cached: {cached_pick['week_label']}")
-        else:
-            print("      [weekly_pick] No cache")
+            print(f"      [weekly_pick] Fallback failed: {e}")
 
     summary_data = create_daily_summary(reddit_posts, [], github_repos,
                                         crypto_data=crypto_data, stocks_data=stocks_data)

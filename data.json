@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-13T18:04:19.471408",
+  "timestamp": "2026-08-13T18:06:43.181614",
   "summary": "Key topics today:\n- - Choosing an AI model: one prompt, 11 models, different results (r/HackerNews, 201 pts)\n- - Accelerating GPT-5.6 Sol Ultrafast (r/HackerNews, 101 pts)\n- - How Organizations Use AI: Evidence from ChatGPT [pdf] (r/HackerNews, 101 pts)\n- - Launch HN: Bullet (YC S26) \u2013 A Faster Coding Agent (r/HackerNews, 101 pts)\n- - AI At Home Part 1: A Box Of Scraps (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -1873,8 +1873,8 @@
       "change_7d": 6.2,
       "change_30d": 16.6,
       "rationale": "Technical: 78/100 | Momentum: 85/100 | Sentiment: 50/100 | Volatility: 55/100",
-      "key_levels": "Support: $381.60",
-      "timeframe": "Swing (1-4 weeks)",
+      "category": "Pharmaceuticals",
+      "rsi": 51,
       "factors": [
         "RSI 51 bullish",
         "Above SMA20",
@@ -1882,55 +1882,67 @@
         "MACD bullish",
         "+6.2% week",
         "+16.6% month"
-      ]
+      ],
+      "key_levels": "Support: 81.60",
+      "timeframe": "Swing (1-4 weeks)"
     },
     "top_five": [
       {
         "ticker": "AMGN",
         "name": "Amgen",
-        "category": "Equity - S&P 500",
         "score": 72.2,
         "price": 414.18,
         "change_7d": 6.2,
         "change_30d": 16.6,
-        "rsi": 51.0
-      },
-      {
-        "ticker": "XMR-USD",
-        "name": "Monero",
-        "category": "Crypto",
-        "score": 71.2,
-        "price": 390.61,
-        "change_7d": 5.7,
-        "change_30d": 10.9
+        "category": "Pharmaceuticals"
       },
       {
         "ticker": "VRTX",
         "name": "Vertex Pharmaceuticals",
-        "category": "Equity - S&P 500",
-        "score": 70.1,
+        "score": 71.8,
         "price": 521.23,
         "change_7d": 8.9,
-        "change_30d": 9.4
+        "change_30d": 9.4,
+        "category": "Biotech"
+      },
+      {
+        "ticker": "XMR-USD",
+        "name": "Monero",
+        "score": 71.2,
+        "price": 390.61,
+        "change_7d": 5.7,
+        "change_30d": 10.9,
+        "category": "Crypto"
       },
       {
         "ticker": "ABT",
         "name": "Abbott Labs",
-        "category": "Equity - S&P 500",
         "score": 69.2,
         "price": 108.57,
         "change_7d": 3.0,
-        "change_30d": 22.9
+        "change_30d": 22.9,
+        "category": "Healthcare"
       },
       {
         "ticker": "RTX",
         "name": "RTX Corp",
-        "category": "Equity - S&P 500",
         "score": 69.2,
         "price": 223.88,
         "change_7d": 2.7,
-        "change_30d": 15.8
+        "change_30d": 15.8,
+        "category": "Aerospace & Defense"
       }
-    ]
+    ],
+    "best_etf_of_week": {
+      "ticker": "QQQ",
+      "name": "QQQ",
+      "display_name": "Invesco QQQ Trust",
+      "price": 202.35,
+      "score": 65.8,
+      "change_7d": 1.2,
+      "change_30d": 3.8,
+      "category": "ETF",
+      "rationale": "Nasdaq-100 exposure, strong tech sector momentum"
+    }
   }
 }

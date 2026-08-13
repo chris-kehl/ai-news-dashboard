@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-13T17:31:22.994077",
+  "timestamp": "2026-08-13T17:31:28.660280",
   "summary": "Key topics today:\n- - Choosing an AI model: one prompt, 11 models, different results (r/HackerNews, 201 pts)\n- - Accelerating GPT-5.6 Sol Ultrafast (r/HackerNews, 101 pts)\n- - How Organizations Use AI: Evidence from ChatGPT [pdf] (r/HackerNews, 101 pts)\n- - AI At Home Part 1: A Box Of Scraps (r/HackerNews, 101 pts)\n- - Codex in ChatGPT desktop app for Linux is now in preview (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -25,6 +25,30 @@
       "change": 2.2,
       "category": "crypto",
       "text": "HYPE +2.2% @ $57.50"
+    },
+    {
+      "type": "buy",
+      "asset": "HOOD",
+      "price": 99.37,
+      "change": 5.29,
+      "category": "stock",
+      "text": "HOOD +5.3% momentum @ $99.37"
+    },
+    {
+      "type": "watch",
+      "asset": "NVDA",
+      "price": 225.3,
+      "change": 3.59,
+      "category": "stock",
+      "text": "NVDA +3.6% @ $225.30"
+    },
+    {
+      "type": "watch",
+      "asset": "COIN",
+      "price": 153.9,
+      "change": 3.58,
+      "category": "stock",
+      "text": "COIN +3.6% @ $153.90"
     },
     {
       "type": "watch",
@@ -192,7 +216,7 @@
     }
   ],
   "crypto": {
-    "timestamp": "2026-08-13T21:31:18.503381",
+    "timestamp": "2026-08-13T21:31:23.725028",
     "prices": [
       {
         "name": "Bittensor",
@@ -349,7 +373,7 @@
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-08-13T21:30:47.290393",
+    "timestamp": "2026-08-13T21:30:55.002451",
     "trending": [
       {
         "symbol": ".SPX",
@@ -373,7 +397,57 @@
         "name": "DJIA"
       }
     ],
-    "meme_momentum": [],
+    "meme_momentum": [
+      {
+        "symbol": "HOOD",
+        "price": 99.37,
+        "change": 4.99,
+        "change_percent": 5.29,
+        "name": "Robinhood Markets, Inc."
+      },
+      {
+        "symbol": "NVDA",
+        "price": 225.3,
+        "change": 7.8,
+        "change_percent": 3.59,
+        "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "COIN",
+        "price": 153.9,
+        "change": 5.32,
+        "change_percent": 3.58,
+        "name": "Coinbase Global, Inc."
+      },
+      {
+        "symbol": "PLTR",
+        "price": 179.01,
+        "change": 4.07,
+        "change_percent": 2.33,
+        "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "TSLA",
+        "price": 339.96,
+        "change": 7.15,
+        "change_percent": 2.15,
+        "name": "Tesla, Inc."
+      },
+      {
+        "symbol": "AMD",
+        "price": 483.01,
+        "change": 8.69,
+        "change_percent": 1.83,
+        "name": "Advanced Micro Devices, Inc."
+      },
+      {
+        "symbol": "MSTR",
+        "price": 97.1,
+        "change": 1.01,
+        "change_percent": 1.05,
+        "name": "Strategy Inc"
+      }
+    ],
     "dow30": [
       {
         "symbol": "INTC",
@@ -446,6 +520,20 @@
         "name": "Johnson & Johnson"
       },
       {
+        "symbol": "AMGN",
+        "price": 417.84,
+        "change": 3.54,
+        "change_percent": 0.85,
+        "name": "Amgen Inc."
+      },
+      {
+        "symbol": "AXP",
+        "price": 343.65,
+        "change": 2.84,
+        "change_percent": 0.83,
+        "name": "American Express Company"
+      },
+      {
         "symbol": "GS",
         "price": 1042.63,
         "change": 8.22,
@@ -472,6 +560,13 @@
         "change": 1.07,
         "change_percent": 0.3,
         "name": "JP Morgan Chase & Co."
+      },
+      {
+        "symbol": "AAPL",
+        "price": 305.26,
+        "change": 0.35,
+        "change_percent": 0.11,
+        "name": "Apple Inc."
       },
       {
         "symbol": "NKE",
@@ -523,6 +618,13 @@
         "name": "Sherwin-Williams Company (The)"
       },
       {
+        "symbol": "BA",
+        "price": 230.33,
+        "change": -2.91,
+        "change_percent": -1.25,
+        "name": "Boeing Company (The)"
+      },
+      {
         "symbol": "MSFT",
         "price": 496.88,
         "change": -6.93,
@@ -535,6 +637,13 @@
         "change": -5.61,
         "change_percent": -1.49,
         "name": "The Travelers Companies, Inc."
+      },
+      {
+        "symbol": "AMZN",
+        "price": 265.13,
+        "change": -7.14,
+        "change_percent": -2.62,
+        "name": "Amazon.com, Inc."
       },
       {
         "symbol": "HD",
@@ -695,7 +804,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-08-13T21:31:13.008312",
+    "timestamp": "2026-08-13T21:31:20.261466",
     "items": [
       {
         "symbol": "SPX",
@@ -1160,7 +1269,7 @@
     "changePercent": 1.15,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 13 Aug: 30,084.50, up +1.15% -- BULLISH. price above SMA20, RSI 69.8 strong, MACD bullish, strong +1.15% move. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-08-13T17:31:21.513798"
+    "timestamp": "2026-08-13T17:31:27.002218"
   },
   "sticky": {
     "cnbc": [

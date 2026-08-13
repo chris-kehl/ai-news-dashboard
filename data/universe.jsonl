@@ -1,606 +1,592 @@
-{"ticker": "SPY", "name": "SPDR S&P 500", "type": "etf", "category": "broad"}
-{"ticker": "QQQ", "name": "Invesco QQQ Trust", "type": "etf", "category": "broad"}
-{"ticker": "IWM", "name": "iShares Russell 2000", "type": "etf", "category": "broad"}
-{"ticker": "DIA", "name": "SPDR Dow Jones", "type": "etf", "category": "broad"}
-{"ticker": "VOO", "name": "Vanguard S&P 500", "type": "etf", "category": "broad"}
-{"ticker": "VTI", "name": "Vanguard Total Stock Market", "type": "etf", "category": "broad"}
-{"ticker": "XLF", "name": "Financial Select Sector SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLE", "name": "Energy Select Sector SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLK", "name": "Technology Select SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLI", "name": "Industrial Select SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLP", "name": "Consumer Staples Select SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLU", "name": "Utilities Select SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLB", "name": "Materials Select SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XLY", "name": "Consumer Discretionary SPDR", "type": "etf", "category": "sector"}
-{"ticker": "XRT", "name": "SPDR S&P Retail", "type": "etf", "category": "sector"}
-{"ticker": "XHB", "name": "SPDR S&P Homebuilders", "type": "etf", "category": "sector"}
-{"ticker": "SMH", "name": "VanEck Semiconductor ETF", "type": "etf", "category": "sector"}
-{"ticker": "SOXX", "name": "iShares Semiconductor ETF", "type": "etf", "category": "sector"}
-{"ticker": "EEM", "name": "iShares MSCI Emerging Markets", "type": "etf", "category": "intl"}
-{"ticker": "EFA", "name": "iShares MSCI EAFE", "type": "etf", "category": "intl"}
-{"ticker": "IEFA", "name": "iShares Core MSCI EAFE", "type": "etf", "category": "intl"}
-{"ticker": "ACWX", "name": "iShares MSCI ACWI ex US", "type": "etf", "category": "intl"}
-{"ticker": "EMXC", "name": "iShares MSCI EM ex China", "type": "etf", "category": "intl"}
-{"ticker": "VXUS", "name": "Vanguard Total Intl Stock", "type": "etf", "category": "intl"}
-{"ticker": "VWO", "name": "Vanguard FTSE Emerging Markets", "type": "etf", "category": "intl"}
-{"ticker": "VEA", "name": "Vanguard FTSE Developed Markets", "type": "etf", "category": "intl"}
-{"ticker": "FXI", "name": "iShares China Large-Cap", "type": "etf", "category": "intl"}
-{"ticker": "EWJ", "name": "iShares MSCI Japan", "type": "etf", "category": "intl"}
-{"ticker": "EWG", "name": "iShares MSCI Germany", "type": "etf", "category": "intl"}
-{"ticker": "EWU", "name": "iShares MSCI UK", "type": "etf", "category": "intl"}
-{"ticker": "EWC", "name": "iShares MSCI Canada", "type": "etf", "category": "intl"}
-{"ticker": "EWA", "name": "iShares MSCI Australia", "type": "etf", "category": "intl"}
-{"ticker": "INDA", "name": "iShares MSCI India", "type": "etf", "category": "intl"}
-{"ticker": "EWZ", "name": "iShares Brazil", "type": "etf", "category": "intl"}
-{"ticker": "TLT", "name": "iShares 20+ Year Treasury", "type": "etf", "category": "bond"}
-{"ticker": "IEF", "name": "iShares 7-10 Year Treasury", "type": "etf", "category": "bond"}
-{"ticker": "SHY", "name": "iShares 1-3 Year Treasury", "type": "etf", "category": "bond"}
-{"ticker": "HYG", "name": "iShares iBoxx High Yield", "type": "etf", "category": "bond"}
-{"ticker": "LQD", "name": "iShares iBoxx Investment Grade", "type": "etf", "category": "bond"}
-{"ticker": "BND", "name": "Vanguard Total Bond Market", "type": "etf", "category": "bond"}
-{"ticker": "ARKK", "name": "ARK Innovation", "type": "etf", "category": "innovation"}
-{"ticker": "ARKG", "name": "ARK Genomic Revolution", "type": "etf", "category": "innovation"}
-{"ticker": "ARKF", "name": "ARK Fintech Innovation", "type": "etf", "category": "innovation"}
-{"ticker": "ARKQ", "name": "ARK Autonomous Technology", "type": "etf", "category": "innovation"}
-{"ticker": "ARKW", "name": "ARK Next Gen Internet", "type": "etf", "category": "innovation"}
-{"ticker": "ARKX", "name": "ARK Space Exploration", "type": "etf", "category": "innovation"}
-{"ticker": "IBB", "name": "iShares Nasdaq Biotechnology", "type": "etf", "category": "biotech"}
-{"ticker": "XBI", "name": "SPDR S&P Biotech", "type": "etf", "category": "biotech"}
-{"ticker": "XLV", "name": "Health Care Select SPDR", "type": "etf", "category": "biotech"}
-{"ticker": "PPH", "name": "VanEck Pharmaceutical ETF", "type": "etf", "category": "biotech"}
-{"ticker": "GLD", "name": "SPDR Gold Shares", "type": "etf", "category": "commodity"}
-{"ticker": "SLV", "name": "iShares Silver Trust", "type": "etf", "category": "commodity"}
-{"ticker": "USO", "name": "United States Oil Fund", "type": "etf", "category": "commodity"}
-{"ticker": "UNG", "name": "United States Natural Gas", "type": "etf", "category": "commodity"}
-{"ticker": "PDBC", "name": "Invesco Optimum Yield Diversified Commodity", "type": "etf", "category": "commodity"}
-{"ticker": "BITO", "name": "ProShares Bitcoin Strategy ETF", "type": "etf", "category": "crypto"}
-{"ticker": "VNQ", "name": "Vanguard Real Estate", "type": "etf", "category": "reit"}
-{"ticker": "XLRE", "name": "Real Estate Select SPDR", "type": "etf", "category": "reit"}
-{"ticker": "IYR", "name": "iShares U.S. Real Estate", "type": "etf", "category": "reit"}
-{"ticker": "VIG", "name": "Vanguard Dividend Appreciation", "type": "etf", "category": "dividend"}
-{"ticker": "VYM", "name": "Vanguard High Dividend Yield", "type": "etf", "category": "dividend"}
-{"ticker": "DVY", "name": "iShares Select Dividend", "type": "etf", "category": "dividend"}
-{"ticker": "SCHD", "name": "Schwab US Dividend Equity", "type": "etf", "category": "dividend"}
-{"ticker": "QUAL", "name": "iShares MSCI USA Quality", "type": "etf", "category": "quality"}
-{"ticker": "MTUM", "name": "iShares MSCI USA Momentum", "type": "etf", "category": "momentum"}
-{"ticker": "VLUE", "name": "iShares MSCI USA Value", "type": "etf", "category": "value"}
-{"ticker": "SPXL", "name": "Direxion Daily S&P 500 Bull 3X", "type": "etf", "category": "leveraged"}
-{"ticker": "SPXS", "name": "Direxion Daily S&P 500 Bear 3X", "type": "etf", "category": "leveraged"}
-{"ticker": "SOXL", "name": "Direxion Daily Semiconductor Bull 3X", "type": "etf", "category": "leveraged"}
-{"ticker": "SQQQ", "name": "ProShares UltraPro Short QQQ", "type": "etf", "category": "leveraged"}
-{"ticker": "TQQQ", "name": "ProShares UltraPro QQQ", "type": "etf", "category": "leveraged"}
-{"ticker": "UVXY", "name": "ProShares Ultra VIX Short-Term Futures", "type": "etf", "category": "volatility"}
-{"ticker": "VIXY", "name": "ProShares VIX Short-Term Futures", "type": "etf", "category": "volatility"}
-{"ticker": "LIT", "name": "Global X Lithium & Battery Tech", "type": "etf", "category": "thematic"}
-{"ticker": "URA", "name": "Global X Uranium ETF", "type": "etf", "category": "thematic"}
-{"ticker": "BOTZ", "name": "Global X Robotics & AI ETF", "type": "etf", "category": "thematic"}
-{"ticker": "CLOU", "name": "Global X Cloud Computing ETF", "type": "etf", "category": "thematic"}
-{"ticker": "HACK", "name": "Global X Cybersecurity ETF", "type": "etf", "category": "thematic"}
-{"ticker": "FINX", "name": "Global X FinTech ETF", "type": "etf", "category": "thematic"}
-{"ticker": "CIBR", "name": "First Trust NASDAQ Cybersecurity ETF", "type": "etf", "category": "thematic"}
-{"ticker": "ESPO", "name": "VanEck Video Gaming & eSports ETF", "type": "etf", "category": "thematic"}
-{"ticker": "BLOK", "name": "Amplify Transformational Data Sharing ETF", "type": "etf", "category": "thematic"}
-{"ticker": "MJ", "name": "Amplify Seymour Cannabis ETF", "type": "etf", "category": "thematic"}
-{"ticker": "MMM", "name": "3M", "type": "stock", "category": "sp500"}
-{"ticker": "AOS", "name": "A. O. Smith", "type": "stock", "category": "sp500"}
-{"ticker": "ABT", "name": "Abbott Laboratories", "type": "stock", "category": "sp500"}
-{"ticker": "ABBV", "name": "AbbVie", "type": "stock", "category": "sp500"}
-{"ticker": "ACN", "name": "Accenture", "type": "stock", "category": "sp500"}
-{"ticker": "ADBE", "name": "Adobe Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "AMD", "name": "Advanced Micro Devices", "type": "stock", "category": "sp500"}
-{"ticker": "AES", "name": "AES Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "AFL", "name": "Aflac", "type": "stock", "category": "sp500"}
-{"ticker": "A", "name": "Agilent Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "APD", "name": "Air Products", "type": "stock", "category": "sp500"}
-{"ticker": "ABNB", "name": "Airbnb", "type": "stock", "category": "sp500"}
-{"ticker": "AKAM", "name": "Akamai Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "ALB", "name": "Albemarle Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "ARE", "name": "Alexandria Real Estate Equities", "type": "stock", "category": "sp500"}
-{"ticker": "ALGN", "name": "Align Technology", "type": "stock", "category": "sp500"}
-{"ticker": "ALLE", "name": "Allegion", "type": "stock", "category": "sp500"}
-{"ticker": "LNT", "name": "Alliant Energy", "type": "stock", "category": "sp500"}
-{"ticker": "ALL", "name": "Allstate", "type": "stock", "category": "sp500"}
-{"ticker": "GOOGL", "name": "Alphabet Inc. (Class A)", "type": "stock", "category": "sp500"}
-{"ticker": "GOOG", "name": "Alphabet Inc. (Class C)", "type": "stock", "category": "sp500"}
-{"ticker": "MO", "name": "Altria", "type": "stock", "category": "sp500"}
-{"ticker": "AMZN", "name": "Amazon", "type": "stock", "category": "sp500"}
-{"ticker": "AMCR", "name": "Amcor", "type": "stock", "category": "sp500"}
-{"ticker": "AEE", "name": "Ameren", "type": "stock", "category": "sp500"}
-{"ticker": "AEP", "name": "American Electric Power", "type": "stock", "category": "sp500"}
-{"ticker": "AXP", "name": "American Express", "type": "stock", "category": "sp500"}
-{"ticker": "AIG", "name": "American International Group", "type": "stock", "category": "sp500"}
-{"ticker": "AMT", "name": "American Tower", "type": "stock", "category": "sp500"}
-{"ticker": "AWK", "name": "American Water Works", "type": "stock", "category": "sp500"}
-{"ticker": "AMP", "name": "Ameriprise Financial", "type": "stock", "category": "sp500"}
-{"ticker": "AME", "name": "Ametek", "type": "stock", "category": "sp500"}
-{"ticker": "AMGN", "name": "Amgen", "type": "stock", "category": "sp500"}
-{"ticker": "APH", "name": "Amphenol", "type": "stock", "category": "sp500"}
-{"ticker": "ADI", "name": "Analog Devices", "type": "stock", "category": "sp500"}
-{"ticker": "AON", "name": "Aon plc", "type": "stock", "category": "sp500"}
-{"ticker": "APA", "name": "APA Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "APO", "name": "Apollo Global Management", "type": "stock", "category": "sp500"}
-{"ticker": "AAPL", "name": "Apple Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "AMAT", "name": "Applied Materials", "type": "stock", "category": "sp500"}
-{"ticker": "APP", "name": "AppLovin", "type": "stock", "category": "sp500"}
-{"ticker": "APTV", "name": "Aptiv", "type": "stock", "category": "sp500"}
-{"ticker": "ACGL", "name": "Arch Capital Group", "type": "stock", "category": "sp500"}
-{"ticker": "ADM", "name": "Archer Daniels Midland", "type": "stock", "category": "sp500"}
-{"ticker": "ARES", "name": "Ares Management", "type": "stock", "category": "sp500"}
-{"ticker": "ANET", "name": "Arista Networks", "type": "stock", "category": "sp500"}
-{"ticker": "AJG", "name": "Arthur J. Gallagher & Co.", "type": "stock", "category": "sp500"}
-{"ticker": "AIZ", "name": "Assurant", "type": "stock", "category": "sp500"}
-{"ticker": "T", "name": "AT&T", "type": "stock", "category": "sp500"}
-{"ticker": "ATO", "name": "Atmos Energy", "type": "stock", "category": "sp500"}
-{"ticker": "ADSK", "name": "Autodesk", "type": "stock", "category": "sp500"}
-{"ticker": "ADP", "name": "Automatic Data Processing", "type": "stock", "category": "sp500"}
-{"ticker": "AZO", "name": "AutoZone", "type": "stock", "category": "sp500"}
-{"ticker": "AVB", "name": "AvalonBay Communities", "type": "stock", "category": "sp500"}
-{"ticker": "AVY", "name": "Avery Dennison", "type": "stock", "category": "sp500"}
-{"ticker": "AXON", "name": "Axon Enterprise", "type": "stock", "category": "sp500"}
-{"ticker": "BKR", "name": "Baker Hughes", "type": "stock", "category": "sp500"}
-{"ticker": "BALL", "name": "Ball Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "BAC", "name": "Bank of America", "type": "stock", "category": "sp500"}
-{"ticker": "BAX", "name": "Baxter International", "type": "stock", "category": "sp500"}
-{"ticker": "BDX", "name": "Becton Dickinson", "type": "stock", "category": "sp500"}
-{"ticker": "BRK.B", "name": "Berkshire Hathaway", "type": "stock", "category": "sp500"}
-{"ticker": "BBY", "name": "Best Buy", "type": "stock", "category": "sp500"}
-{"ticker": "TECH", "name": "Bio-Techne", "type": "stock", "category": "sp500"}
-{"ticker": "BIIB", "name": "Biogen", "type": "stock", "category": "sp500"}
-{"ticker": "BLK", "name": "BlackRock", "type": "stock", "category": "sp500"}
-{"ticker": "BX", "name": "Blackstone Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "XYZ", "name": "Block, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "BNY", "name": "BNY Mellon", "type": "stock", "category": "sp500"}
-{"ticker": "BA", "name": "Boeing", "type": "stock", "category": "sp500"}
-{"ticker": "BKNG", "name": "Booking Holdings", "type": "stock", "category": "sp500"}
-{"ticker": "BSX", "name": "Boston Scientific", "type": "stock", "category": "sp500"}
-{"ticker": "BMY", "name": "Bristol Myers Squibb", "type": "stock", "category": "sp500"}
-{"ticker": "AVGO", "name": "Broadcom", "type": "stock", "category": "sp500"}
-{"ticker": "BR", "name": "Broadridge Financial Solutions", "type": "stock", "category": "sp500"}
-{"ticker": "BRO", "name": "Brown & Brown", "type": "stock", "category": "sp500"}
-{"ticker": "BF.B", "name": "Brown\u2013Forman", "type": "stock", "category": "sp500"}
-{"ticker": "BLDR", "name": "Builders FirstSource", "type": "stock", "category": "sp500"}
-{"ticker": "BG", "name": "Bunge Global", "type": "stock", "category": "sp500"}
-{"ticker": "BXP", "name": "BXP, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "CHRW", "name": "C.H. Robinson", "type": "stock", "category": "sp500"}
-{"ticker": "CDNS", "name": "Cadence Design Systems", "type": "stock", "category": "sp500"}
-{"ticker": "CPT", "name": "Camden Property Trust", "type": "stock", "category": "sp500"}
-{"ticker": "COF", "name": "Capital One", "type": "stock", "category": "sp500"}
-{"ticker": "CAH", "name": "Cardinal Health", "type": "stock", "category": "sp500"}
-{"ticker": "CCL", "name": "Carnival Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "CARR", "name": "Carrier Global", "type": "stock", "category": "sp500"}
-{"ticker": "CVNA", "name": "Carvana", "type": "stock", "category": "sp500"}
-{"ticker": "CASY", "name": "Casey's", "type": "stock", "category": "sp500"}
-{"ticker": "CAT", "name": "Caterpillar Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "CBOE", "name": "Cboe Global Markets", "type": "stock", "category": "sp500"}
-{"ticker": "CBRE", "name": "CBRE Group", "type": "stock", "category": "sp500"}
-{"ticker": "CDW", "name": "CDW Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "COR", "name": "Cencora", "type": "stock", "category": "sp500"}
-{"ticker": "CNC", "name": "Centene Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "CNP", "name": "CenterPoint Energy", "type": "stock", "category": "sp500"}
-{"ticker": "CF", "name": "CF Industries", "type": "stock", "category": "sp500"}
-{"ticker": "CRL", "name": "Charles River Laboratories", "type": "stock", "category": "sp500"}
-{"ticker": "SCHW", "name": "Charles Schwab Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "CHTR", "name": "Charter Communications", "type": "stock", "category": "sp500"}
-{"ticker": "CVX", "name": "Chevron Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "CMG", "name": "Chipotle Mexican Grill", "type": "stock", "category": "sp500"}
-{"ticker": "CB", "name": "Chubb Limited", "type": "stock", "category": "sp500"}
-{"ticker": "CHD", "name": "Church & Dwight", "type": "stock", "category": "sp500"}
-{"ticker": "CIEN", "name": "Ciena", "type": "stock", "category": "sp500"}
-{"ticker": "CI", "name": "Cigna", "type": "stock", "category": "sp500"}
-{"ticker": "CINF", "name": "Cincinnati Financial", "type": "stock", "category": "sp500"}
-{"ticker": "CTAS", "name": "Cintas", "type": "stock", "category": "sp500"}
-{"ticker": "CSCO", "name": "Cisco", "type": "stock", "category": "sp500"}
-{"ticker": "C", "name": "Citigroup", "type": "stock", "category": "sp500"}
-{"ticker": "CFG", "name": "Citizens Financial Group", "type": "stock", "category": "sp500"}
-{"ticker": "CLX", "name": "Clorox", "type": "stock", "category": "sp500"}
-{"ticker": "CME", "name": "CME Group", "type": "stock", "category": "sp500"}
-{"ticker": "CMS", "name": "CMS Energy", "type": "stock", "category": "sp500"}
-{"ticker": "KO", "name": "Coca-Cola Company (The)", "type": "stock", "category": "sp500"}
-{"ticker": "CTSH", "name": "Cognizant", "type": "stock", "category": "sp500"}
-{"ticker": "COHR", "name": "Coherent Corp.", "type": "stock", "category": "sp500"}
-{"ticker": "COIN", "name": "Coinbase", "type": "stock", "category": "sp500"}
-{"ticker": "CL", "name": "Colgate-Palmolive", "type": "stock", "category": "sp500"}
-{"ticker": "CMCSA", "name": "Comcast", "type": "stock", "category": "sp500"}
-{"ticker": "FIX", "name": "Comfort Systems USA", "type": "stock", "category": "sp500"}
-{"ticker": "COP", "name": "ConocoPhillips", "type": "stock", "category": "sp500"}
-{"ticker": "ED", "name": "Consolidated Edison", "type": "stock", "category": "sp500"}
-{"ticker": "STZ", "name": "Constellation Brands", "type": "stock", "category": "sp500"}
-{"ticker": "CEG", "name": "Constellation Energy", "type": "stock", "category": "sp500"}
-{"ticker": "COO", "name": "Cooper Companies (The)", "type": "stock", "category": "sp500"}
-{"ticker": "CPRT", "name": "Copart", "type": "stock", "category": "sp500"}
-{"ticker": "GLW", "name": "Corning Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "CPAY", "name": "Corpay", "type": "stock", "category": "sp500"}
-{"ticker": "CTVA", "name": "Corteva", "type": "stock", "category": "sp500"}
-{"ticker": "CSGP", "name": "CoStar Group", "type": "stock", "category": "sp500"}
-{"ticker": "COST", "name": "Costco", "type": "stock", "category": "sp500"}
-{"ticker": "CRH", "name": "CRH plc", "type": "stock", "category": "sp500"}
-{"ticker": "CRWD", "name": "CrowdStrike", "type": "stock", "category": "sp500"}
-{"ticker": "CCI", "name": "Crown Castle", "type": "stock", "category": "sp500"}
-{"ticker": "CSX", "name": "CSX Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "CMI", "name": "Cummins", "type": "stock", "category": "sp500"}
-{"ticker": "CVS", "name": "CVS Health", "type": "stock", "category": "sp500"}
-{"ticker": "DHR", "name": "Danaher Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "DRI", "name": "Darden Restaurants", "type": "stock", "category": "sp500"}
-{"ticker": "DDOG", "name": "Datadog", "type": "stock", "category": "sp500"}
-{"ticker": "DVA", "name": "DaVita", "type": "stock", "category": "sp500"}
-{"ticker": "DECK", "name": "Deckers Brands", "type": "stock", "category": "sp500"}
-{"ticker": "DE", "name": "Deere & Company", "type": "stock", "category": "sp500"}
-{"ticker": "DELL", "name": "Dell Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "DAL", "name": "Delta Air Lines", "type": "stock", "category": "sp500"}
-{"ticker": "DVN", "name": "Devon Energy", "type": "stock", "category": "sp500"}
-{"ticker": "DXCM", "name": "Dexcom", "type": "stock", "category": "sp500"}
-{"ticker": "FANG", "name": "Diamondback Energy", "type": "stock", "category": "sp500"}
-{"ticker": "DLR", "name": "Digital Realty", "type": "stock", "category": "sp500"}
-{"ticker": "DG", "name": "Dollar General", "type": "stock", "category": "sp500"}
-{"ticker": "DLTR", "name": "Dollar Tree", "type": "stock", "category": "sp500"}
-{"ticker": "D", "name": "Dominion Energy", "type": "stock", "category": "sp500"}
-{"ticker": "DPZ", "name": "Domino's", "type": "stock", "category": "sp500"}
-{"ticker": "DASH", "name": "DoorDash", "type": "stock", "category": "sp500"}
-{"ticker": "DOV", "name": "Dover Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "DOW", "name": "Dow Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "DHI", "name": "D. R. Horton", "type": "stock", "category": "sp500"}
-{"ticker": "DTE", "name": "DTE Energy", "type": "stock", "category": "sp500"}
-{"ticker": "DUK", "name": "Duke Energy", "type": "stock", "category": "sp500"}
-{"ticker": "DD", "name": "DuPont", "type": "stock", "category": "sp500"}
-{"ticker": "ETN", "name": "Eaton Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "EBAY", "name": "eBay Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "ECHO", "name": "EchoStar", "type": "stock", "category": "sp500"}
-{"ticker": "ECL", "name": "Ecolab", "type": "stock", "category": "sp500"}
-{"ticker": "EIX", "name": "Edison International", "type": "stock", "category": "sp500"}
-{"ticker": "EW", "name": "Edwards Lifesciences", "type": "stock", "category": "sp500"}
-{"ticker": "ELV", "name": "Elevance Health", "type": "stock", "category": "sp500"}
-{"ticker": "EME", "name": "Emcor", "type": "stock", "category": "sp500"}
-{"ticker": "EMR", "name": "Emerson Electric", "type": "stock", "category": "sp500"}
-{"ticker": "ETR", "name": "Entergy", "type": "stock", "category": "sp500"}
-{"ticker": "EOG", "name": "EOG Resources", "type": "stock", "category": "sp500"}
-{"ticker": "EQT", "name": "EQT Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "EFX", "name": "Equifax", "type": "stock", "category": "sp500"}
-{"ticker": "EQIX", "name": "Equinix", "type": "stock", "category": "sp500"}
-{"ticker": "EQR", "name": "Equity Residential", "type": "stock", "category": "sp500"}
-{"ticker": "ERIE", "name": "Erie Indemnity", "type": "stock", "category": "sp500"}
-{"ticker": "ESS", "name": "Essex Property Trust", "type": "stock", "category": "sp500"}
-{"ticker": "EL", "name": "Est\u00e9e Lauder Companies (The)", "type": "stock", "category": "sp500"}
-{"ticker": "EG", "name": "Everest Group", "type": "stock", "category": "sp500"}
-{"ticker": "EVRG", "name": "Evergy", "type": "stock", "category": "sp500"}
-{"ticker": "ES", "name": "Eversource Energy", "type": "stock", "category": "sp500"}
-{"ticker": "EXC", "name": "Exelon", "type": "stock", "category": "sp500"}
-{"ticker": "EXE", "name": "Expand Energy", "type": "stock", "category": "sp500"}
-{"ticker": "EXPE", "name": "Expedia Group", "type": "stock", "category": "sp500"}
-{"ticker": "EXPD", "name": "Expeditors International", "type": "stock", "category": "sp500"}
-{"ticker": "EXR", "name": "Extra Space Storage", "type": "stock", "category": "sp500"}
-{"ticker": "XOM", "name": "ExxonMobil", "type": "stock", "category": "sp500"}
-{"ticker": "FFIV", "name": "F5, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "FDS", "name": "FactSet", "type": "stock", "category": "sp500"}
-{"ticker": "FICO", "name": "Fair Isaac", "type": "stock", "category": "sp500"}
-{"ticker": "FAST", "name": "Fastenal", "type": "stock", "category": "sp500"}
-{"ticker": "FRT", "name": "Federal Realty Investment Trust", "type": "stock", "category": "sp500"}
-{"ticker": "FDX", "name": "FedEx", "type": "stock", "category": "sp500"}
-{"ticker": "FDXF", "name": "FedEx Freight", "type": "stock", "category": "sp500"}
-{"ticker": "FERG", "name": "Ferguson Enterprises", "type": "stock", "category": "sp500"}
-{"ticker": "FIS", "name": "Fidelity National Information Services", "type": "stock", "category": "sp500"}
-{"ticker": "FITB", "name": "Fifth Third Bancorp", "type": "stock", "category": "sp500"}
-{"ticker": "FSLR", "name": "First Solar", "type": "stock", "category": "sp500"}
-{"ticker": "FE", "name": "FirstEnergy", "type": "stock", "category": "sp500"}
-{"ticker": "FISV", "name": "Fiserv", "type": "stock", "category": "sp500"}
-{"ticker": "FLEX", "name": "Flex Ltd.", "type": "stock", "category": "sp500"}
-{"ticker": "F", "name": "Ford Motor Company", "type": "stock", "category": "sp500"}
-{"ticker": "FTNT", "name": "Fortinet", "type": "stock", "category": "sp500"}
-{"ticker": "FTV", "name": "Fortive", "type": "stock", "category": "sp500"}
-{"ticker": "FOXA", "name": "Fox Corporation (Class A)", "type": "stock", "category": "sp500"}
-{"ticker": "FOX", "name": "Fox Corporation (Class B)", "type": "stock", "category": "sp500"}
-{"ticker": "BEN", "name": "Franklin Resources", "type": "stock", "category": "sp500"}
-{"ticker": "FCX", "name": "Freeport-McMoRan", "type": "stock", "category": "sp500"}
-{"ticker": "GRMN", "name": "Garmin", "type": "stock", "category": "sp500"}
-{"ticker": "IT", "name": "Gartner", "type": "stock", "category": "sp500"}
-{"ticker": "GE", "name": "GE Aerospace", "type": "stock", "category": "sp500"}
-{"ticker": "GEHC", "name": "GE HealthCare", "type": "stock", "category": "sp500"}
-{"ticker": "GEV", "name": "GE Vernova", "type": "stock", "category": "sp500"}
-{"ticker": "GEN", "name": "Gen Digital", "type": "stock", "category": "sp500"}
-{"ticker": "GNRC", "name": "Generac", "type": "stock", "category": "sp500"}
-{"ticker": "GD", "name": "General Dynamics", "type": "stock", "category": "sp500"}
-{"ticker": "GIS", "name": "General Mills", "type": "stock", "category": "sp500"}
-{"ticker": "GM", "name": "General Motors", "type": "stock", "category": "sp500"}
-{"ticker": "GPC", "name": "Genuine Parts Company", "type": "stock", "category": "sp500"}
-{"ticker": "GILD", "name": "Gilead Sciences", "type": "stock", "category": "sp500"}
-{"ticker": "GPN", "name": "Global Payments", "type": "stock", "category": "sp500"}
-{"ticker": "GL", "name": "Globe Life", "type": "stock", "category": "sp500"}
-{"ticker": "GDDY", "name": "GoDaddy", "type": "stock", "category": "sp500"}
-{"ticker": "GS", "name": "Goldman Sachs", "type": "stock", "category": "sp500"}
-{"ticker": "HAL", "name": "Halliburton", "type": "stock", "category": "sp500"}
-{"ticker": "HIG", "name": "Hartford (The)", "type": "stock", "category": "sp500"}
-{"ticker": "HAS", "name": "Hasbro", "type": "stock", "category": "sp500"}
-{"ticker": "HCA", "name": "HCA Healthcare", "type": "stock", "category": "sp500"}
-{"ticker": "DOC", "name": "Healthpeak Properties", "type": "stock", "category": "sp500"}
-{"ticker": "HSIC", "name": "Henry Schein", "type": "stock", "category": "sp500"}
-{"ticker": "HSY", "name": "Hershey Company (The)", "type": "stock", "category": "sp500"}
-{"ticker": "HPE", "name": "Hewlett Packard Enterprise", "type": "stock", "category": "sp500"}
-{"ticker": "HLT", "name": "Hilton Worldwide", "type": "stock", "category": "sp500"}
-{"ticker": "HD", "name": "Home Depot (The)", "type": "stock", "category": "sp500"}
-{"ticker": "HONA", "name": "Honeywell Aerospace", "type": "stock", "category": "sp500"}
-{"ticker": "HON", "name": "Honeywell Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "HRL", "name": "Hormel Foods", "type": "stock", "category": "sp500"}
-{"ticker": "HST", "name": "Host Hotels & Resorts", "type": "stock", "category": "sp500"}
-{"ticker": "HWM", "name": "Howmet Aerospace", "type": "stock", "category": "sp500"}
-{"ticker": "HPQ", "name": "HP Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "HUBB", "name": "Hubbell Incorporated", "type": "stock", "category": "sp500"}
-{"ticker": "HUM", "name": "Humana", "type": "stock", "category": "sp500"}
-{"ticker": "HBAN", "name": "Huntington Bancshares", "type": "stock", "category": "sp500"}
-{"ticker": "HII", "name": "Huntington Ingalls Industries", "type": "stock", "category": "sp500"}
+{"ticker": "A", "name": "A", "type": "stock", "category": "sp500"}
+{"ticker": "AAPL", "name": "AAPL", "type": "stock", "category": "sp500"}
+{"ticker": "ABBV", "name": "ABBV", "type": "stock", "category": "sp500"}
+{"ticker": "ABNB", "name": "ABNB", "type": "stock", "category": "sp500"}
+{"ticker": "ABT", "name": "ABT", "type": "stock", "category": "sp500"}
+{"ticker": "ACGL", "name": "ACGL", "type": "stock", "category": "sp500"}
+{"ticker": "ACN", "name": "ACN", "type": "stock", "category": "sp500"}
+{"ticker": "ADBE", "name": "ADBE", "type": "stock", "category": "sp500"}
+{"ticker": "ADI", "name": "ADI", "type": "stock", "category": "sp500"}
+{"ticker": "ADM", "name": "ADM", "type": "stock", "category": "sp500"}
+{"ticker": "ADP", "name": "ADP", "type": "stock", "category": "sp500"}
+{"ticker": "ADSK", "name": "ADSK", "type": "stock", "category": "sp500"}
+{"ticker": "AEE", "name": "AEE", "type": "stock", "category": "sp500"}
+{"ticker": "AEP", "name": "AEP", "type": "stock", "category": "sp500"}
+{"ticker": "AES", "name": "AES", "type": "stock", "category": "sp500"}
+{"ticker": "AFL", "name": "AFL", "type": "stock", "category": "sp500"}
+{"ticker": "AIG", "name": "AIG", "type": "stock", "category": "sp500"}
+{"ticker": "AIZ", "name": "AIZ", "type": "stock", "category": "sp500"}
+{"ticker": "AJG", "name": "AJG", "type": "stock", "category": "sp500"}
+{"ticker": "AKAM", "name": "AKAM", "type": "stock", "category": "sp500"}
+{"ticker": "ALB", "name": "ALB", "type": "stock", "category": "sp500"}
+{"ticker": "ALGN", "name": "ALGN", "type": "stock", "category": "sp500"}
+{"ticker": "ALL", "name": "ALL", "type": "stock", "category": "sp500"}
+{"ticker": "ALLE", "name": "ALLE", "type": "stock", "category": "sp500"}
+{"ticker": "AMAT", "name": "AMAT", "type": "stock", "category": "sp500"}
+{"ticker": "AMCR", "name": "AMCR", "type": "stock", "category": "sp500"}
+{"ticker": "AMD", "name": "AMD", "type": "stock", "category": "sp500"}
+{"ticker": "AME", "name": "AME", "type": "stock", "category": "sp500"}
+{"ticker": "AMGN", "name": "AMGN", "type": "stock", "category": "sp500"}
+{"ticker": "AMP", "name": "AMP", "type": "stock", "category": "sp500"}
+{"ticker": "AMT", "name": "AMT", "type": "stock", "category": "sp500"}
+{"ticker": "AMZN", "name": "AMZN", "type": "stock", "category": "sp500"}
+{"ticker": "ANET", "name": "ANET", "type": "stock", "category": "sp500"}
+{"ticker": "AON", "name": "AON", "type": "stock", "category": "sp500"}
+{"ticker": "AOS", "name": "AOS", "type": "stock", "category": "sp500"}
+{"ticker": "APA", "name": "APA", "type": "stock", "category": "sp500"}
+{"ticker": "APD", "name": "APD", "type": "stock", "category": "sp500"}
+{"ticker": "APH", "name": "APH", "type": "stock", "category": "sp500"}
+{"ticker": "APO", "name": "APO", "type": "stock", "category": "sp500"}
+{"ticker": "APP", "name": "APP", "type": "stock", "category": "sp500"}
+{"ticker": "APTV", "name": "APTV", "type": "stock", "category": "sp500"}
+{"ticker": "ARE", "name": "ARE", "type": "stock", "category": "sp500"}
+{"ticker": "ARES", "name": "ARES", "type": "stock", "category": "sp500"}
+{"ticker": "ATO", "name": "ATO", "type": "stock", "category": "sp500"}
+{"ticker": "AVB", "name": "AVB", "type": "stock", "category": "sp500"}
+{"ticker": "AVGO", "name": "AVGO", "type": "stock", "category": "sp500"}
+{"ticker": "AVY", "name": "AVY", "type": "stock", "category": "sp500"}
+{"ticker": "AWK", "name": "AWK", "type": "stock", "category": "sp500"}
+{"ticker": "AXON", "name": "AXON", "type": "stock", "category": "sp500"}
+{"ticker": "AXP", "name": "AXP", "type": "stock", "category": "sp500"}
+{"ticker": "AZO", "name": "AZO", "type": "stock", "category": "sp500"}
+{"ticker": "BA", "name": "BA", "type": "stock", "category": "sp500"}
+{"ticker": "BAC", "name": "BAC", "type": "stock", "category": "sp500"}
+{"ticker": "BALL", "name": "BALL", "type": "stock", "category": "sp500"}
+{"ticker": "BAX", "name": "BAX", "type": "stock", "category": "sp500"}
+{"ticker": "BBY", "name": "BBY", "type": "stock", "category": "sp500"}
+{"ticker": "BDX", "name": "BDX", "type": "stock", "category": "sp500"}
+{"ticker": "BEN", "name": "BEN", "type": "stock", "category": "sp500"}
+{"ticker": "BG", "name": "BG", "type": "stock", "category": "sp500"}
+{"ticker": "BIIB", "name": "BIIB", "type": "stock", "category": "sp500"}
+{"ticker": "BKNG", "name": "BKNG", "type": "stock", "category": "sp500"}
+{"ticker": "BKR", "name": "BKR", "type": "stock", "category": "sp500"}
+{"ticker": "BLDR", "name": "BLDR", "type": "stock", "category": "sp500"}
+{"ticker": "BLK", "name": "BLK", "type": "stock", "category": "sp500"}
+{"ticker": "BMY", "name": "BMY", "type": "stock", "category": "sp500"}
+{"ticker": "BNY", "name": "BNY", "type": "stock", "category": "sp500"}
+{"ticker": "BR", "name": "BR", "type": "stock", "category": "sp500"}
+{"ticker": "BRO", "name": "BRO", "type": "stock", "category": "sp500"}
+{"ticker": "BSX", "name": "BSX", "type": "stock", "category": "sp500"}
+{"ticker": "BX", "name": "BX", "type": "stock", "category": "sp500"}
+{"ticker": "BXP", "name": "BXP", "type": "stock", "category": "sp500"}
+{"ticker": "C", "name": "C", "type": "stock", "category": "sp500"}
+{"ticker": "CAH", "name": "CAH", "type": "stock", "category": "sp500"}
+{"ticker": "CARR", "name": "CARR", "type": "stock", "category": "sp500"}
+{"ticker": "CASY", "name": "CASY", "type": "stock", "category": "sp500"}
+{"ticker": "CAT", "name": "CAT", "type": "stock", "category": "sp500"}
+{"ticker": "CB", "name": "CB", "type": "stock", "category": "sp500"}
+{"ticker": "CBOE", "name": "CBOE", "type": "stock", "category": "sp500"}
+{"ticker": "CBRE", "name": "CBRE", "type": "stock", "category": "sp500"}
+{"ticker": "CCI", "name": "CCI", "type": "stock", "category": "sp500"}
+{"ticker": "CCL", "name": "CCL", "type": "stock", "category": "sp500"}
+{"ticker": "CDNS", "name": "CDNS", "type": "stock", "category": "sp500"}
+{"ticker": "CDW", "name": "CDW", "type": "stock", "category": "sp500"}
+{"ticker": "CEG", "name": "CEG", "type": "stock", "category": "sp500"}
+{"ticker": "CF", "name": "CF", "type": "stock", "category": "sp500"}
+{"ticker": "CFG", "name": "CFG", "type": "stock", "category": "sp500"}
+{"ticker": "CHD", "name": "CHD", "type": "stock", "category": "sp500"}
+{"ticker": "CHRW", "name": "CHRW", "type": "stock", "category": "sp500"}
+{"ticker": "CHTR", "name": "CHTR", "type": "stock", "category": "sp500"}
+{"ticker": "CI", "name": "CI", "type": "stock", "category": "sp500"}
+{"ticker": "CIEN", "name": "CIEN", "type": "stock", "category": "sp500"}
+{"ticker": "CINF", "name": "CINF", "type": "stock", "category": "sp500"}
+{"ticker": "CL", "name": "CL", "type": "stock", "category": "sp500"}
+{"ticker": "CLX", "name": "CLX", "type": "stock", "category": "sp500"}
+{"ticker": "CMCSA", "name": "CMCSA", "type": "stock", "category": "sp500"}
+{"ticker": "CME", "name": "CME", "type": "stock", "category": "sp500"}
+{"ticker": "CMG", "name": "CMG", "type": "stock", "category": "sp500"}
+{"ticker": "CMI", "name": "CMI", "type": "stock", "category": "sp500"}
+{"ticker": "CMS", "name": "CMS", "type": "stock", "category": "sp500"}
+{"ticker": "CNC", "name": "CNC", "type": "stock", "category": "sp500"}
+{"ticker": "CNP", "name": "CNP", "type": "stock", "category": "sp500"}
+{"ticker": "COF", "name": "COF", "type": "stock", "category": "sp500"}
+{"ticker": "COHR", "name": "COHR", "type": "stock", "category": "sp500"}
+{"ticker": "COIN", "name": "COIN", "type": "stock", "category": "sp500"}
+{"ticker": "COO", "name": "COO", "type": "stock", "category": "sp500"}
+{"ticker": "COP", "name": "COP", "type": "stock", "category": "sp500"}
+{"ticker": "COR", "name": "COR", "type": "stock", "category": "sp500"}
+{"ticker": "COST", "name": "COST", "type": "stock", "category": "sp500"}
+{"ticker": "CPAY", "name": "CPAY", "type": "stock", "category": "sp500"}
+{"ticker": "CPRT", "name": "CPRT", "type": "stock", "category": "sp500"}
+{"ticker": "CPT", "name": "CPT", "type": "stock", "category": "sp500"}
+{"ticker": "CRH", "name": "CRH", "type": "stock", "category": "sp500"}
+{"ticker": "CRL", "name": "CRL", "type": "stock", "category": "sp500"}
+{"ticker": "CRM", "name": "CRM", "type": "stock", "category": "sp500"}
+{"ticker": "CRWD", "name": "CRWD", "type": "stock", "category": "sp500"}
+{"ticker": "CSCO", "name": "CSCO", "type": "stock", "category": "sp500"}
+{"ticker": "CSGP", "name": "CSGP", "type": "stock", "category": "sp500"}
+{"ticker": "CSX", "name": "CSX", "type": "stock", "category": "sp500"}
+{"ticker": "CTAS", "name": "CTAS", "type": "stock", "category": "sp500"}
+{"ticker": "CTSH", "name": "CTSH", "type": "stock", "category": "sp500"}
+{"ticker": "CTVA", "name": "CTVA", "type": "stock", "category": "sp500"}
+{"ticker": "CVNA", "name": "CVNA", "type": "stock", "category": "sp500"}
+{"ticker": "CVS", "name": "CVS", "type": "stock", "category": "sp500"}
+{"ticker": "CVX", "name": "CVX", "type": "stock", "category": "sp500"}
+{"ticker": "D", "name": "D", "type": "stock", "category": "sp500"}
+{"ticker": "DAL", "name": "DAL", "type": "stock", "category": "sp500"}
+{"ticker": "DASH", "name": "DASH", "type": "stock", "category": "sp500"}
+{"ticker": "DD", "name": "DD", "type": "stock", "category": "sp500"}
+{"ticker": "DDOG", "name": "DDOG", "type": "stock", "category": "sp500"}
+{"ticker": "DE", "name": "DE", "type": "stock", "category": "sp500"}
+{"ticker": "DECK", "name": "DECK", "type": "stock", "category": "sp500"}
+{"ticker": "DELL", "name": "DELL", "type": "stock", "category": "sp500"}
+{"ticker": "DG", "name": "DG", "type": "stock", "category": "sp500"}
+{"ticker": "DGX", "name": "DGX", "type": "stock", "category": "sp500"}
+{"ticker": "DHI", "name": "DHI", "type": "stock", "category": "sp500"}
+{"ticker": "DHR", "name": "DHR", "type": "stock", "category": "sp500"}
+{"ticker": "DIS", "name": "DIS", "type": "stock", "category": "sp500"}
+{"ticker": "DLR", "name": "DLR", "type": "stock", "category": "sp500"}
+{"ticker": "DLTR", "name": "DLTR", "type": "stock", "category": "sp500"}
+{"ticker": "DOC", "name": "DOC", "type": "stock", "category": "sp500"}
+{"ticker": "DOV", "name": "DOV", "type": "stock", "category": "sp500"}
+{"ticker": "DOW", "name": "DOW", "type": "stock", "category": "sp500"}
+{"ticker": "DPZ", "name": "DPZ", "type": "stock", "category": "sp500"}
+{"ticker": "DRI", "name": "DRI", "type": "stock", "category": "sp500"}
+{"ticker": "DTE", "name": "DTE", "type": "stock", "category": "sp500"}
+{"ticker": "DUK", "name": "DUK", "type": "stock", "category": "sp500"}
+{"ticker": "DVA", "name": "DVA", "type": "stock", "category": "sp500"}
+{"ticker": "DVN", "name": "DVN", "type": "stock", "category": "sp500"}
+{"ticker": "DXCM", "name": "DXCM", "type": "stock", "category": "sp500"}
+{"ticker": "EBAY", "name": "EBAY", "type": "stock", "category": "sp500"}
+{"ticker": "ECHO", "name": "ECHO", "type": "stock", "category": "sp500"}
+{"ticker": "ECL", "name": "ECL", "type": "stock", "category": "sp500"}
+{"ticker": "ED", "name": "ED", "type": "stock", "category": "sp500"}
+{"ticker": "EFX", "name": "EFX", "type": "stock", "category": "sp500"}
+{"ticker": "EG", "name": "EG", "type": "stock", "category": "sp500"}
+{"ticker": "EIX", "name": "EIX", "type": "stock", "category": "sp500"}
+{"ticker": "EL", "name": "EL", "type": "stock", "category": "sp500"}
+{"ticker": "ELV", "name": "ELV", "type": "stock", "category": "sp500"}
+{"ticker": "EME", "name": "EME", "type": "stock", "category": "sp500"}
+{"ticker": "EMR", "name": "EMR", "type": "stock", "category": "sp500"}
+{"ticker": "EOG", "name": "EOG", "type": "stock", "category": "sp500"}
+{"ticker": "EQIX", "name": "EQIX", "type": "stock", "category": "sp500"}
+{"ticker": "EQR", "name": "EQR", "type": "stock", "category": "sp500"}
+{"ticker": "EQT", "name": "EQT", "type": "stock", "category": "sp500"}
+{"ticker": "ERIE", "name": "ERIE", "type": "stock", "category": "sp500"}
+{"ticker": "ES", "name": "ES", "type": "stock", "category": "sp500"}
+{"ticker": "ESS", "name": "ESS", "type": "stock", "category": "sp500"}
+{"ticker": "ETN", "name": "ETN", "type": "stock", "category": "sp500"}
+{"ticker": "ETR", "name": "ETR", "type": "stock", "category": "sp500"}
+{"ticker": "EVRG", "name": "EVRG", "type": "stock", "category": "sp500"}
+{"ticker": "EW", "name": "EW", "type": "stock", "category": "sp500"}
+{"ticker": "EXC", "name": "EXC", "type": "stock", "category": "sp500"}
+{"ticker": "EXE", "name": "EXE", "type": "stock", "category": "sp500"}
+{"ticker": "EXPD", "name": "EXPD", "type": "stock", "category": "sp500"}
+{"ticker": "EXPE", "name": "EXPE", "type": "stock", "category": "sp500"}
+{"ticker": "EXR", "name": "EXR", "type": "stock", "category": "sp500"}
+{"ticker": "F", "name": "F", "type": "stock", "category": "sp500"}
+{"ticker": "FANG", "name": "FANG", "type": "stock", "category": "sp500"}
+{"ticker": "FAST", "name": "FAST", "type": "stock", "category": "sp500"}
+{"ticker": "FCX", "name": "FCX", "type": "stock", "category": "sp500"}
+{"ticker": "FDS", "name": "FDS", "type": "stock", "category": "sp500"}
+{"ticker": "FDX", "name": "FDX", "type": "stock", "category": "sp500"}
+{"ticker": "FDXF", "name": "FDXF", "type": "stock", "category": "sp500"}
+{"ticker": "FE", "name": "FE", "type": "stock", "category": "sp500"}
+{"ticker": "FERG", "name": "FERG", "type": "stock", "category": "sp500"}
+{"ticker": "FFIV", "name": "FFIV", "type": "stock", "category": "sp500"}
+{"ticker": "FICO", "name": "FICO", "type": "stock", "category": "sp500"}
+{"ticker": "FIS", "name": "FIS", "type": "stock", "category": "sp500"}
+{"ticker": "FISV", "name": "FISV", "type": "stock", "category": "sp500"}
+{"ticker": "FITB", "name": "FITB", "type": "stock", "category": "sp500"}
+{"ticker": "FIX", "name": "FIX", "type": "stock", "category": "sp500"}
+{"ticker": "FLEX", "name": "FLEX", "type": "stock", "category": "sp500"}
+{"ticker": "FOX", "name": "FOX", "type": "stock", "category": "sp500"}
+{"ticker": "FOXA", "name": "FOXA", "type": "stock", "category": "sp500"}
+{"ticker": "FRT", "name": "FRT", "type": "stock", "category": "sp500"}
+{"ticker": "FSLR", "name": "FSLR", "type": "stock", "category": "sp500"}
+{"ticker": "FTNT", "name": "FTNT", "type": "stock", "category": "sp500"}
+{"ticker": "FTV", "name": "FTV", "type": "stock", "category": "sp500"}
+{"ticker": "GD", "name": "GD", "type": "stock", "category": "sp500"}
+{"ticker": "GDDY", "name": "GDDY", "type": "stock", "category": "sp500"}
+{"ticker": "GE", "name": "GE", "type": "stock", "category": "sp500"}
+{"ticker": "GEHC", "name": "GEHC", "type": "stock", "category": "sp500"}
+{"ticker": "GEN", "name": "GEN", "type": "stock", "category": "sp500"}
+{"ticker": "GEV", "name": "GEV", "type": "stock", "category": "sp500"}
+{"ticker": "GILD", "name": "GILD", "type": "stock", "category": "sp500"}
+{"ticker": "GIS", "name": "GIS", "type": "stock", "category": "sp500"}
+{"ticker": "GL", "name": "GL", "type": "stock", "category": "sp500"}
+{"ticker": "GLW", "name": "GLW", "type": "stock", "category": "sp500"}
+{"ticker": "GM", "name": "GM", "type": "stock", "category": "sp500"}
+{"ticker": "GNRC", "name": "GNRC", "type": "stock", "category": "sp500"}
+{"ticker": "GOOG", "name": "GOOG", "type": "stock", "category": "sp500"}
+{"ticker": "GOOGL", "name": "GOOGL", "type": "stock", "category": "sp500"}
+{"ticker": "GPC", "name": "GPC", "type": "stock", "category": "sp500"}
+{"ticker": "GPN", "name": "GPN", "type": "stock", "category": "sp500"}
+{"ticker": "GRMN", "name": "GRMN", "type": "stock", "category": "sp500"}
+{"ticker": "GS", "name": "GS", "type": "stock", "category": "sp500"}
+{"ticker": "GWW", "name": "GWW", "type": "stock", "category": "sp500"}
+{"ticker": "HAL", "name": "HAL", "type": "stock", "category": "sp500"}
+{"ticker": "HAS", "name": "HAS", "type": "stock", "category": "sp500"}
+{"ticker": "HBAN", "name": "HBAN", "type": "stock", "category": "sp500"}
+{"ticker": "HCA", "name": "HCA", "type": "stock", "category": "sp500"}
+{"ticker": "HD", "name": "HD", "type": "stock", "category": "sp500"}
+{"ticker": "HIG", "name": "HIG", "type": "stock", "category": "sp500"}
+{"ticker": "HII", "name": "HII", "type": "stock", "category": "sp500"}
+{"ticker": "HLT", "name": "HLT", "type": "stock", "category": "sp500"}
+{"ticker": "HON", "name": "HON", "type": "stock", "category": "sp500"}
+{"ticker": "HONA", "name": "HONA", "type": "stock", "category": "sp500"}
+{"ticker": "HOOD", "name": "HOOD", "type": "stock", "category": "sp500"}
+{"ticker": "HPE", "name": "HPE", "type": "stock", "category": "sp500"}
+{"ticker": "HPQ", "name": "HPQ", "type": "stock", "category": "sp500"}
+{"ticker": "HRL", "name": "HRL", "type": "stock", "category": "sp500"}
+{"ticker": "HSIC", "name": "HSIC", "type": "stock", "category": "sp500"}
+{"ticker": "HST", "name": "HST", "type": "stock", "category": "sp500"}
+{"ticker": "HSY", "name": "HSY", "type": "stock", "category": "sp500"}
+{"ticker": "HUBB", "name": "HUBB", "type": "stock", "category": "sp500"}
+{"ticker": "HUM", "name": "HUM", "type": "stock", "category": "sp500"}
+{"ticker": "HWM", "name": "HWM", "type": "stock", "category": "sp500"}
+{"ticker": "IBKR", "name": "IBKR", "type": "stock", "category": "sp500"}
 {"ticker": "IBM", "name": "IBM", "type": "stock", "category": "sp500"}
-{"ticker": "IEX", "name": "IDEX Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "IDXX", "name": "Idexx Laboratories", "type": "stock", "category": "sp500"}
-{"ticker": "ITW", "name": "Illinois Tool Works", "type": "stock", "category": "sp500"}
-{"ticker": "INCY", "name": "Incyte", "type": "stock", "category": "sp500"}
-{"ticker": "IR", "name": "Ingersoll Rand", "type": "stock", "category": "sp500"}
-{"ticker": "PODD", "name": "Insulet Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "INTC", "name": "Intel", "type": "stock", "category": "sp500"}
-{"ticker": "IBKR", "name": "Interactive Brokers", "type": "stock", "category": "sp500"}
-{"ticker": "ICE", "name": "Intercontinental Exchange", "type": "stock", "category": "sp500"}
-{"ticker": "IFF", "name": "International Flavors & Fragrances", "type": "stock", "category": "sp500"}
-{"ticker": "IP", "name": "International Paper", "type": "stock", "category": "sp500"}
-{"ticker": "INTU", "name": "Intuit", "type": "stock", "category": "sp500"}
-{"ticker": "ISRG", "name": "Intuitive Surgical", "type": "stock", "category": "sp500"}
-{"ticker": "IVZ", "name": "Invesco", "type": "stock", "category": "sp500"}
-{"ticker": "INVH", "name": "Invitation Homes", "type": "stock", "category": "sp500"}
-{"ticker": "IQV", "name": "IQVIA", "type": "stock", "category": "sp500"}
-{"ticker": "IRM", "name": "Iron Mountain", "type": "stock", "category": "sp500"}
-{"ticker": "JBHT", "name": "J.B. Hunt", "type": "stock", "category": "sp500"}
-{"ticker": "JBL", "name": "Jabil", "type": "stock", "category": "sp500"}
-{"ticker": "JKHY", "name": "Jack Henry & Associates", "type": "stock", "category": "sp500"}
-{"ticker": "J", "name": "Jacobs Solutions", "type": "stock", "category": "sp500"}
-{"ticker": "JNJ", "name": "Johnson & Johnson", "type": "stock", "category": "sp500"}
-{"ticker": "JCI", "name": "Johnson Controls", "type": "stock", "category": "sp500"}
-{"ticker": "JPM", "name": "JPMorgan Chase", "type": "stock", "category": "sp500"}
-{"ticker": "KVUE", "name": "Kenvue", "type": "stock", "category": "sp500"}
-{"ticker": "KDP", "name": "Keurig Dr Pepper", "type": "stock", "category": "sp500"}
-{"ticker": "KEY", "name": "KeyCorp", "type": "stock", "category": "sp500"}
-{"ticker": "KEYS", "name": "Keysight Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "KMB", "name": "Kimberly-Clark", "type": "stock", "category": "sp500"}
-{"ticker": "KIM", "name": "Kimco Realty", "type": "stock", "category": "sp500"}
-{"ticker": "KMI", "name": "Kinder Morgan", "type": "stock", "category": "sp500"}
-{"ticker": "KKR", "name": "KKR & Co.", "type": "stock", "category": "sp500"}
-{"ticker": "KLAC", "name": "KLA Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "KHC", "name": "Kraft Heinz", "type": "stock", "category": "sp500"}
-{"ticker": "KR", "name": "Kroger", "type": "stock", "category": "sp500"}
-{"ticker": "LHX", "name": "L3Harris", "type": "stock", "category": "sp500"}
-{"ticker": "LH", "name": "Labcorp", "type": "stock", "category": "sp500"}
-{"ticker": "LRCX", "name": "Lam Research", "type": "stock", "category": "sp500"}
-{"ticker": "LVS", "name": "Las Vegas Sands", "type": "stock", "category": "sp500"}
-{"ticker": "LDOS", "name": "Leidos", "type": "stock", "category": "sp500"}
-{"ticker": "LEN", "name": "Lennar", "type": "stock", "category": "sp500"}
-{"ticker": "LII", "name": "Lennox International", "type": "stock", "category": "sp500"}
-{"ticker": "LLY", "name": "Lilly (Eli)", "type": "stock", "category": "sp500"}
-{"ticker": "LIN", "name": "Linde plc", "type": "stock", "category": "sp500"}
-{"ticker": "LYV", "name": "Live Nation Entertainment", "type": "stock", "category": "sp500"}
-{"ticker": "LMT", "name": "Lockheed Martin", "type": "stock", "category": "sp500"}
-{"ticker": "L", "name": "Loews Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "LOW", "name": "Lowe's", "type": "stock", "category": "sp500"}
-{"ticker": "LULU", "name": "Lululemon Athletica", "type": "stock", "category": "sp500"}
-{"ticker": "LITE", "name": "Lumentum", "type": "stock", "category": "sp500"}
-{"ticker": "LYB", "name": "LyondellBasell", "type": "stock", "category": "sp500"}
-{"ticker": "MTB", "name": "M&T Bank", "type": "stock", "category": "sp500"}
-{"ticker": "MPC", "name": "Marathon Petroleum", "type": "stock", "category": "sp500"}
-{"ticker": "MAR", "name": "Marriott International", "type": "stock", "category": "sp500"}
-{"ticker": "MRSH", "name": "Marsh McLennan", "type": "stock", "category": "sp500"}
-{"ticker": "MLM", "name": "Martin Marietta Materials", "type": "stock", "category": "sp500"}
-{"ticker": "MRVL", "name": "Marvell Technology", "type": "stock", "category": "sp500"}
-{"ticker": "MAS", "name": "Masco", "type": "stock", "category": "sp500"}
-{"ticker": "MA", "name": "Mastercard", "type": "stock", "category": "sp500"}
-{"ticker": "MKC", "name": "McCormick & Company", "type": "stock", "category": "sp500"}
-{"ticker": "MCD", "name": "McDonald's", "type": "stock", "category": "sp500"}
-{"ticker": "MCK", "name": "McKesson Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "MDT", "name": "Medtronic", "type": "stock", "category": "sp500"}
-{"ticker": "MRK", "name": "Merck & Co.", "type": "stock", "category": "sp500"}
-{"ticker": "META", "name": "Meta Platforms", "type": "stock", "category": "sp500"}
-{"ticker": "MET", "name": "MetLife", "type": "stock", "category": "sp500"}
-{"ticker": "MTD", "name": "Mettler Toledo", "type": "stock", "category": "sp500"}
-{"ticker": "MGM", "name": "MGM Resorts", "type": "stock", "category": "sp500"}
-{"ticker": "MCHP", "name": "Microchip Technology", "type": "stock", "category": "sp500"}
-{"ticker": "MU", "name": "Micron Technology", "type": "stock", "category": "sp500"}
-{"ticker": "MSFT", "name": "Microsoft", "type": "stock", "category": "sp500"}
-{"ticker": "MAA", "name": "Mid-America Apartment Communities", "type": "stock", "category": "sp500"}
-{"ticker": "MRNA", "name": "Moderna", "type": "stock", "category": "sp500"}
-{"ticker": "TAP", "name": "Molson Coors Beverage Company", "type": "stock", "category": "sp500"}
-{"ticker": "MDLZ", "name": "Mondelez International", "type": "stock", "category": "sp500"}
-{"ticker": "MPWR", "name": "Monolithic Power Systems", "type": "stock", "category": "sp500"}
-{"ticker": "MNST", "name": "Monster Beverage", "type": "stock", "category": "sp500"}
-{"ticker": "MCO", "name": "Moody's Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "MS", "name": "Morgan Stanley", "type": "stock", "category": "sp500"}
-{"ticker": "MOS", "name": "Mosaic Company (The)", "type": "stock", "category": "sp500"}
-{"ticker": "MSI", "name": "Motorola Solutions", "type": "stock", "category": "sp500"}
-{"ticker": "MSCI", "name": "MSCI Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "NDAQ", "name": "Nasdaq, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "NTAP", "name": "NetApp", "type": "stock", "category": "sp500"}
-{"ticker": "NFLX", "name": "Netflix", "type": "stock", "category": "sp500"}
-{"ticker": "NEM", "name": "Newmont", "type": "stock", "category": "sp500"}
-{"ticker": "NWSA", "name": "News Corp (Class A)", "type": "stock", "category": "sp500"}
-{"ticker": "NWS", "name": "News Corp (Class B)", "type": "stock", "category": "sp500"}
-{"ticker": "NEE", "name": "NextEra Energy", "type": "stock", "category": "sp500"}
-{"ticker": "NKE", "name": "Nike, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "NI", "name": "NiSource", "type": "stock", "category": "sp500"}
-{"ticker": "NDSN", "name": "Nordson Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "NSC", "name": "Norfolk Southern", "type": "stock", "category": "sp500"}
-{"ticker": "NTRS", "name": "Northern Trust", "type": "stock", "category": "sp500"}
-{"ticker": "NOC", "name": "Northrop Grumman", "type": "stock", "category": "sp500"}
-{"ticker": "NCLH", "name": "Norwegian Cruise Line Holdings", "type": "stock", "category": "sp500"}
-{"ticker": "NRG", "name": "NRG Energy", "type": "stock", "category": "sp500"}
-{"ticker": "NUE", "name": "Nucor", "type": "stock", "category": "sp500"}
-{"ticker": "NVDA", "name": "Nvidia", "type": "stock", "category": "sp500"}
-{"ticker": "NVR", "name": "NVR, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "NXPI", "name": "NXP Semiconductors", "type": "stock", "category": "sp500"}
-{"ticker": "ORLY", "name": "O\u2019Reilly Automotive", "type": "stock", "category": "sp500"}
-{"ticker": "OXY", "name": "Occidental Petroleum", "type": "stock", "category": "sp500"}
-{"ticker": "ODFL", "name": "Old Dominion", "type": "stock", "category": "sp500"}
-{"ticker": "OMC", "name": "Omnicom Group", "type": "stock", "category": "sp500"}
-{"ticker": "ON", "name": "ON Semiconductor", "type": "stock", "category": "sp500"}
-{"ticker": "OKE", "name": "Oneok", "type": "stock", "category": "sp500"}
-{"ticker": "ORCL", "name": "Oracle Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "OTIS", "name": "Otis Worldwide", "type": "stock", "category": "sp500"}
-{"ticker": "PCAR", "name": "Paccar", "type": "stock", "category": "sp500"}
-{"ticker": "PKG", "name": "Packaging Corporation of America", "type": "stock", "category": "sp500"}
-{"ticker": "PLTR", "name": "Palantir Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "PANW", "name": "Palo Alto Networks", "type": "stock", "category": "sp500"}
-{"ticker": "PSKY", "name": "Paramount Skydance Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "PH", "name": "Parker Hannifin", "type": "stock", "category": "sp500"}
-{"ticker": "PAYX", "name": "Paychex", "type": "stock", "category": "sp500"}
-{"ticker": "PYPL", "name": "PayPal", "type": "stock", "category": "sp500"}
-{"ticker": "PNR", "name": "Pentair", "type": "stock", "category": "sp500"}
-{"ticker": "PEP", "name": "PepsiCo", "type": "stock", "category": "sp500"}
-{"ticker": "PFE", "name": "Pfizer", "type": "stock", "category": "sp500"}
-{"ticker": "PCG", "name": "PG&E Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "PM", "name": "Philip Morris International", "type": "stock", "category": "sp500"}
-{"ticker": "PSX", "name": "Phillips 66", "type": "stock", "category": "sp500"}
-{"ticker": "PNW", "name": "Pinnacle West Capital", "type": "stock", "category": "sp500"}
-{"ticker": "PNC", "name": "PNC Financial Services", "type": "stock", "category": "sp500"}
-{"ticker": "PPG", "name": "PPG Industries", "type": "stock", "category": "sp500"}
-{"ticker": "PPL", "name": "PPL Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "PFG", "name": "Principal Financial Group", "type": "stock", "category": "sp500"}
-{"ticker": "PG", "name": "Procter & Gamble", "type": "stock", "category": "sp500"}
-{"ticker": "PGR", "name": "Progressive Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "PLD", "name": "Prologis", "type": "stock", "category": "sp500"}
-{"ticker": "PRU", "name": "Prudential Financial", "type": "stock", "category": "sp500"}
-{"ticker": "PEG", "name": "Public Service Enterprise Group", "type": "stock", "category": "sp500"}
-{"ticker": "PTC", "name": "PTC Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "PSA", "name": "Public Storage", "type": "stock", "category": "sp500"}
-{"ticker": "PHM", "name": "PulteGroup", "type": "stock", "category": "sp500"}
-{"ticker": "PWR", "name": "Quanta Services", "type": "stock", "category": "sp500"}
-{"ticker": "QCOM", "name": "Qualcomm", "type": "stock", "category": "sp500"}
-{"ticker": "DGX", "name": "Quest Diagnostics", "type": "stock", "category": "sp500"}
-{"ticker": "Q", "name": "Qnity Electronics", "type": "stock", "category": "sp500"}
-{"ticker": "RL", "name": "Ralph Lauren Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "RJF", "name": "Raymond James Financial", "type": "stock", "category": "sp500"}
-{"ticker": "RTX", "name": "RTX Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "O", "name": "Realty Income", "type": "stock", "category": "sp500"}
-{"ticker": "REG", "name": "Regency Centers", "type": "stock", "category": "sp500"}
-{"ticker": "REGN", "name": "Regeneron Pharmaceuticals", "type": "stock", "category": "sp500"}
-{"ticker": "RF", "name": "Regions Financial Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "RSG", "name": "Republic Services", "type": "stock", "category": "sp500"}
-{"ticker": "RMD", "name": "ResMed", "type": "stock", "category": "sp500"}
-{"ticker": "RVTY", "name": "Revvity", "type": "stock", "category": "sp500"}
-{"ticker": "HOOD", "name": "Robinhood Markets", "type": "stock", "category": "sp500"}
-{"ticker": "ROK", "name": "Rockwell Automation", "type": "stock", "category": "sp500"}
-{"ticker": "ROL", "name": "Rollins, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "ROP", "name": "Roper Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "ROST", "name": "Ross Stores", "type": "stock", "category": "sp500"}
-{"ticker": "RCL", "name": "Royal Caribbean Group", "type": "stock", "category": "sp500"}
-{"ticker": "SPGI", "name": "S&P Global", "type": "stock", "category": "sp500"}
-{"ticker": "CRM", "name": "Salesforce", "type": "stock", "category": "sp500"}
-{"ticker": "SNDK", "name": "Sandisk", "type": "stock", "category": "sp500"}
-{"ticker": "SBAC", "name": "SBA Communications", "type": "stock", "category": "sp500"}
-{"ticker": "SLB", "name": "Schlumberger", "type": "stock", "category": "sp500"}
-{"ticker": "STX", "name": "Seagate Technology", "type": "stock", "category": "sp500"}
-{"ticker": "SRE", "name": "Sempra", "type": "stock", "category": "sp500"}
-{"ticker": "NOW", "name": "ServiceNow", "type": "stock", "category": "sp500"}
-{"ticker": "SHW", "name": "Sherwin-Williams", "type": "stock", "category": "sp500"}
-{"ticker": "SPG", "name": "Simon Property Group", "type": "stock", "category": "sp500"}
-{"ticker": "SWKS", "name": "Skyworks Solutions", "type": "stock", "category": "sp500"}
-{"ticker": "SJM", "name": "J.M. Smucker Company (The)", "type": "stock", "category": "sp500"}
-{"ticker": "SW", "name": "Smurfit Westrock", "type": "stock", "category": "sp500"}
-{"ticker": "SNA", "name": "Snap-on", "type": "stock", "category": "sp500"}
-{"ticker": "SOLV", "name": "Solventum", "type": "stock", "category": "sp500"}
-{"ticker": "SO", "name": "Southern Company", "type": "stock", "category": "sp500"}
-{"ticker": "LUV", "name": "Southwest Airlines", "type": "stock", "category": "sp500"}
-{"ticker": "SWK", "name": "Stanley Black & Decker", "type": "stock", "category": "sp500"}
-{"ticker": "SBUX", "name": "Starbucks", "type": "stock", "category": "sp500"}
-{"ticker": "STT", "name": "State Street Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "STLD", "name": "Steel Dynamics", "type": "stock", "category": "sp500"}
-{"ticker": "STE", "name": "Steris", "type": "stock", "category": "sp500"}
-{"ticker": "SYK", "name": "Stryker Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "SMCI", "name": "Supermicro", "type": "stock", "category": "sp500"}
-{"ticker": "SYF", "name": "Synchrony Financial", "type": "stock", "category": "sp500"}
-{"ticker": "SNPS", "name": "Synopsys", "type": "stock", "category": "sp500"}
-{"ticker": "SYY", "name": "Sysco", "type": "stock", "category": "sp500"}
-{"ticker": "TMUS", "name": "T-Mobile US", "type": "stock", "category": "sp500"}
-{"ticker": "TROW", "name": "T. Rowe Price", "type": "stock", "category": "sp500"}
-{"ticker": "TTWO", "name": "Take-Two Interactive", "type": "stock", "category": "sp500"}
-{"ticker": "TPR", "name": "Tapestry, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "TRGP", "name": "Targa Resources", "type": "stock", "category": "sp500"}
-{"ticker": "TGT", "name": "Target Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "TEL", "name": "TE Connectivity", "type": "stock", "category": "sp500"}
-{"ticker": "TDY", "name": "Teledyne Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "TER", "name": "Teradyne", "type": "stock", "category": "sp500"}
-{"ticker": "TSLA", "name": "Tesla, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "TXN", "name": "Texas Instruments", "type": "stock", "category": "sp500"}
-{"ticker": "TPL", "name": "Texas Pacific Land Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "TXT", "name": "Textron", "type": "stock", "category": "sp500"}
-{"ticker": "TMO", "name": "Thermo Fisher Scientific", "type": "stock", "category": "sp500"}
-{"ticker": "TJX", "name": "TJX Companies", "type": "stock", "category": "sp500"}
-{"ticker": "TKO", "name": "TKO Group Holdings", "type": "stock", "category": "sp500"}
-{"ticker": "TTD", "name": "Trade Desk (The)", "type": "stock", "category": "sp500"}
-{"ticker": "TSCO", "name": "Tractor Supply", "type": "stock", "category": "sp500"}
-{"ticker": "TT", "name": "Trane Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "TDG", "name": "TransDigm Group", "type": "stock", "category": "sp500"}
-{"ticker": "TRV", "name": "Travelers Companies (The)", "type": "stock", "category": "sp500"}
-{"ticker": "TRMB", "name": "Trimble Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "TFC", "name": "Truist Financial", "type": "stock", "category": "sp500"}
-{"ticker": "TYL", "name": "Tyler Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "TSN", "name": "Tyson Foods", "type": "stock", "category": "sp500"}
-{"ticker": "USB", "name": "U.S. Bancorp", "type": "stock", "category": "sp500"}
-{"ticker": "UBER", "name": "Uber", "type": "stock", "category": "sp500"}
-{"ticker": "UDR", "name": "UDR, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "ULTA", "name": "Ulta Beauty", "type": "stock", "category": "sp500"}
-{"ticker": "UNP", "name": "Union Pacific Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "UAL", "name": "United Airlines Holdings", "type": "stock", "category": "sp500"}
-{"ticker": "UPS", "name": "United Parcel Service", "type": "stock", "category": "sp500"}
-{"ticker": "URI", "name": "United Rentals", "type": "stock", "category": "sp500"}
-{"ticker": "UNH", "name": "UnitedHealth Group", "type": "stock", "category": "sp500"}
-{"ticker": "UHS", "name": "Universal Health Services", "type": "stock", "category": "sp500"}
-{"ticker": "VLO", "name": "Valero Energy", "type": "stock", "category": "sp500"}
-{"ticker": "VEEV", "name": "Veeva Systems", "type": "stock", "category": "sp500"}
-{"ticker": "VTR", "name": "Ventas", "type": "stock", "category": "sp500"}
-{"ticker": "VLTO", "name": "Veralto", "type": "stock", "category": "sp500"}
-{"ticker": "VRSN", "name": "Verisign", "type": "stock", "category": "sp500"}
-{"ticker": "VRSK", "name": "Verisk Analytics", "type": "stock", "category": "sp500"}
-{"ticker": "VZ", "name": "Verizon", "type": "stock", "category": "sp500"}
-{"ticker": "VRTX", "name": "Vertex Pharmaceuticals", "type": "stock", "category": "sp500"}
-{"ticker": "VRT", "name": "Vertiv", "type": "stock", "category": "sp500"}
-{"ticker": "VTRS", "name": "Viatris", "type": "stock", "category": "sp500"}
-{"ticker": "VICI", "name": "Vici Properties", "type": "stock", "category": "sp500"}
-{"ticker": "V", "name": "Visa Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "VST", "name": "Vistra Corp.", "type": "stock", "category": "sp500"}
-{"ticker": "VMC", "name": "Vulcan Materials Company", "type": "stock", "category": "sp500"}
-{"ticker": "WRB", "name": "W. R. Berkley Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "GWW", "name": "W. W. Grainger", "type": "stock", "category": "sp500"}
-{"ticker": "WAB", "name": "Wabtec", "type": "stock", "category": "sp500"}
-{"ticker": "WMT", "name": "Walmart", "type": "stock", "category": "sp500"}
-{"ticker": "DIS", "name": "Walt Disney Company (The)", "type": "stock", "category": "sp500"}
-{"ticker": "WBD", "name": "Warner Bros. Discovery", "type": "stock", "category": "sp500"}
-{"ticker": "WM", "name": "Waste Management", "type": "stock", "category": "sp500"}
-{"ticker": "WAT", "name": "Waters Corporation", "type": "stock", "category": "sp500"}
-{"ticker": "WEC", "name": "WEC Energy Group", "type": "stock", "category": "sp500"}
-{"ticker": "WFC", "name": "Wells Fargo", "type": "stock", "category": "sp500"}
-{"ticker": "WELL", "name": "Welltower", "type": "stock", "category": "sp500"}
-{"ticker": "WST", "name": "West Pharmaceutical Services", "type": "stock", "category": "sp500"}
-{"ticker": "WDC", "name": "Western Digital", "type": "stock", "category": "sp500"}
-{"ticker": "WY", "name": "Weyerhaeuser", "type": "stock", "category": "sp500"}
-{"ticker": "WSM", "name": "Williams-Sonoma, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "WMB", "name": "Williams Companies", "type": "stock", "category": "sp500"}
-{"ticker": "WTW", "name": "Willis Towers Watson", "type": "stock", "category": "sp500"}
-{"ticker": "WDAY", "name": "Workday, Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "WYNN", "name": "Wynn Resorts", "type": "stock", "category": "sp500"}
-{"ticker": "XEL", "name": "Xcel Energy", "type": "stock", "category": "sp500"}
-{"ticker": "XYL", "name": "Xylem Inc.", "type": "stock", "category": "sp500"}
-{"ticker": "YUM", "name": "Yum! Brands", "type": "stock", "category": "sp500"}
-{"ticker": "ZBRA", "name": "Zebra Technologies", "type": "stock", "category": "sp500"}
-{"ticker": "ZBH", "name": "Zimmer Biomet", "type": "stock", "category": "sp500"}
-{"ticker": "ZTS", "name": "Zoetis", "type": "stock", "category": "sp500"}
-{"ticker": "IBIT", "name": "iShares Bitcoin Trust ETF", "type": "etf", "category": "crypto_etf"}
-{"ticker": "FBTC", "name": "Fidelity Wise Origin Bitcoin Fund", "type": "etf", "category": "crypto_etf"}
-{"ticker": "BTC-USD", "name": "Bitcoin", "type": "crypto", "category": "crypto"}
-{"ticker": "ETH-USD", "name": "Ethereum", "type": "crypto", "category": "crypto"}
-{"ticker": "SOL-USD", "name": "Solana", "type": "crypto", "category": "crypto"}
+{"ticker": "ICE", "name": "ICE", "type": "stock", "category": "sp500"}
+{"ticker": "IDXX", "name": "IDXX", "type": "stock", "category": "sp500"}
+{"ticker": "IEX", "name": "IEX", "type": "stock", "category": "sp500"}
+{"ticker": "IFF", "name": "IFF", "type": "stock", "category": "sp500"}
+{"ticker": "INCY", "name": "INCY", "type": "stock", "category": "sp500"}
+{"ticker": "INTC", "name": "INTC", "type": "stock", "category": "sp500"}
+{"ticker": "INTU", "name": "INTU", "type": "stock", "category": "sp500"}
+{"ticker": "INVH", "name": "INVH", "type": "stock", "category": "sp500"}
+{"ticker": "IP", "name": "IP", "type": "stock", "category": "sp500"}
+{"ticker": "IQV", "name": "IQV", "type": "stock", "category": "sp500"}
+{"ticker": "IR", "name": "IR", "type": "stock", "category": "sp500"}
+{"ticker": "IRM", "name": "IRM", "type": "stock", "category": "sp500"}
+{"ticker": "ISRG", "name": "ISRG", "type": "stock", "category": "sp500"}
+{"ticker": "IT", "name": "IT", "type": "stock", "category": "sp500"}
+{"ticker": "ITW", "name": "ITW", "type": "stock", "category": "sp500"}
+{"ticker": "IVZ", "name": "IVZ", "type": "stock", "category": "sp500"}
+{"ticker": "J", "name": "J", "type": "stock", "category": "sp500"}
+{"ticker": "JBHT", "name": "JBHT", "type": "stock", "category": "sp500"}
+{"ticker": "JBL", "name": "JBL", "type": "stock", "category": "sp500"}
+{"ticker": "JCI", "name": "JCI", "type": "stock", "category": "sp500"}
+{"ticker": "JKHY", "name": "JKHY", "type": "stock", "category": "sp500"}
+{"ticker": "JNJ", "name": "JNJ", "type": "stock", "category": "sp500"}
+{"ticker": "JPM", "name": "JPM", "type": "stock", "category": "sp500"}
+{"ticker": "KDP", "name": "KDP", "type": "stock", "category": "sp500"}
+{"ticker": "KEY", "name": "KEY", "type": "stock", "category": "sp500"}
+{"ticker": "KEYS", "name": "KEYS", "type": "stock", "category": "sp500"}
+{"ticker": "KHC", "name": "KHC", "type": "stock", "category": "sp500"}
+{"ticker": "KIM", "name": "KIM", "type": "stock", "category": "sp500"}
+{"ticker": "KKR", "name": "KKR", "type": "stock", "category": "sp500"}
+{"ticker": "KLAC", "name": "KLAC", "type": "stock", "category": "sp500"}
+{"ticker": "KMB", "name": "KMB", "type": "stock", "category": "sp500"}
+{"ticker": "KMI", "name": "KMI", "type": "stock", "category": "sp500"}
+{"ticker": "KO", "name": "KO", "type": "stock", "category": "sp500"}
+{"ticker": "KR", "name": "KR", "type": "stock", "category": "sp500"}
+{"ticker": "KVUE", "name": "KVUE", "type": "stock", "category": "sp500"}
+{"ticker": "L", "name": "L", "type": "stock", "category": "sp500"}
+{"ticker": "LDOS", "name": "LDOS", "type": "stock", "category": "sp500"}
+{"ticker": "LEN", "name": "LEN", "type": "stock", "category": "sp500"}
+{"ticker": "LH", "name": "LH", "type": "stock", "category": "sp500"}
+{"ticker": "LHX", "name": "LHX", "type": "stock", "category": "sp500"}
+{"ticker": "LII", "name": "LII", "type": "stock", "category": "sp500"}
+{"ticker": "LIN", "name": "LIN", "type": "stock", "category": "sp500"}
+{"ticker": "LITE", "name": "LITE", "type": "stock", "category": "sp500"}
+{"ticker": "LLY", "name": "LLY", "type": "stock", "category": "sp500"}
+{"ticker": "LMT", "name": "LMT", "type": "stock", "category": "sp500"}
+{"ticker": "LNT", "name": "LNT", "type": "stock", "category": "sp500"}
+{"ticker": "LOW", "name": "LOW", "type": "stock", "category": "sp500"}
+{"ticker": "LRCX", "name": "LRCX", "type": "stock", "category": "sp500"}
+{"ticker": "LULU", "name": "LULU", "type": "stock", "category": "sp500"}
+{"ticker": "LUV", "name": "LUV", "type": "stock", "category": "sp500"}
+{"ticker": "LVS", "name": "LVS", "type": "stock", "category": "sp500"}
+{"ticker": "LYB", "name": "LYB", "type": "stock", "category": "sp500"}
+{"ticker": "LYV", "name": "LYV", "type": "stock", "category": "sp500"}
+{"ticker": "MA", "name": "MA", "type": "stock", "category": "sp500"}
+{"ticker": "MAA", "name": "MAA", "type": "stock", "category": "sp500"}
+{"ticker": "MAR", "name": "MAR", "type": "stock", "category": "sp500"}
+{"ticker": "MAS", "name": "MAS", "type": "stock", "category": "sp500"}
+{"ticker": "MCD", "name": "MCD", "type": "stock", "category": "sp500"}
+{"ticker": "MCHP", "name": "MCHP", "type": "stock", "category": "sp500"}
+{"ticker": "MCK", "name": "MCK", "type": "stock", "category": "sp500"}
+{"ticker": "MCO", "name": "MCO", "type": "stock", "category": "sp500"}
+{"ticker": "MDLZ", "name": "MDLZ", "type": "stock", "category": "sp500"}
+{"ticker": "MDT", "name": "MDT", "type": "stock", "category": "sp500"}
+{"ticker": "MET", "name": "MET", "type": "stock", "category": "sp500"}
+{"ticker": "META", "name": "META", "type": "stock", "category": "sp500"}
+{"ticker": "MGM", "name": "MGM", "type": "stock", "category": "sp500"}
+{"ticker": "MKC", "name": "MKC", "type": "stock", "category": "sp500"}
+{"ticker": "MLM", "name": "MLM", "type": "stock", "category": "sp500"}
+{"ticker": "MMM", "name": "MMM", "type": "stock", "category": "sp500"}
+{"ticker": "MNST", "name": "MNST", "type": "stock", "category": "sp500"}
+{"ticker": "MO", "name": "MO", "type": "stock", "category": "sp500"}
+{"ticker": "MOS", "name": "MOS", "type": "stock", "category": "sp500"}
+{"ticker": "MPC", "name": "MPC", "type": "stock", "category": "sp500"}
+{"ticker": "MPWR", "name": "MPWR", "type": "stock", "category": "sp500"}
+{"ticker": "MRK", "name": "MRK", "type": "stock", "category": "sp500"}
+{"ticker": "MRNA", "name": "MRNA", "type": "stock", "category": "sp500"}
+{"ticker": "MRSH", "name": "MRSH", "type": "stock", "category": "sp500"}
+{"ticker": "MRVL", "name": "MRVL", "type": "stock", "category": "sp500"}
+{"ticker": "MS", "name": "MS", "type": "stock", "category": "sp500"}
+{"ticker": "MSCI", "name": "MSCI", "type": "stock", "category": "sp500"}
+{"ticker": "MSFT", "name": "MSFT", "type": "stock", "category": "sp500"}
+{"ticker": "MSI", "name": "MSI", "type": "stock", "category": "sp500"}
+{"ticker": "MTB", "name": "MTB", "type": "stock", "category": "sp500"}
+{"ticker": "MTD", "name": "MTD", "type": "stock", "category": "sp500"}
+{"ticker": "MU", "name": "MU", "type": "stock", "category": "sp500"}
+{"ticker": "NCLH", "name": "NCLH", "type": "stock", "category": "sp500"}
+{"ticker": "NDAQ", "name": "NDAQ", "type": "stock", "category": "sp500"}
+{"ticker": "NDSN", "name": "NDSN", "type": "stock", "category": "sp500"}
+{"ticker": "NEE", "name": "NEE", "type": "stock", "category": "sp500"}
+{"ticker": "NEM", "name": "NEM", "type": "stock", "category": "sp500"}
+{"ticker": "NFLX", "name": "NFLX", "type": "stock", "category": "sp500"}
+{"ticker": "NI", "name": "NI", "type": "stock", "category": "sp500"}
+{"ticker": "NKE", "name": "NKE", "type": "stock", "category": "sp500"}
+{"ticker": "NOC", "name": "NOC", "type": "stock", "category": "sp500"}
+{"ticker": "NOW", "name": "NOW", "type": "stock", "category": "sp500"}
+{"ticker": "NRG", "name": "NRG", "type": "stock", "category": "sp500"}
+{"ticker": "NSC", "name": "NSC", "type": "stock", "category": "sp500"}
+{"ticker": "NTAP", "name": "NTAP", "type": "stock", "category": "sp500"}
+{"ticker": "NTRS", "name": "NTRS", "type": "stock", "category": "sp500"}
+{"ticker": "NUE", "name": "NUE", "type": "stock", "category": "sp500"}
+{"ticker": "NVDA", "name": "NVDA", "type": "stock", "category": "sp500"}
+{"ticker": "NVR", "name": "NVR", "type": "stock", "category": "sp500"}
+{"ticker": "NWS", "name": "NWS", "type": "stock", "category": "sp500"}
+{"ticker": "NWSA", "name": "NWSA", "type": "stock", "category": "sp500"}
+{"ticker": "NXPI", "name": "NXPI", "type": "stock", "category": "sp500"}
+{"ticker": "O", "name": "O", "type": "stock", "category": "sp500"}
+{"ticker": "ODFL", "name": "ODFL", "type": "stock", "category": "sp500"}
+{"ticker": "OKE", "name": "OKE", "type": "stock", "category": "sp500"}
+{"ticker": "OMC", "name": "OMC", "type": "stock", "category": "sp500"}
+{"ticker": "ON", "name": "ON", "type": "stock", "category": "sp500"}
+{"ticker": "ORCL", "name": "ORCL", "type": "stock", "category": "sp500"}
+{"ticker": "ORLY", "name": "ORLY", "type": "stock", "category": "sp500"}
+{"ticker": "OTIS", "name": "OTIS", "type": "stock", "category": "sp500"}
+{"ticker": "OXY", "name": "OXY", "type": "stock", "category": "sp500"}
+{"ticker": "PANW", "name": "PANW", "type": "stock", "category": "sp500"}
+{"ticker": "PAYX", "name": "PAYX", "type": "stock", "category": "sp500"}
+{"ticker": "PCAR", "name": "PCAR", "type": "stock", "category": "sp500"}
+{"ticker": "PCG", "name": "PCG", "type": "stock", "category": "sp500"}
+{"ticker": "PEG", "name": "PEG", "type": "stock", "category": "sp500"}
+{"ticker": "PEP", "name": "PEP", "type": "stock", "category": "sp500"}
+{"ticker": "PFE", "name": "PFE", "type": "stock", "category": "sp500"}
+{"ticker": "PFG", "name": "PFG", "type": "stock", "category": "sp500"}
+{"ticker": "PG", "name": "PG", "type": "stock", "category": "sp500"}
+{"ticker": "PGR", "name": "PGR", "type": "stock", "category": "sp500"}
+{"ticker": "PH", "name": "PH", "type": "stock", "category": "sp500"}
+{"ticker": "PHM", "name": "PHM", "type": "stock", "category": "sp500"}
+{"ticker": "PKG", "name": "PKG", "type": "stock", "category": "sp500"}
+{"ticker": "PLD", "name": "PLD", "type": "stock", "category": "sp500"}
+{"ticker": "PLTR", "name": "PLTR", "type": "stock", "category": "sp500"}
+{"ticker": "PM", "name": "PM", "type": "stock", "category": "sp500"}
+{"ticker": "PNC", "name": "PNC", "type": "stock", "category": "sp500"}
+{"ticker": "PNR", "name": "PNR", "type": "stock", "category": "sp500"}
+{"ticker": "PNW", "name": "PNW", "type": "stock", "category": "sp500"}
+{"ticker": "PODD", "name": "PODD", "type": "stock", "category": "sp500"}
+{"ticker": "PPG", "name": "PPG", "type": "stock", "category": "sp500"}
+{"ticker": "PPL", "name": "PPL", "type": "stock", "category": "sp500"}
+{"ticker": "PRU", "name": "PRU", "type": "stock", "category": "sp500"}
+{"ticker": "PSA", "name": "PSA", "type": "stock", "category": "sp500"}
+{"ticker": "PSKY", "name": "PSKY", "type": "stock", "category": "sp500"}
+{"ticker": "PSX", "name": "PSX", "type": "stock", "category": "sp500"}
+{"ticker": "PTC", "name": "PTC", "type": "stock", "category": "sp500"}
+{"ticker": "PWR", "name": "PWR", "type": "stock", "category": "sp500"}
+{"ticker": "PYPL", "name": "PYPL", "type": "stock", "category": "sp500"}
+{"ticker": "Q", "name": "Q", "type": "stock", "category": "sp500"}
+{"ticker": "QCOM", "name": "QCOM", "type": "stock", "category": "sp500"}
+{"ticker": "RCL", "name": "RCL", "type": "stock", "category": "sp500"}
+{"ticker": "REG", "name": "REG", "type": "stock", "category": "sp500"}
+{"ticker": "REGN", "name": "REGN", "type": "stock", "category": "sp500"}
+{"ticker": "RF", "name": "RF", "type": "stock", "category": "sp500"}
+{"ticker": "RJF", "name": "RJF", "type": "stock", "category": "sp500"}
+{"ticker": "RL", "name": "RL", "type": "stock", "category": "sp500"}
+{"ticker": "RMD", "name": "RMD", "type": "stock", "category": "sp500"}
+{"ticker": "ROK", "name": "ROK", "type": "stock", "category": "sp500"}
+{"ticker": "ROL", "name": "ROL", "type": "stock", "category": "sp500"}
+{"ticker": "ROP", "name": "ROP", "type": "stock", "category": "sp500"}
+{"ticker": "ROST", "name": "ROST", "type": "stock", "category": "sp500"}
+{"ticker": "RSG", "name": "RSG", "type": "stock", "category": "sp500"}
+{"ticker": "RTX", "name": "RTX", "type": "stock", "category": "sp500"}
+{"ticker": "RVTY", "name": "RVTY", "type": "stock", "category": "sp500"}
+{"ticker": "SBAC", "name": "SBAC", "type": "stock", "category": "sp500"}
+{"ticker": "SBUX", "name": "SBUX", "type": "stock", "category": "sp500"}
+{"ticker": "SCHW", "name": "SCHW", "type": "stock", "category": "sp500"}
+{"ticker": "SHW", "name": "SHW", "type": "stock", "category": "sp500"}
+{"ticker": "SJM", "name": "SJM", "type": "stock", "category": "sp500"}
+{"ticker": "SLB", "name": "SLB", "type": "stock", "category": "sp500"}
+{"ticker": "SMCI", "name": "SMCI", "type": "stock", "category": "sp500"}
+{"ticker": "SNA", "name": "SNA", "type": "stock", "category": "sp500"}
+{"ticker": "SNDK", "name": "SNDK", "type": "stock", "category": "sp500"}
+{"ticker": "SNPS", "name": "SNPS", "type": "stock", "category": "sp500"}
+{"ticker": "SO", "name": "SO", "type": "stock", "category": "sp500"}
+{"ticker": "SOLV", "name": "SOLV", "type": "stock", "category": "sp500"}
+{"ticker": "SPG", "name": "SPG", "type": "stock", "category": "sp500"}
+{"ticker": "SPGI", "name": "SPGI", "type": "stock", "category": "sp500"}
+{"ticker": "SRE", "name": "SRE", "type": "stock", "category": "sp500"}
+{"ticker": "STE", "name": "STE", "type": "stock", "category": "sp500"}
+{"ticker": "STLD", "name": "STLD", "type": "stock", "category": "sp500"}
+{"ticker": "STT", "name": "STT", "type": "stock", "category": "sp500"}
+{"ticker": "STX", "name": "STX", "type": "stock", "category": "sp500"}
+{"ticker": "STZ", "name": "STZ", "type": "stock", "category": "sp500"}
+{"ticker": "SW", "name": "SW", "type": "stock", "category": "sp500"}
+{"ticker": "SWK", "name": "SWK", "type": "stock", "category": "sp500"}
+{"ticker": "SWKS", "name": "SWKS", "type": "stock", "category": "sp500"}
+{"ticker": "SYF", "name": "SYF", "type": "stock", "category": "sp500"}
+{"ticker": "SYK", "name": "SYK", "type": "stock", "category": "sp500"}
+{"ticker": "SYY", "name": "SYY", "type": "stock", "category": "sp500"}
+{"ticker": "T", "name": "T", "type": "stock", "category": "sp500"}
+{"ticker": "TAP", "name": "TAP", "type": "stock", "category": "sp500"}
+{"ticker": "TDG", "name": "TDG", "type": "stock", "category": "sp500"}
+{"ticker": "TDY", "name": "TDY", "type": "stock", "category": "sp500"}
+{"ticker": "TECH", "name": "TECH", "type": "stock", "category": "sp500"}
+{"ticker": "TEL", "name": "TEL", "type": "stock", "category": "sp500"}
+{"ticker": "TER", "name": "TER", "type": "stock", "category": "sp500"}
+{"ticker": "TFC", "name": "TFC", "type": "stock", "category": "sp500"}
+{"ticker": "TGT", "name": "TGT", "type": "stock", "category": "sp500"}
+{"ticker": "TJX", "name": "TJX", "type": "stock", "category": "sp500"}
+{"ticker": "TKO", "name": "TKO", "type": "stock", "category": "sp500"}
+{"ticker": "TMO", "name": "TMO", "type": "stock", "category": "sp500"}
+{"ticker": "TMUS", "name": "TMUS", "type": "stock", "category": "sp500"}
+{"ticker": "TPL", "name": "TPL", "type": "stock", "category": "sp500"}
+{"ticker": "TPR", "name": "TPR", "type": "stock", "category": "sp500"}
+{"ticker": "TRGP", "name": "TRGP", "type": "stock", "category": "sp500"}
+{"ticker": "TRMB", "name": "TRMB", "type": "stock", "category": "sp500"}
+{"ticker": "TROW", "name": "TROW", "type": "stock", "category": "sp500"}
+{"ticker": "TRV", "name": "TRV", "type": "stock", "category": "sp500"}
+{"ticker": "TSCO", "name": "TSCO", "type": "stock", "category": "sp500"}
+{"ticker": "TSLA", "name": "TSLA", "type": "stock", "category": "sp500"}
+{"ticker": "TSN", "name": "TSN", "type": "stock", "category": "sp500"}
+{"ticker": "TT", "name": "TT", "type": "stock", "category": "sp500"}
+{"ticker": "TTD", "name": "TTD", "type": "stock", "category": "sp500"}
+{"ticker": "TTWO", "name": "TTWO", "type": "stock", "category": "sp500"}
+{"ticker": "TXN", "name": "TXN", "type": "stock", "category": "sp500"}
+{"ticker": "TXT", "name": "TXT", "type": "stock", "category": "sp500"}
+{"ticker": "TYL", "name": "TYL", "type": "stock", "category": "sp500"}
+{"ticker": "UAL", "name": "UAL", "type": "stock", "category": "sp500"}
+{"ticker": "UBER", "name": "UBER", "type": "stock", "category": "sp500"}
+{"ticker": "UDR", "name": "UDR", "type": "stock", "category": "sp500"}
+{"ticker": "UHS", "name": "UHS", "type": "stock", "category": "sp500"}
+{"ticker": "ULTA", "name": "ULTA", "type": "stock", "category": "sp500"}
+{"ticker": "UNH", "name": "UNH", "type": "stock", "category": "sp500"}
+{"ticker": "UNP", "name": "UNP", "type": "stock", "category": "sp500"}
+{"ticker": "UPS", "name": "UPS", "type": "stock", "category": "sp500"}
+{"ticker": "URI", "name": "URI", "type": "stock", "category": "sp500"}
+{"ticker": "USB", "name": "USB", "type": "stock", "category": "sp500"}
+{"ticker": "V", "name": "V", "type": "stock", "category": "sp500"}
+{"ticker": "VEEV", "name": "VEEV", "type": "stock", "category": "sp500"}
+{"ticker": "VICI", "name": "VICI", "type": "stock", "category": "sp500"}
+{"ticker": "VLO", "name": "VLO", "type": "stock", "category": "sp500"}
+{"ticker": "VLTO", "name": "VLTO", "type": "stock", "category": "sp500"}
+{"ticker": "VMC", "name": "VMC", "type": "stock", "category": "sp500"}
+{"ticker": "VRSK", "name": "VRSK", "type": "stock", "category": "sp500"}
+{"ticker": "VRSN", "name": "VRSN", "type": "stock", "category": "sp500"}
+{"ticker": "VRT", "name": "VRT", "type": "stock", "category": "sp500"}
+{"ticker": "VRTX", "name": "VRTX", "type": "stock", "category": "sp500"}
+{"ticker": "VST", "name": "VST", "type": "stock", "category": "sp500"}
+{"ticker": "VTR", "name": "VTR", "type": "stock", "category": "sp500"}
+{"ticker": "VTRS", "name": "VTRS", "type": "stock", "category": "sp500"}
+{"ticker": "VZ", "name": "VZ", "type": "stock", "category": "sp500"}
+{"ticker": "WAB", "name": "WAB", "type": "stock", "category": "sp500"}
+{"ticker": "WAT", "name": "WAT", "type": "stock", "category": "sp500"}
+{"ticker": "WBD", "name": "WBD", "type": "stock", "category": "sp500"}
+{"ticker": "WDAY", "name": "WDAY", "type": "stock", "category": "sp500"}
+{"ticker": "WDC", "name": "WDC", "type": "stock", "category": "sp500"}
+{"ticker": "WEC", "name": "WEC", "type": "stock", "category": "sp500"}
+{"ticker": "WELL", "name": "WELL", "type": "stock", "category": "sp500"}
+{"ticker": "WFC", "name": "WFC", "type": "stock", "category": "sp500"}
+{"ticker": "WM", "name": "WM", "type": "stock", "category": "sp500"}
+{"ticker": "WMB", "name": "WMB", "type": "stock", "category": "sp500"}
+{"ticker": "WMT", "name": "WMT", "type": "stock", "category": "sp500"}
+{"ticker": "WRB", "name": "WRB", "type": "stock", "category": "sp500"}
+{"ticker": "WSM", "name": "WSM", "type": "stock", "category": "sp500"}
+{"ticker": "WST", "name": "WST", "type": "stock", "category": "sp500"}
+{"ticker": "WTW", "name": "WTW", "type": "stock", "category": "sp500"}
+{"ticker": "WY", "name": "WY", "type": "stock", "category": "sp500"}
+{"ticker": "WYNN", "name": "WYNN", "type": "stock", "category": "sp500"}
+{"ticker": "XEL", "name": "XEL", "type": "stock", "category": "sp500"}
+{"ticker": "XOM", "name": "XOM", "type": "stock", "category": "sp500"}
+{"ticker": "XYL", "name": "XYL", "type": "stock", "category": "sp500"}
+{"ticker": "XYZ", "name": "XYZ", "type": "stock", "category": "sp500"}
+{"ticker": "YUM", "name": "YUM", "type": "stock", "category": "sp500"}
+{"ticker": "ZBH", "name": "ZBH", "type": "stock", "category": "sp500"}
+{"ticker": "ZBRA", "name": "ZBRA", "type": "stock", "category": "sp500"}
+{"ticker": "ZTS", "name": "ZTS", "type": "stock", "category": "sp500"}
+{"ticker": "SPY", "name": "SPY", "type": "etf", "category": "etf"}
+{"ticker": "QQQ", "name": "QQQ", "type": "etf", "category": "etf"}
+{"ticker": "IWM", "name": "IWM", "type": "etf", "category": "etf"}
+{"ticker": "DIA", "name": "DIA", "type": "etf", "category": "etf"}
+{"ticker": "VTI", "name": "VTI", "type": "etf", "category": "etf"}
+{"ticker": "VOO", "name": "VOO", "type": "etf", "category": "etf"}
+{"ticker": "IVV", "name": "IVV", "type": "etf", "category": "etf"}
+{"ticker": "VEA", "name": "VEA", "type": "etf", "category": "etf"}
+{"ticker": "VWO", "name": "VWO", "type": "etf", "category": "etf"}
+{"ticker": "EFA", "name": "EFA", "type": "etf", "category": "etf"}
+{"ticker": "EEM", "name": "EEM", "type": "etf", "category": "etf"}
+{"ticker": "XLF", "name": "XLF", "type": "etf", "category": "etf"}
+{"ticker": "XLK", "name": "XLK", "type": "etf", "category": "etf"}
+{"ticker": "XLE", "name": "XLE", "type": "etf", "category": "etf"}
+{"ticker": "XLI", "name": "XLI", "type": "etf", "category": "etf"}
+{"ticker": "XLP", "name": "XLP", "type": "etf", "category": "etf"}
+{"ticker": "XLU", "name": "XLU", "type": "etf", "category": "etf"}
+{"ticker": "XLV", "name": "XLV", "type": "etf", "category": "etf"}
+{"ticker": "XLY", "name": "XLY", "type": "etf", "category": "etf"}
+{"ticker": "XLB", "name": "XLB", "type": "etf", "category": "etf"}
+{"ticker": "XLRE", "name": "XLRE", "type": "etf", "category": "etf"}
+{"ticker": "VGT", "name": "VGT", "type": "etf", "category": "etf"}
+{"ticker": "VHT", "name": "VHT", "type": "etf", "category": "etf"}
+{"ticker": "VDE", "name": "VDE", "type": "etf", "category": "etf"}
+{"ticker": "VIS", "name": "VIS", "type": "etf", "category": "etf"}
+{"ticker": "VDC", "name": "VDC", "type": "etf", "category": "etf"}
+{"ticker": "VPU", "name": "VPU", "type": "etf", "category": "etf"}
+{"ticker": "VAW", "name": "VAW", "type": "etf", "category": "etf"}
+{"ticker": "VNQ", "name": "VNQ", "type": "etf", "category": "etf"}
+{"ticker": "VFH", "name": "VFH", "type": "etf", "category": "etf"}
+{"ticker": "SOXX", "name": "SOXX", "type": "etf", "category": "etf"}
+{"ticker": "SMH", "name": "SMH", "type": "etf", "category": "etf"}
+{"ticker": "IBB", "name": "IBB", "type": "etf", "category": "etf"}
+{"ticker": "XBI", "name": "XBI", "type": "etf", "category": "etf"}
+{"ticker": "ARKK", "name": "ARKK", "type": "etf", "category": "etf"}
+{"ticker": "ARKG", "name": "ARKG", "type": "etf", "category": "etf"}
+{"ticker": "ARKW", "name": "ARKW", "type": "etf", "category": "etf"}
+{"ticker": "CLOU", "name": "CLOU", "type": "etf", "category": "etf"}
+{"ticker": "BOTZ", "name": "BOTZ", "type": "etf", "category": "etf"}
+{"ticker": "LIT", "name": "LIT", "type": "etf", "category": "etf"}
+{"ticker": "TAN", "name": "TAN", "type": "etf", "category": "etf"}
+{"ticker": "ICLN", "name": "ICLN", "type": "etf", "category": "etf"}
+{"ticker": "PBW", "name": "PBW", "type": "etf", "category": "etf"}
+{"ticker": "QCLN", "name": "QCLN", "type": "etf", "category": "etf"}
+{"ticker": "FAN", "name": "FAN", "type": "etf", "category": "etf"}
+{"ticker": "TLT", "name": "TLT", "type": "etf", "category": "etf"}
+{"ticker": "IEF", "name": "IEF", "type": "etf", "category": "etf"}
+{"ticker": "SHY", "name": "SHY", "type": "etf", "category": "etf"}
+{"ticker": "LQD", "name": "LQD", "type": "etf", "category": "etf"}
+{"ticker": "HYG", "name": "HYG", "type": "etf", "category": "etf"}
+{"ticker": "JNK", "name": "JNK", "type": "etf", "category": "etf"}
+{"ticker": "BND", "name": "BND", "type": "etf", "category": "etf"}
+{"ticker": "AGG", "name": "AGG", "type": "etf", "category": "etf"}
+{"ticker": "TIP", "name": "TIP", "type": "etf", "category": "etf"}
+{"ticker": "MBB", "name": "MBB", "type": "etf", "category": "etf"}
+{"ticker": "UUP", "name": "UUP", "type": "etf", "category": "etf"}
+{"ticker": "FXE", "name": "FXE", "type": "etf", "category": "etf"}
+{"ticker": "FXY", "name": "FXY", "type": "etf", "category": "etf"}
+{"ticker": "IBIT", "name": "IBIT", "type": "etf", "category": "etf"}
+{"ticker": "FBTC", "name": "FBTC", "type": "etf", "category": "etf"}
+{"ticker": "BITO", "name": "BITO", "type": "etf", "category": "etf"}
+{"ticker": "ACWX", "name": "ACWX", "type": "etf", "category": "etf"}
+{"ticker": "AVUV", "name": "AVUV", "type": "etf", "category": "etf"}
+{"ticker": "VGSLX", "name": "VGSLX", "type": "etf", "category": "etf"}
+{"ticker": "VOOG", "name": "VOOG", "type": "etf", "category": "etf"}
+{"ticker": "VOOV", "name": "VOOV", "type": "etf", "category": "etf"}
+{"ticker": "BTC-USD", "name": "BTC", "type": "crypto", "category": "crypto"}
+{"ticker": "ETH-USD", "name": "ETH", "type": "crypto", "category": "crypto"}
+{"ticker": "SOL-USD", "name": "SOL", "type": "crypto", "category": "crypto"}
 {"ticker": "XRP-USD", "name": "XRP", "type": "crypto", "category": "crypto"}
-{"ticker": "ADA-USD", "name": "Cardano", "type": "crypto", "category": "crypto"}
-{"ticker": "LINK-USD", "name": "Chainlink", "type": "crypto", "category": "crypto"}
-{"ticker": "AVAX-USD", "name": "Avalanche", "type": "crypto", "category": "crypto"}
-{"ticker": "DOT-USD", "name": "Polkadot", "type": "crypto", "category": "crypto"}
-{"ticker": "DOGE-USD", "name": "Dogecoin", "type": "crypto", "category": "crypto"}
-{"ticker": "LTC-USD", "name": "Litecoin", "type": "crypto", "category": "crypto"}
-{"ticker": "BCH-USD", "name": "Bitcoin Cash", "type": "crypto", "category": "crypto"}
-{"ticker": "TAO-USD", "name": "Bittensor", "type": "crypto", "category": "crypto"}
-{"ticker": "IAU", "name": "iShares Gold Trust", "type": "etf", "category": "gold"}
-{"ticker": "PPLT", "name": "Aberdeen Physical Platinum Shares", "type": "etf", "category": "platinum"}
-{"ticker": "PALL", "name": "Aberdeen Physical Palladium Shares", "type": "etf", "category": "palladium"}
-{"ticker": "CPER", "name": "United States Copper Index Fund", "type": "etf", "category": "copper"}
-{"ticker": "DBA", "name": "Invesco DB Agriculture Fund", "type": "etf", "category": "agriculture"}
-{"ticker": "GLDM", "name": "SPDR Gold MiniShares", "type": "etf", "category": "gold"}
+{"ticker": "ADA-USD", "name": "ADA", "type": "crypto", "category": "crypto"}
+{"ticker": "LINK-USD", "name": "LINK", "type": "crypto", "category": "crypto"}
+{"ticker": "AVAX-USD", "name": "AVAX", "type": "crypto", "category": "crypto"}
+{"ticker": "DOT-USD", "name": "DOT", "type": "crypto", "category": "crypto"}
+{"ticker": "DOGE-USD", "name": "DOGE", "type": "crypto", "category": "crypto"}
+{"ticker": "LTC-USD", "name": "LTC", "type": "crypto", "category": "crypto"}
+{"ticker": "BCH-USD", "name": "BCH", "type": "crypto", "category": "crypto"}
+{"ticker": "TAO-USD", "name": "TAO", "type": "crypto", "category": "crypto"}
+{"ticker": "ICP-USD", "name": "ICP", "type": "crypto", "category": "crypto"}
+{"ticker": "ATOM-USD", "name": "ATOM", "type": "crypto", "category": "crypto"}
+{"ticker": "NEAR-USD", "name": "NEAR", "type": "crypto", "category": "crypto"}
+{"ticker": "APT-USD", "name": "APT", "type": "crypto", "category": "crypto"}
+{"ticker": "GLD", "name": "GLD", "type": "commodity", "category": "precious_metal"}
+{"ticker": "SLV", "name": "SLV", "type": "commodity", "category": "precious_metal"}
+{"ticker": "IAU", "name": "IAU", "type": "commodity", "category": "precious_metal"}
+{"ticker": "PPLT", "name": "PPLT", "type": "commodity", "category": "precious_metal"}
+{"ticker": "PALL", "name": "PALL", "type": "commodity", "category": "precious_metal"}
+{"ticker": "CPER", "name": "CPER", "type": "commodity", "category": "precious_metal"}
+{"ticker": "USO", "name": "USO", "type": "commodity", "category": "commodity"}
+{"ticker": "UNG", "name": "UNG", "type": "commodity", "category": "commodity"}
+{"ticker": "DBA", "name": "DBA", "type": "commodity", "category": "commodity"}

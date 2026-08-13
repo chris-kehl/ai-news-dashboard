@@ -889,8 +889,28 @@ function renderAll(d){
   }catch(e){console.error('futures',e);}
 
   try{
-    var mt=(d.metals||[]).slice(0,IS_MOBILE?4:6);
-    var mtItems=mt.map(function(m){return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--brd);font-family:JetBrains Mono;font-size:.82rem"><span style="font-weight:600">'+(m.name||m.symbol)+'</span><span style="display:flex;gap:10px"><span>$'+m.price+'</span><span class="'+(m.change_percent>=0?'up':'dn')+'">'+(m.change_percent>=0?'+':'')+m.change_percent.toFixed(1)+'%</span></span></div>'}).join('')||'<div class="ld">No metal data</div>';
+    var mt=(d.scored_metals||d.metals||[]).slice(0,IS_MOBILE?4:6);
+    var mtItems = '';
+    if (mt.length > 0) {
+      mtItems = mt.map(function(m){
+        var score = m.score || m.factors && m.factors.score || 0;
+        var price = m.price || m.factors && m.factors.price || 0;
+        var chg = m.change_percent || m.change_7d || m.factors && m.factors.chg_5d || 0;
+        var name = m.name || m.ticker || m.symbol || '';
+        return '<div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--brd);font-family:JetBrains Mono;font-size:.82rem">' +
+          '<span style="display:flex;align-items:center;gap:8px;">' +
+            '<span style="font-weight:600">' + name + '</span>' +
+            '<span style="font-size:.65rem;color:var(--tx3)">Score ' + Math.round(score) + '</span>' +
+          '</span>' +
+          '<span style="display:flex;gap:12px;align-items:center">' +
+            '<span>$' + (typeof price === 'number' ? price.toLocaleString() : price) + '</span>' +
+            '<span class="' + (chg >= 0 ? 'up' : 'dn') + '">' + (chg >= 0 ? '+' : '') + (typeof chg === 'number' ? chg.toFixed(1) : chg) + '%</span>' +
+          '</span>' +
+        '</div>';
+      }).join('');
+    } else {
+      mtItems = '<div class="ld">No metal data</div>';
+    }
     $('precious-metals').innerHTML=mtItems;
   }catch(e){console.error('metals',e);}
 
@@ -1012,37 +1032,38 @@ function renderAll(d){
           banner.style.display='block';
         }
       }catch(bannerErr){console.error('weekly banner',bannerErr);}
-      // Best ETF of the Week rendering
+      // Best ETF of the Week rendering (new structure from v2 scorer)
       try{
-        var be=wp.best_etf_of_week;
-        if(be && be.name){
+        var be=d.best_etf;
+        if(be && be.top_pick && be.top_pick.name){
+          var betp=be.top_pick;
           var beBanner=$('best-etf-banner');
           if(beBanner){
-            $('best-etf-banner-name').textContent=be.display_name || be.name;
-            $('best-etf-banner-ticker').textContent=be.name;
-            $('best-etf-banner-score').textContent=be.score;
-            $('best-etf-banner-score').style.color=be.score>=65?'var(--good)':be.score>=45?'var(--accent)':'var(--danger)';
-            $('best-etf-banner-price').textContent='$'+(be.price||0).toLocaleString();
-            var bec7=be.change_7d||0;
+            $('best-etf-banner-name').textContent=betp.name;
+            $('best-etf-banner-ticker').textContent=betp.ticker;
+            $('best-etf-banner-score').textContent=betp.score;
+            $('best-etf-banner-score').style.color=betp.score>=65?'var(--good)':betp.score>=45?'var(--accent)':'var(--danger)';
+            $('best-etf-banner-price').textContent='$'+(betp.price||0).toLocaleString();
+            var bec7=betp.change_7d||0;
             $('best-etf-banner-7d').innerHTML='<span style="color:'+(bec7>=0?'var(--good)':'var(--danger)')+'">'+(bec7>=0?'+':'')+bec7.toFixed(1)+'%</span>';
-            var bec30=be.change_30d||0;
+            var bec30=betp.change_30d||0;
             $('best-etf-banner-30d').innerHTML='<span style="color:'+(bec30>=0?'var(--good)':'var(--danger)')+'">'+(bec30>=0?'+':'')+bec30.toFixed(1)+'%</span>';
-            $('best-etf-banner-category').textContent=be.category||'ETF';
+            $('best-etf-banner-category').textContent=betp.category||'ETF';
             beBanner.style.display='block';
           }
           // In-panel best ETF section
           var bePanel=$('best-etf-panel');
           if(bePanel){
-            $('best-etf-name').textContent=be.display_name||be.name;
-            $('best-etf-ticker').textContent=be.name+'  ·  '+(be.category||'ETF');
-            $('best-etf-price').textContent='$'+(be.price||0).toLocaleString();
-            $('best-etf-score').textContent=be.score;
-            $('best-etf-score').style.color=be.score>=65?'var(--good)':be.score>=45?'var(--accent)':'var(--danger)';
-            var b7=be.change_7d||0;
+            $('best-etf-name').textContent=betp.name;
+            $('best-etf-ticker').textContent=betp.ticker+'  ·  '+(betp.category||'ETF');
+            $('best-etf-price').textContent='$'+(betp.price||0).toLocaleString();
+            $('best-etf-score').textContent=betp.score;
+            $('best-etf-score').style.color=betp.score>=65?'var(--good)':betp.score>=45?'var(--accent)':'var(--danger)';
+            var b7=betp.change_7d||0;
             $('best-etf-chg7d').innerHTML='<span style="color:'+(b7>=0?'var(--good)':'var(--danger)')+'">'+(b7>=0?'+':'')+b7.toFixed(1)+'%</span>';
-            var b30=be.change_30d||0;
+            var b30=betp.change_30d||0;
             $('best-etf-chg30d').innerHTML='<span style="color:'+(b30>=0?'var(--good)':'var(--danger)')+'">'+(b30>=0?'+':'')+b30.toFixed(1)+'%</span>';
-            $('best-etf-rsi').textContent=be.rsi!=null?be.rsi.toFixed(1):'--';
+            $('best-etf-rsi').textContent=betp.rsi!=null?betp.rsi.toFixed(1):'--';
             $('best-etf-rationale').textContent=be.rationale||'';
             bePanel.style.display='block';
           }

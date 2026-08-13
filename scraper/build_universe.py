@@ -116,27 +116,25 @@ async def fetch_etfs(session: aiohttp.ClientSession) -> list:
 
 
 async def fetch_crypto() -> list:
-    """Get top crypto from CoinGecko (free API, no key needed)."""
-    url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1"
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url, timeout=aiohttp.ClientTimeout(total=15)) as r:
-                if r.status != 200:
-                    return []
-                data = await r.json()
-                tickers = [f"{c['symbol'].upper()}-USD" for c in data[:100]]
-                # Remove duplicates
-                seen = set()
-                result = []
-                for t in tickers:
-                    if t not in seen:
-                        seen.add(t)
-                        result.append(t)
-                print(f"      [crypto] Fetched {len(result)} from CoinGecko")
-                return result
-    except Exception as e:
-        print(f"      [crypto] Error: {e}")
-        return []
+    """Curated blue-chip crypto list — no meme coins, no stablecoins, no exchange tokens."""
+    curated = [
+        "BTC-USD", "ETH-USD", "SOL-USD", "XRP-USD",
+        "ADA-USD", "LINK-USD", "DOT-USD", "TAO-USD",
+        "AVAX-USD", "LTC-USD", "BCH-USD", "NEAR-USD",
+        "ICP-USD", "HBAR-USD", "UNI-USD", "ETC-USD",
+        "APT-USD", "VET-USD", "FIL-USD", "ARB-USD",
+        "OP-USD", "STX-USD", "MKR-USD", "RENDER-USD",
+        "FET-USD", "INJ-USD", "GRT-USD", "MATIC-USD",
+        "ATOM-USD", "ALGO-USD", "THETA-USD", "QNT-USD",
+        "KAS-USD", "TIA-USD", "SEI-USD", "STRK-USD",
+        "ZRO-USD", "ENA-USD", "PENDLE-USD",
+        "AAVE-USD", "COMP-USD", "YFI-USD", "SNX-USD",
+        "DYDX-USD", "GMX-USD", "CRV-USD", "LDO-USD",
+        "SSV-USD", "RPL-USD", "FXS-USD", "PYTH-USD",
+        "JUP-USD", "JTO-USD", "BEAM-USD", "XLM-USD",
+    ]
+    print(f"[crypto] Curated blue-chip list: {len(curated)} tickers")
+    return curated
 
 
 async def build_full_universe() -> dict:

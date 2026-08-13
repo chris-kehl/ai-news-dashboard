@@ -35,9 +35,12 @@ def get_crypto_prices():
         data = r.json()
         coins = []
         tao_included = False
+        MEME_DENYLIST = {"DOGE","SHIB","PEPE","WIF","BONK","FLOKI","BOME","TREMP","MAGA","TRUMP"}
         for coin in data:
             change = coin.get("price_change_percentage_24h_in_currency") or coin.get("price_change_percentage_24h") or 0
             sym = coin["symbol"].upper()
+            if sym in MEME_DENYLIST:
+                continue
             if sym == "TAO":
                 tao_included = True
             coins.append({

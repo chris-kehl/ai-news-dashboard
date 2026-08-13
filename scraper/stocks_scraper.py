@@ -254,7 +254,7 @@ def generate_ticker_json(output_path=None):
         url = "https://api.coingecko.com/api/v3/coins/markets"
         params = {
             "vs_currency": "usd",
-            "ids": "bitcoin,ethereum,solana,dogecoin,avalanche-2,chainlink,bittensor",
+            "ids": "bitcoin,ethereum,solana,avalanche-2,chainlink,bittensor",
             "sparkline": "false",
             "price_change_percentage": "24h"
         }

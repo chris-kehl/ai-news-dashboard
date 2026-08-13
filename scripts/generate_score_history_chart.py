@@ -34,6 +34,9 @@ def generate_chart():
         return
 
     dates = sorted(history.keys())
+    if len(dates) < 2:
+        print(f"Only {len(dates)} week(s) of history — chart needs 2+ weeks.")
+        return
     # Show last 12 weeks max
     dates = dates[-12:]
     x = [datetime.strptime(d, "%Y-%m-%d") for d in dates]

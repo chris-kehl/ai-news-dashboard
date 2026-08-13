@@ -1860,89 +1860,192 @@
     }
   ],
   "weekly_pick": {
-    "generated_at": "2026-08-11T15:24:33",
-    "week_label": "Week of Aug 11, 2026",
+    "week_label": "This Week",
+    "generated_at": "2026-08-13T18:07:17.786637",
     "top_pick": {
-      "ticker": "AMGN",
-      "name": "Amgen",
-      "display_name": "Amgen Inc",
-      "price": 414.18,
-      "signal": "BULLISH",
-      "score": 72.2,
-      "sentiment_score": 50,
-      "change_7d": 6.2,
-      "change_30d": 16.6,
-      "rationale": "Technical: 78/100 | Momentum: 85/100 | Sentiment: 50/100 | Volatility: 55/100",
-      "category": "Pharmaceuticals",
-      "rsi": 51,
+      "ticker": "DELL",
+      "name": "DELL",
+      "price": 494.51,
+      "score": 76,
+      "category": "sp500",
+      "change_7d": 12.99,
+      "change_30d": 26.35,
+      "rsi": 60.0,
       "factors": [
-        "RSI 51 bullish",
-        "Above SMA20",
-        "Golden cross",
-        "MACD bullish",
-        "+6.2% week",
-        "+16.6% month"
-      ],
-      "key_levels": "Support: 81.60",
-      "timeframe": "Swing (1-4 weeks)"
+        "T:38",
+        "F:18",
+        "S:20"
+      ]
     },
-    "top_five": [
-      {
-        "ticker": "AMGN",
-        "name": "Amgen",
-        "score": 72.2,
-        "price": 414.18,
-        "change_7d": 6.2,
-        "change_30d": 16.6,
-        "category": "Pharmaceuticals"
-      },
-      {
-        "ticker": "VRTX",
-        "name": "Vertex Pharmaceuticals",
-        "score": 71.8,
-        "price": 521.23,
-        "change_7d": 8.9,
-        "change_30d": 9.4,
-        "category": "Biotech"
-      },
-      {
-        "ticker": "XMR-USD",
-        "name": "Monero",
-        "score": 71.2,
-        "price": 390.61,
-        "change_7d": 5.7,
-        "change_30d": 10.9,
-        "category": "Crypto"
-      },
-      {
-        "ticker": "ABT",
-        "name": "Abbott Labs",
-        "score": 69.2,
-        "price": 108.57,
-        "change_7d": 3.0,
-        "change_30d": 22.9,
-        "category": "Healthcare"
-      },
-      {
-        "ticker": "RTX",
-        "name": "RTX Corp",
-        "score": 69.2,
-        "price": 223.88,
-        "change_7d": 2.7,
-        "change_30d": 15.8,
-        "category": "Aerospace & Defense"
+    "rationale": "Score: 76/100 (Tech 38/40, Fund 18/30, Sent 20/30)\n\nPrice: $494.51 | 5d: 13.0% | 20d: 26.4% | RSI: 60.0\n\nFundamentals: N/A\n\nDisclaimer: Not financial advice.",
+    "top_five": []
+  },
+  "best_etf": {
+    "week_label": "Best ETF",
+    "generated_at": "2026-08-13T18:07:17.786637",
+    "top_pick": {
+      "ticker": "XLE",
+      "name": "XLE",
+      "price": 61.06,
+      "score": 73,
+      "category": "etf",
+      "change_7d": 4.99,
+      "change_30d": 7.09,
+      "rsi": 56.3,
+      "factors": [
+        "T:35",
+        "F:18",
+        "S:20"
+      ]
+    },
+    "rationale": "Score: 73/100 (Tech 35/40, Fund 18/30, Sent 20/30)\n\nPrice: $61.06 | 5d: 5.0% | 20d: 7.1% | RSI: 56.3\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
+    "top_five": []
+  },
+  "scored_metals": [
+    {
+      "ticker": "GLD",
+      "name": "GLD",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 61,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 398.96,
+        "chg_1d": -1.47,
+        "chg_5d": 2.38,
+        "chg_20d": 9.32,
+        "rsi": 71.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 5
       }
-    ],
-    "best_etf_of_week": {
-      "ticker": "QQQ",
-      "name": "QQQ",
-      "display_name": "Invesco QQQ Trust",
-      "price": 202.35,
-      "score": 65.8,
-      "change_7d": 1.2,
-      "change_30d": 3.8,
-      "category": "ETF",
-      "rationale": "Nasdaq-100 exposure, strong tech sector momentum"
+    },
+    {
+      "ticker": "IAU",
+      "name": "IAU",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 60,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 81.78,
+        "chg_1d": -1.45,
+        "chg_5d": 2.39,
+        "chg_20d": 9.33,
+        "rsi": 71.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "CPER",
+      "name": "CPER",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 58,
+      "tech_score": 22,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 39.85,
+        "chg_1d": -0.42,
+        "chg_5d": -2.23,
+        "chg_20d": 5.03,
+        "rsi": 65.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "SLV",
+      "name": "SLV",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 57,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 3,
+      "factors": {
+        "price": 58.16,
+        "chg_1d": -1.52,
+        "chg_5d": 4.14,
+        "chg_20d": 15.42,
+        "rsi": 69.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "PALL",
+      "name": "PALL",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 57,
+      "tech_score": 23,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 23.84,
+        "chg_1d": -4.06,
+        "chg_5d": -4.22,
+        "chg_20d": 4.15,
+        "rsi": 59.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "PPLT",
+      "name": "PPLT",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 49,
+      "tech_score": 19,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 0,
+      "factors": {
+        "price": 15.54,
+        "chg_1d": -2.51,
+        "chg_5d": -0.83,
+        "chg_20d": 5.79,
+        "rsi": 67.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
     }
-  }
+  ],
+  "improving_picks": []
 }

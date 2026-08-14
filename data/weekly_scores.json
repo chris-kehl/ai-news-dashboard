@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-13T20:12:29.197470",
+  "generated_at": "2026-08-13T20:31:23.956742",
   "universe_size": 592,
-  "scored_count": 484,
-  "rejected_count": 106,
+  "scored_count": 481,
+  "rejected_count": 109,
   "top_picks": [
     {
       "ticker": "DELL",
@@ -101,6 +101,30 @@
       }
     },
     {
+      "ticker": "SJM",
+      "name": "SJM",
+      "type": "stock",
+      "category": "sp500",
+      "score": 72,
+      "tech_score": 34,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 120.63,
+        "chg_1d": 1.55,
+        "chg_5d": 1.54,
+        "chg_20d": 9.14,
+        "rsi": 58.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "XLB",
       "name": "XLB",
       "type": "etf",
@@ -143,30 +167,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "BBY",
-      "name": "BBY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 70,
-      "tech_score": 32,
-      "fund_score": 18,
-      "sentiment_score": 20,
-      "penalty": 0,
-      "factors": {
-        "price": 85.35,
-        "chg_1d": 2.83,
-        "chg_5d": 6.66,
-        "chg_20d": 4.53,
-        "rsi": 51.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
@@ -245,30 +245,6 @@
       }
     },
     {
-      "ticker": "SJM",
-      "name": "SJM",
-      "type": "stock",
-      "category": "sp500",
-      "score": 70,
-      "tech_score": 33,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 120.63,
-        "chg_1d": 1.55,
-        "chg_5d": 1.54,
-        "chg_20d": 5.84,
-        "rsi": 54.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "WAB",
       "name": "WAB",
       "type": "stock",
@@ -306,8 +282,8 @@
         "price": 198.94,
         "chg_1d": -0.89,
         "chg_5d": 3.09,
-        "chg_20d": 4.98,
-        "rsi": 70.0,
+        "chg_20d": 4.95,
+        "rsi": 67.9,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 8,
@@ -327,41 +303,17 @@
       "sentiment_score": 16,
       "penalty": 0,
       "factors": {
-        "price": 8.86,
-        "chg_1d": 2.14,
-        "chg_5d": 6.69,
-        "chg_20d": 6.28,
-        "rsi": 59.5,
+        "price": 8.85,
+        "chg_1d": 2.04,
+        "chg_5d": 6.59,
+        "chg_20d": 6.19,
+        "rsi": 59.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "AVUV",
-      "name": "AVUV",
-      "type": "etf",
-      "category": "etf",
-      "score": 70,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 22,
-      "penalty": 0,
-      "factors": {
-        "price": 128.01,
-        "chg_1d": 0.39,
-        "chg_5d": 1.26,
-        "chg_20d": 2.68,
-        "rsi": 64.4,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 6,
-        "rsi_align": 5
       }
     },
     {
@@ -450,7 +402,7 @@
         "price": 339.35,
         "chg_1d": 3.85,
         "chg_5d": 7.43,
-        "chg_20d": 6.65,
+        "chg_20d": 8.27,
         "rsi": 72.7,
         "pe": null,
         "fund_details": "N/A",
@@ -546,7 +498,7 @@
         "price": 316.22,
         "chg_1d": -0.15,
         "chg_5d": 2.33,
-        "chg_20d": 5.76,
+        "chg_20d": 3.97,
         "rsi": 67.7,
         "pe": null,
         "fund_details": "ETF",
@@ -554,6 +506,30 @@
         "vol_surge": 3,
         "consistency": 7,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "APO",
+      "name": "APO",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 32,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 143.58,
+        "chg_1d": 3.59,
+        "chg_5d": 12.18,
+        "chg_20d": 16.41,
+        "rsi": 73.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -570,7 +546,7 @@
         "price": 164.21,
         "chg_1d": 0.25,
         "chg_5d": 4.65,
-        "chg_20d": 18.07,
+        "chg_20d": 20.66,
         "rsi": 70.0,
         "pe": null,
         "fund_details": "N/A",
@@ -629,6 +605,30 @@
       }
     },
     {
+      "ticker": "LYV",
+      "name": "LYV",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 186.06,
+        "chg_1d": 0.39,
+        "chg_5d": 2.36,
+        "chg_20d": 3.45,
+        "rsi": 61.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "OKE",
       "name": "OKE",
       "type": "stock",
@@ -653,30 +653,6 @@
       }
     },
     {
-      "ticker": "T",
-      "name": "T",
-      "type": "stock",
-      "category": "sp500",
-      "score": 68,
-      "tech_score": 35,
-      "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 0,
-      "factors": {
-        "price": 24.58,
-        "chg_1d": 1.36,
-        "chg_5d": 3.67,
-        "chg_20d": 11.83,
-        "rsi": 54.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "STT",
       "name": "STT",
       "type": "stock",
@@ -695,6 +671,30 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "T",
+      "name": "T",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 35,
+      "fund_score": 18,
+      "sentiment_score": 15,
+      "penalty": 0,
+      "factors": {
+        "price": 24.58,
+        "chg_1d": 1.36,
+        "chg_5d": 3.67,
+        "chg_20d": 11.83,
+        "rsi": 54.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -823,6 +823,30 @@
       }
     },
     {
+      "ticker": "SJM",
+      "name": "SJM",
+      "type": "stock",
+      "category": "sp500",
+      "score": 72,
+      "tech_score": 34,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 120.63,
+        "chg_1d": 1.55,
+        "chg_5d": 1.54,
+        "chg_20d": 9.14,
+        "rsi": 58.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "XLB",
       "name": "XLB",
       "type": "etf",
@@ -865,30 +889,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "BBY",
-      "name": "BBY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 70,
-      "tech_score": 32,
-      "fund_score": 18,
-      "sentiment_score": 20,
-      "penalty": 0,
-      "factors": {
-        "price": 85.35,
-        "chg_1d": 2.83,
-        "chg_5d": 6.66,
-        "chg_20d": 4.53,
-        "rsi": 51.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
@@ -967,30 +967,6 @@
       }
     },
     {
-      "ticker": "SJM",
-      "name": "SJM",
-      "type": "stock",
-      "category": "sp500",
-      "score": 70,
-      "tech_score": 33,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 120.63,
-        "chg_1d": 1.55,
-        "chg_5d": 1.54,
-        "chg_20d": 5.84,
-        "rsi": 54.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "WAB",
       "name": "WAB",
       "type": "stock",
@@ -1028,8 +1004,8 @@
         "price": 198.94,
         "chg_1d": -0.89,
         "chg_5d": 3.09,
-        "chg_20d": 4.98,
-        "rsi": 70.0,
+        "chg_20d": 4.95,
+        "rsi": 67.9,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 8,
@@ -1049,41 +1025,17 @@
       "sentiment_score": 16,
       "penalty": 0,
       "factors": {
-        "price": 8.86,
-        "chg_1d": 2.14,
-        "chg_5d": 6.69,
-        "chg_20d": 6.28,
-        "rsi": 59.5,
+        "price": 8.85,
+        "chg_1d": 2.04,
+        "chg_5d": 6.59,
+        "chg_20d": 6.19,
+        "rsi": 59.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "AVUV",
-      "name": "AVUV",
-      "type": "etf",
-      "category": "etf",
-      "score": 70,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 22,
-      "penalty": 0,
-      "factors": {
-        "price": 128.01,
-        "chg_1d": 0.39,
-        "chg_5d": 1.26,
-        "chg_20d": 2.68,
-        "rsi": 64.4,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 6,
-        "rsi_align": 5
       }
     },
     {
@@ -1172,7 +1124,7 @@
         "price": 339.35,
         "chg_1d": 3.85,
         "chg_5d": 7.43,
-        "chg_20d": 6.65,
+        "chg_20d": 8.27,
         "rsi": 72.7,
         "pe": null,
         "fund_details": "N/A",
@@ -1268,7 +1220,7 @@
         "price": 316.22,
         "chg_1d": -0.15,
         "chg_5d": 2.33,
-        "chg_20d": 5.76,
+        "chg_20d": 3.97,
         "rsi": 67.7,
         "pe": null,
         "fund_details": "ETF",
@@ -1276,6 +1228,30 @@
         "vol_surge": 3,
         "consistency": 7,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "APO",
+      "name": "APO",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 32,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 143.58,
+        "chg_1d": 3.59,
+        "chg_5d": 12.18,
+        "chg_20d": 16.41,
+        "rsi": 73.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -1292,7 +1268,7 @@
         "price": 164.21,
         "chg_1d": 0.25,
         "chg_5d": 4.65,
-        "chg_20d": 18.07,
+        "chg_20d": 20.66,
         "rsi": 70.0,
         "pe": null,
         "fund_details": "N/A",
@@ -1351,6 +1327,30 @@
       }
     },
     {
+      "ticker": "LYV",
+      "name": "LYV",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 186.06,
+        "chg_1d": 0.39,
+        "chg_5d": 2.36,
+        "chg_20d": 3.45,
+        "rsi": 61.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "OKE",
       "name": "OKE",
       "type": "stock",
@@ -1370,30 +1370,6 @@
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "T",
-      "name": "T",
-      "type": "stock",
-      "category": "sp500",
-      "score": 68,
-      "tech_score": 35,
-      "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 0,
-      "factors": {
-        "price": 24.58,
-        "chg_1d": 1.36,
-        "chg_5d": 3.67,
-        "chg_20d": 11.83,
-        "rsi": 54.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -1423,6 +1399,30 @@
       }
     },
     {
+      "ticker": "T",
+      "name": "T",
+      "type": "stock",
+      "category": "sp500",
+      "score": 68,
+      "tech_score": 35,
+      "fund_score": 18,
+      "sentiment_score": 15,
+      "penalty": 0,
+      "factors": {
+        "price": 24.58,
+        "chg_1d": 1.36,
+        "chg_5d": 3.67,
+        "chg_20d": 11.83,
+        "rsi": 54.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "XLF",
       "name": "XLF",
       "type": "etf",
@@ -1444,30 +1444,6 @@
         "vol_surge": 2,
         "consistency": 6,
         "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "XLI",
-      "name": "XLI",
-      "type": "etf",
-      "category": "etf",
-      "score": 68,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 21,
-      "penalty": 0,
-      "factors": {
-        "price": 185.79,
-        "chg_1d": -0.05,
-        "chg_5d": 0.56,
-        "chg_20d": 3.13,
-        "rsi": 57.5,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 4,
-        "rsi_align": 7
       }
     },
     {
@@ -1519,6 +1495,30 @@
       }
     },
     {
+      "ticker": "AVUV",
+      "name": "AVUV",
+      "type": "etf",
+      "category": "etf",
+      "score": 68,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 22,
+      "penalty": 0,
+      "factors": {
+        "price": 128.01,
+        "chg_1d": 0.39,
+        "chg_5d": 1.26,
+        "chg_20d": 1.46,
+        "rsi": 64.4,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 6,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "VOOV",
       "name": "VOOV",
       "type": "etf",
@@ -1540,6 +1540,30 @@
         "vol_surge": 3,
         "consistency": 7,
         "rsi_align": 3
+      }
+    },
+    {
+      "ticker": "XLI",
+      "name": "XLI",
+      "type": "etf",
+      "category": "etf",
+      "score": 68,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 21,
+      "penalty": 0,
+      "factors": {
+        "price": 185.79,
+        "chg_1d": -0.05,
+        "chg_5d": 0.56,
+        "chg_20d": 3.13,
+        "rsi": 57.5,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 4,
+        "rsi_align": 7
       }
     },
     {
@@ -1567,27 +1591,27 @@
       }
     },
     {
-      "ticker": "CASY",
-      "name": "CASY",
+      "ticker": "EXPD",
+      "name": "EXPD",
       "type": "stock",
       "category": "sp500",
       "score": 67,
-      "tech_score": 29,
+      "tech_score": 32,
       "fund_score": 18,
-      "sentiment_score": 20,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 853.78,
-        "chg_1d": 1.76,
-        "chg_5d": 2.57,
-        "chg_20d": -0.62,
-        "rsi": 42.6,
+        "price": 187.05,
+        "chg_1d": 1.4,
+        "chg_5d": 4.75,
+        "chg_20d": 6.58,
+        "rsi": 64.0,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 3,
+        "vol_surge": 2,
         "consistency": 2,
-        "rsi_align": 7
+        "rsi_align": 5
       }
     },
     {
@@ -1612,30 +1636,6 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "EXPD",
-      "name": "EXPD",
-      "type": "stock",
-      "category": "sp500",
-      "score": 67,
-      "tech_score": 32,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 187.05,
-        "chg_1d": 1.4,
-        "chg_5d": 4.75,
-        "chg_20d": 6.58,
-        "rsi": 64.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
       }
     },
     {
@@ -1879,30 +1879,6 @@
       }
     },
     {
-      "ticker": "XYZ",
-      "name": "XYZ",
-      "type": "stock",
-      "category": "sp500",
-      "score": 67,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 83.09,
-        "chg_1d": 6.14,
-        "chg_5d": 5.15,
-        "chg_20d": 3.88,
-        "rsi": 62.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "XOM",
       "name": "XOM",
       "type": "stock",
@@ -1999,30 +1975,6 @@
       }
     },
     {
-      "ticker": "APO",
-      "name": "APO",
-      "type": "stock",
-      "category": "sp500",
-      "score": 66,
-      "tech_score": 32,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 143.58,
-        "chg_1d": 3.59,
-        "chg_5d": 12.18,
-        "chg_20d": 19.72,
-        "rsi": 73.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "BIIB",
       "name": "BIIB",
       "type": "stock",
@@ -2092,30 +2044,6 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "HAS",
-      "name": "HAS",
-      "type": "stock",
-      "category": "sp500",
-      "score": 66,
-      "tech_score": 32,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 96.7,
-        "chg_1d": 1.91,
-        "chg_5d": 5.46,
-        "chg_20d": 21.59,
-        "rsi": 69.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
       }
     },
     {
@@ -2204,7 +2132,7 @@
         "price": 115.3,
         "chg_1d": 3.97,
         "chg_5d": 11.56,
-        "chg_20d": 18.61,
+        "chg_20d": 12.21,
         "rsi": 73.7,
         "pe": null,
         "fund_details": "N/A",
@@ -2239,30 +2167,6 @@
       }
     },
     {
-      "ticker": "OMC",
-      "name": "OMC",
-      "type": "stock",
-      "category": "sp500",
-      "score": 66,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 88.36,
-        "chg_1d": 3.33,
-        "chg_5d": 7.09,
-        "chg_20d": 4.98,
-        "rsi": 66.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "NVDA",
       "name": "NVDA",
       "type": "stock",
@@ -2282,6 +2186,30 @@
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "OMC",
+      "name": "OMC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 66,
+      "tech_score": 31,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 88.36,
+        "chg_1d": 3.33,
+        "chg_5d": 7.09,
+        "chg_20d": 4.98,
+        "rsi": 66.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
       }
@@ -2311,6 +2239,30 @@
       }
     },
     {
+      "ticker": "VRTX",
+      "name": "VRTX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 66,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 516.44,
+        "chg_1d": -1.77,
+        "chg_5d": 6.7,
+        "chg_20d": 8.25,
+        "rsi": 68.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "VLO",
       "name": "VLO",
       "type": "stock",
@@ -2332,30 +2284,6 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "VRTX",
-      "name": "VRTX",
-      "type": "stock",
-      "category": "sp500",
-      "score": 66,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 516.44,
-        "chg_1d": -1.77,
-        "chg_5d": 6.7,
-        "chg_20d": 6.26,
-        "rsi": 68.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
       }
     },
     {
@@ -2407,30 +2335,6 @@
       }
     },
     {
-      "ticker": "VDC",
-      "name": "VDC",
-      "type": "etf",
-      "category": "etf",
-      "score": 66,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 21,
-      "penalty": 0,
-      "factors": {
-        "price": 233.09,
-        "chg_1d": 0.86,
-        "chg_5d": 1.0,
-        "chg_20d": 0.32,
-        "rsi": 63.4,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 7,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "VIS",
       "name": "VIS",
       "type": "etf",
@@ -2444,8 +2348,8 @@
         "price": 357.65,
         "chg_1d": -0.0,
         "chg_5d": 0.62,
-        "chg_20d": 3.1,
-        "rsi": 58.4,
+        "chg_20d": 3.05,
+        "rsi": 58.8,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 8,
@@ -2476,6 +2380,30 @@
         "vol_surge": 2,
         "consistency": 6,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "VDC",
+      "name": "VDC",
+      "type": "etf",
+      "category": "etf",
+      "score": 66,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 21,
+      "penalty": 0,
+      "factors": {
+        "price": 233.09,
+        "chg_1d": 0.86,
+        "chg_5d": 1.0,
+        "chg_20d": 0.32,
+        "rsi": 63.4,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 7,
+        "rsi_align": 5
       }
     },
     {
@@ -2527,6 +2455,30 @@
       }
     },
     {
+      "ticker": "BNY",
+      "name": "BNY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 19,
+      "penalty": 0,
+      "factors": {
+        "price": 162.25,
+        "chg_1d": -0.42,
+        "chg_5d": 2.16,
+        "chg_20d": 0.86,
+        "rsi": 58.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "AWK",
       "name": "AWK",
       "type": "stock",
@@ -2547,6 +2499,30 @@
         "range_pos": 4,
         "vol_surge": 3,
         "consistency": 4,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "CASY",
+      "name": "CASY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 853.78,
+        "chg_1d": 1.76,
+        "chg_5d": 2.57,
+        "chg_20d": 3.23,
+        "rsi": 47.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
         "rsi_align": 7
       }
     },
@@ -2575,30 +2551,6 @@
       }
     },
     {
-      "ticker": "BNY",
-      "name": "BNY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 65,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 162.25,
-        "chg_1d": -0.42,
-        "chg_5d": 2.16,
-        "chg_20d": 0.86,
-        "rsi": 58.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "CDW",
       "name": "CDW",
       "type": "stock",
@@ -2618,6 +2570,30 @@
         "fund_details": "N/A",
         "range_pos": 4,
         "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "CNC",
+      "name": "CNC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 19,
+      "penalty": 0,
+      "factors": {
+        "price": 66.04,
+        "chg_1d": -1.54,
+        "chg_5d": 2.87,
+        "chg_20d": 3.37,
+        "rsi": 56.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -2671,6 +2647,54 @@
       }
     },
     {
+      "ticker": "FITB",
+      "name": "FITB",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 19,
+      "penalty": 0,
+      "factors": {
+        "price": 57.94,
+        "chg_1d": -0.12,
+        "chg_5d": 1.72,
+        "chg_20d": -2.41,
+        "rsi": 54.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "HAS",
+      "name": "HAS",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 32,
+      "fund_score": 18,
+      "sentiment_score": 15,
+      "penalty": 0,
+      "factors": {
+        "price": 96.7,
+        "chg_1d": 1.91,
+        "chg_5d": 5.46,
+        "chg_20d": 17.8,
+        "rsi": 67.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "HUM",
       "name": "HUM",
       "type": "stock",
@@ -2689,6 +2713,30 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "INCY",
+      "name": "INCY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 120.52,
+        "chg_1d": -0.21,
+        "chg_5d": 1.81,
+        "chg_20d": 3.32,
+        "rsi": 54.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -2767,30 +2815,6 @@
       }
     },
     {
-      "ticker": "INCY",
-      "name": "INCY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 65,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 120.52,
-        "chg_1d": -0.21,
-        "chg_5d": 1.81,
-        "chg_20d": 5.51,
-        "rsi": 55.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "LYB",
       "name": "LYB",
       "type": "stock",
@@ -2839,30 +2863,6 @@
       }
     },
     {
-      "ticker": "SYK",
-      "name": "SYK",
-      "type": "stock",
-      "category": "sp500",
-      "score": 65,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 341.09,
-        "chg_1d": -1.76,
-        "chg_5d": 1.08,
-        "chg_20d": 9.65,
-        "rsi": 56.1,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "TTWO",
       "name": "TTWO",
       "type": "stock",
@@ -2876,7 +2876,7 @@
         "price": 241.91,
         "chg_1d": -0.45,
         "chg_5d": 4.06,
-        "chg_20d": 0.98,
+        "chg_20d": -0.78,
         "rsi": 57.3,
         "pe": null,
         "fund_details": "N/A",
@@ -2884,6 +2884,30 @@
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "XYZ",
+      "name": "XYZ",
+      "type": "stock",
+      "category": "sp500",
+      "score": 65,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 83.09,
+        "chg_1d": 6.14,
+        "chg_5d": 5.15,
+        "chg_20d": 1.93,
+        "rsi": 62.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
       }
     },
     {
@@ -2956,6 +2980,30 @@
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "BBY",
+      "name": "BBY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 64,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 85.35,
+        "chg_1d": 2.83,
+        "chg_5d": 6.66,
+        "chg_20d": 0.07,
+        "rsi": 49.8,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -3052,30 +3100,6 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "DRI",
-      "name": "DRI",
-      "type": "stock",
-      "category": "sp500",
-      "score": 64,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 223.5,
-        "chg_1d": -1.84,
-        "chg_5d": 5.95,
-        "chg_20d": 11.08,
-        "rsi": 74.2,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
       }
     },
     {
@@ -3199,50 +3223,26 @@
       }
     },
     {
-      "ticker": "LYV",
-      "name": "LYV",
+      "ticker": "NDSN",
+      "name": "NDSN",
       "type": "stock",
       "category": "sp500",
       "score": 64,
-      "tech_score": 28,
+      "tech_score": 26,
       "fund_score": 18,
-      "sentiment_score": 18,
+      "sentiment_score": 20,
       "penalty": 0,
       "factors": {
-        "price": 186.06,
-        "chg_1d": 0.39,
-        "chg_5d": 2.36,
-        "chg_20d": 1.53,
-        "rsi": 70.7,
+        "price": 309.99,
+        "chg_1d": -0.41,
+        "chg_5d": 0.33,
+        "chg_20d": 5.67,
+        "rsi": 68.5,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "MMM",
-      "name": "MMM",
-      "type": "stock",
-      "category": "sp500",
-      "score": 64,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 182.65,
-        "chg_1d": -0.61,
-        "chg_5d": 1.07,
-        "chg_20d": 12.91,
-        "rsi": 67.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
+        "consistency": 4,
         "rsi_align": 5
       }
     },
@@ -3271,26 +3271,26 @@
       }
     },
     {
-      "ticker": "NDSN",
-      "name": "NDSN",
+      "ticker": "MMM",
+      "name": "MMM",
       "type": "stock",
       "category": "sp500",
       "score": 64,
-      "tech_score": 26,
+      "tech_score": 29,
       "fund_score": 18,
-      "sentiment_score": 20,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 309.99,
-        "chg_1d": -0.41,
-        "chg_5d": 0.33,
-        "chg_20d": 5.67,
-        "rsi": 68.5,
+        "price": 182.65,
+        "chg_1d": -0.61,
+        "chg_5d": 1.07,
+        "chg_20d": 12.91,
+        "rsi": 67.0,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 4,
+        "vol_surge": 2,
+        "consistency": 2,
         "rsi_align": 5
       }
     },
@@ -3391,6 +3391,30 @@
       }
     },
     {
+      "ticker": "SYK",
+      "name": "SYK",
+      "type": "stock",
+      "category": "sp500",
+      "score": 64,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 341.09,
+        "chg_1d": -1.76,
+        "chg_5d": 1.08,
+        "chg_20d": 2.99,
+        "rsi": 56.1,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "SYF",
       "name": "SYF",
       "type": "stock",
@@ -3404,7 +3428,7 @@
         "price": 80.08,
         "chg_1d": 0.84,
         "chg_5d": 1.79,
-        "chg_20d": 7.81,
+        "chg_20d": 8.69,
         "rsi": 71.9,
         "pe": null,
         "fund_details": "N/A",
@@ -3463,6 +3487,30 @@
       }
     },
     {
+      "ticker": "ALGN",
+      "name": "ALGN",
+      "type": "stock",
+      "category": "sp500",
+      "score": 63,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 176.2,
+        "chg_1d": 1.25,
+        "chg_5d": 4.21,
+        "chg_20d": -2.43,
+        "rsi": 59.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "ADBE",
       "name": "ADBE",
       "type": "stock",
@@ -3481,54 +3529,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "ALGN",
-      "name": "ALGN",
-      "type": "stock",
-      "category": "sp500",
-      "score": 63,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 176.2,
-        "chg_1d": 1.25,
-        "chg_5d": 4.21,
-        "chg_20d": -1.24,
-        "rsi": 59.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "ADP",
-      "name": "ADP",
-      "type": "stock",
-      "category": "sp500",
-      "score": 63,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 276.23,
-        "chg_1d": 2.56,
-        "chg_5d": 0.99,
-        "chg_20d": 12.09,
-        "rsi": 72.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
@@ -3559,6 +3559,30 @@
       }
     },
     {
+      "ticker": "ADP",
+      "name": "ADP",
+      "type": "stock",
+      "category": "sp500",
+      "score": 63,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 276.23,
+        "chg_1d": 2.56,
+        "chg_5d": 0.99,
+        "chg_20d": 12.09,
+        "rsi": 72.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "BEN",
       "name": "BEN",
       "type": "stock",
@@ -3583,25 +3607,25 @@
       }
     },
     {
-      "ticker": "CNC",
-      "name": "CNC",
+      "ticker": "DE",
+      "name": "DE",
       "type": "stock",
       "category": "sp500",
       "score": 63,
-      "tech_score": 26,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 19,
+      "sentiment_score": 18,
       "penalty": 0,
       "factors": {
-        "price": 66.04,
-        "chg_1d": -1.54,
-        "chg_5d": 2.87,
-        "chg_20d": -0.86,
-        "rsi": 56.5,
+        "price": 612.38,
+        "chg_1d": -1.19,
+        "chg_5d": -0.4,
+        "chg_20d": 2.24,
+        "rsi": 44.1,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
+        "range_pos": 6,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -3631,30 +3655,6 @@
       }
     },
     {
-      "ticker": "EOG",
-      "name": "EOG",
-      "type": "stock",
-      "category": "sp500",
-      "score": 63,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 141.41,
-        "chg_1d": -1.21,
-        "chg_5d": 3.83,
-        "chg_20d": 2.13,
-        "rsi": 44.5,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "ETN",
       "name": "ETN",
       "type": "stock",
@@ -3676,6 +3676,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG",
+      "type": "stock",
+      "category": "sp500",
+      "score": 63,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 141.41,
+        "chg_1d": -1.21,
+        "chg_5d": 3.83,
+        "chg_20d": 2.13,
+        "rsi": 44.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -3703,24 +3727,24 @@
       }
     },
     {
-      "ticker": "FITB",
-      "name": "FITB",
+      "ticker": "FIS",
+      "name": "FIS",
       "type": "stock",
       "category": "sp500",
       "score": 63,
-      "tech_score": 26,
+      "tech_score": 32,
       "fund_score": 18,
-      "sentiment_score": 19,
+      "sentiment_score": 13,
       "penalty": 0,
       "factors": {
-        "price": 57.94,
-        "chg_1d": -0.12,
-        "chg_5d": 1.72,
-        "chg_20d": 1.56,
-        "rsi": 54.6,
+        "price": 44.13,
+        "chg_1d": 5.27,
+        "chg_5d": 3.08,
+        "chg_20d": 8.75,
+        "rsi": 60.1,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 8,
+        "range_pos": 2,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -3799,30 +3823,6 @@
       }
     },
     {
-      "ticker": "KEYS",
-      "name": "KEYS",
-      "type": "stock",
-      "category": "sp500",
-      "score": 63,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 353.85,
-        "chg_1d": -0.18,
-        "chg_5d": 5.01,
-        "chg_20d": 13.14,
-        "rsi": 67.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "KO",
       "name": "KO",
       "type": "stock",
@@ -3860,7 +3860,7 @@
         "price": 97.47,
         "chg_1d": 0.84,
         "chg_5d": -2.48,
-        "chg_20d": 5.33,
+        "chg_20d": 4.02,
         "rsi": 60.6,
         "pe": null,
         "fund_details": "N/A",
@@ -3868,6 +3868,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "NWS",
+      "name": "NWS",
+      "type": "stock",
+      "category": "sp500",
+      "score": 63,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 32.93,
+        "chg_1d": 0.76,
+        "chg_5d": -2.78,
+        "chg_20d": 4.84,
+        "rsi": 70.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
       }
     },
     {
@@ -3908,7 +3932,7 @@
         "price": 17.46,
         "chg_1d": 0.46,
         "chg_5d": 2.71,
-        "chg_20d": -0.29,
+        "chg_20d": -0.4,
         "rsi": 43.0,
         "pe": null,
         "fund_details": "N/A",
@@ -3916,30 +3940,6 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "RF",
-      "name": "RF",
-      "type": "stock",
-      "category": "sp500",
-      "score": 63,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 31.66,
-        "chg_1d": 0.19,
-        "chg_5d": 0.86,
-        "chg_20d": 2.39,
-        "rsi": 63.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
       }
     },
     {
@@ -3967,6 +3967,30 @@
       }
     },
     {
+      "ticker": "TFC",
+      "name": "TFC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 63,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 52.99,
+        "chg_1d": 0.61,
+        "chg_5d": 0.76,
+        "chg_20d": 2.0,
+        "rsi": 61.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "UAL",
       "name": "UAL",
       "type": "stock",
@@ -3988,6 +4012,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "VEA",
+      "name": "VEA",
+      "type": "etf",
+      "category": "etf",
+      "score": 63,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 73.54,
+        "chg_1d": 0.33,
+        "chg_5d": 1.97,
+        "chg_20d": 5.01,
+        "rsi": 73.6,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -4039,27 +4087,27 @@
       }
     },
     {
-      "ticker": "VEA",
-      "name": "VEA",
+      "ticker": "BND",
+      "name": "BND",
       "type": "etf",
       "category": "etf",
       "score": 63,
-      "tech_score": 29,
+      "tech_score": 24,
       "fund_score": 18,
-      "sentiment_score": 16,
+      "sentiment_score": 21,
       "penalty": 0,
       "factors": {
-        "price": 73.54,
-        "chg_1d": 0.33,
-        "chg_5d": 1.97,
-        "chg_20d": 5.01,
-        "rsi": 73.6,
+        "price": 72.48,
+        "chg_1d": 0.28,
+        "chg_5d": 0.32,
+        "chg_20d": -0.45,
+        "rsi": 54.0,
         "pe": null,
         "fund_details": "ETF",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 7,
+        "rsi_align": 7
       }
     },
     {
@@ -4082,30 +4130,6 @@
         "fund_details": "ETF",
         "range_pos": 2,
         "vol_surge": 8,
-        "consistency": 7,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "BND",
-      "name": "BND",
-      "type": "etf",
-      "category": "etf",
-      "score": 63,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 21,
-      "penalty": 0,
-      "factors": {
-        "price": 72.48,
-        "chg_1d": 0.28,
-        "chg_5d": 0.32,
-        "chg_20d": -0.45,
-        "rsi": 54.0,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 2,
-        "vol_surge": 5,
         "consistency": 7,
         "rsi_align": 7
       }
@@ -4135,6 +4159,30 @@
       }
     },
     {
+      "ticker": "BKR",
+      "name": "BKR",
+      "type": "stock",
+      "category": "sp500",
+      "score": 62,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 15,
+      "penalty": 0,
+      "factors": {
+        "price": 63.44,
+        "chg_1d": -1.31,
+        "chg_5d": 1.1,
+        "chg_20d": 12.2,
+        "rsi": 69.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "BR",
       "name": "BR",
       "type": "stock",
@@ -4159,25 +4207,49 @@
       }
     },
     {
-      "ticker": "BKR",
-      "name": "BKR",
+      "ticker": "CBRE",
+      "name": "CBRE",
       "type": "stock",
       "category": "sp500",
       "score": 62,
-      "tech_score": 29,
+      "tech_score": 31,
       "fund_score": 18,
-      "sentiment_score": 15,
+      "sentiment_score": 13,
       "penalty": 0,
       "factors": {
-        "price": 63.44,
-        "chg_1d": -1.31,
-        "chg_5d": 1.1,
-        "chg_20d": 12.2,
-        "rsi": 69.7,
+        "price": 151.89,
+        "chg_1d": 3.05,
+        "chg_5d": 3.01,
+        "chg_20d": 5.71,
+        "rsi": 68.4,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 6,
+        "range_pos": 4,
         "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "CLX",
+      "name": "CLX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 62,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 106.54,
+        "chg_1d": 0.74,
+        "chg_5d": 0.89,
+        "chg_20d": 7.93,
+        "rsi": 70.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
       }
@@ -4207,27 +4279,27 @@
       }
     },
     {
-      "ticker": "CLX",
-      "name": "CLX",
+      "ticker": "DD",
+      "name": "DD",
       "type": "stock",
       "category": "sp500",
       "score": 62,
-      "tech_score": 30,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 14,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 106.54,
-        "chg_1d": 0.74,
-        "chg_5d": 0.89,
-        "chg_20d": 12.44,
-        "rsi": 70.4,
+        "price": 144.1,
+        "chg_1d": -0.19,
+        "chg_5d": 0.03,
+        "chg_20d": 7.31,
+        "rsi": 61.5,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
+        "range_pos": 6,
+        "vol_surge": 2,
         "consistency": 2,
-        "rsi_align": 5
+        "rsi_align": 7
       }
     },
     {
@@ -4249,30 +4321,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "CBRE",
-      "name": "CBRE",
-      "type": "stock",
-      "category": "sp500",
-      "score": 62,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 0,
-      "factors": {
-        "price": 151.89,
-        "chg_1d": 3.05,
-        "chg_5d": 3.01,
-        "chg_20d": 5.71,
-        "rsi": 68.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
@@ -4303,24 +4351,24 @@
       }
     },
     {
-      "ticker": "FIS",
-      "name": "FIS",
+      "ticker": "EXR",
+      "name": "EXR",
       "type": "stock",
       "category": "sp500",
       "score": 62,
-      "tech_score": 31,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 13,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 44.13,
-        "chg_1d": 5.27,
-        "chg_5d": 3.08,
-        "chg_20d": 3.54,
-        "rsi": 60.1,
+        "price": 149.4,
+        "chg_1d": 1.8,
+        "chg_5d": -0.09,
+        "chg_20d": -0.62,
+        "rsi": 54.6,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 2,
+        "range_pos": 6,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -4345,30 +4393,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "EXR",
-      "name": "EXR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 62,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 149.4,
-        "chg_1d": 1.8,
-        "chg_5d": -0.09,
-        "chg_20d": -0.62,
-        "rsi": 54.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -4567,30 +4591,6 @@
       }
     },
     {
-      "ticker": "RSG",
-      "name": "RSG",
-      "type": "stock",
-      "category": "sp500",
-      "score": 62,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 215.22,
-        "chg_1d": 0.45,
-        "chg_5d": 2.69,
-        "chg_20d": -4.14,
-        "rsi": 46.5,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 4,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "RVTY",
       "name": "RVTY",
       "type": "stock",
@@ -4612,6 +4612,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "RSG",
+      "name": "RSG",
+      "type": "stock",
+      "category": "sp500",
+      "score": 62,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 215.22,
+        "chg_1d": 0.45,
+        "chg_5d": 2.69,
+        "chg_20d": -4.14,
+        "rsi": 46.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 4,
+        "rsi_align": 7
       }
     },
     {
@@ -4652,8 +4676,8 @@
         "price": 328.95,
         "chg_1d": 3.56,
         "chg_5d": 7.38,
-        "chg_20d": 4.02,
-        "rsi": 64.2,
+        "chg_20d": 4.69,
+        "rsi": 66.8,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -4711,24 +4735,24 @@
       }
     },
     {
-      "ticker": "SOL-USD",
-      "name": "SOL",
-      "type": "crypto",
-      "category": "crypto",
-      "score": 62,
-      "tech_score": 30,
+      "ticker": "AMCR",
+      "name": "AMCR",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 25,
       "fund_score": 18,
-      "sentiment_score": 14,
+      "sentiment_score": 18,
       "penalty": 0,
       "factors": {
-        "price": 76.18,
-        "chg_1d": 0.87,
-        "chg_5d": 0.27,
-        "chg_20d": 3.11,
-        "rsi": 57.4,
+        "price": 46.38,
+        "chg_1d": -0.39,
+        "chg_5d": -1.44,
+        "chg_20d": 3.43,
+        "rsi": 58.9,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 2,
+        "range_pos": 6,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
@@ -4759,30 +4783,6 @@
       }
     },
     {
-      "ticker": "AMCR",
-      "name": "AMCR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 61,
-      "tech_score": 25,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 46.38,
-        "chg_1d": -0.39,
-        "chg_5d": -1.44,
-        "chg_20d": 3.43,
-        "rsi": 58.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "ABT",
       "name": "ABT",
       "type": "stock",
@@ -4802,30 +4802,6 @@
         "fund_details": "N/A",
         "range_pos": 4,
         "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "AVY",
-      "name": "AVY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 61,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 12,
-      "penalty": 0,
-      "factors": {
-        "price": 180.01,
-        "chg_1d": -0.56,
-        "chg_5d": 3.46,
-        "chg_20d": 10.39,
-        "rsi": 74.8,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 3
       }
@@ -4852,6 +4828,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "AVY",
+      "name": "AVY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 31,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 0,
+      "factors": {
+        "price": 180.01,
+        "chg_1d": -0.56,
+        "chg_5d": 3.46,
+        "chg_20d": 10.39,
+        "rsi": 74.8,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -4903,6 +4903,30 @@
       }
     },
     {
+      "ticker": "EFX",
+      "name": "EFX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 32,
+      "fund_score": 18,
+      "sentiment_score": 11,
+      "penalty": 0,
+      "factors": {
+        "price": 185.58,
+        "chg_1d": 2.84,
+        "chg_5d": 5.57,
+        "chg_20d": 7.51,
+        "rsi": 67.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "GILD",
       "name": "GILD",
       "type": "stock",
@@ -4924,6 +4948,30 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "JKHY",
+      "name": "JKHY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 155.86,
+        "chg_1d": 2.33,
+        "chg_5d": -0.69,
+        "chg_20d": 1.31,
+        "rsi": 57.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -5023,50 +5071,26 @@
       }
     },
     {
-      "ticker": "NWS",
-      "name": "NWS",
+      "ticker": "PFG",
+      "name": "PFG",
       "type": "stock",
       "category": "sp500",
       "score": 61,
-      "tech_score": 27,
+      "tech_score": 24,
       "fund_score": 18,
-      "sentiment_score": 16,
+      "sentiment_score": 19,
       "penalty": 0,
       "factors": {
-        "price": 32.93,
-        "chg_1d": 0.76,
-        "chg_5d": -2.78,
-        "chg_20d": 1.2,
-        "rsi": 66.5,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "PH",
-      "name": "PH",
-      "type": "stock",
-      "category": "sp500",
-      "score": 61,
-      "tech_score": 25,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 1058.87,
-        "chg_1d": -1.0,
-        "chg_5d": -1.02,
-        "chg_20d": 11.31,
-        "rsi": 67.4,
+        "price": 114.93,
+        "chg_1d": 1.02,
+        "chg_5d": -0.42,
+        "chg_20d": 1.6,
+        "rsi": 69.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
+        "vol_surge": 2,
+        "consistency": 4,
         "rsi_align": 5
       }
     },
@@ -5084,7 +5108,7 @@
         "price": 255.2,
         "chg_1d": -0.1,
         "chg_5d": 0.97,
-        "chg_20d": 0.41,
+        "chg_20d": 0.0,
         "rsi": 60.1,
         "pe": null,
         "fund_details": "N/A",
@@ -5119,8 +5143,32 @@
       }
     },
     {
-      "ticker": "TFC",
-      "name": "TFC",
+      "ticker": "PH",
+      "name": "PH",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 25,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 1058.87,
+        "chg_1d": -1.0,
+        "chg_5d": -1.02,
+        "chg_20d": 10.49,
+        "rsi": 67.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "RF",
+      "name": "RF",
       "type": "stock",
       "category": "sp500",
       "score": 61,
@@ -5129,17 +5177,17 @@
       "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 52.99,
-        "chg_1d": 0.61,
-        "chg_5d": 0.76,
-        "chg_20d": -0.49,
-        "rsi": 61.2,
+        "price": 31.66,
+        "chg_1d": 0.19,
+        "chg_5d": 0.86,
+        "chg_20d": -2.28,
+        "rsi": 63.3,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 6,
+        "range_pos": 8,
         "vol_surge": 2,
         "consistency": 2,
-        "rsi_align": 7
+        "rsi_align": 5
       }
     },
     {
@@ -5191,6 +5239,30 @@
       }
     },
     {
+      "ticker": "WFC",
+      "name": "WFC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 61,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 88.11,
+        "chg_1d": -0.92,
+        "chg_5d": 0.59,
+        "chg_20d": 0.05,
+        "rsi": 56.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "ZBH",
       "name": "ZBH",
       "type": "stock",
@@ -5212,30 +5284,6 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "WFC",
-      "name": "WFC",
-      "type": "stock",
-      "category": "sp500",
-      "score": 61,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 88.11,
-        "chg_1d": -0.92,
-        "chg_5d": 0.59,
-        "chg_20d": 0.69,
-        "rsi": 56.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
       }
     },
     {
@@ -5383,6 +5431,30 @@
       }
     },
     {
+      "ticker": "JNK",
+      "name": "JNK",
+      "type": "etf",
+      "category": "etf",
+      "score": 61,
+      "tech_score": 24,
+      "fund_score": 18,
+      "sentiment_score": 19,
+      "penalty": 0,
+      "factors": {
+        "price": 96.04,
+        "chg_1d": 0.2,
+        "chg_5d": 0.45,
+        "chg_20d": -0.04,
+        "rsi": 65.1,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 7,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "CME",
       "name": "CME",
       "type": "stock",
@@ -5431,48 +5503,24 @@
       }
     },
     {
-      "ticker": "DE",
-      "name": "DE",
+      "ticker": "DGX",
+      "name": "DGX",
       "type": "stock",
       "category": "sp500",
       "score": 60,
-      "tech_score": 24,
+      "tech_score": 25,
       "fund_score": 18,
-      "sentiment_score": 18,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 612.38,
-        "chg_1d": -1.19,
-        "chg_5d": -0.4,
-        "chg_20d": 4.57,
-        "rsi": 50.9,
+        "price": 236.04,
+        "chg_1d": -0.73,
+        "chg_5d": -1.03,
+        "chg_20d": 12.72,
+        "rsi": 68.9,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "EFX",
-      "name": "EFX",
-      "type": "stock",
-      "category": "sp500",
-      "score": 60,
-      "tech_score": 31,
-      "fund_score": 18,
-      "sentiment_score": 11,
-      "penalty": 0,
-      "factors": {
-        "price": 185.58,
-        "chg_1d": 2.84,
-        "chg_5d": 5.57,
-        "chg_20d": 3.32,
-        "rsi": 62.8,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
+        "range_pos": 8,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
@@ -5551,30 +5599,6 @@
       }
     },
     {
-      "ticker": "JKHY",
-      "name": "JKHY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 60,
-      "tech_score": 26,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 155.86,
-        "chg_1d": 2.33,
-        "chg_5d": -0.69,
-        "chg_20d": 3.4,
-        "rsi": 60.8,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "JBL",
       "name": "JBL",
       "type": "stock",
@@ -5599,6 +5623,54 @@
       }
     },
     {
+      "ticker": "KDP",
+      "name": "KDP",
+      "type": "stock",
+      "category": "sp500",
+      "score": 60,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 31.12,
+        "chg_1d": 5.28,
+        "chg_5d": 2.47,
+        "chg_20d": 2.77,
+        "rsi": 60.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "KEYS",
+      "name": "KEYS",
+      "type": "stock",
+      "category": "sp500",
+      "score": 60,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 3,
+      "factors": {
+        "price": 353.85,
+        "chg_1d": -0.18,
+        "chg_5d": 5.01,
+        "chg_20d": 10.29,
+        "rsi": 63.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "MU",
       "name": "MU",
       "type": "stock",
@@ -5620,6 +5692,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "NWSA",
+      "name": "NWSA",
+      "type": "stock",
+      "category": "sp500",
+      "score": 60,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 28.94,
+        "chg_1d": 0.94,
+        "chg_5d": -2.46,
+        "chg_20d": 4.86,
+        "rsi": 65.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
       }
     },
     {
@@ -5684,38 +5780,14 @@
         "price": 397.5,
         "chg_1d": 0.57,
         "chg_5d": 0.11,
-        "chg_20d": 9.14,
-        "rsi": 67.7,
+        "chg_20d": 10.24,
+        "rsi": 71.8,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "RMD",
-      "name": "RMD",
-      "type": "stock",
-      "category": "sp500",
-      "score": 60,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 12,
-      "penalty": 0,
-      "factors": {
-        "price": 226.74,
-        "chg_1d": 0.33,
-        "chg_5d": 1.57,
-        "chg_20d": 11.83,
-        "rsi": 73.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 5,
-        "consistency": 2,
-        "rsi_align": 3
       }
     },
     {
@@ -5743,24 +5815,72 @@
       }
     },
     {
-      "ticker": "STLD",
-      "name": "STLD",
+      "ticker": "RJF",
+      "name": "RJF",
       "type": "stock",
       "category": "sp500",
       "score": 60,
-      "tech_score": 22,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 20,
+      "sentiment_score": 15,
       "penalty": 0,
       "factors": {
-        "price": 260.53,
-        "chg_1d": -1.01,
-        "chg_5d": -0.36,
-        "chg_20d": 10.87,
-        "rsi": 62.0,
+        "price": 180.99,
+        "chg_1d": -0.1,
+        "chg_5d": 0.93,
+        "chg_20d": 6.65,
+        "rsi": 72.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
+      "ticker": "RMD",
+      "name": "RMD",
+      "type": "stock",
+      "category": "sp500",
+      "score": 60,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 0,
+      "factors": {
+        "price": 226.74,
+        "chg_1d": 0.33,
+        "chg_5d": 1.57,
+        "chg_20d": 14.23,
+        "rsi": 74.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
+      "ticker": "SPGI",
+      "name": "SPGI",
+      "type": "stock",
+      "category": "sp500",
+      "score": 60,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 422.67,
+        "chg_1d": 3.07,
+        "chg_5d": 4.3,
+        "chg_20d": -7.59,
+        "rsi": 47.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
@@ -5935,27 +6055,27 @@
       }
     },
     {
-      "ticker": "FXE",
-      "name": "FXE",
-      "type": "etf",
-      "category": "etf",
+      "ticker": "SOL-USD",
+      "name": "SOL",
+      "type": "crypto",
+      "category": "crypto",
       "score": 60,
-      "tech_score": 23,
+      "tech_score": 28,
       "fund_score": 18,
-      "sentiment_score": 19,
+      "sentiment_score": 14,
       "penalty": 0,
       "factors": {
-        "price": 106.4,
-        "chg_1d": 0.06,
-        "chg_5d": 0.09,
-        "chg_20d": 0.79,
-        "rsi": 71.8,
+        "price": 75.94,
+        "chg_1d": 0.55,
+        "chg_5d": -0.04,
+        "chg_20d": 2.79,
+        "rsi": 56.5,
         "pe": null,
-        "fund_details": "ETF",
+        "fund_details": "N/A",
         "range_pos": 2,
-        "vol_surge": 5,
-        "consistency": 7,
-        "rsi_align": 5
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -5980,6 +6100,30 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "ICP-USD",
+      "name": "ICP",
+      "type": "crypto",
+      "category": "crypto",
+      "score": 60,
+      "tech_score": 25,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 2.18,
+        "chg_1d": 0.96,
+        "chg_5d": -1.02,
+        "chg_20d": 1.94,
+        "rsi": 59.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 6,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -6055,8 +6199,8 @@
       }
     },
     {
-      "ticker": "DD",
-      "name": "DD",
+      "ticker": "DLTR",
+      "name": "DLTR",
       "type": "stock",
       "category": "sp500",
       "score": 59,
@@ -6065,11 +6209,11 @@
       "sentiment_score": 16,
       "penalty": 0,
       "factors": {
-        "price": 144.1,
-        "chg_1d": -0.19,
-        "chg_5d": 0.03,
-        "chg_20d": 8.62,
-        "rsi": 63.7,
+        "price": 129.53,
+        "chg_1d": 0.72,
+        "chg_5d": -0.12,
+        "chg_20d": 0.84,
+        "rsi": 70.5,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
@@ -6100,6 +6244,54 @@
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "HSY",
+      "name": "HSY",
+      "type": "stock",
+      "category": "sp500",
+      "score": 59,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 11,
+      "penalty": 0,
+      "factors": {
+        "price": 186.12,
+        "chg_1d": 1.03,
+        "chg_5d": 1.69,
+        "chg_20d": 6.52,
+        "rsi": 68.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "LEN",
+      "name": "LEN",
+      "type": "stock",
+      "category": "sp500",
+      "score": 59,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 3,
+      "factors": {
+        "price": 87.54,
+        "chg_1d": 2.75,
+        "chg_5d": 3.21,
+        "chg_20d": 1.32,
+        "rsi": 54.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -6151,30 +6343,6 @@
       }
     },
     {
-      "ticker": "LEN",
-      "name": "LEN",
-      "type": "stock",
-      "category": "sp500",
-      "score": 59,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 3,
-      "factors": {
-        "price": 87.54,
-        "chg_1d": 2.75,
-        "chg_5d": 3.21,
-        "chg_20d": 1.32,
-        "rsi": 54.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "MRNA",
       "name": "MRNA",
       "type": "stock",
@@ -6199,49 +6367,25 @@
       }
     },
     {
-      "ticker": "PFG",
-      "name": "PFG",
+      "ticker": "PCAR",
+      "name": "PCAR",
       "type": "stock",
       "category": "sp500",
       "score": 59,
-      "tech_score": 24,
+      "tech_score": 22,
       "fund_score": 18,
-      "sentiment_score": 17,
+      "sentiment_score": 19,
       "penalty": 0,
       "factors": {
-        "price": 114.93,
-        "chg_1d": 1.02,
-        "chg_5d": -0.42,
-        "chg_20d": 1.16,
-        "rsi": 74.1,
+        "price": 130.72,
+        "chg_1d": -0.26,
+        "chg_5d": -1.01,
+        "chg_20d": 6.15,
+        "rsi": 47.1,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 2,
-        "consistency": 4,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "SPGI",
-      "name": "SPGI",
-      "type": "stock",
-      "category": "sp500",
-      "score": 59,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 422.67,
-        "chg_1d": 3.07,
-        "chg_5d": 4.3,
-        "chg_20d": -3.69,
-        "rsi": 47.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -6284,8 +6428,8 @@
         "price": 57.54,
         "chg_1d": 2.11,
         "chg_5d": -1.73,
-        "chg_20d": 7.05,
-        "rsi": 63.6,
+        "chg_20d": 10.04,
+        "rsi": 69.3,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -6343,54 +6487,6 @@
       }
     },
     {
-      "ticker": "AGG",
-      "name": "AGG",
-      "type": "etf",
-      "category": "etf",
-      "score": 59,
-      "tech_score": 22,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 97.69,
-        "chg_1d": 0.27,
-        "chg_5d": 0.27,
-        "chg_20d": -0.45,
-        "rsi": 53.9,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 7,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "JNK",
-      "name": "JNK",
-      "type": "etf",
-      "category": "etf",
-      "score": 59,
-      "tech_score": 22,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 96.04,
-        "chg_1d": 0.2,
-        "chg_5d": 0.45,
-        "chg_20d": 0.29,
-        "rsi": 65.1,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 2,
-        "vol_surge": 5,
-        "consistency": 7,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "MBB",
       "name": "MBB",
       "type": "etf",
@@ -6415,25 +6511,49 @@
       }
     },
     {
-      "ticker": "ICP-USD",
-      "name": "ICP",
-      "type": "crypto",
-      "category": "crypto",
+      "ticker": "AGG",
+      "name": "AGG",
+      "type": "etf",
+      "category": "etf",
       "score": 59,
-      "tech_score": 24,
+      "tech_score": 22,
       "fund_score": 18,
-      "sentiment_score": 17,
+      "sentiment_score": 19,
       "penalty": 0,
       "factors": {
-        "price": 2.19,
-        "chg_1d": 1.39,
-        "chg_5d": -0.6,
-        "chg_20d": 2.38,
-        "rsi": 60.4,
+        "price": 97.69,
+        "chg_1d": 0.27,
+        "chg_5d": 0.27,
+        "chg_20d": -0.45,
+        "rsi": 53.9,
         "pe": null,
-        "fund_details": "N/A",
+        "fund_details": "ETF",
         "range_pos": 2,
-        "vol_surge": 6,
+        "vol_surge": 3,
+        "consistency": 7,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "PBW",
+      "name": "PBW",
+      "type": "etf",
+      "category": "etf",
+      "score": 59,
+      "tech_score": 28,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 3,
+      "factors": {
+        "price": 34.81,
+        "chg_1d": 0.49,
+        "chg_5d": 3.48,
+        "chg_20d": 2.38,
+        "rsi": 56.2,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 4,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -6463,30 +6583,6 @@
       }
     },
     {
-      "ticker": "BRO",
-      "name": "BRO",
-      "type": "stock",
-      "category": "sp500",
-      "score": 58,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 11,
-      "penalty": 0,
-      "factors": {
-        "price": 71.61,
-        "chg_1d": 0.77,
-        "chg_5d": 0.6,
-        "chg_20d": 3.12,
-        "rsi": 62.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "BAX",
       "name": "BAX",
       "type": "stock",
@@ -6511,25 +6607,25 @@
       }
     },
     {
-      "ticker": "ERIE",
-      "name": "ERIE",
+      "ticker": "BRO",
+      "name": "BRO",
       "type": "stock",
       "category": "sp500",
       "score": 58,
-      "tech_score": 28,
+      "tech_score": 29,
       "fund_score": 18,
-      "sentiment_score": 12,
+      "sentiment_score": 11,
       "penalty": 0,
       "factors": {
-        "price": 255.83,
-        "chg_1d": -0.91,
-        "chg_5d": 0.7,
-        "chg_20d": 13.23,
-        "rsi": 70.0,
+        "price": 71.61,
+        "chg_1d": 0.77,
+        "chg_5d": 0.6,
+        "chg_20d": 3.12,
+        "rsi": 62.6,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
-        "vol_surge": 3,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 5
       }
@@ -6596,8 +6692,8 @@
         "price": 143.91,
         "chg_1d": -1.0,
         "chg_5d": -0.08,
-        "chg_20d": 8.77,
-        "rsi": 63.8,
+        "chg_20d": 13.73,
+        "rsi": 66.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 4,
@@ -6655,54 +6751,6 @@
       }
     },
     {
-      "ticker": "NWSA",
-      "name": "NWSA",
-      "type": "stock",
-      "category": "sp500",
-      "score": 58,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 0,
-      "factors": {
-        "price": 28.94,
-        "chg_1d": 0.94,
-        "chg_5d": -2.46,
-        "chg_20d": 0.87,
-        "rsi": 65.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "PCAR",
-      "name": "PCAR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 58,
-      "tech_score": 21,
-      "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
-      "factors": {
-        "price": 130.72,
-        "chg_1d": -0.26,
-        "chg_5d": -1.01,
-        "chg_20d": 3.2,
-        "rsi": 47.1,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "PM",
       "name": "PM",
       "type": "stock",
@@ -6727,27 +6775,27 @@
       }
     },
     {
-      "ticker": "ROST",
-      "name": "ROST",
+      "ticker": "STLD",
+      "name": "STLD",
       "type": "stock",
       "category": "sp500",
       "score": 58,
-      "tech_score": 20,
+      "tech_score": 22,
       "fund_score": 18,
-      "sentiment_score": 20,
+      "sentiment_score": 18,
       "penalty": 0,
       "factors": {
-        "price": 244.96,
-        "chg_1d": -1.33,
-        "chg_5d": -3.68,
-        "chg_20d": 10.88,
-        "rsi": 59.1,
+        "price": 260.53,
+        "chg_1d": -1.01,
+        "chg_5d": -0.36,
+        "chg_20d": 11.27,
+        "rsi": 66.7,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 3,
         "consistency": 2,
-        "rsi_align": 7
+        "rsi_align": 5
       }
     },
     {
@@ -6764,7 +6812,7 @@
         "price": 214.74,
         "chg_1d": 0.25,
         "chg_5d": -0.16,
-        "chg_20d": 6.66,
+        "chg_20d": 6.01,
         "rsi": 61.9,
         "pe": null,
         "fund_details": "N/A",
@@ -6772,30 +6820,6 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "WSM",
-      "name": "WSM",
-      "type": "stock",
-      "category": "sp500",
-      "score": 58,
-      "tech_score": 22,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 242.44,
-        "chg_1d": -1.11,
-        "chg_5d": -1.8,
-        "chg_20d": 6.16,
-        "rsi": 64.6,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
       }
     },
     {
@@ -6836,13 +6860,37 @@
         "price": 98.58,
         "chg_1d": 1.31,
         "chg_5d": 0.55,
-        "chg_20d": -1.49,
+        "chg_20d": 0.74,
         "rsi": 36.8,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 6,
         "vol_surge": 3,
         "consistency": 6,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "FXE",
+      "name": "FXE",
+      "type": "etf",
+      "category": "etf",
+      "score": 58,
+      "tech_score": 21,
+      "fund_score": 18,
+      "sentiment_score": 19,
+      "penalty": 0,
+      "factors": {
+        "price": 106.4,
+        "chg_1d": 0.06,
+        "chg_5d": 0.09,
+        "chg_20d": 1.32,
+        "rsi": 70.3,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 2,
+        "vol_surge": 5,
+        "consistency": 7,
         "rsi_align": 5
       }
     },
@@ -6858,10 +6906,10 @@
       "penalty": 3,
       "factors": {
         "price": 1.5,
-        "chg_1d": 7.54,
-        "chg_5d": 8.38,
-        "chg_20d": 7.93,
-        "rsi": 72.7,
+        "chg_1d": 7.47,
+        "chg_5d": 8.31,
+        "chg_20d": 7.86,
+        "rsi": 72.6,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -6884,8 +6932,8 @@
         "price": 39.85,
         "chg_1d": -0.42,
         "chg_5d": -2.23,
-        "chg_20d": 4.7,
-        "rsi": 64.9,
+        "chg_20d": 5.03,
+        "rsi": 65.7,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
@@ -6967,25 +7015,25 @@
       }
     },
     {
-      "ticker": "DGX",
-      "name": "DGX",
+      "ticker": "GIS",
+      "name": "GIS",
       "type": "stock",
       "category": "sp500",
       "score": 57,
-      "tech_score": 22,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 17,
+      "sentiment_score": 12,
       "penalty": 0,
       "factors": {
-        "price": 236.04,
-        "chg_1d": -0.73,
-        "chg_5d": -1.03,
-        "chg_20d": 13.84,
-        "rsi": 68.8,
+        "price": 38.91,
+        "chg_1d": 1.91,
+        "chg_5d": 7.87,
+        "chg_20d": 0.54,
+        "rsi": 68.6,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
+        "range_pos": 2,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
       }
@@ -7039,8 +7087,8 @@
       }
     },
     {
-      "ticker": "GIS",
-      "name": "GIS",
+      "ticker": "IT",
+      "name": "IT",
       "type": "stock",
       "category": "sp500",
       "score": 57,
@@ -7049,41 +7097,17 @@
       "sentiment_score": 12,
       "penalty": 0,
       "factors": {
-        "price": 38.91,
-        "chg_1d": 1.91,
-        "chg_5d": 7.87,
-        "chg_20d": 0.54,
-        "rsi": 68.6,
+        "price": 183.3,
+        "chg_1d": 2.14,
+        "chg_5d": -0.82,
+        "chg_20d": 28.28,
+        "rsi": 70.8,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "KDP",
-      "name": "KDP",
-      "type": "stock",
-      "category": "sp500",
-      "score": 57,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 3,
-      "factors": {
-        "price": 31.12,
-        "chg_1d": 5.28,
-        "chg_5d": 2.47,
-        "chg_20d": -0.83,
-        "rsi": 60.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 5,
-        "consistency": 2,
-        "rsi_align": 7
       }
     },
     {
@@ -7178,6 +7202,30 @@
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "ROST",
+      "name": "ROST",
+      "type": "stock",
+      "category": "sp500",
+      "score": 57,
+      "tech_score": 19,
+      "fund_score": 18,
+      "sentiment_score": 20,
+      "penalty": 0,
+      "factors": {
+        "price": 244.96,
+        "chg_1d": -1.33,
+        "chg_5d": -3.68,
+        "chg_20d": 5.26,
+        "rsi": 59.1,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -7327,6 +7375,30 @@
       }
     },
     {
+      "ticker": "IVV",
+      "name": "IVV",
+      "type": "etf",
+      "category": "etf",
+      "score": 57,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 21,
+      "penalty": 8,
+      "factors": {
+        "price": 781.47,
+        "chg_1d": 0.68,
+        "chg_5d": 1.21,
+        "chg_20d": 3.59,
+        "rsi": 77.3,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 7,
+        "rsi_align": 3
+      }
+    },
+    {
       "ticker": "EEM",
       "name": "EEM",
       "type": "etf",
@@ -7366,30 +7438,6 @@
         "chg_5d": 1.21,
         "chg_20d": 3.62,
         "rsi": 76.8,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 7,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "IVV",
-      "name": "IVV",
-      "type": "etf",
-      "category": "etf",
-      "score": 57,
-      "tech_score": 26,
-      "fund_score": 18,
-      "sentiment_score": 21,
-      "penalty": 8,
-      "factors": {
-        "price": 781.47,
-        "chg_1d": 0.68,
-        "chg_5d": 1.21,
-        "chg_20d": 3.59,
-        "rsi": 77.3,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 8,
@@ -7471,27 +7519,27 @@
       }
     },
     {
-      "ticker": "ELV",
-      "name": "ELV",
+      "ticker": "ESS",
+      "name": "ESS",
       "type": "stock",
       "category": "sp500",
       "score": 56,
-      "tech_score": 26,
+      "tech_score": 19,
       "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 3,
+      "sentiment_score": 19,
+      "penalty": 0,
       "factors": {
-        "price": 398.22,
-        "chg_1d": -0.23,
-        "chg_5d": 1.74,
-        "chg_20d": 6.8,
-        "rsi": 65.3,
+        "price": 287.39,
+        "chg_1d": 2.18,
+        "chg_5d": 0.8,
+        "chg_20d": -3.37,
+        "rsi": 43.8,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
         "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
+        "consistency": 4,
+        "rsi_align": 7
       }
     },
     {
@@ -7519,27 +7567,27 @@
       }
     },
     {
-      "ticker": "ESS",
-      "name": "ESS",
+      "ticker": "ELV",
+      "name": "ELV",
       "type": "stock",
       "category": "sp500",
       "score": 56,
-      "tech_score": 19,
+      "tech_score": 26,
       "fund_score": 18,
-      "sentiment_score": 19,
-      "penalty": 0,
+      "sentiment_score": 15,
+      "penalty": 3,
       "factors": {
-        "price": 287.39,
-        "chg_1d": 2.18,
-        "chg_5d": 0.8,
-        "chg_20d": -3.37,
-        "rsi": 43.8,
+        "price": 398.22,
+        "chg_1d": -0.23,
+        "chg_5d": 1.74,
+        "chg_20d": 6.8,
+        "rsi": 65.3,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
         "vol_surge": 2,
-        "consistency": 4,
-        "rsi_align": 7
+        "consistency": 2,
+        "rsi_align": 5
       }
     },
     {
@@ -7556,7 +7604,7 @@
         "price": 248.12,
         "chg_1d": 1.2,
         "chg_5d": -2.07,
-        "chg_20d": 5.99,
+        "chg_20d": 5.73,
         "rsi": 61.7,
         "pe": null,
         "fund_details": "N/A",
@@ -7580,7 +7628,7 @@
         "price": 29.57,
         "chg_1d": 3.25,
         "chg_5d": 5.23,
-        "chg_20d": 9.48,
+        "chg_20d": 11.29,
         "rsi": 79.4,
         "pe": null,
         "fund_details": "N/A",
@@ -7611,6 +7659,30 @@
         "range_pos": 8,
         "vol_surge": 3,
         "consistency": 4,
+        "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA",
+      "type": "stock",
+      "category": "sp500",
+      "score": 56,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 11,
+      "penalty": 0,
+      "factors": {
+        "price": 411.74,
+        "chg_1d": -0.69,
+        "chg_5d": 0.7,
+        "chg_20d": 6.74,
+        "rsi": 65.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
+        "consistency": 2,
         "rsi_align": 5
       }
     },
@@ -7652,8 +7724,8 @@
         "price": 134.2,
         "chg_1d": 1.41,
         "chg_5d": 0.43,
-        "chg_20d": -0.49,
-        "rsi": 50.8,
+        "chg_20d": -1.24,
+        "rsi": 53.8,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 4,
@@ -7759,6 +7831,54 @@
       }
     },
     {
+      "ticker": "WST",
+      "name": "WST",
+      "type": "stock",
+      "category": "sp500",
+      "score": 56,
+      "tech_score": 21,
+      "fund_score": 18,
+      "sentiment_score": 17,
+      "penalty": 0,
+      "factors": {
+        "price": 346.16,
+        "chg_1d": -1.74,
+        "chg_5d": -0.7,
+        "chg_20d": -3.76,
+        "rsi": 43.1,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "WSM",
+      "name": "WSM",
+      "type": "stock",
+      "category": "sp500",
+      "score": 56,
+      "tech_score": 22,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 242.44,
+        "chg_1d": -1.11,
+        "chg_5d": -1.8,
+        "chg_20d": 11.9,
+        "rsi": 72.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
       "ticker": "TLT",
       "name": "TLT",
       "type": "etf",
@@ -7831,6 +7951,30 @@
       }
     },
     {
+      "ticker": "ADM",
+      "name": "ADM",
+      "type": "stock",
+      "category": "sp500",
+      "score": 55,
+      "tech_score": 23,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 80.15,
+        "chg_1d": 0.53,
+        "chg_5d": 3.41,
+        "chg_20d": -3.43,
+        "rsi": 34.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
       "ticker": "AMZN",
       "name": "AMZN",
       "type": "stock",
@@ -7879,30 +8023,6 @@
       }
     },
     {
-      "ticker": "ADM",
-      "name": "ADM",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 23,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 80.15,
-        "chg_1d": 0.53,
-        "chg_5d": 3.41,
-        "chg_20d": -3.43,
-        "rsi": 34.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "AOS",
       "name": "AOS",
       "type": "stock",
@@ -7921,30 +8041,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "BXP",
-      "name": "BXP",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 20,
-      "fund_score": 18,
-      "sentiment_score": 17,
-      "penalty": 0,
-      "factors": {
-        "price": 69.18,
-        "chg_1d": 1.81,
-        "chg_5d": 0.54,
-        "chg_20d": -2.08,
-        "rsi": 50.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
@@ -7975,25 +8071,25 @@
       }
     },
     {
-      "ticker": "CAH",
-      "name": "CAH",
+      "ticker": "BXP",
+      "name": "BXP",
       "type": "stock",
       "category": "sp500",
       "score": 55,
-      "tech_score": 19,
+      "tech_score": 20,
       "fund_score": 18,
-      "sentiment_score": 18,
+      "sentiment_score": 17,
       "penalty": 0,
       "factors": {
-        "price": 231.24,
-        "chg_1d": -1.25,
-        "chg_5d": -2.7,
-        "chg_20d": 1.1,
-        "rsi": 53.8,
+        "price": 69.18,
+        "chg_1d": 1.81,
+        "chg_5d": 0.54,
+        "chg_20d": -2.08,
+        "rsi": 50.3,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 6,
-        "vol_surge": 3,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -8023,6 +8119,30 @@
       }
     },
     {
+      "ticker": "CAH",
+      "name": "CAH",
+      "type": "stock",
+      "category": "sp500",
+      "score": 55,
+      "tech_score": 19,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 231.24,
+        "chg_1d": -1.25,
+        "chg_5d": -2.7,
+        "chg_20d": 1.1,
+        "rsi": 53.8,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "GPN",
       "name": "GPN",
       "type": "stock",
@@ -8041,78 +8161,6 @@
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "HCA",
-      "name": "HCA",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 26,
-      "fund_score": 18,
-      "sentiment_score": 11,
-      "penalty": 0,
-      "factors": {
-        "price": 411.74,
-        "chg_1d": -0.69,
-        "chg_5d": 0.7,
-        "chg_20d": 5.37,
-        "rsi": 66.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "HSY",
-      "name": "HSY",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 28,
-      "fund_score": 18,
-      "sentiment_score": 9,
-      "penalty": 0,
-      "factors": {
-        "price": 186.12,
-        "chg_1d": 1.03,
-        "chg_5d": 1.69,
-        "chg_20d": 6.21,
-        "rsi": 73.1,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "IT",
-      "name": "IT",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 10,
-      "penalty": 0,
-      "factors": {
-        "price": 183.3,
-        "chg_1d": 2.14,
-        "chg_5d": -0.82,
-        "chg_20d": 29.71,
-        "rsi": 72.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 3
@@ -8239,30 +8287,6 @@
       }
     },
     {
-      "ticker": "XEL",
-      "name": "XEL",
-      "type": "stock",
-      "category": "sp500",
-      "score": 55,
-      "tech_score": 19,
-      "fund_score": 18,
-      "sentiment_score": 18,
-      "penalty": 0,
-      "factors": {
-        "price": 78.98,
-        "chg_1d": 0.48,
-        "chg_5d": 2.61,
-        "chg_20d": -1.25,
-        "rsi": 35.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 4,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "WMB",
       "name": "WMB",
       "type": "stock",
@@ -8284,6 +8308,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "XEL",
+      "name": "XEL",
+      "type": "stock",
+      "category": "sp500",
+      "score": 55,
+      "tech_score": 19,
+      "fund_score": 18,
+      "sentiment_score": 18,
+      "penalty": 0,
+      "factors": {
+        "price": 78.98,
+        "chg_1d": 0.48,
+        "chg_5d": 2.61,
+        "chg_20d": -1.25,
+        "rsi": 35.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 4,
+        "rsi_align": 5
       }
     },
     {
@@ -8348,11 +8396,35 @@
         "price": 417.84,
         "chg_1d": 0.4,
         "chg_5d": 3.21,
-        "chg_20d": 12.45,
+        "chg_20d": 16.61,
         "rsi": 75.5,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
+      "ticker": "CHTR",
+      "name": "CHTR",
+      "type": "stock",
+      "category": "sp500",
+      "score": 54,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 9,
+      "penalty": 0,
+      "factors": {
+        "price": 156.53,
+        "chg_1d": 4.2,
+        "chg_5d": -0.58,
+        "chg_20d": 19.15,
+        "rsi": 72.2,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 3
@@ -8407,30 +8479,6 @@
       }
     },
     {
-      "ticker": "HOOD",
-      "name": "HOOD",
-      "type": "stock",
-      "category": "sp500",
-      "score": 54,
-      "tech_score": 26,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 3,
-      "factors": {
-        "price": 99.37,
-        "chg_1d": 4.7,
-        "chg_5d": 9.55,
-        "chg_20d": -6.27,
-        "rsi": 57.8,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "HD",
       "name": "HD",
       "type": "stock",
@@ -8450,6 +8498,30 @@
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
+      "ticker": "HOOD",
+      "name": "HOOD",
+      "type": "stock",
+      "category": "sp500",
+      "score": 54,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 13,
+      "penalty": 3,
+      "factors": {
+        "price": 99.37,
+        "chg_1d": 4.7,
+        "chg_5d": 9.55,
+        "chg_20d": -6.27,
+        "rsi": 57.8,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -8551,27 +8623,27 @@
       }
     },
     {
-      "ticker": "PBW",
-      "name": "PBW",
-      "type": "etf",
-      "category": "etf",
-      "score": 54,
-      "tech_score": 25,
+      "ticker": "AON",
+      "name": "AON",
+      "type": "stock",
+      "category": "sp500",
+      "score": 53,
+      "tech_score": 18,
       "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 3,
+      "sentiment_score": 17,
+      "penalty": 0,
       "factors": {
-        "price": 34.81,
-        "chg_1d": 0.49,
-        "chg_5d": 3.48,
-        "chg_20d": 4.13,
-        "rsi": 64.1,
+        "price": 357.08,
+        "chg_1d": 1.34,
+        "chg_5d": -1.02,
+        "chg_20d": -3.13,
+        "rsi": 46.2,
         "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 4,
-        "vol_surge": 3,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
         "consistency": 2,
-        "rsi_align": 5
+        "rsi_align": 7
       }
     },
     {
@@ -8599,25 +8671,25 @@
       }
     },
     {
-      "ticker": "AON",
-      "name": "AON",
+      "ticker": "AZO",
+      "name": "AZO",
       "type": "stock",
       "category": "sp500",
       "score": 53,
-      "tech_score": 18,
+      "tech_score": 19,
       "fund_score": 18,
-      "sentiment_score": 17,
+      "sentiment_score": 16,
       "penalty": 0,
       "factors": {
-        "price": 357.08,
-        "chg_1d": 1.34,
-        "chg_5d": -1.02,
-        "chg_20d": -3.13,
-        "rsi": 46.2,
+        "price": 3040.37,
+        "chg_1d": -0.18,
+        "chg_5d": -0.95,
+        "chg_20d": -0.71,
+        "rsi": 57.1,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 2,
+        "range_pos": 2,
+        "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 7
       }
@@ -8647,27 +8719,27 @@
       }
     },
     {
-      "ticker": "ES",
-      "name": "ES",
+      "ticker": "DRI",
+      "name": "DRI",
       "type": "stock",
       "category": "sp500",
       "score": 53,
-      "tech_score": 20,
+      "tech_score": 27,
       "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 0,
+      "sentiment_score": 16,
+      "penalty": 8,
       "factors": {
-        "price": 72.22,
-        "chg_1d": 0.94,
-        "chg_5d": 0.22,
-        "chg_20d": -3.24,
-        "rsi": 35.1,
+        "price": 223.5,
+        "chg_1d": -1.84,
+        "chg_5d": 5.95,
+        "chg_20d": 14.18,
+        "rsi": 77.7,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 2,
+        "range_pos": 8,
+        "vol_surge": 3,
         "consistency": 2,
-        "rsi_align": 5
+        "rsi_align": 3
       }
     },
     {
@@ -8935,6 +9007,30 @@
       }
     },
     {
+      "ticker": "LIT",
+      "name": "LIT",
+      "type": "etf",
+      "category": "etf",
+      "score": 53,
+      "tech_score": 25,
+      "fund_score": 18,
+      "sentiment_score": 13,
+      "penalty": 3,
+      "factors": {
+        "price": 74.66,
+        "chg_1d": -0.73,
+        "chg_5d": 3.11,
+        "chg_20d": 6.29,
+        "rsi": 68.2,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 4,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "ICLN",
       "name": "ICLN",
       "type": "etf",
@@ -8993,11 +9089,11 @@
       "sentiment_score": 14,
       "penalty": 0,
       "factors": {
-        "price": 1884.66,
-        "chg_1d": 0.35,
-        "chg_5d": -1.61,
-        "chg_20d": 1.32,
-        "rsi": 43.9,
+        "price": 1882.52,
+        "chg_1d": 0.23,
+        "chg_5d": -1.72,
+        "chg_20d": 1.2,
+        "rsi": 43.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -9020,7 +9116,7 @@
         "price": 14.73,
         "chg_1d": 0.14,
         "chg_5d": 0.2,
-        "chg_20d": -0.54,
+        "chg_20d": -0.47,
         "rsi": 35.9,
         "pe": null,
         "fund_details": "N/A",
@@ -9044,7 +9140,7 @@
         "price": 149.29,
         "chg_1d": 0.71,
         "chg_5d": 5.62,
-        "chg_20d": 10.42,
+        "chg_20d": 9.69,
         "rsi": 76.6,
         "pe": null,
         "fund_details": "N/A",
@@ -9164,7 +9260,7 @@
         "price": 124.49,
         "chg_1d": 0.81,
         "chg_5d": 0.48,
-        "chg_20d": -1.49,
+        "chg_20d": -1.28,
         "rsi": 31.7,
         "pe": null,
         "fund_details": "N/A",
@@ -9188,35 +9284,11 @@
         "price": 1321.38,
         "chg_1d": 1.26,
         "chg_5d": 3.03,
-        "chg_20d": -5.05,
-        "rsi": 39.9,
+        "chg_20d": -5.75,
+        "rsi": 37.0,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "HON",
-      "name": "HON",
-      "type": "stock",
-      "category": "sp500",
-      "score": 52,
-      "tech_score": 20,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 233.99,
-        "chg_1d": -0.57,
-        "chg_5d": -2.8,
-        "chg_20d": 3.38,
-        "rsi": 41.5,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
@@ -9271,30 +9343,6 @@
       }
     },
     {
-      "ticker": "NSC",
-      "name": "NSC",
-      "type": "stock",
-      "category": "sp500",
-      "score": 52,
-      "tech_score": 20,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 337.85,
-        "chg_1d": 0.73,
-        "chg_5d": -1.35,
-        "chg_20d": 3.37,
-        "rsi": 33.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "NEM",
       "name": "NEM",
       "type": "stock",
@@ -9316,6 +9364,30 @@
         "vol_surge": 5,
         "consistency": 2,
         "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "NSC",
+      "name": "NSC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 52,
+      "tech_score": 18,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 0,
+      "factors": {
+        "price": 337.85,
+        "chg_1d": 0.73,
+        "chg_5d": -1.35,
+        "chg_20d": -0.06,
+        "rsi": 33.0,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -9439,30 +9511,6 @@
       }
     },
     {
-      "ticker": "AZO",
-      "name": "AZO",
-      "type": "stock",
-      "category": "sp500",
-      "score": 51,
-      "tech_score": 19,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 3040.37,
-        "chg_1d": -0.18,
-        "chg_5d": -0.95,
-        "chg_20d": -1.25,
-        "rsi": 59.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "CB",
       "name": "CB",
       "type": "stock",
@@ -9559,30 +9607,6 @@
       }
     },
     {
-      "ticker": "TGT",
-      "name": "TGT",
-      "type": "stock",
-      "category": "sp500",
-      "score": 51,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 16,
-      "penalty": 12,
-      "factors": {
-        "price": 155.51,
-        "chg_1d": 0.98,
-        "chg_5d": 5.73,
-        "chg_20d": 10.91,
-        "rsi": 85.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 5,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "TRGP",
       "name": "TRGP",
       "type": "stock",
@@ -9604,6 +9628,30 @@
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 5
+      }
+    },
+    {
+      "ticker": "TGT",
+      "name": "TGT",
+      "type": "stock",
+      "category": "sp500",
+      "score": 51,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 16,
+      "penalty": 12,
+      "factors": {
+        "price": 155.51,
+        "chg_1d": 0.98,
+        "chg_5d": 5.73,
+        "chg_20d": 10.91,
+        "rsi": 85.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 5,
+        "consistency": 2,
+        "rsi_align": 1
       }
     },
     {
@@ -9655,30 +9703,6 @@
       }
     },
     {
-      "ticker": "LIT",
-      "name": "LIT",
-      "type": "etf",
-      "category": "etf",
-      "score": 51,
-      "tech_score": 25,
-      "fund_score": 18,
-      "sentiment_score": 11,
-      "penalty": 3,
-      "factors": {
-        "price": 74.66,
-        "chg_1d": -0.73,
-        "chg_5d": 3.11,
-        "chg_20d": 8.42,
-        "rsi": 73.4,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 4,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "DBA",
       "name": "DBA",
       "type": "commodity",
@@ -9727,30 +9751,6 @@
       }
     },
     {
-      "ticker": "ADSK",
-      "name": "ADSK",
-      "type": "stock",
-      "category": "sp500",
-      "score": 50,
-      "tech_score": 30,
-      "fund_score": 18,
-      "sentiment_score": 10,
-      "penalty": 8,
-      "factors": {
-        "price": 257.96,
-        "chg_1d": 3.39,
-        "chg_5d": 6.39,
-        "chg_20d": 18.84,
-        "rsi": 78.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "ABNB",
       "name": "ABNB",
       "type": "stock",
@@ -9770,6 +9770,30 @@
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 6,
+        "consistency": 2,
+        "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "ADSK",
+      "name": "ADSK",
+      "type": "stock",
+      "category": "sp500",
+      "score": 50,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 10,
+      "penalty": 8,
+      "factors": {
+        "price": 257.96,
+        "chg_1d": 3.39,
+        "chg_5d": 6.39,
+        "chg_20d": 18.84,
+        "rsi": 78.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 1
       }
@@ -9871,6 +9895,30 @@
       }
     },
     {
+      "ticker": "IDXX",
+      "name": "IDXX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 50,
+      "tech_score": 18,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 566.93,
+        "chg_1d": -0.64,
+        "chg_5d": -3.91,
+        "chg_20d": -1.59,
+        "rsi": 59.8,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "NTAP",
       "name": "NTAP",
       "type": "stock",
@@ -9934,30 +9982,6 @@
         "chg_5d": -1.25,
         "chg_20d": 1.23,
         "rsi": 51.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "AVAX-USD",
-      "name": "AVAX",
-      "type": "crypto",
-      "category": "crypto",
-      "score": 50,
-      "tech_score": 18,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 6.47,
-        "chg_1d": 2.39,
-        "chg_5d": -0.17,
-        "chg_20d": 2.69,
-        "rsi": 51.1,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -10087,6 +10111,30 @@
       }
     },
     {
+      "ticker": "ES",
+      "name": "ES",
+      "type": "stock",
+      "category": "sp500",
+      "score": 49,
+      "tech_score": 16,
+      "fund_score": 18,
+      "sentiment_score": 15,
+      "penalty": 0,
+      "factors": {
+        "price": 72.22,
+        "chg_1d": 0.94,
+        "chg_5d": 0.22,
+        "chg_20d": -3.76,
+        "rsi": 35.1,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 6,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "MCD",
       "name": "MCD",
       "type": "stock",
@@ -10207,30 +10255,6 @@
       }
     },
     {
-      "ticker": "RJF",
-      "name": "RJF",
-      "type": "stock",
-      "category": "sp500",
-      "score": 49,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 8,
-      "factors": {
-        "price": 180.99,
-        "chg_1d": -0.1,
-        "chg_5d": 0.93,
-        "chg_20d": 8.39,
-        "rsi": 75.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "SBAC",
       "name": "SBAC",
       "type": "stock",
@@ -10252,30 +10276,6 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "WST",
-      "name": "WST",
-      "type": "stock",
-      "category": "sp500",
-      "score": 49,
-      "tech_score": 18,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 0,
-      "factors": {
-        "price": 346.16,
-        "chg_1d": -1.74,
-        "chg_5d": -0.7,
-        "chg_20d": -4.49,
-        "rsi": 72.2,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
       }
     },
     {
@@ -10375,6 +10375,30 @@
       }
     },
     {
+      "ticker": "COO",
+      "name": "COO",
+      "type": "stock",
+      "category": "sp500",
+      "score": 48,
+      "tech_score": 26,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 8,
+      "factors": {
+        "price": 76.6,
+        "chg_1d": -0.17,
+        "chg_5d": 4.47,
+        "chg_20d": 4.79,
+        "rsi": 77.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
       "ticker": "CRL",
       "name": "CRL",
       "type": "stock",
@@ -10394,54 +10418,6 @@
         "fund_details": "N/A",
         "range_pos": 8,
         "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
-      "ticker": "DLTR",
-      "name": "DLTR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 48,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 8,
-      "factors": {
-        "price": 129.53,
-        "chg_1d": 0.72,
-        "chg_5d": -0.12,
-        "chg_20d": 2.49,
-        "rsi": 76.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 6,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 3
-      }
-    },
-    {
-      "ticker": "FOX",
-      "name": "FOX",
-      "type": "stock",
-      "category": "sp500",
-      "score": 48,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 9,
-      "penalty": 8,
-      "factors": {
-        "price": 58.1,
-        "chg_1d": 3.81,
-        "chg_5d": 4.93,
-        "chg_20d": 13.74,
-        "rsi": 79.2,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 1
       }
@@ -10495,6 +10471,30 @@
       }
     },
     {
+      "ticker": "HON",
+      "name": "HON",
+      "type": "stock",
+      "category": "sp500",
+      "score": 48,
+      "tech_score": 16,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 233.99,
+        "chg_1d": -0.57,
+        "chg_5d": -2.8,
+        "chg_20d": 5.0,
+        "rsi": 41.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
+      }
+    },
+    {
       "ticker": "TSCO",
       "name": "TSCO",
       "type": "stock",
@@ -10543,6 +10543,30 @@
       }
     },
     {
+      "ticker": "ARKK",
+      "name": "ARKK",
+      "type": "etf",
+      "category": "etf",
+      "score": 48,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 11,
+      "factors": {
+        "price": 82.59,
+        "chg_1d": 1.5,
+        "chg_5d": 9.06,
+        "chg_20d": 7.72,
+        "rsi": 76.8,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 6,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
       "ticker": "QCLN",
       "name": "QCLN",
       "type": "etf",
@@ -10567,27 +10591,27 @@
       }
     },
     {
-      "ticker": "BTC-USD",
-      "name": "BTC",
-      "type": "crypto",
-      "category": "crypto",
-      "score": 48,
-      "tech_score": 18,
+      "ticker": "AEE",
+      "name": "AEE",
+      "type": "stock",
+      "category": "sp500",
+      "score": 47,
+      "tech_score": 15,
       "fund_score": 18,
-      "sentiment_score": 12,
+      "sentiment_score": 14,
       "penalty": 0,
       "factors": {
-        "price": 63428.85,
-        "chg_1d": 0.04,
-        "chg_5d": -2.27,
-        "chg_20d": -1.04,
-        "rsi": 39.8,
+        "price": 109.12,
+        "chg_1d": 0.28,
+        "chg_5d": 0.79,
+        "chg_20d": -3.8,
+        "rsi": 33.9,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 2,
+        "range_pos": 4,
         "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 5
+        "consistency": 4,
+        "rsi_align": 3
       }
     },
     {
@@ -10615,30 +10639,6 @@
       }
     },
     {
-      "ticker": "AEE",
-      "name": "AEE",
-      "type": "stock",
-      "category": "sp500",
-      "score": 47,
-      "tech_score": 15,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 109.12,
-        "chg_1d": 0.28,
-        "chg_5d": 0.79,
-        "chg_20d": -3.52,
-        "rsi": 31.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 4,
-        "rsi_align": 3
-      }
-    },
-    {
       "ticker": "COF",
       "name": "COF",
       "type": "stock",
@@ -10663,30 +10663,6 @@
       }
     },
     {
-      "ticker": "COO",
-      "name": "COO",
-      "type": "stock",
-      "category": "sp500",
-      "score": 47,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 10,
-      "penalty": 8,
-      "factors": {
-        "price": 76.6,
-        "chg_1d": -0.17,
-        "chg_5d": 4.47,
-        "chg_20d": 7.4,
-        "rsi": 79.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "EVRG",
       "name": "EVRG",
       "type": "stock",
@@ -10707,54 +10683,6 @@
         "range_pos": 6,
         "vol_surge": 3,
         "consistency": 7,
-        "rsi_align": 1
-      }
-    },
-    {
-      "ticker": "IDXX",
-      "name": "IDXX",
-      "type": "stock",
-      "category": "sp500",
-      "score": 47,
-      "tech_score": 15,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 566.93,
-        "chg_1d": -0.64,
-        "chg_5d": -3.91,
-        "chg_20d": 0.48,
-        "rsi": 61.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "LDOS",
-      "name": "LDOS",
-      "type": "stock",
-      "category": "sp500",
-      "score": 47,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 8,
-      "penalty": 8,
-      "factors": {
-        "price": 142.61,
-        "chg_1d": 1.59,
-        "chg_5d": 5.43,
-        "chg_20d": 31.69,
-        "rsi": 79.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
         "rsi_align": 1
       }
     },
@@ -10783,27 +10711,27 @@
       }
     },
     {
-      "ticker": "PPG",
-      "name": "PPG",
+      "ticker": "LDOS",
+      "name": "LDOS",
       "type": "stock",
       "category": "sp500",
       "score": 47,
-      "tech_score": 14,
+      "tech_score": 29,
       "fund_score": 18,
-      "sentiment_score": 15,
-      "penalty": 0,
+      "sentiment_score": 8,
+      "penalty": 8,
       "factors": {
-        "price": 114.73,
-        "chg_1d": 0.11,
-        "chg_5d": -2.07,
-        "chg_20d": 0.78,
-        "rsi": 51.6,
+        "price": 142.61,
+        "chg_1d": 1.59,
+        "chg_5d": 5.43,
+        "chg_20d": 31.69,
+        "rsi": 79.9,
         "pe": null,
         "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
+        "range_pos": 2,
+        "vol_surge": 3,
         "consistency": 2,
-        "rsi_align": 7
+        "rsi_align": 1
       }
     },
     {
@@ -10879,27 +10807,27 @@
       }
     },
     {
-      "ticker": "ARKK",
-      "name": "ARKK",
-      "type": "etf",
-      "category": "etf",
+      "ticker": "AVAX-USD",
+      "name": "AVAX",
+      "type": "crypto",
+      "category": "crypto",
       "score": 47,
-      "tech_score": 26,
+      "tech_score": 15,
       "fund_score": 18,
       "sentiment_score": 14,
-      "penalty": 11,
+      "penalty": 0,
       "factors": {
-        "price": 82.59,
-        "chg_1d": 1.5,
-        "chg_5d": 9.06,
-        "chg_20d": 3.76,
-        "rsi": 76.8,
+        "price": 6.45,
+        "chg_1d": 2.05,
+        "chg_5d": -0.49,
+        "chg_20d": 2.35,
+        "rsi": 50.4,
         "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 6,
+        "fund_details": "N/A",
+        "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
-        "rsi_align": 3
+        "rsi_align": 7
       }
     },
     {
@@ -10916,8 +10844,8 @@
         "price": 181.97,
         "chg_1d": -0.88,
         "chg_5d": 2.77,
-        "chg_20d": 18.29,
-        "rsi": 87.4,
+        "chg_20d": 13.78,
+        "rsi": 86.2,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 8,
@@ -11023,30 +10951,6 @@
       }
     },
     {
-      "ticker": "MKC",
-      "name": "MKC",
-      "type": "stock",
-      "category": "sp500",
-      "score": 46,
-      "tech_score": 29,
-      "fund_score": 18,
-      "sentiment_score": 7,
-      "penalty": 8,
-      "factors": {
-        "price": 54.45,
-        "chg_1d": 2.79,
-        "chg_5d": 4.15,
-        "chg_20d": 2.93,
-        "rsi": 79.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "META",
       "name": "META",
       "type": "stock",
@@ -11071,6 +10975,30 @@
       }
     },
     {
+      "ticker": "MKC",
+      "name": "MKC",
+      "type": "stock",
+      "category": "sp500",
+      "score": 46,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 7,
+      "penalty": 8,
+      "factors": {
+        "price": 54.45,
+        "chg_1d": 2.79,
+        "chg_5d": 4.15,
+        "chg_20d": 2.93,
+        "rsi": 79.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 1
+      }
+    },
+    {
       "ticker": "SCHW",
       "name": "SCHW",
       "type": "stock",
@@ -11092,6 +11020,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "TKO",
+      "name": "TKO",
+      "type": "stock",
+      "category": "sp500",
+      "score": 46,
+      "tech_score": 27,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 11,
+      "factors": {
+        "price": 199.68,
+        "chg_1d": 2.33,
+        "chg_5d": 6.62,
+        "chg_20d": 8.06,
+        "rsi": 77.6,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
       }
     },
     {
@@ -11228,7 +11180,7 @@
         "price": 216.26,
         "chg_1d": 1.77,
         "chg_5d": 1.41,
-        "chg_20d": 16.04,
+        "chg_20d": 13.73,
         "rsi": 84.5,
         "pe": null,
         "fund_details": "N/A",
@@ -11252,8 +11204,8 @@
         "price": 65.45,
         "chg_1d": 3.81,
         "chg_5d": 5.92,
-        "chg_20d": 19.28,
-        "rsi": 83.5,
+        "chg_20d": 15.21,
+        "rsi": 81.4,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 4,
@@ -11335,30 +11287,6 @@
       }
     },
     {
-      "ticker": "ADA-USD",
-      "name": "ADA",
-      "type": "crypto",
-      "category": "crypto",
-      "score": 45,
-      "tech_score": 22,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 8,
-      "factors": {
-        "price": 0.18,
-        "chg_1d": 0.03,
-        "chg_5d": -8.41,
-        "chg_20d": 11.38,
-        "rsi": 61.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "LTC-USD",
       "name": "LTC",
       "type": "crypto",
@@ -11369,10 +11297,10 @@
       "sentiment_score": 14,
       "penalty": 0,
       "factors": {
-        "price": 44.75,
-        "chg_1d": -0.23,
-        "chg_5d": -2.68,
-        "chg_20d": -3.4,
+        "price": 44.74,
+        "chg_1d": -0.25,
+        "chg_5d": -2.7,
+        "chg_20d": -3.42,
         "rsi": 43.2,
         "pe": null,
         "fund_details": "N/A",
@@ -11407,6 +11335,30 @@
       }
     },
     {
+      "ticker": "BSX",
+      "name": "BSX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 44,
+      "tech_score": 30,
+      "fund_score": 18,
+      "sentiment_score": 8,
+      "penalty": 12,
+      "factors": {
+        "price": 51.69,
+        "chg_1d": 0.53,
+        "chg_5d": 4.85,
+        "chg_20d": 15.84,
+        "rsi": 86.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 1
+      }
+    },
+    {
       "ticker": "BKNG",
       "name": "BKNG",
       "type": "stock",
@@ -11431,25 +11383,49 @@
       }
     },
     {
-      "ticker": "BSX",
-      "name": "BSX",
+      "ticker": "ERIE",
+      "name": "ERIE",
       "type": "stock",
       "category": "sp500",
       "score": 44,
-      "tech_score": 30,
+      "tech_score": 24,
       "fund_score": 18,
-      "sentiment_score": 8,
-      "penalty": 12,
+      "sentiment_score": 10,
+      "penalty": 8,
       "factors": {
-        "price": 51.69,
-        "chg_1d": 0.53,
-        "chg_5d": 4.85,
-        "chg_20d": 15.84,
-        "rsi": 86.3,
+        "price": 255.83,
+        "chg_1d": -0.91,
+        "chg_5d": 0.7,
+        "chg_20d": 3.5,
+        "rsi": 76.1,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 3
+      }
+    },
+    {
+      "ticker": "FOX",
+      "name": "FOX",
+      "type": "stock",
+      "category": "sp500",
+      "score": 44,
+      "tech_score": 29,
+      "fund_score": 18,
+      "sentiment_score": 9,
+      "penalty": 12,
+      "factors": {
+        "price": 58.1,
+        "chg_1d": 3.81,
+        "chg_5d": 4.93,
+        "chg_20d": 15.69,
+        "rsi": 81.1,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 1
       }
@@ -11503,30 +11479,6 @@
       }
     },
     {
-      "ticker": "IBIT",
-      "name": "IBIT",
-      "type": "etf",
-      "category": "etf",
-      "score": 44,
-      "tech_score": 12,
-      "fund_score": 18,
-      "sentiment_score": 14,
-      "penalty": 0,
-      "factors": {
-        "price": 35.88,
-        "chg_1d": -0.03,
-        "chg_5d": -1.67,
-        "chg_20d": -1.4,
-        "rsi": 45.8,
-        "pe": null,
-        "fund_details": "ETF",
-        "range_pos": 2,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 7
-      }
-    },
-    {
       "ticker": "FBTC",
       "name": "FBTC",
       "type": "etf",
@@ -11551,6 +11503,30 @@
       }
     },
     {
+      "ticker": "IBIT",
+      "name": "IBIT",
+      "type": "etf",
+      "category": "etf",
+      "score": 44,
+      "tech_score": 12,
+      "fund_score": 18,
+      "sentiment_score": 14,
+      "penalty": 0,
+      "factors": {
+        "price": 35.88,
+        "chg_1d": -0.03,
+        "chg_5d": -1.67,
+        "chg_20d": -1.4,
+        "rsi": 45.8,
+        "pe": null,
+        "fund_details": "ETF",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 7
+      }
+    },
+    {
       "ticker": "DOGE-USD",
       "name": "DOGE",
       "type": "crypto",
@@ -11562,40 +11538,16 @@
       "penalty": 3,
       "factors": {
         "price": 0.07,
-        "chg_1d": 0.7,
-        "chg_5d": -0.44,
-        "chg_20d": 0.8,
-        "rsi": 48.1,
+        "chg_1d": 0.67,
+        "chg_5d": -0.47,
+        "chg_20d": 0.78,
+        "rsi": 48.0,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
         "consistency": 2,
         "rsi_align": 7
-      }
-    },
-    {
-      "ticker": "CHTR",
-      "name": "CHTR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 43,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 9,
-      "penalty": 8,
-      "factors": {
-        "price": 156.53,
-        "chg_1d": 4.2,
-        "chg_5d": -0.58,
-        "chg_20d": 17.4,
-        "rsi": 75.1,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 3
       }
     },
     {
@@ -11618,6 +11570,30 @@
         "fund_details": "N/A",
         "range_pos": 2,
         "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "EW",
+      "name": "EW",
+      "type": "stock",
+      "category": "sp500",
+      "score": 43,
+      "tech_score": 24,
+      "fund_score": 18,
+      "sentiment_score": 13,
+      "penalty": 12,
+      "factors": {
+        "price": 92.56,
+        "chg_1d": -0.53,
+        "chg_5d": 3.63,
+        "chg_20d": 5.37,
+        "rsi": 82.9,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 8,
+        "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 1
       }
@@ -11647,30 +11623,6 @@
       }
     },
     {
-      "ticker": "EW",
-      "name": "EW",
-      "type": "stock",
-      "category": "sp500",
-      "score": 43,
-      "tech_score": 24,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 12,
-      "factors": {
-        "price": 92.56,
-        "chg_1d": -0.53,
-        "chg_5d": 3.63,
-        "chg_20d": 2.74,
-        "rsi": 82.9,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 8,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "NOW",
       "name": "NOW",
       "type": "stock",
@@ -11692,6 +11644,30 @@
         "vol_surge": 2,
         "consistency": 2,
         "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "ADA-USD",
+      "name": "ADA",
+      "type": "crypto",
+      "category": "crypto",
+      "score": 43,
+      "tech_score": 20,
+      "fund_score": 18,
+      "sentiment_score": 13,
+      "penalty": 8,
+      "factors": {
+        "price": 0.18,
+        "chg_1d": -0.11,
+        "chg_5d": -8.54,
+        "chg_20d": 11.22,
+        "rsi": 60.7,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 7
       }
     },
     {
@@ -11804,14 +11780,38 @@
         "price": 190.62,
         "chg_1d": 0.45,
         "chg_5d": 1.59,
-        "chg_20d": -2.99,
-        "rsi": 27.4,
+        "chg_20d": -3.47,
+        "rsi": 26.8,
         "pe": null,
         "fund_details": "ETF",
         "range_pos": 2,
         "vol_surge": 3,
         "consistency": 6,
         "rsi_align": 1
+      }
+    },
+    {
+      "ticker": "BTC-USD",
+      "name": "BTC",
+      "type": "crypto",
+      "category": "crypto",
+      "score": 42,
+      "tech_score": 12,
+      "fund_score": 18,
+      "sentiment_score": 12,
+      "penalty": 0,
+      "factors": {
+        "price": 63358.25,
+        "chg_1d": -0.07,
+        "chg_5d": -2.38,
+        "chg_20d": -1.15,
+        "rsi": 39.3,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "consistency": 2,
+        "rsi_align": 5
       }
     },
     {
@@ -11863,30 +11863,6 @@
       }
     },
     {
-      "ticker": "CINF",
-      "name": "CINF",
-      "type": "stock",
-      "category": "sp500",
-      "score": 40,
-      "tech_score": 9,
-      "fund_score": 18,
-      "sentiment_score": 13,
-      "penalty": 0,
-      "factors": {
-        "price": 172.67,
-        "chg_1d": 0.12,
-        "chg_5d": -3.56,
-        "chg_20d": -5.47,
-        "rsi": 38.3,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
       "ticker": "L",
       "name": "L",
       "type": "stock",
@@ -11911,54 +11887,6 @@
       }
     },
     {
-      "ticker": "PGR",
-      "name": "PGR",
-      "type": "stock",
-      "category": "sp500",
-      "score": 40,
-      "tech_score": 11,
-      "fund_score": 18,
-      "sentiment_score": 11,
-      "penalty": 0,
-      "factors": {
-        "price": 208.87,
-        "chg_1d": 0.72,
-        "chg_5d": -3.0,
-        "chg_20d": -7.82,
-        "rsi": 41.7,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 2,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 5
-      }
-    },
-    {
-      "ticker": "TKO",
-      "name": "TKO",
-      "type": "stock",
-      "category": "sp500",
-      "score": 40,
-      "tech_score": 27,
-      "fund_score": 18,
-      "sentiment_score": 10,
-      "penalty": 15,
-      "factors": {
-        "price": 199.68,
-        "chg_1d": 2.33,
-        "chg_5d": 6.62,
-        "chg_20d": 10.34,
-        "rsi": 82.0,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 3,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "BCH-USD",
       "name": "BCH",
       "type": "crypto",
@@ -11969,11 +11897,11 @@
       "sentiment_score": 13,
       "penalty": 3,
       "factors": {
-        "price": 205.8,
-        "chg_1d": -3.1,
-        "chg_5d": -4.71,
-        "chg_20d": -2.27,
-        "rsi": 32.5,
+        "price": 206.39,
+        "chg_1d": -2.82,
+        "chg_5d": -4.43,
+        "chg_20d": -1.99,
+        "rsi": 33.1,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -11993,11 +11921,11 @@
       "sentiment_score": 14,
       "penalty": 3,
       "factors": {
-        "price": 1.63,
-        "chg_1d": -0.5,
-        "chg_5d": 1.43,
-        "chg_20d": -9.49,
-        "rsi": 43.5,
+        "price": 1.62,
+        "chg_1d": -1.1,
+        "chg_5d": 0.82,
+        "chg_20d": -10.04,
+        "rsi": 42.2,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -12223,30 +12151,6 @@
       }
     },
     {
-      "ticker": "WRB",
-      "name": "WRB",
-      "type": "stock",
-      "category": "sp500",
-      "score": 35,
-      "tech_score": 8,
-      "fund_score": 18,
-      "sentiment_score": 9,
-      "penalty": 0,
-      "factors": {
-        "price": 70.47,
-        "chg_1d": 1.06,
-        "chg_5d": -2.3,
-        "chg_20d": 0.82,
-        "rsi": 23.4,
-        "pe": null,
-        "fund_details": "N/A",
-        "range_pos": 4,
-        "vol_surge": 2,
-        "consistency": 2,
-        "rsi_align": 1
-      }
-    },
-    {
       "ticker": "WM",
       "name": "WM",
       "type": "stock",
@@ -12271,6 +12175,30 @@
       }
     },
     {
+      "ticker": "WRB",
+      "name": "WRB",
+      "type": "stock",
+      "category": "sp500",
+      "score": 35,
+      "tech_score": 8,
+      "fund_score": 18,
+      "sentiment_score": 9,
+      "penalty": 0,
+      "factors": {
+        "price": 70.47,
+        "chg_1d": 1.06,
+        "chg_5d": -2.3,
+        "chg_20d": 0.82,
+        "rsi": 23.4,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 4,
+        "vol_surge": 2,
+        "consistency": 2,
+        "rsi_align": 1
+      }
+    },
+    {
       "ticker": "DOT-USD",
       "name": "DOT",
       "type": "crypto",
@@ -12282,10 +12210,10 @@
       "penalty": 11,
       "factors": {
         "price": 0.77,
-        "chg_1d": -0.3,
-        "chg_5d": -5.3,
-        "chg_20d": -4.61,
-        "rsi": 50.7,
+        "chg_1d": -0.23,
+        "chg_5d": -5.23,
+        "chg_20d": -4.54,
+        "rsi": 50.9,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,
@@ -12306,10 +12234,10 @@
       "penalty": 3,
       "factors": {
         "price": 1.01,
-        "chg_1d": 0.41,
-        "chg_5d": -2.9,
-        "chg_20d": -7.56,
-        "rsi": 30.0,
+        "chg_1d": 0.46,
+        "chg_5d": -2.85,
+        "chg_20d": -7.51,
+        "rsi": 30.2,
         "pe": null,
         "fund_details": "N/A",
         "range_pos": 2,

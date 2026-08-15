@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Multi-Source Sentiment Analyzer — WSB, Reddit, News.
+Multi-Source POSITIVE Sentiment Analyzer
 
-All free tier — no paid APIs required.
+Sources: r/wallstreetbets, CNBC, Bloomberg, Yahoo Finance, Benzinga, Google News
+Filter: ONLY positive/bullish posts contribute to scores. Bearish items are dropped.
 """
 import asyncio
 import json
@@ -11,8 +12,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
-
-import aiohttp
+from scraper_utils import fetch_with_retry, DEFAULT_HEADERS
 
 # ─── Config ──────────────────────────────────────────────────────────────────
 HEADERS = {
@@ -24,7 +24,6 @@ HEADERS = {
     "Accept": "application/json, text/html",
     "Accept-Language": "en-US,en;q=0.9",
 }
-TIMEOUT = aiohttp.ClientTimeout(total=15)
 
 # ─── Sentiment keyword dictionaries ──────────────────────────────────────────
 BULLISH_TERMS = [
@@ -42,7 +41,7 @@ BULLISH_TERMS = [
     "beat earnings", "crushed earnings", "guidance raised", "raised outlook",
     "partnership", "contract win", "fda approval", "breakthrough", "rises",
     "rallies", "gains", "soars", "jumps", "climbs", "advances", "higher",
-    "outperform", "beat expectations", "record high", "all time high",
+    "outperform expectations", "record high", "all time high",
 ]
 
 BEARISH_TERMS = [
@@ -60,53 +59,40 @@ BEARISH_TERMS = [
     "resistance", "rejected", "failed breakout", "lower high", "death cross",
     "bankruptcy", "layoffs", "investigation", "sec probe", "lawsuit",
     "drops", "declines", "falls", "plunges", "tumbles", "sinks", "dumps",
-    "bear market", "recession", "inflation", "rate cut", "layoff", "fraud",
-    "investigation", "probe", "lawsuit", "litigation", "fine", "penalty",
+    "bear market", "inflation", "layoff", "fraud", "probe", "litigation",
+    "fine", "penalty",
 ]
 
-# ─── Top company name → ticker mapping ───────────────────────────────────────
+# ─── Ticker mapping ──────────────────────────────────────────────────────────
 NAME_TO_TICKER = {
     "APPLE": "AAPL", "TESLA": "TSLA", "NVIDIA": "NVDA", "MICROSOFT": "MSFT",
-    "AMAZON": "AMZN", "GOOGLE": "GOOGL", "GOOG": "GOOGL", "ALPHABET": "GOOGL",
-    "META": "META", "FACEBOOK": "META", "BERKSHIRE": "BRK-B",
-    "BERKSHIRE HATHAWAY": "BRK-B", "JPMORGAN": "JPM", "JOHNSON": "JNJ",
-    "JOHNSON AND JOHNSON": "JNJ", "VISA": "V", "MASTERCARD": "MA",
-    "WALMART": "WMT", "PROCTER": "PG", "PROCTER AND GAMBLE": "PG",
+    "AMAZON": "AMZN", "GOOGLE": "GOOGL", "ALPHABET": "GOOGL",
+    "META": "META", "FACEBOOK": "META", "BERKSHIRE HATHAWAY": "BRK-B",
+    "JPMORGAN": "JPM", "JOHNSON AND JOHNSON": "JNJ", "VISA": "V",
+    "MASTERCARD": "MA", "WALMART": "WMT", "PROCTER AND GAMBLE": "PG",
     "UNITEDHEALTH": "UNH", "HOME DEPOT": "HD", "CHEVRON": "CVX",
-    "LILLY": "LLY", "ELI LILLY": "LLY", "PFIZER": "PFE",
-    "COCA-COLA": "KO", "COCACOLA": "KO", "PEPSI": "PEP", "PEPSICO": "PEP",
-    "MCDONALD": "MCD", "MCDONALDS": "MCD", "DISNEY": "DIS",
+    "ELI LILLY": "LLY", "PFIZER": "PFE", "COCA-COLA": "KO",
+    "PEPSICO": "PEP", "MCDONALDS": "MCD", "DISNEY": "DIS",
     "WALT DISNEY": "DIS", "NETFLIX": "NFLX", "AMD": "AMD", "INTEL": "INTC",
     "QUALCOMM": "QCOM", "CISCO": "CSCO", "ORACLE": "ORCL", "SALESFORCE": "CRM",
     "ADOBE": "ADBE", "PAYPAL": "PYPL", "UBER": "UBER", "LYFT": "LYFT",
     "AIRBNB": "ABNB", "COINBASE": "COIN", "ROBINHOOD": "HOOD", "SNAP": "SNAP",
-    "SQUARE": "SQ", "BLOCK": "SQ", "BOSTON SCIENTIFIC": "BSX",
-    "STRYKER": "SYK", "THERMO FISHER": "TMO", "ABBOTT": "ABT",
-    "DANAHER": "DHR", "MERCK": "MRK", "BRISTOL": "BMY",
-    "BRISTOL-MYERS": "BMY", "GILEAD": "GILD", "REGENERON": "REGN",
-    "MODERNA": "MRNA", "VERTEX": "VRTX", "BIOGEN": "BIIB",
-    "EXXON": "XOM", "EXXONMOBIL": "XOM", "SHELL": "SHEL", "BP": "BP",
-    "CONOCOPHILLIPS": "COP", "SCHLUMBERGER": "SLB", "PHILLIPS": "PSX",
-    "GOLDMAN": "GS", "GOLDMAN SACHS": "GS", "MORGAN": "MS",
-    "MORGAN STANLEY": "MS", "BANK OF AMERICA": "BAC", "CITIGROUP": "C",
-    "CITI": "C", "WELLS": "WFC", "WELLS FARGO": "WFC",
-    "AMERICAN EXPRESS": "AXP", "BLACKROCK": "BLK", "BLACKSTONE": "BX",
-    "KKR": "KKR", "CARLYLE": "CG", "APOLLO": "APO", "BOEING": "BA",
-    "LOCKHEED": "LMT", "LOCKHEED MARTIN": "LMT", "NORTHROP": "NOC",
-    "RAYTHEON": "RTX", "GENERAL DYNAMICS": "GD", "CAT": "CAT",
-    "CATERPILLAR": "CAT", "DEERE": "DE", "JOHN DEERE": "DE",
-    "FORD": "F", "GENERAL MOTORS": "GM", "GM": "GM", "TOYOTA": "TM",
-    "HONDA": "HMC", "NIKE": "NKE", "STARBUCKS": "SBUX", "COSTCO": "COST",
-    "TARGET": "TGT", "LOWE": "LOW", "LOWES": "LOW", "BEST BUY": "BBY",
+    "SQUARE": "SQ", "BLOCK": "SQ", "MERCK": "MRK",
+    "BRISTOL-MYERS": "BMY", "GILEAD": "GILD", "MODERNA": "MRNA",
+    "VERTEX": "VRTX", "EXXON": "XOM", "EXXONMOBIL": "XOM", "SHELL": "SHEL",
+    "GOLDMAN SACHS": "GS", "MORGAN STANLEY": "MS", "BANK OF AMERICA": "BAC",
+    "CITIGROUP": "C", "WELLS FARGO": "WFC", "AMERICAN EXPRESS": "AXP",
+    "BLACKROCK": "BLK", "BOEING": "BA", "LOCKHEED MARTIN": "LMT",
+    "RAYTHEON": "RTX", "CATERPILLAR": "CAT", "FORD": "F", "GENERAL MOTORS": "GM",
+    "NIKE": "NKE", "STARBUCKS": "SBUX", "COSTCO": "COST",
     # Crypto
     "BITCOIN": "BTC-USD", "ETHEREUM": "ETH-USD", "SOLANA": "SOL-USD",
     "RIPPLE": "XRP-USD", "DOGECOIN": "DOGE-USD", "CARDANO": "ADA-USD",
     "AVALANCHE": "AVAX-USD", "CHAINLINK": "LINK-USD", "POLKADOT": "DOT-USD",
     "BITTENSOR": "TAO-USD", "LITECOIN": "LTC-USD", "NEAR": "NEAR-USD",
-    "UNISWAP": "UNI-USD", "APTOS": "APT-USD", "BINANCE": "BNB-USD",
-    "SHIBA INU": "SHIB-USD", "PEPE": "PEPE-USD", "SUI": "SUI-USD",
+    "UNISWAP": "UNI-USD", "APTOS": "APT-USD", "SHIBA INU": "SHIB-USD",
+    "PEPE": "PEPE-USD", "SUI": "SUI-USD",
 }
-
 
 # ─── Text-level sentiment scorer ─────────────────────────────────────────────
 def score_text(text: str) -> float:
@@ -122,258 +108,224 @@ def score_text(text: str) -> float:
     return (bull - bear) / total
 
 
+def is_positive(text: str) -> bool:
+    """Return True if text has net-positive sentiment."""
+    return score_text(text) > 0.05
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
-#  FREE PATH #1: Yahoo Finance RSS (always works, no auth needed)
+#  SOURCE #1: r/wallstreetbets via Reddit OAuth API (positive posts only)
 # ═══════════════════════════════════════════════════════════════════════════════
-async def fetch_yahoo_finance(session: aiohttp.ClientSession) -> List[dict]:
-    """Fetch Yahoo Finance news RSS titles. 100% free."""
+def fetch_wsb_positive(limit: int = 50, min_score: int = 5) -> List[dict]:
+    """Fetch WSB posts via Reddit OAuth API. Only returns positive posts."""
+    try:
+        from reddit_api_client import get_subreddit_posts
+        posts, status = get_subreddit_posts("wallstreetbets", sort="hot", limit=limit * 2)
+        if not isinstance(status, int) or status != 200:
+            return []
+
+        results = []
+        for p in posts:
+            score = p.get("score", 0)
+            if score < min_score:
+                continue
+            title = p.get("title", "")
+            if not is_positive(title):
+                continue
+            weight = min(4.0, 1.0 + score / 200)
+            results.append({
+                "text": title[:300],
+                "weight": weight,
+                "source": "reddit_wallstreetbets",
+                "score": score,
+            })
+            if len(results) >= limit:
+                break
+        print(f"      [wsb] {len(results)} positive posts")
+        return results
+    except Exception as e:
+        print(f"      [wsb] Error: {e}")
+        return []
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  SOURCE #2: CNBC RSS
+# ═══════════════════════════════════════════════════════════════════════════════
+def fetch_cnbc(limit: int = 20) -> List[dict]:
+    """Fetch CNBC top news via RSS, keep only positive headlines."""
+    url = "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    try:
+        r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2)
+        if not r:
+            return []
+        text = r.text
+        titles = re.findall(r"<title>([^<]+)</title>", text)
+        results = []
+        for t in titles[1:]:  # skip channel title
+            t_clean = t.replace("&amp;", "&").strip()
+            if not t_clean or len(t_clean) < 20:
+                continue
+            if not is_positive(t_clean):
+                continue
+            results.append({"text": t_clean, "weight": 1.0, "source": "cnbc"})
+        print(f"      [cnbc] {len(results)} positive headlines")
+        return results
+    except Exception as e:
+        print(f"      [cnbc] Error: {e}")
+        return []
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  SOURCE #3: Bloomberg RSS
+# ═══════════════════════════════════════════════════════════════════════════════
+def fetch_bloomberg(limit: int = 20) -> List[dict]:
+    """Fetch Bloomberg news via RSS, keep only positive headlines."""
+    urls = [
+        "https://feeds.bloomberg.com/business/news.rss",
+        "https://feeds.bloomberg.com/technology/news.rss",
+    ]
+    results = []
+    try:
+        for url in urls:
+            r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2)
+            if not r:
+                continue
+            text = r.text
+            titles = re.findall(r"<title>([^<]+)</title>", text)
+            for t in titles[1:]:
+                t_clean = t.replace("&amp;", "&").strip()
+                if not t_clean or len(t_clean) < 20:
+                    continue
+                if not is_positive(t_clean):
+                    continue
+                results.append({"text": t_clean, "weight": 1.0, "source": "bloomberg"})
+        print(f"      [bloomberg] {len(results)} positive headlines")
+        return results
+    except Exception as e:
+        print(f"      [bloomberg] Error: {e}")
+        return []
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  SOURCE #4: Yahoo Finance RSS
+# ═══════════════════════════════════════════════════════════════════════════════
+def fetch_yahoo_finance(limit: int = 20) -> List[dict]:
+    """Fetch Yahoo Finance news headlines, keep only positive ones."""
     url = "https://finance.yahoo.com/news/rssindex"
     try:
-        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-            text = await r.text()
-            titles = re.findall(r"<title>(.+?)</title>", text)
-            results = []
-            for t in titles[1:]:  # skip channel title
-                t_clean = (
-                    t.replace("<![CDATA[", "")
-                    .replace("]]>", "")
-                    .replace("&amp;", "&")
-                    .strip()
-                )
-                if t_clean and len(t_clean) > 15 and "Yahoo Finance" not in t_clean:
-                    results.append({"text": t_clean, "weight": 1.0, "source": "yahoo_finance"})
-            print(f"      [yahoo] Fetched {len(results)} headlines")
-            return results
+        r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2)
+        if not r:
+            return []
+        text = r.text
+        titles = re.findall(r"<title>([^<]+)</title>", text)
+        results = []
+        for t in titles[1:]:
+            t_clean = (
+                t.replace("<![CDATA[", "")
+                .replace("]]>", "")
+                .replace("&amp;", "&")
+                .strip()
+            )
+            if not t_clean or len(t_clean) < 20 or "Yahoo Finance" in t_clean:
+                continue
+            if not is_positive(t_clean):
+                continue
+            results.append({"text": t_clean, "weight": 1.0, "source": "yahoo_finance"})
+        print(f"      [yahoo] {len(results)} positive headlines")
+        return results
     except Exception as e:
         print(f"      [yahoo] Error: {e}")
         return []
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  FREE PATH #2: Finviz News (HTML scrape, no auth)
+#  SOURCE #5: Benzinga (via Google News since direct RSS is dead)
 # ═══════════════════════════════════════════════════════════════════════════════
-async def fetch_finviz_news(session: aiohttp.ClientSession) -> List[dict]:
-    """Scrape latest headlines from Finviz. 100% free."""
-    # Use the news feed endpoint which is simpler HTML
-    urls = [
-        "https://finviz.com/news.ashx",
-        "https://finviz.com/news.ashx?v=2",
-    ]
-    for url in urls:
-        try:
-            async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-                text = await r.text()
-                # Finviz headlines are in simple <a> links in table cells
-                # Pattern 1: <a href="...">TEXT</a> in news rows
-                headlines = re.findall(
-                    r'<a[^>]+href="https?://[^"]+"[^>]*>([^<]{12,200})</a>',
-                    text,
-                )
-                # Pattern 2: broader catch
-                if len(headlines) < 5:
-                    headlines = re.findall(
-                        r'>([^<]{20,200}[A-Z][a-z]+[^<]{5,100})<',
-                        text[:40000],
-                    )
-                seen = set()
-                results = []
-                for h in headlines:
-                    h = h.strip()
-                    # Filter out navigation/menu items
-                    if (h and h not in seen and 15 < len(h) < 250
-                        and h.lower() not in {"news", "home", "screener", "maps",
-                                               "groups", "portfolio", "insider",
-                                               "futures", "forex", "crypto", "backtests"}
-                        and not h.startswith(("http", "www", "finviz"))):
-                        seen.add(h)
-                        results.append({"text": h, "weight": 1.2, "source": "finviz"})
-                if results:
-                    print(f"      [finviz] Fetched {len(results)} headlines")
-                    return results
-        except Exception as e:
-            print(f"      [finviz] {url} error: {e}")
-    return []
-
-
-# ═══════════════════════════════════════════════════════════════════════════════
-#  FREE PATH #3: 24/7 Wall St (HTML scrape, no auth)
-# ═══════════════════════════════════════════════════════════════════════════════
-async def fetch_247wallst(session: aiohttp.ClientSession) -> List[dict]:
-    """Scrape headlines from 24/7 Wall Street. Free financial news."""
-    url = "https://247wallst.com/"
+def fetch_benzinga(limit: int = 15) -> List[dict]:
+    """Fetch Benzinga articles via Google News RSS, keep only positive."""
+    # Google News RSS: search for Benzinga-sourced articles
+    url = (
+        "https://news.google.com/rss/search?q=site:benzinga.com"
+        "+stock+OR+market+OR+earnings&hl=en-US&gl=US&ceid=US:en"
+    )
     try:
-        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-            text = await r.text()
-            headlines = re.findall(
-                r'<h[1-3][^>]*>(.*?)</h[1-3]>',
-                text,
-                re.DOTALL | re.IGNORECASE,
+        r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2)
+        if not r:
+            return []
+        text = r.text
+        # Parse title + source
+        items = re.findall(
+            r"<item>.*?<title>([^<]+)</title>.*?<source[^>]*>([^<]+)</source>.*?</item>",
+            text,
+            re.DOTALL,
+        )
+        results = []
+        for title, source in items:
+            title_clean = (
+                re.sub(r"&amp;", "&", title)
+                .replace("<![CDATA[", "")
+                .replace("]]>", "")
+                .strip()
             )
-            seen = set()
-            results = []
-            for h in headlines:
-                h_clean = re.sub(r"<[^>]+>", "", h).strip()
-                if h_clean and h_clean not in seen and 20 < len(h_clean) < 250:
-                    seen.add(h_clean)
-                    results.append({"text": h_clean, "weight": 0.9, "source": "247wallst"})
-            print(f"      [247wallst] Fetched {len(results)} headlines")
-            return results
+            if not title_clean or len(title_clean) < 20:
+                continue
+            if not is_positive(title_clean):
+                continue
+            results.append({"text": title_clean, "weight": 1.1, "source": "benzinga"})
+            if len(results) >= limit:
+                break
+        print(f"      [benzinga] {len(results)} positive headlines")
+        return results
     except Exception as e:
-        print(f"      [247wallst] Error: {e}")
+        print(f"      [benzinga] Error: {e}")
         return []
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  FREE PATH #4: MarketWatch latest (HTML scrape, no auth)
+#  SOURCE #6: Google News (general market headlines)
 # ═══════════════════════════════════════════════════════════════════════════════
-async def fetch_marketwatch(session: aiohttp.ClientSession) -> List[dict]:
-    """Scrape latest headlines from MarketWatch. Free tier."""
-    url = "https://www.marketwatch.com/latest-news"
+def fetch_google_news(limit: int = 20) -> List[dict]:
+    """Fetch general stock market news from Google News RSS, keep only positive."""
+    url = (
+        "https://news.google.com/rss/search?q="
+        "stock+market+OR+NASDAQ+OR+SP500+OR+earnings+OR+analyst+upgrade"
+        "&hl=en-US&gl=US&ceid=US:en"
+    )
     try:
-        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-            text = await r.text()
-            # Try multiple patterns for MarketWatch
-            results = []
-            seen = set()
-            
-            # Pattern 1: article headline links
-            for pattern in [
-                r'<a[^>]+href="https://www\.marketwatch\.com/story/[^"]*"[^>]*>([^<]{20,250})</a>',
-                r'<a[^>]+class="link"[^>]*>([^<]{20,250})</a>',
-                r'<h3[^>]*class="[^"]*article[^"]*"[^>]*>.*?<a[^>]*>([^<]{20,250})</a>.*?</h3>',
-                r'<h3[^>]*>.*?<a[^>]*>([^<]{20,250})</a>.*?</h3>',
-                r'"headline":"([^"]{20,300})"',
-            ]:
-                matches = re.findall(pattern, text[:80000], re.DOTALL | re.IGNORECASE)
-                for h in matches:
-                    h_clean = re.sub(r"<[^>]+>", "", h).strip()
-                    if h_clean and h_clean not in seen and 20 < len(h_clean) < 250:
-                        seen.add(h_clean)
-                        results.append({"text": h_clean, "weight": 1.0, "source": "marketwatch"})
-                if len(results) >= 10:
-                    break
-            
-            print(f"      [marketwatch] Fetched {len(results)} headlines")
-            return results
+        r = fetch_with_retry(url, headers=HEADERS, timeout=15, max_retries=2)
+        if not r:
+            return []
+        text = r.text
+        items = re.findall(
+            r"<item>.*?<title>([^<]+)</title>.*?<source[^>]*>([^<]+)</source>.*?</item>",
+            text,
+            re.DOTALL,
+        )
+        results = []
+        for title, source in items:
+            title_clean = (
+                re.sub(r"&amp;", "&", title)
+                .replace("<![CDATA[", "")
+                .replace("]]>", "")
+                .strip()
+            )
+            if not title_clean or len(title_clean) < 20:
+                continue
+            if not is_positive(title_clean):
+                continue
+            results.append({"text": title_clean, "weight": 1.0, "source": "google_news"})
+            if len(results) >= limit:
+                break
+        print(f"      [google_news] {len(results)} positive headlines")
+        return results
     except Exception as e:
-        print(f"      [marketwatch] Error: {e}")
-        return []
-
-
-# ═══════════════════════════════════════════════════════════════════════════════
-#  REDDIT via RSS (WSB only — works! Other subs hit 429 rate limit)
-# ═══════════════════════════════════════════════════════════════════════════════
-async def fetch_wsb_rss(session: aiohttp.ClientSession, limit: int = 50) -> List[dict]:
-    """Fetch WSB posts via Reddit RSS feed. No auth needed, works reliably."""
-    url = f"https://www.reddit.com/r/wallstreetbets/new/.rss?limit={limit}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; NewsBot/1.0)",
-        "Accept": "application/rss+xml, application/xml",
-    }
-    try:
-        async with session.get(url, headers=headers, timeout=TIMEOUT) as r:
-            if r.status != 200:
-                print(f"      [reddit] WSB RSS HTTP {r.status}")
-                return []
-            text = await r.text()
-            entries = text.split("<entry>")[1:]
-            posts = []
-            for entry in entries:
-                title_m = re.search(r"<title>([^<]+)</title>", entry)
-                pub_m = re.search(r"<published>([^<]+)</published>", entry)
-                content_m = re.search(
-                    r'<content type="html">(.+?)</content>', entry, re.DOTALL
-                )
-
-                if not (title_m and pub_m):
-                    continue
-
-                # Parse timestamp
-                dt_str = pub_m.group(1).replace("Z", "+00:00")
-                try:
-                    dt = datetime.fromisoformat(dt_str)
-                    now = datetime.now(timezone.utc)
-                    age_hours = max(0.1, (now - dt).total_seconds() / 3600)
-                except Exception:
-                    age_hours = 12.0
-
-                # Recency weight: newest = 4x boost, decays to 1x at 24h+
-                recency_weight = min(4.0, 1.0 + (24 / max(1, age_hours)))
-
-                title = title_m.group(1)
-
-                # Extract body text from escaped HTML content
-                body = ""
-                if content_m:
-                    raw = content_m.group(1)
-                    raw = (
-                        raw.replace("&lt;", "<")
-                        .replace("&gt;", ">")
-                        .replace("&amp;", "&")
-                        .replace("&quot;", '\"')
-                        .replace("&#32;", " ")
-                    )
-                    body = re.sub(r"<[^>]+>", " ", raw)
-                    body = re.sub(r"\s+", " ", body).strip()
-
-                full_text = title
-                if body and len(body) > 20:
-                    full_text += " " + body[:500]
-
-                posts.append({
-                    "text": full_text,
-                    "weight": recency_weight,
-                    "source": "reddit_wallstreetbets",
-                    "age_hours": round(age_hours, 1),
-                })
-
-            # Sort newest first
-            posts.sort(key=lambda x: x.get("age_hours", 99))
-            print(f"      [reddit] WSB RSS: {len(posts)} posts (recency-weighted)")
-            return posts
-    except Exception as e:
-        print(f"      [reddit] WSB RSS error: {e}")
-        return []
-
-
-# Legacy: Reddit JSON API — currently blocked by 403/429
-async def fetch_reddit_sub(session: aiohttp.ClientSession, subreddit: str, limit: int = 25):
-    """Reddit JSON API — currently returns 403 without OAuth. Use RSS instead for WSB."""
-    url = f"https://www.reddit.com/r/{subreddit}/new.json?limit={limit}"
-    try:
-        async with session.get(url, headers=HEADERS, timeout=TIMEOUT) as r:
-            if r.status in (403, 429):
-                print(f"      [reddit] r/{subreddit} blocked ({r.status}) — skipping")
-                return []
-            if r.status != 200:
-                return []
-            data = await r.json()
-            posts = []
-            for child in data.get("data", {}).get("children", []):
-                post = child.get("data", {})
-                title = post.get("title", "")
-                body = post.get("selftext", "")
-                if not title:
-                    continue
-                ups = post.get("ups", 0)
-                comments = post.get("num_comments", 0)
-                weight = 1.0 + (ups / 400) + (comments / 80)
-                posts.append({
-                    "text": title + " " + body,
-                    "weight": min(weight, 8.0),
-                    "source": f"reddit_{subreddit}",
-                    "ups": ups,
-                    "comments": comments,
-                })
-            return posts
-    except Exception as e:
-        print(f"      [reddit] r/{subreddit} error: {e}")
+        print(f"      [google_news] Error: {e}")
         return []
 
 
 # ─── Orchestrator ────────────────────────────────────────────────────────────
 class SentimentScorer:
-    """Fetch multi-source sentiment and score all tracked assets."""
+    """Multi-source sentiment — only positive posts feed into scores."""
 
     def __init__(self, known_tickers: Set[str]):
         self.tickers = {t.upper().replace(".", "-") for t in known_tickers}
@@ -381,35 +333,39 @@ class SentimentScorer:
 
     # ── Extraction ───────────────────────────────────────────────────────────
     def extract_tickers(self, text: str) -> Set[str]:
-        """Extract ticker mentions from a text block."""
+        """Extract ticker mentions from text."""
         found = set()
         if not text:
             return found
-
         text_upper = text.upper()
 
-        # 1. $TICKER format
+        # $TICKER format
         for match in re.finditer(r"\$([A-Za-z]{1,6})\b", text):
             t = match.group(1).upper()
             if t in self.tickers:
                 found.add(t)
 
-        # 2. Bare 3-5 letter uppercase words
+        # Bare 3-5 letter uppercase words
+        STOPWORDS = {
+            "CEO", "CFO", "CTO", "USD", "EPS", "GDP", "IPO", "ATH", "THE",
+            "FOR", "AND", "NEW", "OLD", "ALL", "HAS", "HAD", "WAS", "WERE",
+            "SAID", "SAYS", "WILL", "ARE", "BUT", "NOT", "THEIR", "THEY",
+        }
         for match in re.finditer(r"\b([A-Z]{3,5})\b", text_upper):
             t = match.group(1)
-            if t in self.tickers and t not in {"CEO", "CFO", "CTO", "USD", "EPS", "GDP", "IPO", "ATH", "ATHS", "THE", "FOR", "AND", "NEW", "OLD", "ALL", "CEO", "CFO", "CTO", "USD", "EPS", "GDP", "IPO", "ATH", "THE", "AND", "FOR", "ARE", "BUT", "NOT", "NEW", "OLD", "ALL", "HAS", "HAD", "WAS", "WERE", "ITS", "THEIR", "THEY", "SAID", "SAYS", "WILL"}:
+            if t in self.tickers and t not in STOPWORDS:
                 found.add(t)
 
-        # 3. Company name → ticker
+        # Company name → ticker
         for name, ticker in NAME_TO_TICKER.items():
             if name.upper() in text_upper:
                 t = ticker.upper()
                 if t in self.tickers:
                     found.add(t)
 
-        # 4. Crypto by symbol
+        # Crypto by bare symbol
         for match in re.finditer(
-            r"\b(BTC|ETH|SOL|XRP|DOGE|ADA|AVAX|LINK|DOT|TAO|LTC|SUI|NEAR|ICP|HBAR|UNI|APT|ARB|IMX|OP|STX|MKR|HYPE|RENDER|FET|INJ|GRT|PEPE|WIF|BONK|FLOKI|SHIB)\b",
+            r"\b(BTC|ETH|SOL|XRP|DOGE|ADA|AVAX|LINK|DOT|TAO|LTC|SUI|NEAR|ICP|HBAR|UNI|APT|ARB|IMX|OP|STX|MKR|RENDER|FET|INJ|GRT|PEPE|WIF|BONK|FLOKI|SHIB)\b",
             text_upper,
         ):
             t = match.group(1)
@@ -420,13 +376,17 @@ class SentimentScorer:
         return found
 
     def process_item(self, item: dict):
-        """Process a single content item."""
+        """Process a single content item — already confirmed positive upstream."""
         text = item.get("text", "")
         weight = item.get("weight", 1.0)
         source = item.get("source", "unknown")
         polarity = score_text(text)
-        tickers = self.extract_tickers(text)
 
+        # Second safety check — silently drop anything that somehow got negative
+        if polarity <= 0:
+            return
+
+        tickers = self.extract_tickers(text)
         for t in tickers:
             self.mentions[t].append({
                 "text": text[:250],
@@ -435,54 +395,43 @@ class SentimentScorer:
                 "source": source,
             })
 
-    # ── Fetch orchestrator (all working free sources) ─────────────────────────
-    async def fetch_all(self, session: aiohttp.ClientSession):
-        """Fetch from all working free sources."""
+    # ── Fetch orchestrator ───────────────────────────────────────────────────
+    def fetch_all(self):
+        """Fetch from all sources, filter for positive sentiment, score tickers."""
         sources = [
+            ("cnbc", fetch_cnbc),
+            ("bloomberg", fetch_bloomberg),
             ("yahoo_finance", fetch_yahoo_finance),
-            ("finviz", fetch_finviz_news),
-            ("247wallst", fetch_247wallst),
-            ("marketwatch", fetch_marketwatch),
+            ("benzinga", fetch_benzinga),
+            ("google_news", fetch_google_news),
         ]
 
         total_items = 0
         for name, fn in sources:
             try:
-                items = await fn(session)
+                items = fn()
                 for item in items:
                     self.process_item(item)
                 total_items += len(items)
-                print(f"      [sentiment] {name}: processed {len(items)} items")
+                print(f"      [sentiment] {name}: {len(items)} processed")
             except Exception as e:
                 print(f"      [sentiment] {name} failed: {e}")
 
-        # ── WSB via RSS (works!) ──────────────────────────────────────────────
+        # ── WSB via Reddit OAuth (sync call, kept last as it may be slower) ───
         try:
-            wsb_posts = await fetch_wsb_rss(session, limit=50)
+            wsb_posts = fetch_wsb_positive(limit=40)
             for post in wsb_posts:
                 self.process_item(post)
             total_items += len(wsb_posts)
-            print(f"      [sentiment] Reddit WSB: processed {len(wsb_posts)} posts")
+            print(f"      [sentiment] wsb: {len(wsb_posts)} processed")
         except Exception as e:
-            print(f"      [sentiment] WSB RSS failed: {e}")
+            print(f"      [sentiment] wsb failed: {e}")
 
-        # Fallback: attempt other Reddit subs via JSON (rarely works)
-        for sub in ["stocks", "investing", "cryptocurrency"]:
-            try:
-                posts = await fetch_reddit_sub(session, sub, limit=25)
-                for post in posts:
-                    self.process_item(post)
-                total_items += len(posts)
-                if posts:
-                    print(f"      [sentiment] Reddit r/{sub}: processed {len(posts)} posts")
-            except Exception:
-                pass
-
-        print(f"      [sentiment] Total items processed: {total_items}")
+        print(f"      [sentiment] TOTAL positive items processed: {total_items}")
 
     # ── Scoring ──────────────────────────────────────────────────────────────
     def get_scores(self) -> Dict[str, dict]:
-        """Compute final sentiment scores for all tickers with mentions."""
+        """Compute final sentiment scores for tickers with positive mentions."""
         scores = {}
         for ticker, mentions in self.mentions.items():
             if not mentions:
@@ -503,7 +452,7 @@ class SentimentScorer:
             # Popularity boost: log-scale mention volume → 0-8 pts
             pop_boost = min(8, (mention_count ** 0.5) * 1.5)
 
-            # Sentiment score base: 50 neutral, polarity shifts ±30, popularity adds up to 8
+            # Score base: 50 neutral, polarity shifts ±30, popularity adds up to 8
             raw = 50 + (avg_polarity * 30) + pop_boost
             sentiment_score = max(0, min(100, raw))
 
@@ -519,9 +468,17 @@ class SentimentScorer:
         return scores
 
 
-# ─── Convenience wrapper ─────────────────────────────────────────────────────
-async def fetch_sentiment(session: aiohttp.ClientSession, tickers: Set[str]) -> Dict[str, dict]:
-    """One-shot fetch sentiment for a set of tickers."""
+# ─── Convenience wrapper (sync version for full_pipeline.py) ─────────────────
+def fetch_sentiment(tickers: Set[str]) -> Dict[str, dict]:
+    """One-shot sync sentiment for a set of tickers."""
     scorer = SentimentScorer(tickers)
-    await scorer.fetch_all(session)
+    scorer.fetch_all()
     return scorer.get_scores()
+
+
+# ─── Legacy async wrapper (if anything still calls it) ───────────────────────
+import aiohttp
+
+async def fetch_sentiment_async(session: aiohttp.ClientSession, tickers: Set[str]) -> Dict[str, dict]:
+    """Async wrapper that ignores the session arg (all sources are sync now)."""
+    return fetch_sentiment(tickers)

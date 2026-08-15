@@ -481,7 +481,8 @@ def build_pick(pick, gen_at, label="This Week"):
 
 
 def inject(weekly, best_etf, metals, improving):
-    """Inject all weekly pick data into data.json."""
+    """Inject all weekly pick data into data.json and weekly_pick.json."""
+    # Inject into data.json (live dashboard feed)
     dj = BASE / "data.json"
     try:
         with open(dj, "r") as f:
@@ -489,6 +490,7 @@ def inject(weekly, best_etf, metals, improving):
     except Exception:
         data = {}
     data["weekly_pick"] = weekly
+    data["weekly_pick_v4"] = weekly  # distinguish from legacy
     if best_etf:
         data["best_etf"] = best_etf
     data["scored_metals"] = metals
@@ -496,6 +498,27 @@ def inject(weekly, best_etf, metals, improving):
     with open(dj, "w") as f:
         json.dump(data, f, indent=2)
     print("Injected into data.json")
+
+    # Also write weekly_pick.json (backward compatible)
+    wp = BASE / "weekly_pick.json"
+    weekly_legacy = dict(weekly)
+    # Build top_five from all_scores if available (passed via caller)
+    # best_etf is already built
+    if best_etf:
+        weekly_legacy["best_etf_of_week"] = {
+            "ticker": best_etf["top_pick"]["ticker"],
+            "name": best_etf["top_pick"]["name"],
+            "display_name": best_etf["top_pick"]["name"],
+            "price": best_etf["top_pick"]["price"],
+            "score": best_etf["top_pick"]["score"],
+            "change_7d": best_etf["top_pick"]["change_7d"],
+            "change_30d": best_etf["top_pick"]["change_30d"],
+            "category": best_etf["top_pick"].get("category", "ETF"),
+            "rationale": best_etf["rationale"],
+        }
+    with open(wp, "w") as f:
+        json.dump(weekly_legacy, f, indent=2)
+    print(f"Written weekly_pick.json: {wp}")
 
 
 def main():

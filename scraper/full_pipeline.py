@@ -531,47 +531,24 @@ BEARISH_TERMS = [
 # ─── Sentiment integration ──────────────────────────────────────────
 
 def analyze_sentiment_headlines(tickers: List[str]) -> Dict[str, Dict]:
-    """Fetch free news sentiment for tickers."""
-    # Use simple yfinance news
-    results = {}
-    for ticker in tickers[:15]:  # Top 15 only for speed
-        try:
-            t = yf.Ticker(ticker)
-            news = t.news
-            if not news:
-                continue
-            
-            bullish = 0
-            bearish = 0
-            total = 0
-            
-            for item in news[:5]:
-                title = item.get("title", "").lower() + " " + item.get("publisher", "").lower()
-                summary = item.get("summary", "").lower()
-                text = title + " " + summary
-                
-                b_score = sum(1 for term in BULLISH_TERMS if term in text)
-                be_score = sum(1 for term in BEARISH_TERMS if term in text)
-                
-                if b_score > be_score:
-                    bullish += 1
-                elif be_score > b_score:
-                    bearish += 1
-                total += 1
-            
-            score = 50 + (bullish - bearish) * 15 if total > 0 else 50
-            score = max(0, min(100, score))
-            
-            results[ticker] = {
-                "score": score,
-                "bullish": bullish,
-                "bearish": bearish,
-                "total": total,
-            }
-        except Exception:
-            pass
-    
-    return results
+    """Fetch positive-only multi-source sentiment for tickers.
+    Sources: r/wallstreetbets, CNBC, Bloomberg, Yahoo Finance, Benzinga, Google News.
+    Only bullish/positive posts contribute to scores.
+    """
+    try:
+        from sentiment_analyzer import fetch_sentiment
+        ticker_set = set(t.upper() for t in tickers)
+        scores = fetch_sentiment(ticker_set)
+        print(f"  [sentiment] Scored {len(scores)} tickers across WSB + CNBC + Bloomberg + Yahoo + Benzinga + Google News")
+        return scores
+    except Exception as e:
+        print(f"  [sentiment] Error: {e} — falling back to neutral")
+        return {}
+
+
+# ─── Legacy helper: neutral fallback ────────────────────────────────
+def _neutral_sentiment():
+    return {"sentiment_score": 50, "mentions": 0, "sources": {}}
 
 
 # ─── Combined scoring ───────────────────────────────────────────────
@@ -589,8 +566,10 @@ def combined_score(ticker: str, info: Dict, closes: List[float], volumes: List[f
     sent_factors = ["no sentiment data"]
     if sentiment and ticker in sentiment:
         s = sentiment[ticker]
-        sent_score = s["score"]
-        sent_factors = [f"news sentiment {sent_score:.0f}/100 ({s['bullish']} bull, {s['bearish']} bear)"]
+        sent_score = s.get("sentiment_score", 50)
+        mention_count = s.get("mentions", 0)
+        src_list = ", ".join(f"{k}:{v}" for k, v in s.get("sources", {}).items())
+        sent_factors = [f"positive sentiment {sent_score:.0f}/100 ({mention_count} mentions from {src_list})"]
     
     # Weighted combined
     combined = (
@@ -652,12 +631,11 @@ async def run_pipeline():
     
     print(f"[weekly_pick] Analyzing {len(prices)} assets...")
     
-    # Fetch sentiment for potential top candidates
-    # We do this after we know which tickers succeeded
+    # Fetch multi-source positive sentiment for the FULL universe
     sentiment = {}
     valid_tickers = list(prices.keys())
-    print(f"[weekly_pick] Fetching sentiment for top candidates...")
-    sentiment = analyze_sentiment_headlines(valid_tickers[:20])
+    print(f"[weekly_pick] Fetching positive sentiment for all {len(valid_tickers)} assets (WSB + CNBC + Bloomberg + Yahoo + Benzinga + Google News)...")
+    sentiment = analyze_sentiment_headlines(valid_tickers)
     
     # Score all assets
     results = []

@@ -601,21 +601,27 @@ def main():
     else:
         print(f"\n⚠️ NO QUALIFYING PICKS ≥{MIN_QUALIFYING_SCORE}. No asset met the threshold.")
         print(f"  Best scored: {scored[0]['ticker']} at {scored[0]['score']:.1f}")
-        # Still save a null weekly pick to keep dashboard honest
-        weekly = {
-            "week_label": "This Week",
-            "generated_at": output["generated_at"],
-            "top_pick": {
-                "ticker": "NONE",
-                "name": f"No qualifying pick (best: {scored[0]['ticker']} {scored[0]['score']:.1f})",
-                "score": 0,
-                "category": "N/A",
-                "factors": ["No asset scored ≥80"],
-            },
-            "rationale": f"No asset in the universe met the minimum qualifying score of {MIN_QUALIFYING_SCORE}. Highest scored was {scored[0]['ticker']} at {scored[0]['score']:.1f}.",
-            "top_five": [],
-        }
-        inject(weekly, None, [], improving)
+        # Always post the best pick with its actual score (sub-80 is still valid data)
+        weekly = build_pick(scored[0], output["generated_at"])
+        weekly["rationale"] = (
+            f"NOTE: No asset scored ≥{MIN_QUALIFYING_SCORE} this week. "
+            f"Showing the highest-scoring asset instead.\n\n"
+            + weekly["rationale"]
+        )
+        # Best ETF from all scored assets (not just qualifying)
+        top_etf = next((s for s in scored if s.get("type") == "etf"), None)
+        best_etf = build_pick(top_etf, output["generated_at"], "Best ETF") if top_etf else None
+        # Metals from all scored
+        top_metal = [s for s in scored if s.get("ticker") in {"GLD", "SLV", "IAU", "PPLT", "PALL", "CPER"} or s.get("category") in {"precious_metal", "gold"}][:10]
+
+        # Chart
+        try:
+            script = Path(__file__).resolve().parent / "generate_weekly_chart.py"
+            subprocess.run([sys.executable, str(script)], check=False, timeout=120)
+        except Exception as e:
+            print(f"Chart warn: {e}")
+
+        inject(weekly, best_etf, top_metal, improving)
 
 
 if __name__ == "__main__":

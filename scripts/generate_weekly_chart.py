@@ -164,7 +164,20 @@ def main():
     with open(SCORES_PATH) as f:
         scores = json.load(f)
 
-    top = scores["top_picks"][0]
+    picks = scores.get("top_picks", [])
+    if not picks:
+        print("[chart] No top picks available.", file=sys.stderr)
+        sys.exit(1)
+
+    # Check if we have qualifying picks (≥80)
+    qualifying = [p for p in picks if p.get("score", 0) >= 80]
+    if not qualifying:
+        print(f"[chart] No qualifying pick (≥80). Best is {picks[0]['ticker']} at {picks[0]['score']}. Generating placeholder.", file=sys.stderr)
+        # Generate chart for best available anyway, but highlight it's sub-threshold
+        top = picks[0]
+    else:
+        top = qualifying[0]
+
     print(f"[chart] Generating chart for {top['ticker']} ({top['name']})...")
     ok = generate(top["ticker"], top["name"], top["score"])
     sys.exit(0 if ok else 1)

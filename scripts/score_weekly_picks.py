@@ -11,9 +11,9 @@ Scoring (0-100 composite):
   Social Sentiment:   30 pts  (volume surge, 52w range position, consistency,
                                momentum alignment, relative strength)
 
-MINIMUM QUALIFYING SCORE: 80
-If no asset scores >= 80, the pipeline reports "No qualifying pick this week"
-and does NOT promote a sub-80 asset as top pick.
+MINIMUM QUALIFYING SCORE: 75
+If no asset scores >= 75, the pipeline reports "No qualifying pick this week"
+and does NOT promote a sub-75 asset as top pick.
 
 Historical scores appended to data/score_history.json weekly.
 """
@@ -27,7 +27,7 @@ BASE = Path.home() / "ai-news-dashboard"
 UNIVERSE = BASE / "data" / "universe.jsonl"
 SCORES   = BASE / "data" / "weekly_scores.json"
 HISTORY  = BASE / "data" / "score_history.json"
-MIN_QUALIFYING_SCORE = 80
+MIN_QUALIFYING_SCORE = 75
 MAX_WORKERS = 40
 CT = 12  # chart timeout
 FT = 5   # fund timeout
@@ -550,7 +550,7 @@ def main():
     scored.sort(key=lambda x: x["score"], reverse=True)
     elapsed = time.time() - start
 
-    # STRICT: only passes if score >= 80
+    # STRICT: only passes if score >= 75
     qualifying = [s for s in scored if s["score"] >= MIN_QUALIFYING_SCORE]
 
     # Save scores
@@ -601,27 +601,8 @@ def main():
     else:
         print(f"\n⚠️ NO QUALIFYING PICKS ≥{MIN_QUALIFYING_SCORE}. No asset met the threshold.")
         print(f"  Best scored: {scored[0]['ticker']} at {scored[0]['score']:.1f}")
-        # Always post the best pick with its actual score (sub-80 is still valid data)
-        weekly = build_pick(scored[0], output["generated_at"])
-        weekly["rationale"] = (
-            f"NOTE: No asset scored ≥{MIN_QUALIFYING_SCORE} this week. "
-            f"Showing the highest-scoring asset instead.\n\n"
-            + weekly["rationale"]
-        )
-        # Best ETF from all scored assets (not just qualifying)
-        top_etf = next((s for s in scored if s.get("type") == "etf"), None)
-        best_etf = build_pick(top_etf, output["generated_at"], "Best ETF") if top_etf else None
-        # Metals from all scored
-        top_metal = [s for s in scored if s.get("ticker") in {"GLD", "SLV", "IAU", "PPLT", "PALL", "CPER"} or s.get("category") in {"precious_metal", "gold"}][:10]
-
-        # Chart
-        try:
-            script = Path(__file__).resolve().parent / "generate_weekly_chart.py"
-            subprocess.run([sys.executable, str(script)], check=False, timeout=120)
-        except Exception as e:
-            print(f"Chart warn: {e}")
-
-        inject(weekly, best_etf, top_metal, improving)
+        # DO NOT inject a sub-threshold pick — keep previous pick or show none
+        print(f"  [INFO] Keeping previous weekly pick (no sub-threshold promotion).")
 
 
 if __name__ == "__main__":

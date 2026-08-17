@@ -86,7 +86,7 @@ def score_asset(ticker_info):
         
         return {
             'ticker': t,
-            'name': tk.info.get('shortName', tk.info.get('longName', t)),
+            'name': t,
             'price': round(price, 2),
             'score': total,
             'change_7d': round(chg_7d, 2),

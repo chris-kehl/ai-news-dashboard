@@ -86,7 +86,7 @@ def score_one(ticker_info):
 
         return {
             'ticker': t,
-            'name': t,
+            'name': tk.info.get('shortName', tk.info.get('longName', t)),
             'price': round(price, 2),
             'score': total,
             'change_7d': round(chg_7d, 2),
@@ -135,6 +135,14 @@ def run():
     best_etf = etf_scores[0] if etf_scores else None
 
     wp_file = ROOT / 'weekly_pick.json'
+    wp = {
+        'generated_at': datetime.now().isoformat(),
+        'week_label': week_label,
+        'top_pick': top,
+        'top_five': results[:5],
+    }
+    if best_etf:
+        wp['best_etf_of_week'] = {'top_pick': best_etf, 'week_label': week_label}
     json.dump(wp, open(wp_file, 'w'), indent=2)
     print(f'\n[OK] Written to {wp_file.name}: {top["name"]} ({top["ticker"]}) Score {top["score"]}')
 

@@ -169,10 +169,10 @@ def main():
         print("[chart] No top picks available.", file=sys.stderr)
         sys.exit(1)
 
-    # Check if we have qualifying picks (≥80)
-    qualifying = [p for p in picks if p.get("score", 0) >= 80]
+    # Check if we have qualifying picks (≥75)
+    qualifying = [p for p in picks if p.get("score", 0) >= 75]
     if not qualifying:
-        print(f"[chart] No qualifying pick (≥80). Best is {picks[0]['ticker']} at {picks[0]['score']}. Generating placeholder.", file=sys.stderr)
+        print(f"[chart] No qualifying pick (≥75). Best is {picks[0]['ticker']} at {picks[0]['score']}. Generating placeholder.", file=sys.stderr)
         # Generate chart for best available anyway, but highlight it's sub-threshold
         top = picks[0]
     else:

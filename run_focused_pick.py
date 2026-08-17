@@ -33,14 +33,33 @@ def load_universe():
     
     universe = []
     seen = set()
+
+    # Explicit ETF list — correct categorization
+    etf_tickers = frozenset([
+        'SPY','IVV','VOO','VTI','QQQ','IWM','VUG','VTV','VEA','VXUS',
+        'BND','AGG','LQD','HYG','TLT','IEF','SHY','GLD','SLV','IAU',
+        'VNQ','REET','VGT','XLK','XLF','XLE','XLI','XLP','XLU','XLB',
+        'XRT','ARKK','ARKQ','ARKW','PRNT','IZRL','BOTZ','ROBO','LIT',
+        'ICLN','PBW','QCLN','SMH','SOXX','FDN','SKYY','WCLD','CIBR',
+        'HACK','SILJ','URA','NLR','KOL','COPX','PICK','REMX',
+        'TAN','FAN','PDBC','DJP','^VIX'
+    ])
+
     for t in sp100 + crypto + metals + etfs:
         if t not in seen:
             seen.add(t)
-            cat = 'Crypto' if '-USD' in t else 'Precious Metal' if t.endswith('=F') and t[0] in 'GSIPH' else 'ETF' if len(t) <= 5 and not t.isalpha() and not t.endswith('=F') else 'Equity - S&P 500'
-            if t == '^VIX': cat = 'Index'
+            if '-USD' in t:
+                cat = 'Crypto'
+            elif t.endswith('=F') and t[0] in 'GSIPH':
+                cat = 'Precious Metal'
+            elif t in etf_tickers:
+                cat = 'ETF'
+            elif t == '^VIX':
+                cat = 'Index'
+            else:
+                cat = 'Equity - S&P 500'
             universe.append({'ticker': t, 'category': cat})
     return universe
-
 
 def score_asset(ticker_info):
     t = ticker_info['ticker']

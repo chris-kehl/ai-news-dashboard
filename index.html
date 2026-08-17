@@ -321,6 +321,49 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       </div>
     </div>
 
+    <!-- WEEKLY MARKET OUTLOOK -->
+    <div class="card" style="margin-top:12px;display:none" id="weekly-outlook-card">
+      <div class="card-hd">&#128200; WEEKLY MARKET OUTLOOK</div>
+      <div class="card-bd">
+        <div id="weekly-outlook-header" style="text-align:center;margin-bottom:16px">
+          <div style="font-size:.75rem;color:var(--tx3);margin-bottom:4px">Comprehensive Analysis of Key Benchmarks</div>
+          <div style="font-size:.9rem;font-weight:600;color:var(--acc)" id="outlook-analysis-date">Updated: --</div>
+          <div style="font-size:.7rem;color:var(--tx3);margin-top:4px;padding:4px 8px;border-radius:6px;background:var(--bg-el);display:inline-block">
+            <span id="outlook-pick-date">AI Weekly Pick: --</span>
+          </div>
+        </div>
+        <div id="weekly-outlook-chart-wrap" style="margin-bottom:16px;display:none">
+          <img id="weekly-outlook-chart-img" src="weekly_outlook_chart.png" alt="Benchmark Performance" style="width:100%;border-radius:8px;border:1px solid var(--brd)">
+        </div>
+        <div id="weekly-outlook-summary" style="margin-bottom:16px">
+          <div style="font-size:.85rem;font-weight:700;margin-bottom:8px;color:var(--tx2)">📊 Summary Table</div>
+          <div style="overflow-x:auto">
+            <table style="width:100%;font-size:.78rem;border-collapse:collapse" id="outlook-table">
+              <tr style="text-align:left;border-bottom:1px solid var(--brd);color:var(--tx3)">
+                <th style="padding:8px 6px">Benchmark</th>
+                <th style="padding:8px 6px">Price</th>
+                <th style="padding:8px 6px">1D</th>
+                <th style="padding:8px 6px">7D</th>
+                <th style="padding:8px 6px">30D</th>
+                <th style="padding:8px 6px">60D</th>
+                <th style="padding:8px 6px">RSI</th>
+                <th style="padding:8px 6px">Signal</th>
+                <th style="padding:8px 6px">Key Notes</th>
+              </tr>
+              <tr id="outlook-row-SPY" style="border-bottom:1px solid var(--brd)"><td style="padding:8px 6px">S&P 500 (SPY)</td><td style="padding:8px 6px;font-family:JetBrains Mono">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px;font-size:.72rem;color:var(--tx3)">--</td></tr>
+              <tr id="outlook-row-IWM" style="border-bottom:1px solid var(--brd)"><td style="padding:8px 6px">Russell 2000 (IWM)</td><td style="padding:8px 6px;font-family:JetBrains Mono">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px;font-size:.72rem;color:var(--tx3)">--</td></tr>
+              <tr id="outlook-row-ACWX" style="border-bottom:1px solid var(--brd)"><td style="padding:8px 6px">ACWX (World ex-US)</td><td style="padding:8px 6px;font-family:JetBrains Mono">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px;font-size:.72rem;color:var(--tx3)">--</td></tr>
+              <tr id="outlook-row-EMXC" style="border-bottom:1px solid var(--brd)"><td style="padding:8px 6px">EMXC (EM ex-China)</td><td style="padding:8px 6px;font-family:JetBrains Mono">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px">--</td><td style="padding:8px 6px;font-size:.72rem;color:var(--tx3)">--</td></tr>
+            </table>
+          </div>
+        </div>
+        <div id="outlook-rationale" style="font-size:.85rem;line-height:1.6;padding:12px;background:var(--bg-el);border-radius:8px;border:1px solid var(--brd);color:var(--tx)">
+          <strong>Market Narrative:</strong> Analysis loading...
+        </div>
+        <div id="weekly-outlook-when" style="font-size:.7rem;color:var(--tx3);margin-top:12px;text-align:right"></div>
+      </div>
+    </div>
+
     <!-- MARKET ANALYSIS: CHARTS + POLL -->
     <div class="card" style="margin-top:12px">
       <div class="card-hd">&#128202; MARKET ANALYSIS — CHARTS</div>
@@ -1076,6 +1119,86 @@ function renderAll(d){
       $('weekly-pick-loading').textContent='Weekly pick unavailable';
     }
   }catch(e){console.error('weekly_pick',e);}
+
+  // Weekly Market Outlook rendering
+  try{
+    var wo=d.weekly_outlook||{};
+    var bmMap=wo.benchmarks||{};
+    if(Object.keys(bmMap).length>0){
+      $('weekly-outlook-card').style.display='block';
+      $('outlook-analysis-date').textContent='Updated: '+(wo.analysis_date||'');
+      var wpDate=d.weekly_pick&&d.weekly_pick.week_label?d.weekly_pick.week_label:(d.weekly_pick&&d.weekly_pick.generated_at?d.weekly_pick.generated_at.slice(0,10):'');
+      $('outlook-pick-date').textContent='AI Weekly Pick: '+wpDate;
+      var cWrap=$('weekly-outlook-chart-wrap');
+      var cImg=$('weekly-outlook-chart-img');
+      if(cWrap&&cImg){
+        cImg.src='weekly_outlook_chart.png?v='+Date.now();
+        cWrap.style.display='block';
+      }
+      var bms=['SPY','IWM','ACWX','EMXC'];
+      for(var b=0;b<bms.length;b++){
+        var ticker=bms[b];
+        var info=bmMap[ticker]||bmMap[ticker.toLowerCase()]||{};
+        var row=$('outlook-row-'+ticker);
+        if(row){
+          var cells=row.getElementsByTagName('td');
+          if(cells.length>=9){
+            var c1d=info.change_1d||0;
+            var c7d=info.change_7d||0;
+            var c30d=info.change_30d||0;
+            var c60d=info.change_60d||0;
+            var sig=info.signal||'NEUTRAL';
+            var sCol=sig==='BULLISH'?'var(--good)':sig==='BEARISH'?'var(--danger)':'var(--accent)';
+            cells[1].textContent='$'+(info.current||info.price||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+            cells[2].innerHTML='<span style="color:'+(c1d>=0?'var(--good)':'var(--danger)')+'">'+(c1d>=0?'+':'')+c1d.toFixed(2)+'%</span>';
+            cells[3].innerHTML='<span style="color:'+(c7d>=0?'var(--good)':'var(--danger)')+'">'+(c7d>=0?'+':'')+c7d.toFixed(2)+'%</span>';
+            cells[4].innerHTML='<span style="color:'+(c30d>=0?'var(--good)':'var(--danger)')+'">'+(c30d>=0?'+':'')+c30d.toFixed(2)+'%</span>';
+            cells[5].innerHTML='<span style="color:'+(c60d>=0?'var(--good)':'var(--danger)')+'">'+(c60d>=0?'+':'')+c60d.toFixed(2)+'%</span>';
+            cells[6].textContent=info.rsi!=null?info.rsi.toFixed(1):'--';
+            cells[7].innerHTML='<span style="color:'+sCol+';font-weight:600">'+sig+'</span>';
+            cells[8].textContent=info.notes||'';
+          }
+        }
+      }
+      var narr=$('outlook-rationale');
+      if(narr){
+        var spyObj=bmMap.SPY||bmMap.spy||{};
+        var iwmObj=bmMap.IWM||bmMap.iwm||{};
+        var acwxObj=bmMap.ACWX||bmMap.acwx||{};
+        var emxcObj=bmMap.EMXC||bmMap.emxc||{};
+        var bullCount=0;
+        if(spyObj.signal==='BULLISH') bullCount++;
+        if(iwmObj.signal==='BULLISH') bullCount++;
+        if(acwxObj.signal==='BULLISH') bullCount++;
+        if(emxcObj.signal==='BULLISH') bullCount++;
+        var neutCount=0;
+        if(spyObj.signal==='NEUTRAL') neutCount++;
+        if(iwmObj.signal==='NEUTRAL') neutCount++;
+        if(acwxObj.signal==='NEUTRAL') neutCount++;
+        if(emxcObj.signal==='NEUTRAL') neutCount++;
+        var narrative='';
+        if(bullCount>=3){
+          narrative='<strong>&#128002; Global Risk-On:</strong> U.S. large-caps, small-caps, and international markets are all flashing bullish signals. S&P 500 at 90-day highs with momentum intact. EMXC leading the short-term charge. ACWX benefiting from dollar softness. <strong>Theme:</strong> Be long equities, overweight EM and small-cap (IWM/EMXC), trim defensive hedges.';
+        }else if(bullCount>=2 && neutCount>=2){
+          narrative='<strong>&#9878;&#65039; Selective & Cautious:</strong> Markets showing mixed but mostly constructive signals. S&P 500 consolidating while international markets surge. Breadth improving via Russell 2000. Avoid chasing at extended levels. <strong>Theme:</strong> Diversify across SPY/IWM/ACWX/EMXC, use pullbacks as entry points.';
+        }else if(spyObj.signal==='NEUTRAL'){
+          narrative='<strong>&#9888;&#65039; Neutral Caution:</strong> S&P 500 lacks directional conviction. Some benchmarks are overbought (ACWX RSI '+acwxObj.rsi+'). Earnings season volatility could trigger mean-reversion. <strong>Theme:</strong> Reduce position sizes, raise cash, wait for a clear breakout above resistance or breakdown below support.';
+        }else{
+          narrative='<strong>&#128200; Mixed Signals:</strong> Markets are diverging across segments. Review individual position risk. <strong>Theme:</strong> Stay balanced with a barbell approach between risk-on and defensive assets.';
+        }
+        narr.innerHTML=narrative;
+      }
+      $('weekly-outlook-when').textContent='Generated: '+(wo.generated_at||'');
+      // Sync timestamps in chart tabs
+      var ad=wo.analysis_date||'';
+      var tsSpx=$('ma-ts-spx'); if(tsSpx) tsSpx.textContent='📊 Analysis last updated: '+ad;
+      var tsRty=$('ma-ts-rty'); if(tsRty) tsRty.textContent='📊 Analysis last updated: '+ad;
+      var tsAcwx=$('ma-ts-acwx'); if(tsAcwx) tsAcwx.textContent='📊 Analysis last updated: '+ad;
+      var tsEmxc=$('ma-ts-emxc'); if(tsEmxc) tsEmxc.textContent='📊 Analysis last updated: '+ad;
+    }else{
+      $('weekly-outlook-card').style.display='none';
+    }
+  }catch(woErr){console.error('weekly_outlook',woErr);}
 
   // Advanced Tech Analysis (earnings + technicals + sentiment scoring)
   try{

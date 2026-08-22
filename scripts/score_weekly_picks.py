@@ -11,9 +11,13 @@ Scoring (0-100 composite):
   Social Sentiment:   30 pts  (volume surge, 52w range position, consistency,
                                momentum alignment, relative strength)
 
-MINIMUM QUALIFYING SCORE: 75
-If no asset scores >= 75, the pipeline reports "No qualifying pick this week"
-and does NOT promote a sub-75 asset as top pick.
+MINIMUM QUALIFYING SCORE: 70
+RECALIBRATION NOTES (Aug 2026):
+  - Technical tightened: Momentum thresholds raised, rebound bonus removed
+  - Fundamental gates: Stocks must have positive rev growth OR EPS growth
+  - Consistency bonus: +5 for low-vol positive 1D/5D/20D alignment
+  - RSI penalty if >72 (overbought)
+  - 20D decline penalty for stocks
 
 Historical scores appended to data/score_history.json weekly.
 """

@@ -219,23 +219,23 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         </div>
         <div style="padding:12px 14px">
           <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-            <div style="font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace" id="weekly-pick-banner-name">IRM</div>
-            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-banner-ticker">IRM</div>
+            <div style="font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace" id="weekly-pick-banner-name">MRNA</div>
+            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-banner-ticker">MRNA</div>
             <div style="flex:1"></div>
             <div style="display:flex;align-items:center;gap:8px">
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Score</div>
-                <div style="font-size:1.4rem;font-weight:800;color:var(--good)" id="weekly-pick-banner-score">77</div>
+                <div style="font-size:1.4rem;font-weight:800;color:var(--good)" id="weekly-pick-banner-score">86</div>
               </div>
               <div style="width:1px;height:28px;background:var(--brd)"></div>
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Price</div>
-                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-price">$129.90</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-price">$145.13</div>
               </div>
               <div style="width:1px;height:28px;background:var(--brd)"></div>
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">7D</div>
-                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-7d">+6.9%</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-7d">+129.2%</div>
               </div>
             </div>
           </div>
@@ -389,19 +389,19 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             </div>
             <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px">
               <div style="flex:1;min-width:240px">
-                <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">IRM</div>
-                <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">IRM</div>
-                <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">$129.90</div>
+                <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">MRNA</div>
+                <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">MRNA</div>
+                <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">$145.13</div>
                 <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
-                  <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">+6.9%</span></div>
-                  <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">+4.6%</span></div>
-                  <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">56.8</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">+129.2%</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">+168.4%</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">74.7</span></div>
                 <div style="font-size:.85rem;color:var(--tx3)">Buzz: <span id="weekly-pick-sent" style="font-weight:600">--</span></div>
                 </div>
               </div>
               <div style="min-width:150px;text-align:center">
                 <div style="font-size:.75rem;color:var(--tx3);text-transform:uppercase;margin-bottom:4px">Weekly Score</div>
-                <div style="font-size:3rem;font-weight:800;color:var(--good)" id="weekly-pick-score">77</div>
+                <div style="font-size:3rem;font-weight:800;color:var(--good)" id="weekly-pick-score">86</div>
                 <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-category">EQUITY - S&P 500</div>
                 <div id="weekly-pick-sent-badge" style="display:none;margin-top:4px;font-size:.7rem;padding:2px 8px;border-radius:4px;background:var(--bg-el);color:var(--tx3)">Social</div>
               </div>
@@ -987,9 +987,9 @@ function renderAll(d){
     var topPick=wp.top_pick||{};
     // Fallback: embedded ABNB pick to ensure display
     if(!topPick.name){
-      topPick={ticker:'IRM',name:'IRM',display_name:'Iron Mountain Inc',price:129.9,signal:'BULLISH',score:77,change_7d:6.86,change_30d:4.56,category:'Equity - S&P 500',rsi:56.8,week_label:'This Week',generated_at:'2026-08-17T15:25:22'};
+      topPick={ticker:'MRNA',name:'MRNA',display_name:'Moderna Inc',price:145.13,signal:'NEUTRAL',score:86,change_7d:129.2,change_30d:168.4,category:'Equity - S&P 500',rsi:74.7,week_label:'This Week',generated_at:'2026-08-22T18:50:29'};
       wp={week_label:'This Week',top_pick:topPick};
-      console.log('[weekly_pick] Using embedded fallback: IRM');
+      console.log('[weekly_pick] Using embedded fallback: MRNA');
     }
     if(topPick.name){
       try{$('weekly-pick-name').textContent=topPick.name;}catch(e){}

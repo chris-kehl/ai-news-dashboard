@@ -377,15 +377,36 @@ def score_one(item):
     # MACD Rising score (0-15)
     _, _, _, macd_strength = calc_macd(chart["closes"])
 
-    # Four-pillar composite
-    comp = tech["score"] + fs + macd_strength + sent
+    # Consistency bonus: low-vol positive momentum across all timeframes
+    volatility = 100
+    if len(chart["closes"]) >= 21:
+        rets = [(chart["closes"][i] / chart["closes"][i-1] - 1) * 100 for i in range(-20, 0) if chart["closes"][i-1] != 0]
+        if rets:
+            avg = sum(rets) / len(rets)
+            volatility = (sum((r - avg)**2 for r in rets) / len(rets)) ** 0.5
+    
+    cons_bonus = 0
+    if tech["chg_1d"] > 0 and tech["chg_5d"] > 0 and tech["chg_20d"] > 0:
+        if volatility < 3.0:
+            cons_bonus = 5
+        else:
+            cons_bonus = 3
+
+    # Four-pillar composite + consistency
+    comp = tech["score"] + fs + macd_strength + sent + cons_bonus
 
     # Dynamic penalties
     pen = 0
-    if tech["rsi"] > 82: pen += 5        # overbought warning
+    if tech["rsi"] > 82: pen += 5
     elif tech["rsi"] > 78: pen += 3
-    if tech["chg_5d"] < -5: pen += 5      # recent decline
-    if tech["sma20"] < tech["sma50"] * 0.95: pen += 3  # SMA compression
+    if tech["chg_5d"] < -5: pen += 5
+    if tech["sma20"] < tech["sma50"] * 0.95: pen += 3
+    # RECALIBRATION: steeper penalty for 20D decline in stocks
+    if item.get("type") == "stock" and tech["chg_20d"] <= 0:
+        pen += 3
+    # RECALIBRATION: RSI penalty if overbought (>72)
+    if tech["rsi"] > 72:
+        pen += 2
 
     final = max(0, min(100, comp - pen))
 
@@ -399,6 +420,8 @@ def score_one(item):
         "fund_score": fs,
         "macd_score": macd_strength,
         "sentiment_score": sent,
+        "consistency_bonus": cons_bonus,
+        "volatility": round(volatility, 2),
         "penalty": pen,
         "factors": {
             "price": round(tech["price"], 2),

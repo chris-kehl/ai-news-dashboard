@@ -2168,12 +2168,12 @@
   },
   "weekly_pick": {
     "week_label": "This Week",
-    "generated_at": "2026-08-22T18:37:33.554079",
+    "generated_at": "2026-08-22T18:50:29.864394",
     "top_pick": {
       "ticker": "MRNA",
       "name": "MRNA",
       "price": 145.13,
-      "score": 85,
+      "score": 86,
       "category": "sp500",
       "change_7d": 129.2,
       "change_30d": 168.41,
@@ -2185,17 +2185,17 @@
         "S:26"
       ]
     },
-    "rationale": "Score: 85/100 (Tech 28/30, Fund 16/25, MACD 15/15, Sentiment 26/30)\n\nPrice: $145.13 | 5d: 129.2% | 20d: 168.4% | RSI: 74.7\n\nMACD Bullish: 15/15 | Momentum: 8\n\nFundamentals: N/A\n\nDisclaimer: Not financial advice.",
+    "rationale": "Score: 86/100 (Tech 28/30, Fund 16/25, MACD 15/15, Sentiment 26/30)\n\nPrice: $145.13 | 5d: 129.2% | 20d: 168.4% | RSI: 74.7\n\nMACD Bullish: 15/15 | Momentum: 8\n\nFundamentals: N/A\n\nDisclaimer: Not financial advice.",
     "top_five": []
   },
   "weekly_pick_v4": {
     "week_label": "This Week",
-    "generated_at": "2026-08-22T18:37:33.554079",
+    "generated_at": "2026-08-22T18:50:29.864394",
     "top_pick": {
       "ticker": "MRNA",
       "name": "MRNA",
       "price": 145.13,
-      "score": 85,
+      "score": 86,
       "category": "sp500",
       "change_7d": 129.2,
       "change_30d": 168.41,
@@ -2207,92 +2207,121 @@
         "S:26"
       ]
     },
-    "rationale": "Score: 85/100 (Tech 28/30, Fund 16/25, MACD 15/15, Sentiment 26/30)\n\nPrice: $145.13 | 5d: 129.2% | 20d: 168.4% | RSI: 74.7\n\nMACD Bullish: 15/15 | Momentum: 8\n\nFundamentals: N/A\n\nDisclaimer: Not financial advice.",
+    "rationale": "Score: 86/100 (Tech 28/30, Fund 16/25, MACD 15/15, Sentiment 26/30)\n\nPrice: $145.13 | 5d: 129.2% | 20d: 168.4% | RSI: 74.7\n\nMACD Bullish: 15/15 | Momentum: 8\n\nFundamentals: N/A\n\nDisclaimer: Not financial advice.",
     "top_five": []
   },
   "best_etf": {
     "week_label": "Best ETF",
-    "generated_at": "2026-08-22T18:37:33.554079",
+    "generated_at": "2026-08-22T18:50:29.864394",
     "top_pick": {
-      "ticker": "ARKG",
-      "name": "ARKG",
-      "price": 49.45,
-      "score": 77,
+      "ticker": "XHE",
+      "name": "XHE",
+      "price": 96.68,
+      "score": 82,
       "category": "etf",
-      "change_7d": 13.81,
-      "change_30d": 30.79,
-      "rsi": 81.6,
+      "change_7d": 1.49,
+      "change_30d": 13.5,
+      "rsi": 61.8,
       "factors": [
-        "T:26",
+        "T:25",
         "F:18",
         "M:10",
-        "S:26"
+        "S:24"
       ]
     },
-    "rationale": "Score: 77/100 (Tech 26/30, Fund 18/25, MACD 10/15, Sentiment 26/30)\n\nPrice: $49.45 | 5d: 13.8% | 20d: 30.8% | RSI: 81.6\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
+    "rationale": "Score: 82/100 (Tech 25/30, Fund 18/25, MACD 10/15, Sentiment 24/30)\n\nPrice: $96.68 | 5d: 1.5% | 20d: 13.5% | RSI: 61.8\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
     "top_five": []
   },
-  "scored_metals": [],
+  "scored_metals": [
+    {
+      "ticker": "PALL",
+      "name": "PALL",
+      "type": "commodity",
+      "category": "precious_metal",
+      "score": 75,
+      "tech_score": 27,
+      "fund_score": 16,
+      "macd_score": 10,
+      "sentiment_score": 17,
+      "consistency_bonus": 5,
+      "volatility": 2.69,
+      "penalty": 0,
+      "factors": {
+        "price": 24.45,
+        "chg_1d": 1.03,
+        "chg_5d": 2.17,
+        "chg_20d": 8.38,
+        "rsi": 63.5,
+        "pe": null,
+        "fund_details": "N/A",
+        "range_pos": 2,
+        "vol_surge": 3,
+        "momentum_align": 8,
+        "rsi_align": 4,
+        "macd_bullish": 10
+      }
+    }
+  ],
   "improving_picks": [
     {
       "ticker": "MRNA",
       "name": "MRNA",
-      "score": 85,
-      "trend": "\u2191 +32.0"
+      "score": 86,
+      "trend": "\u2191 +33.0"
     },
     {
       "ticker": "EOG",
       "name": "EOG",
-      "score": 77,
-      "trend": "\u2191 +8.0"
-    },
-    {
-      "ticker": "FCX",
-      "name": "FCX",
-      "score": 77,
-      "trend": "\u2191 +16.0"
-    },
-    {
-      "ticker": "WTW",
-      "name": "WTW",
-      "score": 77,
-      "trend": "\u2191 +19.0"
+      "score": 82,
+      "trend": "\u2191 +13.0"
     },
     {
       "ticker": "RVTY",
       "name": "RVTY",
-      "score": 77,
-      "trend": "\u2191 +10.0"
+      "score": 82,
+      "trend": "\u2191 +15.0"
+    },
+    {
+      "ticker": "WTW",
+      "name": "WTW",
+      "score": 82,
+      "trend": "\u2191 +24.0"
     },
     {
       "ticker": "BMY",
       "name": "BMY",
-      "score": 76,
-      "trend": "\u2191 +14.0"
+      "score": 81,
+      "trend": "\u2191 +19.0"
     },
     {
-      "ticker": "NDSN",
-      "name": "NDSN",
-      "score": 76,
-      "trend": "\u2191 +9.0"
+      "ticker": "SCHE",
+      "name": "SCHE",
+      "score": 79,
+      "trend": "\u2191 +12.0"
+    },
+    {
+      "ticker": "FCX",
+      "name": "FCX",
+      "score": 78,
+      "trend": "\u2191 +17.0"
     },
     {
       "ticker": "ILMN",
       "name": "ILMN",
-      "score": 75,
-      "trend": "\u2191 +14.0"
+      "score": 78,
+      "trend": "\u2191 +17.0"
     },
     {
       "ticker": "IQV",
       "name": "IQV",
-      "score": 75,
-      "trend": "\u2191 +11.0"
+      "score": 78,
+      "trend": "\u2191 +14.0"
     },
     {
-      "ticker": "ICP-USD",
-      "name": "ICP",
-      "score": 74,
-      "trend": "\u2191 +22.0"
+      "ticker": "JNJ",
+      "name": "JNJ",
+      "score": 77,
+      "trend": "\u2191 +16.0"
     }
   ]
 }

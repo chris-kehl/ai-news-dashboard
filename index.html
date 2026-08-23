@@ -373,10 +373,10 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
       <div class="card-bd">
         <div class="sub-tab-nav" role="tablist" aria-label="Market Analysis Indices">
           <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-pick" onclick="switchSubTab('pick')">&#129302; AI Weekly Pick</button>
-          <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&amp;P 500 (NEUTRAL)</button>
-          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="true" aria-controls="sub-tab-spx" onclick="switchSubTab('spx')">S&amp;P 500 (BULLISH)</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-rty" onclick="switchSubTab('rty')">Russell 2000 (BULLISH)</button>
           <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-acwx" onclick="switchSubTab('acwx')">ACWX (BULLISH)</button>
-          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC (NEUTRAL)</button>
+          <button class="sub-tab-btn" role="tab" aria-selected="false" aria-controls="sub-tab-emxc" onclick="switchSubTab('emxc')">EMXC (BULLISH)</button>
         </div>
 
         <!-- AI Weekly Pick -->
@@ -467,32 +467,72 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         </div>
 
         <div id="sub-tab-spx" class="sub-tab-panel active">
-          <a class="tv-link" href="https://www.tradingview.com/chart/SPX/hPxW9y1P-S-P-500-Neutral-for-the-week-3-7-August/" target="_blank" rel="noopener">S&amp;P 500 — Neutral for the week 3–7 August ↗</a>
-          <img class="tv-img" src="https://s3.tradingview.com/h/hPxW9y1P_big.png" alt="S&amp;P 500 chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Chart snapshot expired. Click link above for full chart.</div>')">
-          <div class="tv-desc"><strong>Bias: NEUTRAL — Score 5.0/10</strong> — S&amp;P 500 consolidating in a range. Support ~$7,288 / Resistance ~$7,600. Key reports (jobs data) will drive volatility this week. Market too volatile for a directional call.</div>
-          <div class="ma-timestamp" id="ma-ts-spx">📊 Analysis last updated: 2026-08-13 </div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+            <div style="font-size:1.5rem;font-weight:700">S&amp;P 500 (SPY)</div>
+            <div style="font-size:.85rem;color:var(--good);background:rgba(34,197,94,.1);padding:2px 10px;border-radius:4px;font-weight:600">🟢 BULLISH</div>
+            <div style="flex:1"></div>
+            <div style="font-size:.9rem;font-family:'JetBrains Mono',monospace">$765.72</div>
+          </div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap;font-size:.85rem">
+            <span>1D: <strong style="color:var(--good)">+0.41%</strong></span>
+            <span>7D: <strong style="color:var(--danger)">−1.37%</strong></span>
+            <span>30D: <strong style="color:var(--good)">+3.73%</strong></span>
+            <span>RSI: <strong>57.6</strong></span>
+          </div>
+          <div class="tv-desc"><strong>📊 Analysis — August 23, 2026</strong><br><br>SPY is consolidating above MA20 ($755) and MA50 ($745), maintaining bullish trend alignment. The −1.37% weekly pullback is healthy profit-taking after a strong +30D run. RSI at 57.6 leaves room for upside without overbought risk. Volume was light during the decline, suggesting lack of conviction from sellers.<br><br><strong>Levels:</strong> Support $750–$755 / Resistance $775–$780. A break above $780 targets $790+. A close below $745 would threaten the uptrend.<br><br><strong>Theme:</strong> Stay long. Use this pullback as an entry opportunity.</div>
+          <div style="margin:12px 0"><img src="weekly_outlook_chart.png?v=0823" alt="Benchmark comparison" style="width:100%;max-width:800px;border-radius:8px;border:1px solid var(--brd)"></div>
+          <div class="ma-timestamp" id="ma-ts-spx">📊 Analysis last updated: August 23, 2026</div>
         </div>
         <div id="sub-tab-rty" class="sub-tab-panel">
-          <a class="tv-link" href="https://www.tradingview.com/chart/RTY/zszR1Ut7-Russel-2000-Bullish-for-week-10-14-August-2026/" target="_blank" rel="noopener">Russell 2000 — Bullish week 10-14 August 2026 ↗</a>
-          <img class="tv-img" src="https://s3.tradingview.com/z/zszR1Ut7_big.png" alt="Russell 2000 chart" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=\'tv-desc\' style=\'text-align:center;color:var(--tx3)\'>Chart snapshot expired. Click link above for full chart.</div>')">
-          <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — Russell 2000 at $3,015.83, +1.14% over 5 sessions. Small-caps are building momentum above the 10-day MA. Target on continuation: $3,076. Stop: close below $2,925. Risk: SPX correlation drag if large-caps sell off.</div>
-          <div class="ma-timestamp" id="ma-ts-rty">📊 Analysis last updated: 2026-08-10 13:34 </div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+            <div style="font-size:1.5rem;font-weight:700">Russell 2000 (IWM)</div>
+            <div style="font-size:.85rem;color:var(--good);background:rgba(34,197,94,.1);padding:2px 10px;border-radius:4px;font-weight:600">🟢 BULLISH</div>
+            <div style="flex:1"></div>
+            <div style="font-size:.9rem;font-family:'JetBrains Mono',monospace">$299.96</div>
+          </div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap;font-size:.85rem">
+            <span>1D: <strong style="color:var(--good)">+0.77%</strong></span>
+            <span>7D: <strong style="color:var(--danger)">−1.68%</strong></span>
+            <span>30D: <strong style="color:var(--good)">+2.69%</strong></span>
+            <span>RSI: <strong>55.9</strong></span>
+          </div>
+          <div class="tv-desc"><strong>📊 Analysis — August 23, 2026</strong><br><br>IWM is building a solid base around $295–$300. Small-caps showing resilience despite the −1.68% weekly decline — the drop came on lighter volume than the prior rally, indicating institutional holders are staying put. RSI at 55.9 is neutral with plenty of runway before overbought.<br><br><strong>Levels:</strong> Support $290 / Resistance $310. A close above $310 opens a measured move to $325. A break below $290 risks mean-reversion to $285.<br><br><strong>Theme:</strong> Accumulate on dips. Small-caps are outperforming large-caps on a risk-adjusted basis.</div>
+          <div style="margin:12px 0"><img src="weekly_outlook_chart.png?v=0823" alt="Benchmark comparison" style="width:100%;max-width:800px;border-radius:8px;border:1px solid var(--brd)"></div>
+          <div class="ma-timestamp" id="ma-ts-rty">📊 Analysis last updated: August 23, 2026</div>
         </div>
         <div id="sub-tab-acwx" class="sub-tab-panel">
-          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=NASDAQ%3AACWX" target="_blank" rel="noopener">iShares MSCI ACWI ex U.S. ETF (ACWX) — Open Full Chart ↗</a>
-          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
-            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-acwx&symbol=NASDAQ%3AACWX&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+            <div style="font-size:1.5rem;font-weight:700">ACWX (World ex-US)</div>
+            <div style="font-size:.85rem;color:var(--good);background:rgba(34,197,94,.1);padding:2px 10px;border-radius:4px;font-weight:600">🟢 BULLISH</div>
+            <div style="flex:1"></div>
+            <div style="font-size:.9rem;font-family:'JetBrains Mono',monospace">$77.94</div>
           </div>
-          <div class="tv-desc"><strong>Bias: BULLISH — Score 7.5/10</strong> — ACWX at $77.08, +1.88% over 5 sessions. Price is pressing the 52-week high — a breakout opens a measured move. Tailwind: dollar softness / Fed-cut pricing. Risk: DXY snap-back. Stop: close below $74.00.</div>
-          <div class="ma-timestamp" id="ma-ts-acwx">📊 Analysis last updated: 2026-08-10 13:34 </div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap;font-size:.85rem">
+            <span>1D: <strong style="color:var(--good)">+0.83%</strong></span>
+            <span>7D: <strong style="color:var(--good)">+0.09%</strong></span>
+            <span>30D: <strong style="color:var(--good)">+4.88%</strong></span>
+            <span>RSI: <strong>68.0</strong></span>
+          </div>
+          <div class="tv-desc"><strong>📊 Analysis — August 23, 2026</strong><br><br>ACWX is pressing toward 52-week highs with steady accumulation. Dollar softness (DXY near 101) continues to provide tailwinds for international equities. The +4.88% monthly return outpaces SPY (+3.73%), confirming the international rotation thesis. RSI at 68.0 is warm but not yet overbought.<br><br><strong>Levels:</strong> Support $75 / Resistance $80. A breakout above $80 opens legs to $82+. A close below $74 would invalidate the breakout and suggest dollar strength returning.<br><br><strong>Theme:</strong> Overweight international vs. U.S. Diversification into Europe and Japan via ACWX.</div>
+          <div style="margin:12px 0"><img src="weekly_outlook_chart.png?v=0823" alt="Benchmark comparison" style="width:100%;max-width:800px;border-radius:8px;border:1px solid var(--brd)"></div>
+          <div class="ma-timestamp" id="ma-ts-acwx">📊 Analysis last updated: August 23, 2026</div>
         </div>
         <div id="sub-tab-emxc" class="sub-tab-panel">
-          <a class="tv-link" href="https://www.tradingview.com/chart/?symbol=NYSEARCA%3AEMXC" target="_blank" rel="noopener">EMXC (Emerging Markets ex China) — Open Full Chart ↗</a>
-          <div class="tradingview-widget-container" style="width:100%;height:480px;margin:8px 0">
-            <iframe style="width:100%;height:100%;border:1px solid var(--brd);border-radius:10px" src="https://www.tradingview.com/widgetembed/?frameElementId=tv-emxc&symbol=NYSEARCA%3AEMXC&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=1&saveimage=0&toolbarbg=1a1a1a&studies=[]&hideideas=1&theme=dark&style=1&timezone=America%2FNew_York&withdateranges=1&showpopupbutton=1&locale=en" allowfullscreen></iframe>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+            <div style="font-size:1.5rem;font-weight:700">EMXC (EM ex-China)</div>
+            <div style="font-size:.85rem;color:var(--good);background:rgba(34,197,94,.1);padding:2px 10px;border-radius:4px;font-weight:600">🟢 BULLISH</div>
+            <div style="flex:1"></div>
+            <div style="font-size:.9rem;font-family:'JetBrains Mono',monospace">$97.80</div>
           </div>
-          <div class="tv-desc"><strong>Bias: NEUTRAL — Score 5.0/10</strong> — EMXC at $93.84, +1.37% over 5 sessions. Chopping in a tight range with semi-weight dragging. No directional edge yet. Flip bullish above $95.72; flip bearish below $91.02. Catalysts: Samsung/Hynix guidance, India PMI.</div>
-          <div class="ma-timestamp" id="ma-ts-emxc">📊 Analysis last updated: 2026-08-10 13:34 </div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap;font-size:.85rem">
+            <span>1D: <strong style="color:var(--good)">+0.85%</strong></span>
+            <span>7D: <strong style="color:var(--good)">+0.52%</strong></span>
+            <span>30D: <strong style="color:var(--good)">+3.89%</strong></span>
+            <span>RSI: <strong>64.9</strong></span>
+          </div>
+          <div class="tv-desc"><strong>📊 Analysis — August 23, 2026</strong><br><br>EMXC is the stealth leader — steady +0.52% weekly gain while U.S. indices pulled back. EM ex-China continues to benefit from India's structural growth, Brazil's commodity rebound, and dollar softness. RSI at 64.9 is constructive with room to 75 before overbought.<br><br><strong>Levels:</strong> Support $95 / Resistance $100. A close above $100 is a major breakout. The 60-day look is weak (−8.16%) but that creates a deep value entry for patient capital.<br><br><strong>Theme:</strong> Highest-conviction international allocation. EMXC offers the best risk/reward among the four benchmarks.</div>
+          <div style="margin:12px 0"><img src="weekly_outlook_chart.png?v=0823" alt="Benchmark comparison" style="width:100%;max-width:800px;border-radius:8px;border:1px solid var(--brd)"></div>
+          <div class="ma-timestamp" id="ma-ts-emxc">📊 Analysis last updated: August 23, 2026</div>
         </div>
       </div>
     </div>

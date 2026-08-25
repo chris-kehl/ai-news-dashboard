@@ -71,16 +71,30 @@ def run_update():
     now = datetime.now()
     weekly_pick_data = None
 
-    # 1. Try standalone file (pipeline_v2 writes this)
+    # 1. Read weekly_pick.json
     wp_file = ROOT / "weekly_pick.json"
-    try:
-        with open(wp_file) as f:
-            wp_json = json.load(f)
-        if wp_json.get('top_pick',{}).get('name'):
-            weekly_pick_data = wp_json
-            print(f"      [weekly_pick] Using weekly_pick.json: {wp_json['top_pick']['name']}")
-    except Exception:
-        pass
+    if wp_file.exists():
+        try:
+            with open(wp_file) as f:
+                wp_json = json.load(f)
+            if wp_json.get("top_pick", {}).get("name"):
+                weekly_pick_data = wp_json
+                print(f"      [weekly_pick] Using weekly_pick.json: {wp_json['top_pick']['name']}")
+        except Exception as e:
+            print(f"      [weekly_pick] weekly_pick.json error: {e}")
+
+    # 2. Merge weekly_target.json into the pick (persistent even across scorer re-runs)
+    wt_file = ROOT / "weekly_target.json"
+    if wt_file.exists() and weekly_pick_data and weekly_pick_data.get('top_pick'):
+        try:
+            with open(wt_file) as f:
+                wt_json = json.load(f)
+            # Only merge if tickers match
+            if wt_json.get('ticker') == weekly_pick_data['top_pick'].get('ticker'):
+                weekly_pick_data['top_pick']['weekly_target'] = wt_json
+                print(f"      [weekly_target] Merged from weekly_target.json: ${wt_json['target']}")
+        except Exception as e:
+            print(f"      [weekly_target] Merge error: {e}")
 
     # 2. Fallback to cache
     if not weekly_pick_data:
@@ -137,6 +151,19 @@ def run_update():
             if old_wp and old_wp.get('top_pick', {}).get('name'):
                 data['weekly_pick'] = old_wp
                 print(f"      [weekly_pick] Preserved: {old_wp['top_pick']['name']}")
+        except Exception:
+            pass
+    else:
+        # Preserve weekly_target from existing pick into new pick
+        try:
+            with open(outfile, 'r') as f:
+                old_data = json.load(f)
+            old_wp = old_data.get('weekly_pick') or {}
+            old_tp = old_wp.get('top_pick') or {}
+            old_wt = old_tp.get('weekly_target')
+            if old_wt and data.get('weekly_pick') and data['weekly_pick'].get('top_pick'):
+                data['weekly_pick']['top_pick']['weekly_target'] = old_wt
+                print(f"      [weekly_target] Preserved: ${old_wt['price']}")
         except Exception:
             pass
 

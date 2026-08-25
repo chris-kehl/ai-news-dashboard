@@ -58,7 +58,16 @@ def run_update():
     nasdaq_data = get_nasdaq_data()
     sticky_data = get_sticky_tab_data()
 
-    # Weekly Pick: prefer standalone weekly_pick.json (from pipeline_v2), else cache, else old
+    # Preserve weekly_outlook from existing data.json (don't overwrite with None)
+    existing_data = {}
+    try:
+        with open(ROOT / "data.json") as f:
+            existing_data = json.load(f)
+    except:
+        pass
+    weekly_outlook_data = existing_data.get("weekly_outlook")
+    if weekly_outlook_data:
+        print(f"      [weekly_outlook] Preserving existing: {weekly_outlook_data.get('analysis_date', 'N/A')}")
     now = datetime.now()
     weekly_pick_data = None
 
@@ -114,6 +123,7 @@ def run_update():
         "sticky": sticky_data,
         "futures": futures_data,
         "weekly_pick": weekly_pick_data,
+        "weekly_outlook": weekly_outlook_data,
     }
 
     outfile = str(ROOT / "data.json")

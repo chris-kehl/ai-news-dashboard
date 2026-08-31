@@ -22,7 +22,12 @@ from github_scraper import get_trending_repos
 from summarizer import create_daily_summary
 from nasdaq_scraper import get_nasdaq_data
 from sticky_tab_scraper import get_sticky_tab_data
-from weekly_pick_scraper import get_weekly_pick
+# Optional: only needed for Monday fallback
+get_weekly_pick = None
+try:
+    from weekly_pick_scraper import get_weekly_pick
+except ImportError:
+    pass
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE_DIR = ROOT / ".cache"
@@ -104,7 +109,7 @@ def run_update():
             print(f"      [weekly_pick] Using cache: {cached_pick['week_label']}")
 
     # 3. Monday regen via old get_weekly_pick
-    if not weekly_pick_data and should_regenerate(now):
+    if not weekly_pick_data and get_weekly_pick and should_regenerate(now):
         print("      [weekly_pick] Monday fallback to get_weekly_pick()")
         try:
             fresh = get_weekly_pick()

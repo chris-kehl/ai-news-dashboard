@@ -219,28 +219,28 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
         </div>
         <div style="padding:12px 14px">
           <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-            <div style="font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace" id="weekly-pick-banner-name">MRNA</div>
-            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-banner-ticker">MRNA</div>
+            <div style="font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace" id="weekly-pick-banner-name">CRM</div>
+            <div style="font-size:.85rem;color:var(--tx3)" id="weekly-pick-banner-ticker">CRM</div>
             <div style="flex:1"></div>
             <div style="display:flex;align-items:center;gap:8px">
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Score</div>
-                <div style="font-size:1.4rem;font-weight:800;color:var(--good)" id="weekly-pick-banner-score">86</div>
+                <div style="font-size:1.4rem;font-weight:800;color:var(--good)" id="weekly-pick-banner-score">80</div>
               </div>
               <div style="width:1px;height:28px;background:var(--brd)"></div>
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Price</div>
-                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-price">$156.04</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-price">$260.75</div>
               </div>
               <div style="width:1px;height:28px;background:var(--brd)"></div>
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">Target</div>
-                <div style="font-size:1.1rem;font-weight:700;color:var(--good)" id="weekly-pick-banner-target">$174.89</div>
+                <div style="font-size:1.1rem;font-weight:700;color:var(--good)" id="weekly-pick-banner-target">$275.00</div>
               </div>
               <div style="width:1px;height:28px;background:var(--brd)"></div>
               <div style="text-align:center">
                 <div style="font-size:.6rem;color:var(--tx3);text-transform:uppercase">7D</div>
-                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-7d">+147.8%</div>
+                <div style="font-size:1.1rem;font-weight:700" id="weekly-pick-banner-7d">+32.0%</div>
               </div>
             </div>
           </div>
@@ -394,13 +394,13 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
             </div>
             <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px">
               <div style="flex:1;min-width:240px">
-                <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">MRNA</div>
-                <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">MRNA</div>
-                <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">$156.04</div>
+                <div style="font-size:2.5rem;font-weight:700;font-family:'JetBrains Mono',monospace" id="weekly-pick-name">CRM</div>
+                <div style="font-size:.9rem;color:var(--tx3)" id="weekly-pick-ticker">CRM</div>
+                <div style="font-size:1.8rem;font-weight:700;margin-top:8px" id="weekly-pick-price">$260.75</div>
                 <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
-                  <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">+147.8%</span></div>
-                  <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">+168.4%</span></div>
-                  <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">74.7</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">7D: <span id="weekly-pick-chg7d" style="font-weight:600">+32.0%</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">30D: <span id="weekly-pick-chg30d" style="font-weight:600">+22.5%</span></div>
+                  <div style="font-size:.85rem;color:var(--tx3)">RSI: <span id="weekly-pick-rsi" style="font-weight:600">72.4</span></div>
                 <div style="font-size:.85rem;color:var(--tx3)">Buzz: <span id="weekly-pick-sent" style="font-weight:600">--</span></div>
                 </div>
                 <div id="weekly-target-box" style="margin-top:12px;padding:12px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:8px;display:none">
@@ -1051,7 +1051,7 @@ function renderAll(d){
     var topPick=wp.top_pick||{};
     // Fallback: embedded ABNB pick to ensure display
     if(!topPick.name){
-      topPick={ticker:'MRNA',name:'MRNA',display_name:'Moderna Inc',price:156.04,signal:'NEUTRAL',score:86,change_7d:147.8,change_30d:168.4,category:'Equity - S&P 500',rsi:74.7,week_label:'This Week',generated_at:'2026-08-25T11:50:00',weekly_target:{price:174.89,upside:12.1,stop:128.0,downside:17.9,rationale:'Base case: retest of 5-day high at $176.66. Post-gap consolidation suggests continuation. Stop below $130 consolidation low.',updated:'2026-08-25'}};
+      topPick={ticker:'CRM',name:'CRM',display_name:'Salesforce Inc',price:260.75,signal:'BULLISH',score:80,change_7d:32.0,change_30d:22.5,category:'Equity - S&P 500',rsi:72.4,week_label:'This Week',generated_at:'2026-08-31T11:30:00',weekly_target:{target:275.00,upside:6.8,stop:243.00,downside:5.6,rationale:'CRM rallied +32% from 5D low to current, closing near 5D high. Target $275 is a measured move above recent high. Stop at $243 below intraday support.',updated:'2026-08-31'}};
       wp={week_label:'This Week',top_pick:topPick};
       console.log('[weekly_pick] Using embedded fallback: MRNA');
     }
@@ -1085,9 +1085,9 @@ function renderAll(d){
       try{
         var wt=topPick.weekly_target||{};
         var tgtBox=$('weekly-target-box');
-        if(tgtBox && wt.price){
+        if(tgtBox && wt.target){
           tgtBox.style.display='block';
-          $('weekly-target-price').textContent='$'+wt.price.toFixed(2);
+          $('weekly-target-price').textContent='$'+wt.target.toFixed(2);
           $('weekly-target-upside').textContent='+'+wt.upside+'%';
           $('weekly-target-upside').style.color='var(--good)';
           $('weekly-target-stop').textContent='$'+wt.stop.toFixed(2);
@@ -1153,7 +1153,7 @@ function renderAll(d){
           $('weekly-pick-banner-score').textContent=topPick.score;
           $('weekly-pick-banner-score').style.color=topPick.score>=60?'var(--good)':topPick.score>=45?'var(--accent)':'var(--danger)';
           $('weekly-pick-banner-price').textContent='$'+(topPick.price||0).toLocaleString();
-          try{$('weekly-pick-banner-target').textContent='$'+(topPick.weekly_target?.price||0).toFixed(2);}catch(e){}
+          try{$('weekly-pick-banner-target').textContent='$'+(topPick.weekly_target?.target||0).toFixed(2);}catch(e){}
           var bc7=topPick.change_7d||0;
           $('weekly-pick-banner-7d').innerHTML='<span style="color:'+(bc7>=0?'var(--good)':'var(--danger)')+'">'+(bc7>=0?'+':'')+bc7.toFixed(1)+'%</span>';
           $('weekly-pick-banner-label').textContent=wp.week_label||'This Week';

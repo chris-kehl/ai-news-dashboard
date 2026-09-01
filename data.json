@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-01T07:16:41.529750",
+  "timestamp": "2026-09-01T07:22:30.625413",
   "summary": "Key topics today:\n- - GPU World (r/HackerNews, 101 pts)\n- - Apple caught off guard by AI demand for Mac Mini and Mac Studio (r/HackerNews, 101 pts)\n- - DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs (r/HackerNews, 101 pts)\n- - AnkiDroid: Google Play no longer allowing Open Collective donation link (r/HackerNews, 1 pts)\n- - 44% on ARC-AGI-1 in 67 cents (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -20,11 +20,11 @@
     },
     {
       "type": "buy",
-      "asset": "^VIX",
-      "price": 15.83,
-      "change": 6.1,
+      "asset": "STDN",
+      "price": 16.11,
+      "change": 12.58,
       "category": "stock",
-      "text": "^VIX +6.1% momentum @ $15.83"
+      "text": "STDN +12.6% momentum @ $16.11"
     }
   ],
   "reddit": [
@@ -93,26 +93,26 @@
       "created": ""
     },
     {
-      "title": "Restroom Archive",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://restroomarchive.com",
-      "created": ""
-    },
-    {
       "title": "Polishing Cloth Updated",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://512pixels.net/2026/08/polishing-cloth-updated/",
       "created": ""
+    },
+    {
+      "title": "Restroom Archive",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://restroomarchive.com",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-01T11:16:28.070636",
+    "timestamp": "2026-09-01T11:22:22.347881",
     "prices": [
       {
         "name": "Bittensor",
@@ -309,7 +309,7 @@
       "description": "Tuesday 1 September marks the start of the UK storm season and a new list of storm names have been released including Austen, Chloe and Evelyn."
     },
     {
-      "title": "Man in court charged with murder after fire deaths",
+      "title": "Man in court charged with murder after deaths of woman and girl in Teesside fire",
       "url": "https://www.bbc.co.uk/news/articles/ckg0yyg7m9mo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -414,7 +414,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-01T11:15:43.877857",
+    "timestamp": "2026-09-01T11:21:38.858950",
     "trending": [
       {
         "symbol": "GPRO",
@@ -431,11 +431,11 @@
         "name": "Edison International"
       },
       {
-        "symbol": "^VIX",
-        "price": 15.83,
-        "change": 0.91,
-        "change_percent": 6.1,
-        "name": "CBOE Volatility Index"
+        "symbol": "STDN",
+        "price": 16.11,
+        "change": 1.8,
+        "change_percent": 12.58,
+        "name": "Standard Nuclear, Inc."
       },
       {
         "symbol": "HOOD",
@@ -459,6 +459,13 @@
         "name": "Tesla, Inc."
       },
       {
+        "symbol": "FRVO",
+        "price": 15.38,
+        "change": -0.58,
+        "change_percent": -3.63,
+        "name": "Fervo Energy Company"
+      },
+      {
         "symbol": "NIO",
         "price": 4.23,
         "change": -0.13,
@@ -467,17 +474,24 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 29201.25,
-        "change": -311.75,
-        "change_percent": -1.06,
+        "price": 29194.25,
+        "change": -318.75,
+        "change_percent": -1.08,
         "name": "Nasdaq 100 Sep 26"
       },
       {
         "symbol": "BTC-USD",
-        "price": 77953.56,
-        "change": -595.07,
-        "change_percent": -0.76,
+        "price": 77935.09,
+        "change": -613.54,
+        "change_percent": -0.78,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "MDT",
+        "price": 90.65,
+        "change": 0.68,
+        "change_percent": 0.76,
+        "name": "Medtronic plc."
       },
       {
         "symbol": ".DJI",
@@ -487,20 +501,6 @@
         "name": "DJIA"
       },
       {
-        "symbol": "QQQ",
-        "price": 716.76,
-        "change": -4.35,
-        "change_percent": -0.6,
-        "name": "Invesco QQQ Trust, Series 1"
-      },
-      {
-        "symbol": "ES=F",
-        "price": 7655.25,
-        "change": -43.75,
-        "change_percent": -0.57,
-        "name": "E-Mini S&P 500 Sep 26"
-      },
-      {
         "symbol": ".RUT",
         "price": 2956.452,
         "change": -15.92,
@@ -508,18 +508,18 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "ATHERENERG.NS",
-        "price": 1725.6,
-        "change": 7.9,
-        "change_percent": 0.46,
-        "name": "ATHER ENERGY LIMITED"
-      },
-      {
         "symbol": ".SPX",
         "price": 7686.14,
         "change": -25.62,
         "change_percent": -0.33,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "XRP-USD",
+        "price": 1.38,
+        "change": -0.0,
+        "change_percent": -0.17,
+        "name": "XRP USD"
       }
     ],
     "meme_momentum": [
@@ -950,7 +950,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-01T11:16:05.076209",
+    "timestamp": "2026-09-01T11:21:59.552888",
     "items": [
       {
         "symbol": "SPX",
@@ -972,8 +972,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.82,
-        "change": 6.03,
+        "price": 15.81,
+        "change": 5.97,
         "type": "index"
       },
       {
@@ -984,98 +984,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7652.75,
-        "change": -0.6,
+        "price": 7656.0,
+        "change": -0.56,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29183.75,
-        "change": -1.12,
+        "price": 29200.0,
+        "change": -1.06,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52916.0,
-        "change": -0.61,
+        "price": 52947.0,
+        "change": -0.55,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2942.6,
-        "change": -0.54,
+        "price": 2944.2,
+        "change": -0.49,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 87.97,
-        "change": 2.58,
+        "price": 87.8,
+        "change": 2.38,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4426.8,
-        "change": -0.1,
+        "price": 4428.8,
+        "change": -0.05,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 65.32,
-        "change": -1.37,
+        "price": 65.45,
+        "change": -1.16,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1768.0,
-        "change": -1.14,
+        "price": 1769.8,
+        "change": -1.04,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1339.0,
-        "change": -1.75,
+        "price": 1340.5,
+        "change": -1.64,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.92,
-        "change": -0.61,
+        "price": 2.91,
+        "change": -0.89,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 226.89,
-        "change": -1.51,
+        "price": 226.71,
+        "change": -1.73,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77950,
-        "change": -0.81,
+        "price": 77977,
+        "change": -0.75,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2453.58,
-        "change": -0.02,
+        "price": 2454.94,
+        "change": 0.02,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 102.23,
-        "change": -1.6,
+        "price": 102.28,
+        "change": -1.68,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.4,
-        "change": 0.85,
+        "price": 11.42,
+        "change": 0.97,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.26,
-        "change": 0.33,
+        "change": 0.29,
         "type": "crypto"
       },
       {
@@ -1115,6 +1115,12 @@
         "type": "mover"
       },
       {
+        "symbol": "FRVO",
+        "price": 15.38,
+        "change": -3.63,
+        "type": "mover"
+      },
+      {
         "symbol": "NIO",
         "price": 4.23,
         "change": -2.98,
@@ -1127,24 +1133,18 @@
         "type": "mover"
       },
       {
-        "symbol": "NQ=F",
-        "price": 29182.75,
-        "change": -1.12,
-        "type": "mover"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 77975.74,
-        "change": -0.73,
+        "price": 77867.56,
+        "change": -0.87,
         "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Shein Makes Ho-Hum Market Debut After Years of Geopolitical Drama",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOclRYSDRUWnV0X3F0OUNPU1NXVjZBZEdXZ0NPR1czY2dSOGZydEpXbnZOY2d6U0RPMHJNcEYwa1d3UXdIXzItaE9oLU5FT05qSlJCakR1aW5sLU5zeGVzdjhFbExnZnNSMzFzR1BYSXQwVTlab05Da1Z3RmpGcnJUZ3JvLS1oQUtDdDZsMEtjVU1DUQ?oc=5",
-      "source": "WSJ",
+      "title": "Shein shares fall in long-awaited stock market debut",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4OXlfeUd1N19UMTBXX2FNTzFadlpmVnU0LWttZlI5SE1ucUJlVEl0YmJxR0VMYnlzcjhTNjFkbmtCV1Z2OHo5NHJZa0YzYi1LRHFxRDBYMW42QQ?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1172,16 +1172,6 @@
       "author": ""
     },
     {
-      "title": "Asian Stocks to Fall as Iran Flare-Up Boosts Oil: Markets Wrap",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPR3lDeFpHVlptcnBMcThtNzhEVVM2d1AyMkI5bVQwSUlCQjhWd0VhbXdqaTF2NzJUc2FXSHpJX20zTVBmRlkxMG5BWXptMTQzejdQU3hqQUZHcno1bldsdE5iUG5BMFY4cUNBMDBfaGE4RG9jSElQSndGNGNBMlNMdXcyTFJaVUFhS0trQnJncFRsMExRZGluZFVOVkgzUHlFYWptTkNjQTc2OGFXYWc1Yzl3?oc=5",
-      "source": "Bloomberg.com",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Oil Prices Climb as Trump Threatens New Strikes on Iran",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeWg2SzRqdzltQVJQYVFVZUtCMlRYZ2x1UmpLNlhEX2RhUVZ3THVReXFaWndJNG5Pa3lNUlE0Mm1TbmJqcG9mcHBtVFpMWEZTdlZKNi1ISDNpZmhTNklPTkdCZmlySk16MHl0cVVCcnJzTkthWHJ1VzFld1ZWLXlwRWFBek5BeTZocjdpTnNoX0hQLXMtVTJFSnJUU1VrNnJJQTJfejJIdUdWREYzbDVKRNIBtgFBVV95cUxPX1BsczF2UUF2NVpWMzVSOWt6UXRzcnE0dG4tM3RRSHdrUFBfMlBnR0FNcHYzU21lZGZpN3pwSWFVc2VRTVFqZi04SUc5QXp5WTNDZE9ZNEF4bVNEdzVMWGhSOWNiN2pMMmhMOEdQWlVGUGtsVVA3cGFTaEluVnBiVWR4NE8xYjYyZ0M3NkFaWVZmOWk5UlYxTkE2SWRMVEJvTy1meW1pMDdrOHZtNk9XVlpHSzR4dw?oc=5",
       "source": "Crude Oil Prices Today | OilPrice.com",
@@ -1192,19 +1182,9 @@
       "author": ""
     },
     {
-      "title": "Kalshi bans former congressman George Santos for life after State of the Union trades",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSlBES3JWekZGM2UtQ2ktaWF4UWp3a0o3Z2JmTTA3clJkUTU0Ymh6ak9xNXo2ZUJGM1B6SXRwSU1aOGMzNzljajZObTE4cFBZZ3FrdURjWG0zQzJQanFMUjljNXJEbnAzU3dJSmthamJaY0NQb1lDTndnR3pvVDVRa1l6T2dNZzFTdFY4eDNxRVpNdw?oc=5",
-      "source": "NPR",
-      "category": "business",
-      "published": "Mon, 31 Aug 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Fed Chairman Kevin Warsh warned about inflation \u2014 but that's not why long-term rates are surging: Chart of the Day",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNXI0amlRdzBwZTM1QVpMQWNjbkJkWVFhU3BWNnN3Vk5UZUkxWGR6Tm9mQ2xTd3VZV3BRUFhmV09QdWEzeGJNVi1nOXR6dkloWGV1U25fMmtFeWVHUUhydURyS1F0OVQta0xGSkZfX1c5bTgxQU5rWFhIYTRBR0J4M0FTZFE0T01KeENSYXVTQWhvWGlOdjcweDlSMnI1UGs4bHVXVzJsa2FURnlfM1AwNjZMSmRmdG1ldGI5MnduYV9SV3RoaWl0MWlxSmg2SFhfdElXYkVFRHJZTkRoOE1YV01YdVhsU0FqajB0bjF0VWxpX290YWZmQ3liNVY?oc=5",
-      "source": "Yahoo Finance",
+      "title": "JPMorgan Traders Drop Bullish View on Stocks After Warsh Speech",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZXVnNmRkTEdhaDVpam4wVGhmaG8wYXM3LUtGWFFwZTlEZU15MjV5N0loanllN3EyNWlwV0hjZ2ZoX0dZRm8tM3BGakFYSkxDeWg4ZDFXSFpEOVI5bjBvd0REM0x6dUNfUzd3Z3hjcEY4Ty1jTXJMNGM1VlN6a0l4c2tJZzVMekdPYlpDWVgxUUpLaTVhWkhvakxfY0JZSjEzNTNvNllnUFg3WE9tZWdlX1NDaEg?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Mon, 31 Aug 2026 ",
       "description": "",
@@ -1215,6 +1195,26 @@
       "title": "John Ternus to lead Apple into the age of AI",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTFJXbVlMMGdzcl9FRUhKTloxbDJ3X3N5V3MwV0JlV0lCQTV3THhBdWQzb0JSWG5neTFVY2NlVlNmM0YwX0tiMVRVdzYxdzNpeG9yWGp6alRJZmdVcmNaS2IzYkZYRjdiOWgwNVBOZHZqUC11V0Vyb3IyTlhlSkZPNUVMWFJXOWt5MXktcl9LUHbSAZYBQVVfeXFMUHNER09BS20zb0IyMUowSm1hd0tlcFB3NEZFenNSYTdiLVlyclVsTEU5R2haMnZlY25GaDg1YkZqc3EwWm51ZXFNelVPNE5sUDVWci1HUHhBb0daUzJtMl91Nkt1WWs2OGdVMG1WRDMwQVAtMnc5Qms2emd3TEpPUDQ3ZjFLMEE1UFhGSFViWkpJVFpJZHhR?oc=5",
       "source": "Al Jazeera",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Ex-Congressman George Santos Receives Kalshi\u2019s First-Ever Lifetime Ban",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM1BZOFV6OFlGbHFrWm83eHIzQmJTOTVDaVA0b3NRdEVoVXRTYWtIM1hxMW5iT0d5QTN2VHpMWXlqd0NfWXpudGNEb3FXOU1RX3Y0WXE3Vmw4ZU9qWTVPWWpreDRrTmZ5Y0FzdlUtbUM0d05zQTU5eWJFLTBQdlV1R2kxQnZ5VFZuZTFrOEJMNFM2TzZrU1JhVFpHU0RZS2VybDE0SGp2WVZ5Ymc?oc=5",
+      "source": "WSJ",
+      "category": "business",
+      "published": "Mon, 31 Aug 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall as inflation, Fed rate-hike fears persist",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOald3VXBlOEFnQTdDa01pSGNQcEtILUJQQTBRYlZOTzloVDBISXA1MzIxMkczUXljVEx6YkdYcTNBWi01eW9WSUZNTDEwNlpDV2w1UEtjNHhCa25DR3hMYVFIdWtsMWhiTkR0d0dLUXF3ZWZYUUtpUTgzNzhDd1hvbVFfd3E0SXBtMGZWYlAwWjNsUF9hSzJ0TElzQmtZclNvZkRydUVsWTQ0RDk0aHQ4?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1236,7 +1236,7 @@
     {
       "title": "The Bentley Supersports: A stripped-out engineer\u2019s indulgence",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc3RCVU1xWmFSTGVZTnB1eVgwZnRjc3F2eU1rbmZnRFk3amF2bG5yWnhrNUEtZlZoWlk3S1N3b1VmVjJpVGZhQVVtb1JVZ0laQm15N3hpQnBDRXN6ZVhNV0lQLUZUYXVuRENPLXR2dGpHTllFTV83ekpVcllneWp6UXh5emZ3S1ZZZFRhel9NcV9SVzRRMHMwZE5kdG9pZw?oc=5",
-      "source": "arstechnica.com",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Mon, 31 Aug 2026 ",
       "description": "",
@@ -1284,21 +1284,21 @@
       "author": ""
     },
     {
-      "title": "Apple iPhone 18 Pro Release Timeline: New Date Enters The Schedule",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSnpqRXBmZGd1T0llQ1A4TFQycFFfSGo1LWgzbkdQN2R2UDE1RnVkZVFHNkNxR09FUHIyeFdZeTNwVGhrYnFPeDBfYnA1TWVjZHh4ejJyaGtGYjBYS0hnYWhiYV9UZzNwQlQ1NHV6VEd6R09GWEZ4UkVpRGNYTUEzNTA5bGI0bVg4MlZEOXZRNkdyRDIzZHRYMFNMR285ZFhLbDBXY0lrMmFxWUtHRFo5UkQ3OTU3Tl84N1E?oc=5",
-      "source": "Forbes",
+      "title": "What Dyson\u2019s First Toothbrush Says About Oral Care\u2019s Beauty Era",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZVBCRnozRkIxb1hKa0ZDX2hFajZtQzI1NjltWi1PZnM5bFhiRS1SMEE0UXNWWWswdWFQRnJ4MUdmbTZnelJ1UkRBTnBWaFB0Q3hYQ0hMajNvN1VhTjM4VHBtNm9EYWRRVFpfTTF0NHZyX0JmeWxWRkdFRFFtYU5vVnRFMmVYYkctaXloX09QSzVlNXcyYkE?oc=5",
+      "source": "vogue.com",
       "category": "business",
-      "published": "Mon, 31 Aug 2026 ",
+      "published": "Tue, 01 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Xbox CEO Confirms Project Helix Is a Family of Devices, Not Just a Single Next-Gen Console",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNc1p2aXBXMHkwTFkyOG5XWmdjaE5ESUxndnRxcmRpMUI2WVcwT25ZaUdPWTNlZXBoc01peGdZXzRCcDNDQ0RBQWVkRU85Q3BOVGlhNDZVSkd0Z0o5ckVucHVEUXIwTlIwUmVVSnI3OEhCQ1dsZ19wb3hFMkYyelRnN3BzOHZTcUhtakE?oc=5",
-      "source": "Hypebeast",
+      "title": "Made in America: How AI is keeping this U.S. factory competitive",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQTBMV2RmYmE1dExFQmlOZ1VId1VGWWE1M0k1cnczdVpDa2Q5TmdfT2ZWajhCaEpGM29ZcFN2c1FkTDRRZ2ZQUTNKRVJiNkRKTzZxRlh6NllWOFF2RmxoQXhRcHNSYVZYaHpQUHZGTVQwc3BNMDlIWFE2OV8tM3N0bEIxUVM0Zw?oc=5",
+      "source": "NPR",
       "category": "business",
-      "published": "Mon, 31 Aug 2026 ",
+      "published": "Tue, 01 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1530,7 +1530,7 @@
     "changePercent": 0.08,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 1 Sep: 29,456.97, up +0.08% -- BULLISH. none. Counter: price below SMA20, RSI 48.7 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-01T07:16:38.850068"
+    "timestamp": "2026-09-01T07:22:28.511116"
   },
   "sticky": {
     "cnbc": [
@@ -1577,18 +1577,18 @@
         "description": "Last-mile delivery company OneRail is launching a new platform with Nvidia to use AI to help retailers make faster and more efficient delivery decisions."
       },
       {
-        "title": "Trump says U.S. growth could hit 20%. It\u2019s happened only once since WWII",
-        "url": "https://www.cnbc.com/2026/08/31/trump-us-gdp-growth-20-percent-economy.html",
-        "source": "CNBC",
-        "published": "2026-08-31T20:50:01",
-        "description": "Trump argued rapid growth should not prompt Fed rate hikes, even as inflation remains above the central bank\u2019s 2% target."
-      },
-      {
         "title": "Bessent reportedly tells Russia no economic relief until Ukraine war ends as Europe snubs Moscow at G20",
         "url": "https://www.cnbc.com/2026/09/01/bessent-russia-ukraine-war-sanctions-war-g20-.html",
         "source": "CNBC",
         "published": "2026-09-01T03:22:56",
         "description": "The meeting underscored Washington's willingness to reopen diplomatic talks with Moscow, as Europe intends to isolate the nation while the war continues."
+      },
+      {
+        "title": "Trump says U.S. growth could hit 20%. It\u2019s happened only once since WWII",
+        "url": "https://www.cnbc.com/2026/08/31/trump-us-gdp-growth-20-percent-economy.html",
+        "source": "CNBC",
+        "published": "2026-08-31T20:50:01",
+        "description": "Trump argued rapid growth should not prompt Fed rate hikes, even as inflation remains above the central bank\u2019s 2% target."
       }
     ],
     "yahoo_finance": [
@@ -1726,72 +1726,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7652.75,
-      "change": -46.25,
-      "change_percent": -0.6,
+      "price": 7655.5,
+      "change": -43.5,
+      "change_percent": -0.57,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29185.75,
-      "change": -327.25,
-      "change_percent": -1.11,
+      "price": 29195.5,
+      "change": -317.5,
+      "change_percent": -1.08,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52921.0,
-      "change": -319.0,
-      "change_percent": -0.6,
+      "price": 52946.0,
+      "change": -294.0,
+      "change_percent": -0.55,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2942.8,
-      "change": -15.9,
-      "change_percent": -0.54,
+      "price": 2944.1,
+      "change": -14.6,
+      "change_percent": -0.49,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 87.96,
-      "change": 2.2,
-      "change_percent": 2.57,
+      "price": 87.81,
+      "change": 2.05,
+      "change_percent": 2.39,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4426.8,
-      "change": -4.3,
-      "change_percent": -0.1,
+      "price": 4428.8,
+      "change": -2.3,
+      "change_percent": -0.05,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 65.33,
-      "change": -0.89,
-      "change_percent": -1.34,
+      "price": 65.45,
+      "change": -0.77,
+      "change_percent": -1.16,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1768.0,
-      "change": -20.4,
-      "change_percent": -1.14,
+      "price": 1769.8,
+      "change": -18.6,
+      "change_percent": -1.04,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1342.0,
-      "change": -20.9,
-      "change_percent": -1.53,
+      "price": 1340.5,
+      "change": -22.4,
+      "change_percent": -1.64,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.92,
-      "change": -0.02,
-      "change_percent": -0.61,
+      "price": 2.91,
+      "change": -0.03,
+      "change_percent": -0.89,
       "name": "Natural Gas Oct 26"
     }
   ],

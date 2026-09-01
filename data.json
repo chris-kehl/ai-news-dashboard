@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-01T17:16:38.284087",
+  "timestamp": "2026-09-01T17:20:40.046414",
   "summary": "Key topics today:\n- - I trained a small transformer in 1.5hrs and it beats many LLMs (r/HackerNews, 201 pts)\n- - Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit (r/HackerNews, 201 pts)\n- - Claude Fable 5.1 and Claude Mythos 5.1 (r/HackerNews, 101 pts)\n- - The ChatGPT/Codex app bundles a full copy of LibreOffice (r/HackerNews, 101 pts)\n- - Atlas: A World Model for Spatial Intelligence (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "buy",
-      "asset": "SSM",
-      "price": 4.76,
-      "change": 78.09,
-      "category": "stock",
-      "text": "SSM +78.1% momentum @ $4.76"
-    },
-    {
-      "type": "buy",
       "asset": "FRVO",
       "price": 19.75,
       "change": 33.72,
       "category": "stock",
       "text": "FRVO +33.7% momentum @ $19.75"
+    },
+    {
+      "type": "buy",
+      "asset": "LIDR",
+      "price": 1.47,
+      "change": 27.83,
+      "category": "stock",
+      "text": "LIDR +27.8% momentum @ $1.47"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-01T21:16:25.258227",
+    "timestamp": "2026-09-01T21:20:26.455229",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-01T21:15:40.875242",
+    "timestamp": "2026-09-01T21:20:03.223036",
     "trending": [
       {
         "symbol": "GPRO",
@@ -454,13 +454,6 @@
         "change": 0.63,
         "change_percent": 105.0,
         "name": "GoPro, Inc."
-      },
-      {
-        "symbol": "SSM",
-        "price": 4.76,
-        "change": 2.09,
-        "change_percent": 78.09,
-        "name": "Sono Group N.V."
       },
       {
         "symbol": "FRVO",
@@ -484,18 +477,11 @@
         "name": "Moderna, Inc."
       },
       {
-        "symbol": "PS",
-        "price": 38.52,
-        "change": -3.65,
-        "change_percent": -8.66,
-        "name": "Pershing Square Inc."
-      },
-      {
-        "symbol": "DUOL",
-        "price": 158.77,
-        "change": 11.79,
-        "change_percent": 8.02,
-        "name": "Duolingo, Inc."
+        "symbol": "CRDO",
+        "price": 206.63,
+        "change": -26.12,
+        "change_percent": -11.22,
+        "name": "Credo Technology Group Holding "
       },
       {
         "symbol": "DELL",
@@ -505,31 +491,31 @@
         "name": "Dell Technologies Inc."
       },
       {
-        "symbol": "CL=F",
-        "price": 90.68,
-        "change": 4.92,
-        "change_percent": 5.74,
-        "name": "Crude Oil Oct 26"
+        "symbol": "MDB",
+        "price": 434.21,
+        "change": -12.41,
+        "change_percent": -2.78,
+        "name": "MongoDB, Inc."
       },
       {
-        "symbol": "XRP-USD",
-        "price": 1.34,
-        "change": -0.04,
-        "change_percent": -2.63,
-        "name": "XRP USD"
+        "symbol": "HPE",
+        "price": 50.87,
+        "change": -1.44,
+        "change_percent": -2.75,
+        "name": "Hewlett Packard Enterprise Comp"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2407.87,
-        "change": -58.95,
-        "change_percent": -2.39,
-        "name": "Ethereum USD"
+        "symbol": "PANW",
+        "price": 362.09,
+        "change": -9.5,
+        "change_percent": -2.56,
+        "name": "Palo Alto Networks, Inc."
       },
       {
         "symbol": "BTC-USD",
-        "price": 77070.91,
-        "change": -1477.72,
-        "change_percent": -1.88,
+        "price": 76885.24,
+        "change": -1663.39,
+        "change_percent": -2.12,
         "name": "Bitcoin USD"
       },
       {
@@ -538,6 +524,13 @@
         "change": -36.32,
         "change_percent": -1.23,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "SMCI",
+        "price": 36.71,
+        "change": -0.37,
+        "change_percent": -1.0,
+        "name": "Super Micro Computer, Inc."
       },
       {
         "symbol": ".DJI",
@@ -552,6 +545,13 @@
         "change": -54.67,
         "change_percent": -0.71,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "GTLB",
+        "price": 45.09,
+        "change": 0.22,
+        "change_percent": 0.49,
+        "name": "GitLab Inc."
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-01T21:16:02.162457",
+    "timestamp": "2026-09-01T21:20:23.098191",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,50 +1076,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 220.1,
-        "change": -4.05,
+        "price": 219.33,
+        "change": -4.13,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77076,
-        "change": -2.22,
+        "price": 76952,
+        "change": -2.35,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2406.47,
-        "change": -2.65,
+        "price": 2403.78,
+        "change": -2.7,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 99.25,
-        "change": -3.98,
+        "price": 99.02,
+        "change": -4.11,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.13,
-        "change": -2.02,
+        "price": 11.12,
+        "change": -2.11,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.19,
-        "change": -0.36,
+        "price": 7.17,
+        "change": -0.5,
         "type": "crypto"
       },
       {
         "symbol": "GPRO",
         "price": 1.23,
         "change": 105.0,
-        "type": "mover"
-      },
-      {
-        "symbol": "SSM",
-        "price": 4.76,
-        "change": 78.09,
         "type": "mover"
       },
       {
@@ -1135,27 +1129,15 @@
         "type": "mover"
       },
       {
-        "symbol": "MRNA",
-        "price": 154.27,
-        "change": 11.8,
-        "type": "mover"
-      },
-      {
-        "symbol": "DUOL",
-        "price": 158.77,
-        "change": 8.02,
+        "symbol": "CRDO",
+        "price": 206.63,
+        "change": -11.22,
         "type": "mover"
       },
       {
         "symbol": "DELL",
         "price": 425.0,
         "change": -6.85,
-        "type": "mover"
-      },
-      {
-        "symbol": "CL=F",
-        "price": 90.68,
-        "change": 5.74,
         "type": "mover"
       },
       {
@@ -1168,6 +1150,24 @@
         "symbol": "BB",
         "price": 7.83,
         "change": -4.04,
+        "type": "mover"
+      },
+      {
+        "symbol": "PLTR",
+        "price": 179.92,
+        "change": -3.42,
+        "type": "mover"
+      },
+      {
+        "symbol": "MDB",
+        "price": 434.21,
+        "change": -2.78,
+        "type": "mover"
+      },
+      {
+        "symbol": "HPE",
+        "price": 50.87,
+        "change": -2.75,
         "type": "mover"
       }
     ]
@@ -1184,7 +1184,7 @@
       "author": ""
     },
     {
-      "title": "Stocks slip on Wall Street under pressure from rising oil prices, bond sell-off",
+      "title": "Stocks slip on Wall Street under pressure from higher oil prices and rising bond yields",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbjFxdjAwdUlwU0xFYkdsbEF5RTVIX2Z2NkQ2Tnp4dkhZZ0JkTDlsYU96UVp4SWViaU5xejQzVkd4ZzZEUDU3RkIzLWdmaDBYb20zRHZ4SkFYa0RRenFpSEJtX1hSX241VDl3eVIxaEJzQnVXV082eVQ4dFl4X21NSHpnd2hFaERGSHktZw?oc=5",
       "source": "AP News",
       "category": "business",
@@ -1197,6 +1197,16 @@
       "title": "US borrowing costs hit fresh highs over inflation fears",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yRnc3NXVUUlI3NGJFTDJRbmg3MFJJWFlqT1NpYUlZRnZSNGF3MGFFVDBWbVVDWlNmMUx2bm5TcWFCbGRmOGlOcnhkUFhFLVJnNXZkUUxMZnVEUQ?oc=5",
       "source": "BBC",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Shein\u2019s unhappy IPO",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uVktKcl9wY291OEowdGs4OGZWbkc4YTVBLUp4dDdVa09CekhyMnNjaFlzRXhUSEc1NFVJdFJhWG04MC1IOHJGZV94RTNkN3BING1Gc3BPQ3FEbjdTdndacUV1TUVsRmpsQUxrTzBRb1U?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1217,16 +1227,6 @@
       "title": "Dell surges 10% after lifting fiscal 2027 forecast on AI server strength",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51VnZVMGZaX0JwQ0dVOHV2SXJkMDhob2Nja3RLQXBCWTlBLWN5X1VXNlZPdGpxYUF2RFJoaXI0czFnV0lSSHdhRVZqT1RMRjJ5Y25TczVvM01wVndnNktuU1JVemd5OFYxRWhsbGdzemNINnfSAXhBVV95cUxQejhobUpIOURGX2Zaakd1M3FMZmNzbHY0VEJHY2pybkFMOHZNOG53RlNyb3czSHd3WXBKWWtwYmFJc0QweEw3d0pnLVhGTGtuT1hXdVZ0MFhUUGxsQWRybzN0bG90SlV1SVZlZUw4ekdXS01CbjJWZjU?oc=5",
       "source": "CNBC",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Shein\u2019s unhappy IPO",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uVktKcl9wY291OEowdGs4OGZWbkc4YTVBLUp4dDdVa09CekhyMnNjaFlzRXhUSEc1NFVJdFJhWG04MC1IOHJGZV94RTNkN3BING1Gc3BPQ3FEbjdTdndacUV1TUVsRmpsQUxrTzBRb1U?oc=5",
-      "source": "Financial Times",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1266,16 +1266,6 @@
       "author": ""
     },
     {
-      "title": "PlayStation argues \"reasonable consumers\" already know they don't actually own their digital games",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTJkRHk0VnB2MjFQc19rYVFXVmVaMmpxYnVTMUF2cTRvaDlFNDZRcHFodktXdDJrWWNzd0VXWHkwTnZ0UlRmTEI1VXhFRGZKZzl0b21rSnZQako3dmt6MU9CaGQwN3RUUzZQMURVbkdfNWNXNFlLVFp3X09tR1IyZWd4Vnc5bWEzaE53YmpESQ?oc=5",
-      "source": "Eurogamer.net",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Mozilla launches ad blocking for Firefox on iOS",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QeTVwb2taVEstVHNrcTlfT0xidmpRZUhvWjBuZFYxYXg2dVpXeXNjR0FoRUo0MFZCT052WS1nLThVS1dTNHpNSmtBMk5TOHZORnozSWdGdHpOYWZOaFJQYmhEWHJPT1llVGY3NlFLRzc4QnE2T1pHa2pLOUxvTm8?oc=5",
       "source": "The Verge",
@@ -1286,9 +1276,9 @@
       "author": ""
     },
     {
-      "title": "NVIDIA DLSS 5 Technical Preview Review - Neural Rendering is Here",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBFckpJcGZiTnN5NjUzVkJoWUJYTVhVeUVxcXdXMldDemJPYVRBYy1uVkpUcXdPVFk0ZTNHMG5oQ2F3MGtFVWJYVTFZbTV0dDl0OUpZY28zUlNOYTYwZFVIQy1sZ05peHFvVHFoXzZzMUZ0ek00NVE?oc=5",
-      "source": "TechPowerUp",
+      "title": "NVIDIA DLSS 5 Performance Unveiled: 5x Faster Than Original Demo, 50% Perf Penalty on Average, But RTX 50 GPUs Offer \u201cHundreds of FPS\u201d With MFG Enabled & More Optimizations On the Way",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1pWFJwaE5BTE5sRG84amphUUwwQkVxOE9WWE9NM1d2YU0tNHROYjkxOE1DY1ZEQl8zS0ctdE1YX3pVOVZYNXZEOVIyWk5mZUZDLVNhOVBpX2NhcjZrcWRDbUh0SmNqdENSRm5DN1BEZ2FTUk4yckJfQWJmMNIBgAFBVV95cUxNMkZJVTlLS1BkcU9YeUVVNzY5WXBiLVhyUEZNMlozVk5rRWYyR1QzZ1FaaDJjMFdTLTlBdzNtbHBXd2pvLTNvTDlUZnZGdGJJR1B5UDhZcmFsTzBZR29ZWlQyMmJMSFlJeUFSMVFKZW9PbTg4V3VMYkJmc3pqVVNnRA?oc=5",
+      "source": "Wccftech",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1316,6 +1306,16 @@
       "author": ""
     },
     {
+      "title": "PlayStation argues \"reasonable consumers\" already know they don't actually own their digital games",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTJkRHk0VnB2MjFQc19rYVFXVmVaMmpxYnVTMUF2cTRvaDlFNDZRcHFodktXdDJrWWNzd0VXWHkwTnZ0UlRmTEI1VXhFRGZKZzl0b21rSnZQako3dmt6MU9CaGQwN3RUUzZQMURVbkdfNWNXNFlLVFp3X09tR1IyZWd4Vnc5bWEzaE53YmpESQ?oc=5",
+      "source": "Eurogamer.net",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Galaxy S27 series rumored to get feature once exclusive to Pixel handsets",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWhTdmNXSEFlUmVfUEhyQ1Jmd1ZVYzVocFBrOUx6U1R5SG1HLWZrR1k2WksxajhOQm9oX0RvV1lLaDZIT0Nnbkc4ZDVwd0d1YXM1cXR5c1ZEYlNYd2pyR3ZFaGZRTi1OWE94RjBvSVpyUHVrNmQ0akNSNVRsX0VjaVhJMXo0X2ZYQ0RiZlNjZFNFYWhlWVpvbkJ3T1ZVZ0dMaVVN?oc=5",
       "source": "PhoneArena",
@@ -1326,11 +1326,11 @@
       "author": ""
     },
     {
-      "title": "ASUS unveils specs for its new ProArt P14 creator laptop powered by NVIDIA RTX Spark",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYW1DMzE0WW5fRDNkSWd6UmlzWFpJelFZMnd1ZEc2eFBkcHVCYlc5OWR0eUY2M1QzZnRnVTRYUHJieGpkSUdfdDJPVW5IU0ZMRUtMWmw2T1JLX1hjaUN3aF9WNGNyZjQyeUJJc2dMZEpYYXpFcXJ1dFl4ZHVQdW1hYlhKR0dmcDVfYmxXYjVkdVI5SjlvOXJ0ZDZTSTU1U1lzZDkwTzlnczdVM3gtby1HaUROa3VQQXRiMlY3eVNrUGhYblBqUk5yS1psMm5xQQ?oc=5",
-      "source": "TweakTown",
+      "title": "ASUS Shows Off ProArt P14 NVIDIA RTX Spark-Powered Creator Laptop",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFZtSXBfaC14VXIzazQ0VExzN0plQkxIV3l3NzVDcTNaWmFzQ3E1Q3h3TFZvaXhkMWNrRFVZNk9kV2hWZ0JETDRCWWZ3NUoydnoxbE9rcG92UXZzSjQzdXNac3RhcEhicDI0ejRaV0QzaGRIeUxEVkd2WTktMkVKeE9kc0lfcm41alptcE1zSlpqSTZ2dm0yOC1pR1JoSVktSkHSAacBQVVfeXFMUEhvVHhJaTBGQU9jazNWUjRlT1dtX1VUZTRKY3dnbndGQkJlaTZKdk9YcXRfM3dZeDFVMlNtNFF3ZVpBcDV0dG44Tzc1TlpVUTAxM0pRc3FROHVBYmROdHh0ZXZlWnJibWJ0em54VzNMVjBqMmdFeVZqdTdKQUk5YUtqWHFiVDBCajNhc2h0WkF6NnQzVDh3T21MbFhTTEE3TjZqSWs5c1k?oc=5",
+      "source": "TechPowerUp",
       "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
+      "published": "Mon, 31 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,7 +1554,7 @@
     "changePercent": -1.29,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 1 Sep: 29,077.22, down -1.29% -- BEARISH. price below SMA20, RSI 38.2 weak, MACD bearish, strong -1.29% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-01T17:16:35.914304"
+    "timestamp": "2026-09-01T17:20:37.124401"
   },
   "sticky": {
     "cnbc": [
@@ -1576,7 +1576,7 @@
         "title": "Palo Alto Networks beats quarterly estimates on AI demand, continues acquisition spree",
         "url": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html",
         "source": "CNBC",
-        "published": "2026-09-01T21:01:39",
+        "published": "2026-09-01T21:18:02",
         "description": "Palo Alto Networks' stock has nearly doubled this year as AI boosts demand for security detection and response tools"
       },
       {
@@ -1652,10 +1652,17 @@
         "description": ""
       },
       {
-        "title": "Corn Pausing Rally on Monday Morning as August Comes to a Close",
-        "url": "https://finance.yahoo.com/markets/commodities/articles/corn-pausing-rally-monday-morning-123004467.html",
+        "title": "Nvidia, Apple and SMCI Technical Outlook After Tech Selloff",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-apple-smci-technical-outlook-125951795.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T12:30:04+00:00",
+        "published": "2026-08-31T12:59:51+00:00",
+        "description": ""
+      },
+      {
+        "title": "Why Citi Analysts Are Bullish on Oracle Stock Now",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/why-citi-analysts-bullish-oracle-130002203.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-31T13:00:02+00:00",
         "description": ""
       },
       {
@@ -1663,13 +1670,6 @@
         "url": "https://finance.yahoo.com/markets/commodities/articles/cotton-rallying-back-monday-morning-123004636.html",
         "source": "Yahoo Finance",
         "published": "2026-08-31T12:30:04+00:00",
-        "description": ""
-      },
-      {
-        "title": "KKR Expects $3.3 Billion Gain From USI Sale",
-        "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-31-2026/card/kkr-expects-3-3-billion-gain-from-usi-sale-py4XeiZCiHwgTO6r9RH5?siteid=yhoof2&yptr=yahoo",
-        "source": "Yahoo Finance",
-        "published": "2026-08-31T12:49:12+00:00",
         "description": ""
       }
     ],

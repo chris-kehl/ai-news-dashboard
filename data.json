@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-01T19:31:36.850298",
+  "timestamp": "2026-09-01T19:33:24.802115",
   "summary": "Key topics today:\n- - I trained a small transformer in 1.5hrs and it beats many LLMs (r/HackerNews, 201 pts)\n- - Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit (r/HackerNews, 201 pts)\n- - Claude Fable 5.1 and Claude Mythos 5.1 (r/HackerNews, 101 pts)\n- - How accurate have Ed Zitron's AI skeptic predictions been? (r/HackerNews, 101 pts)\n- - The ChatGPT/Codex app bundles a full copy of LibreOffice (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "buy",
+      "asset": "BIAF",
+      "price": 6.59,
+      "change": 35.32,
+      "category": "stock",
+      "text": "BIAF +35.3% momentum @ $6.59"
+    },
+    {
+      "type": "buy",
       "asset": "FRVO",
       "price": 19.75,
       "change": 33.72,
@@ -41,14 +49,6 @@
       "change": 27.83,
       "category": "stock",
       "text": "LIDR +27.8% momentum @ $1.47"
-    },
-    {
-      "type": "buy",
-      "asset": "MRNA",
-      "price": 154.27,
-      "change": 11.8,
-      "category": "stock",
-      "text": "MRNA +11.8% momentum @ $154.27"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-01T23:31:25.060355",
+    "timestamp": "2026-09-01T23:33:07.886994",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-01T23:30:41.093266",
+    "timestamp": "2026-09-01T23:32:24.764076",
     "trending": [
+      {
+        "symbol": "BIAF",
+        "price": 6.59,
+        "change": 1.72,
+        "change_percent": 35.32,
+        "name": "bioAffinity Technologies, Inc."
+      },
       {
         "symbol": "FRVO",
         "price": 19.75,
@@ -461,13 +468,6 @@
         "change": 0.32,
         "change_percent": 27.83,
         "name": "AEye, Inc."
-      },
-      {
-        "symbol": "MRNA",
-        "price": 154.27,
-        "change": 16.28,
-        "change_percent": 11.8,
-        "name": "Moderna, Inc."
       },
       {
         "symbol": "CRDO",
@@ -508,21 +508,21 @@
         "symbol": "XRP-USD",
         "price": 1.35,
         "change": -0.03,
-        "change_percent": -2.32,
+        "change_percent": -2.26,
         "name": "XRP USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 2415.85,
-        "change": -50.97,
+        "price": 2415.79,
+        "change": -51.03,
         "change_percent": -2.07,
         "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 77349.23,
-        "change": -1199.4,
-        "change_percent": -1.53,
+        "price": 77341.1,
+        "change": -1207.53,
+        "change_percent": -1.54,
         "name": "Bitcoin USD"
       },
       {
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-01T23:31:01.652600",
+    "timestamp": "2026-09-01T23:32:45.175205",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,50 +1016,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7645.5,
-        "change": -0.69,
+        "price": 7644.75,
+        "change": -0.7,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29128.5,
-        "change": -1.3,
+        "price": 29122.75,
+        "change": -1.32,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52837.0,
+        "price": 52833.0,
         "change": -0.76,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2924.6,
-        "change": -1.15,
+        "price": 2924.5,
+        "change": -1.16,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.78,
-        "change": 5.85,
+        "price": 90.79,
+        "change": 5.87,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4376.8,
-        "change": -1.23,
+        "price": 4373.6,
+        "change": -1.3,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 64.72,
-        "change": -2.27,
+        "price": 64.64,
+        "change": -2.39,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1748.5,
-        "change": -2.23,
+        "price": 1747.2,
+        "change": -2.3,
         "type": "future"
       },
       {
@@ -1071,43 +1071,43 @@
       {
         "symbol": "NG=F",
         "price": 2.95,
-        "change": 0.68,
+        "change": 0.65,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 219.32,
-        "change": -4.9,
+        "price": 219.69,
+        "change": -4.76,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77314,
-        "change": -1.57,
+        "price": 77368,
+        "change": -1.51,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2414.67,
-        "change": -2.06,
+        "price": 2416.51,
+        "change": -2.01,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 99.85,
-        "change": -3.2,
+        "price": 99.9,
+        "change": -3.13,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.18,
-        "change": -1.01,
+        "price": 11.19,
+        "change": -1.0,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.19,
-        "change": -0.48,
+        "price": 7.2,
+        "change": -0.41,
         "type": "crypto"
       },
       {
@@ -1184,9 +1184,19 @@
       "author": ""
     },
     {
-      "title": "FTC alleges Amazon illegally made $20 billion by rigging billions of ad auctions",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTG40SlVsWjA5cmh1TDRGbFNza2pqYjJZNjJfNDdKV0VkQTU5VUNGR21tWXQ5cEo4ZEVybU5aWGhLeE1MUlNkMWM4SkRjT0FiQ3BIX3hrRVZDTUh6ald1U1RPZ1V3aUZzenpDQU96X3RVUW5CZ29laldwWnRLNWNEeS1ZejMwX3l2RWVEeDEzWW1Cb25IOHM0b05nVHBSbGZFRG5BRzZiblNkbHVVd0JQNXh6Tm42WTAzd3VyRXZpSzFsUQ?oc=5",
-      "source": "Ars Technica",
+      "title": "John Ternus hypes \u2018huge launch next week\u2019 in first memo as Apple CEO",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNREs2aUZVMkFlanBOSnNzTUprdmxjVWhWSXZvUzhCRWM2eUlRX2dLb2VCSldTR0JRZjNpVEJmU1V2QXlxVllKeTZld3k4clBTZE1DdVpBTmp3TjNRellpY01vMnkwYkU5ZTVEc3VRd19lMzZDY1FZUGtMZU1fVkJ2LXRodXdULWhMTVdWSTZNZmRCakZDNlFRbkZOZ3lxcGNyM2Rn?oc=5",
+      "source": "TechCrunch",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Wall Street ends lower as higher yields, rising oil prices mark shaky start to September",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjZiWGhvamxJTzU5Ync5V2xObHhDRk1PRlZFRkZnZVNqQzM0dHhuUnBMeGJDYW9YWmgxc29fRTNUaTVRT2xLWFZUOGJMWDU4MTlhQVVXRmFOQ3VGQnlNME9tQ09nUW0yMGNUR1c2amZkSVBQbHcwWDNQY0tfZHZoREF4SzVqZ2pNYzlCQVFmSkJMNFFwMEptQi03WlZlZG82bDVNZWhnUm9KMnFDS1pqVWlHZDZ2MmE1?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1204,49 +1214,39 @@
       "author": ""
     },
     {
-      "title": "US job openings rise slightly to 7.3 million as labor market remains sturdy despite higher costs",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSFlHMFg5dzZybWJjcjdKaS1EdkhZUmhWUHEwTHpGamNyUjhKRXljaVlnb0lxWmJUZlJKZzI2TDNhNTdEbFNpVzdBdFpHSDJURElMZzJYNXlBR0VMMWFyTHNEaFMxU3M3NE5pUjU4TURuVXZVN1lwMnRFbkpQN2w3VEdwRUpfREVMYVZCdHBsYy1ETU1YNTlQN1AxU1M?oc=5",
+      "title": "FTC alleges Amazon illegally made $20 billion by rigging billions of ad auctions",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTG40SlVsWjA5cmh1TDRGbFNza2pqYjJZNjJfNDdKV0VkQTU5VUNGR21tWXQ5cEo4ZEVybU5aWGhLeE1MUlNkMWM4SkRjT0FiQ3BIX3hrRVZDTUh6ald1U1RPZ1V3aUZzenpDQU96X3RVUW5CZ29laldwWnRLNWNEeS1ZejMwX3l2RWVEeDEzWW1Cb25IOHM0b05nVHBSbGZFRG5BRzZiblNkbHVVd0JQNXh6Tm42WTAzd3VyRXZpSzFsUQ?oc=5",
+      "source": "Ars Technica",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "US borrowing costs hit fresh highs over inflation fears",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yRnc3NXVUUlI3NGJFTDJRbmg3MFJJWFlqT1NpYUlZRnZSNGF3MGFFVDBWbVVDWlNmMUx2bm5TcWFCbGRmOGlOcnhkUFhFLVJnNXZkUUxMZnVEUQ?oc=5",
+      "source": "bbc.com",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "U.S. July job openings come in soft, but tick up from revised June figure",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRHJKNUhaTkhRVWFHeUpIbjVlYmlrREx5YzNIOVNzM2stTklZWEdFNU5PRHVHX21OTkRobkU3c2Q4YVVMMml1Q1lrRmhmdkkzQnBRNWZ3NXpfaWFsY3VlbDN4RUxncGM0WFhCbmpGUjhhNHpnYTVueFg2UVNNVl9PWUMyNDc3ZHFGQ2ZZNUhaVGpraGhEdmxyMm9DcGdjaDd4TTRCSmc2UG5vbjRZRDhpRVhNQTBOQ1VOTzU1UGhiOEg1TEF1d2hqeQ?oc=5",
+      "source": "Investing.com",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Fast-fashion giant Shein's shares fall after Hong Kong trading debut that spotlights its China roots",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNa0N4dmZJbzMxeGhCLWkxRnFtR0tVV08tUFVUbzNoaUF4NFQwR1BoQ1pqeUZFTV9HTTNkaHZLN0tDTUYtRnc5RTlnalJMcXhtYzJNQXJHVDUzVkVyS08wNm9XZkFDSDJqbDlma1RVRE1fYW5rR25KUFdGN1Zqdy1GN2NLaGRNbDJrbFBLUWozVG1iSDA5azEwNHRBOW4?oc=5",
       "source": "AP News",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "John Ternus hypes \u2018huge launch next week\u2019 in first memo as Apple CEO",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNREs2aUZVMkFlanBOSnNzTUprdmxjVWhWSXZvUzhCRWM2eUlRX2dLb2VCSldTR0JRZjNpVEJmU1V2QXlxVllKeTZld3k4clBTZE1DdVpBTmp3TjNRellpY01vMnkwYkU5ZTVEc3VRd19lMzZDY1FZUGtMZU1fVkJ2LXRodXdULWhMTVdWSTZNZmRCakZDNlFRbkZOZ3lxcGNyM2Rn?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Shein founder Xu true to form with minimalist presence at Hong Kong listing",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNclNPMDJFSFFOWlhBRUlpU0J3Z1Z4ZjVOOE1kaXd0d1EtSUFVWG1DU3BqcDdQZjFraUVyZmVYS0hfVE5KOE54ek5BUWROeHFGSVRYaFZHS285VVVfdERXaXlmQkdVdXRxS0YyV2pNbHdhWE9YZ28zUWdoME9fX3FpQVhtSzlIVEg0TklTek5JYVBsYnNMaTNPLVJZOW9GUm85dlY4X19oTjByR3A5T18zc2I2Y1NPcHoyQkc5ajFteV81clpWX2hmazBB?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Citi, Goldman, other global banks and asset managers team up on stablecoin venture",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOanYzM3hFelVBMUZVQnNidnFKSEt6bWt0eXNEWG5vLUV4T2ZWZkZITm1ZY1BkTXNfenVlS01rSFFCVlRodGpJbnBOUkxLNjVfNHZvbkpndDJFdWJtSnE5SFdIT3VqSDk0aC1pQk00SHNmcll2bUs3Qm9QblhtRjZ5UEZmRDZwRUFuMHRQQVdsNlhXSHZrTllFVmlwQnJXQVNzM3JSYUF4LXVfTjFfM1dfZEREU21yaW12c1haSFpJR29aZlE?oc=5",
-      "source": "CoinDesk",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Dow Jones Futures: Market Breaks Key Levels As Oil Prices Jump; Dell, Credo, Palo Alto Are Earnings Movers",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWUdvU0pXc0dwSE44VUhDNkdFZTltY2p2Sm1SdF82Q3FCM3B0TnhqenJwQ1pMR1NOcXV3Ni1pYkJPM1JXcUk3UFhpM0QyX2hoeDF6SVZ5QldfQkNpMkwyOWtQdzdzQ2p5bElKY1FGOHZ0WDUxaWZsM2VDQ0tHZndKZFRRelcweVhLSnp2SG1iVUVtWE5UbnlJcTcyb2xNT2VLWmNRUmZNX0N4ekx1Tk9FNDVzeFNRWUFTUzBEcWpZNA?oc=5",
-      "source": "Investor's Business Daily",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1554,7 +1554,7 @@
     "changePercent": -1.29,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 1 Sep: 29,077.22, down -1.29% -- BEARISH. price below SMA20, RSI 38.2 weak, MACD bearish, strong -1.29% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-01T19:31:34.440492"
+    "timestamp": "2026-09-01T19:33:22.774990"
   },
   "sticky": {
     "cnbc": [
@@ -1638,38 +1638,38 @@
         "description": ""
       },
       {
-        "title": "UBS May Get a Softer Swiss Safety Net",
-        "url": "https://finance.yahoo.com/economy/policy/articles/ubs-may-softer-swiss-safety-150648226.html",
+        "title": "10-Year Treasury Yield Breaks Out, Testing Bessent, Hitting Stocks",
+        "url": "https://www.investors.com/news/10-year-treasury-yield-breakout-despite-bessent-buybacks/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T15:06:48+00:00",
+        "published": "2026-08-31T15:15:45+00:00",
         "description": ""
       },
       {
-        "title": "InPost Delivers Growth With a Margin Hangover",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/inpost-delivers-growth-margin-hangover-150804622.html",
+        "title": "Cardano Price Forecast: ADA Risks 30% Drop Toward $0.14",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/cardano-price-forecast-ada-risks-151931415.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T15:08:04+00:00",
+        "published": "2026-08-31T15:19:31+00:00",
         "description": ""
       },
       {
-        "title": "Knight-Swift Transportation (KNX) is Positioned to Leverage Evolving Freight Market",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/knight-swift-transportation-knx-positioned-150918993.html",
+        "title": "FDIC defeats $1.71 billion claim over Silicon Valley Bank collapse, US judge rules",
+        "url": "https://finance.yahoo.com/economy/policy/articles/fdic-defeats-1-71-billion-151108719.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T15:09:18+00:00",
+        "published": "2026-08-31T15:11:08+00:00",
         "description": ""
       },
       {
-        "title": "5 things you really need to sell if you\u2019re a retired US boomer (if you want a low-stress life). How many do you own?",
-        "url": "https://finance.yahoo.com/small-business/articles/5-things-really-sell-retired-151000416.html",
+        "title": "How Flowserve Corporation (FLS) is Positioned for Long-Term Success in the Nuclear Market",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/flowserve-positioned-long-term-success-151105058.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T15:10:00+00:00",
+        "published": "2026-08-31T15:11:05+00:00",
         "description": ""
       },
       {
-        "title": "PG&E Falls on Liability Bill; Nvidia Rises on Chip Investment | Stock Movers",
-        "url": "https://finance.yahoo.com/video/pg-e-falls-liability-bill-150555562.html",
+        "title": "Aon expands mid-market reach with $17 billion USI deal",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/aon-expands-mid-market-reach-151700388.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T15:05:55+00:00",
+        "published": "2026-08-31T15:17:00+00:00",
         "description": ""
       }
     ],
@@ -1750,58 +1750,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7645.5,
-      "change": -53.5,
-      "change_percent": -0.69,
+      "price": 7644.75,
+      "change": -54.25,
+      "change_percent": -0.7,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29129.5,
-      "change": -383.5,
-      "change_percent": -1.3,
+      "price": 29123.25,
+      "change": -389.75,
+      "change_percent": -1.32,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52837.0,
-      "change": -403.0,
+      "price": 52833.0,
+      "change": -407.0,
       "change_percent": -0.76,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2924.6,
-      "change": -34.1,
-      "change_percent": -1.15,
+      "price": 2924.5,
+      "change": -34.2,
+      "change_percent": -1.16,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.78,
-      "change": 5.02,
-      "change_percent": 5.85,
+      "price": 90.79,
+      "change": 5.03,
+      "change_percent": 5.87,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4376.4,
-      "change": -54.7,
-      "change_percent": -1.23,
+      "price": 4373.2,
+      "change": -57.9,
+      "change_percent": -1.31,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 64.71,
-      "change": -1.52,
-      "change_percent": -2.29,
+      "price": 64.64,
+      "change": -1.58,
+      "change_percent": -2.39,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1748.5,
-      "change": -39.9,
-      "change_percent": -2.23,
+      "price": 1747.3,
+      "change": -41.1,
+      "change_percent": -2.3,
       "name": "Platinum Oct 26"
     },
     {
@@ -1815,7 +1815,7 @@
       "symbol": "NG=F",
       "price": 2.95,
       "change": 0.02,
-      "change_percent": 0.68,
+      "change_percent": 0.65,
       "name": "Natural Gas Oct 26"
     }
   ],

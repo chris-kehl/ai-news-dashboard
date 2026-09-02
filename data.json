@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T04:16:37.165794",
+  "timestamp": "2026-09-02T04:23:13.299853",
   "summary": "Key topics today:\n- - The efficient frontier of LLM inference (r/HackerNews, 201 pts)\n- - Claude Fable 5.1 and Claude Mythos 5.1 (r/HackerNews, 101 pts)\n- - The Emergent Symbolic Structure of Artificial Neural Networks (r/HackerNews, 101 pts)\n- - How accurate have Ed Zitron's AI skeptic predictions been? (r/HackerNews, 101 pts)\n- - My local model setup on an M4 Pro Mac Mini (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "buy",
-      "asset": "LIDR",
-      "price": 1.47,
-      "change": 27.83,
-      "category": "stock",
-      "text": "LIDR +27.8% momentum @ $1.47"
-    },
-    {
-      "type": "buy",
       "asset": "MRNA",
       "price": 154.27,
       "change": 11.8,
       "category": "stock",
       "text": "MRNA +11.8% momentum @ $154.27"
+    },
+    {
+      "type": "sell",
+      "asset": "CRDO",
+      "price": 206.63,
+      "change": -11.22,
+      "category": "stock",
+      "text": "CRDO -11.2% drop @ $206.63"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-02T08:16:23.604647",
+    "timestamp": "2026-09-02T08:22:59.475004",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-02T08:15:41.057336",
+    "timestamp": "2026-09-02T08:22:14.529629",
     "trending": [
       {
         "symbol": "FRVO",
@@ -454,13 +454,6 @@
         "change": 4.98,
         "change_percent": 33.72,
         "name": "Fervo Energy Company"
-      },
-      {
-        "symbol": "LIDR",
-        "price": 1.47,
-        "change": 0.32,
-        "change_percent": 27.83,
-        "name": "AEye, Inc."
       },
       {
         "symbol": "MRNA",
@@ -482,13 +475,6 @@
         "change": -31.24,
         "change_percent": -6.85,
         "name": "Dell Technologies Inc."
-      },
-      {
-        "symbol": "^N225",
-        "price": 64325.64,
-        "change": -1889.7,
-        "change_percent": -2.85,
-        "name": "Nikkei 225"
       },
       {
         "symbol": "MDB",
@@ -533,6 +519,13 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "XRP-USD",
+        "price": 1.34,
+        "change": -0.01,
+        "change_percent": -0.7,
+        "name": "XRP USD"
+      },
+      {
         "symbol": "GTLB",
         "price": 45.09,
         "change": 0.22,
@@ -540,17 +533,24 @@
         "name": "GitLab Inc."
       },
       {
-        "symbol": "SOL-USD",
-        "price": 99.85,
-        "change": -0.14,
-        "change_percent": -0.14,
-        "name": "Solana USD"
+        "symbol": "CL=F",
+        "price": 90.04,
+        "change": -0.18,
+        "change_percent": -0.2,
+        "name": "Crude Oil Oct 26"
+      },
+      {
+        "symbol": "ETH-USD",
+        "price": 2413.14,
+        "change": -4.7,
+        "change_percent": -0.19,
+        "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 77394.04,
-        "change": -9.59,
-        "change_percent": -0.01,
+        "price": 77277.1,
+        "change": -126.52,
+        "change_percent": -0.16,
         "name": "Bitcoin USD"
       }
     ],
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-02T08:16:00.747022",
+    "timestamp": "2026-09-02T08:22:36.576447",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 16.4,
-        "change": 0.37,
+        "price": 16.51,
+        "change": 1.04,
         "type": "index"
       },
       {
@@ -1016,20 +1016,20 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7640.25,
+        "price": 7640.5,
         "change": -0.03,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29082.0,
-        "change": -0.15,
+        "price": 29072.0,
+        "change": -0.18,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52850.0,
-        "change": 0.04,
+        "price": 52859.0,
+        "change": 0.06,
         "type": "future"
       },
       {
@@ -1040,87 +1040,75 @@
       },
       {
         "symbol": "CL=F",
-        "price": 90.06,
-        "change": -0.18,
+        "price": 90.12,
+        "change": -0.11,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4371.1,
-        "change": 0.53,
+        "price": 4373.9,
+        "change": 0.6,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 64.6,
-        "change": -0.04,
+        "price": 64.72,
+        "change": 0.16,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1740.4,
-        "change": -1.2,
+        "price": 1740.8,
+        "change": -1.18,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1318.5,
-        "change": 0.1,
+        "price": 1317.0,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.94,
-        "change": 1.24,
+        "change": 1.38,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 218.8,
-        "change": -3.66,
+        "price": 218.9,
+        "change": -3.56,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77404,
-        "change": -1.11,
+        "price": 77322,
+        "change": -1.12,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2416.42,
-        "change": -1.86,
+        "price": 2414.19,
+        "change": -1.87,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 99.83,
-        "change": -2.7,
+        "price": 99.82,
+        "change": -2.72,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.2,
-        "change": -1.65,
+        "change": -1.49,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.21,
-        "change": -0.86,
+        "change": -0.83,
         "type": "crypto"
-      },
-      {
-        "symbol": "FRVO",
-        "price": 19.75,
-        "change": 33.72,
-        "type": "mover"
-      },
-      {
-        "symbol": "LIDR",
-        "price": 1.47,
-        "change": 27.83,
-        "type": "mover"
       },
       {
         "symbol": "CRDO",
@@ -1169,6 +1157,18 @@
         "price": 362.09,
         "change": -2.56,
         "type": "mover"
+      },
+      {
+        "symbol": "XRP-USD",
+        "price": 1.34,
+        "change": -0.68,
+        "type": "mover"
+      },
+      {
+        "symbol": "GTLB",
+        "price": 45.09,
+        "change": 0.49,
+        "type": "mover"
       }
     ]
   },
@@ -1184,16 +1184,6 @@
       "author": ""
     },
     {
-      "title": "US borrowing costs hit fresh highs over inflation fears",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yRnc3NXVUUlI3NGJFTDJRbmg3MFJJWFlqT1NpYUlZRnZSNGF3MGFFVDBWbVVDWlNmMUx2bm5TcWFCbGRmOGlOcnhkUFhFLVJnNXZkUUxMZnVEUQ?oc=5",
-      "source": "BBC",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Trump Ramps Up Pressure on Squeezed Refiners to Ease Pump Prices",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNktIZlRDT2ZGc2RLd1NFNEpXT0Rza3FtUlNZU1RuZHh6amR2djFPWTJtUXlyTGxVZXBvdmFyM1hYLVZIc2xiYWJmNUxOc2RfSTNMNnc0WTltTUZkbDhhZTZKYWRnUlliNmFwaklBRjlMb3c5TGdCbmFXVjByZl9ULXM4M2pGMk5DVlNUNWU1ZzFwMDVMNWNLdUN2VQ?oc=5",
       "source": "finance.yahoo.com",
@@ -1204,9 +1194,9 @@
       "author": ""
     },
     {
-      "title": "Dow drops below a key chart level, warning of more trouble ahead",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcFBPMFJ5RnVfWTRBU3hQYl9aWnpCQUU0eVdJdkJCVUNwU0cyazctNTBPMFhQSTZ6MzlxTlFLcWlYWEVza2V3ZEJobzJJV2NubnphLWVPZUl6Zy1WeWI3dEhidmxhSTUwemtsdUNnWE03djUxR0hpa2FzQnJZYi13Yi1SSlV0SkpWdEtyaGctYmo1VlJEREQtM3dKZlo1eU5FQUVuek03blFzUQ?oc=5",
-      "source": "MarketWatch",
+      "title": "Treasury Yields Hit 19-Month High",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOFoyM1pIR09zeW9yY1R2cndiMmVDaVAtRlRLTXgwX1VEWjA1UGlfbHI5NWstc1hnQVVVYkEzMUNXdXBMQVAtcWNGdnJoeFEzeUNrWGJHalF1b3IwQlZSVEhoT0puXy1yNnEyVGFNdjN4WmZVWktsUHQxNV9tTl9TZ0otajBOUlZMQS1Wa0lldUFCM2lCX3AzbGlrenJqenNfbk5CQk9lSWJ2TmNvNDdIQVFQeER6bGkwcnowaEtyc3p5Rll0RXRvOTlpNFdGNk1nNkNhV1VhTDRDSFdDVTNQUVJ5TQ?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1214,9 +1204,9 @@
       "author": ""
     },
     {
-      "title": "Oil prices extend gains as US and Iran trade fresh strikes",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLTRkVWlBVVJQeFBDbXB5UzFkd05qc05KVXhja1h2cC1aMUZxOTRGQTY4a0ZHeWpiSzl0UE50MjRTTjFVREhMUGJhd29Ka21tTTlISE9yd3pSSHFESEtVOTBzb2c0dEVFakx5eEJLamxsMUJxZ0NOSTBpNll2a2Z5eVBncmR6S3MtSW1ITE9hN01KbUljNlcwNlB3aw?oc=5",
-      "source": "Reuters",
+      "title": "Stock futures are little changed after Wall Street posts third straight losing day: Live updates",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9fYmc5aklBNDFsTzFfLUh5WkxJa2NmVFJ3ZFVhWkg0ZEVGazgzMDMxVWEyd3ZXSXo4QVB1UEl2TEtGenE1d3lGRW1NbTd0aklnOUhFN3VjSzY3a1lySUM1R1dXSzY1UkFCR3lQRkFOVllMSkhDc0U00gF8QVVfeXFMTXdGR0lqMFJJMXFuWWVRR0lqbDU0aTMwYzltbTlpWVpVeHRmV1ItZUtiT0lQeDRhNzNaSy0zRVQzQmtEa094X3lkS3hBMHloOXpXNERIdkNFclJCZWotNUEtUjBBZGwyYndVb2U3Y0c1UTJrMC16VHRJYklIMQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Wed, 02 Sep 2026 ",
       "description": "",
@@ -1224,19 +1214,9 @@
       "author": ""
     },
     {
-      "title": "Apple enters a new era as John Ternus takes over as CEO",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVnBJSlZTd1ZSM25LcTlKSjVldnFDcy1jLTJOVjdHNXk1RE8tUjUtNm1XNl9ZcXFTOFdHTmlkdUhqQW0tWXE4eElDbFR3bzk4UDVhdjU3Nk1SSEx5UGhVZVBFbG9jWEg3UTlTa2RuSnhqYmNhY3RUN0wxSmlkUHZUdnhPS3Jjb254MGg40gGQAUFVX3lxTE5DN25zS2VkN00wWHRTV3hSTnVHNVVLdFd2dV9fTUtpNmZIcDdId2VzLWczREtYYVd0M3lpaGpHb29wTXRiaHhHTjNLNGZVcUJhSk41NXVJMWtPNXF4cjVfWVYzTGc1WDZKNklyemo0aUV3UWZXWWxjMzZxOUxVaWtMYWxFZlhUem5xTGhXZ2dfaw?oc=5",
-      "source": "Fox Business",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Broadcom Set to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRjU2WmJfemM3V1l4RWladC02SWxvWG9lOGpFVWVZQkRwX0dreHVnR0FoTi1TYXVLa1JmR3lLN1YxMWNSbmRaa1VjRGJIWTVnMlBCa0dPckZQdXlnSm9VSkx0ZGhDeVQ4aXZjUnpFcjRwWkljM2otZTNaaXRWWUdYTFJqOGhKWWVfVmhSMHBORTZTRGRqWHV4bDZ2M2ZLMWtqSFFEQQ?oc=5",
-      "source": "Zacks Investment Research",
+      "title": "Apple Unveils Pay Package For New CEO John Ternus",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSEczaEE0ZjZxU0tvUENfTlhYa2NpTDUySDRCbGpTOHFLUmpyQ0Q5QTZ1SGdySExJSVVxaHZzdDN6cy01MFBkSE5fRVJpeE9oa3FFTktCRlU2NU41a21EQmZXZWlHNkJINEtGczNPVWRVU0czZGlPOEdxWDlzbWhfTkxiZHZtQ2h4S1h0Z3F0REFnQWtq?oc=5",
+      "source": "Deadline",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1247,6 +1227,26 @@
       "title": "FTC alleges Amazon illegally made $20 billion by rigging billions of ad auctions",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTG40SlVsWjA5cmh1TDRGbFNza2pqYjJZNjJfNDdKV0VkQTU5VUNGR21tWXQ5cEo4ZEVybU5aWGhLeE1MUlNkMWM4SkRjT0FiQ3BIX3hrRVZDTUh6ald1U1RPZ1V3aUZzenpDQU96X3RVUW5CZ29laldwWnRLNWNEeS1ZejMwX3l2RWVEeDEzWW1Cb25IOHM0b05nVHBSbGZFRG5BRzZiblNkbHVVd0JQNXh6Tm42WTAzd3VyRXZpSzFsUQ?oc=5",
       "source": "Ars Technica",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "MongoDB Earnings Beat Estimates But Stock Tumbles",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZFJ1ekF4bGdOS2hsTmI2aHowTGlqZW13ZXZlckk4cnlMY2E5YzF4Um9zQWxKTF8xS2FOYi0wMHllTUg5QzlBTTU2ODNZbHoxOU9LSVpLX1FLUUctcjVQRkYyMTdQT3VaRVRvUmdaaEwxMjRnN3kxVDk1M2tKa0F0NVZTX3ltaE0?oc=5",
+      "source": "Investor's Business Daily",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Broadcom Set to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRjU2WmJfemM3V1l4RWladC02SWxvWG9lOGpFVWVZQkRwX0dreHVnR0FoTi1TYXVLa1JmR3lLN1YxMWNSbmRaa1VjRGJIWTVnMlBCa0dPckZQdXlnSm9VSkx0ZGhDeVQ4aXZjUnpFcjRwWkljM2otZTNaaXRWWUdYTFJqOGhKWWVfVmhSMHBORTZTRGRqWHV4bDZ2M2ZLMWtqSFFEQQ?oc=5",
+      "source": "Zacks Investment Research",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1288,7 +1288,7 @@
     {
       "title": "Razer Unveils the Razer Prio: the Pocket-Sized Controller",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbWRDZE1nMU0zQ0FNZjZEZjEtejBvaVdQUGg5RE9yNG9XOGlUMVF2bmhaU3FpYXBWR2IxT1o4M09QdW9saVdGbGlQSk9TOFltTlR6bmUwbEJxR3ZzTjhnUHU2UXhOVWEybnNNZ25OaFFZRmN2eW5CalgtU1N1SUNHZTFXU2FmSXRJSTNOcEh1T1hucEY1ZHfSAZsBQVVfeXFMUFU1RkdsLXd1MEd5ZjRWcTRxTGNtazNGR3ZvVWxvY2ROcWpEV2FYcGJHcC1XN1RsZDJpXzVZVmVkd0lrNTRNU0VYUEFnYkJOdmliQldXSG9lSTlGSlAySHdpd2dFd3k3ZFdNb0pFX1J2clZYb2hFMUhhUWdYRzBBUkNLazluX2wwRGM5MnRmTmJsYjJtVmNxakdlRkU?oc=5",
-      "source": "techpowerup.com",
+      "source": "TechPowerUp",
       "category": "business",
       "published": "Tue, 01 Sep 2026 ",
       "description": "",
@@ -1306,31 +1306,31 @@
       "author": ""
     },
     {
-      "title": "Latest leak claims the iPhone 18 Pro lineup will launch in these new colors - GSMArena.com news",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSXlVN0o0RmR5Q0ExS05LLXBhbEdpcnVTbFpXYVNiQ0JxUW96TGZmV1FyR2duUFJWZGVDREdfWFlPMDdXTjlSUEZmd3hxU1VnYU5mOENKT3UyWmdqQW1sa3JvYTJvYl80VC0xSTRRLU1ZeFBJX3B4NWVOWDU1NloyQUE5T1FiWDk4ZEg5YnI0SEhWWVJaVUgybGhENHlZemxSX1hDb1VzTXNxVFk0cUdzalpPdV9Bd9IBsgFBVV95cUxNY3p5N3locDVkSE9OdHZFU1JhWFg5bkJnd194MkJ4cHZxWkZ6eGg3UjVlVGZ3S1JBNng1U3kxejNZUV91b3Q5ZHBOalFXVXFMM3hlMFZETjMtWXJZMmhGNlB2SzRsZUhYV3hsUHUxRWhtdThZeDR1NGwtNDFMVmJxN3p4S0lKZjA4eGp4UzBkSHpzRXczek9zcWd4RDNOeE9rRWFUUlFGejdfXzdxNEdkRUxn?oc=5",
-      "source": "GSMArena.com",
+      "title": "First Drive: The Bentley Continental Supersports Has Hit the Gym",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeklQeEs2ZmF5TEhWbFVKbUhFTk53ZXdFOFl0b01oeW94cm94TmZUU1RldmxNVnFkT00tMFVUSHNwQWxKMGN6ZUE5S2RMR3oyUXFhdnV4cWRuWnVhNVNUV0E0NElDQzd5NjJRSm5DRnRtdDV3bk9EZUdpTnl2OEFYWmtBVDQ1S01SaWFjMTJRMktLRGIxSVQ0MGFHUQ?oc=5",
+      "source": "Road & Track",
       "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
+      "published": "Mon, 31 Aug 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Nonprofit wants to launch 80,000-year mission to Alpha Centauri in 2029 (video)",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRHljeFpQVjVHUm51SVdIMHJQWDdTOXJvSlQzTWMwM3pIWGI0RWZQUWtITm5DYjZFUFJIaGZJVzBoTkF2Z0NPOVlXU1dWeGdrNUJrSmNKMWF5ZFNBbHFxbm9kdmNFUVFFOEVXbHY1ck8ya3hnclRmRF9GSk1BcmdleUVaZzAtRG5wVTZlZHJJRGVrTDZUcEZnV0pyOXA5elRKWEZ2aTZpNFBRV1VxM2tzNEYwR25ValFx?oc=5",
-      "source": "space.com",
-      "category": "business",
-      "published": "Tue, 01 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Mario Kart 8 Deluxe Has Been Updated To Version 4.0.0, Here Are The Full Patch Notes",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZVJWckZJZFBsMW02V3NBRTMtNlJPY0NsMkduN2RyejZrRV9zd1lKZlBKcjliSTViZjVqeUYyeUFodHdqbVE4c19SRjlRMWNwUWh5SXh4QTZRQ01TZGZFVkJOeW1wQXF1WWduTk1PeXlJNDNCOG5CbHNCX0xaU2hoU3FvUGI5aGhNV1AzMUlvVXIxcnhSUlRZczVDaWU2aGZRb3pJSkViVGxGU0JqRF85RDhZdVhaVVNkNE5Wcl9vcmNSLU0?oc=5",
-      "source": "nintendolife.com",
+      "title": "Mario Kart 8 Deluxe version 4.0.0 update now available, adds Switch 2 enhancements",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYVc3aDI2ck9vR1JPZk14TDNPMkYyR0ZDTXJsS0pQLXR1ZGRvcTFCQnhJLWVpcnEzMm5MNWZtclNySWZNS2ZHMEpCTzd3RDVONHpuWHhGdU9PcS1XX1gtN2FYSElOajJYb1BnSmplZFRlOEdkQ3pBeFp0SHFqdkt0a2FuRDI1d0JEV1h4TEl3bUg3SEloT0phQ01qQ24zZ2VUejY4b21uTFhSUnMwM1FEdUdwZw?oc=5",
+      "source": "Gematsu",
       "category": "business",
       "published": "Wed, 02 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "iPhone 18 Pro Colors Apparently Include Black, But Skip Silver",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTnBFR2pXalR6eWZQaVI4TVlpdHItUDAtZml1aUZCaHhDNTA5cFJCM2g2eUlVbDdmYXMwVk5PYmZlR0czMGowUEtWWW9sNlhvbVhUc29HeUItNXFDazg4cmRQX041WWtTUWpvNXJoUFRZUVctTnBOOURzR1BQZGpyZlRrdFdqeHVOQTQ3dU5SWUxMUQ?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Tue, 01 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1546,7 +1546,7 @@
     "changePercent": -1.29,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 2 Sep: 29,077.22, down -1.29% -- BEARISH. price below SMA20, RSI 38.2 weak, MACD bearish, strong -1.29% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-02T04:16:35.046620"
+    "timestamp": "2026-09-02T04:23:10.826657"
   },
   "sticky": {
     "cnbc": [
@@ -1616,6 +1616,20 @@
         "description": ""
       },
       {
+        "title": "Tesla Tops S&P 500. Was It Cybercab Buzz, Or Elon Musk's New FSD Tease?",
+        "url": "https://www.investors.com/news/tesla-sp-500-cybercab-robotaxi-self-driving-cars-elon-musk/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-08-31T20:34:22+00:00",
+        "description": ""
+      },
+      {
+        "title": "Gold posts best month since February despite investor concerns over rate hikes",
+        "url": "https://finance.yahoo.com/markets/article/gold-posts-best-month-since-february-despite-investor-concerns-over-rate-hikes-165315959.html",
+        "source": "Yahoo Finance",
+        "published": "2026-08-31T16:53:15+00:00",
+        "description": ""
+      },
+      {
         "title": "AMD Stock Alert: Advanced Micro Devices Teams Up With Cisco on AI Infrastructure",
         "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-alert-advanced-micro-201522502.html",
         "source": "Yahoo Finance",
@@ -1630,20 +1644,6 @@
         "description": ""
       },
       {
-        "title": "How to get a car loan with bad credit",
-        "url": "https://finance.yahoo.com/news/car-loan-bad-credit-203049189.html",
-        "source": "Yahoo Finance",
-        "published": "2026-08-31T20:07:20+00:00",
-        "description": ""
-      },
-      {
-        "title": "Nvidia Stock Teases Buy Zone After Beat-And-Raise Report. Watch These Clues.",
-        "url": "https://www.investors.com/research/how-to-find-the-best-stocks-to-buy/nvidia-stock-teases-buy-zone-after-beat-and-raise-report-watch-these-clues/?src=A00220&yptr=yahoo",
-        "source": "Yahoo Finance",
-        "published": "2026-08-31T20:04:00+00:00",
-        "description": ""
-      },
-      {
         "title": "Citi says investors should consider buying tumbling tech stock",
         "url": "https://finance.yahoo.com/markets/stocks/articles/citi-says-investors-consider-buying-165315833.html",
         "source": "Yahoo Finance",
@@ -1651,17 +1651,17 @@
         "description": ""
       },
       {
-        "title": "Why large evergreen funds might be the losers in VC",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/why-large-evergreen-funds-might-200316358.html",
+        "title": "Uphold review 2026: One account for crypto, metals, and cash",
+        "url": "https://finance.yahoo.com/personal-finance/investing/review/uphold-review-203900002.html",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T20:03:16+00:00",
+        "published": "2026-08-31T20:39:00+00:00",
         "description": ""
       },
       {
-        "title": "How to get a personal loan with bad credit",
-        "url": "https://finance.yahoo.com/news/personal-loan-bad-credit-020040897.html",
+        "title": "Stock Market Today: Dow Skids As Trump Gives This AI Warning; Tesla Pops Ahead Of Key Event",
+        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-attacks-oil-prices-jump/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
-        "published": "2026-08-31T20:03:10+00:00",
+        "published": "2026-08-31T20:39:54+00:00",
         "description": ""
       }
     ],
@@ -1742,72 +1742,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7640.25,
-      "change": -2.5,
+      "price": 7640.5,
+      "change": -2.25,
       "change_percent": -0.03,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29082.5,
-      "change": -43.0,
-      "change_percent": -0.15,
+      "price": 29073.25,
+      "change": -52.25,
+      "change_percent": -0.18,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52850.0,
-      "change": 22.0,
-      "change_percent": 0.04,
+      "price": 52858.0,
+      "change": 30.0,
+      "change_percent": 0.06,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2925.9,
-      "change": 1.2,
-      "change_percent": 0.04,
+      "price": 2925.7,
+      "change": 1.0,
+      "change_percent": 0.03,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.07,
-      "change": -0.15,
-      "change_percent": -0.17,
+      "price": 90.14,
+      "change": -0.08,
+      "change_percent": -0.09,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4371.4,
-      "change": 23.4,
-      "change_percent": 0.54,
+      "price": 4374.3,
+      "change": 26.3,
+      "change_percent": 0.6,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 64.6,
-      "change": -0.02,
-      "change_percent": -0.04,
+      "price": 64.72,
+      "change": 0.1,
+      "change_percent": 0.16,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1740.4,
-      "change": -21.1,
-      "change_percent": -1.2,
+      "price": 1740.8,
+      "change": -20.7,
+      "change_percent": -1.18,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1318.5,
-      "change": 1.3,
-      "change_percent": 0.1,
+      "price": 1317.0,
+      "change": -0.2,
+      "change_percent": -0.02,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.94,
       "change": 0.04,
-      "change_percent": 1.24,
+      "change_percent": 1.34,
       "name": "Natural Gas Oct 26"
     }
   ],

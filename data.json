@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07T11:27:12.076652",
+  "timestamp": "2026-09-07T11:31:30.629228",
   "summary": "Key topics today:\n- - Speculative Decoding in vLLM on AMD GPUs (r/HackerNews, 201 pts)\n- - Show HN: Engrim \u2013 A universal, local-first SQLite memory engine for AI CLIs (r/HackerNews, 101 pts)\n- - De-Brainrot Vacations (r/HackerNews, 1 pts)\n- - bzip3 (r/HackerNews, 1 pts)\n- - Keep Our Servers Running (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -120,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-07T15:27:03.234278",
+    "timestamp": "2026-09-07T15:31:15.378023",
     "prices": [
       {
         "name": "Bittensor",
@@ -250,6 +250,12 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1X62TPQZQS0CSZKDBXWAKDQ/btc.png\" alt=\"Bitcoin sidechain Liquid pauses after purported \u2018white hats\u2019 withdraw $320M in BTC"
       },
       {
+        "title": "Polish prosecutors charge fifth suspect in a massive crypto probe",
+        "url": "https://www.coindesk.com/policy/2026/09/07/polish-prosecutors-charge-fifth-suspect-in-a-massive-crypto-probe",
+        "published": "Mon, 07 Sep 2026 ",
+        "description": "BitBay became Zondacrypto in 2021. The exchange stopped trading in April after customers faced frozen withdrawals and estimated losses of at least $94 million."
+      },
+      {
         "title": "Stablecoin wallets challenge traditional bank accounts as main consumer money hub",
         "url": "https://www.coindesk.com/business/2026/09/07/stablecoin-wallets-challenge-traditional-bank-accounts-as-main-consumer-money-hub",
         "published": "Mon, 07 Sep 2026 ",
@@ -266,12 +272,6 @@
         "url": "https://www.coindesk.com/tech/2026/09/07/solana-to-triple-transaction-size-as-apps-get-room-for-more-complex-trades",
         "published": "Mon, 07 Sep 2026 ",
         "description": "A Transaction v1 feature activates Wednesday, allowing complex proofs and large multisig operations to fit in one transaction while forcing services that read Solana to update."
-      },
-      {
-        "title": "DBS and Citi complete weekend USD payment via Swift\u2019s Digital Ledger using tokenized deposits",
-        "url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
-        "published": "Mon, 07 Sep 2026 ",
-        "description": "The transaction is the second confirmed live use of Swift's blockchain ledger, coming as the network races to prove it can compete with digital payment rails that never close."
       }
     ]
   },
@@ -422,7 +422,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-07T15:26:35.783236",
+    "timestamp": "2026-09-07T15:30:48.719529",
     "trending": [
       {
         "symbol": "NOKIA.HE",
@@ -432,18 +432,18 @@
         "name": "Nokia Corporation"
       },
       {
-        "symbol": "SIVE.ST",
-        "price": 28.86,
-        "change": 1.6,
-        "change_percent": 5.87,
-        "name": "Sivers Semiconductors AB"
+        "symbol": "ZEC-USD",
+        "price": 1159.64,
+        "change": -68.39,
+        "change_percent": -5.57,
+        "name": "Zcash USD"
       },
       {
-        "symbol": "ZEC-USD",
-        "price": 1163.19,
-        "change": -64.84,
-        "change_percent": -5.28,
-        "name": "Zcash USD"
+        "symbol": "SIVE.ST",
+        "price": 28.52,
+        "change": 1.26,
+        "change_percent": 4.62,
+        "name": "Sivers Semiconductors AB"
       },
       {
         "symbol": "000660.KS",
@@ -456,15 +456,22 @@
         "symbol": "XRP-USD",
         "price": 1.39,
         "change": -0.03,
-        "change_percent": -2.06,
+        "change_percent": -2.22,
         "name": "XRP USD"
       },
       {
         "symbol": "SOL-USD",
-        "price": 104.32,
-        "change": -2.13,
-        "change_percent": -2.0,
+        "price": 104.11,
+        "change": -2.34,
+        "change_percent": -2.2,
         "name": "Solana USD"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 79019.97,
+        "change": -1330.08,
+        "change_percent": -1.66,
+        "name": "Bitcoin USD"
       },
       {
         "symbol": "^KS11",
@@ -474,24 +481,17 @@
         "name": "KOSPI Composite Index"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 79107.76,
-        "change": -1242.29,
-        "change_percent": -1.55,
-        "name": "Bitcoin USD"
-      },
-      {
         "symbol": "ETH-USD",
-        "price": 2486.47,
-        "change": -28.08,
-        "change_percent": -1.12,
+        "price": 2481.96,
+        "change": -32.59,
+        "change_percent": -1.3,
         "name": "Ethereum USD"
       },
       {
         "symbol": "JPY=X",
-        "price": 154.31,
-        "change": -1.35,
-        "change_percent": -0.87,
+        "price": 154.27,
+        "change": -1.39,
+        "change_percent": -0.9,
         "name": "USD/JPY"
       },
       {
@@ -517,9 +517,9 @@
       },
       {
         "symbol": "^GDAXI",
-        "price": 25996.89,
-        "change": -6.43,
-        "change_percent": -0.02,
+        "price": 25995.64,
+        "change": -7.68,
+        "change_percent": -0.03,
         "name": "DAX                           P"
       },
       {
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-07T15:26:59.124407",
+    "timestamp": "2026-09-07T15:31:11.662033",
     "items": [
       {
         "symbol": "SPX",
@@ -980,8 +980,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.31,
-        "change": 5.37,
+        "price": 15.3,
+        "change": 5.3,
         "type": "index"
       },
       {
@@ -1052,38 +1052,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 259.37,
-        "change": 6.78,
+        "price": 257.14,
+        "change": 5.99,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79093,
-        "change": -0.67,
+        "price": 79029,
+        "change": -0.74,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2486.33,
-        "change": 0.29,
+        "price": 2482.62,
+        "change": 0.19,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.37,
-        "change": -1.39,
+        "price": 104.16,
+        "change": -1.55,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.99,
-        "change": 6.58,
+        "price": 12.95,
+        "change": 6.39,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.06,
-        "change": 5.95,
+        "change": 5.99,
         "type": "crypto"
       },
       {
@@ -1093,15 +1093,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SIVE.ST",
-        "price": 28.86,
-        "change": 5.87,
+        "symbol": "ZEC-USD",
+        "price": 1158.08,
+        "change": -5.7,
         "type": "mover"
       },
       {
-        "symbol": "ZEC-USD",
-        "price": 1162.45,
-        "change": -5.34,
+        "symbol": "SIVE.ST",
+        "price": 28.52,
+        "change": 4.62,
         "type": "mover"
       },
       {
@@ -1119,7 +1119,13 @@
       {
         "symbol": "XRP-USD",
         "price": 1.39,
-        "change": -2.1,
+        "change": -2.37,
+        "type": "mover"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 78963.45,
+        "change": -1.73,
         "type": "mover"
       },
       {
@@ -1129,15 +1135,9 @@
         "type": "mover"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 79070.97,
-        "change": -1.59,
-        "type": "mover"
-      },
-      {
         "symbol": "ETH-USD",
-        "price": 2484.65,
-        "change": -1.19,
+        "price": 2479.71,
+        "change": -1.39,
         "type": "mover"
       },
       {
@@ -1150,7 +1150,7 @@
   },
   "business": [
     {
-      "title": "Investigators hunt for what went wrong after cargo plane crash in Miami kills at least 5",
+      "title": "Federal investigators probe Amazon cargo jet\u2019s fiery runway crash that killed 5 in Miami",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2hTN2IwMlRfYkcyMDZtMU9TQ3pIVDVoa1VLeTA5d2dSNDdYTG1UX0wzbmdJRkNhLV9Sa2pLVklsMGpRMi1zaFU1bFdzSVBTTkVXMURraFU1Nm81a0lKcUlsdGNRbHZ5ektFc3JKZDRLU3hoOGhhX1k1VjRrbE9fUWdVWWdGXzJ3VGtFbi1ON0pHdGQwb2VLZkNPM1hPNGwyOTBPZVlkVQ?oc=5",
       "source": "AP News",
       "category": "business",
@@ -1170,9 +1170,9 @@
       "author": ""
     },
     {
-      "title": "China says it will pump $54 billion into banks and insurers \u2014 but their stocks still fell",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONGRkT2VHM2tCTWpYZzhsc05CbGRvRDFaMjlYWDFzcHVxa3NMcDdTYXJIb2dDS0hPWDgzX1UxNElKTm9qdlhGd0hueXgwaW4yWWNkUE9rRjdVbkxRMkc5VkE2ZXVyeHVCYV9sTHI2WHdiMWROcXZCZXVSaFlNUXgwVmRxa3FEWExWQ3NZMkF4QURDQVRudDhCMTlYRTlHdHNwLVlmYw?oc=5",
-      "source": "CNBC",
+      "title": "Rafael, Aurelius to build Iron Dome components at former Volkswagen plant in Germany's Lower Saxony",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxNDl3a1VzTXcxMjlybWk2c2JwSDdXbkg4U3J0bDRQVm4tRVJ3TkFjS3JVaU1HNl84ZVhwVklxdF94aEJReEJsUGhzVVlkVFVyY0tRVTUxekN6b3lsZlVaMzdJWQ?oc=5",
+      "source": "The Jerusalem Post",
       "category": "business",
       "published": "Mon, 07 Sep 2026 ",
       "description": "",
@@ -1180,9 +1180,9 @@
       "author": ""
     },
     {
-      "title": "Breaking down the U.S.-Canada trade war in 4 charts",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQb0RPTHR2SjEwMElBUDF1Q0tOX1VZREdVSGNKVllkNUV3SFU0UVd1ZXRNaVBmVWdiZGZ2aHpkTEpPaVdhak1mQTZIWEhxZGlBbVo3VFU5N3hSS3V5OENFLW1CWFIxdmtLVHozeEotUDRTQ1hYQm5JLXh4ZDlnT2NlRENPNnE0d3NleXJ4RXBKdzQ?oc=5",
-      "source": "NBC News",
+      "title": "China says it will pump $54 billion into banks and insurers \u2014 but their stocks still fell",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONGRkT2VHM2tCTWpYZzhsc05CbGRvRDFaMjlYWDFzcHVxa3NMcDdTYXJIb2dDS0hPWDgzX1UxNElKTm9qdlhGd0hueXgwaW4yWWNkUE9rRjdVbkxRMkc5VkE2ZXVyeHVCYV9sTHI2WHdiMWROcXZCZXVSaFlNUXgwVmRxa3FEWExWQ3NZMkF4QURDQVRudDhCMTlYRTlHdHNwLVlmYw?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Mon, 07 Sep 2026 ",
       "description": "",
@@ -1220,9 +1220,9 @@
       "author": ""
     },
     {
-      "title": "Party's over for crypto scammers who went on a spending spree after a $240 million bitcoin theft",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNVVQNk43RTYyQ09EWXRRUDBuZmZwQ0VBWUh3eFRmcnQxdlpINnowQTJabnd4NkdNeDlaM1l0bTR0akZ4eWV4akFyNFAzd1dTVmMxaE5Hd2dKcjl4TGdmdEc2cjZ3bmRHR290QThLbXcwdWtja1dWVzNHenV2ZFNkUWo5QWo3TkJ1elJLVEhVWGlOd04wanRSeHA5OGJFdw?oc=5",
-      "source": "AP News",
+      "title": "\u2018Uncharted territory\u2019: The $40 trillion U.S. national debt just got uglier as interest payments rise to $1.25 trillion a year",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDJCdmh5ZmFmVy12R0ZDdUZja0p4d3lQNnptLXJhbUJJR3g4d3gxdmZsWEZNbVRsZlFHNmRWUzgyLTVjQkFTcmZIWkN6RWUzazZBS1lBVks0MVBRNUlHN095OGVIUm00S2dFdE05MmxlS0s3R080TjF5RHgxV1ZwWUJtMnM2VXdZUUpaa0RzWVlKSUVybC04UXBxUGxld2ZX?oc=5",
+      "source": "Fortune",
       "category": "business",
       "published": "Mon, 07 Sep 2026 ",
       "description": "",
@@ -1362,14 +1362,6 @@
       "relevance_score": 5
     },
     {
-      "title": "Why has Nicaragua taken Germany to the ICJ over Gaza genocide?",
-      "url": "https://www.aljazeera.com/news/2026/9/7/why-has-nicaragua-taken-germany-to-the-icj-over-gaza-genocide?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Mon, 07 Sep 2026 ",
-      "description": "Nicaragua accuses Germany of violating the Genocide Convention by supporting Israel amid its onslaught on Gaza.",
-      "relevance_score": 5
-    },
-    {
       "title": "Kyiv air raid alerts at record high as Russia launches round-the-clock strikes",
       "url": "https://www.bbc.co.uk/news/articles/cjdvx9pz44ro?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1394,19 +1386,11 @@
       "relevance_score": 4
     },
     {
-      "title": "Iraq faces sovereignty test as US-led military coalition exit nears",
-      "url": "https://www.aljazeera.com/news/2026/9/7/iraq-faces-sovereignty-test-as-us-led-military-coalition-exit-nears?traffic_source=rss",
+      "title": "Israel opens trade office in Bosnia\u2019s Republika Srpska",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/israel-opens-trade-office-in-bosnias-republika-srpska?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Mon, 07 Sep 2026 ",
-      "description": "Analysts warn Iraq faces severe security and political tests as the US-led coalition withdrawal deadline approaches.",
-      "relevance_score": 4
-    },
-    {
-      "title": "Moment Israeli strike hits next to Lebanese reporter",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-israeli-strike-hits-next-to-lebanese-reporter?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Mon, 07 Sep 2026 ",
-      "description": "Moment Israeli strike hits next to Lebanese reporter",
+      "description": "Israel\u2019s Chamber of Commerce has opened a new trade office in Banja Luka.",
       "relevance_score": 4
     },
     {
@@ -1423,6 +1407,14 @@
       "source": "Defense News",
       "published": "Fri, 04 Sep 2026 ",
       "description": "The Air Force is accelerating its timeline for a cheaper, more expendable successor to the MQ-9A Reaper after combat losses.",
+      "relevance_score": 3
+    },
+    {
+      "title": "How the media manufactured consent for genocide",
+      "url": "https://www.aljazeera.com/video/the-listening-post/2026/9/7/how-the-media-manufactured-consent-for-genocide?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Mon, 07 Sep 2026 ",
+      "description": "A new book uncovers the role the media played in whitewashing Israel&#039;s genocidal war on Gaza.",
       "relevance_score": 3
     },
     {
@@ -1538,7 +1530,7 @@
     "changePercent": 0.21,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 7 Sep: 29,544.15, up +0.21% -- BULLISH. price above SMA20. Counter: RSI 42.1 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-07T11:27:09.640760"
+    "timestamp": "2026-09-07T11:31:27.821260"
   },
   "sticky": {
     "cnbc": [
@@ -1709,11 +1701,11 @@
         "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
       },
       {
-        "title": "Wall Street bets on rate hike after shock jobs report - Capital Brief",
+        "title": "Wall Street bets on rate hike after shock jobs report - capitalbrief.com",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNnpLa0hHMDB1bXE0SGc0djdILTM1Z1ZHM0lBLW1QM3lGSllsWFZSOFEtaEFsYmlEWmZYTmRieFUyLUJSODJYbUlXdk9MTUFYb2tuX3V2Q3ItUlB6ZkRobzd2ejVJcFpRbTBESXJRei1oaGJyQW54b2xWLTNDd1lIZVFZZ3VmRUtSZmZ1TWIzdW8tTkJZa1ppYlFmeUloXzFwLXpJcjNkZW9GTnl1Z3ZiYWtHdkhtMVhGZGhfLVN3cF9LVHhzVVFvSHBnSQ?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-04T22:42:59",
-        "description": "Wall Street bets on rate hike after shock jobs report&nbsp;&nbsp;Capital Brief"
+        "description": "Wall Street bets on rate hike after shock jobs report&nbsp;&nbsp;capitalbrief.com"
       },
       {
         "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",

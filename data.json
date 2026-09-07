@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07T14:26:03.631749",
+  "timestamp": "2026-09-07T14:28:37.387736",
   "summary": "Key topics today:\n- - Tell HN: OpenAI brings back 5 hour limit for plus and business standard users (r/HackerNews, 201 pts)\n- - Speculative Decoding in vLLM on AMD GPUs (r/HackerNews, 201 pts)\n- - The Dataflow Model Revisited (r/HackerNews, 101 pts)\n- - bzip3 (r/HackerNews, 1 pts)\n- - Keep Our Servers Running (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -36,11 +36,11 @@
     },
     {
       "type": "buy",
-      "asset": "NOKIA.HE",
-      "price": 9.18,
-      "change": 6.05,
+      "asset": "000660.KS",
+      "price": 1783000.0,
+      "change": 11.72,
       "category": "stock",
-      "text": "NOKIA.HE +6.0% momentum @ $9.18"
+      "text": "000660.KS +11.7% momentum @ $1783000.00"
     },
     {
       "type": "watch",
@@ -125,18 +125,18 @@
       "created": ""
     },
     {
-      "title": "Live map of public transport in Belgium",
+      "title": "PostgreSQL 19 Interactive Tour",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://openbaarvervoerbelgie.be/",
+      "url": "https://victoriametrics.com/blog/postgres-19/index.html",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-07T18:24:05.534796",
+    "timestamp": "2026-09-07T18:28:28.095158",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-07T18:23:32.634293",
+    "timestamp": "2026-09-07T18:28:02.557463",
     "trending": [
+      {
+        "symbol": "000660.KS",
+        "price": 1783000.0,
+        "change": 187000.0,
+        "change_percent": 11.72,
+        "name": "SK hynix"
+      },
       {
         "symbol": "NOKIA.HE",
         "price": 9.18,
@@ -449,30 +456,23 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 1159.76,
-        "change": -68.27,
-        "change_percent": -5.56,
+        "price": 1159.63,
+        "change": -68.4,
+        "change_percent": -5.57,
         "name": "Zcash USD"
       },
       {
-        "symbol": "000660.KS",
-        "price": 1647000.0,
-        "change": 51000.0,
-        "change_percent": 3.2,
-        "name": "SK hynix"
-      },
-      {
         "symbol": "SOL-USD",
-        "price": 103.97,
-        "change": -2.48,
-        "change_percent": -2.33,
+        "price": 103.75,
+        "change": -2.7,
+        "change_percent": -2.53,
         "name": "Solana USD"
       },
       {
         "symbol": "XRP-USD",
-        "price": 1.4,
+        "price": 1.39,
         "change": -0.03,
-        "change_percent": -1.77,
+        "change_percent": -1.98,
         "name": "XRP USD"
       },
       {
@@ -484,10 +484,24 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 79184.62,
-        "change": -1165.43,
-        "change_percent": -1.45,
+        "price": 79135.17,
+        "change": -1214.88,
+        "change_percent": -1.51,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4476.6,
+        "change": 46.8,
+        "change_percent": 1.06,
+        "name": "Gold Dec 26"
+      },
+      {
+        "symbol": "ETH-USD",
+        "price": 2489.94,
+        "change": -24.61,
+        "change_percent": -0.98,
+        "name": "Ethereum USD"
       },
       {
         "symbol": "JPY=X",
@@ -495,13 +509,6 @@
         "change": -1.31,
         "change_percent": -0.84,
         "name": "USD/JPY"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2494.6,
-        "change": -19.95,
-        "change_percent": -0.79,
-        "name": "Ethereum USD"
       },
       {
         "symbol": ".DJI",
@@ -523,13 +530,6 @@
         "change": 7.38,
         "change_percent": 0.25,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "^GDAXI",
-        "price": 26006.53,
-        "change": 3.21,
-        "change_percent": 0.01,
-        "name": "DAX                           P"
       },
       {
         "symbol": "CL=F",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-07T18:24:01.260601",
+    "timestamp": "2026-09-07T18:28:24.373918",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,39 +1068,45 @@
       },
       {
         "symbol": "TAO",
-        "price": 259.22,
-        "change": 0.07,
+        "price": 259.05,
+        "change": 0.08,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79182,
-        "change": -0.87,
+        "price": 79144,
+        "change": -0.91,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2494.64,
-        "change": 0.02,
+        "price": 2491.41,
+        "change": -0.13,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 103.91,
-        "change": -2.22,
+        "price": 103.81,
+        "change": -2.4,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.8,
-        "change": 3.8,
+        "price": 12.76,
+        "change": 3.22,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.08,
-        "change": 6.06,
+        "change": 5.96,
         "type": "crypto"
+      },
+      {
+        "symbol": "000660.KS",
+        "price": 1783000.0,
+        "change": 11.72,
+        "type": "mover"
       },
       {
         "symbol": "NOKIA.HE",
@@ -1109,9 +1115,9 @@
         "type": "mover"
       },
       {
-        "symbol": "000660.KS",
-        "price": 1647000.0,
-        "change": 3.2,
+        "symbol": "ZEC-USD",
+        "price": 1158.09,
+        "change": -5.69,
         "type": "mover"
       },
       {
@@ -1122,26 +1128,20 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 103.81,
-        "change": -2.48,
+        "price": 103.73,
+        "change": -2.55,
         "type": "mover"
       },
       {
         "symbol": "XRP-USD",
-        "price": 1.4,
-        "change": -1.93,
-        "type": "mover"
-      },
-      {
-        "symbol": "^KS11",
-        "price": 6687.21,
-        "change": 1.64,
+        "price": 1.39,
+        "change": -1.97,
         "type": "mover"
       },
       {
         "symbol": "BTC-USD",
-        "price": 79126.39,
-        "change": -1.52,
+        "price": 79133.53,
+        "change": -1.51,
         "type": "mover"
       },
       {
@@ -1151,15 +1151,15 @@
         "type": "mover"
       },
       {
-        "symbol": "GME",
-        "price": 19.16,
-        "change": 1.0,
+        "symbol": "GC=F",
+        "price": 4476.6,
+        "change": 1.06,
         "type": "mover"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2491.94,
-        "change": -0.9,
+        "symbol": "GME",
+        "price": 19.16,
+        "change": 1.0,
         "type": "mover"
       }
     ]
@@ -1258,26 +1258,6 @@
       "author": ""
     },
     {
-      "title": "Huawei, Xiaomi launch new foldable smartphones ahead of Apple event",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVS1jR3lPTW1TQVB1Y3owVjhXcWx1aTBvdzZIOTY1SnFLTVhSLVRwbEkyMUhIZXRaSWd4UjllLXV4alo1MjhRemwyUjZ4elQ5MGhNOEhTUHhZVnBPNXZGaHpfTkZPdkc3cEFtNXJ1ejBUbms0U1doa0tXVjJLQnViNE5xczgybk5yTi1zYk5sdmdBazQ3WnVvWDJJMHY1WmcwSmJmYmdmX1IxYjFCanhyY09hTXNSalB5SV9obHJydUYzcXM?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Mon, 07 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Leak Hints at Four New Features for Apple Watch Series 12 and Ultra 4",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPXzdadWVXTWlKOVBNYk9pLXZ0X0ZuNXM4X1pnZHBjV1ZBUFZ5UXlHWTNPLThGMTZOdExFNmh4bTF5c1VFZTNGMXRQYndLdWZWMmFKVnFKbGZQb1RLTGJ2ZTFHTERRbkhfMTdJZ0NDa1N3eTk0RVlCcDNUMlktRUplSVBpcWpqaXI4?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Mon, 07 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "iPhone 18 Pro appears to show new colors in a retail store, but likely fake",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQalppQUhLOVhKTG1TeDhGdm53VW1xMjNNUjBubUt2M3BXdzRPcmNIalBXNmhXSzBMQjQxeTBKUW54MDAyTTVfNVlRNXBFbmxjVi03dGd3eUlKWTJua0hHYldNN2lSYWx1NW80dTFQQTdTdXBEeUNzU25jcFQwSmprdWVHME1YQ2hPcS15MHd6V0FJNW1YbzBCQzlQU3BYUk1GUVFSdy11d3FlZw?oc=5",
       "source": "9to5mac.com",
@@ -1308,11 +1288,21 @@
       "author": ""
     },
     {
-      "title": "IFA 2026 Keeps Delivering New Tech and We're Tracking Down the Things You Can Actually Buy Right Now",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tNzBfWlRwVUJKRmwwcXhNSXk3SHlTVmNGTkRMZEVjc1FvYy1MOWktM19uRWxWOHlhMDB1NDJnLVVjTnRSZzJhSDFIdzgyUTFjbHduVHhmQXZDdGtlVFlIU2VEd3JOeUVSaEFKc2Z3?oc=5",
+      "title": "Huawei Pura X View could be available for purchase on September 10",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uOXJVYjR5cmtxYjJ4VW1DNmc1dFJ5ZVB5NU5GYzJBZEY5MGEwcUpiTGhPRjVqa2tvaENwdmdkaWxCb0d5RlB6S2czcGNMc0JncjNEUXVtZlUtMzl6YXlqTTM0aG9VSWVzei1RUWduWmRseThLTGladklBZmJqNnPSAYQBQVVfeXFMUE9KdjFINjBUendnWW10dVJBY0F3TlM1dWxEa1RSMlNGWGNZYTdDOGNBemx6LUwtTXFFbVRVa3pwR2tGSUQxZHZTY0pkMTUtOUNDUlR4VktnbV8tSHB2eHdONHN6WlR6d3AtRFVJWXRadm1zMjhLbnl0TDlfOVlRY1ZmUTU4?oc=5",
+      "source": "Huawei Central",
+      "category": "business",
+      "published": "Sat, 05 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The Top Tech Trends at IFA Berlin 2026",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZzhfN2gwdWFneXQtS3ExNi0zS0tCNlZxZUFSVTZEMHJBREYzc0pxdzg1MzJ0NjYtYnZocnk4ZnJKN2gyckZKaVdCQXMwRDZPeFB0S0dqUXNrRVdOVUhzNjRaN21TMXhXUlZ4S3RJQlZuekJIcmJnTm93ZXFhS2Zrdk5oQVhLVTlD?oc=5",
       "source": "CNET",
       "category": "business",
-      "published": "Mon, 07 Sep 2026 ",
+      "published": "Sun, 06 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1321,6 +1311,16 @@
       "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY2RaMXZsSjJlN1N4U0NnM1RoQnQtcHR0YnVQSXQybW9XenVJckEtUGR1cVR6dzRDWHJwZ3pKdDNTeVpWUzJuQXpfVUJ3RWdkWEhlWk5XaXp2UzBaWWdnYXBGM01vUE5IMEIyS1ZSRmR1bGVfSmw1LTIzeUMxS09WUUNsaC1TZTJyY0owVzE5T1JzV2FuekxKRG81UUYtRUhrN0YxUVFsOU9GckxaYnd1ZnYxcGhLa0dVdmtNdkZrSGFLdw?oc=5",
       "source": "Notebookcheck",
+      "category": "business",
+      "published": "Mon, 07 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Sid Meier\u2019s Civilization VII adds Arc of Tomorrow update and Earthrise expansion",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMzlDbkU1RW4xa0RDRm83X2xuck9FS1ZvNFhVTEVKdkJ0M3FnZGJuNDQ0bEI1VlpyLTBFWW82NWNrT1lFV1AtNXR6ZDFzdWczME9RU1U4aHZELVhYNUJGQzhqOWNwVG5WZHZ2RVN4MV96TkRlaE1LQTlsWFJidlU2dlV1OHFaWjF6T2R5S1lONnI5bFE3eXZjWERHeDBUcF94aVladQ?oc=5",
+      "source": "GamesBeat",
       "category": "business",
       "published": "Mon, 07 Sep 2026 ",
       "description": "",
@@ -1394,11 +1394,27 @@
       "relevance_score": 4
     },
     {
+      "title": "Israel\u2019s plan to split the West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/israels-plan-to-split-the-west-bank?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Mon, 07 Sep 2026 ",
+      "description": "Israel&#039;s E1 plan risks splitting the West Bank in two.",
+      "relevance_score": 4
+    },
+    {
       "title": "Thousands attend funeral of war criminal Ratko Mladic in Serbia",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/thousands-attend-funeral-of-war-criminal-ratko-mladic-in-serbia?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Mon, 07 Sep 2026 ",
       "description": "Thousands attend funeral of war criminal Ratko Mladic in Serbia",
+      "relevance_score": 4
+    },
+    {
+      "title": "Gaza: Genocide in Real Time?",
+      "url": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Mon, 07 Sep 2026 ",
+      "description": "Gaza examined through occupation, blockade, mass killing and the genocide case before the ICJ.",
       "relevance_score": 4
     },
     {
@@ -1415,14 +1431,6 @@
       "source": "Defense News",
       "published": "Fri, 04 Sep 2026 ",
       "description": "The Air Force is accelerating its timeline for a cheaper, more expendable successor to the MQ-9A Reaper after combat losses.",
-      "relevance_score": 3
-    },
-    {
-      "title": "Gaza: Genocide in Real Time?",
-      "url": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Mon, 07 Sep 2026 ",
-      "description": "B&#039;Tselem Executive Directo",
       "relevance_score": 3
     },
     {
@@ -1546,7 +1554,7 @@
     "changePercent": 0.21,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 7 Sep: 29,544.15, up +0.21% -- BULLISH. price above SMA20. Counter: RSI 42.1 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-07T14:24:13.986164"
+    "timestamp": "2026-09-07T14:28:34.886181"
   },
   "sticky": {
     "cnbc": [
@@ -1623,13 +1631,6 @@
         "description": ""
       },
       {
-        "title": "Mortgage and refinance interest rates today, Sunday, September 6, 2026: Rates much higher week-over-week",
-        "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-sunday-september-6-2026-rates-much-higher-week-over-week-100000794.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-06T10:00:00+00:00",
-        "description": ""
-      },
-      {
         "title": "Best CD rates today, Sunday, September 6, 2026: Lock in up to 4.35% APY",
         "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-sunday-september-6-2026-lock-in-up-to-435-apy-100000219.html",
         "source": "Yahoo Finance",
@@ -1644,17 +1645,17 @@
         "description": ""
       },
       {
+        "title": "Mortgage and refinance interest rates today, Sunday, September 6, 2026: Rates much higher week-over-week",
+        "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-sunday-september-6-2026-rates-much-higher-week-over-week-100000794.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-06T10:00:00+00:00",
+        "description": ""
+      },
+      {
         "title": "Gap closed 350 stores and now has an Old Navy problem",
         "url": "https://finance.yahoo.com/markets/stocks/articles/gap-closed-350-stores-now-233354471.html",
         "source": "Yahoo Finance",
         "published": "2026-09-06T23:33:54+00:00",
-        "description": ""
-      },
-      {
-        "title": "Ultra-rich Americans are dropping stocks and stockpiling historic piles of cash. Where their wealth\u2019s going instead",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/ultra-rich-americans-dropping-stocks-101500963.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-06T10:15:00+00:00",
         "description": ""
       },
       {
@@ -1663,45 +1664,86 @@
         "source": "Yahoo Finance",
         "published": "2026-09-06T07:38:30+00:00",
         "description": ""
+      },
+      {
+        "title": "Ultra-rich Americans are dropping stocks and stockpiling historic piles of cash. Where their wealth\u2019s going instead",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/ultra-rich-americans-dropping-stocks-101500963.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-06T10:15:00+00:00",
+        "description": ""
       }
     ],
     "bloomberg": [],
     "wallstreetbets": [
       {
-        "title": "Wendy's Stock Climbs 30% as WallStreetBets Targets a GameStop Repeat",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/wendy-stock-climbs-30-wallstreetbets-222243913.html",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Thursday; Snowflake to Advance, Broadcom to Decline - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZlo2QzFEQkpuaUpzQVlzQlNDdVV2YWp4cVRLTHNIdGpHQnhRUGl5M05oYkNoczJhQndGSUhPZjJXWUpDOEs5cGFDYmV0T2hJMks1ZFAwYV81SGt6YzNhS0pyd0ZBa28wRXhTMzhoRnhMdmVibU5XYXF3UGpmOHdlc1lFV1VMWlJuREJ2MHJUbGtieWZkazBOWVJ3YWRCYXF3cGJXZFRsN2tHSFVtXzJwV1NXTnBxNXV3SDBuTHFJSmJkZ0VMRHZzaXBQVHAxVzZGM0pId0I2dUo5dS0za1R3SHpEdjM?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-24T22:22:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-09-03T10:36:21",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Thursday; Snowflake to Advance, Broadcom to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Meme stocks and mega-IPOs: How the WallStreetBets crowd is playing the wild 2026 stock market",
-        "url": "https://www.msn.com/en-us/news/other/meme-stocks-and-mega-ipos-how-the-wallstreetbets-crowd-is-playing-the-wild-2026-stock-market/ar-AA26RW4n",
+        "title": "Wallstreetbets Favorites Were All Over The Place Pre-Bell - Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMEltRUpveTdRSUhWVERHQ2E2N0taRHhXZWxGcDNzaEpVMURDbEt2VS0tWEhZR1o1WXdKeHJOLWFwOTJRS3hldkhBeVNvX1gwX2UzNzF4R1IyYWoyVFdIcVY4NC02Wk9RLVpMaUV0dUhOQV8tclIxdnlWTjFhd0xYbk1YZGxEbDJPU3dGaHRwaw?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-30T09:40:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-09-04T11:45:49",
+        "description": "Wallstreetbets Favorites Were All Over The Place Pre-Bell&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "Reddit Wants to 'Save Wendy's': Inside the Meme-Stock Rally Hunting a 29% Short",
-        "url": "https://247wallst.com/investing/2026/06/25/reddit-wants-to-save-wendys-inside-the-meme-stock-rally-hunting-a-29-short/",
+        "title": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow - bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWlGa2VFZEtfUjBPVDJKZUVxOHUtTDVqN21tVTNyWHdscnR6YVExWTFGU0htYjBDZDltUVBCVkpNT0oyaWZsd01Xc2hDeUU4cDdmb0hBY0Q2dnRGUmYzMGY5c2psLUx5ckNmdFJPX2lpa3plRF8yTEtYak1tOURwMEFRZ1gxeUpuYTdRbVoyQWpZOEdOQTZnRjNObGMxY0lobHZpLUJWMi01dGJCVEJtRUdpUXE?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-25T16:19:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-07-02T07:00:00",
+        "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;bloomberg.com"
       },
       {
-        "title": "Meme stocks and mega-IPOs: How the WallStreetBets crowd is playing the wild 2026 stock market",
-        "url": "https://www.msn.com/en-us/money/general/meme-stocks-and-mega-ipos-how-the-wallstreetbets-crowd-is-playing-the-wild-2026-stock-market/ar-AA26RW4n",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPemNhUVJuR0Q3S2lKOG50Zm9oVm1pV0pwX3N6ZjhzVmVyUU9IU18xZG1NWFVwSHYwLVJzWDZRLXZLclZBYUlSLXJlbHZwWG5OZGNNM3VaTFQ4a2FROTR5WTFQNTQ3S1NTMi01dEZJTFlzTFBxbHFPY1lvRVMyNC1KQ0pMMGYwLXFmSURVZTAzWjJqNDZYd25LMWJsMURqckJmb2U5bDMyN0xYUFViaHpMSlplQ3dIZzlFZnc?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-06-30T09:40:00+",
-        "score": "\u2014",
-        "comments": 0,
-        "description": ""
+        "published": "2026-08-26T07:00:00",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower&nbsp;&nbsp;Moomoo"
+      },
+      {
+        "title": "JPMorgan Rises as Wall Street Bets on Record Trading Strength - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX2N0dndUTUpKOWdMb01KWUZ5dGstOTVJczBjMlozanhidGpkbVFBMmJPVVo0R1RZd1hzUnF4MVJab05zMERuOGdwTGtmVTZ4azVOQ1RUQ0lleGtBZGZiRi1nVkV2MTI4UGxNZWc0bGZRNDBBYjd4b1N6R3ltM0E3UWtYTlR2bzRjRGg3blJPNjdvc1FCY05HRlQ4YnI?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-08-21T07:00:00",
+        "description": "JPMorgan Rises as Wall Street Bets on Record Trading Strength&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - businessinsider.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-02T07:00:00",
+        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;businessinsider.com"
+      },
+      {
+        "title": "Wall Street bets on rate hike after shock jobs report - Capital Brief",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNnpLa0hHMDB1bXE0SGc0djdILTM1Z1ZHM0lBLW1QM3lGSllsWFZSOFEtaEFsYmlEWmZYTmRieFUyLUJSODJYbUlXdk9MTUFYb2tuX3V2Q3ItUlB6ZkRobzd2ejVJcFpRbTBESXJRei1oaGJyQW54b2xWLTNDd1lIZVFZZ3VmRUtSZmZ1TWIzdW8tTkJZa1ppYlFmeUloXzFwLXpJcjNkZW9GTnl1Z3ZiYWtHdkhtMVhGZGhfLVN3cF9LVHhzVVFvSHBnSQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-09-04T22:42:59",
+        "description": "Wall Street bets on rate hike after shock jobs report&nbsp;&nbsp;Capital Brief"
+      },
+      {
+        "title": "WallStreetBets DApp Price (WSB/USD) Today | Live Price, Market Cap & Chart - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qZFM3bTVmQmg3WDZKLUkxTlR5SHZJbkVTY0Rzd1dmbURSR1Y3dkZ0cmpaUU1TTE1wamJCLTZXTVBTbWdJUmRIMUc5aVZfSGhJWHFPT1h5QTlJUlFhZHJyc1p3?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-09-02T18:28:00",
+        "description": "WallStreetBets DApp Price (WSB/USD) Today | Live Price, Market Cap & Chart&nbsp;&nbsp;Binance"
+      },
+      {
+        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-14T07:00:00",
+        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
+      },
+      {
+        "title": "Wall Street Lunch: Wendy's Joins Meme-Stock Mania After WallStreetBets Push - seekingalpha.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbGwyX1pNYkNqOWNhbEdsdUd5WGVvOGdUX2FaX1pobHBSd0tPTkJTb2VPcmdkQmExS2l1UHpnWDBDNlRKOU5URXh5eHZKRmVvNW4tVnJCc25XeDVLT3pmT1Vsb2o0QU8zb1VFT1ZxYS1SampnbFczTVVBMGFKUGl1VktNQnpQcS1malJ6TC1DQlNoVGpiNUtwRHM3a2RwSFAteWRYSVRKREpyM1Qtek0wbDB1bF8?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-06-24T07:00:00",
+        "description": "Wall Street Lunch: Wendy's Joins Meme-Stock Mania After WallStreetBets Push&nbsp;&nbsp;seekingalpha.com"
       }
     ]
   },
@@ -1777,280 +1819,6 @@
       "name": "Natural Gas Oct 26"
     }
   ],
-  "metals": [
-    {
-      "symbol": "GC=F",
-      "price": 4476.6,
-      "change": 46.8,
-      "change_percent": 1.06,
-      "name": "Gold"
-    },
-    {
-      "symbol": "SI=F",
-      "price": 66.75,
-      "change": 0.7,
-      "change_percent": 1.06,
-      "name": "Silver"
-    },
-    {
-      "symbol": "PL=F",
-      "price": 1826.0,
-      "change": 5.0,
-      "change_percent": 0.27,
-      "name": "Platinum"
-    },
-    {
-      "symbol": "PA=F",
-      "price": 1403.9,
-      "change": 13.8,
-      "change_percent": 0.99,
-      "name": "Palladium"
-    }
-  ],
-  "tech_analysis": {
-    "generated_at": "2026-09-07T14:25:28.278366",
-    "avg_score": 53.4,
-    "tone": "CAUTIOUSLY BULLISH",
-    "bullish_count": 5,
-    "bearish_count": 4,
-    "tickers": [
-      {
-        "ticker": "NVDA",
-        "score": 69.0,
-        "signal": "STRONG BUY",
-        "color": "#00c853",
-        "factors": [
-          "price > SMA20",
-          "RSI 53.7 bullish zone",
-          "MACD bullish cross",
-          "+0.8% today"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 228.45,
-          "sma20": 220.08,
-          "rsi14": 53.68,
-          "macd": 3.9495,
-          "macd_signal": 3.1703,
-          "macd_hist": 0.7792
-        },
-        "price": 230.36,
-        "change_pct": 0.8360691617421865
-      },
-      {
-        "ticker": "META",
-        "score": 69.0,
-        "signal": "STRONG BUY",
-        "color": "#00c853",
-        "factors": [
-          "price > SMA20",
-          "RSI 69.9 bullish zone",
-          "MACD bullish cross",
-          "+1.0% today"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 610.68,
-          "sma20": 576.88,
-          "rsi14": 69.88,
-          "macd": 3.2224,
-          "macd_signal": -3.0168,
-          "macd_hist": 6.2392
-        },
-        "price": 616.77,
-        "change_pct": 0.9972489683631415
-      },
-      {
-        "ticker": "AMD",
-        "score": 62.5,
-        "signal": "BUY",
-        "color": "#00e676",
-        "factors": [
-          "price > SMA20",
-          "RSI 40.1 weak",
-          "MACD bullish cross",
-          "+4.7% today"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 456.16,
-          "sma20": 475.2,
-          "rsi14": 40.1,
-          "macd": -9.0305,
-          "macd_signal": -9.5488,
-          "macd_hist": 0.5184
-        },
-        "price": 477.57,
-        "change_pct": 4.693528586460884
-      },
-      {
-        "ticker": "AAPL",
-        "score": 61.5,
-        "signal": "BUY",
-        "color": "#00e676",
-        "factors": [
-          "price > SMA20",
-          "RSI 63.6 bullish zone",
-          "MACD bullish cross",
-          "-2.5% selloff"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 328.21,
-          "sma20": 313.14,
-          "rsi14": 63.63,
-          "macd": 3.0037,
-          "macd_signal": 1.6397,
-          "macd_hist": 1.3639
-        },
-        "price": 319.97,
-        "change_pct": -2.510587733463317
-      },
-      {
-        "ticker": "TSLA",
-        "score": 61.5,
-        "signal": "BUY",
-        "color": "#00e676",
-        "factors": [
-          "price > SMA20",
-          "RSI 55.0 bullish zone",
-          "MACD bullish cross",
-          "-5.9% selloff"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 376.365,
-          "sma20": 348.44,
-          "rsi14": 54.97,
-          "macd": 3.6393,
-          "macd_signal": 0.7096,
-          "macd_hist": 2.9298
-        },
-        "price": 354.08,
-        "change_pct": -5.921113812389575
-      },
-      {
-        "ticker": "MSFT",
-        "score": 53.5,
-        "signal": "NEUTRAL",
-        "color": "#ffd600",
-        "factors": [
-          "price > SMA20",
-          "RSI 62.1 bullish zone",
-          "MACD bearish",
-          "-2.0% selloff"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 510.12,
-          "sma20": 495.71,
-          "rsi14": 62.1,
-          "macd": 15.8038,
-          "macd_signal": 18.4393,
-          "macd_hist": -2.6355
-        },
-        "price": 499.7,
-        "change_pct": -2.0426566298125963
-      },
-      {
-        "ticker": "NFLX",
-        "score": 43.5,
-        "signal": "SELL",
-        "color": "#ff5252",
-        "factors": [
-          "price < SMA20",
-          "RSI 55.9 bullish zone",
-          "MACD bearish",
-          "-5.3% selloff"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 82.67,
-          "sma20": 79.31,
-          "rsi14": 55.85,
-          "macd": 1.7037,
-          "macd_signal": 1.7977,
-          "macd_hist": -0.0941
-        },
-        "price": 78.25,
-        "change_pct": -5.346558606507804
-      },
-      {
-        "ticker": "AMZN",
-        "score": 40.0,
-        "signal": "SELL",
-        "color": "#ff5252",
-        "factors": [
-          "price < SMA20",
-          "RSI 47.2 weak",
-          "MACD bearish",
-          "flat (-0.2%)"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 258.9,
-          "sma20": 262.2,
-          "rsi14": 47.24,
-          "macd": 0.6246,
-          "macd_signal": 1.9398,
-          "macd_hist": -1.3152
-        },
-        "price": 258.51,
-        "change_pct": -0.15063731170335512
-      },
-      {
-        "ticker": "GOOGL",
-        "score": 37.0,
-        "signal": "SELL",
-        "color": "#ff5252",
-        "factors": [
-          "price < SMA20",
-          "RSI 44.3 weak",
-          "MACD bearish",
-          "-1.1% down"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 342.26,
-          "sma20": 343.61,
-          "rsi14": 44.3,
-          "macd": -2.8713,
-          "macd_signal": -2.4288,
-          "macd_hist": -0.4424
-        },
-        "price": 338.46,
-        "change_pct": -1.1102670484427077
-      },
-      {
-        "ticker": "AVGO",
-        "score": 36.0,
-        "signal": "SELL",
-        "color": "#ff5252",
-        "factors": [
-          "price < SMA20",
-          "RSI 29.2 oversold",
-          "MACD bearish",
-          "flat (+0.2%)"
-        ],
-        "earnings": {},
-        "technicals": {
-          "prev_close": 357.16,
-          "sma20": 378.32,
-          "rsi14": 29.19,
-          "macd": -8.5184,
-          "macd_signal": -6.9948,
-          "macd_hist": -1.5236
-        },
-        "price": 357.895,
-        "change_pct": 0.20579012207412833
-      }
-    ],
-    "top_picks": [
-      "NVDA",
-      "META",
-      "AMD"
-    ]
-  },
   "weekly_pick": {
     "week_label": "This Week",
     "generated_at": "2026-09-07T14:26:23.923174",
@@ -2071,113 +1839,18 @@
       ]
     },
     "rationale": "Score: 85/100 (Tech 27/30, Fund 18/25, MACD 10/15, Sentiment 25/30)\n\nPrice: $68.70 | 5d: 2.3% | 20d: 4.7% | RSI: 57.5\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
-    "top_five": []
-  },
-  "weekly_pick_v4": {
-    "week_label": "This Week",
-    "generated_at": "2026-09-07T14:26:23.923174",
-    "top_pick": {
+    "top_five": [],
+    "best_etf_of_week": {
       "ticker": "EEM",
       "name": "EEM",
+      "display_name": "EEM",
       "price": 68.7,
       "score": 85,
-      "category": "etf",
       "change_7d": 2.32,
       "change_30d": 4.66,
-      "rsi": 57.5,
-      "factors": [
-        "T:27",
-        "F:18",
-        "M:10",
-        "S:25"
-      ]
-    },
-    "rationale": "Score: 85/100 (Tech 27/30, Fund 18/25, MACD 10/15, Sentiment 25/30)\n\nPrice: $68.70 | 5d: 2.3% | 20d: 4.7% | RSI: 57.5\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
-    "top_five": []
-  },
-  "best_etf": {
-    "week_label": "Best ETF",
-    "generated_at": "2026-09-07T14:26:23.923174",
-    "top_pick": {
-      "ticker": "EEM",
-      "name": "EEM",
-      "price": 68.7,
-      "score": 85,
       "category": "etf",
-      "change_7d": 2.32,
-      "change_30d": 4.66,
-      "rsi": 57.5,
-      "factors": [
-        "T:27",
-        "F:18",
-        "M:10",
-        "S:25"
-      ]
-    },
-    "rationale": "Score: 85/100 (Tech 27/30, Fund 18/25, MACD 10/15, Sentiment 25/30)\n\nPrice: $68.70 | 5d: 2.3% | 20d: 4.7% | RSI: 57.5\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
-    "top_five": []
-  },
-  "scored_metals": [],
-  "improving_picks": [
-    {
-      "ticker": "AVAX-USD",
-      "name": "AVAX",
-      "score": 75,
-      "trend": "\u2191 +21.0"
-    },
-    {
-      "ticker": "FIL-USD",
-      "name": "FIL",
-      "score": 75,
-      "trend": "\u2191 +42.0"
-    },
-    {
-      "ticker": "KAS-USD",
-      "name": "KAS",
-      "score": 75,
-      "trend": "\u2191 +9.0"
-    },
-    {
-      "ticker": "LTC-USD",
-      "name": "LTC",
-      "score": 75,
-      "trend": "\u2191 +21.0"
-    },
-    {
-      "ticker": "HBAR-USD",
-      "name": "HBAR",
-      "score": 74,
-      "trend": "\u2191 +23.0"
-    },
-    {
-      "ticker": "FET-USD",
-      "name": "FET",
-      "score": 73,
-      "trend": "\u2191 +19.0"
-    },
-    {
-      "ticker": "INJ-USD",
-      "name": "INJ",
-      "score": 73,
-      "trend": "\u2191 +28.0"
-    },
-    {
-      "ticker": "ATOM-USD",
-      "name": "ATOM",
-      "score": 72,
-      "trend": "\u2191 +21.0"
-    },
-    {
-      "ticker": "DYDX-USD",
-      "name": "DYDX",
-      "score": 72,
-      "trend": "\u2191 +44.0"
-    },
-    {
-      "ticker": "THETA-USD",
-      "name": "THETA",
-      "score": 71,
-      "trend": "\u2191 +19.0"
+      "rationale": "Score: 85/100 (Tech 27/30, Fund 18/25, MACD 10/15, Sentiment 25/30)\n\nPrice: $68.70 | 5d: 2.3% | 20d: 4.7% | RSI: 57.5\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice."
     }
-  ]
+  },
+  "weekly_outlook": null
 }

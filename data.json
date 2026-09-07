@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07T12:02:36.406037",
+  "timestamp": "2026-09-07T12:15:37.574384",
   "summary": "Key topics today:\n- - Speculative Decoding in vLLM on AMD GPUs (r/HackerNews, 201 pts)\n- - Show HN: Engrim \u2013 A universal, local-first SQLite memory engine for AI CLIs (r/HackerNews, 101 pts)\n- - De-Brainrot Vacations (r/HackerNews, 1 pts)\n- - bzip3 (r/HackerNews, 1 pts)\n- - Keep Our Servers Running (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -2135,26 +2135,115 @@
     ]
   },
   "weekly_pick": {
-    "week_label": "This Week",
-    "generated_at": "2026-09-07T12:02:59.160609",
+    "generated_at": "2026-09-07T12:15:37.572119",
+    "week_label": "Week of Sep 07, 2026",
     "top_pick": {
-      "ticker": "EEM",
-      "name": "EEM",
-      "price": 68.7,
-      "score": 85,
-      "category": "etf",
-      "change_7d": 2.32,
-      "change_30d": 4.66,
-      "rsi": 57.5,
+      "ticker": "BBY",
+      "name": "BBY",
+      "price": 90.27,
+      "score": 73,
+      "change_7d": 9.5,
+      "change_30d": 12.81,
+      "rsi": 57.9,
+      "category": "Equity - S&P 500",
       "factors": [
-        "T:27",
+        "T:36",
         "F:18",
-        "M:10",
-        "S:25"
+        "S:19"
       ]
     },
-    "rationale": "Score: 85/100 (Tech 27/30, Fund 18/25, MACD 10/15, Sentiment 25/30)\n\nPrice: $68.70 | 5d: 2.3% | 20d: 4.7% | RSI: 57.5\n\nMACD Bullish: 10/15 | Momentum: 8\n\nFundamentals: ETF\n\nDisclaimer: Not financial advice.",
-    "top_five": []
+    "top_five": [
+      {
+        "ticker": "BBY",
+        "name": "BBY",
+        "price": 90.27,
+        "score": 73,
+        "change_7d": 9.5,
+        "change_30d": 12.81,
+        "rsi": 57.9,
+        "category": "Equity - S&P 500",
+        "factors": [
+          "T:36",
+          "F:18",
+          "S:19"
+        ]
+      },
+      {
+        "ticker": "DE",
+        "name": "DE",
+        "price": 693.53,
+        "score": 73,
+        "change_7d": 10.03,
+        "change_30d": 12.8,
+        "rsi": 73.2,
+        "category": "Equity - S&P 500",
+        "factors": [
+          "T:36",
+          "F:18",
+          "S:19"
+        ]
+      },
+      {
+        "ticker": "DELL",
+        "name": "DELL",
+        "price": 524.14,
+        "score": 73,
+        "change_7d": 14.88,
+        "change_30d": 19.76,
+        "rsi": 59.0,
+        "category": "Equity - S&P 500",
+        "factors": [
+          "T:36",
+          "F:18",
+          "S:19"
+        ]
+      },
+      {
+        "ticker": "MRNA",
+        "name": "MRNA",
+        "price": 145.55,
+        "score": 73,
+        "change_7d": 5.48,
+        "change_30d": 170.24,
+        "rsi": 67.0,
+        "category": "Equity - S&P 500",
+        "factors": [
+          "T:36",
+          "F:18",
+          "S:19"
+        ]
+      },
+      {
+        "ticker": "LINK-USD",
+        "name": "LINK-USD",
+        "price": 12.87,
+        "score": 73,
+        "change_7d": 15.87,
+        "change_30d": 34.9,
+        "rsi": 62.3,
+        "category": "Crypto",
+        "factors": [
+          "T:36",
+          "F:18",
+          "S:19"
+        ]
+      }
+    ],
+    "best_etf_of_week": {
+      "ticker": "XLE",
+      "name": "XLE",
+      "price": 64.06,
+      "score": 63.0,
+      "change_7d": 2.2,
+      "change_30d": 10.14,
+      "rsi": 60.0,
+      "category": "ETF",
+      "factors": [
+        "T:33",
+        "F:15",
+        "S:15"
+      ]
+    }
   },
   "weekly_pick_v4": {
     "week_label": "This Week",
@@ -2256,5 +2345,16 @@
       "score": 66,
       "trend": "\u2191 +3.0"
     }
-  ]
+  ],
+  "best_etf_of_week": {
+    "ticker": "XLE",
+    "name": "XLE",
+    "display_name": "XLE",
+    "price": 64.06,
+    "score": 63.0,
+    "change_7d": 2.2,
+    "change_30d": 10.14,
+    "category": "ETF",
+    "rationale": "Score: 63.0/100 (T:33 | F:15 | S:15)\n\nPrice: $64.06 | 7d: +2.20% | 30d: +10.14% | RSI: 60.0\n\nDisclaimer: Not financial advice."
+  }
 }

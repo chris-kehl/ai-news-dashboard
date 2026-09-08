@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 
 TECH_TICKERS = ["AAPL", "AMZN", "MSFT", "NVDA", "GOOGL", "META", "TSLA", "AMD", "AVGO", "NFLX"]
-RATE_LIMIT_DELAY = 2  # Yahoo is tolerant but be polite
+RATE_LIMIT_DELAY = 0.5  # Yahoo is tolerant; reduced for cron speed
 
 
 def yf_chart(ticker, range_days=60):

@@ -77,12 +77,16 @@ def build_dashboard_data():
     print(f"       NASDAQ: ${nasdaq_data.get('price', 0):,.2f}  {nasdaq_data.get('signal', '?')}  ({nasdaq_data.get('changePercent', 0):+.2f}%)")
 
     print("\n[11b/11] Advanced Tech Analysis (earnings + technicals)...")
-    tech_analysis_data = get_tech_analysis()
-    if tech_analysis_data:
-        print(f"       Tech sector tone: {tech_analysis_data.get('tone', '?')}  Avg: {tech_analysis_data.get('avg_score', 0)}/100")
-        print(f"       Top picks: {', '.join(tech_analysis_data.get('top_picks', []))}")
-    else:
-        print("       Skipped (no AV key or rate limited)")
+    try:
+        tech_analysis_data = get_tech_analysis()
+        if tech_analysis_data:
+            print(f"       Tech sector tone: {tech_analysis_data.get('tone', '?')}  Avg: {tech_analysis_data.get('avg_score', 0)}/100")
+            print(f"       Top picks: {', '.join(tech_analysis_data.get('top_picks', []))}")
+        else:
+            print("       Skipped (no AV key or rate limited)")
+    except Exception as e:
+        print(f"       Skipped due to timeout/error: {e}")
+        tech_analysis_data = {}
 
     print("\n[12/11] Sticky tab feeds...")
     sticky_data = get_sticky_tab_data()

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T08:16:26.839747",
+  "timestamp": "2026-09-09T08:20:46.730997",
   "summary": "Key topics today:\n- - Muse \u2013 Meta\u2019s personal AI agent (r/HackerNews, 201 pts)\n- - Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses (r/HackerNews, 201 pts)\n- - Desert Ant Labs: local, fast models that run on device (r/HackerNews, 101 pts)\n- - How An AI math breakthrough ignited a controversy (r/HackerNews, 101 pts)\n- - How GPT\u20115.6 Sol helps run quantum computing experiments (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "PDSB",
-      "price": 0.3,
-      "change": 36.36,
-      "category": "stock",
-      "text": "PDSB +36.4% momentum @ $0.30"
-    },
-    {
-      "type": "buy",
       "asset": "SMR",
       "price": 11.18,
       "change": 14.67,
@@ -49,6 +41,14 @@
       "change": -12.37,
       "category": "stock",
       "text": "TTAN -12.4% drop @ $81.58"
+    },
+    {
+      "type": "buy",
+      "asset": "AMD",
+      "price": 505.74,
+      "change": 10.87,
+      "category": "stock",
+      "text": "AMD +10.9% momentum @ $505.74"
     }
   ],
   "reddit": [
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-09T12:16:17.289443",
+    "timestamp": "2026-09-09T12:20:38.380549",
     "prices": [
       {
         "name": "Bittensor",
@@ -325,20 +325,20 @@
       "description": "Police say any mistakes were not missed opportunities to prevent the 2023 Nottingham attacks."
     },
     {
+      "title": "Channel 4 to cut 340 jobs by the end of the year in major shake-up",
+      "url": "https://www.bbc.co.uk/news/articles/cwyzprn3gkgo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Wed, 09 Sep 2026 ",
+      "description": "It comes after the network conducted a review amid a \"rapidly changing media landscape\"."
+    },
+    {
       "title": "Learner drivers still forced to wait months to book tests",
       "url": "https://www.bbc.co.uk/news/articles/cx2z421xe0zo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Wed, 09 Sep 2026 ",
       "description": "The Driver and Vehicle Standards Agency had been given a target to reduce average wait times to seven weeks."
-    },
-    {
-      "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
-      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Wed, 09 Sep 2026 ",
-      "description": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers."
     },
     {
       "title": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
@@ -355,6 +355,14 @@
       "category": "bbc_world",
       "published": "Wed, 09 Sep 2026 ",
       "description": "Meanwhile, four people, including a child, were killed in the southern Russian city of Novorossiysk."
+    },
+    {
+      "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Wed, 09 Sep 2026 ",
+      "description": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers."
     },
     {
       "title": "N Korea has built two-storey uranium enrichment facility, says watchdog",
@@ -427,26 +435,11 @@
       "category": "npr",
       "published": "Wed, 09 Sep 2026 ",
       "description": "The U.S. military says it has destroyed five Iranian oil tankers as the conflict continues to escalate. And, Smithsonian head Lonnie G. Bunch III says he plans to step down by the end of the year."
-    },
-    {
-      "title": "Cargo jet tried to abort unsteady landing before Miami crash, flight data indicates",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142482/cargo-plane-crash-miami",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Wed, 09 Sep 2026 ",
-      "description": "Flight data suggest an Amazon cargo plane tried to abort an unsteady landing at Miami International Airport before smashing into a van and killing five people inside, according to information investigators released Tuesday."
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-09T12:15:48.450887",
+    "timestamp": "2026-09-09T12:20:09.840036",
     "trending": [
-      {
-        "symbol": "PDSB",
-        "price": 0.3,
-        "change": 0.08,
-        "change_percent": 36.36,
-        "name": "PDS Biotechnology Corporation"
-      },
       {
         "symbol": "SMR",
         "price": 11.18,
@@ -490,11 +483,18 @@
         "name": "Rocket Lab Corporation"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 79368.0,
-        "change": 929.42,
-        "change_percent": 1.18,
-        "name": "Bitcoin USD"
+        "symbol": "CHWY",
+        "price": 23.27,
+        "change": -0.69,
+        "change_percent": -2.88,
+        "name": "Chewy, Inc."
+      },
+      {
+        "symbol": "GOOGL",
+        "price": 338.36,
+        "change": -4.12,
+        "change_percent": -1.2,
+        "name": "Alphabet Inc."
       },
       {
         "symbol": ".DJI",
@@ -504,18 +504,18 @@
         "name": "DJIA"
       },
       {
+        "symbol": "BTC-USD",
+        "price": 79333.14,
+        "change": 894.56,
+        "change_percent": 1.14,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": "XRP-USD",
         "price": 1.43,
         "change": 0.01,
-        "change_percent": 0.92,
+        "change_percent": 0.91,
         "name": "XRP USD"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2501.23,
-        "change": 16.29,
-        "change_percent": 0.66,
-        "name": "Ethereum USD"
       },
       {
         "symbol": ".SPX",
@@ -525,11 +525,11 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "NQ=F",
-        "price": 29378.5,
-        "change": -160.25,
-        "change_percent": -0.54,
-        "name": "Nasdaq 100 Sep 26"
+        "symbol": "ETH-USD",
+        "price": 2499.12,
+        "change": 14.18,
+        "change_percent": 0.57,
+        "name": "Ethereum USD"
       },
       {
         "symbol": ".RUT",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-09T12:16:12.493180",
+    "timestamp": "2026-09-09T12:20:34.836757",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 16.56,
-        "change": 5.34,
+        "price": 16.54,
+        "change": 5.22,
         "type": "index"
       },
       {
@@ -1008,50 +1008,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7648.5,
-        "change": -0.42,
+        "price": 7649.0,
+        "change": -0.41,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29365.25,
+        "price": 29364.0,
         "change": -0.59,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52468.0,
-        "change": -0.69,
+        "price": 52461.0,
+        "change": -0.7,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2945.6,
-        "change": -0.61,
+        "price": 2946.2,
+        "change": -0.59,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 95.64,
-        "change": 2.81,
+        "price": 95.58,
+        "change": 2.74,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4448.0,
-        "change": 1.23,
+        "price": 4448.3,
+        "change": 1.24,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 66.83,
-        "change": 0.81,
+        "price": 66.91,
+        "change": 0.92,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1860.3,
-        "change": 0.65,
+        "price": 1860.5,
+        "change": 0.67,
         "type": "future"
       },
       {
@@ -1062,44 +1062,44 @@
       },
       {
         "symbol": "NG=F",
-        "price": 2.85,
-        "change": -2.13,
+        "price": 2.86,
+        "change": -1.95,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 265.39,
-        "change": 5.13,
+        "price": 266.7,
+        "change": 5.89,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79370,
-        "change": 1.48,
+        "price": 79341,
+        "change": 1.41,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2500.47,
-        "change": 1.26,
+        "price": 2499.26,
+        "change": 1.13,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.37,
-        "change": 1.86,
+        "price": 104.24,
+        "change": 1.52,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.14,
-        "change": -2.96,
+        "price": 12.15,
+        "change": -3.1,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.96,
-        "change": -0.89,
+        "change": -0.88,
         "type": "crypto"
       },
       {
@@ -1186,9 +1186,9 @@
       "author": ""
     },
     {
-      "title": "Bessent dares traders to bet against yen: \u2018I am the house now\u2019",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0t6YXpLaHU0dFRoLVZXdDVuMjZzc01laGxoTl80WElvOGFGam5jeXBROXpUYjNZazBsYkMxTjFUUUFEY2FWTGdkLW1BRlBiS3NWZXlDZzhoWmFhS3Nrb1dkSDFqb2xycW5NRmZCeUhrQmx6ZHVoUEdjY3RNOThPLUxoZ1VaSFdJV2VQRkFWNA?oc=5",
-      "source": "The Japan Times",
+      "title": "Bessent Dares Traders to Bet Against Yen: \u2018I Am the House Now\u2019",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQU43NnJ3RFh0QXhjRWxxR21lcXBsaExCV1liRVEyS3ZNeUFMR3Y1VlFPNXFkejZmTENhTi0xZjY3T2h4bFJDNjZteDZIN3Rkak1XTEVveFdaaGt1a1VfM0k2RjNSRk44anI4TVdJZFptb0xPbFhINWNNRjZ5Njkzb1RQTFEySW5POEloOFBGTWZxQ3NITmV0dGpxa3FNa0NYVGRfRGVEa3h2Q3VYaVhR?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Wed, 09 Sep 2026 ",
       "description": "",
@@ -1258,11 +1258,11 @@
       "author": ""
     },
     {
-      "title": "iPhone Ultra Case Leak May Have Just Ruined Apple's New Foldable Phone Reveal",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY0dmM0FHMDhUejV6MGlvQ0dXWVlMUHUyVXp4ckJORjJMbmg0T1YzQXhsRVF3cjZsV0drbjRoSjZmVjJKYzZuQlo5emQxSkJsV0M5QldaVVJxcFI3TE9ZR2NxUFJBcW12RTctdGVlbmNYZzhUSk5RMDBPamNiMVpzRmJxSXFndXJuOU10cjNKTldYblh6cDA5aXdNVEg?oc=5",
-      "source": "SlashGear",
+      "title": "New Apple CEO to face first test with foldable iPhone launch",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQkllX1Q0UF92TTJRaFBaR0dQX2FvdDV5akY1OWRVWTB3eUJVNk8zZVk5N1RjSkM3b1FjaEpaTEZtWGZNM2RmVlExdkdtNjlLMzZMcXZCTmFqZHM0M2thOFpTa09MeFRNMXBQbkFPLVpmeWZGekdRb0I1dE5RUTA?oc=5",
+      "source": "Yahoo Finance UK",
       "category": "business",
-      "published": "Tue, 08 Sep 2026 ",
+      "published": "Wed, 09 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1318,8 +1318,8 @@
       "author": ""
     },
     {
-      "title": "OpenAI releases ChatGPT Images 2.5 with \u2018sharper details\u2019 and \u2018more precise editing\u2019",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNX3A1NzBwS0tzZzhCelRMQlBjMjFVeWtfUTFrTUNmZDhaY1lDTHQzend0RmlJOHppOUVrWi1QQ2Jzd3RkWEw3dFphOFp6c19SZ0hwMUNEMGU0dkZrdkdXZC1kVTNCbEZnZE5nSndqYTlqVkZPM0pWRGlDYWJTcVV5ZXFPYURVNE8wOXNWMUxOVDBqckdlXzAyak53bVBlZC1hSmdUSkFYX1BTVmFaMFlSVkN3?oc=5",
+      "title": "Sonos just launched \u2018Sonos 27\u2019 app update, here\u2019s what\u2019s new",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc2h2dllfNTBjZ3doUFhiNTFvdGdvSXcwUVBWWXZLMVY1STZOWnlNSGZiLXA3ZkEtTGNyMGd0Mmd6TVk1aGxFRHh6b3h2UE9RdG10Q3k5djRSektWR2ZvOHRDLUdnRmVmbEt1NHdkeGpKVDNlVU1BcENMVEFQLWp1QUptdm1JWHRoTHRza0VyRHg?oc=5",
       "source": "9to5mac.com",
       "category": "business",
       "published": "Tue, 08 Sep 2026 ",
@@ -1554,7 +1554,7 @@
     "changePercent": -0.12,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 9 Sep: 29,507.70, down -0.12% -- BEARISH. none. Counter: price above SMA20, RSI 50.3 building, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-09T08:16:24.428995"
+    "timestamp": "2026-09-09T08:20:44.501566"
   },
   "sticky": {
     "cnbc": [
@@ -1624,10 +1624,38 @@
         "description": ""
       },
       {
-        "title": "Stock market today: Dow, S&P 500, Nasdaq futures slip as oil prices hit $100",
+        "title": "Brent oil crosses $100 for first time in two months as Middle East conflict flares",
+        "url": "https://finance.yahoo.com/markets/commodities/article/brent-oil-crosses-100-for-first-time-in-two-months-as-middle-east-conflict-flares-121035800.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T12:10:35+00:00",
+        "description": ""
+      },
+      {
+        "title": "Stock market today: Dow, S&P 500, Nasdaq futures hold steady as oil prices near $100",
         "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-9-dow-sp-500-nasdaq-futures-080411279.html",
         "source": "Yahoo Finance",
         "published": "2026-09-09T08:04:11+00:00",
+        "description": ""
+      },
+      {
+        "title": "Dow Jones Futures Fall As Oil Prices Push Stocks Toward Breaking Point; Apple iPhone Event Due",
+        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T12:05:14+00:00",
+        "description": ""
+      },
+      {
+        "title": "IPO Stock LB Pharma Has Tripled In Under A Year. Is It A Takeover Target?",
+        "url": "https://www.investors.com/news/technology/ipo-stock-lb-pharmaceuticals-schizophrenia-treatment/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T12:00:35+00:00",
+        "description": ""
+      },
+      {
+        "title": "Philip Morris Raises FX Outlook as IQOS, ZYN Fuel Smoke-Free Growth",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/philip-morris-raises-fx-outlook-120203227.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T12:02:03+00:00",
         "description": ""
       },
       {
@@ -1638,38 +1666,10 @@
         "description": ""
       },
       {
-        "title": "Dow Jones Futures Fall As Oil Prices Push Stocks Toward Breaking Point; Apple iPhone Event Due",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T11:54:59+00:00",
-        "description": ""
-      },
-      {
         "title": "Golden Royalties Have This Gem Polishing A Breakout As These Trends Sparkle",
         "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/royal-gold-eyes-new-buy-point-as-ai-data-centers-fuel-demand/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
         "published": "2026-09-09T11:50:44+00:00",
-        "description": ""
-      },
-      {
-        "title": "XRP, Bitcoin, Ethereum and Solana Are All Up More Than 20% in a Month and Still Down for the Year. Which Recovers First?",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-bitcoin-ethereum-solana-more-120014287.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T12:00:14+00:00",
-        "description": ""
-      },
-      {
-        "title": "A Virginia woman's inbox exploded with 600+ emails \u2014 scammers were hiding a $1,200 fraudulent purchase",
-        "url": "https://finance.yahoo.com/technology/articles/virginia-womans-inbox-exploded-600-113000058.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T11:30:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Bitcoin and ethereum prices today, Wednesday, September 9, 2026: Ongoing escalations in the Middle East are keeping a lid on crypto",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-9-2026-ongoing-escalations-in-the-middle-east-are-keeping-a-lid-on-crypto-112541573.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T11:25:41+00:00",
         "description": ""
       }
     ],
@@ -1711,13 +1711,6 @@
         "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;Bloomberg.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmxrOUVpSlFWTGgwX3RzV2ZBR2Q5RzFzQjFpbHhKOXF6ck5NcDJXR0tsRmJobnpaNTBDNUpMamx1Szg4RUhZRVExY2hKQURXaXNENkV5WHpfM0FSRlBqOGJNR2Z5TnFTZDFsRWRtNlI1RmRmamltTzJVUFl5UEhiOGpXaGh2eG1RcXV3elo4SmRHV3dNZzRzYVRPTTJYWGN1MElCTElMcm4zWG42Wm9LOA?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-09-08T10:49:53",
-        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;Moomoo"
-      },
-      {
         "title": "Wallstreetbets Favorites Were All Over The Place Pre-Bell - Finimize",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMEltRUpveTdRSUhWVERHQ2E2N0taRHhXZWxGcDNzaEpVMURDbEt2VS0tWEhZR1o1WXdKeHJOLWFwOTJRS3hldkhBeVNvX1gwX2UzNzF4R1IyYWoyVFdIcVY4NC02Wk9RLVpMaUV0dUhOQV8tclIxdnlWTjFhd0xYbk1YZGxEbDJPU3dGaHRwaw?oc=5",
         "source": "r/wallstreetbets",
@@ -1725,11 +1718,11 @@
         "description": "Wallstreetbets Favorites Were All Over The Place Pre-Bell&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "JPMorgan Rises as Wall Street Bets on Record Trading Strength - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX2N0dndUTUpKOWdMb01KWUZ5dGstOTVJczBjMlozanhidGpkbVFBMmJPVVo0R1RZd1hzUnF4MVJab05zMERuOGdwTGtmVTZ4azVOQ1RUQ0lleGtBZGZiRi1nVkV2MTI4UGxNZWc0bGZRNDBBYjd4b1N6R3ltM0E3UWtYTlR2bzRjRGg3blJPNjdvc1FCY05HRlQ4YnI?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmxrOUVpSlFWTGgwX3RzV2ZBR2Q5RzFzQjFpbHhKOXF6ck5NcDJXR0tsRmJobnpaNTBDNUpMamx1Szg4RUhZRVExY2hKQURXaXNENkV5WHpfM0FSRlBqOGJNR2Z5TnFTZDFsRWRtNlI1RmRmamltTzJVUFl5UEhiOGpXaGh2eG1RcXV3elo4SmRHV3dNZzRzYVRPTTJYWGN1MElCTElMcm4zWG42Wm9LOA?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-08-21T07:00:00",
-        "description": "JPMorgan Rises as Wall Street Bets on Record Trading Strength&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-09-08T10:49:53",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;Moomoo"
       },
       {
         "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
@@ -1737,6 +1730,13 @@
         "source": "r/wallstreetbets",
         "published": "2026-05-02T07:00:00",
         "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+      },
+      {
+        "title": "JPMorgan Rises as Wall Street Bets on Record Trading Strength - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX2N0dndUTUpKOWdMb01KWUZ5dGstOTVJczBjMlozanhidGpkbVFBMmJPVVo0R1RZd1hzUnF4MVJab05zMERuOGdwTGtmVTZ4azVOQ1RUQ0lleGtBZGZiRi1nVkV2MTI4UGxNZWc0bGZRNDBBYjd4b1N6R3ltM0E3UWtYTlR2bzRjRGg3blJPNjdvc1FCY05HRlQ4YnI?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-08-21T07:00:00",
+        "description": "JPMorgan Rises as Wall Street Bets on Record Trading Strength&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
@@ -1750,58 +1750,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7648.5,
-      "change": -32.0,
-      "change_percent": -0.42,
+      "price": 7649.0,
+      "change": -31.5,
+      "change_percent": -0.41,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29365.25,
-      "change": -173.5,
+      "price": 29364.75,
+      "change": -174.0,
       "change_percent": -0.59,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52468.0,
-      "change": -364.0,
-      "change_percent": -0.69,
+      "price": 52462.0,
+      "change": -370.0,
+      "change_percent": -0.7,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2945.8,
-      "change": -17.8,
-      "change_percent": -0.6,
+      "price": 2946.1,
+      "change": -17.5,
+      "change_percent": -0.59,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 95.6,
-      "change": 2.57,
-      "change_percent": 2.76,
+      "price": 95.58,
+      "change": 2.55,
+      "change_percent": 2.74,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4448.1,
-      "change": 54.2,
-      "change_percent": 1.23,
+      "price": 4448.4,
+      "change": 54.5,
+      "change_percent": 1.24,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 66.83,
-      "change": 0.54,
-      "change_percent": 0.81,
+      "price": 66.91,
+      "change": 0.61,
+      "change_percent": 0.92,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1860.3,
-      "change": 12.1,
-      "change_percent": 0.65,
+      "price": 1860.5,
+      "change": 12.3,
+      "change_percent": 0.67,
       "name": "Platinum Oct 26"
     },
     {
@@ -1815,7 +1815,7 @@
       "symbol": "NG=F",
       "price": 2.86,
       "change": -0.06,
-      "change_percent": -2.09,
+      "change_percent": -1.95,
       "name": "Natural Gas Oct 26"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-10T20:46:18.087457",
+  "timestamp": "2026-09-10T20:49:11.532289",
   "summary": "Key topics today:\n- - OpenAI Agents API (r/HackerNews, 301 pts)\n- - More questions about whether researchers can trust OpenAI with unpublished math (r/HackerNews, 201 pts)\n- - Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra (r/HackerNews, 201 pts)\n- - OpenAI\u2019s Navier-Stokes release included a Lean 4 formal proof (r/HackerNews, 101 pts)\n- - What happens when a GPU writes memory (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -35,20 +35,20 @@
       "text": "TNON -27.4% drop @ $2.44"
     },
     {
-      "type": "sell",
-      "asset": "LPTH",
-      "price": 10.14,
-      "change": -5.67,
+      "type": "buy",
+      "asset": "SURG",
+      "price": 0.17,
+      "change": 6.13,
       "category": "stock",
-      "text": "LPTH -5.7% drop @ $10.14"
+      "text": "SURG +6.1% momentum @ $0.17"
     },
     {
       "type": "buy",
-      "asset": "GME",
-      "price": 19.89,
-      "change": 5.29,
+      "asset": "BWET",
+      "price": 583.39,
+      "change": 6.04,
       "category": "stock",
-      "text": "GME +5.3% momentum @ $19.89"
+      "text": "BWET +6.0% momentum @ $583.39"
     },
     {
       "type": "watch",
@@ -142,9 +142,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Prosecutor Joe diGenova, who led the \u201cgrand conspiracy\u201d probe of Trump targets, resigns without charging anyone. https://www.nbcnews.com/politics/justice-department/prosecutor-led-grand-conspiracy-probe-trump-targets-resigns-charging-a-rcna597123?taid=6aa32dd7d5b7470001",
+      "url": "http://nitter.jaydenha.uk/BreakingNews/status/2098175514905026910#m",
+      "date": "Thu, 10 Sep 2026 22:23:19 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: U.S. Supreme Court blocks Missouri\u2019s attempt to use a newly drawn Republican congressional map for the November elections. https://www.nbcnews.com/politics/supreme-court/supreme-court-blocks-missouris-attempt-use-newly-drawn-republican-cong-rcna596857?taid=6aa2bfb6129c9",
+      "url": "http://nitter.jaydenha.uk/BreakingNews/status/2098057264749859050#m",
+      "date": "Thu, 10 Sep 2026 14:33:26 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: At least five people are dead and multiple injured after an Amazon-branded cargo plane overran the runway at Miami International Airport, officials say. https://www.nbcnews.com/news/us-news/amazon-plane-crash-miami-rcna596369?taid=6a9de503db980e0001a4bb57&utm_campaign=t",
+      "url": "http://nitter.jaydenha.uk/BreakingNews/status/2096722926875619512#m",
+      "date": "Sun, 06 Sep 2026 22:11:15 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-09-11T00:46:09.026518",
+    "timestamp": "2026-09-11T00:48:58.566265",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +468,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-11T00:45:43.811324",
+    "timestamp": "2026-09-11T00:48:35.102083",
     "trending": [
       {
         "symbol": "TNON",
@@ -456,6 +478,20 @@
         "name": "Tenon Medical, Inc."
       },
       {
+        "symbol": "SURG",
+        "price": 0.17,
+        "change": 0.01,
+        "change_percent": 6.13,
+        "name": "SurgePays, Inc."
+      },
+      {
+        "symbol": "BWET",
+        "price": 583.39,
+        "change": 33.23,
+        "change_percent": 6.04,
+        "name": "Breakwave Tanker Shipping ETF"
+      },
+      {
         "symbol": "LPTH",
         "price": 10.14,
         "change": -0.61,
@@ -463,25 +499,11 @@
         "name": "LightPath Technologies, Inc."
       },
       {
-        "symbol": "ACVA",
-        "price": 7.37,
-        "change": 0.34,
-        "change_percent": 4.84,
-        "name": "ACV Auctions Inc."
-      },
-      {
-        "symbol": "M",
-        "price": 21.51,
-        "change": -0.94,
-        "change_percent": -4.19,
-        "name": "Macy's Inc"
-      },
-      {
-        "symbol": "LULU",
-        "price": 99.72,
-        "change": -3.47,
-        "change_percent": -3.36,
-        "name": "lululemon athletica inc."
+        "symbol": "GME",
+        "price": 19.89,
+        "change": 1.0,
+        "change_percent": 5.29,
+        "name": "GameStop Corporation"
       },
       {
         "symbol": "RH",
@@ -512,11 +534,11 @@
         "name": "Skyworks Solutions, Inc."
       },
       {
-        "symbol": "ORCU",
-        "price": 9.35,
-        "change": -0.1,
-        "change_percent": -1.06,
-        "name": "Direxion Daily ORCL Bull 2X ETF"
+        "symbol": "STRL",
+        "price": 495.15,
+        "change": -7.05,
+        "change_percent": -1.4,
+        "name": "Sterling Infrastructure, Inc."
       },
       {
         "symbol": ".RUT",
@@ -982,7 +1004,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-11T00:46:05.142032",
+    "timestamp": "2026-09-11T00:48:55.108480",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,98 +1038,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7607.5,
-        "change": -0.47,
+        "price": 7611.5,
+        "change": -0.42,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29134.0,
-        "change": -1.07,
+        "price": 29155.75,
+        "change": -0.99,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52192.0,
-        "change": -0.44,
+        "price": 52209.0,
+        "change": -0.41,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2896.9,
-        "change": -0.89,
+        "price": 2899.1,
+        "change": -0.82,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 103.08,
-        "change": 7.32,
+        "price": 103.0,
+        "change": 7.24,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4361.7,
-        "change": -1.23,
+        "price": 4362.7,
+        "change": -1.21,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 64.06,
-        "change": -5.71,
+        "price": 64.03,
+        "change": -5.77,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1783.0,
-        "change": -6.86,
+        "price": 1783.9,
+        "change": -6.82,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1290.5,
-        "change": -5.62,
+        "price": 1291.0,
+        "change": -5.58,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.84,
-        "change": 0.46,
+        "price": 2.83,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 235.44,
-        "change": -6.29,
+        "price": 235.05,
+        "change": -6.71,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76739,
-        "change": -1.79,
+        "price": 76754,
+        "change": -1.84,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2451.72,
-        "change": -0.48,
+        "price": 2450.86,
+        "change": -0.68,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 98.72,
-        "change": -2.25,
+        "price": 98.68,
+        "change": -2.47,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.48,
-        "change": -1.92,
+        "price": 11.47,
+        "change": -2.25,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.46,
-        "change": -3.75,
+        "change": -4.05,
         "type": "crypto"
       },
       {
@@ -1117,9 +1139,9 @@
         "type": "mover"
       },
       {
-        "symbol": "LPTH",
-        "price": 10.14,
-        "change": -5.67,
+        "symbol": "SURG",
+        "price": 0.17,
+        "change": 6.13,
         "type": "mover"
       },
       {
@@ -1129,21 +1151,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ACVA",
-        "price": 7.37,
-        "change": 4.84,
-        "type": "mover"
-      },
-      {
         "symbol": "AMC",
         "price": 2.46,
         "change": -3.91,
-        "type": "mover"
-      },
-      {
-        "symbol": "LULU",
-        "price": 99.72,
-        "change": -3.36,
         "type": "mover"
       },
       {
@@ -1168,6 +1178,18 @@
         "symbol": "SWKS",
         "price": 76.54,
         "change": 1.54,
+        "type": "mover"
+      },
+      {
+        "symbol": "BB",
+        "price": 7.75,
+        "change": -1.52,
+        "type": "mover"
+      },
+      {
+        "symbol": "STRL",
+        "price": 495.15,
+        "change": -1.4,
         "type": "mover"
       }
     ]
@@ -1268,7 +1290,7 @@
     {
       "title": "iPhone 18 Pro and Pro Max Benchmarks Reveal Speed of A20 Pro Chip",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbHF5V0llMzhQT3BSaGpZVkQtcFZ1SHhJUzBwVVlZSlNOVkdPU0VBS1U2RW1DZHlubXVIZ0tYaG44MXYtZ1N5b2NHT193U1NfZTZYcHc3dUQ3OHRUVnFVZVROLV9jekxNUEFZY1g1ZWN2bVFQLW9QU0hUQU9uMDNZTGlNNlNVclBmZU9STVViQmI?oc=5",
-      "source": "macrumors.com",
+      "source": "MacRumors",
       "category": "business",
       "published": "Thu, 10 Sep 2026 ",
       "description": "",
@@ -1328,7 +1350,7 @@
     {
       "title": "You Can't Use Apple Watch's Live Rewind Secretly, Apple Says",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DT0VXX01tcllqeGJaTlJFRGZwUlpQQ0xZTGZDRWE3bGVxX1JQZjFmeVlKb2RYSWZSbUtqY0hWY01BZTRCdW1FZWhyVmhuY2dmcUxFNDBnWkVrQ011Uy1YeGJhMVJsdC1KV0l5cTRn?oc=5",
-      "source": "macrumors.com",
+      "source": "MacRumors",
       "category": "business",
       "published": "Thu, 10 Sep 2026 ",
       "description": "",
@@ -1562,7 +1584,7 @@
     "changePercent": -1.08,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Thu 10 Sep: 29,103.51, down -1.08% -- BEARISH. price below SMA20, RSI 47.8 neutral-bearish, MACD bearish, strong -1.08% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-10T20:46:15.544173"
+    "timestamp": "2026-09-10T20:49:09.293702"
   },
   "sticky": {
     "cnbc": [
@@ -1632,17 +1654,10 @@
         "description": ""
       },
       {
-        "title": "What Happens to Bitcoin Price If the Fed Raises Interest Rates on Sept. 16?",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/happens-bitcoin-price-fed-raises-123715290.html",
+        "title": "Flotek raises 2026 revenue guidance to $360 million-$370 million",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/flotek-raises-2026-revenue-guidance-124731054.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-09T12:37:15+00:00",
-        "description": ""
-      },
-      {
-        "title": "Constellation Brands Stock: Is STZ Underperforming the Consumer Defensive Sector?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-brands-stock-stz-underperforming-123740031.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T12:37:40+00:00",
+        "published": "2026-09-09T12:47:31+00:00",
         "description": ""
       },
       {
@@ -1660,24 +1675,31 @@
         "description": ""
       },
       {
-        "title": "Mortgage & refinance rates today, Wednesday, September 9, 2026: Fixed rates inch upward, 5/1 ARM breaks past 7% as oil prices rise",
-        "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage--refinance-rates-today-wednesday-september-9-2026-fixed-rates-inch-upward-51-arm-breaks-past-7-as-oil-prices-rise-100000700.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T10:00:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Google to invest \u20ac13 billion in Finland AI data centers",
-        "url": "https://finance.yahoo.com/technology/ai/articles/google-invest-13-billion-finland-124204418.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-09T12:42:04+00:00",
-        "description": ""
-      },
-      {
         "title": "Is Western Digital (WDC) Priced Too High?",
         "url": "https://finance.yahoo.com/markets/stocks/articles/western-digital-wdc-priced-too-125811420.html",
         "source": "Yahoo Finance",
         "published": "2026-09-09T12:58:11+00:00",
+        "description": ""
+      },
+      {
+        "title": "Beyond visibility: Building a supply chain that can act when conditions change",
+        "url": "https://finance.yahoo.com/small-business/articles/beyond-visibility-building-supply-chain-130000331.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T13:00:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "374Water outlines growth strategy around AirSCWO technology",
+        "url": "https://finance.yahoo.com/technology/articles/374water-outlines-growth-strategy-around-124800735.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T12:48:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Following Activist Investor Elliott\u2019s Large Stake Purchase, Here\u2019s What It Will Take for Deutsche Telekom to Stage a Recovery",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/following-activist-investor-elliott-large-130002930.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-09T13:00:02+00:00",
         "description": ""
       }
     ],
@@ -1698,11 +1720,11 @@
         "description": "Wallstreetbets Favorites Split Ahead Of Thursday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher - marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTnhhMWRoMGszTnBfWUc0ampiY2pMQXFIaFFEVnZVNXR0N0hmZXZTQlc0TVdQNjUtU2g2MXU3SXVPY2lsWXRnOVlwNzdyQ0tSVjFaekZUVG5fV3F1WGVwWHFPTUo4X25mbU41akdlUjJHX1FrV3ZpaTVIMnhjeUZ3OGxmUlNabkRySlJiQnhIbllvQTZGV3gtNC00VEpJT0YtOUlCOThaaUhZOWYzd2JnRWZFWXh0TzQ4Y3A3SjFaXzlqbThBYkpDVTRSSmc0QWpUbWstejhaV3FOU2hf?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Wednesday; Meta Platforms to Advance, Intel to Decline - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQX3dFMnBGNFVjWlpubTJsWUJWR3BxcTZzS19VMDN3NkJBcml3Qm9pWndzeFRXcW5mbTM2clB0X2F3M2FORlZsaFBsNk9pam55MUVFVnNEUGMyN0dUY1FNMjFOZWRCUkdEZTMxbUd5X0d6Q0RYYm9zSHBjaUs0NlJWdERuRGdibkJ3dTgzOTZ6cG1aOHgtNWFJeEEwWVRCZ2F1bzhtX3JJd1VZalBHa0ktREROaTMyRlg2NDlTMFBxaWZUNVcxWnFldXdrWG9NdUU5Ml9xcFI4cHJ0eGp3aVZnaUlvSGY?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-09-08T10:45:47",
-        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;marketscreener.com"
+        "published": "2026-09-09T10:36:34",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Wednesday; Meta Platforms to Advance, Intel to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
         "title": "US Midterm Elections Enter Final Sprint: Wall Street Bets on a Divided Congress, US Stocks May Rebound but Beware of a \"Clean Sweep\" - \u5bcc\u9014\u725b\u725b",
@@ -1726,13 +1748,6 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;moomoo.com"
       },
       {
-        "title": "LITE Stock Climbs As Wall Street Bets On AI Optics Boom - StocksToTrade",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbGt2N2dvQ3Z3eFpRWHZsOC1jTkllNk5vMXpvcFJHOWlZZjFEMk41ZUFhMW9ySEstQnZSd19SbUpjME5VZUFpUUdGWU9vMWthNjhocnplSXhCNGU5Y0N0N1ZHdXVGeFNWOEgtZ3pDRktHM19aRHBnMjdDZHpGNkFTakN3?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-09-08T20:47:00",
-        "description": "LITE Stock Climbs As Wall Street Bets On AI Optics Boom&nbsp;&nbsp;StocksToTrade"
-      },
-      {
         "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
         "source": "r/wallstreetbets",
@@ -1740,90 +1755,97 @@
         "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
       },
       {
+        "title": "LITE Stock Climbs As Wall Street Bets On AI Optics Boom - StocksToTrade",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbGt2N2dvQ3Z3eFpRWHZsOC1jTkllNk5vMXpvcFJHOWlZZjFEMk41ZUFhMW9ySEstQnZSd19SbUpjME5VZUFpUUdGWU9vMWthNjhocnplSXhCNGU5Y0N0N1ZHdXVGeFNWOEgtZ3pDRktHM19aRHBnMjdDZHpGNkFTakN3?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-09-08T20:47:00",
+        "description": "LITE Stock Climbs As Wall Street Bets On AI Optics Boom&nbsp;&nbsp;StocksToTrade"
+      },
+      {
+        "title": "JPMorgan Rises as Wall Street Bets on Record Trading Strength - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX2N0dndUTUpKOWdMb01KWUZ5dGstOTVJczBjMlozanhidGpkbVFBMmJPVVo0R1RZd1hzUnF4MVJab05zMERuOGdwTGtmVTZ4azVOQ1RUQ0lleGtBZGZiRi1nVkV2MTI4UGxNZWc0bGZRNDBBYjd4b1N6R3ltM0E3UWtYTlR2bzRjRGg3blJPNjdvc1FCY05HRlQ4YnI?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-08-21T07:00:00",
+        "description": "JPMorgan Rises as Wall Street Bets on Record Trading Strength&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
         "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-05-14T07:00:00",
         "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
-      },
-      {
-        "title": "Wall Street Bets Investors Are Bullish Again on Wendy\u2019s. How to Play WEN Stock Amid a Meme Surge Here. - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQelB0UmdyN3JxMXFpTUhIdENMSFJxUndqMGxyYmRkdjdnTG1WeHJQZVc0b0hmQkJrNWxhRjFOS00zaVkyXy1LaDBpMW8ySENJVVFVQUdiR1pZNExFZmZuRXNtTWNNS1pxNm9nc0g5b2thVnVyUTMxSEVqZUI1SHdkN1l6RldGNC1odnFqWWhWLTlwWW1JZFRMY1R0Nkd0ZkJz?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-06-27T07:00:00",
-        "description": "Wall Street Bets Investors Are Bullish Again on Wendy\u2019s. How to Play WEN Stock Amid a Meme Surge Here.&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7607.25,
-      "change": -36.5,
-      "change_percent": -0.48,
+      "price": 7611.25,
+      "change": -32.5,
+      "change_percent": -0.43,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29132.25,
-      "change": -316.5,
-      "change_percent": -1.07,
+      "price": 29155.5,
+      "change": -293.25,
+      "change_percent": -1.0,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52190.0,
-      "change": -235.0,
-      "change_percent": -0.45,
+      "price": 52210.0,
+      "change": -215.0,
+      "change_percent": -0.41,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2896.9,
-      "change": -26.1,
-      "change_percent": -0.89,
+      "price": 2899.1,
+      "change": -23.9,
+      "change_percent": -0.82,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 103.05,
-      "change": 7.0,
-      "change_percent": 7.29,
+      "price": 103.0,
+      "change": 6.95,
+      "change_percent": 7.24,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4361.0,
-      "change": -55.0,
-      "change_percent": -1.25,
+      "price": 4362.7,
+      "change": -53.3,
+      "change_percent": -1.21,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 64.06,
-      "change": -3.88,
-      "change_percent": -5.71,
+      "price": 64.03,
+      "change": -3.92,
+      "change_percent": -5.77,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1783.0,
-      "change": -131.4,
-      "change_percent": -6.86,
+      "price": 1783.9,
+      "change": -130.5,
+      "change_percent": -6.82,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1290.5,
-      "change": -76.8,
-      "change_percent": -5.62,
+      "price": 1291.0,
+      "change": -76.3,
+      "change_percent": -5.58,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.84,
+      "price": 2.83,
       "change": 0.01,
-      "change_percent": 0.46,
+      "change_percent": 0.25,
       "name": "Natural Gas Oct 26"
     }
   ],

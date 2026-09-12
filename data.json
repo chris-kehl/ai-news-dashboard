@@ -1,7 +1,15 @@
 {
-  "timestamp": "2026-09-12T15:16:39.580002",
+  "timestamp": "2026-09-12T15:27:06.660973",
   "summary": "Key topics today:\n- - Anthropic CEO Says It's Time to Slow AI Model Advances (r/HackerNews, 301 pts)\n- - The worst spam emails: iLands AI agent hustle (r/HackerNews, 201 pts)\n- - Nvidia is the central bank of AI (r/HackerNews, 101 pts)\n- - A Mathematical Framework for Transformer Circuits (2021) (r/HackerNews, 101 pts)\n- - Retrospectively Reverse-Engineering Apple's Neural Engine (r/HackerNews, 101 pts)",
   "signals": [
+    {
+      "type": "watch",
+      "asset": "ZEC",
+      "price": 1125.64,
+      "change": -3.83,
+      "category": "crypto",
+      "text": "ZEC -3.8% @ $1,125.64"
+    },
     {
       "type": "watch",
       "asset": "FIGR_HELOC",
@@ -11,12 +19,12 @@
       "text": "FIGR_HELOC -2.6% @ $1.00"
     },
     {
-      "type": "watch",
-      "asset": "ZEC",
-      "price": 1126.62,
-      "change": -2.61,
-      "category": "crypto",
-      "text": "ZEC -2.6% @ $1,126.62"
+      "type": "buy",
+      "asset": "BWET",
+      "price": 726.92,
+      "change": 24.6,
+      "category": "stock",
+      "text": "BWET +24.6% momentum @ $726.92"
     },
     {
       "type": "sell",
@@ -33,14 +41,6 @@
       "change": 6.33,
       "category": "stock",
       "text": "GME +6.3% momentum @ $21.15"
-    },
-    {
-      "type": "watch",
-      "asset": "NVDA",
-      "price": 218.29,
-      "change": -2.41,
-      "category": "stock",
-      "text": "NVDA -2.4% @ $218.29"
     },
     {
       "type": "watch",
@@ -136,84 +136,84 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-12T19:16:26.017750",
+    "timestamp": "2026-09-12T19:26:58.792383",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 232.52,
-        "change_24h": -0.52,
-        "market_cap": 2229262798
+        "price": 232.16,
+        "change_24h": -1.17,
+        "market_cap": 2228703548
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 77137,
-        "change_24h": -0.07,
-        "market_cap": 1549145541437
+        "price": 77148,
+        "change_24h": -0.14,
+        "market_cap": 1549395783944
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2520.65,
-        "change_24h": -0.94,
-        "market_cap": 307625745702
+        "price": 2520.08,
+        "change_24h": -1.0,
+        "market_cap": 307556796749
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.99983,
-        "change_24h": 0.01,
-        "market_cap": 183486841308
+        "price": 0.999855,
+        "change_24h": 0.02,
+        "market_cap": 183492741598
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 727.79,
-        "change_24h": 0.53,
-        "market_cap": 96912686117
+        "price": 725.87,
+        "change_24h": 0.11,
+        "market_cap": 96672947335
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.36,
-        "change_24h": 0.87,
-        "market_cap": 85718000437
+        "change_24h": 0.51,
+        "market_cap": 85722035876
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999881,
+        "price": 0.99991,
         "change_24h": 0.01,
-        "market_cap": 74307460239
+        "market_cap": 74309718968
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 101.59,
-        "change_24h": 0.38,
-        "market_cap": 59594731109
+        "price": 101.52,
+        "change_24h": 0.11,
+        "market_cap": 59552256557
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.339837,
-        "change_24h": 1.0,
-        "market_cap": 32264293156
+        "price": 0.339824,
+        "change_24h": 0.97,
+        "market_cap": 32263944845
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.003,
         "change_24h": -2.62,
-        "market_cap": 22622087595
+        "market_cap": 22621327979
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1126.62,
-        "change_24h": -2.61,
-        "market_cap": 19071861437
+        "price": 1125.64,
+        "change_24h": -3.83,
+        "market_cap": 19055021982
       }
     ],
     "news": [
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-12T19:15:45.769620",
+    "timestamp": "2026-09-12T19:26:32.897185",
     "trending": [
+      {
+        "symbol": "BWET",
+        "price": 726.92,
+        "change": 143.53,
+        "change_percent": 24.6,
+        "name": "Breakwave Tanker Shipping ETF"
+      },
       {
         "symbol": "FBGRX",
         "price": 289.48,
@@ -448,18 +455,25 @@
         "name": "Fidelity Blue Chip Growth Fund"
       },
       {
-        "symbol": "MO",
-        "price": 68.98,
-        "change": 1.09,
-        "change_percent": 1.61,
-        "name": "Altria Group, Inc."
+        "symbol": "ZEC-USD",
+        "price": 1123.39,
+        "change": -39.94,
+        "change_percent": -3.43,
+        "name": "Zcash USD"
       },
       {
-        "symbol": "O",
-        "price": 59.5,
-        "change": -0.61,
-        "change_percent": -1.01,
-        "name": "Realty Income Corporation"
+        "symbol": "NKE",
+        "price": 36.8,
+        "change": -0.55,
+        "change_percent": -1.47,
+        "name": "Nike, Inc."
+      },
+      {
+        "symbol": "SPMO",
+        "price": 148.31,
+        "change": -1.99,
+        "change_percent": -1.32,
+        "name": "Invesco S&P 500 Momentum ETF"
       },
       {
         "symbol": ".DJI",
@@ -469,6 +483,13 @@
         "name": "DJIA"
       },
       {
+        "symbol": "SOL-USD",
+        "price": 101.51,
+        "change": -0.89,
+        "change_percent": -0.87,
+        "name": "Solana USD"
+      },
+      {
         "symbol": ".SPX",
         "price": 7656.98,
         "change": 65.28,
@@ -476,17 +497,10 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "BRK-B",
-        "price": 510.37,
-        "change": 3.65,
-        "change_percent": 0.72,
-        "name": "Berkshire Hathaway Inc. New"
-      },
-      {
         "symbol": "XRP-USD",
         "price": 1.36,
         "change": 0.01,
-        "change_percent": 0.61,
+        "change_percent": 0.52,
         "name": "XRP USD"
       },
       {
@@ -497,13 +511,6 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2522.25,
-        "change": 7.52,
-        "change_percent": 0.3,
-        "name": "Ethereum USD"
-      },
-      {
         "symbol": "FXAIX",
         "price": 266.59,
         "change": 0.76,
@@ -511,18 +518,18 @@
         "name": "Fidelity 500 Index Fund"
       },
       {
-        "symbol": "CVX",
-        "price": 214.06,
-        "change": 0.25,
-        "change_percent": 0.12,
-        "name": "Chevron Corporation"
+        "symbol": "ETH-USD",
+        "price": 2519.01,
+        "change": 4.28,
+        "change_percent": 0.17,
+        "name": "Ethereum USD"
       },
       {
-        "symbol": "SCHD",
-        "price": 34.12,
-        "change": 0.03,
-        "change_percent": 0.09,
-        "name": "Schwab US Dividend Equity ETF"
+        "symbol": "BTC-USD",
+        "price": 77114.1,
+        "change": -59.7,
+        "change_percent": -0.08,
+        "name": "Bitcoin USD"
       },
       {
         "symbol": "KHC",
@@ -530,13 +537,6 @@
         "change": -0.01,
         "change_percent": -0.04,
         "name": "The Kraft Heinz Company"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 77165.4,
-        "change": -8.4,
-        "change_percent": -0.01,
-        "name": "Bitcoin USD"
       },
       {
         "symbol": "ANTH.PVT",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-12T19:16:12.001470",
+    "timestamp": "2026-09-12T19:26:55.013798",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 232.15,
-        "change": -0.7,
+        "price": 232.16,
+        "change": -1.17,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77137,
-        "change": -0.02,
+        "price": 77142,
+        "change": -0.13,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2520.65,
-        "change": -0.84,
+        "price": 2519.9,
+        "change": -1.01,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.59,
-        "change": 0.53,
+        "price": 101.53,
+        "change": 0.07,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.52,
-        "change": -0.39,
+        "price": 11.49,
+        "change": -1.08,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.38,
-        "change": -0.79,
+        "change": -1.09,
         "type": "crypto"
       },
       {
@@ -1115,9 +1115,15 @@
         "type": "mover"
       },
       {
-        "symbol": "MO",
-        "price": 68.98,
-        "change": 1.61,
+        "symbol": "ZEC-USD",
+        "price": 1122.1,
+        "change": -3.54,
+        "type": "mover"
+      },
+      {
+        "symbol": "NKE",
+        "price": 36.8,
+        "change": -1.47,
         "type": "mover"
       },
       {
@@ -1133,15 +1139,15 @@
         "type": "mover"
       },
       {
-        "symbol": "BRK-B",
-        "price": 510.37,
-        "change": 0.72,
+        "symbol": "SOL-USD",
+        "price": 101.51,
+        "change": -0.87,
         "type": "mover"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.36,
-        "change": 0.58,
+        "change": 0.51,
         "type": "mover"
       },
       {
@@ -1152,14 +1158,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2520.86,
-        "change": 0.24,
-        "type": "mover"
-      },
-      {
-        "symbol": "SCHD",
-        "price": 34.12,
-        "change": 0.09,
+        "price": 2518.84,
+        "change": 0.16,
         "type": "mover"
       }
     ]
@@ -1168,7 +1168,7 @@
     {
       "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObV9NUVhESy1GWXRLaWhTYlM1UUNSU0kweVg1N2YxNTRXUVdORW5EWHQ2MXNpYlo3SHNlLWZVZ2N1ZEZYZlNnUDY4TUZBMVFvcU1BaDBIWm94TkhqQUVXVzRZQlBUX3JOZUJYNnVVcVV3dlhTMDRFMmVXVGpNOU1RUEhnV254NWV0clJhc0NEOVFPWGFYSEtiY2R3U0JqM0NVc3c?oc=5",
-      "source": "reuters.com",
+      "source": "Reuters",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1178,7 +1178,7 @@
     {
       "title": "Larry Ellison cancels $7.5bn Oracle share sale",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOVB6czJZaDhRSDRwejNONzNKLUljb1hVdHUtSXE5UW5fbHI5MjBZN1FsS21BQlJyUjJNQVZLYzlyWG5tMWRSWldRYWxaQ0tzbFVkdU10OVpqN3RjTWVuT252VTFFbFc3ZjJTSlkwWUhfZjlqZEJTSzJ4Vlp4M1JBMnEyXzY?oc=5",
-      "source": "ft.com",
+      "source": "Financial Times",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1216,21 +1216,21 @@
       "author": ""
     },
     {
-      "title": "After closures, Denny's bets on a comeback",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVGZZaUxqaEVFdnplUmdiR1gwYUVxRThTSlFJTzZ2UzVRWlFlXzVNVVQ4elczUTBNQ0dTd0Q3OXJDMVRCZjMxamtjNDl2c1Ztc1pZX3JKemU0RXN4ZzR6bnJWbDEtYm80Tm85b2lpX3YyaVdUREs0VGN6S0NEUmJjT0RIakhFUEVzUWs0UEg2NnI5alNIN0lCakI3WnoxNWU2QkE?oc=5",
-      "source": "USA Today",
-      "category": "business",
-      "published": "Sat, 12 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Warsh Faces Intensifying Pressure to Raise Rates After Hot CPI",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSlA0Sl9sSUFuNjJhanlXWXcxMlNNRENsaEtlRVZvMW5TX3VGb182NW50R2steXkwaDBINzhaWFdjYXI5M3drazl4UGJMOTlzQ0RXTnJXeG45eHROSjNwR1o5d0lmUVQtVnVaN3ZhdzBkd3JUTWFHODEtSEdzbEFlNmVOVy1QOHlLRk9uRmZRdUs0ekg4c3hocE5uNzdXSXc1NDduWmUyVGVPM2Z3SzAzY3lzQ1ZsMl9tQnR3QnJyRVZfN0NR?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
       "published": "Fri, 11 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "After closures, Denny's bets on a comeback",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVGZZaUxqaEVFdnplUmdiR1gwYUVxRThTSlFJTzZ2UzVRWlFlXzVNVVQ4elczUTBNQ0dTd0Q3OXJDMVRCZjMxamtjNDl2c1Ztc1pZX3JKemU0RXN4ZzR6bnJWbDEtYm80Tm85b2lpX3YyaVdUREs0VGN6S0NEUmJjT0RIakhFUEVzUWs0UEg2NnI5alNIN0lCakI3WnoxNWU2QkE?oc=5",
+      "source": "USA Today",
+      "category": "business",
+      "published": "Sat, 12 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1260,7 +1260,7 @@
     {
       "title": "Samsung Trolls Apple by Hiring 'Tim Cook' to Endorse Galaxy Z Fold 8",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ3ZVc0tmTWFvNkNHUmtHQ1F2eDhTQkNmdktlTDVUcVFhYUdFNGYtRk1zejRfcHg0eHhWMmtwZnk2NF81UzdZdEhfSnBNOVIzU3FSeU9fREc1Z0RpZkZlS0VZVW9yRm5FR2NlOHlibkdpNVlWRjI5cTM3X1pETGotbjhwQXlnbjVwcTdHaWstTHJYS2JBTU8wUzlJWEo?oc=5",
-      "source": "PCMag",
+      "source": "pcmag.com",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1394,6 +1394,14 @@
       "relevance_score": 8
     },
     {
+      "title": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+      "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 12 Sep 2026 ",
+      "description": "PM Ali al-Zaidi dismisses commander, orders investigation into operations command in Maysan province, bordering Iran.",
+      "relevance_score": 7
+    },
+    {
       "title": "India puts domestic industry at heart of new military equipment orders",
       "url": "https://www.defensenews.com/global/asia-pacific/2026/09/11/india-puts-domestic-industry-at-heart-of-new-military-equipment-orders/",
       "source": "Defense News",
@@ -1415,14 +1423,6 @@
       "source": "Defense News",
       "published": "Fri, 11 Sep 2026 ",
       "description": "Saudi Crown Prince Mohammed bin Salman reportedly sought assistance from President Donald Trump on Thursday to help fight Yemen\u2019s Iran-aligned Houthis.",
-      "relevance_score": 4
-    },
-    {
-      "title": "Will the Houthi attacks activate the Mecca Pact?",
-      "url": "https://www.aljazeera.com/opinions/2026/9/12/will-the-houthi-attacks-activate-the-mecca-pact?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sat, 12 Sep 2026 ",
-      "description": "If there is a Saudi request, Pakistan and Turkiye will intervene, but direct involvement in the Yemen war is unlikely.",
       "relevance_score": 4
     }
   ],
@@ -1530,7 +1530,7 @@
     "changePercent": 0.91,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 12 Sep: 29,368.44, up +0.91% -- BULLISH. RSI 51.1 building, modest +0.91% up. Counter: price below SMA20, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-12T15:16:35.082398"
+    "timestamp": "2026-09-12T15:27:04.537904"
   },
   "sticky": {
     "cnbc": [
@@ -1628,10 +1628,10 @@
         "description": ""
       },
       {
-        "title": "Zscaler CEO Highlights AI Security Surge, Zero-Trust Momentum at Citi Conference",
-        "url": "https://finance.yahoo.com/technology/ai/articles/zscaler-ceo-highlights-ai-security-190159120.html",
+        "title": "Google's Historic 396 MW Clean Energy Deal Just Changed the Game for 1 AI Power Play",
+        "url": "https://finance.yahoo.com/energy/articles/googles-historic-396-mw-clean-190500123.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-12T19:01:59+00:00",
+        "published": "2026-09-12T19:05:00+00:00",
         "description": ""
       },
       {

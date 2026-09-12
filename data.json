@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-12T14:31:21.222656",
-  "summary": "Key topics today:\n- - The worst spam emails: iLands AI agent hustle (r/HackerNews, 201 pts)\n- - Nvidia is the central bank of AI (r/HackerNews, 101 pts)\n- - A Mathematical Framework for Transformer Circuits (2021) (r/HackerNews, 101 pts)\n- - Retrospectively Reverse-Engineering Apple's Neural Engine (r/HackerNews, 101 pts)\n- - A misalignment of AI in mathematics (r/HackerNews, 101 pts)",
+  "timestamp": "2026-09-12T14:37:46.103506",
+  "summary": "Key topics today:\n- - Anthropic CEO Says It's Time to Slow AI Model Advances (r/HackerNews, 301 pts)\n- - The worst spam emails: iLands AI agent hustle (r/HackerNews, 201 pts)\n- - Nvidia is the central bank of AI (r/HackerNews, 101 pts)\n- - A Mathematical Framework for Transformer Circuits (2021) (r/HackerNews, 101 pts)\n- - Retrospectively Reverse-Engineering Apple's Neural Engine (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
@@ -19,14 +19,6 @@
       "text": "FIGR_HELOC -2.4% @ $1.01"
     },
     {
-      "type": "buy",
-      "asset": "BWET",
-      "price": 726.92,
-      "change": 24.6,
-      "category": "stock",
-      "text": "BWET +24.6% momentum @ $726.92"
-    },
-    {
       "type": "sell",
       "asset": "FBGRX",
       "price": 289.48,
@@ -41,9 +33,33 @@
       "change": 6.33,
       "category": "stock",
       "text": "GME +6.3% momentum @ $21.15"
+    },
+    {
+      "type": "watch",
+      "asset": "NVDA",
+      "price": 218.29,
+      "change": -2.41,
+      "category": "stock",
+      "text": "NVDA -2.4% @ $218.29"
+    },
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
+    {
+      "title": "Anthropic CEO Says It's Time to Slow AI Model Advances",
+      "subreddit": "HackerNews",
+      "score": 301,
+      "comments": 0,
+      "url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "created": ""
+    },
     {
       "title": "The worst spam emails: iLands AI agent hustle",
       "subreddit": "HackerNews",
@@ -85,14 +101,6 @@
       "created": ""
     },
     {
-      "title": "Make your first edit to OpenStreetMap",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
-      "created": ""
-    },
-    {
       "title": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
       "subreddit": "HackerNews",
       "score": 1,
@@ -101,19 +109,19 @@
       "created": ""
     },
     {
-      "title": "Will There Be a 7G?",
+      "title": "Make your first edit to OpenStreetMap",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://arxiv.org/abs/2609.01877",
+      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
       "created": ""
     },
     {
-      "title": "I refuse to let SPICE die",
+      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://github.com/nefarius/vd_agent/",
+      "url": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
       "created": ""
     },
     {
@@ -128,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-12T18:31:13.569060",
+    "timestamp": "2026-09-12T18:37:38.482476",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-12T18:30:47.401856",
+    "timestamp": "2026-09-12T18:37:14.332901",
     "trending": [
-      {
-        "symbol": "BWET",
-        "price": 726.92,
-        "change": 143.53,
-        "change_percent": 24.6,
-        "name": "Breakwave Tanker Shipping ETF"
-      },
       {
         "symbol": "FBGRX",
         "price": 289.48,
@@ -447,11 +448,18 @@
         "name": "Fidelity Blue Chip Growth Fund"
       },
       {
-        "symbol": "EPD",
-        "price": 38.9,
-        "change": -0.42,
-        "change_percent": -1.07,
-        "name": "Enterprise Products Partners L."
+        "symbol": "MO",
+        "price": 68.98,
+        "change": 1.09,
+        "change_percent": 1.61,
+        "name": "Altria Group, Inc."
+      },
+      {
+        "symbol": "O",
+        "price": 59.5,
+        "change": -0.61,
+        "change_percent": -1.01,
+        "name": "Realty Income Corporation"
       },
       {
         "symbol": ".DJI",
@@ -476,17 +484,10 @@
       },
       {
         "symbol": "XRP-USD",
-        "price": 1.37,
+        "price": 1.36,
         "change": 0.01,
-        "change_percent": 0.71,
+        "change_percent": 0.55,
         "name": "XRP USD"
-      },
-      {
-        "symbol": "SOL-USD",
-        "price": 101.78,
-        "change": -0.62,
-        "change_percent": -0.6,
-        "name": "Solana USD"
       },
       {
         "symbol": ".RUT",
@@ -497,9 +498,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2524.33,
-        "change": 9.6,
-        "change_percent": 0.38,
+        "price": 2521.97,
+        "change": 7.24,
+        "change_percent": 0.29,
         "name": "Ethereum USD"
       },
       {
@@ -510,6 +511,27 @@
         "name": "Fidelity 500 Index Fund"
       },
       {
+        "symbol": "CVX",
+        "price": 214.06,
+        "change": 0.25,
+        "change_percent": 0.12,
+        "name": "Chevron Corporation"
+      },
+      {
+        "symbol": "SCHD",
+        "price": 34.12,
+        "change": 0.03,
+        "change_percent": 0.09,
+        "name": "Schwab US Dividend Equity ETF"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 77125.44,
+        "change": -48.36,
+        "change_percent": -0.06,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": "KHC",
         "price": 24.6,
         "change": -0.01,
@@ -517,25 +539,11 @@
         "name": "The Kraft Heinz Company"
       },
       {
-        "symbol": "SGOV",
-        "price": 100.52,
-        "change": 0.03,
-        "change_percent": 0.03,
-        "name": "iShares 0-3 Month Treasury Bond"
-      },
-      {
-        "symbol": "QQQI",
-        "price": 54.56,
-        "change": -0.01,
-        "change_percent": -0.02,
-        "name": "NEOS Nasdaq 100 High Income ETF"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 77185.25,
-        "change": 11.45,
-        "change_percent": 0.01,
-        "name": "Bitcoin USD"
+        "symbol": "ANTH.PVT",
+        "price": 589.01,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "Anthropic"
       }
     ],
     "meme_momentum": [
@@ -966,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-12T18:31:09.621455",
+    "timestamp": "2026-09-12T18:37:34.933875",
     "items": [
       {
         "symbol": "SPX",
@@ -1060,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 233.56,
-        "change": -0.9,
+        "price": 233.43,
+        "change": -1.06,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77169,
-        "change": 0.01,
+        "price": 77148,
+        "change": -0.1,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2524.72,
-        "change": -0.71,
+        "price": 2523.56,
+        "change": -0.82,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.79,
-        "change": 0.42,
+        "price": 101.66,
+        "change": 0.28,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.52,
-        "change": -0.96,
+        "price": 11.51,
+        "change": -0.95,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.39,
-        "change": -1.32,
+        "price": 7.38,
+        "change": -1.36,
         "type": "crypto"
       },
       {
@@ -1133,13 +1141,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.36,
-        "change": 0.58,
-        "type": "mover"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2523.27,
-        "change": 0.34,
+        "change": 0.53,
         "type": "mover"
       },
       {
@@ -1149,9 +1151,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SCHD",
-        "price": 34.12,
-        "change": 0.09,
+        "symbol": "ETH-USD",
+        "price": 2521.01,
+        "change": 0.25,
+        "type": "mover"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 77106.13,
+        "change": -0.09,
         "type": "mover"
       }
     ]
@@ -1168,9 +1176,9 @@
       "author": ""
     },
     {
-      "title": "Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbXlGeXFwWUV4Y0JJOVhXQ1FvMkxDTGhwOW1xX1hOQ0h6SU1nNXF5OXlMZnpheWdsMENTV05pMDYtTjR1WksxX1hjTmswMHJTazBBUzNxdjhvTkJMZTh2anB1QUV3T0NkNF9oajNvdkF1VkFaUlhoVGFFRW5aWHpEd0hoRTQwbW03enF0N3BGaHA0VWtWRjRTbHpsWS1NT0FNUlRSODMzVnBZRThlMVZlT1BXb0RzMXV50gG-AUFVX3lxTFByblB0dGY0VFViYXZvNjlpNFlRblBla0JBNGJVeDBPejVaVzZOaGVaMncwdmFLZmhqalRuNnBQVVVvSExzVDlBbFd0dTl3cmdxcElFSE80VFpTWjVTZzdYRHhDbWhQc1B2RkhLSE9FMmlVcmxEM192d19jempybTJFNVFkbmttV21FZU9ER3gzOUI1ZHFtTWZOUTdSVXZCbjROdlo0TEJEZERILXBKMV9BVXdEZzFsbE03VUxWV3c?oc=5",
-      "source": "CNBC",
+      "title": "Larry Ellison cancels $7.5bn Oracle share sale",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOVB6czJZaDhRSDRwejNONzNKLUljb1hVdHUtSXE5UW5fbHI5MjBZN1FsS21BQlJyUjJNQVZLYzlyWG5tMWRSWldRYWxaQ0tzbFVkdU10OVpqN3RjTWVuT252VTFFbFc3ZjJTSlkwWUhfZjlqZEJTSzJ4Vlp4M1JBMnEyXzY?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1208,6 +1216,16 @@
       "author": ""
     },
     {
+      "title": "Record diesel prices stoke food inflation, transportation costs",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UT0NzOEtnTjVtWWVyTFdreW5DOURYVkc3MkxWNzA4RmF3YV8weHVSNnpfMGNhRUtrajFhZXhuNzFRRm1PdkRFWi1VeGhkbkJWLWtvTG9vODQxRGxCdHFKTXd2bDNacWJwcEFKdGhiSjI4QnE5U3d5akdqWQ?oc=5",
+      "source": "Axios",
+      "category": "business",
+      "published": "Sat, 12 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Oil's roundtrip back to $100. Why China could determine what happens next",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa0xDNl91YjR4WVVvTXU5UlVvMnVQWUs0SDVCRFZFV0VxWVJzLVdsTWZuN1RiSjkxamJwdUkyVUdzZndiTXlITFdQWEVrSzJmSjN1bkczVjhhRktQSHR1UlMzMUtRalJZbmtLbDAtX0FJb1Ntb213dXFxeHMtVXh0NG5sd2ctUVdMWUJDQmF4R1U4V0hQZXQ0WVJDbVBWZDItbXAwbGxiWVFFSGs?oc=5",
       "source": "CNBC",
@@ -1226,23 +1244,13 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "Miami crash raises concerns about the jet's operator, and why it's flying for Amazon",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd2NQcl9ZalpMWVJWam5FeDJmN3FkbzNuZXpIeDd2QmUxbW1sSkdhclp6ZHlid1dxTHBxUGsyODRDMkt3VzVlVGZWM2JXUHl1MjhBbzlWRVBIMVh0M0JsNmNpSkxNM0twUHRTWTNTcTF6UHNxUFVMOXFvRWJmbHhtWGlVVQ?oc=5",
-      "source": "NPR",
-      "category": "business",
-      "published": "Sat, 12 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
     {
-      "title": "T-Mobile is giving away the Apple iPhone 18 Pro for free \u2014 how to claim",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OYjNPOUgzYWE5MVg4TUJQSmhzYi1UMTZBSUZjWHpScDBabTlpMmdhSTVfYjQxdlZ0N1NDaHBrWWpmYW1LRURVMzVMWWdlcVVYQS13aVZrd3NVUG9FQ2hoa1h0RDBvZw?oc=5",
-      "source": "Mashable",
+      "title": "Samsung Trolls Apple by Hiring 'Tim Cook' to Endorse Galaxy Z Fold 8",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ3ZVc0tmTWFvNkNHUmtHQ1F2eDhTQkNmdktlTDVUcVFhYUdFNGYtRk1zejRfcHg0eHhWMmtwZnk2NF81UzdZdEhfSnBNOVIzU3FSeU9fREc1Z0RpZkZlS0VZVW9yRm5FR2NlOHlibkdpNVlWRjI5cTM3X1pETGotbjhwQXlnbjVwcTdHaWstTHJYS2JBTU8wUzlJWEo?oc=5",
+      "source": "PCMag",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1250,9 +1258,9 @@
       "author": ""
     },
     {
-      "title": "Samsung Trolls Apple by Hiring 'Tim Cook' to Endorse Galaxy Z Fold 8",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ3ZVc0tmTWFvNkNHUmtHQ1F2eDhTQkNmdktlTDVUcVFhYUdFNGYtRk1zejRfcHg0eHhWMmtwZnk2NF81UzdZdEhfSnBNOVIzU3FSeU9fREc1Z0RpZkZlS0VZVW9yRm5FR2NlOHlibkdpNVlWRjI5cTM3X1pETGotbjhwQXlnbjVwcTdHaWstTHJYS2JBTU8wUzlJWEo?oc=5",
-      "source": "PCMag",
+      "title": "T-Mobile is giving away the Apple iPhone 18 Pro for free \u2014 how to claim",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OYjNPOUgzYWE5MVg4TUJQSmhzYi1UMTZBSUZjWHpScDBabTlpMmdhSTVfYjQxdlZ0N1NDaHBrWWpmYW1LRURVMzVMWWdlcVVYQS13aVZrd3NVUG9FQ2hoa1h0RDBvZw?oc=5",
+      "source": "Mashable",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
       "description": "",
@@ -1290,6 +1298,16 @@
       "author": ""
     },
     {
+      "title": "Melty Blood: Twi-Lumina launches April 22, 2027",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOFJvQ190dUVuZlR4bWxjQ0ZWV01QbHZKeGN6RXJSNXJXTUREeUlfcnlndGZ1S3FuZWFKMl8xWTJkZXRmQWZIdHlGQ1R3MXZFa1I5MEpHX0s4emYwejNGZE9NR3FoYTNwa0pMb19pVjBKRjAyaFlJaVlZMk5DeTd5Ui1pdw?oc=5",
+      "source": "Gematsu",
+      "category": "business",
+      "published": "Sat, 12 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Apple says two iOS 27 features aren\u2019t coming until a \u2018future software update\u2019",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdzFydmx5RldlaEpJYnNlaFBkUy1DOFlyR3VUbHpjRUpUc3pfZzNSeDlYc1lVbWtBSnJuZ18zZWlFNVpkMFlKVW9QY2YyQlNodWo5b0pnVFJBVDlWeHRtMENVSGhicG94eEFTY1lBRG5SXzItaXU2TkUzRnpvUTNDM2Z6RWxGcUJUWDdKT1d4Ui1KZmRmSUNhLXNmMFEzUHFCa3RWSXluUFhoZw?oc=5",
       "source": "9to5Mac",
@@ -1300,21 +1318,11 @@
       "author": ""
     },
     {
-      "title": "Blizzard's StarCraft Shooter Is Real, But Won't Be Out For Years",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EeXduWGxia1VjeFU0OGl6U1cxdTc5R0ozWDJtcTNJbXdHQllPNUprTHRJd0I5RDktempkak5TLXg5aHhiT0JadGxOY0VGd0V2UEJqS2lWWTFYbGlpMEw3MUVUTFZCSDd6V0twc0RLWlR6OUx2d19VU25zZ2pBUQ?oc=5",
-      "source": "Kotaku",
+      "title": "\u2018StarCraft 3,\u2019 an Open-World Shooter Game, Coming in 2030; First Look Revealed",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmTUR1d0FLMkRrSy1pT0l6dl9QazlnNVNOd1FGV1lEZGxzcVVmWkFZRzdBcFp1N0xrb2lFU2ZBMmRWcEZKMVNfbE00YXRMUlJXUTFtUVhTb0c4Q05PQjdmbmcxcDhzb0MzTTRKWnFrVkR0QVZjVTc0bUtMSTdVZw?oc=5",
+      "source": "Variety",
       "category": "business",
       "published": "Sat, 12 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "'What Kind of Message Are We Sending to the World?' \u2014 GTA 6 Is Coming to Miami After City Meeting Results in Controversial Approval \u2014 and Enough Money to Fix Its Football Field",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeDlUMUpjVjJMWDJjbEtaVDJZX01vOGxwMTM1V2FEd21oYnlSYWdBQm4zQnExN1RzTUdzVEJodmZYWXlzRG5RV0FLMG84bmpsMGs1Y081SU83b3pPOGtBQllWeEplc25aUkI0ZElXZ3kwUGZ1blNjR1NaU2ZTU08xWXRRNklhUFdDOUNiY0xMNGJZb3RBb1hrbVF4bkdzREtxMURCWEZUalBZTGQ1TlpDT2Rjdy1GMFk?oc=5",
-      "source": "IGN",
-      "category": "business",
-      "published": "Fri, 11 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1514,7 +1522,7 @@
     "changePercent": 0.91,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 12 Sep: 29,368.44, up +0.91% -- BULLISH. RSI 51.1 building, modest +0.91% up. Counter: price below SMA20, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-12T14:31:19.044203"
+    "timestamp": "2026-09-12T14:37:43.810178"
   },
   "sticky": {
     "cnbc": [
@@ -1612,10 +1620,10 @@
         "description": ""
       },
       {
-        "title": "He Spent Down the Roth First to \u2018Save\u2019 the IRA for His Kids. He Left Them a $120,000 Tax Bill Instead of a Tax-Free Account",
-        "url": "https://finance.yahoo.com/markets/currencies/articles/spent-down-roth-first-save-180913692.html",
+        "title": "Worried About RMDs in Retirement? 3 Key Moves to Lower the Hassle Factors.",
+        "url": "https://finance.yahoo.com/markets/articles/worried-rmds-retirement-3-key-182600115.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-12T18:09:13+00:00",
+        "published": "2026-09-12T18:26:00+00:00",
         "description": ""
       },
       {

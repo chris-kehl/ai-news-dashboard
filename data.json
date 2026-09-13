@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T18:16:35.157034",
+  "timestamp": "2026-09-13T18:19:58.628994",
   "summary": "Key topics today:\n- - Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace (r/HackerNews, 201 pts)\n- - Why are AI agents lying, cheating and coordinating? (r/HackerNews, 201 pts)\n- - Garry Tan wants US open-weight AI labs to 'distill' frontier models, too (r/HackerNews, 201 pts)\n- - Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher (r/HackerNews, 101 pts)\n- - There Is No AI (It's Just People) with Jaron Lanier (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -9,14 +9,6 @@
       "change": -3.87,
       "category": "crypto",
       "text": "ZEC -3.9% @ $1,079.00"
-    },
-    {
-      "type": "sell",
-      "asset": "SNDK",
-      "price": 1633.35,
-      "change": -7.42,
-      "category": "stock",
-      "text": "SNDK -7.4% drop @ $1633.35"
     },
     {
       "type": "buy",
@@ -33,6 +25,14 @@
       "change": -5.11,
       "category": "stock",
       "text": "MU -5.1% drop @ $975.26"
+    },
+    {
+      "type": "watch",
+      "asset": "PYPL",
+      "price": 53.72,
+      "change": 2.97,
+      "category": "stock",
+      "text": "PYPL +3.0% @ $53.72"
     },
     {
       "type": "watch",
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-13T22:16:05.919841",
+    "timestamp": "2026-09-13T22:19:45.268505",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,28 +430,14 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-13T22:15:41.734199",
+    "timestamp": "2026-09-13T22:19:21.272268",
     "trending": [
-      {
-        "symbol": "SNDK",
-        "price": 1633.35,
-        "change": -130.82,
-        "change_percent": -7.42,
-        "name": "Sandisk Corporation"
-      },
       {
         "symbol": "MU",
         "price": 975.26,
         "change": -52.51,
         "change_percent": -5.11,
         "name": "Micron Technology, Inc."
-      },
-      {
-        "symbol": "ISRG",
-        "price": 369.15,
-        "change": 15.91,
-        "change_percent": 4.5,
-        "name": "Intuitive Surgical, Inc."
       },
       {
         "symbol": "PYPL",
@@ -473,6 +459,13 @@
         "change": -1259.61,
         "change_percent": -1.93,
         "name": "Nikkei 225"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4408.9,
+        "change": 42.7,
+        "change_percent": 0.98,
+        "name": "Gold Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -501,6 +494,13 @@
         "change": 13.0,
         "change_percent": 0.45,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "000270.KS",
+        "price": 126600.0,
+        "change": -200.0,
+        "change_percent": -0.16,
+        "name": "KIA CORP."
       },
       {
         "symbol": "LMT",
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-13T22:16:02.423649",
+    "timestamp": "2026-09-13T22:19:41.756995",
     "items": [
       {
         "symbol": "SPX",
@@ -1012,8 +1012,8 @@
       },
       {
         "symbol": "YM=F",
-        "price": 52431.0,
-        "change": -0.29,
+        "price": 52395.0,
+        "change": -0.36,
         "type": "future"
       },
       {
@@ -1060,38 +1060,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 233.29,
-        "change": 0.15,
+        "price": 232.29,
+        "change": -0.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76964,
-        "change": -0.4,
+        "price": 76802,
+        "change": -0.58,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2491.96,
-        "change": -1.32,
+        "price": 2480.91,
+        "change": -1.67,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 100.29,
-        "change": -1.37,
+        "price": 99.77,
+        "change": -1.87,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.28,
-        "change": -2.15,
+        "price": 11.22,
+        "change": -2.57,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.36,
-        "change": -0.59,
+        "price": 7.32,
+        "change": -1.03,
         "type": "crypto"
       },
       {
@@ -1300,9 +1300,9 @@
       "author": ""
     },
     {
-      "title": "Galaxy S27 Pro and S27 Ultra to get biggest OLED upgrade in 3 years",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYWJhZk0yc3ZOaWdmVm54RklDM0JyMkx0RGl2VzB5R0MwVzBfdF9rTEpsdmZXb0syeUw0Z0ZUWjZRZXJ0YnhhQncxREtjM21jZ1lLUWFJalpJTVZocy12SDZTTW5qUUt5eHpsb3RRcllGWko0c0tIdXdnTmFudVZ1dnZaUkR6MDZ3?oc=5",
-      "source": "SamMobile",
+      "title": "Diablo 4's new season brings back Deckard Cain and all three Prime Evils as the game arrives on Switch 2",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMWEtVmdxa1F6cHMxQ0IyRWNfZkdzUVN3ZmNfd3R3UEkyYTMyWDVvSmhTeng5RURJU3p4STczMm9pTkpZc0hfUlNIWkZjbzBPLVdvZWp0bjB5Nnh2M2RCQW1rOXRLdTlVUXdBMHNIMVpEUUhDQ1dRTkVOa2JYNXRpeFdUdGUxQQ?oc=5",
+      "source": "Eurogamer.net",
       "category": "business",
       "published": "Sun, 13 Sep 2026 ",
       "description": "",
@@ -1310,11 +1310,11 @@
       "author": ""
     },
     {
-      "title": "The World of Warcraft \"Classic+\" rumours were true and it's called World of Warcraft: Forever",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeVdQa2RaQUFtR2JTVHhBaGxCd2NtYWpIcUpZcXRpQVcwYURHTUlTOTZIOEN4djV3RmNsSmJMZTBQU0dSNHNhTlZCYkpEV1o4cVZRTTNsczl1alZidE4zb2owNmZ2QVA4SU5vd1RkcGZPUFpOQno2bGd4YlBzU211bVAyNXB1R1A3ZC1BVm5TOG9adw?oc=5",
-      "source": "Eurogamer.net",
+      "title": "'World of Warcraft Forever' is Blizzard's take on Classic+, revamping vanilla Azeroth in new ways",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNjJuR05wOHlNVXJqZl81T3VnN0w5NUV4Zk5mUEV4VDlVNkNpVlZDVDZtNUhCYnNhQ0xDWFVOZFU3RXlkRHJUT0loRjVLYW52ZDNOdXFhVkF6WlJ3bmFGU3VoMGptMmRPUUhJRExTUzF0VXZ4UFFkaDlNbnVTVW1ISUctQ2VLbWlOLUpjUy0xSEhtUDlmT3BqalhHYllNeDIxdW5xOUljYjNLSWViM3NzOUhuYWo4OVRQTVZZeHJ5b2wxQ0dRaFE?oc=5",
+      "source": "Windows Central",
       "category": "business",
-      "published": "Sun, 13 Sep 2026 ",
+      "published": "Sat, 12 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1546,7 +1546,7 @@
     "changePercent": 0.91,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 13 Sep: 29,368.44, up +0.91% -- BULLISH. RSI 51.1 building, modest +0.91% up. Counter: price below SMA20, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-13T18:16:30.498518"
+    "timestamp": "2026-09-13T18:19:53.901007"
   },
   "sticky": {
     "cnbc": [
@@ -1675,11 +1675,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Oracle to Rise, Adobe to Fall&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher - moomoo.com",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher - Moomoo",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmxrOUVpSlFWTGgwX3RzV2ZBR2Q5RzFzQjFpbHhKOXF6ck5NcDJXR0tsRmJobnpaNTBDNUpMamx1Szg4RUhZRVExY2hKQURXaXNENkV5WHpfM0FSRlBqOGJNR2Z5TnFTZDFsRWRtNlI1RmRmamltTzJVUFl5UEhiOGpXaGh2eG1RcXV3elo4SmRHV3dNZzRzYVRPTTJYWGN1MElCTElMcm4zWG42Wm9LOA?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-08T10:49:53",
-        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;moomoo.com"
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Tuesday; Bloom Energy, Oracle to Open Higher&nbsp;&nbsp;Moomoo"
       },
       {
         "title": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow - Bloomberg.com",
@@ -1731,11 +1731,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Wednesday; Meta Platforms to Advance, Intel to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower - moomoo.com",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower - Moomoo",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPemNhUVJuR0Q3S2lKOG50Zm9oVm1pV0pwX3N6ZjhzVmVyUU9IU18xZG1NWFVwSHYwLVJzWDZRLXZLclZBYUlSLXJlbHZwWG5OZGNNM3VaTFQ4a2FROTR5WTFQNTQ3S1NTMi01dEZJTFlzTFBxbHFPY1lvRVMyNC1KQ0pMMGYwLXFmSURVZTAzWjJqNDZYd25LMWJsMURqckJmb2U5bDMyN0xYUFViaHpMSlplQ3dIZzlFZnc?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-08-26T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower&nbsp;&nbsp;moomoo.com"
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Declining Pre-Bell Wednesday; Intuit, Strategy to Open Lower&nbsp;&nbsp;Moomoo"
       }
     ]
   },
@@ -1756,9 +1756,9 @@
     },
     {
       "symbol": "YM=F",
-      "price": 52431.0,
-      "change": -154.0,
-      "change_percent": -0.29,
+      "price": 52395.0,
+      "change": -190.0,
+      "change_percent": -0.36,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {

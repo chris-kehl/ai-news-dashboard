@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T10:56:47.816634",
+  "timestamp": "2026-09-14T11:00:13.970089",
   "summary": "Key topics today:\n- - Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows (r/HackerNews, 301 pts)\n- - Show HN: Kinesis \u2013 Control your Mac with the Meta Neural Band (r/HackerNews, 101 pts)\n- - OpenArch \u2013 PyTorch implementations of modern LLM architectures (r/HackerNews, 101 pts)\n- - The AI job market in 2026 (r/HackerNews, 101 pts)\n- - A list of 1,325 AI assisted repositories, mined from GitHub (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -2229,5 +2229,59 @@
       "score": 74,
       "trend": "\u2191 +13.0"
     }
-  ]
+  ],
+  "weekly_outlook": {
+    "analysis_date": "September 14, 2026",
+    "generated_at": "2026-09-14T11:00:13.969494",
+    "benchmarks": {
+      "SPY": {
+        "ticker": "SPY",
+        "name": "S&P 500",
+        "current": 758.47,
+        "change_1d": -0.76,
+        "change_7d": -1.52,
+        "change_30d": -2.5,
+        "change_60d": 0.88,
+        "rsi": 45.5,
+        "signal": "BEARISH",
+        "notes": "At 90d range. Bullish momentum above MA20/MA50."
+      },
+      "IWM": {
+        "ticker": "IWM",
+        "name": "Russell 2000",
+        "current": 287.27,
+        "change_1d": -0.56,
+        "change_7d": -2.95,
+        "change_30d": -5.35,
+        "change_60d": -2.46,
+        "rsi": 31.1,
+        "signal": "BEARISH",
+        "notes": "Small-caps leading rotation. RSI 31.1."
+      },
+      "ACWX": {
+        "ticker": "ACWX",
+        "name": "ACWX (World ex-US)",
+        "current": 75.99,
+        "change_1d": -1.63,
+        "change_7d": -3.2,
+        "change_30d": -2.46,
+        "change_60d": 1.12,
+        "rsi": 40.5,
+        "signal": "BEARISH",
+        "notes": " Dollar softness benefiting international."
+      },
+      "EMXC": {
+        "ticker": "EMXC",
+        "name": "EMXC (EM ex-China)",
+        "current": 96.83,
+        "change_1d": -3.74,
+        "change_7d": -4.24,
+        "change_30d": -0.64,
+        "change_60d": 0.92,
+        "rsi": 51.5,
+        "signal": "NEUTRAL",
+        "notes": "Steady accumulation. RSI 51.5."
+      }
+    }
+  }
 }

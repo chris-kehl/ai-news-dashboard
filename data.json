@@ -1,15 +1,7 @@
 {
-  "timestamp": "2026-09-14T02:02:10.379601",
-  "summary": "Key topics today:\n- - Open-Source AI and Open Models Reading List (r/HackerNews, 201 pts)\n- - Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace (r/HackerNews, 201 pts)\n- - \"Chilling\" warning or overreaction? AI bioweapons report divides experts (r/HackerNews, 101 pts)\n- - Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher (r/HackerNews, 1 pts)\n- - Why is Google still serving dodgy ads? (r/HackerNews, 1 pts)",
+  "timestamp": "2026-09-14T02:16:24.489239",
+  "summary": "Key topics today:\n- - Open-source AI and open models reading list (r/HackerNews, 201 pts)\n- - Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace (r/HackerNews, 201 pts)\n- - Bad benchmarks and evals: Senior SWE-Bench, napkin math, and winter tires (r/HackerNews, 101 pts)\n- - \"Chilling\" warning or overreaction? AI bioweapons report divides experts (r/HackerNews, 101 pts)\n- - Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher (r/HackerNews, 1 pts)",
   "signals": [
-    {
-      "type": "sell",
-      "asset": "SMR",
-      "price": 8.61,
-      "change": -20.35,
-      "category": "stock",
-      "text": "SMR -20.4% drop @ $8.61"
-    },
     {
       "type": "sell",
       "asset": "SNDK",
@@ -27,6 +19,14 @@
       "text": "NBIS -6.6% drop @ $224.55"
     },
     {
+      "type": "buy",
+      "asset": "GME",
+      "price": 21.15,
+      "change": 6.33,
+      "category": "stock",
+      "text": "GME +6.3% momentum @ $21.15"
+    },
+    {
       "type": "watch",
       "asset": "AI SECTOR",
       "price": null,
@@ -37,7 +37,7 @@
   ],
   "reddit": [
     {
-      "title": "Open-Source AI and Open Models Reading List",
+      "title": "Open-source AI and open models reading list",
       "subreddit": "HackerNews",
       "score": 201,
       "comments": 0,
@@ -50,6 +50,14 @@
       "score": 201,
       "comments": 0,
       "url": "https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace",
+      "created": ""
+    },
+    {
+      "title": "Bad benchmarks and evals: Senior SWE-Bench, napkin math, and winter tires",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://danluu.com/exercise-7/",
       "created": ""
     },
     {
@@ -66,14 +74,6 @@
       "score": 1,
       "comments": 0,
       "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-      "created": ""
-    },
-    {
-      "title": "Why is Google still serving dodgy ads?",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
       "created": ""
     },
     {
@@ -120,70 +120,70 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-14T06:01:59.626307",
+    "timestamp": "2026-09-14T06:16:12.843266",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 234.06,
-        "change_24h": -1.47,
-        "market_cap": 2246365503
+        "price": 235.07,
+        "change_24h": -1.18,
+        "market_cap": 2255643945
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 77550,
-        "change_24h": 0.32,
-        "market_cap": 1557511056041
+        "price": 77815,
+        "change_24h": 0.67,
+        "market_cap": 1562957463935
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2514.54,
-        "change_24h": -0.3,
-        "market_cap": 306895596442
+        "price": 2523.77,
+        "change_24h": 0.07,
+        "market_cap": 308061478204
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999703,
-        "change_24h": -0.01,
-        "market_cap": 183375933538
+        "price": 0.999646,
+        "change_24h": -0.02,
+        "market_cap": 183365921037
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 724.83,
-        "change_24h": -0.16,
-        "market_cap": 96513458984
+        "price": 725.49,
+        "change_24h": -0.07,
+        "market_cap": 96608173489
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.38,
-        "change_24h": 0.77,
-        "market_cap": 86669736345
+        "price": 1.39,
+        "change_24h": 1.43,
+        "market_cap": 87192238888
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999822,
-        "change_24h": -0.0,
-        "market_cap": 74198570061
+        "price": 0.99978,
+        "change_24h": -0.01,
+        "market_cap": 74195448211
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 101.02,
-        "change_24h": -0.76,
-        "market_cap": 59288175634
+        "price": 101.81,
+        "change_24h": 0.07,
+        "market_cap": 59758177950
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.338795,
-        "change_24h": -0.19,
-        "market_cap": 32170031581
+        "price": 0.339379,
+        "change_24h": -0.04,
+        "market_cap": 32209796688
       },
       {
         "name": "Figure Heloc",
@@ -195,9 +195,9 @@
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1131.85,
-        "change_24h": -1.45,
-        "market_cap": 19160604863
+        "price": 1137.51,
+        "change_24h": -0.48,
+        "market_cap": 19268539707
       }
     ],
     "news": [
@@ -422,15 +422,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-14T06:01:17.394096",
+    "timestamp": "2026-09-14T06:15:47.623313",
     "trending": [
-      {
-        "symbol": "SMR",
-        "price": 8.61,
-        "change": -2.2,
-        "change_percent": -20.35,
-        "name": "NuScale Power Corporation"
-      },
       {
         "symbol": "SNDK",
         "price": 1633.35,
@@ -451,6 +444,13 @@
         "change": 32.04,
         "change_percent": 5.99,
         "name": "Dell Technologies Inc."
+      },
+      {
+        "symbol": "HPE",
+        "price": 62.09,
+        "change": 3.19,
+        "change_percent": 5.42,
+        "name": "Hewlett Packard Enterprise Comp"
       },
       {
         "symbol": "MU",
@@ -482,9 +482,9 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 28991.5,
-        "change": -395.5,
-        "change_percent": -1.35,
+        "price": 29029.5,
+        "change": -357.5,
+        "change_percent": -1.22,
         "name": "Nasdaq 100 Sep 26"
       },
       {
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-14T06:01:37.609562",
+    "timestamp": "2026-09-14T06:16:09.196376",
     "items": [
       {
         "symbol": "SPX",
@@ -986,98 +986,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7615.5,
-        "change": -0.57,
+        "price": 7622.0,
+        "change": -0.49,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28991.25,
-        "change": -1.35,
+        "price": 29024.25,
+        "change": -1.23,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52515.0,
-        "change": -0.13,
+        "price": 52547.0,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2897.3,
-        "change": -0.25,
+        "price": 2899.7,
+        "change": -0.17,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.27,
-        "change": 2.22,
+        "price": 102.42,
+        "change": 2.37,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4368.3,
-        "change": -0.92,
+        "price": 4373.7,
+        "change": -0.8,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 64.31,
-        "change": -1.35,
+        "price": 64.47,
+        "change": -1.1,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1796.8,
-        "change": -0.04,
+        "price": 1804.6,
+        "change": 0.39,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1308.5,
-        "change": -1.16,
+        "price": 1312.5,
+        "change": -0.86,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.89,
-        "change": 1.98,
+        "price": 2.88,
+        "change": 1.87,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 234.06,
-        "change": -1.47,
-        "type": "crypto"
-      },
-      {
-        "symbol": "BTC",
-        "price": 77550,
-        "change": 0.33,
-        "type": "crypto"
-      },
-      {
-        "symbol": "ETH",
-        "price": 2514.54,
-        "change": -0.29,
-        "type": "crypto"
-      },
-      {
-        "symbol": "SOL",
-        "price": 101.02,
-        "change": -0.75,
-        "type": "crypto"
-      },
-      {
-        "symbol": "LINK",
-        "price": 11.4,
+        "price": 235.1,
         "change": -1.18,
         "type": "crypto"
       },
       {
+        "symbol": "BTC",
+        "price": 77761,
+        "change": 0.59,
+        "type": "crypto"
+      },
+      {
+        "symbol": "ETH",
+        "price": 2522.35,
+        "change": 0.0,
+        "type": "crypto"
+      },
+      {
+        "symbol": "SOL",
+        "price": 101.7,
+        "change": -0.07,
+        "type": "crypto"
+      },
+      {
+        "symbol": "LINK",
+        "price": 11.44,
+        "change": -0.77,
+        "type": "crypto"
+      },
+      {
         "symbol": "AVAX",
-        "price": 7.41,
-        "change": -0.43,
+        "price": 7.44,
+        "change": -0.21,
         "type": "crypto"
       },
       {
@@ -1130,8 +1130,8 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 28991.0,
-        "change": -1.35,
+        "price": 29023.5,
+        "change": -1.24,
         "type": "mover"
       },
       {
@@ -1154,19 +1154,9 @@
       "author": ""
     },
     {
-      "title": "Amazon crash: Firm pauses work with cargo carrier after fatal incident",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40LVo1ZkV5UE5ZaDVHTXpjRTg2LXJqajBxX0pZSFY2My1lSHJUVGxITHMxZVZYWE1SdkFYRnQ2aUJnZHZPa3ZnZFBaY2h2cVNDeWpsWTEtVV9aQQ?oc=5",
-      "source": "BBC",
-      "category": "business",
-      "published": "Mon, 14 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Warsh and Trump on collision course as investors expect Fed to raise rates",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQX1FlNm82dWhzNW1zVWg2YXU4bmtFeTVrcG90cGRXQXBFR3EzamFMOUpPMkpQUk1tM2VBTThrZWpRc0ZQcDljSjg1ZXo3anpHSjBFYlZzS0hGLVpzTUVhSkpPNzRRYWpqeW5DTmU3QnMzRmY5ZHJQS2JKS2pMR0lwT1c1ZEE?oc=5",
-      "source": "Financial Times",
+      "title": "Amazon suspends use of 21 Air, cargo carrier involved in fatal Miami crash",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNFlrX1hXQTR3emM5dk9TVjlKV2wwSHdLSXZVazJfRERfajZic2J2YU9hckd6QzZINnc3MFNzRG9FVmVsY09JZWlBcy1QX3BkaTFpLUJ6aElCODZzU1JiWnVmN1pKdS0yMTZjbkRCeWlTRmlDSkRFSEF4MEI4OTV0LW82RUQ2TTZ4dXlKQV9VSTA1X2ZxQzZJYWl4WkRPcVc0eWQzMXktWE9kYjhESU15aWJYMGVGdw?oc=5",
+      "source": "NBC News",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1184,6 +1174,16 @@
       "author": ""
     },
     {
+      "title": "Warsh and Trump on collision course as investors expect Fed to raise rates",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQX1FlNm82dWhzNW1zVWg2YXU4bmtFeTVrcG90cGRXQXBFR3EzamFMOUpPMkpQUk1tM2VBTThrZWpRc0ZQcDljSjg1ZXo3anpHSjBFYlZzS0hGLVpzTUVhSkpPNzRRYWpqeW5DTmU3QnMzRmY5ZHJQS2JKS2pMR0lwT1c1ZEE?oc=5",
+      "source": "Financial Times",
+      "category": "business",
+      "published": "Mon, 14 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "White House agrees to new ethics language in crypto bill",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUXloRnI0NG1oelkyNjJFUmdiT0ppTUlLZ0tQWWVIY3ZjS1l0MzFyelU5UHRCZEd5UjREZFdQT0ZPZ2NOb3F0VEpRZWNmM2pUX1kxZmttMTZxRVFCRkx4VmN1aUhzbF80c3RJaE5ZUFc4cVdrdzBjc01sNTJYNTlZQVloUm1LdzVla0JPMUt30gGTAUFVX3lxTE03NnpvSTVuNkFuVExlX1VsNmVXeUdKS2VsWlpJM0cwUnB0ZGI2b2xtZnowdFlNUzdEZXpfb2gyZmpTLXFCR1NFdEhEZDh2b1FmVnVPSDBsWjRzanc2cEJBQ0kzeTFqdm0yTzdRV3dpdmZ5VFJSU1hPYVhXVVRiUkRYZm96QnlkTjFCdDhYRlF4d3hGYw?oc=5",
       "source": "The Hill",
@@ -1194,29 +1194,29 @@
       "author": ""
     },
     {
-      "title": "Oil Prices Surge as Middle East Attacks Continue and Diplomacy Stumbles",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONmYydkRWVVJiZ0hacFBMVEtFdEJsSHRnZXNZSEFacC1iM3BlYldxeFJuNGc0d0E0WHY5NklaUU02bVJJMFEzQUpzY2dyamZ3SXJ2N1RGeVdpcUdtblpWZnVPdjd6R3V3MHBYT3Rjbk1RQUItNDM5bkFrN2J0Tm1rUUdtaTVUSmF0akdhMDIxTkJrV3pTYmlENGRpTTZCckxobXFMRGlOdjhJNnQtNjFMQlZPVXA2MGl2MnY00gHAAUFVX3lxTFBuWE1QQVg1S0lDY0VuVU9Lam5RYmx3SkZyTWhudmdMZ0hHTzNMYW9ZcmoydmplNzZFVUFyVng4MzVGVTBOWnRGQVB1MUNDcm5Dc01tWGtVelpiTW0wTjdhMjE1WWdDR0VmclU4Z2g3WmhLTG13a2wycEtlXzFkR0JNZEZWeFZadkwxWENDT19CTGw3aFltNkZjSXl5eUxVc1IzVVB6LV9NTTNSRWpKVXlmSzZxNHJXSEl5RkJhaTlHSA?oc=5",
-      "source": "Crude Oil Prices Today | OilPrice.com",
+      "title": "Oil Prices Jump on Energy Supply Worries",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObV9VdmtUR0dLNm84eTMyUE5sdWtTUzVPUE9RTGJYZmNvdndNaXRocGNlTGhjTXJ1V2EzYV9lVHp2c1NpUDRkcDdFdUE5akZPME9FazZXVG9wbEU1ZEk4TGZYRl9JSGJNenBFSWJoZzJkRG5HeFFjMDFwd01mQTdqNjZQai1PU3ZtRlBNTHRYZEg5VUU?oc=5",
+      "source": "The New York Times",
       "category": "business",
-      "published": "Mon, 14 Sep 2026 ",
+      "published": "Sun, 13 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Global AI stocks slip on concerns over risks",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWtoSDV4bG9HZm83MmNTZ1BaT003NTM0ckdUNFBVRlItZE04YnU4eGtlY1gxdmMyRnFfai1hbGY3cGg5SThhaTVTOXRtUnRNYW5QUUlfYVVQVmI3YklUUTdWVWZ0MEJHNTZPc2haMWdoMmpMeVFZcGVseGpVdENoLUhCdmk?oc=5",
-      "source": "Financial Times",
+      "title": "Anthropic tells investors it will be profitable for second straight quarter, FT reports",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWDlyZmc0bTdPci16TFF0TjNaY2lKWWlaamhvMWhjNDU3UmJ3S0cxbmdnSUZFTEQyeHNsSnJOZ1owbVpQZWlDYk04VUlhampOSWNibUFyRTExbGJMSFlndzRtRGJTMlh0b3JaVi1JRXZ6elJyUWl6MlY4cG52LTVIWW5uNWtLMDl3MEl5OTdNWS0tRC1HT2w2d0pBcEgxNlR5S0RDdHpiUGhZY04tcGRZMkpWd3NsbjdfWHV0SW1QeVdCUjZkZTlkc3lJMlphbUxN?oc=5",
+      "source": "Reuters",
       "category": "business",
-      "published": "Mon, 14 Sep 2026 ",
+      "published": "Sun, 13 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Stock futures fall as investors weigh AI safety concerns, oil gains: Live updates",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JdDYxaFIxTm84YVA5TWNJTHA5VFdNamVzM2FjNjFDTXdzWXpiWi1EajE5Yy1WQ2ZtTXpSVWtGQWVTQWxxNTZuTXozUkhDeXBfMmZCUGpOQmN2enFZSDhZZWl1c1lqZm5DdTg0Z2VNTHhaMldOWE05SNIBfkFVX3lxTFBLSUFVbWpsTFE5OEc3ODgybWlYUnJiMUsxQlE0Zkx6cFdvaDB3a3pMLVJYOHV3MWdFMTNILVRxZ2ZMSTYwY1Y3SkU5S2JCZUFaODVDOWk0eG90MWRubkgzdVloa0p1aXpxNzFRTExRM3FfaFZsR19Pc1l1eGhsQQ?oc=5",
-      "source": "CNBC",
+      "title": "AI-linked Asian stocks slump after top lab CEOs call for slowing down technology's development",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSTRDc1JSdWVDTmE5WmI2MEFCWGgxWUdvcGRNNlNjNXNiMmlaRGhLYmpOUGhFbGNQQzI0cks4Wjk3a0JFaE4wdUVDdFJUangyS1ZOWFRZOUU3VmdjblNOb29feDFwRkRQNDR6WGw5Z0xxMUhTeEhqNGxYanNuSHBDcjRhRVRSYjhQTHBTTXBjZnF3MnA5NnR1TkNLWFZLNXJrd19VRUNaMTg1ZzlKbTB1RnV0VVM2cG84aTdEWGZ3bHRVY2M?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1248,7 +1248,7 @@
     {
       "title": "Galaxy S27 Pro and S27 Ultra to get major display upgrade",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZDhETnNCLXRxbWdiaEUwa09MUXhKTnI4bGx4ZkVwVXQtczlBdTFrVTRYUDU1Y2VWTWFvOTlkM1JPSGRRdDd0S2NydFZYNTVtUldVUEZfelZ4VTVZVkI4SXZJbjE1WFlXSEp5aWZJc3g0bFVHeXBVNFRYYXFSckU4MEJKOVNZOTRXUk0zWlEtQW81elhMOWYxaTR6Rjl0Y0xGY1pFaw?oc=5",
-      "source": "notebookcheck.net",
+      "source": "Notebookcheck",
       "category": "business",
       "published": "Sun, 13 Sep 2026 ",
       "description": "",
@@ -1286,11 +1286,11 @@
       "author": ""
     },
     {
-      "title": "The Witcher 3 Geralt Skin for Diablo 4 Barbarians Revealed \u2014 but There's a Catch",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdF84WVhrNml5Y3YtdS1VM2pWbVJ5ZFItci15VWtKQ3c3bFBxXzltMmFyZ1ZnanhrbUk0Smx6SkM4QmpmTi05NTdmSGRWdVhOdDAycnBMQUVqSHNzajZjX1Jwa3hubWdyX2x5dkUzZm9kWnV5d0ZwYmRDNjhRTXpyTnFsSEk0alhHbFF1OHNjQmdNRkxTY2lleFZfR3B6UkxrVmZmdTRMb3dZdw?oc=5",
-      "source": "IGN",
+      "title": "Diablo IV x The Witcher III: Wild Hunt Collab Unveiled, Here's A First Look",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTFY1UlZtVnotczNpOS1laTg2dklkUzdZdUMyeEYyeEhnSEdITVI4aWUyZnJEVVlyRFdGMi1MdWpXNTZlX19NaHVqbVJ6RTFSQi1mUmphWGh5S1ZUNFRnMGRxX1BnNXJydWg4WExwZTJSM0M5LUgtOXRydVRfTFdUUXhBNnd6bExjYVI2djZ1UElUZHo1blJmOXBjZkYyT2UyRXh5ZmI2S2NuWTc5ak9wSGxBblA?oc=5",
+      "source": "Nintendo Life",
       "category": "business",
-      "published": "Mon, 14 Sep 2026 ",
+      "published": "Sun, 13 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1356,6 +1356,14 @@
       "relevance_score": 8
     },
     {
+      "title": "Animated map shows spread of illegal Israeli settlements across Palestine",
+      "url": "https://www.aljazeera.com/news/2026/9/14/animated-map-shows-spread-of-illegal-israeli-settlements-across-palestine?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Mon, 14 Sep 2026 ",
+      "description": "Some 750,000 settlers live across more than 500 illegal settlements and outposts, as Israeli pogroms hit record highs.",
+      "relevance_score": 7
+    },
+    {
       "title": "Russia hits Ukrainian train shortly after Boris Johnson leaves station",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/russia-hits-ukrainian-train-shortly-after-boris-johnson-leaves-station?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1410,14 +1418,6 @@
       "published": "Mon, 14 Sep 2026 ",
       "description": "The former UK PM said: \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\".",
       "relevance_score": 4
-    },
-    {
-      "title": "Niger mutiny exposes growing reliance on Russia",
-      "url": "https://www.aljazeera.com/news/2026/9/14/niger-mutiny-exposes-growing-reliance-on-russia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Mon, 14 Sep 2026 ",
-      "description": "The attempted power grab has exposed deep grievances within the army and tested Niger\u2019s ties with its Sahelian allies.",
-      "relevance_score": 3
     }
   ],
   "github": [
@@ -1524,7 +1524,7 @@
     "changePercent": 0.91,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 14 Sep: 29,368.44, up +0.91% -- BULLISH. RSI 51.1 building, modest +0.91% up. Counter: price below SMA20, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-14T02:02:08.743701"
+    "timestamp": "2026-09-14T02:16:22.055021"
   },
   "sticky": {
     "cnbc": [
@@ -1720,72 +1720,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7615.75,
-      "change": -43.75,
-      "change_percent": -0.57,
+      "price": 7622.25,
+      "change": -37.25,
+      "change_percent": -0.49,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28991.25,
-      "change": -395.75,
-      "change_percent": -1.35,
+      "price": 29022.5,
+      "change": -364.5,
+      "change_percent": -1.24,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52515.0,
-      "change": -70.0,
-      "change_percent": -0.13,
+      "price": 52547.0,
+      "change": -38.0,
+      "change_percent": -0.07,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2897.3,
-      "change": -7.2,
-      "change_percent": -0.25,
+      "price": 2899.7,
+      "change": -4.8,
+      "change_percent": -0.17,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.3,
-      "change": 2.25,
-      "change_percent": 2.25,
+      "price": 102.41,
+      "change": 2.36,
+      "change_percent": 2.36,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4368.2,
-      "change": -40.7,
-      "change_percent": -0.92,
+      "price": 4373.7,
+      "change": -35.2,
+      "change_percent": -0.8,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 64.31,
-      "change": -0.88,
-      "change_percent": -1.35,
+      "price": 64.47,
+      "change": -0.72,
+      "change_percent": -1.1,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1796.8,
-      "change": -0.8,
-      "change_percent": -0.04,
+      "price": 1804.6,
+      "change": 7.0,
+      "change_percent": 0.39,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1308.5,
-      "change": -15.4,
-      "change_percent": -1.16,
+      "price": 1312.5,
+      "change": -11.4,
+      "change_percent": -0.86,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.89,
-      "change": 0.06,
-      "change_percent": 2.01,
+      "price": 2.88,
+      "change": 0.05,
+      "change_percent": 1.87,
       "name": "Natural Gas Oct 26"
     }
   ],

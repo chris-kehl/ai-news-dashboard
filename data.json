@@ -1,22 +1,30 @@
 {
-  "timestamp": "2026-09-14T23:07:22.723819",
+  "timestamp": "2026-09-14T23:16:39.555219",
   "summary": "Key topics today:\n- - Pion, an agent designed to run any company autonomously (r/HackerNews, 201 pts)\n- - OpenAI bots knew about the RubyGems caching vulnerability (r/HackerNews, 201 pts)\n- - Why don't machine learning research agents overfit? (r/HackerNews, 201 pts)\n- - GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review? (r/HackerNews, 201 pts)\n- - Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen) (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "ZEC",
-      "price": 1158.87,
-      "change": 4.65,
+      "price": 1146.65,
+      "change": 3.36,
       "category": "crypto",
-      "text": "ZEC +4.7% @ $1,158.87"
+      "text": "ZEC +3.4% @ $1,146.65"
     },
     {
       "type": "watch",
       "asset": "XRP",
-      "price": 1.42,
-      "change": 3.9,
+      "price": 1.41,
+      "change": 2.93,
       "category": "crypto",
-      "text": "XRP +3.9% @ $1.42"
+      "text": "XRP +2.9% @ $1.41"
+    },
+    {
+      "type": "watch",
+      "asset": "TAO",
+      "price": 231.33,
+      "change": -2.14,
+      "category": "crypto",
+      "text": "TAO -2.1% @ $231.33"
     },
     {
       "type": "buy",
@@ -49,14 +57,6 @@
       "change": null,
       "category": "sentiment",
       "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
-    },
-    {
-      "type": "watch",
-      "asset": "EDGE AI",
-      "price": null,
-      "change": null,
-      "category": "sentiment",
-      "text": "Edge AI trend \u2014 local inference plays"
     }
   ],
   "reddit": [
@@ -109,14 +109,6 @@
       "created": ""
     },
     {
-      "title": "Show HN: Sunk Cost \u2013 How long until a local LLM rig pays for itself?",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://sunkcost.ai/",
-      "created": ""
-    },
-    {
       "title": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
       "subreddit": "HackerNews",
       "score": 101,
@@ -139,89 +131,97 @@
       "comments": 0,
       "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
       "created": ""
+    },
+    {
+      "title": "4,400-Year-Old Tomb of Egyptian Judge Found at Saqqara with Colors on Walls",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://arkeonews.net/4400-year-old-tomb-of-an-egyptian-judge-found-at-saqqara-with-colors-still-on-the-walls/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-15T03:07:14.305476",
+    "timestamp": "2026-09-15T03:16:30.342138",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 232.79,
-        "change_24h": -1.36,
-        "market_cap": 2639808999
+        "price": 231.33,
+        "change_24h": -2.14,
+        "market_cap": 2622229763
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 77881,
-        "change_24h": 0.4,
-        "market_cap": 1564328163913
+        "price": 77698,
+        "change_24h": -0.1,
+        "market_cap": 1560520732765
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2511.79,
-        "change_24h": 0.06,
-        "market_cap": 306582922855
+        "price": 2497.02,
+        "change_24h": -0.76,
+        "market_cap": 304761304486
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999791,
+        "price": 0.999804,
         "change_24h": 0.02,
-        "market_cap": 183390200655
+        "market_cap": 183395248268
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 721.78,
-        "change_24h": -0.21,
-        "market_cap": 96128558747
+        "price": 719.56,
+        "change_24h": -0.71,
+        "market_cap": 95817125119
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.42,
-        "change_24h": 3.9,
-        "market_cap": 89525513474
+        "price": 1.41,
+        "change_24h": 2.93,
+        "market_cap": 88938615401
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999848,
+        "price": 0.999854,
         "change_24h": 0.01,
-        "market_cap": 74349039582
+        "market_cap": 74350637354
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 102.0,
-        "change_24h": 1.03,
-        "market_cap": 59883583399
+        "price": 101.38,
+        "change_24h": 0.21,
+        "market_cap": 59514184899
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.337809,
-        "change_24h": -0.23,
-        "market_cap": 32074548223
+        "price": 0.337734,
+        "change_24h": -0.32,
+        "market_cap": 32067922574
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.028,
         "change_24h": 0,
-        "market_cap": 23192026593
+        "market_cap": 23191472155
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1158.87,
-        "change_24h": 4.65,
-        "market_cap": 19617684804
+        "price": 1146.65,
+        "change_24h": 3.36,
+        "market_cap": 19415795998
       }
     ],
     "news": [
@@ -397,12 +397,12 @@
       "description": "The \"Sultan of Sequins\" created iconic and dazzling costumes for stars including Cher, Tina Turner and Elton John."
     },
     {
-      "title": "Emmys 2026: Live updates, winners, best moments",
+      "title": "Emmys 2026: Big winners, emotional tributes and more",
       "url": "https://abcnews.com/GMA/Culture/live-updates/emmys-2026/?id=136378304",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Mon, 14 Sep 2026 ",
-      "description": "Television's biggest stars are attending the 78th Emmy Awards."
+      "description": "Television's biggest stars attended the 78th Emmy Awards."
     },
     {
       "title": "LIVE:  ABC News Live",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-15T03:06:50.074083",
+    "timestamp": "2026-09-15T03:16:02.465488",
     "trending": [
       {
         "symbol": "FTFT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-15T03:07:10.836235",
+    "timestamp": "2026-09-15T03:16:26.570779",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7692.0,
-        "change": -0.01,
+        "price": 7689.25,
+        "change": -0.05,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29468.75,
-        "change": 0.07,
+        "price": 29455.75,
+        "change": 0.02,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52780.0,
-        "change": -0.15,
+        "price": 52772.0,
+        "change": -0.17,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2912.4,
-        "change": -0.13,
+        "price": 2912.2,
+        "change": -0.14,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.94,
-        "change": 1.53,
+        "price": 102.9,
+        "change": 1.49,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4353.9,
-        "change": 0.05,
+        "price": 4353.3,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 63.98,
-        "change": -0.25,
+        "price": 64.07,
+        "change": -0.11,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1776.6,
-        "change": -0.18,
+        "price": 1776.8,
+        "change": -0.17,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1303.0,
-        "change": -0.36,
+        "price": 1302.5,
+        "change": -0.4,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.88,
-        "change": -0.59,
+        "change": -0.55,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 232.51,
-        "change": -1.56,
+        "price": 231.33,
+        "change": -2.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77786,
-        "change": 0.21,
+        "price": 77708,
+        "change": -0.09,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2505.78,
-        "change": -0.26,
+        "price": 2498.36,
+        "change": -0.75,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.76,
-        "change": 0.71,
+        "price": 101.4,
+        "change": 0.21,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.53,
-        "change": 1.04,
+        "price": 11.49,
+        "change": 0.55,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.55,
-        "change": 1.83,
+        "price": 7.52,
+        "change": 1.12,
         "type": "crypto"
       },
       {
@@ -1123,9 +1123,9 @@
         "type": "mover"
       },
       {
-        "symbol": "PDSB",
-        "price": 0.4,
-        "change": 26.67,
+        "symbol": "ELMT",
+        "price": 21.5,
+        "change": 35.05,
         "type": "mover"
       },
       {
@@ -1135,15 +1135,15 @@
         "type": "mover"
       },
       {
-        "symbol": "CRWD",
-        "price": 235.38,
-        "change": 12.7,
+        "symbol": "RBLX",
+        "price": 51.29,
+        "change": 14.28,
         "type": "mover"
       },
       {
-        "symbol": "NTSK",
-        "price": 17.0,
-        "change": 12.58,
+        "symbol": "CRWD",
+        "price": 235.38,
+        "change": 12.7,
         "type": "mover"
       },
       {
@@ -1174,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "'Big Short' Michael Burry says AI leaders' calls for slowdown are 'self-serving' and he's not worried",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQa2RKdkRKMUEwUEwtVlJHLWJEUEx5YTFxOVVXUnlINW51OVVHcVloODhGOEFXS05zeTkxNTI4WUo4b1I1czJUVlgzbHlieUlZZU9NOS1BUGROTHpPNEpyQkowUVdkajUxZHk4eEl3SHpFbFpPYVJtVjZxbWoyc3UzOFgwb3c5SGZTVFRQQzNqOUswYTgtVTRtckdJQWNTWVgzckljNnVMNTFZSWM?oc=5",
-      "source": "Business Insider",
+      "title": "Wall Street Confronts Prospect of a New Era After Treasury Yield Hits 5%",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNHhHU3pCcEFwajNHaXNlVXB1a2VPMWc4VTNZVmRrS3locDVzaEYwSlo5SkdGaFAyMm5MYW9aaU1iRXE1cHd0NTlRd1dlN1NFbFQ2bk1mLVVadHRwN0c5MkR4SkFCS2ZOQ2dhNU9fWkMtUlp0VXZ6b014ekE0Y3c1cEl1cmFkRnppaG4tUnF3X2JhRkdVZ1R4SkhNYnJ0TnJlZzRCUDhPeGJkWlY5UVZ3dmh4R19oTEU?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1184,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Wall Street Confronts Prospect of a New Era After Treasury Yield Hits 5%",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNHhHU3pCcEFwajNHaXNlVXB1a2VPMWc4VTNZVmRrS3locDVzaEYwSlo5SkdGaFAyMm5MYW9aaU1iRXE1cHd0NTlRd1dlN1NFbFQ2bk1mLVVadHRwN0c5MkR4SkFCS2ZOQ2dhNU9fWkMtUlp0VXZ6b014ekE0Y3c1cEl1cmFkRnppaG4tUnF3X2JhRkdVZ1R4SkhNYnJ0TnJlZzRCUDhPeGJkWlY5UVZ3dmh4R19oTEU?oc=5",
-      "source": "WSJ",
+      "title": "'Big Short' Michael Burry says AI leaders' calls for slowdown are 'self-serving' and he's not worried",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQa2RKdkRKMUEwUEwtVlJHLWJEUEx5YTFxOVVXUnlINW51OVVHcVloODhGOEFXS05zeTkxNTI4WUo4b1I1czJUVlgzbHlieUlZZU9NOS1BUGROTHpPNEpyQkowUVdkajUxZHk4eEl3SHpFbFpPYVJtVjZxbWoyc3UzOFgwb3c5SGZTVFRQQzNqOUswYTgtVTRtckdJQWNTWVgzckljNnVMNTFZSWM?oc=5",
+      "source": "Business Insider",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1276,9 +1276,9 @@
       "author": ""
     },
     {
-      "title": "Google Maps rolling out Android Auto speed limits and speedometer that show even without navigation",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSV9PRlNacXRCY0NwT1lXVFhSSzlpUHFCQm1YMW8wVkxXcGkxQ1FDTG9ldEdscmprMENRblVpVVdwUlU2SS0xdmE3ZEVPQXpIbDRwTDloMkV3OXZwWHVtSEZHeERYSGlUSmdwSVk5UTM3UV84TWdYVGhZbE5Yd0E5dTItc1dGWlhVXzRNSUczdmxYb0ZFT0E?oc=5",
-      "source": "9to5Google",
+      "title": "iOS 27 AI Camera Summaries Cost $9.99 for One Camera, $59.99 for Five",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hUHYxNVBTbUIwREdtUWNJVHFjXzVQOEU5d3Z3aURVX201V2NPWDlkNnRGelNYbHRhTzVkaXRfZ2ttMmNad3B6V1hKeFdFdkpaYkZFMU9STExxWTY0eDV0eG9QbGlzbTdtYTU3cFN2ODJIZw?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1286,9 +1286,9 @@
       "author": ""
     },
     {
-      "title": "iOS 27 AI Camera Summaries Cost $9.99 for One Camera, $59.99 for Five",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hUHYxNVBTbUIwREdtUWNJVHFjXzVQOEU5d3Z3aURVX201V2NPWDlkNnRGelNYbHRhTzVkaXRfZ2ttMmNad3B6V1hKeFdFdkpaYkZFMU9STExxWTY0eDV0eG9QbGlzbTdtYTU3cFN2ODJIZw?oc=5",
-      "source": "MacRumors",
+      "title": "Google Maps rolling out Android Auto speed limits and speedometer that show even without navigation",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSV9PRlNacXRCY0NwT1lXVFhSSzlpUHFCQm1YMW8wVkxXcGkxQ1FDTG9ldEdscmprMENRblVpVVdwUlU2SS0xdmE3ZEVPQXpIbDRwTDloMkV3OXZwWHVtSEZHeERYSGlUSmdwSVk5UTM3UV84TWdYVGhZbE5Yd0E5dTItc1dGWlhVXzRNSUczdmxYb0ZFT0E?oc=5",
+      "source": "9to5Google",
       "category": "business",
       "published": "Mon, 14 Sep 2026 ",
       "description": "",
@@ -1522,7 +1522,7 @@
     "changePercent": -0.82,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 14 Sep: 29,127.16, down -0.82% -- BEARISH. price below SMA20, MACD bearish, modest -0.82% down. Counter: RSI 52.0 building. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-14T23:07:20.461829"
+    "timestamp": "2026-09-14T23:16:36.409480"
   },
   "sticky": {
     "cnbc": [
@@ -1539,6 +1539,13 @@
         "source": "CNBC",
         "published": "2026-09-15T01:55:53",
         "description": "Oil extended gains amid reports of fresh Houthi strikes on Saudi Arabia and attacks by Iran on ships in the Gulf."
+      },
+      {
+        "title": "Oil and Treasury yields haven\u2019t moved this closely in seven years. That\u2019s bad news for markets",
+        "url": "https://www.cnbc.com/2026/09/15/oil-us-treasurys-stocks-pressure.html",
+        "source": "CNBC",
+        "published": "2026-09-15T02:58:30",
+        "description": "Oil and 10-year Treasury yields are moving in near lockstep, with their correlation at its strongest since 2019."
       },
       {
         "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
@@ -1560,13 +1567,6 @@
         "source": "CNBC",
         "published": "2026-09-15T00:48:36",
         "description": "Justice Brett Kavanaugh said that applying the U.S. Postal Service rule in the 2026 midterm elections \"would be arbitrary and capricious.\""
-      },
-      {
-        "title": "Oil and Treasury yields haven\u2019t moved this closely in seven years. That\u2019s bad news for markets",
-        "url": "https://www.cnbc.com/2026/09/15/oil-us-treasurys-stocks-pressure.html",
-        "source": "CNBC",
-        "published": "2026-09-15T02:58:30",
-        "description": "Oil and 10-year Treasury yields are moving in near lockstep, with their correlation at its strongest since 2019."
       },
       {
         "title": "Trump administration repeals Biden era greenhouse gas requirements for power plants",
@@ -1592,10 +1592,17 @@
         "description": ""
       },
       {
-        "title": "Nvidia Is Focused on Redefining AI Infrastructure as an Income-Generating Asset",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-focused-redefining-ai-infrastructure-153002085.html",
+        "title": "Costco rations Kirkland motor oil, raises price to $57.99",
+        "url": "https://finance.yahoo.com/energy/articles/costco-rations-kirkland-motor-oil-133308837.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-13T15:30:02+00:00",
+        "published": "2026-09-14T13:33:08+00:00",
+        "description": ""
+      },
+      {
+        "title": "Pay is back on the rise for job switchers, even in low-hire job market",
+        "url": "https://finance.yahoo.com/economy/article/pay-is-back-on-the-rise-for-job-switchers-even-in-low-hire-job-market-154504463.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-13T15:45:04+00:00",
         "description": ""
       },
       {
@@ -1606,10 +1613,10 @@
         "description": ""
       },
       {
-        "title": "Pay is back on the rise for job switchers, even in low-hire job market",
-        "url": "https://finance.yahoo.com/economy/article/pay-is-back-on-the-rise-for-job-switchers-even-in-low-hire-job-market-154504463.html",
+        "title": "Nvidia Is Focused on Redefining AI Infrastructure as an Income-Generating Asset",
+        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-focused-redefining-ai-infrastructure-153002085.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-13T15:45:04+00:00",
+        "published": "2026-09-13T15:30:02+00:00",
         "description": ""
       },
       {
@@ -1631,13 +1638,6 @@
         "url": "https://finance.yahoo.com/markets/articles/being-millionaire-isn-t-enough-164500172.html",
         "source": "Yahoo Finance",
         "published": "2026-09-13T16:45:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Jim Cramer Suggests Waiting for a Lower Entry on Howmet Aerospace (HWM)",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-suggests-waiting-lower-165503524.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-13T16:55:03+00:00",
         "description": ""
       }
     ],
@@ -1718,72 +1718,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7691.75,
-      "change": -1.0,
-      "change_percent": -0.01,
+      "price": 7689.5,
+      "change": -3.25,
+      "change_percent": -0.04,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29468.75,
-      "change": 19.25,
-      "change_percent": 0.07,
+      "price": 29457.5,
+      "change": 8.0,
+      "change_percent": 0.03,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52780.0,
-      "change": -81.0,
-      "change_percent": -0.15,
+      "price": 52772.0,
+      "change": -89.0,
+      "change_percent": -0.17,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2912.3,
-      "change": -3.9,
-      "change_percent": -0.13,
+      "price": 2912.2,
+      "change": -4.0,
+      "change_percent": -0.14,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.94,
-      "change": 1.55,
-      "change_percent": 1.53,
+      "price": 102.9,
+      "change": 1.51,
+      "change_percent": 1.49,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4353.9,
-      "change": 2.0,
-      "change_percent": 0.05,
+      "price": 4352.9,
+      "change": 1.0,
+      "change_percent": 0.02,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 63.98,
-      "change": -0.16,
-      "change_percent": -0.25,
+      "price": 64.04,
+      "change": -0.09,
+      "change_percent": -0.15,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1776.6,
-      "change": -3.2,
-      "change_percent": -0.18,
+      "price": 1776.8,
+      "change": -3.0,
+      "change_percent": -0.17,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1303.0,
-      "change": -4.7,
-      "change_percent": -0.36,
+      "price": 1301.5,
+      "change": -6.2,
+      "change_percent": -0.47,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.88,
       "change": -0.02,
-      "change_percent": -0.59,
+      "change_percent": -0.55,
       "name": "Natural Gas Oct 26"
     }
   ],

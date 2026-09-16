@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-16T02:31:46.859310",
+  "timestamp": "2026-09-16T02:34:50.791686",
   "summary": "Key topics today:\n- - Stay discoverable in search while disallowing AI training (r/HackerNews, 201 pts)\n- - A single firm is behind OpenAI, Anthropic, and Meta hacking scandals (r/HackerNews, 201 pts)\n- - Show HN: Pizza Bot \u2013 An inbox for AI agents that work in the background (r/HackerNews, 201 pts)\n- - Introducing System One Models and Jev (r/HackerNews, 101 pts)\n- - Datamimic \u2013 don't let your coding agent invent its own test world (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "RETO",
-      "price": 2.8,
-      "change": 621.65,
-      "category": "stock",
-      "text": "RETO +621.6% momentum @ $2.80"
-    },
-    {
-      "type": "buy",
       "asset": "PDSB",
       "price": 0.58,
       "change": 98.31,
@@ -49,6 +41,14 @@
       "change": 16.68,
       "category": "stock",
       "text": "TEM +16.7% momentum @ $68.85"
+    },
+    {
+      "type": "sell",
+      "asset": "WING",
+      "price": 100.84,
+      "change": -13.89,
+      "category": "stock",
+      "text": "WING -13.9% drop @ $100.84"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-16T06:31:38.821239",
+    "timestamp": "2026-09-16T06:34:41.152895",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-16T06:30:48.701261",
+    "timestamp": "2026-09-16T06:33:55.993428",
     "trending": [
-      {
-        "symbol": "RETO",
-        "price": 2.8,
-        "change": 2.41,
-        "change_percent": 621.65,
-        "name": "ReTo Eco-Solutions, Inc."
-      },
       {
         "symbol": "PDSB",
         "price": 0.58,
@@ -503,6 +496,13 @@
         "change": -4.3,
         "change_percent": -4.75,
         "name": "Circle Internet Group, Inc."
+      },
+      {
+        "symbol": "CMG",
+        "price": 34.83,
+        "change": -1.37,
+        "change_percent": -3.78,
+        "name": "Chipotle Mexican Grill, Inc."
       },
       {
         "symbol": "QCOM",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-16T06:31:15.938715",
+    "timestamp": "2026-09-16T06:34:18.396571",
     "items": [
       {
         "symbol": "SPX",
@@ -1010,56 +1010,56 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7674.25,
-        "change": 1.12,
+        "price": 7671.5,
+        "change": 1.08,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29361.75,
-        "change": 1.4,
+        "price": 29343.75,
+        "change": 1.34,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52631.0,
-        "change": 0.99,
+        "price": 52618.0,
+        "change": 0.97,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2900.0,
-        "change": 0.94,
+        "price": 2899.0,
+        "change": 0.9,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 104.64,
-        "change": -1.12,
+        "price": 104.67,
+        "change": -1.1,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4367.9,
-        "change": 0.81,
+        "price": 4368.4,
+        "change": 0.82,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 65.16,
-        "change": 3.04,
+        "price": 65.09,
+        "change": 2.93,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1797.4,
-        "change": 1.36,
+        "price": 1797.1,
+        "change": 1.35,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1325.5,
-        "change": 2.82,
+        "price": 1326.0,
+        "change": 2.85,
         "type": "future"
       },
       {
@@ -1070,26 +1070,26 @@
       },
       {
         "symbol": "TAO",
-        "price": 216.65,
-        "change": -6.39,
+        "price": 216.55,
+        "change": -6.49,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75858,
+        "price": 75854,
         "change": -2.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2399.76,
-        "change": -3.59,
+        "price": 2397.88,
+        "change": -3.64,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 97.08,
-        "change": -3.93,
+        "price": 97.01,
+        "change": -4.03,
         "type": "crypto"
       },
       {
@@ -1101,7 +1101,7 @@
       {
         "symbol": "AVAX",
         "price": 7.31,
-        "change": -2.61,
+        "change": -2.67,
         "type": "crypto"
       },
       {
@@ -1188,21 +1188,21 @@
       "author": ""
     },
     {
-      "title": "Ford unveils 2027 F-150 with hands-free towing, first-ever Carhartt edition",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTEhieU8zSmpWazdfUXRFdEdMSTVFdi03OHJ3QXVVRS1WXzdHSG1wSm1BRFFYZUIwRXBIQjNBSjhYWG9ka0dZbzRtOE8yQWFCWWhoUk9tRFFOT09HZWV3UF9XeEhCcllnQVc2VlhIVlctNDJ5Q0Q5Qm82TGRSLXFKd3JiX0ZKbkphYnhBaWZ1cHpNM3o4VndiTnFIRkw0djAzODM5Z2tsV1DSAa4BQVVfeXFMT2h2OHV6V3U2eHAtalZVeE9rYmFPYzNiQmJTRllnLVR1N1ZLU2hkbnN3eHVaWmZWLTVNNHZhTmMyRS1nV183RWZCRWhFdUpidl9xUFhjX1lKZjZjNTI5WGFwQzNJTThfNWx3ZWdJcUpUY3pFYmxJVG1ZSVVodmFMc0Z2cXgwamZhUWVma1FqUzkzYlBYVGFMeEtnZ3NVRExzaS1oQmc4cUZRY2NFRnN3?oc=5",
-      "source": "Fox Business",
-      "category": "business",
-      "published": "Tue, 15 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "OpenAI boss says world 'right to be afraid' but 'should trust' AI firms",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlMUZ1NWNqazRyUWpPazM4OTJxTHFvNWdDYzZmSjh0Q3lJb0lDa0d1S1ZISG9CVlBSeEpheUN6ZTJNTEFKaEdfN3hoc0JqM3ZOUVFqanhFanhYRkk?oc=5",
       "source": "BBC",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Ford unveils 2027 F-150 with hands-free towing, first-ever Carhartt edition",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTEhieU8zSmpWazdfUXRFdEdMSTVFdi03OHJ3QXVVRS1WXzdHSG1wSm1BRFFYZUIwRXBIQjNBSjhYWG9ka0dZbzRtOE8yQWFCWWhoUk9tRFFOT09HZWV3UF9XeEhCcllnQVc2VlhIVlctNDJ5Q0Q5Qm82TGRSLXFKd3JiX0ZKbkphYnhBaWZ1cHpNM3o4VndiTnFIRkw0djAzODM5Z2tsV1DSAa4BQVVfeXFMT2h2OHV6V3U2eHAtalZVeE9rYmFPYzNiQmJTRllnLVR1N1ZLU2hkbnN3eHVaWmZWLTVNNHZhTmMyRS1nV183RWZCRWhFdUpidl9xUFhjX1lKZjZjNTI5WGFwQzNJTThfNWx3ZWdJcUpUY3pFYmxJVG1ZSVVodmFMc0Z2cXgwamZhUWVma1FqUzkzYlBYVGFMeEtnZ3NVRExzaS1oQmc4cUZRY2NFRnN3?oc=5",
+      "source": "Fox Business",
+      "category": "business",
+      "published": "Tue, 15 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1556,7 +1556,7 @@
     "changePercent": -0.65,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 16 Sep: 28,937.84, down -0.65% -- BEARISH. price below SMA20, RSI 44.9 neutral-bearish, MACD bearish, modest -0.65% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-16T02:31:44.649414"
+    "timestamp": "2026-09-16T02:34:46.437284"
   },
   "sticky": {
     "cnbc": [
@@ -1566,6 +1566,13 @@
         "source": "CNBC",
         "published": "2026-09-16T04:21:39",
         "description": "Comments from the two tech leaders landed days after Anthropic's Dario Amodei published an essay urging the AI industry to slow the pace of model development."
+      },
+      {
+        "title": "Saudi says Houthis targeted Mecca with a drone, Iran-backed group rejects claim",
+        "url": "https://www.cnbc.com/2026/09/16/us-iran-war-trump-hormuz.html",
+        "source": "CNBC",
+        "published": "2026-09-16T06:31:54",
+        "description": "The Organization of Islamic Cooperation condemned the strike as a \"heinous\" attack. Mecca is Islam's holiest site and the focal point of the annual Hajj pilgrimage."
       },
       {
         "title": "Oil falls as U.S. crude inventories reportedly rise, traders weigh Saudi pipeline closure",
@@ -1608,13 +1615,6 @@
         "source": "CNBC",
         "published": "2026-09-16T01:56:24",
         "description": "The BOJ is expected to hike rates by 25 basis points to a fresh three-decade high, a CNBC survey shows."
-      },
-      {
-        "title": "Iran war has cost on average $246 million per day in its first five months, CBO finds",
-        "url": "https://www.cnbc.com/2026/09/15/cbo-iran-war-cost-pentagon-weapons.html",
-        "source": "CNBC",
-        "published": "2026-09-15T22:33:45",
-        "description": "CBO estimates the Iran war cost the Pentagon $38.1 billion through Aug. 1 and could cost another $2 billion to $3 billion each additional month."
       }
     ],
     "yahoo_finance": [
@@ -1633,10 +1633,17 @@
         "description": ""
       },
       {
-        "title": "Jim Cramer on Ondas (ONDS): \u201cIt\u2019s Not Great, Not Bad\u201d",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-ondas-onds-not-184508361.html",
+        "title": "Too early to judge Fed Chairman Kevin Warsh's communication style, billionaire investor David Rubenstein says",
+        "url": "https://finance.yahoo.com/markets/article/too-early-to-judge-fed-chairman-kevin-warshs-communication-style-billionaire-investor-david-rubenstein-says-185720476.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-14T18:45:08+00:00",
+        "published": "2026-09-14T18:57:20+00:00",
+        "description": ""
+      },
+      {
+        "title": "CoreWeave Pays SOFR +5.5%. Nebius Pays +2.5%. AI Lenders Are Already Drawing a Line",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-pays-sofr-5-5-185757301.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-14T18:57:57+00:00",
         "description": ""
       },
       {
@@ -1647,31 +1654,24 @@
         "description": ""
       },
       {
+        "title": "Puma Commercial Chief Matthias Baeumer Exits After Nearly 20 Years at the Company",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/puma-commercial-chief-matthias-baeumer-185146476.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-14T18:51:46+00:00",
+        "description": ""
+      },
+      {
+        "title": "Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side",
+        "url": "https://finance.yahoo.com/technology/ai/articles/texas-put-ai-data-centers-185557597.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-14T18:55:57+00:00",
+        "description": ""
+      },
+      {
         "title": "Alliance Entertainment (AENT) Rises After Fiscal 2026 Results: What Investors Should Know",
         "url": "https://finance.yahoo.com/markets/stocks/articles/alliance-entertainment-aent-rises-fiscal-184825041.html",
         "source": "Yahoo Finance",
         "published": "2026-09-14T18:48:25+00:00",
-        "description": ""
-      },
-      {
-        "title": "Sit out or buy now? The signal Ken Mahoney wants before jumping in",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/sit-buy-now-signal-ken-184641355.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-14T18:46:41+00:00",
-        "description": ""
-      },
-      {
-        "title": "These 4 Horsemen Are Threatening the Current Bull Market: How to Prepare and Manage Risk",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/4-horsemen-threatening-current-bull-183522380.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-14T18:35:22+00:00",
-        "description": ""
-      },
-      {
-        "title": "Jim Cramer Notes That Tractor Supply Just Cannot Seem To Lift",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-notes-tractor-supply-183517542.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-14T18:35:17+00:00",
         "description": ""
       }
     ],
@@ -1752,65 +1752,65 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7674.25,
-      "change": 85.0,
-      "change_percent": 1.12,
+      "price": 7671.5,
+      "change": 82.25,
+      "change_percent": 1.08,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29363.0,
-      "change": 408.0,
-      "change_percent": 1.41,
+      "price": 29344.5,
+      "change": 389.5,
+      "change_percent": 1.35,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52631.0,
-      "change": 516.0,
-      "change_percent": 0.99,
+      "price": 52618.0,
+      "change": 503.0,
+      "change_percent": 0.97,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2900.0,
-      "change": 26.9,
-      "change_percent": 0.94,
+      "price": 2899.0,
+      "change": 25.9,
+      "change_percent": 0.9,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 104.65,
-      "change": -1.18,
-      "change_percent": -1.11,
+      "price": 104.68,
+      "change": -1.15,
+      "change_percent": -1.09,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4367.9,
-      "change": 35.1,
-      "change_percent": 0.81,
+      "price": 4368.4,
+      "change": 35.6,
+      "change_percent": 0.82,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 65.17,
-      "change": 1.93,
-      "change_percent": 3.05,
+      "price": 65.09,
+      "change": 1.85,
+      "change_percent": 2.93,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1797.4,
-      "change": 24.2,
-      "change_percent": 1.36,
+      "price": 1797.1,
+      "change": 23.9,
+      "change_percent": 1.35,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1325.5,
-      "change": 36.3,
-      "change_percent": 2.82,
+      "price": 1326.0,
+      "change": 36.8,
+      "change_percent": 2.85,
       "name": "Palladium Dec 26"
     },
     {

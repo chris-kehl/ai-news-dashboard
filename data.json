@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-16T16:16:26.265532",
+  "timestamp": "2026-09-16T16:22:37.454309",
   "summary": "Key topics today:\n- - Training a 4B model to produce 81% faster query plans than Postgres (r/HackerNews, 201 pts)\n- - Show HN: How Stale Is Your AI? Release age and training cutoff for 20 models (r/HackerNews, 201 pts)\n- - Accurate Models of AMD Matrix Cores (r/HackerNews, 101 pts)\n- - Mistral X Mozilla: Private, Multilingual AI Browsing (r/HackerNews, 101 pts)\n- - Learning Programming in an Age of LLMs (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,19 +28,19 @@
     },
     {
       "type": "buy",
+      "asset": "DLXY",
+      "price": 2.29,
+      "change": 453.14,
+      "category": "stock",
+      "text": "DLXY +453.1% momentum @ $2.29"
+    },
+    {
+      "type": "buy",
       "asset": "SNYR",
       "price": 0.27,
       "change": 201.54,
       "category": "stock",
       "text": "SNYR +201.5% momentum @ $0.27"
-    },
-    {
-      "type": "buy",
-      "asset": "ZTG",
-      "price": 1.18,
-      "change": 59.03,
-      "category": "stock",
-      "text": "ZTG +59.0% momentum @ $1.18"
     },
     {
       "type": "watch",
@@ -125,18 +125,18 @@
       "created": ""
     },
     {
-      "title": "Vectorized and performance-portable Quicksort",
+      "title": "Introducing System One Models and Jev",
       "subreddit": "HackerNews",
-      "score": 1,
+      "score": 101,
       "comments": 0,
-      "url": "https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-16T20:16:10.794053",
+    "timestamp": "2026-09-16T20:22:28.515535",
     "prices": [
       {
         "name": "Bittensor",
@@ -421,24 +421,24 @@
       "description": "Good Samaritans chased down a suspected car thief after he allegedly hit a woman on the boardwalk and abandoned the vehicle."
     },
     {
+      "title": "EU rolls out red carpet to Canada as first 'associate member'",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+      "source": "Npr",
+      "category": "npr",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "The EU's top official backs Carney's push for Canada to become the bloc's first \"associate member,\" as Brussels seeks to deepen ties amid pressure from the US"
+    },
+    {
       "title": "Congress is under pressure to act on AI \u2014 here's what that could look like",
       "url": "https://www.npr.org/2026/09/16/nx-s1-5969933/congress-ai-regulation",
       "source": "Npr",
       "category": "npr",
       "published": "Wed, 16 Sep 2026 ",
       "description": "Lawmakers are expressing broader willingness to regulate AI development, but the path forward may not be a quick one."
-    },
-    {
-      "title": "DOJ charges Russian agents with plotting attacks, including in US",
-      "url": "https://www.npr.org/2026/09/16/g-s1-143590/us-justice-department-russian-operatives-attacks",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "The indictment says the defendants belong to a network that \"is one arm of the Russian Federation's apparatus used to carry out external attacks\" worldwide."
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-16T20:15:44.690310",
+    "timestamp": "2026-09-16T20:22:01.012946",
     "trending": [
       {
         "symbol": "MEDS",
@@ -446,6 +446,13 @@
         "change": 5.21,
         "change_percent": 601.73,
         "name": "DataMeds AI, Inc."
+      },
+      {
+        "symbol": "DLXY",
+        "price": 2.29,
+        "change": 1.88,
+        "change_percent": 453.14,
+        "name": "Delixy Holdings Limited"
       },
       {
         "symbol": "SNYR",
@@ -462,13 +469,6 @@
         "name": "Zenta Group Company Limited"
       },
       {
-        "symbol": "TPST",
-        "price": 1.21,
-        "change": 0.43,
-        "change_percent": 54.34,
-        "name": "Tempest Therapeutics, Inc."
-      },
-      {
         "symbol": "JBHT",
         "price": 236.73,
         "change": -38.26,
@@ -476,11 +476,11 @@
         "name": "J.B. Hunt Transport Services, I"
       },
       {
-        "symbol": "LITE",
-        "price": 919.4,
-        "change": 84.37,
-        "change_percent": 10.1,
-        "name": "Lumentum Holdings Inc."
+        "symbol": "ON",
+        "price": 66.6,
+        "change": -5.05,
+        "change_percent": -7.05,
+        "name": "ON Semiconductor Corporation"
       },
       {
         "symbol": "BA",
@@ -492,15 +492,15 @@
       {
         "symbol": ".DJI",
         "price": 51461.9,
-        "change": -631.21,
-        "change_percent": -1.21,
-        "name": "DJIA"
+        "change": -959.3,
+        "change_percent": -1.83,
+        "name": "Dow Jones Industrial Average"
       },
       {
         "symbol": "SPY",
-        "price": 754.13,
-        "change": -6.75,
-        "change_percent": -0.89,
+        "price": 754.05,
+        "change": -6.83,
+        "change_percent": -0.9,
         "name": "State Street SPDR S&P 500 ETF T"
       },
       {
@@ -518,25 +518,18 @@
         "name": "NASDAQ Composite"
       },
       {
-        "symbol": "GC=F",
-        "price": 4309.6,
-        "change": -23.2,
-        "change_percent": -0.54,
-        "name": "Gold Dec 26"
+        "symbol": "QQQ",
+        "price": 704.72,
+        "change": -4.46,
+        "change_percent": -0.63,
+        "name": "Invesco QQQ Trust, Series 1"
       },
       {
         "symbol": ".RUT",
-        "price": 2858.829,
-        "change": -11.46,
+        "price": 2858.811,
+        "change": -11.47,
         "change_percent": -0.4,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "TLT",
-        "price": 80.88,
-        "change": -0.05,
-        "change_percent": -0.06,
-        "name": "iShares 20+ Year Treasury Bond "
       }
     ],
     "meme_momentum": [
@@ -635,9 +628,9 @@
       },
       {
         "symbol": "MMM",
-        "price": 162.73,
-        "change": 0.71,
-        "change_percent": 0.44,
+        "price": 162.65,
+        "change": 0.63,
+        "change_percent": 0.39,
         "name": "3M Company"
       },
       {
@@ -817,9 +810,9 @@
       },
       {
         "symbol": "GS",
-        "price": 938.46,
-        "change": -49.99,
-        "change_percent": -5.06,
+        "price": 937.98,
+        "change": -50.47,
+        "change_percent": -5.11,
         "name": "Goldman Sachs Group, Inc. (The)"
       }
     ],
@@ -967,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-16T20:16:06.780003",
+    "timestamp": "2026-09-16T20:22:22.835670",
     "items": [
       {
         "symbol": "SPX",
@@ -995,104 +988,104 @@
       },
       {
         "symbol": "RUT",
-        "price": 2858.829,
+        "price": 2858.811,
         "change": -0.4,
         "type": "index"
       },
       {
         "symbol": "ES=F",
-        "price": 7622.75,
-        "change": 0.44,
+        "price": 7621.25,
+        "change": 0.42,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29271.5,
-        "change": 1.09,
+        "price": 29259.75,
+        "change": 1.05,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51905.0,
-        "change": -0.4,
+        "price": 51901.0,
+        "change": -0.41,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2881.2,
-        "change": 0.28,
+        "price": 2880.2,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.15,
-        "change": -3.48,
+        "price": 102.06,
+        "change": -3.56,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4309.8,
-        "change": -0.53,
+        "price": 4303.1,
+        "change": -0.69,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 63.58,
-        "change": 0.55,
+        "price": 63.4,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1757.0,
-        "change": -0.91,
+        "price": 1755.0,
+        "change": -1.03,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1285.0,
-        "change": -0.33,
+        "price": 1284.5,
+        "change": -0.36,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.89,
-        "change": -0.92,
+        "change": -0.99,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 219.15,
-        "change": -0.59,
+        "price": 220.48,
+        "change": 0.52,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76146,
-        "change": 0.26,
+        "price": 76275,
+        "change": 0.6,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2411.81,
-        "change": 0.18,
+        "price": 2413.79,
+        "change": 0.6,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 98.46,
-        "change": 1.06,
+        "price": 98.57,
+        "change": 1.51,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.97,
-        "change": -0.61,
+        "price": 11.0,
+        "change": 0.14,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.34,
-        "change": 0.52,
+        "price": 7.35,
+        "change": 0.97,
         "type": "crypto"
       },
       {
@@ -1102,15 +1095,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SNYR",
-        "price": 0.27,
-        "change": 201.54,
+        "symbol": "DLXY",
+        "price": 2.29,
+        "change": 453.14,
         "type": "mover"
       },
       {
-        "symbol": "ZTG",
-        "price": 1.18,
-        "change": 59.03,
+        "symbol": "SNYR",
+        "price": 0.27,
+        "change": 201.54,
         "type": "mover"
       },
       {
@@ -1120,9 +1113,9 @@
         "type": "mover"
       },
       {
-        "symbol": "LITE",
-        "price": 919.4,
-        "change": 10.1,
+        "symbol": "ON",
+        "price": 66.6,
+        "change": -7.05,
         "type": "mover"
       },
       {
@@ -1138,6 +1131,12 @@
         "type": "mover"
       },
       {
+        "symbol": "^DJI",
+        "price": 51461.9,
+        "change": -1.83,
+        "type": "mover"
+      },
+      {
         "symbol": "GME",
         "price": 21.98,
         "change": 1.67,
@@ -1148,20 +1147,34 @@
         "price": 7.64,
         "change": -1.42,
         "type": "mover"
-      },
-      {
-        "symbol": "SPY",
-        "price": 754.05,
-        "change": -0.9,
-        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Fed raises interest rates for first time since 2023, defying Trump as inflation mounts",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaHFvTUxpaHU4XzFTTkx6bkQxb19mNkF3WjVwQ1FMZjVkaXRPMzZmdDFCZVNKU0RJSDNpUWR1TmxFWWkyUWxfUnl1aUs5SGRKYzU1eDgtUzR5cUZsX044M0E0T2VBenRKZUJOTk5Dc2FDbFhtRlpyenBmRk8wVjRERUFCbGpoM214OUE?oc=5",
-      "source": "NBC News",
+      "title": "Fed meeting live updates: Rate hike expected for the first time in three years",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RWUJMaHR6WU9hNlFYTnlPQ1lqS0xsMnRuTlMtdndQaXFJdXpKVXhiQS1IbjJiUVpudkRqWDdoZWZIekpsQy1VYU1uMUJQUHZMZjFCVU9Fa1gzdGZkMFpqSWZwWXY2Y1dnTU9teG5uZlhBVTVYU0HSAXtBVV95cUxPZDNnc0c0YVZIQkNTTlJDRWpYNXNBdUxrRUtaeTdZVUVHa3JJVXpCZmNVdTJaZ0x3Q1E4bGNhVUVkbjBDdmVreldONlE3Y3NXSm9YeThsdGhkM1ozME9iZ2JVa0p4NVVkTHpqcW1WSnVoMlMwWkpkRi1YdHM?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The Richest Person In America 2026",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdks0b1hZWU9XYWtmU1RMN1R1bFA4NTNBMnBWT1o2WWVnLXgtWXZNRlo1djFRN1JaZDdCRHpmRGlTdnhXRTlIdEJJcmo3Z1NVWFhVM0FuRnAxRWRaZlU1WDBUNmJuUWxIYkpRTU8tS0IwN0l6ZHJzaVN1TlR0OFFBVEViTTBrSnhGbGZRY3hYTUdUYk81R0FtbW1ZR0ltaThtdVR2MUlDWnVZYW9qSFJ1R1ZESWkyS0xPcEcyOC1DTlBITWZ5NnBjZDdWazI2Y0FxdnRfMW1TbmJWZw?oc=5",
+      "source": "Forbes",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Zuckerberg distances Meta from calls for a coordinated approach on an AI slowdown",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWmZNbEtRUFV1Q1MwMEtYMlhVMkE4eTRrZ3VJNUxYUzlwbG4xbkZvSWJOUElzZW5hV2Z4NEhsSFcwcTVDaGl2OHp2VjViUXE3Y1JqSkRmMGQxUDlnQl9LZmVHakg5ajhwcGRUN3dHY2RkeTdLNlRSTVZzcF9FRGdRcUtpR05sVDhkNlNDbGNIWFM?oc=5",
+      "source": "apnews.com",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1171,7 +1184,17 @@
     {
       "title": "Trump Ally Harold Hamm Strikes Venezuela Oil Deal",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZWw2VjVZbm0zOFJHWmx2Q1ZpRFdVczFCbGItX2N3anlEVVlyWW9FSzZhLWxBejQ2dUxsREhwUkZFU09hc3d6bWd1dWlWZTlFYWptMHFFRkRQVGlqeVppRnpjT1AzcE5FQXBMWThGaFZLVG1pcEd2SkdySWh3WUN5T2lpaG03bDJvd1BWdEZSTGMtTFhLYTBLRUdTeWdEdWhQ?oc=5",
-      "source": "nytimes.com",
+      "source": "The New York Times",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "OpenAI Weighing Funding Round at Over $1.2 Trillion Valuation",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWVNBczNrTDhldkVnSTFqMVhHSkxPa2gxVEpPVG16aXlpaE84LVE1Vk5BX2FGTmVjOEQ4QnhSWXJ0THZfLTNCeUtoSW9oc1Q2dDFzTDJfNlVVS01kc2dWRUl1QkNjbUZjZ2tKeGNHZWFFdS1OS1kyQnZ6YWRFMEdBRkotRFJqb21iT09WSElyS2c2UlBXU2Vua1JxdVFCSFU?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1182,26 +1205,6 @@
       "title": "Robust US retail sales underscore economy's resilience, inflation pressures building",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZVdndU5ZZ1lnT0pkMEZEVG4zTjdERHB1Z1Vwem1aUURBS3pxOUpDWXh3Tkd1NDFfWWp1eDJQNWdQanlhcHBJZTJJaWs3U1JXQTluNDV2dUp2QlFNZ1ZFU1Y5T295QXM1akRDdnM4UTBjR09XUjhYV0FUWUZCM3dldUJoTHloMWk1QlFzbjNxeWxRNktyOFVyb3AzYndmMGg1?oc=5",
       "source": "Reuters",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "OpenAI Reportedly Weighs New Funding Round At Valuation Of Up To $1.5 Trillion",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQl84elAyUWs0WDN3Skg4UGpDM1FjbXAxWWZIOHN4eWw1dnRiZmhENHdnTldZWDJCRTBBVnpvenViTVhSRnlsZWRxVnRfcWtsa3YweUpYOWFvV1RuaEhFUVNBYTQ2XzFGV2VaYkV6V3Q1QlFmYlZ3M04tcXRsZFFISTVXUzlyWkQ5NFdWcVhGdHo2eHJ5NlZjV0dMZ2tncUpNZi1VMnVQZFQ0eW9zdTJseHFMcHZhY1pSN29vVUFGaS15OU4z?oc=5",
-      "source": "Forbes",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Colorado keeps four on this year\u2019s Forbes 400 richest list, but loses one",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE52ZW1oRndIQUxZTW85bk9LbTRUeTVHWnU0cXpNd05vMWhqVFJHblA4NVFnZzZuVG03RFFmRWNMWFNUckh5aEVVbm9FZ3VoeGo3X2NPT0kxY1VJMVlIc1FRR0w1bGFURHZ2NTJuQVBDMFktVE50MVE?oc=5",
-      "source": "The Denver Post",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1222,16 +1225,6 @@
       "title": "\u2018Inflation is too high and has been for too long,\u2019 says Kevin Warsh as Fed announces rate hikes \u2013 live",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMkxteTZfMGZVdVJFeng1LUU2Zno2Q1A1a1RmMWMyamE2ekZRM3ZqRlBNSnVqZG9MMjVoSllTOGhvUGkxLWttVTB4NzVDS0RKY0hNY3o4LVhaOU9CTXZwX3ZabEV5NEE5V3gtbWtqaHdxQVNWU0FYSHExNjNSRDdENVV0MzY5ZTRpbC1penBOcTJhbTQxZVp2eWY5cFJIVXNfWGd3S0xCaGg?oc=5",
       "source": "The Guardian",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "A top Democratic donor says time is running out to stop Americans from hating AI",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeGxSLTJ4UXFaSXctT2pack5uRzRIOFFVNE1WNTVQQU1BMGw1MTFlcFVqbzgyalN5TlNlWU1GYXFNTlhKLXlwTFVBck1BVWRwdUpsMF94ZE13QzlSTjQzS0gwd21FUmZQY3NJbUN0RzNCNlRRZmlvdl9RdVhsZTNmbHYwazBJd21JQktHVE13YjRyMlRNQ3c2SUVWMGhqN0JvdGNYcmtaZmZPM0Mxa1FQWUhCQUlNRXV5YXc?oc=5",
-      "source": "washingtonpost.com",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1311,9 +1304,9 @@
       "author": ""
     },
     {
-      "title": "Google confirms Pixel phones were exploited in \u2018targeted\u2019 attack related to modem",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzN3MHJGcHNZN1ExUUxXTU4zWVBBb0xnR1NRZVBFcm0xU0Fsd05vd3JJYXZ6WXNZN0xybFJ3QkpfT2k3bkt6NF9HUkJKaElHU043dTNFN1RJQWNYT0pscU5UMkMtYjZXbTZSSWpBbHZqdF9VSlN6RzY4RU1hWnh1ZWFObHU?oc=5",
-      "source": "9to5Google",
+      "title": "Super Ugly Mew Cards Are The Chase For Pok\u00e9mon\u2019s 30th Anniversary, And One\u2019s Already Sold For $20k",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ0tEaUQtcDhSYmlnSXBrTFJmc1NLSk10Umh4a2VzSWpnUlQ0eEYtMmVzSFE2eXpCTnA3QUJhVnhkWXJIdXdhN1Rva3BodkNtcnBwMHdLMnpFLXVUc3JpSGRyX2tmNGRvTlE2QW9nekt6UFRXYXloMGVJQUNZWEx4Rlh6NmhZWFFM?oc=5",
+      "source": "Kotaku",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1371,14 +1364,6 @@
       "relevance_score": 5
     },
     {
-      "title": "UK trade unions back motion to boycott and sanction Israel",
-      "url": "https://www.aljazeera.com/news/2026/9/16/uk-trade-unions-back-motion-to-boycott-and-sanction-israel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "Motion demands taking action to oppose the &#039;catastrophic destruction of Gaza&#039; and Israeli settler violence.",
-      "relevance_score": 5
-    },
-    {
       "title": "US \u2018not prepared\u2019 to respond to nuclear attacks in space, report says",
       "url": "https://www.defensenews.com/news/your-air-force/2026/09/16/us-not-prepared-to-respond-to-nuclear-attacks-in-space-report-says/",
       "source": "Defense News",
@@ -1427,20 +1412,28 @@
       "relevance_score": 3
     },
     {
-      "title": "Geopolitical divides fueling UN Security Council inaction, Guterres warns",
-      "url": "https://www.aljazeera.com/news/2026/9/16/geopolitical-divides-fueling-security-council-inaction-guterres-warns?traffic_source=rss",
-      "source": "Al Jazeera",
+      "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
+      "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
       "published": "Wed, 16 Sep 2026 ",
-      "description": "Guterres calls for urgent Security Council reform, says geopolitical divides hindering action on global crises.",
+      "description": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\".",
       "relevance_score": 3
     },
     {
-      "title": "Belarus frees 25 political prisoners in return for US sanctions relief",
-      "url": "https://www.aljazeera.com/news/2026/9/16/belarus-frees-25-political-prisoners-in-return-for-us-sanctions-relief?traffic_source=rss",
+      "title": "Saudi Arabia says it shot down Houthi drone south of Mecca",
+      "url": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "The Houthis deny targeting the Islamic holy city after the Saudi-led coalition in Yemen accuses them of a \"disgraceful act\".",
+      "relevance_score": 3
+    },
+    {
+      "title": "Efforts underway for Zelenskyy-Trump meeting at UN next week",
+      "url": "https://www.aljazeera.com/news/2026/9/16/efforts-underway-for-zelenskyy-trump-meeting-at-un-next-week?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Wed, 16 Sep 2026 ",
-      "description": "The Trump administration said more releases would be secured soon amid improved US-Belarus relations.",
-      "relevance_score": 3
+      "description": "Trump pushes for a solution to end Moscow&#039;s war against Kyiv as civilian deaths in Ukraine rise.",
+      "relevance_score": 2
     }
   ],
   "github": [
@@ -1547,7 +1540,7 @@
     "changePercent": 0.02,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Wed 16 Sep: 28,945.06, up +0.02% -- BULLISH. none. Counter: price below SMA20, RSI 44.7 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-16T16:16:22.919451"
+    "timestamp": "2026-09-16T16:22:34.827067"
   },
   "sticky": {
     "cnbc": [
@@ -1562,7 +1555,7 @@
         "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
         "url": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
         "source": "CNBC",
-        "published": "2026-09-16T20:09:10",
+        "published": "2026-09-16T20:18:19",
         "description": "Billionaire Leon Black is suing the House Oversight and Government Reform Committee seeking to block subpoenas it issued him in its probe of Jeffrey Epstein."
       },
       {
@@ -1631,24 +1624,17 @@
         "description": ""
       },
       {
-        "title": "Ramit Sethi's first scholarship was $2K and he put it in the stock market. Here's the simple lesson he learned",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/ramit-sethis-first-scholarship-2k-114500607.html",
+        "title": "AI Stock Among Those That Funds Are Buying Despite Misgivings",
+        "url": "https://www.investors.com/research/ai-stock-funds-hpe-stock-trv-well/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T11:45:00+00:00",
+        "published": "2026-09-15T12:00:28+00:00",
         "description": ""
       },
       {
-        "title": "Ray Dalio says the US faces a debt crisis \u2018in three years, give or take two.\u2019 5 things Americans can do now",
-        "url": "https://finance.yahoo.com/economy/policy/articles/ray-dalio-says-us-faces-114500355.html",
+        "title": "Kiyosaki warns Americans about nightmare robbery \u2018you didn\u2019t know happened\u2019 \u2014 and it\u2019s draining your wallet monthly",
+        "url": "https://finance.yahoo.com/economy/articles/kiyosaki-warns-americans-nightmare-robbery-120500228.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T11:45:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "What is debt settlement? How it works and what it costs you.",
-        "url": "https://finance.yahoo.com/personal-finance/personal-loans/article/what-is-debt-settlement-185327526.html",
-        "source": "Yahoo Finance",
-        "published": "2026-05-22T18:53:27+00:00",
+        "published": "2026-09-15T12:05:00+00:00",
         "description": ""
       },
       {
@@ -1659,10 +1645,17 @@
         "description": ""
       },
       {
-        "title": "T\u00fcrkiye\u2019s Orta closes Kayseri facility after 73 years",
-        "url": "https://finance.yahoo.com/small-business/articles/t-rkiye-orta-closes-kayseri-114843489.html",
+        "title": "Ray Dalio says the US faces a debt crisis \u2018in three years, give or take two.\u2019 5 things Americans can do now",
+        "url": "https://finance.yahoo.com/economy/policy/articles/ray-dalio-says-us-faces-114500355.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T11:48:43+00:00",
+        "published": "2026-09-15T11:45:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Enova scraps Grasshopper deal",
+        "url": "https://finance.yahoo.com/economy/policy/articles/enova-scraps-grasshopper-deal-115759258.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-15T11:57:59+00:00",
         "description": ""
       }
     ],
@@ -1743,72 +1736,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7623.0,
-      "change": 33.75,
-      "change_percent": 0.44,
+      "price": 7621.25,
+      "change": 32.0,
+      "change_percent": 0.42,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29272.25,
-      "change": 317.25,
-      "change_percent": 1.1,
+      "price": 29261.75,
+      "change": 306.75,
+      "change_percent": 1.06,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51904.0,
-      "change": -211.0,
-      "change_percent": -0.4,
+      "price": 51901.0,
+      "change": -214.0,
+      "change_percent": -0.41,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2881.4,
-      "change": 8.3,
-      "change_percent": 0.29,
+      "price": 2880.4,
+      "change": 7.3,
+      "change_percent": 0.25,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.15,
-      "change": -3.68,
-      "change_percent": -3.48,
+      "price": 102.06,
+      "change": -3.77,
+      "change_percent": -3.56,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4310.0,
-      "change": -22.8,
-      "change_percent": -0.53,
+      "price": 4303.1,
+      "change": -29.7,
+      "change_percent": -0.69,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 63.6,
-      "change": 0.37,
-      "change_percent": 0.58,
+      "price": 63.4,
+      "change": 0.16,
+      "change_percent": 0.25,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1757.0,
-      "change": -16.2,
-      "change_percent": -0.91,
+      "price": 1755.0,
+      "change": -18.2,
+      "change_percent": -1.03,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1285.0,
-      "change": -4.2,
-      "change_percent": -0.33,
+      "price": 1284.5,
+      "change": -4.7,
+      "change_percent": -0.36,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.89,
       "change": -0.03,
-      "change_percent": -0.92,
+      "change_percent": -0.99,
       "name": "Natural Gas Oct 26"
     }
   ],

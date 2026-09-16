@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-16T08:16:39.353038",
+  "timestamp": "2026-09-16T08:22:50.552272",
   "summary": "Key topics today:\n- - Mistral X Mozilla: Private, Multilingual AI Browsing (r/HackerNews, 101 pts)\n- - Introducing System One Models and Jev (r/HackerNews, 101 pts)\n- - Learning Programming in an Age of LLMs (r/HackerNews, 101 pts)\n- - Building a Linux GPU Driver for the M4 Mac Mini in One Month (r/HackerNews, 101 pts)\n- - Why I'm still bearish on LLMs after Navier-Stokes (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "buy",
+      "asset": "RETO",
+      "price": 2.8,
+      "change": 621.65,
+      "category": "stock",
+      "text": "RETO +621.6% momentum @ $2.80"
+    },
+    {
+      "type": "buy",
       "asset": "MEDS",
       "price": 1.62,
       "change": 80.0,
@@ -41,14 +49,6 @@
       "change": -18.81,
       "category": "stock",
       "text": "SNYR -18.8% drop @ $0.08"
-    },
-    {
-      "type": "buy",
-      "asset": "TEM",
-      "price": 68.85,
-      "change": 16.68,
-      "category": "stock",
-      "text": "TEM +16.7% momentum @ $68.85"
     }
   ],
   "reddit": [
@@ -117,26 +117,26 @@
       "created": ""
     },
     {
+      "title": "Salesforce Global Outage",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://status.salesforce.com/products/all",
+      "created": ""
+    },
+    {
       "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://github.com/arnegiacomo/fugleramme",
       "created": ""
-    },
-    {
-      "title": "Kyber (YC W23) Is Hiring a Forward Deployed Engineer",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.ycombinator.com/companies/kyber/jobs/eturrAR-forward-deployed-engineer",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-16T12:16:31.347506",
+    "timestamp": "2026-09-16T12:22:42.543028",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-16T12:15:46.202748",
+    "timestamp": "2026-09-16T12:21:58.268825",
     "trending": [
+      {
+        "symbol": "RETO",
+        "price": 2.8,
+        "change": 2.41,
+        "change_percent": 621.65,
+        "name": "ReTo Eco-Solutions, Inc."
+      },
       {
         "symbol": "MEDS",
         "price": 1.62,
@@ -476,6 +483,13 @@
         "name": "Wingstop Inc."
       },
       {
+        "symbol": "ZTG",
+        "price": 0.67,
+        "change": -0.11,
+        "change_percent": -13.61,
+        "name": "Zenta Group Company Limited"
+      },
+      {
         "symbol": "CAVA",
         "price": 49.99,
         "change": -5.89,
@@ -483,18 +497,11 @@
         "name": "CAVA Group, Inc."
       },
       {
-        "symbol": "SKHY",
-        "price": 174.83,
-        "change": -15.24,
-        "change_percent": -8.02,
-        "name": "SK hynix Inc."
-      },
-      {
-        "symbol": "AXON",
-        "price": 442.08,
-        "change": -37.26,
-        "change_percent": -7.77,
-        "name": "Axon Enterprise, Inc."
+        "symbol": "YFOR",
+        "price": 1.4,
+        "change": 0.12,
+        "change_percent": 9.37,
+        "name": "YYForce Inc."
       },
       {
         "symbol": "TPST",
@@ -509,13 +516,6 @@
         "change": -5.8,
         "change_percent": -5.63,
         "name": "Intel Corporation"
-      },
-      {
-        "symbol": "QCOM",
-        "price": 187.8,
-        "change": 5.83,
-        "change_percent": 3.2,
-        "name": "QUALCOMM Incorporated"
       },
       {
         "symbol": "SWKS",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-16T12:16:08.340116",
+    "timestamp": "2026-09-16T12:22:19.850365",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 16.77,
-        "change": -2.5,
+        "price": 16.78,
+        "change": -2.44,
         "type": "index"
       },
       {
@@ -1008,99 +1008,105 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7683.5,
-        "change": 1.24,
+        "price": 7684.75,
+        "change": 1.26,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29421.0,
-        "change": 1.61,
+        "price": 29428.25,
+        "change": 1.63,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52694.0,
-        "change": 1.11,
+        "price": 52686.0,
+        "change": 1.1,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2903.2,
-        "change": 1.05,
+        "price": 2902.8,
+        "change": 1.03,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 103.42,
-        "change": -2.28,
+        "price": 103.79,
+        "change": -1.93,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4384.8,
-        "change": 1.2,
+        "price": 4387.4,
+        "change": 1.26,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 65.27,
-        "change": 3.22,
+        "price": 65.22,
+        "change": 3.15,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1791.8,
-        "change": 1.05,
+        "price": 1792.3,
+        "change": 1.08,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1324.5,
-        "change": 2.74,
+        "price": 1323.0,
+        "change": 2.62,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.94,
-        "change": 0.86,
+        "price": 2.96,
+        "change": 1.4,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 217.87,
-        "change": -3.07,
+        "price": 217.85,
+        "change": -3.05,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76077,
-        "change": -1.04,
+        "price": 76022,
+        "change": -1.14,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2412.61,
-        "change": -2.67,
+        "price": 2412.02,
+        "change": -2.64,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 97.7,
-        "change": -3.16,
+        "price": 97.67,
+        "change": -3.24,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.81,
+        "price": 10.82,
         "change": -5.12,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.29,
-        "change": -2.62,
+        "change": -2.9,
         "type": "crypto"
+      },
+      {
+        "symbol": "RETO",
+        "price": 2.8,
+        "change": 621.65,
+        "type": "mover"
       },
       {
         "symbol": "MEDS",
@@ -1121,21 +1127,21 @@
         "type": "mover"
       },
       {
-        "symbol": "WING",
-        "price": 100.84,
-        "change": -13.89,
+        "symbol": "DVLT",
+        "price": 0.16,
+        "change": -15.79,
+        "type": "mover"
+      },
+      {
+        "symbol": "ZTG",
+        "price": 0.67,
+        "change": -13.61,
         "type": "mover"
       },
       {
         "symbol": "CAVA",
         "price": 49.99,
         "change": -10.54,
-        "type": "mover"
-      },
-      {
-        "symbol": "AXON",
-        "price": 442.08,
-        "change": -7.77,
         "type": "mover"
       },
       {
@@ -1155,12 +1161,6 @@
         "price": 2.55,
         "change": 3.66,
         "type": "mover"
-      },
-      {
-        "symbol": "QCOM",
-        "price": 187.8,
-        "change": 3.2,
-        "type": "mover"
       }
     ]
   },
@@ -1176,9 +1176,9 @@
       "author": ""
     },
     {
-      "title": "OpenAI Weighing Funding Round at Over $1.2 Trillion Valuation",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWVNBczNrTDhldkVnSTFqMVhHSkxPa2gxVEpPVG16aXlpaE84LVE1Vk5BX2FGTmVjOEQ4QnhSWXJ0THZfLTNCeUtoSW9oc1Q2dDFzTDJfNlVVS01kc2dWRUl1QkNjbUZjZ2tKeGNHZWFFdS1OS1kyQnZ6YWRFMEdBRkotRFJqb21iT09WSElyS2c2UlBXU2Vua1JxdVFCSFU?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Yield on 10-year Treasury hovers above 5% as investors await Fed decision",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPLWNMNkM5UnZJSXIwQzNCWU1aUmlROWRBNGJ3bW1YaFlCaWJFckNzN21VTG5zWHQ1ZU0wR2NXcjZxanJuMFIyVWpEY1dxWVlxZ29hdlpUMVFTNnhnM1NYSk9yb2tiZFdOUllwakZRdEtXdFBLWmJFanBVbjdMblpPMEtn0gGHAUFVX3lxTFBfM3JFelNOZE9KS2d4RHQ5VmM5XzdzXzRoTnk0NEN6dEJXcE1GbkZJX0hxTmY0bXpzMEVRaEYzTmhaWUJoWVhjNnRkT1Q5elhKakdOWXQzSHYwbGVKNEc1VVQ0dGFOU282X2NXU3V1dWVvYTc1aXZYbUxqZkxzbEtGMC00em0wWQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1186,9 +1186,9 @@
       "author": ""
     },
     {
-      "title": "Could AI really wipe out humanity \u2013 six experts spell out the risks",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOa3puUXRFSE5YY01MaFJkQkNjYXh3QkJKMWVUdUJmcHNaeHRxWm5Nd3AwZzRwVTMxa2Iya1ZyX0ozV0hoNEtyVjJzWnFoN1dKZ2JRaDl6Nk54ZmNwQlZFRmE4MVZWSGx5R0F5bUZqczJPSDhSd19OZXhTbHNoek5XRGVuUVN0MHVCdV82VUhNZmQzcmNralltaEpvUnZ6NmNhVldqaVFtdXZENWc5?oc=5",
-      "source": "The Guardian",
+      "title": "OpenAI mulls funding round at $1.2 trillion valuation ahead of IPO, FT reports",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOc3hqMlQtdi1BT1QzTGs4U1BVXzcxb05pRnpHMjI4RjBFekZBQ2lQSVZRTURaN1h3eGlZN0pCdmY1UzdwQzlNeldrMXh0YTFkZmxsdVBmV211YmdwZWIxTTAya1VpLUdtbGNRZkZZbFBVUklUVnVzd1NZRHpSTkpTZ3pWUGhQMmVzaW1qZDYydE83eTBNb3c4T2duTEw2dWx5WUVjZXVTX1Ixb25LR2ExRHlQTDltNWVrLW5KOExsdjJCaFE?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Tue, 15 Sep 2026 ",
       "description": "",
@@ -1216,9 +1216,9 @@
       "author": ""
     },
     {
-      "title": "Flyers are happier with U.S. airports, despite near record travel levels, J.D. Power report shows",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1WZnU5MzNRdUZxWmR4LXVjR2F3UWRLYzBmUFVWMHFXSnU3QlY5cUowVkUtYU1EMXhjRWxtNFdRYUN3anR3MFp6eGh3XzlFVzdwVndEQUxIZS1SLWxxYzRtWVMyME5Pc2xi0gFuQVVfeXFMTjRFQTZSVGZyVTg0OTFUMnRnM0ZSdERvMjl2U2MxUGRyMVNYdHBCMnp6d20zMjM0VzhVcmhfVGY5eVhLcExCelE1cmRZVmpqMUoxU3dkd2JZVnJDdTJPbGJCLTd4UzFpV1FacDRUNHc?oc=5",
-      "source": "CNBC",
+      "title": "This Midwest airport was named America's best, according to flyers",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMnRrSmlYNWotcXNzLXdjNE1uTTJuMElkaU05Mk8yMks2MU9adnlYMWRwNGQ0UG1wekpRSlhWTDFpZzctS0RUS08wTmpUOHdhNDdEZm5mQ3ZPb0NqLUI5SmdYRE5kVUVzazNZTDBmY05DUFFVaHBibjktS3I2bnhTcFJ1OEs0ZTlaWW5KV1QybXRuSU1PQ1dVMmZOV3JBcUstenZkc0tYTXpGZ3JBd0w0?oc=5",
+      "source": "USA Today",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1236,9 +1236,9 @@
       "author": ""
     },
     {
-      "title": "UK inflation hits 3.1% but data offers some relief for BoE",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPamd0cUlhVDJZWHMweFF4QjNMOGdJZ1p2LUpLdHJpSzlwa2NCNXFqTjluUW5xY0g4c25PamlpRjZpMmJ5WkFqZF9xVFRwTDlCNW5MR3ZKc2JHWEo2ZU11R1RFeU1XM1NWMFdQRzRXdTNVcllHdjNySHc3UDJvTkZoSm91bw?oc=5",
-      "source": "Reuters",
+      "title": "UK inflation jumps to 3.1% as energy costs soar",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13WG5PbGNuVmxRejVTbnlzREU2NzB5T3RsQmkzMlpzTHg5S0dudjJUV3I4a0tCdWRqSVd2Z3lYU3dFNzBjVnoxZnZvY3otOEw5UUJzSTdfZlNWQ1BWWjNRV2c3Tkd4LTAzYWpmRk5CM3MxR1h5UmxMQjFnc0rSAYIBQVVfeXFMTWh1SmdIQVJFZUZwcmFKSUVFSjhjWGJUOGJTWlJvdHdUeUdGY2x6Z0ZwLUZNT0FDdFVoaWpXN3RjQmwxSm5HTWFqWWQxeVgyZ2ExUTBFSXJoQ3JUSmRPbHlHTTEwNXhmSU0xdzJCSWZZbF94bXp0RFlSMHRkMzF2eksyQQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1248,19 +1248,19 @@
   ],
   "tech_business": [
     {
-      "title": "Here's your first look at the new Pixel VIP widget ahead of its wide rollout",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVm5oTXpLUDBwMDFUM214MVJXdkwtZWF2WUZfcGpmUk1vNjBielVMQVpnV09BMDNzNWRTVGJKcmE2QURVVHgtQ3cxYkVmdk56a1E0blJQbGRjN1RGcDRVcnljZ1JOYU5YZXlJR1U0X2JBdThFbkZQWDZlTFF0QVRiSlBYZFJ1TUJzdlF0cVp1MzRaTmZnc29NZUg5a01kQQ?oc=5",
-      "source": "Android Authority",
+      "title": "iPhone 18 Pro Pre-Orders Off to a Muted Start, Analyst Says",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9IMmxpa0h2R0I0eTZ0WVhjOGpSZTF6VVVTLThLcExjejV6bW1DUjJKZU9idkpsY1AyRWFYWndHQ0N5UFQwOXVaTlN5dWdsZ0Z0YWRjUWN0akVzWVk2elQ5WGRaOEJiU25JMmROZDNfcGtOZEsybDExQ0pR?oc=5",
+      "source": "MacRumors",
       "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
+      "published": "Tue, 15 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "iPhone 18 Pro Pre-Orders Off to a Muted Start, Analyst Says",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9IMmxpa0h2R0I0eTZ0WVhjOGpSZTF6VVVTLThLcExjejV6bW1DUjJKZU9idkpsY1AyRWFYWndHQ0N5UFQwOXVaTlN5dWdsZ0Z0YWRjUWN0akVzWVk2elQ5WGRaOEJiU25JMmROZDNfcGtOZEsybDExQ0pR?oc=5",
-      "source": "MacRumors",
+      "title": "Don't upgrade yet: Four Galaxy S26 AI features just landed on the Galaxy S24 series",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDdNbkNEUTBXVzkwRVpYNV9VR05TTkF0dVhYSlUtNm53d0ZpTzJBZGh4d2N5Nmpxb181ZlRKck5vSmE1czhsMkNQc0tVMnhnRnBBQmZmVUpPUWRiZElDbGtKTS01cVFBVlZ6T3laNDNjcXBfOU15SUpQLVQzb3Z2ak5uN2dLVnFCSmhpVHFYSjN4RUt6amc?oc=5",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Tue, 15 Sep 2026 ",
       "description": "",
@@ -1288,16 +1288,6 @@
       "author": ""
     },
     {
-      "title": "Don't upgrade yet: Four Galaxy S26 AI features just landed on the Galaxy S24 series",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDdNbkNEUTBXVzkwRVpYNV9VR05TTkF0dVhYSlUtNm53d0ZpTzJBZGh4d2N5Nmpxb181ZlRKck5vSmE1czhsMkNQc0tVMnhnRnBBQmZmVUpPUWRiZElDbGtKTS01cVFBVlZ6T3laNDNjcXBfOU15SUpQLVQzb3Z2ak5uN2dLVnFCSmhpVHFYSjN4RUt6amc?oc=5",
-      "source": "PhoneArena",
-      "category": "business",
-      "published": "Tue, 15 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Is iOS 27 Draining Your iPhone Battery? Don\u2019t Panic, That\u2019s Normal",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNnc2YUMzQ1d0bzROUmwzODFfcTNvdjdnUFpNM1lDMFlhRnhqS1lkaldfV1NzSm54RlZySE90Z0xwa0gyRFJhU2dkTEpoMTB1aElhbHJMdi1sTlB3M05FdWRZTHFkTnZOSTlQNXdTNkNGd0xSaGtjLUFQak5meFZPMnRsNm5CQTBYYTFNQTZOYkduUHdRTW5vVEdicnZxOGNpTUdYZmlkdzNtTzMwcFBlSg?oc=5",
       "source": "CNET",
@@ -1313,6 +1303,16 @@
       "source": "Nintendo Life",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Reminder: iOS 27's All-New Siri AI Has a Waitlist, Here's How to Sign Up",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcWlfTmRQQnE3THQ5VGotNXVQaGNpbTNycjVlVUxfRFdUN3l1WDBRUnJ3SXdMRFpERWgxeU1TSVlLNTR3NW5zUUZybDJ2c1ZZX2paSWEzSUt2UnZWR1pvbTZtbERpNmJDOHZnRUxUUkZldkdPNVcxaTZyZjNMdDlNU01qOA?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Tue, 15 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,7 +1554,7 @@
     "changePercent": -0.65,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 16 Sep: 28,937.84, down -0.65% -- BEARISH. price below SMA20, RSI 44.9 neutral-bearish, MACD bearish, modest -0.65% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-16T08:16:36.794016"
+    "timestamp": "2026-09-16T08:22:48.271161"
   },
   "sticky": {
     "cnbc": [
@@ -1580,13 +1580,6 @@
         "description": "The deal could be a big win for Intel which has been looking to gain marquee customers for its manufacturing, or foundry, business."
       },
       {
-        "title": "Bizarre volatility bet in the options pits is a head scratcher ahead of Fed rate decision",
-        "url": "https://www.cnbc.com/2026/09/16/bizarre-volatility-bet-in-the-options-pits-is-a-head-scratcher-ahead-of-fed-rate-decision.html",
-        "source": "CNBC",
-        "published": "2026-09-16T12:14:21",
-        "description": "The biggest trade in options on the Cboe VIX Index Tuesday was an unusual $6 million purchase of deep, deep in-the-money-puts."
-      },
-      {
         "title": "Mortgage demand from homebuyers drops 19% from a year ago, as interest rates surge abruptly higher",
         "url": "https://www.cnbc.com/2026/09/16/mortgage-demand-from-homebuyers-drops-19percent-from-a-year-ago.html",
         "source": "CNBC",
@@ -1608,6 +1601,13 @@
         "description": "The Organization of Islamic Cooperation condemned the strike as a \"heinous\" attack. Mecca is Islam's holiest site and the focal point of the annual Hajj pilgrimage."
       },
       {
+        "title": "Oil falls as U.S. crude inventories reportedly rise, traders weigh Saudi pipeline closure",
+        "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+        "source": "CNBC",
+        "published": "2026-09-16T05:39:38",
+        "description": "Oil fell Wednesday, as an unexpected increase in U.S. crude inventories outweighed worries over supply disruptions after an Iran-backed attack on Saudi Arabia's East-West pipeline."
+      },
+      {
         "title": "Living abroad doesn't end your U.S. tax obligations. What young expats need to know",
         "url": "https://www.cnbc.com/2026/09/16/americans-living-abroad-us-tax-rules-fbar-filing.html",
         "source": "CNBC",
@@ -1624,31 +1624,31 @@
         "description": ""
       },
       {
-        "title": "Stock market today: Dow, S&P 500, Nasdaq rise ahead of crucial Fed interest rate decision",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-16-dow-sp-500-nasdaq-fed-meeting-decision-080356525.html",
+        "title": "Bond market woes likely a factor for Fed, but intervention seen as unlikely",
+        "url": "https://finance.yahoo.com/economy/policy/articles/bond-market-woes-likely-factor-100656182.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-16T08:03:56+00:00",
+        "published": "2026-09-16T12:12:19+00:00",
+        "description": ""
+      },
+      {
+        "title": "Oscar Health Lowers Medical Cost Outlook. Here's The Caveat.",
+        "url": "https://www.investors.com/news/oscar-health-stock-medical-costs-aca-investor-update/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-16T12:03:24+00:00",
         "description": ""
       },
       {
         "title": "Dow Jones Futures Rise As Oil Prices, Yields Fall Before Fed Rate Hike; Will Market Rally Bid Bond Voyage?",
         "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo",
         "source": "Yahoo Finance",
-        "published": "2026-09-16T11:45:16+00:00",
+        "published": "2026-09-16T12:03:07+00:00",
         "description": ""
       },
       {
-        "title": "Here\u2019s how many Americans have $500K saved for retirement \u2014 and it\u2019s more than you might think. Are you in this group?",
-        "url": "https://finance.yahoo.com/markets/articles/many-americans-500k-saved-retirement-114500328.html",
+        "title": "'The finance bros are gonna hate me for this': Tori Dunlap says \u2018boring strategy\u2019 made her a millionaire by 27",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/finance-bros-gonna-hate-tori-120000680.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-16T11:45:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Fed meeting live updates: Anticipation builds with Fed expected to hike interest rates for first time in 3 years",
-        "url": "https://finance.yahoo.com/economy/policy/live/federal-reserve-meeting-live-updates-chairman-kevin-warsh-143452661.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-15T14:34:52+00:00",
+        "published": "2026-09-16T12:00:00+00:00",
         "description": ""
       },
       {
@@ -1659,17 +1659,17 @@
         "description": ""
       },
       {
-        "title": "Cemetery plot prices jumped 65% from 2018 to 2024, and now people are trying to flip them for profit",
-        "url": "https://finance.yahoo.com/real-estate/articles/cemetery-plot-prices-jumped-65-113500939.html",
+        "title": "Stock market today: Dow, S&P 500, Nasdaq rise ahead of crucial Fed interest rate decision",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-16-dow-sp-500-nasdaq-fed-meeting-decision-080356525.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-16T11:35:00+00:00",
+        "published": "2026-09-16T08:03:56+00:00",
         "description": ""
       },
       {
-        "title": "Co-investment and directs to eclipse primary funds, buyers say",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/co-investment-directs-eclipse-primary-112810718.html",
+        "title": "Here\u2019s how many Americans have $500K saved for retirement \u2014 and it\u2019s more than you might think. Are you in this group?",
+        "url": "https://finance.yahoo.com/markets/articles/many-americans-500k-saved-retirement-114500328.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-16T11:28:10+00:00",
+        "published": "2026-09-16T11:45:00+00:00",
         "description": ""
       }
     ],
@@ -1750,72 +1750,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7683.75,
-      "change": 94.5,
-      "change_percent": 1.25,
+      "price": 7684.5,
+      "change": 95.25,
+      "change_percent": 1.26,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29422.25,
-      "change": 467.25,
-      "change_percent": 1.61,
+      "price": 29428.5,
+      "change": 473.5,
+      "change_percent": 1.64,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52694.0,
-      "change": 579.0,
+      "price": 52691.0,
+      "change": 576.0,
       "change_percent": 1.11,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2903.2,
-      "change": 30.1,
-      "change_percent": 1.05,
+      "price": 2902.6,
+      "change": 29.5,
+      "change_percent": 1.03,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 103.42,
-      "change": -2.41,
-      "change_percent": -2.28,
+      "price": 103.8,
+      "change": -2.03,
+      "change_percent": -1.92,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4385.0,
-      "change": 52.2,
-      "change_percent": 1.2,
+      "price": 4386.7,
+      "change": 53.9,
+      "change_percent": 1.24,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 65.28,
-      "change": 2.04,
-      "change_percent": 3.22,
+      "price": 65.2,
+      "change": 1.96,
+      "change_percent": 3.11,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1791.8,
-      "change": 18.6,
-      "change_percent": 1.05,
+      "price": 1792.3,
+      "change": 19.1,
+      "change_percent": 1.08,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1325.5,
-      "change": 36.3,
-      "change_percent": 2.82,
+      "price": 1322.0,
+      "change": 32.8,
+      "change_percent": 2.54,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.94,
-      "change": 0.03,
-      "change_percent": 0.86,
+      "price": 2.96,
+      "change": 0.04,
+      "change_percent": 1.4,
       "name": "Natural Gas Oct 26"
     }
   ],

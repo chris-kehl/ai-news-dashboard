@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T09:16:28.971308",
+  "timestamp": "2026-09-17T09:19:31.146480",
   "summary": "Key topics today:\n- - Nvidia announces native GPU programming in Rust (r/HackerNews, 201 pts)\n- - Training a 4B model to produce 81% faster query plans than Postgres (r/HackerNews, 201 pts)\n- - GLM Built Its Own Inference Infrastructure (r/HackerNews, 101 pts)\n- - CCC invites all model citizens to 40C3 (r/HackerNews, 101 pts)\n- - Xiaomi Mimo 2.6 live post-training dashboard (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -27,14 +27,6 @@
       "text": "SOL +3.5% @ $100.51"
     },
     {
-      "type": "buy",
-      "asset": "DLXY",
-      "price": 2.29,
-      "change": 453.14,
-      "category": "stock",
-      "text": "DLXY +453.1% momentum @ $2.29"
-    },
-    {
       "type": "sell",
       "asset": "CTNT",
       "price": 0.04,
@@ -43,12 +35,20 @@
       "text": "CTNT -72.2% drop @ $0.04"
     },
     {
-      "type": "sell",
-      "asset": "COIN",
-      "price": 164.51,
-      "change": -14.07,
+      "type": "buy",
+      "asset": "AEHL",
+      "price": 9.22,
+      "change": 51.89,
       "category": "stock",
-      "text": "COIN -14.1% drop @ $164.51"
+      "text": "AEHL +51.9% momentum @ $9.22"
+    },
+    {
+      "type": "buy",
+      "asset": "SDST",
+      "price": 0.16,
+      "change": 17.65,
+      "category": "stock",
+      "text": "SDST +17.6% momentum @ $0.16"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-17T13:16:11.894757",
+    "timestamp": "2026-09-17T13:19:21.221003",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,21 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-17T13:15:45.625155",
+    "timestamp": "2026-09-17T13:18:54.195210",
     "trending": [
-      {
-        "symbol": "DLXY",
-        "price": 2.29,
-        "change": 1.88,
-        "change_percent": 453.14,
-        "name": "Delixy Holdings Limited"
-      },
       {
         "symbol": "CTNT",
         "price": 0.04,
         "change": -0.11,
         "change_percent": -72.19,
         "name": "Cheetah Net Supply Chain Servic"
+      },
+      {
+        "symbol": "AEHL",
+        "price": 9.22,
+        "change": 3.15,
+        "change_percent": 51.89,
+        "name": "Antelope Enterprise Holdings Li"
+      },
+      {
+        "symbol": "SDST",
+        "price": 0.16,
+        "change": 0.02,
+        "change_percent": 17.65,
+        "name": "Stardust Power Inc."
       },
       {
         "symbol": "DAIC",
@@ -510,13 +517,6 @@
         "change": -2.82,
         "change_percent": -1.33,
         "name": "Nebius Group N.V."
-      },
-      {
-        "symbol": "IREN",
-        "price": 42.62,
-        "change": -0.55,
-        "change_percent": -1.27,
-        "name": "IREN LIMITED"
       },
       {
         "symbol": ".DJI",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-17T13:16:08.147691",
+    "timestamp": "2026-09-17T13:19:17.934420",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.44,
-        "change": -12.82,
+        "price": 15.42,
+        "change": -12.93,
         "type": "index"
       },
       {
@@ -1016,13 +1016,13 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7717.75,
-        "change": 2.13,
+        "price": 7718.25,
+        "change": 2.14,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29731.0,
+        "price": 29730.0,
         "change": 2.65,
         "type": "future"
       },
@@ -1034,80 +1034,80 @@
       },
       {
         "symbol": "RTY=F",
-        "price": 2923.6,
-        "change": 2.16,
+        "price": 2923.2,
+        "change": 2.15,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 100.05,
-        "change": -2.32,
+        "price": 99.98,
+        "change": -2.39,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4406.2,
-        "change": 0.43,
+        "price": 4409.0,
+        "change": 0.49,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 65.83,
-        "change": 2.4,
+        "price": 66.03,
+        "change": 2.7,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1797.0,
-        "change": 0.77,
+        "price": 1797.3,
+        "change": 0.79,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1306.5,
-        "change": 0.49,
+        "price": 1307.5,
+        "change": 0.57,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.88,
-        "change": -0.42,
+        "change": -0.35,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 226.69,
-        "change": 4.53,
+        "price": 226.96,
+        "change": 4.45,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76594,
-        "change": 1.14,
+        "price": 76629,
+        "change": 1.1,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2454.99,
-        "change": 2.32,
+        "price": 2455.9,
+        "change": 2.21,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 100.45,
-        "change": 3.37,
+        "price": 100.44,
+        "change": 3.21,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.26,
-        "change": 5.0,
+        "price": 11.27,
+        "change": 4.93,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.59,
-        "change": 4.59,
+        "change": 4.41,
         "type": "crypto"
       },
       {
@@ -1174,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "OpenAI flags new concerning AI behavior, to track model misalignment regularly",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5wenVuMHkxd2dIMl9kOUdPblJhbUFSeWgxUWoxS21fOUdHNHZHbGVhMEVvUnJVMC1Wa1hFd0x5RlRSUFhpSXYtSzFCUE96bUNFUW9EMTN3OVQ3ZkRKX0gwSW8zOFBNR0FIMVFVT09ndktOWE8zTi1EcDdOOUM?oc=5",
-      "source": "NPR",
+      "title": "OpenAI finds 6 new cases of \u2018concerning\u2019 AI behavior",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRV9SMHNrRUxYLVFTajdVM210SE9tazBWaWhVOU5QY1RzaEdMbkNHZUpIMWd4b2tzUUtKdlB5RDYwVTE5b19rbGc5andCb3BiX2hyN3dOeDlTazlrRS1FTFVobld5SzZTbWl3WTBldXFtM25GVjBZaldPOENoNG1KWUtDOFVrWloxcVgzNXpB?oc=5",
+      "source": "politico.eu",
       "category": "business",
       "published": "Thu, 17 Sep 2026 ",
       "description": "",
@@ -1214,21 +1214,21 @@
       "author": ""
     },
     {
-      "title": "Forbes drops America's richest people list; David Steward, Lukas Walton lead for Missouri and Illinois",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNNjVzaEhLclhob0Z3MUhtQkptbGs2OW0xMWRwcFRUUnVMWXZpclFJNHd6ZkJveEhBYUFxVjlQQV96WXdjbkxXbGFiamhYRzMzS2JWOXJ6VWFoNUowbHA1WGYwNEdxUnAyOGJNbEJ5NWRfYmpQYWJwcmh6UWwweVVuanJaZ0VvNWltR01HdkJVek1OUzh6czRUVlZVeGNnWkJzc2VhU3NYRENEVUVsYWNiMHRfMHdHRUs5UERMNHltZlZRSVkzTkZRdW8zTVNwMXo5VkMwUDRCMVpfQkJYQzRaU1c2aWlvelpOZVVxcjQ1UlVoQVY4ckdqTng5QS1JNzdjR1hyWGN6N045UHpSRzVOVA?oc=5",
-      "source": "KSDK",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Treasury yields move lower after Fed kicks off hiking cycle",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMXoyYjNEeDNtLVZSeExNcFBFX3drcEU4blJMRVhfWEhfdjQ4cTduV2RiNTNPY0hRalg3Q2RpZ3lJTUxSaGg0SW1RUDMxTDdGUWYwcm9SM3JwVktvVVVUenZGcHYySmVFbERlU1RWOWd2NjFSLWV2OFo1RlFsUXBFLVZOcmpudUE4Zk8zcmpVVmJkaGtQNHpEejFIQVfSAaIBQVVfeXFMTnJXaU0xT0dhOWFnLTBxMFN3N25vUEVlei1qcmRoamx5ZVFRY2Z1UmRWMTllQ2I5XzV4MnJrVkxiVFc2NFhmYUhjQ3hEeWJwOUFIS2k1TGVMcDFwbGlKaE1qVG5RczY1bGZnV2RWbXR3Rm5GNTg3cElfY3BiS2JfYzFCa2w5YW1zRE9ydFVmc0YzLUYtQ0lvYWdUM0NyUHAzMVpB?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Thu, 17 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Forbes drops America's richest people list; David Steward, Lukas Walton lead for Missouri and Illinois",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNNjVzaEhLclhob0Z3MUhtQkptbGs2OW0xMWRwcFRUUnVMWXZpclFJNHd6ZkJveEhBYUFxVjlQQV96WXdjbkxXbGFiamhYRzMzS2JWOXJ6VWFoNUowbHA1WGYwNEdxUnAyOGJNbEJ5NWRfYmpQYWJwcmh6UWwweVVuanJaZ0VvNWltR01HdkJVek1OUzh6czRUVlZVeGNnWkJzc2VhU3NYRENEVUVsYWNiMHRfMHdHRUs5UERMNHltZlZRSVkzTkZRdW8zTVNwMXo5VkMwUDRCMVpfQkJYQzRaU1c2aWlvelpOZVVxcjQ1UlVoQVY4ckdqTng5QS1JNzdjR1hyWGN6N045UHpSRzVOVA?oc=5",
+      "source": "KSDK",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1246,7 +1246,7 @@
     {
       "title": "Mortgage rate predictions for the next five years: A new data-powered forecast through 2031",
       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPaEF2UGJ6dURlbnVLT0xmaW9QT0dvb1hiRThnVlplMkZtS3FteTBHNzdFeFd6TXNpbGxxbkxKN3luaG1CMkpOOWtaeWRaY0QyREoxSEpIMFhfaTNZRk52eGtnMzhrY0JMd2tFTnNaeFE2Y0YwcDZabk5nZGxJY0wzT3M5dmpaMHlqdlZPeUFZNTd1NWZUR1EwdzZTYXBNaC1HTU10UEdCYU5qU04tR256NVg5RWhFRTRJSkNDTTFSUVN3XzRfZDJzUmJRTDJDSEtXT1lpWWpuM2tXeUhlZzJCU0JCbWhwYklYb0xmWG1ya2l1SWNyUVNaRjJB?oc=5",
-      "source": "finance.yahoo.com",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1306,11 +1306,11 @@
       "author": ""
     },
     {
-      "title": "Galaxy S27 Ultra said to get improved image processing for more natural looking photos",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT0p1VDlFYjVZak5ZZlFNM1Jfa3E4d0JTUnBicVU2Q0JLeVd0bU9wRUhhbjZvQk9YNm9rUkJiS2JwYm9KV2JrUVdCMnBhclBWcmNwdTA2eXdpQXh3cVhGOVRIY0lSNnlHV0RCcnRRTUxNVlZSVmZWblpWVVI1aUFJZWkwX3ItMzluWjhNdk1CR3FhbTRJckgteElkbEViakdZdkNrN1lQdmhwa2xHODlQREFOSG1CcnlSZWE1NS1wcFNlM2RITzZkeWxLNA?oc=5",
-      "source": "Notebookcheck",
+      "title": "Tokyo Game Show 2026: Bill Skarsg\u00e5rd Cast as Lead Role in PHYSINT",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGpfa2FuLWEwNVNjX2dibElyOUpBckhHNHdRTkQtVHNYek5GTTJLWmxKb0JFVW5WQWJxVHF6a2wtdW05bWdKM2c0QjdidHBWTU5jdnZSSVd1dVVHd09WU2puVjZQdzN6b0ltMUhfeUlneG5HMjBEdG9jdVFjRl9mdWg0a3A0THotYTFZRUFBVU8taXRsQXZSamFkQVHSAaIBQVVfeXFMTW5VYUxfd0xEa09mZjduVGF3Z0JvVlRhN2ZHRlVBc21URklIRnhMTGExZy1GOHR5cW1aa2RKckphS1FuUDB6a0p0VC1jaWxpTjkwRFZ2UFRILVVzN0lHUHVud1pfdlQ1NDc2T0FPVmpmT1lQd3FPb2w2NURlQ0dZNVdBOHV2VFlONlV2RWhlTkhrUzJGd2pBWG1DMlJoSnhYdVBn?oc=5",
+      "source": "XBOX Wire",
       "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
+      "published": "Thu, 17 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1326,11 +1326,11 @@
       "author": ""
     },
     {
-      "title": "Tokyo Game Show 2026: Bill Skarsg\u00e5rd Cast as Lead Role in PHYSINT",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGpfa2FuLWEwNVNjX2dibElyOUpBckhHNHdRTkQtVHNYek5GTTJLWmxKb0JFVW5WQWJxVHF6a2wtdW05bWdKM2c0QjdidHBWTU5jdnZSSVd1dVVHd09WU2puVjZQdzN6b0ltMUhfeUlneG5HMjBEdG9jdVFjRl9mdWg0a3A0THotYTFZRUFBVU8taXRsQXZSamFkQVHSAaIBQVVfeXFMTW5VYUxfd0xEa09mZjduVGF3Z0JvVlRhN2ZHRlVBc21URklIRnhMTGExZy1GOHR5cW1aa2RKckphS1FuUDB6a0p0VC1jaWxpTjkwRFZ2UFRILVVzN0lHUHVud1pfdlQ1NDc2T0FPVmpmT1lQd3FPb2w2NURlQ0dZNVdBOHV2VFlONlV2RWhlTkhrUzJGd2pBWG1DMlJoSnhYdVBn?oc=5",
-      "source": "XBOX Wire",
+      "title": "Qualcomm now faces rival with bigger market cap",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9wYUc4UlhtZ05mY3JaWFM5cVpBMnh3SzBJVXlxVlQ2S0NWVTEyQTByR0RqZl9xOVNROUk5MzdQLWVPdHgxSUM4dlVQcTUtREt5djZUNWFDRTZRcEJaWUI5dktkN2k2ZFRESkQwR3h1Yw?oc=5",
+      "source": "thestreet.com",
       "category": "business",
-      "published": "Thu, 17 Sep 2026 ",
+      "published": "Wed, 16 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1538,7 +1538,7 @@
     "changePercent": 0.02,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 17 Sep: 28,945.06, up +0.02% -- BULLISH. none. Counter: price below SMA20, RSI 44.7 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-17T09:16:26.158726"
+    "timestamp": "2026-09-17T09:19:26.130097"
   },
   "sticky": {
     "cnbc": [
@@ -1734,72 +1734,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7717.5,
-      "change": 161.0,
-      "change_percent": 2.13,
+      "price": 7719.0,
+      "change": 162.5,
+      "change_percent": 2.15,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29730.0,
-      "change": 766.5,
-      "change_percent": 2.65,
+      "price": 29733.25,
+      "change": 769.75,
+      "change_percent": 2.66,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52537.0,
-      "change": 1030.0,
+      "price": 52539.0,
+      "change": 1032.0,
       "change_percent": 2.0,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2923.3,
-      "change": 61.6,
-      "change_percent": 2.15,
+      "price": 2923.6,
+      "change": 61.9,
+      "change_percent": 2.16,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 100.02,
-      "change": -2.41,
-      "change_percent": -2.35,
+      "price": 99.86,
+      "change": -2.57,
+      "change_percent": -2.51,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4405.4,
-      "change": 17.9,
-      "change_percent": 0.41,
+      "price": 4410.2,
+      "change": 22.7,
+      "change_percent": 0.52,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 65.83,
-      "change": 1.55,
-      "change_percent": 2.41,
+      "price": 66.01,
+      "change": 1.72,
+      "change_percent": 2.68,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1797.6,
-      "change": 14.4,
-      "change_percent": 0.81,
+      "price": 1798.1,
+      "change": 14.9,
+      "change_percent": 0.84,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1308.0,
-      "change": 7.9,
-      "change_percent": 0.61,
+      "price": 1307.5,
+      "change": 7.4,
+      "change_percent": 0.57,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.88,
       "change": -0.01,
-      "change_percent": -0.45,
+      "change_percent": -0.35,
       "name": "Natural Gas Oct 26"
     }
   ],

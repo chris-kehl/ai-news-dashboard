@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-16T22:16:14.524285",
-  "summary": "Key topics today:\n- - Nvidia announces native GPU programming in Rust (r/HackerNews, 201 pts)\n- - Training a 4B model to produce 81% faster query plans than Postgres (r/HackerNews, 201 pts)\n- - OpenAI Discloses Six New Incidents of \u2018Concerning\u2019 A.I. Behavior (r/HackerNews, 201 pts)\n- - Michael Burry slams OpenAI, Anthropic for 'self-serving' calls to slow AI (r/HackerNews, 201 pts)\n- - Training Text-to-Image Models 3.6\u00d7 Faster (r/HackerNews, 201 pts)",
+  "timestamp": "2026-09-16T22:23:26.507796",
+  "summary": "Key topics today:\n- - Nvidia announces native GPU programming in Rust (r/HackerNews, 201 pts)\n- - Training a 4B model to produce 81% faster query plans than Postgres (r/HackerNews, 201 pts)\n- - OpenAI Discloses Six New Incidents of \u2018Concerning\u2019 A.I. Behavior (r/HackerNews, 201 pts)\n- - Training Text-to-Image Models 3.6\u00d7 Faster (r/HackerNews, 201 pts)\n- - Xiaomi Mimo 2.6 live post-training dashboard (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "buy",
@@ -35,20 +35,20 @@
       "text": "MEDS +87.3% momentum @ $1.62"
     },
     {
+      "type": "buy",
+      "asset": "AXTI",
+      "price": 64.3,
+      "change": 12.69,
+      "category": "stock",
+      "text": "AXTI +12.7% momentum @ $64.30"
+    },
+    {
       "type": "sell",
       "asset": "COIN",
       "price": 172.11,
       "change": -10.1,
       "category": "stock",
       "text": "COIN -10.1% drop @ $172.11"
-    },
-    {
-      "type": "sell",
-      "asset": "SNYR",
-      "price": 0.08,
-      "change": -9.89,
-      "category": "stock",
-      "text": "SNYR -9.9% drop @ $0.08"
     },
     {
       "type": "watch",
@@ -82,14 +82,6 @@
       "score": 201,
       "comments": 0,
       "url": "https://www.nytimes.com/2026/09/16/technology/openai-model-safety-guardrails.html",
-      "created": ""
-    },
-    {
-      "title": "Michael Burry slams OpenAI, Anthropic for 'self-serving' calls to slow AI",
-      "subreddit": "HackerNews",
-      "score": 201,
-      "comments": 0,
-      "url": "https://nypost.com/2026/09/14/business/big-short-trader-michael-burry-slams-openai-anthropic-for-self-serving-calls-to-slow-ai/",
       "created": ""
     },
     {
@@ -139,12 +131,20 @@
       "comments": 0,
       "url": "https://github.com/vinnylarouge/jevlike",
       "created": ""
+    },
+    {
+      "title": "Accurate Models of AMD Matrix Cores",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://arxiv.org/abs/2609.14845",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-17T02:16:06.550143",
+    "timestamp": "2026-09-17T02:23:18.610325",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-17T02:15:42.326769",
+    "timestamp": "2026-09-17T02:22:50.719507",
     "trending": [
       {
         "symbol": "MEDS",
@@ -454,6 +454,13 @@
         "change": 0.76,
         "change_percent": 87.28,
         "name": "DataMeds AI, Inc."
+      },
+      {
+        "symbol": "AXTI",
+        "price": 64.3,
+        "change": 7.24,
+        "change_percent": 12.69,
+        "name": "AXT Inc"
       },
       {
         "symbol": "SNYR",
@@ -470,11 +477,11 @@
         "name": "ON Semiconductor Corporation"
       },
       {
-        "symbol": "DAIC",
-        "price": 2.18,
-        "change": -0.1,
-        "change_percent": -4.39,
-        "name": "CID HoldCo, Inc."
+        "symbol": "GLOO",
+        "price": 3.28,
+        "change": -0.14,
+        "change_percent": -4.09,
+        "name": "Gloo Holdings, Inc."
       },
       {
         "symbol": "INTC",
@@ -489,13 +496,6 @@
         "change": -8.31,
         "change_percent": -3.95,
         "name": "Boeing Company (The)"
-      },
-      {
-        "symbol": "CRWV",
-        "price": 80.92,
-        "change": -2.06,
-        "change_percent": -2.48,
-        "name": "CoreWeave, Inc."
       },
       {
         "symbol": "NBIS",
@@ -547,11 +547,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "DLXY",
-        "price": 0.41,
-        "change": 0.0,
-        "change_percent": 0.24,
-        "name": "Delixy Holdings Limited"
+        "symbol": "SNAP",
+        "price": 5.83,
+        "change": -0.01,
+        "change_percent": -0.17,
+        "name": "Snap Inc."
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-17T02:16:02.911155",
+    "timestamp": "2026-09-17T02:23:12.823235",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,104 +1016,110 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7663.25,
-        "change": 0.98,
+        "price": 7661.25,
+        "change": 0.95,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29427.0,
-        "change": 1.63,
+        "price": 29407.25,
+        "change": 1.56,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52226.0,
-        "change": 0.21,
+        "price": 52215.0,
+        "change": 0.19,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2899.8,
-        "change": 0.93,
+        "price": 2898.6,
+        "change": 0.89,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.2,
-        "change": -3.43,
+        "price": 102.33,
+        "change": -3.31,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4334.2,
-        "change": 0.03,
+        "price": 4319.6,
+        "change": -0.3,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 63.91,
-        "change": 1.07,
+        "price": 63.51,
+        "change": 0.43,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1777.4,
-        "change": 0.24,
+        "price": 1770.8,
+        "change": -0.14,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1303.0,
-        "change": 1.07,
+        "price": 1300.0,
+        "change": 0.84,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.9,
-        "change": -0.65,
+        "change": -0.58,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 222.74,
-        "change": 2.93,
+        "price": 222.27,
+        "change": 2.43,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76113,
-        "change": 0.65,
+        "price": 76069,
+        "change": 0.37,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2419.06,
-        "change": 1.07,
+        "price": 2417.17,
+        "change": 0.77,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 98.95,
-        "change": 2.21,
+        "price": 98.86,
+        "change": 1.8,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.07,
-        "change": 2.27,
+        "price": 11.06,
+        "change": 1.83,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.5,
-        "change": 3.87,
+        "price": 7.48,
+        "change": 3.21,
         "type": "crypto"
       },
       {
         "symbol": "MEDS",
         "price": 1.62,
         "change": 87.28,
+        "type": "mover"
+      },
+      {
+        "symbol": "AXTI",
+        "price": 64.3,
+        "change": 12.69,
         "type": "mover"
       },
       {
@@ -1129,9 +1135,9 @@
         "type": "mover"
       },
       {
-        "symbol": "INTC",
-        "price": 101.05,
-        "change": 3.97,
+        "symbol": "GLOO",
+        "price": 3.28,
+        "change": -4.09,
         "type": "mover"
       },
       {
@@ -1162,12 +1168,6 @@
         "symbol": "BB",
         "price": 7.64,
         "change": -1.42,
-        "type": "mover"
-      },
-      {
-        "symbol": "FLNC",
-        "price": 9.3,
-        "change": -1.17,
         "type": "mover"
       }
     ]
@@ -1214,9 +1214,19 @@
       "author": ""
     },
     {
-      "title": "OpenAI discloses six new AI safety incidents",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOT013aGlZYVZ5b3FNeC1BT3VXbk1WYi1HUVk3bDFaVTlJdnhCaXhvOXNOMHJGaG85MmFTalFwUEFlU0xRMktvMkxTTGtnaE5kdTZFVkVCOGtzSzQ0T0d2VnNPLTM0VVIwOVpUb25QbkJXeVZLYmxQdmhRTzlFRlg1bQ?oc=5",
-      "source": "Axios",
+      "title": "OpenAI reports 6 new instances of 'concerning model behavior' since March",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWnJFRzVYYTQtWnJIX3RZV2tpa0VLM0g3SmVMbXdFSDQzODhNcmdidk50c1FyeTdBbkJKcVhxbS1qaVRMQXdBWk1lOFR5VF9TU0FRN2JrUTVJQ3FtNzR0TE1Jb3F5Q0pDYUI1WXhoNGtYdVVKYnRrZWJTS3BlLXFsQmNvUGRPM2ZEX183b19Cd0R4dnh6MzRubHRvdkQtV25HQlHSAacBQVVfeXFMUHMwbmllN0J6dk9zMVRZblEzOFRMS2YwTWY0Y2hUSllVSXU0eWkxcUoyQzFzMmswQ01xNzhET1Y4cDZhZkpHY1hPY1Z3Y00xUVpHb0FESXA4ckNSNmwyZmZJcnBQaXBjQXpEWmlUOEwyN2ZnOTc5OUJKVFpSVWp0cml6eTQyUWJFV3Vyb1gzY1QxU2hQT1lQb2FWTktrdElMbEhHcGljcW8?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Goldman CEO Warns of Higher Costs, Softness in Fixed Income",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYVpUUG4tM002dGJ5OC1QVXpvSVJxSHZtX3gyYXFZVzRCT0hlQ1hKUklVNkNVNkNITVBjMWNoOHRhbFFtU0piNElucDF4aTlDeDBKVXptUjMzYjFmWWpNLWxWTzA5cVZiWDVtSHpqY29BWV94WUtmbkFLeGNlYU9TX3FmcG84WmVpNWlTaW5EQmc5VlRkX0xLejR6MmpWR1Z6dXpJZkxZay1HTFpYb3c?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1234,19 +1244,9 @@
       "author": ""
     },
     {
-      "title": "Goldman CEO Warns of Higher Costs, Softness in Fixed Income",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUDRsTjNUUkg3UUlqRjM4QTJyMUtSUmx6cU56dFlzV0xlNWRaRVc5QlFFUFJVbDhNb1czQ2xFOGNXTnI3OHRzaEJjbmVPWW9meXlBUGE1ZHdlYm5XdUgzNWk1YlJsVE9NOFNPMlRLdEtYZ21sM2JmcTBOcjVEWURpVHpRX3k1aFlEakFyc1R1ZE9Oa2pJNl9ZQ29yRQ?oc=5",
-      "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "'Science fiction': Transport companies \u2014 the backbone of economy \u2014 are sounding alarm on fuel prices",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4aDBZaVV2SGFidkZYcUJkVU10cEtOcVZ6MEsyTHVwVjNjWGFPVFBjN0hSSzJ6MWRDd0ZpNWhSMFdXSzZ4djZQZHBvb3VMdGh5aS0tR2gyd3Z0QWFDOVNmdk9FbTRYWElnVFVzS0s4bEZNbUZZNk44eDh2NlZTZ9IBgwFBVV95cUxNbG5pWFh1OUtQVHFFZUozTURzdWEydVVVQkhyVjIta2pvci14THViaVRoWEpFX05MczB2dHFjU3B4OHpVTmxVMU5iTm8wekVUUk56RlhqTEx5cHA3MktFZ2taOG1lOURtRWFSTzNGcy12czlyM21Yck9GdjhDVnhXSllCRQ?oc=5",
-      "source": "CNBC",
+      "title": "Anthropic policy chief says winning AI race key for safety",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM19PXzlNZVBFMl9UWXZTczVxNm1panFoLVNIb1dqNmd3UUtPMGs2d3h3d01WamVrVU9felQ2YU84R2F1dDlmRG9VTWVCT0lsTVNOTC10SXZLTHBkc2xqYmMzdTV0ZVRsV1llOEJkUUFMTGRlTHBQVUhDeFZOeUxaOVpKMG16LWVlN2REb05na1ZuZllhM0hSRTc2aGdfZXh0UGVwTlh1bHR3R0po?oc=5",
+      "source": "Politico",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1296,19 +1296,9 @@
       "author": ""
     },
     {
-      "title": "After accusations of selling \u2018perv glasses,\u2019 Meta prepares to sell a pair without a camera",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZG5hQzk0OS1pYnE1M0R5YWFWYnh5bjlrQVNLbm9lWHR2SDhHRFpWNF9YOFJ6d2hFbWN0aW93ZXh4VWN5cU5ZeWhkcG9wc3RJX285OV9mZndQYm1Fd3RVU2xDZk82SWRqR0hvY0c4cFowSTlXNThmdEFhb1VZd1R0ZzdIdWN1Sl9XeDh4OEhlSmFreDRZbDVQdVd3U01lZjIzLWU5VlBhV2FBNWhmWnBLOWlNcXVRaENJRkc2My1aUQ?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Wed, 16 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Super Ugly Mew Cards Are The Chase For Pok\u00e9mon\u2019s 30th Anniversary, And One\u2019s Already Sold For $20k",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ0tEaUQtcDhSYmlnSXBrTFJmc1NLSk10Umh4a2VzSWpnUlQ0eEYtMmVzSFE2eXpCTnA3QUJhVnhkWXJIdXdhN1Rva3BodkNtcnBwMHdLMnpFLXVUc3JpSGRyX2tmNGRvTlE2QW9nekt6UFRXYXloMGVJQUNZWEx4Rlh6NmhZWFFM?oc=5",
-      "source": "Kotaku",
+      "title": "Pok\u00e9mon fans queue for hours for 'biggest' card drop",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9KTThnblctWWlua2RnLXVtQVl3WHU3bzJEZmlNcXhZVlBmRS1SdEhLWGxDQlh4YWRMQUVXckFPRVJrZVhheDJDSHJyeFZvMEdMMU9raW1JYXJKTG8?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1329,6 +1319,16 @@
       "title": "Forget the iPhone Duo \u2014 the First iPhone Had More Hype and a More Shocking Price",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRkFjb2hsakhDYkw2bDBWb2JoZ0FVUFM4VGxYWUFHQVNrQTNYQWh6dFJUUzRlb0lTMTNpT190NFhPbG1uUHluN0R4ZXJSQ2d3d3NQWGhtREhZaTVPb1dEa296M1ZuMFBUamV1U0d4MFdVLUhVMkY5bDZfZUxIU3dYQm5yOHA2UXhQaGdtYTRURWNtY3J3T04tMzRtdEdKQ2NNSDZjaE1nd2lYOEQ3cEkzZ2hn?oc=5",
       "source": "CNET",
+      "category": "business",
+      "published": "Wed, 16 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Nintendo opens up Fire Emblem with the gigantic Fortune\u2019s Weave",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTFMyQ1BwaGtNQnJYQ2dTTkx3SFpwSWpsRUlfSEU0V0dNX3FBZWI5MS1ZSkVMbnlGN1pWYk5uWHFNOHNhM1VBamtOM2J2SmcwZEZxU0ZJSzh5Szg3Wllic1QyRE1UaHg0OTM4clFJS01RYlBzOTJnRy0zX1FtQmhsd1FGeXhYZkU?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Wed, 16 Sep 2026 ",
       "description": "",
@@ -1562,7 +1562,7 @@
     "changePercent": 0.02,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Wed 16 Sep: 28,945.06, up +0.02% -- BULLISH. none. Counter: price below SMA20, RSI 44.7 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-16T22:16:12.328621"
+    "timestamp": "2026-09-16T22:23:24.243845"
   },
   "sticky": {
     "cnbc": [
@@ -1632,31 +1632,31 @@
         "description": ""
       },
       {
-        "title": "Oracle Adds $700 Million to the Cost of its AI Transformation",
-        "url": "https://finance.yahoo.com/technology/ai/articles/oracle-adds-700-million-cost-143021878.html",
+        "title": "Bank of America Warns of 10%+ Drop in Q3 Investment Banking Fees",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-warns-10-drop-143911257.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:30:21+00:00",
+        "published": "2026-09-15T14:39:11+00:00",
         "description": ""
       },
       {
-        "title": "Nvidia\u2019s Anthropic Investment: Securing AI Demand Amid Rising Competition",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-anthropic-investment-securing-ai-142836122.html",
+        "title": "BioNTech\u2019s Lung Cancer Drug Shows Signs of a Major Breakthrough",
+        "url": "https://finance.yahoo.com/healthcare/articles/biontech-lung-cancer-drug-shows-143753280.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:28:36+00:00",
+        "published": "2026-09-15T14:37:53+00:00",
         "description": ""
       },
       {
-        "title": "How Is Global Payments' Stock Performance Compared to Other Industrial Stocks?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/global-payments-stock-performance-compared-143107523.html",
+        "title": "Planted Raises $31.8 Million to Accelerate Autonomous Solar Deployment",
+        "url": "https://finance.yahoo.com/energy/articles/planted-raises-31-8-million-143619127.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:31:07+00:00",
+        "published": "2026-09-15T14:36:19+00:00",
         "description": ""
       },
       {
-        "title": "Apollo and J&J Face a High-Stakes Orthopedics Deal",
-        "url": "https://finance.yahoo.com/healthcare/articles/apollo-j-j-face-high-142856052.html",
+        "title": "Lilly\u2019s Foundayo Quickly Gains Ground in the Oral Weight-Loss Market",
+        "url": "https://finance.yahoo.com/healthcare/articles/lilly-foundayo-quickly-gains-ground-144208132.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:26:32+00:00",
+        "published": "2026-09-15T14:42:08+00:00",
         "description": ""
       },
       {
@@ -1667,17 +1667,17 @@
         "description": ""
       },
       {
-        "title": "Kimberly-Clark Moves to Clear EU Hurdle with Kenvue Asset Sales",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/kimberly-clark-moves-clear-eu-143206212.html",
+        "title": "From Novo Nordisk to \u2018Novo\u2019: A Strategic Reset Amid Rising Lilly Pressure",
+        "url": "https://finance.yahoo.com/healthcare/articles/novo-nordisk-novo-strategic-reset-143625079.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:32:06+00:00",
+        "published": "2026-09-15T14:36:25+00:00",
         "description": ""
       },
       {
-        "title": "Is Equifax Stock Outperforming the Dow?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/equifax-stock-outperforming-dow-142606434.html",
+        "title": "ASML Eyes 110+ EUV Tools in 2028 as AI Chip Demand Accelerates",
+        "url": "https://finance.yahoo.com/technology/ai/articles/asml-eyes-110-euv-tools-143406050.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-15T14:26:06+00:00",
+        "published": "2026-09-15T14:34:06+00:00",
         "description": ""
       }
     ],
@@ -1758,72 +1758,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7663.75,
-      "change": 74.5,
-      "change_percent": 0.98,
+      "price": 7661.5,
+      "change": 72.25,
+      "change_percent": 0.95,
       "name": "E-Mini S&P 500 Sep 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29431.5,
-      "change": 476.5,
-      "change_percent": 1.65,
+      "price": 29410.25,
+      "change": 455.25,
+      "change_percent": 1.57,
       "name": "Nasdaq 100 Sep 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52232.0,
-      "change": 117.0,
-      "change_percent": 0.22,
+      "price": 52214.0,
+      "change": 99.0,
+      "change_percent": 0.19,
       "name": "Mini Dow Jones Indus.-$5 Sep 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2900.1,
-      "change": 27.0,
-      "change_percent": 0.94,
+      "price": 2898.9,
+      "change": 25.8,
+      "change_percent": 0.9,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.16,
-      "change": -3.67,
-      "change_percent": -3.47,
+      "price": 102.31,
+      "change": -3.52,
+      "change_percent": -3.33,
       "name": "Crude Oil Oct 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4334.6,
-      "change": 1.8,
-      "change_percent": 0.04,
+      "price": 4320.4,
+      "change": -12.4,
+      "change_percent": -0.29,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 63.94,
-      "change": 0.7,
-      "change_percent": 1.11,
+      "price": 63.53,
+      "change": 0.29,
+      "change_percent": 0.46,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1777.6,
-      "change": 4.4,
-      "change_percent": 0.25,
+      "price": 1771.5,
+      "change": -1.7,
+      "change_percent": -0.1,
       "name": "Platinum Oct 26"
     },
     {
       "symbol": "PA=F",
-      "price": 1303.5,
-      "change": 14.3,
-      "change_percent": 1.11,
+      "price": 1300.0,
+      "change": 10.8,
+      "change_percent": 0.84,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.9,
       "change": -0.02,
-      "change_percent": -0.65,
+      "change_percent": -0.58,
       "name": "Natural Gas Oct 26"
     }
   ],

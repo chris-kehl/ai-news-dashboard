@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-19T08:16:35.461445",
+  "timestamp": "2026-09-19T08:20:50.640782",
   "summary": "Key topics today:\n- - How OpenAI Used Its Own LLMs to Design Its Jalape\u00f1o Chip (r/HackerNews, 301 pts)\n- - NASA-IBM Lunar Foundation open-Source Geospatial AI Model (r/HackerNews, 201 pts)\n- - GPT-6 Astra Solves a WWI German Radio Cipher (r/HackerNews, 101 pts)\n- - How to Write with an LLM (r/HackerNews, 101 pts)\n- - Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -125,26 +125,26 @@
       "created": ""
     },
     {
-      "title": "\u201cThe Secret Life of Circuits\u201d is here",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
-      "created": ""
-    },
-    {
       "title": "Laya the open source version of Jev",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://laya.convaiinnovations.com/",
       "created": ""
+    },
+    {
+      "title": "\u201cThe Secret Life of Circuits\u201d is here",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-19T12:16:11.595670",
+    "timestamp": "2026-09-19T12:20:43.471118",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-19T12:15:45.706252",
+    "timestamp": "2026-09-19T12:20:18.229428",
     "trending": [
       {
         "symbol": "ACN",
@@ -485,10 +485,17 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2641.34,
-        "change": 29.99,
-        "change_percent": 1.15,
+        "price": 2640.91,
+        "change": 29.56,
+        "change_percent": 1.13,
         "name": "Ethereum USD"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 111.7,
+        "change": -0.9,
+        "change_percent": -0.8,
+        "name": "Solana USD"
       },
       {
         "symbol": "NKE",
@@ -498,24 +505,10 @@
         "name": "Nike, Inc."
       },
       {
-        "symbol": "SOL-USD",
-        "price": 111.75,
-        "change": -0.85,
-        "change_percent": -0.75,
-        "name": "Solana USD"
-      },
-      {
-        "symbol": "ZEC-USD",
-        "price": 1546.98,
-        "change": -10.81,
-        "change_percent": -0.69,
-        "name": "Zcash USD"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 81326.54,
-        "change": 425.08,
-        "change_percent": 0.53,
+        "price": 81306.02,
+        "change": 404.56,
+        "change_percent": 0.5,
         "name": "Bitcoin USD"
       },
       {
@@ -524,6 +517,13 @@
         "change": -14.23,
         "change_percent": -0.5,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "BTC-EUR",
+        "price": 70735.06,
+        "change": 315.51,
+        "change_percent": 0.45,
+        "name": "Bitcoin EUR"
       },
       {
         "symbol": ".DJI",
@@ -968,7 +968,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-19T12:16:07.765700",
+    "timestamp": "2026-09-19T12:20:40.113423",
     "items": [
       {
         "symbol": "SPX",
@@ -1062,50 +1062,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 268.09,
-        "change": 9.53,
+        "price": 268.2,
+        "change": 9.87,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81310,
-        "change": 4.2,
+        "price": 81302,
+        "change": 4.31,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2640.68,
-        "change": 5.53,
+        "price": 2640.85,
+        "change": 5.62,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 111.8,
-        "change": 6.01,
+        "price": 111.72,
+        "change": 5.96,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.5,
-        "change": 5.95,
+        "price": 12.52,
+        "change": 6.22,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.23,
-        "change": 15.72,
+        "price": 9.14,
+        "change": 14.69,
         "type": "crypto"
       },
       {
         "symbol": "BB",
         "price": 7.99,
         "change": 4.58,
-        "type": "mover"
-      },
-      {
-        "symbol": "ACN",
-        "price": 181.29,
-        "change": -4.4,
         "type": "mover"
       },
       {
@@ -1123,7 +1117,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.43,
-        "change": 2.51,
+        "change": 2.42,
         "type": "mover"
       },
       {
@@ -1152,8 +1146,14 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2641.74,
-        "change": 1.16,
+        "price": 2640.59,
+        "change": 1.12,
+        "type": "mover"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 111.67,
+        "change": -0.83,
         "type": "mover"
       }
     ]
@@ -1180,6 +1180,16 @@
       "author": ""
     },
     {
+      "title": "Oil prices are high but could be much worse. Trump has China\u2019s Xi to thank for that",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZS1uVExKbkFEcHpfQ19mc3hFQVZVaEtDdWdZS2RzSWltbFNoMXVUTzhweDBURFBsQXJGYmE5a1MwWkctWG03SG5ZYTd0dDhKLWUxdElNRGgwTmVyTmhoMl9YOW1XVnU5TlJtV3lwU2lqUWcyeFlSNWFjUVhOY3VLVVZ0dk53MDJ6ejFF?oc=5",
+      "source": "AP News",
+      "category": "business",
+      "published": "Sat, 19 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Ever wonder how the Fed's interest rate actually works? We've got answers",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNanRyTXM4ZE00RFhRWlRSYXlhNUx5cGxxRENEUTFSZmlyUU1rNmFGcmpQdVdleGtBNkRoRVZYVkY3ZEY1UU9McXZsQ0ZBNFllQWR2RXhSU0xsc0dCcDVIWUVOeUNZNU9xcTd3MHNJVE5fUE9KMHhxM2tGQ3NDam1CVnJxT0M4MEp3ZllkNEZnRmxWS19JOVBj?oc=5",
       "source": "NPR",
@@ -1193,16 +1203,6 @@
       "title": "Investors warn Anthropic could struggle to sustain revenues post-IPO",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHlWc1I1bW5JN243Qk1QaERIaktRX05iTFZwTTB2ZVpSRnRDdGlEaHFlZ2lHMzVnRzZkUEw0Y0l1allHbjRZeVRKM0lYY0oxZDhjWXpHb3Uxb0poTEhjN3BvU3h2Uk0ydlFvdEVxRjc0Mkx0WUpzVGZNSnlDWjdwMldfR3k?oc=5",
       "source": "Financial Times",
-      "category": "business",
-      "published": "Sat, 19 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Oil prices are high but could be much worse. Trump has China\u2019s Xi to thank for that",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZS1uVExKbkFEcHpfQ19mc3hFQVZVaEtDdWdZS2RzSWltbFNoMXVUTzhweDBURFBsQXJGYmE5a1MwWkctWG03SG5ZYTd0dDhKLWUxdElNRGgwTmVyTmhoMl9YOW1XVnU5TlJtV3lwU2lqUWcyeFlSNWFjUVhOY3VLVVZ0dk53MDJ6ejFF?oc=5",
-      "source": "AP News",
       "category": "business",
       "published": "Sat, 19 Sep 2026 ",
       "description": "",
@@ -1242,6 +1242,16 @@
   ],
   "tech_business": [
     {
+      "title": "Apple Intelligence has 20+ brand new features in iOS 27, here\u2019s the full list",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMmhfWll6anBZT3p6Y2M2M0FmQmlNYUV5dnk4ZXJLWFNzRDVVSk4zV0pWdnI4bWRnY0J6WkhRVC1zR2pHMHRPSHRvYVpqYU9uOTFBVlUxR042aW1sYURybERsX29TZ3FCZGlubEVDRVRid1ZPWjVkbTNRNXBiSFh2UzlrZzdqdXpvZTlZQTN4VUhvTkp0N1FCRktmdXcteGg2czBqWlpYRmhHdw?oc=5",
+      "source": "9to5Mac",
+      "category": "business",
+      "published": "Fri, 18 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "iPhone 18 Pro Max Requires 'Prepare to Ship' Battery Drain Before Shipping",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLVRYVUstVnZpRFFrckpEaVBlZlNJRnBpelBZdDJUODEtUUQyQ3dWWDRKTlUwVFhKQ0FxdE9Wd2NMd1EzLWdZVEVMbE5XSEVyYkxjeDhoanRaNXd5TUVVS0RFWXRJaTZXajdMcVduUTdiMGdwNEJ6TjQya2FTWFB1V0Fn?oc=5",
       "source": "MacRumors",
@@ -1252,11 +1262,11 @@
       "author": ""
     },
     {
-      "title": "Apple VP of hardware talks iPhone Duo durability, crease, hinge, and more",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPazBzRWpRNTdSb3E2NEh0a2hhR2dQUHdFMDhkRnlHWnBJZm1iM1ZSZk9Ec2RaWU9xdjMzamdhTXpmeVNYRTdTTmFpUmNqUlk0NzhIOURuRkx5clZTRFAxcEI0WXJZblRaNDlQZm1hNXh5NDdiaTU0czFiRTZYeWxOd3h1ejZ3QXU3RTZocFJMa2paQkxvZEE5ZkdvcGlXT0szTUp0UA?oc=5",
-      "source": "9to5Mac",
+      "title": "Apple Exec Says 'Hold Us Accountable' on iPhone Duo Crease",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1OZWoyekhBejE2WjRLby1NUzJfLVA2VHJORmZWUlNSeTRrUUVQRzBBU1EtRFkycU9WeXpmeWdEaU5ZZFdYczAtTmpXT1VtWDhndTJySXFFZTFmaWVkSmhJYmpxVWhCZnliZkx5VEVSdw?oc=5",
+      "source": "MacRumors",
       "category": "business",
-      "published": "Fri, 18 Sep 2026 ",
+      "published": "Sat, 19 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1292,19 +1302,9 @@
       "author": ""
     },
     {
-      "title": "Apple Intelligence has 20+ brand new features in iOS 27, here\u2019s the full list",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMmhfWll6anBZT3p6Y2M2M0FmQmlNYUV5dnk4ZXJLWFNzRDVVSk4zV0pWdnI4bWRnY0J6WkhRVC1zR2pHMHRPSHRvYVpqYU9uOTFBVlUxR042aW1sYURybERsX29TZ3FCZGlubEVDRVRid1ZPWjVkbTNRNXBiSFh2UzlrZzdqdXpvZTlZQTN4VUhvTkp0N1FCRktmdXcteGg2czBqWlpYRmhHdw?oc=5",
-      "source": "9to5Mac",
-      "category": "business",
-      "published": "Fri, 18 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Only 19,000 people have successfully reserved Valve's Steam Frame, with many still on the waitlist",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNmx1WF80bUhJMXhJUzhmdDdLTkdfWUtQa1lJdThUUmdzTDhwUkNtLVVvMVZBdmhvTENvb1g4UjZUX2pvU1dyci1UTE1vRmdDNFdBWlRUQllUTGlCaXdTeTU1RU83c2JwQTBWalh4VmdxWU94TXl2V0Z4Q3lEclQyNlMyUHhTakJlYWdpNml2dUhNUTktbzJ5cnBtQzFkLVJNSlhjRkVYYVJ0NUtkaXFnUk1PVkpsd19TNlpFMm4tSHFTZUVCdHFwcm9zSUhFOE1vcDFGWjlzV0lGdDlx?oc=5",
-      "source": "TweakTown",
+      "title": "Apple's iPhone 18 goes on sale as customers line up at stores worldwide",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeEdRbG9FbEhxZnBfTzVLclhGNlo3Q0JmNG5MRlZ1V1ZlQnZqenpnc1BUWng3aFNhY0I3b3N5bmRSbFExU3gxVVYzYjlmWWNlejBUVVQ0OUNNT1lFWmc5ODJsRDF6UnQxRHhIMzVCcl9PZGktSmdJYlcwZ1BkRHQxWnhHdEdrQjRvVDA2X05YaDJCNGNoZGlTN0RORTFuNFlyREHSAacBQVVfeXFMTVNaMG5ZNTQwb2lsLWx4WUViSTd6NTZaMlhZbDNNbEJZeFQ0SHhmVUZEcEJBRk5lQlc2OE4yZ1VSR0F4NWJ5eHNlNTdOVVNrbHNOckEyRTZXT0lEOU9CeUdId0xOMWpMcVUtTFNBNy1WRFJHRDlyWHRaZ0p2X0lKZE0zTGNFaTkxWV9DNUxfWFd1MFJZTkhSN2tJY0U2WnhQVVVQdFcxaHc?oc=5",
+      "source": "Fox Business",
       "category": "business",
       "published": "Fri, 18 Sep 2026 ",
       "description": "",
@@ -1353,6 +1353,14 @@
       "source": "Defense News",
       "published": "Thu, 17 Sep 2026 ",
       "description": "As part of the U.S. Army Blood Link project, the service is seeking new drones that can transport blood supplies in the field.",
+      "relevance_score": 4
+    },
+    {
+      "title": "Doomsday AI: panic, regulation and the China fear",
+      "url": "https://www.aljazeera.com/video/the-listening-post/2026/9/19/doomsday-ai-panic-regulation-and-the-china-fear?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 19 Sep 2026 ",
+      "description": "When tech CEOs warn AI could end humanity, does the media get the story right?",
       "relevance_score": 4
     },
     {
@@ -1484,7 +1492,7 @@
     "changePercent": 0.67,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 19 Sep: 29,644.17, up +0.67% -- BULLISH. price above SMA20, RSI 53.9 building, MACD bullish, modest +0.67% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-19T08:16:32.799435"
+    "timestamp": "2026-09-19T08:20:48.260796"
   },
   "sticky": {
     "cnbc": [
@@ -1547,6 +1555,41 @@
     ],
     "yahoo_finance": [
       {
+        "title": "Dow Jones Futures: Nasdaq, S&P 500 Hold; Robinhood, Sandisk, AMD, Moderna Surge Into Buy Areas",
+        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-robinhood-sandisk-amd-moderna-surge-buy-areas/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-19T12:08:52+00:00",
+        "description": ""
+      },
+      {
+        "title": "\u2018You\u2019re gonna get there\u2019: Dave Ramsey tells divorced mom, 51, with no savings she can retire a millionaire. Here\u2019s how",
+        "url": "https://finance.yahoo.com/small-business/articles/gonna-dave-ramsey-tells-divorced-120500452.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-19T12:05:00+00:00",
+        "description": ""
+      },
+      {
+        "title": "Equinix Plans $5B-$7B Annual Data Center Buildout as AI Demand Accelerates",
+        "url": "https://finance.yahoo.com/technology/ai/articles/equinix-plans-5b-7b-annual-120203982.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-19T12:02:03+00:00",
+        "description": ""
+      },
+      {
+        "title": "Bill Ackman's Pershing Square IPO Breaks Out",
+        "url": "https://www.investors.com/news/bill-ackman-pershing-square-ipo-stock-setting-up/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-19T12:00:59+00:00",
+        "description": ""
+      },
+      {
+        "title": "Robinhood Soars, SpaceX Orbits Entry: Five Stocks Near Buy Points",
+        "url": "https://www.investors.com/news/robinhood-stock-spacex-stocks-near-buy-points/?src=A00220&yptr=yahoo",
+        "source": "Yahoo Finance",
+        "published": "2026-09-19T12:00:39+00:00",
+        "description": ""
+      },
+      {
         "title": "Mark Cuban spent $125,000 on a lifetime American Airlines pass after a drunk dial \u2014 here's why the math worked",
         "url": "https://finance.yahoo.com/markets/articles/mark-cuban-spent-125-000-120000383.html",
         "source": "Yahoo Finance",
@@ -1561,45 +1604,10 @@
         "description": ""
       },
       {
-        "title": "Nasdaq Futures Pare Gains as Treasury Yields Climb",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-pare-gains-treasury-103117849.html",
+        "title": "Carl Icahn Added Nearly 69 Million Shares of His Own Company Last Quarter",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/carl-icahn-added-nearly-69-120057213.html",
         "source": "Yahoo Finance",
-        "published": "2026-09-18T10:31:17+00:00",
-        "description": ""
-      },
-      {
-        "title": "A $5,300 hospital bill arrived 5 years after her husband's death \u2014 she may not owe a single dollar",
-        "url": "https://finance.yahoo.com/healthcare/articles/5-300-hospital-bill-arrived-103000949.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-18T10:30:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Sam Altman, Elon Musk and Dario Amodei want AI slowed as tech stocks tumble. Is your retirement fund overexposed?",
-        "url": "https://finance.yahoo.com/technology/ai/articles/sam-altman-elon-musk-dario-104500837.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-18T10:45:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Credit counseling vs. debt settlement: What to know to start your debt payoff",
-        "url": "https://finance.yahoo.com/personal-finance/personal-loans/article/credit-counseling-vs-debt-settlement-151706017.html",
-        "source": "Yahoo Finance",
-        "published": "2026-02-13T15:17:06+00:00",
-        "description": ""
-      },
-      {
-        "title": "1 Top Dividend ETF Worth Loading Up On With $1,000 Right Now",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/1-top-dividend-etf-worth-103500571.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-18T10:35:00+00:00",
-        "description": ""
-      },
-      {
-        "title": "Gold price today, Friday, September 18, 2026: Gold hits weekly high as inflation concerns fade",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-september-18-2026-gold-hits-weekly-high-as-inflation-concerns-fade-104807567.html",
-        "source": "Yahoo Finance",
-        "published": "2026-09-18T10:48:07+00:00",
+        "published": "2026-09-19T12:00:57+00:00",
         "description": ""
       }
     ],

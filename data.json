@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-26T09:16:04.908594",
+  "timestamp": "2026-09-26T09:21:50.102199",
   "summary": "Key topics today:\n- - Revealing the details of how OpenAI agents hacked Hugging Face (r/HackerNews, 301 pts)\n- - A single function Jev-like wrapper for LLMs, including vision models (r/HackerNews, 201 pts)\n- - Ollaya \u2013 Ollama for open-source, Jev-style decision models (r/HackerNews, 101 pts)\n- - Breaking Up with Google Play: Why Conversations Is Now Free (r/HackerNews, 1 pts)\n- - Fifteen years later, the Apple Cards origin story (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,6 +27,14 @@
       "text": "XRP -3.4% @ $1.54"
     },
     {
+      "type": "buy",
+      "asset": "MXL",
+      "price": 93.84,
+      "change": 11.29,
+      "category": "stock",
+      "text": "MXL +11.3% momentum @ $93.84"
+    },
+    {
       "type": "sell",
       "asset": "ZS",
       "price": 193.05,
@@ -41,14 +49,6 @@
       "change": 4.82,
       "category": "stock",
       "text": "PYPL +4.8% @ $55.04"
-    },
-    {
-      "type": "watch",
-      "asset": "GME",
-      "price": 23.39,
-      "change": -3.35,
-      "category": "stock",
-      "text": "GME -3.4% @ $23.39"
     },
     {
       "type": "watch",
@@ -152,7 +152,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-26T13:15:56.367026",
+    "timestamp": "2026-09-26T13:21:36.539897",
     "prices": [
       {
         "name": "Bittensor",
@@ -454,8 +454,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-26T13:15:35.731380",
+    "timestamp": "2026-09-26T13:21:16.455584",
     "trending": [
+      {
+        "symbol": "MXL",
+        "price": 93.84,
+        "change": 9.52,
+        "change_percent": 11.29,
+        "name": "MaxLinear, Inc"
+      },
       {
         "symbol": "ZS",
         "price": 193.05,
@@ -478,32 +485,18 @@
         "name": "Microsoft Corporation"
       },
       {
-        "symbol": "DIS",
-        "price": 106.15,
-        "change": 2.69,
-        "change_percent": 2.6,
-        "name": "Walt Disney Company (The)"
-      },
-      {
         "symbol": "LINK-USD",
-        "price": 14.21,
-        "change": 0.29,
-        "change_percent": 2.08,
+        "price": 14.24,
+        "change": 0.32,
+        "change_percent": 2.29,
         "name": "Chainlink USD"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 1.54,
-        "change": -0.03,
-        "change_percent": -1.77,
-        "name": "XRP USD"
-      },
-      {
-        "symbol": "AAPL",
-        "price": 341.07,
-        "change": 4.05,
-        "change_percent": 1.2,
-        "name": "Apple Inc."
+        "symbol": "CSAI",
+        "price": 3.53,
+        "change": 0.06,
+        "change_percent": 1.73,
+        "name": "Cloudastructure, Inc."
       },
       {
         "symbol": ".DJI",
@@ -528,17 +521,10 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2686.3,
-        "change": -4.18,
-        "change_percent": -0.16,
+        "price": 2687.12,
+        "change": -3.36,
+        "change_percent": -0.12,
         "name": "Ethereum USD"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 83978.55,
-        "change": -56.37,
-        "change_percent": -0.07,
-        "name": "Bitcoin USD"
       },
       {
         "symbol": ".RUT",
@@ -546,6 +532,20 @@
         "change": 1.98,
         "change_percent": 0.07,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 84008.43,
+        "change": -26.49,
+        "change_percent": -0.03,
+        "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "VYM",
+        "price": 157.68,
+        "change": 0.02,
+        "change_percent": 0.01,
+        "name": "Vanguard High Dividend Yield ET"
       }
     ],
     "meme_momentum": [
@@ -976,7 +976,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-26T13:15:52.503671",
+    "timestamp": "2026-09-26T13:21:32.685949",
     "items": [
       {
         "symbol": "SPX",
@@ -1070,38 +1070,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 330.79,
-        "change": 8.07,
+        "price": 328.62,
+        "change": 8.51,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83986,
-        "change": -0.59,
+        "price": 83980,
+        "change": -0.39,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2686.58,
-        "change": -1.07,
+        "price": 2686.02,
+        "change": -0.87,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 120.76,
-        "change": -0.02,
+        "price": 120.75,
+        "change": 0.59,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.22,
-        "change": 0.95,
+        "price": 14.23,
+        "change": 1.66,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.78,
-        "change": 2.29,
+        "price": 10.77,
+        "change": 2.64,
         "type": "crypto"
       },
       {
@@ -1129,6 +1129,12 @@
         "type": "mover"
       },
       {
+        "symbol": "LINK-USD",
+        "price": 14.29,
+        "change": 2.64,
+        "type": "mover"
+      },
+      {
         "symbol": "AMC",
         "price": 2.94,
         "change": 2.44,
@@ -1141,15 +1147,9 @@
         "type": "mover"
       },
       {
-        "symbol": "LINK-USD",
-        "price": 14.2,
-        "change": 2.01,
-        "type": "mover"
-      },
-      {
-        "symbol": "XRP-USD",
-        "price": 1.54,
-        "change": -1.81,
+        "symbol": "CSAI",
+        "price": 3.53,
+        "change": 1.73,
         "type": "mover"
       },
       {
@@ -1218,16 +1218,6 @@
       "author": ""
     },
     {
-      "title": "Starbucks to close 2 Western New York stores in nationwide shutdown",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPai00WHUwQ1h0UkludldrYXhzY0FDZ0R4MHkwdzdQcTJHNmtKMVRkMTFWXzQ5ZHk1S2JzSlJ6TTFYb0ZhVXlVbFVfV00zaG84UTdmOUdDRDlZSkstdjR5SlpVcnoyZDV2VDRNZmJEMEU5Tkt2bmdZeFpNMlhWUEhKUHo3aXZaeUstWS1TVXg5ajVJaGFtNUZ3Z1MwQWw4VzJMNjBLNnlvR1NFb18tODFJUkc3aTZLZE80c2FhWGxmQUxOU011TlA1bmZoVWZHdUZNa2ZQUUhjbVhqZEtL?oc=5",
-      "source": "WGRZ",
-      "category": "business",
-      "published": "Sat, 26 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Brightline is filing for Ch. 11 bankruptcy protection. What does that mean for Tampa?",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZDBaNnE2NG1IU25SV05fLXJtRE44QUhFWXVPbG1BeEk4bElycEV1YmNVTTdva3lQbGxvMFVYdEl6R0hBNnB5TlFsR09RNUZFeHd6SE4yWEFZaThBNHlYb0lENm9Tb09uUzZxb2lJM2FiekJpX0IxaXFZNVlxN09OeXkzWG9tY0VxTWR6bG5zaTNGUVlVbGVJa093THpNZ25H?oc=5",
       "source": "Tampa Bay Times",
@@ -1246,6 +1236,16 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "GM\u2019s Massive New 555 Horsepower Diesel V8 Is Surprisingly Tech-Forward",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdGJvVDBvUmJZM1dVMmkwOThvbG54TVRTRC14RjEwaEd5NnlEb25GckMzNzRCUWZoWmI2ZGtrd0FTMmMxaXhRazNtM1JmSFVVb0tNZXlKVlAxVlV3S21xdkJRMHE2RldyMVh1Vm1RaHNETldrbFVNTmVQNHVXeHliX1p1WmVsWkUwZTBJQVdtOVdRRnQ5cVV4aEc1ZjU0eW11UWc?oc=5",
+      "source": "autonocion.com",
+      "category": "business",
+      "published": "Fri, 25 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
   "tech_business": [
@@ -1260,11 +1260,11 @@
       "author": ""
     },
     {
-      "title": "October Prime Day 2026: Amazon's biggest early deals from Hanes, DeWalt, Apple and more ahead of the Prime Big Deal Days event",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNblVndFUzVS11Z25KRlBZcmVJTThxMl9tY084OHlHa3BFbFhpZmc5SGZvZTJadmt3QXlOT2pYRU8zSEFzVDlMQnhvQkd1cVppdDFWb0NONm9JWVZzbzdmODZxbXZWQkRxcW9HYkdzMFdOc1BmTlpnNmRnZXE1b1JvdjBPdzRNTE9ZZWowMzU0d3BDQ1Rka1c1TkdaS2VZZnNENnpiUGMtdGJfQ2lVTjdyaWFRTGhIUk4ycG81YzV3dmZQcUViQ1lBNjF4NkNhcTA2QVdXS1hQS0dxV3ZZOG5XcW1oTUFxc3Z6bkUzZC1PWHF3S2RkNjNNSVNuQUIyNURaVTZ1T1VBdXBxX0tQRDh1djU0M3NRdGJuc2xqWQ?oc=5",
+      "title": "October Prime Day 2026: Amazon's best early deals from Hanes, DeWalt, Apple and more ahead of the Prime Big Deal Days event",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQNE91YWZFNUpXdHJDekw1R09QbUlFc2lFdVlhejdsemVPVEMxQUtGMTVsQ2VxbFBUYk1NWkRaVzVObGpGZFZ1dmN2NExqYWFVOUhpd1MxVnJvZ2NJQlR3ZGtUVUt4ZVFPcVh2X2t2OEY5Ungxc0ZRVWhGNTRLMWhuRTAyNXBSdjlqXzJHUGRWWUFRelhWNFhiNFp4cEotQlVmV0VlQzBQU1lhaDVQbG1QTnJRWDlaWXh0OE96RjBJX2twanRFYmdzUHZoeXhobTRyZjBkdDJ0akJ4dU9TQkdCT0VOZWxDX2lLdmRsbzFUdnpvR250ZEVZVm9XaF9nWUNaUUl0RUNSX3VNNk1EczhvUmJqMWNEZVRo?oc=5",
       "source": "Yahoo",
       "category": "business",
-      "published": "Fri, 25 Sep 2026 ",
+      "published": "Thu, 24 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1280,9 +1280,9 @@
       "author": ""
     },
     {
-      "title": "watchOS 27 upgrades popular Apple Watch face with new options",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbXd0S1VvUnVPelMxYWw3MXAyckZqSEJNOFF2OUdvLS1xNzdXcVl4VlI5TVZBOUJua2EwNHNSNkp5RUx2aFp1ejFKOU9zcmVhektNdktDS0JZSDlwci05Mk11WGVMTldHOTNrSVJJVWFlSTJMd01sclRrdWtOUVJZVDNrOF9HMDFBakNxOG1ZMk5BRUVRSHZIUw?oc=5",
-      "source": "9to5Mac",
+      "title": "EA Sports FC 27 Review: More Build Up Play Than The Long Ball",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOM1pvcGRfb1VGVElRRXdKYXhYMmJhYkZBZFk2YU5OQ09mR2t4SnJZN0RraGppNTRQSEk2VHdSZlpzNkRYQ01kS0JhME5fT3oxSVBfSjFlN282d0J4eEJ1bVlTVGpqVktSbEttUW9jdjBWZmdfb0ZfWE1rWHpWSjFFU0wwZ19NaUd6ak9HN1p3?oc=5",
+      "source": "Game Informer",
       "category": "business",
       "published": "Fri, 25 Sep 2026 ",
       "description": "",
@@ -1290,9 +1290,9 @@
       "author": ""
     },
     {
-      "title": "EA Sports FC 27 Review: More Build Up Play Than The Long Ball",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOM1pvcGRfb1VGVElRRXdKYXhYMmJhYkZBZFk2YU5OQ09mR2t4SnJZN0RraGppNTRQSEk2VHdSZlpzNkRYQ01kS0JhME5fT3oxSVBfSjFlN282d0J4eEJ1bVlTVGpqVktSbEttUW9jdjBWZmdfb0ZfWE1rWHpWSjFFU0wwZ19NaUd6ak9HN1p3?oc=5",
-      "source": "Game Informer",
+      "title": "watchOS 27 upgrades popular Apple Watch face with new options",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbXd0S1VvUnVPelMxYWw3MXAyckZqSEJNOFF2OUdvLS1xNzdXcVl4VlI5TVZBOUJua2EwNHNSNkp5RUx2aFp1ejFKOU9zcmVhektNdktDS0JZSDlwci05Mk11WGVMTldHOTNrSVJJVWFlSTJMd01sclRrdWtOUVJZVDNrOF9HMDFBakNxOG1ZMk5BRUVRSHZIUw?oc=5",
+      "source": "9to5Mac",
       "category": "business",
       "published": "Fri, 25 Sep 2026 ",
       "description": "",
@@ -1540,7 +1540,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 26 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-26T09:16:02.600024"
+    "timestamp": "2026-09-26T09:21:47.977263"
   },
   "sticky": {
     "cnbc": [

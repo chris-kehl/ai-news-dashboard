@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-26T02:46:01.738077",
-  "summary": "Key topics today:\n- - Revealing the details of how OpenAI agents hacked Hugging Face (r/HackerNews, 301 pts)\n- - A single function Jev-like wrapper for LLMs, including vision models (r/HackerNews, 201 pts)\n- - Can AI Shopping Agents Be Trusted? (r/HackerNews, 201 pts)\n- - Ollaya \u2013 Ollama for open-source, Jev-style decision models (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)",
+  "timestamp": "2026-09-26T02:54:40.290819",
+  "summary": "Key topics today:\n- - Revealing the details of how OpenAI agents hacked Hugging Face (r/HackerNews, 301 pts)\n- - A single function Jev-like wrapper for LLMs, including vision models (r/HackerNews, 201 pts)\n- - Ollaya \u2013 Ollama for open-source, Jev-style decision models (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)\n- - U.S. appeals court upholds designation of Anthropic as supply chain risk (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
@@ -77,14 +77,6 @@
       "created": ""
     },
     {
-      "title": "Can AI Shopping Agents Be Trusted?",
-      "subreddit": "HackerNews",
-      "score": 201,
-      "comments": 0,
-      "url": "https://www.f-secure.com/en/partners/insights/can-ai-shopping-agents-be-trusted-we-built-one-to-find-out",
-      "created": ""
-    },
-    {
       "title": "Ollaya \u2013 Ollama for open-source, Jev-style decision models",
       "subreddit": "HackerNews",
       "score": 101,
@@ -139,12 +131,20 @@
       "comments": 0,
       "url": "https://sockpuppet.org/blog/2026/09/25/what-even-is-an-os-now/",
       "created": ""
+    },
+    {
+      "title": "Postgres SELECT DISTINCT Does Not Scale",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.dbos.dev/blog/postgres-select-distinct-does-not-scale",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-26T06:45:54.369026",
+    "timestamp": "2026-09-26T06:54:26.942726",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-26T06:45:34.173163",
+    "timestamp": "2026-09-26T06:54:06.433549",
     "trending": [
       {
         "symbol": "AIFF",
@@ -485,9 +485,9 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 120.44,
-        "change": -1.6,
-        "change_percent": -1.31,
+        "price": 120.28,
+        "change": -1.76,
+        "change_percent": -1.44,
         "name": "Solana USD"
       },
       {
@@ -527,9 +527,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 83902.75,
-        "change": -179.16,
-        "change_percent": -0.21,
+        "price": 83900.01,
+        "change": -181.91,
+        "change_percent": -0.22,
         "name": "Bitcoin USD"
       },
       {
@@ -968,7 +968,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-26T06:45:50.375058",
+    "timestamp": "2026-09-26T06:54:23.095857",
     "items": [
       {
         "symbol": "SPX",
@@ -1062,38 +1062,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 310.18,
-        "change": 4.39,
+        "price": 310.93,
+        "change": 4.81,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83904,
-        "change": -0.13,
+        "price": 83916,
+        "change": -0.12,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2684.82,
-        "change": 0.43,
+        "price": 2685.75,
+        "change": 0.45,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 120.38,
-        "change": 3.55,
+        "price": 120.37,
+        "change": 3.59,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.98,
-        "change": 4.33,
+        "price": 14.02,
+        "change": 4.9,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 10.62,
-        "change": 4.63,
+        "change": 4.72,
         "type": "crypto"
       },
       {
@@ -1140,8 +1140,8 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 120.38,
-        "change": -1.36,
+        "price": 120.32,
+        "change": -1.41,
         "type": "mover"
       },
       {
@@ -1210,21 +1210,21 @@
       "author": ""
     },
     {
-      "title": "New Mexico jury finds Facebook liable for deceiving users about privacy protections",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWG40YndwZnVtdGtfVGxGd01iWWxMcUlSNEVTYzR3bVJETERWMFFlMGVoUnFUWUZZbUVLMTEtTW14VEtLQmdqbVIxQlN6OHdYQkc5ZEZkZlY4VnVzVy1Qemc5WTRIUkFtWjRra0s3UWt0ck1Bblk2WkhtWUxENXNTVTgxMmxUaEpoLTloRzV3eGFCYl9YU0RPd1ZjeFdyck9JMXc?oc=5",
-      "source": "apnews.com",
-      "category": "business",
-      "published": "Fri, 25 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "These Starbucks locations are closing in the Sacramento area",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE91YTZLUVZ5ekE0VkRmS3NVdW5JeHcxZUFldXMtZDgwWHBxb3V0TFZCMnp5SWpOMXoxcTJsNXZNUHB0NlhEZktpNktHRkpWVFdQSjctMGE3dVB6RFQ0NVhIS3ltQWVnQm0wRzF2WWFUcnZxdTY0NllnR2tSQVQ?oc=5",
       "source": "KCRA",
       "category": "business",
       "published": "Sat, 26 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "New Mexico jury finds Facebook liable for deceiving users about privacy protections",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWG40YndwZnVtdGtfVGxGd01iWWxMcUlSNEVTYzR3bVJETERWMFFlMGVoUnFUWUZZbUVLMTEtTW14VEtLQmdqbVIxQlN6OHdYQkc5ZEZkZlY4VnVzVy1Qemc5WTRIUkFtWjRra0s3UWt0ck1Bblk2WkhtWUxENXNTVTgxMmxUaEpoLTloRzV3eGFCYl9YU0RPd1ZjeFdyck9JMXc?oc=5",
+      "source": "apnews.com",
+      "category": "business",
+      "published": "Fri, 25 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1282,6 +1282,16 @@
       "author": ""
     },
     {
+      "title": "Control Resonant's post-launch plan includes a Photo Mode and New Game Plus Plus coming next month: \"Do 665 runs if you want!\"",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5xVXRFZkVYdjBXVU52dk9YVWVuTm9zU3pNcC1QTV8yZi02d0h5WkZIZ2NLQjZhUllPbnhhYUdmSXJHOGx1QWFqYmF2R3RCVWh3QjZvSWVHUzdaeVVCMzlKWXIxN0EzSjZSQ0gybEdjcjA2c1EyMEpXd1lPankwdw?oc=5",
+      "source": "Eurogamer.net",
+      "category": "business",
+      "published": "Fri, 25 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Cover Reveal \u2013 Grand Theft Auto VI",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWVBOc0V2OHNXcGxXc1NDcl9SM05jSVdJUmxaR3RJR0VxdUd1aVpleldRbHlTZlRiZnlVU2s1andIOFhQTFUwanIyTzEzak5vcC1hd29xbnFINEFBUUh3SlRMZ3Y3YmVwSEpZRTQzLVdoZU90VGR3cjZzU0lybGhadENfSS1IVFlE?oc=5",
       "source": "gameinformer.com",
@@ -1295,16 +1305,6 @@
       "title": "15 early October Prime Day tech deals, hand-picked by our gadget experts",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOXpwYjNQVjFKMEVNakhoczI4ZkVObnRPT0czVzkzc1Y5RV8xR0VQSEJRTzgtcFhXTGx4WGRLUGdscHpJb2xTT2VFNkJJRm5BaHBVakw4WkVpd3lRYXNzZUF1OHJZRnBKa24zQ05CRXBxNlZuYVFYR1p3SUZPTmh1UjVEZw?oc=5",
       "source": "Mashable",
-      "category": "business",
-      "published": "Thu, 24 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Control Resonant Launch Patch Will Address Its Biggest Combat Complaints",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOHdkOU9ETE03RndGN0dZUkhZalhDYnZDeHczQUpRNmVSQ0tKUllHcjIyUkItV1FyVEZlbjJfd3lEYlJSWGltMkZNWjY3blRPZ21pWlU2NWlieGU4UU1hZGxwM1V1Skx3UVFNQXk4bUcybzRwSHlVWXZwTHJSb0FDUVNNdUwtNlF4UTUwWlFLYTh4ZHBVbFFySEFIYXE3WkdHTlZlZklHRGRwZFp4?oc=5",
-      "source": "gameinformer.com",
       "category": "business",
       "published": "Thu, 24 Sep 2026 ",
       "description": "",
@@ -1540,7 +1540,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 26 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-26T02:45:59.568819"
+    "timestamp": "2026-09-26T02:54:32.999557"
   },
   "sticky": {
     "cnbc": [

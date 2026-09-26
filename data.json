@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-26T15:16:21.616413",
+  "timestamp": "2026-09-26T15:17:54.647348",
   "summary": "Key topics today:\n- - Revealing the details of how OpenAI agents hacked Hugging Face (r/HackerNews, 301 pts)\n- - OpenAI bots meddled with multiple US Government agency sites (r/HackerNews, 201 pts)\n- - A single function Jev-like wrapper for LLMs, including vision models (r/HackerNews, 201 pts)\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -19,6 +19,14 @@
       "text": "XRP -2.8% @ $1.53"
     },
     {
+      "type": "buy",
+      "asset": "QNT-USD",
+      "price": 122.15,
+      "change": 23.83,
+      "category": "stock",
+      "text": "QNT-USD +23.8% momentum @ $122.15"
+    },
+    {
       "type": "watch",
       "asset": "GME",
       "price": 23.39,
@@ -29,18 +37,10 @@
     {
       "type": "watch",
       "asset": "XRP-USD",
-      "price": 1.52,
-      "change": -2.77,
+      "price": 1.53,
+      "change": -2.76,
       "category": "stock",
-      "text": "XRP-USD -2.8% @ $1.52"
-    },
-    {
-      "type": "watch",
-      "asset": "HOOD",
-      "price": 119.4,
-      "change": -2.69,
-      "category": "stock",
-      "text": "HOOD -2.7% @ $119.40"
+      "text": "XRP-USD -2.8% @ $1.53"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-26T19:15:58.102288",
+    "timestamp": "2026-09-26T19:17:47.868961",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,21 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-26T19:15:37.383768",
+    "timestamp": "2026-09-26T19:17:27.730069",
     "trending": [
       {
+        "symbol": "QNT-USD",
+        "price": 122.15,
+        "change": 23.51,
+        "change_percent": 23.83,
+        "name": "Quant USD"
+      },
+      {
         "symbol": "XRP-USD",
-        "price": 1.52,
+        "price": 1.53,
         "change": -0.04,
-        "change_percent": -2.77,
+        "change_percent": -2.76,
         "name": "XRP USD"
       },
       {
-        "symbol": "PFE",
-        "price": 28.67,
-        "change": 0.49,
-        "change_percent": 1.74,
-        "name": "Pfizer, Inc."
+        "symbol": "LINK-USD",
+        "price": 14.18,
+        "change": 0.26,
+        "change_percent": 1.88,
+        "name": "Chainlink USD"
       },
       {
         "symbol": ".DJI",
@@ -492,24 +499,17 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 121.22,
-        "change": -0.79,
-        "change_percent": -0.65,
+        "price": 121.21,
+        "change": -0.8,
+        "change_percent": -0.66,
         "name": "Solana USD"
       },
       {
-        "symbol": "GEV",
-        "price": 957.63,
-        "change": 5.81,
-        "change_percent": 0.61,
-        "name": "GE Vernova Inc."
-      },
-      {
-        "symbol": "GC=F",
-        "price": 4321.2,
-        "change": 23.2,
-        "change_percent": 0.54,
-        "name": "Gold Dec 26"
+        "symbol": "BN",
+        "price": 36.87,
+        "change": -0.22,
+        "change_percent": -0.59,
+        "name": "Brookfield Corporation"
       },
       {
         "symbol": ".SPX",
@@ -519,24 +519,24 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "JEPQ",
-        "price": 61.24,
-        "change": 0.14,
-        "change_percent": 0.23,
-        "name": "JPMorgan Nasdaq Equity Premium "
+        "symbol": "FXAIX",
+        "price": 269.7,
+        "change": 1.31,
+        "change_percent": 0.49,
+        "name": "Fidelity 500 Index Fund"
       },
       {
-        "symbol": "SCHD",
-        "price": 33.21,
-        "change": -0.07,
-        "change_percent": -0.21,
-        "name": "Schwab US Dividend Equity ETF"
+        "symbol": "ZEC-USD",
+        "price": 1559.98,
+        "change": 7.03,
+        "change_percent": 0.45,
+        "name": "Zcash USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 2685.36,
-        "change": -5.12,
-        "change_percent": -0.19,
+        "price": 2685.09,
+        "change": -5.39,
+        "change_percent": -0.2,
         "name": "Ethereum USD"
       },
       {
@@ -548,8 +548,8 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 84022.3,
-        "change": -12.62,
+        "price": 84018.07,
+        "change": -16.85,
         "change_percent": -0.02,
         "name": "Bitcoin USD"
       }
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-26T19:15:54.398453",
+    "timestamp": "2026-09-26T19:17:44.366009",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,44 +1076,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 322.76,
-        "change": 5.08,
+        "price": 323.07,
+        "change": 5.18,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
         "price": 84009,
-        "change": 0.01,
+        "change": 0.04,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2685.4,
-        "change": -0.32,
+        "price": 2685.38,
+        "change": -0.29,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.24,
-        "change": -0.66,
+        "price": 121.22,
+        "change": -0.62,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 14.18,
-        "change": 2.29,
+        "change": 2.44,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 10.82,
-        "change": 3.3,
+        "change": 3.42,
         "type": "crypto"
       },
       {
         "symbol": "QNT-USD",
-        "price": 122.08,
-        "change": 23.76,
+        "price": 122.34,
+        "change": 24.03,
         "type": "mover"
       },
       {
@@ -1125,7 +1125,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.53,
-        "change": -2.76,
+        "change": -2.7,
         "type": "mover"
       },
       {
@@ -1142,8 +1142,8 @@
       },
       {
         "symbol": "LINK-USD",
-        "price": 14.18,
-        "change": 1.88,
+        "price": 14.19,
+        "change": 1.93,
         "type": "mover"
       },
       {
@@ -1554,7 +1554,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 26 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-26T15:16:19.593065"
+    "timestamp": "2026-09-26T15:17:52.867750"
   },
   "sticky": {
     "cnbc": [

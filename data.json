@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-25T23:16:18.156793",
+  "timestamp": "2026-09-25T23:25:22.459718",
   "summary": "Key topics today:\n- - Revealing the details of how OpenAI agents hacked Hugging Face (r/HackerNews, 301 pts)\n- - Ollaya \u2013 Ollama for open-source, Jev-style decision models (r/HackerNews, 101 pts)\n- - U.S. appeals court upholds designation of Anthropic as supply chain risk (r/HackerNews, 101 pts)\n- - Microsoft abandons personal AI chatbot race with Copilot reboot (r/HackerNews, 101 pts)\n- - Show HN: Jev Plays Pok\u00e9mon Red (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,20 +27,20 @@
       "text": "AIFF +74.8% momentum @ $2.01"
     },
     {
+      "type": "buy",
+      "asset": "MXL",
+      "price": 93.84,
+      "change": 11.29,
+      "category": "stock",
+      "text": "MXL +11.3% momentum @ $93.84"
+    },
+    {
       "type": "sell",
       "asset": "ZS",
       "price": 193.05,
       "change": -9.98,
       "category": "stock",
       "text": "ZS -10.0% drop @ $193.05"
-    },
-    {
-      "type": "watch",
-      "asset": "PYPL",
-      "price": 55.04,
-      "change": 4.82,
-      "category": "stock",
-      "text": "PYPL +4.8% @ $55.04"
     },
     {
       "type": "watch",
@@ -125,62 +125,26 @@
       "created": ""
     },
     {
-      "title": "Platform-independent SIMD in Go",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://go.dev/blog/simd-experiment",
-      "created": ""
-    },
-    {
       "title": "Postgres SELECT DISTINCT Does Not Scale",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.dbos.dev/blog/postgres-select-distinct-does-not-scale",
       "created": ""
+    },
+    {
+      "title": "Platform-independent SIMD in Go",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://go.dev/blog/simd-experiment",
+      "created": ""
     }
   ],
   "world_reddit": [],
-  "world_x": [
-    {
-      "author": "@Reuters",
-      "text": "Saudi coalition says it intercepts Houthi missiles, drones https://reut.rs/4ykszMG https://reut.rs/4ykszMG",
-      "url": "http://shitter.thepixora.com/Reuters/status/2103683505339122031#m",
-      "date": "Sat, 26 Sep 2026 03:10:06 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@Reuters",
-      "text": "Texans star WR Nico Collins (hamstring) to miss second straight game https://reut.rs/4jmHTDF https://reut.rs/4jmHTDF",
-      "url": "http://shitter.thepixora.com/Reuters/status/2103681101663191198#m",
-      "date": "Sat, 26 Sep 2026 03:00:33 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@Reuters",
-      "text": "WTA roundup: Leylah Fernandez surges into Singapore semis https://reut.rs/4yZaOCy https://reut.rs/4yZaOCy",
-      "url": "http://shitter.thepixora.com/Reuters/status/2103678473998942636#m",
-      "date": "Sat, 26 Sep 2026 02:50:07 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Trump administration can use expanded immigration database as it encourages states to purge voter rolls, Supreme Court rules. https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-trump-administration-use-expanded-database-potent-rcna596611?taid=6ab69b0c33",
-      "url": "http://nitter.jaydenha.uk/BreakingNews/status/2103515456434790682#m",
-      "date": "Fri, 25 Sep 2026 16:02:20 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: U.S. and China agree to extend a trade truce into January, Treasury secretary says, as Trump greets Xi at Joint Base Andrews. https://www.nbcnews.com/business/economy/us-china-extend-trade-truce-trump-rcna599525?taid=6ab457fe3a03d10001616ec1&utm_campaign=trueanthem&utm_",
-      "url": "http://nitter.jaydenha.uk/BreakingNews/status/2102893699793408043#m",
-      "date": "Wed, 23 Sep 2026 22:51:42 GMT",
-      "likes": 0
-    }
-  ],
+  "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-26T03:15:56.750354",
+    "timestamp": "2026-09-26T03:25:14.492951",
     "prices": [
       {
         "name": "Bittensor",
@@ -482,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-26T03:15:36.646203",
+    "timestamp": "2026-09-26T03:24:54.452595",
     "trending": [
       {
         "symbol": "AIFF",
@@ -490,6 +454,13 @@
         "change": 0.86,
         "change_percent": 74.78,
         "name": "Firefly Neuroscience, Inc."
+      },
+      {
+        "symbol": "MXL",
+        "price": 93.84,
+        "change": 9.52,
+        "change_percent": 11.29,
+        "name": "MaxLinear, Inc"
       },
       {
         "symbol": "ZS",
@@ -520,13 +491,6 @@
         "name": "Microsoft Corporation"
       },
       {
-        "symbol": "QCOM",
-        "price": 201.97,
-        "change": 4.73,
-        "change_percent": 2.4,
-        "name": "QUALCOMM Incorporated"
-      },
-      {
         "symbol": "AAPL",
         "price": 341.07,
         "change": 4.05,
@@ -548,6 +512,13 @@
         "name": "Dow Jones Industrial Average"
       },
       {
+        "symbol": "ADA-USD",
+        "price": 0.26,
+        "change": -0.0,
+        "change_percent": -0.58,
+        "name": "Cardano USD"
+      },
+      {
         "symbol": ".SPX",
         "price": 7743.41,
         "change": 37.38,
@@ -563,10 +534,10 @@
       },
       {
         "symbol": ".RUT",
-        "price": 2837.55,
-        "change": -1.11,
-        "change_percent": -0.04,
-        "name": "Russell 2000"
+        "price": 2837.552,
+        "change": 1.98,
+        "change_percent": 0.07,
+        "name": "RUSS 2K"
       }
     ],
     "meme_momentum": [
@@ -997,7 +968,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-26T03:15:52.960623",
+    "timestamp": "2026-09-26T03:25:10.851846",
     "items": [
       {
         "symbol": "SPX",
@@ -1091,44 +1062,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 311.83,
-        "change": 5.78,
+        "price": 312.39,
+        "change": 5.9,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83923,
-        "change": -0.39,
+        "price": 83937,
+        "change": -0.32,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2686.16,
-        "change": 0.33,
+        "price": 2689.1,
+        "change": 0.5,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 120.72,
-        "change": 3.16,
+        "price": 120.74,
+        "change": 3.35,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.94,
-        "change": 4.49,
+        "price": 13.97,
+        "change": 4.57,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.69,
-        "change": 5.42,
+        "price": 10.68,
+        "change": 5.48,
         "type": "crypto"
       },
       {
         "symbol": "AIFF",
         "price": 2.01,
         "change": 74.78,
+        "type": "mover"
+      },
+      {
+        "symbol": "MXL",
+        "price": 93.84,
+        "change": 11.29,
         "type": "mover"
       },
       {
@@ -1177,12 +1154,6 @@
         "symbol": "AAPL",
         "price": 341.07,
         "change": 1.2,
-        "type": "mover"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 189.67,
-        "change": -1.11,
         "type": "mover"
       }
     ]
@@ -1561,7 +1532,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Fri 25 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-25T23:16:15.960587"
+    "timestamp": "2026-09-25T23:25:20.484901"
   },
   "sticky": {
     "cnbc": [

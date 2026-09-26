@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-26T19:16:04.995844",
+  "timestamp": "2026-09-26T19:20:06.283951",
   "summary": "Key topics today:\n- - OpenAI bots meddled with multiple US Government agency sites (r/HackerNews, 201 pts)\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - How to keep enjoying programming in a world of LLMs (r/HackerNews, 101 pts)\n- - Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,11 +28,19 @@
     },
     {
       "type": "buy",
-      "asset": "ZEC-USD",
-      "price": 1658.43,
-      "change": 6.79,
+      "asset": "QNT-USD",
+      "price": 155.93,
+      "change": 58.08,
       "category": "stock",
-      "text": "ZEC-USD +6.8% momentum @ $1658.43"
+      "text": "QNT-USD +58.1% momentum @ $155.93"
+    },
+    {
+      "type": "buy",
+      "asset": "ZEC-USD",
+      "price": 1662.33,
+      "change": 7.04,
+      "category": "stock",
+      "text": "ZEC-USD +7.0% momentum @ $1662.33"
     },
     {
       "type": "watch",
@@ -41,14 +49,6 @@
       "change": -3.35,
       "category": "stock",
       "text": "GME -3.4% @ $23.39"
-    },
-    {
-      "type": "watch",
-      "asset": "HOOD",
-      "price": 119.4,
-      "change": -2.69,
-      "category": "stock",
-      "text": "HOOD -2.7% @ $119.40"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-26T23:15:56.896457",
+    "timestamp": "2026-09-26T23:19:58.916582",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,28 +446,42 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-26T23:15:35.788421",
+    "timestamp": "2026-09-26T23:19:38.349922",
     "trending": [
       {
+        "symbol": "QNT-USD",
+        "price": 155.93,
+        "change": 57.29,
+        "change_percent": 58.08,
+        "name": "Quant USD"
+      },
+      {
         "symbol": "ZEC-USD",
-        "price": 1658.43,
-        "change": 105.48,
-        "change_percent": 6.79,
+        "price": 1662.33,
+        "change": 109.38,
+        "change_percent": 7.04,
         "name": "Zcash USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.53,
         "change": -0.04,
-        "change_percent": -2.61,
+        "change_percent": -2.51,
         "name": "XRP USD"
       },
       {
-        "symbol": "ET",
-        "price": 20.19,
-        "change": -0.3,
-        "change_percent": -1.46,
-        "name": "Energy Transfer LP"
+        "symbol": "OKLO",
+        "price": 38.04,
+        "change": -0.78,
+        "change_percent": -2.01,
+        "name": "Oklo Inc."
+      },
+      {
+        "symbol": "QNT",
+        "price": 49.53,
+        "change": -0.58,
+        "change_percent": -1.16,
+        "name": "Quantinuum Inc."
       },
       {
         "symbol": ".DJI",
@@ -491,13 +505,6 @@
         "name": "McDonald's Corporation"
       },
       {
-        "symbol": "WM",
-        "price": 206.83,
-        "change": -1.05,
-        "change_percent": -0.51,
-        "name": "Waste Management, Inc."
-      },
-      {
         "symbol": ".SPX",
         "price": 7743.41,
         "change": 39.28,
@@ -506,24 +513,17 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 84342.2,
-        "change": 307.28,
-        "change_percent": 0.37,
+        "price": 84354.33,
+        "change": 319.41,
+        "change_percent": 0.38,
         "name": "Bitcoin USD"
       },
       {
-        "symbol": "BRK-B",
-        "price": 505.48,
-        "change": -1.69,
-        "change_percent": -0.33,
-        "name": "Berkshire Hathaway Inc. New"
-      },
-      {
-        "symbol": "SOL-USD",
-        "price": 121.62,
-        "change": -0.39,
-        "change_percent": -0.32,
-        "name": "Solana USD"
+        "symbol": "BTC-CAD",
+        "price": 119321.3,
+        "change": 449.7,
+        "change_percent": 0.38,
+        "name": "Bitcoin CAD"
       },
       {
         "symbol": "JEPQ",
@@ -541,9 +541,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2692.52,
-        "change": 2.04,
-        "change_percent": 0.08,
+        "price": 2692.47,
+        "change": 1.99,
+        "change_percent": 0.07,
         "name": "Ethereum USD"
       },
       {
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-26T23:15:52.912046",
+    "timestamp": "2026-09-26T23:19:55.242737",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,44 +1076,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 320.93,
-        "change": 0.36,
+        "price": 320.65,
+        "change": 0.73,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84321,
-        "change": 0.32,
+        "price": 84364,
+        "change": 0.37,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2692.42,
-        "change": -0.03,
+        "price": 2692.82,
+        "change": 0.0,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.48,
-        "change": -0.48,
+        "price": 121.63,
+        "change": -0.34,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.13,
-        "change": 1.55,
+        "price": 14.15,
+        "change": 1.71,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.86,
-        "change": 2.29,
+        "price": 10.84,
+        "change": 2.16,
         "type": "crypto"
       },
       {
+        "symbol": "QNT-USD",
+        "price": 155.23,
+        "change": 57.37,
+        "type": "mover"
+      },
+      {
         "symbol": "ZEC-USD",
-        "price": 1659.69,
-        "change": 6.87,
+        "price": 1662.01,
+        "change": 7.02,
         "type": "mover"
       },
       {
@@ -1125,7 +1131,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.53,
-        "change": -2.59,
+        "change": -2.52,
         "type": "mover"
       },
       {
@@ -1138,6 +1144,12 @@
         "symbol": "BB",
         "price": 8.21,
         "change": -2.03,
+        "type": "mover"
+      },
+      {
+        "symbol": "QNT",
+        "price": 49.53,
+        "change": -1.16,
         "type": "mover"
       },
       {
@@ -1156,18 +1168,6 @@
         "symbol": "MCD",
         "price": 236.5,
         "change": -0.76,
-        "type": "mover"
-      },
-      {
-        "symbol": "WM",
-        "price": 206.83,
-        "change": -0.51,
-        "type": "mover"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 84379.99,
-        "change": 0.41,
         "type": "mover"
       }
     ]
@@ -1224,6 +1224,16 @@
       "author": ""
     },
     {
+      "title": "Inside Meta's months-long grind to turn Muse into a hit",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMFdNbDd4b3h0S2pGYnY2dEsteUplS1hEQXh0SXVQM2QydWJIUjVVNWVVbnc1YlAyNERBT2NhbXJ6emtqaW9sTDE0MW0tNjF6VUV2SkEzbjVYa2JDcUhWODI2Rm1uSnMxUmVxWW93aUU4SnlOUlF2ejRwVGtKU0pDOENJTWF2Zw?oc=5",
+      "source": "businessinsider.com",
+      "category": "business",
+      "published": "Sat, 26 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Defying higher bond yields: Consumers keep spending and the economy keeps booming",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNm1CSXBnR0pzNTVFc3R6MXdOS1NaVWRoa1RTU2NSM1JXc3VQc0l5WXh0ajMzQVFHN1E0U1E0NS1PRWFibXhaS3NIZjByLXhrV3piWUVycHgwQ0N4N2FMV1FQWWVmc3ZPaTdUYXhaZklfcjVCZDhPa0FBN1B3S1l1ZkcyZFpIaFZ3VVVKRXp3S2dUbjVwYUNvb3FMcm5sdkV3WTJIeTFIN2c4cUJlX09xZUJZZ1k4Q3BTU2RrSDhpRkZldWxnNjBBSUJ6LWlxMlRhN0VZ?oc=5",
       "source": "Yahoo Finance",
@@ -1237,16 +1247,6 @@
       "title": "Chevy's New V8: Why Cars Will Have Engine Oil Dipsticks But Trucks Won't",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSGpZQWYxODVpWHdwbmhOTGFBUTdZOV9DRTVyZHBxempsQjlvS2F5cWJ1NVFfaU9PbG5LM2MzeVBLV0FlMU51SlBCUThtSGRWVHdmcWVQUFBqMkJyLXJYNkFfMFlkeUNXOWI5cDVvdjVkOXItam9VWnB2eU9uajJweXF1NVhCUC1jWWUtMFZuZkJ4TXJlTkVmUUsxVHVpSzFMTFQybXN3?oc=5",
       "source": "Jalopnik",
-      "category": "business",
-      "published": "Sat, 26 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "SCHD Is Brilliant. Here's Why I Think This Dividend ETF Is Even Better.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnhaNHRsREVOZGZ5U0lQbXlLc1ViRHV3Uzh4c2NFUjBQeUVHbml3MUdPS25iT1B5R2g5NXpVbVhnejVlWXVEZU9fUnFscjN5VlUtdGpvYnh0RXRTdmtlQUNleHQtd0pZOUV0V3ZuT3NvMDVnbjFPdWNyVDVzV3lTSG9TYVRLVGJtSlAxYTBaMVU1RjVackRr?oc=5",
-      "source": "The Motley Fool",
       "category": "business",
       "published": "Sat, 26 Sep 2026 ",
       "description": "",
@@ -1538,7 +1538,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 26 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-26T19:16:02.394644"
+    "timestamp": "2026-09-26T19:20:03.819932"
   },
   "sticky": {
     "cnbc": [

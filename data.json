@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T04:16:15.972299",
-  "summary": "Key topics today:\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - An agent used DNS to reach an external chatbot (r/HackerNews, 101 pts)\n- - Turning GLM-5.3-Flash into a Jev-like decision model (r/HackerNews, 101 pts)\n- - Evolving programming languages in the AI era (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)",
+  "timestamp": "2026-09-27T04:22:32.145691",
+  "summary": "Key topics today:\n- - OpenAI Feared \"Optics\" of what might appear on Hacker News (r/HackerNews, 201 pts)\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - An agent used DNS to reach an external chatbot (r/HackerNews, 101 pts)\n- - Turning GLM-5.3-Flash into a Jev-like decision model (r/HackerNews, 101 pts)\n- - Evolving programming languages in the AI era (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "buy",
@@ -29,18 +29,10 @@
     {
       "type": "buy",
       "asset": "QNT-USD",
-      "price": 173.08,
-      "change": 13.31,
+      "price": 173.29,
+      "change": 13.45,
       "category": "stock",
-      "text": "QNT-USD +13.3% momentum @ $173.08"
-    },
-    {
-      "type": "buy",
-      "asset": "NEAR-USD",
-      "price": 5.36,
-      "change": 6.61,
-      "category": "stock",
-      "text": "NEAR-USD +6.6% momentum @ $5.36"
+      "text": "QNT-USD +13.4% momentum @ $173.29"
     },
     {
       "type": "watch",
@@ -49,9 +41,33 @@
       "change": -3.35,
       "category": "stock",
       "text": "GME -3.4% @ $23.39"
+    },
+    {
+      "type": "watch",
+      "asset": "IBM",
+      "price": 225.51,
+      "change": -3.11,
+      "category": "stock",
+      "text": "IBM -3.1% @ $225.51"
+    },
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
+    {
+      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+      "created": ""
+    },
     {
       "title": "Drawgent: Coding agent on a live Excalidraw canvas",
       "subreddit": "HackerNews",
@@ -123,20 +139,12 @@
       "comments": 0,
       "url": "https://antonz.org/go-concurrency-distilled/",
       "created": ""
-    },
-    {
-      "title": "Flip Fluid on Flip Dots",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://mitxela.com/projects/flipflip",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-27T08:16:02.581088",
+    "timestamp": "2026-09-27T08:22:07.337056",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,35 +446,35 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-27T08:15:39.351526",
+    "timestamp": "2026-09-27T08:21:44.665270",
     "trending": [
       {
         "symbol": "QNT-USD",
-        "price": 173.08,
-        "change": 20.33,
-        "change_percent": 13.31,
+        "price": 173.29,
+        "change": 20.54,
+        "change_percent": 13.45,
         "name": "Quant USD"
       },
       {
-        "symbol": "NEAR-USD",
-        "price": 5.36,
-        "change": 0.33,
-        "change_percent": 6.61,
-        "name": "NEAR Protocol USD"
+        "symbol": "IBM",
+        "price": 225.51,
+        "change": -7.25,
+        "change_percent": -3.11,
+        "name": "International Business Machines"
       },
       {
         "symbol": "SOL-USD",
-        "price": 124.2,
-        "change": 2.77,
-        "change_percent": 2.28,
+        "price": 124.51,
+        "change": 3.08,
+        "change_percent": 2.54,
         "name": "Solana USD"
       },
       {
-        "symbol": "MSTR",
-        "price": 158.61,
-        "change": -3.59,
-        "change_percent": -2.21,
-        "name": "Strategy Inc"
+        "symbol": "SOXX",
+        "price": 572.68,
+        "change": 6.96,
+        "change_percent": 1.23,
+        "name": "iShares PHLX SOX Semiconductor "
       },
       {
         "symbol": "QNT",
@@ -484,9 +492,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2717.19,
-        "change": 21.98,
-        "change_percent": 0.82,
+        "price": 2718.78,
+        "change": 23.57,
+        "change_percent": 0.87,
         "name": "Ethereum USD"
       },
       {
@@ -498,17 +506,24 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 1661.4,
-        "change": 10.94,
-        "change_percent": 0.66,
+        "price": 1662.74,
+        "change": 12.28,
+        "change_percent": 0.74,
         "name": "Zcash USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.54,
         "change": 0.01,
-        "change_percent": 0.65,
+        "change_percent": 0.69,
         "name": "XRP USD"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 84836.72,
+        "change": 430.27,
+        "change_percent": 0.51,
+        "name": "Bitcoin USD"
       },
       {
         "symbol": ".SPX",
@@ -516,13 +531,6 @@
         "change": 39.28,
         "change_percent": 0.51,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 84805.14,
-        "change": 398.69,
-        "change_percent": 0.47,
-        "name": "Bitcoin USD"
       },
       {
         "symbol": "SCHD",
@@ -974,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-27T08:15:58.318984",
+    "timestamp": "2026-09-27T08:22:03.649068",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,50 +1076,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 333.47,
-        "change": 6.78,
+        "price": 334.51,
+        "change": 7.33,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84780,
-        "change": 0.86,
+        "price": 84794,
+        "change": 0.9,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2716.98,
-        "change": 1.05,
+        "price": 2715.59,
+        "change": 1.03,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 124.18,
-        "change": 3.08,
+        "price": 124.34,
+        "change": 3.28,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.35,
-        "change": 2.28,
+        "price": 14.36,
+        "change": 2.56,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 11.18,
-        "change": 4.72,
+        "price": 11.26,
+        "change": 5.2,
         "type": "crypto"
       },
       {
         "symbol": "QNT-USD",
-        "price": 173.27,
-        "change": 13.43,
-        "type": "mover"
-      },
-      {
-        "symbol": "NEAR-USD",
-        "price": 5.35,
-        "change": 6.43,
+        "price": 171.62,
+        "change": 12.35,
         "type": "mover"
       },
       {
@@ -1121,15 +1123,15 @@
         "type": "mover"
       },
       {
-        "symbol": "AMC",
-        "price": 2.94,
-        "change": 2.44,
+        "symbol": "SOL-USD",
+        "price": 124.59,
+        "change": 2.61,
         "type": "mover"
       },
       {
-        "symbol": "MSTR",
-        "price": 158.61,
-        "change": -2.21,
+        "symbol": "AMC",
+        "price": 2.94,
+        "change": 2.44,
         "type": "mover"
       },
       {
@@ -1152,14 +1154,20 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2718.38,
-        "change": 0.86,
+        "price": 2719.2,
+        "change": 0.89,
         "type": "mover"
       },
       {
         "symbol": "MCD",
         "price": 236.5,
         "change": -0.76,
+        "type": "mover"
+      },
+      {
+        "symbol": "ZEC-USD",
+        "price": 1662.08,
+        "change": 0.7,
         "type": "mover"
       }
     ]
@@ -1181,16 +1189,6 @@
       "source": "WSJ",
       "category": "business",
       "published": "Sun, 27 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Inside Meta's months-long grind to turn Muse into a hit",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMFdNbDd4b3h0S2pGYnY2dEsteUplS1hEQXh0SXVQM2QydWJIUjVVNWVVbnc1YlAyNERBT2NhbXJ6emtqaW9sTDE0MW0tNjF6VUV2SkEzbjVYa2JDcUhWODI2Rm1uSnMxUmVxWW93aUU4SnlOUlF2ejRwVGtKU0pDOENJTWF2Zw?oc=5",
-      "source": "Business Insider",
-      "category": "business",
-      "published": "Sat, 26 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1239,6 +1237,16 @@
       "title": "The 10-year Treasury yield is at its highest in nearly two decades. How we got here",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdjRseTh3M19YMmZMRzZwNmNzU2lKOXBaQWZFY3h6NmljdHFJbk1MaHBrSHdnUHYzQ3Z2emhBZUV0eGNDT21JcVIwaE84d0diZHpTTmxydzZhaElHSVR2VHV4RzVMS0RKUktMMU1RaDhxQ08zTER0UDkyMVVUX1p5ZXRaZTltWmNzdHVGOGotdjB3OVNCbGtvV3A5Z3ZyU05QVGNWSVB3WmzSAa4BQVVfeXFMUEZ0RlpZaDh6bGxuVzVZalpuRHEyMEM2ZnE3SGxpUHdQbXZPcVBYRkJkYzhITFVHa091bUZ0eldHbW9tTTRlRW5kU0ZPTFctNjk2TC1WaHA2Qm9kNV9TX1F1b0R3NFlUblFtek95a3dVVzk3QlFGbjZaSWVkZDBBTjdRRE5RMS12ZUxITldWalVwRU9sT3Nsc1hLdGNrQi1MSktCM0cwSThjX1ZPY3JB?oc=5",
       "source": "CNBC",
+      "category": "business",
+      "published": "Sat, 26 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "High Gas and Rising Mortgage Rates Trouble Trump as Midterms Near",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVWlTX3c1UEVKbmVsWFJPX0tMb282eWp0YzkxQmRqcm82OXRObjZ1T0lieU5IdzU0c3E2ak95bEdvR0hQQ2lZanVvOHVpMFQzU1N6VUttcFRiM2E1anhfbVlQbE0zRkRtWlUwVC1sUnVjNEp6OF83M01xbkZSQXVvdjZidEtFZFk?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Sat, 26 Sep 2026 ",
       "description": "",
@@ -1386,11 +1394,19 @@
       "relevance_score": 4
     },
     {
-      "title": "Ethiopia\u2019s army promises restraint amid fears of new civil war",
-      "url": "https://www.aljazeera.com/news/2026/9/27/ethiopias-army-promises-restraint-amid-fears-of-new-civil-war?traffic_source=rss",
+      "title": "Iceland FM hits back at Netanyahu over \u2018moral cowards\u2019 UNGA remark",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/iceland-fm-hits-back-at-netanyahu-over-moral-cowards-unga-remark?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Sun, 27 Sep 2026 ",
-      "description": "Army chief accuses Eritrea of funding and supporting armed groups to weaken Ethiopia.",
+      "description": "Iceland\u2019s FM hit back at Netanyahu after he called diplomats who walked out of his UN address \u2018moral cowards\u2019.",
+      "relevance_score": 4
+    },
+    {
+      "title": "Israel\u2019s Netanyahu criticises opposition uniting against him for election",
+      "url": "https://www.aljazeera.com/news/2026/9/27/israels-netanyahu-criticises-opposition-uniting-against-him-for-election?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 27 Sep 2026 ",
+      "description": "Five opposition leaders agree to cooperate to boost voter turnout to secure a majority in the October 27 elections.",
       "relevance_score": 3
     },
     {
@@ -1414,34 +1430,34 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 268045,
+      "stars": 268057,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-09-27T07:13:32Z"
+      "updated": "2026-09-27T08:14:19Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 249300,
+      "stars": 249311,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-09-27T07:15:13Z"
+      "updated": "2026-09-27T08:22:10Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187587,
+      "stars": 187586,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-09-27T07:06:22Z"
+      "updated": "2026-09-27T07:57:50Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "The web data API to search, scrape, and interact at scale. \ud83d\udd25",
-      "stars": 185232,
+      "stars": 185255,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-09-27T07:12:29Z"
+      "updated": "2026-09-27T08:17:43Z"
     },
     {
       "name": "huggingface/transformers",
@@ -1449,63 +1465,63 @@
       "stars": 166709,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-09-27T06:54:01Z"
+      "updated": "2026-09-27T07:47:56Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 153294,
+      "stars": 153299,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-09-27T07:14:55Z"
+      "updated": "2026-09-27T08:22:20Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 147135,
+      "stars": 147140,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-09-27T07:15:52Z"
+      "updated": "2026-09-27T08:00:53Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 146626,
+      "stars": 146655,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-09-27T07:14:23Z"
+      "updated": "2026-09-27T08:21:46Z"
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
       "description": "\u5229\u7528 AI \u5927\u6a21\u578b\u548c\u81ea\u52a8\u5316\u5de5\u4f5c\u6d41\uff0c\u6839\u636e\u4e3b\u9898\u6216\u5173\u952e\u8bcd\u4e00\u952e\u751f\u6210\u9ad8\u6e05\u77ed\u89c6\u9891\u3002Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "stars": 126169,
+      "stars": 126179,
       "language": "Python",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "updated": "2026-09-27T07:14:21Z"
+      "updated": "2026-09-27T08:18:34Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 85645,
+      "stars": 85661,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-09-27T07:10:32Z"
+      "updated": "2026-09-27T08:13:18Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 77649,
+      "stars": 77652,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-09-27T07:11:10Z"
+      "updated": "2026-09-27T07:38:00Z"
     },
     {
       "name": "career-ops-hq/career-ops",
       "description": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your C",
-      "stars": 72887,
+      "stars": 72889,
       "language": "JavaScript",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-09-27T06:59:20Z"
+      "updated": "2026-09-27T07:57:10Z"
     }
   ],
   "nasdaq_data": {
@@ -1514,7 +1530,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 27 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-27T04:16:13.857020"
+    "timestamp": "2026-09-27T04:22:29.455049"
   },
   "sticky": {
     "cnbc": [

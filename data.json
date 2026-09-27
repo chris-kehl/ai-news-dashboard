@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T03:16:31.141807",
-  "summary": "Key topics today:\n- - An agent used DNS to reach an external chatbot (r/HackerNews, 101 pts)\n- - Evolving programming languages in the AI era (r/HackerNews, 101 pts)\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - Turning GLM-5.3-Flash into a Jev-like decision model (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)",
+  "timestamp": "2026-09-27T03:17:26.360853",
+  "summary": "Key topics today:\n- - An agent used DNS to reach an external chatbot (r/HackerNews, 101 pts)\n- - Drawgent: Coding agent on a live Excalidraw canvas (r/HackerNews, 101 pts)\n- - Evolving programming languages in the AI era (r/HackerNews, 101 pts)\n- - Turning GLM-5.3-Flash into a Jev-like decision model (r/HackerNews, 101 pts)\n- - How I changed teaching after AI managed to do all my homework assignments (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "buy",
@@ -29,10 +29,18 @@
     {
       "type": "buy",
       "asset": "QNT-USD",
-      "price": 178.85,
-      "change": 17.09,
+      "price": 178.07,
+      "change": 16.58,
       "category": "stock",
-      "text": "QNT-USD +17.1% momentum @ $178.85"
+      "text": "QNT-USD +16.6% momentum @ $178.07"
+    },
+    {
+      "type": "buy",
+      "asset": "NEAR-USD",
+      "price": 5.45,
+      "change": 8.39,
+      "category": "stock",
+      "text": "NEAR-USD +8.4% momentum @ $5.45"
     },
     {
       "type": "watch",
@@ -41,14 +49,6 @@
       "change": -3.35,
       "category": "stock",
       "text": "GME -3.4% @ $23.39"
-    },
-    {
-      "type": "watch",
-      "asset": "HOOD",
-      "price": 119.4,
-      "change": -2.69,
-      "category": "stock",
-      "text": "HOOD -2.7% @ $119.40"
     }
   ],
   "reddit": [
@@ -61,19 +61,19 @@
       "created": ""
     },
     {
-      "title": "Evolving programming languages in the AI era",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://dashbit.co/blog/evolving-ai-era",
-      "created": ""
-    },
-    {
       "title": "Drawgent: Coding agent on a live Excalidraw canvas",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "created": ""
+    },
+    {
+      "title": "Evolving programming languages in the AI era",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://dashbit.co/blog/evolving-ai-era",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-27T07:16:01.480939",
+    "timestamp": "2026-09-27T07:17:19.379228",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,14 +438,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-27T07:15:38.363243",
+    "timestamp": "2026-09-27T07:16:57.364754",
     "trending": [
       {
         "symbol": "QNT-USD",
-        "price": 178.85,
-        "change": 26.1,
-        "change_percent": 17.09,
+        "price": 178.07,
+        "change": 25.32,
+        "change_percent": 16.58,
         "name": "Quant USD"
+      },
+      {
+        "symbol": "NEAR-USD",
+        "price": 5.45,
+        "change": 0.42,
+        "change_percent": 8.39,
+        "name": "NEAR Protocol USD"
+      },
+      {
+        "symbol": "MSTR",
+        "price": 158.61,
+        "change": -3.59,
+        "change_percent": -2.21,
+        "name": "Strategy Inc"
       },
       {
         "symbol": "QNT",
@@ -462,13 +476,6 @@
         "name": "DJIA"
       },
       {
-        "symbol": "LEN",
-        "price": 82.15,
-        "change": 0.63,
-        "change_percent": 0.77,
-        "name": "Lennar Corporation"
-      },
-      {
         "symbol": "MCD",
         "price": 236.5,
         "change": -1.82,
@@ -477,17 +484,10 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 1662.56,
-        "change": 12.1,
-        "change_percent": 0.73,
+        "price": 1661.69,
+        "change": 11.23,
+        "change_percent": 0.68,
         "name": "Zcash USD"
-      },
-      {
-        "symbol": "SPMO",
-        "price": 152.92,
-        "change": 1.0,
-        "change_percent": 0.66,
-        "name": "Invesco S&P 500 Momentum ETF"
       },
       {
         "symbol": ".SPX",
@@ -498,31 +498,17 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2705.69,
-        "change": 10.48,
-        "change_percent": 0.39,
+        "price": 2706.32,
+        "change": 11.11,
+        "change_percent": 0.41,
         "name": "Ethereum USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.52,
         "change": -0.01,
-        "change_percent": -0.35,
+        "change_percent": -0.37,
         "name": "XRP USD"
-      },
-      {
-        "symbol": "BRK-B",
-        "price": 505.48,
-        "change": -1.69,
-        "change_percent": -0.33,
-        "name": "Berkshire Hathaway Inc. New"
-      },
-      {
-        "symbol": "JEPQ",
-        "price": 61.24,
-        "change": 0.14,
-        "change_percent": 0.23,
-        "name": "JPMorgan Nasdaq Equity Premium "
       },
       {
         "symbol": "SCHD",
@@ -533,9 +519,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 84504.56,
-        "change": 98.11,
-        "change_percent": 0.12,
+        "price": 84525.91,
+        "change": 119.46,
+        "change_percent": 0.14,
         "name": "Bitcoin USD"
       },
       {
@@ -544,6 +530,20 @@
         "change": 1.98,
         "change_percent": 0.07,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "ASML",
+        "price": 1743.94,
+        "change": -0.67,
+        "change_percent": -0.04,
+        "name": "ASML Holding N.V. - New York Re"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 121.42,
+        "change": -0.01,
+        "change_percent": -0.0,
+        "name": "Solana USD"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-27T07:15:56.711398",
+    "timestamp": "2026-09-27T07:17:15.850324",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,50 +1068,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 329.06,
-        "change": 5.22,
+        "price": 328.63,
+        "change": 5.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84520,
-        "change": 0.61,
+        "price": 84521,
+        "change": 0.64,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2705.71,
-        "change": 0.57,
+        "price": 2706.02,
+        "change": 0.61,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.41,
-        "change": 0.7,
+        "price": 121.38,
+        "change": 0.73,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 14.31,
-        "change": 1.65,
+        "change": 1.71,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.96,
-        "change": 2.69,
+        "price": 10.98,
+        "change": 2.98,
         "type": "crypto"
       },
       {
         "symbol": "QNT-USD",
-        "price": 178.2,
-        "change": 16.66,
+        "price": 177.11,
+        "change": 15.95,
         "type": "mover"
       },
       {
         "symbol": "NEAR-USD",
-        "price": 5.45,
-        "change": 8.48,
+        "price": 5.44,
+        "change": 8.35,
         "type": "mover"
       },
       {
@@ -1158,8 +1158,8 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 1662.55,
-        "change": 0.73,
+        "price": 1662.08,
+        "change": 0.7,
         "type": "mover"
       }
     ]
@@ -1226,11 +1226,11 @@
       "author": ""
     },
     {
-      "title": "AMD Stock Crosses $1 Trillion \u2014 and the Market Still Underestimates the Dark Horse",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBneW9iRWVFS0RjNU1OYVhObWYydHpzaFNLN2hTTEplVHdJOFp2N1U3dzM5OVRhTzIxUmdEZ3YtUmNKSkpycW9TYjBIc3poMGRyaHhWZ0N1SnktSDlZM3U4dG9xLWRLSDVOZlIxemFR?oc=5",
-      "source": "I/O Fund",
+      "title": "Trump says he ended Biden electric vehicle rule, updated fuel economy standards",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRmticTJxMlhfTzkxZ0pEOHE5VGtTeF9LUHZjVDI4RGp5YzZPREtLUTdvZndWQk1KQjJnQXR6eXBWQkU5MkdiXzlWQUc1QzFNakVEM3FBZ21CdTJCV05xc1pzVTBQcGFzTXQ2cmlOV2FMcGxWdEhMRnAyMU1JaVZIZmtRaU9zMHlOeXhtcThPb9IBlAFBVV95cUxQakF3Sk1yQVdqX0lTSVJRelBDbkVFbHFCaExzY3VidUV1c09FLWdlYlYwUUw3bWFHbUpFN3c4dl9LOXNub0NZbFNoYnVMREVvSDB4RGtFZE1tSmRFbzFITDJadmthYWFwMXNnYXc5azNqaGRlR2F3eGJVZThRU3VBRFlBT2NLRUVHaHhCcndxNDZVZWcy?oc=5",
+      "source": "The Hill",
       "category": "business",
-      "published": "Fri, 25 Sep 2026 ",
+      "published": "Sat, 26 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1522,7 +1522,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 27 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-27T03:16:23.730114"
+    "timestamp": "2026-09-27T03:17:24.915338"
   },
   "sticky": {
     "cnbc": [

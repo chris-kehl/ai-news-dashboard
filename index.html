@@ -1058,18 +1058,19 @@ function renderAll(d){
     var mtItems = '';
     if (mt.length > 0) {
       mtItems = mt.map(function(m){
-        var score = m.score || m.factors && m.factors.score || 0;
-        var price = m.price || m.factors && m.factors.price || 0;
-        var chg = m.change_percent || m.change_7d || m.factors && m.factors.chg_5d || 0;
-        var name = m.name || m.ticker || m.symbol || '';
+        var name = m.name || m.symbol || '';
+        var price = m.price || 0;
+        var chg = m.change_percent || m.change_7d || 0;
+        var score = m.score || (m.factors && m.factors.score) || 0;
+        var hasScore = score > 0;
         return '<div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--brd);font-family:JetBrains Mono;font-size:.82rem">' +
           '<span style="display:flex;align-items:center;gap:8px;">' +
             '<span style="font-weight:600">' + name + '</span>' +
-            '<span style="font-size:.65rem;color:var(--tx3)">Score ' + Math.round(score) + '</span>' +
+            (hasScore ? '<span style="font-size:.65rem;color:var(--tx3)">Score ' + Math.round(score) + '</span>' : '') +
           '</span>' +
           '<span style="display:flex;gap:12px;align-items:center">' +
-            '<span>$' + (typeof price === 'number' ? price.toLocaleString() : price) + '</span>' +
-            '<span class="' + (chg >= 0 ? 'up' : 'dn') + '">' + (chg >= 0 ? '+' : '') + (typeof chg === 'number' ? chg.toFixed(1) : chg) + '%</span>' +
+            '<span>$' + (typeof price === 'number' ? price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) : price) + '</span>' +
+            '<span class="' + (chg >= 0 ? 'up' : 'dn') + '">' + (chg >= 0 ? '+' : '') + (typeof chg === 'number' ? chg.toFixed(2) : chg) + '%</span>' +
           '</span>' +
         '</div>';
       }).join('');

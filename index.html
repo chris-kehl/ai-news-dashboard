@@ -891,7 +891,7 @@ function renderCryptoTab(d){
   // Major crypto banner (BTC, ETH, SOL)
   var major = { 'BTC': null, 'ETH': null, 'SOL': null };
   cry.forEach(function(c) {
-    if(major[c.symbol]) major[c.symbol] = c;
+    if(major.hasOwnProperty(c.symbol)) major[c.symbol] = c;
   });
   
   if(major['BTC']) {

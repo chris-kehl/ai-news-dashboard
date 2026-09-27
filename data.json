@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-27T13:16:05.530024",
+  "timestamp": "2026-09-27T13:22:26.649996",
   "summary": "Key topics today:\n- - OpenAI halts training of latest models as reports mount of AI agents going rogue (r/HackerNews, 501 pts)\n- - Show HN: TinyAIArena watch AI agents battle it out (r/HackerNews, 201 pts)\n- - There are no \"rogue\" AI agents (r/HackerNews, 201 pts)\n- - \"As a Language Model\": Chat Template Switches LLM Self-Referential Voice (r/HackerNews, 201 pts)\n- - Unsealed Briefs in Authors\u2019 Case v. Microsoft/OpenAI (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -19,28 +19,28 @@
       "text": "TAO -2.4% @ $323.82"
     },
     {
+      "type": "buy",
+      "asset": "QNT-USD",
+      "price": 188.02,
+      "change": 23.09,
+      "category": "stock",
+      "text": "QNT-USD +23.1% momentum @ $188.02"
+    },
+    {
+      "type": "watch",
+      "asset": "ZEC-USD",
+      "price": 1585.18,
+      "change": -3.96,
+      "category": "stock",
+      "text": "ZEC-USD -4.0% @ $1585.18"
+    },
+    {
       "type": "watch",
       "asset": "GME",
       "price": 23.39,
       "change": -3.35,
       "category": "stock",
       "text": "GME -3.4% @ $23.39"
-    },
-    {
-      "type": "watch",
-      "asset": "HOOD",
-      "price": 119.4,
-      "change": -2.69,
-      "category": "stock",
-      "text": "HOOD -2.7% @ $119.40"
-    },
-    {
-      "type": "watch",
-      "asset": "AMD",
-      "price": 630.63,
-      "change": 2.61,
-      "category": "stock",
-      "text": "AMD +2.6% @ $630.63"
     },
     {
       "type": "watch",
@@ -134,31 +134,9 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Trump administration can use expanded immigration database as it encourages states to purge voter rolls, Supreme Court rules. https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-trump-administration-use-expanded-database-potent-rcna596611?taid=6ab69b0c33",
-      "url": "http://shitter.thepixora.com/BreakingNews/status/2103515456434790682#m",
-      "date": "Fri, 25 Sep 2026 16:02:20 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: U.S. and China agree to extend a trade truce into January, Treasury secretary says, as Trump greets Xi at Joint Base Andrews. https://www.nbcnews.com/business/economy/us-china-extend-trade-truce-trump-rcna599525?taid=6ab457fe3a03d10001616ec1&utm_campaign=trueanthem&utm_",
-      "url": "http://shitter.thepixora.com/BreakingNews/status/2102893699793408043#m",
-      "date": "Wed, 23 Sep 2026 22:51:42 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Harvey Weinstein is sentenced to 15 years after he was convicted of a sex crime against a former \u2018Project Runway\u2019 production assistant. https://www.nbcnews.com/news/us-news/harvey-weinstein-sentenced-15-years-new-york-sex-crime-conviction-rcna599213?taid=6ab3f3ab3a03d10",
-      "url": "http://shitter.thepixora.com/BreakingNews/status/2102785978473513325#m",
-      "date": "Wed, 23 Sep 2026 15:43:39 GMT",
-      "likes": 0
-    }
-  ],
+  "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-27T17:15:50.678731",
+    "timestamp": "2026-09-27T17:22:19.066631",
     "prices": [
       {
         "name": "Bittensor",
@@ -460,14 +438,49 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-27T17:15:28.996655",
+    "timestamp": "2026-09-27T17:21:59.050837",
     "trending": [
       {
-        "symbol": "test",
-        "price": 37.68,
-        "change": -0.47,
-        "change_percent": -1.23,
-        "name": "YieldMax TSLA Performance & Dis"
+        "symbol": "QNT-USD",
+        "price": 188.02,
+        "change": 35.27,
+        "change_percent": 23.09,
+        "name": "Quant USD"
+      },
+      {
+        "symbol": "ZEC-USD",
+        "price": 1585.18,
+        "change": -65.28,
+        "change_percent": -3.96,
+        "name": "Zcash USD"
+      },
+      {
+        "symbol": "TSLA",
+        "price": 372.11,
+        "change": -8.01,
+        "change_percent": -2.11,
+        "name": "Tesla, Inc."
+      },
+      {
+        "symbol": "ACHR",
+        "price": 5.61,
+        "change": -0.1,
+        "change_percent": -1.75,
+        "name": "Archer Aviation Inc."
+      },
+      {
+        "symbol": "QNT",
+        "price": 49.53,
+        "change": -0.58,
+        "change_percent": -1.16,
+        "name": "Quantinuum Inc."
+      },
+      {
+        "symbol": "MU",
+        "price": 1082.28,
+        "change": 10.4,
+        "change_percent": 0.97,
+        "name": "Micron Technology, Inc."
       },
       {
         "symbol": ".DJI",
@@ -477,6 +490,20 @@
         "name": "DJIA"
       },
       {
+        "symbol": "TSM",
+        "price": 450.61,
+        "change": 4.04,
+        "change_percent": 0.9,
+        "name": "Taiwan Semiconductor Manufactur"
+      },
+      {
+        "symbol": "NKE",
+        "price": 35.75,
+        "change": -0.3,
+        "change_percent": -0.83,
+        "name": "Nike, Inc."
+      },
+      {
         "symbol": ".SPX",
         "price": 7743.41,
         "change": 39.28,
@@ -484,11 +511,39 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "SOL-USD",
+        "price": 122.03,
+        "change": 0.6,
+        "change_percent": 0.5,
+        "name": "Solana USD"
+      },
+      {
+        "symbol": "ETH-USD",
+        "price": 2687.74,
+        "change": -7.47,
+        "change_percent": -0.28,
+        "name": "Ethereum USD"
+      },
+      {
+        "symbol": "JEPQ",
+        "price": 61.24,
+        "change": 0.14,
+        "change_percent": 0.23,
+        "name": "JPMorgan Nasdaq Equity Premium "
+      },
+      {
         "symbol": ".RUT",
         "price": 2837.552,
         "change": 1.98,
         "change_percent": 0.07,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 84421.47,
+        "change": 15.02,
+        "change_percent": 0.02,
+        "name": "Bitcoin USD"
       }
     ],
     "meme_momentum": [
@@ -919,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-27T17:15:45.689436",
+    "timestamp": "2026-09-27T17:22:15.696520",
     "items": [
       {
         "symbol": "SPX",
@@ -1013,50 +1068,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 323.82,
-        "change": -2.54,
+        "price": 324.21,
+        "change": -2.03,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84355,
-        "change": 0.34,
+        "price": 84420,
+        "change": 0.43,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2687.13,
-        "change": -0.02,
+        "price": 2688.45,
+        "change": 0.06,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.91,
-        "change": 0.68,
+        "price": 122.02,
+        "change": 0.83,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.1,
-        "change": -1.35,
+        "price": 14.11,
+        "change": -1.19,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.94,
-        "change": -0.08,
+        "price": 10.95,
+        "change": 0.58,
         "type": "crypto"
       },
       {
         "symbol": "QNT-USD",
-        "price": 186.53,
-        "change": 22.11,
+        "price": 186.61,
+        "change": 22.17,
         "type": "mover"
       },
       {
         "symbol": "ZEC-USD",
-        "price": 1582.27,
-        "change": -4.13,
+        "price": 1584.82,
+        "change": -3.98,
         "type": "mover"
       },
       {
@@ -1161,6 +1216,16 @@
       "author": ""
     },
     {
+      "title": "Could SpaceX Stock Help You Retire a Millionaire?",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQmlzdlB4WjJyQnA3VGZPekRPdDMyU29aOEttN1VqcDZKdnFoazB5aUZ1RHpDWlZxTmNuazJabU5zZ1pqZUNSdDFQd01UUmYyaElKSXJoR1RMZ2ZrcWJ6MjVpS2hySy1QMkN0OGw1dk91ZHRXWUhSQS1mSWtCWEJ2YjNKVGFWRHY1ZGxybzA2b3RncVhxSWVhS21Nbw?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sat, 26 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Warren Buffett's Top Advice for Investors Bracing for a Market Crash",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOWxkN0J0ak5leTJXWVdlUWFqeHQybmFPbHNlakhNaGxZUE4yWWdUV21yOGlkNEp4TG53M3ltVFU1aS0yRjFXNW40ZGRjYXRiR3RxRDNVeHFmTDlzUzVxYWJ6MDRoazNRR0dsMmF6Smdmc05QWkp1dUVCOXdsTE1vVXp1cmFrQ21oQmtPX19FY2FBV2FTdlNleU5qN3c5WXhLb3FN?oc=5",
       "source": "Yahoo Finance",
@@ -1179,23 +1244,13 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "'Out of nowhere came Muse': Wall Street weighs in on Meta's AI catch-up moment",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWVZSNnJHbGFENnhFOExMZHlEdndHMW1TeXU4RUo0V2p1QmZmcnlUSGJ1akcxUU5NdlJBaWZTTEdiWGdLRlIwLVF5dFBaamVLRDBVd0VMT0hwZnAzMEdySEFkSTBiZUNKUG5KeTZqal9Ua3JsMTJmOHVwTE5PS2VFcGpHcUNkQ09WSW9tNHVOUnRYbmg5Y20wRmU0RU5HNHhmS2h3U2dCdnFLVGxzc2FpbWVzNnAyVXVWa2Z0OGlabFdwOXRpb3V6NUtmOA?oc=5",
-      "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Sun, 27 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
     {
       "title": "Galaxy S27 Ultra and Galaxy S27 Pro may boast supreme memory upgrades, but there's a catch",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSWZPZHlkdFd4R21VUzdkVlpZWVB4THFvOWduNV92RHBzd280a1RGM0tKSlRjbkhjU1hZQmJkTDkwYnNSR3Z2dm5ZN0wwZVhvcjVGSEFKUm9zVkpfTHNtbkNuNmx2T3dqZEc0VzhReGFUNkJvd3RXbHgtQmI4NjV5dUkzZ1BGT2tnM3ZhUmxjWHlSQQ?oc=5",
-      "source": "phonearena.com",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Wed, 23 Sep 2026 ",
       "description": "",
@@ -1320,6 +1375,14 @@
       "source": "Defense News",
       "published": "Fri, 25 Sep 2026 ",
       "description": "France will send troops and defense systems to Saudi Arabia to help protect the Red Sea port city of Yanbu, which is key for energy transport, Macron said.",
+      "relevance_score": 4
+    },
+    {
+      "title": "Giant pandas arrive in Atlanta as part of 10-year US-China agreement",
+      "url": "https://www.aljazeera.com/news/2026/9/27/giant-pandas-arrive-in-atlanta-as-part-of-10-year-us-china-agreement?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 27 Sep 2026 ",
+      "description": "The two pandas, Ping Ping and Fu Shuang, arrived from southwestern China.",
       "relevance_score": 4
     },
     {
@@ -1459,7 +1522,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 27 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-27T13:16:02.710399"
+    "timestamp": "2026-09-27T13:22:24.460178"
   },
   "sticky": {
     "cnbc": [
@@ -1588,13 +1651,6 @@
         "description": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Sandisk, AMD to Open Higher&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - StocksToTrade",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XOERCc1hrRkZEODhJWVlsZEx2dVVxcThWMGRrOFY2RDJxX0QwMVY3QV9pc1RRdzFYb2lzbjhZZnFYbjlfZFJLdzdIVmlrYXJmalFrM01MQ01aQXVUR3c2cklfc1BoWTdSa2dhY2p3bXdaNjg5RVE?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-09-24T12:33:00",
-        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;StocksToTrade"
-      },
-      {
         "title": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Favorites - timothysykes.com",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdWxIbk4wQUJWODlSNlNwRWlrVlNRLVd3cHJaazhmMHhZbGhsNWZUMW5wUGo3cVo5Ni1JVlFJSFhiQTQ1dFdlQ01ScS1Vbk9XcjEzbFp1OWNFT2YzMklfSERDaHZUcVBMYVNwcjFSTnZhQXhSM2s0am40QzNuMFZRUg?oc=5",
         "source": "r/wallstreetbets",
@@ -1602,11 +1658,25 @@
         "description": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Favorites&nbsp;&nbsp;timothysykes.com"
       },
       {
+        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - StocksToTrade",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XOERCc1hrRkZEODhJWVlsZEx2dVVxcThWMGRrOFY2RDJxX0QwMVY3QV9pc1RRdzFYb2lzbjhZZnFYbjlfZFJLdzdIVmlrYXJmalFrM01MQ01aQXVUR3c2cklfc1BoWTdSa2dhY2p3bXdaNjg5RVE?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-09-24T12:33:00",
+        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;StocksToTrade"
+      },
+      {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Sandisk, Micron Technology to Decline - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc1F0dmI3SHliTFBxeHFNMjNKNVJkSDlJTzljcHFXNkgxSlpubFp2eFpZcThBVk95LTg1V3cxTml1THk2c2RvdUM2aWl2V2hOWDYyVjV0cV9kSjNoWjdES1hKY0JMZXNTTTczRVZkbWFCbVYtSjgtLWFId1hISWlkNkdTazZ0cmc2RnJwWUpYWXlfeW95VFRFS3BEUXV3cnVpQS1Wak1HU0U?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T10:35:46",
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-14T07:00:00",
+        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Wednesday; BlackBerry to Advance, AMD to Decline - Bitget",
@@ -1642,13 +1712,6 @@
         "source": "r/wallstreetbets",
         "published": "2026-09-21T10:34:35",
         "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Monday; Strategy, Intel to Open Higher&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOGF4ODFqNkhtdWFBSWJoY1hjeEFIMHl1NzJKN1hwNEhiYU9EX1FCd1ZoRFlfUmlmWWtiVWxhNnVhRUs0c1ZEM25EVjFXSW9ldmNzNE02cVBiazVlcndUbkozY09wVGZGV1hYUWFuekg5ZEJ3QnM2WUcweHhGS0l5NW9teWRyY2p0WXY5Y3EybExfN19kS1FjU3NPd1NHSWhXSWpzUTVB?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-09-14T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },

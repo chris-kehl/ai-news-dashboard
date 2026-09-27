@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-27T19:16:10.269432",
+  "timestamp": "2026-09-27T19:19:29.867791",
   "summary": "Key topics today:\n- - Show HN: TinyAIArena watch AI agents battle it out (r/HackerNews, 201 pts)\n- - Ask HN: Why do we let the AI companies dominate regulation discussion? (r/HackerNews, 101 pts)\n- - When did Google get so weird? (r/HackerNews, 1 pts)\n- - Ember-1 (r/HackerNews, 1 pts)\n- - Lunar Terminator Paradox (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -13,18 +13,18 @@
     {
       "type": "buy",
       "asset": "QNT-USD",
-      "price": 304.11,
-      "change": 99.09,
+      "price": 290.61,
+      "change": 90.25,
       "category": "stock",
-      "text": "QNT-USD +99.1% momentum @ $304.11"
+      "text": "QNT-USD +90.2% momentum @ $290.61"
     },
     {
-      "type": "buy",
-      "asset": "NEAR-USD",
-      "price": 5.39,
-      "change": 7.38,
+      "type": "sell",
+      "asset": "BZ=F",
+      "price": 98.53,
+      "change": -5.55,
       "category": "stock",
-      "text": "NEAR-USD +7.4% momentum @ $5.39"
+      "text": "BZ=F -5.5% drop @ $98.53"
     },
     {
       "type": "watch",
@@ -120,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-27T23:16:02.133322",
+    "timestamp": "2026-09-27T23:19:22.262144",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,35 +422,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-27T23:15:39.281985",
+    "timestamp": "2026-09-27T23:18:59.766085",
     "trending": [
       {
         "symbol": "QNT-USD",
-        "price": 304.11,
-        "change": 151.36,
-        "change_percent": 99.09,
+        "price": 290.61,
+        "change": 137.86,
+        "change_percent": 90.25,
         "name": "Quant USD"
       },
       {
-        "symbol": "NEAR-USD",
-        "price": 5.39,
-        "change": 0.37,
-        "change_percent": 7.38,
-        "name": "NEAR Protocol USD"
-      },
-      {
-        "symbol": "ONDO-USD",
-        "price": 0.55,
-        "change": 0.02,
-        "change_percent": 2.92,
-        "name": "Ondo USD"
-      },
-      {
-        "symbol": "NIO",
-        "price": 3.58,
-        "change": -0.09,
-        "change_percent": -2.45,
-        "name": "NIO Inc."
+        "symbol": "BZ=F",
+        "price": 98.53,
+        "change": -5.79,
+        "change_percent": -5.55,
+        "name": "Brent Crude Oil Last Day Financ"
       },
       {
         "symbol": "TSLA",
@@ -468,9 +454,9 @@
       },
       {
         "symbol": "CL=F",
-        "price": 93.36,
-        "change": 0.95,
-        "change_percent": 1.03,
+        "price": 93.44,
+        "change": 1.03,
+        "change_percent": 1.11,
         "name": "Crude Oil Nov 26"
       },
       {
@@ -495,32 +481,39 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "VST",
-        "price": 138.46,
-        "change": 0.49,
-        "change_percent": 0.36,
-        "name": "Vistra Corp."
+        "symbol": "GC=F",
+        "price": 4300.4,
+        "change": -20.8,
+        "change_percent": -0.48,
+        "name": "Gold Dec 26"
+      },
+      {
+        "symbol": "YM=F",
+        "price": 51997.0,
+        "change": -166.0,
+        "change_percent": -0.32,
+        "name": "Mini Dow Jones Indus.-$5 Dec 26"
       },
       {
         "symbol": "NQ=F",
-        "price": 30796.25,
-        "change": -93.0,
-        "change_percent": -0.3,
+        "price": 30802.0,
+        "change": -87.25,
+        "change_percent": -0.28,
         "name": "Nasdaq 100 Dec 26"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 84196.11,
-        "change": -210.34,
-        "change_percent": -0.25,
-        "name": "Bitcoin USD"
+        "symbol": "ES=F",
+        "price": 7782.0,
+        "change": -21.75,
+        "change_percent": -0.28,
+        "name": "E-Mini S&P 500 Dec 26"
       },
       {
-        "symbol": "O",
-        "price": 55.54,
-        "change": -0.07,
-        "change_percent": -0.13,
-        "name": "Realty Income Corporation"
+        "symbol": "NVDA",
+        "price": 225.07,
+        "change": -0.44,
+        "change_percent": -0.2,
+        "name": "NVIDIA Corporation"
       },
       {
         "symbol": ".RUT",
@@ -528,6 +521,13 @@
         "change": 1.98,
         "change_percent": 0.07,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "SI=F",
+        "price": 64.21,
+        "change": -0.04,
+        "change_percent": -0.05,
+        "name": "Silver Dec 26"
       }
     ],
     "meme_momentum": [
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-27T23:15:58.077895",
+    "timestamp": "2026-09-27T23:19:18.884205",
     "items": [
       {
         "symbol": "SPX",
@@ -992,50 +992,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7780.75,
+        "price": 7781.5,
         "change": -0.29,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30793.5,
-        "change": -0.31,
+        "price": 30801.25,
+        "change": -0.28,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51987.0,
-        "change": -0.34,
+        "price": 51994.0,
+        "change": -0.32,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2844.8,
-        "change": -0.51,
+        "price": 2845.7,
+        "change": -0.48,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 93.38,
-        "change": 1.05,
+        "price": 93.42,
+        "change": 1.09,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4299.4,
-        "change": -0.5,
+        "price": 4299.2,
+        "change": -0.51,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 64.23,
-        "change": -0.02,
+        "price": 64.21,
+        "change": -0.05,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1778.8,
-        "change": 0.23,
+        "price": 1779.5,
+        "change": 0.27,
         "type": "future"
       },
       {
@@ -1047,73 +1047,55 @@
       {
         "symbol": "NG=F",
         "price": 3.11,
-        "change": -2.63,
+        "change": -2.6,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 319.03,
-        "change": -0.73,
+        "price": 318.92,
+        "change": -0.56,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84258,
-        "change": -0.14,
+        "price": 84236,
+        "change": -0.13,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2677.66,
-        "change": -0.61,
+        "price": 2678.08,
+        "change": -0.54,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.64,
-        "change": -0.05,
+        "price": 121.6,
+        "change": 0.01,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.96,
-        "change": -1.35,
+        "price": 13.95,
+        "change": -1.37,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.76,
-        "change": -0.96,
+        "price": 10.78,
+        "change": -0.67,
         "type": "crypto"
       },
       {
         "symbol": "QNT-USD",
-        "price": 296.74,
-        "change": 94.27,
-        "type": "mover"
-      },
-      {
-        "symbol": "NEAR-USD",
-        "price": 5.4,
-        "change": 7.39,
+        "price": 286.69,
+        "change": 87.69,
         "type": "mover"
       },
       {
         "symbol": "GME",
         "price": 23.39,
         "change": -3.35,
-        "type": "mover"
-      },
-      {
-        "symbol": "ONDO-USD",
-        "price": 0.55,
-        "change": 3.01,
-        "type": "mover"
-      },
-      {
-        "symbol": "NIO",
-        "price": 3.58,
-        "change": -2.45,
         "type": "mover"
       },
       {
@@ -1144,6 +1126,24 @@
         "symbol": "PLTR",
         "price": 189.67,
         "change": -1.11,
+        "type": "mover"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 93.42,
+        "change": 1.09,
+        "type": "mover"
+      },
+      {
+        "symbol": "MU",
+        "price": 1082.28,
+        "change": 0.97,
+        "type": "mover"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4298.9,
+        "change": -0.52,
         "type": "mover"
       }
     ]
@@ -1262,16 +1262,6 @@
       "author": ""
     },
     {
-      "title": "Report: Apple working on new Vision Pro, with different form factors on the table",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQb0c0alNSQlhpM3pLNXoyR1VNSHh5QlVUQXMxYTVNdzBRLTF4LWNYelBFNHpUaHB1clFZLVg4YzZMSmYtRlJrMGpEWmdIU1d2bTAtd0dZUkgyempzS1FyOE1CTjdOZ0VqUTFrT1EySEdzb1lEcFYtZUJLVlhCYTZPaUY5ZEQwQQ?oc=5",
-      "source": "9to5mac.com",
-      "category": "business",
-      "published": "Sun, 27 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Ruby on Rails Creator Declares 'Pencils Down' on Handwritten Code",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWTE1dDlZOVcyX1NVOS1CSlNibVhsMVd1Z2JubFFZc1NXUS1EVC05X1N6QzN5Nk9BU0tqSHpKajNaZzZMdFNsd3lvclVIS2U3c080ckxyd29LaEVHMm1Sa3EtTXNVY1lwQThNMWxTeUs2Ym1hM2hOS3oxeTlybFU2NGgtMDJFTnhKc3hmbWpB?oc=5",
       "source": "Business Insider",
@@ -1302,9 +1292,19 @@
       "author": ""
     },
     {
-      "title": "Instagram has a new feature that\u2019s bad news for creepers \u2014 and it\u2019s got people vowing to quit the app",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc1RqX3BxaUY4NFZmYmMtc3VWQXpZd0dOSzFHMkwwQ2pTTXE1bS1tTERzSnJFZGplMWhOcmdrbTdRcjduRk0xQWl2V3dIRzFvb3N1bU9FaFlXV2dHLTM3UzJPRGdDVzNxUTlmX240WkU5X3Vvb3AxNFRiYkpONDZ2dFJseEwzRVFjQ3ROaE9fN1VvVFFFQjJTdmhFcXBWel9GNXZLQm5rSEE3T3VvOExKM3hPVm5XZmdWQlBoek12dng0WVZQbXFXeGl1Uk5ua1E?oc=5",
-      "source": "New York Post",
+      "title": "Here Are All Fortnite\u2019s \u2018Five Nights At Freddy\u2019s\u2019 Skins, Plus A Release Date",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmdNU3M2WWYzRHFSZ2Y0MnpON3NsTzFaSFFEU1JCNnNVMjdfeE1lSHVRTHQ3UTB3OTRLMEEzR0F2dWxUWU5SVWI3LWNKaFRGWFVXa05nOUR2ZHJVMHBNcXdINHo5N3RVVTh2RDUwNmlDMWFTTFI1d19zRi16eUluXzlyWXh1VklzRk1IbERsc2NEVUdQeXZtNUw3a3JvLVhLTmo0dmNLaHNYeWdTYmdmUnFjeVFDRjd5X1BWSEhJcw?oc=5",
+      "source": "Forbes",
+      "category": "business",
+      "published": "Sun, 27 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "NYT Strands hints, answers for September 26, 2026",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBnaEJ6eGF2bE82WXFjOGFEV3J5djluWnQzeVdtbFExaUNyMkVTamhiSUdkQjluaDQ0T09aUW13NVNpOFFtV0x5TzBIdm9XYjhScU9KWVVmejkxX0NDZkFDMW5uOTdra3BkNU1uQ2dWNVFOaVdFeTRubA?oc=5",
+      "source": "Mashable",
       "category": "business",
       "published": "Sun, 27 Sep 2026 ",
       "description": "",
@@ -1498,7 +1498,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 27 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-27T19:16:07.623047"
+    "timestamp": "2026-09-27T19:19:28.014086"
   },
   "sticky": {
     "cnbc": [
@@ -1694,58 +1694,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7780.75,
-      "change": -23.0,
-      "change_percent": -0.29,
+      "price": 7781.75,
+      "change": -22.0,
+      "change_percent": -0.28,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30793.5,
-      "change": -95.75,
-      "change_percent": -0.31,
+      "price": 30799.25,
+      "change": -90.0,
+      "change_percent": -0.29,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51987.0,
-      "change": -176.0,
-      "change_percent": -0.34,
+      "price": 51994.0,
+      "change": -169.0,
+      "change_percent": -0.32,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2844.5,
-      "change": -14.8,
-      "change_percent": -0.52,
+      "price": 2845.7,
+      "change": -13.6,
+      "change_percent": -0.48,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 93.38,
-      "change": 0.97,
-      "change_percent": 1.05,
+      "price": 93.42,
+      "change": 1.01,
+      "change_percent": 1.09,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4299.5,
-      "change": -21.7,
-      "change_percent": -0.5,
+      "price": 4299.2,
+      "change": -22.0,
+      "change_percent": -0.51,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 64.23,
-      "change": -0.01,
-      "change_percent": -0.02,
+      "price": 64.21,
+      "change": -0.04,
+      "change_percent": -0.05,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1778.8,
-      "change": 4.1,
-      "change_percent": 0.23,
+      "price": 1779.5,
+      "change": 4.8,
+      "change_percent": 0.27,
       "name": "Platinum Jan 27"
     },
     {
@@ -1759,7 +1759,7 @@
       "symbol": "NG=F",
       "price": 3.11,
       "change": -0.08,
-      "change_percent": -2.63,
+      "change_percent": -2.6,
       "name": "Natural Gas Nov 26"
     }
   ],

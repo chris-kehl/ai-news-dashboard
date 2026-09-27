@@ -191,8 +191,8 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
   <div class="tab-nav-inner">
     <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-market" id="tab-btn-market" tabindex="0">Market</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-btn-tech" tabindex="-1">Tech</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-crypto" id="tab-btn-crypto" tabindex="-1">Crypto</button>
     <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sticky" id="tab-btn-sticky" tabindex="-1">CNBC · Yahoo · Bloomberg</button>
-    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-chutes" id="tab-btn-chutes" tabindex="-1">Games vs Chutes</button>
   </div>
 </nav>
 
@@ -669,112 +669,42 @@ html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;backgrou
     </div>
   </section>
 
-  <!-- GAMES VS CHUTES TAB -->
-  <!-- CHUTES (Gaming) TAB -->
-  <section id="tab-chutes" role="tabpanel" aria-labelledby="tab-btn-chutes" class="tab-panel" hidden>
-    <div class="tab-timestamp" id="ts-chutes">⏱ Updated: --</div>
-    <div class="pong-wrap" id="chutesWrap">
-      <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:6px" id="gameMenu">
-        <button class="btn" id="gmPong" onclick="loadGame('pong')">Pong</button>
-        <button class="btn" id="gmInvaders" onclick="loadGame('invaders')">Space Invaders</button>
-        <button class="btn" id="gmTetris" onclick="loadGame('tetris')">Tetris</button>
-        <button class="btn" id="gmFrogger" onclick="loadGame('frogger')">Frogger</button>
+  <!-- CRYPTO TAB -->
+  <section id="tab-crypto" role="tabpanel" aria-labelledby="tab-btn-crypto" class="tab-panel" hidden>
+    <div class="tab-timestamp" id="ts-crypto">⏱ Updated: --</div>
+    
+    <!-- Major Crypto Prices -->
+    <div class="indices-banner" id="cryptoBanner">
+      <div class="index-tile"><div class="index-name">Bitcoin</div><div class="index-price ld">--</div><div class="index-change">--</div></div>
+      <div class="index-tile"><div class="index-name">Ethereum</div><div class="index-price ld">--</div><div class="index-change">--</div></div>
+      <div class="index-tile"><div class="index-name">Solana</div><div class="index-price ld">--</div><div class="index-change">--</div></div>
+    </div>
+
+    <!-- Crypto News -->
+    <div class="grid">
+      <div class="card">
+        <div class="card-hd">📰 Crypto News</div>
+        <div class="card-bd" id="cryptoNews"><div class="ld">Loading...</div></div>
       </div>
-      <!-- Pong -->
-      <div id="gamePong">
-        <div class="pong-hud">
-          <div class="pong-score">LEVEL: <span id="pongLevel">1</span></div>
-          <div class="pong-score">COMPUTER: <span id="scoreComp">0</span></div>
-          <div class="pong-status" id="pongStatus">Click Start to play</div>
-          <div class="pong-score">YOU: <span id="scorePlayer">0</span></div>
-        </div>
-        <div class="pong-area">
-          <canvas id="pongCanvas" class="pong-canvas" width="720" height="450"></canvas>
-          <div class="pong-slider" id="pongSliderWrap">
-            <div class="pong-slider-track" id="pongTrack">
-              <div class="pong-slider-thumb" id="pongThumb"></div>
-            </div>
-          </div>
-        </div>
-        <div class="pong-ctrl">
-          <button class="btn" onclick="pongStart()">Start Game</button>
-          <button class="btn" onclick="pongReset()">Reset</button>
-        </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">Move your mouse / touch to control the bottom paddle. First to 5 wins.</div>
+      
+      <!-- Top Movers -->
+      <div class="card">
+        <div class="card-hd">🚀 Top Movers (24h)</div>
+        <div class="card-bd" id="cryptoMovers"><div class="ld">Loading...</div></div>
       </div>
-      <!-- Space Invaders -->
-      <div id="gameInvaders" style="display:none">
-        <div class="pong-hud">
-          <div class="pong-score">SCORE: <span id="siScore">0</span></div>
-          <div class="pong-status" id="siStatus">Click Start to play</div>
-          <div class="pong-score">LIVES: <span id="siLives">3</span></div>
-        </div>
-        <canvas id="siCanvas" class="pong-canvas" width="720" height="540"></canvas>
-        <div class="pong-ctrl">
-          <button class="btn" onclick="siStart()">Start Game</button>
-          <button class="btn" onclick="siReset()">Reset</button>
-        </div>
-        <div class="mobile-ctrl" id="siMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(0);" onmousedown="siMove(0)">&#9650;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(-1);" onmousedown="siMove(-1)">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siFire();" onmousedown="siFire()">&#128165;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();siMove(1);" onmousedown="siMove(1)">&#9654;</button>
-          </div>
-        </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">Arrow keys / touch to move. Press Space (or tap) to fire. Destroy all invaders before they land.</div>
+      
+      <!-- Weekly Crypto Picks -->
+      <div class="card">
+        <div class="card-hd">💡 Weekly Crypto Picks</div>
+        <div class="card-bd" id="cryptoPicks"><div class="ld">Loading...</div></div>
       </div>
-      <!-- Tetris -->
-      <div id="gameTetris" style="display:none">
-        <div class="pong-hud">
-          <div class="pong-score">SCORE: <span id="trScore">0</span></div>
-          <div class="pong-status" id="trStatus">Click Start to play</div>
-          <div class="pong-score">LEVEL: <span id="trLevel">1</span></div>
-        </div>
-        <canvas id="trCanvas" class="pong-canvas" width="360" height="720"></canvas>
-        <div class="pong-ctrl">
-          <button class="btn" onclick="trStart()">Start Game</button>
-          <button class="btn" onclick="trResetGame()">Reset</button>
-        </div>
-        <div class="mobile-ctrl" id="trMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('up');" onmousedown="trInput('up')">&#8635;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('left');" onmousedown="trInput('left')">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('down');" onmousedown="trInput('down')">&#9660;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();trInput('right');" onmousedown="trInput('right')">&#9654;</button>
-          </div>
-        </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">&#8592; &#8594; Move | &#8595; Soft Drop | &#8635; Rotate</div>
-      </div>
-      <!-- Frogger -->
-      <div id="gameFrogger" style="display:none">
-        <div class="pong-hud">
-          <div class="pong-score">SCORE: <span id="fgScore">0</span></div>
-          <div class="pong-status" id="fgStatus">Click Start to play</div>
-          <div class="pong-score">LIVES: <span id="fgLives">3</span></div>
-        </div>
-        <canvas id="fgCanvas" class="pong-canvas" width="600" height="700"></canvas>
-        <div class="pong-ctrl">
-          <button class="btn" onclick="fgStart()">Start Game</button>
-          <button class="btn" onclick="fgReset()">Reset</button>
-        </div>
-        <div class="mobile-ctrl" id="fgMobileCtrl">
-          <div class="dpad">
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('up');" onmousedown="fgInput('up')">&#9650;</button>
-            <div class="dp-empty"></div>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('left');" onmousedown="fgInput('left')">&#9664;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('down');" onmousedown="fgInput('down')">&#9660;</button>
-            <button class="dp-btn" ontouchstart="event.preventDefault();fgInput('right');" onmousedown="fgInput('right')">&#9654;</button>
-          </div>
-        </div>
-        <div style="font-size:.72rem;color:var(--tx3);text-align:center">
-          Arrow keys / swipe to move the frog. Reach the top lily pads. Avoid cars and water.
-        </div>
+    </div>
+    
+    <!-- Price Table -->
+    <div class="card">
+      <div class="card-hd">💰 All Crypto Prices</div>
+      <div class="card-bd">
+        <div id="cryptoTable" style="display:grid;gap:6px"></div>
       </div>
     </div>
   </section>
@@ -802,7 +732,7 @@ var $=function(id){return document.getElementById(id)};
 var IS_MOBILE=window.innerWidth<768;
 
 /* ===== TABS ===== */
-var tabs=['market','tech','sticky','chutes'];
+var tabs=['market','tech','sticky','crypto'];
 var currentTab='market';
 
 function switchTab(tabId){
@@ -814,7 +744,6 @@ function switchTab(tabId){
   if(newBtn){newBtn.setAttribute('aria-selected','true');newBtn.setAttribute('tabindex','0');newBtn.focus();}
   if(newPanel){newPanel.classList.add('active');newPanel.hidden=false;}
   currentTab=tabId;
-  if(tabId==='chutes'){pongResize();}
   var cached=null;try{cached=JSON.parse(localStorage.getItem('dash_data'));}catch(e){}
   if(cached){try{renderAll(cached);}catch(e){console.error(e);}}
   loadData();
@@ -958,9 +887,145 @@ function renderMovers(items, elId){
   }).join('')+'</div>';
 }
 
+function renderCryptoTab(d){
+  // Update timestamp
+  var ts = $('ts-crypto');
+  if(ts && d.timestamp) {
+    var date = new Date(d.timestamp);
+    ts.textContent = '⏱ Updated: ' + date.toLocaleString();
+  }
+  
+  // Crypto prices
+  var cry = (d.crypto || {}).prices || [];
+  
+  // Major crypto banner (BTC, ETH, SOL)
+  var major = { 'BTC': null, 'ETH': null, 'SOL': null };
+  cry.forEach(function(c) {
+    if(major[c.symbol]) major[c.symbol] = c;
+  });
+  
+  if(major['BTC']) {
+    var btc = major['BTC'];
+    var btcTile = $('cryptoBanner').children[0];
+    if(btcTile) {
+      btcTile.querySelector('.index-price').textContent = '$' + parseFloat(btc.price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      var btcCls = (btc.change_24h || 0) >= 0 ? 'up' : 'dn';
+      var btcSign = (btc.change_24h || 0) >= 0 ? '+' : '';
+      btcTile.querySelector('.index-change').className = 'index-change ' + btcCls;
+      btcTile.querySelector('.index-change').textContent = btcSign + (btc.change_24h || 0).toFixed(2) + '%';
+    }
+  }
+  if(major['ETH']) {
+    var eth = major['ETH'];
+    var ethTile = $('cryptoBanner').children[1];
+    if(ethTile) {
+      ethTile.querySelector('.index-price').textContent = '$' + parseFloat(eth.price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      var ethCls = (eth.change_24h || 0) >= 0 ? 'up' : 'dn';
+      var ethSign = (eth.change_24h || 0) >= 0 ? '+' : '';
+      ethTile.querySelector('.index-change').className = 'index-change ' + ethCls;
+      ethTile.querySelector('.index-change').textContent = ethSign + (eth.change_24h || 0).toFixed(2) + '%';
+    }
+  }
+  if(major['SOL']) {
+    var sol = major['SOL'];
+    var solTile = $('cryptoBanner').children[2];
+    if(solTile) {
+      solTile.querySelector('.index-price').textContent = '$' + parseFloat(sol.price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      var solCls = (sol.change_24h || 0) >= 0 ? 'up' : 'dn';
+      var solSign = (sol.change_24h || 0) >= 0 ? '+' : '';
+      solTile.querySelector('.index-change').className = 'index-change ' + solCls;
+      solTile.querySelector('.index-change').textContent = solSign + (sol.change_24h || 0).toFixed(2) + '%';
+    }
+  }
+  
+  // Crypto News
+  var news = (d.crypto || {}).news || [];
+  var newsEl = $('cryptoNews');
+  if(newsEl) {
+    if(news.length > 0) {
+      newsEl.innerHTML = news.map(function(n){
+        return '<div class="item">' +
+          '<a href="'+n.url+'" class="item-title" target="_blank">'+n.title+'</a>' +
+          '<div class="item-meta">' +
+            '<span>'+(n.published||'')+'</span>' +
+          '</div></div>';
+      }).join('');
+    } else {
+      newsEl.innerHTML = '<div class="ld">No crypto news</div>';
+    }
+  }
+  
+  // Top Movers
+  var moversEl = $('cryptoMovers');
+  if(moversEl) {
+    if(cry.length > 0) {
+      var sorted = cry.slice().sort(function(a,b){return Math.abs(b.change_24h||0)-Math.abs(a.change_24h||0);});
+      moversEl.innerHTML = '<div class="mover-grid">' + sorted.slice(0, IS_MOBILE?4:8).map(function(c){
+        var cls = (c.change_24h||0) >= 0 ? 'up' : 'dn';
+        var sign = (c.change_24h||0) >= 0 ? '+' : '';
+        return '<div class="mover-cell">' +
+          '<div class="mover-symbol">'+c.symbol+'</div>' +
+          '<div class="mover-price">$'+parseFloat(c.price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})+'</div>' +
+          '<div class="mover-pct '+cls+'">'+sign+(c.change_24h||0).toFixed(2)+'%</div>' +
+          '</div>';
+      }).join('') + '</div>';
+    } else {
+      moversEl.innerHTML = '<div class="ld">No crypto data</div>';
+    }
+  }
+  
+  // Weekly Crypto Picks (recommendations)
+  var picksEl = $('cryptoPicks');
+  if(picksEl) {
+    picksEl.innerHTML = '<div style="font-size:.82rem;line-height:1.5">' +
+      '<div style="padding:8px 0;border-bottom:1px solid var(--brd)">' +
+        '<div style="font-weight:600;color:var(--good)">🚀 Bitcoin (BTC)</div>' +
+        '<div style="color:var(--tx2)">Dominance strong, institutional adoption continues. Hold for long-term.</div>' +
+      '</div>' +
+      '<div style="padding:8px 0;border-bottom:1px solid var(--brd)">' +
+        '<div style="font-weight:600;color:var(--good)">⚡ Ethereum (ETH)</div>' +
+        '<div style="color:var(--tx2)">ETF inflows growing. Layer 2 ecosystem thriving. Accumulate on dips.</div>' +
+      '</div>' +
+      '<div style="padding:8px 0;border-bottom:1px solid var(--brd)">' +
+        '<div style="font-weight:600;color:var(--good)">🔥 Solana (SOL)</div>' +
+        '<div style="color:var(--tx2)">High throughput, growing DeFi. Strong momentum this week.</div>' +
+      '</div>' +
+      '<div style="padding:8px 0;border-bottom:1px solid var(--brd)">' +
+        '<div style="font-weight:600;color:var(--info)">🧠 Bittensor (TAO)</div>' +
+        '<div style="color:var(--tx2)">AI + crypto narrative. Decentralized ML network. High risk/reward.</div>' +
+      '</div>' +
+      '<div style="padding:8px 0">' +
+        '<div style="font-weight:600;color:var(--info)">🔗 Chainlink (LINK)</div>' +
+        '<div style="color:var(--tx2)">Oracle dominance, CCIP adoption. Solid mid-term hold.</div>' +
+      '</div>' +
+    '</div>';
+  }
+  
+  // All Crypto Prices Table
+  var tableEl = $('cryptoTable');
+  if(tableEl) {
+    if(cry.length > 0) {
+      tableEl.innerHTML = cry.map(function(c){
+        var cls = (c.change_24h||0) >= 0 ? 'up' : 'dn';
+        var sign = (c.change_24h||0) >= 0 ? '+' : '';
+        return '<div class="stock-row">' +
+          '<div class="stock-symbol">'+c.symbol+'</div>' +
+          '<div class="stock-price">$'+parseFloat(c.price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})+'</div>' +
+          '<div class="stock-pct '+cls+'">'+sign+(c.change_24h||0).toFixed(2)+'%</div>' +
+          '</div>';
+      }).join('');
+    } else {
+      tableEl.innerHTML = '<div class="ld">No crypto price data</div>';
+    }
+  }
+}
+
 function renderAll(d){
   d=d||{};
   try{renderIndices(d);}catch(e){console.error('indices',e);}
+  
+  // Render Crypto Tab
+  try{renderCryptoTab(d);}catch(e){console.error('crypto tab',e);}
 
   try{
     var cryptoSyms=['BTC','ETH','SOL','XRP','DOGE','ADA','AVAX','LINK','TAO','SHIB','FIGR_HELOC','PEPE'];

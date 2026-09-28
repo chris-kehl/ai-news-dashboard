@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-28T04:16:25.591399",
+  "timestamp": "2026-09-28T04:18:52.737462",
   "summary": "Key topics today:\n- - Owed a billion dollars in Nvidia stock (r/HackerNews, 101 pts)\n- - Thinking fast and slow in AI: The role of metacognition (2021) (r/HackerNews, 1 pts)\n- - Ember-1 (r/HackerNews, 1 pts)\n- - When did Google get so weird? (r/HackerNews, 1 pts)\n- - Malleable software: Restoring user agency in a world of locked-down apps (2025) (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,12 +27,20 @@
       "text": "SOL -4.7% @ $118.35"
     },
     {
-      "type": "sell",
-      "asset": "QNT-USD",
-      "price": 262.51,
-      "change": -8.02,
+      "type": "buy",
+      "asset": "TW.L",
+      "price": 91.32,
+      "change": 15.89,
       "category": "stock",
-      "text": "QNT-USD -8.0% drop @ $262.51"
+      "text": "TW.L +15.9% momentum @ $91.32"
+    },
+    {
+      "type": "buy",
+      "asset": "PSN.L",
+      "price": 1327.5,
+      "change": 15.59,
+      "category": "stock",
+      "text": "PSN.L +15.6% momentum @ $1327.50"
     },
     {
       "type": "sell",
@@ -41,14 +49,6 @@
       "change": -7.5,
       "category": "stock",
       "text": "GYGY -7.5% drop @ $0.74"
-    },
-    {
-      "type": "sell",
-      "asset": "SI=F",
-      "price": 61.51,
-      "change": -5.08,
-      "category": "stock",
-      "text": "SI=F -5.1% drop @ $61.51"
     }
   ],
   "reddit": [
@@ -101,6 +101,14 @@
       "created": ""
     },
     {
+      "title": "Made by Mechanical Means",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://felixrieseberg.com/made-by-mechanical-means/",
+      "created": ""
+    },
+    {
       "title": "Guitar amp and effects pedal built on the Waveshare ESP32-S3-Touch-AMOLED-2.06",
       "subreddit": "HackerNews",
       "score": 1,
@@ -123,20 +131,12 @@
       "comments": 0,
       "url": "https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/",
       "created": ""
-    },
-    {
-      "title": "There is more to code review than (automatable) detection",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-28T08:16:02.073948",
+    "timestamp": "2026-09-28T08:18:45.102755",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,14 +438,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-28T08:15:39.360376",
+    "timestamp": "2026-09-28T08:18:21.127265",
     "trending": [
       {
-        "symbol": "QNT-USD",
-        "price": 262.51,
-        "change": -22.9,
-        "change_percent": -8.02,
-        "name": "Quant USD"
+        "symbol": "TW.L",
+        "price": 91.32,
+        "change": 12.52,
+        "change_percent": 15.89,
+        "name": "TAYLOR WIMPEY PLC ORD 1P"
+      },
+      {
+        "symbol": "PSN.L",
+        "price": 1327.5,
+        "change": 179.0,
+        "change_percent": 15.59,
+        "name": "PERSIMMON PLC ORD 10P"
       },
       {
         "symbol": "GYGY",
@@ -455,18 +462,18 @@
         "name": "Game Your Game, Inc."
       },
       {
-        "symbol": "SI=F",
-        "price": 61.51,
-        "change": -3.29,
-        "change_percent": -5.08,
-        "name": "Silver Dec 26"
+        "symbol": "QNT-USD",
+        "price": 264.96,
+        "change": -20.45,
+        "change_percent": -7.16,
+        "name": "Quant USD"
       },
       {
-        "symbol": "000660.KS",
-        "price": 1768000.0,
-        "change": -72000.0,
-        "change_percent": -3.91,
-        "name": "SK hynix"
+        "symbol": "SI=F",
+        "price": 61.44,
+        "change": -3.36,
+        "change_percent": -5.19,
+        "name": "Silver Dec 26"
       },
       {
         "symbol": "MSFT",
@@ -477,9 +484,9 @@
       },
       {
         "symbol": "GC=F",
-        "price": 4190.5,
-        "change": -130.7,
-        "change_percent": -3.02,
+        "price": 4188.6,
+        "change": -132.6,
+        "change_percent": -3.07,
         "name": "Gold Dec 26"
       },
       {
@@ -491,9 +498,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 82977.55,
-        "change": -1480.54,
-        "change_percent": -1.75,
+        "price": 82971.77,
+        "change": -1486.31,
+        "change_percent": -1.76,
         "name": "Bitcoin USD"
       },
       {
@@ -504,18 +511,11 @@
         "name": "SK hynix Inc."
       },
       {
-        "symbol": "QNT",
-        "price": 49.53,
-        "change": -0.58,
-        "change_percent": -1.16,
-        "name": "Quantinuum Inc."
-      },
-      {
-        "symbol": "MU",
-        "price": 1082.28,
-        "change": 10.4,
-        "change_percent": 0.97,
-        "name": "Micron Technology, Inc."
+        "symbol": "NQ=F",
+        "price": 30600.25,
+        "change": -289.0,
+        "change_percent": -0.94,
+        "name": "Nasdaq 100 Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -525,18 +525,18 @@
         "name": "DJIA"
       },
       {
-        "symbol": "NQ=F",
-        "price": 30610.25,
-        "change": -279.0,
-        "change_percent": -0.9,
-        "name": "Nasdaq 100 Dec 26"
-      },
-      {
         "symbol": ".SPX",
         "price": 7743.41,
         "change": 39.28,
         "change_percent": 0.51,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "GLD",
+        "price": 393.41,
+        "change": 0.53,
+        "change_percent": 0.13,
+        "name": "SPDR Gold Shares"
       },
       {
         "symbol": ".RUT",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-28T08:15:58.334153",
+    "timestamp": "2026-09-28T08:18:39.489464",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 16.11,
-        "change": 8.34,
+        "price": 16.15,
+        "change": 8.61,
         "type": "index"
       },
       {
@@ -1008,110 +1008,110 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7770.5,
-        "change": -0.43,
+        "price": 7772.5,
+        "change": -0.4,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30608.5,
-        "change": -0.91,
+        "price": 30617.75,
+        "change": -0.88,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52012.0,
-        "change": -0.29,
+        "price": 52030.0,
+        "change": -0.25,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2844.0,
-        "change": -0.54,
+        "price": 2845.1,
+        "change": -0.5,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 94.53,
-        "change": 2.29,
+        "price": 94.58,
+        "change": 2.35,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4190.4,
-        "change": -3.03,
+        "price": 4189.8,
+        "change": -3.04,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.49,
-        "change": -5.1,
+        "price": 61.47,
+        "change": -5.15,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1745.9,
-        "change": -2.88,
+        "price": 1746.9,
+        "change": -2.83,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1239.0,
-        "change": -2.9,
+        "price": 1242.5,
+        "change": -2.63,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.12,
-        "change": -3.38,
+        "change": -3.41,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 304.32,
-        "change": -9.02,
+        "price": 304.59,
+        "change": -9.0,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82969,
+        "price": 83000,
         "change": -2.14,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2648.31,
-        "change": -2.53,
+        "price": 2650.23,
+        "change": -2.47,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 118.39,
-        "change": -4.89,
+        "price": 118.5,
+        "change": -4.88,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.74,
-        "change": -4.49,
+        "price": 13.76,
+        "change": -4.23,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.46,
-        "change": -6.51,
+        "price": 10.48,
+        "change": -6.68,
         "type": "crypto"
       },
       {
         "symbol": "TW.L",
-        "price": 91.14,
-        "change": 15.66,
+        "price": 91.26,
+        "change": 15.81,
         "type": "mover"
       },
       {
         "symbol": "PSN.L",
-        "price": 1326.0,
-        "change": 15.45,
+        "price": 1327.0,
+        "change": 15.54,
         "type": "mover"
       },
       {
@@ -1122,14 +1122,14 @@
       },
       {
         "symbol": "QNT-USD",
-        "price": 264.08,
-        "change": -7.47,
+        "price": 265.06,
+        "change": -7.13,
         "type": "mover"
       },
       {
         "symbol": "SI=F",
         "price": 61.47,
-        "change": -5.13,
+        "change": -5.15,
         "type": "mover"
       },
       {
@@ -1146,8 +1146,8 @@
       },
       {
         "symbol": "GC=F",
-        "price": 4190.4,
-        "change": -3.03,
+        "price": 4189.8,
+        "change": -3.04,
         "type": "mover"
       },
       {
@@ -1168,7 +1168,7 @@
     {
       "title": "Stocks slip in Asia as oil and yields climb",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNjVwRkxEMEdFMlBlSmpIbDZEZ3dDclNNLVVBLTBya2k1VlpyT00xM1VBeFZ2cmNheUplNXJDYy1Vam9FYWdibUxrWmFLd1ZIUU9LRGhhX09yQkQ0OXF6dW5MZ0Qwc0dXNF9fU3ZBR2NwU3R5eGNWdnpPMW1heVpsUkpGNA?oc=5",
-      "source": "Reuters",
+      "source": "reuters.com",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1179,26 +1179,6 @@
       "title": "Stock futures slip after winning week on Wall Street: Live updates",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfcHBSWXRJblRwTG9LU2FTa2padU81clRCNUE5aVFMSHRsMEVXNWVKd1RINFM2VjhCSFNyOUVEVTBFTkgxeG5NSVBPWXZnWkE5Zi1fWTE1c042R2diaGNaUG52Qm1Zbjc5TVlSdTRWRlFKQ21laXJF0gF8QVVfeXFMUF9sSmc0eVlfc0psUWhFVUc3WVNwWFZlSldzSUtXamRDd0VKQTRqRjMxSWNGSEdTZDJBWEVtS0JkVThUV1I5cVFCNHV4UjZxQVcwR09qRnRRVHBFeTR6Qk84WEY5Y05vZlNZNU5NQnYxV0ZTSlJsSi1VNkQtVw?oc=5",
       "source": "cnbc.com",
-      "category": "business",
-      "published": "Mon, 28 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "OpenAI pauses training of latest models after agents searched U.S. government sites in unexpected ways",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdmhabDZfN1ZHQXprdWJ4QThjNFVRWTU3ODlmakJmcy1iVGpZakJpMGZULVhSaWZod29QaXdtNTkwTXV1T3lWVm1GTTk5Q2hZRG5CLW1DYTVheGt4ZnF5cnIxamlsaE1WeGlZV0pxTWxPZ3NLWEgzMGlERlc4WFJoa0h6enN1dUQ1dTdYaHZTOER2SU1uUUFTazNtNW5hdGJkYVJ5MjduZ1dkWEFEQ3BuVHVMZkozM3lySHZIbg?oc=5",
-      "source": "NBC News",
-      "category": "business",
-      "published": "Sun, 27 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Australia\u2019s biggest gold miner rejects $27bn takeover bid",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU3VtS3VSZHNQX003R2ZpSjhMSUFqZDB3Q3BudjVTbF9HalJYVzlCUW9Cdk9XZ1BlZ0FudS1jdmp5TzlJYWh4N0ViR3JGMGwxa0g5S2xwZmxtU21DZE9VdWhocXp4bGxEaDlmWUphZDN4YXdfRG52UEt4NWJjNXg1ZEtNVFg?oc=5",
-      "source": "Financial Times",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1236,11 +1216,31 @@
       "author": ""
     },
     {
+      "title": "OpenAI pauses training of latest models after agents searched U.S. government sites in unexpected ways",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdmhabDZfN1ZHQXprdWJ4QThjNFVRWTU3ODlmakJmcy1iVGpZakJpMGZULVhSaWZod29QaXdtNTkwTXV1T3lWVm1GTTk5Q2hZRG5CLW1DYTVheGt4ZnF5cnIxamlsaE1WeGlZV0pxTWxPZ3NLWEgzMGlERlc4WFJoa0h6enN1dUQ1dTdYaHZTOER2SU1uUUFTazNtNW5hdGJkYVJ5MjduZ1dkWEFEQ3BuVHVMZkozM3lySHZIbg?oc=5",
+      "source": "NBC News",
+      "category": "business",
+      "published": "Sun, 27 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "What to know about booking holiday travel this year",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBJV0lDYUtJcld2SmFlRXBJZVZQVzhibDVadVRMMTByX0NRT0c2ajhOamR6YTJwbDdiQjN1TWJKQWJvLTA1cDBScFJKNTR1QzRVRWk1YUdjTlhBbC1mUThldTZZRjNBbEJ4ZzBTcXk0cV9qTERwTEpzM9IBfkFVX3lxTFBlODBvTGRaX2RDZmhlS2M2cG5tNDJzUjZKVnIwbGFGNUVsZ3M2SzdNZk5kR1F6dlp5ZmRlSm04dXk5WHdoN2JvWFhUMkFjXzFXMFozajMwdUV2WWdjVzNBN25vWW84TEVYMUpDMmtfYmh0YkFXVnI3UHF2OFZyQQ?oc=5",
       "source": "ABC News - Breaking News, Latest News and Videos",
       "category": "business",
       "published": "Sat, 26 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Trump Says He\u2019s \u2018Very Seriously\u2019 Looking at Diesel Export Ban",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdFZtN25ka0RyTW1vdFNqODAtakxXbUZ4bnQwdVV5QmxCTFE3V0RXS0N2SVcwekx3NXlwUWM0TU1HYXFRUGFyU0VPVzM3Q2wyckxIQUdVcHhoYTdsNnlmWFU4ZlhxaUZOX1JfWmFtUlA3RjNiMlp4SnlzWUI3S25FYVVkeUhZbFZubmoyY3dCd29vM0lRY0ZyUzRZcGRzOGVaR29YbW1fWTNtcFdWZVdV?oc=5",
+      "source": "Bloomberg",
+      "category": "business",
+      "published": "Sun, 27 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1530,7 +1530,7 @@
     "changePercent": 0.42,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 28 Sep: 30,608.13, up +0.42% -- BULLISH. price above SMA20, RSI 66.0 strong, MACD bullish, modest +0.42% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-09-28T04:16:23.613838"
+    "timestamp": "2026-09-28T04:18:50.931192"
   },
   "sticky": {
     "cnbc": [
@@ -1726,72 +1726,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7770.25,
-      "change": -33.5,
-      "change_percent": -0.43,
+      "price": 7771.5,
+      "change": -32.25,
+      "change_percent": -0.41,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30608.75,
-      "change": -280.5,
-      "change_percent": -0.91,
+      "price": 30616.75,
+      "change": -272.5,
+      "change_percent": -0.88,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52012.0,
-      "change": -151.0,
-      "change_percent": -0.29,
+      "price": 52029.0,
+      "change": -134.0,
+      "change_percent": -0.26,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2844.2,
-      "change": -15.1,
-      "change_percent": -0.53,
+      "price": 2845.1,
+      "change": -14.2,
+      "change_percent": -0.5,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 94.51,
-      "change": 2.1,
-      "change_percent": 2.27,
+      "price": 94.62,
+      "change": 2.21,
+      "change_percent": 2.39,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4190.1,
-      "change": -131.1,
-      "change_percent": -3.03,
+      "price": 4189.7,
+      "change": -131.5,
+      "change_percent": -3.04,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.49,
-      "change": -3.31,
-      "change_percent": -5.1,
+      "price": 61.44,
+      "change": -3.36,
+      "change_percent": -5.18,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1746.2,
-      "change": -51.5,
-      "change_percent": -2.86,
+      "price": 1746.9,
+      "change": -50.8,
+      "change_percent": -2.83,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1239.0,
-      "change": -37.0,
-      "change_percent": -2.9,
+      "price": 1242.5,
+      "change": -33.5,
+      "change_percent": -2.63,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.12,
       "change": -0.11,
-      "change_percent": -3.38,
+      "change_percent": -3.41,
       "name": "Natural Gas Nov 26"
     }
   ],

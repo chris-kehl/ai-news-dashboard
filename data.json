@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-28T18:31:12.265878",
-  "summary": "Key topics today:\n- - Nvidia wants to put a watchdog chip next to every AI agent (r/HackerNews, 301 pts)\n- - Jeff \u2013 Jev-compatible 0.8B decision models, trained at home, ~30 ms (r/HackerNews, 101 pts)\n- - MicroLLM Lab \u2013 Try 7 tiny LLM's in the browser (r/HackerNews, 101 pts)\n- - It's Time to Investigate the AI Labs (r/HackerNews, 101 pts)\n- - Pacing the Frontier is not the actual goal for AI labs (r/HackerNews, 101 pts)",
+  "timestamp": "2026-09-28T18:36:44.104591",
+  "summary": "Key topics today:\n- - Nvidia wants to put a watchdog chip next to every AI agent (r/HackerNews, 301 pts)\n- - Who should be held accountable when an AI Agent (accidentally) acts maliciously? (r/HackerNews, 201 pts)\n- - Jeff \u2013 Jev-compatible 0.8B decision models, trained at home, ~30 ms (r/HackerNews, 101 pts)\n- - MicroLLM Lab \u2013 Try 7 tiny LLM's in the browser (r/HackerNews, 101 pts)\n- - It's Time to Investigate the AI Labs (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "KNRX",
-      "price": 1.23,
-      "change": 292.97,
-      "category": "stock",
-      "text": "KNRX +293.0% momentum @ $1.23"
-    },
-    {
-      "type": "buy",
       "asset": "KOD",
       "price": 89.92,
       "change": 170.68,
@@ -49,6 +41,14 @@
       "change": 73.26,
       "category": "stock",
       "text": "SOAR +73.3% momentum @ $0.32"
+    },
+    {
+      "type": "sell",
+      "asset": "MDB",
+      "price": 334.68,
+      "change": -20.58,
+      "category": "stock",
+      "text": "MDB -20.6% drop @ $334.68"
     }
   ],
   "reddit": [
@@ -58,6 +58,14 @@
       "score": 301,
       "comments": 0,
       "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+      "created": ""
+    },
+    {
+      "title": "Who should be held accountable when an AI Agent (accidentally) acts maliciously?",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://blog.greenpants.net/ai-accountability/",
       "created": ""
     },
     {
@@ -85,19 +93,19 @@
       "created": ""
     },
     {
-      "title": "Pacing the Frontier is not the actual goal for AI labs",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs",
-      "created": ""
-    },
-    {
       "title": "Cf: The Agentic CLI for the Cloudflare API",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+      "created": ""
+    },
+    {
+      "title": "Pacing the Frontier is not the actual goal for AI labs",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs",
       "created": ""
     },
     {
@@ -109,14 +117,6 @@
       "created": ""
     },
     {
-      "title": "World Labs Is Joining AMD",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.worldlabs.ai/blog/amd-announcement",
-      "created": ""
-    },
-    {
       "title": "Pirating the Pirates",
       "subreddit": "HackerNews",
       "score": 1,
@@ -125,18 +125,18 @@
       "created": ""
     },
     {
-      "title": "12,000-year-old G\u00f6beklitepe burials explain scattered bones",
+      "title": "Palantir founder purchases large swath of forest in Sweden",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://archaeologymag.com/2026/09/gobeklitepe-burials-hundreds-of-scattered-bones/",
+      "url": "https://www.arctictoday.com/palantir-founder-purchases-large-swath-of-forest-in-sweden/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-28T22:31:04.169304",
+    "timestamp": "2026-09-28T22:36:36.832810",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-28T22:30:40.323694",
+    "timestamp": "2026-09-28T22:36:14.249201",
     "trending": [
-      {
-        "symbol": "KNRX",
-        "price": 1.23,
-        "change": 0.92,
-        "change_percent": 292.97,
-        "name": "KNOREX LTD."
-      },
       {
         "symbol": "KOD",
         "price": 89.92,
@@ -469,18 +462,18 @@
         "name": "MongoDB, Inc."
       },
       {
-        "symbol": "RBLX",
-        "price": 41.86,
-        "change": -6.97,
-        "change_percent": -14.27,
-        "name": "Roblox Corporation"
-      },
-      {
         "symbol": "AMC",
         "price": 3.29,
         "change": 0.38,
         "change_percent": 13.06,
         "name": "AMC Entertainment Holdings, Inc"
+      },
+      {
+        "symbol": "ABCL",
+        "price": 13.92,
+        "change": 1.27,
+        "change_percent": 10.04,
+        "name": "AbCellera Biologics Inc."
       },
       {
         "symbol": "NU",
@@ -502,6 +495,13 @@
         "change": 4.28,
         "change_percent": 1.91,
         "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "FICO",
+        "price": 840.89,
+        "change": -15.59,
+        "change_percent": -1.82,
+        "name": "Fair Isaac Corporation"
       },
       {
         "symbol": "SPCX",
@@ -540,9 +540,9 @@
       },
       {
         "symbol": "GC=F",
-        "price": 4155.9,
-        "change": -12.5,
-        "change_percent": -0.3,
+        "price": 4157.1,
+        "change": -11.3,
+        "change_percent": -0.27,
         "name": "Gold Dec 26"
       }
     ],
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-28T22:30:59.043363",
+    "timestamp": "2026-09-28T22:36:33.182819",
     "items": [
       {
         "symbol": "SPX",
@@ -1008,110 +1008,104 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7750.75,
-        "change": 0.05,
-        "type": "future"
-      },
-      {
-        "symbol": "NQ=F",
-        "price": 30601.75,
-        "change": 0.12,
-        "type": "future"
-      },
-      {
-        "symbol": "YM=F",
-        "price": 51859.0,
+        "price": 7750.0,
         "change": 0.04,
         "type": "future"
       },
       {
+        "symbol": "NQ=F",
+        "price": 30595.25,
+        "change": 0.09,
+        "type": "future"
+      },
+      {
+        "symbol": "YM=F",
+        "price": 51852.0,
+        "change": 0.03,
+        "type": "future"
+      },
+      {
         "symbol": "RTY=F",
-        "price": 2840.6,
-        "change": 0.02,
+        "price": 2840.3,
+        "change": 0.01,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 93.2,
-        "change": 0.65,
+        "price": 93.23,
+        "change": 0.68,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4155.9,
-        "change": -0.3,
+        "price": 4157.2,
+        "change": -0.27,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.15,
-        "change": -0.93,
+        "price": 61.13,
+        "change": -0.94,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1736.5,
-        "change": -0.47,
+        "price": 1736.0,
+        "change": -0.5,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1222.0,
-        "change": -0.08,
+        "price": 1223.5,
+        "change": 0.04,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.15,
-        "change": 1.29,
+        "price": 3.14,
+        "change": 1.26,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 301.96,
-        "change": -6.96,
+        "price": 302.13,
+        "change": -6.27,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83206,
-        "change": -1.52,
+        "price": 83277,
+        "change": -1.16,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2674.18,
-        "change": -0.31,
+        "price": 2675.89,
+        "change": 0.09,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 117.7,
-        "change": -3.46,
+        "price": 117.82,
+        "change": -2.89,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 15.03,
-        "change": 7.37,
+        "price": 15.01,
+        "change": 7.74,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 10.38,
-        "change": -4.32,
+        "change": -3.83,
         "type": "crypto"
       },
       {
         "symbol": "KOD",
         "price": 89.92,
         "change": 170.68,
-        "type": "mover"
-      },
-      {
-        "symbol": "SOAR",
-        "price": 0.32,
-        "change": 73.26,
         "type": "mover"
       },
       {
@@ -1161,24 +1155,20 @@
         "price": 228.86,
         "change": 1.91,
         "type": "mover"
+      },
+      {
+        "symbol": "FICO",
+        "price": 840.89,
+        "change": -1.82,
+        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Nvidia Adds $150 Billion to Massive Stock Buyback, the Largest Ever",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9iclhOaUhUeDFGRDNBZWJzNWFOWUVtaVBwck91TFE4Um5rUDJ5Z1RsRXJSN2VWTUR3X2lmV0x5cDRqZEM5aDRwLVp5OWpzOHNtV2phY2hVNTF5NWo5M0JpYW1rcEhqTHFSTmZqZl9KSTdNZkt0QWhrZQ?oc=5",
-      "source": "The New York Times",
-      "category": "business",
-      "published": "Mon, 28 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Trump finalizes rule to make cars less fuel efficient",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQUJCMnFic1JBTl9aRFR0LTRiM3d2X04tSUcxQUNmY2lKRnNZMW5jY3FLTXNHN1JBNVdtRV9OdXd3cFdvSWxpRWsyRGNCRkp4NEJoVEU0V3Vub1JzcWk4TEUzQ05ncEJRRGZsZVVVVTg4Q3RuTEVjYkFlTzNKeHkxZ2FXSQ?oc=5",
-      "source": "The Verge",
+      "title": "What Nvidia's $150 billion stock buyback means for shareholders and potential investors",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPWUtDZnNFWERqRnhwYi1DOTdWRXhPdEhwRjgxRXdDa3paclByUmVWb3ZuaXVpTHdKc3J3QjVzYnpjRVMxXzBmSWdwUEJuV3ZEdmVBVHRBeG9IVDVKbzR3czN5UTdSQjR3U2J0T1NIWGVrQ2U5SGdmMnNscXF6ZVdSSW1JaE1EakpLMEJteVVkMWNOQi1BQmdKYzRvUmJBVUNzWXJvOXpSVW1PdGtGSTk1bkNZak1yZkh2eVFyWE01dTF6X0YwbGJmTGtURnZ3bmxMQUlyTDZHR1ZkRXVXVlZVQVdwYi10eUhzdG5zMkNxWkxUUnM?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1196,9 +1186,19 @@
       "author": ""
     },
     {
-      "title": "Bond yields push higher as investors digest global risks, higher-for-longer path for the Fed",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNb01aNWtZMEVyR2hscXVzbDNfLTVRZ2F1dFBYVS1sQXYxY0tqLVljU0xUcUdSYllvQ2RZWnFLQ3hUdnI0T05ReG9UaTFvNmMwNzdQWktUZUk1Y1c4aml0OVFjUDJLUkVET0c5SUZfUnFRUWxneFJxWTFhZ1c2WGxQVlprdFA0ZTg1RDIzRjluUjhBUTRVaE1BcFAyWVVkT0FIeW1pRFVWdXc2cTRHdkUtOF9mMzdkYUQzTkhLeXhYVmhKOG9aV3EwNjNEeVQwXzJPU3NxT2Fpc25wMTlEUXpHQVBn?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Trump finalizes rule to make cars less fuel efficient",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQUJCMnFic1JBTl9aRFR0LTRiM3d2X04tSUcxQUNmY2lKRnNZMW5jY3FLTXNHN1JBNVdtRV9OdXd3cFdvSWxpRWsyRGNCRkp4NEJoVEU0V3Vub1JzcWk4TEUzQ05ncEJRRGZsZVVVVTg4Q3RuTEVjYkFlTzNKeHkxZ2FXSQ?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 28 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "U.S. Treasury Yields Climb to Fresh Highs Ahead Economic Data",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNkg4dVZaRUxKcGtHVXhtbTZXQW9kekkzaUZkRDBSYVc3UjNOY2FwMDBYb3g2clY5WHY5aXhEdDcxUWoySlhZeV9hVWZIcmRZQXN1SjhESndPWkhScG1kemoxNDNyZ19ldU42Uzl3Nl9tcEk4QmdSckk4NmhtWnRCek1mNFM3cVl3UldDZkp2UkRfZVZNOG9DM1pwRl8?oc=5",
+      "source": "wsj.com",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1236,9 +1236,9 @@
       "author": ""
     },
     {
-      "title": "Treasury Takes Aim at Tax-Avoiding Investment Strategies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnhWdnpFUUFGc00tOWRCLWdaVHJVRUZhWWxUY24xc2l5X0ZrWWo4MHJuX3JSdGJlaDlQeDJYMlJpaGpXdlQ2SUpZTldZQldXZnlpV3V5endELWQydk93eVY1cE5GbDlkRkNIRE9haElBN3hqdWNkN3YzZlIwZUtBX3lFeEtDSE9vcGpqaVR6OTg4ZWROSmdsaTRKd05rY0JFVVZMcUlIY3hKMllM?oc=5",
-      "source": "wsj.com",
+      "title": "Treasury Takes Aim at Wall Street Tax Trades in New Notice",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQ3Q0aUhpazZ5Z0x2ODlfNHNjVDN5cGNld2FPLS1wQkNDZU56VHlmR3EySzdjS2tFVFI1OHZGNGlqVHo1OUl0VkVKT25uYnVHVV9NNDA3NVFJalQ1a3k0TENuZl9OLUNUWDZTR193RUJnTkVvbmxVODhUb1d4M0J1WDEzbC1WSTVndHpKMll6UjM3ZF9qcTZuelRJanphUGtzZ1VGeEhjdEh3T2p6cnc?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1538,7 +1538,7 @@
     "changePercent": -1.08,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 28 Sep: 30,276.81, down -1.08% -- BEARISH. strong -1.08% selloff. Counter: price above SMA20, RSI 60.6 strong, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-28T18:31:10.132114"
+    "timestamp": "2026-09-28T18:36:42.004332"
   },
   "sticky": {
     "cnbc": [
@@ -1674,11 +1674,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - StocksToTrade",
+        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - stockstotrade.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XOERCc1hrRkZEODhJWVlsZEx2dVVxcThWMGRrOFY2RDJxX0QwMVY3QV9pc1RRdzFYb2lzbjhZZnFYbjlfZFJLdzdIVmlrYXJmalFrM01MQ01aQXVUR3c2cklfc1BoWTdSa2dhY2p3bXdaNjg5RVE?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T12:33:00",
-        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;StocksToTrade"
+        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;stockstotrade.com"
       },
       {
         "title": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Favorites - timothysykes.com",
@@ -1695,11 +1695,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum - StocksToTrade",
+        "title": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum - stockstotrade.com",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2dFdEZTduNEhfMWlEMzlVZ0pZV29sOERkdm1oQ0pHMngwVi1kWVVmaDZIQUprUHg3WE8xUEtWYm5TTWxVZkdXMFh4bUMwc2VUaXlmZXdJOHBsQllQZlBaT3RoanlkeGhxUlVQWkhyeXhsdlE?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T11:49:00",
-        "description": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum&nbsp;&nbsp;StocksToTrade"
+        "description": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum&nbsp;&nbsp;stockstotrade.com"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Wednesday; BlackBerry to Advance, AMD to Decline - Yahoo Finance",
@@ -1709,11 +1709,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Wednesday; BlackBerry to Advance, AMD to Decline&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Names - StocksToTrade",
+        "title": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Names - stockstotrade.com",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1keXFsN01FLVVVNTh2VE8wcnZ0cW9QNTFYd0Fnc3FoSk9Ha1MtMmYya3dCVTY3bC1wLXJKbTJCN1hiU21RdkpkdjFnaTZfMzIxSnVqUDc3b0UzZmd3NkZ4bXJDWXliMjNXdjAyRThISXo0YlhzT2x6VEVIa3I?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T13:17:00",
-        "description": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Names&nbsp;&nbsp;StocksToTrade"
+        "description": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Names&nbsp;&nbsp;stockstotrade.com"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Tuesday; Rocket Lab, Alphabet to Advance - Yahoo Finance",
@@ -1734,72 +1734,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7750.75,
-      "change": 4.0,
-      "change_percent": 0.05,
+      "price": 7749.75,
+      "change": 3.0,
+      "change_percent": 0.04,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30600.75,
-      "change": 34.5,
-      "change_percent": 0.11,
+      "price": 30595.0,
+      "change": 28.75,
+      "change_percent": 0.09,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51859.0,
-      "change": 22.0,
-      "change_percent": 0.04,
+      "price": 51852.0,
+      "change": 15.0,
+      "change_percent": 0.03,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2840.6,
-      "change": 0.5,
-      "change_percent": 0.02,
+      "price": 2840.4,
+      "change": 0.3,
+      "change_percent": 0.01,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 93.16,
-      "change": 0.56,
-      "change_percent": 0.6,
+      "price": 93.23,
+      "change": 0.63,
+      "change_percent": 0.68,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4155.9,
-      "change": -12.5,
-      "change_percent": -0.3,
+      "price": 4156.7,
+      "change": -11.7,
+      "change_percent": -0.28,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.14,
+      "price": 61.13,
       "change": -0.58,
       "change_percent": -0.94,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1736.5,
-      "change": -8.2,
-      "change_percent": -0.47,
+      "price": 1736.0,
+      "change": -8.7,
+      "change_percent": -0.5,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1222.0,
-      "change": -1.0,
-      "change_percent": -0.08,
+      "price": 1223.5,
+      "change": 0.5,
+      "change_percent": 0.04,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.15,
+      "price": 3.14,
       "change": 0.04,
-      "change_percent": 1.29,
+      "change_percent": 1.26,
       "name": "Natural Gas Nov 26"
     }
   ],

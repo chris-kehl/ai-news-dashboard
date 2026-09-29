@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-29T04:34:40.642750",
+  "timestamp": "2026-09-29T04:46:59.985433",
   "summary": "Key topics today:\n- - Nvidia wants to put a watchdog chip next to every AI agent (r/HackerNews, 301 pts)\n- - Uncensored and Offensive Security AI Models Benchmark (r/HackerNews, 301 pts)\n- - MicroLLM Lab \u2013 Try 7 tiny LLM's in the browser (r/HackerNews, 101 pts)\n- - Jeff \u2013 Jev-compatible 0.8B decision models, trained at home, ~30 ms (r/HackerNews, 101 pts)\n- - ESP32S3 cluster running 1.58-bit (BitNet) Language model (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -25,14 +25,6 @@
       "change": -20.58,
       "category": "stock",
       "text": "MDB -20.6% drop @ $334.68"
-    },
-    {
-      "type": "watch",
-      "asset": "AI SECTOR",
-      "price": null,
-      "change": null,
-      "category": "sentiment",
-      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
@@ -77,14 +69,6 @@
       "created": ""
     },
     {
-      "title": "OpenAI: Tomorrow we are re-opening the Pro $200 subscription",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://twitter.com/thsottiaux/status/2104823812042940713",
-      "created": ""
-    },
-    {
       "title": "Show HN: Pac-Bench \u2013 How well can models one-shot a Pac-Man game?",
       "subreddit": "HackerNews",
       "score": 101,
@@ -115,12 +99,20 @@
       "comments": 0,
       "url": "https://jagi.studio/posts/phyllotaxis/",
       "created": ""
+    },
+    {
+      "title": "The systems that no one will test",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-09-29T08:34:33.808980",
+    "timestamp": "2026-09-29T08:46:51.861699",
     "prices": [],
     "news": [
       {
@@ -207,7 +199,7 @@
       "description": "The firm also issued an update on incidents in which its models accessed Australian government systems."
     },
     {
-      "title": "Sir Ranulph Fiennes family tell BBC it's 'very painful' not being able to visit him",
+      "title": "Sir Ranulph Fiennes' relatives tell BBC it's 'very painful' not being able to visit him",
       "url": "https://www.bbc.co.uk/news/articles/cqy7zr6d2lj4o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -344,7 +336,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-09-29T08:33:31.764735",
+    "timestamp": "2026-09-29T08:45:37.700941",
     "trending": [
       {
         "symbol": "KOD",
@@ -880,7 +872,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-09-29T08:33:50.493021",
+    "timestamp": "2026-09-29T08:46:08.453177",
     "items": [
       {
         "symbol": "SPX",
@@ -901,6 +893,12 @@
         "type": "index"
       },
       {
+        "symbol": "VIX",
+        "price": 16.01,
+        "change": -0.37,
+        "type": "index"
+      },
+      {
         "symbol": "RUT",
         "price": 2817.912,
         "change": -0.69,
@@ -908,56 +906,56 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7745.0,
-        "change": -0.02,
+        "price": 7743.5,
+        "change": -0.04,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30616.75,
-        "change": 0.17,
+        "price": 30602.5,
+        "change": 0.12,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51762.0,
-        "change": -0.14,
+        "price": 51749.0,
+        "change": -0.17,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2837.4,
-        "change": -0.1,
+        "price": 2836.6,
+        "change": -0.12,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 92.79,
-        "change": 0.21,
+        "price": 93.07,
+        "change": 0.51,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4175.7,
-        "change": 0.18,
+        "price": 4170.4,
+        "change": 0.05,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.08,
-        "change": -0.22,
+        "price": 60.99,
+        "change": -0.38,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1710.1,
-        "change": -0.64,
+        "price": 1705.0,
+        "change": -0.94,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1222.0,
-        "change": 1.01,
+        "price": 1220.0,
+        "change": 0.84,
         "type": "future"
       },
       {
@@ -965,42 +963,6 @@
         "price": 3.11,
         "change": 3.57,
         "type": "future"
-      },
-      {
-        "symbol": "TAO",
-        "price": 313.47,
-        "change": 3.07,
-        "type": "crypto"
-      },
-      {
-        "symbol": "BTC",
-        "price": 84087,
-        "change": 1.46,
-        "type": "crypto"
-      },
-      {
-        "symbol": "ETH",
-        "price": 2720.0,
-        "change": 2.74,
-        "type": "crypto"
-      },
-      {
-        "symbol": "SOL",
-        "price": 119.5,
-        "change": 0.99,
-        "type": "crypto"
-      },
-      {
-        "symbol": "LINK",
-        "price": 15.18,
-        "change": 10.8,
-        "type": "crypto"
-      },
-      {
-        "symbol": "AVAX",
-        "price": 11.36,
-        "change": 8.44,
-        "type": "crypto"
       },
       {
         "symbol": "KOD",
@@ -1086,19 +1048,9 @@
       "author": ""
     },
     {
-      "title": "Exclusive | Goldman\u2019s Board Has Discussed a Plan to Name John Waldron as Its Next CEO",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRS05TlBNanZKbUI4WWxVQ0RkdFgzVGJYYWtpSTBORWRFaW8wdWxCT3pRODB6eEtYcVFDVEJ5aWdCTFRYSUlZOTB6bGRCV3M0dVVxQlNEcFRUcGhHaG1pWkd0VERZcDdCc0ViSXNrLW9UbnU4UkV6RVpLRC1CalRBeXk0bFMxTF83cV9xVk1SclpuUkJPWTY0dkxrb2JJVlJmU29EcE5ZbDlsLXdvbU5jUHF6dDVXdzFt?oc=5",
-      "source": "WSJ",
-      "category": "business",
-      "published": "Tue, 29 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Anthropic warns AI may pose 'existential risks to humanity' in IPO filing: Reuters",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUTQ4TDJMcHl5ZjY1cW4wbE4ySFY5OGRYQjh4OEZjb2FzUjJ0TzFEbnFuVXZ3ZTFxblpHN0NRUDNxS1RLTXhkYWRJbDhQbHM5Ymh4dGtjeHMwMVpLRFFVUGVlcGtfNEttYnU2MnVabV9rcjkzbTJCWFZET05saFBCQzllQ1gxZXg3VFE3XzNjaTgyZHZyOC1R0gGcAUFVX3lxTE9uTHkxQlREQndhT25wazhTZ1ZkcTFVOFFQMmx2ZG15WUU0eDZDbDIySHNSY1Bvc0lJTHlJeXVMTHpDbXFCVDlXckgwWXVaTFdhSzhZcjZORk5lZTVzQnV0M1QtMXJENnc4N3BpbVRaRHJQbS1iV1d4YkZIZzhtbDF5M1FsT0hTdW04OUUxanl6dkhBT3dlR0g4WENPSA?oc=5",
-      "source": "CNBC",
+      "title": "Trump says new fuel economy rules will cut car prices. Analysts are doubtful.",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSnY1SVdCcWdiMWZXdU53YS1hMVRsNkpMUXJPa25SZVpQTW5IVHdjaE9RQnQtYmZkRW52S1VuQmUwY3lXMFBJUlNnTjFQMEhFcWVQWkRHZlhVd3FLNmloV01iS3pJSEZkalA1WDNFWWJPdlpuQ1ZpVVFKM2NzU0ozaE4zXy14UHBDbzlUMlp4ZVlUVEZ6NFg3SnBvX3Q5WmJvdWp6N29tcmpBZ0FYdF81REpLcTVjVWFpVmtmWndGOHRSTldvMFNpN01TMl9KUQ?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Tue, 29 Sep 2026 ",
       "description": "",
@@ -1126,9 +1078,19 @@
       "author": ""
     },
     {
-      "title": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Sell Off",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWWk2YThmRWdIMTQ0SWMxNEVnQ2haSFBKXzZqT0JmbG9rQ05DN2FoeU12RXJfb0Zjdm1jN3R2dWw2MGVlWFA3dUF3bGoyOGF6Vm55VWdsNWF5czlLVnlxZV9CUzZfLVNfakdnRnEwM25OaE9wTXFxanFHNXJOb3ZLdUdrdkdTTjJfdkVPT1h5UlR6dGpHSFFqc0N5UlVKNG9KNWsxMGhnZVJiVHJxZDI4YUt4MllQdktvX1JNM05ESUZ5cWM?oc=5",
-      "source": "Investor's Business Daily",
+      "title": "U.S. Stocks Slide as Treasury Selloff Deepens",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSVdEelVnRHVuNVBsSHBaWGtkcjUzdGw1TmstZGNXQWxRN2EyYTdaU3RFR0RXV1J2SDVRNy1QbWFEWjE0OTlsQzVkdktITVlvVEp2ZzFjMFlsZ1drOExwMkFVRlNwcDZleFppX0Qzc2ZFMm03Rkt0ODVCYlhrdlB2d3hLV3FSSVdSYm9XcDNaaFgwUQ?oc=5",
+      "source": "WSJ",
+      "category": "business",
+      "published": "Mon, 28 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Anthropic warns AI may pose 'existential risks to humanity' in IPO filing: Reuters",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUTQ4TDJMcHl5ZjY1cW4wbE4ySFY5OGRYQjh4OEZjb2FzUjJ0TzFEbnFuVXZ3ZTFxblpHN0NRUDNxS1RLTXhkYWRJbDhQbHM5Ymh4dGtjeHMwMVpLRFFVUGVlcGtfNEttYnU2MnVabV9rcjkzbTJCWFZET05saFBCQzllQ1gxZXg3VFE3XzNjaTgyZHZyOC1R0gGcAUFVX3lxTE9uTHkxQlREQndhT25wazhTZ1ZkcTFVOFFQMmx2ZG15WUU0eDZDbDIySHNSY1Bvc0lJTHlJeXVMTHpDbXFCVDlXckgwWXVaTFdhSzhZcjZORk5lZTVzQnV0M1QtMXJENnc4N3BpbVRaRHJQbS1iV1d4YkZIZzhtbDF5M1FsT0hTdW04OUUxanl6dkhBT3dlR0g4WENPSA?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Tue, 29 Sep 2026 ",
       "description": "",
@@ -1198,9 +1160,9 @@
       "author": ""
     },
     {
-      "title": "Exclusive: Here's What Motorola\u2019s Upcoming Wide Foldable Could Look Like",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INVVDdnlIbjYxNWQzVm1QMVdCUXI3WDBhME1hMWhkbWxfckREMk5ZOVJIWERjQ1VDYXUxOHFVQ28zRzhISnFCZmhCZWRxVG1CTy1yQUZBNEgyRGlNMk5TUUdIcGNwQWdkX3MxTzVxZkM?oc=5",
-      "source": "Android Headlines",
+      "title": "Amazon just dropped new early October Prime Day deals \u2014 here\u2019s 41+ that are actually worth it",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZk5kVHNHZ3FCZWxLZDVnZTFvOEhhaGdYbTlUZW03eUVVZzJZQmJza2F3NExpamFmWmJ3Nk0wckVJd0NnNnk0NjhzNnd2d05MYjZFdGI3WU1VenJNUWFpaEVWWE1EUzZSTUlpU2VRR0VEenJ5b3UxdzVqdU0zSklwTXdvd0pJdmh2NlZyQlRR?oc=5",
+      "source": "NBC News",
       "category": "business",
       "published": "Mon, 28 Sep 2026 ",
       "description": "",
@@ -1208,11 +1170,11 @@
       "author": ""
     },
     {
-      "title": "NYT Strands hints, answers for September 28, 2026",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83WFEtWWxSQWFfWDZxSkpPY01nV2VTQmRNeHF6RkpRRXhJX2s3RTNzdXh6NXd0aFk4MF9Ucm0yZzduOUdFZTVFNEhsazUtTk1pclZtU2FUUnV1bmFXZjhUV3p5eGYzVEFCdmF5QmU3eDFobllqN3dvWQ?oc=5",
-      "source": "Mashable",
+      "title": "Exclusive: Here's What Motorola\u2019s Upcoming Wide Foldable Could Look Like",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INVVDdnlIbjYxNWQzVm1QMVdCUXI3WDBhME1hMWhkbWxfckREMk5ZOVJIWERjQ1VDYXUxOHFVQ28zRzhISnFCZmhCZWRxVG1CTy1yQUZBNEgyRGlNMk5TUUdIcGNwQWdkX3MxTzVxZkM?oc=5",
+      "source": "Android Headlines",
       "category": "business",
-      "published": "Tue, 29 Sep 2026 ",
+      "published": "Mon, 28 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1229,14 +1191,6 @@
     }
   ],
   "defense": [
-    {
-      "title": "Satellite images show Gaza in ruins three years into Israel\u2019s genocidal war",
-      "url": "https://www.aljazeera.com/news/2026/9/29/satellite-images-show-gaza-in-ruins-three-years-into-israels-genocidal-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Tue, 29 Sep 2026 ",
-      "description": "Google Maps images show scale of Israel&#039;s destruction of Gaza, where more than 74,000 Palestinians have been killed.",
-      "relevance_score": 12
-    },
     {
       "title": "Ukraine\u2019s deadly AI training platform for drone tech opens to UK companies",
       "url": "https://www.defensenews.com/unmanned/2026/09/25/ukraines-deadly-ai-training-platform-for-drone-tech-opens-to-uk-companies/",
@@ -1318,12 +1272,28 @@
       "relevance_score": 4
     },
     {
+      "title": "Novak Djokovic ready for tennis comeback at China Open",
+      "url": "https://www.aljazeera.com/sports/2026/9/29/novak-djokovic-china-open-beijing-tennis-comeback?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 29 Sep 2026 ",
+      "description": "The 39-year-old will step back onto the court for a competitive match on Wednesday for the first time since the US Open.",
+      "relevance_score": 3
+    },
+    {
       "title": "Thousands of drivers strike in the Philippines over rising fuel prices",
       "url": "https://www.aljazeera.com/news/2026/9/29/thousands-of-drivers-strike-in-the-philippines-over-rising-fuel-prices?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Tue, 29 Sep 2026 ",
       "description": "Transport workers blame US-Israel war on Iran for rising fuel prices as government offers free rides for commuters.",
       "relevance_score": 3
+    },
+    {
+      "title": "UNGA 81: Five key takeaways from general debate",
+      "url": "https://www.aljazeera.com/news/2026/9/29/unga-81-five-key-takeaways-from-general-debate?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 29 Sep 2026 ",
+      "description": "The 81st United Nations General Assembly ends with AI, Palestine and wars dominating speeches.",
+      "relevance_score": 2
     },
     {
       "title": "Fighting in Ethiopia intensifies: What\u2019s the latest?",
@@ -1438,7 +1408,7 @@
     "changePercent": -1.08,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 29 Sep: 30,276.81, down -1.08% -- BEARISH. strong -1.08% selloff. Counter: price above SMA20, RSI 60.6 strong, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-09-29T04:34:39.012027"
+    "timestamp": "2026-09-29T04:46:58.119024"
   },
   "sticky": {
     "cnbc": [
@@ -1448,6 +1418,13 @@
         "source": "CNBC",
         "published": "2026-09-29T08:20:04",
         "description": "Mistral CEO Arthur Mensch criticized rivals\u2019 AI safety arguments as the industry faces scrutiny after several AI agents took unauthorized actions."
+      },
+      {
+        "title": "Anthropic warns investors of AI\u2019s 'existential risk to humanity' in IPO prospectus, reports say",
+        "url": "https://www.cnbc.com/2026/09/29/anthropic-warns-ai-existential-risks-ipo-filing-reuters.html",
+        "source": "CNBC",
+        "published": "2026-09-29T08:43:59",
+        "description": "Anthropic's IPO filing dedicates 80 pages to the risks of AI, nearly double the 48 pages it spends discussing its business plans, according to Reuters."
       },
       {
         "title": "Treasury yields ease as inflation concerns persist",
@@ -1490,13 +1467,6 @@
         "source": "CNBC",
         "published": "2026-09-29T01:48:52",
         "description": "Samsung Electronics and its five affiliates are investing $1 billion in KKR-launched Helix as the group expands its push into global AI infrastructure."
-      },
-      {
-        "title": "OpenAI abandons plan to release upcoming model as safety concerns escalate",
-        "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html",
-        "source": "CNBC",
-        "published": "2026-09-28T23:19:46",
-        "description": "The heads of OpenAI and rival Anthropic have both indicated recently that top AI labs should slow the pace of model development."
       }
     ],
     "yahoo_finance": [
@@ -1574,11 +1544,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - StocksToTrade",
+        "title": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up - stockstotrade.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XOERCc1hrRkZEODhJWVlsZEx2dVVxcThWMGRrOFY2RDJxX0QwMVY3QV9pc1RRdzFYb2lzbjhZZnFYbjlfZFJLdzdIVmlrYXJmalFrM01MQ01aQXVUR3c2cklfc1BoWTdSa2dhY2p3bXdaNjg5RVE?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T12:33:00",
-        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;StocksToTrade"
+        "description": "MSTR Stock Jumps As WallStreetBets Momentum Heats Up&nbsp;&nbsp;stockstotrade.com"
       },
       {
         "title": "MU Stock Slips As Risk-Off Mood Hits WallStreetBets Favorites - timothysykes.com",
@@ -1595,11 +1565,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum - StocksToTrade",
+        "title": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum - stockstotrade.com",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2dFdEZTduNEhfMWlEMzlVZ0pZV29sOERkdm1oQ0pHMngwVi1kWVVmaDZIQUprUHg3WE8xUEtWYm5TTWxVZkdXMFh4bUMwc2VUaXlmZXdJOHBsQllQZlBaT3RoanlkeGhxUlVQWkhyeXhsdlE?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-24T11:49:00",
-        "description": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum&nbsp;&nbsp;StocksToTrade"
+        "description": "MSTR Stock Surges As WallStreetBets Frenzy Fuels Momentum&nbsp;&nbsp;stockstotrade.com"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Wednesday; BlackBerry to Advance, AMD to Decline - Yahoo Finance",
@@ -1634,65 +1604,65 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7744.75,
-      "change": -2.0,
-      "change_percent": -0.03,
+      "price": 7743.5,
+      "change": -3.25,
+      "change_percent": -0.04,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30616.75,
-      "change": 50.5,
-      "change_percent": 0.17,
+      "price": 30602.5,
+      "change": 36.25,
+      "change_percent": 0.12,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51763.0,
-      "change": -74.0,
-      "change_percent": -0.14,
+      "price": 51749.0,
+      "change": -88.0,
+      "change_percent": -0.17,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2837.4,
-      "change": -2.7,
-      "change_percent": -0.1,
+      "price": 2836.6,
+      "change": -3.5,
+      "change_percent": -0.12,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 92.75,
-      "change": 0.15,
-      "change_percent": 0.16,
+      "price": 93.08,
+      "change": 0.48,
+      "change_percent": 0.52,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4176.0,
-      "change": 7.6,
-      "change_percent": 0.18,
+      "price": 4170.3,
+      "change": 1.9,
+      "change_percent": 0.05,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.09,
-      "change": -0.13,
-      "change_percent": -0.21,
+      "price": 60.97,
+      "change": -0.25,
+      "change_percent": -0.4,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1710.9,
-      "change": -10.3,
-      "change_percent": -0.6,
+      "price": 1705.0,
+      "change": -16.2,
+      "change_percent": -0.94,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1222.0,
-      "change": 12.2,
-      "change_percent": 1.01,
+      "price": 1220.0,
+      "change": 10.2,
+      "change_percent": 0.84,
       "name": "Palladium Dec 26"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T01:16:20.953753",
+  "timestamp": "2026-10-01T01:21:53.209649",
   "summary": "Key topics today:\n- - Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents (r/HackerNews, 201 pts)\n- - Halfspace experimental IDE for solid modeling with distance fields (r/HackerNews, 101 pts)\n- - Doing a Machine Learning PhD While Working in Japan (r/HackerNews, 101 pts)\n- - Bild AI (YC W25) Is Hiring a Founding Product Engineer (r/HackerNews, 101 pts)\n- - Gemini 4 Argon (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -19,20 +19,20 @@
       "text": "LQDA -58.9% drop @ $30.26"
     },
     {
-      "type": "buy",
-      "asset": "UTHR",
-      "price": 541.89,
-      "change": 11.61,
+      "type": "sell",
+      "asset": "CBRS",
+      "price": 177.65,
+      "change": -9.7,
       "category": "stock",
-      "text": "UTHR +11.6% momentum @ $541.89"
+      "text": "CBRS -9.7% drop @ $177.65"
     },
     {
-      "type": "sell",
-      "asset": "JBL",
-      "price": 286.86,
-      "change": -10.06,
+      "type": "buy",
+      "asset": "ZETA",
+      "price": 31.57,
+      "change": 8.9,
       "category": "stock",
-      "text": "JBL -10.1% drop @ $286.86"
+      "text": "ZETA +8.9% momentum @ $31.57"
     }
   ],
   "reddit": [
@@ -109,18 +109,18 @@
       "created": ""
     },
     {
-      "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
+      "title": "Show HN: Yantra \u2013 an LALR(1) parser generator for C++",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+      "url": "https://github.com/TantrixAuto/yantra",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-01T05:15:59.107705",
+    "timestamp": "2026-10-01T05:21:30.952632",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,7 +422,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-01T05:15:34.820148",
+    "timestamp": "2026-10-01T05:21:10.731049",
     "trending": [
       {
         "symbol": "LQDA",
@@ -432,18 +432,11 @@
         "name": "Liquidia Corporation"
       },
       {
-        "symbol": "UTHR",
-        "price": 541.89,
-        "change": 56.35,
-        "change_percent": 11.61,
-        "name": "United Therapeutics Corporation"
-      },
-      {
-        "symbol": "JBL",
-        "price": 286.86,
-        "change": -32.07,
-        "change_percent": -10.06,
-        "name": "Jabil Inc."
+        "symbol": "CBRS",
+        "price": 177.65,
+        "change": -19.09,
+        "change_percent": -9.7,
+        "name": "Cerebras Systems Inc."
       },
       {
         "symbol": "ZETA",
@@ -451,13 +444,6 @@
         "change": 2.58,
         "change_percent": 8.9,
         "name": "Zeta Global Holdings Corp."
-      },
-      {
-        "symbol": "GNS",
-        "price": 0.16,
-        "change": 0.01,
-        "change_percent": 6.0,
-        "name": "Genius Group Limited"
       },
       {
         "symbol": "APP",
@@ -481,11 +467,25 @@
         "name": "Intel Corporation"
       },
       {
+        "symbol": "CEG",
+        "price": 254.02,
+        "change": -6.41,
+        "change_percent": -2.46,
+        "name": "Constellation Energy Corporatio"
+      },
+      {
         "symbol": "HPE",
         "price": 63.89,
         "change": 1.26,
         "change_percent": 2.01,
         "name": "Hewlett Packard Enterprise Comp"
+      },
+      {
+        "symbol": "SNDK",
+        "price": 1739.89,
+        "change": 27.0,
+        "change_percent": 1.58,
+        "name": "Sandisk Corporation"
       },
       {
         "symbol": "MU",
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-01T05:15:51.908350",
+    "timestamp": "2026-10-01T05:21:27.492743",
     "items": [
       {
         "symbol": "SPX",
@@ -992,98 +992,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7758.5,
+        "price": 7759.0,
         "change": 0.56,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31003.75,
-        "change": 0.99,
+        "price": 31014.0,
+        "change": 1.03,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51452.0,
+        "price": 51454.0,
         "change": 0.34,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2834.2,
-        "change": 0.59,
+        "price": 2833.7,
+        "change": 0.57,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 89.03,
-        "change": -1.54,
+        "price": 88.82,
+        "change": -1.77,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4211.1,
-        "change": 0.58,
+        "price": 4212.0,
+        "change": 0.6,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.53,
-        "change": 2.37,
+        "price": 61.58,
+        "change": 2.47,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1738.5,
-        "change": 2.13,
+        "price": 1739.4,
+        "change": 2.18,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1221.5,
-        "change": 1.67,
+        "price": 1222.0,
+        "change": 1.71,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.98,
-        "change": -1.62,
+        "change": -1.65,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 308.35,
-        "change": 1.98,
+        "price": 308.24,
+        "change": 1.76,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84185,
-        "change": 1.2,
+        "price": 84234,
+        "change": 1.17,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2710.86,
-        "change": 1.64,
+        "price": 2713.17,
+        "change": 1.65,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 119.14,
-        "change": 0.55,
+        "price": 119.15,
+        "change": 0.35,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 14.49,
-        "change": 1.02,
+        "change": 0.83,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 11.11,
-        "change": -1.17,
+        "change": -1.55,
         "type": "crypto"
       },
       {
@@ -1093,9 +1093,9 @@
         "type": "mover"
       },
       {
-        "symbol": "UTHR",
-        "price": 541.89,
-        "change": 11.61,
+        "symbol": "CBRS",
+        "price": 177.65,
+        "change": -9.7,
         "type": "mover"
       },
       {
@@ -1123,12 +1123,6 @@
         "type": "mover"
       },
       {
-        "symbol": "INTC",
-        "price": 120.23,
-        "change": 3.62,
-        "type": "mover"
-      },
-      {
         "symbol": "GME",
         "price": 24.65,
         "change": 2.88,
@@ -1145,20 +1139,16 @@
         "price": 63.89,
         "change": 2.01,
         "type": "mover"
+      },
+      {
+        "symbol": "SNDK",
+        "price": 1739.89,
+        "change": 1.58,
+        "type": "mover"
       }
     ]
   },
   "business": [
-    {
-      "title": "Micron Reports Another Dazzling Earnings Quarter. The Stock Isn\u2019t Moving.",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1qYVRkMzJRd2M4d0p5dGJ2X25QblFST0JWbDIwa0JkaE0xLWVPSEgzelliSXEtMDFZVlVPMzFUVDJ4ZlhPWHl6aWQ5S0w5YmtHbkZKc0gwLVFCZUtJUjN5MGVWUkMxamJYRnVJdUxzVEJrUk5ObFpxTQ?oc=5",
-      "source": "Barron's",
-      "category": "business",
-      "published": "Wed, 30 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
     {
       "title": "EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcDlCdU9Zek0tNW81WHEzdzdUU0FMa0hrWGVlaS13ZWMtVGRRTXNqYkZuaWV0WVZlSFR0Nm1vblBwd3h4ZFI3OWdXYnlJclNxM20wUHNORlB6T3lsV0k1R1pWSlpnVmozUTM4SjhqTlNHQ3B4VlJRNUdhNFoyUzV5MWZ0azM5YzR6b211N0hJMnVKdktaR2Rv?oc=5",
@@ -1180,9 +1170,9 @@
       "author": ""
     },
     {
-      "title": "US judge approves settlement allowing Paramount to acquire Warner Bros",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTWhYb3lUTExFQ3NKdTZtdXZBMjdrd0xtcWNPVXprU3RGbWtia3BFdUhzV0N3aHhFdmRYTUdQZXgxTkl2QlNYaTlSNGNTeXNMZExhNjMzNnV6emxWZmJzeUREdXc4c08tTjFDenZURUx1aEdEWXlpRjBsb0FNOU5YR3lxelB0X3BaVjc5a3VwRExVTFM1ejlBX1JrSWZHUnlRSnh5RjVRRDBjSnJJa01FTtIBtgFBVV95cUxQNU8teUdQekk1NGp2bVlJQXNMekk2RlVXZFFiQ2ZPR1B5c0puYjlfaFV3N29naWVxLVRHR1ZHYmg2TUdLMEY0MmMxaVFtS3I1WWRKTFJtc1N1SWpJTGRidWNmaEdKUkNTMnc3SjEyeWVzLVhnNE9MNGhhUTVsSVFXQkwwczJDdFVYMGs3QUo3ODhVdTVjQUphdU5SNktqMEtLZ0pJWVRZZjlsRE9rYTZNVzg5WXgzZw?oc=5",
-      "source": "Al Jazeera",
+      "title": "Google Releases New Gemini Model With Guardrails Amid A.I. Safety Debate",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ1Z3VVVlemc0Zm9HYy1HSTNuSlZhT1BRQ0I0TVJtMVltbDRGS1pCR1VKNk1OUnhkNjVycjhIbEplY0NaNWR5eDNDVzRGcHN5NFRDNlpsU28xMWs0MkJ6U01lNkJJb0syN2hMSkwtMUpiS0dHS2gwa3FYX2dkanFPTE96aVNQcDd2OHc?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Wed, 30 Sep 2026 ",
       "description": "",
@@ -1190,9 +1180,9 @@
       "author": ""
     },
     {
-      "title": "Google Releases New Gemini Model With Guardrails Amid A.I. Safety Debate",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ1Z3VVVlemc0Zm9HYy1HSTNuSlZhT1BRQ0I0TVJtMVltbDRGS1pCR1VKNk1OUnhkNjVycjhIbEplY0NaNWR5eDNDVzRGcHN5NFRDNlpsU28xMWs0MkJ6U01lNkJJb0syN2hMSkwtMUpiS0dHS2gwa3FYX2dkanFPTE96aVNQcDd2OHc?oc=5",
-      "source": "The New York Times",
+      "title": "Micron Reports Another Dazzling Earnings Quarter. The Stock Isn\u2019t Moving.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1qYVRkMzJRd2M4d0p5dGJ2X25QblFST0JWbDIwa0JkaE0xLWVPSEgzelliSXEtMDFZVlVPMzFUVDJ4ZlhPWHl6aWQ5S0w5YmtHbkZKc0gwLVFCZUtJUjN5MGVWUkMxamJYRnVJdUxzVEJrUk5ObFpxTQ?oc=5",
+      "source": "Barron's",
       "category": "business",
       "published": "Wed, 30 Sep 2026 ",
       "description": "",
@@ -1210,9 +1200,9 @@
       "author": ""
     },
     {
-      "title": "Asian Stocks Eye Rough Start After US Reversal: Markets Wrap",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGZSU2VKcVFJYnI0WHlseEpJenJhX3ZZOUR5TWhNd1RvT1Q0Q1ZxSFBaczFVVnNpV0hiRGI4SEtiUEpkd0ZBRjJKOVVka2pLZmxFVVl5M3E3N3RtTHl4a1NFbzM3RG93VHRfN3hSNGxhcmNjYkVXcHFaakdMQ2d2cmFLVjNxM0pubG1Nd040ZDhWRFFP?oc=5",
-      "source": "Bloomberg.com",
+      "title": "US judge approves settlement allowing Paramount to acquire Warner Bros",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTWhYb3lUTExFQ3NKdTZtdXZBMjdrd0xtcWNPVXprU3RGbWtia3BFdUhzV0N3aHhFdmRYTUdQZXgxTkl2QlNYaTlSNGNTeXNMZExhNjMzNnV6emxWZmJzeUREdXc4c08tTjFDenZURUx1aEdEWXlpRjBsb0FNOU5YR3lxelB0X3BaVjc5a3VwRExVTFM1ejlBX1JrSWZHUnlRSnh5RjVRRDBjSnJJa01FTtIBtgFBVV95cUxQNU8teUdQekk1NGp2bVlJQXNMekk2RlVXZFFiQ2ZPR1B5c0puYjlfaFV3N29naWVxLVRHR1ZHYmg2TUdLMEY0MmMxaVFtS3I1WWRKTFJtc1N1SWpJTGRidWNmaEdKUkNTMnc3SjEyeWVzLVhnNE9MNGhhUTVsSVFXQkwwczJDdFVYMGs3QUo3ODhVdTVjQUphdU5SNktqMEtLZ0pJWVRZZjlsRE9rYTZNVzg5WXgzZw?oc=5",
+      "source": "Al Jazeera",
       "category": "business",
       "published": "Wed, 30 Sep 2026 ",
       "description": "",
@@ -1223,6 +1213,16 @@
       "title": "Senate punts bill to permanently ban Chinese cars until after midterm elections",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS3lRTGtGSm9xYlpVTjg2c2NCbzE0Qmd1MlpYOEhndEJsOEJzczJBTEVaZm1VeE9wc2ZQMjg3cEIyS3BuajNvdlVJZFU1UWU3emd1T2RRNjRpaDRYdS1Xa3NIMTNJVlFIUVRpa2p0WVJfNmNGX0RyME0yZ1BBVXhOVk1ER2FNZW5NekJQNEhZZjlLcWdJVFU0UU1IdE41dUYyUFdPVG5OOA?oc=5",
       "source": "AP News",
+      "category": "business",
+      "published": "Wed, 30 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Asian Stocks Eye Rough Start After US Reversal: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGZSU2VKcVFJYnI0WHlseEpJenJhX3ZZOUR5TWhNd1RvT1Q0Q1ZxSFBaczFVVnNpV0hiRGI4SEtiUEpkd0ZBRjJKOVVka2pLZmxFVVl5M3E3N3RtTHl4a1NFbzM3RG93VHRfN3hSNGxhcmNjYkVXcHFaakdMQ2d2cmFLVjNxM0pubG1Nd040ZDhWRFFP?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Wed, 30 Sep 2026 ",
       "description": "",
@@ -1420,100 +1420,100 @@
   ],
   "github": [
     {
-      "name": "openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 391026,
-      "language": "TypeScript",
-      "url": "https://github.com/openclaw/openclaw",
-      "updated": "2026-10-01T04:16:17Z"
-    },
-    {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 270271,
+      "stars": 270287,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-01T04:11:40Z"
+      "updated": "2026-10-01T05:20:00Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 250388,
+      "stars": 250395,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-01T04:15:21Z"
+      "updated": "2026-10-01T05:20:11Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187630,
+      "stars": 187629,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-01T03:57:37Z"
+      "updated": "2026-10-01T04:51:33Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "\ud83d\udd25 Supercharge your AI agents with data from the web and beyond. A web data API to search, scrape, and access more sources.",
-      "stars": 187230,
+      "stars": 187249,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-01T04:11:46Z"
+      "updated": "2026-10-01T05:17:48Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 166876,
+      "stars": 166878,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-01T03:32:23Z"
+      "updated": "2026-10-01T04:55:12Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 153680,
+      "stars": 153685,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-01T04:07:56Z"
+      "updated": "2026-10-01T05:08:27Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 149323,
+      "stars": 149385,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-01T04:16:00Z"
+      "updated": "2026-10-01T05:21:11Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 147333,
+      "stars": 147335,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-10-01T03:49:33Z"
+      "updated": "2026-10-01T05:03:31Z"
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
       "description": "\u5229\u7528 AI \u5927\u6a21\u578b\u548c\u81ea\u52a8\u5316\u5de5\u4f5c\u6d41\uff0c\u6839\u636e\u4e3b\u9898\u6216\u5173\u952e\u8bcd\u4e00\u952e\u751f\u6210\u9ad8\u6e05\u77ed\u89c6\u9891\u3002Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "stars": 127630,
+      "stars": 127654,
       "language": "Python",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "updated": "2026-10-01T04:12:21Z"
+      "updated": "2026-10-01T05:17:37Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 86737,
+      "stars": 86782,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-01T04:15:58Z"
+      "updated": "2026-10-01T05:21:21Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 77850,
+      "stars": 77852,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-01T03:57:37Z"
+      "updated": "2026-10-01T05:07:33Z"
+    },
+    {
+      "name": "career-ops-hq/career-ops",
+      "description": "Open-source AI job search agent: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor ",
+      "stars": 73170,
+      "language": "JavaScript",
+      "url": "https://github.com/career-ops-hq/career-ops",
+      "updated": "2026-10-01T05:21:11Z"
     }
   ],
   "nasdaq_data": {
@@ -1522,7 +1522,7 @@
     "changePercent": 0.23,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 1 Oct: 30,408.50, up +0.23% -- BULLISH. price above SMA20, RSI 69.5 strong, MACD bullish. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-01T01:16:14.660086"
+    "timestamp": "2026-10-01T01:21:51.172470"
   },
   "sticky": {
     "cnbc": [
@@ -1718,72 +1718,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7758.0,
-      "change": 42.5,
-      "change_percent": 0.55,
+      "price": 7759.0,
+      "change": 43.5,
+      "change_percent": 0.56,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31003.75,
-      "change": 305.0,
-      "change_percent": 0.99,
+      "price": 31015.0,
+      "change": 316.25,
+      "change_percent": 1.03,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51452.0,
-      "change": 174.0,
-      "change_percent": 0.34,
+      "price": 51455.0,
+      "change": 177.0,
+      "change_percent": 0.35,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2834.2,
-      "change": 16.7,
-      "change_percent": 0.59,
+      "price": 2833.7,
+      "change": 16.2,
+      "change_percent": 0.57,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 89.03,
-      "change": -1.39,
-      "change_percent": -1.54,
+      "price": 88.82,
+      "change": -1.6,
+      "change_percent": -1.77,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4211.0,
-      "change": 24.3,
-      "change_percent": 0.58,
+      "price": 4212.0,
+      "change": 25.3,
+      "change_percent": 0.6,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.53,
-      "change": 1.43,
-      "change_percent": 2.37,
+      "price": 61.58,
+      "change": 1.48,
+      "change_percent": 2.46,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1738.5,
-      "change": 36.2,
-      "change_percent": 2.13,
+      "price": 1739.4,
+      "change": 37.1,
+      "change_percent": 2.18,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1221.5,
-      "change": 20.1,
-      "change_percent": 1.67,
+      "price": 1222.0,
+      "change": 20.6,
+      "change_percent": 1.71,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.98,
       "change": -0.05,
-      "change_percent": -1.62,
+      "change_percent": -1.65,
       "name": "Natural Gas Nov 26"
     }
   ],

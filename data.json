@@ -1,38 +1,22 @@
 {
-  "timestamp": "2026-10-01T12:01:30.407215",
-  "summary": "Key topics today:\n- - FTC is investigating OpenAI, Anthropic and other AI companies over product risks (r/HackerNews, 301 pts)\n- - OpenID Foundation: Identity Management for Agentic AI [pdf] (2025) (r/HackerNews, 201 pts)\n- - OpenDLSS: A Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering Network (r/HackerNews, 201 pts)\n- - Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents (r/HackerNews, 201 pts)\n- - Polyedergarten: Garden of Paper Polyhedron Models (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-01T12:44:52.046121",
+  "summary": "Key topics today:\n- - FTC is investigating OpenAI, Anthropic and other AI companies over product risks (r/HackerNews, 301 pts)\n- - OpenID Foundation: Identity Management for Agentic AI [pdf] (2025) (r/HackerNews, 201 pts)\n- - OpenDLSS: A Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering Network (r/HackerNews, 201 pts)\n- - Launch HN: Magnitude (YC S25) \u2013 Self-optimizing inference engine for agents (r/HackerNews, 201 pts)\n- - Clef: our open-source decision models (r/HackerNews, 101 pts)",
   "signals": [
     {
-      "type": "watch",
+      "type": "sell",
       "asset": "ZEC",
-      "price": 1378.52,
-      "change": -4.35,
+      "price": 1342.2,
+      "change": -7.98,
       "category": "crypto",
-      "text": "ZEC -4.3% @ $1,378.52"
+      "text": "ZEC -8.0% dump @ $1,342.20 \u2014 watch support"
     },
     {
-      "type": "sell",
-      "asset": "CTVA",
-      "price": 12.08,
-      "change": -84.49,
-      "category": "stock",
-      "text": "CTVA -84.5% drop @ $12.08"
-    },
-    {
-      "type": "sell",
-      "asset": "LQDA",
-      "price": 25.85,
-      "change": -63.43,
-      "category": "stock",
-      "text": "LQDA -63.4% drop @ $25.85"
-    },
-    {
-      "type": "buy",
-      "asset": "AISP",
-      "price": 2.35,
-      "change": 28.57,
-      "category": "stock",
-      "text": "AISP +28.6% momentum @ $2.35"
+      "type": "watch",
+      "asset": "SOL",
+      "price": 117.24,
+      "change": -2.28,
+      "category": "crypto",
+      "text": "SOL -2.3% @ $117.24"
     },
     {
       "type": "watch",
@@ -77,6 +61,14 @@
       "created": ""
     },
     {
+      "title": "Clef: our open-source decision models",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "created": ""
+    },
+    {
       "title": "Polyedergarten: Garden of Paper Polyhedron Models",
       "subreddit": "HackerNews",
       "score": 101,
@@ -101,14 +93,6 @@
       "created": ""
     },
     {
-      "title": "An AI sovereign wealth fund isn't progressive \u2013 it's techno-imperialism",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://www.ft.com/content/bc178357-793b-45d8-ae3b-d5929159c243",
-      "created": ""
-    },
-    {
       "title": "StreetComplete on iOS is now in public beta",
       "subreddit": "HackerNews",
       "score": 1,
@@ -117,98 +101,110 @@
       "created": ""
     },
     {
-      "title": "How to speed up the Rust compiler in September 2026",
+      "title": "RIP, vector database",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+      "url": "https://turbopuffer.com/blog/rip-vector-database",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-01T16:01:10.166991",
+    "timestamp": "2026-10-01T16:44:21.192833",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 304.33,
-        "change_24h": -0.67,
-        "market_cap": 3455287993
+        "price": 302.05,
+        "change_24h": -1.82,
+        "market_cap": 3424939753
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 84140,
-        "change_24h": 0.05,
-        "market_cap": 1690014225810
+        "price": 84235,
+        "change_24h": -0.07,
+        "market_cap": 1692217590452
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2683.48,
-        "change_24h": 0.05,
-        "market_cap": 327566361938
+        "price": 2683.01,
+        "change_24h": -0.25,
+        "market_cap": 327550088872
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999668,
-        "change_24h": 0.01,
-        "market_cap": 183813034408
+        "price": 0.999686,
+        "change_24h": 0.02,
+        "market_cap": 183813768642
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 766.12,
+        "price": 766.72,
         "change_24h": -0.41,
-        "market_cap": 102004017565
+        "market_cap": 102097176426
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.49,
-        "change_24h": -1.19,
-        "market_cap": 93818715774
+        "price": 1.48,
+        "change_24h": -1.83,
+        "market_cap": 93583073125
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.99988,
+        "price": 0.999892,
         "change_24h": 0.01,
-        "market_cap": 74165130048
+        "market_cap": 74163176976
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 117.41,
-        "change_24h": -1.56,
-        "market_cap": 69028309560
+        "price": 117.24,
+        "change_24h": -2.28,
+        "market_cap": 68933039225
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.33385,
-        "change_24h": -1.37,
-        "market_cap": 31710630437
+        "price": 0.33467,
+        "change_24h": -0.99,
+        "market_cap": 31781523761
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.027,
-        "change_24h": -0.22,
-        "market_cap": 24037907550
+        "change_24h": -0.2,
+        "market_cap": 24041019551
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1378.52,
-        "change_24h": -4.35,
-        "market_cap": 23369638740
+        "price": 1342.2,
+        "change_24h": -7.98,
+        "market_cap": 22751246004
       }
     ],
     "news": [
+      {
+        "title": "New York, Wyoming regulators sign pact to coordinate crypto oversight",
+        "url": "https://cointelegraph.com/news/new-york-wyoming-regulators-sign-pact-coordinate-crypto-oversight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 01 Oct 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3W216CF6VJCFGDPQR2ZF9XR/hi-top-5-crypto-states-in-us-b-man-alabama.png\" alt=\"New York, Wyoming regulators sign pact to c"
+      },
+      {
+        "title": "Bitcoin fights for local uptrend as US bond yields drop from new 24-year highs",
+        "url": "https://cointelegraph.com/markets/bitcoin-fights-local-uptrend-us-bond-yields-drop-from-new-24-year-highs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 01 Oct 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3W2DJGKT5VP6Z8THMSJRK57/crypto-bitcoin-btc-price-960x640.webp\" alt=\"Bitcoin fights for local uptrend as US bond yields d"
+      },
       {
         "title": "NEAR Intents suffers $3.8M exploit after assistance with Bitget breach",
         "url": "https://cointelegraph.com/news/near-intents-exploit-assistance-bitget-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -246,18 +242,6 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3VD85750C29V6G9ST49T6ZH/hi-tokenization-will-bring-desirable-stability-to-emerging-markets.jpg\" alt=\"Tokenized assets do"
       },
       {
-        "title": "Bitcoin trapped below $86K as PCE changes cloud inflation reading",
-        "url": "https://cointelegraph.com/markets/bitcoin-rally-lower-us-inflation-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 01 Oct 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3VDHKSR470RG70DY6MAWY1T/money-dollar-calculator-inflation-1280x854.webp\" alt=\"Bitcoin trapped below $86K as PCE changes"
-      },
-      {
-        "title": "Binance\u2019s EU services face scrutiny over licensing exemption: Report",
-        "url": "https://cointelegraph.com/news/europe-binance-questions-esma-tighter-mica-oversight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 01 Oct 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M3V9TMRARDGQZKSXNKGYHXXW/hi-digitized-europe-the-shift-to-a-cashless-world2-2.jpg\" alt=\"Binance\u2019s EU services face scruti"
-      },
-      {
         "title": "Crypto for Advisors: The CLARITY Act failed, but the rules came anyway",
         "url": "https://www.coindesk.com/coindesk-indices/2026/10/01/crypto-for-advisors-the-clarity-act-failed-but-the-rules-came-anyway",
         "published": "Thu, 01 Oct 2026 ",
@@ -283,875 +267,519 @@
       }
     ]
   },
-  "news": [
-    {
-      "title": "Hundreds of criminals start leaving prison under new early release scheme",
-      "url": "https://www.bbc.co.uk/news/articles/c6evwvdwggrlo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Around 4,500 inmates are expected to be released early by June 2027 under a scheme designed to stop prisons becoming full."
-    },
-    {
-      "title": "Man City to argue sponsorship deals came from Abu Dhabi government",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Manchester City's appeal against the Premier League's verdict hinges on the club's claim that its sponsorship deals came from the Abu Dhabi government."
-    },
-    {
-      "title": "Burnham's Man City comments 'completely out of touch', Tories say",
-      "url": "https://www.bbc.co.uk/news/articles/cj3v4vn3ydw1o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The prime minister said he would be \"really concerned\" if the club's owners sell up after Premier League rule breaches."
-    },
-    {
-      "title": "Netanyahu says flight attacker 'underwent Islamist radical indoctrination'",
-      "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\"."
-    },
-    {
-      "title": "Tennessee halts executions after death row inmate Christa Pike survives hers",
-      "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Christa Pike was transported to hospital after the failed attempts. Her condition remains unknown."
-    },
-    {
-      "title": "Travelodge failed sex assault victim 'at every stage', review finds",
-      "url": "https://www.bbc.co.uk/news/articles/c93429dg425o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Room intrusions were still being reported at one-in-10 Travelodge hotels this summer, a review finds."
-    },
-    {
-      "title": "US death row inmate survives execution attempt after two lethal injections",
-      "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Killer Christa Pike's lawyer says she is being given \"life-saving measures\" in hospital after two syringes of pentobarbital."
-    },
-    {
-      "title": "What happened in failed execution of Christa Pike - and what next?",
-      "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The convicted killer is in hospital in Tennessee after surviving two lethal injections, in a case that has raised many questions."
-    },
-    {
-      "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "\"My family and I will not truly be safe as long as Putin is in power,\" says the former chess world champion."
-    },
-    {
-      "title": "Japan raises permanent residency fee by 20 times",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8xeg8j1o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The hikes are part of immigration policy changes introduced to manage Japan's growing foreign population."
-    },
-    {
-      "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
-    },
-    {
-      "title": "Judge dismisses Reflecting Pool vandalism case against former Olympian",
-      "url": "https://abcnews.com/Politics/judge-dismisses-reflecting-pool-case-former-olympian/story?id=136920214",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The judge dismissed the case with prejudice."
-    },
-    {
-      "title": "LIVE:  ABC News Live",
-      "url": "https://abcnews.com/video/41463246/",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 24 Sep 2026 ",
-      "description": "24/7 coverage of breaking news and live events"
-    },
-    {
-      "title": "Christa Pike appears to survive botched execution attempt in Tennessee, witnesses say",
-      "url": "https://abcnews.com/US/execution-lone-woman-tennessees-death-row-paused-federal/story?id=136893331",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Christa Pike, 50, was sentenced to death after being convicted of the 1995 murder of 19-year-old Colleen Slemmer."
-    },
-    {
-      "title": "Louisiana DA opens probe into alleged sexual assault involving LSU student-athlete",
-      "url": "https://abcnews.com/US/louisiana-da-opens-investigation-alleged-sexual-assault-involving/story?id=136913929",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "A Louisiana district attorney's office has opened a criminal investigation into an alleged sexual assault involving an LSU student and a student-athlete."
-    },
-    {
-      "title": "WATCH:  Nat Geo catches rare great white shark moment on camera",
-      "url": "https://abcnews.com/video/136914715/",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Brian Skerry, a National Geographic explorer and photographer, captured footage of a young great white shark aggressively snatching a fish right off a fishing line near Cape Cod."
-    },
-    {
-      "title": "WATCH:  Students step in to help as bus driver experiences medical emergency",
-      "url": "https://abcnews.com/video/136914712/",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "A group of Pennsylvania high school students rushed to help as their bus driver suffered a medical emergency."
-    },
-    {
-      "title": "New space station crew launches from Florida on SpaceX's Crew Dragon capsule",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5987698/nasa-crew-13-spacex-international-space-station-iss",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The crew of four \u2014 two NASA astronauts, one from Canada, and a Russian cosmonaut \u2014 heads to the International Space Station after liftoff from the Cape Canaveral Space Force Station in Florida."
-    }
-  ],
+  "news": [],
   "stocks": {
-    "timestamp": "2026-10-01T16:00:44.332600",
+    "timestamp": "2026-10-01T16:43:48.466013",
     "trending": [
       {
-        "symbol": "CTVA",
-        "price": 12.08,
-        "change": -65.79,
-        "change_percent": -84.49,
-        "name": "Corteva, Inc."
-      },
-      {
-        "symbol": "LQDA",
-        "price": 25.85,
-        "change": -44.84,
-        "change_percent": -63.43,
-        "name": "Liquidia Corporation"
-      },
-      {
-        "symbol": "AISP",
-        "price": 2.35,
-        "change": 0.52,
-        "change_percent": 28.57,
-        "name": "Airship AI Holdings, Inc"
-      },
-      {
-        "symbol": "ACN",
-        "price": 216.67,
-        "change": 39.55,
-        "change_percent": 22.33,
-        "name": "Accenture plc"
-      },
-      {
-        "symbol": "SNPS",
-        "price": 472.49,
-        "change": 57.4,
-        "change_percent": 13.83,
-        "name": "Synopsys, Inc."
-      },
-      {
-        "symbol": "VICR",
-        "price": 318.93,
-        "change": 28.25,
-        "change_percent": 9.72,
-        "name": "Vicor Corporation"
-      },
-      {
-        "symbol": "LITE",
-        "price": 1064.47,
-        "change": 90.98,
-        "change_percent": 9.35,
-        "name": "Lumentum Holdings Inc."
-      },
-      {
-        "symbol": "COHR",
-        "price": 318.79,
-        "change": 26.58,
-        "change_percent": 9.1,
-        "name": "Coherent Corp."
-      },
-      {
-        "symbol": "CTSH",
-        "price": 61.15,
-        "change": 4.31,
-        "change_percent": 7.59,
-        "name": "Cognizant Technology Solutions "
-      },
-      {
-        "symbol": "INFY",
-        "price": 11.39,
-        "change": 0.75,
-        "change_percent": 7.0,
-        "name": "Infosys Limited"
-      },
-      {
-        "symbol": "IBM",
-        "price": 224.8,
-        "change": 4.81,
-        "change_percent": 2.19,
-        "name": "International Business Machines"
-      },
-      {
-        "symbol": "MU",
-        "price": 1049.76,
-        "change": -15.32,
-        "change_percent": -1.44,
-        "name": "Micron Technology, Inc."
-      },
-      {
         "symbol": ".RUT",
-        "price": 2785.65,
-        "change": -11.21,
-        "change_percent": -0.4,
+        "price": 2800.892,
+        "change": 4.03,
+        "change_percent": 0.14,
         "name": "RUSS 2K"
       },
       {
         "symbol": ".DJI",
-        "price": 50734.52,
-        "change": -171.53,
-        "change_percent": -0.34,
+        "price": 50865.18,
+        "change": -40.87,
+        "change_percent": -0.08,
         "name": "DJIA"
       },
       {
         "symbol": ".SPX",
-        "price": 7633.15,
-        "change": -18.39,
-        "change_percent": -0.24,
+        "price": 7649.88,
+        "change": -1.66,
+        "change_percent": -0.02,
         "name": "S&P 500"
       }
     ],
-    "meme_momentum": [
-      {
-        "symbol": "AMC",
-        "price": 2.74,
-        "change": -0.34,
-        "change_percent": -10.88,
-        "name": "AMC Entertainment Holdings, Inc"
-      },
-      {
-        "symbol": "HOOD",
-        "price": 111.88,
-        "change": -4.34,
-        "change_percent": -3.73,
-        "name": "Robinhood Markets, Inc."
-      },
-      {
-        "symbol": "BB",
-        "price": 8.99,
-        "change": 0.27,
-        "change_percent": 3.1,
-        "name": "BlackBerry Limited"
-      },
-      {
-        "symbol": "GME",
-        "price": 24.42,
-        "change": 0.66,
-        "change_percent": 2.78,
-        "name": "GameStop Corporation"
-      },
-      {
-        "symbol": "MSTR",
-        "price": 156.65,
-        "change": 1.98,
-        "change_percent": 1.28,
-        "name": "Strategy Inc"
-      },
-      {
-        "symbol": "TSLA",
-        "price": 357.23,
-        "change": 4.39,
-        "change_percent": 1.24,
-        "name": "Tesla, Inc."
-      },
-      {
-        "symbol": "COIN",
-        "price": 187.94,
-        "change": -2.08,
-        "change_percent": -1.09,
-        "name": "Coinbase Global, Inc."
-      },
-      {
-        "symbol": "NVDA",
-        "price": 229.26,
-        "change": 2.05,
-        "change_percent": 0.9,
-        "name": "NVIDIA Corporation"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 188.32,
-        "change": 1.35,
-        "change_percent": 0.72,
-        "name": "Palantir Technologies Inc."
-      },
-      {
-        "symbol": "AMD",
-        "price": 611.96,
-        "change": 4.39,
-        "change_percent": 0.72,
-        "name": "Advanced Micro Devices, Inc."
-      }
-    ],
+    "meme_momentum": [],
     "dow30": [
       {
         "symbol": "INTC",
-        "price": 119.6,
-        "change": 3.67,
-        "change_percent": 3.17,
+        "price": 119.83,
+        "change": 3.9,
+        "change_percent": 3.37,
         "name": "Intel Corporation"
       },
       {
-        "symbol": "CRM",
-        "price": 231.51,
-        "change": 6.2,
-        "change_percent": 2.75,
-        "name": "Salesforce, Inc."
-      },
-      {
         "symbol": "IBM",
-        "price": 224.88,
-        "change": 4.88,
-        "change_percent": 2.22,
+        "price": 226.17,
+        "change": 6.18,
+        "change_percent": 2.81,
         "name": "International Business Machines"
       },
       {
         "symbol": "HON",
-        "price": 214.26,
-        "change": 4.13,
-        "change_percent": 1.97,
+        "price": 214.02,
+        "change": 3.89,
+        "change_percent": 1.85,
         "name": "Honeywell International Inc."
       },
       {
-        "symbol": "CSCO",
-        "price": 108.17,
-        "change": 1.23,
-        "change_percent": 1.15,
-        "name": "Cisco Systems, Inc."
-      },
-      {
         "symbol": "CVX",
-        "price": 206.48,
-        "change": 2.1,
-        "change_percent": 1.03,
+        "price": 206.61,
+        "change": 2.23,
+        "change_percent": 1.09,
         "name": "Chevron Corporation"
       },
       {
         "symbol": "MSFT",
-        "price": 512.84,
-        "change": 3.88,
-        "change_percent": 0.76,
+        "price": 514.16,
+        "change": 5.2,
+        "change_percent": 1.02,
         "name": "Microsoft Corporation"
       },
       {
-        "symbol": "AMZN",
-        "price": 246.71,
-        "change": 0.04,
-        "change_percent": 0.02,
-        "name": "Amazon.com, Inc."
-      },
-      {
         "symbol": "NKE",
-        "price": 35.83,
-        "change": -0.01,
-        "change_percent": -0.04,
+        "price": 35.92,
+        "change": 0.08,
+        "change_percent": 0.22,
         "name": "Nike, Inc."
       },
       {
         "symbol": "VZ",
-        "price": 45.91,
-        "change": -0.07,
-        "change_percent": -0.15,
+        "price": 45.99,
+        "change": 0.01,
+        "change_percent": 0.03,
         "name": "Verizon Communications Inc."
       },
       {
-        "symbol": "BA",
-        "price": 187.31,
-        "change": -0.37,
-        "change_percent": -0.2,
-        "name": "Boeing Company (The)"
-      },
-      {
-        "symbol": "CAT",
-        "price": 821.7,
-        "change": -4.94,
-        "change_percent": -0.6,
-        "name": "Caterpillar, Inc."
-      },
-      {
-        "symbol": "KO",
-        "price": 86.26,
-        "change": -0.58,
-        "change_percent": -0.67,
-        "name": "Coca-Cola Company (The)"
-      },
-      {
-        "symbol": "AAPL",
-        "price": 327.01,
-        "change": -2.39,
-        "change_percent": -0.73,
-        "name": "Apple Inc."
-      },
-      {
         "symbol": "TRV",
-        "price": 360.11,
-        "change": -3.1,
-        "change_percent": -0.85,
+        "price": 360.6,
+        "change": -2.61,
+        "change_percent": -0.72,
         "name": "The Travelers Companies, Inc."
       },
       {
-        "symbol": "MCD",
-        "price": 231.02,
-        "change": -2.96,
-        "change_percent": -1.26,
-        "name": "McDonald's Corporation"
+        "symbol": "KO",
+        "price": 86.14,
+        "change": -0.7,
+        "change_percent": -0.81,
+        "name": "Coca-Cola Company (The)"
       },
       {
         "symbol": "JPM",
-        "price": 329.34,
-        "change": -5.64,
-        "change_percent": -1.68,
+        "price": 331.75,
+        "change": -3.23,
+        "change_percent": -0.96,
         "name": "JP Morgan Chase & Co."
       },
       {
-        "symbol": "WMT",
-        "price": 104.87,
-        "change": -1.93,
-        "change_percent": -1.81,
-        "name": "Walmart Inc."
-      },
-      {
-        "symbol": "AXP",
-        "price": 299.86,
-        "change": -5.54,
-        "change_percent": -1.82,
-        "name": "American Express Company"
+        "symbol": "MCD",
+        "price": 231.58,
+        "change": -2.4,
+        "change_percent": -1.03,
+        "name": "McDonald's Corporation"
       },
       {
         "symbol": "V",
-        "price": 359.02,
-        "change": -6.86,
-        "change_percent": -1.88,
+        "price": 359.47,
+        "change": -6.41,
+        "change_percent": -1.75,
         "name": "Visa Inc."
       },
       {
-        "symbol": "JNJ",
-        "price": 261.53,
-        "change": -6.04,
-        "change_percent": -2.26,
-        "name": "Johnson & Johnson"
+        "symbol": "WMT",
+        "price": 104.64,
+        "change": -2.16,
+        "change_percent": -2.02,
+        "name": "Walmart Inc."
       },
       {
         "symbol": "HD",
-        "price": 280.51,
-        "change": -7.53,
-        "change_percent": -2.61,
+        "price": 281.7,
+        "change": -6.34,
+        "change_percent": -2.2,
         "name": "Home Depot, Inc. (The)"
       },
       {
         "symbol": "GS",
-        "price": 890.26,
-        "change": -25.98,
-        "change_percent": -2.84,
+        "price": 894.0,
+        "change": -22.24,
+        "change_percent": -2.43,
         "name": "Goldman Sachs Group, Inc. (The)"
       },
       {
         "symbol": "MMM",
-        "price": 163.65,
-        "change": -4.84,
-        "change_percent": -2.87,
+        "price": 163.91,
+        "change": -4.58,
+        "change_percent": -2.72,
         "name": "3M Company"
       },
       {
-        "symbol": "PG",
-        "price": 143.95,
-        "change": -4.37,
-        "change_percent": -2.95,
-        "name": "Procter & Gamble Company (The)"
-      },
-      {
-        "symbol": "AMGN",
-        "price": 411.08,
-        "change": -12.56,
-        "change_percent": -2.96,
-        "name": "Amgen Inc."
-      },
-      {
         "symbol": "UNH",
-        "price": 363.33,
-        "change": -11.61,
-        "change_percent": -3.1,
+        "price": 364.46,
+        "change": -10.48,
+        "change_percent": -2.8,
         "name": "UnitedHealth Group Incorporated"
       },
       {
-        "symbol": "MRK",
-        "price": 144.44,
-        "change": -4.84,
-        "change_percent": -3.24,
-        "name": "Merck & Company, Inc."
+        "symbol": "JNJ",
+        "price": 259.98,
+        "change": -7.59,
+        "change_percent": -2.83,
+        "name": "Johnson & Johnson"
       },
       {
-        "symbol": "DIS",
-        "price": 101.74,
-        "change": -3.67,
-        "change_percent": -3.48,
-        "name": "Walt Disney Company (The)"
+        "symbol": "PG",
+        "price": 143.85,
+        "change": -4.47,
+        "change_percent": -3.01,
+        "name": "Procter & Gamble Company (The)"
       },
       {
         "symbol": "SHW",
-        "price": 318.4,
-        "change": -12.04,
-        "change_percent": -3.64,
+        "price": 320.11,
+        "change": -10.33,
+        "change_percent": -3.13,
         "name": "Sherwin-Williams Company (The)"
+      },
+      {
+        "symbol": "DIS",
+        "price": 101.87,
+        "change": -3.54,
+        "change_percent": -3.36,
+        "name": "Walt Disney Company (The)"
+      },
+      {
+        "symbol": "MRK",
+        "price": 144.21,
+        "change": -5.07,
+        "change_percent": -3.4,
+        "name": "Merck & Company, Inc."
       }
     ],
     "nd100": [
       {
         "symbol": "INTU",
-        "price": 278.39,
-        "change": 10.36,
-        "change_percent": 3.87,
+        "price": 281.18,
+        "change": 13.15,
+        "change_percent": 4.91,
         "name": "Intuit Inc."
       },
       {
         "symbol": "AMGN",
-        "price": 411.27,
-        "change": -12.37,
-        "change_percent": -2.92,
+        "price": 410.35,
+        "change": -13.29,
+        "change_percent": -3.14,
         "name": "Amgen Inc."
       },
       {
-        "symbol": "TMO",
-        "price": 663.35,
-        "change": -16.26,
-        "change_percent": -2.39,
-        "name": "Thermo Fisher Scientific Inc"
-      },
-      {
-        "symbol": "AVGO",
-        "price": 347.05,
-        "change": -8.05,
-        "change_percent": -2.27,
-        "name": "Broadcom Inc."
-      },
-      {
         "symbol": "ADBE",
-        "price": 238.43,
-        "change": 5.26,
-        "change_percent": 2.26,
+        "price": 240.27,
+        "change": 7.1,
+        "change_percent": 3.04,
         "name": "Adobe Inc."
       },
       {
-        "symbol": "HON",
-        "price": 214.44,
-        "change": 4.31,
-        "change_percent": 2.05,
-        "name": "Honeywell International Inc."
+        "symbol": "TMO",
+        "price": 663.15,
+        "change": -16.46,
+        "change_percent": -2.42,
+        "name": "Thermo Fisher Scientific Inc"
       },
       {
         "symbol": "PEP",
-        "price": 126.21,
-        "change": -2.48,
-        "change_percent": -1.92,
+        "price": 126.01,
+        "change": -2.68,
+        "change_percent": -2.08,
         "name": "Pepsico, Inc."
       },
       {
-        "symbol": "META",
-        "price": 726.55,
-        "change": -12.24,
-        "change_percent": -1.66,
-        "name": "Meta Platforms, Inc."
+        "symbol": "AVGO",
+        "price": 347.85,
+        "change": -7.25,
+        "change_percent": -2.04,
+        "name": "Broadcom Inc."
       },
       {
-        "symbol": "TSLA",
-        "price": 357.48,
-        "change": 4.64,
-        "change_percent": 1.32,
-        "name": "Tesla, Inc."
-      },
-      {
-        "symbol": "CSCO",
-        "price": 108.19,
-        "change": 1.25,
-        "change_percent": 1.17,
-        "name": "Cisco Systems, Inc."
+        "symbol": "HON",
+        "price": 214.08,
+        "change": 3.95,
+        "change_percent": 1.88,
+        "name": "Honeywell International Inc."
       },
       {
         "symbol": "NVDA",
-        "price": 229.28,
-        "change": 2.07,
-        "change_percent": 0.91,
+        "price": 230.65,
+        "change": 3.44,
+        "change_percent": 1.51,
         "name": "NVIDIA Corporation"
       },
       {
+        "symbol": "CSCO",
+        "price": 108.47,
+        "change": 1.53,
+        "change_percent": 1.43,
+        "name": "Cisco Systems, Inc."
+      },
+      {
+        "symbol": "META",
+        "price": 728.99,
+        "change": -9.8,
+        "change_percent": -1.33,
+        "name": "Meta Platforms, Inc."
+      },
+      {
         "symbol": "MSFT",
-        "price": 512.97,
-        "change": 4.01,
-        "change_percent": 0.79,
+        "price": 513.76,
+        "change": 4.8,
+        "change_percent": 0.94,
         "name": "Microsoft Corporation"
       },
       {
-        "symbol": "AMD",
-        "price": 612.05,
-        "change": 4.48,
-        "change_percent": 0.74,
-        "name": "Advanced Micro Devices, Inc."
-      },
-      {
-        "symbol": "AAPL",
-        "price": 327.02,
-        "change": -2.38,
-        "change_percent": -0.72,
-        "name": "Apple Inc."
-      },
-      {
-        "symbol": "TXN",
-        "price": 279.67,
-        "change": -2.02,
-        "change_percent": -0.72,
-        "name": "Texas Instruments Incorporated"
+        "symbol": "TSLA",
+        "price": 355.82,
+        "change": 2.98,
+        "change_percent": 0.84,
+        "name": "Tesla, Inc."
       },
       {
         "symbol": "GOOGL",
-        "price": 340.0,
-        "change": -0.92,
-        "change_percent": -0.27,
+        "price": 338.11,
+        "change": -2.81,
+        "change_percent": -0.82,
         "name": "Alphabet Inc."
       },
       {
+        "symbol": "AMD",
+        "price": 612.19,
+        "change": 4.62,
+        "change_percent": 0.76,
+        "name": "Advanced Micro Devices, Inc."
+      },
+      {
         "symbol": "COST",
-        "price": 922.98,
-        "change": -1.61,
-        "change_percent": -0.17,
+        "price": 917.63,
+        "change": -6.96,
+        "change_percent": -0.75,
         "name": "Costco Wholesale Corporation"
       },
       {
-        "symbol": "AMZN",
-        "price": 246.76,
-        "change": 0.09,
-        "change_percent": 0.04,
-        "name": "Amazon.com, Inc."
-      },
-      {
-        "symbol": "NKE",
-        "price": 35.83,
-        "change": -0.01,
-        "change_percent": -0.03,
-        "name": "Nike, Inc."
+        "symbol": "TXN",
+        "price": 280.12,
+        "change": -1.57,
+        "change_percent": -0.56,
+        "name": "Texas Instruments Incorporated"
       },
       {
         "symbol": "CMCSA",
-        "price": 21.6,
-        "change": 0.0,
-        "change_percent": 0.0,
+        "price": 21.7,
+        "change": 0.1,
+        "change_percent": 0.49,
         "name": "Comcast Corporation"
+      },
+      {
+        "symbol": "AMZN",
+        "price": 247.61,
+        "change": 0.94,
+        "change_percent": 0.38,
+        "name": "Amazon.com, Inc."
+      },
+      {
+        "symbol": "AAPL",
+        "price": 328.26,
+        "change": -1.14,
+        "change_percent": -0.35,
+        "name": "Apple Inc."
+      },
+      {
+        "symbol": "NKE",
+        "price": 35.93,
+        "change": 0.09,
+        "change_percent": 0.25,
+        "name": "Nike, Inc."
       }
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-01T16:01:05.175913",
+    "timestamp": "2026-10-01T16:44:16.201516",
     "items": [
       {
         "symbol": "SPX",
-        "price": 7636.31,
-        "change": -0.2,
+        "price": 7650.71,
+        "change": -0.01,
         "type": "index"
       },
       {
         "symbol": "DJI",
-        "price": 50762.07,
-        "change": -0.28,
+        "price": 50870.65,
+        "change": -0.07,
         "type": "index"
       },
       {
         "symbol": "NDX",
-        "price": 30340.149,
-        "change": -0.23,
+        "price": 30383.018,
+        "change": -0.08,
         "type": "index"
       },
       {
         "symbol": "VIX",
-        "price": 17.08,
-        "change": 4.53,
+        "price": 16.8,
+        "change": 2.82,
         "type": "index"
       },
       {
         "symbol": "RUT",
-        "price": 2785.559,
-        "change": -0.4,
+        "price": 2800.927,
+        "change": 0.15,
         "type": "index"
       },
       {
         "symbol": "ES=F",
-        "price": 7682.5,
-        "change": -0.43,
+        "price": 7707.5,
+        "change": -0.1,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30575.0,
-        "change": -0.4,
+        "price": 30655.0,
+        "change": -0.14,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 50962.0,
-        "change": -0.62,
+        "price": 51194.0,
+        "change": -0.16,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2805.4,
-        "change": -0.43,
+        "price": 2825.8,
+        "change": 0.29,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 92.96,
-        "change": 2.81,
+        "price": 91.72,
+        "change": 1.44,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4191.9,
-        "change": 0.12,
+        "price": 4199.1,
+        "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 60.76,
-        "change": 1.11,
+        "price": 61.07,
+        "change": 1.62,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1714.4,
-        "change": 0.71,
+        "price": 1723.9,
+        "change": 1.27,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1182.0,
-        "change": -1.61,
+        "price": 1183.0,
+        "change": -1.53,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.0,
-        "change": -0.99,
+        "price": 2.96,
+        "change": -2.08,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 304.33,
-        "change": -0.69,
+        "price": 301.87,
+        "change": -1.92,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84089,
-        "change": -0.01,
+        "price": 84191,
+        "change": -0.06,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2681.44,
-        "change": -0.02,
+        "price": 2680.2,
+        "change": -0.26,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 117.28,
-        "change": -1.62,
+        "price": 117.18,
+        "change": -2.32,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.28,
-        "change": 0.35,
+        "price": 14.27,
+        "change": -1.25,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.89,
-        "change": -0.59,
+        "price": 10.86,
+        "change": -1.55,
         "type": "crypto"
       },
       {
         "symbol": "CTVA",
-        "price": 12.1,
-        "change": -84.46,
-        "type": "mover"
-      },
-      {
-        "symbol": "LQDA",
-        "price": 25.92,
-        "change": -63.33,
+        "price": 11.94,
+        "change": -84.67,
         "type": "mover"
       },
       {
         "symbol": "AISP",
-        "price": 2.36,
-        "change": 28.96,
+        "price": 2.37,
+        "change": 29.23,
         "type": "mover"
       },
       {
         "symbol": "ACN",
-        "price": 216.52,
-        "change": 22.24,
+        "price": 216.89,
+        "change": 22.45,
         "type": "mover"
       },
       {
         "symbol": "SNPS",
-        "price": 472.64,
-        "change": 13.86,
+        "price": 479.84,
+        "change": 15.6,
         "type": "mover"
       },
       {
         "symbol": "AMC",
-        "price": 2.75,
-        "change": -10.71,
+        "price": 2.71,
+        "change": -12.01,
         "type": "mover"
       },
       {
         "symbol": "VICR",
-        "price": 318.93,
-        "change": 9.72,
+        "price": 319.68,
+        "change": 9.98,
         "type": "mover"
       },
       {
         "symbol": "COHR",
-        "price": 319.65,
-        "change": 9.39,
+        "price": 320.34,
+        "change": 9.63,
+        "type": "mover"
+      },
+      {
+        "symbol": "APP",
+        "price": 276.48,
+        "change": -9.55,
         "type": "mover"
       },
       {
         "symbol": "LITE",
-        "price": 1061.73,
-        "change": 9.06,
+        "price": 1055.08,
+        "change": 8.38,
         "type": "mover"
       },
       {
-        "symbol": "BB",
-        "price": 9.0,
-        "change": 3.21,
+        "symbol": "IBM",
+        "price": 226.35,
+        "change": 2.89,
         "type": "mover"
       }
     ]
@@ -1168,31 +796,41 @@
       "author": ""
     },
     {
+      "title": "Crude oil exports from strait of Hormuz largely return to pre-war levels",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcGNCX0VlMWRST1A0YVJxWVlHTGI2VGE2UUtRZXpnTTMwQW0zWmpDakdpTUI3ZFcwd0VLQ0xMemFfRkg1VkdjUGh1YUppeVNTdkZSbFVPX3lhMjZSR3ZITVJObHRJdC0ycklwUmF2d042VU5UeHlWWm1KNVJuVUQ4VW9PNHpfZHVRRW5iMzRiekdxWWhmWE42R011RXF6SjZUZktEdjZQZVdObkJXbVZqSlR3?oc=5",
+      "source": "The Guardian",
+      "category": "business",
+      "published": "Thu, 01 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "GM reports 5.5% decline in third-quarter U.S. sales as EV sales drop",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE01YmRSeVNzSG5XYndMbU5qU0NYbURjNm50eG1xZVZmc2xzUjRCRDAzbzBNYmxqTGtGTDdHR0ZFbDZhNk4xM0ZXRUhTVmpGS1hiREVnRTlVbFROSFFVT0lvcF84RdIBaEFVX3lxTE1pb1JCSGR0ODJEQlgwcXBwNlRqUnlxdjFqX3M1d3dyTVlXaHJ0Z1QxS2pVS2hrLU9mZ3g1akJ4bzRIaExBbEM3czFjZlEtZU1oR2I1Y0RjaXk3SzluVVRNaUFHdmtYenFD?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Thu, 01 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Mortgage rates hit highest point since 2023 as Treasury yields rise",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS3hheWVhTmFnc0wyTktlOHZaMWE0NmZBQmRPSExOUnVKSHkxSUdmemh2STA4YWF3QUpJNDlpSHhqRWJ5RXFOYV9IUW9GdlUyWTdpZFFxdDF2Vi0zWUFwNGFwUGpweVFEZTJmdXV1WTdIZ1AwWWMwUjV4TUpHaVk3SjlkdWlvVzFtMkhFVmJRRWpuVk96?oc=5",
+      "source": "NBC News",
+      "category": "business",
+      "published": "Thu, 01 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "David Ellison Taps Mattel\u2019s Ynon Kreiz to Be Co-CEO of Merged Paramount-Warner Bros.",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaWZRRUdVS3RZTEpJS0ZzQ19CUFZtMHFZUFVzR09uNTQyTVphS1RCeEVfbm9PSEdhQXFnMUc5NjllRUloOUJPdkpBbzRuZDZpWldhN21PVm1wdENLRkZVWTFIWVdNTnlMT2cybTFTTlJpT1FQTDd2YnRUM2dzNlRKRkViOVdCempGeWk5cmlkemNRa1VmTkZLZG9Wbw?oc=5",
       "source": "Variety",
       "category": "business",
       "published": "Wed, 30 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Crude Oil Higher on Supply Issues",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZlR2WV9iODNNQ2VDUUdvS1l0Z1lUZ3J0SG8xLXZvczBhTHFsQXBwUmVsY1ZyRmdzbHp2U3hrRDJSRXVDSU5lMDI0OUdqY2FkTWdBWnd3QkZVQkFYcTJjbUFCM3ZBTWh2bGg3NXRtS3dhS3hzb1RBUEFCSkJhZGpFZ3lOc1lyQVNWdEVJYWZ5SkNSV0lldnZOWjlUNmp5eklUay1VdVJxWkM5QkpyT0N3clk5akRaQTF6NEV3YUNfS2tZenVMdmNn?oc=5",
-      "source": "WSJ",
-      "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Walmart is using light-up digital shelf labels to help shoppers and employees find items",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91Q2hUcGxoc0VkLWN5d0ZMYTFlang4SGU2OXZEOE5yTEljS08tRXVZdlhiYzJOYm1GeEYtSkZZaGFWbFN1bXVTZkh1SFlKTkItd1hIZVJsMjN5dEhKNE9lM1RFSncySFlHMVZTMWN2NV9iWTNkQW9haDJR0gF_QVVfeXFMUFBta2I5MzhOTzY2SmZ3bUdid2l6M05Edncta2R4cER3cVhZOW9mQ0hPd1g2LWdCN2k0ZUQxOEFnZmt3STRKSjV1MGxrRm1YY2RVeUtqVEYwa1Y5c0RlY2dwVXZ4TnNEV1Q1TUg5bmdxTWVSbnpTbWRjaExDOW0wOA?oc=5",
-      "source": "cnbc.com",
-      "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1218,19 +856,9 @@
       "author": ""
     },
     {
-      "title": "Trump announces $200bn in South Korean energy investment plans",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZEhVbWRieGFpUDZVV2hhOXNGVkVHcVM0enpiUU15R1p0aFB5eE15UTE1ZXBZSS16S2pkYU1BTDNZTU5VV0xHLVA2M1pZNzdXcER4MUs5NThHX3ptaE1VMXVaY1l4MHRXT0MwMUVwMktjaWh2WnY2TjRyWEthanJPTGdJV1NaT3R5NVZfUmp1UlBEYjdiNjVhMmgwT0Y0dw?oc=5",
-      "source": "Euronews.com",
-      "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Mark Ruffalo blasts Paramount-Warner Bros. merger after judge clears $110B Hollywood deal",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeEtMaWRoczhVOFB6YkdGZVFMc0VjZjV5X0JLM1BCS1M3MFNqWW5BMFJ1MlhlV0JYaXFpTDF3azA2REZKa1VSdkV1cTZMYzNSeWRvUUd3ZzBOaF81VzFGY045Z3dpeWVZSWRIRWdjVjBmU1JOanlPdmFZaDRhSlQxYWJmWHFoVXRqdTZYdUpCdC1sSkNWUzIzQlFseXdPTEJpWGF0cFkzTmxXMUhVeGlyMHBiWndrVGFEdHJKdkNWQQ?oc=5",
-      "source": "Fox Business",
+      "title": "EXCLUSIVE: US tells France and Germany to release diesel stocks or face US export ban, sources say",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOGxXWEZnTW1hNUtCOXY4NTJTWHQ0ZkZoUEZsYkt3c3lQTVU1NDFVbHJnSkNJbXRTdzZCSlBWY2tsc0stTk5CSGk1Ymhpb0NwaG1WUEg5Ni1pVlFxQnRMc093VGllN0c5ektIdWYyN191ZW5ZX1lrUjhVODk2TUpsRXFQT3hQdGhVUzdjdklkSENrWm8yWmgwVkE1bEd6TTB2RHBsUHpZVExmTUhkbjhINTVrZ3ZpQnNsQW9wc0FBMWk4XzF0WEI1aXZBQQ?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Thu, 01 Oct 2026 ",
       "description": "",
@@ -1239,6 +867,16 @@
     }
   ],
   "tech_business": [
+    {
+      "title": "Amazon is launching colorful new Kindles \u2014 and a case with physical page-turn buttons",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQzJfSmlJTEFCajRTU2JielN3Q1phNFlxR3dPdjRYdTNRdG9VR2lHQkdQemtGQVo3d0IzdUdQcFRva25BZzV5ZExodDdDbTZ6YlZ0NDhTNTQxOEtaOGNYbG5rUFZpY055QW8xMzVtVE50WEV1M19PRW8zaElxcHNKX0s5UFp5NEZCVWlnT2VyalF3Nmcz?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Thu, 01 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
     {
       "title": "Microsoft Has A Mountain To Climb To Address Windows 11 Optimizations, But Newest 26H2 Update Tackles Memory Usage; 8GB RAM Systems Left Out",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10Mjk4OTU2elVObEhCY2hKakNEQmh5UWhQQkdJN05FX1ZCVGxna3FLODl3eHVjaGN3V3BUSUZCaVpDNC1vcDFGQlVDdEFPZ3pHVjNFMlZFNUhROGxxa0VrY3RnSFE1alFvY1hNS1MtLUtYQWNINUHSAXtBVV95cUxQTnJZU003YUhlV3dIX09rWTRwZFRVVzZGVlJ0Mk5laGFPWGtJVHU5bjZtV0JJeTJtdFpibFpFWXBWX2R6VXFjczlmZkR0dW00RjBQc19mRjN0SFRZSVB6ajBVT2phTi1rWlViaXFpLVo5LUdVdzRlUW12dDQ?oc=5",
@@ -1260,29 +898,9 @@
       "author": ""
     },
     {
-      "title": "Apple Stores Receive 'Do Not Open' Boxes Ahead of Smart Home Products Launch",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRnJVcDdyZmZmVlR2S2doOFBqOGdOdUdvVms5d2Q2ZlcxTlVVcjNNYktHRGgzN1ZaYy14ZDNEYzNlY1ViS0xZTUFteGdJV0tUdHBmengxTDVsdkg4X1gxVGN5TWRtQTJuZzd4aDdvdjNTeVB2QnVGbjI0NFBMN25Vb3FB?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "The iPhone 18 Pro is selling well in China for three reasons",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcWFMT2RfMXVqUnU5clBnY1JySmx0TGlsOEE5eUdsVllpb3p6MmVzMnRiQi02cDUzcVNER2FrUEVYY1ZFSVVpYXA5RGNNTFhZVmk3UWRDMlNlTVU3VWsyUHhFQ1djZ1lrWlh0Sm1CT2VmcUdTbzRKejJhZF9SUDcyVTVzMy1aN1pNMUVSU3I3WW9GbVVnelFJ?oc=5",
+      "title": "Apple TV just added a bunch of free classic movies, here\u2019s everything new",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTGoxVE9rR2NaZzFZUVNESUhGS2NaaVdoemY5VFRWTFU2ZzZIeFJ4VlBmTlBVSEtXQVdjQS1xVWxNd2F2M0V4NDY4Z3ZDZ0xyam56YW5mWmd4TFJ2akw3QlRLd002ZnR0dFpuZGo2WTNDY2h4YjFFYldDYW1MeE80UjhDX25yOXJqeGUwOEg3Y29fSVNDU1pXMk16ZWJ5dXNjUW0tZ1B3?oc=5",
       "source": "9to5Mac",
-      "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Amazon is launching colorful new Kindles \u2014 and a case with physical page-turn buttons",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQzJfSmlJTEFCajRTU2JielN3Q1phNFlxR3dPdjRYdTNRdG9VR2lHQkdQemtGQVo3d0IzdUdQcFRva25BZzV5ZExodDdDbTZ6YlZ0NDhTNTQxOEtaOGNYbG5rUFZpY055QW8xMzVtVE50WEV1M19PRW8zaElxcHNKX0s5UFp5NEZCVWlnT2VyalF3Nmcz?oc=5",
-      "source": "The Verge",
       "category": "business",
       "published": "Thu, 01 Oct 2026 ",
       "description": "",
@@ -1300,156 +918,53 @@
       "author": ""
     },
     {
-      "title": "Halide 3.2 pro camera arrives with iPhone 18 Pro aperture feature and two new looks",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVp2Q2IxczJIclNmWVJnWGY0MlhqYXVnN0t5MEJCLUxtUmd3Z2U2ZW9pUUUzbUI4bFFnTmVGWV9BYl82bUNkZWRCaW9BR1VuQ3c1ZmpRS3BsZEZNXzZnNVk4ajk2bzhrU1ZtTHBjZVFkQTBWVVhwaHJIZEJPV2d4VElkWVg4Z2VLRzBMZkc5NVE3eTdNU1Vnc0pjTDNUMUtGeE4xZlZQOHlJNkVleUtwTVowS3dZQQ?oc=5",
-      "source": "9to5Mac",
-      "category": "business",
-      "published": "Wed, 30 Sep 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Vivo\u2019s X Fold 6 accidentally feels like a throwback",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMXJKNWlmU1dmTHZpcGdveUdqSDJKWmNwSGgyQzU2Ql9uZk05eDQxVTdDV3ZwS1BuZnFKR01kNV9iVXJEeElSaFk1dEoyR25RWGYzOHJXV3Q3QWNUTWVFYU5fMUttN3V5NzFmeHlNUmx1cXBZZ0pMS3lNRDJsQ3c3Q2JkMEVKMHc?oc=5",
+      "title": "The AI Tamagotchis are coming",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS0lkaWZxXzM5OUNfUFRZWGNIdzBfbWxpMHMybFpDc0dTa3NaeHIyM3d3b01YRUxOYVRxMlYzbG5iSGtkUVRJTTgwUDIzRUxlQnQtZ0YxR0dEbFJzd3QzTXZxeVU2WXhnYUpKdndvWGsyQm01bElRcW82b3REV0RmSW9kSnFyV0pOWVY0OGFYU0hTVm1GaW1XWWptZkVlWnAwSjhMalNqNXlJZUoy?oc=5",
       "source": "The Verge",
       "category": "business",
-      "published": "Thu, 01 Oct 2026 ",
+      "published": "Wed, 30 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZWRmTmFtNjRVZWlaSTdwVkZidTlqTU9HMm4yOVBhTjBueklsbGxiRmhSUTFMYW9vQnZmQ2ltaTNaUENCMjd4M2dGOUVFejNWMjlBTm5sUTRPWUQ1TjdTZGRSTmxRQjFMcU5UTGt4QmV6VENPdDlZRVhrOFRDc0Q3YkN0NA?oc=5",
+      "source": "The Hacker News",
+      "category": "business",
+      "published": "Wed, 30 Sep 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Galaxy S27 series pricing may not only increase, but cost more to upgrade storage",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVkVIWk9hdktfUFNIeDkzbXR3SXNqRzVwdi1SZFE4eDUtSDJ5Nkl2bnB4SVJfcVV6RGtxZEtDc3VTUVFGdGhUdm5ybXN1X0dfZkU4WXZlbEdHamg4TjVYZDZDckcybTB2a3EwMjkzZUJXTjN6SXprVVFEYWdkMHYyc0pYNTFxSXlrN3Q3eXNNME4tQ2VENE5aWGN4V0tENHh3UklEc1Q0elJYNFNVQUFrOFpwRV9GUQ?oc=5",
+      "source": "9to5Google",
+      "category": "business",
+      "published": "Wed, 30 Sep 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     }
   ],
-  "defense": [
-    {
-      "title": "Taiwan takes a page from Ukraine\u2019s playbook in steeling society for an invasion",
-      "url": "https://www.defensenews.com/global/asia-pacific/2026/10/01/taiwan-takes-a-page-from-ukraines-playbook-in-steeling-society-for-an-invasion/",
-      "source": "Defense News",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Taiwan leaders are working to embed resistance against an occupying force into civilian life.",
-      "relevance_score": 10
-    },
-    {
-      "title": "Ukraine has struck Russian factory vital for Moscow\u2019s missiles, private intelligence firm says",
-      "url": "https://www.defensenews.com/global/europe/2026/10/01/ukraine-has-struck-russian-factory-vital-for-moscows-missiles-private-intelligence-firm-says/",
-      "source": "Defense News",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The documents, Dallas Analytics said, place AOMZ in the production chains of \u201cat least seven\u201d missile programs, including the Kh-101 cruise missile.",
-      "relevance_score": 10
-    },
-    {
-      "title": "Neros, Perennial Autonomy lead in Pentagon\u2019s drone competition",
-      "url": "https://www.defensenews.com/unmanned/2026/10/01/neros-perennial-autonomy-lead-in-pentagons-drone-competition/",
-      "source": "Defense News",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Two companies scored highest during the second phase of a Pentagon competition to find companies that can produce high-quality, low-cost commercial drones.",
-      "relevance_score": 8
-    },
-    {
-      "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "\"My family and I will not truly be safe as long as Putin is in power,\" says the former chess world champion.",
-      "relevance_score": 6
-    },
-    {
-      "title": "US Air Force awards $2.38B contract to Boeing for 22 F-15EX",
-      "url": "https://www.defensenews.com/industry/techwatch/2026/09/30/us-air-force-awards-238b-contract-to-boeing-for-22-f-15ex/",
-      "source": "Defense News",
-      "published": "Wed, 30 Sep 2026 ",
-      "description": "The service awarded Boeing a contract for 22 more F-15EX aircraft, bringing the number to a total of 120 to be manufactured by the defense company.",
-      "relevance_score": 5
-    },
-    {
-      "title": "UK PM Burnham says Iran likely behind RAF base incident: Is there evidence?",
-      "url": "https://www.aljazeera.com/news/2026/10/1/uk-pm-burnham-says-iran-likely-behind-raf-base-incident-is-there-evidence?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "UK, US and Israeli officials point to Iranian involvement but remain tight-lipped on details.",
-      "relevance_score": 5
-    },
-    {
-      "title": "Western militaries are undermining Ukraine\u2019s defence, experts say",
-      "url": "https://www.aljazeera.com/news/2026/10/1/western-militaries-are-undermining-ukraines-defence-experts-say?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "A combination of rigid Western military attitudes and Kyiv&#039;s regulatory paralysis leaves fewer weapons at the front.",
-      "relevance_score": 4
-    },
-    {
-      "title": "Netanyahu says flight attacker 'underwent Islamist radical indoctrination'",
-      "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\".",
-      "relevance_score": 4
-    },
-    {
-      "title": "Blasts heard in Addis Ababa as Ethiopia conflict widens in the north",
-      "url": "https://www.aljazeera.com/news/2026/10/1/blasts-heard-in-addis-ababa-as-ethiopia-conflict-widens-in-the-north?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Thousands flee Mekelle amid advancing troops and disrupted services as tensions rise in Ethiopia&#039;s northern territories.",
-      "relevance_score": 3
-    },
-    {
-      "title": "Explosions heard in Ethiopia's capital after drone flights banned",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgygpqky9zo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "It comes a week after fighting erupted north of the capital between the army and a new alliance of armed groups.",
-      "relevance_score": 3
-    },
-    {
-      "title": "Operation Atlantic City ushers Marines on rare trip to ... remote Arctic island",
-      "url": "https://www.defensenews.com/news/your-military/2026/09/30/operation-atlantic-city-ushers-marines-on-rare-trip-to-remote-arctic-island/",
-      "source": "Defense News",
-      "published": "Wed, 30 Sep 2026 ",
-      "description": "U.S. Marines participated in a NATO exercise on a remote Arctic island as the alliance increases its focus on the region amid worries about Russia.",
-      "relevance_score": 2
-    },
-    {
-      "title": "Space Force picks two companies to build new \u2018space-to-space\u2019 satellites by 2028",
-      "url": "https://www.defensenews.com/space/2026/10/01/space-force-picks-two-companies-to-build-new-space-to-space-satellites-by-2028/",
-      "source": "Defense News",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "The Pentagon announced Northrop Grumman and True Anomaly will build new ISR satellites in space, after admitting the U.S. already has weapons in orbit.",
-      "relevance_score": 1
-    },
-    {
-      "title": "Moroccan intelligence uses surveillance to \u2018silence\u2019 journalists: Amnesty",
-      "url": "https://www.aljazeera.com/news/2026/10/1/moroccan-intelligence-uses-surveillance-to-silence-journalists-amnesty?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Probe finds spyware, hidden microphones and infected phones used to surveil journalists, activists, rights defenders.",
-      "relevance_score": 1
-    },
-    {
-      "title": "Flydubai stabbing: How safe are planes if a pilot turns violent?",
-      "url": "https://www.aljazeera.com/features/2026/10/1/flydubai-stabbing-how-safe-are-planes-if-a-pilot-turns-violent?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 01 Oct 2026 ",
-      "description": "Civil aviation changed after 9/11 to keep attackers outside cockpits. The Flydubai scare flips the dilemma.",
-      "relevance_score": 1
-    }
-  ],
+  "defense": [],
   "github": [
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 270502,
+      "stars": 270527,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-01T15:21:05Z"
+      "updated": "2026-10-01T16:42:48Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 250520,
+      "stars": 250542,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-01T15:19:40Z"
+      "updated": "2026-10-01T16:42:43Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1457,88 +972,88 @@
       "stars": 187634,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-01T15:08:33Z"
+      "updated": "2026-10-01T15:45:01Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "\ud83d\udd25 Supercharge your AI agents with data from the web and beyond. A web data API to search, scrape, and access more sources.",
-      "stars": 187445,
+      "stars": 187484,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-01T15:18:45Z"
+      "updated": "2026-10-01T16:40:56Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 166888,
+      "stars": 166891,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-01T15:15:44Z"
+      "updated": "2026-10-01T16:08:04Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 153717,
+      "stars": 153727,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-01T15:11:23Z"
+      "updated": "2026-10-01T16:43:46Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 150010,
+      "stars": 150083,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-01T15:21:02Z"
+      "updated": "2026-10-01T16:44:27Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 147352,
+      "stars": 147357,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-10-01T15:12:43Z"
+      "updated": "2026-10-01T16:37:53Z"
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
       "description": "\u5229\u7528 AI \u5927\u6a21\u578b\u548c\u81ea\u52a8\u5316\u5de5\u4f5c\u6d41\uff0c\u6839\u636e\u4e3b\u9898\u6216\u5173\u952e\u8bcd\u4e00\u952e\u751f\u6210\u9ad8\u6e05\u77ed\u89c6\u9891\u3002Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "stars": 127870,
+      "stars": 127887,
       "language": "Python",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "updated": "2026-10-01T15:19:06Z"
+      "updated": "2026-10-01T16:42:32Z"
+    },
+    {
+      "name": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "stars": 103595,
+      "language": "Python",
+      "url": "https://github.com/pytorch/pytorch",
+      "updated": "2026-10-01T16:44:29Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 87209,
+      "stars": 87258,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-01T15:21:27Z"
+      "updated": "2026-10-01T16:40:20Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 77874,
+      "stars": 77877,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-01T15:21:26Z"
-    },
-    {
-      "name": "career-ops-hq/career-ops",
-      "description": "Open-source AI job search agent: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor ",
-      "stars": 73211,
-      "language": "JavaScript",
-      "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-10-01T15:21:35Z"
+      "updated": "2026-10-01T16:18:45Z"
     }
   ],
   "nasdaq_data": {
-    "price": 30351.4,
-    "change": -0.19,
-    "changePercent": -0.19,
+    "price": 30372.41,
+    "change": -0.12,
+    "changePercent": -0.12,
     "signal": "BEARISH",
-    "analysis": "NASDAQ-100 (NDX) Thu 1 Oct: 30,351.40, down -0.19% -- BEARISH. none. Counter: price above SMA20, RSI 65.6 strong, MACD bullish. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-01T12:01:27.209996"
+    "analysis": "NASDAQ-100 (NDX) Thu 1 Oct: 30,372.41, down -0.12% -- BEARISH. none. Counter: price above SMA20, RSI 66.1 strong, MACD bullish. Watch for SMA20 reclaim to flip bias.",
+    "timestamp": "2026-10-01T12:44:46.289272"
   },
   "sticky": {
     "cnbc": [
@@ -1550,25 +1065,46 @@
         "description": "Treasury yields were higher on Thursday as investors kept selling government debt."
       },
       {
-        "title": "GM reports 5.5% decline in third-quarter U.S. sales as EV sales drop",
+        "title": "General Motor Q3 sales drop 5.5%, while Toyota buoyed by EVs, hybrids",
         "url": "https://www.cnbc.com/2026/10/01/us-auto-sales-q3.html",
         "source": "CNBC",
-        "published": "2026-10-01T16:00:05",
+        "published": "2026-10-01T16:40:23",
         "description": "GM's sales of all-electric vehicles are down across the board, as enthusiasm for electric vehicles wanes."
       },
       {
         "title": "Trump Accounts have auto-enrolled more than 60 million children, Treasury says",
         "url": "https://www.cnbc.com/2026/10/01/treasury-trump-accounts-auto-enroll-more-than-60-million-children.html",
         "source": "CNBC",
-        "published": "2026-10-01T14:39:56",
+        "published": "2026-10-01T16:06:45",
         "description": "More than 60 million children have been automatically enrolled in Trump Accounts,\u00a0according to a Treasury Department announcement exclusively provided to CNBC."
       },
       {
         "title": "Judge dismisses Reflecting Pool case permanently, cites risk Trump will force new charges",
         "url": "https://www.cnbc.com/2026/10/01/reflecting-pool-vandalism-dismissed-hearn-trump.html",
         "source": "CNBC",
-        "published": "2026-10-01T15:48:19",
+        "published": "2026-10-01T16:14:02",
         "description": "President Donald Trump had criticized D.C. U.S. Attorney Jeanine Pirro after she moved to drop the Reflecting Pool case."
+      },
+      {
+        "title": "Nike is set to report earnings after the bell. Here's what to expect",
+        "url": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html",
+        "source": "CNBC",
+        "published": "2026-10-01T16:00:01",
+        "description": "Nike is expected to post another quarter of declining sales as the company tries to turn around its business and regain growth in China."
+      },
+      {
+        "title": "Nike's new Caitlin Clark shoes are already almost sold out",
+        "url": "https://www.cnbc.com/2026/10/01/nikes-new-caitlin-clark-shoes-are-already-almost-sold-out.html",
+        "source": "CNBC",
+        "published": "2026-10-01T16:38:51",
+        "description": "Nike's Caitlin 1s, the first signature shoe for Indiana Fever basketball star Caitlin Clark, have nearly sold out less than two hours after their U.S. release."
+      },
+      {
+        "title": "Former LinkedIn chief Roslansky to leave Microsoft, following other exec departures",
+        "url": "https://www.cnbc.com/2026/10/01/linkedin-chief-roslansky-microsoft-exit.html",
+        "source": "CNBC",
+        "published": "2026-10-01T16:08:31",
+        "description": "Gaming head Phil Spencer and Office leader Rajesh Jha both left this year, and Charlie Bell, the company's head of security, became an individual contributor."
       },
       {
         "title": "Accenture rallies more than 20% after earnings beat, heads for best day ever",
@@ -1576,27 +1112,6 @@
         "source": "CNBC",
         "published": "2026-10-01T15:42:04",
         "description": "Shares of Accenture surged Thursday after the company's fiscal fourth-quarter results beat estimates."
-      },
-      {
-        "title": "Walmart is using light-up digital shelf labels to help shoppers and employees find items",
-        "url": "https://www.cnbc.com/2026/10/01/walmart-digital-shelf-label-tools.html",
-        "source": "CNBC",
-        "published": "2026-10-01T13:18:47",
-        "description": "Walmart is rolling out a light-up shelf label feature connected to its app to help customers better find the items they're looking for."
-      },
-      {
-        "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
-        "url": "https://www.cnbc.com/2026/09/30/micron-mu-q4-earnings-report-2026.html",
-        "source": "CNBC",
-        "published": "2026-10-01T13:59:54",
-        "description": "Micron is up over 500% in the past year as the company benefits from soaring AI demand."
-      },
-      {
-        "title": "SpaceX set to launch Google AI chips into orbit in push toward space-based data centers",
-        "url": "https://www.cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-satellites.html",
-        "source": "CNBC",
-        "published": "2026-10-01T15:55:30",
-        "description": "SpaceX plans to launch Google tensor processing units into orbit on Planet Labs satellites."
       }
     ],
     "yahoo_finance": [
@@ -1660,17 +1175,17 @@
     "bloomberg": [],
     "wallstreetbets": [
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Tuesday; MongoDB, Reddit to Open Higher - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Tuesday; MongoDB, Reddit to Open Higher - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQjZqMU5ack93ZGpISW9oejQ4ZXh2WVBsQ09jeV9OckcyRU9TNnJPcm1rR3JQM1ZVRC1ka1pVWDFWWHFDSGlDNkZIdFZFQ2JZTU5YeWw5ZUZqX2FxdTQ0dmE5STAwU0tUWWlNWl9pT2xPc0tIRWQzc3U0ZzBhX3JZYnhqNlJOeERBX3NFSTJNWW9EbEM4M2FOdUgteHlvdXdQX1Mtc0VHMEUxQQ?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-29T10:43:01",
-        "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Tuesday; MongoDB, Reddit to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Tuesday; MongoDB, Reddit to Open Higher&nbsp;&nbsp;finance.yahoo.com"
       },
       {
         "title": "WallStreetBets Chased Alphabet And Nvidia Before Thursday\u2019s Open - Finimize",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRmR4bmZFY3V3MUtnMkhweFJWMlllWmZWWGdjOVFQMUxnVWZvRG5oUm1qN3lXVzVTTGE4N0lXdG5IZUh0ek5IV1VDT2Z2TnNLWW9ReGppcWxEcWhmbEplbDBpSjM0dWFmdjVmUnVDbHdUMlk0MHYwYkVYWVdLNWdNSmlZWHcySVpLVlE3eG1xRkRwU0hNSlR3?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-09-30T23:42:38",
+        "published": "2026-10-01T11:42:38",
         "description": "WallStreetBets Chased Alphabet And Nvidia Before Thursday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
@@ -1681,11 +1196,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Tuesday; MongoDB, Reddit to Open Higher&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcW94VFpTdndRLThwLVM0TjJJZDhSR2xJOVI0em1KbTAxQ0tMblVpQ0I4a0Q5UG5IOHFjSGJ4aDdGeE51Ymtzbks0WW1reW95dUEwVTVacFQwdFA0N2d1V19SQ0NIdnVjUllxaGhkQjh4ZjNzRHhDQUpyUkJDQXhUbUZlMWhxUlVRX3NKRVlmT2RHWlhhRENIOWxGbHY4anhwZlVsQ2pSaG8?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-28T10:35:17",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline&nbsp;&nbsp;finance.yahoo.com"
       },
       {
         "title": "Wallstreetbets Favorites Rebounded Before Tuesday\u2019s Open - Finimize",
@@ -1702,104 +1217,104 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Monday; Sandisk, Meta Platforms to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Sandisk, AMD to Open Higher - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Sandisk, AMD to Open Higher - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZUhlRFVCM2ZJbFdLbkNaNWowUW1zRWlsN3dXVlk0dWJiX3JsVzMtdF9XX0VtMFk1Z2dYcF9EcmJLaFJQY3NOUGx0blY2WWtjLWRVZUpMdmtKdnBJUWZyLXZwalNXUkNGekEwbHZKcHdGT1h0QmNrYWdkUzBkTEtQRDJxTXdFZWsxNDlhZzZRWnlVb1pUOUxjSFBRZHJpTjJ5VTNlcm96djllZw?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-25T10:40:20",
-        "description": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Sandisk, AMD to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Sandisk, AMD to Open Higher&nbsp;&nbsp;finance.yahoo.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Intel, AMD to Open Higher - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Intel, AMD to Open Higher - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb2xJXzB4anEtdUZOWlRyQ1hXYlZSZlNOMEtESlJSR2JPeDhPY215TkJ1ejE2Y2JyZHhPeFRIVTdhVEd3TXZ5RDlSTVExN25ZZjV2N2Jnd2IybkRYMnAzWkxPblpXMFNfVGM2eUR2bU5idTgxbTNVZkRPNEM5dllGTFZZLXA5S3VneFlaenNIUEItNHdFUklxZjlPTTdVM0phaFRSN0tvU3RXUQ?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-18T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Intel, AMD to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Advance Pre-Bell Friday; Intel, AMD to Open Higher&nbsp;&nbsp;finance.yahoo.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOGF4ODFqNkhtdWFBSWJoY1hjeEFIMHl1NzJKN1hwNEhiYU9EX1FCd1ZoRFlfUmlmWWtiVWxhNnVhRUs0c1ZEM25EVjFXSW9ldmNzNE02cVBiazVlcndUbkozY09wVGZGV1hYUWFuekg5ZEJ3QnM2WUcweHhGS0l5NW9teWRyY2p0WXY5Y3EybExfN19kS1FjU3NPd1NHSWhXSWpzUTVB?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-14T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower&nbsp;&nbsp;finance.yahoo.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell; AeroVironment to Rise, American Eagle to Fall - Yahoo Finance",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell; AeroVironment to Rise, American Eagle to Fall - finance.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWWRBQlpPMVM5V3pZRUNhSWVEMzBkLU9jS0RVX0RMTzdpVVVqV3dTRW91R0FFTHJOMEMwU0RnOG1mTEhkWVBJODhWLWllei0yVVBSRjY4Mlk0ZHVnbkR4WFVnSm1wd3FRbDIxTmhCQUlJSGpqR0JKc1ZYTjNycU9LSEdPUnFCSlEyMTh5Mk96SHo2TVp4TC1vRnc4VWNYWU5wZmR1cFRqTQ?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-10T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell; AeroVironment to Rise, American Eagle to Fall&nbsp;&nbsp;Yahoo Finance"
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell; AeroVironment to Rise, American Eagle to Fall&nbsp;&nbsp;finance.yahoo.com"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7684.25,
-      "change": -31.25,
-      "change_percent": -0.41,
+      "price": 7708.0,
+      "change": -7.5,
+      "change_percent": -0.1,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30584.0,
-      "change": -114.75,
-      "change_percent": -0.37,
+      "price": 30656.25,
+      "change": -42.5,
+      "change_percent": -0.14,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 50972.0,
-      "change": -306.0,
-      "change_percent": -0.6,
+      "price": 51198.0,
+      "change": -80.0,
+      "change_percent": -0.16,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2806.3,
-      "change": -11.2,
-      "change_percent": -0.4,
+      "price": 2825.8,
+      "change": 8.3,
+      "change_percent": 0.29,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 92.92,
-      "change": 2.5,
-      "change_percent": 2.76,
+      "price": 91.71,
+      "change": 1.29,
+      "change_percent": 1.43,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4193.8,
-      "change": 7.1,
-      "change_percent": 0.17,
+      "price": 4199.1,
+      "change": 12.4,
+      "change_percent": 0.3,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 60.8,
-      "change": 0.7,
-      "change_percent": 1.17,
+      "price": 61.07,
+      "change": 0.97,
+      "change_percent": 1.62,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1714.7,
-      "change": 12.4,
-      "change_percent": 0.73,
+      "price": 1723.6,
+      "change": 21.3,
+      "change_percent": 1.25,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1182.0,
-      "change": -19.4,
-      "change_percent": -1.61,
+      "price": 1183.5,
+      "change": -17.9,
+      "change_percent": -1.49,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.99,
-      "change": -0.03,
-      "change_percent": -1.02,
+      "price": 2.96,
+      "change": -0.06,
+      "change_percent": -2.08,
       "name": "Natural Gas Nov 26"
     }
   ],

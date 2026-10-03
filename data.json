@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03T11:16:17.501080",
+  "timestamp": "2026-10-03T11:21:07.108583",
   "summary": "Key topics today:\n- - Show HN: Germany's new sovereign AI model Kolibri (r/HackerNews, 201 pts)\n- - Kolibri Has Landed: A Sovereign Open-Weight Model (r/HackerNews, 101 pts)\n- - Show HN: Offrun \u2013 manage every coding agent from one workspace (r/HackerNews, 101 pts)\n- - From the creator of Redis; run LLM locally with ds4 (r/HackerNews, 101 pts)\n- - Greg Kroah-Hartman \u2013 Security in the LLM Age [video] (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -35,20 +35,20 @@
       "text": "AMC -7.7% drop @ $2.77"
     },
     {
-      "type": "buy",
-      "asset": "PL",
-      "price": 17.5,
-      "change": 6.77,
-      "category": "stock",
-      "text": "PL +6.8% momentum @ $17.50"
-    },
-    {
       "type": "sell",
       "asset": "MPT",
       "price": 3.27,
       "change": -5.49,
       "category": "stock",
       "text": "MPT -5.5% drop @ $3.27"
+    },
+    {
+      "type": "watch",
+      "asset": "MSTR",
+      "price": 160.01,
+      "change": 4.52,
+      "category": "stock",
+      "text": "MSTR +4.5% @ $160.01"
     }
   ],
   "reddit": [
@@ -117,26 +117,26 @@
       "created": ""
     },
     {
-      "title": "C++ Insights \u2013 See your source code with the eyes of a Compiler",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/andreasfertig/cppinsights",
-      "created": ""
-    },
-    {
       "title": "The Escalation of War in Ethiopia",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.africanistperspective.com/p/on-the-escalation-of-war-in-ethiopia",
       "created": ""
+    },
+    {
+      "title": "C++ Insights \u2013 See your source code with the eyes of a Compiler",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/andreasfertig/cppinsights",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-03T15:16:03.473349",
+    "timestamp": "2026-10-03T15:20:58.759987",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,21 +438,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-03T15:15:40.042999",
+    "timestamp": "2026-10-03T15:20:35.828517",
     "trending": [
-      {
-        "symbol": "PL",
-        "price": 17.5,
-        "change": 1.11,
-        "change_percent": 6.77,
-        "name": "Planet Labs PBC"
-      },
       {
         "symbol": "MPT",
         "price": 3.27,
         "change": -0.19,
         "change_percent": -5.49,
         "name": "Medical Properties Trust, Inc."
+      },
+      {
+        "symbol": "VEEV",
+        "price": 273.33,
+        "change": -12.12,
+        "change_percent": -4.25,
+        "name": "Veeva Systems Inc."
       },
       {
         "symbol": "LEN",
@@ -469,6 +469,13 @@
         "name": "Vistra Corp."
       },
       {
+        "symbol": "BRK-B",
+        "price": 502.65,
+        "change": 4.7,
+        "change_percent": 0.94,
+        "name": "Berkshire Hathaway Inc. New"
+      },
+      {
         "symbol": ".RUT",
         "price": 2832.895,
         "change": 26.27,
@@ -476,25 +483,25 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": ".SPX",
-        "price": 7722.72,
-        "change": 71.18,
-        "change_percent": 0.93,
-        "name": "S&P 500"
-      },
-      {
         "symbol": "QNT-USD",
-        "price": 248.5,
-        "change": 2.18,
-        "change_percent": 0.89,
+        "price": 248.38,
+        "change": 2.06,
+        "change_percent": 0.84,
         "name": "Quant USD"
       },
       {
-        "symbol": "RSP",
-        "price": 209.73,
-        "change": 1.71,
-        "change_percent": 0.82,
-        "name": "Invesco S&P 500 Equal Weight ET"
+        "symbol": "SOL-USD",
+        "price": 119.54,
+        "change": 0.92,
+        "change_percent": 0.78,
+        "name": "Solana USD"
+      },
+      {
+        "symbol": ".SPX",
+        "price": 7722.72,
+        "change": 56.27,
+        "change_percent": 0.73,
+        "name": "S&P 500"
       },
       {
         "symbol": "FXAIX",
@@ -504,31 +511,38 @@
         "name": "Fidelity 500 Index Fund"
       },
       {
+        "symbol": "SCHD",
+        "price": 32.72,
+        "change": 0.19,
+        "change_percent": 0.58,
+        "name": "Schwab US Dividend Equity ETF"
+      },
+      {
         "symbol": ".DJI",
         "price": 51176.96,
-        "change": 270.91,
-        "change_percent": 0.53,
-        "name": "Dow Jones Industrial Average"
+        "change": 250.4,
+        "change_percent": 0.49,
+        "name": "DJIA"
       },
       {
         "symbol": "ETH-USD",
-        "price": 2681.8,
-        "change": 13.65,
-        "change_percent": 0.51,
+        "price": 2680.41,
+        "change": 12.26,
+        "change_percent": 0.46,
         "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 84866.6,
-        "change": 369.39,
-        "change_percent": 0.44,
+        "price": 84825.84,
+        "change": 328.63,
+        "change_percent": 0.39,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.49,
         "change": 0.0,
-        "change_percent": 0.27,
+        "change_percent": 0.22,
         "name": "XRP USD"
       }
     ],
@@ -960,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-03T15:15:58.997101",
+    "timestamp": "2026-10-03T15:20:54.933972",
     "items": [
       {
         "symbol": "SPX",
@@ -1054,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 291.49,
-        "change": -5.68,
+        "price": 291.68,
+        "change": -5.64,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 84830,
-        "change": -0.93,
+        "price": 84824,
+        "change": -0.81,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2680.53,
-        "change": -0.95,
+        "price": 2680.54,
+        "change": -0.8,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 119.54,
-        "change": -0.55,
+        "price": 119.57,
+        "change": -0.33,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 13.85,
-        "change": -2.81,
+        "change": -2.71,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 11.1,
-        "change": -0.04,
+        "price": 11.08,
+        "change": -0.14,
         "type": "crypto"
       },
       {
@@ -1095,15 +1109,15 @@
         "type": "mover"
       },
       {
-        "symbol": "PL",
-        "price": 17.5,
-        "change": 6.77,
-        "type": "mover"
-      },
-      {
         "symbol": "MPT",
         "price": 3.27,
         "change": -5.49,
+        "type": "mover"
+      },
+      {
+        "symbol": "VEEV",
+        "price": 273.33,
+        "change": -4.25,
         "type": "mover"
       },
       {
@@ -1125,9 +1139,9 @@
         "type": "mover"
       },
       {
-        "symbol": "^GSPC",
-        "price": 7722.72,
-        "change": 0.93,
+        "symbol": "QNT-USD",
+        "price": 248.92,
+        "change": 1.06,
         "type": "mover"
       },
       {
@@ -1137,24 +1151,24 @@
         "type": "mover"
       },
       {
-        "symbol": "QNT-USD",
-        "price": 248.16,
-        "change": 0.75,
+        "symbol": "SOL-USD",
+        "price": 119.55,
+        "change": 0.79,
         "type": "mover"
       },
       {
-        "symbol": "FXAIX",
-        "price": 268.32,
-        "change": 0.67,
+        "symbol": "SCHD",
+        "price": 32.72,
+        "change": 0.58,
         "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "AI will create more jobs than it kills, McKinsey says. The catch: 11 million Americans may need new careers",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxON3U4UXcxbWZMQklxZW16a011VzFkaFFzeE80ZkhUcFRFUlhUNmYzM05UU19LUFFMSzZ2UmsxM1FWTmZMcDFlRnI5UWxWdUxMb2dzdXlQWDBoOElDNFRDNGN1cm41T1RUeWdTSjdvY0d4ZGxhcHhUbF9lS3FlQmhnSzZ3M2xXeTFlUmt6Mkx2aEs3V3R0Qk80akZTa19HZ0RYcURDeWpoMEtSbExKaEgyc2t3?oc=5",
-      "source": "Fortune",
+      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LNGljVF9EQzJ3eWhnRkhRdHNVZlJWZDdtTDhkOEVFLV9FLVlRNmdvaWZWY0Vscm1QZl9idExUM0dtd1FyVlNFd2tQQ2FLY19uZXFvRUZnUGdwUUdRYUtSZzJrcG1QZmlwLUE1cVJCeHVxQ3ZGVEpTQ0pR0gF_QVVfeXFMT1ZnczJzYkZLd0tLZTc5NGN3TzVyRHdrQkFWcjhxRW5sRWhBMjc4b1dQbGRGOWxXU0QyNVo3Q1RISnNhaXFfb3lSN3F4anlpbnZnVDJha1ZGWU5qTC1ORU5PaFJyV0kycDFFYWx5RW9VUTdJbzJxR1NMWUQwVDNIUQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Sat, 03 Oct 2026 ",
       "description": "",
@@ -1162,9 +1176,9 @@
       "author": ""
     },
     {
-      "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LNGljVF9EQzJ3eWhnRkhRdHNVZlJWZDdtTDhkOEVFLV9FLVlRNmdvaWZWY0Vscm1QZl9idExUM0dtd1FyVlNFd2tQQ2FLY19uZXFvRUZnUGdwUUdRYUtSZzJrcG1QZmlwLUE1cVJCeHVxQ3ZGVEpTQ0pR0gF_QVVfeXFMT1ZnczJzYkZLd0tLZTc5NGN3TzVyRHdrQkFWcjhxRW5sRWhBMjc4b1dQbGRGOWxXU0QyNVo3Q1RISnNhaXFfb3lSN3F4anlpbnZnVDJha1ZGWU5qTC1ORU5PaFJyV0kycDFFYWx5RW9VUTdJbzJxR1NMWUQwVDNIUQ?oc=5",
-      "source": "CNBC",
+      "title": "AI will create more jobs than it kills, McKinsey says. The catch: 11 million Americans may need new careers",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxON3U4UXcxbWZMQklxZW16a011VzFkaFFzeE80ZkhUcFRFUlhUNmYzM05UU19LUFFMSzZ2UmsxM1FWTmZMcDFlRnI5UWxWdUxMb2dzdXlQWDBoOElDNFRDNGN1cm41T1RUeWdTSjdvY0d4ZGxhcHhUbF9lS3FlQmhnSzZ3M2xXeTFlUmt6Mkx2aEs3V3R0Qk80akZTa19HZ0RYcURDeWpoMEtSbExKaEgyc2t3?oc=5",
+      "source": "Fortune",
       "category": "business",
       "published": "Sat, 03 Oct 2026 ",
       "description": "",
@@ -1244,16 +1258,6 @@
       "author": ""
     },
     {
-      "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNHNCbTdmU3c0TXd5dm9oeTZiV1FFR1U3NVdacUdyN0JVRzJvSmpWSTBnNzA1Rnpad0NyVGZJNEZGRU4ybGZSX3hwcVhuQmEyMEpKNG1wVG5xTUtXMlY5ZUViaFQ3bUVGZUdwejJYMFp2Rko3eUxpdUJ4dVh5bFZ0RlNXZi0xU1h4MFZSSG01R05BbW05SGFzT2diaVNaM2p6UjB5ejRNa2laTHJmbDdNXzVCMA?oc=5",
-      "source": "Ars Technica",
-      "category": "business",
-      "published": "Fri, 02 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "\u2018HomePad\u2019 coming: Will Apple hold an October special event?",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUVY3VTJta0ZjbjhyQmpKdGlPNVhTaThKUTJnMUU2amZMaktybWJRN0I1UGhfanRZLTljeklDZmY0aHRYQ2Vra2sxR1BZa1JkZXBDRzU1TzQ5TG9tUGlSWkdrWW5adTdMdnNuNG5obDlzOG91bTg0OFNUZ1hqb1I2eDhNd1N3ZGhHbzJIUlc2SlE?oc=5",
       "source": "9to5mac.com",
@@ -1274,9 +1278,29 @@
       "author": ""
     },
     {
+      "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNHNCbTdmU3c0TXd5dm9oeTZiV1FFR1U3NVdacUdyN0JVRzJvSmpWSTBnNzA1Rnpad0NyVGZJNEZGRU4ybGZSX3hwcVhuQmEyMEpKNG1wVG5xTUtXMlY5ZUViaFQ3bUVGZUdwejJYMFp2Rko3eUxpdUJ4dVh5bFZ0RlNXZi0xU1h4MFZSSG01R05BbW05SGFzT2diaVNaM2p6UjB5ejRNa2laTHJmbDdNXzVCMA?oc=5",
+      "source": "Ars Technica",
+      "category": "business",
+      "published": "Fri, 02 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Apple is reportedly building a smart home camera that won't record video footage of you or anyone else",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTUJZTHVOUWI0cHpGWWxKem5QYmNTRGd0SGJ4dzNlVEZkQ0czS18tZFB3WWRYWEpHR1hBcXpmV196ZmYyelFLUERObnJ6a3dtS3NBeUxHRHJCVzFJa0llZGd5aThwRUdGSHRpbm04WmM1UDc5Qk9VUTVnOWJZU0lFWEFGQU9GTDZkaXpQaEkzaExjMHpMR0h4UkhYS1Fkbm84aENBZ0FUYlJyMjNzYjFLb05SdVBLa1lkd25UTW5YTm9SUm9PdjBpc2RtZ2trQkhH?oc=5",
       "source": "Engadget",
+      "category": "business",
+      "published": "Fri, 02 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Someone got Doom in an SQL database",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWnFiT0pmSV9ZMW5RVEFTRUdnelltR1NLcVpkZkhNYjNkQy1maVBWU3NINFRVdW1ieE5Id3JqOV9hY1g5VUEyRy15QTZ6c1JpSmczVzQ4OUl5UTRHUTZwb3FyNVd5aFVZWUlYSVg5OXVtWjZOMkZBWURZN19KZ2xDYWt3?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Fri, 02 Oct 2026 ",
       "description": "",
@@ -1297,16 +1321,6 @@
       "title": "Amazon redesigns Kindle lineup and announces new accessories",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSVdOWHFYQV9IRklUSnBjM09XR0FCWE9fRndrVUNIYm1BbTI5em9lbUVrekZfdHJNTDFmUEhDR2FiZGxTX0pLVG5Nd093ZFhqYUZMRU9RNzdQbk9zNWQ1aFZDc1hjWE8ybF9ZeF9LV2lQRkpzRFFjNW5pWWtjVkFDRWFMaHFlRG1JZ1NYRndJSGdHNXpLbFlNaHNxWTlUZ2dMMS1Rc0ZfcDBsRzBNU1ZycG5XRjZKcl94QzNFSjBfLXBkMlBMTk9Bb0c1SllGWkE?oc=5",
       "source": "9News",
-      "category": "business",
-      "published": "Fri, 02 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Pok\u00e9mon GO City Safari: Boston Rescheduled as a Global Event for Ticket Holders",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYUxMSDh1SHRwenJER3lFV21xRmZpdGY0bTFwXzdzQjJuMWZMYi1yNUxvaHRiRGpCeklXY2hkdndkYmdzb1hyMC15QUhOeWxjVGJlNWZ1eVdIWXNYWENuMjUyX0FrbnF6SkRXTlM5dUZ2UzlqaHY2TzhCaDJCRGJIeVNnUm5hRGt4aXd6QzlreHJ5YmpjU3pxVTJmS3ZMTTd4UjFpY0pFZnVMR3AySmFBcWtSWmI?oc=5",
-      "source": "Pok\u00e9mon GO Hub",
       "category": "business",
       "published": "Fri, 02 Oct 2026 ",
       "description": "",
@@ -1361,14 +1375,6 @@
       "source": "Al Jazeera",
       "published": "Sat, 03 Oct 2026 ",
       "description": "Palestinian Israeli leader forced to withdraw candidature while far-right Israeli leaders allowed to run in polls.",
-      "relevance_score": 5
-    },
-    {
-      "title": "Five killed as Kyiv and Moscow trade strikes, Russia hits second bridge",
-      "url": "https://www.aljazeera.com/news/2026/10/3/five-killed-as-kyiv-and-moscow-trade-strikes-russia-hits-second-bridge?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sat, 03 Oct 2026 ",
-      "description": "Russia has also attacked another key bridge in Kyiv, the second such strike in two days.",
       "relevance_score": 5
     },
     {
@@ -1532,7 +1538,7 @@
     "changePercent": 1.0,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 3 Oct: 30,807.93, up +1.00% -- BULLISH. price above SMA20, RSI 75.9 strong, MACD bullish, strong +1.0% move. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-03T11:16:14.901354"
+    "timestamp": "2026-10-03T11:21:04.917407"
   },
   "sticky": {
     "cnbc": [

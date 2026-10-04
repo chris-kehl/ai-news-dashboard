@@ -1,22 +1,30 @@
 {
-  "timestamp": "2026-10-04T18:31:40.824623",
+  "timestamp": "2026-10-04T18:46:05.539541",
   "summary": "Key topics today:\n- - Homa: The end of TCP for AI clusters [video] (r/HackerNews, 101 pts)\n- - How to scale intent, quality, and artistry with AI [video] (r/HackerNews, 101 pts)\n- - Show HN: AI search for every photo and every frame of video on macOS (r/HackerNews, 101 pts)\n- - The work by Valve's Timur Krist\u00f3f on improving old AMD GPUs on Linux (r/HackerNews, 101 pts)\n- - Agents don't need memory, they need documentation (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "ZEC",
-      "price": 1353.93,
-      "change": 3.75,
+      "price": 1357.23,
+      "change": 3.95,
       "category": "crypto",
-      "text": "ZEC +3.8% @ $1,353.93"
+      "text": "ZEC +4.0% @ $1,357.23"
     },
     {
       "type": "watch",
       "asset": "XRP",
       "price": 1.52,
-      "change": 2.12,
+      "change": 2.15,
       "category": "crypto",
       "text": "XRP +2.1% @ $1.52"
+    },
+    {
+      "type": "buy",
+      "asset": "ADA-USD",
+      "price": 0.27,
+      "change": 8.91,
+      "category": "stock",
+      "text": "ADA-USD +8.9% momentum @ $0.27"
     },
     {
       "type": "sell",
@@ -33,14 +41,6 @@
       "change": 6.08,
       "category": "stock",
       "text": "NU +6.1% momentum @ $13.43"
-    },
-    {
-      "type": "buy",
-      "asset": "ADA-USD",
-      "price": 0.26,
-      "change": 5.85,
-      "category": "stock",
-      "text": "ADA-USD +5.8% momentum @ $0.26"
     }
   ],
   "reddit": [
@@ -101,6 +101,14 @@
       "created": ""
     },
     {
+      "title": "Infidel Goes Wild",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://blog.zarfhome.com/2026/10/infidel-goes-wild",
+      "created": ""
+    },
+    {
       "title": "Improper redaction reveals Google Data Center water and electricity usage",
       "subreddit": "HackerNews",
       "score": 1,
@@ -109,89 +117,81 @@
       "created": ""
     },
     {
-      "title": "A map of every lighthouse",
+      "title": "All I wanted was a custom domain email",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://mapped.earth/lighthouses/world",
-      "created": ""
-    },
-    {
-      "title": "Infidel Goes Wild",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://blog.zarfhome.com/2026/10/infidel-goes-wild",
+      "url": "https://jacobg.co/emails-at-jacobg-co/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-04T22:31:33.774503",
+    "timestamp": "2026-10-04T22:45:58.111687",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 304.45,
-        "change_24h": 0.64,
-        "market_cap": 3452683056
+        "price": 305.29,
+        "change_24h": 0.17,
+        "market_cap": 3462298792
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 86338,
+        "price": 86397,
         "change_24h": 1.9,
-        "market_cap": 1735089517606
+        "market_cap": 1736157728262
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2729.88,
-        "change_24h": 1.57,
-        "market_cap": 333332948859
+        "price": 2727.93,
+        "change_24h": 1.51,
+        "market_cap": 333120728343
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999897,
+        "price": 0.999895,
         "change_24h": 0.0,
-        "market_cap": 184062622995
+        "market_cap": 184065939820
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 795.72,
-        "change_24h": 1.08,
-        "market_cap": 105956145774
+        "price": 795.91,
+        "change_24h": 0.88,
+        "market_cap": 105989955074
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.52,
-        "change_24h": 2.12,
-        "market_cap": 95765262854
+        "change_24h": 2.15,
+        "market_cap": 95908988017
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999981,
+        "price": 0.999964,
         "change_24h": -0.0,
-        "market_cap": 74107010434
+        "market_cap": 74117067271
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 121.89,
-        "change_24h": 1.76,
-        "market_cap": 71710123867
+        "price": 121.92,
+        "change_24h": 1.75,
+        "market_cap": 71739937347
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.335729,
-        "change_24h": 0.11,
-        "market_cap": 31885637346
+        "price": 0.335795,
+        "change_24h": 0.14,
+        "market_cap": 31894257303
       },
       {
         "name": "Figure Heloc",
@@ -203,12 +203,18 @@
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1353.93,
-        "change_24h": 3.75,
-        "market_cap": 22971119975
+        "price": 1357.23,
+        "change_24h": 3.95,
+        "market_cap": 23068038850
       }
     ],
     "news": [
+      {
+        "title": "Former SEC boss made AI Czar, Bitcoin may hit $600K this cycle: Hodler\u2019s Digest",
+        "url": "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Sun, 04 Oct 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M44CDHE2CKEJ0000STF6RMVM/october-2-collage-cover.png\" alt=\"Former SEC boss made AI Czar, Bitcoin may hit $600K this cycle"
+      },
       {
         "title": "Here\u2019s what happened in crypto today",
         "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -250,12 +256,6 @@
         "url": "https://cointelegraph.com/news/community-banks-sue-occ-over-trust-bank-charters-of-crypto-firms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Sat, 03 Oct 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M40GZ6STY7R8TJPNFCZ17PJ8/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-3.png\" alt=\"Community banks sue OCC o"
-      },
-      {
-        "title": "Trump expected to appoint Jay Clayton as new AI czar: Reports",
-        "url": "https://cointelegraph.com/news/trump-is-expected-to-appoint-jay-clayton-as-new-ai-czar-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Sat, 03 Oct 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M408YEEABFWBFJG6GQ567JX7/hi-china-own-ai.png\" alt=\"Trump expected to appoint Jay Clayton as new AI czar: Reports\" class=\""
       },
       {
         "title": "There's an election next month: State of Crypto",
@@ -430,21 +430,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-04T22:31:08.708018",
+    "timestamp": "2026-10-04T22:45:37.200585",
     "trending": [
+      {
+        "symbol": "ADA-USD",
+        "price": 0.27,
+        "change": 0.02,
+        "change_percent": 8.91,
+        "name": "Cardano USD"
+      },
       {
         "symbol": "NU",
         "price": 13.43,
         "change": 0.77,
         "change_percent": 6.08,
         "name": "Nu Holdings Ltd."
-      },
-      {
-        "symbol": "ADA-USD",
-        "price": 0.26,
-        "change": 0.01,
-        "change_percent": 5.85,
-        "name": "Cardano USD"
       },
       {
         "symbol": "EWZ",
@@ -454,6 +454,13 @@
         "name": "iShares MSCI Brazil ETF"
       },
       {
+        "symbol": "BTC-USD",
+        "price": 86355.84,
+        "change": 1592.26,
+        "change_percent": 1.88,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": "MELI",
         "price": 1696.56,
         "change": -31.97,
@@ -461,17 +468,10 @@
         "name": "MercadoLibre, Inc."
       },
       {
-        "symbol": "BTC-USD",
-        "price": 86218.8,
-        "change": 1455.22,
-        "change_percent": 1.72,
-        "name": "Bitcoin USD"
-      },
-      {
         "symbol": "ETH-USD",
-        "price": 2724.75,
-        "change": 37.49,
-        "change_percent": 1.4,
+        "price": 2728.13,
+        "change": 40.87,
+        "change_percent": 1.52,
         "name": "Ethereum USD"
       },
       {
@@ -510,11 +510,11 @@
         "name": "DJIA"
       },
       {
-        "symbol": "CL=F",
-        "price": 91.38,
-        "change": 0.27,
+        "symbol": "NQ=F",
+        "price": 31156.0,
+        "change": 94.25,
         "change_percent": 0.3,
-        "name": "Crude Oil Nov 26"
+        "name": "Nasdaq 100 Dec 26"
       },
       {
         "symbol": "WM",
@@ -524,18 +524,18 @@
         "name": "Waste Management, Inc."
       },
       {
-        "symbol": "NQ=F",
-        "price": 31128.25,
-        "change": 66.5,
-        "change_percent": 0.21,
-        "name": "Nasdaq 100 Dec 26"
+        "symbol": "ES=F",
+        "price": 7788.0,
+        "change": 10.75,
+        "change_percent": 0.14,
+        "name": "E-Mini S&P 500 Dec 26"
       },
       {
-        "symbol": "ES=F",
-        "price": 7783.75,
-        "change": 6.5,
-        "change_percent": 0.08,
-        "name": "E-Mini S&P 500 Dec 26"
+        "symbol": "CL=F",
+        "price": 91.16,
+        "change": 0.05,
+        "change_percent": 0.05,
+        "name": "Crude Oil Nov 26"
       }
     ],
     "meme_momentum": [
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-04T22:31:28.140852",
+    "timestamp": "2026-10-04T22:45:54.130630",
     "items": [
       {
         "symbol": "SPX",
@@ -1000,110 +1000,110 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7784.75,
-        "change": 0.1,
+        "price": 7788.0,
+        "change": 0.14,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31133.25,
-        "change": 0.23,
+        "price": 31154.0,
+        "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51517.0,
-        "change": 0.08,
+        "price": 51532.0,
+        "change": 0.11,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2855.8,
-        "change": 0.17,
+        "price": 2857.3,
+        "change": 0.22,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 91.36,
-        "change": 0.27,
+        "price": 91.14,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4167.8,
-        "change": 0.13,
+        "price": 4171.2,
+        "change": 0.21,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.06,
-        "change": 1.8,
+        "price": 61.1,
+        "change": 1.86,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1716.4,
-        "change": 1.97,
+        "price": 1718.2,
+        "change": 2.08,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1178.0,
-        "change": 1.46,
+        "price": 1177.5,
+        "change": 1.41,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.01,
-        "change": -0.96,
+        "price": 3.0,
+        "change": -1.05,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 304.45,
-        "change": 0.64,
+        "price": 305.29,
+        "change": 0.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 86338,
-        "change": 1.84,
+        "price": 86397,
+        "change": 1.89,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2729.88,
-        "change": 1.56,
+        "price": 2727.93,
+        "change": 1.52,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 121.89,
-        "change": 1.72,
+        "price": 121.92,
+        "change": 1.76,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 14.21,
-        "change": 0.87,
+        "price": 14.24,
+        "change": 1.0,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 11.09,
-        "change": -0.1,
+        "price": 11.1,
+        "change": -0.0,
         "type": "crypto"
+      },
+      {
+        "symbol": "ADA-USD",
+        "price": 0.27,
+        "change": 8.97,
+        "type": "mover"
       },
       {
         "symbol": "AMC",
         "price": 2.77,
         "change": -7.67,
-        "type": "mover"
-      },
-      {
-        "symbol": "ADA-USD",
-        "price": 0.26,
-        "change": 5.77,
         "type": "mover"
       },
       {
@@ -1119,15 +1119,15 @@
         "type": "mover"
       },
       {
-        "symbol": "MELI",
-        "price": 1696.56,
-        "change": -1.85,
+        "symbol": "BTC-USD",
+        "price": 86341.15,
+        "change": 1.86,
         "type": "mover"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 86258.62,
-        "change": 1.76,
+        "symbol": "MELI",
+        "price": 1696.56,
+        "change": -1.85,
         "type": "mover"
       },
       {
@@ -1149,9 +1149,9 @@
         "type": "mover"
       },
       {
-        "symbol": "CL=F",
-        "price": 91.36,
-        "change": 0.27,
+        "symbol": "NQ=F",
+        "price": 31156.0,
+        "change": 0.3,
         "type": "mover"
       }
     ]
@@ -1161,6 +1161,16 @@
       "title": "OPEC, Allies Hold Oil Output Steady Amid Middle East Tensions",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYmFlX3pxTllubHhKWkgycEVOdlZ3c2F3TzA5OUU4RmFmWmQ2dWlaY3B1TlFfek85dHhZakt3aFJHZjlEUEJ2Zk9MVldfeTdUVkxoUzN1MU9wUWlUdGhFd3M4T3dNamMxbGprT1A3R3g4UGI0Q2RyU3hrczI0WExYWlpNa3N4RjlNRzFGN0U5d1NPN3p4VlN2R2MzRkc4WXlyV3Z4Z21ZZHVtY3FzYmc?oc=5",
       "source": "WSJ",
+      "category": "business",
+      "published": "Sun, 04 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Sam Altman to Decoded: \u2018The world should accept some bad things happening\u2019 for the benefits of AI",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYWFnWk90ajlEOFlsMktzU0RvSjc1cWpxRW9hb2FyZDBKR1pKanpPUE13TmpvRm5kdzY3NDN3WTZuQXB3bnVodlktZkRnS1JLR0E3NzlMR1k1aWZWUm5XUkIxSzA2Ynp0QzBwRmFZQTZGWjd6WWlOS09qbWZFM1lNYU1fTnlaMmY3?oc=5",
+      "source": "Politico",
       "category": "business",
       "published": "Sun, 04 Oct 2026 ",
       "description": "",
@@ -1188,9 +1198,9 @@
       "author": ""
     },
     {
-      "title": "Wall Street\u2019s AI Party Is on Edge as Soaring Yields Raise Risks",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbzQxSFhvb0lYekZDUDA4UlhCc2lJdDZNWFNUV0pVMTVXSW5QX2NQSXc4M01wc25mRlY0dDNuU21Kb1ZaVVJoWDRPUUJsbjk0NnAwd2duc2ZTZ1Y2cU5udUlHMEtGSkZ6QjdRZkRHWmNWTGNXa2VvdXhROFhVb1QtQmhKMUwzMXdsLTRwWXhDdHdYUm4xOUlvelJtWTA5blQwdS1JdEh3aHI2ZmdtWG9WWE1lSHY?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Why It\u2019s Taking Nine Months to Get Back $164,000 in Tariff Refunds",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQkJ2YktFNXBZSmJucURhWDhKNnIxWDZ5NjdmR1pCNnpselRTdmxuVkpnTDJNT0laZHdmTzdaMHczNS1ISmRURWhfeVcydjZYTGEwX09QTEhEUEtmMnZidTI5VEhnaWVQRGdOc0JjRXRLWGZXMDQ5VlBOQVpsU0JEemhsNks1Rng3V1owVEJwVGYyNGwzTE8tYlhpRkxlMktHVUY1Q0FHR3c3VnBUWXkzMHNR?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Sun, 04 Oct 2026 ",
       "description": "",
@@ -1198,9 +1208,9 @@
       "author": ""
     },
     {
-      "title": "Why It\u2019s Taking Nine Months to Get Back $164,000 in Tariff Refunds",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQkJ2YktFNXBZSmJucURhWDhKNnIxWDZ5NjdmR1pCNnpselRTdmxuVkpnTDJNT0laZHdmTzdaMHczNS1ISmRURWhfeVcydjZYTGEwX09QTEhEUEtmMnZidTI5VEhnaWVQRGdOc0JjRXRLWGZXMDQ5VlBOQVpsU0JEemhsNks1Rng3V1owVEJwVGYyNGwzTE8tYlhpRkxlMktHVUY1Q0FHR3c3VnBUWXkzMHNR?oc=5",
-      "source": "WSJ",
+      "title": "Wall Street\u2019s AI Party Is on Edge as Soaring Yields Raise Risks",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbzQxSFhvb0lYekZDUDA4UlhCc2lJdDZNWFNUV0pVMTVXSW5QX2NQSXc4M01wc25mRlY0dDNuU21Kb1ZaVVJoWDRPUUJsbjk0NnAwd2duc2ZTZ1Y2cU5udUlHMEtGSkZ6QjdRZkRHWmNWTGNXa2VvdXhROFhVb1QtQmhKMUwzMXdsLTRwWXhDdHdYUm4xOUlvelJtWTA5blQwdS1JdEh3aHI2ZmdtWG9WWE1lSHY?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 04 Oct 2026 ",
       "description": "",
@@ -1221,16 +1231,6 @@
       "title": "One southern state's rise is making it America's new 'economic center of gravity'",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWU16QnJ2UTZheVJZczFGdmlIaERYeHByakJXaXoydl9CNnVVTmdVenpVQW54Zl9JR1l6cldPTXY2RTFyOFI2SmxfMVhoS29JZV9DS2cySEJZeHJyRmthSGhhRTRoWV9rNzJyTEdZQUptZmF3RC1YR2dTSDdNLXlkc1FjY2MwWDc2VGdQMGFuM0lKUVdpNkxiT3U5a9IBoAFBVV95cUxPZGdzRmlvZHN5UFlkV1ZqWThmSC1jVnBPZ3Y3RlkyMmpaM3gzeWtVU3JsQXZvSXRJd00xWFllelBLY3lkMXFfVDhVYUNVeG1IWU02aUJyWnNGVWxoMG1WUXRTWkFuMlJfamUtd053RE41RUdUdmhxOWhlTXZGTHZTMEhLTlQ0MnBMWFpSaXA2RE8yajBOa0lrcDI2MTNNU242?oc=5",
       "source": "Fox News",
-      "category": "business",
-      "published": "Sun, 04 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Federal jobs report shows rise in unemployment rates",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWTRFUER6Sjd3bi1YcmhoS3VWTTJMNE1wY0xkMGs2bmpiNEhHcEVMdGp3Y2c2QkMyaFgzQ2lRSzMtVlA2bV9vd1VoU29Uc04yT3VKT0cxdDlXVURGd1FOMWg1eGxWMEJDWTdzb3d6VkEzaVByWDJVN2FGRlIyWk0wX1hlQTlnVU9kNEVici03NFdtLW5aQTJvU0JwRENVa1g1VW5haEhzaV9sRWNBd255MWFhOHMycjNqbTJuUk9CMFNrcFRHdkE?oc=5",
-      "source": "9News",
       "category": "business",
       "published": "Sun, 04 Oct 2026 ",
       "description": "",
@@ -1290,21 +1290,21 @@
       "author": ""
     },
     {
-      "title": "The MacBook Air M5 is $200 off for the first time in months",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeTFxNTlMM2RCRXN1NDlrQ3ZxRmUxUE92Y1RzdGRESDA4cTdycnYtWjVWbFVaTjRhSEVXRS1iS1Y5Vm5GM1BkMTl3THZXcENCeVl4Y0c1TE5ydFJpb0pLVDhfMUFqTnBUc1hDQ1oyTEpUbjd4S3VNVG83aWd5eEl2U2ZCMHlzaldWdEE?oc=5",
-      "source": "The Verge",
-      "category": "business",
-      "published": "Sun, 04 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "NYT Strands Answers Today: Hints & Clues For Sunday, October 4 (Grab Your Tokens)",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGNvc3ZLby1FQzItUFY1Mm8wdldmZm9XbjNIZ05uT0pCaE1MYkJ1cDhuY1lqYkt4VFlvcHpuNVZkRTRxTXc2VXc3dVJxdlQ0X2ZTNjRRQ1oxRGo0aVBTNFFSYVVKSG95N3R1SUtGcDE2SGVTV05zQlFQQnhNZ1dCcFQ3TERhWWJKQlpYSm9iMUZpX3hiWDNVcm8xSnpvcGgwcDNIMFRR?oc=5",
       "source": "forbes.com",
       "category": "business",
       "published": "Sat, 03 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The MacBook Air M5 is $200 off for the first time in months",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeTFxNTlMM2RCRXN1NDlrQ3ZxRmUxUE92Y1RzdGRESDA4cTdycnYtWjVWbFVaTjRhSEVXRS1iS1Y5Vm5GM1BkMTl3THZXcENCeVl4Y0c1TE5ydFJpb0pLVDhfMUFqTnBUc1hDQ1oyTEpUbjd4S3VNVG83aWd5eEl2U2ZCMHlzaldWdEE?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Sun, 04 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1546,7 +1546,7 @@
     "changePercent": 1.0,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 4 Oct: 30,807.93, up +1.00% -- BULLISH. price above SMA20, RSI 75.9 strong, MACD bullish, strong +1.0% move. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-04T18:31:38.951408"
+    "timestamp": "2026-10-04T18:46:03.397508"
   },
   "sticky": {
     "cnbc": [
@@ -1742,72 +1742,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7784.25,
-      "change": 7.0,
-      "change_percent": 0.09,
+      "price": 7787.75,
+      "change": 10.5,
+      "change_percent": 0.14,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31133.25,
-      "change": 71.5,
-      "change_percent": 0.23,
+      "price": 31154.0,
+      "change": 92.25,
+      "change_percent": 0.3,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51512.0,
-      "change": 35.0,
-      "change_percent": 0.07,
+      "price": 51534.0,
+      "change": 57.0,
+      "change_percent": 0.11,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2855.8,
-      "change": 4.9,
-      "change_percent": 0.17,
+      "price": 2857.3,
+      "change": 6.4,
+      "change_percent": 0.22,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 91.36,
-      "change": 0.25,
-      "change_percent": 0.27,
+      "price": 91.13,
+      "change": 0.02,
+      "change_percent": 0.02,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4167.8,
-      "change": 5.5,
-      "change_percent": 0.13,
+      "price": 4171.2,
+      "change": 8.9,
+      "change_percent": 0.21,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.06,
-      "change": 1.08,
-      "change_percent": 1.8,
+      "price": 61.1,
+      "change": 1.12,
+      "change_percent": 1.86,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1716.4,
-      "change": 33.2,
-      "change_percent": 1.97,
+      "price": 1718.2,
+      "change": 35.0,
+      "change_percent": 2.08,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1178.0,
-      "change": 16.9,
-      "change_percent": 1.46,
+      "price": 1177.5,
+      "change": 16.4,
+      "change_percent": 1.41,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.01,
+      "price": 3.0,
       "change": -0.03,
-      "change_percent": -0.96,
+      "change_percent": -1.05,
       "name": "Natural Gas Nov 26"
     }
   ],

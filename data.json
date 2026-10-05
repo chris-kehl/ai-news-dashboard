@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-10-05T05:16:21.228941",
+  "timestamp": "2026-10-05T05:18:30.282392",
   "summary": "Key topics today:\n- - Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers (r/HackerNews, 201 pts)\n- - Sales of sub-\u20ac25,000 electric car models set to rise sevenfold (r/HackerNews, 101 pts)\n- - How to scale intent, quality, and artistry with AI [video] (r/HackerNews, 101 pts)\n- - Huawei and Qualcomm Announce Broad Patent License Agreement (r/HackerNews, 1 pts)\n- - Denmark Data Breach Exposes 8.8M People's Personal Data (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "sell",
+      "asset": "SAIQ",
+      "price": 1.85,
+      "change": -74.66,
+      "category": "stock",
+      "text": "SAIQ -74.7% drop @ $1.85"
+    },
+    {
+      "type": "buy",
+      "asset": "QTEX",
+      "price": 1.1,
+      "change": 61.29,
+      "category": "stock",
+      "text": "QTEX +61.3% momentum @ $1.10"
+    },
+    {
+      "type": "sell",
       "asset": "SU.PA",
-      "price": 275.75,
-      "change": -8.99,
+      "price": 274.95,
+      "change": -9.26,
       "category": "stock",
-      "text": "SU.PA -9.0% drop @ $275.75"
-    },
-    {
-      "type": "sell",
-      "asset": "WDC",
-      "price": 415.29,
-      "change": -8.62,
-      "category": "stock",
-      "text": "WDC -8.6% drop @ $415.29"
-    },
-    {
-      "type": "sell",
-      "asset": "STX",
-      "price": 848.99,
-      "change": -7.95,
-      "category": "stock",
-      "text": "STX -8.0% drop @ $848.99"
+      "text": "SU.PA -9.3% drop @ $274.95"
     }
   ],
   "reddit": [
@@ -112,7 +112,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-05T09:15:56.403835",
+    "timestamp": "2026-10-05T09:18:22.077683",
     "prices": [
       {
         "name": "Bittensor",
@@ -414,13 +414,27 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-05T09:15:35.087164",
+    "timestamp": "2026-10-05T09:18:02.213326",
     "trending": [
       {
+        "symbol": "SAIQ",
+        "price": 1.85,
+        "change": -5.45,
+        "change_percent": -74.66,
+        "name": "WISeSat.Space Holdings Corp."
+      },
+      {
+        "symbol": "QTEX",
+        "price": 1.1,
+        "change": 0.42,
+        "change_percent": 61.29,
+        "name": "QTREX Quantum Ltd."
+      },
+      {
         "symbol": "SU.PA",
-        "price": 275.75,
-        "change": -27.25,
-        "change_percent": -8.99,
+        "price": 274.95,
+        "change": -28.05,
+        "change_percent": -9.26,
         "name": "SCHNEIDER ELECTRIC SE"
       },
       {
@@ -438,13 +452,6 @@
         "name": "Seagate Technology Holdings PLC"
       },
       {
-        "symbol": "CBRS",
-        "price": 166.43,
-        "change": -11.22,
-        "change_percent": -6.32,
-        "name": "Cerebras Systems Inc."
-      },
-      {
         "symbol": "NU",
         "price": 13.43,
         "change": 0.77,
@@ -459,11 +466,11 @@
         "name": "Space Exploration Technologies "
       },
       {
-        "symbol": "TSM",
-        "price": 472.78,
-        "change": 16.59,
-        "change_percent": 3.64,
-        "name": "Taiwan Semiconductor Manufactur"
+        "symbol": "PBR",
+        "price": 21.65,
+        "change": 0.78,
+        "change_percent": 3.74,
+        "name": "Petroleo Brasileiro S.A. Petrob"
       },
       {
         "symbol": "PTC",
@@ -506,13 +513,6 @@
         "change": 56.27,
         "change_percent": 0.73,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "^NSEI",
-        "price": 22554.1,
-        "change": 132.15,
-        "change_percent": 0.59,
-        "name": "NIFTY 50"
       },
       {
         "symbol": ".DJI",
@@ -950,7 +950,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-05T09:15:52.474206",
+    "timestamp": "2026-10-05T09:18:18.506221",
     "items": [
       {
         "symbol": "SPX",
@@ -984,38 +984,38 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7772.0,
+        "price": 7771.75,
         "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31031.5,
+        "price": 31031.0,
         "change": -0.1,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51464.0,
-        "change": -0.03,
+        "price": 51465.0,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2852.2,
-        "change": 0.05,
+        "price": 2851.7,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.43,
-        "change": -0.75,
+        "price": 90.7,
+        "change": -0.45,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4197.3,
-        "change": 0.84,
+        "price": 4196.4,
+        "change": 0.82,
         "type": "future"
       },
       {
@@ -1026,44 +1026,44 @@
       },
       {
         "symbol": "PL=F",
-        "price": 1749.7,
-        "change": 2.92,
+        "price": 1750.3,
+        "change": 2.96,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1185.5,
-        "change": 1.13,
+        "price": 1186.0,
+        "change": 1.18,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.03,
-        "change": -0.07,
+        "price": 3.04,
+        "change": 0.0,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 304.73,
-        "change": 0.33,
+        "price": 304.36,
+        "change": 0.19,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 85985,
-        "change": 1.01,
+        "price": 85868,
+        "change": 0.86,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2717.89,
-        "change": 0.73,
+        "price": 2718.21,
+        "change": 0.71,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 120.82,
-        "change": -0.05,
+        "price": 120.72,
+        "change": -0.15,
         "type": "crypto"
       },
       {
@@ -1074,8 +1074,8 @@
       },
       {
         "symbol": "AVAX",
-        "price": 10.98,
-        "change": -0.24,
+        "price": 10.97,
+        "change": -0.31,
         "type": "crypto"
       },
       {
@@ -1086,8 +1086,8 @@
       },
       {
         "symbol": "SU.PA",
-        "price": 275.3,
-        "change": -9.14,
+        "price": 274.75,
+        "change": -9.32,
         "type": "mover"
       },
       {
@@ -1224,11 +1224,11 @@
   ],
   "tech_business": [
     {
-      "title": "Apple Hiring 'iCup' Specialist",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TajFCdTd5R2o2ZlVtRFpfV1J4RUUtMS1uT2VFUGhxVTVqcDlKTDJIOHlwTTBZRmgxNERBeGxyc3VDSGh5ajVXYTJZTWVVUlEza1pZbUpGYzF2eFJjak5wNllqT0ZjOUtYcDFybg?oc=5",
-      "source": "MacRumors",
+      "title": "HP\u2019s answer to the MacBook Neo is thinner, lighter, and comes with OLED",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXJkelBlTzQ2MTE3eTh1RnBweDVyNUgxRnU5aGhTV1FEQWliVUtKZFVaVkdJd01mTlJ6amExQjFrYnlTWE5qVUV0QVVBT0pEVWJDOWFYTzRzT3JXbENzM0xyLXNnR3JoZVhZb2RTUTBfendJeHB5NGJRemhIaTYwSkdlQUtaSHgwT2JuTERFa25YUlFsNUZDZ0pxOUROdGd5aVFQZFBUTQ?oc=5",
+      "source": "The Verge",
       "category": "business",
-      "published": "Mon, 05 Oct 2026 ",
+      "published": "Thu, 01 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1244,6 +1244,16 @@
       "author": ""
     },
     {
+      "title": "\u2018Fitbit Edge\u2019 leaks as Google\u2019s next fitness tracker with \u2018Apps\u2019 & \u2018Notifications\u2019",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hTm82WGtVZ3NObTdSU3RMRGNIMTUxb3lZWTYxRlNLdXR3c2lseTFrZFluVGhSR1pFQVVWNm5HZmp6Z3F0WUg2ZUloVUhndWNhaXZ3Wk1PMUtDd2RKMGFidGZVUGl2dktwakE?oc=5",
+      "source": "9to5Google",
+      "category": "business",
+      "published": "Sun, 04 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Today's NYT Strands Hints (and Answer) for Sunday, October 4, 2026",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWthNEwyN2ZNMEY2OWxTWWVaQUdWYlROQ2pJUVI5cy1reUI3TEFWa2tuWHBFdmlIZ0ZaQTZtc1JGb1Nub3BnYTNrWks2SUZqVTN5NXpnSl9VQW94Z0otaEdaY0JHMW9wVDdVdWFNZnFvOFZJU1NidjZsckNKc1d4d1BiMFpIRElPVHZHOVlhdDNhNEw2VFE?oc=5",
       "source": "Lifehacker",
@@ -1254,19 +1264,9 @@
       "author": ""
     },
     {
-      "title": "Apple weekend deals: AirPods Pro 3 $179, MacBook Air $200 off, AirTag 2, Prime Day HomeKit discounts, more",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAxU2JPNy1BbURMNUdYVlZlUW45U0dhd3lzeWV0T3B2bUY4QjNITGx1WjBTaV9Fek1mcmF2ZDNmYlh2VlBadng3VmxKYjZhdVVtcVJsLUxicXRwUnByNE96TC1WSzloVEl6UHVteTJNaVg2VjhWMlBINA?oc=5",
-      "source": "9to5Mac",
-      "category": "business",
-      "published": "Sun, 04 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "The Upcoming Touchscreen OLED MacBook Pro Is Reportedly 'Significantly Lighter'",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPY1pJMWt2blZnaWVtSkdYUUFjMURSa3lmcEtlN0NJOWFNMm9HUzVzV1JHOHFQNTlFWWtkT2M5SG8wU19uVHVKb1prdFNLRVBvR0EwbzlTekc4ZHFNQmo3WjVHcUxpeUpQalJLRGxWQjJOdEpjYWY2aWxMTVltVmx3VHJBYklRT0w2elpSU3BkNmVwdWZQVFlqV3dveXdsWnZCMnZSenR4YWxFbDRxWDlYdw?oc=5",
-      "source": "Engadget",
+      "title": "Amazon Launches Early Prime Day Discounts on AirPods, iPad, MacBook Air, and More",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FbzBkTzFhTlFiank2aFRfRE9OVzdWTFRfMDJpRF9OeHBQOGNPc3dSUXI0N1NyWG1HQ0FLLVhzT1FGQno3R3hwMWI0NUpTYmxXY0lYaXJsOFBxdllaWjgxaFN1TFJNdTBOLVNlTWEwWGFPSS1s?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Sun, 04 Oct 2026 ",
       "description": "",
@@ -1506,7 +1506,7 @@
     "changePercent": 1.0,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 5 Oct: 30,807.93, up +1.00% -- BULLISH. price above SMA20, RSI 75.9 strong, MACD bullish, strong +1.0% move. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-05T05:16:19.431418"
+    "timestamp": "2026-10-05T05:18:27.904929"
   },
   "sticky": {
     "cnbc": [
@@ -1709,37 +1709,37 @@
     },
     {
       "symbol": "NQ=F",
-      "price": 31030.0,
-      "change": -31.75,
+      "price": 31031.75,
+      "change": -30.0,
       "change_percent": -0.1,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51464.0,
-      "change": -13.0,
-      "change_percent": -0.03,
+      "price": 51465.0,
+      "change": -12.0,
+      "change_percent": -0.02,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2852.1,
-      "change": 1.2,
-      "change_percent": 0.04,
+      "price": 2851.7,
+      "change": 0.8,
+      "change_percent": 0.03,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.45,
-      "change": -0.66,
-      "change_percent": -0.72,
+      "price": 90.71,
+      "change": -0.4,
+      "change_percent": -0.44,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4197.1,
-      "change": 34.8,
-      "change_percent": 0.84,
+      "price": 4196.7,
+      "change": 34.4,
+      "change_percent": 0.83,
       "name": "Gold Dec 26"
     },
     {
@@ -1751,23 +1751,23 @@
     },
     {
       "symbol": "PL=F",
-      "price": 1749.7,
-      "change": 49.7,
-      "change_percent": 2.92,
+      "price": 1750.3,
+      "change": 50.3,
+      "change_percent": 2.96,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1185.5,
-      "change": 13.3,
-      "change_percent": 1.13,
+      "price": 1186.0,
+      "change": 13.8,
+      "change_percent": 1.18,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.03,
-      "change": -0.0,
-      "change_percent": -0.07,
+      "price": 3.04,
+      "change": 0.0,
+      "change_percent": 0.0,
       "name": "Natural Gas Nov 26"
     }
   ],

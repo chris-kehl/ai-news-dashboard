@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T01:01:09.371848",
+  "timestamp": "2026-10-06T01:04:58.952950",
   "summary": "Key topics today:\n- - Dust: Pretraining Transformers Without Backpropagation (r/HackerNews, 201 pts)\n- - Beam: Reflection's 501B open-weight model (r/HackerNews, 101 pts)\n- - Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates (r/HackerNews, 101 pts)\n- - AI tutoring with Khanmigo in a two-year school experiment (r/HackerNews, 101 pts)\n- - ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "type": "buy",
+      "asset": "PDSB",
+      "price": 1.2,
+      "change": 69.97,
+      "category": "stock",
+      "text": "PDSB +70.0% momentum @ $1.20"
+    },
+    {
+      "type": "buy",
       "asset": "BEAT",
       "price": 0.65,
       "change": 56.09,
       "category": "stock",
       "text": "BEAT +56.1% momentum @ $0.65"
-    },
-    {
-      "type": "buy",
-      "asset": "PCVX",
-      "price": 73.82,
-      "change": 31.7,
-      "category": "stock",
-      "text": "PCVX +31.7% momentum @ $73.82"
     },
     {
       "type": "watch",
@@ -120,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-06T05:01:01.537024",
+    "timestamp": "2026-10-06T05:04:48.037638",
     "prices": [
       {
         "name": "Bittensor",
@@ -285,14 +285,6 @@
       "description": "The Pentagon confirmed on Sunday it had removed the B1 bombers from the base in England back to their home stations in America."
     },
     {
-      "title": "What prompted the US bombers to leave RAF Fairford?",
-      "url": "https://www.bbc.co.uk/news/articles/ck87z09xe82qo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Mon, 05 Oct 2026 ",
-      "description": "The mass evacuation of American bombers from the UK points to concern in the Pentagon, our security correspondent writes."
-    },
-    {
       "title": "Author and former politician Jeffrey Archer dies aged 86",
       "url": "https://www.bbc.co.uk/news/articles/ckj0l401dvpgo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
@@ -307,6 +299,14 @@
       "category": "bbc_news",
       "published": "Mon, 05 Oct 2026 ",
       "description": "The Conservatives said their plan would protect the UK at a time when Nato allies have warned of Russian drone incursions."
+    },
+    {
+      "title": "Rise in babies in care proceedings raises fears of unnecessary adoptions, experts tell BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c52e9k3998e7o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Tue, 06 Oct 2026 ",
+      "description": "With better support, many babies may not have needed to go into care, File on 4 Investigates is told."
     },
     {
       "title": "France braces for national day of school protests after injuries and mass arrests",
@@ -422,7 +422,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-06T05:00:39.063278",
+    "timestamp": "2026-10-06T05:04:25.309530",
     "trending": [
       {
         "symbol": "QTEX",
@@ -432,18 +432,18 @@
         "name": "QTREX Quantum Ltd."
       },
       {
+        "symbol": "PDSB",
+        "price": 1.2,
+        "change": 0.49,
+        "change_percent": 69.97,
+        "name": "PDS Biotechnology Corporation"
+      },
+      {
         "symbol": "BEAT",
         "price": 0.65,
         "change": 0.23,
         "change_percent": 56.09,
         "name": "Heartbeam, Inc."
-      },
-      {
-        "symbol": "PCVX",
-        "price": 73.82,
-        "change": 17.77,
-        "change_percent": 31.7,
-        "name": "Vaxcyte, Inc."
       },
       {
         "symbol": "PTC",
@@ -467,18 +467,18 @@
         "name": "Recursion Pharmaceuticals, Inc."
       },
       {
-        "symbol": "SPCX",
-        "price": 171.09,
-        "change": 23.02,
-        "change_percent": 15.55,
-        "name": "Space Exploration Technologies "
-      },
-      {
         "symbol": "LEN",
         "price": 74.44,
         "change": -7.67,
         "change_percent": -9.34,
         "name": "Lennar Corporation"
+      },
+      {
+        "symbol": "TEM",
+        "price": 83.55,
+        "change": 7.05,
+        "change_percent": 9.22,
+        "name": "Tempus AI, Inc."
       },
       {
         "symbol": "MRNA",
@@ -488,6 +488,13 @@
         "name": "Moderna, Inc."
       },
       {
+        "symbol": "CMG",
+        "price": 30.85,
+        "change": -1.47,
+        "change_percent": -4.55,
+        "name": "Chipotle Mexican Grill, Inc."
+      },
+      {
         "symbol": "CEG",
         "price": 267.62,
         "change": 8.7,
@@ -495,18 +502,18 @@
         "name": "Constellation Energy Corporatio"
       },
       {
-        "symbol": "^IXIC",
-        "price": 27477.31,
-        "change": 605.71,
-        "change_percent": 2.25,
-        "name": "NASDAQ Composite"
-      },
-      {
         "symbol": ".SPX",
         "price": 7773.95,
         "change": 51.23,
         "change_percent": 0.66,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "MCD",
+        "price": 233.04,
+        "change": 1.21,
+        "change_percent": 0.52,
+        "name": "McDonald's Corporation"
       },
       {
         "symbol": ".RUT",
@@ -521,13 +528,6 @@
         "change": 90.94,
         "change_percent": 0.18,
         "name": "DJIA"
-      },
-      {
-        "symbol": "WBD",
-        "price": 30.95,
-        "change": 0.0,
-        "change_percent": 0.0,
-        "name": "Warner Bros. Discovery, Inc. - "
       }
     ],
     "meme_momentum": [
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-06T05:00:57.687599",
+    "timestamp": "2026-10-06T05:04:44.571732",
     "items": [
       {
         "symbol": "SPX",
@@ -992,98 +992,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7833.0,
+        "price": 7833.25,
         "change": 0.09,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31336.0,
-        "change": 0.06,
+        "price": 31341.25,
+        "change": 0.08,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51622.0,
-        "change": 0.12,
+        "price": 51623.0,
+        "change": 0.13,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2866.9,
-        "change": -0.03,
+        "price": 2867.3,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.03,
-        "change": 0.67,
+        "price": 90.01,
+        "change": 0.65,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4147.4,
-        "change": -0.23,
+        "price": 4149.5,
+        "change": -0.18,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 60.82,
-        "change": -0.08,
+        "price": 60.85,
+        "change": -0.04,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1716.4,
-        "change": 0.56,
+        "price": 1717.0,
+        "change": 0.59,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1166.0,
-        "change": -0.1,
+        "price": 1166.5,
+        "change": -0.06,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.07,
-        "change": 0.13,
+        "change": 0.23,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 301.95,
-        "change": 1.38,
+        "price": 301.84,
+        "change": 1.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 85576,
-        "change": 0.06,
+        "price": 85578,
+        "change": 0.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2701.4,
-        "change": -0.02,
+        "price": 2700.99,
+        "change": 0.02,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 120.05,
-        "change": -0.34,
+        "price": 120.04,
+        "change": -0.33,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 13.82,
-        "change": -1.78,
+        "change": -1.81,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 11.25,
-        "change": 3.5,
+        "price": 11.24,
+        "change": 3.24,
         "type": "crypto"
       },
       {
@@ -1099,9 +1099,9 @@
         "type": "mover"
       },
       {
-        "symbol": "PCVX",
-        "price": 73.82,
-        "change": 31.7,
+        "symbol": "PTC",
+        "price": 192.26,
+        "change": 31.26,
         "type": "mover"
       },
       {
@@ -1117,15 +1117,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SPCX",
-        "price": 171.09,
-        "change": 15.55,
-        "type": "mover"
-      },
-      {
         "symbol": "LEN",
         "price": 74.44,
         "change": -9.34,
+        "type": "mover"
+      },
+      {
+        "symbol": "TEM",
+        "price": 83.55,
+        "change": 9.22,
         "type": "mover"
       },
       {
@@ -1150,16 +1150,6 @@
   },
   "business": [
     {
-      "title": "In NYC, Mamdani cedes AI regulation lane",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNTZCd1NqdHNnZU9mbmVBa2k3VVp4a1p3dGxJVTdGNFZaWUU1eGgzTnVST3N5Y25pZ0pqb2hQMmc1cGlqemVka3Zib2QwMUV0RlA3LVNvQ1prR0RtZFFxaklqUFhjaEFfZTBFX3FIZ3ZKN1NaVGZpZjNTbVkxT0NuYUFYdElyT3ZJeWk1Slp0eExQOWc?oc=5",
-      "source": "Politico",
-      "category": "business",
-      "published": "Mon, 05 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Is Iran charging a toll to allow oil traffic through Hormuz?",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYnBJWDdQN21OVE55MVZsLUFoMmIxTVBpZXgtNWpGR3o4U1liTUFzYWU2ODhTM24yeWh1Mm5NOWlEcXZTWHU0RGNRaUhvSjF4b2FRajZSajdGWWJwcXRpZzFBWjlfYkJSeTl4M1BrNUxVdHFUUGtfNHdNLXVmTHhPbzMyZ1BvVldXSEFZR2VBeUlPRWhudXMtdlpjbk9INTRRSUHSAacBQVVfeXFMTml3NXBicnEzMEw0NXFQTktsODdqcG1FcUszd1FjMmJlUjdGczk3c0JvS3pPTkVNYUk4RTB4dWV0Nl9XYXlhazJZU2pyYjRnUUFKZHhEVVBfbjNKVFhJWXM1UlVvTzVIWWxWMWE2dS1VaEszTUtFMzhmakFobGdVcU15dWphMlRMRXZZdUtkZ01SYmpTZDhZZmxEZjN3V1M3VjVBdnVJanM?oc=5",
       "source": "Al Jazeera",
@@ -1170,9 +1160,9 @@
       "author": ""
     },
     {
-      "title": "Nvidia Stock Hits Record as Key Supplier\u2019s Revenue Booms on AI Demand",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ2JWNUhNcmRiRHFxQzdEUWlMVDI1d3VvYzFRTnFqT0V3RTdiRVhWUzU5NzhjNFhQdGVZYUdwSkhkWlpuT2RyLVhsYlljekxPeW0ycndId1Q0SThPWlpSMV9VNnV5QUstWkNDR1J4SF9Hc2Y5Rlh5eE93WnNoVk4xLQ?oc=5",
-      "source": "Barron's",
+      "title": "In NYC, Mamdani cedes AI regulation lane",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNTZCd1NqdHNnZU9mbmVBa2k3VVp4a1p3dGxJVTdGNFZaWUU1eGgzTnVST3N5Y25pZ0pqb2hQMmc1cGlqemVka3Zib2QwMUV0RlA3LVNvQ1prR0RtZFFxaklqUFhjaEFfZTBFX3FIZ3ZKN1NaVGZpZjNTbVkxT0NuYUFYdElyT3ZJeWk1Slp0eExQOWc?oc=5",
+      "source": "Politico",
       "category": "business",
       "published": "Mon, 05 Oct 2026 ",
       "description": "",
@@ -1180,9 +1170,9 @@
       "author": ""
     },
     {
-      "title": "A lawsuit accuses Starbucks of mislabeling 8 \u2018sugar-free\u2019 protein drinks",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbWNXclluSExZSzNyQ3J2b0c2ZVpCbWRQbXZyZXlVal9MMFRUWEdkS0tteWkxZFV5RlZ0M1NkVjUzVWRVc2pEelRZSGVTajE1XzdkOThqajFTNW1zdTlJX2llT0Y1ekJpNVR4RjliaVNjeGl3OXVHSTlhZTh0RW5Mbms3VTBmaG1VVE1xdVp6YjNEQTFHYXZaT1FrcjNKMFl1bl9rYXc5WU10enBpQ2hoRlZR?oc=5",
-      "source": "AP News",
+      "title": "Nvidia Stock Hits Record as Key Supplier\u2019s Revenue Booms on AI Demand",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ2JWNUhNcmRiRHFxQzdEUWlMVDI1d3VvYzFRTnFqT0V3RTdiRVhWUzU5NzhjNFhQdGVZYUdwSkhkWlpuT2RyLVhsYlljekxPeW0ycndId1Q0SThPWlpSMV9VNnV5QUstWkNDR1J4SF9Hc2Y5Rlh5eE93WnNoVk4xLQ?oc=5",
+      "source": "Barron's",
       "category": "business",
       "published": "Mon, 05 Oct 2026 ",
       "description": "",
@@ -1203,6 +1193,16 @@
       "title": "Five reasons India's stock market is sinking even when its economy is growing",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13eUZFdTFjQUFKSmQ5OVpacTRkRmhOOFFwSU5WTUkwdG13ZGZiLUk4T3BvYUlXZi05YWRldWFQRzlaZ24xTWhCdnhLWW53bHlJYUh6aGl5UjVHUjg?oc=5",
       "source": "BBC",
+      "category": "business",
+      "published": "Mon, 05 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "A lawsuit accuses Starbucks of mislabeling 8 \u2018sugar-free\u2019 protein drinks",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbWNXclluSExZSzNyQ3J2b0c2ZVpCbWRQbXZyZXlVal9MMFRUWEdkS0tteWkxZFV5RlZ0M1NkVjUzVWRVc2pEelRZSGVTajE1XzdkOThqajFTNW1zdTlJX2llT0Y1ekJpNVR4RjliaVNjeGl3OXVHSTlhZTh0RW5Mbms3VTBmaG1VVE1xdVp6YjNEQTFHYXZaT1FrcjNKMFl1bl9rYXc5WU10enBpQ2hoRlZR?oc=5",
+      "source": "AP News",
       "category": "business",
       "published": "Mon, 05 Oct 2026 ",
       "description": "",
@@ -1244,7 +1244,7 @@
     {
       "title": "macOS 27.2 reveals new clues about Apple\u2019s touchscreen MacBook Pro",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSzk4M2czR3M0ZlZkbDFpYXU0WlAxbkcwOHR6QmpLdERUSjQ3d1VQRFJWZ3ZuZ003SXZ0bk9MYTRLaUt0RTNiYWg5eDZ5dFYtSTNJcHF0dllNT1BwZEtsNW5DaURnNnlrNEh2cjg2SkRvWFFlVmtSTldVeGkxTUItbTI2eVFfSjlzUS1NSDBpaEZpNTltTUhHZW1wNzJfUQ?oc=5",
-      "source": "9to5Mac",
+      "source": "9to5mac.com",
       "category": "business",
       "published": "Mon, 05 Oct 2026 ",
       "description": "",
@@ -1264,7 +1264,7 @@
     {
       "title": "Apple event is reportedly happening next week, per Mark Gurman",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVkg5YWtVX3dWQllGY3lsSmU1YmVvbGVxZEt2T2NNNGVQNnFpSWJZWS1RZFVRYllubk5vQ0dwb3lwWWFUZHJfanlmT3QyR3dKaWZhMjIwdW9Ra19tUF8zMGJrZHZ0ZFplYkdnM1hQR2VFZGFLY2NlRlAwejFlTnBGNC1KTjlOX2d6T2VWTUtOWHdhYVFKdVdaNg?oc=5",
-      "source": "9to5Mac",
+      "source": "9to5mac.com",
       "category": "business",
       "published": "Mon, 05 Oct 2026 ",
       "description": "",
@@ -1498,7 +1498,7 @@
     "changePercent": 0.87,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 6 Oct: 31,076.44, up +0.87% -- BULLISH. price above SMA20, RSI 82.2 strong, MACD bullish, modest +0.87% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-06T01:01:07.470622"
+    "timestamp": "2026-10-06T01:04:57.023013"
   },
   "sticky": {
     "cnbc": [
@@ -1694,72 +1694,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7833.0,
-      "change": 6.75,
+      "price": 7833.25,
+      "change": 7.0,
       "change_percent": 0.09,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31336.75,
-      "change": 19.0,
-      "change_percent": 0.06,
+      "price": 31340.5,
+      "change": 22.75,
+      "change_percent": 0.07,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51622.0,
-      "change": 64.0,
-      "change_percent": 0.12,
+      "price": 51623.0,
+      "change": 65.0,
+      "change_percent": 0.13,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2866.9,
-      "change": -0.9,
-      "change_percent": -0.03,
+      "price": 2867.3,
+      "change": -0.5,
+      "change_percent": -0.02,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.03,
-      "change": 0.6,
-      "change_percent": 0.67,
+      "price": 90.01,
+      "change": 0.58,
+      "change_percent": 0.65,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4147.6,
-      "change": -9.2,
-      "change_percent": -0.22,
+      "price": 4149.0,
+      "change": -7.8,
+      "change_percent": -0.19,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 60.82,
-      "change": -0.05,
-      "change_percent": -0.08,
+      "price": 60.85,
+      "change": -0.02,
+      "change_percent": -0.04,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1716.4,
-      "change": 9.5,
-      "change_percent": 0.56,
+      "price": 1717.0,
+      "change": 10.1,
+      "change_percent": 0.59,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1166.0,
-      "change": -1.2,
-      "change_percent": -0.1,
+      "price": 1166.5,
+      "change": -0.7,
+      "change_percent": -0.06,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.07,
-      "change": 0.0,
-      "change_percent": 0.13,
+      "change": 0.01,
+      "change_percent": 0.23,
       "name": "Natural Gas Nov 26"
     }
   ],

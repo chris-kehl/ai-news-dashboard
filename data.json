@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-10T01:16:18.376697",
+  "timestamp": "2026-10-10T01:21:15.138934",
   "summary": "Key topics today:\n- - Anthropic AI model submits false tip on unsolved Philly murder (r/HackerNews, 301 pts)\n- - Typesafe AI raises $870M at $7.5B (r/HackerNews, 101 pts)\n- - Pointing AI at archives found a forgotten meteorite, lost rhinos, and more (r/HackerNews, 101 pts)\n- - Has the Autonomous Trucking Revolution Arrived? (r/HackerNews, 101 pts)\n- - Rewriting Prime Agent in Rust (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "type": "buy",
+      "asset": "WFF",
+      "price": 12.29,
+      "change": 485.24,
+      "category": "stock",
+      "text": "WFF +485.2% momentum @ $12.29"
+    },
+    {
+      "type": "buy",
       "asset": "FSLY",
       "price": 29.3,
       "change": 15.9,
       "category": "stock",
       "text": "FSLY +15.9% momentum @ $29.30"
-    },
-    {
-      "type": "buy",
-      "asset": "CCI",
-      "price": 79.64,
-      "change": 15.4,
-      "category": "stock",
-      "text": "CCI +15.4% momentum @ $79.64"
     },
     {
       "type": "buy",
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-10T05:16:07.422133",
+    "timestamp": "2026-10-10T05:21:05.879876",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,21 +430,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-10T05:15:43.084793",
+    "timestamp": "2026-10-10T05:20:40.729553",
     "trending": [
+      {
+        "symbol": "WFF",
+        "price": 12.29,
+        "change": 10.19,
+        "change_percent": 485.24,
+        "name": "WF Holding Limited"
+      },
       {
         "symbol": "FSLY",
         "price": 29.3,
         "change": 4.02,
         "change_percent": 15.9,
         "name": "Fastly, Inc."
-      },
-      {
-        "symbol": "CCI",
-        "price": 79.64,
-        "change": 10.63,
-        "change_percent": 15.4,
-        "name": "Crown Castle Inc."
       },
       {
         "symbol": "MRNA",
@@ -468,11 +468,18 @@
         "name": "Snowflake Inc."
       },
       {
-        "symbol": "FBALX",
-        "price": 32.71,
-        "change": -2.95,
-        "change_percent": -8.27,
-        "name": "Fidelity Balanced Fund"
+        "symbol": "ZS",
+        "price": 233.73,
+        "change": 20.18,
+        "change_percent": 9.45,
+        "name": "Zscaler, Inc."
+      },
+      {
+        "symbol": "GME",
+        "price": 26.56,
+        "change": 1.98,
+        "change_percent": 8.06,
+        "name": "GameStop Corporation"
       },
       {
         "symbol": "PLTR",
@@ -487,13 +494,6 @@
         "change": 1.38,
         "change_percent": 4.67,
         "name": "Hims & Hers Health, Inc."
-      },
-      {
-        "symbol": "ADA-USD",
-        "price": 0.25,
-        "change": 0.01,
-        "change_percent": 4.15,
-        "name": "Cardano USD"
       },
       {
         "symbol": ".DJI",
@@ -952,7 +952,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-10T05:16:03.319910",
+    "timestamp": "2026-10-10T05:21:01.835447",
     "items": [
       {
         "symbol": "SPX",
@@ -1046,50 +1046,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 278.95,
-        "change": 1.73,
+        "price": 279.07,
+        "change": 1.42,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82650,
-        "change": 0.41,
+        "price": 82623,
+        "change": 0.24,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2495.17,
-        "change": 0.21,
+        "price": 2493.47,
+        "change": 0.02,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 110.0,
-        "change": -0.26,
+        "price": 109.89,
+        "change": -0.54,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 12.86,
-        "change": -0.02,
+        "change": -0.19,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.57,
-        "change": 3.18,
+        "price": 10.56,
+        "change": 2.82,
         "type": "crypto"
+      },
+      {
+        "symbol": "WFF",
+        "price": 12.29,
+        "change": 485.24,
+        "type": "mover"
       },
       {
         "symbol": "FSLY",
         "price": 29.3,
         "change": 15.9,
-        "type": "mover"
-      },
-      {
-        "symbol": "CCI",
-        "price": 79.64,
-        "change": 15.4,
         "type": "mover"
       },
       {
@@ -1256,9 +1256,9 @@
       "author": ""
     },
     {
-      "title": "iPhone Duo buyers to get a special surprise at U.S. Apple Stores, Gurman says",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRnJZSzlCTmwxYjNtRGVzZU1yVWM1ME9sYko3dUJYU1NTN0VleGF3Q3BFbkg4eElmMUJqQTctV1pwQkFLWm5aUnFTSHduaU9QeHI3MnVkLXB3RDZ5U0FSUElpWnVjeE1BdFNUX09qX2lVV3FLbkFXZTdLMEpXZTc3anUtQV9LNXJKUE5DVGlKaGJOdkZ6OVdhSFBiU25GWFcxcVdBQUlfVTRPbFU?oc=5",
-      "source": "9to5Mac",
+      "title": "Apple Stores Will Add Your Name to iPhone Duo's Startup Screen",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE03cjZMTV9QTTl2NUpUMlB6VFl5d1lvSnFxQVZaeHdxVkRiLUwxamlqZDRqWjA5ZkFlcENmN05BOEtJQ2pJZjh5LTBnRHJSVllfZDZtQ1RIOTdHTFFtVFFnOUVYUHF3eUU0WjhzLTJMVG42Tm9EYS1Odw?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Fri, 09 Oct 2026 ",
       "description": "",
@@ -1286,9 +1286,9 @@
       "author": ""
     },
     {
-      "title": "Arc Raiders Jumps to Six-Month High Player Count With 2.0 Update and Free Weekend",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNT0hOc1duTzgtY294WEtiNno0RnJScnMzT1lKbUgtTFlKaHJuenV3cTVZZkE4U2J4NG5PeWpVdXlnWjJ6YkdaQmJTT0txMm8yNVpaQ3Jickg3Qnc4bld2REloUDVQVEpaU3dERjBXOU5wamhfR3E0VVBEZTdIT0FfQUlRTW1zc0djdGR6NnRIbWt4azJSMUFpZWFCUkQ0TEhpNnpMX1NMclNKS0NabERVTTU4Nl8ycEHSAbwBQVVfeXFMTUxDM0xOMjR4bnVjc3FFQjl3ak00czROYUZyeXo4NUkxYVVGTVJxcC1KMDBlU0VnYldtTUJtWlBPNDRUTzFiMk9LeGVjOGdkeU83Sllfcy1rNUxFUkltNzNpUmo4c0hLQ09LMW1ZS0l3M1JPWFdOVkJnMXlRdnF6c2ZuN3drbnV6SjBvTEFzRVZ0V1oxTzFLVkhoOXFXZzQwTzVtMlVUaDEwOUd5aHRERG8tVnpWNmdBdmFWZFk?oc=5",
-      "source": "TechPowerUp",
+      "title": "Apple reportedly cuts iPhone18 Pro component orders amid soft demand, shares dip",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRFN0VlpLT2VsUEtqOC04bm84dEdlazVoTTdsWFFfbTVfdE0zeE1NcUc4WmJQM0Q2SnMwWk5Ma0ZvYlFvSk5tVWs5QTVFR081bDgtVHVRM0JYRTl6X1FqU2I1eGFCaHBweWhoR2prLW1TUFo2bmVqYU85TXlINlg4dFBhYVZCM2g0QkE?oc=5",
+      "source": "Yahoo Finance Singapore",
       "category": "business",
       "published": "Fri, 09 Oct 2026 ",
       "description": "",
@@ -1296,9 +1296,9 @@
       "author": ""
     },
     {
-      "title": "Child Psychiatrist: Screen Time Isn't Main Threat to Kids",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdzVyUFdRaUNDOXY0ZkFDVkd0TGRFci01MWN4VS1wWDFQWWQzaTd6ZlNYbmxMZEM1c3haNzFNYU1lU0NlanhzRTdXQW1uVTZFMy1CcGJTbzZCNXpGaFdKN3I1TXNRdlBkOXhLY2F4TUplRnB0azAxVFB5d08xektFYkRJODdCT1dwVEpBazVZcnhjS0hsN2taUVEtRHI?oc=5",
-      "source": "Newser",
+      "title": "Arc Raiders Jumps to Six-Month High Player Count With 2.0 Update and Free Weekend",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNT0hOc1duTzgtY294WEtiNno0RnJScnMzT1lKbUgtTFlKaHJuenV3cTVZZkE4U2J4NG5PeWpVdXlnWjJ6YkdaQmJTT0txMm8yNVpaQ3Jickg3Qnc4bld2REloUDVQVEpaU3dERjBXOU5wamhfR3E0VVBEZTdIT0FfQUlRTW1zc0djdGR6NnRIbWt4azJSMUFpZWFCUkQ0TEhpNnpMX1NMclNKS0NabERVTTU4Nl8ycEHSAbwBQVVfeXFMTUxDM0xOMjR4bnVjc3FFQjl3ak00czROYUZyeXo4NUkxYVVGTVJxcC1KMDBlU0VnYldtTUJtWlBPNDRUTzFiMk9LeGVjOGdkeU83Sllfcy1rNUxFUkltNzNpUmo4c0hLQ09LMW1ZS0l3M1JPWFdOVkJnMXlRdnF6c2ZuN3drbnV6SjBvTEFzRVZ0V1oxTzFLVkhoOXFXZzQwTzVtMlVUaDEwOUd5aHRERG8tVnpWNmdBdmFWZFk?oc=5",
+      "source": "TechPowerUp",
       "category": "business",
       "published": "Fri, 09 Oct 2026 ",
       "description": "",
@@ -1500,7 +1500,7 @@
     "changePercent": 0.51,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 10 Oct: 30,883.15, up +0.51% -- BULLISH. price above SMA20, RSI 57.8 building, MACD bullish, modest +0.51% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-10T01:16:15.266164"
+    "timestamp": "2026-10-10T01:21:12.787114"
   },
   "sticky": {
     "cnbc": [

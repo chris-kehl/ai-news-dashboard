@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-11T23:16:13.098483",
+  "timestamp": "2026-10-11T23:20:08.878449",
   "summary": "Key topics today:\n- - 500B tokens later: Letting AI agents decompile a first-person shooter (r/HackerNews, 201 pts)\n- - The gap in shared understanding of LLM capability is widening (r/HackerNews, 101 pts)\n- - Whatever became of holography? (2011) (r/HackerNews, 1 pts)\n- - Total Annihilation, rebuilt for modern computers (r/HackerNews, 1 pts)\n- - Fingerprints are the new cookies (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "type": "buy",
+      "asset": "FSLY",
+      "price": 29.3,
+      "change": 15.9,
+      "category": "stock",
+      "text": "FSLY +15.9% momentum @ $29.30"
+    },
+    {
+      "type": "buy",
       "asset": "MRNA",
       "price": 225.0,
       "change": 14.52,
@@ -33,14 +41,6 @@
       "change": 13.64,
       "category": "stock",
       "text": "NVAX +13.6% momentum @ $12.75"
-    },
-    {
-      "type": "buy",
-      "asset": "SNOW",
-      "price": 368.89,
-      "change": 10.83,
-      "category": "stock",
-      "text": "SNOW +10.8% momentum @ $368.89"
     }
   ],
   "reddit": [
@@ -93,19 +93,11 @@
       "created": ""
     },
     {
-      "title": "Recursive self-improvement through collective intelligence",
+      "title": "Tattoos you can turn on and off",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://pub.sakana.ai/mass/",
-      "created": ""
-    },
-    {
-      "title": "Sorry we made you grind LeetCode",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.hackerrank.com/writing/why-were-sorry",
+      "url": "https://www.livescience.com/technology/cool-chemistry-trick-allows-new-tattoos-to-turn-on-and-off",
       "created": ""
     },
     {
@@ -123,12 +115,20 @@
       "comments": 0,
       "url": "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment",
       "created": ""
+    },
+    {
+      "title": "Vectorized CLZ and CTZ",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://purplesyringa.moe/blog/vectorized-clz-and-ctz/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-12T03:16:03.863226",
+    "timestamp": "2026-10-12T03:19:59.302450",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,8 +430,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-12T03:15:39.315898",
+    "timestamp": "2026-10-12T03:19:36.146657",
     "trending": [
+      {
+        "symbol": "FSLY",
+        "price": 29.3,
+        "change": 4.02,
+        "change_percent": 15.9,
+        "name": "Fastly, Inc."
+      },
       {
         "symbol": "MRNA",
         "price": 225.0,
@@ -462,10 +469,17 @@
       },
       {
         "symbol": "000660.KS",
-        "price": 1633000.0,
-        "change": -90000.0,
-        "change_percent": -5.22,
+        "price": 1631000.0,
+        "change": -92000.0,
+        "change_percent": -5.34,
         "name": "SK hynix"
+      },
+      {
+        "symbol": "HIMS",
+        "price": 30.92,
+        "change": 1.38,
+        "change_percent": 4.67,
+        "name": "Hims & Hers Health, Inc."
       },
       {
         "symbol": "CRWD",
@@ -482,11 +496,11 @@
         "name": "ISHARESHSTECH"
       },
       {
-        "symbol": "CL=F",
-        "price": 90.02,
-        "change": -1.83,
-        "change_percent": -1.99,
-        "name": "Crude Oil Nov 26"
+        "symbol": "9866.HK",
+        "price": 27.5,
+        "change": 0.5,
+        "change_percent": 1.85,
+        "name": "NIO-SW"
       },
       {
         "symbol": "ASML",
@@ -501,13 +515,6 @@
         "change": 4.89,
         "change_percent": 1.29,
         "name": "Tesla, Inc."
-      },
-      {
-        "symbol": "AMZN",
-        "price": 262.43,
-        "change": 2.51,
-        "change_percent": 0.97,
-        "name": "Amazon.com, Inc."
       },
       {
         "symbol": ".DJI",
@@ -529,13 +536,6 @@
         "change": 12.85,
         "change_percent": 0.46,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "NQ=F",
-        "price": 31227.0,
-        "change": 118.25,
-        "change_percent": 0.38,
-        "name": "Nasdaq 100 Dec 26"
       }
     ],
     "meme_momentum": [
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-12T03:15:58.450212",
+    "timestamp": "2026-10-12T03:19:55.569336",
     "items": [
       {
         "symbol": "SPX",
@@ -1000,56 +1000,56 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7883.25,
-        "change": 0.3,
+        "price": 7884.0,
+        "change": 0.31,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31225.25,
-        "change": 0.37,
+        "price": 31228.5,
+        "change": 0.38,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52112.0,
-        "change": 0.36,
+        "price": 52118.0,
+        "change": 0.37,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2832.5,
+        "price": 2832.6,
         "change": 0.37,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.03,
-        "change": -1.98,
+        "price": 89.94,
+        "change": -2.08,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4227.9,
-        "change": 0.28,
+        "price": 4230.0,
+        "change": 0.32,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.33,
-        "change": 1.1,
+        "price": 61.36,
+        "change": 1.14,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1709.1,
-        "change": 1.77,
+        "price": 1710.1,
+        "change": 1.83,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1161.0,
-        "change": 1.8,
+        "price": 1161.5,
+        "change": 1.84,
         "type": "future"
       },
       {
@@ -1060,39 +1060,45 @@
       },
       {
         "symbol": "TAO",
-        "price": 294.38,
-        "change": 3.91,
+        "price": 294.46,
+        "change": 4.28,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83619,
-        "change": 0.86,
+        "price": 83616,
+        "change": 0.88,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2542.59,
-        "change": 1.48,
+        "price": 2543.03,
+        "change": 1.52,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 111.72,
-        "change": 1.93,
+        "price": 111.77,
+        "change": 2.0,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.35,
-        "change": 3.1,
+        "price": 13.36,
+        "change": 3.23,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.86,
-        "change": 5.59,
+        "price": 10.85,
+        "change": 5.55,
         "type": "crypto"
+      },
+      {
+        "symbol": "FSLY",
+        "price": 29.3,
+        "change": 15.9,
+        "type": "mover"
       },
       {
         "symbol": "MRNA",
@@ -1132,26 +1138,20 @@
       },
       {
         "symbol": "000660.KS",
-        "price": 1632000.0,
-        "change": -5.28,
+        "price": 1629000.0,
+        "change": -5.46,
+        "type": "mover"
+      },
+      {
+        "symbol": "HIMS",
+        "price": 30.92,
+        "change": 4.67,
         "type": "mover"
       },
       {
         "symbol": "AMC",
         "price": 2.98,
         "change": 3.47,
-        "type": "mover"
-      },
-      {
-        "symbol": "3067.HK",
-        "price": 8.82,
-        "change": 2.8,
-        "type": "mover"
-      },
-      {
-        "symbol": "CL=F",
-        "price": 90.03,
-        "change": -1.98,
         "type": "mover"
       }
     ]
@@ -1198,9 +1198,9 @@
       "author": ""
     },
     {
-      "title": "The Best Beers In America, According To The 2026 Great American Beer Festival",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU1J5U3g4Q1VtckljZTBoalYzTzR5NVdJVmVodThiNEFZZ1o1bUlIMU5mVVNQNVRJTlRueXh1c0thSHNPQ1E1M29SUkYyQ2I3SURNb0VrNG1sbEJmNXp4bkJna0RSVXZhSjVvckhKQy1Bb1NzUGJsbUxmOFVvb294TTN4eWN1YnJac05pYmRzMC1Rd3d1UHdFV2JpOUdGczRldElBcmJkanhTa3F2S1pIRHRFQ3JVWi13WDR1UUJzc0tPdw?oc=5",
-      "source": "Forbes",
+      "title": "AI is less regulated than milk, says Microsoft president",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWblVtb0hnbURUVU1uMXNTMmFyUmxwUGNETm1ZUmpGRVJmcVdUVVlzT2N4LUFzbVRkLVVtR1VvWURJc3NYRkhoY0Q4UDRGTm9sZWxhUVJvMThuWTQ?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1218,9 +1218,9 @@
       "author": ""
     },
     {
-      "title": "Is 8% next? Why mortgage rates have surged, and may stay higher for longer",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdFNPbDNtTWJfTzlPMkhtSkJqVVVvOFJ0TmhQakVFbWxyY3p4NDU3T3h2bG40cVl3V1dxTGFWRm1WUnVRY01MZ21HRExFYTRzRE8tVkFqbmg2UTJUdmF2VzU0a0s1aTZ2emZXZTRxRVpka2VwcGV4LTBFdVZDbUpnRjV2MmxybmFMQm1FUG03dXNkVFdKeGxPNnM2V2RTdE90bS14M1NqOU52UlB4QVp4c3NvQmNiM0djeDg4Y19Jd2tLYW5hU3FqWHJmUFE?oc=5",
-      "source": "Yahoo Finance",
+      "title": "The Best Beers In America, According To The 2026 Great American Beer Festival",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU1J5U3g4Q1VtckljZTBoalYzTzR5NVdJVmVodThiNEFZZ1o1bUlIMU5mVVNQNVRJTlRueXh1c0thSHNPQ1E1M29SUkYyQ2I3SURNb0VrNG1sbEJmNXp4bkJna0RSVXZhSjVvckhKQy1Bb1NzUGJsbUxmOFVvb294TTN4eWN1YnJac05pYmRzMC1Rd3d1UHdFV2JpOUdGczRldElBcmJkanhTa3F2S1pIRHRFQ3JVWi13WDR1UUJzc0tPdw?oc=5",
+      "source": "Forbes",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1228,9 +1228,9 @@
       "author": ""
     },
     {
-      "title": "Ohio Powerball winners hit prizes worth $50K and $100K: See the winning numbers for Oct. 11 and all the prizes hit in Ohio",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPUHVmbVhZTzhnZkI2NUJUVm9vRVc0a0JvbEdrWktLazktSXpIQ0NTN1ZyZHZNYVQ0U045LUtVZXAxVFRVeUlHQVlGTmR4WVJOYXpSRWt1T0NHN2ltVkNHeU1CbmJhMUdUeVlhWlVmRGlXeW4zcWUzeFVXRkNSWnl4T2RGU08zR0luUWM1ZmQxamZMcXdjdldFWVh3SWJ6QXQ4dU50aGo5Q0l0aENHYXN0alNMczVSbVExZTdSRWktcmRGajlXTjlmQWhMZTB1RFlKVFYzdFNkQktYaGwyYVAzdEc2dWt0NW54R3Z1dndUSEt2TlVOMFBMdE5fbEFkT1Z5Y21FajlnV2JZYmdoZGpKNWhqQU5QQQ?oc=5",
-      "source": "WKYC",
+      "title": "Is 8% next? Why mortgage rates have surged, and may stay higher for longer",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdFNPbDNtTWJfTzlPMkhtSkJqVVVvOFJ0TmhQakVFbWxyY3p4NDU3T3h2bG40cVl3V1dxTGFWRm1WUnVRY01MZ21HRExFYTRzRE8tVkFqbmg2UTJUdmF2VzU0a0s1aTZ2emZXZTRxRVpka2VwcGV4LTBFdVZDbUpnRjV2MmxybmFMQm1FUG03dXNkVFdKeGxPNnM2V2RTdE90bS14M1NqOU52UlB4QVp4c3NvQmNiM0djeDg4Y19Jd2tLYW5hU3FqWHJmUFE?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1255,16 +1255,6 @@
       "source": "9to5Google",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Galaxy S27 Ultra: Samsung is fixing a problem that made me stay away from the Galaxy S26 Ultra",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObjZ3WlZqbFJDQlhSZFRMcHlTanN4MC1SYzEza3Nhdi1NMlFLNEJfcVQ3V2lRSXVJQ3RNTU43Y2ZnbXEwWFQ5ekY3TE54TGVVVHZ5VkNIV0FuVzQ0NndPR2ZUck54OXZJN28xc0ROYUYxSXpsZ2ZBODhXU2hRR3ZoaDdRSVdnNXJraTgzNy1wa053NnpWZm9jX3kydm1MUQ?oc=5",
-      "source": "PhoneArena",
-      "category": "business",
-      "published": "Mon, 05 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1315,6 +1305,16 @@
       "source": "MacRumors",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "KPop Demon Hunters x Funko: Every Licensed Product Listed | Outlook Respawn",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObElJUGhuNnhmUGJrZDhiWjdOaGdDTFpPWVdRTjF4RXR2X3hpZURGS1pMZUNWMnJKN25weTFTVEo1UXlXcUtaZjFqZnNqMFhUYUVXTjJkc0FBNmgxOUY4Q0MwdmYzYWtwMFRjUms0TUpmWUdTS05wdkJLM1hDd2ZOSTFCYlFKaXo5UUNEVzFFcllLbUdyNUtERzBwcFlXSmt2Q2NiRWltU0ZKaWFlZnA2TzAyRHVfaDVNZlHSAccBQVVfeXFMTXYtd0MzM1dYVlBxNTRWb2NyNTdnTnE4dTJnSW5ULU9pYXVOV0RBWk9vbl9uYkUtMUhaUlRoeTZoQVVtb1NEbmFwUjZlbUlHQndZcFcxLW5CZUxsSUZaMUI3TmFTb09Hb01NRDUybXdBNTAzWTgxeDNjOG5JbllsTldrUXlIb0lLZExZSy05VHZhWXFINUpacWFaZVU3cmltWkgxT3FXVzl2a1hLd1oyTVFSSk11UzJKdi1CT2FsbTl0WW1pSnk4cw?oc=5",
+      "source": "Outlook Respawn",
+      "category": "business",
+      "published": "Sat, 10 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1530,7 +1530,7 @@
     "changePercent": 0.51,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 11 Oct: 30,883.15, up +0.51% -- BULLISH. price above SMA20, RSI 57.8 building, MACD bullish, modest +0.51% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-11T23:16:10.567423"
+    "timestamp": "2026-10-11T23:20:06.327123"
   },
   "sticky": {
     "cnbc": [
@@ -1538,8 +1538,8 @@
         "title": "Oil falls after Trump declares 'energy ceasefire' between Russia and Ukraine",
         "url": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
         "source": "CNBC",
-        "published": "2026-10-12T02:27:04",
-        "description": "News of Iran reportedly offered to mediate between Yemen's Houthis and Saudi Arabia helped to bring oil prices lower."
+        "published": "2026-10-12T03:18:11",
+        "description": "Ukrainian President Volodymyr Zelenskyy said in a post on social media that \"Ukraine supports the ceasefire, and it is important that Russia support it as well.\""
       },
       {
         "title": "Judge orders Trump administration to immediately stop taxpayer-funded TV ads",
@@ -1669,65 +1669,65 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7883.25,
-      "change": 23.5,
-      "change_percent": 0.3,
+      "price": 7884.0,
+      "change": 24.25,
+      "change_percent": 0.31,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31225.5,
-      "change": 116.75,
-      "change_percent": 0.38,
+      "price": 31228.75,
+      "change": 120.0,
+      "change_percent": 0.39,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52112.0,
-      "change": 186.0,
-      "change_percent": 0.36,
+      "price": 52117.0,
+      "change": 191.0,
+      "change_percent": 0.37,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2832.7,
-      "change": 10.6,
-      "change_percent": 0.38,
+      "price": 2832.6,
+      "change": 10.5,
+      "change_percent": 0.37,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.03,
-      "change": -1.82,
-      "change_percent": -1.98,
+      "price": 89.94,
+      "change": -1.91,
+      "change_percent": -2.08,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4227.9,
-      "change": 11.6,
-      "change_percent": 0.28,
+      "price": 4230.0,
+      "change": 13.7,
+      "change_percent": 0.32,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.33,
-      "change": 0.66,
-      "change_percent": 1.1,
+      "price": 61.36,
+      "change": 0.69,
+      "change_percent": 1.14,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1709.1,
-      "change": 29.8,
-      "change_percent": 1.77,
+      "price": 1710.1,
+      "change": 30.8,
+      "change_percent": 1.83,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1161.0,
-      "change": 20.5,
-      "change_percent": 1.8,
+      "price": 1160.5,
+      "change": 20.0,
+      "change_percent": 1.75,
       "name": "Palladium Dec 26"
     },
     {

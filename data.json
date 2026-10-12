@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-11T20:16:25.788965",
+  "timestamp": "2026-10-11T20:20:18.036497",
   "summary": "Key topics today:\n- - Show HN: Plimsoll, a self-hosted sandbox for code your AI agent writes (r/HackerNews, 201 pts)\n- - 500B tokens later: Letting AI agents decompile a first-person shooter (r/HackerNews, 201 pts)\n- - The gap in shared understanding of LLM capability is widening (r/HackerNews, 101 pts)\n- - Rubber Duck: An AI interviewer for the knowledge in your head (r/HackerNews, 101 pts)\n- - Total Annihilation, rebuilt for modern computers (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -20,11 +20,19 @@
     },
     {
       "type": "sell",
-      "asset": "GRML",
-      "price": 5.17,
-      "change": -11.32,
+      "asset": "SOXL",
+      "price": 139.76,
+      "change": -12.05,
       "category": "stock",
-      "text": "GRML -11.3% drop @ $5.17"
+      "text": "SOXL -12.1% drop @ $139.76"
+    },
+    {
+      "type": "sell",
+      "asset": "IREN",
+      "price": 35.19,
+      "change": -9.05,
+      "category": "stock",
+      "text": "IREN -9.1% drop @ $35.19"
     },
     {
       "type": "buy",
@@ -33,14 +41,6 @@
       "change": 8.06,
       "category": "stock",
       "text": "GME +8.1% momentum @ $26.56"
-    },
-    {
-      "type": "buy",
-      "asset": "PLTR",
-      "price": 209.05,
-      "change": 7.69,
-      "category": "stock",
-      "text": "PLTR +7.7% momentum @ $209.05"
     }
   ],
   "reddit": [
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "Whatever became of holography? (2011)",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
-      "created": ""
-    },
-    {
       "title": "Cartographers of North Korea",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://cartographers-nk.wonyoung.so/",
+      "created": ""
+    },
+    {
+      "title": "Whatever became of holography? (2011)",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
       "created": ""
     },
     {
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-12T00:16:11.184252",
+    "timestamp": "2026-10-12T00:20:09.077613",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,14 +430,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-12T00:15:43.908857",
+    "timestamp": "2026-10-12T00:19:45.639932",
     "trending": [
       {
-        "symbol": "GRML",
-        "price": 5.17,
-        "change": -0.66,
-        "change_percent": -11.32,
-        "name": "Greenland Mines Ltd"
+        "symbol": "SOXL",
+        "price": 139.76,
+        "change": -19.15,
+        "change_percent": -12.05,
+        "name": "Direxion Daily Semiconductor Bu"
+      },
+      {
+        "symbol": "IREN",
+        "price": 35.19,
+        "change": -3.5,
+        "change_percent": -9.05,
+        "name": "IREN LIMITED"
       },
       {
         "symbol": "MU",
@@ -454,13 +461,6 @@
         "name": "NVIDIA Corporation"
       },
       {
-        "symbol": "ROAD",
-        "price": 86.81,
-        "change": -1.9,
-        "change_percent": -2.14,
-        "name": "Construction Partners, Inc."
-      },
-      {
         "symbol": "ASML",
         "price": 1780.34,
         "change": -24.62,
@@ -468,25 +468,18 @@
         "name": "ASML Holding N.V. - New York Re"
       },
       {
-        "symbol": "CL=F",
-        "price": 90.84,
-        "change": -1.01,
-        "change_percent": -1.1,
-        "name": "Crude Oil Nov 26"
-      },
-      {
-        "symbol": "BZ=F",
-        "price": 103.6,
-        "change": -1.12,
-        "change_percent": -1.07,
-        "name": "Brent Crude Oil Last Day Financ"
-      },
-      {
         "symbol": "SI=F",
-        "price": 61.26,
-        "change": 0.59,
-        "change_percent": 0.98,
+        "price": 61.35,
+        "change": 0.68,
+        "change_percent": 1.11,
         "name": "Silver Dec 26"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 90.85,
+        "change": -1.0,
+        "change_percent": -1.09,
+        "name": "Crude Oil Nov 26"
       },
       {
         "symbol": ".DJI",
@@ -503,6 +496,13 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "NQ=F",
+        "price": 31257.75,
+        "change": 149.0,
+        "change_percent": 0.48,
+        "name": "Nasdaq 100 Dec 26"
+      },
+      {
         "symbol": ".RUT",
         "price": 2806.981,
         "change": 12.85,
@@ -510,31 +510,31 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "NQ=F",
-        "price": 31248.0,
-        "change": 139.25,
-        "change_percent": 0.45,
-        "name": "Nasdaq 100 Dec 26"
-      },
-      {
         "symbol": "ES=F",
-        "price": 7878.0,
-        "change": 18.25,
-        "change_percent": 0.23,
+        "price": 7880.25,
+        "change": 20.5,
+        "change_percent": 0.26,
         "name": "E-Mini S&P 500 Dec 26"
       },
       {
+        "symbol": "RTY=F",
+        "price": 2828.8,
+        "change": 6.7,
+        "change_percent": 0.24,
+        "name": "E-mini Russell 2000 Index Futur"
+      },
+      {
         "symbol": "YM=F",
-        "price": 52022.0,
-        "change": 96.0,
-        "change_percent": 0.18,
+        "price": 52032.0,
+        "change": 106.0,
+        "change_percent": 0.2,
         "name": "Mini Dow Jones Indus.-$5 Dec 26"
       },
       {
         "symbol": "GC=F",
-        "price": 4216.4,
-        "change": 0.1,
-        "change_percent": 0.0,
+        "price": 4221.6,
+        "change": 5.3,
+        "change_percent": 0.13,
         "name": "Gold Dec 26"
       }
     ],
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-12T00:16:04.699417",
+    "timestamp": "2026-10-12T00:20:05.509712",
     "items": [
       {
         "symbol": "SPX",
@@ -1000,50 +1000,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7878.5,
-        "change": 0.24,
+        "price": 7880.75,
+        "change": 0.27,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 31249.25,
-        "change": 0.45,
+        "price": 31260.5,
+        "change": 0.49,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52032.0,
-        "change": 0.2,
+        "price": 52033.0,
+        "change": 0.21,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2828.5,
-        "change": 0.23,
+        "price": 2829.1,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.97,
-        "change": -0.96,
+        "price": 90.87,
+        "change": -1.07,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4214.5,
-        "change": -0.04,
+        "price": 4222.5,
+        "change": 0.15,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 61.22,
-        "change": 0.9,
+        "price": 61.36,
+        "change": 1.14,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1700.5,
-        "change": 1.26,
+        "price": 1703.6,
+        "change": 1.45,
         "type": "future"
       },
       {
@@ -1055,43 +1055,43 @@
       {
         "symbol": "NG=F",
         "price": 3.17,
-        "change": -1.49,
+        "change": -1.46,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 296.57,
-        "change": 3.74,
+        "price": 296.52,
+        "change": 3.69,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83677,
-        "change": 0.88,
+        "price": 83698,
+        "change": 0.92,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2536.15,
-        "change": 1.21,
+        "price": 2536.32,
+        "change": 1.24,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 111.12,
-        "change": 1.01,
+        "change": 1.02,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.37,
-        "change": 2.7,
+        "price": 13.36,
+        "change": 2.71,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.97,
-        "change": 5.88,
+        "price": 10.98,
+        "change": 5.9,
         "type": "crypto"
       },
       {
@@ -1144,14 +1144,14 @@
       },
       {
         "symbol": "CL=F",
-        "price": 91.0,
-        "change": -0.93,
+        "price": 90.87,
+        "change": -1.07,
         "type": "mover"
       },
       {
         "symbol": "NQ=F",
-        "price": 31251.5,
-        "change": 0.46,
+        "price": 31259.75,
+        "change": 0.49,
         "type": "mover"
       }
     ]
@@ -1178,9 +1178,9 @@
       "author": ""
     },
     {
-      "title": "Bond yields closely track diesel prices now, and Trump's deal with Putin may be too little too late",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRUxVZWpGSjFIWGNIZVUxWGZaeHNlRHBOSjJRYUl6U2otcjZiNzNvUlBYVThsX0tUVjVxWVVzSjA2OElSM1lsYXNLZXkxNmlra2hmWDkteXlod0FnelhWUWtEckRtM1YzeWZ0MFlMYXBNNGZqOUJuc0haTzhkbUpRLTJJbkl5TUd4VzV0TW5vbnhEbDBVWXZTQ2xHLWJYWGF5MmVDLXUydHphdVVncFIydjdSd25rVWs?oc=5",
-      "source": "Fortune",
+      "title": "Is the stock market open on Columbus Day, Indigenous Peoples' Day?",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONy1ZdF81VzgxYXZwQThwT0xwbDlMZkhCX1ZBZ0ozTmNuNDZrcE9sQ0hoSHQwM3VoVDNlX1Ewb01JQkp4Z0x6YmtjaGZtTWZjSElaYWwwWUstdWd6QUJSWEVFRkxZMm1Ja19DenZVWWdkNHE5dlZLY3JCWUFnVVRlYUlzRHE3bFRYbjVpRDV4OFQtX1p4TUlOWmhYTQ?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1198,9 +1198,9 @@
       "author": ""
     },
     {
-      "title": "The bull market is turning 4 years old \u2014 but yields could crash the party",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcjA4VGRyQXhXVTlzMTNnQmJqOTBvZHdxOGhJbm1MQVFpSTJSSy1ndHpPa2R1VEF0S0xwOHBMMHl3VGhOYWlJTXhYdHJTekZqejQ4SFJ5RWY2NzdkdlVxUFFOc09Iek0wTmlkQTdxY1RhWjQ1YlZfR3hOcGxOM3FaMkhUNEc1ekVpRDRCS3hhUTF5TEpjTlZ2OE00SlFOMDkwYmhteWNUdnJQSkJwZUpsRE5ybmw?oc=5",
-      "source": "MarketWatch",
+      "title": "Bond yields closely track diesel prices now, and Trump's deal with Putin may be too little too late",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRUxVZWpGSjFIWGNIZVUxWGZaeHNlRHBOSjJRYUl6U2otcjZiNzNvUlBYVThsX0tUVjVxWVVzSjA2OElSM1lsYXNLZXkxNmlra2hmWDkteXlod0FnelhWUWtEckRtM1YzeWZ0MFlMYXBNNGZqOUJuc0haTzhkbUpRLTJJbkl5TUd4VzV0TW5vbnhEbDBVWXZTQ2xHLWJYWGF5MmVDLXUydHphdVVncFIydjdSd25rVWs?oc=5",
+      "source": "Fortune",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1208,9 +1208,9 @@
       "author": ""
     },
     {
-      "title": "Are markets open on Columbus/Indigenous Peoples' Day? (US10Y:)",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSkN6Y3ZTTjQ5UmRRZENlSHhteEFnOU85ZDNKd09ScExFaXJIX3k4RUlnVFpva3U1QlM2ZW5NVndkSWtHN0RLX0hCaDRkYUN3V3E2NEtnRzJrLTdpd19yR2NGUk5DR1hreDNEREZiQ0tGZ21fa2EzM3lkYkNUZUFxSU9nVG55MTByc25jX2lpUXR3ekU?oc=5",
-      "source": "Seeking Alpha",
+      "title": "The bull market is turning 4 years old \u2014 but yields could crash the party",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcjA4VGRyQXhXVTlzMTNnQmJqOTBvZHdxOGhJbm1MQVFpSTJSSy1ndHpPa2R1VEF0S0xwOHBMMHl3VGhOYWlJTXhYdHJTekZqejQ4SFJ5RWY2NzdkdlVxUFFOc09Iek0wTmlkQTdxY1RhWjQ1YlZfR3hOcGxOM3FaMkhUNEc1ekVpRDRCS3hhUTF5TEpjTlZ2OE00SlFOMDkwYmhteWNUdnJQSkJwZUpsRE5ybmw?oc=5",
+      "source": "MarketWatch",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1300,11 +1300,11 @@
       "author": ""
     },
     {
-      "title": "Apple planning huge iPhone Duo demo experiences at select retail stores: report",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPajhQU09FRU9CMlpJcUphWno2WjJjMEtBblIxbm9tOW5URHVDd0pmRkM4NzVrTF9EQ0czTzg3ZWotTFpfNTY3Z01sWWQ0akJSQzFfakZNUUZaWXFaYVdQMkFpOXdYemk5TUcxSHhxSFF6Z3lMQWJhZUVZQ0x5aWNHcDg4YThPVGYxamVubGlwZVJBZ0E1ai1qV2RCd1RvSldjMkYxbEZkak5YeGg3MTNJ?oc=5",
-      "source": "9to5Mac",
+      "title": "KPop Demon Hunters x Funko: Every Licensed Product Listed | Outlook Respawn",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObElJUGhuNnhmUGJrZDhiWjdOaGdDTFpPWVdRTjF4RXR2X3hpZURGS1pMZUNWMnJKN25weTFTVEo1UXlXcUtaZjFqZnNqMFhUYUVXTjJkc0FBNmgxOUY4Q0MwdmYzYWtwMFRjUms0TUpmWUdTS05wdkJLM1hDd2ZOSTFCYlFKaXo5UUNEVzFFcllLbUdyNUtERzBwcFlXSmt2Q2NiRWltU0ZKaWFlZnA2TzAyRHVfaDVNZlHSAccBQVVfeXFMTXYtd0MzM1dYVlBxNTRWb2NyNTdnTnE4dTJnSW5ULU9pYXVOV0RBWk9vbl9uYkUtMUhaUlRoeTZoQVVtb1NEbmFwUjZlbUlHQndZcFcxLW5CZUxsSUZaMUI3TmFTb09Hb01NRDUybXdBNTAzWTgxeDNjOG5JbllsTldrUXlIb0lLZExZSy05VHZhWXFINUpacWFaZVU3cmltWkgxT3FXVzl2a1hLd1oyTVFSSk11UzJKdi1CT2FsbTl0WW1pSnk4cw?oc=5",
+      "source": "Outlook Respawn",
       "category": "business",
-      "published": "Sun, 11 Oct 2026 ",
+      "published": "Sat, 10 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1359,14 +1359,6 @@
       "source": "Al Jazeera",
       "published": "Sun, 11 Oct 2026 ",
       "description": "CCTV footage shows the moment of a Russian strike on a residential street in Kharkiv, Ukraine.",
-      "relevance_score": 5
-    },
-    {
-      "title": "Two killed near Israeli-occupied area in south Lebanon",
-      "url": "https://www.aljazeera.com/news/2026/10/11/two-killed-near-israeli-occupied-area-in-south-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sun, 11 Oct 2026 ",
-      "description": "Despite ceasefire reached between Israel and Lebanon in June, Israeli attacks continue.",
       "relevance_score": 5
     },
     {
@@ -1530,7 +1522,7 @@
     "changePercent": 0.51,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 11 Oct: 30,883.15, up +0.51% -- BULLISH. price above SMA20, RSI 57.8 building, MACD bullish, modest +0.51% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-11T20:16:23.587917"
+    "timestamp": "2026-10-11T20:20:15.478919"
   },
   "sticky": {
     "cnbc": [
@@ -1669,72 +1661,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7879.25,
-      "change": 19.5,
-      "change_percent": 0.25,
+      "price": 7880.75,
+      "change": 21.0,
+      "change_percent": 0.27,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31251.25,
-      "change": 142.5,
-      "change_percent": 0.46,
+      "price": 31259.25,
+      "change": 150.5,
+      "change_percent": 0.48,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52032.0,
-      "change": 106.0,
-      "change_percent": 0.2,
+      "price": 52033.0,
+      "change": 107.0,
+      "change_percent": 0.21,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2828.5,
-      "change": 6.4,
-      "change_percent": 0.23,
+      "price": 2828.8,
+      "change": 6.7,
+      "change_percent": 0.24,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.94,
-      "change": -0.91,
-      "change_percent": -0.99,
+      "price": 90.87,
+      "change": -0.98,
+      "change_percent": -1.07,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4215.9,
-      "change": -0.4,
-      "change_percent": -0.01,
+      "price": 4222.5,
+      "change": 6.2,
+      "change_percent": 0.15,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 61.24,
-      "change": 0.57,
-      "change_percent": 0.93,
+      "price": 61.36,
+      "change": 0.69,
+      "change_percent": 1.14,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1700.8,
-      "change": 21.5,
-      "change_percent": 1.28,
+      "price": 1703.6,
+      "change": 24.3,
+      "change_percent": 1.45,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1156.5,
-      "change": 16.0,
-      "change_percent": 1.4,
+      "price": 1155.5,
+      "change": 15.0,
+      "change_percent": 1.32,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.17,
       "change": -0.05,
-      "change_percent": -1.49,
+      "change_percent": -1.46,
       "name": "Natural Gas Nov 26"
     }
   ],

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-12T09:16:16.164078",
-  "summary": "Key topics today:\n- - QGIS bans AI assisted contributions (r/HackerNews, 101 pts)\n- - Running the unmodified Linux amdgpu driver on an iPad (r/HackerNews, 101 pts)\n- - Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity' (r/HackerNews, 101 pts)\n- - The gap in shared understanding of LLM capability is widening (r/HackerNews, 101 pts)\n- - Deloitte falsified documents to evade tax on Abramovich's wealth (r/HackerNews, 1 pts)",
+  "timestamp": "2026-10-12T09:24:45.909558",
+  "summary": "Key topics today:\n- - QGIS bans AI assisted contributions (r/HackerNews, 101 pts)\n- - Running the unmodified Linux amdgpu driver on an iPad (r/HackerNews, 101 pts)\n- - Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity' (r/HackerNews, 101 pts)\n- - The gap in shared understanding of LLM capability is widening (r/HackerNews, 101 pts)\n- - AI less regulated than milk, Microsoft president says in warning over safety (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
@@ -28,19 +28,19 @@
     },
     {
       "type": "buy",
-      "asset": "FSLY",
-      "price": 29.3,
-      "change": 15.9,
-      "category": "stock",
-      "text": "FSLY +15.9% momentum @ $29.30"
-    },
-    {
-      "type": "buy",
       "asset": "MRNA",
       "price": 225.0,
       "change": 14.52,
       "category": "stock",
       "text": "MRNA +14.5% momentum @ $225.00"
+    },
+    {
+      "type": "buy",
+      "asset": "NVAX",
+      "price": 12.75,
+      "change": 13.64,
+      "category": "stock",
+      "text": "NVAX +13.6% momentum @ $12.75"
     },
     {
       "type": "watch",
@@ -85,6 +85,14 @@
       "created": ""
     },
     {
+      "title": "AI less regulated than milk, Microsoft president says in warning over safety",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules",
+      "created": ""
+    },
+    {
       "title": "Deloitte falsified documents to evade tax on Abramovich's wealth",
       "subreddit": "HackerNews",
       "score": 1,
@@ -123,20 +131,12 @@
       "comments": 0,
       "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
       "created": ""
-    },
-    {
-      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/snuri00/ps2-web-recomp",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-12T13:16:06.581131",
+    "timestamp": "2026-10-12T13:24:27.558446",
     "prices": [
       {
         "name": "Bittensor",
@@ -278,7 +278,7 @@
         "description": "Ledger said every confirmed case involves devices sold by the Southeast Asian reseller, but critics say the hardware-wallet maker must answer for an authorized sales channel."
       },
       {
-        "title": "Bitcoin holds $83,000 as dollar strength keeps markets on edge",
+        "title": "Bitcoin falls below $83,000 as dollar strength keeps markets on edge",
         "url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
         "published": "Mon, 12 Oct 2026 ",
         "description": "Bitcoin and gold hold steady as a firm dollar and rising bond yields weigh on sentiment, while IREN secures a multiyear cloud services deal with Anthropic."
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-12T13:15:42.403381",
+    "timestamp": "2026-10-12T13:24:04.065824",
     "trending": [
       {
         "symbol": "WFF",
@@ -446,13 +446,6 @@
         "change": 10.19,
         "change_percent": 485.24,
         "name": "WF Holding Limited"
-      },
-      {
-        "symbol": "FSLY",
-        "price": 29.3,
-        "change": 4.02,
-        "change_percent": 15.9,
-        "name": "Fastly, Inc."
       },
       {
         "symbol": "MRNA",
@@ -476,18 +469,32 @@
         "name": "IREN LIMITED"
       },
       {
-        "symbol": "SNAP",
-        "price": 6.23,
-        "change": 0.42,
-        "change_percent": 7.23,
-        "name": "Snap Inc."
+        "symbol": "ONDS",
+        "price": 6.73,
+        "change": -0.46,
+        "change_percent": -6.4,
+        "name": "Ondas Inc"
       },
       {
-        "symbol": "TRAX",
-        "price": 31.85,
-        "change": 1.26,
-        "change_percent": 4.12,
-        "name": "First Tracks Biotherapeutics, I"
+        "symbol": "ADBE",
+        "price": 242.27,
+        "change": 9.5,
+        "change_percent": 4.08,
+        "name": "Adobe Inc."
+      },
+      {
+        "symbol": "IONQ",
+        "price": 39.89,
+        "change": -1.45,
+        "change_percent": -3.51,
+        "name": "IonQ, Inc."
+      },
+      {
+        "symbol": "NOW",
+        "price": 140.86,
+        "change": 2.99,
+        "change_percent": 2.17,
+        "name": "ServiceNow, Inc."
       },
       {
         "symbol": "CRM",
@@ -537,13 +544,6 @@
         "change": 12.85,
         "change_percent": 0.46,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "META",
-        "price": 718.67,
-        "change": -2.64,
-        "change_percent": -0.37,
-        "name": "Meta Platforms, Inc."
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-12T13:16:02.702971",
+    "timestamp": "2026-10-12T13:24:23.797054",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.43,
-        "change": 3.98,
+        "price": 15.41,
+        "change": 3.84,
         "type": "index"
       },
       {
@@ -1014,104 +1014,98 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 31084.25,
-        "change": -0.08,
+        "price": 31073.25,
+        "change": -0.11,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51944.0,
-        "change": 0.03,
+        "price": 51927.0,
+        "change": 0.0,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2819.2,
-        "change": -0.1,
+        "price": 2819.7,
+        "change": -0.09,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 93.75,
-        "change": 2.07,
+        "price": 93.67,
+        "change": 1.98,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4192.1,
-        "change": -0.57,
+        "price": 4194.2,
+        "change": -0.52,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 60.88,
-        "change": -0.27,
+        "price": 60.92,
+        "change": -0.21,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1701.8,
-        "change": 0.5,
+        "price": 1699.1,
+        "change": 0.34,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1156.0,
-        "change": 0.49,
+        "price": 1154.5,
+        "change": 0.36,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.14,
-        "change": -2.39,
+        "change": -2.48,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 290.06,
-        "change": 1.5,
+        "price": 289.54,
+        "change": 1.21,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82598,
-        "change": -0.51,
+        "price": 82543,
+        "change": -0.62,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2527.96,
-        "change": 0.99,
+        "price": 2526.72,
+        "change": 0.92,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 110.21,
-        "change": 0.78,
+        "price": 110.12,
+        "change": 0.64,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 13.16,
-        "change": 1.74,
+        "price": 13.12,
+        "change": 1.34,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.85,
-        "change": 3.25,
+        "price": 10.82,
+        "change": 2.77,
         "type": "crypto"
       },
       {
         "symbol": "WFF",
         "price": 12.29,
         "change": 485.24,
-        "type": "mover"
-      },
-      {
-        "symbol": "FSLY",
-        "price": 29.3,
-        "change": 15.9,
         "type": "mover"
       },
       {
@@ -1145,9 +1139,15 @@
         "type": "mover"
       },
       {
-        "symbol": "TRAX",
-        "price": 31.85,
-        "change": 4.12,
+        "symbol": "ONDS",
+        "price": 6.73,
+        "change": -6.4,
+        "type": "mover"
+      },
+      {
+        "symbol": "ADBE",
+        "price": 242.27,
+        "change": 4.08,
         "type": "mover"
       },
       {
@@ -1157,9 +1157,9 @@
         "type": "mover"
       },
       {
-        "symbol": "CRM",
-        "price": 229.13,
-        "change": 2.04,
+        "symbol": "NOW",
+        "price": 140.86,
+        "change": 2.17,
         "type": "mover"
       }
     ]
@@ -1176,9 +1176,9 @@
       "author": ""
     },
     {
-      "title": "World\u2019s Energy Order Tested Again as Iran War\u2019s Reach Extends Further",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQekFBLV9XVkZmX2hLR0ZHMGhxMzB6Rkp4ZHhWLUFSd3N0VW1pVG9FOHlhal9NNk1JbjRNaDlMemJTZ2ZhWFBOS2FFMzJVSXhMRVNPNXZDTlhkTVBDZVNmOU54WjNseDAyeWJnSjZ4cU9MdmpaZlFtOVhGRENhakdzb3l2YzJVZW95MUhhSFd3?oc=5",
-      "source": "The New York Times",
+      "title": "Exclusive | Quantum-Computing Company IonQ to Buy Cybersecurity Firm for Up to $1.3 Billion",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNmk5NnMzd2lyOHZSR1dvNEVleUIzdGg0dTF0X3NkWDVNblZYMXVoQjJFREtXdE10MFYwZkpOZHptN3dYdFV2S1RwMzAyNFFqMkxqX3N3c3lpSVNUU0s4U2hlaTVNNFg1RTJ5RkZpb1JyUGFKTFc3bHFlWkV3S0szdDUtSlE2WV91VmphdUdZc3MyNTM1YTVpVlNnNW04QUIyMmQxTGx2Z2FBcGFFZ3Q0anEzeFJlNHpXNUdheDBXRQ?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Mon, 12 Oct 2026 ",
       "description": "",
@@ -1186,9 +1186,9 @@
       "author": ""
     },
     {
-      "title": "Exclusive | Quantum-Computing Company IonQ to Buy Cybersecurity Firm for Up to $1.3 Billion",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNmk5NnMzd2lyOHZSR1dvNEVleUIzdGg0dTF0X3NkWDVNblZYMXVoQjJFREtXdE10MFYwZkpOZHptN3dYdFV2S1RwMzAyNFFqMkxqX3N3c3lpSVNUU0s4U2hlaTVNNFg1RTJ5RkZpb1JyUGFKTFc3bHFlWkV3S0szdDUtSlE2WV91VmphdUdZc3MyNTM1YTVpVlNnNW04QUIyMmQxTGx2Z2FBcGFFZ3Q0anEzeFJlNHpXNUdheDBXRQ?oc=5",
-      "source": "WSJ",
+      "title": "World\u2019s Energy Order Tested Again as Iran War\u2019s Reach Extends Further",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQekFBLV9XVkZmX2hLR0ZHMGhxMzB6Rkp4ZHhWLUFSd3N0VW1pVG9FOHlhal9NNk1JbjRNaDlMemJTZ2ZhWFBOS2FFMzJVSXhMRVNPNXZDTlhkTVBDZVNmOU54WjNseDAyeWJnSjZ4cU9MdmpaZlFtOVhGRENhakdzb3l2YzJVZW95MUhhSFd3?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Mon, 12 Oct 2026 ",
       "description": "",
@@ -1226,19 +1226,19 @@
       "author": ""
     },
     {
-      "title": "What\u2019s open on Columbus Day 2026? UPS, Costco, banks, mail delivery, stock markets, restaurants",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPT2xqaEJnNVpkVi1YX3hQZndkRzA3ampPckNnR2pCZzhFOHhSVl94TDJIZWJzdFhyenVRRlRkSDc1dmJzTE51QUNLQmF2dmVDNi1ONW5tT2RRWHNETGlvWW5nLXR2Ty00Q3REN1p3cjBCV2ZxYnpLLU9LMGRucUs4TzJTb2o3X3JvNmQ4VmVDWVhoeVI2R1ZUYW1lRkRhM1BlWi05aVdUQUUycVp0SThSc1RsaU9FUDdTWlB5d2xVZzIzdVHSAdcBQVVfeXFMT29CS3VxSDJKU05YVmlsUzZ3VFVibGdkVkx5Y3RiZ25lV21udmlMTW9QS2tBQzgwTmFoMWhwLV9DY2t0eFZhZGhOM1dXSTdvMmJTeFBzWkJEdTVRQW1Pc0NQVGVWM1FnN2FueWJDd3g2UVlBM1huUHJydXJPTE13NjdUNUF5eWRmUFd0bVc0T3FZcHlFY2VpVFdLaHF0ZjVSN0FvOU8ydVJJRFJHZi0yQ0ViT1VYcjgwVFJEZVQ3ZVBXY0hUd3Q5bVpraWpEdFR0UTc3WTNsZG8?oc=5",
-      "source": "NJ.com",
+      "title": "The world's hottest AI stock market has gone cold",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQenM4MmFpaExhR2JpVWRGZTBNdWFsNFB1TVhRUHBqbEctTXhOb0FaWHRmeV9aVFo0VnZVQlVkOE9Ldm9BWWYwWmVHZjU2ZmFXaXNGd0Npbi1PVmhGblR0VEJQTm5vRjNFTlBWWUE0Y1QxZ2pCaGRZOWVSSVJJNFpaU2I2MU1uNTF0dWlWb3pIY0lQSzBJZXFBTTItQQ?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
-      "published": "Sun, 11 Oct 2026 ",
+      "published": "Mon, 12 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Foreign investors flee South Korean stocks as AI boom loses steam",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaGF4NWlvRy11R2RJOFAzaXVoRXdMMEJFYTY0RjI0UVkxZGRTM3pNb2JYM29VaXQyUHE2czBrVkxkNVNySFRuTzlzeFpHTEJTTi1Pd09DQ3EtYzljSERFUkU0VWJ2dFBvSURneG9GYlRRTG1RZEJnY2xLMVJGeFFDejJWclNoUmhvcXdmYXlsdjFaTEdOYXUxZ1NXY2NWNEJBTXc?oc=5",
-      "source": "Yahoo Finance",
+      "title": "What\u2019s open on Columbus Day 2026? UPS, Costco, banks, mail delivery, stock markets, restaurants",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPT2xqaEJnNVpkVi1YX3hQZndkRzA3ampPckNnR2pCZzhFOHhSVl94TDJIZWJzdFhyenVRRlRkSDc1dmJzTE51QUNLQmF2dmVDNi1ONW5tT2RRWHNETGlvWW5nLXR2Ty00Q3REN1p3cjBCV2ZxYnpLLU9LMGRucUs4TzJTb2o3X3JvNmQ4VmVDWVhoeVI2R1ZUYW1lRkRhM1BlWi05aVdUQUUycVp0SThSc1RsaU9FUDdTWlB5d2xVZzIzdVHSAdcBQVVfeXFMT29CS3VxSDJKU05YVmlsUzZ3VFVibGdkVkx5Y3RiZ25lV21udmlMTW9QS2tBQzgwTmFoMWhwLV9DY2t0eFZhZGhOM1dXSTdvMmJTeFBzWkJEdTVRQW1Pc0NQVGVWM1FnN2FueWJDd3g2UVlBM1huUHJydXJPTE13NjdUNUF5eWRmUFd0bVc0T3FZcHlFY2VpVFdLaHF0ZjVSN0FvOU8ydVJJRFJHZi0yQ0ViT1VYcjgwVFJEZVQ3ZVBXY0hUd3Q5bVpraWpEdFR0UTc3WTNsZG8?oc=5",
+      "source": "NJ.com",
       "category": "business",
       "published": "Sun, 11 Oct 2026 ",
       "description": "",
@@ -1258,6 +1258,16 @@
       "author": ""
     },
     {
+      "title": "Jailbroken PS5 Plays Real PS2 Discs at 6x Res [2026]",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1KVjZDNjdYOHhTUWc1Mk9VRWVZb2ZFaG5IOFpvbzlOaEdHQ2NKNGVHa3ZyVzZQVExjeDRVeElkQldYaDRGLUNkRUMyclllMXdlWXRyVG9VQ08yYkF6X0xlbmVSUnRJZTJLczFLaG4xemRkMUNZNkpLVWpUYw?oc=5",
+      "source": "https://tech-insider.org/",
+      "category": "business",
+      "published": "Mon, 12 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "I get why so many of you are unhappy with Samsung's One UI 9 updates, but things are looking up",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNenJ5aWV4LWxUdkxidEpib1I5aVJqVFllUXlVSzVGMEtRUzgtR2Jsc0ExVWZGX0RUb29ET1dVb0gxMDdqR2l4dWlXcnpCanZzOXByVFEtcGFmR1ZPZUNlTjl5aEJpQ181QVBKTzNHYXNtQTdPdXBsbVk4dEo5N0NqVU5vZHExSWJhZUNpV1hrMXVvZXRMeC1rTmozNjV5ZWRWb1ViZWplNi1rQmJL?oc=5",
       "source": "PhoneArena",
@@ -1268,9 +1278,9 @@
       "author": ""
     },
     {
-      "title": "Jailbroken PS5 Plays Real PS2 Discs at 6x Res [2026]",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1KVjZDNjdYOHhTUWc1Mk9VRWVZb2ZFaG5IOFpvbzlOaEdHQ2NKNGVHa3ZyVzZQVExjeDRVeElkQldYaDRGLUNkRUMyclllMXdlWXRyVG9VQ08yYkF6X0xlbmVSUnRJZTJLczFLaG4xemRkMUNZNkpLVWpUYw?oc=5",
-      "source": "https://tech-insider.org/",
+      "title": "PS2 emulation on Android just got a big upgrade on older Pixels as well as MediaTek devices",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tRGdFdmxNcGNzSXgyazdUR081Uk8wRHVseGhkcEluU01YWUdUSXpvLTF4THZBMThMOHNiZGhRMDNGNWFZUHBFelh5cFluWHRnRzdTQ0x6b2lhSHlqYXU3UmJsVW94TDVuRm5Kd0FtbWY0ZVpEbmVjbk84Z0RUbXc?oc=5",
+      "source": "Android Authority",
       "category": "business",
       "published": "Mon, 12 Oct 2026 ",
       "description": "",
@@ -1313,16 +1323,6 @@
       "source": "CNN",
       "category": "business",
       "published": "Mon, 12 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Today's NYT Strands Hints (and Answer) for Sunday, October 11, 2026",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMjgyT1VQZlBpa0JGMGZlUi1fOEVzMm1IbFpSX2VJZF9vZFZfQXZ3T0M1M21qZzduajRYSHl5eFA0VllReHpGQXRNTGN0QUhxR1J4SUN2SVlaWlIteWw3Z1N2S3JOVjFTenFZNVFtc01tY09vdG84RmgtT0FlOTE1dVJHTk1hcDhsZWVvMkVTSTQxLUpKNXBidGlHNFBRT3lCVThCYW55aGFPUjFzYUpUQQ?oc=5",
-      "source": "Lifehacker",
-      "category": "business",
-      "published": "Sun, 11 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1522,7 +1522,7 @@
     "changePercent": 0.51,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 12 Oct: 30,883.15, up +0.51% -- BULLISH. price above SMA20, RSI 57.8 building, MACD bullish, modest +0.51% up. Counter: none. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-12T09:16:13.471554"
+    "timestamp": "2026-10-12T09:24:43.682924"
   },
   "sticky": {
     "cnbc": [
@@ -1544,15 +1544,8 @@
         "title": "Starbucks says it is not buying Chipotle after takeover speculation",
         "url": "https://www.cnbc.com/2026/10/12/starbucks-denies-chipotle-takeover.html",
         "source": "CNBC",
-        "published": "2026-10-12T13:14:08",
+        "published": "2026-10-12T13:23:41",
         "description": "\"Starbucks is not buying Chipotle,\" a Starbucks spokesperson told CNBC."
-      },
-      {
-        "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
-        "url": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
-        "source": "CNBC",
-        "published": "2026-10-12T13:00:01",
-        "description": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack."
       },
       {
         "title": "Rep. Ilhan Omar's home raided by DHS in fraud probe of immigration paperwork: Report",
@@ -1560,6 +1553,13 @@
         "source": "CNBC",
         "published": "2026-10-12T13:06:52",
         "description": "The Minnesota Democrat, a Muslim who was born in Somalia, has been targeted for criticism in the past by President Donald Trump."
+      },
+      {
+        "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
+        "url": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
+        "source": "CNBC",
+        "published": "2026-10-12T13:00:01",
+        "description": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack."
       },
       {
         "title": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
@@ -1608,6 +1608,13 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Higher Pre-Bell Friday; SpaceX, Nebius Group to Advance&nbsp;&nbsp;marketscreener.com"
       },
       {
+        "title": "WEN Stock Heads For Third Weekly Gain: How It Went From A 12-Year Low To WallStreetBets' Favorite In Four Days - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQRnh5Q19uZGM0M3FYMXpwVEQxMjB6V3dRZ2ZLRkxTR1h1NFAtb3E3b1hlMjN6SXVUSEFxcHdod0licHVLNzV1SkoyU2pVbUxPT2RnVV8wMUg5NkI2S0xQcG9NdVdNUko5ZHE4Sm4wR0pTenNwLWVPMVNNUGNONjhPa0hZTDlLM1hzbEt0dWdmQU9UQ1I5UXg2S3RGV1VXckxqb2wxejAwcE83RGJVTGxGaEE5LXRsNXZwVUhwd293R050a1h3OUI2V3ZoOXMwWWR4YTEzbVZ1b1I4enlPNG5laXVYNlkwb2NVY0h3V25mWXltdV9TTzRKQ2dhM09DdWlsQ3NtZw?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-10T19:18:07",
+        "description": "WEN Stock Heads For Third Weekly Gain: How It Went From A 12-Year Low To WallStreetBets' Favorite In Four Days&nbsp;&nbsp;Stocktwits"
+      },
+      {
         "title": "Wallstreetbets Favorites Turn Higher Before The Open - Finimize",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTERIbEtMVWN3VS1Vb09BeDhZNFhweTBUZ3pBbHZheV9TVTJGSHJWNWFRMFhiNGI2OEM3MnVxQ0ZLR0NtalQ1UFJDaUFuNU1FYy01V2lFakZYU09XZGZJX3BTbUh1UjdvYmQyS2hPNk4zNWEwbE93YmpoTVA5aHZ5QW90eExsbXJZ?oc=5",
         "source": "r/wallstreetbets",
@@ -1648,85 +1655,78 @@
         "source": "r/wallstreetbets",
         "published": "2026-10-01T07:00:00",
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Higher Pre-Bell Thursday; Alphabet, Sandisk to Advance&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; Nebius Group, Alphabet to Advance - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbU5uVldzMTFVWEZ1SzAxZTg3V3FZNThYUWVXejZTbzZNNEhZM2V2cFlGejVVZXdqT1k3U3ZZckIwZU80aUVYdzVnUVFKdnlkTkxOQ3JKVmZhTHBnbEs3aFRmd0xwb0s4ajdxR21DdFk1MGNoeHNGMU45WHFfeGw5MllaakhSLTROdGkyN29KU0trVXF4RDQ4YmxVQk1zQUdFUks3cHpEaW0?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-09-30T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; Nebius Group, Alphabet to Advance&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7866.25,
-      "change": 6.5,
+      "price": 7865.75,
+      "change": 6.0,
       "change_percent": 0.08,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 31084.25,
-      "change": -24.5,
-      "change_percent": -0.08,
+      "price": 31074.75,
+      "change": -34.0,
+      "change_percent": -0.11,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51944.0,
-      "change": 18.0,
-      "change_percent": 0.03,
+      "price": 51927.0,
+      "change": 1.0,
+      "change_percent": 0.0,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2819.2,
-      "change": -2.9,
-      "change_percent": -0.1,
+      "price": 2819.9,
+      "change": -2.2,
+      "change_percent": -0.08,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 93.73,
-      "change": 1.88,
-      "change_percent": 2.05,
+      "price": 93.67,
+      "change": 1.82,
+      "change_percent": 1.98,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4191.6,
-      "change": -24.7,
-      "change_percent": -0.59,
+      "price": 4194.2,
+      "change": -22.1,
+      "change_percent": -0.52,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 60.88,
-      "change": -0.17,
-      "change_percent": -0.28,
+      "price": 60.9,
+      "change": -0.14,
+      "change_percent": -0.23,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1700.1,
-      "change": 6.8,
-      "change_percent": 0.4,
+      "price": 1699.1,
+      "change": 5.8,
+      "change_percent": 0.34,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1155.0,
-      "change": 4.6,
-      "change_percent": 0.4,
+      "price": 1154.5,
+      "change": 4.1,
+      "change_percent": 0.36,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.14,
       "change": -0.08,
-      "change_percent": -2.36,
+      "change_percent": -2.52,
       "name": "Natural Gas Nov 26"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T17:16:13.060157",
+  "timestamp": "2026-10-13T17:20:08.367109",
   "summary": "Key topics today:\n- - Show HN: Parsimony \u2013 an open-source benchmark for how much code AI models add (r/HackerNews, 301 pts)\n- - Redesigning source control at Anthropic (r/HackerNews, 101 pts)\n- - PostEra (YC W20) Is Hiring AI Researchers for Drug Discovery (r/HackerNews, 101 pts)\n- - I posted to HN, and then my website was flooded with AI bot traffic (r/HackerNews, 101 pts)\n- - We turned EmbeddingGemma 2 into a speech-to-text model (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -11,14 +11,6 @@
       "text": "FIGR_HELOC -3.2% @ $1.03"
     },
     {
-      "type": "buy",
-      "asset": "JBDI",
-      "price": 3.43,
-      "change": 243.0,
-      "category": "stock",
-      "text": "JBDI +243.0% momentum @ $3.43"
-    },
-    {
       "type": "sell",
       "asset": "CIFR",
       "price": 11.34,
@@ -28,11 +20,19 @@
     },
     {
       "type": "sell",
-      "asset": "PS",
-      "price": 47.65,
-      "change": -12.71,
+      "asset": "AEHL",
+      "price": 8.55,
+      "change": -13.37,
       "category": "stock",
-      "text": "PS -12.7% drop @ $47.65"
+      "text": "AEHL -13.4% drop @ $8.55"
+    },
+    {
+      "type": "sell",
+      "asset": "FUN",
+      "price": 10.2,
+      "change": -10.6,
+      "category": "stock",
+      "text": "FUN -10.6% drop @ $10.20"
     },
     {
       "type": "watch",
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-13T21:16:04.193578",
+    "timestamp": "2026-10-13T21:19:58.292200",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,15 +430,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-13T21:15:39.338656",
+    "timestamp": "2026-10-13T21:19:36.185819",
     "trending": [
-      {
-        "symbol": "JBDI",
-        "price": 3.43,
-        "change": 2.43,
-        "change_percent": 243.0,
-        "name": "JBDI Holdings Limited"
-      },
       {
         "symbol": "CIFR",
         "price": 11.34,
@@ -447,18 +440,11 @@
         "name": "Cipher Digital Inc."
       },
       {
-        "symbol": "PS",
-        "price": 47.65,
-        "change": -6.94,
-        "change_percent": -12.71,
-        "name": "Pershing Square Inc."
-      },
-      {
-        "symbol": "RGC",
-        "price": 8.19,
-        "change": 0.84,
-        "change_percent": 11.43,
-        "name": "Regencell Bioscience Holdings L"
+        "symbol": "AEHL",
+        "price": 8.55,
+        "change": -1.32,
+        "change_percent": -13.37,
+        "name": "Antelope Enterprise Holdings Li"
       },
       {
         "symbol": "FUN",
@@ -510,11 +496,25 @@
         "name": "Caterpillar, Inc."
       },
       {
-        "symbol": "UNH",
-        "price": 377.76,
-        "change": -1.54,
-        "change_percent": -0.41,
-        "name": "UnitedHealth Group Incorporated"
+        "symbol": "V",
+        "price": 396.06,
+        "change": 10.61,
+        "change_percent": 2.75,
+        "name": "Visa Inc."
+      },
+      {
+        "symbol": "BLK",
+        "price": 1066.12,
+        "change": -16.27,
+        "change_percent": -1.5,
+        "name": "BlackRock, Inc."
+      },
+      {
+        "symbol": "BAC",
+        "price": 53.96,
+        "change": -0.36,
+        "change_percent": -0.66,
+        "name": "Bank of America Corporation"
       },
       {
         "symbol": ".RUT",
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-13T21:15:58.058905",
+    "timestamp": "2026-10-13T21:19:54.841535",
     "items": [
       {
         "symbol": "SPX",
@@ -1060,56 +1060,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 279.62,
-        "change": -1.05,
+        "price": 278.9,
+        "change": -1.37,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83326,
-        "change": 0.6,
+        "price": 83312,
+        "change": 0.54,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2507.8,
-        "change": -0.09,
+        "price": 2507.48,
+        "change": -0.17,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 106.98,
-        "change": -0.94,
+        "price": 107.0,
+        "change": -1.03,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.91,
-        "change": -0.67,
+        "price": 12.9,
+        "change": -0.86,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 10.27,
-        "change": -2.05,
+        "change": -2.29,
         "type": "crypto"
-      },
-      {
-        "symbol": "JBDI",
-        "price": 3.43,
-        "change": 243.0,
-        "type": "mover"
       },
       {
         "symbol": "CIFR",
         "price": 11.34,
         "change": -16.12,
-        "type": "mover"
-      },
-      {
-        "symbol": "RGC",
-        "price": 8.19,
-        "change": 11.43,
         "type": "mover"
       },
       {
@@ -1153,6 +1141,18 @@
         "price": 124.53,
         "change": -3.94,
         "type": "mover"
+      },
+      {
+        "symbol": "CAT",
+        "price": 772.78,
+        "change": -3.46,
+        "type": "mover"
+      },
+      {
+        "symbol": "V",
+        "price": 396.06,
+        "change": 2.75,
+        "type": "mover"
       }
     ]
   },
@@ -1161,26 +1161,6 @@
       "title": "French supermarkets face millions in losses after cyberattack hits refrigerators nationwide",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZXVyc25Na3BNSjJ2T3BQQ2VfcGFCS2Fsd042Rnh0MldobUJGVm10SktyUEktaGh0V21QdURYRDhWYVV2elpSZ2Y4VktHdTJFYUV5dEI4OG9MLWlrN0V2WVp4SGJsNUQ2OHJwSEtCUXBlTXlXZ3ZQN01QV185SXA1Um9vUUpGTEp1MjZkaHBBSVNmay14TEtuU05oVjN6UFBxWUp0cmxaNkd0djZrQ1NfcNIBtgFBVV95cUxPamJnNXh3WFpfTV9UVEh4LXlkZ2tlUHhjSzdNYnlacXR6YlhBV0xvNFRNZi03d3ZfMDAxQjVOamtSdEdHalFDdFFJLVN2T05WRkpyWHdvZGFhempUREN4QUx0RjVaMkpFZjhFUGd1RzFwODVaZW1MY1pIRE1ZOWc2UUR2MUl2cUZCRFZSMlVLeTFFNGh5eU8yRXAyUWVSU0FTMHJzbURZMkhSTHl3ZXN2VmtCUHRaZw?oc=5",
       "source": "Fox News",
-      "category": "business",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Bank earnings takeaways: Here's how JPMorgan, Goldman, Wells Fargo and Citi performed in Q3",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmYmZoS09NRThtbmlWQlgwc1RYaDJBbjZSVUs0ZDNGaHYzOEt4Z19zcmZQLW85TFRWLW1ETnZRbHk5TE51TlNXQkVwbGRVaURxUTZBU2I3cjM5Q1FJdFJQZHBUNV9rcHFEb1hfQkpxR2PSAXZBVV95cUxNclJpNUxUWjhyVlNieXgxMFFoai1FblZEWUs1aDJFT3JRZC1WekhaZDNUcFE5V0pJX0RhZGZKODJuYkpWcUNUWmo1amdLOUN5MC16bnk0YndzU1poWDh4cFNIRDl3V09ZZ0ZQTUdScFo0UTJZZ29B?oc=5",
-      "source": "CNBC",
-      "category": "business",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Stock Market Today: Stocks Slip Despite Solid Wall Street Results",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaVpoWEZHOUphdU52VGpZdTFMUUVseXlHQ21JR3RHUUl0QUFMZ25NX3F6cVpweTIya2VnV3F6Szk1TXkweW1LeWlQa1phQ0NLUEtTZHNiaEV5ak5BdEhJU1VESnVZVHhkTFhvSV91bDBBMHYzY0lUazBaejhIbEhabndB?oc=5",
-      "source": "WSJ",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1198,6 +1178,16 @@
       "author": ""
     },
     {
+      "title": "Stock Market Today: Stocks Slip Despite Solid Wall Street Results",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaVpoWEZHOUphdU52VGpZdTFMUUVseXlHQ21JR3RHUUl0QUFMZ25NX3F6cVpweTIya2VnV3F6Szk1TXkweW1LeWlQa1phQ0NLUEtTZHNiaEV5ak5BdEhJU1VESnVZVHhkTFhvSV91bDBBMHYzY0lUazBaejhIbEhabndB?oc=5",
+      "source": "WSJ",
+      "category": "business",
+      "published": "Tue, 13 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "CVS agrees to pay $315 million to settle Justice Department case over opioid prescriptions",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMjhnc0NBenI1LTdQUm1CbWhMby1TRHB3NUF6Rm91Ni1RajAteVlPSWdHQWx1U1I4T0hSZy1IeVA3N0FYTW5NY2ZOa2J5c2RyX0loQnZEMGJ6RUJ3ZDlRMnM0bzVfeFh0QVhfSUU1Q3BTbnhuMjNRcG1ZZnlwYlZYWU9YakxPZHBhRUJZZVh6aXhFY0lk?oc=5",
       "source": "AP News",
@@ -1208,19 +1198,9 @@
       "author": ""
     },
     {
-      "title": "OpenAI employee arrested over hidden listening device, company says",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcjkxNVh4Vlg5aXhHdHJySlBhbC1iZVRDTTF1a2hiUk52eUlqUW1aWWtoeUg2TjQ0OWU1aURzNW5aWmZ1TEFBcGl4NTBIQVZSVnNPaFpFUnZqb2RjRzNQS0xLQjRkMmtJZWhuU1RLRXplcktzVnBHMVVhNThISzMxMVFYbXZoeWE2WFc3b2VzMlQ0Sl92Y0kwLXJ0MUxBOTdUNzFxdjR0VTI?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Bank of America hit with $1.2B in penalties over money laundering compliance failures",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR2g3SUtydkcwMUx6ZjRDRFpPaWZQMHZKNEl4ZmtTWFQxdGw5aWZWcUxtZ29aYzhWS3lsbXV4d3dHQ3dhaTcxalVTblpMSVVPR010Y1VINEpLSGxENWJ0TGFSLVg1a1B5MVRpSi1BM2ZLU3pMQmRLdE9hd01ra1d4d2dSZDdOTGNiUnRKSnJZOGtZWWZmZW9sMWJPUkNMWV9nUlRHRGdyWdIBrAFBVV95cUxQTTVNUVJJUDl2b2NSMVM1UVdDbWxSaXhIdnB6YlFDVXB2YmNFcDludUNfMElTYlVwX3VHaWt0VVo1QUxHSHVFU3hRR2RoYjBidWR3b3Q5dkFZWUFEZHVmaG1teXlHc01XRmdjQ1N4bXZiQWJ5UXZQSl9Zd2tTUzF3NmxwSVJqWURDSHZyS0RxS2ltTmZNN2lISERQQ3dnOTVJa01KaDJodmNqeEFw?oc=5",
-      "source": "Fox Business",
+      "title": "Bank of America fined $1.2 billion over money-laundering violations",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOUhsTGsxZGVaWDBvc1p3eGp2UE1IaU03VmFwLUxQVlFkdVhDSWhpZTZEenQtWDgxeUFuUlZQWUZ1cDg0UUZyeWxBaERkdTh3U3M0SFROT3k4OFVZQkNzWG12ZGJIWlREY1pqMS13WjNTZ0dQNDFWVzVwV0JHU2VuRXVteUzSAYoBQVVfeXFMT28tc1VERndMQ09XcmplYUJ0RFhNb0Vjc2tleXZZSUJyblpDWnBIQXY4aXNmWmJUQU9OcjJIbDdVdEpLSDBac2xIdm5BSTlWMG5VWEUxMHRyTjNDOTVacGhXVmV3OThSeVhtbE13eFA3YXlfRkpMdFRFdDlnWmhLMHdFZDhFeGd1QWZn?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1231,6 +1211,26 @@
       "title": "Fed\u2019s Williams Currently Sees No Need for Rate Hike in 2027",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQb01adkN2OHdNQWZjaW9DMVk0NlotU0RrVkV2dGVDZDc5WTY5aEJmemJtSjY1eTJNRjM1UzY1OUlBMXNHQ0FBd09mV3ZXdWJlZXZhY2N6Sng3QnRNcW5FY1cyU216SmNtVUNIcEd4TFR4aHR1cGR1eU1CYkZOdjQ0SndhRzJKdWc0aGM1cnlTSWpHZnJJbEtrZVduWl9fSmJObDNFT2k5UXREWWtBT3J3?oc=5",
       "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Tue, 13 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "United ditches flight segments, raises bar for 1K in Premier status shakeup",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOa0VwOTZrVmN2eTd2M1dDVzdNZ0FVWXVKS1BTaTdyMW5nOG9QeDQ3SDZ5RzlZemFPN2hXY3FUbFhlTjZoeHlNNkEzZ1hwYWlkVGd2bG41dDhRUW12b3kxWjlpU2kyZlgzeVJ6YkdmVkVRTG1QZVZQM1RCZGJBaHFWTw?oc=5",
+      "source": "The Points Guy",
+      "category": "business",
+      "published": "Tue, 13 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The Forces Driving Up Bond Yields Take a Troubling Turn",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE53cjBfUVVNUWNmQXNIWWNodVBLbnh6S1o4bGxSREdTQ2VmbnJlVzBOWnRzb3lnRUxDbEFUMHJFdmtjQmx6by1xNk1ncThTZGtadXVUeER1ZElLa1c0Zng2clpSbWVEVmlzdUtNR284ekdSdHVuWlRjS2poSjYtQQ?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1250,9 +1250,19 @@
       "author": ""
     },
     {
-      "title": "Apple\u2019s new smart home lineup includes a smart lock, thermostat, and video doorbells",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQM2lSWG1WOE5RV2ExUG9wSUM0bUtuTDVCSWtNSEY3X1c1UmF1VzcwdEJpY1lrZWE3dFBJdWpPRU5MemRlOUZlUkFwNkw0TnFlenExZDBRSno4VXhiSlAtdE1jSU5Yd05vbnJBdXMzQUh2VW5TM1RHY1hOVExYYk91X1BkRTRDRkgzTVFELTdocHdNbVZTSk94QjEwSHg2QWRuOThvRWtoclMzbkhKTHJWY01qNlhnemo1?oc=5",
+      "title": "Apple launches a new Apple TV 4K with Siri AI and remote-free voice commands",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOERnbGJDT0t1aHBWd2RBdkttbVpYLVZueFdkREI5VnRJaWh3bXE0QW1scjZrY0czOE1ROUJiX0w2cHZHV2d2eTRoRGJYSFl3M1ppRDFCN25aUUI1Z19YeWlDTGZwRUxzNEd0Mjh3QkM4VkZLeXhjNHJfM1hkWkZsZjY4ejVRWm0zVzJUdnUzWHpEQkxXbWwydU5kRDdYcTFmcDY4WE5lODE?oc=5",
       "source": "TechCrunch",
+      "category": "business",
+      "published": "Tue, 13 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Hands-on with the Apple Home Collection",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBvNmxrOGpXMGhyZmlOSy0xMjlNQ2pEM0QzU1BjVGlnd3lqUk90bHVXaDN0U0VUaXJaYmN3dGxlTEdUTHdubU1SMzgyVmhYSlhQLXd6bldpUUVqR256eFBHTWg5OHdKNjJfVGloczYxMnpxcVBWODFF?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1270,29 +1280,9 @@
       "author": ""
     },
     {
-      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMlpkVThfZGd3VlpBQzIxdkJDdUxYNDBWQWVYM1RkMVBldEw4N1pvS1BmMmxXRS12SnBvTHVmNHlVT1FLREhETWVUMWI4VlZ1V1JKTVN1azBUZDdKeUhKZjUxQVI5NnJHOUM1Um1hSTBwUzlZMnlBb3hDSURlTW1mQmJXUGNKY3ZTTzB4SmNUSQ?oc=5",
-      "source": "The Verge",
-      "category": "business",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Pok\u00e9mon \u00d7 Beats Pill Wireless Bluetooth\u00ae Speaker Coming Soon",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQml6aWNkN2Z2TFlPSzFPYnBNWjBTOUZvUDJZa3REWDhfdWp1N1BLbGprbUtjeDFmRFE2SUkyRktlWXlHYXZNSW5RZnhKcG5ZMkt3WU5HVDNERV95aDZMR1ZpaGJsd1JpMWo1dkpDMjJrRUFaenZOeTNQQjFvOFhXMk9aVkw2OFRjWk1FNTZ0dVNVUDA?oc=5",
       "source": "Pokemon.com",
-      "category": "business",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "NVIDIA DLSS 5 Gets 2x Performance Boost with 20% Less VRAM Usage",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORjNhTUk1a29kbGtzUUFVNXZPTFFoOUtlNFo3WWhLTnBkY3ZpOVhJckk3Sk4wMTVMaFl5c1NSQjhnUDZoUlpHcXFzSUhXOEZRSTlMSUVFamc2RVg0d3pHdHl5Z3gzemtZLU8yTElSX0szWmNGVGVPQzJ4SDRFa1RTb2tTOWU3QXJlY2IybEJnVUlVRFJNR2VPM05seVVZVDDSAaQBQVVfeXFMUEdFMklkY2FzSkV5YU1qN2ZNcHpwbDc5OEdRam9wWEEycFZDWDRvQXpwZ3pOUkdtdXR1dFdOcnNFSjZtYXlfOXdvMXZ4cDRqTWNNaHQtYkppQ3VNOGtNTEg5dS1HMFk3V3hjMHJzSnJEWS1COW9qVENBNnZxV29SeklWak1lYlp4X3Bwc3Nib1kyelhxY0FrSjBKMlU1V1ozMzJ1ekI?oc=5",
-      "source": "TechPowerUp",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1318,6 +1308,16 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "Fitbit Edge is Google\u2019s middle ground between Fitbit Air and Pixel Watch",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLXpZMUlzOVJsRlRndG40aEZZNHRITHhmamxnaWRhVUhJclFKanJQRWJld25WM2NFNWtkUmdYMTh3T2Y0SUFqNVYyeTRyVnlJRjIwbnZMaVk0dVEyeFV6bWVxLV81c1hFWFJaamdTWGo3VlprOTlQRGVLbHpTSlItaUFfM0NickZkM2lhWnlqdkZhNmJFbDNOMXl4SGk3OGZXaWNTU21hVUFiZw?oc=5",
+      "source": "TechCrunch",
+      "category": "business",
+      "published": "Mon, 12 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
   "defense": [
@@ -1328,14 +1328,6 @@
       "published": "Tue, 13 Oct 2026 ",
       "description": "Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an \"equal scale\".",
       "relevance_score": 9
-    },
-    {
-      "title": "Anduril reveals family of surface-to-air interceptor missiles",
-      "url": "https://www.defensenews.com/industry/techwatch/2026/10/13/anduril-reveals-family-of-surface-to-air-interceptor-missiles/",
-      "source": "Defense News",
-      "published": "Tue, 13 Oct 2026 ",
-      "description": "The interceptor family was built to address threats across the air-and-missile defense spectrum, while aiming to come at a fraction of the cost of others.",
-      "relevance_score": 5
     },
     {
       "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC",
@@ -1368,6 +1360,14 @@
       "published": "Tue, 13 Oct 2026 ",
       "description": "Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh",
       "relevance_score": 4
+    },
+    {
+      "title": "Anduril awarded contract to expand US Army\u2019s next-gen battlefield command system",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/13/anduril-awarded-contract-to-expand-us-armys-next-gen-battlefield-command-system/",
+      "source": "Defense News",
+      "published": "Tue, 13 Oct 2026 ",
+      "description": "Anduril Industries received an Army contract worth up to $1.8 billion to continue expanding the service's Next Generation Command and Control.",
+      "relevance_score": 3
     },
     {
       "title": "BAE Systems unveils new layered air-defense system",
@@ -1514,7 +1514,7 @@
     "changePercent": -0.31,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 13 Oct: 30,569.48, down -0.31% -- BEARISH. MACD bearish, modest -0.31% down. Counter: price above SMA20, RSI 52.1 building. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-13T17:16:10.749317"
+    "timestamp": "2026-10-13T17:20:05.091677"
   },
   "sticky": {
     "cnbc": [
@@ -1564,7 +1564,7 @@
         "title": "Six Flags shares decline following deadly roller coaster incident",
         "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
         "source": "CNBC",
-        "published": "2026-10-13T20:43:11",
+        "published": "2026-10-13T21:18:03",
         "description": "One person died and several others were injured in an incident involving the Goliath roller coaster at Six Flags Over Georgia, according to reports."
       },
       {

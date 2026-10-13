@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T06:16:12.266036",
+  "timestamp": "2026-10-13T06:22:24.069413",
   "summary": "Key topics today:\n- - Intel D270 GPU AI Accelerator\u2013Up to 480 GB LPDDR5X (r/HackerNews, 201 pts)\n- - A look at the math that OpenAI claims computes faster Fourier transforms (r/HackerNews, 201 pts)\n- - AI models can provably hide arbitrary capabilities (r/HackerNews, 201 pts)\n- - DishwasherBench \u2013 Can Frontier Models Stack a Dishwasher? (r/HackerNews, 101 pts)\n- - Janas: Run LLMs larger than RAM by streaming experts from SSD (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "BMBL",
-      "price": 3.8,
-      "change": 48.15,
-      "category": "stock",
-      "text": "BMBL +48.1% momentum @ $3.80"
-    },
-    {
-      "type": "buy",
       "asset": "FIGS",
       "price": 17.74,
       "change": 18.42,
@@ -49,6 +41,14 @@
       "change": -12.68,
       "category": "stock",
       "text": "CBRS -12.7% drop @ $146.62"
+    },
+    {
+      "type": "sell",
+      "asset": "NVTS",
+      "price": 9.99,
+      "change": -8.6,
+      "category": "stock",
+      "text": "NVTS -8.6% drop @ $9.99"
     },
     {
       "type": "watch",
@@ -125,26 +125,26 @@
       "created": ""
     },
     {
-      "title": "Show HN: Atticus \u2013 Hold-to-talk voice assistant for macOS that runs on Claude -p",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://github.com/SaarthurR/atticus-mac",
-      "created": ""
-    },
-    {
       "title": "The baffling intelligence of a single cell (2024)",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://jsomers.net/e-coli-chemotaxis/",
       "created": ""
+    },
+    {
+      "title": "GLM-Legal",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://z.ai/blog/glm-legal",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-13T10:16:03.378534",
+    "timestamp": "2026-10-13T10:22:15.699338",
     "prices": [
       {
         "name": "Bittensor",
@@ -226,6 +226,12 @@
     ],
     "news": [
       {
+        "title": "MediaMarktSaturn pulls Ledger products amid tampering reports",
+        "url": "https://cointelegraph.com/news/mediamarkt-pulls-ledger-wallet-security-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 13 Oct 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4T9QMPRVPNEKJGN3JK1R0A0/ledger-wallet-illustration.png\" alt=\"MediaMarktSaturn pulls Ledger products amid tampering repor"
+      },
+      {
         "title": "Bitcoin hits $84K resistance as Korean tech rout deepens KOSPI losses",
         "url": "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Tue, 13 Oct 2026 ",
@@ -266,12 +272,6 @@
         "url": "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Tue, 13 Oct 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SJ32T5MFAHM21PB498EN3Q/korea-website-block.jpg\" alt=\"South Korea moves to block 27 crypto websites, including KuCoin, M"
-      },
-      {
-        "title": "Meta claims new Muse Wonder AI models rival OpenAI, Anthropic",
-        "url": "https://cointelegraph.com/news/meta-launches-muse-wonder-ai-models-challenging-top-rivals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Tue, 13 Oct 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4SEQQ4N93A3WPX8RG9DRBAR/meta.jpg\" alt=\"Meta claims new Muse Wonder AI models rival OpenAI, Anthropic\" class=\"type:primar"
       },
       {
         "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-13T10:15:40.200025",
+    "timestamp": "2026-10-13T10:21:51.499033",
     "trending": [
-      {
-        "symbol": "BMBL",
-        "price": 3.8,
-        "change": 1.23,
-        "change_percent": 48.15,
-        "name": "Bumble Inc."
-      },
       {
         "symbol": "FIGS",
         "price": 17.74,
@@ -470,11 +463,11 @@
         "name": "Cerebras Systems Inc."
       },
       {
-        "symbol": "IONQ",
-        "price": 36.27,
-        "change": -3.18,
-        "change_percent": -8.06,
-        "name": "IonQ, Inc."
+        "symbol": "NVTS",
+        "price": 9.99,
+        "change": -0.94,
+        "change_percent": -8.6,
+        "name": "Navitas Semiconductor Corporati"
       },
       {
         "symbol": "SNDK",
@@ -491,11 +484,11 @@
         "name": "SK hynix Inc."
       },
       {
-        "symbol": "MU",
-        "price": 989.04,
-        "change": -46.8,
-        "change_percent": -4.52,
-        "name": "Micron Technology, Inc."
+        "symbol": "FICO",
+        "price": 740.0,
+        "change": 32.57,
+        "change_percent": 4.6,
+        "name": "Fair Isaac Corporation"
       },
       {
         "symbol": "FUN",
@@ -512,6 +505,13 @@
         "name": "Visa Inc."
       },
       {
+        "symbol": "688825.SS",
+        "price": 46.99,
+        "change": -1.35,
+        "change_percent": -2.79,
+        "name": "CXMT CORPORATION"
+      },
+      {
         "symbol": "UNH",
         "price": 378.52,
         "change": 7.57,
@@ -519,18 +519,18 @@
         "name": "UnitedHealth Group Incorporated"
       },
       {
-        "symbol": "MC.PA",
-        "price": 376.95,
-        "change": -7.55,
-        "change_percent": -1.96,
-        "name": "LVMH"
-      },
-      {
         "symbol": "GS",
         "price": 893.95,
         "change": 11.36,
         "change_percent": 1.29,
         "name": "Goldman Sachs Group, Inc. (The)"
+      },
+      {
+        "symbol": "JPM",
+        "price": 334.3,
+        "change": 2.88,
+        "change_percent": 0.87,
+        "name": "JP Morgan Chase & Co."
       },
       {
         "symbol": ".RUT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-13T10:15:59.817650",
+    "timestamp": "2026-10-13T10:22:12.154899",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 15.38,
-        "change": 1.12,
+        "price": 15.41,
+        "change": 1.31,
         "type": "index"
       },
       {
@@ -1016,105 +1016,99 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7863.25,
-        "change": 0.07,
+        "price": 7863.0,
+        "change": 0.06,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30760.0,
-        "change": -0.45,
+        "price": 30750.5,
+        "change": -0.48,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52479.0,
-        "change": 0.71,
+        "price": 52492.0,
+        "change": 0.73,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2825.2,
+        "price": 2825.1,
         "change": 0.46,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 91.8,
-        "change": -2.07,
+        "price": 91.84,
+        "change": -2.03,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4209.3,
-        "change": 0.45,
+        "price": 4209.0,
+        "change": 0.44,
         "type": "future"
       },
       {
         "symbol": "SI=F",
         "price": 60.69,
-        "change": 0.91,
+        "change": 0.92,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1711.4,
-        "change": 1.91,
+        "price": 1710.5,
+        "change": 1.85,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1150.5,
-        "change": 1.27,
+        "price": 1151.0,
+        "change": 1.31,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.12,
-        "change": -1.36,
+        "change": -1.55,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 278.35,
-        "change": -5.1,
+        "price": 277.74,
+        "change": -5.23,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 83445,
-        "change": 0.04,
+        "price": 83435,
+        "change": 0.03,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2508.3,
-        "change": -1.78,
+        "price": 2506.14,
+        "change": -1.85,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 106.95,
-        "change": -4.01,
+        "price": 106.77,
+        "change": -4.19,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.94,
-        "change": -2.95,
+        "price": 12.93,
+        "change": -3.04,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 10.31,
-        "change": -6.65,
+        "price": 10.3,
+        "change": -6.5,
         "type": "crypto"
-      },
-      {
-        "symbol": "BMBL",
-        "price": 3.8,
-        "change": 48.15,
-        "type": "mover"
       },
       {
         "symbol": "FIGS",
@@ -1126,12 +1120,6 @@
         "symbol": "CBRS",
         "price": 146.62,
         "change": -12.68,
-        "type": "mover"
-      },
-      {
-        "symbol": "IONQ",
-        "price": 36.27,
-        "change": -8.06,
         "type": "mover"
       },
       {
@@ -1159,15 +1147,27 @@
         "type": "mover"
       },
       {
-        "symbol": "MU",
-        "price": 989.04,
-        "change": -4.52,
+        "symbol": "FUN",
+        "price": 11.92,
+        "change": 4.47,
         "type": "mover"
       },
       {
         "symbol": "AMC",
         "price": 3.0,
         "change": 4.17,
+        "type": "mover"
+      },
+      {
+        "symbol": "V",
+        "price": 389.27,
+        "change": 3.78,
+        "type": "mover"
+      },
+      {
+        "symbol": "688825.SS",
+        "price": 46.99,
+        "change": -2.79,
         "type": "mover"
       }
     ]
@@ -1184,11 +1184,11 @@
       "author": ""
     },
     {
-      "title": "JPMorgan, Goldman Sachs Earnings Due As Bank Outlook Shifts",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNazZUY180am9JSHVjall1S3FPZEp1bTBRUmN5c2V0aHZxeFgzamEyTE5RYnFnR3IzZF9hajIyMElyT2tmb3RXT042NHFpek1nN2FENFhXcnhCaDlITXNwMUZrZWhsb0VVb0RkcnFYdDdUbE0yQ3gzQTV5MDBsN2JQQkNKMGFxc2xraFBrUnBzYUI2TmNDWGc?oc=5",
-      "source": "Investor's Business Daily",
+      "title": "Bank earnings live updates: JPMorgan, Wells Fargo, Goldman Sachs and Citigroup report",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmYmZoS09NRThtbmlWQlgwc1RYaDJBbjZSVUs0ZDNGaHYzOEt4Z19zcmZQLW85TFRWLW1ETnZRbHk5TE51TlNXQkVwbGRVaURxUTZBU2I3cjM5Q1FJdFJQZHBUNV9rcHFEb1hfQkpxR2PSAXZBVV95cUxNclJpNUxUWjhyVlNieXgxMFFoai1FblZEWUs1aDJFT3JRZC1WekhaZDNUcFE5V0pJX0RhZGZKODJuYkpWcUNUWmo1amdLOUN5MC16bnk0YndzU1poWDh4cFNIRDl3V09ZZ0ZQTUdScFo0UTJZZ29B?oc=5",
+      "source": "CNBC",
       "category": "business",
-      "published": "Mon, 12 Oct 2026 ",
+      "published": "Tue, 13 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1234,9 +1234,9 @@
       "author": ""
     },
     {
-      "title": "Chip stocks slide after Broadcom boss likens AI investing to \u2018casino\u2019",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZTNMNERvMGJITmdiUUw5VGRoSkJjT2w1dHlxd2NPemdFMTlhUFRORXpiWUhJZU5DM0RvRG43cHNGUXpPOC1SNWlfUDI5NVBTdDNKS2M2ZGZQMjR4aVJOMmhNZ0lpejBIeFBOcG96NF9oN3pRYXJnZVNVaUpBTnlOZ2F2MFlWRFFudXhleVdyelVYY1ktOUY0?oc=5",
-      "source": "The Guardian",
+      "title": "Chip stocks slide in wake of \u2018casino\u2019 comment by Broadcom boss",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUEdnZjlUNktHX2ViUVRqZHd4ZmhjaXdkd0NMR3BVLUp6akpVOUFabEljcHk4N0wzRDloZXhuQklwaVUwWjNYSFJnYkhzQ0RQNzZFZXh6VFh2U0hEZ1FybXhxNUQ0WTVLbXZydHM4REVRLXVVbHpsd2Rnc0M1MnVMMlVJTVc?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Tue, 13 Oct 2026 ",
       "description": "",
@@ -1255,16 +1255,6 @@
     }
   ],
   "tech_business": [
-    {
-      "title": "Foldable iPhone sales are reportedly going to be riddled with problems",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNkdTX1V0ZldnZVhfclNET0FPdE1MX1NWQUhSOHRsdGVWcUVYbTJUMDh6LTBYVVVXMmt1SlNtazRXOWZjUndEaHo3Y2ctemJRSmYwekMzWVVsN3piWUltUGNxc0tWekU4MFB2M2lYVm9WRXI1LWFxRGhjNm91OUVrbEpoMEdKMGxoUWRmUnVVN1JuYnBGUVQ4T2xRYXBscG4zN0hvMjBsa3lvbE55U011Yg?oc=5",
-      "source": "PhoneArena",
-      "category": "business",
-      "published": "Mon, 12 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
     {
       "title": "Apple\u2019s new \u2018Switch to Safari\u2019 campaign details why you should ditch Chrome",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVHJxQzdLV1pvSDhhN3pfUzFWcVNJMmtjY1FxRXdkdWI5WDk5Z0djc2NFQlY4LXduTFp0Nm1RQ3ZDNEwybGlPaUJOTFJsRk96Q1ByVjJhLVp5WHdwaV84TElMTWZISy14M09Kc3o0d0l2SWpPY0Jqd1BOenhoRUtEcGYweEhkWkJxVkp3WV9XYzVZYUZVVndLU0VLeW1ubjNwM0c0OUpSMA?oc=5",
@@ -1309,6 +1299,16 @@
       "title": "Exclusive: Apple Routed a Graphite Pipe Through the iPhone Duo\u2019s Hinge. Here\u2019s Why",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaXFnSUJIcURKYkd1WWdBN1lHM2xIZWRxOG1mVExKTjc4VFd0NF9UOUhMYVZZdGFnT1VUWXpJd0dEYml6eFFUOXJ5bkpvM1QyTEtNQk5QSmR2NG5NeGpXQ25WZE9lWWZ3WFFLeEk2YTFYaTNzQXV0SHNXV3NQYi1VQzRHcnRXeVdTclMxbEln?oc=5",
       "source": "PCMag",
+      "category": "business",
+      "published": "Mon, 12 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Foldable iPhone sales are reportedly going to be riddled with problems",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNkdTX1V0ZldnZVhfclNET0FPdE1MX1NWQUhSOHRsdGVWcUVYbTJUMDh6LTBYVVVXMmt1SlNtazRXOWZjUndEaHo3Y2ctemJRSmYwekMzWVVsN3piWUltUGNxc0tWekU4MFB2M2lYVm9WRXI1LWFxRGhjNm91OUVrbEpoMEdKMGxoUWRmUnVVN1JuYnBGUVQ4T2xRYXBscG4zN0hvMjBsa3lvbE55U011Yg?oc=5",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Mon, 12 Oct 2026 ",
       "description": "",
@@ -1546,7 +1546,7 @@
     "changePercent": -0.71,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 13 Oct: 30,664.70, down -0.71% -- BEARISH. RSI 48.7 neutral-bearish, MACD bearish, modest -0.71% down. Counter: price above SMA20. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-13T06:16:09.875796"
+    "timestamp": "2026-10-13T06:22:22.164466"
   },
   "sticky": {
     "cnbc": [
@@ -1685,72 +1685,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7863.0,
-      "change": 5.0,
+      "price": 7862.75,
+      "change": 4.75,
       "change_percent": 0.06,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30758.0,
-      "change": -140.25,
-      "change_percent": -0.45,
+      "price": 30750.5,
+      "change": -147.75,
+      "change_percent": -0.48,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52478.0,
-      "change": 368.0,
-      "change_percent": 0.71,
+      "price": 52493.0,
+      "change": 383.0,
+      "change_percent": 0.73,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2825.0,
-      "change": 12.8,
+      "price": 2825.1,
+      "change": 12.9,
       "change_percent": 0.46,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 91.8,
-      "change": -1.94,
-      "change_percent": -2.07,
+      "price": 91.85,
+      "change": -1.89,
+      "change_percent": -2.02,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4209.4,
-      "change": 18.8,
-      "change_percent": 0.45,
+      "price": 4209.2,
+      "change": 18.6,
+      "change_percent": 0.44,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
       "price": 60.69,
       "change": 0.55,
-      "change_percent": 0.91,
+      "change_percent": 0.92,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1711.4,
-      "change": 32.0,
-      "change_percent": 1.91,
+      "price": 1710.5,
+      "change": 31.1,
+      "change_percent": 1.85,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1150.5,
-      "change": 14.4,
-      "change_percent": 1.27,
+      "price": 1151.0,
+      "change": 14.9,
+      "change_percent": 1.31,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.12,
-      "change": -0.04,
-      "change_percent": -1.36,
+      "change": -0.05,
+      "change_percent": -1.52,
       "name": "Natural Gas Nov 26"
     }
   ],

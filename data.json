@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T23:16:15.689969",
+  "timestamp": "2026-10-12T23:18:04.282718",
   "summary": "Key topics today:\n- - Intel D270 GPU AI Accelerator\u2013Up to 480 GB LPDDR5X (r/HackerNews, 201 pts)\n- - Janas: Run LLMs larger than RAM by streaming experts from SSD (r/HackerNews, 101 pts)\n- - Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents (r/HackerNews, 101 pts)\n- - Kevin Kelly's 2016 AI Predictions, 10 Years Later (r/HackerNews, 101 pts)\n- - AI is a tool and using it well takes skill (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "buy",
+      "asset": "BMBL",
+      "price": 3.8,
+      "change": 48.15,
+      "category": "stock",
+      "text": "BMBL +48.1% momentum @ $3.80"
+    },
+    {
+      "type": "buy",
       "asset": "FIGS",
       "price": 17.74,
       "change": 18.42,
@@ -41,14 +49,6 @@
       "change": -12.68,
       "category": "stock",
       "text": "CBRS -12.7% drop @ $146.62"
-    },
-    {
-      "type": "sell",
-      "asset": "SOUN",
-      "price": 4.97,
-      "change": -9.96,
-      "category": "stock",
-      "text": "SOUN -10.0% drop @ $4.97"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-13T03:16:06.039249",
+    "timestamp": "2026-10-13T03:17:55.533933",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-13T03:15:40.907901",
+    "timestamp": "2026-10-13T03:17:30.956031",
     "trending": [
+      {
+        "symbol": "BMBL",
+        "price": 3.8,
+        "change": 1.23,
+        "change_percent": 48.15,
+        "name": "Bumble Inc."
+      },
       {
         "symbol": "FIGS",
         "price": 17.74,
@@ -463,32 +470,25 @@
         "name": "Cerebras Systems Inc."
       },
       {
+        "symbol": "^KS11",
+        "price": 5943.3,
+        "change": -682.63,
+        "change_percent": -10.3,
+        "name": "KOSPI Composite Index"
+      },
+      {
+        "symbol": "SOXS",
+        "price": 37.19,
+        "change": 3.4,
+        "change_percent": 10.06,
+        "name": "Direxion Daily Semiconductor Be"
+      },
+      {
         "symbol": "SOUN",
         "price": 4.97,
         "change": -0.55,
         "change_percent": -9.96,
         "name": "SoundHound AI, Inc."
-      },
-      {
-        "symbol": "SOXL",
-        "price": 128.4,
-        "change": -14.12,
-        "change_percent": -9.91,
-        "name": "Direxion Daily Semiconductor Bu"
-      },
-      {
-        "symbol": "NVTS",
-        "price": 9.99,
-        "change": -0.94,
-        "change_percent": -8.6,
-        "name": "Navitas Semiconductor Corporati"
-      },
-      {
-        "symbol": "IONQ",
-        "price": 36.27,
-        "change": -3.18,
-        "change_percent": -8.06,
-        "name": "IonQ, Inc."
       },
       {
         "symbol": "SNDK",
@@ -498,11 +498,18 @@
         "name": "Sandisk Corporation"
       },
       {
-        "symbol": "CRDO",
-        "price": 200.84,
-        "change": -11.02,
-        "change_percent": -5.2,
-        "name": "Credo Technology Group Holding "
+        "symbol": "SKHY",
+        "price": 162.23,
+        "change": -8.27,
+        "change_percent": -4.85,
+        "name": "SK hynix Inc."
+      },
+      {
+        "symbol": "FICO",
+        "price": 740.0,
+        "change": 32.57,
+        "change_percent": 4.6,
+        "name": "Fair Isaac Corporation"
       },
       {
         "symbol": "MU",
@@ -524,13 +531,6 @@
         "change": 22.07,
         "change_percent": 3.06,
         "name": "Meta Platforms, Inc."
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 82783.46,
-        "change": 1028.98,
-        "change_percent": 1.26,
-        "name": "Bitcoin USD"
       },
       {
         "symbol": ".RUT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-13T03:16:01.849006",
+    "timestamp": "2026-10-13T03:17:51.734115",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,44 +1016,44 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7841.25,
+        "price": 7841.5,
         "change": -0.21,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 30643.5,
-        "change": -0.82,
+        "price": 30642.5,
+        "change": -0.83,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52206.0,
-        "change": 0.18,
+        "price": 52216.0,
+        "change": 0.2,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2812.9,
-        "change": 0.02,
+        "price": 2813.3,
+        "change": 0.04,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 92.29,
-        "change": -1.55,
+        "price": 92.2,
+        "change": -1.64,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4201.6,
-        "change": 0.26,
+        "price": 4202.0,
+        "change": 0.27,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 60.43,
-        "change": -0.14,
+        "price": 60.42,
+        "change": -0.15,
         "type": "future"
       },
       {
@@ -1064,50 +1064,50 @@
       },
       {
         "symbol": "PA=F",
-        "price": 1140.5,
-        "change": -0.46,
+        "price": 1140.0,
+        "change": -0.51,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.16,
-        "change": -0.28,
+        "change": -0.25,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 275.6,
-        "change": -6.4,
+        "price": 275.74,
+        "change": -6.36,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82782,
-        "change": -1.0,
+        "price": 82777,
+        "change": -1.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2487.19,
-        "change": -2.17,
+        "price": 2486.92,
+        "change": -2.21,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 106.51,
-        "change": -4.71,
+        "change": -4.73,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 12.81,
-        "change": -4.13,
+        "change": -4.12,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 10.39,
-        "change": -4.33,
+        "change": -4.27,
         "type": "crypto"
       },
       {
@@ -1124,8 +1124,8 @@
       },
       {
         "symbol": "^KS11",
-        "price": 5936.02,
-        "change": -10.41,
+        "price": 5939.65,
+        "change": -10.36,
         "type": "mover"
       },
       {
@@ -1562,7 +1562,7 @@
     "changePercent": -0.71,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 12 Oct: 30,664.70, down -0.71% -- BEARISH. RSI 48.7 neutral-bearish, MACD bearish, modest -0.71% down. Counter: price above SMA20. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-12T23:16:13.117654"
+    "timestamp": "2026-10-12T23:18:02.600324"
   },
   "sticky": {
     "cnbc": [
@@ -1701,51 +1701,51 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7841.25,
-      "change": -16.75,
+      "price": 7841.75,
+      "change": -16.25,
       "change_percent": -0.21,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 30643.75,
-      "change": -254.5,
+      "price": 30643.5,
+      "change": -254.75,
       "change_percent": -0.82,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52209.0,
-      "change": 99.0,
-      "change_percent": 0.19,
+      "price": 52215.0,
+      "change": 105.0,
+      "change_percent": 0.2,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2812.9,
-      "change": 0.7,
-      "change_percent": 0.02,
+      "price": 2813.2,
+      "change": 1.0,
+      "change_percent": 0.04,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 92.27,
-      "change": -1.47,
-      "change_percent": -1.57,
+      "price": 92.2,
+      "change": -1.54,
+      "change_percent": -1.64,
       "name": "Crude Oil Nov 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4200.5,
-      "change": 9.9,
-      "change_percent": 0.24,
+      "price": 4201.8,
+      "change": 11.2,
+      "change_percent": 0.27,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 60.44,
-      "change": -0.07,
-      "change_percent": -0.12,
+      "price": 60.42,
+      "change": -0.09,
+      "change_percent": -0.15,
       "name": "Silver Dec 26"
     },
     {
@@ -1757,16 +1757,16 @@
     },
     {
       "symbol": "PA=F",
-      "price": 1140.5,
-      "change": -5.3,
-      "change_percent": -0.46,
+      "price": 1140.0,
+      "change": -5.8,
+      "change_percent": -0.51,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.16,
       "change": -0.01,
-      "change_percent": -0.28,
+      "change_percent": -0.25,
       "name": "Natural Gas Nov 26"
     }
   ],

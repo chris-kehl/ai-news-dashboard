@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16T17:29:20.542137",
+  "timestamp": "2026-10-16T17:31:03.312185",
   "summary": "Key topics today:\n- - 90% of US working hours are spent on tasks not covered well by AI benchmarks (r/HackerNews, 201 pts)\n- - Claude reveals ECDSA curve origins (r/HackerNews, 101 pts)\n- - Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console (r/HackerNews, 101 pts)\n- - Designing more efficient quantum circuits with Claude (r/HackerNews, 101 pts)\n- - How the Claude Code team does code review (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -17,6 +17,30 @@
       "change": -2.43,
       "category": "crypto",
       "text": "XRP -2.4% @ $1.31"
+    },
+    {
+      "type": "buy",
+      "asset": "XLAB",
+      "price": 2.35,
+      "change": 158.53,
+      "category": "stock",
+      "text": "XLAB +158.5% momentum @ $2.35"
+    },
+    {
+      "type": "buy",
+      "asset": "^VIX",
+      "price": 19.99,
+      "change": 21.45,
+      "category": "stock",
+      "text": "^VIX +21.4% momentum @ $19.99"
+    },
+    {
+      "type": "sell",
+      "asset": "TWLO",
+      "price": 244.37,
+      "change": -9.87,
+      "category": "stock",
+      "text": "TWLO -9.9% drop @ $244.37"
     },
     {
       "type": "watch",
@@ -110,31 +134,9 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Katie Zacharia is out as White House press secretary after just five days in the job, three sources say. https://www.nbcnews.com/politics/white-house/white-house-press-secretary-katie-zacharia-out-after-5-days-rcna603912?taid=6ad2683906a53f00016df155&utm_campaign=truean",
-      "url": "https://nitter.kareem.one/BreakingNews/status/2111157466327040433#m",
-      "date": "Fri, 16 Oct 2026 18:08:58 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "BREAKING: Milwaukee Brewers sweep the defending champion Los Angeles Dodgers to advance to the World Series for the first time since 1982. https://www.nbcnews.com/sports/mlb/milwaukee-brewers-los-angeles-dodgers-mlb-nlcs-world-series-rcna603783?taid=6ad1970370ac0d0001412ce7&utm_c",
-      "url": "https://nitter.kareem.one/BreakingNews/status/2110932825918607675#m",
-      "date": "Fri, 16 Oct 2026 03:16:19 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BreakingNews",
-      "text": "UPDATE: A 16-year-old gunman killed children ages 5, 8 and 11 and a teacher in a shooting at Silver Rail Elementary in Bend, Oregon, officials said. A community member pursued and fatally shot the suspect. https://www.nbcnews.com/news/us-news/live-blog/live-updates-bend-oregon-el",
-      "url": "https://nitter.kareem.one/BreakingNews/status/2110902582105284619#m",
-      "date": "Fri, 16 Oct 2026 01:16:08 GMT",
-      "likes": 0
-    }
-  ],
+  "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-16T21:29:07.318710",
+    "timestamp": "2026-10-16T21:30:55.253636",
     "prices": [
       {
         "name": "Bittensor",
@@ -289,10 +291,225 @@
       }
     ]
   },
-  "news": [],
+  "news": [
+    {
+      "title": "Watch: Will Ukraine get the support needed as tensions with US rise?",
+      "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels."
+    },
+    {
+      "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump."
+    },
+    {
+      "title": "Nurse stole \u00a3750k from 99-year-old woman for cosmetic surgery and home improvements",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzx43rlzjo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Rebecca Louise Burwood saw the vulnerable victim \"as her nanna\" but stole to fund her lifestyle."
+    },
+    {
+      "title": "Man killed by tiger may have had medical records breached by NHS staff",
+      "url": "https://www.bbc.co.uk/news/articles/c875prd12vkqo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "William Chapman, 24, was mauled to death at Yorkshire Wildlife Park, near Doncaster, on Saturday."
+    },
+    {
+      "title": "Chris Mason: Burnham and Swinney tussle over where power lies in Scotland",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyl889jqzjo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "UK political debate has a distinctly Scottish feel after SNP's annual conference, says the BBC's political editor Chris Mason."
+    },
+    {
+      "title": "Watch: Did Tesla really just unveil a flying car?",
+      "url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model."
+    },
+    {
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents."
+    },
+    {
+      "title": "Trump denies limiting Ukraine access to Starlink network",
+      "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night."
+    },
+    {
+      "title": "Pope pictured for first time since surgery and cancer diagnosis",
+      "url": "https://www.bbc.co.uk/news/articles/cw146ej00yn7o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The pontiff was diagnosed with lung cancer after having surgery at Rome's Gemelli Hospital on Tuesday."
+    },
+    {
+      "title": "India's 'cockroach' party founder detained ahead of protest",
+      "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The youth-led movement had called for a Delhi protest after mass detentions last week and the jailing of two leaders."
+    },
+    {
+      "title": "Dad fined after son, 2, died in Cyprus hotel fall",
+      "url": "https://www.bbc.co.uk/news/articles/cvj6j1klez88o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Joshua Foster \"lost control\" of his son while showing him the view of a water park from a window."
+    },
+    {
+      "title": "LIVE:  Press conference on Oregon school shooting: ABC News Live",
+      "url": "https://abcnews.com/video/41463246/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "24/7 coverage of breaking news and live events"
+    },
+    {
+      "title": "'Heroic' bystander who stopped suspect in Oregon elementary school shooting ID'd",
+      "url": "https://abcnews.com/US/oregon-school-shooting-father-2-students-identified-bystander/story?id=137326752",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The suspected gunman in a Bend, Oregon, elementary school shooting was shot by a parent of two students who saw the teen entering the school, his family said on Friday."
+    },
+    {
+      "title": "Katie Zacharia 'transitioning out' of press secretary role, sources tell ABC News",
+      "url": "https://abcnews.com/Politics/trump-asked-press-secretary-katie-zacharia-reconsider-position/story?id=137326631",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "White House press secretary Katie Zacharia is \u201ctransitioning out\u201d of her role, multiple sources and a senior White House official told ABC News on Friday."
+    },
+    {
+      "title": "4,400 measles cases reported in US as CDC to send 'disease detective' to Pennsylvania",
+      "url": "https://abcnews.com/Health/4400-measles-cases-reported-us-cdc-plans-send/story?id=137315190",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "More than 4,400 measles cases have been reported in the U.S. as the CDC says it plans to send a \"disease detective\" to Pennsylvania."
+    },
+    {
+      "title": "WATCH:  Nat Geo's 'Moment on the Earth' spotlights the wonders of elephants",
+      "url": "https://abcnews.com/video/137328854/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "National Geographic shares a closer look at elephants, including how they can eat up to 18 hours a day and even use their trunks to \"hug.\" \"Secrets of the Elephants\" is streaming now."
+    },
+    {
+      "title": "WATCH:  Elon Musk unveils Tesla's new Roadster, and it can fly",
+      "url": "https://abcnews.com/video/137312932/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Using SpaceX rocket technology, the sports car climbed a curved ramp and hurled itself to a controlled landing."
+    },
+    {
+      "title": "Katie Zacharia is 'transitioning out' as press secretary, White House says",
+      "url": "https://www.npr.org/2026/10/16/nx-s1-6005317/trump-casts-doubt-on-press-secretarys-future",
+      "source": "Npr",
+      "category": "npr",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Katie Zacharia's first official day was on Monday."
+    }
+  ],
   "stocks": {
-    "timestamp": "2026-10-16T21:28:32.770499",
+    "timestamp": "2026-10-16T21:30:35.314376",
     "trending": [
+      {
+        "symbol": "XLAB",
+        "price": 2.35,
+        "change": 1.44,
+        "change_percent": 158.53,
+        "name": "Exascale Labs Holdings Inc."
+      },
+      {
+        "symbol": "^VIX",
+        "price": 19.99,
+        "change": 3.53,
+        "change_percent": 21.45,
+        "name": "CBOE Volatility Index"
+      },
+      {
+        "symbol": "TWLO",
+        "price": 244.37,
+        "change": -26.75,
+        "change_percent": -9.87,
+        "name": "Twilio Inc."
+      },
+      {
+        "symbol": "TQQQ",
+        "price": 68.21,
+        "change": -5.91,
+        "change_percent": -7.97,
+        "name": "ProShares UltraPro QQQ"
+      },
+      {
+        "symbol": "PLTR",
+        "price": 186.03,
+        "change": -14.94,
+        "change_percent": -7.43,
+        "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "CRGY",
+        "price": 13.77,
+        "change": 0.92,
+        "change_percent": 7.16,
+        "name": "Crescent Energy Company"
+      },
+      {
+        "symbol": "PAYP",
+        "price": 15.68,
+        "change": 0.81,
+        "change_percent": 5.45,
+        "name": "PayPay Corporation - American D"
+      },
+      {
+        "symbol": "TSLA",
+        "price": 354.72,
+        "change": -12.44,
+        "change_percent": -3.39,
+        "name": "Tesla, Inc."
+      },
+      {
+        "symbol": "QQQ",
+        "price": 709.8,
+        "change": -19.15,
+        "change_percent": -2.63,
+        "name": "Invesco QQQ Trust, Series 1"
+      },
+      {
+        "symbol": "^IXIC",
+        "price": 26140.03,
+        "change": -552.84,
+        "change_percent": -2.07,
+        "name": "NASDAQ Composite"
+      },
       {
         "symbol": ".RUT",
         "price": 2721.37,
@@ -301,10 +518,17 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "CL=F",
+        "price": 99.04,
+        "change": 1.07,
+        "change_percent": 1.09,
+        "name": "Crude Oil Nov 26"
+      },
+      {
         "symbol": ".SPX",
         "price": 7659.44,
-        "change": -84.62,
-        "change_percent": -1.09,
+        "change": -59.5,
+        "change_percent": -0.77,
         "name": "S&P 500"
       },
       {
@@ -315,7 +539,78 @@
         "name": "DJIA"
       }
     ],
-    "meme_momentum": [],
+    "meme_momentum": [
+      {
+        "symbol": "PLTR",
+        "price": 186.03,
+        "change": -14.94,
+        "change_percent": -7.43,
+        "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "AMD",
+        "price": 528.75,
+        "change": -42.07,
+        "change_percent": -7.37,
+        "name": "Advanced Micro Devices, Inc."
+      },
+      {
+        "symbol": "MSTR",
+        "price": 136.83,
+        "change": -6.41,
+        "change_percent": -4.48,
+        "name": "Strategy Inc"
+      },
+      {
+        "symbol": "TSLA",
+        "price": 354.72,
+        "change": -12.44,
+        "change_percent": -3.39,
+        "name": "Tesla, Inc."
+      },
+      {
+        "symbol": "NVDA",
+        "price": 214.13,
+        "change": -7.17,
+        "change_percent": -3.24,
+        "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "HOOD",
+        "price": 98.87,
+        "change": -2.21,
+        "change_percent": -2.19,
+        "name": "Robinhood Markets, Inc."
+      },
+      {
+        "symbol": "BB",
+        "price": 8.06,
+        "change": -0.17,
+        "change_percent": -2.07,
+        "name": "BlackBerry Limited"
+      },
+      {
+        "symbol": "GME",
+        "price": 26.81,
+        "change": -0.34,
+        "change_percent": -1.25,
+        "name": "GameStop Corporation"
+      },
+      {
+        "symbol": "AMC",
+        "price": 2.91,
+        "change": 0.02,
+        "change_percent": 0.69,
+        "name": "AMC Entertainment Holdings, Inc"
+      },
+      {
+        "symbol": "COIN",
+        "price": 173.16,
+        "change": 0.27,
+        "change_percent": 0.16,
+        "name": "Coinbase Global, Inc."
+      }
+    ],
     "dow30": [
       {
         "symbol": "NKE",
@@ -416,6 +711,13 @@
         "name": "Procter & Gamble Company (The)"
       },
       {
+        "symbol": "AMGN",
+        "price": 432.49,
+        "change": 6.38,
+        "change_percent": 1.5,
+        "name": "Amgen Inc."
+      },
+      {
         "symbol": "DIS",
         "price": 110.59,
         "change": 1.6,
@@ -472,6 +774,13 @@
         "name": "3M Company"
       },
       {
+        "symbol": "AAPL",
+        "price": 343.46,
+        "change": 0.5,
+        "change_percent": 0.15,
+        "name": "Apple Inc."
+      },
+      {
         "symbol": "MSFT",
         "price": 529.05,
         "change": -4.64,
@@ -484,6 +793,13 @@
         "change": -1.42,
         "change_percent": -0.96,
         "name": "Merck & Company, Inc."
+      },
+      {
+        "symbol": "AMZN",
+        "price": 250.0,
+        "change": -4.08,
+        "change_percent": -1.61,
+        "name": "Amazon.com, Inc."
       },
       {
         "symbol": "CAT",
@@ -651,7 +967,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-16T21:29:04.080219",
+    "timestamp": "2026-10-16T21:30:52.012948",
     "items": [
       {
         "symbol": "SPX",
@@ -745,38 +1061,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 273.15,
-        "change": -1.84,
+        "price": 273.06,
+        "change": -2.12,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81678,
-        "change": -0.65,
+        "price": 81666,
+        "change": -0.72,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2417.14,
-        "change": -1.55,
+        "price": 2416.99,
+        "change": -1.65,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.36,
-        "change": -1.43,
+        "price": 104.27,
+        "change": -1.65,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.33,
-        "change": -1.63,
+        "price": 12.32,
+        "change": -1.8,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.99,
-        "change": -0.12,
+        "price": 9.98,
+        "change": -0.51,
         "type": "crypto"
       },
       {
@@ -863,16 +1179,6 @@
       "author": ""
     },
     {
-      "title": "Warsh signals steady Fed outlook despite inflation jump",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5vdDlnWkJWbS02TGQ5aTdkUGlZblZZd25lUkhmeHl6NU5KN2xFYTA2THljemlNQ296SWNMcG5kcUViWjhucHM3dWFGOEVPSjZ4X2pBNXZOUXJUUXQyMjQwWlFQU3BXQXRwLXpOT2FMa2pvMDNUblZaMA?oc=5",
-      "source": "Axios",
-      "category": "business",
-      "published": "Fri, 16 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Why CoreWeave is in the crosshairs of the AI scare",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWDBmSEI4THQ5MFFtQXA5a1YweUdtQ2RIYXJXU0t0SFpiQ2kzbENpUWpVbW9hRU5KY1FiMkZPdDVOcmY3OW5WTVRqTFo1SnZKQmxweEFXeVhkY0ZySUdjQWVoV2p3TEVlbXVSSVBZTnNVbXdNc2Q1bmpzSVFrYXFtTmVhUloyaDRqeHp0NllQZWxDTHFENXhv?oc=5",
       "source": "Reuters",
@@ -886,16 +1192,6 @@
       "title": "Netflix stock falls as executive shake-up aims to revive viewership growth",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOGV3ZzNjRDVFLUNJYW9MZ3J3TTlpSkhkSWhhXzR0MThxalF5WVR0VkN4dTBLWGw2dmo5dk43WnhIRkRDMDd6MXU3emIzemNwM29tS25udTV2dklDaGNGbTFOYjVIYWYwaWFDTTV3N3FBb29PWjhmYzIyV0FWTUlQYnk5WS1mQ2laQXpUMUZoa0dmOTNhRlNfeU15R3NMcTY5ZnpUQ3BIU3dLbU9zWU9GeXo1bnY1dWRyVXhiUE1vWFVRaTB3ODRLSGZpa2dSRGx2aTgtNw?oc=5",
       "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Fri, 16 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "KFC is replacing Pepsi with Coca-Cola at US restaurants",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV2lHUjF1eWlWZmZtVDRGWUZ4WHdZYkF1akRjWlFNdnQ4Z01ZaGNIaGx3VDU1VzJFWElSSTRlN3lWREJuUTlqVUQxN0pYemFFODJCcTBoRUs5U2k2VTNVcjlyakEySkhnZDlSQnMtU2U3ZEhHTEwyQ05lXzZwVTVMZEVzaW80eDViQVJJdGlKSUJqOGlLcHlNUGxEajhGbVdYbUFQd2w4VFBKZGRDZWNxYjdSUXlZbjgx?oc=5",
-      "source": "USA Today",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -921,6 +1217,26 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "Indonesian Stocks Plunge on Threat to Drop Market From Major Indexes",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80RVBxa1dIdzVrRHhvanBmT1hMMnlkU2phYUtlV09sM1RUNzEwWHRhYVhjMV95dEJBS3pUSlo1a09mMzk3emxuM2lWLXpfSFQxbFJQRVFGbmxZTl8wRWFtLW5NdEl0QkZva2xzc0JzSk92bFRVLXBCMjQ3aU1BZw?oc=5",
+      "source": "The New York Times",
+      "category": "business",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Central bankers eye higher rates as AI boom fuels scramble for cash",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRUtKN0pzRWNldm1acUxBY0o2M0h6UWlxVHNpT0pWcmQ4c1VQdG8wVE5iaTM2RWVocXN3MDFKMUZwblpDTWNFcTZiUFhNSkpYdlRwMGZhc0Q1UUNCZENPVm5CcDZjYXFZQ2FLaDV0eG5lak1qZ1hlSDZXT05leFQtZ2FubWhKbXlrNWNqbTEybGo5V0dESzk3U2VhbTl4WWNQdHBRc3luM3F4cGIyMEI2RjFYVQ?oc=5",
+      "source": "Reuters",
+      "category": "business",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
   "tech_business": [
@@ -935,9 +1251,9 @@
       "author": ""
     },
     {
-      "title": "Best iPhone Duo cases now available for purchase: Fabric, leather, aramid fiber, metal, more",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWENRclVwYUJjTHlaZVNtOU03dXVyUmV4cWhENXhLemRuOUZzX0lQZUdtM0lQYTFCejhyc0dfZDdZa2Ryb21PSlJjU2ZEWVFpOUo3RVg0bmJCU1Z2VVVpVVpQcVFsaHl6SUtpNnh1SXFjczd2enlYRnpZTTd4eXc1R3lB?oc=5",
-      "source": "9to5Mac",
+      "title": "Apple's $79 iPhone Duo Case Sticks On With Adhesive",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5neW5adklUV3dEblJGM3VtY2RRS3RONzlzdnlKakZvUGIxTnZPSUdxYkIyS3ZVem1OOWNrZHB5aG9NXzY5VmUzSFV4WmdsVHNHeWJXamFYZzNwM3BBMHhsVm5HUjd6cUN5MXBhbUdDTQ?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -955,9 +1271,9 @@
       "author": ""
     },
     {
-      "title": "Apple Pre-Orders Kick Off With First Discounts on HomeView and Apple TV 4K",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82THk0MjcxVGVHT0w2WjJrTzlKS1lIQlRVSFpBVGdTVkxkVjFiZVd0TG96cDY0ZGs3TUZFUnlBbXJod09ZU1ZBT3cxWlZJZzhEbnF1c010c2pSdXFGcTdnS1B6bXZBR1otRDhhSnFfd1ZSalFYV05ybnFB?oc=5",
-      "source": "MacRumors",
+      "title": "The new Apple TV 4K just got its first (very small) discount",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZzljSUFLeG1KUFIxSE5QVzZaWFc1c1dkS2YzSkN5YWRjSGdUU3dxWlRQckhYaHlJMTVnaEp1UlRHTFFYSUVMWVVCcmplRk0wQUxtLThfNThjc2tmNVlmRnFSM3ZyR2IxcVFmR0I1cFpiWGpycjJaLVVYS1hkWGlKdmswUFFmaEs0cld5ZzNqeU1PUmJxSFZZYkdjbw?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -1005,7 +1321,128 @@
       "author": ""
     }
   ],
-  "defense": [],
+  "defense": [
+    {
+      "title": "Bulgaria seeks NATO anti-drone systems, defense minister says",
+      "url": "https://www.defensenews.com/global/europe/2026/10/16/bulgaria-seeks-nato-anti-drone-systems-defense-minister-says/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Bulgaria has formally asked NATO to deploy combat aircraft and anti-drone systems to bolster its defenses.",
+      "relevance_score": 12
+    },
+    {
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
+      "relevance_score": 11
+    },
+    {
+      "title": "\u2018Weaponized light\u2019: KBR\u2019s new base defense technology pits lasers against drones",
+      "url": "https://www.defensenews.com/news/your-military/2026/10/15/weaponized-light-kbrs-new-base-defense-technology-pits-lasers-against-drones/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The Pentagon recently selected KBR's Firefly system for a pilot program to test defending U.S. military installations against adversarial drones.",
+      "relevance_score": 9
+    },
+    {
+      "title": "How Israeli spyware used \u2018zero click\u2019 hack on Al Jazeera staff",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israeli-spyware-used-zero-click-hack-on-al-jazeera-staff?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Israeli spyware firms hacked into Al Jazeera devices in 2024 using a new \u2018adfection\u2019 method. Here&#039;s how it works.",
+      "relevance_score": 8
+    },
+    {
+      "title": "What is Starshield, SpaceX\u2019s military version of Starlink?",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/16/what-is-starshield-spacexs-military-version-of-starlink/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Ukraine said on Wednesday that SpaceX had restricted \u201cmilitary-grade\u201d Starlink services, hampering Ukrainian drone strike missions and air defenses.",
+      "relevance_score": 7
+    },
+    {
+      "title": "Food affordability fears plague Gaza as Israel halts commercial goods",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/food-affordability-fears-plague-gaza-as-israel-halts-commercial-goods?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Commercial goods, such as fresh fruit, vegetables, meat and winter clothing, have not entered Gaza for two days.",
+      "relevance_score": 7
+    },
+    {
+      "title": "Israel secures procurement of 12 Apache gunships in last-minute maneuver",
+      "url": "https://www.defensenews.com/global/mideast-africa/2026/10/16/israel-secures-procurement-of-12-apache-gunships-in-last-minute-maneuver/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Israel is set to acquire 12 Apache \u201cEcho\u201d attack helicopters from Boeing, according to an Israeli ministry of defense announcement this week.",
+      "relevance_score": 6
+    },
+    {
+      "title": "Trump denies limiting Ukraine access to Starlink network",
+      "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
+      "relevance_score": 6
+    },
+    {
+      "title": "Order to limit Starshield for Ukraine came from inside White House, sources say",
+      "url": "https://www.defensenews.com/pentagon/2026/10/16/order-to-limit-starshield-for-ukraine-came-from-inside-white-house-sources-say/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The order to limit a satellite system used by Ukraine for battlefield communications and drone operations came from inside the White House.",
+      "relevance_score": 5
+    },
+    {
+      "title": "South Korean lasers down three drones in Army demo, Hanwha says",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/16/south-korean-lasers-down-three-drones-in-army-demo-hanwha-says/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Hanwha Systems laser weapons shot down target drones during a South Korean Army demonstration, the company said.",
+      "relevance_score": 4
+    },
+    {
+      "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
+      "relevance_score": 4
+    },
+    {
+      "title": "Arizona Guard first to field Gray Eagle 25M drone",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/15/arizona-guard-first-to-field-gray-eagle-25m-drone/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The state will receive 12 of the unmanned aircraft systems by the end of 2029.",
+      "relevance_score": 3
+    },
+    {
+      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+      "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+      "relevance_score": 3
+    },
+    {
+      "title": "US Army\u2019s 8th Psychological Operations Group inactivated",
+      "url": "https://www.defensenews.com/news/your-military/2026/10/16/us-armys-8th-psychological-operations-group-inactivated/",
+      "source": "Defense News",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "The Army's 8th Psychological Operations Group inactivated as the service reshapes its PSYOP and information warfare forces to counter global adversaries.",
+      "relevance_score": 1
+    },
+    {
+      "title": "AOC transfers $1m to Michigan candidate El-Sayed in progressive push",
+      "url": "https://www.aljazeera.com/news/2026/10/16/aoc-transfers-1m-to-michigan-candidate-el-sayed-in-progressive-push?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "Progressive stalwart, who is seen as potential 2028 candidate, says she wants to combat &#039;smears&#039; against El-Sayed.",
+      "relevance_score": 1
+    }
+  ],
   "github": [
     {
       "name": "NousResearch/hermes-agent",
@@ -1110,7 +1547,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 16 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-16T17:29:19.153541"
+    "timestamp": "2026-10-16T17:31:01.501789"
   },
   "sticky": {
     "cnbc": [

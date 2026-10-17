@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T07:16:09.217297",
+  "timestamp": "2026-10-17T07:25:35.800463",
   "summary": "Key topics today:\n- - 90% of US working hours are spent on tasks not covered well by AI benchmarks (r/HackerNews, 201 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console (r/HackerNews, 101 pts)\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Claude reveals ECDSA curve origins (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,11 +36,11 @@
     },
     {
       "type": "sell",
-      "asset": "PLTR",
-      "price": 186.03,
-      "change": -7.43,
+      "asset": "BSP",
+      "price": 47.07,
+      "change": -11.95,
       "category": "stock",
-      "text": "PLTR -7.4% drop @ $186.03"
+      "text": "BSP -11.9% drop @ $47.07"
     },
     {
       "type": "sell",
@@ -152,7 +152,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-17T11:16:00.486386",
+    "timestamp": "2026-10-17T11:25:27.448867",
     "prices": [
       {
         "name": "Bittensor",
@@ -454,7 +454,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-17T11:15:38.001519",
+    "timestamp": "2026-10-17T11:25:04.925227",
     "trending": [
       {
         "symbol": "^VIX",
@@ -462,6 +462,13 @@
         "change": 3.53,
         "change_percent": 21.45,
         "name": "CBOE Volatility Index"
+      },
+      {
+        "symbol": "BSP",
+        "price": 47.07,
+        "change": -6.39,
+        "change_percent": -11.95,
+        "name": "Bending Spoons S.p.A."
       },
       {
         "symbol": "PLTR",
@@ -478,11 +485,11 @@
         "name": "Crude Oil Nov 26"
       },
       {
-        "symbol": "QQQ",
-        "price": 709.8,
-        "change": -19.15,
-        "change_percent": -2.63,
-        "name": "Invesco QQQ Trust, Series 1"
+        "symbol": "DJT",
+        "price": 6.99,
+        "change": -0.23,
+        "change_percent": -3.19,
+        "name": "Trump Media & Technology Group "
       },
       {
         "symbol": "^IXIC",
@@ -499,18 +506,18 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "XOM",
-        "price": 178.98,
-        "change": 1.97,
-        "change_percent": 1.11,
-        "name": "ExxonMobil Holdings Corporation"
-      },
-      {
         "symbol": "BRK-B",
         "price": 532.02,
         "change": 5.67,
         "change_percent": 1.08,
         "name": "Berkshire Hathaway Inc. New"
+      },
+      {
+        "symbol": "VOO",
+        "price": 701.61,
+        "change": -5.82,
+        "change_percent": -0.82,
+        "name": "Vanguard S&P 500 ETF"
       },
       {
         "symbol": ".SPX",
@@ -527,24 +534,17 @@
         "name": "Dow Jones Industrial Average"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2435.78,
-        "change": 16.01,
-        "change_percent": 0.66,
-        "name": "Ethereum USD"
-      },
-      {
         "symbol": "XRP-USD",
         "price": 1.31,
         "change": -0.0,
-        "change_percent": -0.25,
+        "change_percent": -0.28,
         "name": "XRP USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 81532.2,
-        "change": 31.4,
-        "change_percent": 0.04,
+        "price": 81469.74,
+        "change": -31.06,
+        "change_percent": -0.04,
         "name": "Bitcoin USD"
       }
     ],
@@ -976,7 +976,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-17T11:15:56.631517",
+    "timestamp": "2026-10-17T11:25:23.737682",
     "items": [
       {
         "symbol": "SPX",
@@ -1070,44 +1070,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 273.76,
-        "change": -5.49,
+        "price": 273.43,
+        "change": -5.46,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81546,
-        "change": -1.22,
+        "price": 81485,
+        "change": -1.52,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2436.08,
-        "change": -1.96,
+        "price": 2432.88,
+        "change": -2.04,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.72,
-        "change": -2.19,
+        "price": 104.54,
+        "change": -2.22,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.21,
-        "change": -3.93,
+        "price": 12.2,
+        "change": -4.11,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.99,
-        "change": -3.59,
+        "price": 9.96,
+        "change": -3.85,
         "type": "crypto"
       },
       {
         "symbol": "^VIX",
         "price": 19.99,
         "change": 21.45,
+        "type": "mover"
+      },
+      {
+        "symbol": "BSP",
+        "price": 47.07,
+        "change": -11.95,
         "type": "mover"
       },
       {
@@ -1126,12 +1132,6 @@
         "symbol": "TSLA",
         "price": 354.72,
         "change": -3.39,
-        "type": "mover"
-      },
-      {
-        "symbol": "QQQ",
-        "price": 709.8,
-        "change": -2.63,
         "type": "mover"
       },
       {
@@ -1178,9 +1178,9 @@
       "author": ""
     },
     {
-      "title": "Why CoreWeave is in the crosshairs of the AI scare",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWDBmSEI4THQ5MFFtQXA5a1YweUdtQ2RIYXJXU0t0SFpiQ2kzbENpUWpVbW9hRU5KY1FiMkZPdDVOcmY3OW5WTVRqTFo1SnZKQmxweEFXeVhkY0ZySUdjQWVoV2p3TEVlbXVSSVBZTnNVbXdNc2Q1bmpzSVFrYXFtTmVhUloyaDRqeHp0NllQZWxDTHFENXhv?oc=5",
-      "source": "Reuters",
+      "title": "Tech stocks tumble as AI debt fears rattle Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0ySWZEMXlwOEkxNmZYX041ZFNpdjJlOS02em9wbHNpX2ZaMHZ2RzdCZTA2VktiY0htNDlVYng4NXlhUFF3cThuRHlfaWZ2OUVydEFzSlp2Ymd4anN2em1WdEl2bGxKcUExQXRYVmlQYTlUUQ?oc=5",
+      "source": "CBS News",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -1188,9 +1188,9 @@
       "author": ""
     },
     {
-      "title": "Tech stocks tumble as AI debt fears rattle Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0ySWZEMXlwOEkxNmZYX041ZFNpdjJlOS02em9wbHNpX2ZaMHZ2RzdCZTA2VktiY0htNDlVYng4NXlhUFF3cThuRHlfaWZ2OUVydEFzSlp2Ymd4anN2em1WdEl2bGxKcUExQXRYVmlQYTlUUQ?oc=5",
-      "source": "CBS News",
+      "title": "Why CoreWeave is in the crosshairs of the AI scare",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWDBmSEI4THQ5MFFtQXA5a1YweUdtQ2RIYXJXU0t0SFpiQ2kzbENpUWpVbW9hRU5KY1FiMkZPdDVOcmY3OW5WTVRqTFo1SnZKQmxweEFXeVhkY0ZySUdjQWVoV2p3TEVlbXVSSVBZTnNVbXdNc2Q1bmpzSVFrYXFtTmVhUloyaDRqeHp0NllQZWxDTHFENXhv?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -1320,9 +1320,9 @@
       "author": ""
     },
     {
-      "title": "Apple\u2019s updated App Store rules go after \u2018nudify\u2019 AI apps",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeGVVd0NGb3FmQ0tSNWtfYUR6R3NDOXE3VDJPcnlmSmZjUXdBcXJDZG1IN3ZWeTVnTmIxQ3lhUUx4Y3VuMjFjcU9JcTBFdlIwcmhhaldndXZWbXJUNzk4eXdhTER2SERFaWI3SUVYdHFmNjdQb0lBT3ZDSlBkcGR2YlVlZkRwUQ?oc=5",
-      "source": "The Verge",
+      "title": "HomeView will include these Apple apps at launch",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZy1tWWQyalVSaXo0MmQ2V1dCakQ3UmxCVjM0eWRLeVNzWllyMnFhbkxsaDM4QjJUc3R6V1MxUl80VWxHZ19kR0h0QTdDODNtN0s3NGpDWG1PR1J1RmotVWdqVzktS2JwU3pTbGduXzBCaHA3Z3NXaFhiUlpNUERqeFlfUDZnWEU?oc=5",
+      "source": "9to5Mac",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -1338,6 +1338,14 @@
       "published": "Fri, 16 Oct 2026 ",
       "description": "Bulgaria has formally asked NATO to deploy combat aircraft and anti-drone systems to bolster its defenses.",
       "relevance_score": 12
+    },
+    {
+      "title": "Trump eases Russia oil sanctions, but is Europe still buying Moscow\u2019s gas?",
+      "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 17 Oct 2026 ",
+      "description": "Analysts say Russia will benefit most from US sanctions waiver.",
+      "relevance_score": 8
     },
     {
       "title": "What is Starshield, SpaceX\u2019s military version of Starlink?",
@@ -1548,7 +1556,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 17 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-17T07:16:06.898958"
+    "timestamp": "2026-10-17T07:25:33.928554"
   },
   "sticky": {
     "cnbc": [

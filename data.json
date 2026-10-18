@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T02:16:14.310359",
+  "timestamp": "2026-10-18T02:23:05.194757",
   "summary": "Key topics today:\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - Show HN: Sphinx \u2013 a hook that quizzes you on your AI's code before shipping (r/HackerNews, 1 pts)\n- - How the Elizabeth Holmes Doc 'You Can See Everything' Is Deceiving You (r/HackerNews, 1 pts)\n- - Bleached corals thrive within days when touching healthy neighbour (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "ANET",
+      "price": 176.98,
+      "change": -9.44,
+      "category": "stock",
+      "text": "ANET -9.4% drop @ $176.98"
+    },
+    {
+      "type": "sell",
       "asset": "PLTR",
       "price": 186.03,
       "change": -7.43,
@@ -41,14 +49,6 @@
       "change": -7.37,
       "category": "stock",
       "text": "AMD -7.4% drop @ $528.75"
-    },
-    {
-      "type": "watch",
-      "asset": "MSTR",
-      "price": 136.83,
-      "change": -4.48,
-      "category": "stock",
-      "text": "MSTR -4.5% @ $136.83"
     },
     {
       "type": "watch",
@@ -101,19 +101,19 @@
       "created": ""
     },
     {
-      "title": "Lean now ships with verified kernels",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
-      "created": ""
-    },
-    {
       "title": "Matthew Prince on why Cloudflare offers a free version and always will",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://webmasters.stackexchange.com/questions/88659/how-can-cloudflare-offer-a-free-cdn-with-unlimited-bandwidth/88685#88685",
+      "created": ""
+    },
+    {
+      "title": "Lean now ships with verified kernels",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-18T06:15:59.407993",
+    "timestamp": "2026-10-18T06:22:55.804668",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,14 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T06:15:35.392713",
+    "timestamp": "2026-10-18T06:22:33.119205",
     "trending": [
       {
-        "symbol": "test",
-        "price": 36.16,
-        "change": -0.94,
-        "change_percent": -2.54,
-        "name": "YieldMax TSLA Performance & Dis"
+        "symbol": "ANET",
+        "price": 176.98,
+        "change": -18.44,
+        "change_percent": -9.44,
+        "name": "Arista Networks, Inc."
+      },
+      {
+        "symbol": "^KS11",
+        "price": 5668.05,
+        "change": -340.76,
+        "change_percent": -5.67,
+        "name": "KOSPI Composite Index"
+      },
+      {
+        "symbol": "BA",
+        "price": 190.21,
+        "change": 5.55,
+        "change_percent": 3.01,
+        "name": "Boeing Company (The)"
       },
       {
         "symbol": "MCD",
@@ -477,6 +491,13 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "GLD",
+        "price": 382.01,
+        "change": 6.02,
+        "change_percent": 1.6,
+        "name": "SPDR Gold Shares"
+      },
+      {
         "symbol": ".SPX",
         "price": 7659.44,
         "change": -84.62,
@@ -491,10 +512,17 @@
         "name": "Costco Wholesale Corporation"
       },
       {
+        "symbol": "SI=F",
+        "price": 57.31,
+        "change": 0.31,
+        "change_percent": 0.54,
+        "name": "Silver Dec 26"
+      },
+      {
         "symbol": "ETH-USD",
-        "price": 2409.0,
-        "change": 9.22,
-        "change_percent": 0.38,
+        "price": 2408.05,
+        "change": 8.27,
+        "change_percent": 0.34,
         "name": "Ethereum USD"
       },
       {
@@ -506,17 +534,24 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 81628.51,
-        "change": 245.22,
-        "change_percent": 0.3,
+        "price": 81594.06,
+        "change": 210.77,
+        "change_percent": 0.26,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.29,
         "change": 0.0,
-        "change_percent": 0.11,
+        "change_percent": 0.07,
         "name": "XRP USD"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4181.1,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "Gold Dec 26"
       }
     ],
     "meme_momentum": [
@@ -947,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T06:15:55.653953",
+    "timestamp": "2026-10-18T06:22:52.132657",
     "items": [
       {
         "symbol": "SPX",
@@ -1041,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 266.66,
-        "change": -3.24,
+        "price": 266.01,
+        "change": -3.44,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81689,
-        "change": 0.23,
+        "price": 81632,
+        "change": 0.13,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2411.25,
-        "change": -0.7,
+        "price": 2408.56,
+        "change": -0.89,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 103.61,
-        "change": -1.16,
+        "price": 103.43,
+        "change": -1.33,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.97,
-        "change": -2.49,
+        "price": 11.96,
+        "change": -2.54,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.74,
-        "change": -2.59,
+        "price": 9.72,
+        "change": -2.65,
         "type": "crypto"
       },
       {
@@ -1082,27 +1117,15 @@
         "type": "mover"
       },
       {
-        "symbol": "AMD",
-        "price": 528.75,
-        "change": -7.37,
+        "symbol": "^KS11",
+        "price": 5668.05,
+        "change": -5.67,
         "type": "mover"
       },
       {
-        "symbol": "TSLA",
-        "price": 354.72,
-        "change": -3.39,
-        "type": "mover"
-      },
-      {
-        "symbol": "NVDA",
-        "price": 214.13,
-        "change": -3.24,
-        "type": "mover"
-      },
-      {
-        "symbol": "test",
-        "price": 36.16,
-        "change": -2.54,
+        "symbol": "BA",
+        "price": 190.21,
+        "change": 3.01,
         "type": "mover"
       },
       {
@@ -1134,14 +1157,26 @@
         "price": 989.11,
         "change": 0.72,
         "type": "mover"
+      },
+      {
+        "symbol": "AMC",
+        "price": 2.91,
+        "change": 0.69,
+        "type": "mover"
+      },
+      {
+        "symbol": "SI=F",
+        "price": 57.31,
+        "change": 0.54,
+        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Tesla Roadster owners to get \"Flying Stunt Mode\" and looping track access",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVG0wbzFtbVBsV3Y3NUdlUzJvcGtDTWk0UUgyNGtfYnJxSTNXVUppLVlkTktBUVZhMzhGMWtXaTdLSHBUWlpDRU1pa1hwTVJLT0Npd0xEbTQ0ODlSdXZ6cS1kUGt1TW0tNXR5ZFlxVG1wM3BhcnRkZk01bkJGMVMxTTRQN25qN2JpYTMtSHpTSmJQR3M?oc=5",
-      "source": "Teslarati",
+      "title": "The Tesla Roadster Is Far From The First Car To Use Fans For Downforce",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUljMUJmd1V6YmM1VFVGV0xJcnhoTXZVd1AwNnFFdjhKdXhHN01JblJrVFc2cmpSZjJNQ1B2djNEd2dKTDh3YXpNTGlqT3JwUjItcWdrSWtwRlhDSm9hQWhWMXB1SUhzOW1vWnV1TnRUcnVKYUtlQWtWNXRqdldFaVcwTGRyYThuaV9PQWJB?oc=5",
+      "source": "Engadget",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1241,9 +1276,9 @@
       "author": ""
     },
     {
-      "title": "Intel SVP Confirms Razor Lake-AX Will Hit 700 TOPS & Launch In 2028, 3.88x The AI Compute Of Panther Lake",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBqZ2IxZkRQeEdWWlNFd1pVV3h4VXJtd2FkNzBSbmJvRlJ0aFBZdFNJbzZOUUVUSlBtbFI0TzMyUVlmYWpqelljMEI4bjlVczlMQjVILU9WS09ncXBhZzg4bGZINnJKMHJ2NUpHY1ctYjU2YVk4RTM4QnBabC1uYVHSAYQBQVVfeXFMTjR0alRUV040cElsRVJqNmkwOWJuWVlITGJGTnlCY1dBdTFma0pVY2I2dENGMUxQVW5JYkNZYzBwZ1o5RTMyUkIya3lpRmZ0SkVLWXQwRGhMcUotWVJjcnlla1puMURMYVVWNzlfcTEwU2RKTDY0VnNXSFdnRXFrTnFLRDlx?oc=5",
-      "source": "Wccftech",
+      "title": "Intel \"Razor Lake-AX\" to Pack 700 TOPS of AI Compute",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZVUxZ042V3JHQkxGQ0dtaTRmek4tYzZGZ1gtbUE2OGRFV0wzZ0VtNzg5RlFTRlFNaHNTcFdxeXNVNVpJRUxIZTM4LW5RaFRIWEw1bldUSWNFLXlxeGs3Qndqd2ZRY3hSdlJjejk0SVZVY1lWQkZGQ1ZoR1E4LW9iRTgyYVBLY1RjNWRrVmtn0gGTAUFVX3lxTE81YUF1YkgzYjQ3Q2Y4ZlJnSXBpM2swQjVGdHBRVE1INk82bjlaVHNWa0VaZW5MSW1ydUdsUXF4VVgwTmVpVnFpa0tmWHVSLUw5b2E5ZE5wOV9wTVY1ZHFXYlV1d2d0VUdUdTFFbjQzV1U5OGg2Z2s4LV8xQ3BibkxPbm9DTk9VMWRVQWQ2Z2pPNGtHSQ?oc=5",
+      "source": "TechPowerUp",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1519,10 +1554,17 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T02:16:11.821790"
+    "timestamp": "2026-10-18T02:23:03.361911"
   },
   "sticky": {
     "cnbc": [
+      {
+        "title": "Why hedge funds could be making a bond market shock more likely",
+        "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
+        "source": "CNBC",
+        "published": "2026-10-18T06:13:05",
+        "description": "The Bank of England's deputy governor has warned that hedge funds' activities could raise the risk of a global bond market shock."
+      },
       {
         "title": "Trump waives broad new Russia sanctions, Zelenskyy condemns it as 'wrong'",
         "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
@@ -1557,13 +1599,6 @@
         "source": "CNBC",
         "published": "2026-10-17T12:46:21",
         "description": "Berkshire Hathaway shares are at their highest level since Warren Buffett told shareholders at the May 2025 annual meeting he planned to step down as CEO at the end of that year."
-      },
-      {
-        "title": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
-        "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
-        "source": "CNBC",
-        "published": "2026-10-16T21:49:13",
-        "description": "Democrats outraise Republicans in key Congress races as Elon Musk funds Ken Paxton in Texas and GOP groups aligned with Trump."
       },
       {
         "title": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",

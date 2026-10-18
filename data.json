@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-18T15:01:18.952217",
-  "summary": "Key topics today:\n- - RepRapMicron (r/HackerNews, 1 pts)\n- - HOA's are making the home crisis worse (r/HackerNews, 1 pts)\n- - Someone behind the software (r/HackerNews, 1 pts)\n- - Java sealed classes and exhaustive pattern matching (r/HackerNews, 1 pts)\n- - The Intel 8087 chip: floating-point addition and subtraction (r/HackerNews, 1 pts)",
+  "timestamp": "2026-10-18T15:06:17.658024",
+  "summary": "Key topics today:\n- - HOA's are making the home crisis worse (r/HackerNews, 1 pts)\n- - RepRapMicron (r/HackerNews, 1 pts)\n- - Someone behind the software (r/HackerNews, 1 pts)\n- - Java sealed classes and exhaustive pattern matching (r/HackerNews, 1 pts)\n- - The Intel 8087 chip: floating-point addition and subtraction (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "sell",
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "IREN",
+      "price": 26.99,
+      "change": -11.68,
+      "category": "stock",
+      "text": "IREN -11.7% drop @ $26.99"
+    },
+    {
+      "type": "sell",
       "asset": "NBIS",
       "price": 165.47,
       "change": -11.04,
@@ -41,31 +49,23 @@
       "change": -8.58,
       "category": "stock",
       "text": "ONTO -8.6% drop @ $220.70"
-    },
-    {
-      "type": "sell",
-      "asset": "PLTR",
-      "price": 186.03,
-      "change": -7.43,
-      "category": "stock",
-      "text": "PLTR -7.4% drop @ $186.03"
     }
   ],
   "reddit": [
-    {
-      "title": "RepRapMicron",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
-      "created": ""
-    },
     {
       "title": "HOA's are making the home crisis worse",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
+      "created": ""
+    },
+    {
+      "title": "RepRapMicron",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
       "created": ""
     },
     {
@@ -109,6 +109,14 @@
       "created": ""
     },
     {
+      "title": "PalmOS Lemmings by Aaron Ardiri",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "created": ""
+    },
+    {
       "title": "DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests",
       "subreddit": "HackerNews",
       "score": 1,
@@ -123,20 +131,12 @@
       "comments": 0,
       "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
       "created": ""
-    },
-    {
-      "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://legendofhyrule.com/",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-18T19:01:06.944550",
+    "timestamp": "2026-10-18T19:05:53.330619",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T19:00:41.348926",
+    "timestamp": "2026-10-18T19:05:29.791323",
     "trending": [
+      {
+        "symbol": "IREN",
+        "price": 26.99,
+        "change": -3.57,
+        "change_percent": -11.68,
+        "name": "IREN LIMITED"
+      },
       {
         "symbol": "NBIS",
         "price": 165.47,
@@ -476,11 +483,11 @@
         "name": "CoreWeave, Inc."
       },
       {
-        "symbol": "^KS11",
-        "price": 5668.05,
-        "change": -340.76,
-        "change_percent": -5.67,
-        "name": "KOSPI Composite Index"
+        "symbol": "META",
+        "price": 709.33,
+        "change": -28.21,
+        "change_percent": -3.82,
+        "name": "Meta Platforms, Inc."
       },
       {
         "symbol": "XLK",
@@ -488,13 +495,6 @@
         "change": -6.96,
         "change_percent": -3.65,
         "name": "State Street Technology Select "
-      },
-      {
-        "symbol": "NVO",
-        "price": 38.83,
-        "change": 0.71,
-        "change_percent": 1.86,
-        "name": "Novo Nordisk A/S"
       },
       {
         "symbol": ".RUT",
@@ -505,9 +505,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2364.89,
-        "change": -34.91,
-        "change_percent": -1.45,
+        "price": 2362.78,
+        "change": -37.02,
+        "change_percent": -1.54,
         "name": "Ethereum USD"
       },
       {
@@ -518,24 +518,17 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "ABBV",
-        "price": 285.42,
-        "change": 1.94,
-        "change_percent": 0.68,
-        "name": "AbbVie Inc."
-      },
-      {
-        "symbol": "ASML",
-        "price": 1641.52,
-        "change": -8.48,
-        "change_percent": -0.51,
-        "name": "ASML Holding N.V. - New York Re"
+        "symbol": "INOD",
+        "price": 52.82,
+        "change": -0.32,
+        "change_percent": -0.6,
+        "name": "Innodata Inc."
       },
       {
         "symbol": "BTC-USD",
-        "price": 81091.09,
-        "change": -291.06,
-        "change_percent": -0.36,
+        "price": 81051.62,
+        "change": -330.53,
+        "change_percent": -0.41,
         "name": "Bitcoin USD"
       },
       {
@@ -544,6 +537,13 @@
         "change": -175.28,
         "change_percent": -0.34,
         "name": "DJIA"
+      },
+      {
+        "symbol": "EURUSD=X",
+        "price": 1.12,
+        "change": 0.0,
+        "change_percent": 0.13,
+        "name": "EUR/USD"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T19:01:00.534232",
+    "timestamp": "2026-10-18T19:05:49.560767",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,39 +1068,45 @@
       },
       {
         "symbol": "TAO",
-        "price": 259.73,
-        "change": -3.81,
+        "price": 259.26,
+        "change": -4.0,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81130,
-        "change": -0.38,
+        "price": 81083,
+        "change": -0.4,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2365.36,
-        "change": -2.01,
+        "price": 2363.58,
+        "change": -2.04,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 102.17,
-        "change": -1.58,
+        "price": 102.09,
+        "change": -1.6,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.77,
-        "change": -2.07,
+        "price": 11.75,
+        "change": -2.25,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.52,
-        "change": -3.15,
+        "price": 9.51,
+        "change": -3.29,
         "type": "crypto"
+      },
+      {
+        "symbol": "IREN",
+        "price": 26.99,
+        "change": -11.68,
+        "type": "mover"
       },
       {
         "symbol": "NBIS",
@@ -1139,12 +1145,6 @@
         "type": "mover"
       },
       {
-        "symbol": "^KS11",
-        "price": 5668.05,
-        "change": -5.67,
-        "type": "mover"
-      },
-      {
         "symbol": "XLK",
         "price": 183.47,
         "change": -3.65,
@@ -1157,9 +1157,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2364.31,
-        "change": -1.48,
+        "symbol": "GME",
+        "price": 26.81,
+        "change": -1.25,
         "type": "mover"
       }
     ]
@@ -1179,16 +1179,6 @@
       "title": "'Just another scare': Wall Street sees the AI trade strong despite tech's latest rout",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONkF2UGc0SmgxTzdidVlLNWRHU3JjZFdrOHpKRGt2ODFqSUJFQWpnYVRXLUJ0aDJ6c3pmNDB3OVB0VGpsNlJJRkkzZjNXODNzaEJnUFdOemZZVTBKc3pWbUJ6MnBaeFdIRjB1VDl0UlVzMnNneDJGN0NJTGNaWmUyVnRqT2QxOERjZ2ZJYVltT0tLZzE0T2pSYjRqZW1tbE00TVJzbzJTQjRTemRILTV5cGFQZU9EeHg0TlVDdE95bE5VVHh0Z0w5eGdGa1FmWGdtVzY4Wg?oc=5",
       "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "America\u2019s $10tn AI infrastructure boom is starting to fray",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQUlwOUY2SXQzRy00SDBweWtyS0hkQ3I1ak5XNlBnNXlPbmktcDJCZ2N4MGdlVGhScmRoWGZRZWl1aGlpVjIxZVVENVB2blExdnpENzNrZkk1Z2xPcXlOakFxYVBXYlE5NkRWamdqZU9nZkg1SF9PNTJkXzFwQUJTdUViT0c?oc=5",
-      "source": "Financial Times",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
       "description": "",
@@ -1236,9 +1226,19 @@
       "author": ""
     },
     {
-      "title": "4 red flags \u2013 and 1 truth \u2013 amid the peptide hype",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWHI2THBQNThoX1VDdFE5azJwYXN0Q1ByQU14TGRhOHZoR2xrenVPOUNHbFJ1MWM2aU8teWdsOXgwV0FtQTlyem1LWUNtWS15RHhlUS1oSDhhWEh5X2lmUFBUTDFEVjV5ZG5tczdvQUt3TFlxbXItdlhuS3JNekZJeFdRcmdZTzA4TE84Q1RMNlNIQnlRYW1QTGRvOG1SaU0ydVFwYTdYdUxhWkNvWEE?oc=5",
-      "source": "USA Today",
+      "title": "How much could a Medicare hike trim retirees\u2019 Social Security raise?",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQVk3N2RtRlZkOUpNZmVoRVM5TmFwbjBxZ3E5V0hCdG4ybV9ub0twSTJCVUZ3RDdJQk91NmhiWjAyQVlhaXI5dXlNaHNnSi1WU3lWZ2tGWmZmMGtQZ3lRTGVvdkR4OEkzMlFTU1IwdEQteEZ3c3ZDbTVhTmVKT0FlSUhfY3FPMGvSAYwBQVVfeXFMTVRsQXB5YllsOXAxTm1EZFBHUklMamdkaE8wbTB3S0paQnVaVTJEd2xuWTJVNHZ3QU5Mb0VoQkh4NFpQelRMSlAzQm5xb3FodW1KUTlqQlBwd2w4emV0YkRkdlhVbHZtZjhNWGd2Ujh3Z2NXSExQVTVlbVV4dVRpTzVpRzhnQ0NmaUo4U0Q?oc=5",
+      "source": "NewsNation",
+      "category": "business",
+      "published": "Fri, 16 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmVDUVQyZjhnbFN2MHQ1MHVPMHVpLVVsUFE1aU44Y2QzMUx2a25MRXR5OWtkTGd5RkViaG9fM3lZcnFHblYyT2xMeGZ3MHI3NkFjQ0FhdWFVRWlmdHlPRDRFRVRsclFpbUExakpiN3Z4aGMtODdDb09Mb0xXbnIxdU04ZmQ3UTEyTkhQd2EyMFhDNzQzYVgzZG9FeDlNYTJTanNOOThVSGRTb2RnRWdCajBVXzFMcDB4MWZpbXR1STMzZ1JaOXRr?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
       "description": "",
@@ -1268,39 +1268,19 @@
       "author": ""
     },
     {
+      "title": "iPad Mini 8: Apple Has Tested Both 60Hz and 120Hz ProMotion Displays",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9NV2pnUnIwSldHX1VNWUxwQUF0eEh5MWgtY19oZm8tZThxNHlJam1La0ZtNVd1SnlhbGRPZDBLT1FySXlMVnEzMlVYaXZ2aXZ0T3F2SnVyWWlFSl9UakxLQU9FdnhSV0tnbU9va1VQOA?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Thu, 15 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Apple Reveals iPhone Duo's Battery Capacity",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OeV9oSTA4cm5GaGVzdjF2RHpkN25Qcld1amV4WmhjaXk5SHR4UFV5ZkFlN0tkdVdPdW9HTUVnN1p6b05mWXg5WWVEYkZaWXpBMHBzSndyZmpDTnNEalQzcnFvSGdwVEhveTdQbk5lZnEyT0E?oc=5",
       "source": "MacRumors",
-      "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Apple's own website now hints at a new iPad mini - GSMArena.com news",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeWhzZmxJSm81OEhYbzg5dXU0WmM1VGp0U0JnajJNQ0EzUU9HczJ3X3c1MWVRendqTDgteHVtNkZVcG9qYThPOG8yMjRRVWtnS1kwUTlOMVJNMUJyU3BZYjh3VlU3UnptM2h5Yy12LTR4VG96Z2VKR3VtcnoxOFdJZ2ZOUlc1ZXhURFJMM0I5SXbSAYwBQVVfeXFMT2tkSFpyY3BNV2hEWUVKRHVnbW51Q1VZaDNVVVBHeXdfRjFSYkFTUWVqblBDck1kWEd6VFB3eWZKZFpTNXE2UW4tZmgwanFfTEt2aVlqR3U5Uy1wVnJnRE9YQlRtTkE4aGpmeEZoZEdyaG12WGJNYTNGeHJCRWRsYUwtb25paGc5WnRlbU0?oc=5",
-      "source": "GSMArena.com",
-      "category": "business",
-      "published": "Fri, 16 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Apple\u2019s HomeView Offers Tantalizing Preview of a Future Robotic Version",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY2VHc2kyZ1BtYm9MS1ZUS3VQNE40cHVWYWVSbmtPUHF4a2ZWQ3BJVEowVFB3SFFiU3FBaUEtQk9YSVotR2dxeUtVZ040WFBiTnM0OWVBVnk1M1lEZnY0STVVcjZTZkVaQUtYN2tkNmtpUjFkTVBUTWVqTVVqYkgzVTQyblE0N3dtZzNsaWp3ckh5UkxETXZnUlR0ZGxKS2xHZVdwSVo3VTNxLWJaTGhGUzRDVFBPaUJWX3ZYdFZCNVNkaW1xY1BR?oc=5",
-      "source": "Bloomberg.com",
-      "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "How overhead projectors took over your classroom",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeXJsTXZIdEFVckJFODQ1eXhKclgtSU5sWXVaWHZ4OTlDOU1qcEdrcFFNU0lpeEl2aEY1N3NnMjA1RndBZU91N2pySVE2WjR4X1NCbTNZNVVrT2s0T1RUQzgwbW51bmF1d1FHWnhCbnBnelBrdTRjM3ZJTXRac0dQeQ?oc=5",
-      "source": "The Verge",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
       "description": "",
@@ -1318,11 +1298,31 @@
       "author": ""
     },
     {
+      "title": "How overhead projectors took over your classroom",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeXJsTXZIdEFVckJFODQ1eXhKclgtSU5sWXVaWHZ4OTlDOU1qcEdrcFFNU0lpeEl2aEY1N3NnMjA1RndBZU91N2pySVE2WjR4X1NCbTNZNVVrT2s0T1RUQzgwbW51bmF1d1FHWnhCbnBnelBrdTRjM3ZJTXRac0dQeQ?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "EE announces iPhone Handoff pricing details for UK customers",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qanZ1eDYwM2hsV2tZajQtRjFjZmVrRzlwZWZhUFh1aW42eHNzYU9aM25yc2NzSmVzYjZ3cWFGZXVYMHN3eWNrLXllSkd3UVR2ZEdrdy0yNUJsMlU2aUdMdU0xVjZKaFRvSXhWLTFmZ3R4WTZkeTR3?oc=5",
       "source": "9to5Mac",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Apple\u2019s HomeView Offers Tantalizing Preview of a Future Robotic Version",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY2VHc2kyZ1BtYm9MS1ZUS3VQNE40cHVWYWVSbmtPUHF4a2ZWQ3BJVEowVFB3SFFiU3FBaUEtQk9YSVotR2dxeUtVZ040WFBiTnM0OWVBVnk1M1lEZnY0STVVcjZTZkVaQUtYN2tkNmtpUjFkTVBUTWVqTVVqYkgzVTQyblE0N3dtZzNsaWp3ckh5UkxETXZnUlR0ZGxKS2xHZVdwSVo3VTNxLWJaTGhGUzRDVFBPaUJWX3ZYdFZCNVNkaW1xY1BR?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Sun, 18 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1452,100 +1452,100 @@
   ],
   "github": [
     {
-      "name": "openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 392361,
-      "language": "TypeScript",
-      "url": "https://github.com/openclaw/openclaw",
-      "updated": "2026-10-18T18:01:11Z"
-    },
-    {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 319316,
+      "stars": 319944,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-18T18:01:05Z"
+      "updated": "2026-10-18T19:05:46Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 283114,
+      "stars": 283143,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-18T18:00:25Z"
+      "updated": "2026-10-18T19:05:44Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 254887,
+      "stars": 254900,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-18T18:00:18Z"
+      "updated": "2026-10-18T18:46:51Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 192707,
+      "stars": 192719,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-18T17:48:46Z"
+      "updated": "2026-10-18T19:04:14Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187639,
+      "stars": 187641,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-18T17:57:52Z"
+      "updated": "2026-10-18T18:36:44Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 167815,
+      "stars": 167816,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-18T17:05:20Z"
+      "updated": "2026-10-18T19:00:49Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 166863,
+      "stars": 166908,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-18T17:58:47Z"
+      "updated": "2026-10-18T19:01:10Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 158792,
+      "stars": 158796,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-18T17:57:12Z"
+      "updated": "2026-10-18T18:56:02Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156069,
+      "stars": 156070,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-18T17:45:22Z"
+      "updated": "2026-10-18T18:15:32Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 98988,
+      "stars": 99001,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-18T17:50:26Z"
+      "updated": "2026-10-18T18:55:38Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 82637,
+      "stars": 82652,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-18T17:47:15Z"
+      "updated": "2026-10-18T19:03:50Z"
+    },
+    {
+      "name": "shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
+      "stars": 78786,
+      "language": "Python",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "updated": "2026-10-18T18:08:56Z"
     }
   ],
   "nasdaq_data": {
@@ -1554,7 +1554,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T15:01:16.923120"
+    "timestamp": "2026-10-18T15:06:15.434834"
   },
   "sticky": {
     "cnbc": [

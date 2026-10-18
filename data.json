@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T11:16:12.479283",
+  "timestamp": "2026-10-18T11:18:29.603095",
   "summary": "Key topics today:\n- - Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages (r/HackerNews, 201 pts)\n- - Websites are closing their doors to AI agents (r/HackerNews, 201 pts)\n- - RepRapMicron (r/HackerNews, 1 pts)\n- - Legal experts warn Meta's new terms still grant broad scraping permissions (r/HackerNews, 1 pts)\n- - DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "ONTO",
+      "price": 220.7,
+      "change": -8.58,
+      "category": "stock",
+      "text": "ONTO -8.6% drop @ $220.70"
+    },
+    {
+      "type": "sell",
       "asset": "PLTR",
       "price": 186.03,
       "change": -7.43,
@@ -41,14 +49,6 @@
       "change": -7.37,
       "category": "stock",
       "text": "AMD -7.4% drop @ $528.75"
-    },
-    {
-      "type": "sell",
-      "asset": "VRT",
-      "price": 206.42,
-      "change": -7.36,
-      "category": "stock",
-      "text": "VRT -7.4% drop @ $206.42"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-18T15:16:02.811737",
+    "timestamp": "2026-10-18T15:18:17.752385",
     "prices": [
       {
         "name": "Bittensor",
@@ -306,7 +306,7 @@
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Sun, 18 Oct 2026 ",
-      "description": "Around 1,800 people were arrested after nationwide protests saw outbreaks of violence and vandalism."
+      "description": "About 1,800 people were arrested after nationwide protests saw outbreaks of violence and vandalism."
     },
     {
       "title": "Polanski says he will not overturn Green Party's 'Zionism is racism' motion",
@@ -446,14 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T15:15:39.056373",
+    "timestamp": "2026-10-18T15:17:55.709198",
     "trending": [
+      {
+        "symbol": "ONTO",
+        "price": 220.7,
+        "change": -20.71,
+        "change_percent": -8.58,
+        "name": "Onto Innovation Inc."
+      },
       {
         "symbol": "VRT",
         "price": 206.42,
         "change": -16.41,
         "change_percent": -7.36,
         "name": "Vertiv Holdings, LLC"
+      },
+      {
+        "symbol": "NVT",
+        "price": 142.03,
+        "change": -10.69,
+        "change_percent": -7.0,
+        "name": "nVent Electric plc"
       },
       {
         "symbol": "META",
@@ -463,13 +477,6 @@
         "name": "Meta Platforms, Inc."
       },
       {
-        "symbol": "MRNA",
-        "price": 218.01,
-        "change": -8.29,
-        "change_percent": -3.66,
-        "name": "Moderna, Inc."
-      },
-      {
         "symbol": "BA",
         "price": 190.21,
         "change": 5.55,
@@ -477,11 +484,11 @@
         "name": "Boeing Company (The)"
       },
       {
-        "symbol": "GE",
-        "price": 313.83,
-        "change": 6.81,
-        "change_percent": 2.22,
-        "name": "GE Aerospace"
+        "symbol": "NVO",
+        "price": 38.83,
+        "change": 0.71,
+        "change_percent": 1.86,
+        "name": "Novo Nordisk A/S"
       },
       {
         "symbol": ".RUT",
@@ -491,24 +498,17 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "UBER",
-        "price": 70.35,
-        "change": 1.06,
-        "change_percent": 1.53,
-        "name": "Uber Technologies, Inc."
-      },
-      {
         "symbol": "XRP-USD",
         "price": 1.27,
         "change": -0.02,
-        "change_percent": -1.38,
+        "change_percent": -1.48,
         "name": "XRP USD"
       },
       {
         "symbol": "SOL-USD",
-        "price": 102.1,
-        "change": -1.21,
-        "change_percent": -1.17,
+        "price": 102.08,
+        "change": -1.23,
+        "change_percent": -1.19,
         "name": "Solana USD"
       },
       {
@@ -520,9 +520,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2375.75,
-        "change": -24.05,
-        "change_percent": -1.0,
+        "price": 2376.45,
+        "change": -23.35,
+        "change_percent": -0.97,
         "name": "Ethereum USD"
       },
       {
@@ -533,17 +533,17 @@
         "name": "Costco Wholesale Corporation"
       },
       {
-        "symbol": "NIO",
-        "price": 3.43,
-        "change": 0.02,
-        "change_percent": 0.59,
-        "name": "NIO Inc."
+        "symbol": "INOD",
+        "price": 52.82,
+        "change": -0.32,
+        "change_percent": -0.6,
+        "name": "Innodata Inc."
       },
       {
         "symbol": "BTC-USD",
-        "price": 81058.09,
-        "change": -324.06,
-        "change_percent": -0.4,
+        "price": 81060.79,
+        "change": -321.36,
+        "change_percent": -0.39,
         "name": "Bitcoin USD"
       },
       {
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T15:15:58.858955",
+    "timestamp": "2026-10-18T15:18:14.466222",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 261.74,
-        "change": -4.03,
+        "price": 261.46,
+        "change": -4.15,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81104,
+        "price": 81106,
         "change": -0.51,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2378.3,
-        "change": -1.85,
+        "price": 2377.85,
+        "change": -1.86,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 102.23,
-        "change": -1.85,
+        "price": 102.18,
+        "change": -1.92,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.78,
-        "change": -2.03,
+        "change": -2.17,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.55,
-        "change": -3.52,
+        "price": 9.54,
+        "change": -3.57,
         "type": "crypto"
       },
       {
@@ -1155,7 +1155,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.27,
-        "change": -1.41,
+        "change": -1.52,
         "type": "mover"
       },
       {
@@ -1166,7 +1166,7 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2375.68,
+        "price": 2375.56,
         "change": -1.01,
         "type": "mover"
       }
@@ -1224,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "Tesla Roadster owners to get \"Flying Stunt Mode\" and looping track access",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVG0wbzFtbVBsV3Y3NUdlUzJvcGtDTWk0UUgyNGtfYnJxSTNXVUppLVlkTktBUVZhMzhGMWtXaTdLSHBUWlpDRU1pa1hwTVJLT0Npd0xEbTQ0ODlSdXZ6cS1kUGt1TW0tNXR5ZFlxVG1wM3BhcnRkZk01bkJGMVMxTTRQN25qN2JpYTMtSHpTSmJQR3M?oc=5",
-      "source": "Teslarati",
+      "title": "Investors Disturbed by Anthropic\u2019s Financial Data",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWE9DQVhGV0dnY3k3S05mWlk2WnRfRGdMYkFlWUhmSWMzRGRDODFDOS1kcnJQQTIxVUM2VEFoTmk1OXpzU1VDekpBUGlGd0EtRERmOERlc3hpRkkyVnFfemV2VVFHVXFHa1ZkMzNabFdsb3h4ZGJuc1dXTEFRajlVRExB?oc=5",
+      "source": "Futurism",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1234,8 +1234,8 @@
       "author": ""
     },
     {
-      "title": "US debt interest costs hit $3 billion a day and jumped 8% in 2026\u2014faster than spending, revenue, GDP",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRlZDMWxYaGRHUU42b0RMSkwwNDd3Z1VFTGVtTmVMOUZCekhhNnFNRXBXUVIwVTRQWWxkbmdzOXFrQXNSTzQ2c0V2UFgxb2wxaDBrVXhlVHc5dHExR0o1MlBIUlJ3VnExc1djbkdUSDFza08xandLN1YtYTNtS2FUdEtqeTd2SjJSOVNRZnJDWFhTVjFiOWFIQ0N0U05vOXlDNVNSNzVhMHRfdzBDdExLVm95V2gwUXpnRnhLTWZXOFExeGthamxxNzhhZVg?oc=5",
+      "title": "The Iran war has cost the average U.S. household the equivalent of almost $2,000, top economist says",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX3FaOUhvc3NETDNHNTJ1TS1STUVOT09LeGFtdFh0eG5IUG05blVqTHJnMjdVTk1tV3puRUYtcTZqLS1GQzBIX3psdnZSOG9aOVIxMGpNdGZsbnRYbVMxdjdEcFhxaWpMM0VweVlUSWJCRGx2TXZhd3JBcGZ0RjZuQ2NLNDhCUGZHWHBRVU9RTFg5Sm01Zzd3TzVxSjJCTTdEcE1xeXBaVUljY2RleHBv?oc=5",
       "source": "Fortune",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
@@ -1244,11 +1244,11 @@
       "author": ""
     },
     {
-      "title": "This Is What America\u2019s Utility Bill Crisis Looks Like",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX3dlUV9tX0lJQUMta2JkV193Yzhnd2VCUjM2UHltU3oyVUt5TG44TFRXT3kyZ2hhWFhmMTdRSWRIZzcxNXo4QVpuNGp2MTUzSjdGV3VTZHJfamNHblVTY0FYVjVPcGg3aERfS2NkTkl1V2kyeVE2VmdwU3pleHBNZkZ2b3ZUSWR4Z0Jr?oc=5",
-      "source": "The New York Times",
+      "title": "The Tesla Roadster Is Far From The First Car To Use Fans For Downforce",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUljMUJmd1V6YmM1VFVGV0xJcnhoTXZVd1AwNnFFdjhKdXhHN01JblJrVFc2cmpSZjJNQ1B2djNEd2dKTDh3YXpNTGlqT3JwUjItcWdrSWtwRlhDSm9hQWhWMXB1SUhzOW1vWnV1TnRUcnVKYUtlQWtWNXRqdldFaVcwTGRyYThuaV9PQWJB?oc=5",
+      "source": "Engadget",
       "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
+      "published": "Sat, 17 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,7 +1554,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T11:16:10.242195"
+    "timestamp": "2026-10-18T11:18:27.530182"
   },
   "sticky": {
     "cnbc": [

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T05:16:06.709169",
+  "timestamp": "2026-10-18T05:21:35.829469",
   "summary": "Key topics today:\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests (r/HackerNews, 1 pts)\n- - Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping (r/HackerNews, 1 pts)\n- - How the Elizabeth Holmes documentary \u201cYou Can See Everything\u201d is deceiving (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -43,12 +43,12 @@
       "text": "AMD -7.4% drop @ $528.75"
     },
     {
-      "type": "watch",
-      "asset": "MSTR",
-      "price": 136.83,
-      "change": -4.48,
+      "type": "sell",
+      "asset": "CRDO",
+      "price": 169.7,
+      "change": -5.31,
       "category": "stock",
-      "text": "MSTR -4.5% @ $136.83"
+      "text": "CRDO -5.3% drop @ $169.70"
     },
     {
       "type": "watch",
@@ -117,6 +117,14 @@
       "created": ""
     },
     {
+      "title": "Teal \u2013 A statically-typed dialect of Lua",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://teal-language.org/",
+      "created": ""
+    },
+    {
       "title": "Dam removals are bringing fish back across the northeastern United States",
       "subreddit": "HackerNews",
       "score": 1,
@@ -131,20 +139,34 @@
       "comments": 0,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "created": ""
-    },
-    {
-      "title": "Pele \u2013 Mermaid diagrams as themeable SVG",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://pele.run/",
-      "created": ""
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Trump suspends new sanctions targeting Russia\u2019s economy a week after making a diesel deal with Putin. https://www.nbcnews.com/politics/trump-administration/trump-suspends-new-russia-sanctions-deal-purchase-diesel-citing-nation-rcna603991?taid=6ad2e37155b4c5000100fd2f&ut",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2111289769531515280#m",
+      "date": "Sat, 17 Oct 2026 02:54:41 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: A teacher tackled and fought the Oregon shooter, who was a former student at the school, after he stormed a special needs class, officials say. https://www.nbcnews.com/news/us-news/live-blog/live-coverage-teen-shooter-kills-3-children-teacher-oregon-elementary-rcna60384",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2111216634115371291#m",
+      "date": "Fri, 16 Oct 2026 22:04:04 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Katie Zacharia is out as White House press secretary after just five days in the job, three sources say. https://www.nbcnews.com/politics/white-house/white-house-press-secretary-katie-zacharia-out-after-5-days-rcna603912?taid=6ad2683906a53f00016df155&utm_campaign=truean",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2111157466327040433#m",
+      "date": "Fri, 16 Oct 2026 18:08:58 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-10-18T09:15:58.264388",
+    "timestamp": "2026-10-18T09:21:02.706065",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +468,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T09:15:35.426319",
+    "timestamp": "2026-10-18T09:20:40.738314",
     "trending": [
+      {
+        "symbol": "CRDO",
+        "price": 169.7,
+        "change": -9.53,
+        "change_percent": -5.31,
+        "name": "Credo Technology Group Holding "
+      },
       {
         "symbol": "SMH",
         "price": 539.79,
@@ -484,11 +513,32 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "ONDS",
+        "price": 6.04,
+        "change": -0.1,
+        "change_percent": -1.63,
+        "name": "Ondas Inc"
+      },
+      {
+        "symbol": "PFE",
+        "price": 29.58,
+        "change": 0.37,
+        "change_percent": 1.27,
+        "name": "Pfizer, Inc."
+      },
+      {
         "symbol": ".SPX",
         "price": 7659.44,
         "change": -84.62,
         "change_percent": -1.09,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "BRK-B",
+        "price": 532.02,
+        "change": 5.67,
+        "change_percent": 1.08,
+        "name": "Berkshire Hathaway Inc. New"
       },
       {
         "symbol": "COST",
@@ -499,16 +549,16 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2416.89,
-        "change": 17.09,
-        "change_percent": 0.71,
+        "price": 2415.23,
+        "change": 15.43,
+        "change_percent": 0.64,
         "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 81863.63,
-        "change": 481.48,
-        "change_percent": 0.59,
+        "price": 81833.81,
+        "change": 451.66,
+        "change_percent": 0.55,
         "name": "Bitcoin USD"
       },
       {
@@ -522,15 +572,8 @@
         "symbol": "XRP-USD",
         "price": 1.3,
         "change": 0.0,
-        "change_percent": 0.3,
+        "change_percent": 0.24,
         "name": "XRP USD"
-      },
-      {
-        "symbol": "GC=F",
-        "price": 4181.1,
-        "change": 0.0,
-        "change_percent": 0.0,
-        "name": "Gold Dec 26"
       }
     ],
     "meme_momentum": [
@@ -961,7 +1004,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T09:15:54.205506",
+    "timestamp": "2026-10-18T09:20:59.159781",
     "items": [
       {
         "symbol": "SPX",
@@ -1055,38 +1098,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 268.73,
-        "change": -2.47,
+        "price": 268.58,
+        "change": -2.29,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81926,
+        "price": 81892,
         "change": 0.33,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2418.9,
-        "change": -0.6,
+        "price": 2417.12,
+        "change": -0.61,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 103.79,
-        "change": -1.15,
+        "price": 103.7,
+        "change": -1.12,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 12.0,
-        "change": -2.09,
+        "change": -2.0,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.84,
-        "change": -2.27,
+        "price": 9.83,
+        "change": -2.17,
         "type": "crypto"
       },
       {
@@ -1096,15 +1139,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SMH",
-        "price": 539.79,
-        "change": -4.42,
+        "symbol": "CRDO",
+        "price": 169.7,
+        "change": -5.31,
         "type": "mover"
       },
       {
-        "symbol": "TSLA",
-        "price": 354.72,
-        "change": -3.39,
+        "symbol": "SMH",
+        "price": 539.79,
+        "change": -4.42,
         "type": "mover"
       },
       {
@@ -1114,21 +1157,21 @@
         "type": "mover"
       },
       {
-        "symbol": "test",
-        "price": 36.16,
-        "change": -2.54,
-        "type": "mover"
-      },
-      {
         "symbol": "BB",
         "price": 8.06,
         "change": -2.07,
         "type": "mover"
       },
       {
-        "symbol": "MCD",
-        "price": 242.97,
-        "change": 1.96,
+        "symbol": "ONDS",
+        "price": 6.04,
+        "change": -1.63,
+        "type": "mover"
+      },
+      {
+        "symbol": "PFE",
+        "price": 29.58,
+        "change": 1.27,
         "type": "mover"
       },
       {
@@ -1138,9 +1181,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2418.92,
-        "change": 0.8,
+        "symbol": "BRK-B",
+        "price": 532.02,
+        "change": 1.08,
         "type": "mover"
       },
       {
@@ -1265,16 +1308,6 @@
       "author": ""
     },
     {
-      "title": "Intel \"Razor Lake-AX\" to Pack 700 TOPS of AI Compute",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZVUxZ042V3JHQkxGQ0dtaTRmek4tYzZGZ1gtbUE2OGRFV0wzZ0VtNzg5RlFTRlFNaHNTcFdxeXNVNVpJRUxIZTM4LW5RaFRIWEw1bldUSWNFLXlxeGs3Qndqd2ZRY3hSdlJjejk0SVZVY1lWQkZGQ1ZoR1E4LW9iRTgyYVBLY1RjNWRrVmtn0gGTAUFVX3lxTE81YUF1YkgzYjQ3Q2Y4ZlJnSXBpM2swQjVGdHBRVE1INk82bjlaVHNWa0VaZW5MSW1ydUdsUXF4VVgwTmVpVnFpa0tmWHVSLUw5b2E5ZE5wOV9wTVY1ZHFXYlV1d2d0VUdUdTFFbjQzV1U5OGg2Z2s4LV8xQ3BibkxPbm9DTk9VMWRVQWQ2Z2pPNGtHSQ?oc=5",
-      "source": "TechPowerUp",
-      "category": "business",
-      "published": "Sat, 17 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Call of Duty: Modern Warfare 4 Gets a Warm Steam Welcome With 90% Positive Reviews",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTC1pYlhkNlkydWZfZU52VmhfSlNCSllrLVFKRURBYjNhYlFJc3A0aWpfV3M2cHNCTnNLbXd6WnFsTWFVLXNjUWVNZmlJWHZEdU1BNlRfZ0hjNkFNV25ZYUV2VUZxUHdGMHpGanJqcFV0eER1Wlh2STlLd0RpeURHNFRRWnNmMnBLcGdiSVNMZ3h6QW5qNE1UYmI0Sl8zOE1MRTdEZzJfYk1LcFlrUGdqdGhnVE5yUdIBuwFBVV95cUxPZ09XMmJmczBhQ0UzWG5TRjBqRlgtc0FKNC1QVXUya0xrbmZnMnMyVjlGM0VwWW50YnV0VktYcmgwZEl3RDJTSnRJWHVvRU5LUmxQc3NHaFJsNFVUck1EeVkyWTloN1NfU2VlbE5nSFBlN0Rwc1NrVnJfcHJNakN4cjgwUkVDZWVyN2Z5eFFmODZuVEFScTgzMEhwZnhKWTlrUk5jZjdoQXNYRW80X0d5Rjd4MzJFbUJsTnBF?oc=5",
       "source": "TechPowerUp",
@@ -1297,7 +1330,7 @@
     {
       "title": "World time to drop the leap second from May 2027",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ3ppTjhOb0FVdjhtLUlpaGFWUzZBang5Ym1TdW14ZjlDcjhudVNRQTc3VHpfdEhNVDZiLUxPSXFRTC1MMGNfbWhBaS1qQmpJMWNTR2xqQkdsUkhvVjQ4VjVkNUYybV9fZG9sczNtT2NPSjc0UjVMYW1vb1pzek1aeE1laDg3SW90RWRHcnplVzVvMUVFbVBHMEc3RjhNTnc?oc=5",
-      "source": "Euronews",
+      "source": "Euronews.com",
       "category": "business",
       "published": "Fri, 16 Oct 2026 ",
       "description": "",
@@ -1310,6 +1343,16 @@
       "source": "SlashGear",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Apple's New Home Collection Gives Investors Another Reason to Remain Bullish",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVAtRVFEUnd4SEdTc3Y3M2ROQm5tTVhZYVlTZkNDdndWR0V5cHpwQ3hiM3ViM004Y3M5SU1RUWFodHM4QjI2a2N6VkRCSFp3NGlGT2g2aFBtcGZ1aEVsd0Ixc1ZwT0Mtem0wdTNKQ1I0b2oyRzFsV182cVVhSUI4VllFTmJXT3U4Y3NfeTB6RkpEbTMxMmhJZVFBVWhKQnFC?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sat, 17 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1433,90 +1476,90 @@
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 312541,
+      "stars": 313325,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-18T08:16:03Z"
+      "updated": "2026-10-18T09:21:11Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 282787,
+      "stars": 282841,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-18T08:13:39Z"
+      "updated": "2026-10-18T09:20:34Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 254773,
+      "stars": 254783,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-18T08:09:06Z"
+      "updated": "2026-10-18T09:19:57Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 192576,
+      "stars": 192581,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-18T08:09:41Z"
+      "updated": "2026-10-18T09:17:21Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187633,
+      "stars": 187634,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-18T08:10:56Z"
+      "updated": "2026-10-18T08:51:30Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 167805,
+      "stars": 167807,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-18T08:03:54Z"
+      "updated": "2026-10-18T08:53:04Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 166463,
+      "stars": 166491,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-18T08:05:39Z"
+      "updated": "2026-10-18T09:18:51Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 158753,
+      "stars": 158756,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-18T08:09:08Z"
+      "updated": "2026-10-18T09:17:50Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156017,
+      "stars": 156024,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-18T07:53:50Z"
+      "updated": "2026-10-18T09:17:05Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 98843,
+      "stars": 98866,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-18T08:13:39Z"
+      "updated": "2026-10-18T09:20:09Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 82469,
+      "stars": 82490,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-18T08:08:58Z"
+      "updated": "2026-10-18T09:20:39Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
@@ -1524,7 +1567,7 @@
       "stars": 78759,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-18T07:38:49Z"
+      "updated": "2026-10-18T09:03:33Z"
     }
   ],
   "nasdaq_data": {
@@ -1533,7 +1576,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T05:16:04.643414"
+    "timestamp": "2026-10-18T05:21:33.749468"
   },
   "sticky": {
     "cnbc": [

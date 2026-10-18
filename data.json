@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-10-18T07:16:03.855962",
-  "summary": "Key topics today:\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests (r/HackerNews, 1 pts)\n- - Parser Combinators (r/HackerNews, 1 pts)\n- - Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping (r/HackerNews, 1 pts)",
+  "timestamp": "2026-10-18T07:31:14.704867",
+  "summary": "Key topics today:\n- - How employment is changing at Anthropic (r/HackerNews, 101 pts)\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - DeepSeek search and fetch \u2013 $0.75 per 1000 successful requests (r/HackerNews, 1 pts)\n- - Parser Combinators (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "ZEC",
-      "price": 1126.68,
-      "change": -4.28,
+      "price": 1128.52,
+      "change": -3.75,
       "category": "crypto",
-      "text": "ZEC -4.3% @ $1,126.68"
+      "text": "ZEC -3.8% @ $1,128.52"
     },
     {
       "type": "watch",
@@ -17,14 +17,6 @@
       "change": 3.2,
       "category": "crypto",
       "text": "FIGR_HELOC +3.2% @ $1.07"
-    },
-    {
-      "type": "watch",
-      "asset": "TAO",
-      "price": 267.94,
-      "change": -2.11,
-      "category": "crypto",
-      "text": "TAO -2.1% @ $267.94"
     },
     {
       "type": "sell",
@@ -52,6 +44,14 @@
     },
     {
       "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
+    },
+    {
+      "type": "watch",
       "asset": "EDGE AI",
       "price": null,
       "change": null,
@@ -60,6 +60,14 @@
     }
   ],
   "reddit": [
+    {
+      "title": "How employment is changing at Anthropic",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "created": ""
+    },
     {
       "title": "You could have invented transformers from memory",
       "subreddit": "HackerNews",
@@ -125,89 +133,81 @@
       "created": ""
     },
     {
-      "title": "Lean now ships with verified kernels",
+      "title": "It's time to talk about TEEs",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
-      "created": ""
-    },
-    {
-      "title": "Regex visualized as 3D marble run",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.regexmarblerun.com/",
+      "url": "https://alinush.github.io//tee",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-18T11:15:56.039334",
+    "timestamp": "2026-10-18T11:30:50.497765",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 267.94,
-        "change_24h": -2.11,
-        "market_cap": 3038784925
+        "price": 268.55,
+        "change_24h": -1.73,
+        "market_cap": 3045337135
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 82036,
-        "change_24h": 0.6,
-        "market_cap": 1648785244382
+        "price": 82024,
+        "change_24h": 0.68,
+        "market_cap": 1648604364650
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2416.47,
-        "change_24h": -0.79,
-        "market_cap": 295165790714
+        "price": 2417.6,
+        "change_24h": -0.62,
+        "market_cap": 295300679688
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999013,
+        "price": 0.998995,
         "change_24h": 0.01,
-        "market_cap": 183479542023
+        "market_cap": 183479911820
       },
       {
         "name": "BNB",
         "symbol": "BNB",
         "price": 723.1,
-        "change_24h": 0.34,
-        "market_cap": 96281482819
+        "change_24h": 0.38,
+        "market_cap": 96285688818
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.3,
-        "change_24h": -0.82,
-        "market_cap": 81795910479
+        "change_24h": -0.53,
+        "market_cap": 82004969071
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999682,
+        "price": 0.999655,
         "change_24h": 0.01,
-        "market_cap": 72335544354
+        "market_cap": 72335440270
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 103.97,
-        "change_24h": -0.69,
-        "market_cap": 61278138515
+        "price": 104.05,
+        "change_24h": -0.48,
+        "market_cap": 61333464914
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.333101,
-        "change_24h": -0.96,
-        "market_cap": 31643612993
+        "price": 0.333039,
+        "change_24h": -1.05,
+        "market_cap": 31645139725
       },
       {
         "name": "Figure Heloc",
@@ -219,9 +219,9 @@
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1126.68,
-        "change_24h": -4.28,
-        "market_cap": 19149163804
+        "price": 1128.52,
+        "change_24h": -3.75,
+        "market_cap": 19168385581
       }
     ],
     "news": [
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T11:15:34.263747",
+    "timestamp": "2026-10-18T11:30:28.532636",
     "trending": [
       {
         "symbol": "BA",
@@ -485,9 +485,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 81990.45,
-        "change": 608.3,
-        "change_percent": 0.75,
+        "price": 81987.73,
+        "change": 605.58,
+        "change_percent": 0.74,
         "name": "Bitcoin USD"
       },
       {
@@ -499,10 +499,17 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2415.78,
-        "change": 15.98,
-        "change_percent": 0.67,
+        "price": 2417.19,
+        "change": 17.39,
+        "change_percent": 0.72,
         "name": "Ethereum USD"
+      },
+      {
+        "symbol": "XRP-USD",
+        "price": 1.3,
+        "change": 0.0,
+        "change_percent": 0.38,
+        "name": "XRP USD"
       },
       {
         "symbol": ".DJI",
@@ -510,13 +517,6 @@
         "change": -175.28,
         "change_percent": -0.34,
         "name": "DJIA"
-      },
-      {
-        "symbol": "XRP-USD",
-        "price": 1.3,
-        "change": 0.0,
-        "change_percent": 0.27,
-        "name": "XRP USD"
       }
     ],
     "meme_momentum": [
@@ -947,7 +947,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T11:15:52.680775",
+    "timestamp": "2026-10-18T11:30:46.578697",
     "items": [
       {
         "symbol": "SPX",
@@ -1023,14 +1023,14 @@
       },
       {
         "symbol": "PL=F",
-        "price": 1633.1,
-        "change": 0.6,
+        "price": 1623.3,
+        "change": 0.0,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1118.6,
-        "change": 0.48,
+        "price": 1113.3,
+        "change": 0.0,
         "type": "future"
       },
       {
@@ -1041,38 +1041,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 267.93,
-        "change": -2.21,
-        "type": "crypto"
-      },
-      {
-        "symbol": "BTC",
-        "price": 82022,
-        "change": 0.57,
-        "type": "crypto"
-      },
-      {
-        "symbol": "ETH",
-        "price": 2416.07,
-        "change": -0.84,
-        "type": "crypto"
-      },
-      {
-        "symbol": "SOL",
-        "price": 103.95,
-        "change": -0.73,
-        "type": "crypto"
-      },
-      {
-        "symbol": "LINK",
-        "price": 12.0,
+        "price": 268.55,
         "change": -1.73,
         "type": "crypto"
       },
       {
+        "symbol": "BTC",
+        "price": 82021,
+        "change": 0.68,
+        "type": "crypto"
+      },
+      {
+        "symbol": "ETH",
+        "price": 2417.53,
+        "change": -0.6,
+        "type": "crypto"
+      },
+      {
+        "symbol": "SOL",
+        "price": 104.05,
+        "change": -0.45,
+        "type": "crypto"
+      },
+      {
+        "symbol": "LINK",
+        "price": 12.02,
+        "change": -1.37,
+        "type": "crypto"
+      },
+      {
         "symbol": "AVAX",
-        "price": 9.78,
-        "change": -2.05,
+        "price": 9.79,
+        "change": -1.68,
         "type": "crypto"
       },
       {
@@ -1131,23 +1131,13 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 81980.96,
+        "price": 81987.72,
         "change": 0.74,
         "type": "mover"
       }
     ]
   },
   "business": [
-    {
-      "title": "The Tesla Roadster Is Far From The First Car To Use Fans For Downforce",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUljMUJmd1V6YmM1VFVGV0xJcnhoTXZVd1AwNnFFdjhKdXhHN01JblJrVFc2cmpSZjJNQ1B2djNEd2dKTDh3YXpNTGlqT3JwUjItcWdrSWtwRlhDSm9hQWhWMXB1SUhzOW1vWnV1TnRUcnVKYUtlQWtWNXRqdldFaVcwTGRyYThuaV9PQWJB?oc=5",
-      "source": "Engadget",
-      "category": "business",
-      "published": "Sat, 17 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
     {
       "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMUsyWkZsV3NKY3ZWODVla3BLWXFrRVA1aUdqd3BYOTlQTnAyT1hwcy1TamhzSndQYjc3UVZmNWFwQ0ZhU2JSTHp2OUhUVFQxYVU1VEVaWVM4VXVsZ3JPVjZfM3Nuc3M4X0RWR1o2aG91NEtfWnZFdTFRS0RxMmYwUEd1b3lUc2RMbF9vUUpYWTlHaVRRSTRUdkgxeFNyYVk?oc=5",
@@ -1169,16 +1159,6 @@
       "author": ""
     },
     {
-      "title": "Micron: Why You Should Buy Before Dec'26 (NASDAQ:MU)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONEVudVk1eU9qN3lMTXd3Nms3NDVfMzNRbS1Ldjcwd0ZPdExXLTNaMXY1alM3bWxmWmZGYTU2WWJnc0NsbkJCVkZ1Ym5Wc0preEJnTWRabmhBUmluWU1yZ09mZlkzcFh6ajJiM1lmVXJjQU1BS1lyZnZoQVl0Q1BLQ2trN3Rmdw?oc=5",
-      "source": "Seeking Alpha",
-      "category": "business",
-      "published": "Fri, 16 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "The Iran war has cost the average U.S. household the equivalent of almost $2,000, top economist says",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX3FaOUhvc3NETDNHNTJ1TS1STUVOT09LeGFtdFh0eG5IUG05blVqTHJnMjdVTk1tV3puRUYtcTZqLS1GQzBIX3psdnZSOG9aOVIxMGpNdGZsbnRYbVMxdjdEcFhxaWpMM0VweVlUSWJCRGx2TXZhd3JBcGZ0RjZuQ2NLNDhCUGZHWHBRVU9RTFg5Sm01Zzd3TzVxSjJCTTdEcE1xeXBaVUljY2RleHBv?oc=5",
       "source": "Fortune",
@@ -1189,9 +1169,19 @@
       "author": ""
     },
     {
-      "title": "China AI supply-chain IPOs hold firm despite valuation pullback, Citi says",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcnFDdU1MSGd4Ylh4aktUWnlOM2V2RklNLXAxVm5QNThadUkzS2k1cWhoNnJpQkF3Nzk2U1c5ZlJlbUhGVFVpZTIxZEJYak8yVmtjVVhBdGs5NnVjVlowQnhRaWw1enZTVjBIVS1Wd2wwMkQtV2lYelR3MTFfVVlRRTBfMlBOUTlDYlI4UXdBZEFfcUFQcVNNNHVzOTR4bnUyanUtRE9nVkdnbTk4VHJvRWVxM2xjcXhjVUI4WVh2Y3Q2Q0Fw?oc=5",
-      "source": "Reuters",
+      "title": "Tesla \u2018Cannot Guarantee\u2019 Roadster Reservation Holders Will Ever Get a Car",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX2NDTGtQX3JCVmpQT1lRMEdSdmRXLVpWTmdJb1RaYnU4eWZlQ3hpTnIwa2JqWHdnMjRIVURibE5Sal9MbUdWZFF1QUFaeEJOUW5PeWd5cm53RExEYk1pMHhXWTNSMU9xUGFTUkFxMWVoNnl1bzItN0tEcFJXWXQ0RjVkd0pTeDBwNmgzY2I4dklXakswZ1c1eTlrSWJVeVBWazFZ?oc=5",
+      "source": "The Drive",
+      "category": "business",
+      "published": "Sat, 17 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "US Interest Costs Hit Record $1 Trillion, Risking Debt Snowball",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcWlGeXhGVXJxNnQ3LXhqM0h3UkZxeHUtNGxMRFU2dXh3b0ZOTTFZQ2lfMWJMX3ZlUVZRaTRpRTkyUFVqMGZRaW5JYUNpNEF0YWlta1YtMkp0OE9mSFNCRHJWckdHZzktZHRQY3p2dFRjUV96M1BYOEhCT05OWms5YlFPNGxNOFpqXzZRZXhZd1NBdDdCVmZYUXl1VVFSVEZFUldIcC1lRTBwSkx0NklQRTVR?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1209,9 +1199,19 @@
       "author": ""
     },
     {
-      "title": "US Interest Costs Hit Record $1 Trillion, Risking Debt Snowball",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcWlGeXhGVXJxNnQ3LXhqM0h3UkZxeHUtNGxMRFU2dXh3b0ZOTTFZQ2lfMWJMX3ZlUVZRaTRpRTkyUFVqMGZRaW5JYUNpNEF0YWlta1YtMkp0OE9mSFNCRHJWckdHZzktZHRQY3p2dFRjUV96M1BYOEhCT05OWms5YlFPNGxNOFpqXzZRZXhZd1NBdDdCVmZYUXl1VVFSVEZFUldIcC1lRTBwSkx0NklQRTVR?oc=5",
-      "source": "Bloomberg.com",
+      "title": "China AI supply-chain IPOs hold firm despite valuation pullback, Citi says",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcnFDdU1MSGd4Ylh4aktUWnlOM2V2RklNLXAxVm5QNThadUkzS2k1cWhoNnJpQkF3Nzk2U1c5ZlJlbUhGVFVpZTIxZEJYak8yVmtjVVhBdGs5NnVjVlowQnhRaWw1enZTVjBIVS1Wd2wwMkQtV2lYelR3MTFfVVlRRTBfMlBOUTlDYlI4UXdBZEFfcUFQcVNNNHVzOTR4bnUyanUtRE9nVkdnbTk4VHJvRWVxM2xjcXhjVUI4WVh2Y3Q2Q0Fw?oc=5",
+      "source": "Reuters",
+      "category": "business",
+      "published": "Sat, 17 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "SoftBank in Early Talks to Buy Allied Universal",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2JpejBhSm55eU5zM18zZldFMFd1b1hUYWNUQUt2NVY3SEdpZUE0eDZLVjIydHVaVVZ2d2NUSElQeGFPbDFSWGJFRUl6dlpfbk03cVFtTnVmdnJfSWJ0ZFByUkFLRTg2NUprZUZ3OWZzQTl6LS1sSTdTSld1NXBCZm1xem9EYTJ5UzdITE05SllwaktXcGc?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1261,6 +1261,16 @@
       "author": ""
     },
     {
+      "title": "Ina Garten Shares Her Secret to Perfect Scrambled Eggs",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSXJMSDZFY01CdXZQQXdrNkZIclNkalJ1Nk9FLXlqVmN6R0VibHZEV1VxUmRFNmtiby00T2hIV2hLeEFXSlo0RnFzOXVta2RwRGk4Qnl1aklrUHJoSFR1NWxEdTMzRHVOZkRrdFhvZWZoTjZnRVpZOTNJdEw5RjFRenlVVE03UjhmN1NCeEduS050VjBJV21JUG9tMjV3MDFXcWxINg?oc=5",
+      "source": "WSJ",
+      "category": "business",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "World time to drop the leap second from May 2027",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ3ppTjhOb0FVdjhtLUlpaGFWUzZBang5Ym1TdW14ZjlDcjhudVNRQTc3VHpfdEhNVDZiLUxPSXFRTC1MMGNfbWhBaS1qQmpJMWNTR2xqQkdsUkhvVjQ4VjVkNUYybV9fZG9sczNtT2NPSjc0UjVMYW1vb1pzek1aeE1laDg3SW90RWRHcnplVzVvMUVFbVBHMEc3RjhNTnc?oc=5",
       "source": "Euronews.com",
@@ -1284,16 +1294,6 @@
       "title": "Apple's New Home Collection Gives Investors Another Reason to Remain Bullish",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVAtRVFEUnd4SEdTc3Y3M2ROQm5tTVhZYVlTZkNDdndWR0V5cHpwQ3hiM3ViM004Y3M5SU1RUWFodHM4QjI2a2N6VkRCSFp3NGlGT2g2aFBtcGZ1aEVsd0Ixc1ZwT0Mtem0wdTNKQ1I0b2oyRzFsV182cVVhSUI4VllFTmJXT3U4Y3NfeTB6RkpEbTMxMmhJZVFBVWhKQnFC?oc=5",
       "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Sat, 17 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Zelda: Ocarina of Time remake reveals new display modes, other settings, controls",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeG14TkxqaktoQmhsMXFMdV9ra3JDTWhqVVBDMEU0TV93WG5ZU3A1djU4bWlvSThhelI1SU5tWDBLemZ5SUdPbDVOenVfVGk1QXJCNGE0QS0tZzdRaWR6c1hodjlReFkyR24wVjlxaklIc3hyN2RmTFRGSFl1Y0xxblpvNFowQ1RNbjJGOW8tSVIyYjZTTXoteExZU0pRdTVQT080?oc=5",
-      "source": "Nintendo Everything",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1340,6 +1340,14 @@
       "source": "Defense News",
       "published": "Fri, 16 Oct 2026 ",
       "description": "Ukraine said on Wednesday that SpaceX had restricted \u201cmilitary-grade\u201d Starlink services, hampering Ukrainian drone strike missions and air defenses.",
+      "relevance_score": 7
+    },
+    {
+      "title": "Funeral held for 75 Palestinians after remains recovered from Gaza ruins",
+      "url": "https://www.aljazeera.com/news/2026/10/18/funeral-held-for-75-palestinians-after-remains-recovered-from-gaza-ruins?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "Most of the victims were from the Daraj neighbourhood in Gaza City, the Health Ministry says.",
       "relevance_score": 7
     },
     {
@@ -1391,6 +1399,14 @@
       "relevance_score": 4
     },
     {
+      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis?",
+      "url": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "Analysts say that any move from Egypt will remain &#039;strictly defensive&#039;, as the conflict in Yemen intensifies.",
+      "relevance_score": 4
+    },
+    {
       "title": "Palestinian karate champion Maryam Bsharat wins second world title",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/palestinian-karate-champion-maryam-bsharat-wins-second-world-title?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1405,56 +1421,40 @@
       "published": "Fri, 16 Oct 2026 ",
       "description": "The state will receive 12 of the unmanned aircraft systems by the end of 2029.",
       "relevance_score": 3
-    },
-    {
-      "title": "Egypt to provide \u2018necessary\u2019 support to Saudi Arabia amid Houthi attacks",
-      "url": "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "Presidency says Egypt will provide Saudi Arabia with support to defend its security and protect its resources.",
-      "relevance_score": 3
-    },
-    {
-      "title": "Several dead or injured in major fire at Canada military base",
-      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "Officials have not given a cause or death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright.",
-      "relevance_score": 3
     }
   ],
   "github": [
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 314037,
+      "stars": 314734,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-18T10:25:52Z"
+      "updated": "2026-10-18T11:30:52Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 282895,
+      "stars": 282938,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-18T10:25:14Z"
+      "updated": "2026-10-18T11:30:42Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 254800,
+      "stars": 254813,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-18T10:24:49Z"
+      "updated": "2026-10-18T11:28:19Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 192605,
+      "stars": 192620,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-18T10:26:06Z"
+      "updated": "2026-10-18T11:25:49Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1475,10 +1475,10 @@
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 166538,
+      "stars": 166580,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-18T10:26:00Z"
+      "updated": "2026-10-18T11:28:45Z"
     },
     {
       "name": "langgenius/dify",
@@ -1486,39 +1486,39 @@
       "stars": 158764,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-18T10:24:59Z"
+      "updated": "2026-10-18T11:26:22Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156024,
+      "stars": 156032,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-18T10:00:17Z"
+      "updated": "2026-10-18T11:30:34Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 98881,
+      "stars": 98899,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-18T10:25:46Z"
+      "updated": "2026-10-18T11:25:53Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 82508,
+      "stars": 82528,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-18T10:21:17Z"
+      "updated": "2026-10-18T11:29:23Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 78764,
+      "stars": 78769,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-18T10:20:42Z"
+      "updated": "2026-10-18T11:16:07Z"
     }
   ],
   "nasdaq_data": {
@@ -1527,7 +1527,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T07:16:02.377190"
+    "timestamp": "2026-10-18T07:31:12.399478"
   },
   "sticky": {
     "cnbc": [
@@ -1715,16 +1715,16 @@
     },
     {
       "symbol": "PL=F",
-      "price": 1633.1,
-      "change": 9.8,
-      "change_percent": 0.6,
+      "price": 1623.3,
+      "change": 0.0,
+      "change_percent": 0.0,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1118.6,
-      "change": 5.3,
-      "change_percent": 0.48,
+      "price": 1113.3,
+      "change": 0.0,
+      "change_percent": 0.0,
       "name": "Palladium Dec 26"
     },
     {

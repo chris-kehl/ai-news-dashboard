@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T20:16:12.799648",
+  "timestamp": "2026-10-17T20:25:28.783494",
   "summary": "Key topics today:\n- - You could have invented transformers from memory (r/HackerNews, 101 pts)\n- - Show HN: Llmspeed \u2013 feel how fast a local LLM runs before you buy the hardware (r/HackerNews, 101 pts)\n- - Bleached corals thrive within days when touching healthy neighbour (r/HackerNews, 1 pts)\n- - Dam removals are bringing fish back across the northeastern United States (r/HackerNews, 1 pts)\n- - Furifont, a Japanese font that shows furigana (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -20,14 +20,6 @@
     },
     {
       "type": "sell",
-      "asset": "BSP",
-      "price": 47.07,
-      "change": -11.95,
-      "category": "stock",
-      "text": "BSP -11.9% drop @ $47.07"
-    },
-    {
-      "type": "sell",
       "asset": "PLTR",
       "price": 186.03,
       "change": -7.43,
@@ -41,6 +33,14 @@
       "change": -7.37,
       "category": "stock",
       "text": "AMD -7.4% drop @ $528.75"
+    },
+    {
+      "type": "watch",
+      "asset": "MSTR",
+      "price": 136.83,
+      "change": -4.48,
+      "category": "stock",
+      "text": "MSTR -4.5% @ $136.83"
     },
     {
       "type": "watch",
@@ -101,19 +101,19 @@
       "created": ""
     },
     {
-      "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/antirez/c64-hw-simulator",
-      "created": ""
-    },
-    {
       "title": "Pele \u2013 Mermaid diagrams as themeable SVG",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://pele.run/",
+      "created": ""
+    },
+    {
+      "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/antirez/c64-hw-simulator",
       "created": ""
     },
     {
@@ -134,9 +134,45 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BBCWorld",
+      "text": "At least 17 dead in stampede at Hindu festival event in India https://bbc.in/4hTGymL",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2111538332631019870#m",
+      "date": "Sat, 17 Oct 2026 19:22:23 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "Hundreds arrested in France as police clash with protesters https://bbc.in/4yCy3BS",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2111528718833274903#m",
+      "date": "Sat, 17 Oct 2026 18:44:11 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "European diplomats attacked by Israeli settlers in West Bank https://bbc.in/4dIcFmZ",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2111528136441471250#m",
+      "date": "Sat, 17 Oct 2026 18:41:52 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Ukrainian foreign minister says Russian-held town is a 'death trap' with starving residents https://reut.rs/4yWpDpS https://reut.rs/4yWpDpS",
+      "url": "http://nitter.meowing.monster/Reuters/status/2111604446345953284#m",
+      "date": "Sat, 17 Oct 2026 23:45:06 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Bayern crush Leipzig 6-1 to live up to coach Kompany's prediction https://reut.rs/4yQOJX3 https://reut.rs/4yQOJX3",
+      "url": "http://nitter.meowing.monster/Reuters/status/2111601926345212189#m",
+      "date": "Sat, 17 Oct 2026 23:35:05 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-10-18T00:16:02.937822",
+    "timestamp": "2026-10-18T00:25:16.314644",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,14 +474,14 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T00:15:38.029076",
+    "timestamp": "2026-10-18T00:24:52.927395",
     "trending": [
       {
-        "symbol": "BSP",
-        "price": 47.07,
-        "change": -6.39,
-        "change_percent": -11.95,
-        "name": "Bending Spoons S.p.A."
+        "symbol": "LLY",
+        "price": 1257.03,
+        "change": 48.29,
+        "change_percent": 4.0,
+        "name": "Eli Lilly and Company"
       },
       {
         "symbol": "FPS",
@@ -455,18 +491,11 @@
         "name": "Forgent Power Solutions, Inc."
       },
       {
-        "symbol": "ADBE",
-        "price": 245.2,
-        "change": 4.52,
-        "change_percent": 1.88,
-        "name": "Adobe Inc."
-      },
-      {
-        "symbol": "BABA",
-        "price": 109.11,
-        "change": -2.06,
-        "change_percent": -1.85,
-        "name": "Alibaba Group Holding Limited"
+        "symbol": "SCHD",
+        "price": 34.35,
+        "change": 0.64,
+        "change_percent": 1.9,
+        "name": "Schwab US Dividend Equity ETF"
       },
       {
         "symbol": ".RUT",
@@ -474,13 +503,6 @@
         "change": -45.9,
         "change_percent": -1.66,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "DIS",
-        "price": 110.59,
-        "change": 1.6,
-        "change_percent": 1.47,
-        "name": "Walt Disney Company (The)"
       },
       {
         "symbol": ".SPX",
@@ -497,11 +519,11 @@
         "name": "Berkshire Hathaway Inc. New"
       },
       {
-        "symbol": "MP",
-        "price": 40.17,
-        "change": 0.22,
-        "change_percent": 0.55,
-        "name": "MP Materials Corp."
+        "symbol": "JNJ",
+        "price": 255.56,
+        "change": 1.65,
+        "change_percent": 0.65,
+        "name": "Johnson & Johnson"
       },
       {
         "symbol": ".DJI",
@@ -511,39 +533,53 @@
         "name": "DJIA"
       },
       {
-        "symbol": "BTC-CAD",
-        "price": 115105.56,
-        "change": -112.83,
-        "change_percent": -0.1,
-        "name": "Bitcoin CAD"
+        "symbol": "SI=F",
+        "price": 56.99,
+        "change": 0.16,
+        "change_percent": 0.28,
+        "name": "Silver Dec 26"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4181.1,
+        "change": 11.0,
+        "change_percent": 0.26,
+        "name": "Gold Dec 26"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.29,
         "change": 0.0,
-        "change_percent": 0.08,
+        "change_percent": 0.09,
         "name": "XRP USD"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 81357.99,
-        "change": -25.3,
+        "symbol": "SOL-USD",
+        "price": 103.28,
+        "change": -0.03,
         "change_percent": -0.03,
-        "name": "Bitcoin USD"
+        "name": "Solana USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 2399.27,
-        "change": -0.51,
-        "change_percent": -0.02,
+        "price": 2400.08,
+        "change": 0.3,
+        "change_percent": 0.01,
         "name": "Ethereum USD"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 103.3,
-        "change": -0.01,
-        "change_percent": -0.01,
-        "name": "Solana USD"
+        "symbol": "BTC-USD",
+        "price": 81385.96,
+        "change": 2.67,
+        "change_percent": 0.0,
+        "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "SMR",
+        "price": 5.83,
+        "change": -0.0,
+        "change_percent": -0.0,
+        "name": "NuScale Power Corporation"
       }
     ],
     "meme_momentum": [
@@ -974,7 +1010,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T00:15:58.301356",
+    "timestamp": "2026-10-18T00:25:12.431626",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1104,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 268.85,
-        "change": -2.45,
+        "price": 269.85,
+        "change": -1.95,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81372,
-        "change": -0.21,
+        "price": 81430,
+        "change": -0.1,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2398.32,
-        "change": -0.88,
+        "price": 2400.72,
+        "change": -0.74,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 103.28,
-        "change": -1.02,
+        "price": 103.27,
+        "change": -0.95,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.97,
-        "change": -2.78,
+        "change": -2.66,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.76,
-        "change": -1.67,
+        "price": 9.77,
+        "change": -1.49,
         "type": "crypto"
       },
       {
@@ -1121,21 +1157,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ADBE",
-        "price": 245.2,
-        "change": 1.88,
-        "type": "mover"
-      },
-      {
-        "symbol": "BABA",
-        "price": 109.11,
-        "change": -1.85,
-        "type": "mover"
-      },
-      {
-        "symbol": "DIS",
-        "price": 110.59,
-        "change": 1.47,
+        "symbol": "SCHD",
+        "price": 34.35,
+        "change": 1.9,
         "type": "mover"
       },
       {
@@ -1157,9 +1181,21 @@
         "type": "mover"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 103.25,
-        "change": -0.06,
+        "symbol": "JNJ",
+        "price": 255.56,
+        "change": 0.65,
+        "type": "mover"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4181.1,
+        "change": 0.26,
+        "type": "mover"
+      },
+      {
+        "symbol": "XRP-USD",
+        "price": 1.29,
+        "change": 0.07,
         "type": "mover"
       }
     ]
@@ -1196,9 +1232,9 @@
       "author": ""
     },
     {
-      "title": "SoftBank in Early Talks to Buy Allied Universal",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2JpejBhSm55eU5zM18zZldFMFd1b1hUYWNUQUt2NVY3SEdpZUE0eDZLVjIydHVaVVZ2d2NUSElQeGFPbDFSWGJFRUl6dlpfbk03cVFtTnVmdnJfSWJ0ZFByUkFLRTg2NUprZUZ3OWZzQTl6LS1sSTdTSld1NXBCZm1xem9EYTJ5UzdITE05SllwaktXcGc?oc=5",
-      "source": "WSJ",
+      "title": "Weak Links Start to Show in A.I. Borrowing",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaG5jQ0JtclR4S2w1dzdJeFNQWmdXLTlwaDJ0SWhseFFKTHdUb2tHaHIzd0R4cEhobmFjV21TRXVDdS1HeUVGZm5RbDRCcGRMYlhCMnB0QkYzV3FrX2hhLXB2X0lnSUI3c2QzQWpTREdxLVRaUjVfOEtHQ2VrMlZrV0c5VHNTNjV0OVE?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1206,9 +1242,9 @@
       "author": ""
     },
     {
-      "title": "Weak Links Start to Show in A.I. Borrowing",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaG5jQ0JtclR4S2w1dzdJeFNQWmdXLTlwaDJ0SWhseFFKTHdUb2tHaHIzd0R4cEhobmFjV21TRXVDdS1HeUVGZm5RbDRCcGRMYlhCMnB0QkYzV3FrX2hhLXB2X0lnSUI3c2QzQWpTREdxLVRaUjVfOEtHQ2VrMlZrV0c5VHNTNjV0OVE?oc=5",
-      "source": "The New York Times",
+      "title": "SoftBank in Early Talks to Buy Allied Universal",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2JpejBhSm55eU5zM18zZldFMFd1b1hUYWNUQUt2NVY3SEdpZUE0eDZLVjIydHVaVVZ2d2NUSElQeGFPbDFSWGJFRUl6dlpfbk03cVFtTnVmdnJfSWJ0ZFByUkFLRTg2NUprZUZ3OWZzQTl6LS1sSTdTSld1NXBCZm1xem9EYTJ5UzdITE05SllwaktXcGc?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1236,9 +1272,9 @@
       "author": ""
     },
     {
-      "title": "Mercedes-AMG\u2019s first ground-up SUV is a 1,150hp electric beast",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMi1UVi1LeHo0bko4WG1zU3Rtc0VEZWZJbElzVGpBdWk5eDNoeV9ZZ0FmZV9ITW9ua0tIeDI4ZkUxeE1QRk1BdEc3ME0wR1NWeDlERjBxRWlSQVRpS3JsYmhhVXQtYjZoMjRhbkpvdkNMajI1S0k4cFNqX1JZbjFkYzlIOHRIUnNvRTluZjd1RndGdTdyakE?oc=5",
-      "source": "The Verge",
+      "title": "Mercedes-AMG GT SUV Revealed: Up To 1,153 HP And Three Electric Motors",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVFFYMFJaUC01WmxSUENSby0yRW85aTg5ZGd0a0xDVFFndDFfS3BRTi02Y2xkVkk4c0xtYXp4RXJJbzR2ekwwRldPM0lnWHNTQmFXcTdRc0dDYXg0QlQ2c2lzdmFpcEZCRUdIVWdDaldBTjlIckdMUW5leVJ2Q1NMNnM3czk2TzdiYmZXNXpVQzA5UElQTEhJ?oc=5",
+      "source": "Motor1.com",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1268,9 +1304,9 @@
       "author": ""
     },
     {
-      "title": "Apple's New Home Collection Gives Investors Another Reason to Remain Bullish",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVAtRVFEUnd4SEdTc3Y3M2ROQm5tTVhZYVlTZkNDdndWR0V5cHpwQ3hiM3ViM004Y3M5SU1RUWFodHM4QjI2a2N6VkRCSFp3NGlGT2g2aFBtcGZ1aEVsd0Ixc1ZwT0Mtem0wdTNKQ1I0b2oyRzFsV182cVVhSUI4VllFTmJXT3U4Y3NfeTB6RkpEbTMxMmhJZVFBVWhKQnFC?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Intel \"Razor Lake-AX\" to Pack 700 TOPS of AI Compute",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZVUxZ042V3JHQkxGQ0dtaTRmek4tYzZGZ1gtbUE2OGRFV0wzZ0VtNzg5RlFTRlFNaHNTcFdxeXNVNVpJRUxIZTM4LW5RaFRIWEw1bldUSWNFLXlxeGs3Qndqd2ZRY3hSdlJjejk0SVZVY1lWQkZGQ1ZoR1E4LW9iRTgyYVBLY1RjNWRrVmtn0gGTAUFVX3lxTE81YUF1YkgzYjQ3Q2Y4ZlJnSXBpM2swQjVGdHBRVE1INk82bjlaVHNWa0VaZW5MSW1ydUdsUXF4VVgwTmVpVnFpa0tmWHVSLUw5b2E5ZE5wOV9wTVY1ZHFXYlV1d2d0VUdUdTFFbjQzV1U5OGg2Z2s4LV8xQ3BibkxPbm9DTk9VMWRVQWQ2Z2pPNGtHSQ?oc=5",
+      "source": "TechPowerUp",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1278,9 +1314,9 @@
       "author": ""
     },
     {
-      "title": "Intel SVP Confirms Razor Lake-AX Will Hit 700 TOPS & Launch In 2028, 3.88x The AI Compute Of Panther Lake",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBqZ2IxZkRQeEdWWlNFd1pVV3h4VXJtd2FkNzBSbmJvRlJ0aFBZdFNJbzZOUUVUSlBtbFI0TzMyUVlmYWpqelljMEI4bjlVczlMQjVILU9WS09ncXBhZzg4bGZINnJKMHJ2NUpHY1ctYjU2YVk4RTM4QnBabC1uYVHSAYQBQVVfeXFMTjR0alRUV040cElsRVJqNmkwOWJuWVlITGJGTnlCY1dBdTFma0pVY2I2dENGMUxQVW5JYkNZYzBwZ1o5RTMyUkIya3lpRmZ0SkVLWXQwRGhMcUotWVJjcnlla1puMURMYVVWNzlfcTEwU2RKTDY0VnNXSFdnRXFrTnFLRDlx?oc=5",
-      "source": "Wccftech",
+      "title": "Apple's New Home Collection Gives Investors Another Reason to Remain Bullish",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVAtRVFEUnd4SEdTc3Y3M2ROQm5tTVhZYVlTZkNDdndWR0V5cHpwQ3hiM3ViM004Y3M5SU1RUWFodHM4QjI2a2N6VkRCSFp3NGlGT2g2aFBtcGZ1aEVsd0Ixc1ZwT0Mtem0wdTNKQ1I0b2oyRzFsV182cVVhSUI4VllFTmJXT3U4Y3NfeTB6RkpEbTMxMmhJZVFBVWhKQnFC?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sat, 17 Oct 2026 ",
       "description": "",
@@ -1330,20 +1366,20 @@
   ],
   "defense": [
     {
+      "title": "Iran war live: Tankers hit in Hormuz; Israeli settlers attack EU diplomats",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "Fires reported on three tankers as masked settlers attack European politicians in the occupied West Bank.",
+      "relevance_score": 17
+    },
+    {
       "title": "Bulgaria seeks NATO anti-drone systems, defense minister says",
       "url": "https://www.defensenews.com/global/europe/2026/10/16/bulgaria-seeks-nato-anti-drone-systems-defense-minister-says/",
       "source": "Defense News",
       "published": "Fri, 16 Oct 2026 ",
       "description": "Bulgaria has formally asked NATO to deploy combat aircraft and anti-drone systems to bolster its defenses.",
       "relevance_score": 12
-    },
-    {
-      "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sat, 17 Oct 2026 ",
-      "description": "Iranian state TV aired footage claiming to  show an oil tanker exploding after striking a naval mine in Hormuz",
-      "relevance_score": 8
     },
     {
       "title": "European diplomats attacked by Israeli settlers in West Bank",
@@ -1366,7 +1402,7 @@
       "url": "https://www.aljazeera.com/news/2026/10/17/us-ambassador-calls-on-israel-to-prosecute-settlers-over-journalist-attack?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Sat, 17 Oct 2026 ",
-      "description": "Trump-appointed Ambassador Mike Huckabee calls the attack on Heidi Levine a &#039;despicable act of terror&#039;.",
+      "description": "Trump-appointed Ambassador Mike Huckabee calls attack in occupied West Bank a &#039;despicable act of terror&#039;.",
       "relevance_score": 7
     },
     {
@@ -1546,7 +1582,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 17 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-17T20:16:09.642195"
+    "timestamp": "2026-10-17T20:25:25.940556"
   },
   "sticky": {
     "cnbc": [

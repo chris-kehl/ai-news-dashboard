@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T19:16:10.469592",
+  "timestamp": "2026-10-18T19:26:25.598555",
   "summary": "Key topics today:\n- - Hybrid Reasoning Agents: LLM agents that think in latent space, act through text (r/HackerNews, 201 pts)\n- - Someone behind the software (r/HackerNews, 1 pts)\n- - Free Pascal compiler now supports dynamic packages (r/HackerNews, 1 pts)\n- - There's never been a better time to go into math (by: 3blue1brown) [video] (r/HackerNews, 1 pts)\n- - RepRapMicron (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -9,14 +9,6 @@
       "change": 5.11,
       "category": "crypto",
       "text": "FIGR_HELOC +5.1% breakout @ $1.07"
-    },
-    {
-      "type": "sell",
-      "asset": "ONTO",
-      "price": 220.7,
-      "change": -8.58,
-      "category": "stock",
-      "text": "ONTO -8.6% drop @ $220.70"
     },
     {
       "type": "sell",
@@ -33,6 +25,14 @@
       "change": -7.37,
       "category": "stock",
       "text": "AMD -7.4% drop @ $528.75"
+    },
+    {
+      "type": "sell",
+      "asset": "VRT",
+      "price": 206.42,
+      "change": -7.36,
+      "category": "stock",
+      "text": "VRT -7.4% drop @ $206.42"
     }
   ],
   "reddit": [
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/finereli/whatsapp-mcp",
-      "created": ""
-    },
-    {
       "title": "PalmOS Lemmings",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://github.com/ardiri/palmos-lemmings",
+      "created": ""
+    },
+    {
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/finereli/whatsapp-mcp",
       "created": ""
     },
     {
@@ -120,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-18T23:16:02.333326",
+    "timestamp": "2026-10-18T23:26:01.253451",
     "prices": [
       {
         "name": "Bittensor",
@@ -256,10 +256,10 @@
         "description": "Patrick Witt announced his departure from the White House last week."
       },
       {
-        "title": "Wall Street freaked out Friday. VIX and bitcoin say the fear may fade Monday.",
+        "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
         "url": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
         "published": "Sun, 18 Oct 2026 ",
-        "description": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin suggest the same."
+        "description": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin markets suggest the same."
       },
       {
         "title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
@@ -422,15 +422,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-18T23:15:39.733650",
+    "timestamp": "2026-10-18T23:25:38.040898",
     "trending": [
-      {
-        "symbol": "ONTO",
-        "price": 220.7,
-        "change": -20.71,
-        "change_percent": -8.58,
-        "name": "Onto Innovation Inc."
-      },
       {
         "symbol": "VRT",
         "price": 206.42,
@@ -453,25 +446,11 @@
         "name": "CoreWeave, Inc."
       },
       {
-        "symbol": "^KS11",
-        "price": 5668.05,
-        "change": -340.76,
-        "change_percent": -5.67,
-        "name": "KOSPI Composite Index"
-      },
-      {
         "symbol": "CL=F",
-        "price": 98.19,
-        "change": -3.22,
-        "change_percent": -3.18,
+        "price": 98.13,
+        "change": -3.28,
+        "change_percent": -3.23,
         "name": "Crude Oil Dec 26"
-      },
-      {
-        "symbol": "^IXIC",
-        "price": 26140.03,
-        "change": -552.84,
-        "change_percent": -2.07,
-        "name": "NASDAQ Composite"
       },
       {
         "symbol": ".RUT",
@@ -496,23 +475,37 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 29605.25,
-        "change": 213.75,
-        "change_percent": 0.73,
+        "price": 29596.75,
+        "change": 205.25,
+        "change_percent": 0.7,
         "name": "Nasdaq 100 Dec 26"
       },
       {
+        "symbol": "SI=F",
+        "price": 57.38,
+        "change": 0.39,
+        "change_percent": 0.68,
+        "name": "Silver Dec 26"
+      },
+      {
+        "symbol": "RTY=F",
+        "price": 2750.9,
+        "change": 15.4,
+        "change_percent": 0.56,
+        "name": "E-mini Russell 2000 Index Futur"
+      },
+      {
         "symbol": "GC=F",
-        "price": 4200.8,
-        "change": 19.7,
-        "change_percent": 0.47,
+        "price": 4196.6,
+        "change": 15.5,
+        "change_percent": 0.37,
         "name": "Gold Dec 26"
       },
       {
         "symbol": "ES=F",
-        "price": 7732.5,
-        "change": 28.25,
-        "change_percent": 0.37,
+        "price": 7731.75,
+        "change": 27.5,
+        "change_percent": 0.36,
         "name": "E-Mini S&P 500 Dec 26"
       },
       {
@@ -523,10 +516,17 @@
         "name": "DJIA"
       },
       {
+        "symbol": "YM=F",
+        "price": 52361.0,
+        "change": 147.0,
+        "change_percent": 0.28,
+        "name": "Mini Dow Jones Indus.-$5 Dec 26"
+      },
+      {
         "symbol": "EURUSD=X",
         "price": 1.12,
         "change": 0.0,
-        "change_percent": 0.02,
+        "change_percent": 0.05,
         "name": "EUR/USD"
       }
     ],
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-18T23:15:58.587049",
+    "timestamp": "2026-10-18T23:25:57.560648",
     "items": [
       {
         "symbol": "SPX",
@@ -992,50 +992,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7731.25,
-        "change": 0.35,
+        "price": 7732.0,
+        "change": 0.36,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29581.25,
-        "change": 0.65,
+        "price": 29596.0,
+        "change": 0.7,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52372.0,
-        "change": 0.3,
+        "price": 52364.0,
+        "change": 0.29,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2751.3,
-        "change": 0.58,
+        "price": 2751.1,
+        "change": 0.57,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 98.18,
-        "change": -3.19,
+        "price": 98.11,
+        "change": -3.25,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4200.8,
-        "change": 0.47,
+        "price": 4196.7,
+        "change": 0.37,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 57.47,
-        "change": 0.83,
+        "price": 57.38,
+        "change": 0.68,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1647.5,
-        "change": 1.49,
+        "price": 1646.4,
+        "change": 1.42,
         "type": "future"
       },
       {
@@ -1047,50 +1047,44 @@
       {
         "symbol": "NG=F",
         "price": 3.06,
-        "change": -1.96,
+        "change": -1.83,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 268.05,
-        "change": 0.08,
+        "price": 268.87,
+        "change": 0.73,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81684,
-        "change": 0.52,
+        "price": 81822,
+        "change": 0.76,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2389.31,
-        "change": -0.15,
+        "price": 2397.26,
+        "change": 0.26,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 103.71,
-        "change": 0.6,
+        "price": 103.84,
+        "change": 0.76,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.96,
-        "change": -0.02,
+        "price": 12.0,
+        "change": 0.49,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.68,
-        "change": -0.76,
+        "price": 9.7,
+        "change": -0.15,
         "type": "crypto"
-      },
-      {
-        "symbol": "ONTO",
-        "price": 220.7,
-        "change": -8.58,
-        "type": "mover"
       },
       {
         "symbol": "PLTR",
@@ -1117,15 +1111,9 @@
         "type": "mover"
       },
       {
-        "symbol": "^KS11",
-        "price": 5668.05,
-        "change": -5.67,
-        "type": "mover"
-      },
-      {
         "symbol": "CL=F",
-        "price": 98.2,
-        "change": -3.17,
+        "price": 98.12,
+        "change": -3.24,
         "type": "mover"
       },
       {
@@ -1135,20 +1123,42 @@
         "type": "mover"
       },
       {
-        "symbol": "^N225",
-        "price": 65324.29,
-        "change": 1.39,
-        "type": "mover"
-      },
-      {
         "symbol": "GME",
         "price": 26.81,
         "change": -1.25,
+        "type": "mover"
+      },
+      {
+        "symbol": "AMC",
+        "price": 2.91,
+        "change": 0.69,
+        "type": "mover"
+      },
+      {
+        "symbol": "NQ=F",
+        "price": 29592.75,
+        "change": 0.68,
+        "type": "mover"
+      },
+      {
+        "symbol": "SI=F",
+        "price": 57.38,
+        "change": 0.68,
         "type": "mover"
       }
     ]
   },
   "business": [
+    {
+      "title": "Saudi Arabia sends skyscraper employees home amid Houthi threats",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUmNWR1JhdHgzVXRndW9RX0JYbEh5RV9PeThsVmJrM3AyXzR5WEtmOXN1YkIxWmF0OV8zWlk3X1FMalNwM3BJQTJLWU4yTW13dG1yM1NMcmdnRHRkZnFDUWg0VGZjYXFIdXZBenZVX2lLMUtOSjRvMkZJckVobWhPQU4zX2JkcmgwVVRfOWx6dzJFQTg5ODZEUHJBNWZEZ9IBngFBVV95cUxPZjRmSElfelpyenNzMm1SYUxmel9kQ1JUNkxmMGRLZ3EtTFlrMHQ3aEs4UXdZeGRsajVpUEhIbVNtX1JFbjAzY2xFWTdOSDR6VXdJbGhzUmRUYUk2c0RQVGlSSWJ4YmpGTTdpZkZYZlRBcVBHOHRGV2xUTFlwTjFvd2xIRlZnMHA4UjhJb0JPLXpmNXpjXzQ3d2xFSmdKUQ?oc=5",
+      "source": "DW.com",
+      "category": "business",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
     {
       "title": "China looks like it's dumping Treasury debt but may actually be stashing it in Canada and Belgium",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUnIzWW8ybUdMemtmOXl3bkhsWlRWcmNXeWhjWVV6cXZtSzl6MjZyNTZYNjZ2aHhfblR5bkY2N1FrOVplSzhEdHVYbHZuMVl4SnhvcWVZNVFkbTJDd3dBV0lMMHBhMTMxRWJhX09ZV3dfVEsySk0taWJYeF82WHFNcV9XZ1EwXzZ4aUNZdUpabmlkX09jUGdJSEg1Y3RCRG44MGJnYnBBOC13ZVZlTDlUVjlaUQ?oc=5",
@@ -1190,31 +1200,21 @@
       "author": ""
     },
     {
-      "title": "China AI supply-chain IPOs hold firm despite valuation pullback, Citi says",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcnFDdU1MSGd4Ylh4aktUWnlOM2V2RklNLXAxVm5QNThadUkzS2k1cWhoNnJpQkF3Nzk2U1c5ZlJlbUhGVFVpZTIxZEJYak8yVmtjVVhBdGs5NnVjVlowQnhRaWw1enZTVjBIVS1Wd2wwMkQtV2lYelR3MTFfVVlRRTBfMlBOUTlDYlI4UXdBZEFfcUFQcVNNNHVzOTR4bnUyanUtRE9nVkdnbTk4VHJvRWVxM2xjcXhjVUI4WVh2Y3Q2Q0Fw?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Sat, 17 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Ford Wants to Make Fun Cars Again in Europe\u2014if Drivers Can Wait Until 2028",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTHM2bUxWN1RkMHBLVC0yc3VtNE1WV1dGSDlvUy1oQXhXZmhCYm82Q0ZrXzdWOUNkemtuLUxTSmVQOE0weVBZTU4zYjhGN29FUWYwa0NyTlJCNENVR1ZMX0NmVnJyZi1uR3pPal9DalVpSXhwcFFMXzBIMW9zQ1ktNlFEUW5YMHZocUVVcFoxYUo2blpVaE1PS3JjaDFkLWgyT0VyQUY4YU13RWJoUFpNQjVaaTd5Rllo?oc=5",
-      "source": "WSJ",
-      "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Why Warren Buffett's Berkshire Hathaway is betting nearly $1 billion on Bending Spoons",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ3RKM0ZvcGFjUUVDclVDSVRzMG9KdW1Nd2h4Y3lxUEZGNE0tY1BmV2FaM1dsMGJfeEMyNW5ENmkzY3piU0lkZFE2SC05dUN5anRtSTBFeTh5OFBwVDBDdnptZHEtTkdRYXQ4NVBDazRYeTJqczlud0xLaUFNUmhSaC1fd1MxOWdqN0wxSnlycjdfSFJFNndaZ2NINng3MGhVWlRXRG1kbk5tTWg4MUVKYTl4OGd4SVkxalp1cjByZC0?oc=5",
       "source": "Business Insider",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "China AI supply-chain IPOs hold firm despite valuation pullback, Citi says",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcnFDdU1MSGd4Ylh4aktUWnlOM2V2RklNLXAxVm5QNThadUkzS2k1cWhoNnJpQkF3Nzk2U1c5ZlJlbUhGVFVpZTIxZEJYak8yVmtjVVhBdGs5NnVjVlowQnhRaWw1enZTVjBIVS1Wd2wwMkQtV2lYelR3MTFfVVlRRTBfMlBOUTlDYlI4UXdBZEFfcUFQcVNNNHVzOTR4bnUyanUtRE9nVkdnbTk4VHJvRWVxM2xjcXhjVUI4WVh2Y3Q2Q0Fw?oc=5",
+      "source": "Reuters",
+      "category": "business",
+      "published": "Sat, 17 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1252,9 +1252,9 @@
       "author": ""
     },
     {
-      "title": "Sony\u2019s PlayStation 6 Price Is Set To Surpass $1000, As RAM and SSD Costs Have Risen Over $680",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQXlET3I1dml1U1ZMdGVUMGlaYWJJNERqd3ZfS3hHZEpCODJ2SDlLd2dHNGV4d290SjF3c0NBNU1keDJWNndyRlFkVzFlcHM3V19HT2tRVFNRT0RqdEl6MjZGamxGa2J6bGdTVXU1N0dHeC1RNm1scFlTUVh1UDBBZlE5RGJWNEsxSTItaDZB0gGTAUFVX3lxTE5zaTE2T2RidTJPcXBRN2ZPa2lWWGNRLXI4dlk5VjBHX2JablFJUnhPRzhNWnBGNlk0ZzdPNGVGckhFc2VUaFhoMlhhTEhZYnhOWHFOZDRnVUY4Z1FwNUpINDJIYXVldEZzellnckxEbTg4MmhpUDBIUzlRMFlxMGtYR0djQ29jemhrMGQzWFgxQXpXdw?oc=5",
-      "source": "Wccftech",
+      "title": "Mark Gurman: Apple Made 'Major Mistake' With iPhone Duo Pre-Orders",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXy12Z19Ua3JWOXpwdmtMWFdaaElhUVZMR2xZZGJrc2JsRmJKVGVHbFRfSXdrSHNNWDg2Q1pJTlpQNC1qNlZ3UE9Rb2o5MDNNY1dQSHFKdTZRdE9FMDc0VW5QN29MNXFueEdqbk9HcV93N2NfaHFmcHVBbVVzN2ctNDlUemVvYmN1VXFOZg?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
       "description": "",
@@ -1262,9 +1262,9 @@
       "author": ""
     },
     {
-      "title": "Mark Gurman: Apple Made 'Major Mistake' With iPhone Duo Pre-Orders",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXy12Z19Ua3JWOXpwdmtMWFdaaElhUVZMR2xZZGJrc2JsRmJKVGVHbFRfSXdrSHNNWDg2Q1pJTlpQNC1qNlZ3UE9Rb2o5MDNNY1dQSHFKdTZRdE9FMDc0VW5QN29MNXFueEdqbk9HcV93N2NfaHFmcHVBbVVzN2ctNDlUemVvYmN1VXFOZg?oc=5",
-      "source": "MacRumors",
+      "title": "Sony\u2019s PlayStation 6 Price Is Set To Surpass $1000, As RAM and SSD Costs Have Risen Over $680",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQXlET3I1dml1U1ZMdGVUMGlaYWJJNERqd3ZfS3hHZEpCODJ2SDlLd2dHNGV4d290SjF3c0NBNU1keDJWNndyRlFkVzFlcHM3V19HT2tRVFNRT0RqdEl6MjZGamxGa2J6bGdTVXU1N0dHeC1RNm1scFlTUVh1UDBBZlE5RGJWNEsxSTItaDZB0gGTAUFVX3lxTE5zaTE2T2RidTJPcXBRN2ZPa2lWWGNRLXI4dlk5VjBHX2JablFJUnhPRzhNWnBGNlk0ZzdPNGVGckhFc2VUaFhoMlhhTEhZYnhOWHFOZDRnVUY4Z1FwNUpINDJIYXVldEZzellnckxEbTg4MmhpUDBIUzlRMFlxMGtYR0djQ29jemhrMGQzWFgxQXpXdw?oc=5",
+      "source": "Wccftech",
       "category": "business",
       "published": "Sun, 18 Oct 2026 ",
       "description": "",
@@ -1402,6 +1402,14 @@
       "relevance_score": 1
     },
     {
+      "title": "Protesters disrupt Ben-Gvir event forcing him off stage",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/protesters-disrupt-ben-gvir-event-forcing-him-off-stage?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sun, 18 Oct 2026 ",
+      "description": "Israeli protesters disrupted a Tel Aviv university event featuring far-right National Security Minister Itamar Ben-Gvir.",
+      "relevance_score": 1
+    },
+    {
       "title": "Macron condemns violence after riots lead to looting and mass arrests",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/macron-condemns-violence-after-riots-lead-to-looting-and-mass-arrests?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1430,34 +1438,34 @@
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 321359,
+      "stars": 321743,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-18T22:21:04Z"
+      "updated": "2026-10-18T23:26:03Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 283236,
+      "stars": 283261,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-18T22:20:07Z"
+      "updated": "2026-10-18T23:18:52Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 254931,
+      "stars": 254941,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-18T22:17:11Z"
+      "updated": "2026-10-18T23:24:22Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 192754,
+      "stars": 192766,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-18T22:09:18Z"
+      "updated": "2026-10-18T23:21:31Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1470,58 +1478,58 @@
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 167822,
+      "stars": 167823,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-18T22:03:47Z"
+      "updated": "2026-10-18T22:55:43Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 166992,
+      "stars": 167016,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-18T22:16:41Z"
+      "updated": "2026-10-18T23:22:50Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 158807,
+      "stars": 158809,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-18T22:05:00Z"
+      "updated": "2026-10-18T23:17:08Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156073,
+      "stars": 156077,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-18T21:43:56Z"
+      "updated": "2026-10-18T22:56:40Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 99036,
+      "stars": 99053,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-18T22:11:11Z"
+      "updated": "2026-10-18T23:22:36Z"
+    },
+    {
+      "name": "stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription",
+      "stars": 96581,
+      "language": "TypeScript",
+      "url": "https://github.com/stablyai/orca",
+      "updated": "2026-10-18T23:25:58Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 82703,
+      "stars": 82710,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-18T22:17:28Z"
-    },
-    {
-      "name": "shareAI-lab/learn-claude-code",
-      "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 78787,
-      "language": "Python",
-      "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-18T19:40:56Z"
+      "updated": "2026-10-18T23:24:52Z"
     }
   ],
   "nasdaq_data": {
@@ -1530,7 +1538,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 18 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-18T19:16:08.280246"
+    "timestamp": "2026-10-18T19:26:23.518482"
   },
   "sticky": {
     "cnbc": [
@@ -1669,58 +1677,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7732.0,
-      "change": 27.75,
-      "change_percent": 0.36,
+      "price": 7731.5,
+      "change": 27.25,
+      "change_percent": 0.35,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29585.25,
-      "change": 193.75,
-      "change_percent": 0.66,
+      "price": 29593.25,
+      "change": 201.75,
+      "change_percent": 0.69,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52372.0,
-      "change": 158.0,
-      "change_percent": 0.3,
+      "price": 52364.0,
+      "change": 150.0,
+      "change_percent": 0.29,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2751.6,
-      "change": 16.1,
-      "change_percent": 0.59,
+      "price": 2751.1,
+      "change": 15.6,
+      "change_percent": 0.57,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 98.2,
-      "change": -3.21,
-      "change_percent": -3.17,
+      "price": 98.11,
+      "change": -3.3,
+      "change_percent": -3.25,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4200.8,
-      "change": 19.7,
-      "change_percent": 0.47,
+      "price": 4196.7,
+      "change": 15.6,
+      "change_percent": 0.37,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 57.47,
-      "change": 0.48,
-      "change_percent": 0.83,
+      "price": 57.39,
+      "change": 0.39,
+      "change_percent": 0.69,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1647.5,
-      "change": 24.2,
-      "change_percent": 1.49,
+      "price": 1646.4,
+      "change": 23.1,
+      "change_percent": 1.42,
       "name": "Platinum Jan 27"
     },
     {
@@ -1734,7 +1742,7 @@
       "symbol": "NG=F",
       "price": 3.06,
       "change": -0.06,
-      "change_percent": -1.93,
+      "change_percent": -1.83,
       "name": "Natural Gas Nov 26"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-19T03:16:10.248869",
+  "timestamp": "2026-10-19T03:18:07.500593",
   "summary": "Key topics today:\n- - Hybrid Reasoning Agents: LLM agents that think in latent space, act through text (r/HackerNews, 201 pts)\n- - If you don't run your own LLM proxy, how do you know whats going on? (r/HackerNews, 101 pts)\n- - Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling (r/HackerNews, 101 pts)\n- - I built a programming language that LLMs can't use (r/HackerNews, 101 pts)\n- - Rabbits were a medieval royal luxury in England until the Black Death (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -44,11 +44,11 @@
     },
     {
       "type": "sell",
-      "asset": "SMCI",
-      "price": 31.63,
-      "change": -11.6,
+      "asset": "NBIS",
+      "price": 165.47,
+      "change": -11.04,
       "category": "stock",
-      "text": "SMCI -11.6% drop @ $31.63"
+      "text": "NBIS -11.0% drop @ $165.47"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-19T07:16:00.865189",
+    "timestamp": "2026-10-19T07:17:59.518460",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-19T07:15:37.017616",
+    "timestamp": "2026-10-19T07:17:37.768281",
     "trending": [
       {
         "symbol": "SOXL",
@@ -461,13 +461,6 @@
         "change": -3.57,
         "change_percent": -11.68,
         "name": "IREN LIMITED"
-      },
-      {
-        "symbol": "SMCI",
-        "price": 31.63,
-        "change": -4.15,
-        "change_percent": -11.6,
-        "name": "Super Micro Computer, Inc."
       },
       {
         "symbol": "NBIS",
@@ -491,11 +484,25 @@
         "name": "ProShares UltraPro QQQ"
       },
       {
+        "symbol": "BE",
+        "price": 221.31,
+        "change": -18.03,
+        "change_percent": -7.53,
+        "name": "Bloom Energy Corporation"
+      },
+      {
         "symbol": "PLTR",
         "price": 186.03,
         "change": -14.94,
         "change_percent": -7.43,
         "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "AMD",
+        "price": 528.75,
+        "change": -42.07,
+        "change_percent": -7.37,
+        "name": "Advanced Micro Devices, Inc."
       },
       {
         "symbol": "AVGO",
@@ -505,11 +512,18 @@
         "name": "Broadcom Inc."
       },
       {
-        "symbol": "QQQ",
-        "price": 709.8,
-        "change": -19.15,
-        "change_percent": -2.63,
-        "name": "Invesco QQQ Trust, Series 1"
+        "symbol": "^JKSE",
+        "price": 4942.01,
+        "change": -243.1,
+        "change_percent": -4.69,
+        "name": "IDX COMPOSITE"
+      },
+      {
+        "symbol": "META",
+        "price": 709.33,
+        "change": -28.21,
+        "change_percent": -3.82,
+        "name": "Meta Platforms, Inc."
       },
       {
         "symbol": ".RUT",
@@ -519,25 +533,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "NQ=F",
-        "price": 29774.25,
-        "change": 382.75,
-        "change_percent": 1.3,
-        "name": "Nasdaq 100 Dec 26"
-      },
-      {
         "symbol": ".SPX",
         "price": 7659.44,
         "change": -84.62,
         "change_percent": -1.09,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "ES=F",
-        "price": 7758.25,
-        "change": 54.0,
-        "change_percent": 0.7,
-        "name": "E-Mini S&P 500 Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-19T07:15:56.442230",
+    "timestamp": "2026-10-19T07:17:56.056778",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.38,
-        "change": -8.05,
+        "price": 18.34,
+        "change": -8.25,
         "type": "index"
       },
       {
@@ -1016,56 +1016,56 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7758.5,
-        "change": 0.7,
+        "price": 7757.25,
+        "change": 0.69,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29776.75,
-        "change": 1.31,
+        "price": 29771.0,
+        "change": 1.29,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52434.0,
-        "change": 0.42,
+        "price": 52422.0,
+        "change": 0.4,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2755.6,
-        "change": 0.73,
+        "price": 2755.0,
+        "change": 0.71,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 96.84,
-        "change": -2.2,
+        "price": 96.82,
+        "change": -2.22,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4206.0,
-        "change": 0.6,
+        "price": 4207.7,
+        "change": 0.64,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 57.85,
-        "change": 0.95,
+        "price": 57.87,
+        "change": 0.98,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1661.9,
-        "change": 2.49,
+        "price": 1662.5,
+        "change": 2.53,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1129.0,
-        "change": 0.04,
+        "price": 1130.5,
+        "change": 0.18,
         "type": "future"
       },
       {
@@ -1076,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 274.37,
-        "change": 2.74,
+        "price": 274.26,
+        "change": 2.82,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82789,
-        "change": 1.39,
+        "price": 82766,
+        "change": 1.42,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2432.3,
-        "change": 1.0,
+        "price": 2431.55,
+        "change": 1.03,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 105.7,
-        "change": 2.14,
+        "change": 2.19,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 12.21,
-        "change": 1.67,
+        "change": 1.86,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 9.78,
-        "change": 0.13,
+        "change": 0.22,
         "type": "crypto"
       },
       {
@@ -1174,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "China\u2019s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5",
-      "source": "WSJ",
+      "title": "China's growth accelerates as AI export boom outweighs domestic weakness",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKZDdHVkpOendSakJEYTM3TW1fY1JQS3BpYnZkSmtiRDJEdDlyNWZzcmFTclR6WEp5S1VtUS1ZZ0g5aE15YS14c0dsZnc4Z052M1hPZjJha0hWclk?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Mon, 19 Oct 2026 ",
       "description": "",
@@ -1184,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE96d1pfMGRCUGNicWlMXzlMckdGTGlnMGJyM1ZwR3lxb2xoRG5BR19QaWNDVDBPVXFXRVhQd2lDM0RfTXNNMGE1WFgwNVR3R3MxQV9rV2lseGRSZ28?oc=5",
-      "source": "BBC",
+      "title": "Anthropic commits 5% of shares to \u2018public benefit\u2019 fund",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNV2JvZ2g1OThBaW5LcmtjTU5ENmJqaUZsWmRmS2JSem85U0p1am8yWkFpenBDU0M1bkhyZ3dTUEk4R19MMGlPNUxMMHFzekRMcVNEVHRHQ0VPQnVUdE1QVmlTU19FdzUyT2hRUS11RmZpLUZveXRISTVDVGRTY0Y5U0RiZkw?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Mon, 19 Oct 2026 ",
       "description": "",
@@ -1208,7 +1208,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR0MwWG9IMlN3MDVva0xabG5QbzNhX09jY3JnaVVTSHJvYXFMSmtHaDhFZ2RTSHVFLUVKYU9za2MxTXA4UGZDN0E3YVk4dEF6QmtIc2Z5YnR5TXB4V2h1QWR6MllZYXRUcGsyOExYMEloYll2RDhHVklKRno4TGhCaGV3RC1OMFJ3c04wWUVCblVFUkdB?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
-      "published": "Mon, 19 Oct 2026 ",
+      "published": "Sun, 18 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1244,11 +1244,11 @@
       "author": ""
     },
     {
-      "title": "Vanguard economist says sticky inflation will test your patience",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeU5WY0JRWmtEU3hKZ0ZUQVU5Q0pfZXBWTkd3WFFReTNodUFDOWtIQzRyUGlQOUVQdXN3T1VjYllabEZTOWJUQjlnWE41b2Q3Yko1SlZEWjVMZk8xSDJ6dms3UVVhSU9IMmZEbWNxaEQ4bnRoNjFIT3BzcHBuYXNNcEJtcTRVblJ2bDJfaE9uUW15c1p6TWlvUGdaMWVBOG8?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Disney agrees to hire the majority of Character.AI\u2019s workforce",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbFVlYnNFYUpDbjZZWnM4aE1uTWdsWVVZa1BpX1VGano5MkhpOTlVSDF2ZkJrY29CRmNGdzlRRGMwcFJpa3VyVmFrOGZTYkRac3BncmFQb1AtSkdyMktwMzZobmFYNGd6bm5IbDEzbG9HN2RUN0RLenRQTkNLemlUeXJOVnNBN3kxWUJJNzN3dEVFVWFaN2xFRHp2NzE?oc=5",
+      "source": "TechCrunch",
       "category": "business",
-      "published": "Sat, 17 Oct 2026 ",
+      "published": "Sun, 18 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1562,7 +1562,7 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 19 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-19T03:16:08.060111"
+    "timestamp": "2026-10-19T03:18:05.665449"
   },
   "sticky": {
     "cnbc": [
@@ -1701,65 +1701,65 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7758.75,
-      "change": 54.5,
-      "change_percent": 0.71,
+      "price": 7756.75,
+      "change": 52.5,
+      "change_percent": 0.68,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29778.0,
-      "change": 386.5,
-      "change_percent": 1.32,
+      "price": 29769.25,
+      "change": 377.75,
+      "change_percent": 1.29,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52432.0,
-      "change": 218.0,
-      "change_percent": 0.42,
+      "price": 52422.0,
+      "change": 208.0,
+      "change_percent": 0.4,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2755.6,
-      "change": 20.1,
-      "change_percent": 0.73,
+      "price": 2755.0,
+      "change": 19.5,
+      "change_percent": 0.71,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 96.85,
-      "change": -2.17,
-      "change_percent": -2.19,
+      "price": 96.82,
+      "change": -2.2,
+      "change_percent": -2.22,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4205.5,
-      "change": 24.4,
-      "change_percent": 0.58,
+      "price": 4207.4,
+      "change": 26.3,
+      "change_percent": 0.63,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 57.85,
-      "change": 0.55,
-      "change_percent": 0.96,
+      "price": 57.87,
+      "change": 0.56,
+      "change_percent": 0.98,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1661.9,
-      "change": 40.4,
-      "change_percent": 2.49,
+      "price": 1662.5,
+      "change": 41.0,
+      "change_percent": 2.53,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1129.0,
-      "change": 0.5,
-      "change_percent": 0.04,
+      "price": 1130.5,
+      "change": 2.0,
+      "change_percent": 0.18,
       "name": "Palladium Dec 26"
     },
     {

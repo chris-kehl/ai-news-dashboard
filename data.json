@@ -1,14 +1,46 @@
 {
-  "timestamp": "2026-10-19T05:16:21.176585",
+  "timestamp": "2026-10-19T05:28:03.578211",
   "summary": "Key topics today:\n- - Hybrid Reasoning Agents: LLM agents that think in latent space, act through text (r/HackerNews, 201 pts)\n- - If you don't run your own LLM proxy, how do you know whats going on? (r/HackerNews, 101 pts)\n- - Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling (r/HackerNews, 101 pts)\n- - I built a programming language that LLMs can't use (r/HackerNews, 101 pts)\n- - Linux 7.3 Released (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "ZEC",
-      "price": 1164.59,
-      "change": 2.76,
+      "price": 1170.99,
+      "change": 3.82,
       "category": "crypto",
-      "text": "ZEC +2.8% @ $1,164.59"
+      "text": "ZEC +3.8% @ $1,170.99"
+    },
+    {
+      "type": "watch",
+      "asset": "TAO",
+      "price": 274.27,
+      "change": 2.42,
+      "category": "crypto",
+      "text": "TAO +2.4% @ $274.27"
+    },
+    {
+      "type": "watch",
+      "asset": "SOL",
+      "price": 105.78,
+      "change": 2.1,
+      "category": "crypto",
+      "text": "SOL +2.1% @ $105.78"
+    },
+    {
+      "type": "buy",
+      "asset": "XLAB",
+      "price": 2.35,
+      "change": 158.53,
+      "category": "stock",
+      "text": "XLAB +158.5% momentum @ $2.35"
+    },
+    {
+      "type": "sell",
+      "asset": "SAFX",
+      "price": 0.14,
+      "change": -39.13,
+      "category": "stock",
+      "text": "SAFX -39.1% drop @ $0.14"
     },
     {
       "type": "sell",
@@ -17,22 +49,6 @@
       "change": -15.26,
       "category": "stock",
       "text": "SOXL -15.3% drop @ $93.67"
-    },
-    {
-      "type": "sell",
-      "asset": "IREN",
-      "price": 26.99,
-      "change": -11.68,
-      "category": "stock",
-      "text": "IREN -11.7% drop @ $26.99"
-    },
-    {
-      "type": "sell",
-      "asset": "NBIS",
-      "price": 165.47,
-      "change": -11.04,
-      "category": "stock",
-      "text": "NBIS -11.0% drop @ $165.47"
     },
     {
       "type": "watch",
@@ -126,108 +142,86 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [
-    {
-      "author": "@BBCWorld",
-      "text": "Chicago's battle against the synthetic drugs flooding the US https://bbc.in/4yWneLT",
-      "url": "https://nitter.kareem.one/BBCWorld/status/2112104768176837003#m",
-      "date": "Mon, 19 Oct 2026 08:53:12 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BBCWorld",
-      "text": "RT by @BBCWorld: Man arrested after Australian MP struck by car as PM Albanese says politician was attacked https://bbc.in/4i3oTt7",
-      "url": "https://nitter.kareem.one/BBCBreaking/status/2112103703461163262#m",
-      "date": "Mon, 19 Oct 2026 08:48:58 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@BBCWorld",
-      "text": "Bangladesh says it was not informed of its citizens' execution by Saudi Arabia https://bbc.in/4zJmny7",
-      "url": "https://nitter.kareem.one/BBCWorld/status/2112096539317277050#m",
-      "date": "Mon, 19 Oct 2026 08:20:30 GMT",
-      "likes": 0
-    }
-  ],
+  "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-19T09:15:59.235994",
+    "timestamp": "2026-10-19T09:27:54.910727",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 273.05,
-        "change_24h": 1.81,
-        "market_cap": 3096367426
+        "price": 274.27,
+        "change_24h": 2.42,
+        "market_cap": 3109537532
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 82720,
-        "change_24h": 1.05,
-        "market_cap": 1662559317170
+        "price": 82882,
+        "change_24h": 1.28,
+        "market_cap": 1665614464697
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2433.18,
-        "change_24h": 0.64,
-        "market_cap": 297197061649
+        "price": 2439.61,
+        "change_24h": 1.03,
+        "market_cap": 297945460204
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999319,
-        "change_24h": 0.02,
-        "market_cap": 183539827625
+        "price": 0.999356,
+        "change_24h": 0.03,
+        "market_cap": 183546741496
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 725.55,
-        "change_24h": 0.65,
-        "market_cap": 96610757178
+        "price": 726.37,
+        "change_24h": 0.79,
+        "market_cap": 96714015324
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.31,
-        "change_24h": 1.31,
-        "market_cap": 82881430645
+        "change_24h": 1.48,
+        "market_cap": 82994059386
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999827,
-        "change_24h": 0.01,
-        "market_cap": 72398711800
+        "price": 0.999876,
+        "change_24h": 0.02,
+        "market_cap": 72402382292
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 105.45,
-        "change_24h": 1.77,
-        "market_cap": 62159283294
+        "price": 105.78,
+        "change_24h": 2.1,
+        "market_cap": 62338156494
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.330713,
-        "change_24h": -0.7,
-        "market_cap": 31419285920
+        "price": 0.330736,
+        "change_24h": -0.68,
+        "market_cap": 31420506867
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.075,
-        "change_24h": 0.72,
+        "change_24h": 0,
         "market_cap": 25817596998
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1164.59,
-        "change_24h": 2.76,
-        "market_cap": 19781937075
+        "price": 1170.99,
+        "change_24h": 3.82,
+        "market_cap": 19888892659
       }
     ],
     "news": [
@@ -307,20 +301,20 @@
   },
   "news": [
     {
-      "title": "Companies exploiting welfare system by using residents as 'cash cows', BBC finds",
-      "url": "https://www.bbc.co.uk/news/articles/cm62y80yxw9vo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Mon, 19 Oct 2026 ",
-      "description": "Agents try to attract people on housing benefit by using social media videos that offer free rooms and holidays."
-    },
-    {
       "title": "Katya Adler: France's government under pressure after widespread violence",
       "url": "https://www.bbc.co.uk/news/articles/crwyd02yz22vo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Mon, 19 Oct 2026 ",
       "description": "Political tension grips France after rioting marred protests over the cost of living and struggling public services, Katya Adler writes."
+    },
+    {
+      "title": "Companies exploiting welfare system by using residents as 'cash cows', BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y80yxw9vo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Mon, 19 Oct 2026 ",
+      "description": "Agents try to attract people on housing benefit by using social media videos that offer free rooms and holidays."
     },
     {
       "title": "Russian saboteur working for Ukraine shares reconnaissance videos",
@@ -452,8 +446,22 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-19T09:15:37.293189",
+    "timestamp": "2026-10-19T09:27:32.642133",
     "trending": [
+      {
+        "symbol": "XLAB",
+        "price": 2.35,
+        "change": 1.44,
+        "change_percent": 158.53,
+        "name": "Exascale Labs Holdings Inc."
+      },
+      {
+        "symbol": "SAFX",
+        "price": 0.14,
+        "change": -0.09,
+        "change_percent": -39.13,
+        "name": "XCF Global, Inc."
+      },
       {
         "symbol": "SOXL",
         "price": 93.67,
@@ -467,6 +475,13 @@
         "change": -3.57,
         "change_percent": -11.68,
         "name": "IREN LIMITED"
+      },
+      {
+        "symbol": "SMCI",
+        "price": 31.63,
+        "change": -4.15,
+        "change_percent": -11.6,
+        "name": "Super Micro Computer, Inc."
       },
       {
         "symbol": "NBIS",
@@ -483,32 +498,11 @@
         "name": "Intel Corporation"
       },
       {
-        "symbol": "TQQQ",
-        "price": 68.21,
-        "change": -5.91,
-        "change_percent": -7.97,
-        "name": "ProShares UltraPro QQQ"
-      },
-      {
         "symbol": "BE",
         "price": 221.31,
         "change": -18.03,
         "change_percent": -7.53,
         "name": "Bloom Energy Corporation"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 186.03,
-        "change": -14.94,
-        "change_percent": -7.43,
-        "name": "Palantir Technologies Inc."
-      },
-      {
-        "symbol": "AMD",
-        "price": 528.75,
-        "change": -42.07,
-        "change_percent": -7.37,
-        "name": "Advanced Micro Devices, Inc."
       },
       {
         "symbol": "^VIX",
@@ -525,20 +519,6 @@
         "name": "Broadcom Inc."
       },
       {
-        "symbol": "META",
-        "price": 709.33,
-        "change": -28.21,
-        "change_percent": -3.82,
-        "name": "Meta Platforms, Inc."
-      },
-      {
-        "symbol": "^JKSE",
-        "price": 4996.61,
-        "change": -188.5,
-        "change_percent": -3.64,
-        "name": "IDX COMPOSITE"
-      },
-      {
         "symbol": ".RUT",
         "price": 2721.37,
         "change": -45.9,
@@ -546,11 +526,25 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "CL=F",
+        "price": 97.92,
+        "change": -1.1,
+        "change_percent": -1.11,
+        "name": "Crude Oil Dec 26"
+      },
+      {
         "symbol": ".SPX",
         "price": 7659.44,
         "change": -84.62,
         "change_percent": -1.09,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "NQ=F",
+        "price": 29694.0,
+        "change": 302.5,
+        "change_percent": 1.03,
+        "name": "Nasdaq 100 Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -988,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-19T09:15:55.756884",
+    "timestamp": "2026-10-19T09:27:51.136300",
     "items": [
       {
         "symbol": "SPX",
@@ -1010,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.74,
-        "change": -6.25,
+        "price": 18.7,
+        "change": -6.45,
         "type": "index"
       },
       {
@@ -1022,99 +1016,111 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7741.75,
-        "change": 0.49,
+        "price": 7741.25,
+        "change": 0.48,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29696.0,
+        "price": 29698.25,
         "change": 1.04,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52243.0,
-        "change": 0.06,
+        "price": 52225.0,
+        "change": 0.02,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2748.0,
-        "change": 0.46,
+        "price": 2747.5,
+        "change": 0.44,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 97.97,
-        "change": -1.06,
+        "price": 97.94,
+        "change": -1.09,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4190.8,
-        "change": 0.23,
+        "price": 4192.0,
+        "change": 0.26,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 57.65,
-        "change": 0.6,
+        "price": 57.64,
+        "change": 0.58,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1657.5,
-        "change": 1.49,
+        "price": 1657.7,
+        "change": 1.51,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1127.0,
-        "change": 0.75,
+        "price": 1132.0,
+        "change": 1.2,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.13,
-        "change": 0.45,
+        "change": 0.58,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 273.24,
-        "change": 1.72,
+        "price": 274.27,
+        "change": 2.29,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82715,
-        "change": 1.03,
+        "price": 82899,
+        "change": 1.23,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2433.65,
-        "change": 0.64,
+        "price": 2439.63,
+        "change": 0.97,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 105.39,
-        "change": 1.59,
+        "price": 105.82,
+        "change": 2.05,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.15,
-        "change": 1.26,
+        "price": 12.17,
+        "change": 1.43,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.75,
-        "change": -0.9,
+        "price": 9.77,
+        "change": -0.64,
         "type": "crypto"
+      },
+      {
+        "symbol": "XLAB",
+        "price": 2.35,
+        "change": 158.53,
+        "type": "mover"
+      },
+      {
+        "symbol": "SAFX",
+        "price": 0.14,
+        "change": -39.13,
+        "type": "mover"
       },
       {
         "symbol": "SOXL",
@@ -1153,15 +1159,9 @@
         "type": "mover"
       },
       {
-        "symbol": "AMD",
-        "price": 528.75,
-        "change": -7.37,
-        "type": "mover"
-      },
-      {
         "symbol": "^VIX",
-        "price": 18.81,
-        "change": -5.9,
+        "price": 18.76,
+        "change": -6.15,
         "type": "mover"
       },
       {
@@ -1169,20 +1169,14 @@
         "price": 328.75,
         "change": -5.05,
         "type": "mover"
-      },
-      {
-        "symbol": "META",
-        "price": 709.33,
-        "change": -3.82,
-        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "China\u2019s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5",
-      "source": "WSJ",
+      "title": "China\u2019s economy picks up pace at 4.5% growth",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGVKTFBJR0drUjlPSjZvYjZUeDBaOVlDQkdsSWRLbGJ3ZGxfTEs0MmR6bFVkNXZDczVIcGV2WnlfWFZnSk9rTk9OVENhQVoyd3I3YThXdlFtenZKbWozZGFIWXktSVQ5T2hlNnh4amxMWkNVbjZQM1BGUmJHTDlRRjVVa2Q?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Mon, 19 Oct 2026 ",
       "description": "",
@@ -1312,6 +1306,16 @@
       "author": ""
     },
     {
+      "title": "GTA 6: Can you cheat on someone with a video game character?",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54ZDBScmwxZ2UzWEFUMkZyZGc4RTNjczhSZVlycXRvSkJXei1rSGpwNzJJZDdJczZPNkxWX2dFNUt3YU5fWWhQTERkZkp3VVBfUVhGSzlDVXZXbzg?oc=5",
+      "source": "BBC",
+      "category": "business",
+      "published": "Mon, 19 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Call of Duty: Modern Warfare 4 Gets a Warm Steam Welcome With 90% Positive Reviews",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTC1pYlhkNlkydWZfZU52VmhfSlNCSllrLVFKRURBYjNhYlFJc3A0aWpfV3M2cHNCTnNLbXd6WnFsTWFVLXNjUWVNZmlJWHZEdU1BNlRfZ0hjNkFNV25ZYUV2VUZxUHdGMHpGanJqcFV0eER1Wlh2STlLd0RpeURHNFRRWnNmMnBLcGdiSVNMZ3h6QW5qNE1UYmI0Sl8zOE1MRTdEZzJfYk1LcFlrUGdqdGhnVE5yUdIBuwFBVV95cUxPZ09XMmJmczBhQ0UzWG5TRjBqRlgtc0FKNC1QVXUya0xrbmZnMnMyVjlGM0VwWW50YnV0VktYcmgwZEl3RDJTSnRJWHVvRU5LUmxQc3NHaFJsNFVUck1EeVkyWTloN1NfU2VlbE5nSFBlN0Rwc1NrVnJfcHJNakN4cjgwUkVDZWVyN2Z5eFFmODZuVEFScTgzMEhwZnhKWTlrUk5jZjdoQXNYRW80X0d5Rjd4MzJFbUJsTnBF?oc=5",
       "source": "TechPowerUp",
@@ -1322,21 +1326,11 @@
       "author": ""
     },
     {
-      "title": "Sunday Preview \u2013 Tomb Kings rise again",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNmZqYXVaNjhscktwZDlDTXlocTItcjBXdld4RnJqaEh6NmREaVBDS3dvVkNhOG91OVJ3NFAtY1FGdm8tT3N3X2pWUnliM0hPY2V0ckxITmE3eC1jMmlqU0hneTlaOW9LY3ZmZzFuczRxWDUtRjI5dkJnMnNvcHJFSEd2QjlmQVN5SEhpY1ExamFCUkNzRzdoV2J0REw2dw?oc=5",
+      "title": "Da Red Gobbo returns with a new festive miniature",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU0dwLW95eDJLWFdwSVI5cXlpdC0xWFdvcU1RdWd3c0VWNzd4U0ZORldZYlNMdHJGd2lkSUp1NGhseXlXZWZyZS13SVJveDVHMFRETkswb2Y2RnZXNnJsTFUyc3V5S3ZFOV9May05TXotMkFtQWgyMDlLT2pJUzJKZVlLdWpxS213T2VMZm9lak0xb0FraXBRT3RFd3owUlRlcmdOdUV1VE9FZmNSZVNv?oc=5",
       "source": "Warhammer Community",
       "category": "business",
-      "published": "Sun, 18 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "How an accelerating Earth led experts to adopt the leap hour",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSGFTMkkzSE41akNqeklLcW9RT05hZ3pfV09QRGxiWDlKMTVONTRFSGxhaDRINnRoQTFBWkoxbVBaS2NaUGZSVmdvNGR5SEZoR1JKd3BNa1dHamFHNUJvdzBkSlBpTEtXMkwyMGVQQ0c3RVVuMTlaRHhRaGI4VnQ2QW5NWjFyYXRuWkJBZ0FxeWpPXzIySXZFTlUxdVFlV0RmbzdFdWQ2VG5PN042YWt4QkVHSUl6TFE?oc=5",
-      "source": "The Guardian",
-      "category": "business",
-      "published": "Thu, 15 Oct 2026 ",
+      "published": "Fri, 16 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1358,6 +1352,14 @@
       "published": "Fri, 16 Oct 2026 ",
       "description": "Ukraine said on Wednesday that SpaceX had restricted \u201cmilitary-grade\u201d Starlink services, hampering Ukrainian drone strike missions and air defenses.",
       "relevance_score": 7
+    },
+    {
+      "title": "Qatar warns global energy shockwaves from Iran war have yet to peak",
+      "url": "https://www.aljazeera.com/news/2026/10/19/qatar-warns-global-energy-shockwaves-from-iran-war-have-yet-to-peak?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Mon, 19 Oct 2026 ",
+      "description": "Deputy PM calls for dialogue with Tehran, highlights US defence ties and rejects Strait of Hormuz transit fees.",
+      "relevance_score": 6
     },
     {
       "title": "Rubio says there was no US pause in intelligence sharing with Ukraine",
@@ -1454,14 +1456,6 @@
       "published": "Sun, 18 Oct 2026 ",
       "description": "U.S. defense firm Anduril could eventually manufacture its newly unveiled Steelfin interceptor missiles in Europe, a company executive said.",
       "relevance_score": 2
-    },
-    {
-      "title": "US Army\u2019s 8th Psychological Operations Group inactivated",
-      "url": "https://www.defensenews.com/news/your-military/2026/10/16/us-armys-8th-psychological-operations-group-inactivated/",
-      "source": "Defense News",
-      "published": "Fri, 16 Oct 2026 ",
-      "description": "The Army's 8th Psychological Operations Group inactivated as the service reshapes its PSYOP and information warfare forces to counter global adversaries.",
-      "relevance_score": 1
     }
   ],
   "github": [
@@ -1568,23 +1562,23 @@
     "changePercent": -2.5,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 19 Oct: 29,187.55, down -2.50% -- BEARISH. price below SMA20, RSI 33.5 weak, MACD bearish, strong -2.5% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-19T05:16:19.268842"
+    "timestamp": "2026-10-19T05:28:01.631447"
   },
   "sticky": {
     "cnbc": [
+      {
+        "title": "Oil prices slide as sanctions relief on Russian crude raises hopes of increased supply",
+        "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html",
+        "source": "CNBC",
+        "published": "2026-10-19T08:52:21",
+        "description": "U.S. President Donald Trump invoked the Graham Act\u2019s national-interest waiver to suspend new duties on Russian goods and major Russian energy buyers."
+      },
       {
         "title": "French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall",
         "url": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html",
         "source": "CNBC",
         "published": "2026-10-19T09:07:09",
         "description": "\"It looks like either the bond markets riot, or the people riot, or both,\" one analyst told CNBC."
-      },
-      {
-        "title": "Putin reportedly proposes three-way summit with Trump and Xi on Ukraine war \u2014 without Zelenskyy",
-        "url": "https://www.cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html",
-        "source": "CNBC",
-        "published": "2026-10-19T09:05:41",
-        "description": "The report comes amid mounting tensions between Ukraine and the United States, its largest military backer."
       },
       {
         "title": "Elon Musk says he'll give a SpaceX share to every child in America next year",
@@ -1594,6 +1588,13 @@
         "description": "The SpaceX boss said Monday that he'll give one of his company shares to every child in the U.S. next year. He didn't say how the share giveaway would happen."
       },
       {
+        "title": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
+        "url": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
+        "source": "CNBC",
+        "published": "2026-10-18T19:37:28",
+        "description": "Starlink, high-speed satellite internet provided by Elon Musk's SpaceX, is critical to Ukraine's defense."
+      },
+      {
         "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
         "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
         "source": "CNBC",
@@ -1601,11 +1602,11 @@
         "description": "Saudi national Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI headquarters in San Francisco."
       },
       {
-        "title": "Japanese Prime Minister Takaichi rejects criticism around weak yen and high interest rates",
-        "url": "https://www.cnbc.com/2026/10/19/takaichi-weak-yen-jgb-yields.html",
+        "title": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
+        "url": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
         "source": "CNBC",
-        "published": "2026-10-19T05:29:51",
-        "description": "The prime minister denied that her policies were responsible for the yen\u2019s weakness or rising JGB yields."
+        "published": "2026-10-18T23:36:11",
+        "description": "The Claude maker said that establishing the fund as an LLC will provide greater flexibility in how the money is used."
       },
       {
         "title": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
@@ -1615,18 +1616,11 @@
         "description": "China's economic growth accelerated in the third quarter, as foreign demand for the country's technological goods largely offset sluggish consumer demand."
       },
       {
-        "title": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
-        "url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
+        "title": "China's CXMT shares fall nearly 8% as investors look past chipmaker's profit turnaround",
+        "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
         "source": "CNBC",
-        "published": "2026-10-18T12:00:01",
-        "description": "AI always-listening wearables from Apple, Amazon, Meta and other startups are getting creative with privacy rules and fueling concerns about covert recordings."
-      },
-      {
-        "title": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
-        "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
-        "source": "CNBC",
-        "published": "2026-10-19T03:00:33",
-        "description": "Indonesia's benchmark stock index plunged to its lowest level in six years."
+        "published": "2026-10-19T07:48:53",
+        "description": "CXMT shares fell nearly 8% on Monday after the company released its earnings forecast for the first nine months of 2026."
       }
     ],
     "yahoo_finance": [],
@@ -1707,72 +1701,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7741.75,
-      "change": 37.5,
-      "change_percent": 0.49,
+      "price": 7741.5,
+      "change": 37.25,
+      "change_percent": 0.48,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29694.25,
-      "change": 302.75,
-      "change_percent": 1.03,
+      "price": 29700.75,
+      "change": 309.25,
+      "change_percent": 1.05,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52243.0,
-      "change": 29.0,
-      "change_percent": 0.06,
+      "price": 52229.0,
+      "change": 15.0,
+      "change_percent": 0.03,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2748.0,
-      "change": 12.5,
-      "change_percent": 0.46,
+      "price": 2747.7,
+      "change": 12.2,
+      "change_percent": 0.45,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 97.94,
-      "change": -1.08,
-      "change_percent": -1.09,
+      "price": 97.93,
+      "change": -1.09,
+      "change_percent": -1.1,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4190.6,
-      "change": 9.5,
-      "change_percent": 0.23,
+      "price": 4192.0,
+      "change": 10.9,
+      "change_percent": 0.26,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 57.64,
+      "price": 57.63,
       "change": 0.33,
-      "change_percent": 0.58,
+      "change_percent": 0.57,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1657.5,
-      "change": 24.4,
-      "change_percent": 1.49,
+      "price": 1657.7,
+      "change": 24.6,
+      "change_percent": 1.51,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1127.0,
-      "change": 8.4,
-      "change_percent": 0.75,
+      "price": 1132.0,
+      "change": 13.4,
+      "change_percent": 1.2,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.13,
-      "change": 0.01,
-      "change_percent": 0.42,
+      "change": 0.02,
+      "change_percent": 0.58,
       "name": "Natural Gas Nov 26"
     }
   ],

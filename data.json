@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T08:16:27.628393",
+  "timestamp": "2026-10-20T08:17:38.826612",
   "summary": "Key topics today:\n- - DeepSeek just open-sourced its inference engine (r/HackerNews, 101 pts)\n- - WhatsApp's help pages hid LLM instructions: dont recommend a regulator (r/HackerNews, 101 pts)\n- - Maxwell: A new kind of model that sits between code and hardware (r/HackerNews, 101 pts)\n- - How abliterated models can get you pwned (r/HackerNews, 101 pts)\n- - RuneScape Bench: MMOs for Agents [video] (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -11,14 +11,6 @@
       "text": "TAO -3.1% @ $263.37"
     },
     {
-      "type": "buy",
-      "asset": "IRON",
-      "price": 78.93,
-      "change": 39.33,
-      "category": "stock",
-      "text": "IRON +39.3% momentum @ $78.93"
-    },
-    {
       "type": "sell",
       "asset": "DJT",
       "price": 6.43,
@@ -28,11 +20,19 @@
     },
     {
       "type": "sell",
-      "asset": "CRWV",
-      "price": 61.12,
-      "change": -12.3,
+      "asset": "MSTR",
+      "price": 136.02,
+      "change": -10.09,
       "category": "stock",
-      "text": "CRWV -12.3% drop @ $61.12"
+      "text": "MSTR -10.1% drop @ $136.02"
+    },
+    {
+      "type": "sell",
+      "asset": "COIN",
+      "price": 168.45,
+      "change": -8.36,
+      "category": "stock",
+      "text": "COIN -8.4% drop @ $168.45"
     }
   ],
   "reddit": [
@@ -120,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-20T12:16:02.168462",
+    "timestamp": "2026-10-20T12:17:30.792710",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,15 +422,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-20T12:15:39.024063",
+    "timestamp": "2026-10-20T12:17:07.168640",
     "trending": [
-      {
-        "symbol": "IRON",
-        "price": 78.93,
-        "change": 22.28,
-        "change_percent": 39.33,
-        "name": "Disc Medicine, Inc."
-      },
       {
         "symbol": "DJT",
         "price": 6.43,
@@ -439,25 +432,18 @@
         "name": "Trump Media & Technology Group "
       },
       {
-        "symbol": "CRWV",
-        "price": 61.12,
-        "change": -8.57,
-        "change_percent": -12.3,
-        "name": "CoreWeave, Inc."
+        "symbol": "SAIQ",
+        "price": 3.41,
+        "change": 0.2,
+        "change_percent": 6.23,
+        "name": "WISeSat.Space Holdings Corp."
       },
       {
-        "symbol": "3750.HK",
-        "price": 411.8,
-        "change": -36.8,
-        "change_percent": -8.2,
-        "name": "CATL"
-      },
-      {
-        "symbol": "NFLX",
-        "price": 69.85,
-        "change": -2.76,
-        "change_percent": -3.8,
-        "name": "Netflix, Inc."
+        "symbol": "RAPP",
+        "price": 28.6,
+        "change": -0.97,
+        "change_percent": -3.28,
+        "name": "Rapport Therapeutics, Inc."
       },
       {
         "symbol": "AMZN",
@@ -474,6 +460,13 @@
         "name": "RTX Corporation"
       },
       {
+        "symbol": "MSCI",
+        "price": 563.49,
+        "change": -11.6,
+        "change_percent": -2.02,
+        "name": "MSCI Inc."
+      },
+      {
         "symbol": "MMM",
         "price": 162.01,
         "change": -3.32,
@@ -486,6 +479,13 @@
         "change": -0.91,
         "change_percent": -1.09,
         "name": "General Motors Company"
+      },
+      {
+        "symbol": "F",
+        "price": 12.18,
+        "change": -0.13,
+        "change_percent": -1.06,
+        "name": "Ford Motor Company"
       },
       {
         "symbol": "WMT",
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-20T12:15:58.123626",
+    "timestamp": "2026-10-20T12:17:27.351355",
     "items": [
       {
         "symbol": "SPX",
@@ -980,8 +980,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.87,
-        "change": 2.33,
+        "price": 18.84,
+        "change": 2.17,
         "type": "index"
       },
       {
@@ -992,50 +992,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7715.25,
-        "change": -0.25,
+        "price": 7715.75,
+        "change": -0.24,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29519.25,
+        "price": 29520.0,
         "change": -0.68,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52146.0,
-        "change": -0.07,
+        "price": 52170.0,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2736.9,
-        "change": -0.2,
+        "price": 2736.5,
+        "change": -0.21,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 100.79,
-        "change": -2.77,
+        "price": 100.8,
+        "change": -2.76,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4139.6,
-        "change": -0.49,
+        "price": 4138.6,
+        "change": -0.52,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 57.14,
-        "change": 0.29,
+        "price": 57.15,
+        "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1641.8,
-        "change": 0.18,
+        "price": 1643.4,
+        "change": 0.28,
         "type": "future"
       },
       {
@@ -1046,44 +1046,44 @@
       },
       {
         "symbol": "NG=F",
-        "price": 3.0,
-        "change": -2.03,
+        "price": 2.99,
+        "change": -2.09,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 263.37,
-        "change": -3.08,
+        "price": 263.26,
+        "change": -3.17,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81359,
-        "change": -1.4,
+        "price": 81336,
+        "change": -1.44,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2383.0,
-        "change": -1.71,
+        "price": 2382.67,
+        "change": -1.7,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.08,
-        "change": -1.06,
-        "type": "crypto"
-      },
-      {
-        "symbol": "LINK",
-        "price": 11.96,
+        "price": 104.02,
         "change": -1.13,
         "type": "crypto"
       },
       {
+        "symbol": "LINK",
+        "price": 11.95,
+        "change": -1.26,
+        "type": "crypto"
+      },
+      {
         "symbol": "AVAX",
-        "price": 9.43,
-        "change": -2.7,
+        "price": 9.42,
+        "change": -2.84,
         "type": "crypto"
       },
       {
@@ -1150,8 +1150,8 @@
   },
   "business": [
     {
-      "title": "AI rally fades away from Wall Street as a tiny IPO makes big waves",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RTmgzcWZUb3pvR3p6eW00aEFZZGd2NEdSSTZkY1dud2JGRl9NQU05dnZreXNkWjhLY2RIRXF5Z0V1aVBJeEk1V1l6RERQQmZDMFZ2aWZGWE12WXdsTFN3U3F4aU5HVXVtZkdyT2NETHNwQUh3WnfSAXtBVV95cUxOQV9Zc2lkTFhfeDFCbF9PTG9rUTk1ajY3cnRlUUJ4NnAyMDFjMGdfUFc1WlRlTF94bHdYN1ZjMktqQ1ItSU5hWmlPUGhvSThSNGt4MzhyakR6c3ZXRzVmSHlUa2hkVDMyWUh3NmFYbUFNSjFBcWd6SmFjMWM?oc=5",
+      "title": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BMm5ISmplcUtod2txVlV0ajlNUHFPanpRa09GWnBMdjdOaUFCSTZOUXk2SnVNclplakZrckJWZDZTYU96Z3pKTVZieUZiVXkwM3Fza0FibjVLaGhBR2dNMUVwNW1yTllMZlI5R1N6ek1MZXI5OXfSAXtBVV95cUxOMTd2ZFNDSGNCclhSb3lSYl9MdnVtZ3BiYlp6VFQyZUpNR25oNFlsYnRnMThxWmJTZ2tWd3BGWV9PWGFSdHMzMFotTmNpbUFuQzZLaVdkOTJtSmxHeEpLdFcyU013c1dUMktXNWt4blRDZFYzeEk2VkF6WVU?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Tue, 20 Oct 2026 ",
@@ -1160,9 +1160,9 @@
       "author": ""
     },
     {
-      "title": "China slams US ban on DeepSeek AI over security concerns",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBITWEtWmtRWUt6SldYS08tMldaaGs2YlBaLTF0TkkwWWZHYzV1N2pvajZ0clRRTnp5U2YyMkV1NkFqaTg2Si13TDh0RDg2ckFqTzF0OVk2UXc0YmlYeEdrV3B4MWtRVVRmcjhQbVhpUnFlSFljSFRj?oc=5",
-      "source": "Fox News",
+      "title": "Stock Market Today: Nasdaq Futures Slip; Dismal Data-Center IPO Weighs on Tech Investors \u2014 Live Updates",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPS0NRSk1EUUhjNHJpMWxWVmd2VUxVWjVuS0ItUmZHUjZGLWhIMi1qSGNhRkQxT2VmR3RtekVXTHhNNUl3MlNsTUdpZmJIRDd5Rmc2VFNuNktwQ0cyWjNqcDM2dzhXMG5aZ0ZzTmtrUkZPbXVEbmF5X2t5aF9obDNqajZnWUo4Tm8?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Tue, 20 Oct 2026 ",
       "description": "",
@@ -1200,16 +1200,6 @@
       "author": ""
     },
     {
-      "title": "Google Cloud Outage Hits U.K. Banks",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZU9oaGJacEZnOFoyeHBZS3k4cVJHTFdjelUxbkozMWN0QkVFSkJSZXE3cFp2VDFJM2kycjdOb2dkMU95WFlwZGNtdmprbzFpRUdDOTM1MXdld3hYakNyX0VNOEQ1NXhGSFBqT19wM3JkQlN4ZG1BNjN1MDZ3QS1fR0Q0LXhTdlZVd0lHcThJMlNaaXpLRGF4ZnNSS1VMTGd2dHAzcnBOSXBMUW9IVTFtcFBOSlBDMThlbGc2Nw?oc=5",
-      "source": "WSJ",
-      "category": "business",
-      "published": "Tue, 20 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Elon Musk\u2019s proposed SpaceX stock giveaway would go into \u2018Trump Accounts\u2019",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VYmpGb0xmOGt6UDNtZ2Z6VXJzbGdrTEVBZVh0ZURtOFFjYmpYRWV2VkpGVTFlVDZScThrQU9BQ3hpUXZfeHJRdkd4U0tWNlIzZmlnaGx4MXE5TDdTU1hNNW5zQ09ZT2h5NmRUYXRNVC1ZSVlEb2JF?oc=5",
       "source": "The Verge",
@@ -1223,6 +1213,16 @@
       "title": "GM beats on Q3 results, tightens profit outlook, and unveils new $20 billion buyback",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOMGN1LU52S05mZjg1bl9kcDJSZWFnamtQSWFULXJ3R0xCR2s2eWZCR0NqSUptRDlfOEJqNGFKLUxpSk5DckFmYzNscFdrTGZ3VkFqQXFWcEZGWFczRk9ObUdKOW1Tak8tQzFQTkxkZWdLNU9jYU8zWkM4a1hUQkNTUTRuSDdPYnlLNGRoYVB1N2laMldsVHBuWG5ESUpKdFdCb3RYZmM5U0pMUV9CSnNDS2VOQXV3NHV5ZHNuNzFFTEFIQmpnUExiTkFnUkRpREg0M2VxTlFnNXJNWW9pS0E?oc=5",
       "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Tue, 20 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Asia stocks slump as AI jitters hammer Korean chipmakers ahead of tech earnings",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVzNISmxCVWJJZUVoV19YcUFXU1NjeG5RRlVsbVJOOTI4T0pPWHhGc01UVHNZbmRGZUFfUHZEbXNQZjJjQ1cwRHd1NFFkaGJQSEpXTUtnWFp2STNDVzBOa1pSRUluazMwQkdHQkFfNFNKMHdaNjJyc3JtUHkxUnB6NDBSejUxTlVQandFLUtUcWFNd1pZd1ptQkNGVHNGT1VPc3BWbkJ4ajRveGduYjl3eV9VSFF1cmdCbFFyWTZtODN0UDJUU2wzYlNHckZVbTA4WVE?oc=5",
+      "source": "Investing.com",
       "category": "business",
       "published": "Tue, 20 Oct 2026 ",
       "description": "",
@@ -1538,7 +1538,7 @@
     "changePercent": 1.17,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 20 Oct: 29,529.34, up +1.17% -- BULLISH. strong +1.17% move. Counter: price below SMA20, RSI 38.7 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-20T08:16:25.584336"
+    "timestamp": "2026-10-20T08:17:37.251742"
   },
   "sticky": {
     "cnbc": [
@@ -1677,58 +1677,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7715.0,
-      "change": -19.5,
-      "change_percent": -0.25,
+      "price": 7716.0,
+      "change": -18.5,
+      "change_percent": -0.24,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29516.5,
-      "change": -206.0,
-      "change_percent": -0.69,
+      "price": 29521.0,
+      "change": -201.5,
+      "change_percent": -0.68,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52146.0,
-      "change": -36.0,
-      "change_percent": -0.07,
+      "price": 52168.0,
+      "change": -14.0,
+      "change_percent": -0.03,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2737.1,
-      "change": -5.2,
-      "change_percent": -0.19,
+      "price": 2736.4,
+      "change": -5.9,
+      "change_percent": -0.22,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 100.79,
-      "change": -2.87,
-      "change_percent": -2.77,
+      "price": 100.81,
+      "change": -2.85,
+      "change_percent": -2.75,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4140.1,
-      "change": -20.0,
-      "change_percent": -0.48,
+      "price": 4139.0,
+      "change": -21.1,
+      "change_percent": -0.51,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
       "price": 57.15,
-      "change": 0.18,
-      "change_percent": 0.31,
+      "change": 0.17,
+      "change_percent": 0.3,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1641.8,
-      "change": 3.0,
-      "change_percent": 0.18,
+      "price": 1643.4,
+      "change": 4.6,
+      "change_percent": 0.28,
       "name": "Platinum Jan 27"
     },
     {
@@ -1740,9 +1740,9 @@
     },
     {
       "symbol": "NG=F",
-      "price": 3.0,
+      "price": 2.99,
       "change": -0.06,
-      "change_percent": -2.03,
+      "change_percent": -2.13,
       "name": "Natural Gas Nov 26"
     }
   ],

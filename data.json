@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-10-21T02:31:10.502882",
-  "summary": "Key topics today:\n- - DeepInfer: High-performance inference framework for DeepSeek models (r/HackerNews, 201 pts)\n- - Using Claude to reduce the attack surface of code (r/HackerNews, 101 pts)\n- - To Make, or to Buy: The Economics of Decision Models (r/HackerNews, 101 pts)\n- - The Future of CSS (r/HackerNews, 1 pts)\n- - Alibaba hikes DeepSeek V4 Flash 0731 output prices by 230% (r/HackerNews, 1 pts)",
+  "timestamp": "2026-10-21T02:46:15.230935",
+  "summary": "Key topics today:\n- - DeepInfer: High-performance inference framework for DeepSeek models (r/HackerNews, 201 pts)\n- - Using Claude to reduce the attack surface of code (r/HackerNews, 101 pts)\n- - To Make, or to Buy: The Economics of Decision Models (r/HackerNews, 101 pts)\n- - Nexus-CLI \u2013 Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support (r/HackerNews, 101 pts)\n- - PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619) (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "buy",
       "asset": "ZEC",
-      "price": 1256.71,
-      "change": 10.79,
+      "price": 1261.35,
+      "change": 10.55,
       "category": "crypto",
-      "text": "ZEC +10.8% breakout @ $1,256.71"
+      "text": "ZEC +10.6% breakout @ $1,261.35"
     },
     {
       "type": "watch",
       "asset": "XRP",
       "price": 1.33,
-      "change": 2.49,
+      "change": 2.41,
       "category": "crypto",
-      "text": "XRP +2.5% @ $1.33"
+      "text": "XRP +2.4% @ $1.33"
     },
     {
       "type": "buy",
@@ -49,6 +49,14 @@
       "change": null,
       "category": "sentiment",
       "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
+    },
+    {
+      "type": "watch",
+      "asset": "EDGE AI",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "Edge AI trend \u2014 local inference plays"
     }
   ],
   "reddit": [
@@ -77,19 +85,27 @@
       "created": ""
     },
     {
+      "title": "Nexus-CLI \u2013 Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://github.com/xamrayev/nexus-cli",
+      "created": ""
+    },
+    {
+      "title": "PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619)",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://jackalsyn.com/posts/php-up-2026.html",
+      "created": ""
+    },
+    {
       "title": "The Future of CSS",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.joshwcomeau.com/css/interop-2027/",
-      "created": ""
-    },
-    {
-      "title": "Alibaba hikes DeepSeek V4 Flash 0731 output prices by 230%",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.stork.ai/newsletter/2026-10-20-alibaba-quietly-tripled-deepseek-prices#lead",
       "created": ""
     },
     {
@@ -123,97 +139,89 @@
       "comments": 0,
       "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
       "created": ""
-    },
-    {
-      "title": "Voxtral 3",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://mistral.ai/news/voxtral-3/",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-21T06:31:02.278575",
+    "timestamp": "2026-10-21T06:45:50.601392",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 270.07,
-        "change_24h": 1.93,
-        "market_cap": 3062536103
+        "price": 270.9,
+        "change_24h": 1.9,
+        "market_cap": 3072285986
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 82614,
-        "change_24h": 1.15,
-        "market_cap": 1660451376878
+        "price": 82745,
+        "change_24h": 1.16,
+        "market_cap": 1663076261975
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2435.89,
-        "change_24h": 1.78,
-        "market_cap": 297571156461
+        "price": 2441.27,
+        "change_24h": 1.76,
+        "market_cap": 298213219467
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.99907,
+        "price": 0.999052,
         "change_24h": -0.02,
-        "market_cap": 182771859218
+        "market_cap": 182769843171
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 742.63,
-        "change_24h": 1.93,
-        "market_cap": 97662203469
+        "price": 743.35,
+        "change_24h": 1.88,
+        "market_cap": 97751059618
       },
       {
         "name": "XRP",
         "symbol": "XRP",
         "price": 1.33,
-        "change_24h": 2.49,
-        "market_cap": 84119060837
+        "change_24h": 2.41,
+        "market_cap": 84261704269
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999476,
+        "price": 0.999463,
         "change_24h": -0.05,
-        "market_cap": 72112206534
+        "market_cap": 72114114743
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 105.72,
-        "change_24h": 1.26,
-        "market_cap": 62335823013
+        "price": 106.0,
+        "change_24h": 1.19,
+        "market_cap": 62494258685
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.330848,
-        "change_24h": -0.26,
-        "market_cap": 31421972565
+        "price": 0.330773,
+        "change_24h": -0.29,
+        "market_cap": 31426128744
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.025,
         "change_24h": 0.4,
-        "market_cap": 24708877933
+        "market_cap": 24709160177
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1256.71,
-        "change_24h": 10.79,
-        "market_cap": 21358846164
+        "price": 1261.35,
+        "change_24h": 10.55,
+        "market_cap": 21435133387
       }
     ],
     "news": [
@@ -309,12 +317,12 @@
       "description": "Mohammad Alias Yousaf made his claim to an undercover reporter posing as a mini-mart owner."
     },
     {
-      "title": "US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works now'",
+      "title": "US envoy arrives in Russia ahead of meeting with Putin as Zelensky says intelligence sharing 'works now'",
       "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Wed, 21 Oct 2026 ",
-      "description": "Ukraine had accused the US of withholding key intelligence - a claim rejected as \"scandalous\" by Washington."
+      "description": "Steve Witkoff is in St Petersburg to discuss proposals on ending Russia's years-long conflict with Ukraine."
     },
     {
       "title": "King praises Oman's Strait of Hormuz peace efforts at glittering banquet",
@@ -325,7 +333,7 @@
       "description": "The Sultan of Oman, leader of a Middle Eastern strategic partner, is welcomed to Windsor for a state visit."
     },
     {
-      "title": "Why does Elon Musk want to merge Tesla and SpaceX?",
+      "title": "Elon Musk says merging Tesla and SpaceX is a good idea. Why?",
       "url": "https://www.bbc.co.uk/news/articles/cr93z1e87e0do?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -438,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-21T06:30:40.209131",
+    "timestamp": "2026-10-21T06:45:27.162567",
     "trending": [
       {
         "symbol": "BRZE",
@@ -526,9 +534,9 @@
       },
       {
         "symbol": "^NSEI",
-        "price": 22808.45,
-        "change": -80.5,
-        "change_percent": -0.35,
+        "price": 22747.85,
+        "change": -141.1,
+        "change_percent": -0.62,
         "name": "NIFTY 50"
       },
       {
@@ -974,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-21T06:30:58.943731",
+    "timestamp": "2026-10-21T06:45:46.259421",
     "items": [
       {
         "symbol": "SPX",
@@ -1002,98 +1010,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7772.0,
-        "change": 0.22,
+        "price": 7773.75,
+        "change": 0.24,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29831.75,
-        "change": 0.53,
+        "price": 29858.0,
+        "change": 0.62,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52751.0,
+        "price": 52752.0,
         "change": 0.06,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2781.7,
-        "change": -0.19,
+        "price": 2783.5,
+        "change": -0.12,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 99.2,
-        "change": -2.54,
+        "price": 99.12,
+        "change": -2.62,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4133.8,
-        "change": -0.21,
+        "price": 4135.3,
+        "change": -0.18,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 57.35,
-        "change": -0.62,
+        "price": 57.42,
+        "change": -0.5,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1631.2,
-        "change": -0.94,
+        "price": 1631.7,
+        "change": -0.9,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1080.5,
-        "change": -1.74,
+        "price": 1083.5,
+        "change": -1.46,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.97,
-        "change": 0.24,
+        "price": 2.96,
+        "change": -0.03,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 270.17,
-        "change": 1.81,
+        "price": 270.9,
+        "change": 1.86,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 82624,
-        "change": 1.1,
+        "price": 82761,
+        "change": 1.19,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2436.21,
-        "change": 1.7,
+        "price": 2441.5,
+        "change": 1.76,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 105.76,
-        "change": 1.11,
+        "price": 106.01,
+        "change": 1.22,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.3,
-        "change": 2.43,
+        "price": 12.32,
+        "change": 2.45,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.62,
-        "change": 0.67,
+        "price": 9.65,
+        "change": 0.79,
         "type": "crypto"
       },
       {
@@ -1180,9 +1188,9 @@
       "author": ""
     },
     {
-      "title": "FAA certifies Boeing's 737 MAX 10, clearing way for deliveries",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYzBIbDI0eW5lNzFQYWJEODBXZkQ3MXpXZlJQdVY5X3Z6TGdwQjE1S0NnS0JFQ1RZUkZldjFUbjdndmpEejdtZkxtSDhHZi1VMTc2SGppcWMtTlE5U1haRlJXSEdrT2Rsc28zVGdMQzg5ZUJicW1IY3VwRTdqaC1yeEFqNDBSVkJiNS1wZjFtOUpvSi1ENlRhRncxMDI4bzZlTzJPYlFsNjZnYWx5U3JXRzd1M3ozVEo3RUtJ?oc=5",
-      "source": "Reuters",
+      "title": "Boeing\u2019s Large 737 Max Jet Secures U.S. Approval",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBVTjBTTHR6OHdlNHVnMzE1WWtYVDlpYXl0M2xmS2pSNGN0bHpGMy1Uc2JfRDFXcWp5cHhCUWV1QktXRl9uLVBZWjdiWThoZndQeXlpSF9nY05tU2xfcHdDbU1YV1R4REFSUTNuTWxFdHJoV24xa295Q25n?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Tue, 20 Oct 2026 ",
       "description": "",
@@ -1242,16 +1250,6 @@
   ],
   "tech_business": [
     {
-      "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaEd5emlGOWZlS0h0X3d5OXNCQUFZYVZOenh2Z2VxeXY5NVdEWVgyN2lVUHRKQUFNaXRCQS1IOG1HV25rLXp4Y3A0VjVJeUtMV2ZncEdqSGMtbTE0bXdESTNoUVI2VF9rZ0NyeTAzTXY5c0c1R0Y3cWdJWExUa21Ca3F3eVVQMUFnaGY5OHRoYThIXzlkbUJBOFFPd0xtRUVaVXRqS2xTUUlyYkw4ZGZJaTByUnZMM1U?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Tue, 20 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Apple's Touchscreen OLED MacBook Pro: Everything We Know",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFakV4emttSFlyZFd2MWd1ZzBWQ1Z3cHZ6c1ZSMHBxTExxQl9JSDE5cmpRTU5Pc1JHNGY4ajNOTVNlTEFVY2N6clBYbzVtWXlDOE5RVXlRTURsRTV0elBUbWJrQUZCOWs?oc=5",
       "source": "MacRumors",
@@ -1267,6 +1265,16 @@
       "source": "BGR",
       "category": "business",
       "published": "Wed, 21 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaEd5emlGOWZlS0h0X3d5OXNCQUFZYVZOenh2Z2VxeXY5NVdEWVgyN2lVUHRKQUFNaXRCQS1IOG1HV25rLXp4Y3A0VjVJeUtMV2ZncEdqSGMtbTE0bXdESTNoUVI2VF9rZ0NyeTAzTXY5c0c1R0Y3cWdJWExUa21Ca3F3eVVQMUFnaGY5OHRoYThIXzlkbUJBOFFPd0xtRUVaVXRqS2xTUUlyYkw4ZGZJaTByUnZMM1U?oc=5",
+      "source": "TechCrunch",
+      "category": "business",
+      "published": "Tue, 20 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1332,6 +1340,14 @@
       "relevance_score": 7
     },
     {
+      "title": "US envoy arrives in Russia ahead of meeting with Putin as Zelensky says intelligence sharing 'works now'",
+      "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Wed, 21 Oct 2026 ",
+      "description": "Steve Witkoff is in St Petersburg to discuss proposals on ending Russia's years-long conflict with Ukraine.",
+      "relevance_score": 6
+    },
+    {
       "title": "US Army support for Golden Dome missile shield takes shape",
       "url": "https://www.defensenews.com/air-warfare/2026/10/20/us-army-support-for-golden-dome-missile-shield-takes-shape/",
       "source": "Defense News",
@@ -1353,14 +1369,6 @@
       "source": "Al Jazeera",
       "published": "Wed, 21 Oct 2026 ",
       "description": "Al Jazeera analysed how every party in the Knesset voted on the most consequential measures affecting Palestinians.",
-      "relevance_score": 4
-    },
-    {
-      "title": "US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works now'",
-      "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Wed, 21 Oct 2026 ",
-      "description": "Ukraine had accused the US of withholding key intelligence - a claim rejected as \"scandalous\" by Washington.",
       "relevance_score": 4
     },
     {
@@ -1428,14 +1436,6 @@
       "relevance_score": 1
     },
     {
-      "title": "Lula, Bolsonaro seek to disqualify each other ahead of Brazil runoff",
-      "url": "https://www.aljazeera.com/news/2026/10/21/lula-bolsonaro-seek-to-disqualify-each-other-ahead-of-brazil-runoff?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Wed, 21 Oct 2026 ",
-      "description": "Messaging service WhatsApp and parent company Meta are embroiled in legal attacks by Brazil&#039;s presidential candidates.",
-      "relevance_score": 1
-    },
-    {
       "title": "Trump and Zelensky appear at loggerheads despite Oslo optimism",
       "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1448,34 +1448,34 @@
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 350203,
+      "stars": 350791,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-21T05:40:30Z"
+      "updated": "2026-10-21T06:45:55Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 285028,
+      "stars": 285060,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-21T05:40:42Z"
+      "updated": "2026-10-21T06:45:39Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 255654,
+      "stars": 255668,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-21T05:36:08Z"
+      "updated": "2026-10-21T06:44:28Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 193542,
+      "stars": 193577,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-21T05:36:03Z"
+      "updated": "2026-10-21T06:45:22Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1483,63 +1483,63 @@
       "stars": 187687,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-21T05:38:08Z"
+      "updated": "2026-10-21T06:37:46Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 170135,
+      "stars": 170240,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-21T05:39:23Z"
+      "updated": "2026-10-21T06:45:29Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 167930,
+      "stars": 167931,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-21T05:32:24Z"
+      "updated": "2026-10-21T06:09:26Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 159089,
+      "stars": 159090,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-21T05:29:19Z"
+      "updated": "2026-10-21T06:15:58Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156313,
+      "stars": 156318,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-21T05:35:48Z"
+      "updated": "2026-10-21T06:33:38Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 100374,
+      "stars": 100387,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-21T05:35:57Z"
+      "updated": "2026-10-21T06:41:37Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 83981,
+      "stars": 84002,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-21T05:37:19Z"
+      "updated": "2026-10-21T06:42:49Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 78918,
+      "stars": 78925,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-21T04:40:51Z"
+      "updated": "2026-10-21T06:44:34Z"
     }
   ],
   "nasdaq_data": {
@@ -1548,7 +1548,7 @@
     "changePercent": -0.13,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 21 Oct: 29,490.28, down -0.13% -- BEARISH. price below SMA20, RSI 37.1 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-21T02:31:08.971888"
+    "timestamp": "2026-10-21T02:46:13.389101"
   },
   "sticky": {
     "cnbc": [
@@ -1687,72 +1687,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7772.25,
-      "change": 17.0,
-      "change_percent": 0.22,
+      "price": 7773.5,
+      "change": 18.25,
+      "change_percent": 0.24,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29831.75,
-      "change": 156.5,
-      "change_percent": 0.53,
+      "price": 29858.75,
+      "change": 183.5,
+      "change_percent": 0.62,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52753.0,
-      "change": 34.0,
+      "price": 52750.0,
+      "change": 31.0,
       "change_percent": 0.06,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2781.7,
-      "change": -5.2,
-      "change_percent": -0.19,
+      "price": 2783.7,
+      "change": -3.2,
+      "change_percent": -0.11,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 99.2,
-      "change": -2.59,
-      "change_percent": -2.54,
+      "price": 99.09,
+      "change": -2.7,
+      "change_percent": -2.65,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4133.3,
-      "change": -9.3,
-      "change_percent": -0.22,
+      "price": 4134.9,
+      "change": -7.7,
+      "change_percent": -0.19,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 57.34,
-      "change": -0.37,
-      "change_percent": -0.63,
+      "price": 57.4,
+      "change": -0.3,
+      "change_percent": -0.52,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1631.2,
-      "change": -15.4,
-      "change_percent": -0.94,
+      "price": 1631.6,
+      "change": -15.0,
+      "change_percent": -0.91,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1080.5,
-      "change": -19.1,
-      "change_percent": -1.74,
+      "price": 1083.5,
+      "change": -16.1,
+      "change_percent": -1.46,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.97,
-      "change": 0.01,
-      "change_percent": 0.24,
+      "price": 2.96,
+      "change": -0.0,
+      "change_percent": -0.03,
       "name": "Natural Gas Nov 26"
     }
   ],

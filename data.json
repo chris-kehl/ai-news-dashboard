@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-23T02:16:29.876370",
-  "summary": "Key topics today:\n- - OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents (r/HackerNews, 301 pts)\n- - Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies? (r/HackerNews, 301 pts)\n- - Every AI model has the same \"controversial\" take on humans (r/HackerNews, 201 pts)\n- - LLMs are making formal software verification feasible at a much larger scale (r/HackerNews, 101 pts)\n- - WorldTUI: I trained a 360M model to pretend to be a terminal (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-23T02:23:27.900544",
+  "summary": "Key topics today:\n- - OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents (r/HackerNews, 301 pts)\n- - Every AI model has the same \"controversial\" take on humans (r/HackerNews, 201 pts)\n- - LLMs are making formal software verification feasible at a much larger scale (r/HackerNews, 101 pts)\n- - WorldTUI: I trained a 360M model to pretend to be a terminal (r/HackerNews, 101 pts)\n- - Docker is weird (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -9,6 +9,14 @@
       "change": -3.02,
       "category": "crypto",
       "text": "ZEC -3.0% @ $1,225.42"
+    },
+    {
+      "type": "buy",
+      "asset": "BHVN",
+      "price": 14.69,
+      "change": 24.39,
+      "category": "stock",
+      "text": "BHVN +24.4% momentum @ $14.69"
     },
     {
       "type": "sell",
@@ -25,22 +33,6 @@
       "change": -16.3,
       "category": "stock",
       "text": "MRNA -16.3% drop @ $202.63"
-    },
-    {
-      "type": "sell",
-      "asset": "SOXL",
-      "price": 82.11,
-      "change": -15.83,
-      "category": "stock",
-      "text": "SOXL -15.8% drop @ $82.11"
-    },
-    {
-      "type": "watch",
-      "asset": "AI SECTOR",
-      "price": null,
-      "change": null,
-      "category": "sentiment",
-      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
@@ -50,14 +42,6 @@
       "score": 301,
       "comments": 0,
       "url": "https://github.com/NVIDIA/OpenShell",
-      "created": ""
-    },
-    {
-      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
-      "subreddit": "HackerNews",
-      "score": 301,
-      "comments": 0,
-      "url": "https://news.ycombinator.com/item?id=50200997",
       "created": ""
     },
     {
@@ -117,6 +101,14 @@
       "created": ""
     },
     {
+      "title": "Jank \u2013 The native Clojure dialect with seamless C++ interop",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://jank-lang.org/",
+      "created": ""
+    },
+    {
       "title": "Getting ready to operate GNU Taler in Germany",
       "subreddit": "HackerNews",
       "score": 1,
@@ -128,7 +120,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-23T06:16:02.555641",
+    "timestamp": "2026-10-23T06:23:15.963639",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,8 +422,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-23T06:15:39.104756",
+    "timestamp": "2026-10-23T06:22:53.431137",
     "trending": [
+      {
+        "symbol": "BHVN",
+        "price": 14.69,
+        "change": 2.88,
+        "change_percent": 24.39,
+        "name": "Biohaven Ltd."
+      },
       {
         "symbol": "TTMI",
         "price": 73.89,
@@ -475,11 +474,11 @@
         "name": "Amazon.com, Inc."
       },
       {
-        "symbol": "^KS11",
-        "price": 5520.48,
-        "change": -215.18,
-        "change_percent": -3.75,
-        "name": "KOSPI Composite Index"
+        "symbol": "MU",
+        "price": 856.49,
+        "change": -39.58,
+        "change_percent": -4.42,
+        "name": "Micron Technology, Inc."
       },
       {
         "symbol": "CCI",
@@ -515,13 +514,6 @@
         "change": -93.74,
         "change_percent": -1.21,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "AMT",
-        "price": 181.57,
-        "change": -1.99,
-        "change_percent": -1.08,
-        "name": "American Tower Corporation (REI"
       },
       {
         "symbol": ".RUT",
@@ -966,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-23T06:15:58.440507",
+    "timestamp": "2026-10-23T06:23:12.337895",
     "items": [
       {
         "symbol": "SPX",
@@ -994,50 +986,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7696.75,
-        "change": -0.1,
+        "price": 7699.0,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29152.0,
-        "change": 0.03,
+        "price": 29175.5,
+        "change": 0.11,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52933.0,
-        "change": -0.25,
+        "price": 52926.0,
+        "change": -0.27,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2791.9,
-        "change": -0.15,
+        "price": 2791.6,
+        "change": -0.16,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 100.8,
-        "change": 1.34,
+        "price": 100.76,
+        "change": 1.3,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4035.4,
-        "change": -0.62,
+        "price": 4030.2,
+        "change": -0.74,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 54.26,
-        "change": -0.92,
+        "price": 54.21,
+        "change": -1.02,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1571.1,
-        "change": 0.23,
+        "price": 1570.9,
+        "change": 0.22,
         "type": "future"
       },
       {
@@ -1049,43 +1041,43 @@
       {
         "symbol": "NG=F",
         "price": 2.72,
-        "change": -2.58,
+        "change": -2.65,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 262.57,
-        "change": -0.49,
+        "price": 263.21,
+        "change": -0.02,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 81765,
-        "change": -1.15,
+        "price": 81838,
+        "change": -1.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2402.61,
-        "change": -1.43,
+        "price": 2404.89,
+        "change": -1.25,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 104.38,
-        "change": -0.49,
+        "price": 104.49,
+        "change": -0.34,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 12.2,
-        "change": -0.1,
+        "price": 12.22,
+        "change": 0.14,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.31,
-        "change": -0.91,
+        "price": 9.32,
+        "change": -0.7,
         "type": "crypto"
       },
       {
@@ -1137,15 +1129,15 @@
         "type": "mover"
       },
       {
-        "symbol": "^KS11",
-        "price": 5517.78,
-        "change": -3.8,
-        "type": "mover"
-      },
-      {
         "symbol": "BB",
         "price": 8.59,
         "change": -3.16,
+        "type": "mover"
+      },
+      {
+        "symbol": "CCI",
+        "price": 78.83,
+        "change": -2.85,
         "type": "mover"
       }
     ]
@@ -1155,6 +1147,16 @@
       "title": "Hackers appear to be struggling to exploit PHP flaws after global cybersecurity crisis",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVVFxYTJNZUhsZERlMER2dExPLVJqOEJMWTd5TG1rbm41b3RUQXZGeUlTOWkyVHRzU05ab1R2SzYyQjY3MTVQX0JPM3duNVRCNC15SXBXN09PNW14QnpWeTBjcGNfaUtneFZ1OHpSRDVxRFREYVlNWHl3NnkyM3R4UHhDcXRhTkNrSTJZUk5NTjc?oc=5",
       "source": "NBC News",
+      "category": "business",
+      "published": "Thu, 22 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONnNOdktrNUZJbHl6TFdGd2FFQzZtdjJCSzRXbTVSYXpPU2Q3b2VWVjJnZ1BmZzhMYW9YMU56b0RCVVJEaGJ5ZU5fUFBrNWR6SENETlhJbUl1NEo5ZXhWcTZ0Y0NmZmp3MWEtS3pjOE15NDA3WTgtc0M3WnBVNzU1eFBRVFJQdXp6NmtrVENRR0FFWGJoaXZUYmEzcDMxYXZweEZXbi00dGJaS3dG?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Thu, 22 Oct 2026 ",
       "description": "",
@@ -1182,16 +1184,6 @@
       "author": ""
     },
     {
-      "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONnNOdktrNUZJbHl6TFdGd2FFQzZtdjJCSzRXbTVSYXpPU2Q3b2VWVjJnZ1BmZzhMYW9YMU56b0RCVVJEaGJ5ZU5fUFBrNWR6SENETlhJbUl1NEo5ZXhWcTZ0Y0NmZmp3MWEtS3pjOE15NDA3WTgtc0M3WnBVNzU1eFBRVFJQdXp6NmtrVENRR0FFWGJoaXZUYmEzcDMxYXZweEZXbi00dGJaS3dG?oc=5",
-      "source": "Ars Technica",
-      "category": "business",
-      "published": "Thu, 22 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Treasury yields log biggest drop since the 2023 banking crisis. Here\u2019s what\u2019s going on.",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdDNHQlIxQkRfeVl2bWtrX2lzYTZsX0JYazZRaGdkclU5aHAwWlppV05YSTdvS0kwQXNVa0p6N0tseXVpcDZPRFBhdV9fbTExaXZZSTJJT1RXQmVXR3ZpTE5aZXp5cXFHRnB0WGxJNjVubU14LUs0eFV0SDVHWnJpYVkwYlNxZEhvZDVPa1U1MXlsYi15a2czRGJiOER5RjQ5M0toakZZbWV5S245WkM3QVNhZw?oc=5",
       "source": "MarketWatch",
@@ -1212,9 +1204,9 @@
       "author": ""
     },
     {
-      "title": "Airbnb guests no longer have to wash the dishes or strip the beds at checkout",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYVR1WHZ3YWZNVnJTaFNLZ01QYnZReUZweTJpUFZIS2RHb2pLLXZ6WUdRUDVuT0pvaGYyZ0EzeGFaTm5hYnpPNkFqSTZnRl9ORGlhVkhSekhMRkpObEdQTDQyWDhadnFQbWVxZ0hBUWhzQWZVbm1tdW9mZzkxUlpOSGNoN1ZNZXBhdkQ0UktneHZ4Y3hpb2FXSjBkX052Q25aYkE?oc=5",
-      "source": "AP News",
+      "title": "Mark Zuckerberg's creative plan to pay California\u2019s proposed billionaire tax without losing control of Meta",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONnhPc3Noa0hZdmVYU1l4aGZ0bTZlSlVsZHRoSG9LNFJNbnVvVnFiYlBWelRnSzRDTUtxTzVZcl95ZmV4eHdrNllsVzNKVHBReEduWjNibXNleHYyLXB4elExVDFGcjBuMnFmMFNMeE85cWtOakM5YUFDZDNIYVlDWjJlT0tBWlJoMGZDWjQ0TXFVb1B2dWVLd0NPMEVjT2IxY2QtS2llUU00QUFqd3ZQYTlKQjZ6Rlp6T09tcXdpc2Q4eXB5X1czYjFMOWJSYVlTREJNa2VLRQ?oc=5",
+      "source": "TechCrunch",
       "category": "business",
       "published": "Thu, 22 Oct 2026 ",
       "description": "",
@@ -1222,11 +1214,11 @@
       "author": ""
     },
     {
-      "title": "Mark Zuckerberg's creative plan to pay California\u2019s proposed billionaire tax without losing control of Meta",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONnhPc3Noa0hZdmVYU1l4aGZ0bTZlSlVsZHRoSG9LNFJNbnVvVnFiYlBWelRnSzRDTUtxTzVZcl95ZmV4eHdrNllsVzNKVHBReEduWjNibXNleHYyLXB4elExVDFGcjBuMnFmMFNMeE85cWtOakM5YUFDZDNIYVlDWjJlT0tBWlJoMGZDWjQ0TXFVb1B2dWVLd0NPMEVjT2IxY2QtS2llUU00QUFqd3ZQYTlKQjZ6Rlp6T09tcXdpc2Q4eXB5X1czYjFMOWJSYVlTREJNa2VLRQ?oc=5",
-      "source": "TechCrunch",
+      "title": "Global tech sell-off sparks flight to safety",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb0xETHRnbVdab1RJSlI5NGFLRXdZdF9jV2dVcjlnV3FzTkl2MFkwRlhQVkFYcFZPOXhjM1RTckp5VHZNblBuWmJGRGZVRmtUVVlwcWNuc3dERFlkQjk1N19kYW1wcWl0dXYtWHRfQnNLcWxqY3FZLW84ck52eS1paFdycXc?oc=5",
+      "source": "Financial Times",
       "category": "business",
-      "published": "Thu, 22 Oct 2026 ",
+      "published": "Fri, 23 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1356,6 +1348,14 @@
       "relevance_score": 5
     },
     {
+      "title": "EU entering winter with lowest gas reserves on record, IEA boss warns",
+      "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Fri, 23 Oct 2026 ",
+      "description": "Al Jazeera interviews Fatih Birol in Berlin as the Iran war disrupts global energy supplies.",
+      "relevance_score": 5
+    },
+    {
       "title": "Trump says Musk has restored access to Ukraine's Starlink network",
       "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1385,14 +1385,6 @@
       "source": "Defense News",
       "published": "Thu, 22 Oct 2026 ",
       "description": "The decade-long framework guarantees at least 850 F-35 Lightning II fighters for the U.S. military, pending congressional approval and funding.",
-      "relevance_score": 4
-    },
-    {
-      "title": "EU entering winter with lowest gas reserves on record, IEA boss warns",
-      "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Fri, 23 Oct 2026 ",
-      "description": "Al Jazeera interviews Fatih Birol in Berlin as conflicts impact energy supply.",
       "relevance_score": 4
     },
     {
@@ -1428,11 +1420,11 @@
       "relevance_score": 1
     },
     {
-      "title": "Trump backs Ramaswamy ad featuring rival Amy Acton\u2019s estranged mother",
-      "url": "https://www.aljazeera.com/news/2026/10/23/trump-backs-ramaswamy-ad-featuring-rival-amy-actons-estranged-mother?traffic_source=rss",
-      "source": "Al Jazeera",
+      "title": "Powerful earthquake hits Tibet killing 16 people, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
       "published": "Fri, 23 Oct 2026 ",
-      "description": "Trump advises the Republican gubernatorial candidate to keep running the controversial advertisement.",
+      "description": "The quake hit a mountainous, sparsely-populated area in what China calls the Tibet Autonomous Region.",
       "relevance_score": 1
     }
   ],
@@ -1540,7 +1532,7 @@
     "changePercent": -2.9,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 23 Oct: 28,958.69, down -2.90% -- BEARISH. price below SMA20, RSI 28.7 weak, MACD bearish, strong -2.9% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-23T02:16:27.537728"
+    "timestamp": "2026-10-23T02:23:26.095684"
   },
   "sticky": {
     "cnbc": [
@@ -1661,11 +1653,11 @@
         "description": "Wallstreetbets Favorites Slipped Before Tuesday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Tesla to Advance, CoreWeave to Decline - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMWxhTFo0MGlDX2RkOFdFNy1zOGdVRnY3QUFEZ21xTTJGVWhvV3gxbE45RmNnWlpEeWZvN0k2SEtDb3F5bWtmNzdxb0pBdzdkaTBkU2tpSEZ0QUxFcDhsSGtYMDhBWDJpZjRaS1hQV3RuNURhaFF4bmhxcDhMTXRKRkltRW1LTFp6TzJRRjV6R3AxaERYY3A4UDNyTVhGcTg3b2xDbnE3VQ?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Thursday; Rocket Lab, CoreWeave to Open Lower - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNU9Qd2Z4U3ZQRTZ2SVVmUGZvYUdBV1JoU21EeThXS21YanNFOVlfY0I5aWVNV2s0TDkydmlPRHNYdFRnMXZqaThLVllIbngyRXVOZVdBcGhqSlY3b0NaWHRENS0xcms5VmlMaGY2YzdLd3FINDE4ZXZ5dFRUMUY3ajdTdzJscUp3NHN1dVNxdkxoWFBJWkViQVNKM1B5UmVpdEFEYjRR?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-16T10:42:58",
-        "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Tesla to Advance, CoreWeave to Decline&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-15T10:41:08",
+        "description": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Thursday; Rocket Lab, CoreWeave to Open Lower&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - marketscreener.com",
@@ -1679,51 +1671,51 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7696.5,
-      "change": -8.0,
-      "change_percent": -0.1,
+      "price": 7698.5,
+      "change": -6.0,
+      "change_percent": -0.08,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29151.0,
-      "change": 9.0,
-      "change_percent": 0.03,
+      "price": 29171.5,
+      "change": 29.5,
+      "change_percent": 0.1,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52935.0,
-      "change": -133.0,
-      "change_percent": -0.25,
+      "price": 52926.0,
+      "change": -142.0,
+      "change_percent": -0.27,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2791.8,
-      "change": -4.3,
-      "change_percent": -0.15,
+      "price": 2791.6,
+      "change": -4.5,
+      "change_percent": -0.16,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 100.8,
-      "change": 1.33,
-      "change_percent": 1.34,
+      "price": 100.75,
+      "change": 1.28,
+      "change_percent": 1.29,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4034.9,
-      "change": -25.5,
-      "change_percent": -0.63,
+      "price": 4030.2,
+      "change": -30.2,
+      "change_percent": -0.74,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 54.27,
-      "change": -0.49,
-      "change_percent": -0.9,
+      "price": 54.2,
+      "change": -0.56,
+      "change_percent": -1.03,
       "name": "Silver Dec 26"
     },
     {
@@ -1744,7 +1736,7 @@
       "symbol": "NG=F",
       "price": 2.72,
       "change": -0.07,
-      "change_percent": -2.58,
+      "change_percent": -2.65,
       "name": "Natural Gas Nov 26"
     }
   ],

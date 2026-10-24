@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T04:01:14.770496",
+  "timestamp": "2026-10-24T04:10:32.950635",
   "summary": "Key topics today:\n- - A practical guide to AI image generation, from diffusion to agents (r/HackerNews, 201 pts)\n- - Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended (r/HackerNews, 201 pts)\n- - Dessa: Conversation Model trained only on speech (r/HackerNews, 101 pts)\n- - Show HN: Corgi, a helpful {agent, terminal} multiplexer (r/HackerNews, 101 pts)\n- - A Cocktail Party in the Street: An Interview with Alan Stillman (2010) (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "CART",
-      "price": 56.44,
-      "change": 12.18,
-      "category": "stock",
-      "text": "CART +12.2% momentum @ $56.44"
-    },
-    {
-      "type": "buy",
       "asset": "PANW",
       "price": 380.55,
       "change": 9.59,
@@ -49,6 +41,14 @@
       "change": 7.62,
       "category": "stock",
       "text": "CRWD +7.6% momentum @ $257.57"
+    },
+    {
+      "type": "sell",
+      "asset": "COIN",
+      "price": 164.45,
+      "change": -7.13,
+      "category": "stock",
+      "text": "COIN -7.1% drop @ $164.45"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-24T08:01:05.676754",
+    "timestamp": "2026-10-24T08:10:24.233881",
     "prices": [
       {
         "name": "Bittensor",
@@ -325,7 +325,7 @@
       "description": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget."
     },
     {
-      "title": "Father who killed Oregon school shooter describes anguish over children he couldn't save",
+      "title": "Father who killed Oregon school gunman describes anguish over children he couldn't save",
       "url": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-24T08:00:41.566155",
+    "timestamp": "2026-10-24T08:10:00.458266",
     "trending": [
-      {
-        "symbol": "CART",
-        "price": 56.44,
-        "change": 6.13,
-        "change_percent": 12.18,
-        "name": "Maplebear Inc."
-      },
       {
         "symbol": "PANW",
         "price": 380.55,
@@ -484,6 +477,13 @@
         "name": "American Express Company"
       },
       {
+        "symbol": "XOM",
+        "price": 183.21,
+        "change": 5.12,
+        "change_percent": 2.87,
+        "name": "ExxonMobil Holdings Corporation"
+      },
+      {
         "symbol": "^IXIC",
         "price": 25955.34,
         "change": -747.52,
@@ -508,29 +508,36 @@
         "symbol": "XRP-USD",
         "price": 1.28,
         "change": -0.01,
-        "change_percent": -0.79,
+        "change_percent": -0.94,
         "name": "XRP USD"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 80636.9,
-        "change": -437.29,
-        "change_percent": -0.54,
-        "name": "Bitcoin USD"
+        "symbol": "PEP",
+        "price": 135.77,
+        "change": 1.07,
+        "change_percent": 0.79,
+        "name": "Pepsico, Inc."
       },
       {
         "symbol": "ETH-USD",
-        "price": 2371.55,
-        "change": -12.53,
-        "change_percent": -0.53,
+        "price": 2369.16,
+        "change": -14.92,
+        "change_percent": -0.63,
         "name": "Ethereum USD"
       },
       {
+        "symbol": "BTC-USD",
+        "price": 80612.62,
+        "change": -461.57,
+        "change_percent": -0.57,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": ".RUT",
-        "price": 2775.9,
-        "change": -5.12,
-        "change_percent": -0.18,
-        "name": "Russell 2000"
+        "price": 2775.899,
+        "change": -8.13,
+        "change_percent": -0.29,
+        "name": "RUSS 2K"
       }
     ],
     "meme_momentum": [
@@ -961,7 +968,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-24T08:01:01.382336",
+    "timestamp": "2026-10-24T08:10:20.278985",
     "items": [
       {
         "symbol": "SPX",
@@ -1055,45 +1062,39 @@
       },
       {
         "symbol": "TAO",
-        "price": 250.26,
-        "change": -4.37,
+        "price": 250.42,
+        "change": -4.46,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80639,
-        "change": -1.03,
+        "price": 80650,
+        "change": -1.13,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2372.0,
-        "change": -1.1,
+        "price": 2370.07,
+        "change": -1.33,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.77,
-        "change": -2.3,
+        "price": 101.81,
+        "change": -2.55,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.7,
-        "change": -3.77,
+        "price": 11.67,
+        "change": -4.19,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.95,
-        "change": -3.39,
+        "price": 8.94,
+        "change": -3.59,
         "type": "crypto"
-      },
-      {
-        "symbol": "CART",
-        "price": 56.44,
-        "change": 12.18,
-        "type": "mover"
       },
       {
         "symbol": "PANW",
@@ -1129,6 +1130,12 @@
         "symbol": "T",
         "price": 20.93,
         "change": -4.47,
+        "type": "mover"
+      },
+      {
+        "symbol": "AXP",
+        "price": 313.22,
+        "change": -3.21,
         "type": "mover"
       },
       {
@@ -1525,7 +1532,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 24 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-24T04:01:12.876237"
+    "timestamp": "2026-10-24T04:10:30.733073"
   },
   "sticky": {
     "cnbc": [

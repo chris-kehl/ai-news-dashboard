@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-24T16:16:18.007532",
-  "summary": "Key topics today:\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - A practical guide to AI image generation, from diffusion to agents (r/HackerNews, 201 pts)\n- - No Signs of AI Payoff Outside the Tech Sector (r/HackerNews, 101 pts)\n- - Neural chip decodes interactions between brain regions (r/HackerNews, 101 pts)\n- - Why is AI generated language so hard to understand? (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-24T16:23:34.895810",
+  "summary": "Key topics today:\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - A practical guide to AI image generation, from diffusion to agents (r/HackerNews, 201 pts)\n- - No Signs of AI Payoff Outside the Tech Sector (r/HackerNews, 101 pts)\n- - Neural chip decodes interactions between brain regions (r/HackerNews, 101 pts)\n- - TornadoVM 7 Enables GPU-Native Workloads from Java Applications (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
-      "asset": "TER",
-      "price": 308.85,
-      "change": -10.61,
-      "category": "stock",
-      "text": "TER -10.6% drop @ $308.85"
-    },
-    {
-      "type": "sell",
       "asset": "COIN",
       "price": 164.45,
       "change": -7.13,
       "category": "stock",
       "text": "COIN -7.1% drop @ $164.45"
+    },
+    {
+      "type": "sell",
+      "asset": "HOOD",
+      "price": 95.07,
+      "change": -6.73,
+      "category": "stock",
+      "text": "HOOD -6.7% drop @ $95.07"
     },
     {
       "type": "watch",
@@ -93,19 +93,19 @@
       "created": ""
     },
     {
-      "title": "Why is AI generated language so hard to understand?",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://arxiv.org/abs/2610.29162",
-      "created": ""
-    },
-    {
       "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "created": ""
+    },
+    {
+      "title": "Why is AI generated language so hard to understand?",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://arxiv.org/abs/2610.29162",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-24T20:16:03.862292",
+    "timestamp": "2026-10-24T20:23:25.463283",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-24T20:15:40.417296",
+    "timestamp": "2026-10-24T20:23:01.761835",
     "trending": [
       {
         "symbol": "CART",
@@ -456,13 +456,6 @@
         "name": "Maplebear Inc."
       },
       {
-        "symbol": "TER",
-        "price": 308.85,
-        "change": -36.64,
-        "change_percent": -10.61,
-        "name": "Teradyne, Inc."
-      },
-      {
         "symbol": "^KS11",
         "price": 5550.3,
         "change": -185.36,
@@ -470,18 +463,25 @@
         "name": "KOSPI Composite Index"
       },
       {
-        "symbol": "O",
-        "price": 56.89,
-        "change": 1.54,
-        "change_percent": 2.78,
-        "name": "Realty Income Corporation"
+        "symbol": "ZEC-USD",
+        "price": 1205.64,
+        "change": 24.39,
+        "change_percent": 2.06,
+        "name": "Zcash USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 2342.16,
-        "change": -41.92,
+        "price": 2342.14,
+        "change": -41.94,
         "change_percent": -1.76,
         "name": "Ethereum USD"
+      },
+      {
+        "symbol": "SCHD",
+        "price": 35.27,
+        "change": 0.61,
+        "change_percent": 1.76,
+        "name": "Schwab US Dividend Equity ETF"
       },
       {
         "symbol": "FXAIX",
@@ -498,6 +498,13 @@
         "name": "Solana USD"
       },
       {
+        "symbol": "GC=F",
+        "price": 4007.9,
+        "change": -52.5,
+        "change_percent": -1.29,
+        "name": "Gold Dec 26"
+      },
+      {
         "symbol": ".DJI",
         "price": 52215.16,
         "change": -652.82,
@@ -505,17 +512,10 @@
         "name": "DJIA"
       },
       {
-        "symbol": "JPY=X",
-        "price": 156.81,
-        "change": -1.32,
-        "change_percent": -0.83,
-        "name": "USD/JPY"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 80449.6,
-        "change": -624.59,
-        "change_percent": -0.77,
+        "price": 80438.18,
+        "change": -636.01,
+        "change_percent": -0.78,
         "name": "Bitcoin USD"
       },
       {
@@ -526,11 +526,11 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "ABBV",
-        "price": 285.64,
-        "change": 0.84,
-        "change_percent": 0.29,
-        "name": "AbbVie Inc."
+        "symbol": "ZETA",
+        "price": 33.98,
+        "change": -0.13,
+        "change_percent": -0.38,
+        "name": "Zeta Global Holdings Corp."
       },
       {
         "symbol": ".RUT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-24T20:15:59.965974",
+    "timestamp": "2026-10-24T20:23:21.901051",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,50 +1076,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 250.35,
-        "change": -2.74,
+        "price": 250.29,
+        "change": -2.42,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80495,
-        "change": -0.97,
+        "price": 80516,
+        "change": -0.92,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2343.48,
-        "change": -2.14,
+        "price": 2343.98,
+        "change": -2.07,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.42,
-        "change": -2.07,
+        "price": 101.47,
+        "change": -1.9,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.58,
-        "change": -2.89,
+        "change": -2.7,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.93,
-        "change": -1.33,
+        "change": -1.06,
         "type": "crypto"
       },
       {
         "symbol": "CART",
         "price": 56.44,
         "change": 12.18,
-        "type": "mover"
-      },
-      {
-        "symbol": "TER",
-        "price": 308.85,
-        "change": -10.61,
         "type": "mover"
       },
       {
@@ -1153,9 +1147,15 @@
         "type": "mover"
       },
       {
+        "symbol": "ZEC-USD",
+        "price": 1205.61,
+        "change": 2.06,
+        "type": "mover"
+      },
+      {
         "symbol": "ETH-USD",
-        "price": 2342.48,
-        "change": -1.74,
+        "price": 2341.92,
+        "change": -1.77,
         "type": "mover"
       },
       {
@@ -1174,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "Halloween candy sales reflect how U.S. consumers are feeling",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQY1FzVGVxeThCcFBNQ2hHcU9TSXVaM3hGS3VPUm90Ml9WbVNYMDRVVzJsVzh3TmxqWUM2TEhxZ1JoZUhtSDBGc2VLSElVTWtIaWd0QUpWM1VGdW1LMlBmVTJuVW9ZUW92eHBPRHcyMkVabEtySkYzNGZNQlBLVVRSaEl2YVVQekk4bUNVN3ZDNXoxR0VEcC1pNnlubUloNjdxbG5jUksyRTM4c19jTmd4U1BWdjFwLVRnd042ejhkVU0yRmliWmlXZmhTenl1LTNNNDUxTQ?oc=5",
-      "source": "The Seattle Times",
+      "title": "Halloween candy sales are off to a slow start amid high chocolate prices and affordability concerns",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWGZZMWlraVgxOHBmWkI0dEFfSFRnOEM3aFYwX2xxQU5hUHYzNlRnT29zTkYxVjFrMFVmamtrZUhBRElRcGo2aFdYSGhwb3cxdU5ZcDhnWk5HVXJoaGl5VE05X3VRQkR6M09nWGlicXZBdFpHcXdTZkZXQURsOFg0cjVsUHg3cndFV1IwWjFZVnJaa0RTRWkyU2ZTN2NFZk90TDN4eU9oeE0?oc=5",
+      "source": "AP News",
       "category": "business",
       "published": "Sat, 24 Oct 2026 ",
       "description": "",
@@ -1214,9 +1214,9 @@
       "author": ""
     },
     {
-      "title": "Some US transit systems weigh whether to run trains without a human at the controls",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNWVRNTFUdTh1ck9pZW1CT05adFJqMnp1VDdWVDhWb2xmUFBYUHZ2UTlTU2lyV3NkTXRJZVJ4TmtlWEhjSC0tWDVQYUVTbHMxZmtmMEFvSEI5WTBadVM3cTJfaktOS1pUYnFHUE5DanR2RUZ6WWtrY1NIeUNUQTY5UnVpbGdvVkFHcUEzWFNQN3JmQmJ6UkxFSDh4S2l5S1Jsa2RfOFR3?oc=5",
-      "source": "AP News",
+      "title": "'The transit world is where innovation goes to die' \u2014 The U.S. lags far behind on using driverless trains, but new projects could open the floodgates",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0xaNi0xbDQ3OTZ2eWJmT3Z1Tk0tdEJhMVNQNU00bnV2YjNsNlNWX19BVUczRU1oZjRFdk9fU0MxSzJsc0QwZG5HWlZmNXJ5eHRiX1d2VXZ5QnZNSE9POFp5WDltbUplQnFESkpTcVQ4dVFpS090Tzh2RnZOZFFTX19XOEZpSm10NzJUdENXVE1heEpRd0U3RFhGUmtJbHVh?oc=5",
+      "source": "Fortune",
       "category": "business",
       "published": "Sat, 24 Oct 2026 ",
       "description": "",
@@ -1554,7 +1554,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 24 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-24T16:16:15.961050"
+    "timestamp": "2026-10-24T16:23:32.872002"
   },
   "sticky": {
     "cnbc": [
@@ -1626,6 +1626,13 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
       },
       {
+        "title": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWlISWk0eHhRZzBsSGFmZFRkVmxMb25mSnB5TG51M2otT1E2WkkwQ2VfRHVTbzNlOG5wQTZQWEtQWjhWcTV1WFlvdzNNUlVpRU5qNTE0VlVpTW5WbTRETDctSlNXZng2M2Fsb3JQVnB1UjlYYmRyN0hfeHFHbXFRVU53Vm54MHZpbHlQREpFX2FBMFUxUUZ6VXFoSVpNWTM0Q3VheWRmNDRGa2k2T1FveHJibUU?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-20T07:00:00",
+        "description": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
+      },
+      {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline - marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYlUtb0NmQ3hoMXk3X2YtSUJGa3BkbU9pRUd3VXhwbTNxM2E4aVBOamlLeS1jOW5vNWNPS0h2TTVMSURsSWMtWi1fLUtnWDlCWFFUek1PY1U3SVhYbFJJT3pIWUNVWGRwaHp2WnVETjl1c0s4Tkh6Z01ja2dndHc0V2RlMDVWdnZXU0JFeFJnUzM1ZHBIUF9tTWdtYTBWYnN6bGVkeWc3dlc1MzNlMDBNWVpDWnN3RGlxSTNldVhQWnB2N2U2UWlSaUZ4S3RtZ1FXSWpxS28zMUF6Nks3bFg4?oc=5",
         "source": "r/wallstreetbets",
@@ -1661,20 +1668,6 @@
         "description": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep&nbsp;&nbsp;24/7 Wall St."
       },
       {
-        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-02T07:00:00",
-        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
-      },
-      {
-        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-14T07:00:00",
-        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
-      },
-      {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYmV3MTJiTWU5cmRQM05ZbGQxWWxyVE0wSjhIX29NdkFRa0dWSG5oSmRsUHNoSFhBc2hhT3dINTN1WlpHdDJZUV9QeGNfcXlrY1c3dUwyY09oZ2h5WGRMNWlHYUdpd1hDQmt5VG1yMWhIeHl2enZzWHQ2OXE5akRiclBOdnRRRlB5MDI0SktkSFE2S0JETXBSTFV0WEI2UjRhUzNET250SV9uRXhRdERiamVlSG1wSDFQQVhPS1pOQlYydVJGRXNzODJRdkpQSExwNVlPZzFIMVN4QWxsZVBKRVFBNms?oc=5",
         "source": "r/wallstreetbets",
@@ -1687,6 +1680,13 @@
         "source": "r/wallstreetbets",
         "published": "2026-10-21T11:48:57",
         "description": "WallStreetBets Favorites Popped Before The Bell&nbsp;&nbsp;Finimize"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNm9yaHZ1MGJtcUtLSkpLdndPNm1RMG84dVZsTmluYXRLblY3X1BMYjctMEtWOFdvdG5WdnM1am96YlVGN3pYV0Z3LW02VF9EVUp0cnEyOU5YdUdBOFFmcWcycnFpbzlVa2FZM21fVGpCV3hUekVuNU5ZWjcwcGJuVjNxUGhLd0kwNm95UGp3d2RJQk96RS10WVVzZGNubjhZYTZ6dlFzaFVJdw?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-22T10:35:35",
+        "description": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },

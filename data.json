@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T22:16:12.683905",
+  "timestamp": "2026-10-24T22:21:49.583431",
   "summary": "Key topics today:\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - Reactive Optimizers: rewrite the optimizer's source code during training (r/HackerNews, 101 pts)\n- - Neural chip decodes interactions between brain regions (r/HackerNews, 101 pts)\n- - No signs of AI payoff outside the tech sector (r/HackerNews, 101 pts)\n- - Oai-math-revised: a community hub for revising OpenAI's math write-ups (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "type": "sell",
+      "asset": "VST",
+      "price": 140.16,
+      "change": -10.23,
+      "category": "stock",
+      "text": "VST -10.2% drop @ $140.16"
+    },
+    {
+      "type": "sell",
       "asset": "ARM",
       "price": 210.33,
       "change": -7.18,
@@ -33,14 +41,6 @@
       "change": -7.13,
       "category": "stock",
       "text": "COIN -7.1% drop @ $164.45"
-    },
-    {
-      "type": "sell",
-      "asset": "HOOD",
-      "price": 95.07,
-      "change": -6.73,
-      "category": "stock",
-      "text": "HOOD -6.7% drop @ $95.07"
     },
     {
       "type": "watch",
@@ -93,6 +93,14 @@
       "created": ""
     },
     {
+      "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "created": ""
+    },
+    {
       "title": "We should be more ambitious with the software we build",
       "subreddit": "HackerNews",
       "score": 1,
@@ -123,20 +131,12 @@
       "comments": 0,
       "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
       "created": ""
-    },
-    {
-      "title": "Why Gopher in 2026?",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://gopher.muffinlabs.com/sdf.org/users/nervtoji/phlog/001.txt",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-25T02:16:02.775042",
+    "timestamp": "2026-10-25T02:21:41.099337",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-25T02:15:39.559609",
+    "timestamp": "2026-10-25T02:21:17.951721",
     "trending": [
+      {
+        "symbol": "VST",
+        "price": 140.16,
+        "change": -15.98,
+        "change_percent": -10.23,
+        "name": "Vistra Corp."
+      },
       {
         "symbol": "ARM",
         "price": 210.33,
@@ -462,11 +469,11 @@
         "name": "Schwab US Dividend Equity ETF"
       },
       {
-        "symbol": "UPS",
-        "price": 101.06,
-        "change": 1.49,
-        "change_percent": 1.5,
-        "name": "United Parcel Service, Inc."
+        "symbol": "GC=F",
+        "price": 4007.9,
+        "change": -52.5,
+        "change_percent": -1.29,
+        "name": "Gold Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -483,11 +490,11 @@
         "name": "McDonald's Corporation"
       },
       {
-        "symbol": "ZEC-USD",
-        "price": 1215.06,
-        "change": 7.64,
-        "change_percent": 0.63,
-        "name": "Zcash USD"
+        "symbol": "PEP",
+        "price": 135.77,
+        "change": 1.07,
+        "change_percent": 0.79,
+        "name": "Pepsico, Inc."
       },
       {
         "symbol": ".SPX",
@@ -500,7 +507,7 @@
         "symbol": "XRP-USD",
         "price": 1.3,
         "change": 0.01,
-        "change_percent": 0.45,
+        "change_percent": 0.44,
         "name": "XRP USD"
       },
       {
@@ -519,30 +526,23 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2359.43,
-        "change": 3.69,
-        "change_percent": 0.16,
+        "price": 2359.95,
+        "change": 4.21,
+        "change_percent": 0.18,
         "name": "Ethereum USD"
       },
       {
-        "symbol": "SGOV",
-        "price": 100.66,
-        "change": 0.04,
-        "change_percent": 0.04,
-        "name": "iShares 0-3 Month Treasury Bond"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 80747.96,
-        "change": -22.75,
-        "change_percent": -0.03,
+        "price": 80751.52,
+        "change": -19.19,
+        "change_percent": -0.02,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "SOL-USD",
-        "price": 102.29,
-        "change": 0.02,
-        "change_percent": 0.02,
+        "price": 102.26,
+        "change": -0.01,
+        "change_percent": -0.01,
         "name": "Solana USD"
       }
     ],
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-25T02:15:58.652671",
+    "timestamp": "2026-10-25T02:21:37.507722",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 252.09,
-        "change": -0.77,
+        "price": 251.62,
+        "change": -0.83,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80855,
-        "change": 0.01,
+        "price": 80769,
+        "change": -0.04,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2361.71,
-        "change": -0.77,
+        "price": 2360.08,
+        "change": -0.75,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 102.37,
-        "change": -0.11,
+        "price": 102.27,
+        "change": -0.13,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.61,
+        "price": 11.59,
         "change": -2.02,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.99,
-        "change": -0.51,
+        "price": 8.97,
+        "change": -0.66,
         "type": "crypto"
       },
       {
@@ -1139,9 +1139,15 @@
         "type": "mover"
       },
       {
-        "symbol": "UPS",
-        "price": 101.06,
-        "change": 1.5,
+        "symbol": "SCHD",
+        "price": 35.27,
+        "change": 1.76,
+        "type": "mover"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 4007.9,
+        "change": -1.29,
         "type": "mover"
       },
       {
@@ -1153,13 +1159,7 @@
       {
         "symbol": "XRP-USD",
         "price": 1.3,
-        "change": 0.43,
-        "type": "mover"
-      },
-      {
-        "symbol": "AMGN",
-        "price": 439.26,
-        "change": 0.21,
+        "change": 0.46,
         "type": "mover"
       }
     ]
@@ -1554,7 +1554,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 24 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-24T22:16:10.277070"
+    "timestamp": "2026-10-24T22:21:47.534577"
   },
   "sticky": {
     "cnbc": [

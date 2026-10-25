@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-25T14:16:14.858346",
-  "summary": "Key topics today:\n- - Jukebox-OS: Deterministic time-travel replay and ACID tool sandbox for AI agents (r/HackerNews, 201 pts)\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis (r/HackerNews, 101 pts)\n- - AI use leads UC Berkeley math professor to see 'no point' in grading homework (r/HackerNews, 101 pts)\n- - A Mathematician Reads the AI Future (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-25T14:22:06.828211",
+  "summary": "Key topics today:\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - Ask HN: What is the main bottleneck facing Agentic AI today? (r/HackerNews, 201 pts)\n- - A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis (r/HackerNews, 101 pts)\n- - AI use leads UC Berkeley math professor to see 'no point' in grading homework (r/HackerNews, 101 pts)\n- - A Mathematician Reads the AI Future (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "buy",
@@ -28,14 +28,6 @@
     },
     {
       "type": "sell",
-      "asset": "META",
-      "price": 642.62,
-      "change": -7.87,
-      "category": "stock",
-      "text": "META -7.9% drop @ $642.62"
-    },
-    {
-      "type": "sell",
       "asset": "ARM",
       "price": 210.33,
       "change": -7.18,
@@ -49,23 +41,31 @@
       "change": -7.13,
       "category": "stock",
       "text": "COIN -7.1% drop @ $164.45"
+    },
+    {
+      "type": "sell",
+      "asset": "HOOD",
+      "price": 95.07,
+      "change": -6.73,
+      "category": "stock",
+      "text": "HOOD -6.7% drop @ $95.07"
     }
   ],
   "reddit": [
-    {
-      "title": "Jukebox-OS: Deterministic time-travel replay and ACID tool sandbox for AI agents",
-      "subreddit": "HackerNews",
-      "score": 201,
-      "comments": 0,
-      "url": "https://github.com/socrates6969/jukebox-os",
-      "created": ""
-    },
     {
       "title": "Cerebras Deploys Trillion-Parameter AI Models",
       "subreddit": "HackerNews",
       "score": 201,
       "comments": 0,
       "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "created": ""
+    },
+    {
+      "title": "Ask HN: What is the main bottleneck facing Agentic AI today?",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=50234108",
       "created": ""
     },
     {
@@ -109,19 +109,19 @@
       "created": ""
     },
     {
+      "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+      "created": ""
+    },
+    {
       "title": "We should be more ambitious with the software we build",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://danluu.com/ambitious/",
-      "created": ""
-    },
-    {
-      "title": "Sabre Wulf Remastered",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://gp-64.com/swr/",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-25T18:16:05.699285",
+    "timestamp": "2026-10-25T18:21:41.890729",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-25T18:15:41.798929",
+    "timestamp": "2026-10-25T18:21:18.745512",
     "trending": [
-      {
-        "symbol": "META",
-        "price": 642.62,
-        "change": -54.9,
-        "change_percent": -7.87,
-        "name": "Meta Platforms, Inc."
-      },
       {
         "symbol": "ARM",
         "price": 210.33,
@@ -455,25 +448,11 @@
         "name": "Arm Holdings plc"
       },
       {
-        "symbol": "HOOD",
-        "price": 95.07,
-        "change": -6.86,
-        "change_percent": -6.73,
-        "name": "Robinhood Markets, Inc."
-      },
-      {
         "symbol": "P",
         "price": 123.33,
         "change": -7.6,
         "change_percent": -5.8,
         "name": "Everpure, Inc."
-      },
-      {
-        "symbol": "OKLO",
-        "price": 26.35,
-        "change": -1.38,
-        "change_percent": -4.98,
-        "name": "Oklo Inc."
       },
       {
         "symbol": "BABA",
@@ -504,11 +483,18 @@
         "name": "Applovin Corporation"
       },
       {
-        "symbol": "^HSI",
-        "price": 23093.37,
-        "change": -558.5,
-        "change_percent": -2.36,
-        "name": "HANG SENG INDEX"
+        "symbol": "PLTR",
+        "price": 196.75,
+        "change": -4.97,
+        "change_percent": -2.46,
+        "name": "Palantir Technologies Inc."
+      },
+      {
+        "symbol": "MSFT",
+        "price": 524.51,
+        "change": -8.44,
+        "change_percent": -1.58,
+        "name": "Microsoft Corporation"
       },
       {
         "symbol": "HESM",
@@ -523,6 +509,13 @@
         "change": -652.82,
         "change_percent": -1.23,
         "name": "DJIA"
+      },
+      {
+        "symbol": "CLF",
+        "price": 13.9,
+        "change": -0.13,
+        "change_percent": -0.93,
+        "name": "Cleveland-Cliffs Inc."
       },
       {
         "symbol": ".SPX",
@@ -544,6 +537,13 @@
         "change": -0.0,
         "change_percent": -0.0,
         "name": "TSEC CAPITALIZATION WEIGHTED ST"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 103.27,
+        "change": -0.0,
+        "change_percent": -0.0,
+        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-25T18:16:01.709780",
+    "timestamp": "2026-10-25T18:21:38.182870",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,50 +1068,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 253.9,
-        "change": 2.61,
+        "price": 254.45,
+        "change": 2.75,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80618,
-        "change": 0.38,
+        "price": 80655,
+        "change": 0.48,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2352.91,
-        "change": 1.18,
+        "price": 2354.21,
+        "change": 1.32,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.67,
-        "change": 0.96,
+        "price": 101.77,
+        "change": 1.04,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.51,
-        "change": 0.59,
+        "price": 11.52,
+        "change": 0.6,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.92,
-        "change": 0.68,
+        "change": 0.76,
         "type": "crypto"
       },
       {
         "symbol": "ARM",
         "price": 210.33,
         "change": -7.18,
-        "type": "mover"
-      },
-      {
-        "symbol": "HOOD",
-        "price": 95.07,
-        "change": -6.73,
         "type": "mover"
       },
       {
@@ -1139,15 +1133,15 @@
         "type": "mover"
       },
       {
-        "symbol": "BABA",
-        "price": 99.64,
-        "change": -4.57,
-        "type": "mover"
-      },
-      {
         "symbol": "MU",
         "price": 877.55,
         "change": -3.95,
+        "type": "mover"
+      },
+      {
+        "symbol": "TSLA",
+        "price": 372.22,
+        "change": -3.69,
         "type": "mover"
       },
       {
@@ -1160,6 +1154,12 @@
         "symbol": "APP",
         "price": 260.25,
         "change": -2.86,
+        "type": "mover"
+      },
+      {
+        "symbol": "PLTR",
+        "price": 196.75,
+        "change": -2.46,
         "type": "mover"
       }
     ]
@@ -1288,9 +1288,9 @@
       "author": ""
     },
     {
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPU2VWZ1Q5ZG15RzFnbF8tdl9JUk1XYWZKOGhxOWl0WnEzSGJ4Y2h4bFk0NmNpSnhKOXdqanhkVGhfeUkzeFdhNFBOU1FZaGxqbUxSMmU2V1JCV1owRllVaExxTnAwTFI2TkJXUWp2MmozWXN5eGhJWkZXZmMyMmFaY3ZHVzhocDBNanpDTg?oc=5",
-      "source": "The Verge",
+      "title": "The iPhone Duo Likes & Dislikes After 4 Days Of Real World Use",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdDZyZkp6dHMzMGt4WXRKeEJiV1R5WC14SHE4LXZkMXNJTTFENThXTnJPZmVzSWVpT1dvX00tYmQ0RXlzQzUtU3gzSkUwdGZTdS16QVZ4bV9VenozVnZuSHhRN2FwQ0hVbFJvTHNXRDJOZmhMM1E4YlZ0STkyckVIcVNEOHZYMzNKb1l3TnFYeWxza01pbFd5RmpaY3JJRklMTXdzOTJtVTV2THNNZHc?oc=5",
+      "source": "Forbes",
       "category": "business",
       "published": "Sun, 25 Oct 2026 ",
       "description": "",
@@ -1298,11 +1298,11 @@
       "author": ""
     },
     {
-      "title": "The iPhone Duo Likes & Dislikes After 4 Days Of Real World Use",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdDZyZkp6dHMzMGt4WXRKeEJiV1R5WC14SHE4LXZkMXNJTTFENThXTnJPZmVzSWVpT1dvX00tYmQ0RXlzQzUtU3gzSkUwdGZTdS16QVZ4bV9VenozVnZuSHhRN2FwQ0hVbFJvTHNXRDJOZmhMM1E4YlZ0STkyckVIcVNEOHZYMzNKb1l3TnFYeWxza01pbFd5RmpaY3JJRklMTXdzOTJtVTV2THNNZHc?oc=5",
-      "source": "Forbes",
+      "title": "Review: Ckrd Nitro Deck 2: A Pro Switch 2 Controller for Handheld Play",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORW95UXdzbXhtS1VZQ0pfcWZKRmtDNXh2UmhGckQ3UUxGVWZhamxWQ3BHWVlsRzJ0elVUdGZIRjJpbXNMZURLTDZrOU9FRmdob2FYYjlqcG0yMzhSTGdUV0NOcnZfY0lvczJxUktXek9iWGtVV19jNFBEWWZxMnkzaEM4MVNuOGtINDlkdjYwekdxRWV0UTZ4cndvM1RnVjl3RGc?oc=5",
+      "source": "Digital Foundry",
       "category": "business",
-      "published": "Sun, 25 Oct 2026 ",
+      "published": "Sat, 24 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1318,11 +1318,11 @@
       "author": ""
     },
     {
-      "title": "Review: Ckrd Nitro Deck 2: A Pro Switch 2 Controller for Handheld Play",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORW95UXdzbXhtS1VZQ0pfcWZKRmtDNXh2UmhGckQ3UUxGVWZhamxWQ3BHWVlsRzJ0elVUdGZIRjJpbXNMZURLTDZrOU9FRmdob2FYYjlqcG0yMzhSTGdUV0NOcnZfY0lvczJxUktXek9iWGtVV19jNFBEWWZxMnkzaEM4MVNuOGtINDlkdjYwekdxRWV0UTZ4cndvM1RnVjl3RGc?oc=5",
-      "source": "Digital Foundry",
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPU2VWZ1Q5ZG15RzFnbF8tdl9JUk1XYWZKOGhxOWl0WnEzSGJ4Y2h4bFk0NmNpSnhKOXdqanhkVGhfeUkzeFdhNFBOU1FZaGxqbUxSMmU2V1JCV1owRllVaExxTnAwTFI2TkJXUWp2MmozWXN5eGhJWkZXZmMyMmFaY3ZHVzhocDBNanpDTg?oc=5",
+      "source": "The Verge",
       "category": "business",
-      "published": "Sat, 24 Oct 2026 ",
+      "published": "Sun, 25 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1454,98 +1454,98 @@
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 383168,
+      "stars": 383460,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-25T17:16:07Z"
+      "updated": "2026-10-25T18:21:43Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 288620,
+      "stars": 288665,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-25T17:14:31Z"
+      "updated": "2026-10-25T18:20:48Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 256998,
+      "stars": 257007,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-25T17:08:29Z"
+      "updated": "2026-10-25T18:21:19Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 195254,
+      "stars": 195266,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-25T17:12:47Z"
+      "updated": "2026-10-25T18:16:32Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187746,
+      "stars": 187748,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-25T17:09:29Z"
+      "updated": "2026-10-25T18:13:05Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 176001,
+      "stars": 176036,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-25T17:15:58Z"
+      "updated": "2026-10-25T18:19:37Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168138,
+      "stars": 168140,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-25T16:43:04Z"
+      "updated": "2026-10-25T18:11:51Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 159505,
+      "stars": 159513,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-25T17:13:27Z"
+      "updated": "2026-10-25T18:21:47Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156725,
+      "stars": 156729,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-25T17:07:08Z"
+      "updated": "2026-10-25T18:16:22Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 102362,
+      "stars": 102387,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-25T17:12:36Z"
+      "updated": "2026-10-25T18:19:57Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
-      "stars": 87352,
+      "stars": 87419,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-25T17:15:47Z"
+      "updated": "2026-10-25T18:21:02Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 79211,
+      "stars": 79212,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-25T15:40:42Z"
+      "updated": "2026-10-25T17:33:49Z"
     }
   ],
   "nasdaq_data": {
@@ -1554,7 +1554,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 25 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-25T14:16:12.649195"
+    "timestamp": "2026-10-25T14:22:04.548643"
   },
   "sticky": {
     "cnbc": [
@@ -1566,6 +1566,13 @@
         "description": "Audi's CEO defended the company's plans for a $4 billion plant in Georgia, calling it a business decision to grow sales and reduce exposure to U.S. tariffs."
       },
       {
+        "title": "Ukraine disputes Elon Musk\u2019s claim that its military violated Starlink terms during drone operations",
+        "url": "https://www.cnbc.com/2026/10/25/ukraine-musk-starlink-terms-dispute.html",
+        "source": "CNBC",
+        "published": "2026-10-25T18:18:49",
+        "description": "Ukraine challenged Musk\u2019s claim that its military violated Starlink terms, arguing that commercial Starlink limits prevented medium- and long-range strike use."
+      },
+      {
         "title": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
         "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
         "source": "CNBC",
@@ -1573,18 +1580,18 @@
         "description": "The economy is still a key issue in the 2026 election, but voters are concerned about Trump testing the bounds of the office and Democratic Socialist polices."
       },
       {
-        "title": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
-        "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
-        "source": "CNBC",
-        "published": "2026-10-25T13:41:37",
-        "description": "Saudi Arabia says it intercepted Houthi missiles and drones, while the Houthis claimed attacks on airports and energy sites amid rising regional supply risks."
-      },
-      {
         "title": "In pictures: Initially peaceful protests across France over inequality again descend into violence",
         "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
         "source": "CNBC",
         "published": "2026-10-25T14:14:23",
         "description": "Protests over inequality and living costs drew an estimated 410,000 people across France, with clashes in several cities for a second straight weekend."
+      },
+      {
+        "title": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
+        "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
+        "source": "CNBC",
+        "published": "2026-10-25T13:41:37",
+        "description": "Saudi Arabia says it intercepted Houthi missiles and drones, while the Houthis claimed attacks on airports and energy sites amid rising regional supply risks."
       },
       {
         "title": "Marc Lore\u2019s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
@@ -1606,13 +1613,6 @@
         "source": "CNBC",
         "published": "2026-10-24T19:57:24",
         "description": "Lawsuits filed by candidate Mary Peltola and a voters' rights group challenge Trump's preemptive efforts to block a Democratic Senate victory in Alaska."
-      },
-      {
-        "title": "Biotech stocks are surging. How investors can play the new drug innovation boom",
-        "url": "https://www.cnbc.com/2026/10/24/biotech-stocks-drug-innovation-rally.html",
-        "source": "CNBC",
-        "published": "2026-10-24T18:56:29",
-        "description": "Biotech stocks are rallying as clinical wins, M&A and new drug technologies revive the sector. Here are the ETFs and stocks analysts favor."
       }
     ],
     "yahoo_finance": [],

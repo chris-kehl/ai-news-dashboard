@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-25T15:01:15.096536",
-  "summary": "Key topics today:\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis (r/HackerNews, 101 pts)\n- - AI use leads UC Berkeley math professor to see 'no point' in grading homework (r/HackerNews, 101 pts)\n- - A Mathematician Reads the AI Future (r/HackerNews, 101 pts)\n- - Dolly Parton's Imagination Library (r/HackerNews, 1 pts)",
+  "timestamp": "2026-10-25T15:10:53.885365",
+  "summary": "Key topics today:\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis (r/HackerNews, 101 pts)\n- - AI use leads UC Berkeley math professor to see 'no point' in grading homework (r/HackerNews, 101 pts)\n- - Dolly Parton's Imagination Library (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -28,27 +28,27 @@
     },
     {
       "type": "sell",
+      "asset": "COHR",
+      "price": 209.29,
+      "change": -11.89,
+      "category": "stock",
+      "text": "COHR -11.9% drop @ $209.29"
+    },
+    {
+      "type": "sell",
+      "asset": "SPCX",
+      "price": 147.49,
+      "change": -7.42,
+      "category": "stock",
+      "text": "SPCX -7.4% drop @ $147.49"
+    },
+    {
+      "type": "sell",
       "asset": "ARM",
       "price": 210.33,
       "change": -7.18,
       "category": "stock",
       "text": "ARM -7.2% drop @ $210.33"
-    },
-    {
-      "type": "sell",
-      "asset": "COIN",
-      "price": 164.45,
-      "change": -7.13,
-      "category": "stock",
-      "text": "COIN -7.1% drop @ $164.45"
-    },
-    {
-      "type": "sell",
-      "asset": "HOOD",
-      "price": 95.07,
-      "change": -6.73,
-      "category": "stock",
-      "text": "HOOD -6.7% drop @ $95.07"
     }
   ],
   "reddit": [
@@ -58,6 +58,14 @@
       "score": 201,
       "comments": 0,
       "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "created": ""
+    },
+    {
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://github.com/Zagitta/gpu-unlock",
       "created": ""
     },
     {
@@ -74,14 +82,6 @@
       "score": 101,
       "comments": 0,
       "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
-      "created": ""
-    },
-    {
-      "title": "A Mathematician Reads the AI Future",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
       "created": ""
     },
     {
@@ -109,19 +109,19 @@
       "created": ""
     },
     {
-      "title": "Amazon's \"digital pacifier\" for toddlers",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://oligarchwatch.substack.com/p/amazons-digital-pacifier-for-toddlers",
-      "created": ""
-    },
-    {
       "title": "VCF Southwest 2026, but Edited on Silicon Graphics for '90s TV [video]",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.youtube.com/watch?v=46wxttvq9qY",
+      "created": ""
+    },
+    {
+      "title": "We should be more ambitious with the software we build",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://danluu.com/ambitious/",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-25T19:01:05.058108",
+    "timestamp": "2026-10-25T19:10:44.301760",
     "prices": [
       {
         "name": "Bittensor",
@@ -301,7 +301,7 @@
       "description": "The PM says he wants a \"factual\" and \"evidence-based debate\" about returning to free movement between Britain and Europe."
     },
     {
-      "title": "Letter making claims about Meghan's father written by his ex-wife, BBC understands",
+      "title": "Letter making claims about Meghan's father written by his first wife, BBC understands",
       "url": "https://www.bbc.co.uk/news/articles/c60qk44w9wglo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -438,8 +438,22 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-25T19:00:41.531578",
+    "timestamp": "2026-10-25T19:10:20.099296",
     "trending": [
+      {
+        "symbol": "COHR",
+        "price": 209.29,
+        "change": -28.24,
+        "change_percent": -11.89,
+        "name": "Coherent Corp."
+      },
+      {
+        "symbol": "SPCX",
+        "price": 147.49,
+        "change": -11.82,
+        "change_percent": -7.42,
+        "name": "Space Exploration Technologies "
+      },
       {
         "symbol": "ARM",
         "price": 210.33,
@@ -448,18 +462,18 @@
         "name": "Arm Holdings plc"
       },
       {
+        "symbol": "INTC",
+        "price": 86.96,
+        "change": -6.0,
+        "change_percent": -6.45,
+        "name": "Intel Corporation"
+      },
+      {
         "symbol": "P",
         "price": 123.33,
         "change": -7.6,
         "change_percent": -5.8,
         "name": "Everpure, Inc."
-      },
-      {
-        "symbol": "BABA",
-        "price": 99.64,
-        "change": -4.77,
-        "change_percent": -4.57,
-        "name": "Alibaba Group Holding Limited"
       },
       {
         "symbol": "MU",
@@ -483,18 +497,18 @@
         "name": "Applovin Corporation"
       },
       {
-        "symbol": "PLTR",
-        "price": 196.75,
-        "change": -4.97,
-        "change_percent": -2.46,
-        "name": "Palantir Technologies Inc."
+        "symbol": "SMMT",
+        "price": 15.47,
+        "change": -0.36,
+        "change_percent": -2.27,
+        "name": "Summit Therapeutics Inc."
       },
       {
-        "symbol": "MSFT",
-        "price": 524.51,
-        "change": -8.44,
-        "change_percent": -1.58,
-        "name": "Microsoft Corporation"
+        "symbol": "SOFI",
+        "price": 14.61,
+        "change": -0.29,
+        "change_percent": -1.91,
+        "name": "SoFi Technologies, Inc."
       },
       {
         "symbol": "HESM",
@@ -509,13 +523,6 @@
         "change": -652.82,
         "change_percent": -1.23,
         "name": "DJIA"
-      },
-      {
-        "symbol": "CLF",
-        "price": 13.9,
-        "change": -0.13,
-        "change_percent": -0.93,
-        "name": "Cleveland-Cliffs Inc."
       },
       {
         "symbol": ".SPX",
@@ -537,13 +544,6 @@
         "change": -0.0,
         "change_percent": -0.0,
         "name": "TSEC CAPITALIZATION WEIGHTED ST"
-      },
-      {
-        "symbol": "CL=F",
-        "price": 103.27,
-        "change": -0.0,
-        "change_percent": -0.0,
-        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-25T19:01:01.061665",
+    "timestamp": "2026-10-25T19:10:40.457149",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,44 +1068,56 @@
       },
       {
         "symbol": "TAO",
-        "price": 254.44,
-        "change": 2.14,
+        "price": 253.6,
+        "change": 1.76,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80567,
-        "change": 0.2,
+        "price": 80501,
+        "change": 0.05,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2352.4,
-        "change": 0.77,
+        "price": 2349.7,
+        "change": 0.52,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.71,
-        "change": 0.55,
+        "price": 101.59,
+        "change": 0.47,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.51,
-        "change": -0.11,
+        "price": 11.48,
+        "change": -0.41,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.93,
-        "change": 0.48,
+        "price": 8.92,
+        "change": 0.25,
         "type": "crypto"
+      },
+      {
+        "symbol": "SPCX",
+        "price": 147.49,
+        "change": -7.42,
+        "type": "mover"
       },
       {
         "symbol": "ARM",
         "price": 210.33,
         "change": -7.18,
+        "type": "mover"
+      },
+      {
+        "symbol": "INTC",
+        "price": 86.96,
+        "change": -6.45,
         "type": "mover"
       },
       {
@@ -1130,18 +1142,6 @@
         "symbol": "AMC",
         "price": 2.9,
         "change": -4.61,
-        "type": "mover"
-      },
-      {
-        "symbol": "MU",
-        "price": 877.55,
-        "change": -3.95,
-        "type": "mover"
-      },
-      {
-        "symbol": "TSLA",
-        "price": 372.22,
-        "change": -3.69,
         "type": "mover"
       },
       {
@@ -1176,8 +1176,8 @@
       "author": ""
     },
     {
-      "title": "Marc Lore\u2019s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Ra1FlQmhNVEcxWnZNUVIwbDk2ZXFGTnEwUC10ZmVrRkNpWU5DTThYYmxCbGllVjZyVzNnNlc5VGFPVXZXRVZZNUF4NmNFbmRvTnJVRGRLaEZyQzUzQlQ1R3FUdlV2bXltdG5uQU1JR0FzZ9IBd0FVX3lxTE5kTWZsX2VDTy1DMUJqaEt2NTVMSnJuRFE2UE9iQ1RVRkphRVF5SU5UQzVXRXFhSTV1c2RIRE9VTFhLdjNFaUhCeWMyRUtZc2o2VlhtcV91WlBZRlBJZ1FETXdkRmFhTENjWi1UUEhJajNlVkpkTmNV?oc=5",
+      "title": "Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb0l5dnFfdUxybkFnYjFMWUtiZFRVWVNieXI2bEJhSi1ZUDhfQmJSa3lDekl5bkQwcDRZTWdhQUF4cnIxc2U5aERBcmk3OTgyMUwtOWxYVTZ0TjhfcllPalFSLV9zTUVueTlhLUZPYThDdzlaeTVhR2QxQkNtOXJ6REpB?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Sun, 25 Oct 2026 ",
@@ -1186,8 +1186,8 @@
       "author": ""
     },
     {
-      "title": "Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb0l5dnFfdUxybkFnYjFMWUtiZFRVWVNieXI2bEJhSi1ZUDhfQmJSa3lDekl5bkQwcDRZTWdhQUF4cnIxc2U5aERBcmk3OTgyMUwtOWxYVTZ0TjhfcllPalFSLV9zTUVueTlhLUZPYThDdzlaeTVhR2QxQkNtOXJ6REpB?oc=5",
+      "title": "Marc Lore\u2019s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Ra1FlQmhNVEcxWnZNUVIwbDk2ZXFGTnEwUC10ZmVrRkNpWU5DTThYYmxCbGllVjZyVzNnNlc5VGFPVXZXRVZZNUF4NmNFbmRvTnJVRGRLaEZyQzUzQlQ1R3FUdlV2bXltdG5uQU1JR0FzZ9IBd0FVX3lxTE5kTWZsX2VDTy1DMUJqaEt2NTVMSnJuRFE2UE9iQ1RVRkphRVF5SU5UQzVXRXFhSTV1c2RIRE9VTFhLdjNFaUhCeWMyRUtZc2o2VlhtcV91WlBZRlBJZ1FETXdkRmFhTENjWi1UUEhJajNlVkpkTmNV?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Sun, 25 Oct 2026 ",
@@ -1546,7 +1546,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 25 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-25T15:01:12.377726"
+    "timestamp": "2026-10-25T15:10:51.468213"
   },
   "sticky": {
     "cnbc": [
@@ -1618,11 +1618,11 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWlISWk0eHhRZzBsSGFmZFRkVmxMb25mSnB5TG51M2otT1E2WkkwQ2VfRHVTbzNlOG5wQTZQWEtQWjhWcTV1WFlvdzNNUlVpRU5qNTE0VlVpTW5WbTRETDctSlNXZng2M2Fsb3JQVnB1UjlYYmRyN0hfeHFHbXFRVU53Vm54MHZpbHlQREpFX2FBMFUxUUZ6VXFoSVpNWTM0Q3VheWRmNDRGa2k2T1FveHJibUU?oc=5",
+        "title": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open - Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdzBWdmxMWXpGcWp4VGVpRVR2NUVxemdiLVJSenM3Q21ocW1qUy0tRnp3QWdnZGFUYjRjVjlReGNRVE1YSjNSZURJM0YtRW1TNmhNSEpkd0hVZGpTbGV5Wm4tZC1tMzhhaHVGNlpqT0h4Tm5qOWV6YVVGaHdBcndHbENBcjdabWZqaUFXTA?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-20T07:00:00",
-        "description": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
+        "published": "2026-10-23T11:46:38",
+        "description": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline - marketscreener.com",
@@ -1632,13 +1632,6 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open - Finimize",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdzBWdmxMWXpGcWp4VGVpRVR2NUVxemdiLVJSenM3Q21ocW1qUy0tRnp3QWdnZGFUYjRjVjlReGNRVE1YSjNSZURJM0YtRW1TNmhNSEpkd0hVZGpTbGV5Wm4tZC1tMzhhaHVGNlpqT0h4Tm5qOWV6YVVGaHdBcndHbENBcjdabWZqaUFXTA?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-23T11:46:38",
-        "description": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open&nbsp;&nbsp;Finimize"
-      },
-      {
         "title": "Wall Street Bets on Box Office Resurgence - TheWrap",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTGFUVXh0SVhvNk9wOHAtLWo5SDVjcDlYQndGdFlWd2J1eHowRFFsV3RwaW83Q1NIX0tELWVwRWV3Z2pQbmluMzl4U3oxY2xxZldCaFdFaDVIMDJxMFB5OVZuSXpxYUQ2aUhYUmtxUXBVejdKMnBHNGpwbW5VSjZybWl5ZjJKNW9QeENlTDRmZVlxZ3J1SFY4?oc=5",
         "source": "r/wallstreetbets",
@@ -1646,11 +1639,25 @@
         "description": "Wall Street Bets on Box Office Resurgence&nbsp;&nbsp;TheWrap"
       },
       {
+        "title": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWlISWk0eHhRZzBsSGFmZFRkVmxMb25mSnB5TG51M2otT1E2WkkwQ2VfRHVTbzNlOG5wQTZQWEtQWjhWcTV1WFlvdzNNUlVpRU5qNTE0VlVpTW5WbTRETDctSlNXZng2M2Fsb3JQVnB1UjlYYmRyN0hfeHFHbXFRVU53Vm54MHZpbHlQREpFX2FBMFUxUUZ6VXFoSVpNWTM0Q3VheWRmNDRGa2k2T1FveHJibUU?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-20T07:00:00",
+        "description": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
+      },
+      {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHp3ZDFvbTRqRTluZjFQMXFBclhFR2ZLWXRrZnlZdlFGcWRjdkEyX3RVWHRHZl9DWnE1dDJGQktRckJIeHgxbTZicjFCUUtJX1E3cDhPQkk1T2NMMTBnLVA1R2t4b0lEQ0VKVVlOYVBnQnRJZno5SzRTdW5VWjJiSU1USjNDc3ZaUUQ4THFFclZ0WFMyYVlvVVg1TmNBamVkNENoNW02REg?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-10-20T10:39:09",
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep - 24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdklTQWwxZWFfekg4TUdnUVlzcGRZSnlzTDNBUF9UVWJ5Nl9uVGhQUWgxQURjeXV3R0JPZF9RakRqLVZ3VklTeEw2bGZNQXdPS3ozcnpKMFZQYXJRdUNxVmhzLVp2eDRQbU1Yd0ozbW9HMGlGa0pDNHlXM1YtQlJ3YTA3cWxwbnVSdEtJTFp2emZCWkk4ZWticktORmx0NGt4Q1VYNGl2ZjlzUlp5d1pFdXB4SQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-20T14:48:00",
+        "description": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep&nbsp;&nbsp;24/7 Wall St."
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - marketscreener.com",
@@ -1672,13 +1679,6 @@
         "source": "r/wallstreetbets",
         "published": "2026-10-22T10:35:35",
         "description": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Wallstreetbets Favorites Slipped Before Tuesday\u2019s Open - Finimize",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTXp3S2dXRzg5WTFOVTBlaThMZTBTUHFJSDhBT19rNzZiRGpCWFV3QzZiS2NTblYxOHIya202ZEhabHA4VzR0NW5VZkc3ZzJULWdEMUwzR2J6b3JRX1IxS05QUjB1dU1Tc1A0RFo4S0t3bk1qZWY5bmlES2ZKTEJFNEdvN0JZN1BFbmc?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-20T11:48:03",
-        "description": "Wallstreetbets Favorites Slipped Before Tuesday\u2019s Open&nbsp;&nbsp;Finimize"
       }
     ]
   },

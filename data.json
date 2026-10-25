@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T01:16:27.437022",
+  "timestamp": "2026-10-25T01:21:17.551761",
   "summary": "Key topics today:\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness (r/HackerNews, 101 pts)\n- - Neural chip decodes interactions between brain regions (r/HackerNews, 101 pts)\n- - Reactive Optimizers: rewrite the optimizer's source code during training (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -20,14 +20,6 @@
     },
     {
       "type": "sell",
-      "asset": "JBLU",
-      "price": 2.63,
-      "change": -10.24,
-      "category": "stock",
-      "text": "JBLU -10.2% drop @ $2.63"
-    },
-    {
-      "type": "sell",
       "asset": "ARM",
       "price": 210.33,
       "change": -7.18,
@@ -41,6 +33,14 @@
       "change": -7.13,
       "category": "stock",
       "text": "COIN -7.1% drop @ $164.45"
+    },
+    {
+      "type": "sell",
+      "asset": "HOOD",
+      "price": 95.07,
+      "change": -6.73,
+      "category": "stock",
+      "text": "HOOD -6.7% drop @ $95.07"
     }
   ],
   "reddit": [
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-25T05:16:02.253436",
+    "timestamp": "2026-10-25T05:20:57.046357",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,15 +430,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-25T05:15:39.283637",
+    "timestamp": "2026-10-25T05:20:25.549367",
     "trending": [
-      {
-        "symbol": "JBLU",
-        "price": 2.63,
-        "change": -0.3,
-        "change_percent": -10.24,
-        "name": "JetBlue Airways Corporation"
-      },
       {
         "symbol": "ARM",
         "price": 210.33,
@@ -447,11 +440,18 @@
         "name": "Arm Holdings plc"
       },
       {
-        "symbol": "CEG",
-        "price": 253.45,
-        "change": -17.29,
-        "change_percent": -6.39,
-        "name": "Constellation Energy Corporatio"
+        "symbol": "OKLO",
+        "price": 26.35,
+        "change": -1.38,
+        "change_percent": -4.98,
+        "name": "Oklo Inc."
+      },
+      {
+        "symbol": "^KS11",
+        "price": 5550.3,
+        "change": -185.36,
+        "change_percent": -3.23,
+        "name": "KOSPI Composite Index"
       },
       {
         "symbol": "QQQM",
@@ -468,11 +468,11 @@
         "name": "Applovin Corporation"
       },
       {
-        "symbol": "SOFI",
-        "price": 14.61,
-        "change": -0.29,
-        "change_percent": -1.91,
-        "name": "SoFi Technologies, Inc."
+        "symbol": "JEPQ",
+        "price": 58.43,
+        "change": -1.52,
+        "change_percent": -2.54,
+        "name": "JPMorgan Nasdaq Equity Premium "
       },
       {
         "symbol": "SCHD",
@@ -511,9 +511,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2364.61,
-        "change": 8.87,
-        "change_percent": 0.38,
+        "price": 2364.3,
+        "change": 8.56,
+        "change_percent": 0.36,
         "name": "Ethereum USD"
       },
       {
@@ -532,8 +532,8 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 80797.42,
-        "change": 26.71,
+        "price": 80796.37,
+        "change": 25.66,
         "change_percent": 0.03,
         "name": "Bitcoin USD"
       }
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-25T05:15:58.281508",
+    "timestamp": "2026-10-25T05:20:53.552262",
     "items": [
       {
         "symbol": "SPX",
@@ -1060,56 +1060,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 251.36,
-        "change": -0.93,
+        "price": 251.75,
+        "change": -0.64,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80828,
-        "change": 0.07,
+        "price": 80827,
+        "change": 0.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2365.45,
-        "change": -0.54,
+        "price": 2365.56,
+        "change": -0.5,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 102.47,
-        "change": 0.01,
+        "price": 102.49,
+        "change": 0.15,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.55,
-        "change": -2.45,
+        "change": -2.33,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.95,
-        "change": -1.09,
+        "price": 8.96,
+        "change": -0.88,
         "type": "crypto"
-      },
-      {
-        "symbol": "JBLU",
-        "price": 2.63,
-        "change": -10.24,
-        "type": "mover"
       },
       {
         "symbol": "ARM",
         "price": 210.33,
         "change": -7.18,
-        "type": "mover"
-      },
-      {
-        "symbol": "CEG",
-        "price": 253.45,
-        "change": -6.39,
         "type": "mover"
       },
       {
@@ -1131,21 +1119,33 @@
         "type": "mover"
       },
       {
+        "symbol": "^KS11",
+        "price": 5550.3,
+        "change": -3.23,
+        "type": "mover"
+      },
+      {
+        "symbol": "QQQM",
+        "price": 290.06,
+        "change": -2.87,
+        "type": "mover"
+      },
+      {
         "symbol": "APP",
         "price": 260.25,
         "change": -2.86,
         "type": "mover"
       },
       {
-        "symbol": "PLTR",
-        "price": 196.75,
-        "change": -2.46,
+        "symbol": "JEPQ",
+        "price": 58.43,
+        "change": -2.54,
         "type": "mover"
       },
       {
-        "symbol": "SCHD",
-        "price": 35.27,
-        "change": 1.76,
+        "symbol": "PLTR",
+        "price": 196.75,
+        "change": -2.46,
         "type": "mover"
       },
       {
@@ -1188,7 +1188,7 @@
       "author": ""
     },
     {
-      "title": "The PHP developer who became the unsung hero of the internet",
+      "title": "How one man became the unsung hero of the internet during a cyber-security scramble",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LdS1LRWVpT2JkYXRKYUhhRF9OZGdzTEJSWUllclhPek1Wd2ZqUU5GeTR4b29TckJkVndpQzIyLU9IT1BfOVVFRnI0VXlEeVVGV0FaZFcyMUdBVEU?oc=5",
       "source": "BBC",
       "category": "business",
@@ -1538,7 +1538,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 25 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-25T01:16:25.047324"
+    "timestamp": "2026-10-25T01:21:15.529305"
   },
   "sticky": {
     "cnbc": [

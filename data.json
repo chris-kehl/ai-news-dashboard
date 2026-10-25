@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T07:16:09.622043",
+  "timestamp": "2026-10-25T07:19:01.474674",
   "summary": "Key topics today:\n- - Cerebras Deploys Trillion-Parameter AI Models (r/HackerNews, 201 pts)\n- - GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards (r/HackerNews, 201 pts)\n- - Samsung running a TensorFlow lite model on 960x540 image to track you (r/HackerNews, 101 pts)\n- - Neural chip decodes interactions between brain regions (r/HackerNews, 101 pts)\n- - Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -9,6 +9,14 @@
       "change": 2.91,
       "category": "crypto",
       "text": "ZEC +2.9% @ $1,191.65"
+    },
+    {
+      "type": "sell",
+      "asset": "NOK",
+      "price": 8.14,
+      "change": -12.0,
+      "category": "stock",
+      "text": "NOK -12.0% drop @ $8.14"
     },
     {
       "type": "sell",
@@ -25,14 +33,6 @@
       "change": -7.13,
       "category": "stock",
       "text": "COIN -7.1% drop @ $164.45"
-    },
-    {
-      "type": "sell",
-      "asset": "HOOD",
-      "price": 95.07,
-      "change": -6.73,
-      "category": "stock",
-      "text": "HOOD -6.7% drop @ $95.07"
     }
   ],
   "reddit": [
@@ -85,14 +85,6 @@
       "created": ""
     },
     {
-      "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
-      "created": ""
-    },
-    {
       "title": "How Japanese Dried Bonito Is Made",
       "subreddit": "HackerNews",
       "score": 1,
@@ -115,12 +107,20 @@
       "comments": 0,
       "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
       "created": ""
+    },
+    {
+      "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-25T11:15:59.763667",
+    "timestamp": "2026-10-25T11:18:49.217449",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,8 +422,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-25T11:15:38.094978",
+    "timestamp": "2026-10-25T11:18:26.835135",
     "trending": [
+      {
+        "symbol": "NOK",
+        "price": 8.14,
+        "change": -1.11,
+        "change_percent": -12.0,
+        "name": "Nokia Corporation Sponsored"
+      },
       {
         "symbol": "ARM",
         "price": 210.33,
@@ -432,11 +439,25 @@
         "name": "Arm Holdings plc"
       },
       {
-        "symbol": "CBRS",
-        "price": 110.82,
-        "change": -7.16,
-        "change_percent": -6.07,
-        "name": "Cerebras Systems Inc."
+        "symbol": "ASML",
+        "price": 1571.8,
+        "change": -104.89,
+        "change_percent": -6.26,
+        "name": "ASML Holding N.V. - New York Re"
+      },
+      {
+        "symbol": "OKLO",
+        "price": 26.35,
+        "change": -1.38,
+        "change_percent": -4.98,
+        "name": "Oklo Inc."
+      },
+      {
+        "symbol": "BZ=F",
+        "price": 111.7,
+        "change": -5.02,
+        "change_percent": -4.3,
+        "name": "Brent Crude Oil Last Day Financ"
       },
       {
         "symbol": "^KS11",
@@ -446,11 +467,11 @@
         "name": "KOSPI Composite Index"
       },
       {
-        "symbol": "XOM",
-        "price": 183.21,
-        "change": 5.12,
-        "change_percent": 2.87,
-        "name": "ExxonMobil Holdings Corporation"
+        "symbol": "IONQ",
+        "price": 31.27,
+        "change": -1.01,
+        "change_percent": -3.13,
+        "name": "IonQ, Inc."
       },
       {
         "symbol": "APP",
@@ -460,20 +481,6 @@
         "name": "Applovin Corporation"
       },
       {
-        "symbol": "test",
-        "price": 37.64,
-        "change": -0.94,
-        "change_percent": -2.44,
-        "name": "YieldMax TSLA Performance & Dis"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2325.5,
-        "change": -30.45,
-        "change_percent": -1.29,
-        "name": "Ethereum USD"
-      },
-      {
         "symbol": ".DJI",
         "price": 52215.16,
         "change": -652.82,
@@ -481,10 +488,17 @@
         "name": "DJIA"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 2329.88,
+        "change": -26.07,
+        "change_percent": -1.11,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": "BTC-USD",
-        "price": 80228.01,
-        "change": -562.83,
-        "change_percent": -0.7,
+        "price": 80292.2,
+        "change": -498.63,
+        "change_percent": -0.62,
         "name": "Bitcoin USD"
       },
       {
@@ -498,7 +512,7 @@
         "symbol": "XRP-USD",
         "price": 1.29,
         "change": -0.01,
-        "change_percent": -0.49,
+        "change_percent": -0.4,
         "name": "XRP USD"
       },
       {
@@ -507,13 +521,6 @@
         "change": -8.13,
         "change_percent": -0.29,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "EURUSD=X",
-        "price": 1.12,
-        "change": -0.0,
-        "change_percent": -0.27,
-        "name": "EUR/USD"
       },
       {
         "symbol": "^TWII",
@@ -951,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-25T11:15:56.199625",
+    "timestamp": "2026-10-25T11:18:45.784094",
     "items": [
       {
         "symbol": "SPX",
@@ -1045,38 +1052,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 246.82,
-        "change": -0.88,
+        "price": 247.13,
+        "change": -0.77,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80270,
-        "change": -0.4,
+        "price": 80304,
+        "change": -0.33,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2326.39,
-        "change": -1.76,
+        "price": 2329.5,
+        "change": -1.57,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 100.69,
-        "change": -0.86,
+        "price": 100.74,
+        "change": -0.75,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.34,
-        "change": -2.41,
+        "price": 11.35,
+        "change": -2.23,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.8,
-        "change": -1.32,
+        "change": -1.24,
         "type": "crypto"
       },
       {
@@ -1086,9 +1093,9 @@
         "type": "mover"
       },
       {
-        "symbol": "CBRS",
-        "price": 110.82,
-        "change": -6.07,
+        "symbol": "ASML",
+        "price": 1571.8,
+        "change": -6.26,
         "type": "mover"
       },
       {
@@ -1104,9 +1111,21 @@
         "type": "mover"
       },
       {
+        "symbol": "OKLO",
+        "price": 26.35,
+        "change": -4.98,
+        "type": "mover"
+      },
+      {
         "symbol": "AMC",
         "price": 2.9,
         "change": -4.61,
+        "type": "mover"
+      },
+      {
+        "symbol": "BZ=F",
+        "price": 111.7,
+        "change": -4.3,
         "type": "mover"
       },
       {
@@ -1116,27 +1135,15 @@
         "type": "mover"
       },
       {
-        "symbol": "XOM",
-        "price": 183.21,
-        "change": 2.87,
+        "symbol": "IONQ",
+        "price": 31.27,
+        "change": -3.13,
         "type": "mover"
       },
       {
         "symbol": "APP",
         "price": 260.25,
         "change": -2.86,
-        "type": "mover"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 196.75,
-        "change": -2.46,
-        "type": "mover"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2329.17,
-        "change": -1.14,
         "type": "mover"
       }
     ]
@@ -1531,7 +1538,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 25 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-25T07:16:06.556196"
+    "timestamp": "2026-10-25T07:18:59.024547"
   },
   "sticky": {
     "cnbc": [

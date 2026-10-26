@@ -1,15 +1,7 @@
 {
-  "timestamp": "2026-10-26T04:01:14.376345",
-  "summary": "Key topics today:\n- - OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why? (r/HackerNews, 401 pts)\n- - IBM CEO says open weight models are now good and cheap on-prem (r/HackerNews, 101 pts)\n- - Microsoft Decision-1: 9B Qwen Model Launch Explained (r/HackerNews, 101 pts)\n- - Show HN: ADRs for AI \u2013 Deliberation records for human\u2013AI work, versioned in Git (r/HackerNews, 101 pts)\n- - A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-26T04:10:43.570809",
+  "summary": "Key topics today:\n- - OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why? (r/HackerNews, 401 pts)\n- - IBM CEO says open weight models are now good and cheap on-prem (r/HackerNews, 101 pts)\n- - Microsoft Decision-1: 9B Qwen Model Launch Explained (r/HackerNews, 101 pts)\n- - Show HN: ADRs for AI \u2013 Deliberation records for human\u2013AI work, versioned in Git (r/HackerNews, 101 pts)\n- - Cognitive Mercantilism: AI panic resembles fears of early capitalism (r/HackerNews, 101 pts)",
   "signals": [
-    {
-      "type": "buy",
-      "asset": "AIOK",
-      "price": 12.02,
-      "change": 148.35,
-      "category": "stock",
-      "text": "AIOK +148.3% momentum @ $12.02"
-    },
     {
       "type": "sell",
       "asset": "CRWV",
@@ -19,12 +11,20 @@
       "text": "CRWV -12.3% drop @ $54.24"
     },
     {
-      "type": "buy",
-      "asset": "CART",
-      "price": 56.44,
-      "change": 12.18,
+      "type": "sell",
+      "asset": "IREN",
+      "price": 24.91,
+      "change": -10.54,
       "category": "stock",
-      "text": "CART +12.2% momentum @ $56.44"
+      "text": "IREN -10.5% drop @ $24.91"
+    },
+    {
+      "type": "sell",
+      "asset": "NBIS",
+      "price": 158.74,
+      "change": -7.48,
+      "category": "stock",
+      "text": "NBIS -7.5% drop @ $158.74"
     },
     {
       "type": "watch",
@@ -69,19 +69,19 @@
       "created": ""
     },
     {
-      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://lynchlab.net/llm-skin-cancer",
-      "created": ""
-    },
-    {
       "title": "Cognitive Mercantilism: AI panic resembles fears of early capitalism",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism",
+      "created": ""
+    },
+    {
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://lynchlab.net/llm-skin-cancer",
       "created": ""
     },
     {
@@ -109,18 +109,18 @@
       "created": ""
     },
     {
-      "title": "Behind the scenes at the NeXT Computer office",
+      "title": "Show HN: A Truly Modular Keyboard",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry",
+      "url": "https://github.com/notaroomba/keybytes",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-26T08:01:04.463134",
+    "timestamp": "2026-10-26T08:10:33.400422",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,28 +422,14 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-26T08:00:41.144585",
+    "timestamp": "2026-10-26T08:10:09.617437",
     "trending": [
-      {
-        "symbol": "AIOK",
-        "price": 12.02,
-        "change": 7.18,
-        "change_percent": 148.35,
-        "name": "AI OKTO CORP."
-      },
       {
         "symbol": "CRWV",
         "price": 54.24,
         "change": -7.58,
         "change_percent": -12.27,
         "name": "CoreWeave, Inc."
-      },
-      {
-        "symbol": "CART",
-        "price": 56.44,
-        "change": 6.13,
-        "change_percent": 12.18,
-        "name": "Maplebear Inc."
       },
       {
         "symbol": "IREN",
@@ -467,11 +453,25 @@
         "name": "MercadoLibre, Inc."
       },
       {
+        "symbol": "VALE",
+        "price": 12.4,
+        "change": -0.3,
+        "change_percent": -2.36,
+        "name": "VALE S.A."
+      },
+      {
         "symbol": "PBR",
         "price": 26.16,
         "change": 0.5,
         "change_percent": 1.95,
         "name": "Petroleo Brasileiro S.A. Petrob"
+      },
+      {
+        "symbol": "^HSI",
+        "price": 23219.58,
+        "change": 284.9,
+        "change_percent": 1.24,
+        "name": "HANG SENG INDEX"
       },
       {
         "symbol": ".DJI",
@@ -509,6 +509,13 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "BTC-USD",
+        "price": 79715.99,
+        "change": -308.02,
+        "change_percent": -0.38,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": ".RUT",
         "price": 2775.899,
         "change": -8.13,
@@ -521,13 +528,6 @@
         "change": 0.08,
         "change_percent": 0.19,
         "name": "iShares MSCI Brazil ETF"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 79927.99,
-        "change": -96.02,
-        "change_percent": -0.12,
-        "name": "Bitcoin USD"
       }
     ],
     "meme_momentum": [
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-26T08:01:00.719976",
+    "timestamp": "2026-10-26T08:10:29.372480",
     "items": [
       {
         "symbol": "SPX",
@@ -980,8 +980,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 19.7,
-        "change": 1.29,
+        "price": 19.73,
+        "change": 1.44,
         "type": "index"
       },
       {
@@ -992,105 +992,99 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7672.5,
-        "change": 0.17,
+        "price": 7669.0,
+        "change": 0.12,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29106.75,
-        "change": -0.04,
+        "price": 29083.0,
+        "change": -0.12,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52568.0,
-        "change": 0.33,
+        "price": 52528.0,
+        "change": 0.26,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2793.3,
-        "change": 0.32,
+        "price": 2790.4,
+        "change": 0.21,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 101.56,
-        "change": -1.66,
+        "price": 101.5,
+        "change": -1.71,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4022.7,
-        "change": 0.37,
+        "price": 4023.4,
+        "change": 0.39,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 54.1,
-        "change": 0.27,
+        "price": 54.06,
+        "change": 0.22,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1550.6,
-        "change": -0.76,
+        "price": 1548.6,
+        "change": -0.88,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1041.5,
-        "change": -0.95,
+        "price": 1038.5,
+        "change": -1.24,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.0,
-        "change": -1.57,
+        "price": 3.01,
+        "change": -1.48,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 249.11,
-        "change": 0.19,
+        "price": 248.49,
+        "change": 0.05,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79994,
-        "change": -0.79,
+        "price": 79730,
+        "change": -1.0,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2317.65,
-        "change": -1.23,
+        "price": 2305.91,
+        "change": -1.5,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 100.65,
-        "change": -0.92,
+        "price": 100.21,
+        "change": -1.18,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.35,
-        "change": -0.42,
+        "price": 11.29,
+        "change": -0.84,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.84,
-        "change": -0.41,
+        "price": 8.81,
+        "change": -0.62,
         "type": "crypto"
-      },
-      {
-        "symbol": "AIOK",
-        "price": 12.02,
-        "change": 148.35,
-        "type": "mover"
       },
       {
         "symbol": "CRWV",
@@ -1144,6 +1138,12 @@
         "symbol": "PBR",
         "price": 26.16,
         "change": 1.95,
+        "type": "mover"
+      },
+      {
+        "symbol": "^HSI",
+        "price": 23219.38,
+        "change": 1.24,
         "type": "mover"
       }
     ]
@@ -1210,9 +1210,9 @@
       "author": ""
     },
     {
-      "title": "World-First Cancer Vaccine Cuts Melanoma Recurrence or Death Risk by 42% in Landmark Trial",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQzhYUnpreXZ6a25POUE0VC0tMFIta1AyVE43Q0oxcmx3TnlzQTBBdFhuQ3paZGlPdUJodWU0T2M1Q0g3OURlemo5aFNLRklNTUdZTjNQeGFZUFBJbmlzUGY5N3FDTG9uWHZmcnRwbmNzMHBNRFNMMm1DUXJBNklHVlplczNwbi1GVGpyVTltdGR2VVQ4UHIxbkNsOVdKNWUtR3BJQWFZNVJlNHJaeWpkSDhnVlZKQnZiblE?oc=5",
-      "source": "ScienceAlert",
+      "title": "Roche Targets Emerging Oncology Market With New Lung-Cancer Drug",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVTJRUzBFdks0bXc0UnRpYWNaZU9PUmpNN0YxZzhQbGJLNG5fQ0JiSDc5UGZRbXBmRGYxS0g0eWdpNThTLXZKWFZBS1lxTGhsSWZJaWg1bXZaSTZBR0JwZ1VFbmE4Qk9OeWxnWG9oQjlqeEV3UktwZEMtcE55QUhMNGxBdW1ISWNPUlZZQl9MUE12OW9ZU0ZGMHd5NElROG1vUERkdlFuc0pEN0U?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
       "description": "",
@@ -1220,9 +1220,9 @@
       "author": ""
     },
     {
-      "title": "Roche Targets Emerging Oncology Market With New Lung-Cancer Drug",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVTJRUzBFdks0bXc0UnRpYWNaZU9PUmpNN0YxZzhQbGJLNG5fQ0JiSDc5UGZRbXBmRGYxS0g0eWdpNThTLXZKWFZBS1lxTGhsSWZJaWg1bXZaSTZBR0JwZ1VFbmE4Qk9OeWxnWG9oQjlqeEV3UktwZEMtcE55QUhMNGxBdW1ISWNPUlZZQl9MUE12OW9ZU0ZGMHd5NElROG1vUERkdlFuc0pEN0U?oc=5",
-      "source": "WSJ",
+      "title": "World-First Cancer Vaccine Cuts Melanoma Recurrence or Death Risk by 42% in Landmark Trial",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQzhYUnpreXZ6a25POUE0VC0tMFIta1AyVE43Q0oxcmx3TnlzQTBBdFhuQ3paZGlPdUJodWU0T2M1Q0g3OURlemo5aFNLRklNTUdZTjNQeGFZUFBJbmlzUGY5N3FDTG9uWHZmcnRwbmNzMHBNRFNMMm1DUXJBNklHVlplczNwbi1GVGpyVTltdGR2VVQ4UHIxbkNsOVdKNWUtR3BJQWFZNVJlNHJaeWpkSDhnVlZKQnZiblE?oc=5",
+      "source": "ScienceAlert",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
       "description": "",
@@ -1530,7 +1530,7 @@
     "changePercent": -0.0,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 26 Oct: 28,957.53, down -0.00% -- BEARISH. price below SMA20, RSI 24.0 weak, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-26T04:01:11.977912"
+    "timestamp": "2026-10-26T04:10:41.304647"
   },
   "sticky": {
     "cnbc": [
@@ -1538,7 +1538,7 @@
         "title": "Brazil's Lula wins historic presidential election; Bolsonaro reportedly refuses to concede",
         "url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html",
         "source": "CNBC",
-        "published": "2026-10-26T04:09:41",
+        "published": "2026-10-26T08:05:28",
         "description": "It's the first time since Brazil returned to direct elections in 1989 that a candidate has won the final runoff after losing in the first round."
       },
       {
@@ -1595,25 +1595,11 @@
     "bloomberg": [],
     "wallstreetbets": [
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNm9yaHZ1MGJtcUtLSkpLdndPNm1RMG84dVZsTmluYXRLblY3X1BMYjctMEtWOFdvdG5WdnM1am96YlVGN3pYV0Z3LW02VF9EVUp0cnEyOU5YdUdBOFFmcWcycnFpbzlVa2FZM21fVGpCV3hUekVuNU5ZWjcwcGJuVjNxUGhLd0kwNm95UGp3d2RJQk96RS10WVVzZGNubjhZYTZ6dlFzaFVJdw?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-22T10:35:35",
-        "description": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWlISWk0eHhRZzBsSGFmZFRkVmxMb25mSnB5TG51M2otT1E2WkkwQ2VfRHVTbzNlOG5wQTZQWEtQWjhWcTV1WFlvdzNNUlVpRU5qNTE0VlVpTW5WbTRETDctSlNXZng2M2Fsb3JQVnB1UjlYYmRyN0hfeHFHbXFRVU53Vm54MHZpbHlQREpFX2FBMFUxUUZ6VXFoSVpNWTM0Q3VheWRmNDRGa2k2T1FveHJibUU?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-20T07:00:00",
-        "description": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHp3ZDFvbTRqRTluZjFQMXFBclhFR2ZLWXRrZnlZdlFGcWRjdkEyX3RVWHRHZl9DWnE1dDJGQktRckJIeHgxbTZicjFCUUtJX1E3cDhPQkk1T2NMMTBnLVA1R2t4b0lEQ0VKVVlOYVBnQnRJZno5SzRTdW5VWjJiSU1USjNDc3ZaUUQ4THFFclZ0WFMyYVlvVVg1TmNBamVkNENoNW02REg?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-20T10:39:09",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-21T10:38:28",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline - marketscreener.com",
@@ -1623,118 +1609,132 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
+        "title": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open - Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdzBWdmxMWXpGcWp4VGVpRVR2NUVxemdiLVJSenM3Q21ocW1qUy0tRnp3QWdnZGFUYjRjVjlReGNRVE1YSjNSZURJM0YtRW1TNmhNSEpkd0hVZGpTbGV5Wm4tZC1tMzhhaHVGNlpqT0h4Tm5qOWV6YVVGaHdBcndHbENBcjdabWZqaUFXTA?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-21T10:38:28",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-23T11:46:38",
+        "description": "Wallstreetbets Favorites Were Split Before Friday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Thursday; Rocket Lab, CoreWeave to Open Lower - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNU9Qd2Z4U3ZQRTZ2SVVmUGZvYUdBV1JoU21EeThXS21YanNFOVlfY0I5aWVNV2s0TDkydmlPRHNYdFRnMXZqaThLVllIbngyRXVOZVdBcGhqSlY3b0NaWHRENS0xcms5VmlMaGY2YzdLd3FINDE4ZXZ5dFRUMUY3ajdTdzJscUp3NHN1dVNxdkxoWFBJWkViQVNKM1B5UmVpdEFEYjRR?oc=5",
+        "title": "Wall Street Bets on Box Office Resurgence - TheWrap",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTGFUVXh0SVhvNk9wOHAtLWo5SDVjcDlYQndGdFlWd2J1eHowRFFsV3RwaW83Q1NIX0tELWVwRWV3Z2pQbmluMzl4U3oxY2xxZldCaFdFaDVIMDJxMFB5OVZuSXpxYUQ2aUhYUmtxUXBVejdKMnBHNGpwbW5VSjZybWl5ZjJKNW9QeENlTDRmZVlxZ3J1SFY4?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-15T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Thursday; Rocket Lab, CoreWeave to Open Lower&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-23T17:24:55",
+        "description": "Wall Street Bets on Box Office Resurgence&nbsp;&nbsp;TheWrap"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSktPZUtaRzkzcWtUbTZNOUE0bG44TU9QeWxMLXBGUEhMWWFMM1NLZkZoRlM2dnQ3S3RBd0ZwQ2VvZFBucmdYVzVydVNqTG9CZWd5dUNVX3BNRVhyMzROSWtlWjE1TGpLOUZfRF9DU1laeE9EaFh2U2tZVTBkb3FOMGphRzdQZ2RUM3E2ODBibV9ubXR5akZ6TEZ3UlFOWE9EZFFLMkw2WUs?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHp3ZDFvbTRqRTluZjFQMXFBclhFR2ZLWXRrZnlZdlFGcWRjdkEyX3RVWHRHZl9DWnE1dDJGQktRckJIeHgxbTZicjFCUUtJX1E3cDhPQkk1T2NMMTBnLVA1R2t4b0lEQ0VKVVlOYVBnQnRJZno5SzRTdW5VWjJiSU1USjNDc3ZaUUQ4THFFclZ0WFMyYVlvVVg1TmNBamVkNENoNW02REg?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-13T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-20T10:39:09",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Monday; Nebius Group, Sandisk to Open Higher - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX0RGSUMzYldjcHlXeS1kRkEtQ1BCeDZEQnktLTZpX0RpNk0tN3BLekY4elBSNlpIZHBpTkp0MWtDTC0ycjE4UGd5bUVTVFpFR0otX3VXd3FEaUZjS0twRjNoMjhOX09BN3VkTFdOaG9yaG0wREc1QUpUcWR5SmVQd3R1NF82WDFUR2toTG5uWEZuVTlKenI2Nk92d0plZjQyWFp1V1pseFU2UQ?oc=5",
+        "title": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep - 24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdklTQWwxZWFfekg4TUdnUVlzcGRZSnlzTDNBUF9UVWJ5Nl9uVGhQUWgxQURjeXV3R0JPZF9RakRqLVZ3VklTeEw2bGZNQXdPS3ozcnpKMFZQYXJRdUNxVmhzLVp2eDRQbU1Yd0ozbW9HMGlGa0pDNHlXM1YtQlJ3YTA3cWxwbnVSdEtJTFp2emZCWkk4ZWticktORmx0NGt4Q1VYNGl2ZjlzUlp5d1pFdXB4SQ?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-19T10:33:11",
-        "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Monday; Nebius Group, Sandisk to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-20T14:48:00",
+        "description": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep&nbsp;&nbsp;24/7 Wall St."
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Down Pre-Bell Thursday; Hertz, Sandisk to Fall - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVkdvSWl6dFVlNzVHY21vTVVmeTQ2UkZqaElDWERMdDlYVXpObHZ1Mk1OUDZvN2VoSVF6Y3ZkM1hTSDZKcE0zYmEtOVVuRmFBc0dwcEs1aGpmajlwQnBxQTh0VnBybW93LW9NSDFBbE55eXNobWxmamlCVlBiTlpsbmRXcldab21wMVRGU3NaaU96ZXNPS0pkZWNXZXNQRk9OYWh6ZjVHQl8?oc=5",
+        "title": "Wall Street Bets: Investor interest, MGM - CDC Gaming",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBibndNQ2V3d2c5clhrRzZ6QmZuTExtZ1VIUVh6YVlGeXBnVFRVZ0ZhTEgyN01lcmJDVENkeGZvanBWX0JpVTRsT2RoUFJraWM0bVB5UlNiTEQ1eE5GMWxVM0R4a2NFUGVGMXhINzF3?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-08T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Down Pre-Bell Thursday; Hertz, Sandisk to Fall&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-19T16:49:17",
+        "description": "Wall Street Bets: Investor interest, MGM&nbsp;&nbsp;CDC Gaming"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Pre-Bell Friday; SpaceX, Nebius Group to Advance - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVU9FSGN3QlNFd3RqY05KSlltaUlnaEwwdW8wRlFBVmlQeVdRcXFpc210cVVaaVZadFQ5TFRVYkctbWdWczZNc09CTzB5aVY1WkhCeExwV1VQZjlwekdSeVVNdWxRR1NQQWNSbU56cGZJNnNwU01pd2pnNTgxR0JlcnZYNlNXdEVKUGozQ3dzd18xc3JkZWdvd0hlY1pxTFktZzFLXzZoNXk?oc=5",
+        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-09T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Higher Pre-Bell Friday; SpaceX, Nebius Group to Advance&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-05-02T07:00:00",
+        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+      },
+      {
+        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-14T07:00:00",
+        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
+      },
+      {
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7672.5,
-      "change": 12.75,
-      "change_percent": 0.17,
+      "price": 7668.0,
+      "change": 8.25,
+      "change_percent": 0.11,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29107.75,
-      "change": -10.0,
-      "change_percent": -0.03,
+      "price": 29080.25,
+      "change": -37.5,
+      "change_percent": -0.13,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52569.0,
-      "change": 175.0,
-      "change_percent": 0.33,
+      "price": 52525.0,
+      "change": 131.0,
+      "change_percent": 0.25,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2793.3,
-      "change": 8.8,
-      "change_percent": 0.32,
+      "price": 2790.0,
+      "change": 5.5,
+      "change_percent": 0.2,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 101.53,
-      "change": -1.74,
-      "change_percent": -1.68,
+      "price": 101.5,
+      "change": -1.77,
+      "change_percent": -1.71,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4022.7,
-      "change": 14.8,
-      "change_percent": 0.37,
+      "price": 4023.3,
+      "change": 15.4,
+      "change_percent": 0.38,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 54.1,
-      "change": 0.15,
-      "change_percent": 0.27,
+      "price": 54.06,
+      "change": 0.12,
+      "change_percent": 0.22,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1550.6,
-      "change": -11.8,
-      "change_percent": -0.76,
+      "price": 1548.6,
+      "change": -13.8,
+      "change_percent": -0.88,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1041.5,
-      "change": -10.0,
-      "change_percent": -0.95,
+      "price": 1038.5,
+      "change": -13.0,
+      "change_percent": -1.24,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.0,
-      "change": -0.05,
-      "change_percent": -1.57,
+      "price": 3.01,
+      "change": -0.04,
+      "change_percent": -1.48,
       "name": "Natural Gas Dec 26"
     }
   ],

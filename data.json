@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T04:16:15.450985",
+  "timestamp": "2026-10-27T04:21:33.718372",
   "summary": "Key topics today:\n- - Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses) (r/HackerNews, 201 pts)\n- - There are now 5 inference providers for abliterated DeepSeek (r/HackerNews, 101 pts)\n- - Sebastian Raschka's from-scratch video course on building reasoning models (r/HackerNews, 101 pts)\n- - Anthropic S-1 (r/HackerNews, 101 pts)\n- - GPT-6.1 Terra (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -27,20 +27,20 @@
       "text": "XP -46.5% drop @ $15.70"
     },
     {
-      "type": "buy",
-      "asset": "SGRY",
-      "price": 23.25,
-      "change": 46.23,
-      "category": "stock",
-      "text": "SGRY +46.2% momentum @ $23.25"
-    },
-    {
       "type": "sell",
       "asset": "DASH",
       "price": 168.44,
       "change": -9.41,
       "category": "stock",
       "text": "DASH -9.4% drop @ $168.44"
+    },
+    {
+      "type": "sell",
+      "asset": "CLS",
+      "price": 246.65,
+      "change": -8.31,
+      "category": "stock",
+      "text": "CLS -8.3% drop @ $246.65"
     },
     {
       "type": "watch",
@@ -134,9 +134,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@Reuters",
+      "text": "Fire breaks out in deprived area of Seoul's Gangnam district https://reut.rs/4zSXkIG",
+      "url": "http://nitter.meowing.monster/Reuters/status/2114988001545671091#m",
+      "date": "Tue, 27 Oct 2026 07:50:08 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Illinois man charged with sending threatening letters to US lawmakers https://reut.rs/3UPNbOb",
+      "url": "http://nitter.meowing.monster/Reuters/status/2114986743887810831#m",
+      "date": "Tue, 27 Oct 2026 07:45:08 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "With jet fuel costs climbing due to the Iran war and consumer demand weakening at the lower end of the market, airlines like Air France are gambling on deep-pocketed fliers in business and first class cabins https://reut.rs/47DeNci",
+      "url": "http://nitter.meowing.monster/Reuters/status/2114985510410309774#m",
+      "date": "Tue, 27 Oct 2026 07:40:14 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-10-27T08:16:00.826522",
+    "timestamp": "2026-10-27T08:21:20.484665",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +460,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-27T08:15:38.148471",
+    "timestamp": "2026-10-27T08:20:57.620792",
     "trending": [
       {
         "symbol": "XP",
@@ -446,13 +468,6 @@
         "change": -13.65,
         "change_percent": -46.49,
         "name": "XP Inc."
-      },
-      {
-        "symbol": "SGRY",
-        "price": 23.25,
-        "change": 7.35,
-        "change_percent": 46.23,
-        "name": "Surgery Partners, Inc."
       },
       {
         "symbol": "DASH",
@@ -476,13 +491,6 @@
         "name": "Whirlpool Corporation"
       },
       {
-        "symbol": "0005.HK",
-        "price": 134.8,
-        "change": -7.7,
-        "change_percent": -5.4,
-        "name": "HSBC HOLDINGS"
-      },
-      {
         "symbol": "TSLA",
         "price": 391.62,
         "change": 17.04,
@@ -490,18 +498,25 @@
         "name": "Tesla, Inc."
       },
       {
-        "symbol": "PYPL",
-        "price": 54.99,
-        "change": -2.54,
-        "change_percent": -4.42,
-        "name": "PayPal Holdings, Inc."
-      },
-      {
         "symbol": "CDNS",
         "price": 322.17,
         "change": 12.52,
         "change_percent": 4.04,
         "name": "Cadence Design Systems, Inc."
+      },
+      {
+        "symbol": "MSFT",
+        "price": 532.6,
+        "change": 11.52,
+        "change_percent": 2.21,
+        "name": "Microsoft Corporation"
+      },
+      {
+        "symbol": "SOFI",
+        "price": 14.46,
+        "change": -0.31,
+        "change_percent": -2.1,
+        "name": "SoFi Technologies, Inc."
       },
       {
         "symbol": "GOOG",
@@ -544,6 +559,13 @@
         "change": 0.0,
         "change_percent": 0.0,
         "name": "Anthropic"
+      },
+      {
+        "symbol": "DVLT",
+        "price": 0.13,
+        "change": -0.0,
+        "change_percent": -0.0,
+        "name": "Datavault AI Inc."
       }
     ],
     "meme_momentum": [
@@ -974,7 +996,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-27T08:15:56.785993",
+    "timestamp": "2026-10-27T08:21:16.829814",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +1018,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.38,
-        "change": -0.05,
+        "price": 18.34,
+        "change": -0.27,
         "type": "index"
       },
       {
@@ -1008,98 +1030,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7712.75,
-        "change": -0.02,
+        "price": 7708.0,
+        "change": -0.08,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29382.25,
-        "change": -0.19,
+        "price": 29370.0,
+        "change": -0.23,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52617.0,
-        "change": 0.13,
+        "price": 52566.0,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2796.9,
-        "change": -0.02,
+        "price": 2794.0,
+        "change": -0.13,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.2,
-        "change": 0.43,
+        "price": 102.36,
+        "change": 0.59,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4014.4,
-        "change": -0.59,
+        "price": 4009.8,
+        "change": -0.71,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.99,
-        "change": -2.07,
+        "price": 52.93,
+        "change": -2.18,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1497.3,
-        "change": -2.56,
+        "price": 1495.5,
+        "change": -2.68,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1022.5,
-        "change": -2.42,
+        "price": 1021.5,
+        "change": -2.52,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.05,
-        "change": 17.29,
+        "change": 17.37,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 248.88,
-        "change": 0.34,
+        "price": 248.79,
+        "change": 0.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79768,
-        "change": 0.13,
+        "price": 79785,
+        "change": -0.07,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2312.32,
-        "change": 0.28,
+        "price": 2313.1,
+        "change": 0.06,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 99.91,
-        "change": -0.21,
+        "price": 99.86,
+        "change": -0.5,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.37,
-        "change": 0.73,
+        "change": 0.56,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.79,
-        "change": -0.14,
+        "change": -0.27,
         "type": "crypto"
       },
       {
@@ -1139,27 +1161,27 @@
         "type": "mover"
       },
       {
-        "symbol": "0005.HK",
-        "price": 134.8,
-        "change": -5.4,
+        "symbol": "MSFT",
+        "price": 532.6,
+        "change": 2.21,
         "type": "mover"
       },
       {
-        "symbol": "TSLA",
-        "price": 391.62,
-        "change": 4.55,
-        "type": "mover"
-      },
-      {
-        "symbol": "CDNS",
-        "price": 322.17,
-        "change": 4.04,
+        "symbol": "SOFI",
+        "price": 14.46,
+        "change": -2.1,
         "type": "mover"
       },
       {
         "symbol": "GOOG",
         "price": 314.19,
         "change": -2.05,
+        "type": "mover"
+      },
+      {
+        "symbol": "AMC",
+        "price": 2.89,
+        "change": -1.37,
         "type": "mover"
       }
     ]
@@ -1248,16 +1270,6 @@
   ],
   "tech_business": [
     {
-      "title": "iPhone Duo owners report cracks in Apple\u2019s first foldable handset",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU1U1LU1WWXhLcWhiNFNVUzhsdEllUWhkVTlXSXFfVnN2QkVFMVhVTFhYbXRqNGhxcEVkbkU4Y0tFSWNPU0lBdi1PbDM3ZHA4b3ZrRDVrdGFSNDEtcVB4MEZISmt3QURIeG9IQzdvVXhtLVZhcGhOZkEyS0pvLVlWUU0xUXFiaUp1ME9pdnFQZjYzeE9iS0lpa1pkMkV5MC13VFl4c2l0NA?oc=5",
-      "source": "The Guardian",
-      "category": "business",
-      "published": "Mon, 26 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "New iMac and 14-Inch MacBook Pro With M6 Chip Expected Tomorrow",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMVl5OEpHU2UzekVEWGZDdnZqV2o2Nmo1Y3JlbGpGMTB2T3R2YXZYZXNhd3dLQzRlT2V2VjJNTVNWTGpLS21NQ0NPdWgweDNaNE5RUFFIQnM4VThtLU0tZGlNSFRGSUJMTnBuRnB1TGhrTnpvejRpeVpSMndpV0Z6TmpDa0J5WnlzWWl2NjBR?oc=5",
       "source": "MacRumors",
@@ -1268,9 +1280,29 @@
       "author": ""
     },
     {
+      "title": "iPhone Duo owners report cracks in Apple\u2019s first foldable handset",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU1U1LU1WWXhLcWhiNFNVUzhsdEllUWhkVTlXSXFfVnN2QkVFMVhVTFhYbXRqNGhxcEVkbkU4Y0tFSWNPU0lBdi1PbDM3ZHA4b3ZrRDVrdGFSNDEtcVB4MEZISmt3QURIeG9IQzdvVXhtLVZhcGhOZkEyS0pvLVlWUU0xUXFiaUp1ME9pdnFQZjYzeE9iS0lpa1pkMkV5MC13VFl4c2l0NA?oc=5",
+      "source": "The Guardian",
+      "category": "business",
+      "published": "Mon, 26 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "You can now run Nintendo Switch games natively on iPhones and Macs",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVBpdFZScW9BN1lsdHRkMmlxVmxhUEhiZkl3VDRvbFZuYy1WN1VVcU9raDZWNmEycWhiY2NIaFd5R0p1dl8zb0tkYzc3QnBXSzJjSVREWVduN3NjYmpwSEJVbjRGaHVlbUZ2Zkx0YXVWQkl3YWdvZlFJUXVOTVpYNTd3TlNRZzYwZlFLWVJEVEVndw?oc=5",
       "source": "TechSpot",
+      "category": "business",
+      "published": "Mon, 26 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZaUhGWXUtaV9nYnBYMEE4elZQRjFlUWFvUEhVX1IyZWg3RjJFdkV0UWRLa3dyWWZybjVtSk1oY2h3Nl9OTzcwXzdha3QwT0gtWUp5U05wNWdEN0JMVmp2Z3JzaFJteldOOTYtcUgwUXdDTWxmUm1ObFZ3MHlQdw?oc=5",
+      "source": "The Hacker News",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
       "description": "",
@@ -1308,19 +1340,9 @@
       "author": ""
     },
     {
-      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZaUhGWXUtaV9nYnBYMEE4elZQRjFlUWFvUEhVX1IyZWg3RjJFdkV0UWRLa3dyWWZybjVtSk1oY2h3Nl9OTzcwXzdha3QwT0gtWUp5U05wNWdEN0JMVmp2Z3JzaFJteldOOTYtcUgwUXdDTWxmUm1ObFZ3MHlQdw?oc=5",
-      "source": "The Hacker News",
-      "category": "business",
-      "published": "Mon, 26 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Mass Effect fans ramp up efforts to save BioWare's RPG series with a Times Square billboard and plans for more ads outside The Game Awards \"funded by the community\"",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoMGV0Y09FaDdkV3NsSDN5RGVvQURyNWY2X3o4N2V3ZEViVmhVNUVyQk81TVp6RG53RDY3bTVzd3NhTVhSeHpqdE9CemRPUHIzSVNlR1Z5X3JjYnJESjNiUGxTNEtNdmM1MWpmRW1SdDJtZw?oc=5",
-      "source": "Eurogamer.net",
+      "title": "Tomb Raider's PS5 Remake Tipped to Be Just as Long as the PS1 Classic",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUhUdlpDMW9kMnpRTW1yQjFCdWVualFPNU5RMlhjWXVnT2dNeTlPaVlVQVZDbGVTMndBMFZFSGFGSGFBUlhIaEwwX1NFYjJMNURRQTkxSUpCSGIxYVUxZ3R2ZFhsNTV6MjZfbXhQTk1LdUpNTWhXMGtFLXJnai1VN3QxMFV3T0EtbEZrZUZNU1lrVkdSUERGcmNxZ08wS3FzQ1FNb25yLUEyTmlC?oc=5",
+      "source": "Push Square",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
       "description": "",
@@ -1538,7 +1560,7 @@
     "changePercent": 1.09,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 27 Oct: 29,273.40, up +1.09% -- BULLISH. strong +1.09% move. Counter: price below SMA20, RSI 27.0 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-27T04:16:08.105048"
+    "timestamp": "2026-10-27T04:21:31.470835"
   },
   "sticky": {
     "cnbc": [
@@ -1610,11 +1632,11 @@
         "description": "Wall Street Bets: Churchill Downs, Boyd Gaming, gaming industry prospects&nbsp;&nbsp;CDC Gaming"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNm9yaHZ1MGJtcUtLSkpLdndPNm1RMG84dVZsTmluYXRLblY3X1BMYjctMEtWOFdvdG5WdnM1am96YlVGN3pYV0Z3LW02VF9EVUp0cnEyOU5YdUdBOFFmcWcycnFpbzlVa2FZM21fVGpCV3hUekVuNU5ZWjcwcGJuVjNxUGhLd0kwNm95UGp3d2RJQk96RS10WVVzZGNubjhZYTZ6dlFzaFVJdw?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-21T10:38:28",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-22T10:35:35",
+        "description": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Monday; Tesla to Advance, Nu Holdings to Decline - marketscreener.com",
@@ -1638,25 +1660,11 @@
         "description": "Wall Street Bets on Box Office Resurgence&nbsp;&nbsp;TheWrap"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHp3ZDFvbTRqRTluZjFQMXFBclhFR2ZLWXRrZnlZdlFGcWRjdkEyX3RVWHRHZl9DWnE1dDJGQktRckJIeHgxbTZicjFCUUtJX1E3cDhPQkk1T2NMMTBnLVA1R2t4b0lEQ0VKVVlOYVBnQnRJZno5SzRTdW5VWjJiSU1USjNDc3ZaUUQ4THFFclZ0WFMyYVlvVVg1TmNBamVkNENoNW02REg?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-20T10:39:09",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep - 24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdklTQWwxZWFfekg4TUdnUVlzcGRZSnlzTDNBUF9UVWJ5Nl9uVGhQUWgxQURjeXV3R0JPZF9RakRqLVZ3VklTeEw2bGZNQXdPS3ozcnpKMFZQYXJRdUNxVmhzLVp2eDRQbU1Yd0ozbW9HMGlGa0pDNHlXM1YtQlJ3YTA3cWxwbnVSdEtJTFp2emZCWkk4ZWticktORmx0NGt4Q1VYNGl2ZjlzUlp5d1pFdXB4SQ?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-20T14:48:00",
-        "description": "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep&nbsp;&nbsp;24/7 Wall St."
-      },
-      {
-        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-02T07:00:00",
-        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+        "published": "2026-10-21T10:38:28",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline - marketscreener.com",
@@ -1671,64 +1679,78 @@
         "source": "r/wallstreetbets",
         "published": "2026-10-21T11:48:57",
         "description": "WallStreetBets Favorites Popped Before The Bell&nbsp;&nbsp;Finimize"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHp3ZDFvbTRqRTluZjFQMXFBclhFR2ZLWXRrZnlZdlFGcWRjdkEyX3RVWHRHZl9DWnE1dDJGQktRckJIeHgxbTZicjFCUUtJX1E3cDhPQkk1T2NMMTBnLVA1R2t4b0lEQ0VKVVlOYVBnQnRJZno5SzRTdW5VWjJiSU1USjNDc3ZaUUQ4THFFclZ0WFMyYVlvVVg1TmNBamVkNENoNW02REg?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-20T10:39:09",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Tuesday; CoreWeave, Nebius Group to Decline&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSktPZUtaRzkzcWtUbTZNOUE0bG44TU9QeWxMLXBGUEhMWWFMM1NLZkZoRlM2dnQ3S3RBd0ZwQ2VvZFBucmdYVzVydVNqTG9CZWd5dUNVX3BNRVhyMzROSWtlWjE1TGpLOUZfRF9DU1laeE9EaFh2U2tZVTBkb3FOMGphRzdQZ2RUM3E2ODBibV9ubXR5akZ6TEZ3UlFOWE9EZFFLMkw2WUs?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-13T07:00:00",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7712.5,
-      "change": -2.0,
-      "change_percent": -0.03,
+      "price": 7708.0,
+      "change": -6.5,
+      "change_percent": -0.08,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29380.75,
-      "change": -56.5,
-      "change_percent": -0.19,
+      "price": 29369.5,
+      "change": -67.75,
+      "change_percent": -0.23,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52617.0,
-      "change": 67.0,
-      "change_percent": 0.13,
+      "price": 52566.0,
+      "change": 16.0,
+      "change_percent": 0.03,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2796.8,
-      "change": -0.7,
-      "change_percent": -0.03,
+      "price": 2794.1,
+      "change": -3.4,
+      "change_percent": -0.12,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.2,
-      "change": 0.44,
-      "change_percent": 0.43,
+      "price": 102.37,
+      "change": 0.61,
+      "change_percent": 0.6,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4014.4,
-      "change": -24.0,
-      "change_percent": -0.59,
+      "price": 4009.1,
+      "change": -29.3,
+      "change_percent": -0.73,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.99,
-      "change": -1.12,
-      "change_percent": -2.08,
+      "price": 52.92,
+      "change": -1.18,
+      "change_percent": -2.19,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1497.3,
-      "change": -39.4,
-      "change_percent": -2.56,
+      "price": 1495.5,
+      "change": -41.2,
+      "change_percent": -2.68,
       "name": "Platinum Jan 27"
     },
     {
@@ -1742,7 +1764,7 @@
       "symbol": "NG=F",
       "price": 3.05,
       "change": 0.45,
-      "change_percent": 17.33,
+      "change_percent": 17.37,
       "name": "Natural Gas Dec 26"
     }
   ],

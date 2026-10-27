@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T05:01:11.402951",
+  "timestamp": "2026-10-27T05:10:37.016190",
   "summary": "Key topics today:\n- - Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses) (r/HackerNews, 201 pts)\n- - There are now 5 inference providers for abliterated DeepSeek (r/HackerNews, 101 pts)\n- - Sebastian Raschka's from-scratch video course on building reasoning models (r/HackerNews, 101 pts)\n- - Anthropic S-1 (r/HackerNews, 101 pts)\n- - GPT-6.1 Terra (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "type": "sell",
+      "asset": "BRAI",
+      "price": 2.12,
+      "change": -45.22,
+      "category": "stock",
+      "text": "BRAI -45.2% drop @ $2.12"
+    },
+    {
+      "type": "sell",
       "asset": "DASH",
       "price": 168.44,
       "change": -9.41,
       "category": "stock",
       "text": "DASH -9.4% drop @ $168.44"
-    },
-    {
-      "type": "sell",
-      "asset": "CLS",
-      "price": 246.65,
-      "change": -8.31,
-      "category": "stock",
-      "text": "CLS -8.3% drop @ $246.65"
     },
     {
       "type": "watch",
@@ -118,9 +118,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@Reuters",
+      "text": "WMO releases annual Greenhouse Gas Bulletin https://x.com/i/broadcasts/1lKQRWOWDoXGE",
+      "url": "http://nitter.meowing.monster/Reuters/status/2115004216125354250#m",
+      "date": "Tue, 27 Oct 2026 08:54:34 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "Several injured in car ramming in northern Germany, suspects at large https://reut.rs/3WbQSOz",
+      "url": "http://nitter.meowing.monster/Reuters/status/2115003108107411782#m",
+      "date": "Tue, 27 Oct 2026 08:50:10 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@Reuters",
+      "text": "China to send envoy to Middle East in near future amid conflict spillover https://reut.rs/4igqE4L",
+      "url": "http://nitter.meowing.monster/Reuters/status/2115001848897679649#m",
+      "date": "Tue, 27 Oct 2026 08:45:10 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-10-27T09:01:01.659238",
+    "timestamp": "2026-10-27T09:10:23.585409",
     "prices": [
       {
         "name": "Bittensor",
@@ -277,12 +299,20 @@
   },
   "news": [
     {
-      "title": "Chancellor to cut tariffs on some staple goods to offer cost of living help",
+      "title": "Budget measures to include fuel duty freeze and food tariff cuts",
       "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Tue, 27 Oct 2026 ",
       "description": "The BBC understands the government will also freeze fuel duty again in the Budget."
+    },
+    {
+      "title": "Two men charged under National Security Act after RAF Fairford incident",
+      "url": "https://www.bbc.co.uk/news/articles/cqly3v5vz4kko?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Tue, 27 Oct 2026 ",
+      "description": "Two men have been charged with national security offences after an incident near RAF Fairford last month, the Crown Prosecution Service has said."
     },
     {
       "title": "Israel heads to polls for pivotal election defined by security and democracy",
@@ -315,14 +345,6 @@
       "category": "bbc_news",
       "published": "Tue, 27 Oct 2026 ",
       "description": "Comey's lawyers say the case stems from alleged disclosure of classified information to the New York Times in 2016."
-    },
-    {
-      "title": "Rise in sales of radios and tinned foods, say retailers, after call to stock up",
-      "url": "https://www.bbc.co.uk/news/articles/c5rmy84np001o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Tue, 27 Oct 2026 ",
-      "description": "Figures obtained by BBC Newsnight show large spikes in sales of torches, radios and power banks."
     },
     {
       "title": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
@@ -422,7 +444,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-27T09:00:38.200029",
+    "timestamp": "2026-10-27T09:10:01.608281",
     "trending": [
       {
         "symbol": "XP",
@@ -430,6 +452,13 @@
         "change": -13.65,
         "change_percent": -46.49,
         "name": "XP Inc."
+      },
+      {
+        "symbol": "BRAI",
+        "price": 2.12,
+        "change": -1.75,
+        "change_percent": -45.22,
+        "name": "Braiin Limited"
       },
       {
         "symbol": "DASH",
@@ -453,11 +482,18 @@
         "name": "Whirlpool Corporation"
       },
       {
-        "symbol": "TSLA",
-        "price": 391.62,
-        "change": 17.04,
-        "change_percent": 4.55,
-        "name": "Tesla, Inc."
+        "symbol": "AMKR",
+        "price": 36.81,
+        "change": -2.24,
+        "change_percent": -5.74,
+        "name": "Amkor Technology, Inc."
+      },
+      {
+        "symbol": "PYPL",
+        "price": 54.99,
+        "change": -2.54,
+        "change_percent": -4.42,
+        "name": "PayPal Holdings, Inc."
       },
       {
         "symbol": "CDNS",
@@ -465,13 +501,6 @@
         "change": 12.52,
         "change_percent": 4.04,
         "name": "Cadence Design Systems, Inc."
-      },
-      {
-        "symbol": "MSFT",
-        "price": 532.6,
-        "change": 11.52,
-        "change_percent": 2.21,
-        "name": "Microsoft Corporation"
       },
       {
         "symbol": "SOFI",
@@ -507,13 +536,6 @@
         "change": 146.42,
         "change_percent": 0.28,
         "name": "DJIA"
-      },
-      {
-        "symbol": "^TWII",
-        "price": 46096.23,
-        "change": 54.8,
-        "change_percent": 0.12,
-        "name": "TSEC CAPITALIZATION WEIGHTED ST"
       },
       {
         "symbol": "ANTH.PVT",
@@ -958,7 +980,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-27T09:00:57.384782",
+    "timestamp": "2026-10-27T09:10:19.846471",
     "items": [
       {
         "symbol": "SPX",
@@ -980,8 +1002,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.3,
-        "change": -0.49,
+        "price": 18.2,
+        "change": -1.03,
         "type": "index"
       },
       {
@@ -992,50 +1014,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7706.5,
-        "change": -0.1,
+        "price": 7715.25,
+        "change": 0.01,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29374.0,
-        "change": -0.21,
+        "price": 29432.75,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52543.0,
-        "change": -0.01,
+        "price": 52593.0,
+        "change": 0.08,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2795.3,
-        "change": -0.08,
+        "price": 2797.7,
+        "change": 0.01,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.51,
-        "change": 0.74,
+        "price": 102.35,
+        "change": 0.58,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4005.1,
-        "change": -0.82,
+        "price": 4007.5,
+        "change": -0.77,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.89,
-        "change": -2.25,
+        "price": 53.02,
+        "change": -2.01,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1494.7,
-        "change": -2.73,
+        "price": 1497.2,
+        "change": -2.57,
         "type": "future"
       },
       {
@@ -1052,38 +1074,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 248.1,
-        "change": -1.29,
+        "price": 248.34,
+        "change": -0.82,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 79740,
-        "change": -0.51,
+        "price": 79753,
+        "change": -0.52,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2309.47,
-        "change": -0.58,
+        "price": 2311.97,
+        "change": -0.43,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 99.76,
-        "change": -1.17,
+        "price": 99.83,
+        "change": -1.09,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.33,
-        "change": -0.79,
+        "price": 11.34,
+        "change": -0.55,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.78,
-        "change": -1.5,
+        "price": 8.79,
+        "change": -1.24,
         "type": "crypto"
       },
       {
@@ -1093,9 +1115,9 @@
         "type": "mover"
       },
       {
-        "symbol": "DASH",
-        "price": 168.44,
-        "change": -9.41,
+        "symbol": "BRAI",
+        "price": 2.12,
+        "change": -45.22,
         "type": "mover"
       },
       {
@@ -1123,9 +1145,15 @@
         "type": "mover"
       },
       {
-        "symbol": "MSFT",
-        "price": 532.6,
-        "change": 2.21,
+        "symbol": "PYPL",
+        "price": 54.99,
+        "change": -4.42,
+        "type": "mover"
+      },
+      {
+        "symbol": "CDNS",
+        "price": 322.17,
+        "change": 4.04,
         "type": "mover"
       },
       {
@@ -1138,12 +1166,6 @@
         "symbol": "GOOG",
         "price": 314.19,
         "change": -2.05,
-        "type": "mover"
-      },
-      {
-        "symbol": "AMC",
-        "price": 2.89,
-        "change": -1.37,
         "type": "mover"
       }
     ]
@@ -1232,21 +1254,21 @@
   ],
   "tech_business": [
     {
-      "title": "New iMac and 14-Inch MacBook Pro With M6 Chip Expected Tomorrow",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMVl5OEpHU2UzekVEWGZDdnZqV2o2Nmo1Y3JlbGpGMTB2T3R2YXZYZXNhd3dLQzRlT2V2VjJNTVNWTGpLS21NQ0NPdWgweDNaNE5RUFFIQnM4VThtLU0tZGlNSFRGSUJMTnBuRnB1TGhrTnpvejRpeVpSMndpV0Z6TmpDa0J5WnlzWWl2NjBR?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Tue, 27 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "iPhone Duo owners report cracks in Apple\u2019s first foldable handset",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU1U1LU1WWXhLcWhiNFNVUzhsdEllUWhkVTlXSXFfVnN2QkVFMVhVTFhYbXRqNGhxcEVkbkU4Y0tFSWNPU0lBdi1PbDM3ZHA4b3ZrRDVrdGFSNDEtcVB4MEZISmt3QURIeG9IQzdvVXhtLVZhcGhOZkEyS0pvLVlWUU0xUXFiaUp1ME9pdnFQZjYzeE9iS0lpa1pkMkV5MC13VFl4c2l0NA?oc=5",
       "source": "The Guardian",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "New iMac and 14-Inch MacBook Pro With M6 Chip Expected Tomorrow",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMVl5OEpHU2UzekVEWGZDdnZqV2o2Nmo1Y3JlbGpGMTB2T3R2YXZYZXNhd3dLQzRlT2V2VjJNTVNWTGpLS21NQ0NPdWgweDNaNE5RUFFIQnM4VThtLU0tZGlNSFRGSUJMTnBuRnB1TGhrTnpvejRpeVpSMndpV0Z6TmpDa0J5WnlzWWl2NjBR?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Tue, 27 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1302,9 +1324,9 @@
       "author": ""
     },
     {
-      "title": "Mass Effect fans ramp up efforts to save BioWare's RPG series with a Times Square billboard and plans for more ads outside The Game Awards \"funded by the community\"",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoMGV0Y09FaDdkV3NsSDN5RGVvQURyNWY2X3o4N2V3ZEViVmhVNUVyQk81TVp6RG53RDY3bTVzd3NhTVhSeHpqdE9CemRPUHIzSVNlR1Z5X3JjYnJESjNiUGxTNEtNdmM1MWpmRW1SdDJtZw?oc=5",
-      "source": "Eurogamer.net",
+      "title": "Tomb Raider's PS5 Remake Tipped to Be Just as Long as the PS1 Classic",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUhUdlpDMW9kMnpRTW1yQjFCdWVualFPNU5RMlhjWXVnT2dNeTlPaVlVQVZDbGVTMndBMFZFSGFGSGFBUlhIaEwwX1NFYjJMNURRQTkxSUpCSGIxYVUxZ3R2ZFhsNTV6MjZfbXhQTk1LdUpNTWhXMGtFLXJnai1VN3QxMFV3T0EtbEZrZUZNU1lrVkdSUERGcmNxZ08wS3FzQ1FNb25yLUEyTmlC?oc=5",
+      "source": "Push Square",
       "category": "business",
       "published": "Mon, 26 Oct 2026 ",
       "description": "",
@@ -1522,7 +1544,7 @@
     "changePercent": 1.09,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 27 Oct: 29,273.40, up +1.09% -- BULLISH. strong +1.09% move. Counter: price below SMA20, RSI 27.0 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-27T05:01:09.270384"
+    "timestamp": "2026-10-27T05:10:34.913205"
   },
   "sticky": {
     "cnbc": [
@@ -1530,7 +1552,7 @@
         "title": "Nvidia to invest $3 billion in Meta as tech giants deepen AI partnership",
         "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
         "source": "CNBC",
-        "published": "2026-10-27T08:40:53",
+        "published": "2026-10-27T09:07:41",
         "description": "Meta on Monday announced plans\u00a0to raise a total of $95 billion to support its investments in artificial intelligence infrastructure."
       },
       {
@@ -1579,7 +1601,7 @@
         "title": "Oil prices seesaw amid renewed diplomatic efforts to end Mideast conflict",
         "url": "https://www.cnbc.com/2026/10/27/oil-today-iran-us-crude-wti-brent-trump.html",
         "source": "CNBC",
-        "published": "2026-10-27T08:08:03",
+        "published": "2026-10-27T09:09:01",
         "description": "Renewed diplomatic efforts to end the U.S.-Israeli war with Iran pushed oil prices lower"
       }
     ],
@@ -1661,58 +1683,58 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7706.5,
-      "change": -8.0,
-      "change_percent": -0.1,
+      "price": 7715.5,
+      "change": 1.0,
+      "change_percent": 0.01,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29373.25,
-      "change": -64.0,
-      "change_percent": -0.22,
+      "price": 29432.75,
+      "change": -4.5,
+      "change_percent": -0.02,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52543.0,
-      "change": -7.0,
-      "change_percent": -0.01,
+      "price": 52593.0,
+      "change": 43.0,
+      "change_percent": 0.08,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2795.2,
-      "change": -2.3,
-      "change_percent": -0.08,
+      "price": 2797.9,
+      "change": 0.4,
+      "change_percent": 0.01,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.51,
-      "change": 0.75,
-      "change_percent": 0.74,
+      "price": 102.36,
+      "change": 0.6,
+      "change_percent": 0.59,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4005.3,
-      "change": -33.1,
-      "change_percent": -0.82,
+      "price": 4007.4,
+      "change": -31.0,
+      "change_percent": -0.77,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.9,
-      "change": -1.21,
-      "change_percent": -2.23,
+      "price": 53.03,
+      "change": -1.08,
+      "change_percent": -2.0,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1495.0,
-      "change": -41.7,
-      "change_percent": -2.71,
+      "price": 1497.2,
+      "change": -39.5,
+      "change_percent": -2.57,
       "name": "Platinum Jan 27"
     },
     {

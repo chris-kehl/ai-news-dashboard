@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T23:01:13.196366",
+  "timestamp": "2026-10-27T23:09:34.482976",
   "summary": "Key topics today:\n- - Survival LLM: AI assistant and emergency library that runs on your own computer (r/HackerNews, 201 pts)\n- - Early progress on accelerating drug development with Claude (r/HackerNews, 101 pts)\n- - Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees (r/HackerNews, 101 pts)\n- - Nvidia and Micron Make Up 34% of America's Earnings Boom (r/HackerNews, 101 pts)\n- - Expanding our partnership with GSA to bring Claude to all levels of government (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -27,20 +27,20 @@
       "text": "XRP +2.8% @ $1.33"
     },
     {
+      "type": "buy",
+      "asset": "CRML",
+      "price": 8.13,
+      "change": 27.83,
+      "category": "stock",
+      "text": "CRML +27.8% momentum @ $8.13"
+    },
+    {
       "type": "sell",
       "asset": "INOD",
       "price": 44.74,
       "change": -24.67,
       "category": "stock",
       "text": "INOD -24.7% drop @ $44.74"
-    },
-    {
-      "type": "buy",
-      "asset": "000660.KS",
-      "price": 1455000.0,
-      "change": 14.12,
-      "category": "stock",
-      "text": "000660.KS +14.1% momentum @ $1455000.00"
     },
     {
       "type": "buy",
@@ -142,9 +142,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Brazilian President Luiz In\u00e1cio Lula da Silva won an unprecedented fourth term, the country\u2019s electoral court said, defeating challenger Fl\u00e1vio Bolsonaro, who sought to revive his father\u2019s far-right movement. https://www.nbcnews.com/world/brazil/brazil-heads-polls-pivot",
+      "url": "http://nitter.meowing.monster/BreakingNews/status/2114519308260741468#m",
+      "date": "Mon, 26 Oct 2026 00:47:43 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Mar\u00eda Corina Machado, Venezuelan opposition leader and Nobel Peace Prize winner, returns to the country after months of exile.",
+      "url": "http://nitter.meowing.monster/BreakingNews/status/2114409327855317020#m",
+      "date": "Sun, 25 Oct 2026 17:30:42 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Justice Department to review allegations that Corey Lewandowski, ex-aide to Kristi Noem, sought payments in exchange for contracts with DHS. https://www.nbcnews.com/politics/trump-administration/dhs-watchdog-corey-lewandowski-investigation-justice-department-rcna605049?",
+      "url": "http://nitter.meowing.monster/BreakingNews/status/2113418470578667841#m",
+      "date": "Thu, 22 Oct 2026 23:53:23 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-10-28T03:01:03.459075",
+    "timestamp": "2026-10-28T03:09:04.211201",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,21 +468,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-28T03:00:39.556885",
+    "timestamp": "2026-10-28T03:08:39.669038",
     "trending": [
+      {
+        "symbol": "CRML",
+        "price": 8.13,
+        "change": 1.77,
+        "change_percent": 27.83,
+        "name": "Critical Metals Corp."
+      },
       {
         "symbol": "INOD",
         "price": 44.74,
         "change": -14.65,
         "change_percent": -24.67,
         "name": "Innodata Inc."
-      },
-      {
-        "symbol": "000660.KS",
-        "price": 1455000.0,
-        "change": 180000.0,
-        "change_percent": 14.12,
-        "name": "SK hynix"
       },
       {
         "symbol": "SOFI",
@@ -475,13 +497,6 @@
         "change": -20.17,
         "change_percent": -10.71,
         "name": "Boeing Company (The)"
-      },
-      {
-        "symbol": "BBAI",
-        "price": 2.35,
-        "change": 0.21,
-        "change_percent": 9.81,
-        "name": "BigBear.ai, Inc."
       },
       {
         "symbol": "SKHY",
@@ -512,11 +527,11 @@
         "name": "Enphase Energy, Inc."
       },
       {
-        "symbol": "TER",
-        "price": 323.68,
-        "change": 14.83,
-        "change_percent": 4.8,
-        "name": "Teradyne, Inc."
+        "symbol": "SNDK",
+        "price": 1304.84,
+        "change": 66.81,
+        "change_percent": 5.4,
+        "name": "Sandisk Corporation"
       },
       {
         "symbol": "V",
@@ -545,6 +560,13 @@
         "change": -0.51,
         "change_percent": -0.54,
         "name": "Robinhood Markets, Inc."
+      },
+      {
+        "symbol": "GOOGL",
+        "price": 320.58,
+        "change": 0.37,
+        "change_percent": 0.12,
+        "name": "Alphabet Inc."
       },
       {
         "symbol": ".DJI",
@@ -982,7 +1004,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-28T03:00:59.165393",
+    "timestamp": "2026-10-28T03:09:00.014998",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,98 +1038,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7761.75,
-        "change": 0.61,
+        "price": 7761.0,
+        "change": 0.6,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29902.75,
-        "change": 1.58,
+        "price": 29896.25,
+        "change": 1.56,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52487.0,
-        "change": -0.12,
+        "price": 52480.0,
+        "change": -0.13,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2824.6,
-        "change": 0.97,
+        "price": 2823.7,
+        "change": 0.94,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 101.04,
-        "change": -0.71,
+        "price": 101.13,
+        "change": -0.62,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4064.3,
-        "change": 0.64,
+        "price": 4061.7,
+        "change": 0.58,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 54.21,
-        "change": 0.18,
+        "price": 54.13,
+        "change": 0.04,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1543.4,
-        "change": 0.44,
+        "price": 1538.8,
+        "change": 0.14,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1031.5,
-        "change": -1.57,
+        "price": 1029.5,
+        "change": -1.76,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.05,
-        "change": 17.37,
+        "price": 3.06,
+        "change": 17.45,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 257.72,
-        "change": 3.51,
+        "price": 257.96,
+        "change": 4.02,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80880,
-        "change": 1.47,
+        "price": 80848,
+        "change": 1.53,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2355.94,
+        "price": 2354.17,
         "change": 1.96,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 101.59,
-        "change": 1.45,
+        "price": 101.49,
+        "change": 1.52,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.68,
-        "change": 3.25,
+        "price": 11.67,
+        "change": 3.6,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 9.02,
-        "change": 2.35,
+        "price": 9.01,
+        "change": 2.58,
         "type": "crypto"
       },
       {
@@ -1126,12 +1148,6 @@
         "symbol": "BA",
         "price": 168.18,
         "change": -10.71,
-        "type": "mover"
-      },
-      {
-        "symbol": "BBAI",
-        "price": 2.35,
-        "change": 9.81,
         "type": "mover"
       },
       {
@@ -1168,6 +1184,12 @@
         "symbol": "ENPH",
         "price": 29.76,
         "change": -5.82,
+        "type": "mover"
+      },
+      {
+        "symbol": "SNDK",
+        "price": 1304.84,
+        "change": 5.4,
         "type": "mover"
       }
     ]
@@ -1394,6 +1416,14 @@
       "relevance_score": 4
     },
     {
+      "title": "Five key takeaways from Israel\u2019s parliamentary elections",
+      "url": "https://www.aljazeera.com/news/2026/10/28/five-key-takeaways-from-israels-parliamentary-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Wed, 28 Oct 2026 ",
+      "description": "Netanyahu&#039;s Likud emerges as single largest Israeli party, bloc edges past opposition.",
+      "relevance_score": 4
+    },
+    {
       "title": "Israel\u2019s Eisenkot says country voted for change",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/israels-eisenkot-says-country-voted-for-change?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1448,112 +1478,104 @@
       "published": "Tue, 27 Oct 2026 ",
       "description": "The U.S. Army published a market survey Monday in an effort to learn whether the defense industrial base could deliver 9,000 ISV-9s and about 12,000 ISV-Us.",
       "relevance_score": 1
-    },
-    {
-      "title": "A bad day for Ben-Gvir as he addresses his supporters",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/a-bad-day-for-ben-gvir-as-he-addresses-his-supporters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Tue, 27 Oct 2026 ",
-      "description": "Itamar Ben Gvir was defiant after polls show his Otzma Yehudit party has lost seats in the Israeli election.",
-      "relevance_score": 1
     }
   ],
   "github": [
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 397647,
+      "stars": 397903,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-28T02:01:13Z"
+      "updated": "2026-10-28T03:09:16Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 290930,
+      "stars": 290987,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-28T02:00:15Z"
+      "updated": "2026-10-28T03:06:27Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 257768,
+      "stars": 257787,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-28T02:00:57Z"
+      "updated": "2026-10-28T03:07:47Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 196102,
+      "stars": 196114,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-28T01:57:57Z"
+      "updated": "2026-10-28T03:07:54Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187791,
+      "stars": 187792,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-28T01:57:09Z"
+      "updated": "2026-10-28T02:49:01Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 178238,
+      "stars": 178285,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-28T02:01:14Z"
+      "updated": "2026-10-28T03:08:18Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168259,
+      "stars": 168262,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-28T01:58:51Z"
+      "updated": "2026-10-28T03:00:35Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 159739,
+      "stars": 159747,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-28T01:58:48Z"
+      "updated": "2026-10-28T03:01:37Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 156981,
+      "stars": 156985,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-28T01:42:48Z"
+      "updated": "2026-10-28T02:59:51Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 104971,
+      "stars": 105011,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-28T02:01:17Z"
+      "updated": "2026-10-28T03:08:11Z"
     },
     {
       "name": "pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "stars": 90631,
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
+      "stars": 90738,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-28T02:01:01Z"
+      "updated": "2026-10-28T03:08:26Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 79374,
+      "stars": 79382,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-28T01:57:10Z"
+      "updated": "2026-10-28T03:06:15Z"
     }
   ],
   "nasdaq_data": {
@@ -1562,16 +1584,16 @@
     "changePercent": 1.29,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 27 Oct: 29,651.44, up +1.29% -- BULLISH. strong +1.29% move. Counter: price below SMA20, RSI 33.5 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-10-27T23:01:10.870983"
+    "timestamp": "2026-10-27T23:09:32.322111"
   },
   "sticky": {
     "cnbc": [
       {
-        "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
-        "url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+        "title": "Trump says Iran war will end 'when I want it to' as costs reportedly balloon to $47 billion",
+        "url": "https://www.cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html",
         "source": "CNBC",
-        "published": "2026-10-27T21:12:55",
-        "description": "Companies from Royal Caribbean to Coca-Cola and UPS say they are seeing steady consumer spending despite high inflation."
+        "published": "2026-10-28T03:02:44",
+        "description": "Trump's statement comes as a report from The Hill revealed that the costs of the Iran conflict has ballooned to $47 billion."
       },
       {
         "title": "Israel election appears to have no clear winner with Netanyahu, opponent Eisenkot far short of majorities",
@@ -1581,18 +1603,25 @@
         "description": "Exit polls show Prime Minister Benjamin Netanyahu's alliance and Gadi Eisenkot's opposition bloc both well off the numbers needed to form a governing majority."
       },
       {
-        "title": "Speaker Mike Johnson calls election-transfer concerns \u2018absurd\u2019",
-        "url": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
-        "source": "CNBC",
-        "published": "2026-10-27T22:35:25",
-        "description": "Democrats and voting rights groups have raised concerns that President Donald Trump and congressional Republicans could challenge election results if they lose."
-      },
-      {
         "title": "SK Hynix shares soar over 8% as profit beats, chipmaker to return $25 billion to investors",
         "url": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
         "source": "CNBC",
         "published": "2026-10-28T01:56:59",
         "description": "Shares of South Korean chipmaker SK Hynix soared over 8% on Wednesday as third-quarter profit sharply beats estimates."
+      },
+      {
+        "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
+        "url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+        "source": "CNBC",
+        "published": "2026-10-27T21:12:55",
+        "description": "Companies from Royal Caribbean to Coca-Cola and UPS say they are seeing steady consumer spending despite high inflation."
+      },
+      {
+        "title": "Speaker Mike Johnson calls election-transfer concerns \u2018absurd\u2019",
+        "url": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
+        "source": "CNBC",
+        "published": "2026-10-27T22:35:25",
+        "description": "Democrats and voting rights groups have raised concerns that President Donald Trump and congressional Republicans could challenge election results if they lose."
       },
       {
         "title": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
@@ -1607,13 +1636,6 @@
         "source": "CNBC",
         "published": "2026-10-27T18:57:45",
         "description": "Amazon has rapidly integrated AI across the e-commerce giant's sprawling business operations under CEO Andy Jassy."
-      },
-      {
-        "title": "Labubu-maker Pop Mart's shares extend declines as third-quarter sales plunge",
-        "url": "https://www.cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html",
-        "source": "CNBC",
-        "published": "2026-10-28T02:57:36",
-        "description": "The company reported a 45% to 50% year-on-year drop in third-quarter revenue."
       },
       {
         "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' \u2014 investors are split",
@@ -1634,11 +1656,18 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Premarket Tuesday; Micron Technology, CoreWeave to Open Higher&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNm9yaHZ1MGJtcUtLSkpLdndPNm1RMG84dVZsTmluYXRLblY3X1BMYjctMEtWOFdvdG5WdnM1am96YlVGN3pYV0Z3LW02VF9EVUp0cnEyOU5YdUdBOFFmcWcycnFpbzlVa2FZM21fVGpCV3hUekVuNU5ZWjcwcGJuVjNxUGhLd0kwNm95UGp3d2RJQk96RS10WVVzZGNubjhZYTZ6dlFzaFVJdw?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-21T10:38:28",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
+        "published": "2026-10-22T10:35:35",
+        "description": "Social Buzz: Wallstreetbets Stocks Decline Pre-Bell Thursday; IBM, Tesla to Open Lower&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Wall Street Bets: Churchill Downs, Boyd Gaming, gaming industry prospects - CDC Gaming",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObk5JbUZMOWxKZ2g1YzRWX2tPSW0xYVZaSG9EMXVQSnA4dFVQUFh4SmZia0NCbGdjSENaQ0xrcFdadnRIbWRLVGpFTUNRZ1BvcGg2MmJiV3BDRE1PeWh3TlR5OG1WeTBqalF4TXNjSmtSci0xYUszNG5udEFMY2Q2a0IxTmZfb014aTZiOVY5TDMzTDh0R2h2dw?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-26T19:24:00",
+        "description": "Wall Street Bets: Churchill Downs, Boyd Gaming, gaming industry prospects&nbsp;&nbsp;CDC Gaming"
       },
       {
         "title": "Wall Street Bets on Box Office Resurgence - TheWrap",
@@ -1648,125 +1677,118 @@
         "description": "Wall Street Bets on Box Office Resurgence&nbsp;&nbsp;TheWrap"
       },
       {
-        "title": "WallStreetBets Favorites Popped Before The Bell - Finimize",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ1pwSVIxZXpIZndHd3VYcFpNRnpqSE5RY2UxWlM3LXQ5enRwa1VkMl9odWNTdTRRWWVEXzZMT3dDeDczWDVDOGtWeFk0YWtoenJMTHhDM3JMRU1DVHVEaWp5RDhhWDg2Y3k0UVVHMzFnS2JmakxBVVJwTGNtT2RDcFp3?oc=5",
+        "title": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWlISWk0eHhRZzBsSGFmZFRkVmxMb25mSnB5TG51M2otT1E2WkkwQ2VfRHVTbzNlOG5wQTZQWEtQWjhWcTV1WFlvdzNNUlVpRU5qNTE0VlVpTW5WbTRETDctSlNXZng2M2Fsb3JQVnB1UjlYYmRyN0hfeHFHbXFRVU53Vm54MHZpbHlQREpFX2FBMFUxUUZ6VXFoSVpNWTM0Q3VheWRmNDRGa2k2T1FveHJibUU?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-10-21T11:48:57",
-        "description": "WallStreetBets Favorites Popped Before The Bell&nbsp;&nbsp;Finimize"
+        "published": "2026-10-16T07:00:00",
+        "description": "Trending Industry Today: Palantir Leads Losses In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
       },
       {
-        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXZlQTI2WjdvNmdwMmpYMXFXMzdvdTMtZXM2VkNXTjVrQ3lDWl9Sd29lMmt3VlFsME54c2tZdklQc3I4ZkJfUmZDOUxWdmtnYnNKVFgxb2EwVy1SNW1taF9EVlBNVjFCanNrTjBkS0lybWM1OF85RWxJbGh5aW5scnhLa3o1cG5LN2lIUkZqQ3d6NUlERVFOeEhraEU1X05TdkM0WlpDb00?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-05-02T07:00:00",
-        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+        "published": "2026-10-21T10:38:28",
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;Yahoo Finance"
       },
       {
-        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Monday; Tesla to Advance, Nu Holdings to Decline - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOVZnWDBjZlZKWXUyamJEUVUxUHFVVHRzX2wya0hFOEltTjRmZFVWYWlrUkVreG9OckFCbFlDU0FTeEljdHRpb1M4Q1NQVVpaRlpjUDZWQmNDUWxhWXVvaFRhTkZWc3kyWG9Za25aaTBvREJ4aUlVZHhkY2lJWUJmVWRqcjZKMnhxUW94WG5rQk15NnFqWW8yVEM3TE1ZVlQzUFZWb01YOFpDSzdpYjB3QVlDU3pXbkVWT2lROVlEZG9QUGstbE00YU1uYnhJUUFaVHJwU2hvQl9xQVRzbVNwSEp3?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-05-14T07:00:00",
-        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
+        "published": "2026-10-26T10:44:54",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Monday; Tesla to Advance, Nu Holdings to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-13T07:00:00",
-        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Wednesday; CoreWeave, Super Micro Computer to Open Higher - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMlE2OW0zZ0NoNGFhRmdLcll2MFpjRm1zVEtmYlRwZ1JqV2s3bjh1VkVNRVhQb2lrbVNCSE5BQnVpU3ZOQWo3Z3NoM3N2ZDNTMkZGc1Rwb2dfLUFEWWNjV1NRbllWV3Rkcjd4WnI0OFNkdWxSR21BNWpSOVR4M2lJR1NiQ2t3M0ltOFNJcGNuQzlFd3dGYlhPSDJnLWxCNHczOF9uQ3BwYnNmZw?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-08-12T07:00:00",
-        "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Wednesday; CoreWeave, Super Micro Computer to Open Higher&nbsp;&nbsp;Yahoo Finance"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher - marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYmV3MTJiTWU5cmRQM05ZbGQxWWxyVE0wSjhIX29NdkFRa0dWSG5oSmRsUHNoSFhBc2hhT3dINTN1WlpHdDJZUV9QeGNfcXlrY1c3dUwyY09oZ2h5WGRMNWlHYUdpd1hDQmt5VG1yMWhIeHl2enZzWHQ2OXE5akRiclBOdnRRRlB5MDI0SktkSFE2S0JETXBSTFV0WEI2UjRhUzNET250SV9uRXhRdERiamVlSG1wSDFQQVhPS1pOQlYydVJGRXNzODJRdkpQSExwNVlPZzFIMVN4QWxsZVBKRVFBNms?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-21T10:41:25",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Pre-Bell Wednesday; Super Micro Computer, SpaceX to Open Higher&nbsp;&nbsp;marketscreener.com"
-      },
-      {
-        "title": "Dalio says AI bubble is almost here. Wall Street just hit six-year highs in tech. Pick a side. - Latin Times",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ2JfQXVWZjVwOVB0MkUyYU0wRFpvZjBVOHFXeVpTcENpTDNoaFFFcDFKMWNfLUU2VHpKeHhsdEszZ1ZPNU56T2ZZV2k0SU1HT016UHAzeVNPUnB4cUVXeUFFeHBkRGZUYU1sRWkycUVIRUlZRDE4Y25UU0xBZDFJRERQTFd4QUNIcWJoZXctRG5ldkRIRVFYcFh4TkR4ZWJrSmRhYTUwV2ZIS0l4UGZUcXp0VjQzSU9T?oc=5",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSktPZUtaRzkzcWtUbTZNOUE0bG44TU9QeWxMLXBGUEhMWWFMM1NLZkZoRlM2dnQ3S3RBd0ZwQ2VvZFBucmdYVzVydVNqTG9CZWd5dUNVX3BNRVhyMzROSWtlWjE1TGpLOUZfRF9DU1laeE9EaFh2U2tZVTBkb3FOMGphRzdQZ2RUM3E2ODBibV9ubXR5akZ6TEZ3UlFOWE9EZFFLMkw2WUs?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-10-13T07:00:00",
-        "description": "Dalio says AI bubble is almost here. Wall Street just hit six-year highs in tech. Pick a side.&nbsp;&nbsp;Latin Times"
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Tuesday; Sandisk, Micron Technology to Decline&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYlUtb0NmQ3hoMXk3X2YtSUJGa3BkbU9pRUd3VXhwbTNxM2E4aVBOamlLeS1jOW5vNWNPS0h2TTVMSURsSWMtWi1fLUtnWDlCWFFUek1PY1U3SVhYbFJJT3pIWUNVWGRwaHp2WnVETjl1c0s4Tkh6Z01ja2dndHc0V2RlMDVWdnZXU0JFeFJnUzM1ZHBIUF9tTWdtYTBWYnN6bGVkeWc3dlc1MzNlMDBNWVpDWnN3RGlxSTNldVhQWnB2N2U2UWlSaUZ4S3RtZ1FXSWpxS28zMUF6Nks3bFg4?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-23T10:39:18",
+        "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; SpaceX to Advance, Moderna to Decline&nbsp;&nbsp;marketscreener.com"
+      },
+      {
+        "title": "Wall Street Bets on Box Office Resurgence - Yahoo Finance UK",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaEJxOWctNTBNR3ExQVdaWmZUQ1V3VklWOWhZUVdidEYzVWwweHBpT2RORDcxYkt5MzQ0U1FZSzN1N0xkQnF3Uk9FZDhDaDh6S1lLTHQtWUVJTnRuYl9jNUdyUnhnckpJZjl4MnUtM19oV0p6aGpOY0EwbUFmemJ1d1VR?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-23T17:24:55",
+        "description": "Wall Street Bets on Box Office Resurgence&nbsp;&nbsp;Yahoo Finance UK"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7761.75,
-      "change": 47.25,
-      "change_percent": 0.61,
+      "price": 7761.0,
+      "change": 46.5,
+      "change_percent": 0.6,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29902.75,
-      "change": 465.5,
-      "change_percent": 1.58,
+      "price": 29897.0,
+      "change": 459.75,
+      "change_percent": 1.56,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52487.0,
-      "change": -63.0,
-      "change_percent": -0.12,
+      "price": 52478.0,
+      "change": -72.0,
+      "change_percent": -0.14,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2824.6,
-      "change": 27.1,
-      "change_percent": 0.97,
+      "price": 2823.7,
+      "change": 26.2,
+      "change_percent": 0.94,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 101.03,
-      "change": -0.73,
-      "change_percent": -0.72,
+      "price": 101.13,
+      "change": -0.63,
+      "change_percent": -0.62,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4064.3,
-      "change": 25.9,
-      "change_percent": 0.64,
+      "price": 4061.8,
+      "change": 23.4,
+      "change_percent": 0.58,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 54.23,
-      "change": 0.12,
-      "change_percent": 0.23,
+      "price": 54.13,
+      "change": 0.02,
+      "change_percent": 0.04,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1543.4,
-      "change": 6.7,
-      "change_percent": 0.44,
+      "price": 1539.2,
+      "change": 2.5,
+      "change_percent": 0.16,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1031.5,
-      "change": -16.4,
-      "change_percent": -1.57,
+      "price": 1029.5,
+      "change": -18.4,
+      "change_percent": -1.76,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.05,
+      "price": 3.06,
       "change": 0.45,
-      "change_percent": 17.37,
+      "change_percent": 17.45,
       "name": "Natural Gas Dec 26"
     }
   ],

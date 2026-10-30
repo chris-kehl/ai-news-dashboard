@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T03:16:14.658281",
+  "timestamp": "2026-10-30T03:21:35.700919",
   "summary": "Key topics today:\n- - We ran AI agent swarms in Minecraft and Mindustry (r/HackerNews, 201 pts)\n- - Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents (r/HackerNews, 201 pts)\n- - A tiny world model running games on a Raspberry Pi Pico 2 W (r/HackerNews, 101 pts)\n- - LLM Voice (r/HackerNews, 101 pts)\n- - Show HN: I Turned DOOM into a Transformer (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -35,20 +35,20 @@
       "text": "ADT +43.7% momentum @ $9.87"
     },
     {
-      "type": "buy",
-      "asset": "CROX",
-      "price": 150.26,
-      "change": 25.74,
-      "category": "stock",
-      "text": "CROX +25.7% momentum @ $150.26"
-    },
-    {
       "type": "sell",
       "asset": "CAT",
       "price": 647.39,
       "change": -9.24,
       "category": "stock",
       "text": "CAT -9.2% drop @ $647.39"
+    },
+    {
+      "type": "sell",
+      "asset": "RDDT",
+      "price": 129.6,
+      "change": -5.03,
+      "category": "stock",
+      "text": "RDDT -5.0% drop @ $129.60"
     }
   ],
   "reddit": [
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-30T07:16:05.436194",
+    "timestamp": "2026-10-30T07:21:10.741471",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-30T07:15:41.436935",
+    "timestamp": "2026-10-30T07:20:45.056891",
     "trending": [
       {
         "symbol": "ADT",
@@ -446,13 +446,6 @@
         "change": 3.0,
         "change_percent": 43.67,
         "name": "ADT Inc."
-      },
-      {
-        "symbol": "CROX",
-        "price": 150.26,
-        "change": 30.76,
-        "change_percent": 25.74,
-        "name": "Crocs, Inc."
       },
       {
         "symbol": "CAT",
@@ -467,13 +460,6 @@
         "change": -6.86,
         "change_percent": -5.03,
         "name": "Reddit, Inc."
-      },
-      {
-        "symbol": "TWLO",
-        "price": 241.9,
-        "change": -12.66,
-        "change_percent": -4.97,
-        "name": "Twilio Inc."
       },
       {
         "symbol": "RBLX",
@@ -497,6 +483,20 @@
         "name": "Rivian Automotive, Inc."
       },
       {
+        "symbol": "9992.HK",
+        "price": 134.2,
+        "change": 3.5,
+        "change_percent": 2.68,
+        "name": "POP MART"
+      },
+      {
+        "symbol": "NQ=F",
+        "price": 28989.0,
+        "change": -573.0,
+        "change_percent": -1.94,
+        "name": "Nasdaq 100 Dec 26"
+      },
+      {
         "symbol": "SNDK",
         "price": 1330.05,
         "change": 25.21,
@@ -511,6 +511,13 @@
         "name": "Intel Corporation"
       },
       {
+        "symbol": "AMD",
+        "price": 566.42,
+        "change": 6.16,
+        "change_percent": 1.1,
+        "name": "Advanced Micro Devices, Inc."
+      },
+      {
         "symbol": ".RUT",
         "price": 2859.217,
         "change": 28.71,
@@ -518,17 +525,10 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "QQQ",
-        "price": 715.34,
-        "change": -5.91,
-        "change_percent": -0.82,
-        "name": "Invesco QQQ Trust, Series 1"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 78234.71,
-        "change": 459.6,
-        "change_percent": 0.59,
+        "price": 78326.93,
+        "change": 551.82,
+        "change_percent": 0.71,
         "name": "Bitcoin USD"
       },
       {
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-30T07:16:01.191925",
+    "timestamp": "2026-10-30T07:21:04.639758",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.43,
-        "change": 7.15,
+        "price": 18.44,
+        "change": 7.21,
         "type": "index"
       },
       {
@@ -1008,105 +1008,99 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7687.0,
-        "change": -0.87,
+        "price": 7688.25,
+        "change": -0.85,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28985.0,
-        "change": -1.95,
+        "price": 28996.25,
+        "change": -1.91,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52496.0,
-        "change": -0.03,
+        "price": 52506.0,
+        "change": -0.01,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2861.7,
-        "change": -0.2,
+        "price": 2861.3,
+        "change": -0.21,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 102.93,
-        "change": 0.91,
+        "price": 103.08,
+        "change": 1.06,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3990.2,
-        "change": -1.02,
+        "price": 3993.5,
+        "change": -0.94,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.81,
-        "change": -2.64,
+        "price": 50.86,
+        "change": -2.55,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1443.3,
-        "change": -3.45,
+        "price": 1445.7,
+        "change": -3.28,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 983.0,
-        "change": -1.76,
+        "price": 983.5,
+        "change": -1.71,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.89,
-        "change": -1.93,
+        "price": 2.9,
+        "change": -1.86,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 236.95,
-        "change": -4.09,
+        "price": 236.73,
+        "change": -4.14,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 78332,
-        "change": -1.88,
+        "price": 78363,
+        "change": -1.85,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2246.58,
+        "price": 2247.43,
         "change": -2.62,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 97.87,
-        "change": -1.9,
+        "price": 97.92,
+        "change": -1.87,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.07,
-        "change": -2.66,
+        "price": 11.1,
+        "change": -2.39,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.57,
-        "change": -0.86,
+        "price": 8.59,
+        "change": -0.74,
         "type": "crypto"
-      },
-      {
-        "symbol": "ADT",
-        "price": 9.87,
-        "change": 43.67,
-        "type": "mover"
       },
       {
         "symbol": "CAT",
@@ -1157,6 +1151,12 @@
         "type": "mover"
       },
       {
+        "symbol": "9992.HK",
+        "price": 134.1,
+        "change": 2.6,
+        "type": "mover"
+      },
+      {
         "symbol": "SNDK",
         "price": 1330.05,
         "change": 1.93,
@@ -1196,21 +1196,21 @@
       "author": ""
     },
     {
-      "title": "Amazon Spending Soars Amid Slowing Growth of Online Business",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZVVjYXpCMDllTnNYR3c2aHZCNDc5ck5QSHh2VEUxMUo1RVNKYVlNemFiTWFzQjZST0FlSnFCZUxlMl9xWkhOLUFPYjBwdzlGdnBhNUdnWnpOMmUzMVhHSVQ2X2N6dzdPNjYzTlV0U0RTb0hOT3J5cFFuUTk5b1Uzamh6aGhBWmtuY2JEdkFDNkN5cWZYY0EyRUZ1YU9FQTd1VkUxcl9qTXZvdFVJQnVYQTR4WQ?oc=5",
-      "source": "Bloomberg.com",
-      "category": "business",
-      "published": "Fri, 30 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Starbucks Reports Q4 and Full Fiscal Year 2026 Results",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdUlhMDJ2eXQ0cHlKNC1neEVaVVlxSEwwOHZjZHFhN3pPX3RfZ3VlY0lCQWI2RTJXZVEwSks0VHlsLU5GOUg1TXVLQURhcUR0UVB3bExTRVYzTXZTQzZPRHhfeWRiSmtPMDRneVFKVnpFbFZjNTNfVUU0bVFTYjNtMDI3dUVfQlJqVG1iMjVzOGRRRzBvRUt1b1EwZ214Q1pQUlFfZUVfczgtN0RLMU5xd0Nkem16TkV5Y2JhVjdEbGJBclFTdTNZbjZRSFlyblgtMWZJb3FKUQ?oc=5",
       "source": "Starbucks Investor Relations",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Amazon Spending Soars Amid Slowing Growth of Online Business",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZVVjYXpCMDllTnNYR3c2aHZCNDc5ck5QSHh2VEUxMUo1RVNKYVlNemFiTWFzQjZST0FlSnFCZUxlMl9xWkhOLUFPYjBwdzlGdnBhNUdnWnpOMmUzMVhHSVQ2X2N6dzdPNjYzTlV0U0RTb0hOT3J5cFFuUTk5b1Uzamh6aGhBWmtuY2JEdkFDNkN5cWZYY0EyRUZ1YU9FQTd1VkUxcl9qTXZvdFVJQnVYQTR4WQ?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Fri, 30 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1226,9 +1226,9 @@
       "author": ""
     },
     {
-      "title": "BOJ holds rates as underlying inflation aligns with 2% target for first time since 2013",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8talZyVVhDS3lTcklPWGVGZ0RpajdfY0FzaWNYNEhRTzZaSDlqMHU3eFdFRmgyc241UnJSRGN4RHdlOC0zQ0taR3YyeGVwdWJjVXdFbWxLWHFRMVZKLVR4TkNyMDh3VU5RdjVjbnVLcFbSAXZBVV95cUxPVkFxbzREZEFuS3drT0c1ZFpvZWJuYzRqY1dBd0lnRzBNTUJsRDhaYlFHdGo2WkFvWUNHQzVGcFBOd3loYXhXM3FUbmUzS2IwU2I5cXhYTHd5Ykx1WlZERVhFVUhNUUozXzRwRFJsNXBnSDJJWFl3?oc=5",
-      "source": "CNBC",
+      "title": "Global tech rout deepens as US earnings stoke AI spending fears",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNTB4Ykd3SWFzX1I1OTJab3VCbDdLRy1IZmo4dVBNZU5CVmFqNFZxUmEtbGxBTnlYV09zUV9VYTZBUnpSU0tGQ2kySzZrVFIzUl96ZXRwZFlZQ2hsbHl4NGljX3YtYXNjbjBNeXdrN0dXdEZxZjg5NHBZNzNyTlZyNGRCWXc?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Fri, 30 Oct 2026 ",
       "description": "",
@@ -1236,9 +1236,9 @@
       "author": ""
     },
     {
-      "title": "Global tech rout deepens as US earnings stoke AI spending fears",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNTB4Ykd3SWFzX1I1OTJab3VCbDdLRy1IZmo4dVBNZU5CVmFqNFZxUmEtbGxBTnlYV09zUV9VYTZBUnpSU0tGQ2kySzZrVFIzUl96ZXRwZFlZQ2hsbHl4NGljX3YtYXNjbjBNeXdrN0dXdEZxZjg5NHBZNzNyTlZyNGRCWXc?oc=5",
-      "source": "Financial Times",
+      "title": "BOJ holds rates as underlying inflation aligns with 2% target for first time since 2013",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8talZyVVhDS3lTcklPWGVGZ0RpajdfY0FzaWNYNEhRTzZaSDlqMHU3eFdFRmgyc241UnJSRGN4RHdlOC0zQ0taR3YyeGVwdWJjVXdFbWxLWHFRMVZKLVR4TkNyMDh3VU5RdjVjbnVLcFbSAXZBVV95cUxPVkFxbzREZEFuS3drT0c1ZFpvZWJuYzRqY1dBd0lnRzBNTUJsRDhaYlFHdGo2WkFvWUNHQzVGcFBOd3loYXhXM3FUbmUzS2IwU2I5cXhYTHd5Ykx1WlZERVhFVUhNUUozXzRwRFJsNXBnSDJJWFl3?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Fri, 30 Oct 2026 ",
       "description": "",
@@ -1258,9 +1258,9 @@
       "author": ""
     },
     {
-      "title": "Apple VP talks new iPad mini: OLED without ProMotion, Acoustic Display, more",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdDV3d0VfVDBORzQ4RWJBUWJ1MHJyNXpwcDlBNDNoVG1WTHpKYmFSX2loLWdCVGxSTHBUVGQ0MGJxeUZVRk1yQjMzcDV4S2h5RVZDYjY2TUhSN1Q4b0tCSm5BZWh6dGpxMlZYSTdub2hld1c4bHptNjdBZ1dSSE1scVNkR1NrWWY2VkRZOEx0RDNqNVJCUDBOd1pXeXZJNE1iWDN3TWNxWUg?oc=5",
-      "source": "9to5Mac",
+      "title": "Assassin\u2019s Creed Franchise Update Reveals Codename Hexe News Coming Next Year, New Game Plus for Valhalla, And Confirms No New Remakes",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTVh3S1NYVGYwT0NvbDVIWFBNbWZKWWRKenRDcDU4VmxJZnMtS0ZPN0ktR2ptMEE5dllIV1g2aDNVdmZEQmtHNnBaOXZsX2Zra2pWS2ZOWmlOc1JjeUF6b1U1aDZaNHVBWHZKOWNFdEhLQm5rM2xEZERqY2ZUcUt3NmVVd1NnMHBwVlQweWIzbHFLSmoxTnd3OVBQWDlfUGFoT1MtUk1nOW05Qzd2M0hzMm9BSEc3Sm1fUTFLS2xB?oc=5",
+      "source": "Game Informer",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
       "description": "",
@@ -1268,11 +1268,11 @@
       "author": ""
     },
     {
-      "title": "Latest Gemini design comes to all Android devices, app upgrades file generation",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9nNUo5X0Q0ZGlCT3c0NWEwZ0d5MndSeVlOekg3YndhM2hOS0o4WVE0MFJLRVV4aU9DSzhfVkJjQWdFbWhQYnZvQzY3QzRSbTJsRHc1S3NUdl9XOHIyVXd3QUFUQklGZmJFN185X3lIOXpuUQ?oc=5",
-      "source": "9to5Google",
+      "title": "Apple VP talks new iPad mini: OLED without ProMotion, Acoustic Display, more",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdDV3d0VfVDBORzQ4RWJBUWJ1MHJyNXpwcDlBNDNoVG1WTHpKYmFSX2loLWdCVGxSTHBUVGQ0MGJxeUZVRk1yQjMzcDV4S2h5RVZDYjY2TUhSN1Q4b0tCSm5BZWh6dGpxMlZYSTdub2hld1c4bHptNjdBZ1dSSE1scVNkR1NrWWY2VkRZOEx0RDNqNVJCUDBOd1pXeXZJNE1iWDN3TWNxWUg?oc=5",
+      "source": "9to5Mac",
       "category": "business",
-      "published": "Fri, 30 Oct 2026 ",
+      "published": "Thu, 29 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1298,6 +1298,16 @@
       "author": ""
     },
     {
+      "title": "Latest Gemini design comes to all Android devices, app upgrades file generation",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9nNUo5X0Q0ZGlCT3c0NWEwZ0d5MndSeVlOekg3YndhM2hOS0o4WVE0MFJLRVV4aU9DSzhfVkJjQWdFbWhQYnZvQzY3QzRSbTJsRHc1S3NUdl9XOHIyVXd3QUFUQklGZmJFN185X3lIOXpuUQ?oc=5",
+      "source": "9to5Google",
+      "category": "business",
+      "published": "Fri, 30 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Receive a Spewpa That Can Evolve into a Random Vivillon Pattern in Pok\u00e9mon Legends: Z\u2011A",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUJPaU5WXzMydU1jWjRoNWR6THF3dkZVWDM5OEt2eHBZenhiNlR4cjFyWW44V1lIOW10MlYzUHNxNy1Bc1luRXhKb0hsSEtQbmVDbE1QYU5pT2JsLXdYYnFZMUN0ckIwQUFNRXJCekNONVV5cUd0c1V4NjduX1VXTmZaNDdXUW8yNGR0ZWdYRlBNUlBxREJKbUxKdjQ4aEJLVEpjdG9qNFYwYjBkM1FubmpKdXcyTWlmRFE?oc=5",
       "source": "Pokemon.com",
@@ -1313,16 +1323,6 @@
       "source": "Warhammer Community",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "iPhone Duo owners say Apple's new foldable phone broke within hours of purchase",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN2F4Z3AxVzhmSDhiVmZKWktLeGlnVmZKdTlDbDQ4a3RqOTdOS1FJUDBZaFpSbW5mNlJPXzhYRHd3Q3hzb2YtczRIR3IzbmJfaENIbFBsc193MkhQaFVmOF9SMFEtYTdVVUVudkl1UlpiQWxXSFJTcjNhYTJxbFhMQ2ZzUFpVdmZxaWdocVln?oc=5",
-      "source": "CBS News",
-      "category": "business",
-      "published": "Wed, 28 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1398,34 +1398,34 @@
     {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 408932,
+      "stars": 409202,
       "language": "TypeScript",
       "url": "https://github.com/morluto/rea",
-      "updated": "2026-10-30T06:16:02Z"
+      "updated": "2026-10-30T07:21:01Z"
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 292859,
+      "stars": 292898,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-10-30T06:16:07Z"
+      "updated": "2026-10-30T07:21:01Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 258590,
+      "stars": 258617,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-10-30T06:07:24Z"
+      "updated": "2026-10-30T07:20:12Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 196828,
+      "stars": 196840,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-10-30T06:13:33Z"
+      "updated": "2026-10-30T07:14:25Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1433,63 +1433,63 @@
       "stars": 187827,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-10-30T06:16:08Z"
+      "updated": "2026-10-30T07:17:51Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 180382,
+      "stars": 180424,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-10-30T06:12:34Z"
+      "updated": "2026-10-30T07:20:16Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168339,
+      "stars": 168340,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-10-30T06:11:19Z"
+      "updated": "2026-10-30T07:18:26Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 159958,
+      "stars": 159968,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-10-30T06:16:08Z"
+      "updated": "2026-10-30T07:19:08Z"
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 157208,
+      "stars": 157215,
       "language": "Python",
       "url": "https://github.com/open-webui/open-webui",
-      "updated": "2026-10-30T06:15:59Z"
+      "updated": "2026-10-30T07:15:16Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 106433,
+      "stars": 106464,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-10-30T06:11:47Z"
+      "updated": "2026-10-30T07:17:41Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 95836,
+      "stars": 95945,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-10-30T06:14:39Z"
+      "updated": "2026-10-30T07:21:12Z"
     },
     {
       "name": "shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "stars": 79544,
+      "stars": 79547,
       "language": "Python",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "updated": "2026-10-30T06:03:45Z"
+      "updated": "2026-10-30T07:15:19Z"
     }
   ],
   "nasdaq_data": {
@@ -1498,7 +1498,7 @@
     "changePercent": -1.38,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 30 Oct: 29,402.51, down -1.38% -- BEARISH. price below SMA20, RSI 33.7 weak, MACD bearish, strong -1.38% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-30T03:16:12.625982"
+    "timestamp": "2026-10-30T03:21:33.731346"
   },
   "sticky": {
     "cnbc": [
@@ -1591,13 +1591,6 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Advancing Premarket Tuesday; Micron Technology, CoreWeave to Open Higher&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Wall Street Bets: Churchill Downs, Boyd Gaming, gaming industry prospects - CDC Gaming",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObk5JbUZMOWxKZ2g1YzRWX2tPSW0xYVZaSG9EMXVQSnA4dFVQUFh4SmZia0NCbGdjSENaQ0xrcFdadnRIbWRLVGpFTUNRZ1BvcGg2MmJiV3BDRE1PeWh3TlR5OG1WeTBqalF4TXNjSmtSci0xYUszNG5udEFMY2Q2a0IxTmZfb014aTZiOVY5TDMzTDh0R2h2dw?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-10-26T19:24:00",
-        "description": "Wall Street Bets: Churchill Downs, Boyd Gaming, gaming industry prospects&nbsp;&nbsp;CDC Gaming"
-      },
-      {
         "title": "Merger Not Yet Finalized, but Ticker Symbol Already in Focus? Wall Street Bets on Musk Choosing \u201cX\u201d Again - \u5bcc\u9014\u725b\u725b",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaV9TcTdZLWdnUm9VODJ4ZUNzS2N5MzRnWWpaUzI3WGdnN29pY2hwcTRMeGpablJyREowZUdhc1ZvWjBHOFAyUG0yb3FnclRSbzEtLTlzZDV2RUZzUWJOYUpwREJFYWY1QlNKdUk1RndtMURFc0t2NzZfbUNiaUg4QWJUWGRCcnlDLWw5RkZRQjR2UHoyRFVuM1pDT015bkZnMGdTdQ?oc=5",
         "source": "r/wallstreetbets",
@@ -1631,78 +1624,85 @@
         "source": "r/wallstreetbets",
         "published": "2026-05-13T07:00:00",
         "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
+      },
+      {
+        "title": "Wallstreetbets Favorites Split Before Wednesday\u2019s Open - Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUWFabXg4Z1FkemxqbXRCeV9DV1dLSnlfWUswRVVGbWEyb2t0eHQ1ZkdRTDZpa3k0aVh6OHVqbE90akFfWUVRZXlXUTljZTM5Ym5Odjlyd0QwUG1qeHRTZW1USTVhN3ZSb01kR2oyZFhhOFdFRHhfc1A3X0pnYnd1OThrd3lPT0dlT09TTw?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-10-28T11:45:50",
+        "description": "Wallstreetbets Favorites Split Before Wednesday\u2019s Open&nbsp;&nbsp;Finimize"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7687.0,
-      "change": -67.25,
-      "change_percent": -0.87,
+      "price": 7688.25,
+      "change": -66.0,
+      "change_percent": -0.85,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28985.5,
-      "change": -576.5,
-      "change_percent": -1.95,
+      "price": 28994.0,
+      "change": -568.0,
+      "change_percent": -1.92,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52496.0,
-      "change": -16.0,
-      "change_percent": -0.03,
+      "price": 52508.0,
+      "change": -4.0,
+      "change_percent": -0.01,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2861.7,
-      "change": -5.6,
-      "change_percent": -0.2,
+      "price": 2861.3,
+      "change": -6.0,
+      "change_percent": -0.21,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 102.93,
-      "change": 0.93,
-      "change_percent": 0.91,
+      "price": 103.06,
+      "change": 1.06,
+      "change_percent": 1.04,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3990.6,
-      "change": -40.8,
-      "change_percent": -1.01,
+      "price": 3993.0,
+      "change": -38.4,
+      "change_percent": -0.95,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.81,
-      "change": -1.39,
-      "change_percent": -2.66,
+      "price": 50.86,
+      "change": -1.33,
+      "change_percent": -2.55,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1443.3,
-      "change": -51.5,
-      "change_percent": -3.45,
+      "price": 1445.3,
+      "change": -49.5,
+      "change_percent": -3.31,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 983.0,
-      "change": -17.6,
-      "change_percent": -1.76,
+      "price": 983.5,
+      "change": -17.1,
+      "change_percent": -1.71,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.89,
-      "change": -0.06,
-      "change_percent": -1.93,
+      "price": 2.9,
+      "change": -0.05,
+      "change_percent": -1.86,
       "name": "Natural Gas Dec 26"
     }
   ],

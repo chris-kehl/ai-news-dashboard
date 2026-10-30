@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-30T00:16:14.544085",
-  "summary": "Key topics today:\n- - We ran AI agent swarms in Minecraft and Mindustry (r/HackerNews, 201 pts)\n- - Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents (r/HackerNews, 201 pts)\n- - A tiny world model running games on a Raspberry Pi Pico 2 W (r/HackerNews, 101 pts)\n- - A Pig, the State, and War: Porco Rosso (Kurenai No Buta) (2014) (r/HackerNews, 101 pts)\n- - Show HN: I Turned DOOM into a Transformer (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-30T00:22:32.174961",
+  "summary": "Key topics today:\n- - We ran AI agent swarms in Minecraft and Mindustry (r/HackerNews, 201 pts)\n- - Launch HN: Simantic (YC F26) \u2013 Firmware Simulation for AI Agents (r/HackerNews, 201 pts)\n- - A tiny world model running games on a Raspberry Pi Pico 2 W (r/HackerNews, 101 pts)\n- - A Pig, the State, and War: Porco Rosso (Kurenai No Buta) (2014) (r/HackerNews, 101 pts)\n- - LLM Voice (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "buy",
@@ -28,6 +28,14 @@
     },
     {
       "type": "buy",
+      "asset": "ADT",
+      "price": 9.87,
+      "change": 43.67,
+      "category": "stock",
+      "text": "ADT +43.7% momentum @ $9.87"
+    },
+    {
+      "type": "buy",
       "asset": "CROX",
       "price": 150.26,
       "change": 25.74,
@@ -41,14 +49,6 @@
       "change": -9.24,
       "category": "stock",
       "text": "CAT -9.2% drop @ $647.39"
-    },
-    {
-      "type": "sell",
-      "asset": "RDDT",
-      "price": 129.6,
-      "change": -5.03,
-      "category": "stock",
-      "text": "RDDT -5.0% drop @ $129.60"
     }
   ],
   "reddit": [
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "Show HN: I Turned DOOM into a Transformer",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://github.com/mottopanikeiku/doomformer",
-      "created": ""
-    },
-    {
       "title": "LLM Voice",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "created": ""
+    },
+    {
+      "title": "Show HN: I Turned DOOM into a Transformer",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://github.com/mottopanikeiku/doomformer",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-30T04:16:05.331216",
+    "timestamp": "2026-10-30T04:22:23.024447",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-30T04:15:41.418951",
+    "timestamp": "2026-10-30T04:22:00.096061",
     "trending": [
+      {
+        "symbol": "ADT",
+        "price": 9.87,
+        "change": 3.0,
+        "change_percent": 43.67,
+        "name": "ADT Inc."
+      },
       {
         "symbol": "CROX",
         "price": 150.26,
@@ -511,6 +518,13 @@
         "name": "Invesco QQQ Trust, Series 1"
       },
       {
+        "symbol": "BTC-USD",
+        "price": 78043.94,
+        "change": 252.56,
+        "change_percent": 0.32,
+        "name": "Bitcoin USD"
+      },
+      {
         "symbol": "COIN",
         "price": 160.59,
         "change": -0.5,
@@ -525,25 +539,11 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 78002.9,
-        "change": 211.52,
-        "change_percent": 0.27,
-        "name": "Bitcoin USD"
-      },
-      {
         "symbol": ".DJI",
         "price": 52342.56,
         "change": -132.54,
         "change_percent": -0.25,
         "name": "DJIA"
-      },
-      {
-        "symbol": "ES=F",
-        "price": 7754.25,
-        "change": 0.0,
-        "change_percent": 0.0,
-        "name": "E-Mini S&P 500 Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-30T04:16:01.200103",
+    "timestamp": "2026-10-30T04:22:19.342261",
     "items": [
       {
         "symbol": "SPX",
@@ -1008,44 +1008,44 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7754.25,
-        "change": 0.0,
+        "price": 7679.5,
+        "change": -0.96,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 29562.0,
-        "change": 0.0,
+        "price": 28948.5,
+        "change": -2.08,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52377.0,
-        "change": -0.26,
+        "price": 52399.0,
+        "change": -0.22,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2867.3,
-        "change": 0.0,
+        "price": 2856.6,
+        "change": -0.37,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 103.28,
-        "change": 1.25,
+        "price": 103.24,
+        "change": 1.22,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3999.1,
-        "change": -0.8,
+        "price": 4000.3,
+        "change": -0.77,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 51.24,
-        "change": -1.83,
+        "price": 51.25,
+        "change": -1.8,
         "type": "future"
       },
       {
@@ -1056,51 +1056,63 @@
       },
       {
         "symbol": "PA=F",
-        "price": 985.0,
-        "change": -1.56,
+        "price": 986.5,
+        "change": -1.41,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.9,
-        "change": -1.83,
+        "change": -1.9,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 236.2,
-        "change": -4.48,
+        "price": 237.41,
+        "change": -4.17,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77933,
-        "change": -2.32,
+        "price": 78146,
+        "change": -2.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2230.6,
-        "change": -3.3,
+        "price": 2236.25,
+        "change": -3.03,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 96.87,
-        "change": -2.72,
+        "price": 97.15,
+        "change": -2.36,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.95,
-        "change": -3.88,
+        "price": 10.99,
+        "change": -3.59,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.43,
-        "change": -2.07,
+        "price": 8.47,
+        "change": -1.62,
         "type": "crypto"
+      },
+      {
+        "symbol": "ADT",
+        "price": 9.87,
+        "change": 43.67,
+        "type": "mover"
+      },
+      {
+        "symbol": "CROX",
+        "price": 150.26,
+        "change": 25.74,
+        "type": "mover"
       },
       {
         "symbol": "CAT",
@@ -1149,26 +1161,14 @@
         "price": 24.0,
         "change": 2.74,
         "type": "mover"
-      },
-      {
-        "symbol": "SNDK",
-        "price": 1330.05,
-        "change": 1.93,
-        "type": "mover"
-      },
-      {
-        "symbol": "INTC",
-        "price": 92.07,
-        "change": -1.78,
-        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "U.S. Stocks Fall as Alphabet Slide Weighs on AI Optimism",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdVVHMHFyMGd3YVdTZkQ3bklRNHRlQWtYU0VkcU9ibWo0dGVPTm5wcVdibDc5eElXdUZoUEtWWVQwREUyd2RCYlhxV1E2NlBkSGtUQks4Z3U2NzNTbXB6TVEzSVVCc1FpNG1aNE1iOFJiZ2ppdVpYWGdSeERMUDhXQUVZV1cxY1B0OGZnY1RKeU5RSFBPZGJnX29BU21jQ0Rz?oc=5",
-      "source": "WSJ",
+      "title": "Stock Market Today: Nasdaq Breaks Streak On Alphabet's $500B Drop; Amazon Earnings Next",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNc1N0UWUtenA4dTA3V1lWMXdXLWZ6Q3V1QXotNDY1OXczdHhaYV93LXNna3JweVZhb01YS25qYUlHWEFYSVJDLWhzOTFmVnZIa1hmSTRTd0RDNUhXVmtXNzZlTGR6eDllYnpXU2lFXzdibTI1RnBOUzRHeGliekY2cXh1c0Ryc1F5S3lCdnp2Tkh1YjUweTd2eWdKcDFXbHpZNXhXcE9INzNaZmhDLTA2Q2pRSEZkazJIQUZpUWo5cWFhZw?oc=5",
+      "source": "Investor's Business Daily",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
       "description": "",
@@ -1226,19 +1226,19 @@
       "author": ""
     },
     {
-      "title": "Asia Stocks Under Pressure, Haven Bid Boosts Bonds: Markets Wrap",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLWZRMVRrOG1xQ1NBUE55MXNIWTFyTFBfUDBwVnUwbDRHOHNibGNUazhpRVVJamItaGc5UndhUngwMTFOLUE1M3dscmdtSDBvWUJrNmoyWnFGZ2tBcm9VZjZ5MXcyQXFuSDZmWmE4WVlheXZBeTVTci1CXzFQMUxnMkpFRXBVTjh0SlI0N0hobUZzOHh3?oc=5",
-      "source": "Bloomberg",
+      "title": "What killed Weil Gotshal?",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUl9sZXdrTmJCVkdRZU5LUGpMaVR3aGhFQUF0cE13MVJGTEYtTGdrZkR4enJIUWxzLWxJT09qa0J3Z2pJVURDWGx5cWdnYWsyRmJobjBoYXFrZ0pMdkJvYzZqUzZFMWtZaldRZVJMV3VtR1NROTh4WEwwWWtGV0xnYVR4dXk?oc=5",
+      "source": "Financial Times",
       "category": "business",
-      "published": "Fri, 30 Oct 2026 ",
+      "published": "Thu, 29 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "What killed Weil Gotshal?",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUl9sZXdrTmJCVkdRZU5LUGpMaVR3aGhFQUF0cE13MVJGTEYtTGdrZkR4enJIUWxzLWxJT09qa0J3Z2pJVURDWGx5cWdnYWsyRmJobjBoYXFrZ0pMdkJvYzZqUzZFMWtZaldRZVJMV3VtR1NROTh4WEwwWWtGV0xnYVR4dXk?oc=5",
-      "source": "Financial Times",
+      "title": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83V19lNUxMZmJGVHhqcy1PSEZwbnZrVkpvUDhwSjVqalp1OV9oU1dPM091d3JfRE5oT0c2TUJDTDFGMmgyMTM1SDVIMFBhOERFdGUyOWp5STZMVjNKVVAtS3BRcVktMHlPNG1kZXJVWV9JQmfSAXhBVV95cUxPcGp5akoxeDVIeHRwRVFkRmc0Mk95M2lEMEZWV2YxT2k1OEJYMGh1bU1BNUdkWW50Q2hWVWNCa0N1TVFrNFA4bEtvX05yTGQ0THVKeHJXWnNSTG9ReGIzTUFjc0VXWlUtbDFsRVhyOTVBVEVCZ3JpZnQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
       "description": "",
@@ -1318,9 +1318,9 @@
       "author": ""
     },
     {
-      "title": "iOS 27.2 adds new video feature that\u2019s perfect for iPhone Duo",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaFVISzZ1VEVaTmZFcXNkWVRYOHVXSERFQ2hDWGpMbXFUSThEWkJCRVBNX0I2QWdndGhvWkhWSHJ2R2hGUVg3LS1ES0JoOGxKWWxpSUlkQkk0RDZ6akM4bE9JWWlveUNrcHJpb2FtMW9RcWlUemh4ZlBLYWFpZGJlOHdpR3JVRElrUGtWOFhPQ0g3QWR4UGUw?oc=5",
-      "source": "9to5Mac",
+      "title": "Receive a Spewpa That Can Evolve into a Random Vivillon Pattern in Pok\u00e9mon Legends: Z\u2011A",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUJPaU5WXzMydU1jWjRoNWR6THF3dkZVWDM5OEt2eHBZenhiNlR4cjFyWW44V1lIOW10MlYzUHNxNy1Bc1luRXhKb0hsSEtQbmVDbE1QYU5pT2JsLXdYYnFZMUN0ckIwQUFNRXJCekNONVV5cUd0c1V4NjduX1VXTmZaNDdXUW8yNGR0ZWdYRlBNUlBxREJKbUxKdjQ4aEJLVEpjdG9qNFYwYjBkM1FubmpKdXcyTWlmRFE?oc=5",
+      "source": "Pokemon.com",
       "category": "business",
       "published": "Thu, 29 Oct 2026 ",
       "description": "",
@@ -1514,7 +1514,7 @@
     "changePercent": -1.38,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 30 Oct: 29,402.51, down -1.38% -- BEARISH. price below SMA20, RSI 33.7 weak, MACD bearish, strong -1.38% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-30T00:16:12.493124"
+    "timestamp": "2026-10-30T00:22:30.120588"
   },
   "sticky": {
     "cnbc": [
@@ -1536,7 +1536,7 @@
         "title": "BOJ holds rates as underlying inflation aligns with 2% target for first time since 2013",
         "url": "https://www.cnbc.com/2026/10/30/boj-inflation-target-rates.html",
         "source": "CNBC",
-        "published": "2026-10-30T03:38:24",
+        "published": "2026-10-30T04:19:38",
         "description": "The BOJ declared that its underlying inflation target of 2% has been met, the first time the central bank has done so since it set the target in 2013."
       },
       {
@@ -1653,51 +1653,51 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7754.25,
-      "change": 0.0,
-      "change_percent": 0.0,
+      "price": 7679.5,
+      "change": -74.75,
+      "change_percent": -0.96,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 29562.0,
-      "change": 0.0,
-      "change_percent": 0.0,
+      "price": 28948.5,
+      "change": -613.5,
+      "change_percent": -2.08,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52377.0,
-      "change": -135.0,
-      "change_percent": -0.26,
+      "price": 52402.0,
+      "change": -110.0,
+      "change_percent": -0.21,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2867.3,
-      "change": 0.0,
-      "change_percent": 0.0,
+      "price": 2856.6,
+      "change": -10.7,
+      "change_percent": -0.37,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 103.28,
-      "change": 1.28,
-      "change_percent": 1.25,
+      "price": 103.24,
+      "change": 1.24,
+      "change_percent": 1.22,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3999.0,
-      "change": -32.4,
-      "change_percent": -0.8,
+      "price": 4000.2,
+      "change": -31.2,
+      "change_percent": -0.77,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 51.24,
-      "change": -0.96,
-      "change_percent": -1.83,
+      "price": 51.25,
+      "change": -0.94,
+      "change_percent": -1.8,
       "name": "Silver Dec 26"
     },
     {
@@ -1709,16 +1709,16 @@
     },
     {
       "symbol": "PA=F",
-      "price": 985.0,
-      "change": -15.6,
-      "change_percent": -1.56,
+      "price": 986.5,
+      "change": -14.1,
+      "change_percent": -1.41,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.9,
-      "change": -0.05,
-      "change_percent": -1.83,
+      "change": -0.06,
+      "change_percent": -1.9,
       "name": "Natural Gas Dec 26"
     }
   ],

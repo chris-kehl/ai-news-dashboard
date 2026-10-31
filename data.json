@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-31T18:01:08.921930",
-  "summary": "Key topics today:\n- - Anthropic blocks users for anything touching training larger models (r/HackerNews, 301 pts)\n- - Anthropic takes steps to block Claude from reverse-engineering video games (r/HackerNews, 201 pts)\n- - Show HN: A language model that lives in a boot sector (r/HackerNews, 101 pts)\n- - GPT-5.6 Sol can beat Factorio on peaceful mode (r/HackerNews, 101 pts)\n- - Do the math: How we took over ChatGPT accounts (r/HackerNews, 101 pts)",
+  "timestamp": "2026-10-31T18:10:59.913788",
+  "summary": "Key topics today:\n- - Anthropic blocks users for anything touching training larger models (r/HackerNews, 301 pts)\n- - Anthropic takes steps to block Claude from reverse-engineering video games (r/HackerNews, 201 pts)\n- - Show HN: A language model that lives in a boot sector (r/HackerNews, 101 pts)\n- - Do the math: How we took over ChatGPT accounts (r/HackerNews, 101 pts)\n- - GPT-5.6 Sol can beat Factorio on peaceful mode (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
@@ -28,14 +28,6 @@
     },
     {
       "type": "sell",
-      "asset": "INO",
-      "price": 0.6,
-      "change": -35.48,
-      "category": "stock",
-      "text": "INO -35.5% drop @ $0.60"
-    },
-    {
-      "type": "sell",
       "asset": "AMD",
       "price": 504.8,
       "change": -12.73,
@@ -49,6 +41,14 @@
       "change": -11.57,
       "category": "stock",
       "text": "COIN -11.6% drop @ $143.54"
+    },
+    {
+      "type": "sell",
+      "asset": "BB",
+      "price": 8.42,
+      "change": -10.43,
+      "category": "stock",
+      "text": "BB -10.4% drop @ $8.42"
     },
     {
       "type": "watch",
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
-      "created": ""
-    },
-    {
       "title": "Do the math: How we took over ChatGPT accounts",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "created": ""
+    },
+    {
+      "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-10-31T22:00:59.988022",
+    "timestamp": "2026-10-31T22:10:50.897764",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,22 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-10-31T22:00:37.924223",
+    "timestamp": "2026-10-31T22:10:28.043333",
     "trending": [
-      {
-        "symbol": "INO",
-        "price": 0.6,
-        "change": -0.33,
-        "change_percent": -35.48,
-        "name": "Inovio Pharmaceuticals, Inc."
-      },
-      {
-        "symbol": "EQX",
-        "price": 9.7,
-        "change": -0.78,
-        "change_percent": -7.44,
-        "name": "Equinox Gold Corp."
-      },
       {
         "symbol": "JMKE",
         "price": 18.29,
@@ -470,18 +456,18 @@
         "name": "Jersey Mike's Subs Inc."
       },
       {
-        "symbol": "HD",
-        "price": 329.2,
-        "change": 11.64,
-        "change_percent": 3.67,
-        "name": "Home Depot, Inc. (The)"
+        "symbol": "SCHG",
+        "price": 34.32,
+        "change": -1.3,
+        "change_percent": -3.65,
+        "name": "Schwab U.S. Large-Cap Growth ET"
       },
       {
-        "symbol": "FXAIX",
-        "price": 263.5,
-        "change": -5.68,
-        "change_percent": -2.11,
-        "name": "Fidelity 500 Index Fund"
+        "symbol": "JOBY",
+        "price": 4.9,
+        "change": -0.18,
+        "change_percent": -3.54,
+        "name": "Joby Aviation, Inc."
       },
       {
         "symbol": "SCHD",
@@ -498,11 +484,25 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "DIS",
+        "price": 110.94,
+        "change": 1.9,
+        "change_percent": 1.74,
+        "name": "Walt Disney Company (The)"
+      },
+      {
         "symbol": ".RUT",
         "price": 2811.844,
         "change": -47.37,
         "change_percent": -1.66,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "O",
+        "price": 56.93,
+        "change": 0.7,
+        "change_percent": 1.24,
+        "name": "Realty Income Corporation"
       },
       {
         "symbol": "HSY",
@@ -520,31 +520,31 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2252.62,
-        "change": 11.57,
-        "change_percent": 0.52,
+        "price": 2260.72,
+        "change": 19.67,
+        "change_percent": 0.88,
         "name": "Ethereum USD"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 95.78,
-        "change": -0.44,
-        "change_percent": -0.46,
-        "name": "Solana USD"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 77523.92,
-        "change": 325.71,
-        "change_percent": 0.42,
+        "price": 77548.1,
+        "change": 349.89,
+        "change_percent": 0.45,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 1.25,
         "change": -0.0,
-        "change_percent": -0.29,
+        "change_percent": -0.14,
         "name": "XRP USD"
+      },
+      {
+        "symbol": "UBER",
+        "price": 65.25,
+        "change": -0.02,
+        "change_percent": -0.03,
+        "name": "Uber Technologies, Inc."
       },
       {
         "symbol": "ANTH.PVT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-10-31T22:00:56.001600",
+    "timestamp": "2026-10-31T22:10:46.541000",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,56 +1076,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 237.57,
-        "change": 1.25,
+        "price": 237.96,
+        "change": 0.82,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 77520,
-        "change": 1.15,
+        "price": 77625,
+        "change": 1.11,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2253.22,
-        "change": 0.71,
+        "price": 2261.69,
+        "change": 0.97,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 95.82,
-        "change": 0.48,
+        "price": 95.97,
+        "change": 0.55,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.83,
-        "change": 5.37,
+        "price": 11.86,
+        "change": 4.77,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.58,
-        "change": 2.03,
+        "price": 8.6,
+        "change": 1.83,
         "type": "crypto"
-      },
-      {
-        "symbol": "INO",
-        "price": 0.6,
-        "change": -35.48,
-        "type": "mover"
       },
       {
         "symbol": "BB",
         "price": 8.42,
         "change": -10.43,
-        "type": "mover"
-      },
-      {
-        "symbol": "EQX",
-        "price": 9.7,
-        "change": -7.44,
         "type": "mover"
       },
       {
@@ -1147,15 +1135,27 @@
         "type": "mover"
       },
       {
+        "symbol": "SCHG",
+        "price": 34.32,
+        "change": -3.65,
+        "type": "mover"
+      },
+      {
+        "symbol": "JOBY",
+        "price": 4.9,
+        "change": -3.54,
+        "type": "mover"
+      },
+      {
         "symbol": "AMC",
         "price": 3.06,
         "change": 2.34,
         "type": "mover"
       },
       {
-        "symbol": "FXAIX",
-        "price": 263.5,
-        "change": -2.11,
+        "symbol": "SCHD",
+        "price": 35.78,
+        "change": 1.97,
         "type": "mover"
       },
       {
@@ -1166,8 +1166,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2253.76,
-        "change": 0.57,
+        "price": 2261.53,
+        "change": 0.91,
         "type": "mover"
       }
     ]
@@ -1224,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "Why 20 states, including Michigan, are suing Dollar General over its price tags",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdjNYQzBhbXhVRHR1QS1KV2tVRU83UGhLSUFQenA3b25LcTc3T0RTUEZqV00wS0RlV1N2SU1fenFYUE0xTGEtZjRKX2h0ZEdMRjEzZlJuOEVtSmVfOS01Q200MUlFbllGSGs3TlZING41SExsYnd1bTg0YjRpZ25Bd09rUFNiYkkyQ3lUVzNsLTkzSmxvQUFUVzhjTDMwbC1IUF9XWV9sQ0ZfZ1RjOGo5XzlKbGcxQmNTdlV4MWVTVXk5M2dSNVIxbG5uTQ?oc=5",
-      "source": "ClickOnDetroit | WDIV Local 4",
+      "title": "Tech stock meltdown could get a lot of worse if history is any guide",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONkt3YXFlNWM2S192RVZjYXd4cTFDX2h4MzJRdXY5ZmRGRzJpYi1hamo1Rnk4M0VjZnhWQ2hKcXphQm1pbXhUV00yWFN0UWo4UmhNNmZXMG9oZlNIRzJyRllJMjU3aURXbEZteS1xaHlYazIxSjl0MThaVzVVVGJESmVNRmFPM3VGZjJTcjkyMXptLWpHaHJxbFdwQUVtbDhyU2dRaTctRGlQUHhDWjJOanRRcHdiV0xEN1BGaTBFVklzTW8?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sat, 31 Oct 2026 ",
       "description": "",
@@ -1234,9 +1234,9 @@
       "author": ""
     },
     {
-      "title": "Tech stock meltdown could get a lot of worse if history is any guide",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONkt3YXFlNWM2S192RVZjYXd4cTFDX2h4MzJRdXY5ZmRGRzJpYi1hamo1Rnk4M0VjZnhWQ2hKcXphQm1pbXhUV00yWFN0UWo4UmhNNmZXMG9oZlNIRzJyRllJMjU3aURXbEZteS1xaHlYazIxSjl0MThaVzVVVGJESmVNRmFPM3VGZjJTcjkyMXptLWpHaHJxbFdwQUVtbDhyU2dRaTctRGlQUHhDWjJOanRRcHdiV0xEN1BGaTBFVklzTW8?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Why 20 states, including Michigan, are suing Dollar General over its price tags",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdjNYQzBhbXhVRHR1QS1KV2tVRU83UGhLSUFQenA3b25LcTc3T0RTUEZqV00wS0RlV1N2SU1fenFYUE0xTGEtZjRKX2h0ZEdMRjEzZlJuOEVtSmVfOS01Q200MUlFbllGSGs3TlZING41SExsYnd1bTg0YjRpZ25Bd09rUFNiYkkyQ3lUVzNsLTkzSmxvQUFUVzhjTDMwbC1IUF9XWV9sQ0ZfZ1RjOGo5XzlKbGcxQmNTdlV4MWVTVXk5M2dSNVIxbG5uTQ?oc=5",
+      "source": "ClickOnDetroit | WDIV Local 4",
       "category": "business",
       "published": "Sat, 31 Oct 2026 ",
       "description": "",
@@ -1276,6 +1276,16 @@
       "author": ""
     },
     {
+      "title": "My Favorite Smartwatch Has Stayed on My Wrist for Years \u2014 No, It\u2019s Not an Apple Watch",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdUZwLUtWWndycExEUGFjeWZtaFp0ZFQxMUtxQXA0NXdFWjc5Tk0tbDRONmVrYXBGUDItXzRKNFhCREw0NFd2ZTR6WlNSb0NMeWtxRHp6TTZiREpnWVhneFZCU1Bka2FJMmtqQldrVFZFWTBDcm5aeHNGM1BYOTF6ZjVnZHVNa1ZLN1E?oc=5",
+      "source": "CNET",
+      "category": "business",
+      "published": "Sat, 31 Oct 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "PCMag\u2019s First-Ever Gift of the Year Awards: Our Experts Select the Best Tech for Everyone on Your List",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1aU2cxaThBcnYzdm9sSzZsXy1wR0cyY1BISDNqd3FzM2NuMkVRUE5hX1JmRzNwV3RsQ2JKSm5nZThxREQtN09MNW5YUGNwYU9pMHBFX01BQmVNN0xTT0xyS0FJc1J2a1l1Ml9n?oc=5",
       "source": "PCMag",
@@ -1296,21 +1306,11 @@
       "author": ""
     },
     {
-      "title": "My Favorite Smartwatch Has Stayed on My Wrist for Years \u2014 No, It\u2019s Not an Apple Watch",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdUZwLUtWWndycExEUGFjeWZtaFp0ZFQxMUtxQXA0NXdFWjc5Tk0tbDRONmVrYXBGUDItXzRKNFhCREw0NFd2ZTR6WlNSb0NMeWtxRHp6TTZiREpnWVhneFZCU1Bka2FJMmtqQldrVFZFWTBDcm5aeHNGM1BYOTF6ZjVnZHVNa1ZLN1E?oc=5",
-      "source": "CNET",
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2hyRVBYNEpLVEQ2V2IwYk9aZmhtUm9veEV5RE4tZVVONXpIM1Y5Q1hxSWprYjFDR1NXNGF2MjlyeUpod2p6NFNydVltcmpudHoxU2wtUWJxSUdrWUhhanRiTUo3ZzdGNXViN0NyRUdTcHFiVEJfT2Z0VklGczNiOGhzYw?oc=5",
+      "source": "The Hacker News",
       "category": "business",
-      "published": "Sat, 31 Oct 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "WhatsApp announces four new features to make group chats easier to manage",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdGQ3Yk43RmR0Sk5oRTEyZUg1MGk5dWh5LWVkbUgzUGNrb1ZMTjdmVHhfdlU4dlFoeDg4SGJidGp4akMyUnFMZ2hZcTBVLXVFaHFaaFhwc1ktUFNPYm9sbHdYaU9NMmVsUWNmTXg1WmxRMGd3NjVkNjVXN1N3UldEV21haU1DcktwTXpJenNDWE1EUHhwU1ltbzBDdTNmRzBOY3hhdWtDUUc?oc=5",
-      "source": "9to5Mac",
-      "category": "business",
-      "published": "Sat, 31 Oct 2026 ",
+      "published": "Fri, 30 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1326,11 +1326,11 @@
       "author": ""
     },
     {
-      "title": "NYT Strands Hints for October 31, 2026",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1bkMzWGdWVHBqWHFEaTBHbk9kV29iUmVMX2o3VXVUa1BzVkRGS1RMVS1GVnJod2pqcGEwVWp3YUpEV0hHNTdTUW1OaGJKbklfUFVzeXVyamo1UHNReXNZSGVJTnotUEpHdkFMdENjMWZFLW9ZRlFULUZlVQ?oc=5",
-      "source": "The New York Times",
+      "title": "WhatsApp announces four new features to make group chats easier to manage",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdGQ3Yk43RmR0Sk5oRTEyZUg1MGk5dWh5LWVkbUgzUGNrb1ZMTjdmVHhfdlU4dlFoeDg4SGJidGp4akMyUnFMZ2hZcTBVLXVFaHFaaFhwc1ktUFNPYm9sbHdYaU9NMmVsUWNmTXg1WmxRMGd3NjVkNjVXN1N3UldEV21haU1DcktwTXpJenNDWE1EUHhwU1ltbzBDdTNmRzBOY3hhdWtDUUc?oc=5",
+      "source": "9to5Mac",
       "category": "business",
-      "published": "Fri, 30 Oct 2026 ",
+      "published": "Sat, 31 Oct 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,7 +1554,7 @@
     "changePercent": -3.46,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 31 Oct: 28,384.85, down -3.46% -- BEARISH. price below SMA20, RSI 28.6 weak, MACD bearish, strong -3.46% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-10-31T18:01:07.134339"
+    "timestamp": "2026-10-31T18:10:57.988415"
   },
   "sticky": {
     "cnbc": [

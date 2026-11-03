@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-02T22:01:15.557002",
-  "summary": "Key topics today:\n- - Launch HN: Momentic (YC W24) \u2013 Agents that catch bugs by using your app (r/HackerNews, 101 pts)\n- - The SEC Should Block Anthropic's IPO to Protect the Public (r/HackerNews, 101 pts)\n- - Egoless Mathematics in the AI Era (r/HackerNews, 101 pts)\n- - Scaling Git at OpenAI (r/HackerNews, 101 pts)\n- - Astra can read and write weights to improve Qwen (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-02T22:10:29.296074",
+  "summary": "Key topics today:\n- - Launch HN: Momentic (YC W24) \u2013 Agents that catch bugs by using your app (r/HackerNews, 101 pts)\n- - Scaling Git at OpenAI (r/HackerNews, 101 pts)\n- - The SEC Should Block Anthropic's IPO to Protect the Public (r/HackerNews, 101 pts)\n- - Egoless Mathematics in the AI Era (r/HackerNews, 101 pts)\n- - Astra can read and write weights to improve Qwen (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "sell",
@@ -27,6 +27,14 @@
       "text": "SOL -3.3% @ $91.77"
     },
     {
+      "type": "buy",
+      "asset": "EVGO",
+      "price": 1.85,
+      "change": 49.19,
+      "category": "stock",
+      "text": "EVGO +49.2% momentum @ $1.85"
+    },
+    {
       "type": "sell",
       "asset": "LITE",
       "price": 684.4,
@@ -41,14 +49,6 @@
       "change": -21.49,
       "category": "stock",
       "text": "MRVL -21.5% drop @ $171.41"
-    },
-    {
-      "type": "sell",
-      "asset": "AMD",
-      "price": 466.84,
-      "change": -17.58,
-      "category": "stock",
-      "text": "AMD -17.6% drop @ $466.84"
     },
     {
       "type": "watch",
@@ -69,6 +69,14 @@
       "created": ""
     },
     {
+      "title": "Scaling Git at OpenAI",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "created": ""
+    },
+    {
       "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
       "subreddit": "HackerNews",
       "score": 101,
@@ -82,14 +90,6 @@
       "score": 101,
       "comments": 0,
       "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-      "created": ""
-    },
-    {
-      "title": "Scaling Git at OpenAI",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://openai.com/index/scaling-git-at-openai/",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-03T03:01:06.001157",
+    "timestamp": "2026-11-03T03:10:20.018009",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-03T03:00:42.654540",
+    "timestamp": "2026-11-03T03:09:56.724329",
     "trending": [
+      {
+        "symbol": "EVGO",
+        "price": 1.85,
+        "change": 0.61,
+        "change_percent": 49.19,
+        "name": "EVgo Inc."
+      },
       {
         "symbol": "LITE",
         "price": 684.4,
@@ -491,20 +498,6 @@
         "name": "Palantir Technologies Inc."
       },
       {
-        "symbol": "ON",
-        "price": 70.11,
-        "change": -5.13,
-        "change_percent": -6.82,
-        "name": "ON Semiconductor Corporation"
-      },
-      {
-        "symbol": "^IXIC",
-        "price": 25164.36,
-        "change": -1020.36,
-        "change_percent": -3.9,
-        "name": "NASDAQ Composite"
-      },
-      {
         "symbol": "GRAB",
         "price": 2.86,
         "change": 0.1,
@@ -524,6 +517,13 @@
         "change": 2.2,
         "change_percent": 1.98,
         "name": "Walt Disney Company (The)"
+      },
+      {
+        "symbol": "CLX",
+        "price": 89.9,
+        "change": 1.23,
+        "change_percent": 1.39,
+        "name": "Clorox Company (The)"
       },
       {
         "symbol": ".DJI",
@@ -975,7 +975,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-03T03:01:01.757885",
+    "timestamp": "2026-11-03T03:10:15.830905",
     "items": [
       {
         "symbol": "SPX",
@@ -1009,98 +1009,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7578.0,
-        "change": 0.05,
+        "price": 7573.25,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28250.25,
-        "change": 0.44,
+        "price": 28216.25,
+        "change": 0.32,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51988.0,
-        "change": -0.28,
+        "price": 51983.0,
+        "change": -0.29,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2819.0,
-        "change": 0.04,
+        "price": 2817.2,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 96.66,
-        "change": 0.21,
+        "price": 96.62,
+        "change": 0.17,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3959.8,
-        "change": -0.25,
+        "price": 3955.7,
+        "change": -0.35,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.28,
-        "change": -1.18,
+        "price": 50.17,
+        "change": -1.42,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1452.0,
-        "change": -0.17,
+        "price": 1450.2,
+        "change": -0.29,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 956.5,
-        "change": -1.24,
+        "price": 955.5,
+        "change": -1.34,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 2.88,
-        "change": 0.95,
+        "change": 0.88,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 222.25,
-        "change": -4.29,
+        "price": 222.62,
+        "change": -4.35,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 76652,
-        "change": -2.21,
+        "price": 76715,
+        "change": -2.25,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2249.81,
-        "change": -1.9,
+        "price": 2248.87,
+        "change": -2.02,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 91.77,
-        "change": -3.33,
+        "price": 91.88,
+        "change": -3.28,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 11.05,
-        "change": -2.12,
+        "price": 11.08,
+        "change": -1.92,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.32,
-        "change": -3.52,
+        "price": 8.34,
+        "change": -3.53,
         "type": "crypto"
       },
       {
@@ -1134,12 +1134,6 @@
         "type": "mover"
       },
       {
-        "symbol": "FN",
-        "price": 314.7,
-        "change": -9.75,
-        "type": "mover"
-      },
-      {
         "symbol": "PLTR",
         "price": 178.34,
         "change": -9.2,
@@ -1161,6 +1155,12 @@
         "symbol": "AAPL",
         "price": 338.32,
         "change": -3.04,
+        "type": "mover"
+      },
+      {
+        "symbol": "DIS",
+        "price": 113.11,
+        "change": 1.98,
         "type": "mover"
       }
     ]
@@ -1415,7 +1415,7 @@
       "url": "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Tue, 03 Nov 2026 ",
-      "description": "Several explosions heard in Qeshm Island and Bandar Lengeh as US media say the US military had carried out the strikes.",
+      "description": "Several explosions heard in Qeshm Island and Bandar Lengeh, as US media say the US military carried out the strikes.",
       "relevance_score": 4
     },
     {
@@ -1555,10 +1555,17 @@
     "changePercent": -1.39,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 2 Nov: 27,989.82, down -1.39% -- BEARISH. price below SMA20, RSI 27.1 weak, MACD bearish, strong -1.39% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-02T22:01:13.101982"
+    "timestamp": "2026-11-02T22:10:26.910073"
   },
   "sticky": {
     "cnbc": [
+      {
+        "title": "U.S. reportedly strikes Iran's Qeshm Island as Vance hopes for \u2018negotiated settlement\u2019 with Tehran",
+        "url": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+        "source": "CNBC",
+        "published": "2026-11-03T02:51:33",
+        "description": "U.S. military carried out attacks on Iran's Qeshm Island on Monday, even as the Trump administration has been underplaying war risks."
+      },
       {
         "title": "Palantir reports booming U.S. commercial revenue growth, topping government for first time",
         "url": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html",
@@ -1595,25 +1602,18 @@
         "description": "Midterms historically precede a strong year for the S&P 500. What to know if Democrats win back Congress"
       },
       {
-        "title": "Supreme Court rejects DOJ's bid to block California from counting disputed ballots",
-        "url": "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
-        "source": "CNBC",
-        "published": "2026-11-03T01:32:13",
-        "description": "The Department of Justice's request to the Supreme Court in the California case came as it appeals dismissal of a lawsuit over Alaska's Senate election."
-      },
-      {
-        "title": "Intel foundry push faces critical test after stock's 45% plunge in October",
-        "url": "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html",
-        "source": "CNBC",
-        "published": "2026-11-02T21:59:48",
-        "description": "Intel\u2019s turnaround now hinges on proving its foundry strategy can deliver, as customers look for signs the company will add fab capacity and catch TSMC"
-      },
-      {
         "title": "Crude oil prices sell off more than 7% on Iran peace talk hopes ahead of U.S. midterms",
         "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
         "source": "CNBC",
         "published": "2026-11-02T20:19:25",
         "description": "Oil fell Monday, amid news that both the U.S. and Iran are pursuing diplomacy amid ongoing Mideast tensions"
+      },
+      {
+        "title": "Trump Account holders to receive SpaceX stock from Gwynne Shotwell in December",
+        "url": "https://www.cnbc.com/2026/11/02/trump-accounts-spacex-shares-shotwell.html",
+        "source": "CNBC",
+        "published": "2026-11-02T19:46:47",
+        "description": "Eligible Trump Account holders will begin receiving donated shares of SpaceX stock in December, President and COO Gwynne Shotwell said in a post on X."
       }
     ],
     "yahoo_finance": [],
@@ -1694,72 +1694,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7578.0,
-      "change": 3.5,
-      "change_percent": 0.05,
+      "price": 7573.0,
+      "change": -1.5,
+      "change_percent": -0.02,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28251.5,
-      "change": 124.0,
-      "change_percent": 0.44,
+      "price": 28213.75,
+      "change": 86.25,
+      "change_percent": 0.31,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51988.0,
-      "change": -145.0,
-      "change_percent": -0.28,
+      "price": 51982.0,
+      "change": -151.0,
+      "change_percent": -0.29,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2818.2,
-      "change": 0.4,
-      "change_percent": 0.01,
+      "price": 2817.2,
+      "change": -0.6,
+      "change_percent": -0.02,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 96.65,
-      "change": 0.19,
-      "change_percent": 0.2,
+      "price": 96.61,
+      "change": 0.15,
+      "change_percent": 0.16,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3959.1,
-      "change": -10.5,
-      "change_percent": -0.26,
+      "price": 3955.7,
+      "change": -13.9,
+      "change_percent": -0.35,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.26,
-      "change": -0.63,
-      "change_percent": -1.23,
+      "price": 50.17,
+      "change": -0.72,
+      "change_percent": -1.42,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1452.1,
-      "change": -2.3,
-      "change_percent": -0.16,
+      "price": 1452.4,
+      "change": -2.0,
+      "change_percent": -0.14,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 956.5,
-      "change": -12.0,
-      "change_percent": -1.24,
+      "price": 955.5,
+      "change": -13.0,
+      "change_percent": -1.34,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 2.88,
       "change": 0.03,
-      "change_percent": 0.95,
+      "change_percent": 0.88,
       "name": "Natural Gas Dec 26"
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-04T21:16:27.218794",
+  "timestamp": "2026-11-04T21:22:23.409886",
   "summary": "Key topics today:\n- - You'll need nerves of steel to work with AI agents (r/HackerNews, 201 pts)\n- - Progress on provable inference for large language models (r/HackerNews, 201 pts)\n- - Basically no one is using AI agents for their DoorDash orders (r/HackerNews, 201 pts)\n- - OpenAI to acquire Pierre Computer Company (r/HackerNews, 201 pts)\n- - Ask HN: What's your current AI agentic setup? (r/HackerNews, 201 pts)",
   "signals": [
     {
@@ -27,6 +27,14 @@
       "text": "TAO +6.2% breakout @ $235.79"
     },
     {
+      "type": "sell",
+      "asset": "CL=F",
+      "price": 86.97,
+      "change": -9.49,
+      "category": "stock",
+      "text": "CL=F -9.5% drop @ $86.97"
+    },
+    {
       "type": "buy",
       "asset": "APP",
       "price": 245.51,
@@ -41,14 +49,6 @@
       "change": 5.53,
       "category": "stock",
       "text": "COIN +5.5% momentum @ $145.45"
-    },
-    {
-      "type": "buy",
-      "asset": "DJT",
-      "price": 5.95,
-      "change": 5.12,
-      "category": "stock",
-      "text": "DJT +5.1% momentum @ $5.95"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-05T02:16:15.439696",
+    "timestamp": "2026-11-05T02:22:11.075845",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-05T02:15:45.435808",
+    "timestamp": "2026-11-05T02:21:41.861131",
     "trending": [
+      {
+        "symbol": "CL=F",
+        "price": 86.97,
+        "change": -9.12,
+        "change_percent": -9.49,
+        "name": "Crude Oil Dec 26"
+      },
       {
         "symbol": "APP",
         "price": 245.51,
@@ -463,13 +470,6 @@
         "name": "Trump Media & Technology Group "
       },
       {
-        "symbol": "SEZL",
-        "price": 122.43,
-        "change": -5.89,
-        "change_percent": -4.59,
-        "name": "Sezzle Inc."
-      },
-      {
         "symbol": "COHR",
         "price": 207.49,
         "change": 7.54,
@@ -477,18 +477,25 @@
         "name": "Coherent Corp."
       },
       {
+        "symbol": ".DJI",
+        "price": 53356.12,
+        "change": 1569.4,
+        "change_percent": 3.03,
+        "name": "DJIA"
+      },
+      {
+        "symbol": "ARM",
+        "price": 202.49,
+        "change": 5.7,
+        "change_percent": 2.9,
+        "name": "Arm Holdings plc"
+      },
+      {
         "symbol": "CAVA",
         "price": 60.31,
         "change": -1.74,
         "change_percent": -2.8,
         "name": "CAVA Group, Inc."
-      },
-      {
-        "symbol": ".DJI",
-        "price": 53356.12,
-        "change": 1372.14,
-        "change_percent": 2.64,
-        "name": "Dow Jones Industrial Average"
       },
       {
         "symbol": "MU",
@@ -975,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-05T02:16:10.242391",
+    "timestamp": "2026-11-05T02:22:03.583613",
     "items": [
       {
         "symbol": "SPX",
@@ -1009,20 +1016,20 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7713.0,
+        "price": 7713.25,
         "change": 1.53,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28382.75,
-        "change": 0.27,
+        "price": 28391.5,
+        "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 53642.0,
-        "change": 3.37,
+        "price": 53637.0,
+        "change": 3.36,
         "type": "future"
       },
       {
@@ -1033,74 +1040,74 @@
       },
       {
         "symbol": "CL=F",
-        "price": 86.85,
-        "change": -9.62,
+        "price": 87.01,
+        "change": -9.45,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4141.0,
-        "change": 5.09,
+        "price": 4143.1,
+        "change": 5.14,
         "type": "future"
       },
       {
         "symbol": "SI=F",
         "price": 53.26,
-        "change": 7.42,
+        "change": 7.41,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1526.6,
-        "change": 6.58,
+        "price": 1526.3,
+        "change": 6.56,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1019.5,
-        "change": 9.62,
+        "price": 1023.5,
+        "change": 10.05,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 2.94,
-        "change": 1.66,
+        "price": 2.95,
+        "change": 1.76,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 235.88,
-        "change": 6.2,
+        "price": 235.56,
+        "change": 6.19,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 80716,
-        "change": 5.0,
+        "price": 80663,
+        "change": 5.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2431.58,
-        "change": 7.58,
+        "price": 2428.9,
+        "change": 7.44,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 96.19,
-        "change": 4.79,
+        "price": 96.15,
+        "change": 4.84,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 11.48,
-        "change": 5.78,
+        "change": 5.76,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.76,
-        "change": 4.05,
+        "change": 4.11,
         "type": "crypto"
       },
       {
@@ -1122,6 +1129,12 @@
         "type": "mover"
       },
       {
+        "symbol": "ARM",
+        "price": 202.49,
+        "change": 2.9,
+        "type": "mover"
+      },
+      {
         "symbol": "AMC",
         "price": 3.28,
         "change": 2.82,
@@ -1134,9 +1147,9 @@
         "type": "mover"
       },
       {
-        "symbol": "^DJI",
-        "price": 53356.12,
-        "change": 2.64,
+        "symbol": "MU",
+        "price": 855.1,
+        "change": 2.58,
         "type": "mover"
       },
       {
@@ -1156,40 +1169,34 @@
         "price": 175.4,
         "change": -1.65,
         "type": "mover"
-      },
-      {
-        "symbol": "QCOM",
-        "price": 164.43,
-        "change": 1.45,
-        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Stock market today: Dow rallies 1,500 points, S&P 500 and Nasdaq gain after Democrats win control of Congress",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVk1FS3BzdHJTaGpXZ0RUNjRmcFczWmFBZ2xiU2ZrM0tKM0w5VzhNWUFsbk5ENzBCdDg3Y1M3MWM5OWJLb3U4UjRxODg0U2xIUTZhT1ZLNDNZeWNhU3lndWlBUW9BVGlGQUZqMHN3cjk4QTQ1d0pmVkNyTldqWWdmYmtGR2wtd1ZrLVoxcWNaM1o2WHFuZlc0MUIzUGZJOF91SVJFMjVhYXl4VVBwOGlnbll6dUNjd2ppa09hTkU5TldxZ1hFM2s3YkRVV3l4Q20tZFU5bnRxS0lWWnZl?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Futures Mixed After Postelection Rally; Three Giants Are Buys",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQmliVFRWX3pISnI2UzBXQlE0bUhCVExKXzhqZkNWTXY0emxpN2RHYWpqTklDR0x2Mk4talloWE5vSmtZcE9VTlUzVmFhS3ZYZUlpN2psY2lOWGNRV1huaUx5VWtpa29lVGt1ZWFiWU12VzIxamE4cHItM3E4SVAxb2QyZE4wTm8xV0k1RGZDdmhVU0VaLTVsQk9Sd3dnczlpa1JRV2dScVNwOGZpOENqdWRuZi15XzRYaWEyNFFndmFZRHJpNWZYazdMb05PdjJuMEJINS1PRlhESl82VGJFUQ?oc=5",
+      "source": "Investor's Business Daily",
       "category": "business",
-      "published": "Wed, 04 Nov 2026 ",
+      "published": "Thu, 05 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "CoreWeave Bonds Hit Lows as Texas Data Centers in Crosshairs",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVlEyOVh1N1ZONVgyWXFubUw5djZvMmxxTGVSMVE5MHJxY2x3aU81UTZLSklRYVptNVdrWVo1aUJqMUtzM0YtLXl1cjJUSUJvdGFVQ0hoWTE2dXBsT3JoT1dYYUhLUm9kSlEyUDBNRmlsV1NvSzhUNHdLV21jRVdJRFotS2lVOUJFWFhDcl91QXJzeDlITlhHb1RuZjVZMGw4dVdSSF8tYWJFeEF2bGZUZElUeXZUZw?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Datacenters were on the ballot. US voters rejected them",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMjd1X3FyNVRETUU3RUcxaW9aUC1nMFh3NVBfNWtSVWh5UFgwQVNqZ3p2NHYxTjdrZVd6U0lGWlluMkotYjZMaThsZnBpMU5SZ05kbjZXY3kxLTU5SlFRU0lQN0I2OGFvUExIZDRscEpPX0RZV3A5TVhtNS02d2JWNFozSQ?oc=5",
+      "source": "The Guardian",
       "category": "business",
-      "published": "Wed, 04 Nov 2026 ",
+      "published": "Thu, 05 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "CVS to break up $117 billion business, separating pharmacies from insurance; shares fall",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQajJWZGJKRmQ0T1UtdWxsc1Q5d2ItVmFRUjdzRmRnT2tpVjc5Q3ZobXd1bmxyMHZUMDVtVFNsQkRTYTFkMUV3SXpGRmNRel93bEl4OW12YV9yTGpnUzV0Sk01OWFJZ1BzdXhWYmdQeUR4eG02OWdqbHJhWXcwODhyN0RpS0JxMk1UdUlrTGpvRUFrRGFPcXJCcmNHV3dvb1dfOHlGWjNYYnA0TlViRGJOamdUSzMxQQ?oc=5",
-      "source": "Reuters",
+      "title": "CVS Health to split in two, separating pharmacy business from insurance",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSDZVS290UVpOR1NPOHZraGJKZEFxSjNlQWlJS1pRbFZYUEVhcjQzeWFqM0pwYWVMZEgxLXJZM2hOYTNuZXdSczctRGxPSzBOZ0JmZ0lneTZHUjFlS0FQb29mU0w5V292S2UzSGlTbmdGWE1DbkpsRXZ0b0dmSlliTmt1b2xlWHhfMGJaRkktMVNVdw?oc=5",
+      "source": "NBC News",
       "category": "business",
       "published": "Wed, 04 Nov 2026 ",
       "description": "",
@@ -1198,7 +1205,7 @@
     },
     {
       "title": "E.l.f. Beauty posts 51% sales increase, raises full-year guidance",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hT3pvSG9SZzlzRldkSmg5RHNGQWhVX184ZHVJbTYtNGNkdXdvRlQ5c0xRTHlvZ1c2S0pDbzA0NGpuTVlLb3R4THV5MGFmNDF2SVY4c3pGS2pMOVB5UlNPVTF1a2l6WW1Rd1BjNVhXcktlbGVtcnRn0gF8QVVfeXFMT0g5bExCNkVZT2RuejhOWEJUWWNjLWRodk1XbVRKNVBhV1ZvUVk4bmc4UmZQcEZZMFBzekxTOVBHd0NNSndlMEk5cVJpSDU1NFVHOHZWSnNaNWFkbmtOVUZWZk5TM09SS0J3ZjFnNWtCdEo4WkxBVEN6QkJ0Zw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hT3pvSG9SZzlzRldkSmg5RHNGQWhVX184ZHVJbTYtNGNkdXdvRlQ5c0xRTHlvZ1c2S0pDbzA0NGpuTVlLb3R4THV5MGFmNDF2SVY4c3pGS2pMOVB5UlNPVTF1a2l6WW1Rd1BjNVhXcktlbGVtcnRn?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Wed, 04 Nov 2026 ",
@@ -1227,19 +1234,19 @@
       "author": ""
     },
     {
-      "title": "Major Australian retailer David Jones collapses after 188 years in operation",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBa2VuNGt3QUNJWlE0cmFxRXhQUENmRm45QTBOY1UzRnFHZlZDdE5HSWdJU19ZcUtEV0JmTFFkcVEwZkJKSXZMTk9hdlBUZkd5WmNhbjM3R2RXQUk?oc=5",
-      "source": "BBC",
+      "title": "3M agrees to pay more than $7 billion to settle 'forever chemical' groundwater contamination claims",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeHRhQ2VrcDcwZHdFRVZJUTNPTW45b3p6R29Dek5tazM0dExmc3VGUHVaN01vWGtaTXF5X0JDMFlYeTE5UzVNRG83Qk9wR2NQREpHQWo3dzNNemVhaTRLUVZXcm9xRmdTajdaTHNJTGloNHJuaWpFTkh2VXFrX2lKRFo1R1ZkMGI2WHQzRHNzcEVwYlJCUTBqSGRBNG0xUHJsVjRWQTQybWJlN3d2VVE?oc=5",
+      "source": "AP News",
       "category": "business",
-      "published": "Thu, 05 Nov 2026 ",
+      "published": "Wed, 04 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Micron Vs. SK hynix: Close The Pair, Keep The Better Floor (NASDAQ:MU)",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbTRlNVNtN0JoOHlxa1VqQUFDbUN1ak5BQUZ5X0VPWnJCRTRqQlRQSXZXTFcwMGZqdVlxaExjeGd1ZXNLN01XUUUxTFZ3OU5WcDFKTWJ5RHlsM3N4YTV2UUwxTGNDOU1uRVNnTEdvMEpLNDNVWk5pR2QyUF9VWGgxR2FyMXUtRHl2ZzJNaEwyYjM1bnZJQm9aNnpVbE0?oc=5",
-      "source": "Seeking Alpha",
+      "title": "Big Tech Stocks Soar as Traders Bet Democrats Will Slow AI Spend",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSGlwYnVIMDJUbHRjR1FjQzZCYXdUamdNVklZblZtbGVLY20wczdvdFNNYkhKN3ZFOTlPMVJ0bTVlRXc5R3h5S0ZSc0dIN2pqc3ZsUmhwMkc5QmY1WW9lWE5pY3M0VEFWdGE1ZTFmZi1aV1lFWGQteFFzYWw5TENzTGNiaXNjQldncmRaMEhhM3pFcFpNVEY2NkkzdHBCWXU1WTQtM2Y5bmIwbUJ5ZjBTcXYxTlE1dw?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Wed, 04 Nov 2026 ",
       "description": "",
@@ -1269,6 +1276,16 @@
       "author": ""
     },
     {
+      "title": "The Legend of Zelda: Ocarina of Time never gets old",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRS01UUxFOHhobEF4NFRRUHBnWWRFZGJNYk5kdl92ODVuTDZIN0NiYzBVZGJlNEdCdVltT2hZdUY5M3RFMHhEOG1DNWNLelF4dFB6azVMbklPbHBXVHZCdVBLOEl2VGFRRy1RV25WNGVaYjlKUU5zLWxNdS1KVEZHbWt6Um83azQwN1JKVzQ2aDhmQzZzOVpCQVNDMjJIU3lB?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Wed, 04 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Google Maps update makes the app fully iPhone Duo compatible - GSMArena.com news",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTG9LaThNVlJ5MDBQVUpLTW02M0tQT01tNy1SaFU1Qk5wRk5DWlpYbVUwQ1pKUmt2NFBTeUJzUG1XT3FyYjctU3VlN1BrZjY3VF9nZDduZXhVQl9FV0d6Tk9Ya2VCV1k3akUzNGZEdk9pQTM3YlQ1UHBXSGdlZnNRb21UUmtocldhZm9oMnJFSkZaR2xIWm5jOTBPTUh1elBnYlHSAZ4BQVVfeXFMT3VwQXNjejJ3dGF2V0w1R3BBRnNaNmEtTFdhRlg1eF9jNDNJNUR5MkZ3RjVaeEMtUGk2VUFiZUhNTkJ0dXNJYUhxVmUzLU1YUlFGMW1Fb1ByWl9OWjBidjBqUTRWZ28xOHB3U0F6WFZOTzdEWVlZMHQ5MnVlaGswYkZlWThUYTNNbDBQNEQzcU8tb01KcmRQOUNfek55MHc?oc=5",
       "source": "GSMArena.com",
@@ -1289,16 +1306,6 @@
       "author": ""
     },
     {
-      "title": "macOS 27.3 Brings Live Activities to Macs Without Dynamic Island",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaG5FcjBlNDh6eEJWdnVRQk9oanFLMWJMU3hOYmw1S2pzNTdBNFFFaXprRGhqNENCYUU3V3VObVpVMGszYmxMeEI4dEFsT08tdEZLMXZGZEN3QWNRRmpfZHFCaDA4eXRXYlJoaHBYX3hmWlZYM09rRmxveEhxa0RHREl3?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Wed, 04 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Nintendo Switch 2 Homebrew Is \u2018Very Close to an Amazing Era,\u2019 Says Modder Behind a 60 FPS Mario & Luigi: Brothership Mod",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPczdqX0ExbGdmRkJya0lqZFFKQTZtQnpITGtFZkxoU3dyQUdCdWdfOHB2X2hjVTY4VXJnYXpDcUFBUnA0M1NLVnJOQjZ1N3IxbWJFQzFoWExEWDBLVktqdXd6SDVYSUhHNlQyUU1DTHJ3M1M3RXZsQUQzamhXVE1ocU8wTS00Q1NkMU9B0gGQAUFVX3lxTE05MS1qcDhKazNhd05FbTlxZlRyWm9vRFR1eGlVWDJQS0hFWEEwbmx1YUxvMlVSNnhnS1lMeWZRYmxLYmpmY2F3bGNyWHR4UlJoeFo1NmdOeS1veHVGU21oTmhXMW1MQWFHRkNzclVjQ1dTUThHVk1PR3o3NWlEMzQ3ZnBsc0JvMHJ3Sy16T2Rseg?oc=5",
       "source": "Wccftech",
@@ -1309,9 +1316,9 @@
       "author": ""
     },
     {
-      "title": "With iOS 27.3, Apple will start checking iCloud public links for \u2018harmful content\u2019",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORWhrQ2xjRVlGR3Q5cFB6LTNJV2xjdkVaUVRUeWZhRUlRc1JFa0J0WFYyNWx5SWQ1cGVTQVc3OTltanVwcVpaWFQtaGpIUlZLTGhiQWctd3J6aC0xY1d4LWpfLVBsWlRWSVpZQl9BNzVKWUpHekRzUEM1Qm9xN2E4YkR3SFY4ZjZKbXRTSkstaXVBYzB6dVBscEVNTGQySW4ydm5NS192cVNlNnRXZE5YNA?oc=5",
-      "source": "9to5Mac",
+      "title": "macOS 27.3 Brings Live Activities to Macs Without Dynamic Island",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaG5FcjBlNDh6eEJWdnVRQk9oanFLMWJMU3hOYmw1S2pzNTdBNFFFaXprRGhqNENCYUU3V3VObVpVMGszYmxMeEI4dEFsT08tdEZLMXZGZEN3QWNRRmpfZHFCaDA4eXRXYlJoaHBYX3hmWlZYM09rRmxveEhxa0RHREl3?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Wed, 04 Nov 2026 ",
       "description": "",
@@ -1319,9 +1326,9 @@
       "author": ""
     },
     {
-      "title": "WoW: Forever May Have Just Sneakily Revealed New Class And Race Combos",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa2ZZakFuTnp3UXBJUnMtSV9jemoyTjZhajBGQUdJWGMxYk9GS1RHZEpvX014a2NDY1dHMC1XUVJ1ZkpzN1E4MGRTU3hzYkdkZEpGN01nT0hYSEdZVDlIcUZCckJiQV9NUlVIaWNaallDMFNqbG9BZkk1YTRVRy0xZEVlZXJUSmdhRUZlcTBSMHEzYkxFZl83eXFTVVhWbHdPOG94UWdraw?oc=5",
-      "source": "GameSpot",
+      "title": "With iOS 27.3, Apple will start checking iCloud public links for \u2018harmful content\u2019",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORWhrQ2xjRVlGR3Q5cFB6LTNJV2xjdkVaUVRUeWZhRUlRc1JFa0J0WFYyNWx5SWQ1cGVTQVc3OTltanVwcVpaWFQtaGpIUlZLTGhiQWctd3J6aC0xY1d4LWpfLVBsWlRWSVpZQl9BNzVKWUpHekRzUEM1Qm9xN2E4YkR3SFY4ZjZKbXRTSkstaXVBYzB6dVBscEVNTGQySW4ydm5NS192cVNlNnRXZE5YNA?oc=5",
+      "source": "9to5Mac",
       "category": "business",
       "published": "Wed, 04 Nov 2026 ",
       "description": "",
@@ -1547,7 +1554,7 @@
     "changePercent": 0.91,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Wed 4 Nov: 28,437.17, up +0.91% -- BULLISH. modest +0.91% up. Counter: price below SMA20, RSI 36.3 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-04T21:16:24.166638"
+    "timestamp": "2026-11-04T21:22:19.568179"
   },
   "sticky": {
     "cnbc": [
@@ -1573,11 +1580,11 @@
         "description": "Billionaire political spending met criticism from ... billionaires in the wake of Tuesday's blue wave election."
       },
       {
-        "title": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
-        "url": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html",
+        "title": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
+        "url": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
         "source": "CNBC",
-        "published": "2026-11-04T20:53:19",
-        "description": "In control of Congress, Democrats are preparing to pursue legislation to address affordability, while also trying to rein-in President Donald Trump"
+        "published": "2026-11-05T00:04:36",
+        "description": "Foreign investors are losing their appetite for Indian equities, with their holdings touching an all-time low of 14%."
       },
       {
         "title": "White House panel delays hearing on Fed's Lisa Cook to Dec. 14",
@@ -1587,25 +1594,25 @@
         "description": "President Donald Trump first tried to fire Lisa Cook in August 2025, but the Supreme Court in June blocked him from doing so, for now."
       },
       {
+        "title": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
+        "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
+        "source": "CNBC",
+        "published": "2026-11-04T23:23:03",
+        "description": "Rising energy demand offers investment opportunities, but geopolitical risks and oil price uncertainty cloud the outlook, executives and an analyst said."
+      },
+      {
+        "title": "NextDC shares surge 43% after Goodman, Digital Realty stake purchases",
+        "url": "https://www.cnbc.com/2026/11/05/nextdc-goodman-group-digital-realty-data-centers-.html",
+        "source": "CNBC",
+        "published": "2026-11-05T00:24:57",
+        "description": "NextDC shares surged more than 40% Thursday morning after Goodman Group and Digital Realty sought to acquire up to a 9.9% stake."
+      },
+      {
         "title": "Democrats take Congress in a blue wave. Here's what it means for your money",
         "url": "https://www.cnbc.com/2026/11/04/blue-wave-democrats-control-congress-your-money.html",
         "source": "CNBC",
         "published": "2026-11-04T23:11:48",
         "description": "Blue wave gives Democrats control of Congress. Here's how their agenda could affect your money, from healthcare and taxes to student loans and Social Security."
-      },
-      {
-        "title": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
-        "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
-        "source": "CNBC",
-        "published": "2026-11-04T20:14:52",
-        "description": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war."
-      },
-      {
-        "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-        "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-        "source": "CNBC",
-        "published": "2026-11-04T22:46:43",
-        "description": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default."
       }
     ],
     "yahoo_finance": [],
@@ -1686,72 +1693,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7713.0,
-      "change": 116.25,
-      "change_percent": 1.53,
+      "price": 7713.75,
+      "change": 117.0,
+      "change_percent": 1.54,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28387.0,
-      "change": 81.25,
-      "change_percent": 0.29,
+      "price": 28401.0,
+      "change": 95.25,
+      "change_percent": 0.34,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 53640.0,
-      "change": 1745.0,
+      "price": 53637.0,
+      "change": 1742.0,
       "change_percent": 3.36,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2870.4,
-      "change": 45.4,
+      "price": 2870.5,
+      "change": 45.5,
       "change_percent": 1.61,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 86.82,
-      "change": -9.27,
-      "change_percent": -9.65,
+      "price": 87.01,
+      "change": -9.08,
+      "change_percent": -9.45,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4140.8,
-      "change": 200.4,
-      "change_percent": 5.09,
+      "price": 4142.3,
+      "change": 201.9,
+      "change_percent": 5.12,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 53.27,
-      "change": 3.68,
-      "change_percent": 7.43,
+      "price": 53.26,
+      "change": 3.67,
+      "change_percent": 7.41,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1526.6,
-      "change": 94.2,
-      "change_percent": 6.58,
+      "price": 1525.8,
+      "change": 93.4,
+      "change_percent": 6.52,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1019.5,
-      "change": 89.5,
-      "change_percent": 9.62,
+      "price": 1023.5,
+      "change": 93.5,
+      "change_percent": 10.05,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 2.94,
+      "price": 2.95,
       "change": 0.05,
-      "change_percent": 1.66,
+      "change_percent": 1.76,
       "name": "Natural Gas Dec 26"
     }
   ],

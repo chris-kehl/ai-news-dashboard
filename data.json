@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-07T05:16:16.341552",
+  "timestamp": "2026-11-07T05:21:18.990227",
   "summary": "Key topics today:\n- - The Components of Agent Memory (r/HackerNews, 101 pts)\n- - AI is dramatically accelerating AI research (r/HackerNews, 101 pts)\n- - Panthera: Ampere's CPU Performance Model (r/HackerNews, 101 pts)\n- - Show HN: Tmux-restore saves tmux windows and agent sessions across reboots (r/HackerNews, 101 pts)\n- - Libghostty 1.0 (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,20 +27,20 @@
       "text": "FLY +21.0% momentum @ $20.76"
     },
     {
-      "type": "buy",
-      "asset": "JOBY",
-      "price": 5.93,
-      "change": 17.43,
-      "category": "stock",
-      "text": "JOBY +17.4% momentum @ $5.93"
-    },
-    {
       "type": "sell",
       "asset": "COIN",
       "price": 134.76,
       "change": -11.05,
       "category": "stock",
       "text": "COIN -11.1% drop @ $134.76"
+    },
+    {
+      "type": "sell",
+      "asset": "AMC",
+      "price": 3.14,
+      "change": -10.8,
+      "category": "stock",
+      "text": "AMC -10.8% drop @ $3.14"
     }
   ],
   "reddit": [
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-07T10:15:56.347980",
+    "timestamp": "2026-11-07T10:20:55.515419",
     "prices": [
       {
         "name": "Bittensor",
@@ -333,6 +333,14 @@
       "description": "Pope Leo travels to Uruguay just three weeks after having surgery for lung cancer."
     },
     {
+      "title": "With Stephen Miller pick, Trump readies for a battle",
+      "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Fri, 06 Nov 2026 ",
+      "description": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress."
+    },
+    {
       "title": "Paraguay's president impeached and under house arrest after bank collapse",
       "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -349,14 +357,6 @@
       "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
     },
     {
-      "title": "Four midterms takeaways for 2028 White House race",
-      "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Fri, 06 Nov 2026 ",
-      "description": "The buzz about the presidential election is already under way - here's what we learned this week."
-    },
-    {
       "title": "New wave of bomb threats hit European airlines",
       "url": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -365,12 +365,12 @@
       "description": "No link has been established between the threats against the airlines and those against the media outlets."
     },
     {
-      "title": "Kenyan doomsday cult leader given life sentence for murdering 191 people",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&at_campaign=rss",
+      "title": "Spain's rail authorities face European fraud probe after Urda rail disaster",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
       "published": "Fri, 06 Nov 2026 ",
-      "description": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
+      "description": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people."
     },
     {
       "title": "Secret Service finds man parked near White House with multiple firearms: Authorities",
@@ -430,7 +430,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-07T10:15:35.323048",
+    "timestamp": "2026-11-07T10:20:34.226192",
     "trending": [
       {
         "symbol": "FLY",
@@ -440,11 +440,11 @@
         "name": "Firefly Aerospace Inc."
       },
       {
-        "symbol": "JOBY",
-        "price": 5.93,
-        "change": 0.88,
-        "change_percent": 17.43,
-        "name": "Joby Aviation, Inc."
+        "symbol": "ACHR",
+        "price": 4.44,
+        "change": 0.32,
+        "change_percent": 7.77,
+        "name": "Archer Aviation Inc."
       },
       {
         "symbol": "OKLO",
@@ -482,13 +482,6 @@
         "name": "Hims & Hers Health, Inc."
       },
       {
-        "symbol": "RKLB",
-        "price": 53.07,
-        "change": 0.7,
-        "change_percent": 1.34,
-        "name": "Rocket Lab Corporation"
-      },
-      {
         "symbol": ".RUT",
         "price": 2754.105,
         "change": 24.22,
@@ -499,21 +492,28 @@
         "symbol": "XRP-USD",
         "price": 1.17,
         "change": -0.01,
-        "change_percent": -0.77,
+        "change_percent": -0.86,
         "name": "XRP USD"
       },
       {
+        "symbol": "PLUG",
+        "price": 1.45,
+        "change": -0.01,
+        "change_percent": -0.68,
+        "name": "Plug Power, Inc."
+      },
+      {
         "symbol": "ETH-USD",
-        "price": 2245.38,
-        "change": 10.33,
-        "change_percent": 0.46,
+        "price": 2243.62,
+        "change": 8.57,
+        "change_percent": 0.38,
         "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 75942.1,
-        "change": 195.17,
-        "change_percent": 0.26,
+        "price": 75933.65,
+        "change": 186.72,
+        "change_percent": 0.25,
         "name": "Bitcoin USD"
       },
       {
@@ -952,7 +952,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-07T10:15:52.376563",
+    "timestamp": "2026-11-07T10:20:52.009058",
     "items": [
       {
         "symbol": "SPX",
@@ -1046,38 +1046,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 224.71,
-        "change": 0.44,
+        "price": 225.12,
+        "change": 0.42,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75977,
-        "change": -0.16,
+        "price": 75970,
+        "change": -0.23,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2245.43,
-        "change": 0.41,
+        "price": 2244.84,
+        "change": 0.28,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 90.0,
-        "change": -0.04,
+        "price": 89.99,
+        "change": -0.16,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.82,
-        "change": 0.32,
+        "price": 10.83,
+        "change": 0.21,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.28,
-        "change": -0.73,
+        "price": 8.29,
+        "change": -0.79,
         "type": "crypto"
       },
       {
@@ -1090,6 +1090,12 @@
         "symbol": "AMC",
         "price": 3.14,
         "change": -10.8,
+        "type": "mover"
+      },
+      {
+        "symbol": "ACHR",
+        "price": 4.44,
+        "change": 7.77,
         "type": "mover"
       },
       {
@@ -1129,15 +1135,9 @@
         "type": "mover"
       },
       {
-        "symbol": "RKLB",
-        "price": 53.07,
-        "change": 1.34,
-        "type": "mover"
-      },
-      {
         "symbol": "XRP-USD",
         "price": 1.17,
-        "change": -0.75,
+        "change": -0.86,
         "type": "mover"
       }
     ]
@@ -1236,9 +1236,9 @@
       "author": ""
     },
     {
-      "title": "Future iPhones will have one less button, new rumor claims - GSMArena.com news",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa0ZMaUM0Q1oyWXJlN3NSWERJMXUyWVJSRGVOeV9fSVVmSnh4ajJGZ1FhcnRyTW90Rmc2OHAtZ3VoaVgyYnVkLUhVNUg2V1h0RENQUm1sdW1lODRZY19uNlQ2RlhvY3dzck82Qk0zQnYyYURVZjdwYjlaU3ZZbDZQdEQwWG9tNGZyZXZCLWk2Snp0VmRPbml2NTZ0Sm1aZ9IBmgFBVV95cUxOZ09sZjNIRTVoNzlCTE0yLU1DT1pXZEVQWTRXYjNLWDFjUDEzTDlHUnVVMURKU1N3YjNhTmV1MmJEZmEyVzBCSUJWZVlkQzZvTkQzOU5fVHRSallnTTlqM3BHYlB2TDQ1TFRnaDdqalFmWDZZUGg4UFJnbHlNZXEzVWNfTTVLWWRmeU53RkFTN1NUUW5vdGtzZEx3?oc=5",
-      "source": "GSMArena.com",
+      "title": "Apple Rumored to Drop the iPhone's Action Button Next Year",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmZlYzE3cG1WdWRYekUzbjlwWE1hd3lwVG51SmZPUEVRRjJuOF9yLS12a2V3dngzZTBYMmtlTGJBSEtvVi12dXJPaF9Yd1BTTnFNUmYtZy16VFpxT2dsMXZ0MG9wcWtGRXBTZUEwQVYtVjdqcDE1a1R4Nk4xUEE5SmhMYw?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1246,9 +1246,9 @@
       "author": ""
     },
     {
-      "title": "Hands-On With Apple's New OLED Touchscreen MacBook Pro",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wWkREWnoyR00zNFhHazZOTmN6WEwtUmxmX2xyUmpPeTBCbUNKS21kMklPb0hlTy01STFYcEFnTTd6WmstNmxFQS1DNGwyRklsSHU2YXlPalNlLVhkR0NId1YzSVZ2MGh4cEd3MFRqbmw?oc=5",
-      "source": "MacRumors",
+      "title": "Apple's first deliveries offer a closer look at new iPad mini, MacBook Pros, and iMac",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTndNX3JmcnJaNS1vM1JwOUFqMkZVZy1ka2w3N2NXX1hhVHZUME9PMi1aQ1ZOTGdiRFpXTjU4RS14djRfNG1vbEsySW4wZ1YyTXdjTFZYbHpVVUdCU0hTMXNKRmhNT3FXZ1BiYWVlWkQwbE10LV9KNGhwZDF1YlNSRXk3MGV3ZTNvTHdEN0hVby1IUGhwRDZ3Tkk2X3o0YWhhYktZT1lBRHU5Z1E5bWVqbDRYbkpRZ0J4ZmlpUDBVU0JpeUk?oc=5",
+      "source": "AppleInsider",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1376,98 +1376,98 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 298775,
+      "stars": 298804,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-07T09:14:37Z"
+      "updated": "2026-11-07T10:20:16Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 261311,
+      "stars": 261327,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-07T09:15:43Z"
+      "updated": "2026-11-07T10:18:28Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 199354,
+      "stars": 199367,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-07T09:05:59Z"
+      "updated": "2026-11-07T10:18:39Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187933,
+      "stars": 187932,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-07T08:49:13Z"
+      "updated": "2026-11-07T10:02:20Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 186031,
+      "stars": 186060,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-07T09:12:07Z"
+      "updated": "2026-11-07T10:19:35Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168615,
+      "stars": 168617,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-07T08:59:38Z"
+      "updated": "2026-11-07T10:12:33Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 160592,
+      "stars": 160597,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-07T09:02:14Z"
+      "updated": "2026-11-07T10:14:03Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149144,
+      "stars": 149145,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-07T09:00:09Z"
+      "updated": "2026-11-07T09:44:40Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 143696,
+      "stars": 143720,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-07T09:16:10Z"
+      "updated": "2026-11-07T10:15:03Z"
     },
     {
-      "name": "stablyai/orca",
-      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
-      "stars": 118064,
+      "name": "paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "stars": 111849,
       "language": "TypeScript",
-      "url": "https://github.com/stablyai/orca",
-      "updated": "2026-11-07T09:16:05Z"
+      "url": "https://github.com/paperclipai/paperclip",
+      "updated": "2026-11-07T10:21:07Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 109799,
+      "stars": 109819,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-07T09:13:00Z"
+      "updated": "2026-11-07T10:17:14Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 105045,
+      "stars": 105073,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-07T09:11:29Z"
+      "updated": "2026-11-07T10:18:32Z"
     }
   ],
   "nasdaq_data": {
@@ -1476,7 +1476,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 7 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-07T05:16:14.363603"
+    "timestamp": "2026-11-07T05:21:17.161924"
   },
   "sticky": {
     "cnbc": [

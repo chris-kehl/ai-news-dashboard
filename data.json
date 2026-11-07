@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T20:31:12.154831",
+  "timestamp": "2026-11-06T20:38:39.225852",
   "summary": "Key topics today:\n- - AI is dramatically accelerating AI research (r/HackerNews, 101 pts)\n- - ChatGPT silently passes data between connectors and the bounty wants an ID card (r/HackerNews, 101 pts)\n- - Memorilla: Latent Semantic Memory for LLMs (r/HackerNews, 101 pts)\n- - Anthropic IPO buyers see valuation as low as $1.1T (r/HackerNews, 101 pts)\n- - UpCodes (YC S17) is hiring SDR's to sell AI compliance software (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,19 +28,19 @@
     },
     {
       "type": "sell",
-      "asset": "AMD",
-      "price": 404.4,
-      "change": -17.26,
-      "category": "stock",
-      "text": "AMD -17.3% drop @ $404.40"
-    },
-    {
-      "type": "sell",
       "asset": "OKLO",
       "price": 19.2,
       "change": -13.2,
       "category": "stock",
       "text": "OKLO -13.2% drop @ $19.20"
+    },
+    {
+      "type": "sell",
+      "asset": "AMC",
+      "price": 3.08,
+      "change": -12.5,
+      "category": "stock",
+      "text": "AMC -12.5% drop @ $3.08"
     },
     {
       "type": "watch",
@@ -93,14 +93,6 @@
       "created": ""
     },
     {
-      "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://github.com/anomalyco/rune",
-      "created": ""
-    },
-    {
       "title": "Libghostty 1.0",
       "subreddit": "HackerNews",
       "score": 1,
@@ -131,12 +123,20 @@
       "comments": 0,
       "url": "https://pwn.ai/blog/firecracker-escape",
       "created": ""
+    },
+    {
+      "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-07T01:31:03.051810",
+    "timestamp": "2026-11-07T01:38:11.497291",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-07T01:30:40.736005",
+    "timestamp": "2026-11-07T01:37:49.399111",
     "trending": [
       {
         "symbol": "SDA",
@@ -483,13 +483,6 @@
         "name": "Gogo Inc."
       },
       {
-        "symbol": "PLUG",
-        "price": 1.35,
-        "change": -0.11,
-        "change_percent": -7.53,
-        "name": "Plug Power, Inc."
-      },
-      {
         "symbol": "MRNA",
         "price": 241.46,
         "change": -16.92,
@@ -532,6 +525,13 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "PLUG",
+        "price": 1.45,
+        "change": -0.01,
+        "change_percent": -0.68,
+        "name": "Plug Power, Inc."
+      },
+      {
         "symbol": ".DJI",
         "price": 51285.73,
         "change": -237.33,
@@ -548,25 +548,11 @@
     ],
     "meme_momentum": [
       {
-        "symbol": "AMD",
-        "price": 404.4,
-        "change": -84.38,
-        "change_percent": -17.26,
-        "name": "Advanced Micro Devices, Inc."
-      },
-      {
         "symbol": "AMC",
         "price": 3.08,
         "change": -0.44,
         "change_percent": -12.5,
         "name": "AMC Entertainment Holdings, Inc"
-      },
-      {
-        "symbol": "TSLA",
-        "price": 343.69,
-        "change": -41.5,
-        "change_percent": -10.77,
-        "name": "Tesla, Inc."
       },
       {
         "symbol": "HOOD",
@@ -591,301 +577,322 @@
       },
       {
         "symbol": "MSTR",
-        "price": 129.3,
-        "change": -13.24,
-        "change_percent": -9.29,
+        "price": 128.93,
+        "change": -13.61,
+        "change_percent": -9.55,
         "name": "Strategy Inc"
       },
       {
+        "symbol": "AMD",
+        "price": 449.04,
+        "change": -39.74,
+        "change_percent": -8.13,
+        "name": "Advanced Micro Devices, Inc."
+      },
+      {
+        "symbol": "TSLA",
+        "price": 358.22,
+        "change": -26.97,
+        "change_percent": -7.0,
+        "name": "Tesla, Inc."
+      },
+      {
         "symbol": "NVDA",
-        "price": 181.6,
-        "change": -18.53,
-        "change_percent": -9.26,
+        "price": 186.64,
+        "change": -13.49,
+        "change_percent": -6.74,
         "name": "NVIDIA Corporation"
       },
       {
         "symbol": "BB",
-        "price": 8.37,
-        "change": -0.39,
-        "change_percent": -4.45,
+        "price": 8.74,
+        "change": -0.02,
+        "change_percent": -0.23,
         "name": "BlackBerry Limited"
       },
       {
         "symbol": "GME",
-        "price": 24.17,
-        "change": -0.97,
-        "change_percent": -3.86,
+        "price": 25.12,
+        "change": -0.02,
+        "change_percent": -0.08,
         "name": "GameStop Corporation"
       }
     ],
     "dow30": [
       {
+        "symbol": "JNJ",
+        "price": 276.22,
+        "change": -0.1,
+        "change_percent": -0.04,
+        "name": "Johnson & Johnson"
+      },
+      {
         "symbol": "KO",
-        "price": 95.73,
-        "change": -0.07,
-        "change_percent": -0.07,
+        "price": 95.67,
+        "change": -0.13,
+        "change_percent": -0.14,
         "name": "Coca-Cola Company (The)"
       },
       {
         "symbol": "VZ",
-        "price": 46.12,
-        "change": -0.05,
-        "change_percent": -0.11,
+        "price": 45.69,
+        "change": -0.48,
+        "change_percent": -1.04,
         "name": "Verizon Communications Inc."
       },
       {
         "symbol": "PG",
-        "price": 167.1,
-        "change": -0.22,
-        "change_percent": -0.13,
+        "price": 165.4,
+        "change": -1.92,
+        "change_percent": -1.15,
         "name": "Procter & Gamble Company (The)"
       },
       {
         "symbol": "MCD",
-        "price": 278.04,
-        "change": -2.18,
-        "change_percent": -0.78,
+        "price": 276.52,
+        "change": -3.7,
+        "change_percent": -1.32,
         "name": "McDonald's Corporation"
       },
       {
-        "symbol": "WMT",
-        "price": 127.72,
-        "change": -1.45,
-        "change_percent": -1.12,
-        "name": "Walmart Inc."
-      },
-      {
         "symbol": "DIS",
-        "price": 117.22,
-        "change": -1.73,
-        "change_percent": -1.45,
+        "price": 116.75,
+        "change": -2.2,
+        "change_percent": -1.85,
         "name": "Walt Disney Company (The)"
       },
       {
-        "symbol": "JNJ",
-        "price": 272.32,
-        "change": -4.0,
-        "change_percent": -1.45,
-        "name": "Johnson & Johnson"
-      },
-      {
-        "symbol": "AAPL",
-        "price": 344.17,
-        "change": -5.34,
-        "change_percent": -1.53,
-        "name": "Apple Inc."
-      },
-      {
-        "symbol": "HD",
-        "price": 349.94,
-        "change": -5.5,
-        "change_percent": -1.55,
-        "name": "Home Depot, Inc. (The)"
-      },
-      {
-        "symbol": "TRV",
-        "price": 402.89,
-        "change": -6.36,
-        "change_percent": -1.55,
-        "name": "The Travelers Companies, Inc."
-      },
-      {
         "symbol": "CVX",
-        "price": 212.93,
-        "change": -4.03,
-        "change_percent": -1.86,
+        "price": 212.61,
+        "change": -4.35,
+        "change_percent": -2.0,
         "name": "Chevron Corporation"
       },
       {
-        "symbol": "CRM",
-        "price": 222.41,
-        "change": -4.7,
-        "change_percent": -2.07,
-        "name": "Salesforce, Inc."
-      },
-      {
-        "symbol": "AMZN",
-        "price": 260.21,
-        "change": -5.82,
-        "change_percent": -2.19,
-        "name": "Amazon.com, Inc."
-      },
-      {
-        "symbol": "MRK",
-        "price": 146.94,
-        "change": -3.42,
-        "change_percent": -2.27,
-        "name": "Merck & Company, Inc."
-      },
-      {
-        "symbol": "AXP",
-        "price": 324.97,
-        "change": -7.62,
-        "change_percent": -2.29,
-        "name": "American Express Company"
-      },
-      {
-        "symbol": "NKE",
-        "price": 39.56,
-        "change": -0.93,
-        "change_percent": -2.3,
-        "name": "Nike, Inc."
-      },
-      {
         "symbol": "BA",
-        "price": 172.5,
-        "change": -4.5,
-        "change_percent": -2.54,
+        "price": 173.4,
+        "change": -3.6,
+        "change_percent": -2.03,
         "name": "Boeing Company (The)"
       },
       {
-        "symbol": "IBM",
-        "price": 247.11,
-        "change": -7.21,
-        "change_percent": -2.84,
-        "name": "International Business Machines"
+        "symbol": "AAPL",
+        "price": 342.37,
+        "change": -7.14,
+        "change_percent": -2.04,
+        "name": "Apple Inc."
       },
       {
-        "symbol": "MMM",
-        "price": 187.77,
-        "change": -6.18,
-        "change_percent": -3.19,
-        "name": "3M Company"
+        "symbol": "MRK",
+        "price": 146.73,
+        "change": -3.63,
+        "change_percent": -2.41,
+        "name": "Merck & Company, Inc."
+      },
+      {
+        "symbol": "AMZN",
+        "price": 259.3,
+        "change": -6.73,
+        "change_percent": -2.53,
+        "name": "Amazon.com, Inc."
+      },
+      {
+        "symbol": "WMT",
+        "price": 125.52,
+        "change": -3.65,
+        "change_percent": -2.83,
+        "name": "Walmart Inc."
       },
       {
         "symbol": "V",
-        "price": 422.59,
-        "change": -13.98,
-        "change_percent": -3.2,
+        "price": 422.65,
+        "change": -13.92,
+        "change_percent": -3.19,
         "name": "Visa Inc."
       },
       {
-        "symbol": "UNH",
-        "price": 395.72,
-        "change": -13.66,
-        "change_percent": -3.34,
-        "name": "UnitedHealth Group Incorporated"
-      },
-      {
-        "symbol": "MSFT",
-        "price": 535.93,
-        "change": -19.87,
-        "change_percent": -3.58,
-        "name": "Microsoft Corporation"
-      },
-      {
-        "symbol": "AMGN",
-        "price": 460.28,
-        "change": -18.2,
-        "change_percent": -3.8,
-        "name": "Amgen Inc."
-      },
-      {
-        "symbol": "SHW",
-        "price": 349.01,
-        "change": -14.49,
-        "change_percent": -3.99,
-        "name": "Sherwin-Williams Company (The)"
-      },
-      {
-        "symbol": "JPM",
-        "price": 337.34,
-        "change": -14.77,
-        "change_percent": -4.19,
-        "name": "JP Morgan Chase & Co."
-      },
-      {
-        "symbol": "HON",
-        "price": 215.78,
-        "change": -12.69,
-        "change_percent": -5.55,
-        "name": "Honeywell International Inc."
-      },
-      {
-        "symbol": "GS",
-        "price": 868.95,
-        "change": -59.05,
-        "change_percent": -6.36,
-        "name": "Goldman Sachs Group, Inc. (The)"
-      },
-      {
-        "symbol": "CAT",
-        "price": 553.64,
-        "change": -37.66,
-        "change_percent": -6.37,
-        "name": "Caterpillar, Inc."
-      },
-      {
-        "symbol": "CSCO",
-        "price": 95.72,
-        "change": -7.89,
-        "change_percent": -7.62,
-        "name": "Cisco Systems, Inc."
+        "symbol": "HD",
+        "price": 343.47,
+        "change": -11.97,
+        "change_percent": -3.37,
+        "name": "Home Depot, Inc. (The)"
       },
       {
         "symbol": "INTC",
-        "price": 52.25,
-        "change": -6.02,
-        "change_percent": -10.33,
+        "price": 56.28,
+        "change": -1.99,
+        "change_percent": -3.42,
         "name": "Intel Corporation"
+      },
+      {
+        "symbol": "TRV",
+        "price": 395.2,
+        "change": -14.05,
+        "change_percent": -3.43,
+        "name": "The Travelers Companies, Inc."
+      },
+      {
+        "symbol": "AXP",
+        "price": 320.99,
+        "change": -11.6,
+        "change_percent": -3.49,
+        "name": "American Express Company"
+      },
+      {
+        "symbol": "IBM",
+        "price": 245.0,
+        "change": -9.32,
+        "change_percent": -3.66,
+        "name": "International Business Machines"
+      },
+      {
+        "symbol": "HON",
+        "price": 220.05,
+        "change": -8.42,
+        "change_percent": -3.69,
+        "name": "Honeywell International Inc."
+      },
+      {
+        "symbol": "UNH",
+        "price": 394.15,
+        "change": -15.23,
+        "change_percent": -3.72,
+        "name": "UnitedHealth Group Incorporated"
+      },
+      {
+        "symbol": "AMGN",
+        "price": 460.42,
+        "change": -18.06,
+        "change_percent": -3.77,
+        "name": "Amgen Inc."
+      },
+      {
+        "symbol": "MSFT",
+        "price": 530.61,
+        "change": -25.19,
+        "change_percent": -4.53,
+        "name": "Microsoft Corporation"
+      },
+      {
+        "symbol": "MMM",
+        "price": 185.15,
+        "change": -8.8,
+        "change_percent": -4.54,
+        "name": "3M Company"
+      },
+      {
+        "symbol": "NKE",
+        "price": 38.59,
+        "change": -1.9,
+        "change_percent": -4.69,
+        "name": "Nike, Inc."
+      },
+      {
+        "symbol": "JPM",
+        "price": 334.49,
+        "change": -17.62,
+        "change_percent": -5.0,
+        "name": "JP Morgan Chase & Co."
+      },
+      {
+        "symbol": "SHW",
+        "price": 344.1,
+        "change": -19.4,
+        "change_percent": -5.34,
+        "name": "Sherwin-Williams Company (The)"
+      },
+      {
+        "symbol": "CAT",
+        "price": 558.63,
+        "change": -32.67,
+        "change_percent": -5.53,
+        "name": "Caterpillar, Inc."
+      },
+      {
+        "symbol": "CRM",
+        "price": 213.65,
+        "change": -13.46,
+        "change_percent": -5.93,
+        "name": "Salesforce, Inc."
+      },
+      {
+        "symbol": "GS",
+        "price": 865.82,
+        "change": -62.18,
+        "change_percent": -6.7,
+        "name": "Goldman Sachs Group, Inc. (The)"
+      },
+      {
+        "symbol": "CSCO",
+        "price": 93.85,
+        "change": -9.76,
+        "change_percent": -9.42,
+        "name": "Cisco Systems, Inc."
       }
     ],
     "nd100": [
       {
-        "symbol": "AMD",
-        "price": 404.4,
-        "change": -84.38,
-        "change_percent": -17.26,
-        "name": "Advanced Micro Devices, Inc."
-      },
-      {
-        "symbol": "TSLA",
-        "price": 343.69,
-        "change": -41.5,
-        "change_percent": -10.77,
-        "name": "Tesla, Inc."
-      },
-      {
         "symbol": "TXN",
-        "price": 278.15,
-        "change": -33.34,
-        "change_percent": -10.7,
+        "price": 277.36,
+        "change": -34.13,
+        "change_percent": -10.96,
         "name": "Texas Instruments Incorporated"
       },
       {
         "symbol": "AVGO",
-        "price": 291.53,
-        "change": -33.95,
-        "change_percent": -10.43,
+        "price": 293.69,
+        "change": -31.79,
+        "change_percent": -9.77,
         "name": "Broadcom Inc."
       },
       {
-        "symbol": "NVDA",
-        "price": 181.6,
-        "change": -18.53,
-        "change_percent": -9.26,
-        "name": "NVIDIA Corporation"
-      },
-      {
         "symbol": "CSCO",
-        "price": 95.72,
-        "change": -7.89,
-        "change_percent": -7.62,
+        "price": 93.85,
+        "change": -9.76,
+        "change_percent": -9.42,
         "name": "Cisco Systems, Inc."
       },
       {
-        "symbol": "HON",
-        "price": 215.78,
-        "change": -12.69,
-        "change_percent": -5.55,
-        "name": "Honeywell International Inc."
+        "symbol": "AMD",
+        "price": 449.04,
+        "change": -39.74,
+        "change_percent": -8.13,
+        "name": "Advanced Micro Devices, Inc."
       },
       {
-        "symbol": "TMO",
-        "price": 676.94,
-        "change": -29.22,
-        "change_percent": -4.14,
-        "name": "Thermo Fisher Scientific Inc"
+        "symbol": "TSLA",
+        "price": 358.22,
+        "change": -26.97,
+        "change_percent": -7.0,
+        "name": "Tesla, Inc."
+      },
+      {
+        "symbol": "NVDA",
+        "price": 186.64,
+        "change": -13.49,
+        "change_percent": -6.74,
+        "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "NKE",
+        "price": 38.59,
+        "change": -1.9,
+        "change_percent": -4.69,
+        "name": "Nike, Inc."
+      },
+      {
+        "symbol": "MSFT",
+        "price": 530.61,
+        "change": -25.19,
+        "change_percent": -4.53,
+        "name": "Microsoft Corporation"
+      },
+      {
+        "symbol": "INTU",
+        "price": 341.5,
+        "change": -15.14,
+        "change_percent": -4.25,
+        "name": "Intuit Inc."
       },
       {
         "symbol": "META",
@@ -896,85 +903,78 @@
       },
       {
         "symbol": "AMGN",
-        "price": 460.28,
-        "change": -18.2,
-        "change_percent": -3.8,
+        "price": 460.42,
+        "change": -18.06,
+        "change_percent": -3.77,
         "name": "Amgen Inc."
       },
       {
-        "symbol": "MSFT",
-        "price": 535.93,
-        "change": -19.87,
-        "change_percent": -3.58,
-        "name": "Microsoft Corporation"
-      },
-      {
-        "symbol": "NKE",
-        "price": 39.56,
-        "change": -0.93,
-        "change_percent": -2.3,
-        "name": "Nike, Inc."
-      },
-      {
-        "symbol": "GOOGL",
-        "price": 282.57,
-        "change": -6.36,
-        "change_percent": -2.2,
-        "name": "Alphabet Inc."
-      },
-      {
-        "symbol": "AMZN",
-        "price": 260.21,
-        "change": -5.82,
-        "change_percent": -2.19,
-        "name": "Amazon.com, Inc."
-      },
-      {
-        "symbol": "COST",
-        "price": 1065.59,
-        "change": 19.12,
-        "change_percent": 1.83,
-        "name": "Costco Wholesale Corporation"
-      },
-      {
-        "symbol": "AAPL",
-        "price": 344.17,
-        "change": -5.34,
-        "change_percent": -1.53,
-        "name": "Apple Inc."
-      },
-      {
         "symbol": "ADBE",
-        "price": 246.44,
-        "change": -2.04,
-        "change_percent": -0.82,
+        "price": 239.3,
+        "change": -9.18,
+        "change_percent": -3.69,
         "name": "Adobe Inc."
       },
       {
-        "symbol": "INTU",
-        "price": 354.84,
-        "change": -1.8,
-        "change_percent": -0.5,
-        "name": "Intuit Inc."
+        "symbol": "HON",
+        "price": 220.05,
+        "change": -8.42,
+        "change_percent": -3.69,
+        "name": "Honeywell International Inc."
+      },
+      {
+        "symbol": "AMZN",
+        "price": 259.3,
+        "change": -6.73,
+        "change_percent": -2.53,
+        "name": "Amazon.com, Inc."
+      },
+      {
+        "symbol": "AAPL",
+        "price": 342.37,
+        "change": -7.14,
+        "change_percent": -2.04,
+        "name": "Apple Inc."
       },
       {
         "symbol": "CMCSA",
-        "price": 24.95,
-        "change": 0.1,
-        "change_percent": 0.4,
+        "price": 24.39,
+        "change": -0.46,
+        "change_percent": -1.85,
         "name": "Comcast Corporation"
       },
       {
+        "symbol": "TMO",
+        "price": 694.76,
+        "change": -11.4,
+        "change_percent": -1.61,
+        "name": "Thermo Fisher Scientific Inc"
+      },
+      {
+        "symbol": "GOOGL",
+        "price": 284.78,
+        "change": -4.15,
+        "change_percent": -1.44,
+        "name": "Alphabet Inc."
+      },
+      {
         "symbol": "PEP",
-        "price": 142.71,
-        "change": 0.29,
-        "change_percent": 0.2,
+        "price": 141.34,
+        "change": -1.08,
+        "change_percent": -0.76,
         "name": "Pepsico, Inc."
+      },
+      {
+        "symbol": "COST",
+        "price": 1053.56,
+        "change": 7.09,
+        "change_percent": 0.68,
+        "name": "Costco Wholesale Corporation"
       }
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-07T01:30:58.765931",
+    "timestamp": "2026-11-07T01:38:07.747443",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 223.54,
-        "change": 2.01,
+        "price": 223.66,
+        "change": 1.55,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75836,
-        "change": -0.15,
+        "price": 75855,
+        "change": -0.28,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2240.86,
-        "change": 0.44,
+        "price": 2242.15,
+        "change": 0.17,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 90.24,
-        "change": 0.61,
+        "price": 90.31,
+        "change": 0.41,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.83,
-        "change": 0.34,
+        "price": 10.84,
+        "change": -0.05,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.32,
-        "change": 0.81,
+        "price": 8.33,
+        "change": 0.7,
         "type": "crypto"
       },
       {
@@ -1278,9 +1278,29 @@
       "author": ""
     },
     {
+      "title": "Apple's First Touchscreen Mac is Now Arriving to Customers",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR3hvSHdQMFQ3VU55QkJqN1A3VlpleHVzZVhyaDdSOHFsUGFoMWx3cHJhS2tBeXdDcHlVenBmaGZpRFFTTmsxVGFDUU5vY0lkX1o2cmVGRXdvQ1hWdkpzNFBnblFhUC1TcEhVUFc5ZGdCZWVISlhLTG4xTnY1Q3dQQU9EYkhqQQ?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Thu, 05 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "The Legend of Zelda: Ocarina of Time Remake Now Runs at 60 FPS on PC Emulators Lichii and Eglantine, a Day After Booting at 20-30 FPS",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9aeERqTjk4Q05jMDUwU29JbDM4c3BNdkVlTVQ0cXpGT0FhWlF0a1JfS1RvVDNiZ2RMdTlIYmYxX2I2Yl91MDFsTXBPaUd3UWNGelFpY05VWEwwTzJEZ256M2RCanJSb2ptMHFmWkdGc05vWTBEQUN2aXp30gF_QVVfeXFMT2lWdVBFc05sX0ZJbmdnYVdYaEVqWExwUFRHYk1pdUNILTNNZFFuSGRENS1vUi1qcFVvZjFGOEVFd2p3S0Y5bmczRzhRTzJ6Vlc0MV9RX0xBRFZ1cE8wdHB5SWhZeER0ZHdvX1dPTk9MdGRuRHBfMjc0bU5TRjJTQQ?oc=5",
       "source": "Wccftech",
+      "category": "business",
+      "published": "Fri, 06 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The 'Grand Theft Auto VI' Custom In-Game Cars Have Come to Life",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qQV93bFpfREVFcVZROVNaMVV6TjVWRzVaTXpSd3UyUzNUZTJ0cm1idFJHbGlZejQxMm9qdkFuVzl4OG5xZFdSajFfamozRWNXWHk3ZDgzNlFyNDBobEJuRjBVc3hrQ3pqVUVjQ0o0WFFGZDhFOVoxZDB2cW0?oc=5",
+      "source": "Hypebeast",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1293,26 +1313,6 @@
       "source": "ZDNET",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Google's Pixel 11 Pro and Pixel 11 Pro XL are not to be missed at their early holiday discounts",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeTFKcmJISjU2c1FUQzJxVGg4MjRJMWtBOEpRcWZHbExzQ2lxSl9iUzZnUkpKeDV5WENxV3pBOTg4dkNQZy0yNW4zZHJmYldFNFFXa3h0VFROcmQtM01MbEVmOEFReDhYdTlrQVpUV3dTMWdyZDBXb0g1YUItRWtxYVVPN0VQT1FKbGdxODgzQ0ZrdndfbGVTNTJWdnBybzVwc1hXbUZIUXc5eUNEd0hoUkg0dmhSYWxLT3c?oc=5",
-      "source": "PhoneArena",
-      "category": "business",
-      "published": "Fri, 06 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Apple's First Touchscreen Mac is Now Arriving to Customers",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR3hvSHdQMFQ3VU55QkJqN1A3VlpleHVzZVhyaDdSOHFsUGFoMWx3cHJhS2tBeXdDcHlVenBmaGZpRFFTTmsxVGFDUU5vY0lkX1o2cmVGRXdvQ1hWdkpzNFBnblFhUC1TcEhVUFc5ZGdCZWVISlhLTG4xTnY1Q3dQQU9EYkhqQQ?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Thu, 05 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1398,42 +1398,42 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 298585,
+      "stars": 298604,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-07T00:22:38Z"
+      "updated": "2026-11-07T01:37:31Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 261207,
+      "stars": 261222,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-07T00:25:33Z"
+      "updated": "2026-11-07T01:33:38Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 199259,
+      "stars": 199268,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-07T00:28:20Z"
+      "updated": "2026-11-07T01:38:06Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187927,
+      "stars": 187928,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-06T21:28:14Z"
+      "updated": "2026-11-07T00:58:59Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 185852,
+      "stars": 185874,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-07T00:28:15Z"
+      "updated": "2026-11-07T01:36:07Z"
     },
     {
       "name": "huggingface/transformers",
@@ -1446,10 +1446,10 @@
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 160574,
+      "stars": 160577,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-07T00:17:09Z"
+      "updated": "2026-11-07T01:38:09Z"
     },
     {
       "name": "langchain-ai/langchain",
@@ -1457,39 +1457,39 @@
       "stars": 149138,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-07T00:25:33Z"
+      "updated": "2026-11-07T01:28:51Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 143550,
+      "stars": 143566,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-07T00:26:25Z"
+      "updated": "2026-11-07T01:35:40Z"
+    },
+    {
+      "name": "openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "stars": 133487,
+      "language": "Rust",
+      "url": "https://github.com/openai/codex",
+      "updated": "2026-11-07T01:38:26Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 109681,
+      "stars": 109693,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-07T00:14:55Z"
+      "updated": "2026-11-07T01:29:55Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 104807,
+      "stars": 104825,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-07T00:30:58Z"
-    },
-    {
-      "name": "career-ops-hq/career-ops",
-      "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 80725,
-      "language": "JavaScript",
-      "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-07T00:28:35Z"
+      "updated": "2026-11-07T01:37:14Z"
     }
   ],
   "nasdaq_data": {
@@ -1498,7 +1498,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Fri 6 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-06T20:31:10.286247"
+    "timestamp": "2026-11-06T20:38:36.664235"
   },
   "sticky": {
     "cnbc": [

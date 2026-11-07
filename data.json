@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-07T16:01:10.128463",
-  "summary": "Key topics today:\n- - The end of Microsoft Research's AI Frontiers group (r/HackerNews, 101 pts)\n- - Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8 (r/HackerNews, 101 pts)\n- - The Components of Agent Memory (r/HackerNews, 101 pts)\n- - What I run on my $10 USD OpenStick homelab (r/HackerNews, 1 pts)\n- - Apple\u2019s grey list: Words and phrases your iPhone won\u2019t help you spell (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-07T16:11:00.861504",
+  "summary": "Key topics today:\n- - The end of Microsoft Research's AI Frontiers group (r/HackerNews, 101 pts)\n- - Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files (r/HackerNews, 101 pts)\n- - Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8 (r/HackerNews, 101 pts)\n- - The Components of Agent Memory (r/HackerNews, 101 pts)\n- - What I run on my $10 USD OpenStick homelab (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "sell",
@@ -33,6 +33,14 @@
       "change": -9.55,
       "category": "stock",
       "text": "MSTR -9.6% drop @ $128.93"
+    },
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
@@ -42,6 +50,14 @@
       "score": 101,
       "comments": 0,
       "url": "https://hunch.net/?p=13764006",
+      "created": ""
+    },
+    {
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
       "created": ""
     },
     {
@@ -107,20 +123,12 @@
       "comments": 0,
       "url": "https://prog21.dadgum.com/19.html",
       "created": ""
-    },
-    {
-      "title": "The $8 Linux Computer (2022)",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-07T21:01:01.469854",
+    "timestamp": "2026-11-07T21:10:35.848232",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,35 +430,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-07T21:00:38.417179",
+    "timestamp": "2026-11-07T21:10:13.596407",
     "trending": [
       {
-        "symbol": "VIG",
-        "price": 243.34,
-        "change": -9.36,
-        "change_percent": -3.7,
-        "name": "Vanguard Div Appreciation ETF"
+        "symbol": "ZEC-USD",
+        "price": 1242.36,
+        "change": -77.81,
+        "change_percent": -5.89,
+        "name": "Zcash USD"
       },
       {
-        "symbol": "RSP",
-        "price": 216.05,
-        "change": -7.28,
-        "change_percent": -3.26,
-        "name": "Invesco S&P 500 Equal Weight ET"
-      },
-      {
-        "symbol": "SPYI",
-        "price": 51.29,
-        "change": -1.72,
-        "change_percent": -3.24,
-        "name": "NEOS S&P 500 High Income ETF"
-      },
-      {
-        "symbol": "SCHD",
-        "price": 35.17,
-        "change": -1.04,
-        "change_percent": -2.87,
-        "name": "Schwab US Dividend Equity ETF"
+        "symbol": "HD",
+        "price": 343.47,
+        "change": -11.97,
+        "change_percent": -3.37,
+        "name": "Home Depot, Inc. (The)"
       },
       {
         "symbol": "AA",
@@ -462,9 +456,16 @@
       {
         "symbol": "XRP-USD",
         "price": 1.15,
-        "change": -0.02,
-        "change_percent": -1.98,
+        "change": -0.03,
+        "change_percent": -2.32,
         "name": "XRP USD"
+      },
+      {
+        "symbol": "NEE",
+        "price": 86.95,
+        "change": -1.5,
+        "change_percent": -1.7,
+        "name": "NextEra Energy, Inc."
       },
       {
         "symbol": "BRK-A",
@@ -472,6 +473,13 @@
         "change": -12689.0,
         "change_percent": -1.46,
         "name": "Berkshire Hathaway Inc."
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 88.77,
+        "change": -1.29,
+        "change_percent": -1.43,
+        "name": "Solana USD"
       },
       {
         "symbol": "BRK-B",
@@ -488,18 +496,18 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 2223.58,
+        "change": -11.47,
+        "change_percent": -0.51,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": ".DJI",
         "price": 51285.73,
         "change": -237.33,
         "change_percent": -0.46,
         "name": "DJIA"
-      },
-      {
-        "symbol": "ETH-USD",
-        "price": 2225.56,
-        "change": -9.49,
-        "change_percent": -0.42,
-        "name": "Ethereum USD"
       },
       {
         "symbol": ".SPX",
@@ -517,17 +525,17 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 75589.06,
-        "change": -157.87,
-        "change_percent": -0.21,
+        "price": 75551.43,
+        "change": -195.5,
+        "change_percent": -0.26,
         "name": "Bitcoin USD"
       },
       {
-        "symbol": "SGOV",
-        "price": 100.49,
-        "change": 0.04,
-        "change_percent": 0.04,
-        "name": "iShares 0-3 Month Treasury Bond"
+        "symbol": "KO",
+        "price": 95.67,
+        "change": -0.13,
+        "change_percent": -0.14,
+        "name": "Coca-Cola Company (The)"
       }
     ],
     "meme_momentum": [
@@ -958,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-07T21:00:57.447052",
+    "timestamp": "2026-11-07T21:10:32.221931",
     "items": [
       {
         "symbol": "SPX",
@@ -1052,38 +1060,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 221.82,
-        "change": -1.09,
+        "price": 221.74,
+        "change": -1.31,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75590,
-        "change": -0.26,
+        "price": 75589,
+        "change": -0.28,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2225.51,
-        "change": -0.08,
+        "price": 2225.04,
+        "change": -0.14,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 88.92,
-        "change": -1.02,
+        "price": 88.79,
+        "change": -1.25,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 10.73,
-        "change": -1.13,
+        "change": -1.12,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.15,
-        "change": -2.45,
+        "change": -2.58,
         "type": "crypto"
       },
       {
@@ -1099,15 +1107,9 @@
         "type": "mover"
       },
       {
-        "symbol": "VIG",
-        "price": 243.34,
-        "change": -3.7,
-        "type": "mover"
-      },
-      {
-        "symbol": "RSP",
-        "price": 216.05,
-        "change": -3.26,
+        "symbol": "ZEC-USD",
+        "price": 1242.36,
+        "change": -5.89,
         "type": "mover"
       },
       {
@@ -1119,13 +1121,25 @@
       {
         "symbol": "XRP-USD",
         "price": 1.15,
-        "change": -2.0,
+        "change": -2.26,
+        "type": "mover"
+      },
+      {
+        "symbol": "NEE",
+        "price": 86.95,
+        "change": -1.7,
         "type": "mover"
       },
       {
         "symbol": "BRK-A",
         "price": 856612.0,
         "change": -1.46,
+        "type": "mover"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 88.77,
+        "change": -1.43,
         "type": "mover"
       },
       {
@@ -1136,14 +1150,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2225.07,
-        "change": -0.45,
-        "type": "mover"
-      },
-      {
-        "symbol": "O",
-        "price": 59.04,
-        "change": -0.3,
+        "price": 2223.6,
+        "change": -0.51,
         "type": "mover"
       }
     ]
@@ -1153,26 +1161,6 @@
       "title": "Tesla to add Cybertruck shift to clear orders before dismantling line next year",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRUhMT1JwanVVTTN4eGhvcXBNTHo3UV80QXFDU2hMWTRuUGppME9ab3RkNVkwZnFOWXh6VEZ5WUNHaHcwclAtOEZFb09CLWwteW5pN0JMY1lydFVhbzV2OVE4a0FqY1lJRGhIeEN6SVNnSTBfTTBuZm5GeGJFYjdMMUVTVFVFcGNlQ2x0RnF0allhVDV5MlQ4MlV6b1luV21tOVdNQTBzNG1RaHJBU3IxSlBGV25fRm5KTUEza0I4M2xRYnZwZFVIR29vMEY0bXBBaGMtWGJNOEw2Z1VjVXc?oc=5",
       "source": "Reuters",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Chart of the Week: Data centres rebuked",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQk9qamlJdm1YTENlcUdqS3lwZnpTRXhNMmxMVENvdUl4LVZDZS1tREpocHpLY3gza1pEVGthV2QweVR5NnpubW9sNmIwV0NtNXpwd004WnNjTlB3RzN2dmdfV3FFUEVnN29DUWN4Z1B6REQtTWVudktCczhHT2k1V3Q5VUI?oc=5",
-      "source": "Financial Times",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Berkshire Hathaway\u2019s Quarterly Profit Falls After Investment Gains Shrink",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSlRmcnB2bWtXOHV1MEJucmRMSFpiMjUtM1dMUnVRbnBybWxCSWJ0YU02QVczWERwbDlNQzJSeThHVnRNUmEtd3dOQzRUQnJhT2V5WlhQczRYdVVGaUV3YVpaNUdvUkNqRDB0aWpDQW5IV0xtbF8zQjdGNm9xYlllMDRSYTZTLXNHMTJGLUNXYXhCMGx2R2drclQ5amZocWJndlE?oc=5",
-      "source": "WSJ",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1190,9 +1178,39 @@
       "author": ""
     },
     {
+      "title": "Berkshire Hathaway\u2019s Quarterly Profit Falls After Investment Gains Shrink",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSlRmcnB2bWtXOHV1MEJucmRMSFpiMjUtM1dMUnVRbnBybWxCSWJ0YU02QVczWERwbDlNQzJSeThHVnRNUmEtd3dOQzRUQnJhT2V5WlhQczRYdVVGaUV3YVpaNUdvUkNqRDB0aWpDQW5IV0xtbF8zQjdGNm9xYlllMDRSYTZTLXNHMTJGLUNXYXhCMGx2R2drclQ5amZocWJndlE?oc=5",
+      "source": "WSJ",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Chart of the Week: Data centres rebuked",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQk9qamlJdm1YTENlcUdqS3lwZnpTRXhNMmxMVENvdUl4LVZDZS1tREpocHpLY3gza1pEVGthV2QweVR5NnpubW9sNmIwV0NtNXpwd004WnNjTlB3RzN2dmdfV3FFUEVnN29DUWN4Z1B6REQtTWVudktCczhHT2k1V3Q5VUI?oc=5",
+      "source": "Financial Times",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "From high-flying AI stocks to tariff-hit alcohol companies, the midterms shook up Wall Street",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVGE5cWdNNmdGUVUta195UWctb3dsWEp2d0ZDRE5FQU02SDRwckpqa25JM2QxNk1wOTV5aXF4NDJiZnRZRzlCcm85RzNjOEltYktuc1NDQ2Y2UzJOc2VMQm5HaFZUR2FGdkNDMVhoazNkN1FTYTBVdWRDQjItS2c2ZUVoemlwVVg4X3Z6cVhtTEx4NWtVbjhSMm5NR1loaXVaUkNFOTVB?oc=5",
       "source": "AP News",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Crypto\u2019s Trump-Fueled Washington Boom Reaches Its Endgame",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWDExNUNVYUxJcVdMUy1GZ1pfMFFVVVkwdlBfY2FYWmZTa2RpOEhkbExNZE03NDhrbFVJczJ5WTBmRy1WOVcwa0s2SDBGWVNNZ2ljRXR5U2R4RFNaemo1Y2p2YkFuMzhRdUFkbXZIVzVRdVhCXzMtX2V1SS1talB4ZVBtQ1psemJVQ3JqT3hOTVp3YlBOOWxNT2ZqMUJpSUllT2xNTGc3SUx2Mnh6?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1213,16 +1231,6 @@
       "title": "A new group of senators from both parties will vote on how to save Social Security. Here\u2019s what they\u2019ve said about it",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3d1OTgycGZSSmlVdVp4c2Y0cngwTGZyek1reWNpcllUSEZwOGo4OU5kWkUwcHBGVjNPWTlxZEh2b2xQUkpsY01aOEZETjJLZ2E0SGY1REZFSXZla1lDZXprbnBOYW5qY01WMU1KajgyemNRcWx0RHo4bUhmeEZWSzVmeFRhcG1fZ1AyY1hnYW12Zw?oc=5",
       "source": "Fortune",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Why investors are dumping AI company stocks after Democrats\u2019 election sweep",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeHBQalQ0UlBpeEtqdmZBTlJpQTJtaVNlV1B4Zm45UnV3Q0R4VWl6MXF6U1RfZDRUSXBLQU5YWWFma0xxMnJ5OXpiRVliTFlELVoxZEZiWGFmbm8xNlJvTkJBdlZCTlY0RzlOTVNZNFp2UU1qTnFsalotZmZPcE5YbVktcm9URUNUN0dSN2draU5EYU81ekl1ZTZCOGZoZFRmVDI0NDlON2k1ZEREMEdyaWJsaHZyLTU5QWhNNnJ6bWE5U3BU?oc=5",
-      "source": "The Washington Post",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1292,9 +1300,9 @@
       "author": ""
     },
     {
-      "title": "NYT Cooking\u2019s AI assistant saved my weeknight chicken, but almost ruined my cake",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrc2NBamlMdERCVTZuX2txQVl6bjQzR19yNXFTTlN2SDNnbjRqcFB6b2xGeGdXM0Y4ZEJ2cERDWi1GZWMxWnUxa3BVREtJN2dUZWdiQ0xrOFBfRnlrekp5VnhSdTFsUU9hVEViWjZYS2h5WHNzX3VLUw?oc=5",
-      "source": "The Verge",
+      "title": "Rumour: Data Found In Zelda: Ocarina Of Time May Hint At Master Quest DLC",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUDZwczhyblY1cUlkbWN5WnJPcTFna2RobDhfTnYwSGltaHhXNTFIRG9HcVNOLTFQOGhpU09rTFJxaVYtS3ZCTEh0aE9vX0dxc0d1clEzTmV2SXJ0Nk5ydzhLbnF3OG5pWGl1STZibG50VGhGT21ucmdFamE0RHBLUmZuT1o2aWk2M0E5ZW1TSjA3eC15bjkySk9SZURBQ1dXLWtxWDVGRzN4TERfV2J0ZnRXSQ?oc=5",
+      "source": "Nintendo Life",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1302,9 +1310,9 @@
       "author": ""
     },
     {
-      "title": "Rumour: Data Found In Zelda: Ocarina Of Time May Hint At Master Quest DLC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUDZwczhyblY1cUlkbWN5WnJPcTFna2RobDhfTnYwSGltaHhXNTFIRG9HcVNOLTFQOGhpU09rTFJxaVYtS3ZCTEh0aE9vX0dxc0d1clEzTmV2SXJ0Nk5ydzhLbnF3OG5pWGl1STZibG50VGhGT21ucmdFamE0RHBLUmZuT1o2aWk2M0E5ZW1TSjA3eC15bjkySk9SZURBQ1dXLWtxWDVGRzN4TERfV2J0ZnRXSQ?oc=5",
-      "source": "Nintendo Life",
+      "title": "NYT Cooking\u2019s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrc2NBamlMdERCVTZuX2txQVl6bjQzR19yNXFTTlN2SDNnbjRqcFB6b2xGeGdXM0Y4ZEJ2cERDWi1GZWMxWnUxa3BVREtJN2dUZWdiQ0xrOFBfRnlrekp5VnhSdTFsUU9hVEViWjZYS2h5WHNzX3VLUw?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1422,98 +1430,98 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 299073,
+      "stars": 299102,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-07T19:56:27Z"
+      "updated": "2026-11-07T21:05:26Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 261463,
+      "stars": 261469,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-07T20:00:41Z"
+      "updated": "2026-11-07T21:06:33Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 199483,
+      "stars": 199494,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-07T20:00:50Z"
+      "updated": "2026-11-07T21:05:43Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187934,
+      "stars": 187933,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-07T19:49:30Z"
+      "updated": "2026-11-07T20:28:17Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 186313,
+      "stars": 186334,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-07T20:00:06Z"
+      "updated": "2026-11-07T21:03:17Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168628,
+      "stars": 168630,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-07T19:58:52Z"
+      "updated": "2026-11-07T20:57:08Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 160626,
+      "stars": 160627,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-07T19:40:36Z"
+      "updated": "2026-11-07T20:46:04Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149168,
+      "stars": 149171,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-07T19:55:58Z"
+      "updated": "2026-11-07T21:10:11Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 143929,
+      "stars": 143951,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-07T20:00:25Z"
+      "updated": "2026-11-07T21:09:14Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 109963,
+      "stars": 109975,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-07T19:52:12Z"
+      "updated": "2026-11-07T21:04:49Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 105392,
+      "stars": 105435,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-07T19:59:24Z"
+      "updated": "2026-11-07T21:10:53Z"
     },
     {
       "name": "career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 80901,
+      "stars": 80914,
       "language": "JavaScript",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-07T19:47:32Z"
+      "updated": "2026-11-07T21:10:01Z"
     }
   ],
   "nasdaq_data": {
@@ -1522,7 +1530,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sat 7 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-07T16:01:07.965366"
+    "timestamp": "2026-11-07T16:10:58.415854"
   },
   "sticky": {
     "cnbc": [

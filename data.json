@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T20:16:07.090807",
+  "timestamp": "2026-11-06T20:22:08.734282",
   "summary": "Key topics today:\n- - AI is dramatically accelerating AI research (r/HackerNews, 101 pts)\n- - ChatGPT silently passes data between connectors and the bounty wants an ID card (r/HackerNews, 101 pts)\n- - Memorilla: Latent Semantic Memory for LLMs (r/HackerNews, 101 pts)\n- - UpCodes (YC S17) is hiring SDR's to sell AI compliance software (r/HackerNews, 101 pts)\n- - Anthropic IPO buyers see valuation as low as $1.1T (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -9,6 +9,14 @@
       "change": -3.38,
       "category": "crypto",
       "text": "XRP -3.4% @ $1.18"
+    },
+    {
+      "type": "sell",
+      "asset": "SDA",
+      "price": 0.15,
+      "change": -25.24,
+      "category": "stock",
+      "text": "SDA -25.2% drop @ $0.15"
     },
     {
       "type": "sell",
@@ -25,14 +33,6 @@
       "change": -13.2,
       "category": "stock",
       "text": "OKLO -13.2% drop @ $19.20"
-    },
-    {
-      "type": "sell",
-      "asset": "QBTS",
-      "price": 9.05,
-      "change": -12.81,
-      "category": "stock",
-      "text": "QBTS -12.8% drop @ $9.05"
     },
     {
       "type": "watch",
@@ -126,9 +126,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Cornell faculty senate issues a vote of no confidence in the administration's ability to effectively address sexual assault allegations. https://www.nbcnews.com/news/education/cornell-faculty-senate-issues-no-confidence-vote-administrations-handl-rcna607286?taid=6aee407",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2118811335345557950#m",
+      "date": "Fri, 06 Nov 2026 21:02:42 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Susie Wiles is out as White House chief of staff and will be replaced by Stephen Miller. https://www.nbcnews.com/politics/donald-trump/trump-stephen-miller-susie-wiles-white-house-chief-of-staff-rcna607892?taid=6aee246a53d11a0001a8a1cb&utm_campaign=trueanthem&utm_medium",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2118781238068580462#m",
+      "date": "Fri, 06 Nov 2026 19:03:06 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BreakingNews",
+      "text": "BREAKING: Meghan Markle\u2019s estranged father is arrested in Florida on a federal complaint alleging he possessed child sexual abuse material. https://www.nbcnews.com/news/us-news/meghans-father-thomas-markle-arrested-florida-child-sexual-abuse-rcna607836?taid=6aee03dc6a9a8500015464",
+      "url": "https://nitter.kareem.one/BreakingNews/status/2118746282952941640#m",
+      "date": "Fri, 06 Nov 2026 16:44:12 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-11-07T01:15:57.896429",
+    "timestamp": "2026-11-07T01:21:34.179799",
     "prices": [
       {
         "name": "Bittensor",
@@ -373,12 +395,12 @@
       "description": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people."
     },
     {
-      "title": "Cornell faculty senate votes no-confidence in school's leadership",
-      "url": "https://abcnews.com/US/cornell-faculty-senate-release-result-confidence-vote/story?id=137911777",
+      "title": "Secret Service finds man parked near White House with multiple firearms: Authorities",
+      "url": "https://abcnews.com/US/man-arrested-after-secret-service-finds-parked-white/story?id=137930505",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Fri, 06 Nov 2026 ",
-      "description": "Following the alleged gang rape of a student, Cornell's faculty senate passed a no-confidence resolution condemning the school's handling of sexual violence on campus."
+      "description": "The suspect, Ronny Guanipa-Chrinos, allegedly made threats to kill President Donald Trump, according to DHS."
     },
     {
       "title": "LIVE:  ABC News Live",
@@ -430,21 +452,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-07T01:15:36.514497",
+    "timestamp": "2026-11-07T01:20:52.240086",
     "trending": [
+      {
+        "symbol": "SDA",
+        "price": 0.15,
+        "change": -0.05,
+        "change_percent": -25.24,
+        "name": "SunCar Technology Group Inc."
+      },
       {
         "symbol": "OKLO",
         "price": 19.2,
         "change": -2.92,
         "change_percent": -13.2,
         "name": "Oklo Inc."
-      },
-      {
-        "symbol": "QBTS",
-        "price": 9.05,
-        "change": -1.33,
-        "change_percent": -12.81,
-        "name": "D-Wave Quantum Inc."
       },
       {
         "symbol": "RKLB",
@@ -473,6 +495,13 @@
         "change": -0.26,
         "change_percent": -10.47,
         "name": "Gogo Inc."
+      },
+      {
+        "symbol": "PLUG",
+        "price": 1.35,
+        "change": -0.11,
+        "change_percent": -7.53,
+        "name": "Plug Power, Inc."
       },
       {
         "symbol": "MRNA",
@@ -515,13 +544,6 @@
         "change": 24.22,
         "change_percent": 0.89,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "PZZA",
-        "price": 19.89,
-        "change": -0.1,
-        "change_percent": -0.5,
-        "name": "Papa John's International, Inc."
       },
       {
         "symbol": ".DJI",
@@ -966,7 +988,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-07T01:15:53.955945",
+    "timestamp": "2026-11-07T01:21:20.777576",
     "items": [
       {
         "symbol": "SPX",
@@ -1060,50 +1082,44 @@
       },
       {
         "symbol": "TAO",
-        "price": 223.83,
-        "change": 1.73,
+        "price": 223.69,
+        "change": 1.89,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75852,
-        "change": -0.41,
+        "price": 75793,
+        "change": -0.43,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2240.42,
-        "change": -0.01,
+        "price": 2239.02,
+        "change": 0.05,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 90.23,
-        "change": 0.03,
+        "price": 90.19,
+        "change": 0.12,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.84,
-        "change": -0.17,
+        "price": 10.83,
+        "change": -0.09,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.32,
-        "change": 0.28,
+        "change": 0.4,
         "type": "crypto"
       },
       {
         "symbol": "OKLO",
         "price": 19.2,
         "change": -13.2,
-        "type": "mover"
-      },
-      {
-        "symbol": "QBTS",
-        "price": 9.05,
-        "change": -12.81,
         "type": "mover"
       },
       {
@@ -1153,14 +1169,20 @@
         "price": 32.09,
         "change": -6.09,
         "type": "mover"
+      },
+      {
+        "symbol": "ACHR",
+        "price": 3.87,
+        "change": -6.07,
+        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Stock Market Today: Nasdaq Rallies In Tech Turnaround; Airbnb Rockets Higher",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOXpPb0ctNHctc1ZBczhHQW12ZE5YZDdyd2MzcG1tUlNMYjBiaE9MT05XOS1RRVpaekgtWThPY3BSYVVYODZhV0hiVXZUMmxHdGtoSGtqR0lDSno3Z2FHRUZWX040ZEZldFI2UlRRb2p6WjN3MEhSVUlYZjNhdjRtOTU4T2htSkhRUHdXVE5ralJMUjJ3MXh3Yl9SdVcxcy1WY01WdmdmWUptMW1pLVZ2RDR1NW5TeExLQzY0?oc=5",
-      "source": "Investor's Business Daily",
+      "title": "Nasdaq rallies as chip stocks recover from brutal losses",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1YbFR4UldUSzBaT3pnbkdCX2lETmkwbEFzMkh4YjByV0pzODNGWnBSc1dHTXpOZ05aYzFRZWlpQjlZajRaMDNpMkphdGVCV3RLS2FJTV9SbWJ6X0VFd1MzdDdB0gFnQVVfeXFMTUpTNzdXTjNteTkwcDkwU0t5R21sMFRONnNMa1RKaXhNVG43SDNzLWdQVGdqcGRtelhpTi1oZmpXNzhndXNDUGVza0EwejZGS3J4ZThYUmJhLXhsQ21hdWdabjc4TFBJcw?oc=5",
+      "source": "Fox Business",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1188,9 +1210,9 @@
       "author": ""
     },
     {
-      "title": "OpenAI investing in AI data centers despite election results, CFO says",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54bWpvVi13alRsTVY0VGFfT0dUS3JtMG4yYVZtNDhkN2lIUndZeFVvVEdwZExsNjNPeXR1aEVVZzNSZjlBS1lSdUdoeUg4RmpWc3VqcDREUzA0RGlxZ2kzaC1KYVNzX3pxTlBLSGJtUlA0LUVq?oc=5",
-      "source": "CNBC",
+      "title": "Data centers were not winners in the 2026 elections, CBS News exit polls find",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TZWxXNEpzYmZVX0VhdEZSY0l3c0VaUlprbEE0OFMwLUlILWg5clBMWWstTTFtMWVhNTBpZS1GMUd0dTVWS1lWa3pvZXRyOXpxdHYtRGFKWm52alFVa0ZUMXJIV291RjVLS1F3cUJBNHhzZ1dmWXc?oc=5",
+      "source": "CBS News",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1198,9 +1220,9 @@
       "author": ""
     },
     {
-      "title": "Data centers were not winners in the 2026 elections, CBS News exit polls find",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TZWxXNEpzYmZVX0VhdEZSY0l3c0VaUlprbEE0OFMwLUlILWg5clBMWWstTTFtMWVhNTBpZS1GMUd0dTVWS1lWa3pvZXRyOXpxdHYtRGFKWm52alFVa0ZUMXJIV291RjVLS1F3cUJBNHhzZ1dmWXc?oc=5",
-      "source": "CBS News",
+      "title": "OpenAI investing in AI data centers despite election results, CFO says",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54bWpvVi13alRsTVY0VGFfT0dUS3JtMG4yYVZtNDhkN2lIUndZeFVvVEdwZExsNjNPeXR1aEVVZzNSZjlBS1lSdUdoeUg4RmpWc3VqcDREUzA0RGlxZ2kzaC1KYVNzX3pxTlBLSGJtUlA0LUVq?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Fri, 06 Nov 2026 ",
       "description": "",
@@ -1490,7 +1512,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Fri 6 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-06T20:16:04.905966"
+    "timestamp": "2026-11-06T20:22:00.708569"
   },
   "sticky": {
     "cnbc": [

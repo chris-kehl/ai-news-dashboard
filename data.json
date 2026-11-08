@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T06:16:07.264217",
+  "timestamp": "2026-11-08T06:21:26.126694",
   "summary": "Key topics today:\n- - Agent memory needs its OpenTelemetry moment (r/HackerNews, 101 pts)\n- - Goodbye Claude, Hello Pi (r/HackerNews, 101 pts)\n- - Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files (r/HackerNews, 101 pts)\n- - The end of Microsoft Research's AI Frontiers group (r/HackerNews, 101 pts)\n- - Clj.rs \u2013 a Clojure dialect implemented in Rust (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-08T11:15:58.702841",
+    "timestamp": "2026-11-08T11:20:45.402600",
     "prices": [
       {
         "name": "Bittensor",
@@ -430,7 +430,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-08T11:15:36.671836",
+    "timestamp": "2026-11-08T11:20:23.361256",
     "trending": [
       {
         "symbol": "CRDO",
@@ -447,13 +447,6 @@
         "name": "KOSPI Composite Index"
       },
       {
-        "symbol": "APLD",
-        "price": 15.55,
-        "change": -1.06,
-        "change_percent": -6.38,
-        "name": "Applied Digital Corporation"
-      },
-      {
         "symbol": "test",
         "price": 36.2,
         "change": -2.0,
@@ -461,18 +454,25 @@
         "name": "YieldMax TSLA Performance & Dis"
       },
       {
+        "symbol": "CRWV",
+        "price": 46.4,
+        "change": -2.02,
+        "change_percent": -4.17,
+        "name": "CoreWeave, Inc."
+      },
+      {
+        "symbol": "SCHD",
+        "price": 35.17,
+        "change": -1.04,
+        "change_percent": -2.87,
+        "name": "Schwab US Dividend Equity ETF"
+      },
+      {
         "symbol": "^BSESN",
         "price": 80999.4,
         "change": 1689.39,
         "change_percent": 2.13,
         "name": "S&P BSE SENSEX"
-      },
-      {
-        "symbol": "BA",
-        "price": 173.4,
-        "change": -3.6,
-        "change_percent": -2.03,
-        "name": "Boeing Company (The)"
       },
       {
         "symbol": "^NSEI",
@@ -487,13 +487,6 @@
         "change": -8.2,
         "change_percent": -1.42,
         "name": "Berkshire Hathaway Inc. New"
-      },
-      {
-        "symbol": "ONDS",
-        "price": 5.34,
-        "change": 0.07,
-        "change_percent": 1.23,
-        "name": "Ondas Inc"
       },
       {
         "symbol": ".RUT",
@@ -518,16 +511,23 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 75849.72,
-        "change": 102.14,
-        "change_percent": 0.13,
+        "price": 75866.92,
+        "change": 119.34,
+        "change_percent": 0.16,
         "name": "Bitcoin USD"
       },
       {
+        "symbol": "XRP-USD",
+        "price": 1.16,
+        "change": -0.0,
+        "change_percent": -0.11,
+        "name": "XRP USD"
+      },
+      {
         "symbol": "ETH-USD",
-        "price": 2234.84,
-        "change": -1.48,
-        "change_percent": -0.07,
+        "price": 2235.9,
+        "change": -0.42,
+        "change_percent": -0.02,
         "name": "Ethereum USD"
       }
     ],
@@ -959,7 +959,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-08T11:15:54.971279",
+    "timestamp": "2026-11-08T11:20:41.924488",
     "items": [
       {
         "symbol": "SPX",
@@ -1053,38 +1053,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 223.28,
-        "change": -0.61,
+        "price": 223.72,
+        "change": -0.35,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75860,
-        "change": -0.07,
+        "price": 75878,
+        "change": 0.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2234.79,
-        "change": -0.4,
+        "price": 2235.75,
+        "change": -0.31,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 89.23,
-        "change": -0.71,
+        "price": 89.29,
+        "change": -0.6,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 10.75,
-        "change": -0.55,
+        "change": -0.33,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.16,
-        "change": -1.48,
+        "change": -1.3,
         "type": "crypto"
       },
       {
@@ -1112,21 +1112,21 @@
         "type": "mover"
       },
       {
-        "symbol": "APLD",
-        "price": 15.55,
-        "change": -6.38,
+        "symbol": "CRWV",
+        "price": 46.4,
+        "change": -4.17,
+        "type": "mover"
+      },
+      {
+        "symbol": "SCHD",
+        "price": 35.17,
+        "change": -2.87,
         "type": "mover"
       },
       {
         "symbol": "^BSESN",
         "price": 80999.4,
         "change": 2.13,
-        "type": "mover"
-      },
-      {
-        "symbol": "BA",
-        "price": 173.4,
-        "change": -2.03,
         "type": "mover"
       },
       {
@@ -1142,9 +1142,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ONDS",
-        "price": 5.34,
-        "change": 1.23,
+        "symbol": "BB",
+        "price": 8.74,
+        "change": -0.23,
         "type": "mover"
       }
     ]
@@ -1154,16 +1154,6 @@
       "title": "How midterm elections sent Wall Street from celebration to mayhem in just 24 hours / this week",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTklhVlJaYnBBLW00MDBWejE4c0dvUFlMdUI3YWRDdUxnUFZVSFZuQzBUOU5xdTB3RFJoVS1IUjVaR2N5SXdaaU9sRXlvT1MtUWJRU09sano1NzhfanJXNzFJRFdBMzZNdjhYZkYtb1I3MmFiTGZqZUZaYi1henNsdGJKYzFtaFBfNHBRblpvMVU2dndoeEV5UDJBTC1fRy11aDE4aWNkaDVMQU9WNmRfR3JmM2k1N3k1WnRNaFl5VkpRU2twZmZMZl9FeXlxV25SVklGZEZWVQ?oc=5",
       "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Good Riddance to the Cybertruck, the Chariot of the Dumbest Gods",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZllPOEhTRGVQVzRaYURMdlZQSUpqcTEzZnBXajRkZ25RUEdzNFJXVkU5Z2Y5VzN0dUpQNV9CQmV1X3BPbHVyRHBUaTdGNFNmSjh2cG5VUjVFd3ZQQnZzVVlSVWRUQUMtUVBqM3EtT2VhZnQ3cUphVmJ4dmxPYzdnNWs3M2F2OUNpRnVQX0wyVV9Nc3FtQTdFUFlRcFFFeVdKMkhkNA?oc=5",
-      "source": "Rolling Stone",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1191,9 +1181,29 @@
       "author": ""
     },
     {
+      "title": "Good Riddance to the Cybertruck, the Chariot of the Dumbest Gods",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZllPOEhTRGVQVzRaYURMdlZQSUpqcTEzZnBXajRkZ25RUEdzNFJXVkU5Z2Y5VzN0dUpQNV9CQmV1X3BPbHVyRHBUaTdGNFNmSjh2cG5VUjVFd3ZQQnZzVVlSVWRUQUMtUVBqM3EtT2VhZnQ3cUphVmJ4dmxPYzdnNWs3M2F2OUNpRnVQX0wyVV9Nc3FtQTdFUFlRcFFFeVdKMkhkNA?oc=5",
+      "source": "Rolling Stone",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Musk Says SpaceX Could Buy a Legacy Telco and Use Its Spectrum 10 Times Better",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY3E2MTR4ZXNBWlhjd3FINzYzd3hkLUJPTjI4WlRNQWhKNFJLbEc0LW9PbkV3SUwxc2pmV2psdlNabXlBSm45ZFFxZW5GbXVIWHJyUkU4a2lBa1dMOUZpa3RKZWQ4WlpGTVVmaFRmY0xBdE5sOVQtYkVZWERPVFZQUXpnd29obzlxSW1OdWVCa1c?oc=5",
       "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Binance\u2019s CFO Is Out a Week After $6.3 Billion Hack",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ1l0aWlhYTlyYnBZRnJoMWZpbFJBYVJ3WkttVXdhcTRwZl9IOER3ay1la0FJSVlyV05oMG5ndVFQTmVHWGxiaml1TVBKZ2hZRDlQQTh5LWc5XzVLS2pDei1EVzNWN2hheHBQY0RZTmlTYkJVMVl0TGo5c3FFUDc3a1NDQ0gyXzA?oc=5",
+      "source": "Gizmodo",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1219,16 +1229,6 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "Four things to note from Friday's US jobs report",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pbTBHZWNBVHpfWWdmMDRzY1ZvS1lHWVR5M3EtSXUxeVJFamdidzgyd1RvZkM1U2hzOUlQRndtaXZCSFptaE5wZnQwdmNNNFh1a1ZKOEpqN25Uck1tSTRkTmUxNDRxa0pOV2dIczJkLUgwMUJnOFlMSGM0OUMzdw?oc=5",
-      "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Fri, 06 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
@@ -1236,6 +1236,16 @@
       "title": "iPhone Duo vs. Galaxy Z Fold 8 Camera Comparison: Frolicking With Apple's and Samsung's Foldables",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZVNjbEJNRFNIUGVDZzNmUDBXNGh2Sm9WMnozVldCR2NwYU04MTJPQURKR2ZpQ0hTN3d4VjhxWXRzNDRJSEhjcDVTYlFLU3Z6MzFWd3J4YlJpSE1DTTNFRTkxbmE4elMtUkdPamp4NTUxd2F5eXpGQXhXOHBDOGpRLWxpSi02a2U1?oc=5",
       "source": "CNET",
+      "category": "business",
+      "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Early Apple Black Friday Deals on Apple Watch, MacBook Air, and More",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TdzlKcHJ0anlDZ2JSaXVlYzdIXy1kNGhQRjA5dGZScW53TG4yU2wwSnRqSGN5VUE4a0YySEYxakw4SXAwc0RJaTdmYlZYMVplQUlzNmdhV3N2dGRiMW5oN1Q2eGZNT3owLWU3SlVYRUR5WUVsemNB?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1283,16 +1293,6 @@
       "author": ""
     },
     {
-      "title": "The Pok\u00e9mon TCG 30th Celebration Elite Trainer Box is live at Amazon: Shop now for way under market price",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ3pnNmRVT3EyVzR6blpuWHZicHVRRU1rcWFUbHdTRUdUZWo5UlN5MTNnV1RvblRST2xKc0dJNnZLOGRrZGNGU1dBaDVIa1pkaTgxMVhMdGd1SzZfQXJaSmszMUxRdElGQ1Y0ekRINEhoR0xQNXh2ZUdCRUQ5TTlMVHRsSjE3ZVdzWXhn?oc=5",
-      "source": "Mashable",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Epic Reveals Drop Rate for Fortnite's Pirate Token Following Pressure From Fans",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVTZzeEhqY1ZaNThQU3FndDN1VG5IVXFkX0drVzZLSTZ1QTJTbFBRTEc3VEdaV0ptX3U3SzN5cWhhUW5OODN0WFUxdmRMMDk5TXNHdXVfSU1rY2haY2M0emhQeU5nNzI2Mk1Nc3ZSaG96OGtQZEpLUF9rNU5vLTFfdVBQSmJnQWZXblFqYmw1eDVhR0xuU2dzMnR5NkRDWjZRQkJpTFp4aUktOWs?oc=5",
       "source": "IGN",
@@ -1303,9 +1303,9 @@
       "author": ""
     },
     {
-      "title": "Official Best Buy early Black Friday now live! New Doorbusters, Apple, Google, TVs, home, bonus credits, more",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWk9pZnJQYjBKclJ1RzJKYVpyRVZiTDdjRk9FSDhCcHhPTHdZYlZOVldwTjBqVm1mbGVkM180NDI2dWRpYkhjbXpHM3dhaXpqZHh6NWh5cU0waXp5bFJLbHZRclBhMUVpVXBwaXlYa190WTlRc3Jad3VzTERwZFlMclU5c3puc2VmT2E4?oc=5",
-      "source": "9to5Toys",
+      "title": "The Pok\u00e9mon TCG 30th Celebration Elite Trainer Box is live at Amazon: Shop now for way under market price",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ3pnNmRVT3EyVzR6blpuWHZicHVRRU1rcWFUbHdTRUdUZWo5UlN5MTNnV1RvblRST2xKc0dJNnZLOGRrZGNGU1dBaDVIa1pkaTgxMVhMdGd1SzZfQXJaSmszMUxRdElGQ1Y0ekRINEhoR0xQNXh2ZUdCRUQ5TTlMVHRsSjE3ZVdzWXhn?oc=5",
+      "source": "Mashable",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
       "description": "",
@@ -1379,14 +1379,6 @@
       "relevance_score": 4
     },
     {
-      "title": "Messi becomes first player to win back-to-back MLS Golden Boot awards",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/messi-becomes-first-player-to-win-back-to-back-mls-golden-boot-awards?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sun, 08 Nov 2026 ",
-      "description": "The Argentinian scored 26 goals in regular season, topping the charts and leading Inter Miami to the MLS Cup playoffs.",
-      "relevance_score": 3
-    },
-    {
       "title": "Floods in Gaza leave tens of thousands without shelter",
       "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1413,60 +1405,36 @@
   ],
   "github": [
     {
-      "name": "affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 299370,
-      "language": "JavaScript",
-      "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-08T10:15:55Z"
-    },
-    {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 261594,
+      "stars": 261611,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-08T10:12:30Z"
-    },
-    {
-      "name": "firecrawl/firecrawl",
-      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 199631,
-      "language": "TypeScript",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-08T10:14:00Z"
+      "updated": "2026-11-08T11:19:53Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187937,
+      "stars": 187938,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-08T09:51:40Z"
-    },
-    {
-      "name": "DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 186579,
-      "language": "JavaScript",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-08T10:14:49Z"
+      "updated": "2026-11-08T10:46:02Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168647,
+      "stars": 168648,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-08T10:03:28Z"
+      "updated": "2026-11-08T11:17:44Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 160650,
+      "stars": 160652,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-08T10:11:46Z"
+      "updated": "2026-11-08T11:11:36Z"
     },
     {
       "name": "langchain-ai/langchain",
@@ -1477,36 +1445,60 @@
       "updated": "2026-11-08T10:12:26Z"
     },
     {
-      "name": "Graphify-Labs/graphify",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 144171,
-      "language": "Python",
-      "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-08T10:12:01Z"
+      "name": "stablyai/orca",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
+      "stars": 118895,
+      "language": "TypeScript",
+      "url": "https://github.com/stablyai/orca",
+      "updated": "2026-11-08T11:20:54Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 110119,
+      "stars": 110134,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-08T10:15:17Z"
+      "updated": "2026-11-08T11:11:52Z"
     },
     {
-      "name": "pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 105819,
-      "language": "Rust",
-      "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-08T10:14:24Z"
+      "name": "bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, s",
+      "stars": 85125,
+      "language": "Python",
+      "url": "https://github.com/bytedance/deer-flow",
+      "updated": "2026-11-08T11:20:57Z"
     },
     {
       "name": "career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 81013,
+      "stars": 81026,
       "language": "JavaScript",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-08T10:10:47Z"
+      "updated": "2026-11-08T11:17:57Z"
+    },
+    {
+      "name": "shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
+      "stars": 80038,
+      "language": "Python",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "updated": "2026-11-08T11:00:09Z"
+    },
+    {
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "stars": 77689,
+      "language": "Python",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "updated": "2026-11-08T11:20:28Z"
+    },
+    {
+      "name": "hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks\u2014with native shapes, transitions and animations, data-backed charts",
+      "stars": 74728,
+      "language": "Python",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "updated": "2026-11-08T11:20:33Z"
     }
   ],
   "nasdaq_data": {
@@ -1515,7 +1507,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 8 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-08T06:16:05.144217"
+    "timestamp": "2026-11-08T06:21:24.234607"
   },
   "sticky": {
     "cnbc": [

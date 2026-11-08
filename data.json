@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-08T13:16:20.598505",
-  "summary": "Key topics today:\n- - OpenAI raises $11B at a $1.25T valuation (r/HackerNews, 201 pts)\n- - Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU (r/HackerNews, 101 pts)\n- - Goodbye Claude, hello Pi (r/HackerNews, 101 pts)\n- - I'm not a fan of Deno's security model (2024) (r/HackerNews, 101 pts)\n- - Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-08T13:24:04.202789",
+  "summary": "Key topics today:\n- - OpenAI raises $11B at a $1.25T valuation (r/HackerNews, 201 pts)\n- - Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU (r/HackerNews, 101 pts)\n- - I'm not a fan of Deno's security model (2024) (r/HackerNews, 101 pts)\n- - Goodbye Claude, hello Pi (r/HackerNews, 101 pts)\n- - Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
@@ -12,11 +12,11 @@
     },
     {
       "type": "sell",
-      "asset": "COHU",
-      "price": 38.49,
-      "change": -12.48,
+      "asset": "ALAB",
+      "price": 190.71,
+      "change": -14.58,
       "category": "stock",
-      "text": "COHU -12.5% drop @ $38.49"
+      "text": "ALAB -14.6% drop @ $190.71"
     },
     {
       "type": "sell",
@@ -53,19 +53,19 @@
       "created": ""
     },
     {
-      "title": "Goodbye Claude, hello Pi",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://caleb.software/posts/claude-to-pi.html",
-      "created": ""
-    },
-    {
       "title": "I'm not a fan of Deno's security model (2024)",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://goldstein.lol/posts/deno-security/",
+      "created": ""
+    },
+    {
+      "title": "Goodbye Claude, hello Pi",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://caleb.software/posts/claude-to-pi.html",
       "created": ""
     },
     {
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "Quadrillion-parameter transformers and how to train them",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://qlabs.sh/research/parameters",
-      "created": ""
-    },
-    {
       "title": "The Reconstruction of Torn Documents",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
+      "created": ""
+    },
+    {
+      "title": "A field guide to CAPTCHA types and how they break",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://github.com/vsmutok/FuckCaptcha",
       "created": ""
     },
     {
@@ -109,18 +109,18 @@
       "created": ""
     },
     {
-      "title": "A field guide to CAPTCHA types and how they break",
+      "title": "Porting Android 16 to my blind mother's keypad phone",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://github.com/vsmutok/FuckCaptcha",
+      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-08T18:16:01.173717",
+    "timestamp": "2026-11-08T18:23:55.133870",
     "prices": [
       {
         "name": "Bittensor",
@@ -422,7 +422,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-08T18:15:38.202790",
+    "timestamp": "2026-11-08T18:23:32.459794",
     "trending": [
       {
         "symbol": "BROS",
@@ -432,11 +432,11 @@
         "name": "Dutch Bros Inc."
       },
       {
-        "symbol": "COHU",
-        "price": 38.49,
-        "change": -5.49,
-        "change_percent": -12.48,
-        "name": "Cohu, Inc."
+        "symbol": "ALAB",
+        "price": 190.71,
+        "change": -32.56,
+        "change_percent": -14.58,
+        "name": "Astera Labs, Inc."
       },
       {
         "symbol": "CRDO",
@@ -444,6 +444,20 @@
         "change": -15.99,
         "change_percent": -11.71,
         "name": "Credo Technology Group Holding "
+      },
+      {
+        "symbol": "SKHY",
+        "price": 127.34,
+        "change": -15.73,
+        "change_percent": -10.99,
+        "name": "SK hynix Inc."
+      },
+      {
+        "symbol": "^KS11",
+        "price": 5059.69,
+        "change": -624.11,
+        "change_percent": -10.98,
+        "name": "KOSPI Composite Index"
       },
       {
         "symbol": "AMD",
@@ -460,18 +474,11 @@
         "name": "Hut 8 Corp."
       },
       {
-        "symbol": "NVDA",
-        "price": 186.64,
-        "change": -13.49,
-        "change_percent": -6.74,
-        "name": "NVIDIA Corporation"
-      },
-      {
-        "symbol": "SPYM",
-        "price": 86.56,
-        "change": -3.69,
-        "change_percent": -4.09,
-        "name": "State Street SPDR Portfolio S&P"
+        "symbol": "^TWII",
+        "price": 39701.64,
+        "change": -1873.08,
+        "change_percent": -4.51,
+        "name": "TSEC CAPITALIZATION WEIGHTED ST"
       },
       {
         "symbol": "^BSESN",
@@ -479,20 +486,6 @@
         "change": 1689.39,
         "change_percent": 2.13,
         "name": "S&P BSE SENSEX"
-      },
-      {
-        "symbol": "^NSEI",
-        "price": 24986.4,
-        "change": 449.8,
-        "change_percent": 1.83,
-        "name": "NIFTY 50"
-      },
-      {
-        "symbol": "HLT",
-        "price": 370.45,
-        "change": -6.08,
-        "change_percent": -1.61,
-        "name": "Hilton Worldwide Holdings Inc."
       },
       {
         "symbol": "FISV",
@@ -523,9 +516,16 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 2231.31,
+        "change": -5.01,
+        "change_percent": -0.22,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": "BTC-USD",
-        "price": 75793.63,
-        "change": 46.05,
+        "price": 75792.13,
+        "change": 44.55,
         "change_percent": 0.06,
         "name": "Bitcoin USD"
       }
@@ -958,7 +958,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-08T18:15:57.251746",
+    "timestamp": "2026-11-08T18:23:51.295065",
     "items": [
       {
         "symbol": "SPX",
@@ -1034,14 +1034,14 @@
       },
       {
         "symbol": "PL=F",
-        "price": 1536.9,
-        "change": -0.08,
+        "price": 1538.2,
+        "change": -0.0,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1017.1,
-        "change": 0.3,
+        "price": 1014.1,
+        "change": -0.0,
         "type": "future"
       },
       {
@@ -1052,38 +1052,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 223.45,
-        "change": -0.31,
+        "price": 224.47,
+        "change": 0.22,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75798,
-        "change": -0.02,
+        "price": 75837,
+        "change": 0.04,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2231.39,
-        "change": -0.25,
+        "price": 2233.12,
+        "change": -0.16,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 89.24,
-        "change": -0.66,
+        "price": 89.62,
+        "change": -0.25,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.66,
-        "change": -2.55,
+        "price": 10.69,
+        "change": -2.22,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.2,
-        "change": -0.77,
+        "price": 8.21,
+        "change": -0.59,
         "type": "crypto"
       },
       {
@@ -1093,9 +1093,9 @@
         "type": "mover"
       },
       {
-        "symbol": "COHU",
-        "price": 38.49,
-        "change": -12.48,
+        "symbol": "ALAB",
+        "price": 190.71,
+        "change": -14.58,
         "type": "mover"
       },
       {
@@ -1123,15 +1123,15 @@
         "type": "mover"
       },
       {
-        "symbol": "NVDA",
-        "price": 186.64,
-        "change": -6.74,
-        "type": "mover"
-      },
-      {
         "symbol": "PLTR",
         "price": 160.38,
         "change": -6.59,
+        "type": "mover"
+      },
+      {
+        "symbol": "^TWII",
+        "price": 39701.64,
+        "change": -4.51,
         "type": "mover"
       },
       {
@@ -1141,24 +1141,14 @@
         "type": "mover"
       },
       {
-        "symbol": "HLT",
-        "price": 370.45,
-        "change": -1.61,
+        "symbol": "FISV",
+        "price": 62.88,
+        "change": 1.34,
         "type": "mover"
       }
     ]
   },
   "business": [
-    {
-      "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNnFBSnpqTnBzMkpXOXVzbFI0ZDdIRWowYXU2SWtGMDJJN2wxUDFDQk5NcGZxMFBtSW9ycURoZXNhRnBRTHJZOWx0OFJYU20xWEVwUXJ3NzAyYUYzTFdDdUFvbTJsSjdfcmJIQVpSdXFnNFVYVGZLUDh6UWpDN2hTUXBpX3A4bDl6WmVoMlJWeWdnaFdpTmhubUlWNzEtX2RIMVBHeV81M3RFa0lmS3RDZGtJSmIyckRjYlNPUzFRZk9TRzhSQzJTWWpkaXIzX1lEbE4zZg?oc=5",
-      "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Sun, 08 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
     {
       "title": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbE53ekFOUDUweW5DdFVyNWpzTTVabTJacFZrOGxBQ19zOWJaOExQb0h1d2k0NUlncm1zSE9keTMwelJIcFhKRU14LTZqYjlwY3BXOHpSUmxtMEs2a19vcnJnNzZCU093OU04czZETXpWSF93enVPc3FUN0NwbVJkWWtn?oc=5",
@@ -1190,6 +1180,16 @@
       "author": ""
     },
     {
+      "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNnFBSnpqTnBzMkpXOXVzbFI0ZDdIRWowYXU2SWtGMDJJN2wxUDFDQk5NcGZxMFBtSW9ycURoZXNhRnBRTHJZOWx0OFJYU20xWEVwUXJ3NzAyYUYzTFdDdUFvbTJsSjdfcmJIQVpSdXFnNFVYVGZLUDh6UWpDN2hTUXBpX3A4bDl6WmVoMlJWeWdnaFdpTmhubUlWNzEtX2RIMVBHeV81M3RFa0lmS3RDZGtJSmIyckRjYlNPUzFRZk9TRzhSQzJTWWpkaXIzX1lEbE4zZg?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sun, 08 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "DoorDash Shareholders Aren\u2019t Convinced the Company Can Take On Amazon",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMl9LOFV4Z0J5bzBGc2F5V1dMQWVQeEJoSjNZVWc2NmRPbnhDRVg1RVRmdVZGWE16VlNzV2FOQVN1dm5uMF84MHNrTWpYVUJneGROamR5ZjNGa3pQLVNHSGhqd2JUVFpPbmk4R0ttV1d6U0Ffa0ZoTkFXOHkwZXM5SThZNm8xUjdWZ21EQm5NTUgyT3FFMmNzaGF1a2ZhN3plZ3l2WHd4Y3ZFOUlwaVpkeWNvYw?oc=5",
       "source": "WSJ",
@@ -1210,6 +1210,16 @@
       "author": ""
     },
     {
+      "title": "Warren Buffett and Greg Abel Just Sent Shockwaves Through Wall Street With This $377 Billion Warning",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWDJUeGR3dEw0Z2lqQ2VIaXN2UG9rZjdWbjdub3Nqa1NHei1qWU5ZWC1zUkRQTFQwSncwZEMzTlZjcVFxRjZ0ZGg0TEozRS1YVDVULTN6Zmo5S0dIQW1YNGtzN0ZPX1ZyeGhhamlRWFlqczJGWmFSZVgzQU5EUkFGbElFMVZIbzBVUXV2RlF3N0t6c0paeWJ5UlROSGJsTUY0Q1QzUUFBb3AyT2I3djRnazdqZ0VOV2dPTGVfbmo0RDBxTVFxb2FneVFZUDROUQ?oc=5",
+      "source": "The Motley Fool",
+      "category": "business",
+      "published": "Sun, 08 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "NASA unveils $10B moon base contract as SpaceX, Blue Origin join lunar gold rush",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPanpSbHlYTHFlRTZiRFBUMTNTZkl0aVNPOXdrZi10Z1VveWo1dnRvQ1owZWstbEhTczVMZTVtbXpibGE4NXNmVWhmZU9OYVpOOEgtTHJTR1FTbHJNTnB4bVJkUWVRaDNOVUhsazZKdmN2LW5ZYWdLbUJkTURfdzJaMXZ1LThCVFZVSldRcnJvZmJlbHR1ZHNQcnVFSHViTmk1TVpvR1NGYXV6LUUxbEhIOEhNT0ROeThhVXVFNVlvUdIBxAFBVV95cUxNM3VTaDlyV1dzbF9yQ0c2Y2VQVklzQjFOdzUtYXRKaHRqZzY2VktJUld3Nk5mejd6VHpsamJSWEM0NFFBQUZhcGZ2RVUtQlZSejRNNGVWVjNLLUVKaTJTNWx4dHRhRnFyb2owWnlUN0JjMy1vUWRvNGJmQ2RzdEFZNlJ0ZmNTanBybDQxQTlhNEo3VUFpeGxmb3ZNWW9Vc1Z2SnQ1NGRVeTF3b0Zjbkt1b3p0b0xyaVE3LXFDdnk3c0o1VFhP?oc=5",
       "source": "Fox Business",
@@ -1218,23 +1228,13 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "Berkshire Hathaway speeds up stock buybacks, though profit falls",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa29SbTRWcFpWdFpiekRVRjRvNmZjM1BnNzhOeVY3ajB5S25PaGgxVFAyTTItcjRDZkRmcHROSkJIZ3lNdXZkaGp0R2hOZE51eHBzR1U3MXlFRXhGOUhzV1pJR0I2RWtUZnRrQU1MVXZaSm1haDUtTHo3NEJvNGJhLU1rM2N4a240NWp2VFh5Vkd5LW1DOTd6emN0S1QyengzS1ZjdE04LVluRGppX19oSkxtVktEcDdoWXVIVk93?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
     {
-      "title": "Apple Taking New Approach to Developing iOS 28 and macOS 28",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNM0hkN0FjWjI3YThzeVdXalVpYUdrcXRFMmxxMG53QU9sRVlwQTJ2V3VtdkY3ZkE2QjFrZXBxekpHMHRac25uOE5aQnlhNEhtaDRvVnlQVzVadWxyRk1mUmJOUzU4U25VUUppQlIxelZ4VGMycldjcVh2blQ0dXcxQ1dxVQ?oc=5",
-      "source": "MacRumors",
+      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjlhNk9NU1ZVZFo4UG9TR3FmcGxtMWhnY3o4R3dJNGxHc3E2QlR4cmlOSDBuU2JHLVFnMlpVYWtneGxacHhOZWM5bWNJWndxZndxdEstamJjenMwaFoxT3RHSXg3Q2E3cC1pdDM1bm16VkJPak43T2xLRkNvTE9QNHdTRjdfekNGbXJuMFNrcWJ5OGpxR0x3OEJPTll6bHNOaUwzc1E1OF9DQnRZdFZBRXgtN0VYeEhUTTVOa3RKdDlrVU9keXNDOA?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 08 Nov 2026 ",
       "description": "",
@@ -1242,9 +1242,9 @@
       "author": ""
     },
     {
-      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjlhNk9NU1ZVZFo4UG9TR3FmcGxtMWhnY3o4R3dJNGxHc3E2QlR4cmlOSDBuU2JHLVFnMlpVYWtneGxacHhOZWM5bWNJWndxZndxdEstamJjenMwaFoxT3RHSXg3Q2E3cC1pdDM1bm16VkJPak43T2xLRkNvTE9QNHdTRjdfekNGbXJuMFNrcWJ5OGpxR0x3OEJPTll6bHNOaUwzc1E1OF9DQnRZdFZBRXgtN0VYeEhUTTVOa3RKdDlrVU9keXNDOA?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Apple Taking New Approach to Developing iOS 28 and macOS 28",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNM0hkN0FjWjI3YThzeVdXalVpYUdrcXRFMmxxMG53QU9sRVlwQTJ2V3VtdkY3ZkE2QjFrZXBxekpHMHRac25uOE5aQnlhNEhtaDRvVnlQVzVadWxyRk1mUmJOUzU4U25VUUppQlIxelZ4VGMycldjcVh2blQ0dXcxQ1dxVQ?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Sun, 08 Nov 2026 ",
       "description": "",
@@ -1282,11 +1282,11 @@
       "author": ""
     },
     {
-      "title": "2026 iPad mini review: Maximizing the mini",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObTV0aUIwMHVXZWwxM1ZncHRja3E5SmUtenNHZE5XSHZ5elpSRDg1eVNmQnJGaHpkQzNGc1Vvck9TdklVWVFvVHpHYkZxazZlRi1fREJBdHRzQkxMNjhST0JuLWNDNGxyYWhaaGhXZDZKdFdUaGtYUzdKREYyU09iWFpDd0JUUU9oUVE?oc=5",
-      "source": "Ars Technica",
+      "title": "Zelda: Ocarina of Time posts highest Metacritic user score ever despite review bombing",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONnBHQ0RHbVZ3ZGVIbXA1WWozNElhenFHZm56ZG8xLTBYNXNCdUZBdGVtblFGZ01XNXVzZk5NeF90bVpjcEhiejRINi1LQ2Q2RXR5WElfQzdsY1pFUmtHUDlHeU1BM2lnaTJhTkQycmtMVzl6cklCcXN0d2lUSzRtMGx5dmdDaUVvQXR0Tk1UUXhkMTR3OHBpZ2d2ZUc2WFRPb05LUXNWb3N2X28yUDQxTVBScC1wSVdLbkVlbFcwTHhJaWJrbUttRmVB?oc=5",
+      "source": "Notebookcheck",
       "category": "business",
-      "published": "Thu, 05 Nov 2026 ",
+      "published": "Sat, 07 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1302,11 +1302,11 @@
       "author": ""
     },
     {
-      "title": "Zelda: Ocarina of Time posts highest Metacritic user score ever despite review bombing",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONnBHQ0RHbVZ3ZGVIbXA1WWozNElhenFHZm56ZG8xLTBYNXNCdUZBdGVtblFGZ01XNXVzZk5NeF90bVpjcEhiejRINi1LQ2Q2RXR5WElfQzdsY1pFUmtHUDlHeU1BM2lnaTJhTkQycmtMVzl6cklCcXN0d2lUSzRtMGx5dmdDaUVvQXR0Tk1UUXhkMTR3OHBpZ2d2ZUc2WFRPb05LUXNWb3N2X28yUDQxTVBScC1wSVdLbkVlbFcwTHhJaWJrbUttRmVB?oc=5",
-      "source": "Notebookcheck",
+      "title": "Bring Khazalite might to armies of Order with Regiments of Renown",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1JzbGtFNENzd2ZKY3JuSlJCNEdMeS1ES3o1UzZjV0NJYXVCMzd1bVdFSnJVZU1HMVNmV2lKcnJMbGZlQVBNR2E5REhLU1F5VnJ3dldOUElkSEJsbW8xS0psRjFNOVJ3STg4N05BbUQwdEctVUkwMy1FVndndFJ2eU9meHRUU1dBSklSdnVBRmxrQkpHQ2pRaUV4anU2RVkzSDhWYS1mQkw3UGhSR2lSX1o3NVQyVEh3Q2x6aFB6NjhFYVRu?oc=5",
+      "source": "Warhammer Community",
       "category": "business",
-      "published": "Sat, 07 Nov 2026 ",
+      "published": "Thu, 05 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1482,7 +1482,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 8 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-08T13:16:18.368994"
+    "timestamp": "2026-11-08T13:24:01.960649"
   },
   "sticky": {
     "cnbc": [
@@ -1497,7 +1497,7 @@
         "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
         "url": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
         "source": "CNBC",
-        "published": "2026-11-08T18:06:12",
+        "published": "2026-11-08T18:18:30",
         "description": "Lawmakers want to question Nvidia CEO Jensen Huang following reports about his relationship with an alleged Chinese intelligence asset."
       },
       {
@@ -1670,16 +1670,16 @@
     },
     {
       "symbol": "PL=F",
-      "price": 1536.9,
-      "change": -1.3,
-      "change_percent": -0.08,
+      "price": 1538.2,
+      "change": -0.0,
+      "change_percent": -0.0,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1017.1,
-      "change": 3.0,
-      "change_percent": 0.3,
+      "price": 1014.1,
+      "change": -0.0,
+      "change_percent": -0.0,
       "name": "Palladium Dec 26"
     },
     {

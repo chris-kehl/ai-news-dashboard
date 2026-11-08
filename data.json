@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T00:16:09.207665",
+  "timestamp": "2026-11-08T00:24:14.386367",
   "summary": "Key topics today:\n- - Goodbye Claude, Hello Pi (r/HackerNews, 101 pts)\n- - Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files (r/HackerNews, 101 pts)\n- - The end of Microsoft Research's AI Frontiers group (r/HackerNews, 101 pts)\n- - Show HN: Maple \u2013 Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU (r/HackerNews, 101 pts)\n- - What I run on my $10 USD OpenStick homelab (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "type": "sell",
+      "asset": "MELI",
+      "price": 1510.0,
+      "change": -13.21,
+      "category": "stock",
+      "text": "MELI -13.2% drop @ $1510.00"
+    },
+    {
+      "type": "sell",
       "asset": "COIN",
       "price": 134.76,
       "change": -11.05,
@@ -33,14 +41,6 @@
       "change": -10.8,
       "category": "stock",
       "text": "AMC -10.8% drop @ $3.14"
-    },
-    {
-      "type": "sell",
-      "asset": "MSTR",
-      "price": 128.93,
-      "change": -9.55,
-      "category": "stock",
-      "text": "MSTR -9.6% drop @ $128.93"
     },
     {
       "type": "watch",
@@ -109,11 +109,11 @@
       "created": ""
     },
     {
-      "title": "Kirlian Photography: Building Your Own Equipment",
+      "title": "Uranium cubes reveal why the German nuclear project failed",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
+      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
       "created": ""
     },
     {
@@ -125,18 +125,18 @@
       "created": ""
     },
     {
-      "title": "Uranium cubes reveal why the German nuclear project failed",
+      "title": "Kirlian Photography: Building Your Own Equipment",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-08T05:16:00.506102",
+    "timestamp": "2026-11-08T05:24:05.694325",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,21 +438,14 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-08T05:15:38.215412",
+    "timestamp": "2026-11-08T05:23:41.404176",
     "trending": [
       {
-        "symbol": "VXUS",
-        "price": 80.92,
-        "change": -2.96,
-        "change_percent": -3.53,
-        "name": "Vanguard Total International St"
-      },
-      {
-        "symbol": "SCHD",
-        "price": 35.17,
-        "change": -1.04,
-        "change_percent": -2.87,
-        "name": "Schwab US Dividend Equity ETF"
+        "symbol": "MELI",
+        "price": 1510.0,
+        "change": -229.88,
+        "change_percent": -13.21,
+        "name": "MercadoLibre, Inc."
       },
       {
         "symbol": "TTWO",
@@ -467,6 +460,13 @@
         "change": -1.04,
         "change_percent": -2.56,
         "name": "Alcoa Corporation"
+      },
+      {
+        "symbol": "XOM",
+        "price": 165.87,
+        "change": -3.4,
+        "change_percent": -2.01,
+        "name": "ExxonMobil Holdings Corporation"
       },
       {
         "symbol": "BRK-A",
@@ -490,6 +490,13 @@
         "name": "Ondas Inc"
       },
       {
+        "symbol": "PG",
+        "price": 165.4,
+        "change": -1.92,
+        "change_percent": -1.15,
+        "name": "Procter & Gamble Company (The)"
+      },
+      {
         "symbol": ".RUT",
         "price": 2754.105,
         "change": 24.22,
@@ -502,13 +509,6 @@
         "change": -1.08,
         "change_percent": -0.76,
         "name": "Pepsico, Inc."
-      },
-      {
-        "symbol": "SOL-USD",
-        "price": 89.22,
-        "change": -0.45,
-        "change_percent": -0.5,
-        "name": "Solana USD"
       },
       {
         "symbol": ".DJI",
@@ -526,24 +526,24 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2234.45,
-        "change": -2.47,
-        "change_percent": -0.11,
+        "price": 2233.88,
+        "change": -3.04,
+        "change_percent": -0.14,
         "name": "Ethereum USD"
       },
       {
         "symbol": "BTC-USD",
-        "price": 75792.8,
-        "change": 39.09,
-        "change_percent": 0.05,
+        "price": 75747.92,
+        "change": -5.79,
+        "change_percent": -0.01,
         "name": "Bitcoin USD"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 1.16,
-        "change": 0.0,
-        "change_percent": 0.04,
-        "name": "XRP USD"
+        "symbol": "GLD",
+        "price": 372.52,
+        "change": 0.03,
+        "change_percent": 0.01,
+        "name": "SPDR Gold Shares"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-08T05:15:56.476165",
+    "timestamp": "2026-11-08T05:23:59.925040",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,39 +1068,45 @@
       },
       {
         "symbol": "TAO",
-        "price": 221.38,
-        "change": -1.46,
+        "price": 221.31,
+        "change": -1.63,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75822,
-        "change": -0.04,
+        "price": 75792,
+        "change": -0.16,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2234.97,
-        "change": -0.37,
+        "price": 2234.77,
+        "change": -0.5,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 89.24,
-        "change": -0.67,
+        "change": -0.87,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.76,
-        "change": -0.37,
+        "price": 10.75,
+        "change": -0.59,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.17,
-        "change": -1.81,
+        "change": -1.86,
         "type": "crypto"
+      },
+      {
+        "symbol": "MELI",
+        "price": 1510.0,
+        "change": -13.21,
+        "type": "mover"
       },
       {
         "symbol": "AMC",
@@ -1115,21 +1121,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SCHD",
-        "price": 35.17,
-        "change": -2.87,
-        "type": "mover"
-      },
-      {
-        "symbol": "TTWO",
-        "price": 214.87,
-        "change": 2.86,
-        "type": "mover"
-      },
-      {
         "symbol": "AA",
         "price": 39.54,
         "change": -2.56,
+        "type": "mover"
+      },
+      {
+        "symbol": "XOM",
+        "price": 165.87,
+        "change": -2.01,
         "type": "mover"
       },
       {
@@ -1145,15 +1145,15 @@
         "type": "mover"
       },
       {
-        "symbol": "PEP",
-        "price": 141.34,
-        "change": -0.76,
+        "symbol": "PG",
+        "price": 165.4,
+        "change": -1.15,
         "type": "mover"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 89.21,
-        "change": -0.51,
+        "symbol": "PEP",
+        "price": 141.34,
+        "change": -0.76,
         "type": "mover"
       },
       {
@@ -1522,7 +1522,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 8 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-08T00:16:07.030530"
+    "timestamp": "2026-11-08T00:24:12.409102"
   },
   "sticky": {
     "cnbc": [
@@ -1608,18 +1608,18 @@
         "description": "Wall Street bets Democratic sweep will empower moderates in Washington&nbsp;&nbsp;Financial Times"
       },
       {
-        "title": "Western Digital Stock Rebounds as Wall Street Bets AI Storage Demand Outlasts Election Rout - Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOS1o3ZzAza3lHOW9jekc5S1g4OG5CV0V1TGNaNWdPLUcxWlZxMWkzV2wwMlJOLWtfOFhoLWxUOUhKakFtRVlVU3dmUjdtSjd0c09jSHlUOUxMcEhzbFJNdjNuVTZ6Q2RoQVVyQ1poVFpWYW1qRGVXQUhoWkcxaHJqNE1IaW83VG0zOVphMHJ0R3IyUG9oeUhzMW1ZVG9YdkR3UW51ZFZIQTZYcTg5VnU4SlRZSjFfLXhQUkhBelJfYkRWazZXVkcyaHIyQjBoZkNpZzEyQ1VfQWNoaDQy?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-06T15:08:29",
-        "description": "Western Digital Stock Rebounds as Wall Street Bets AI Storage Demand Outlasts Election Rout&nbsp;&nbsp;Benzinga"
-      },
-      {
         "title": "Grindr CEO's wallstreetbets AMA drew 673 comments and a data-breach question that matters - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBqR09hOGlDeDFadXNVYTFwMUZVMjF0RnlMZ1Z0ZWhYUEF3Nm5GOXhja0VxQUZJVEhoQm80aUU1OXBaMktTS0RIRHNXV1M5V0V6RWM1UG9sT0lHZ0R4OXV3enU5ejBWak5zUDdSQnhINFZ2bkU2a0pCb1lrNUY?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-11-06T16:05:40",
         "description": "Grindr CEO's wallstreetbets AMA drew 673 comments and a data-breach question that matters&nbsp;&nbsp;24/7 Wall St."
+      },
+      {
+        "title": "Western Digital Stock Rebounds as Wall Street Bets AI Storage Demand Outlasts Election Rout - Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOS1o3ZzAza3lHOW9jekc5S1g4OG5CV0V1TGNaNWdPLUcxWlZxMWkzV2wwMlJOLWtfOFhoLWxUOUhKakFtRVlVU3dmUjdtSjd0c09jSHlUOUxMcEhzbFJNdjNuVTZ6Q2RoQVVyQ1poVFpWYW1qRGVXQUhoWkcxaHJqNE1IaW83VG0zOVphMHJ0R3IyUG9oeUhzMW1ZVG9YdkR3UW51ZFZIQTZYcTg5VnU4SlRZSjFfLXhQUkhBelJfYkRWazZXVkcyaHIyQjBoZkNpZzEyQ1VfQWNoaDQy?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-06T15:08:29",
+        "description": "Western Digital Stock Rebounds as Wall Street Bets AI Storage Demand Outlasts Election Rout&nbsp;&nbsp;Benzinga"
       },
       {
         "title": "Dow Jones forecast: Dow surges 1,200 points as Wall Street bets on political gridlock - Beinsure",

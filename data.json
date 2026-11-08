@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T18:16:31.018351",
+  "timestamp": "2026-11-08T18:18:22.382389",
   "summary": "Key topics today:\n- - Nvidia CEO Jensen Huang's letter to staff about affair (r/HackerNews, 101 pts)\n- - Goldman Sachs is pulling Claude Code from its bankers and traders (r/HackerNews, 101 pts)\n- - Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU (r/HackerNews, 101 pts)\n- - How I Fight AI Brain Fry (r/HackerNews, 101 pts)\n- - I'm not a fan of Deno's security model (2024) (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -27,6 +27,14 @@
       "text": "ZEC -2.9% @ $1,215.80"
     },
     {
+      "type": "buy",
+      "asset": "NVD",
+      "price": 5.17,
+      "change": 12.15,
+      "category": "stock",
+      "text": "NVD +12.2% momentum @ $5.17"
+    },
+    {
       "type": "sell",
       "asset": "CRDO",
       "price": 120.51,
@@ -41,14 +49,6 @@
       "change": -11.05,
       "category": "stock",
       "text": "COIN -11.1% drop @ $134.76"
-    },
-    {
-      "type": "sell",
-      "asset": "^KS11",
-      "price": 5059.69,
-      "change": -10.98,
-      "category": "stock",
-      "text": "^KS11 -11.0% drop @ $5059.69"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-08T23:16:01.522410",
+    "timestamp": "2026-11-08T23:18:14.006017",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-08T23:15:38.464139",
+    "timestamp": "2026-11-08T23:17:50.981765",
     "trending": [
+      {
+        "symbol": "NVD",
+        "price": 5.17,
+        "change": 0.56,
+        "change_percent": 12.15,
+        "name": "GraniteShares 2x Short NVDA Dai"
+      },
       {
         "symbol": "CRDO",
         "price": 120.51,
@@ -461,13 +468,6 @@
         "change": -624.11,
         "change_percent": -10.98,
         "name": "KOSPI Composite Index"
-      },
-      {
-        "symbol": "AMD",
-        "price": 449.04,
-        "change": -39.74,
-        "change_percent": -8.13,
-        "name": "Advanced Micro Devices, Inc."
       },
       {
         "symbol": "HUT",
@@ -492,9 +492,9 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2148.57,
-        "change": -87.75,
-        "change_percent": -3.92,
+        "price": 2156.55,
+        "change": -79.77,
+        "change_percent": -3.57,
         "name": "Ethereum USD"
       },
       {
@@ -513,17 +513,10 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 75110.35,
-        "change": -637.23,
-        "change_percent": -0.84,
+        "price": 75317.56,
+        "change": -430.02,
+        "change_percent": -0.57,
         "name": "Bitcoin USD"
-      },
-      {
-        "symbol": "EURUSD=X",
-        "price": 1.11,
-        "change": -0.01,
-        "change_percent": -0.76,
-        "name": "EUR/USD"
       },
       {
         "symbol": ".DJI",
@@ -552,6 +545,13 @@
         "change": 0.0,
         "change_percent": 0.0,
         "name": "E-Mini S&P 500 Dec 26"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 90.83,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-08T23:15:56.807397",
+    "timestamp": "2026-11-08T23:18:09.985840",
     "items": [
       {
         "symbol": "SPX",
@@ -1064,8 +1064,8 @@
       },
       {
         "symbol": "PA=F",
-        "price": 1017.1,
-        "change": 0.3,
+        "price": 1014.1,
+        "change": -0.0,
         "type": "future"
       },
       {
@@ -1076,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 217.74,
-        "change": -2.31,
+        "price": 218.5,
+        "change": -1.8,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75159,
-        "change": -0.68,
+        "price": 75382,
+        "change": -0.19,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2152.64,
-        "change": -3.59,
+        "price": 2157.69,
+        "change": -3.12,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 87.48,
-        "change": -2.02,
+        "price": 87.85,
+        "change": -1.55,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.51,
-        "change": -2.81,
+        "price": 10.56,
+        "change": -2.3,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.01,
-        "change": -2.44,
+        "price": 8.03,
+        "change": -2.09,
         "type": "crypto"
       },
       {
@@ -1154,8 +1154,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 2162.65,
-        "change": -3.29,
+        "price": 2161.49,
+        "change": -3.35,
         "type": "mover"
       },
       {
@@ -1166,8 +1166,8 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 75541.71,
-        "change": -0.27,
+        "price": 75549.43,
+        "change": -0.26,
         "type": "mover"
       }
     ]
@@ -1224,16 +1224,6 @@
       "author": ""
     },
     {
-      "title": "U.S. Cleared Nvidia Chips to Chinese Firms With Empty Offices and Troubling Ties",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRlJEVDBTejg0VUNTOGFiekp4MFdyWVkxaWg3OFpBR0Q1QW1FTTNkU2t6YzllLTlhM0hxbFUzS3VuUzhOdi1vNURJOXBzZHI4eHZ0WURLcmljcTQ3ZEM4b2c1YVRPd3hoS3phLVVtbE5YcHA5MXExajJCQUl5R2VnOFZlSGNfbUxKNjlF?oc=5",
-      "source": "The New York Times",
-      "category": "business",
-      "published": "Sun, 08 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Newport Beach fishermen find Royal Caribbean cruise ship employee treading water 20 miles off coast",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZE5YVXhVSmtQWGhrZ05Cd01kckhIRWZma05yck9aMzc3ZmRBQlBvbm9mUExwTXF5Z0pTUTljY0VxQ0h6RGZDX01waXR0aFdzdHlDZHJJZWYtTTBQR1pqY0JzYkN3UE9wQ2d6Z1JzcEpZYmF6SlFHd1N0OU9pMnd1enkxeXliVTVnWkVhUEZHVFN1OEFoMnlxTm5JZ2pYTHVsUXVDY28tZDZoZS1DUFU4clVidVZ2clB5bVVHYXkxdmVZX3c?oc=5",
       "source": "CBS News",
@@ -1249,6 +1239,16 @@
       "source": "STAT",
       "category": "business",
       "published": "Sat, 07 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Top 5 stocks to watch this week",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPakF3LVBBdVhLNnFsaXBNQWk0YUFXOXVKZ19YZjdac240Q0Q2VjZrUU5hUnhyc3FLcFhuNW1fRTZwaURhYi15Q2dLNzBMWW1fc2hGWnRBMThYZnltMHVlTzMxdnBleXRucnJKTl92ekcxQU42SVZvVXo0NDlMSlFMbm5jQVc2QnloNDRWbGNURHNRUQ?oc=5",
+      "source": "Yahoo Finance",
+      "category": "business",
+      "published": "Sun, 08 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1514,7 +1514,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 8 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-08T18:16:28.548975"
+    "timestamp": "2026-11-08T18:18:20.251731"
   },
   "sticky": {
     "cnbc": [
@@ -1568,11 +1568,11 @@
         "description": "Amazon has formed a new home robotics team and is hiring for a \u201cnew-to-world robot product,\u201d according to CNBC\u2019s analysis of job posts."
       },
       {
-        "title": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
-        "url": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
+        "title": "Mark Cuban says he doesn\u2019t \u2018give a f---' about growing his net worth\u2014a healthy mindset for non-billionaires too, a financial therapist says",
+        "url": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
         "source": "CNBC",
-        "published": "2026-11-08T14:00:01",
-        "description": "Poppi founders Allison and Stephen Ellsworth are launching Jetty, a hydration brand selling bottled drinks and powders at Whole Foods, Target and Amazon."
+        "published": "2026-11-07T14:05:01",
+        "description": "The billionaire serial entrepreneur says he cares more about the impact he can have by spending and investing, rather than worrying about amassing more wealth."
       }
     ],
     "yahoo_finance": [],
@@ -1709,9 +1709,9 @@
     },
     {
       "symbol": "PA=F",
-      "price": 1017.1,
-      "change": 3.0,
-      "change_percent": 0.3,
+      "price": 1014.1,
+      "change": -0.0,
+      "change_percent": -0.0,
       "name": "Palladium Dec 26"
     },
     {

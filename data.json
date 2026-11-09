@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-08T21:16:17.936831",
-  "summary": "Key topics today:\n- - KetchUp \u2013 Open-source SketchUp alternative built with Rust and WebGPU (r/HackerNews, 101 pts)\n- - I'm Not Convinced the AI Bubble Exists (r/HackerNews, 101 pts)\n- - Goldman Sachs is pulling Claude Code from its bankers and traders (r/HackerNews, 101 pts)\n- - Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU (r/HackerNews, 101 pts)\n- - How I Fight AI Brain Fry (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-08T21:19:52.038037",
+  "summary": "Key topics today:\n- - KetchUp \u2013 Open-source SketchUp alternative built with Rust and WebGPU (r/HackerNews, 101 pts)\n- - I'm Not Convinced the AI Bubble Exists (r/HackerNews, 101 pts)\n- - Goldman Sachs is pulling Claude Code from its bankers and traders (r/HackerNews, 101 pts)\n- - Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU (r/HackerNews, 101 pts)\n- - Goodbye Claude, hello Pi (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
@@ -19,28 +19,28 @@
       "text": "XRP -3.6% @ $1.11"
     },
     {
+      "type": "buy",
+      "asset": "FLY",
+      "price": 20.76,
+      "change": 20.98,
+      "category": "stock",
+      "text": "FLY +21.0% momentum @ $20.76"
+    },
+    {
+      "type": "sell",
+      "asset": "BMNR",
+      "price": 18.76,
+      "change": -13.67,
+      "category": "stock",
+      "text": "BMNR -13.7% drop @ $18.76"
+    },
+    {
       "type": "sell",
       "asset": "COIN",
       "price": 134.76,
       "change": -11.05,
       "category": "stock",
       "text": "COIN -11.1% drop @ $134.76"
-    },
-    {
-      "type": "sell",
-      "asset": "AMC",
-      "price": 3.14,
-      "change": -10.8,
-      "category": "stock",
-      "text": "AMC -10.8% drop @ $3.14"
-    },
-    {
-      "type": "sell",
-      "asset": "MSTR",
-      "price": 128.93,
-      "change": -9.55,
-      "category": "stock",
-      "text": "MSTR -9.6% drop @ $128.93"
     },
     {
       "type": "watch",
@@ -85,19 +85,19 @@
       "created": ""
     },
     {
-      "title": "How I Fight AI Brain Fry",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "created": ""
-    },
-    {
       "title": "Goodbye Claude, hello Pi",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://caleb.software/posts/claude-to-pi.html",
+      "created": ""
+    },
+    {
+      "title": "How I Fight AI Brain Fry",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-09T02:16:04.414158",
+    "timestamp": "2026-11-09T02:19:40.171596",
     "prices": [
       {
         "name": "Bittensor",
@@ -333,12 +333,12 @@
       "description": "Fog could disrupt Monday morning\u2019s commute"
     },
     {
-      "title": "Government looking at banning under-16s from Vinted and eBay",
-      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&at_campaign=rss",
+      "title": "Society needs to act to help white working-class pupils, inquiry says",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyqql26xe8o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
-      "published": "Sun, 08 Nov 2026 ",
-      "description": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
+      "published": "Mon, 09 Nov 2026 ",
+      "description": "The education secretary says she is backing the inquiry to \"get to the heart of the barriers holding children back\"."
     },
     {
       "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
@@ -438,8 +438,43 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-09T02:15:40.212764",
+    "timestamp": "2026-11-09T02:19:17.294717",
     "trending": [
+      {
+        "symbol": "FLY",
+        "price": 20.76,
+        "change": 3.6,
+        "change_percent": 20.98,
+        "name": "Firefly Aerospace Inc."
+      },
+      {
+        "symbol": "BMNR",
+        "price": 18.76,
+        "change": -2.97,
+        "change_percent": -13.67,
+        "name": "BitMine Immersion Technologies,"
+      },
+      {
+        "symbol": "AVGO",
+        "price": 293.69,
+        "change": -31.79,
+        "change_percent": -9.77,
+        "name": "Broadcom Inc."
+      },
+      {
+        "symbol": "MSTR",
+        "price": 128.93,
+        "change": -13.61,
+        "change_percent": -9.55,
+        "name": "Strategy Inc"
+      },
+      {
+        "symbol": "AMD",
+        "price": 449.04,
+        "change": -39.74,
+        "change_percent": -8.13,
+        "name": "Advanced Micro Devices, Inc."
+      },
       {
         "symbol": "HUT",
         "price": 52.65,
@@ -455,18 +490,32 @@
         "name": "NVIDIA Corporation"
       },
       {
-        "symbol": "SI=F",
-        "price": 53.22,
-        "change": 1.42,
-        "change_percent": 2.75,
-        "name": "Silver Dec 26"
+        "symbol": "MSFT",
+        "price": 530.61,
+        "change": -25.19,
+        "change_percent": -4.53,
+        "name": "Microsoft Corporation"
       },
       {
-        "symbol": "GC=F",
-        "price": 4133.5,
-        "change": 58.6,
-        "change_percent": 1.44,
-        "name": "Gold Dec 26"
+        "symbol": "AAPL",
+        "price": 342.37,
+        "change": -7.14,
+        "change_percent": -2.04,
+        "name": "Apple Inc."
+      },
+      {
+        "symbol": "BRK-B",
+        "price": 570.89,
+        "change": -8.2,
+        "change_percent": -1.42,
+        "name": "Berkshire Hathaway Inc. New"
+      },
+      {
+        "symbol": "RKLB",
+        "price": 53.07,
+        "change": 0.7,
+        "change_percent": 1.34,
+        "name": "Rocket Lab Corporation"
       },
       {
         "symbol": ".RUT",
@@ -476,32 +525,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 2143.05,
-        "change": 18.72,
-        "change_percent": 0.88,
-        "name": "Ethereum USD"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 75152.23,
-        "change": 432.41,
-        "change_percent": 0.58,
+        "price": 75253.44,
+        "change": 533.62,
+        "change_percent": 0.71,
         "name": "Bitcoin USD"
-      },
-      {
-        "symbol": "YM=F",
-        "price": 51670.0,
-        "change": 285.0,
-        "change_percent": 0.55,
-        "name": "Mini Dow Jones Indus.-$5 Dec 26"
-      },
-      {
-        "symbol": "RTY=F",
-        "price": 2775.5,
-        "change": 15.0,
-        "change_percent": 0.54,
-        "name": "E-mini Russell 2000 Index Futur"
       },
       {
         "symbol": ".DJI",
@@ -511,39 +539,11 @@
         "name": "DJIA"
       },
       {
-        "symbol": "ES=F",
-        "price": 7426.75,
-        "change": 24.75,
-        "change_percent": 0.33,
-        "name": "E-Mini S&P 500 Dec 26"
-      },
-      {
-        "symbol": "XRP-USD",
-        "price": 1.11,
-        "change": 0.0,
-        "change_percent": 0.32,
-        "name": "XRP USD"
-      },
-      {
         "symbol": ".SPX",
         "price": 7376.86,
         "change": 23.13,
         "change_percent": 0.31,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "NQ=F",
-        "price": 27152.0,
-        "change": 66.75,
-        "change_percent": 0.25,
-        "name": "Nasdaq 100 Dec 26"
-      },
-      {
-        "symbol": "CL=F",
-        "price": 90.67,
-        "change": -0.16,
-        "change_percent": -0.18,
-        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-09T02:16:00.131206",
+    "timestamp": "2026-11-09T02:19:36.351942",
     "items": [
       {
         "symbol": "SPX",
@@ -1008,98 +1008,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7430.25,
-        "change": 0.38,
+        "price": 7431.0,
+        "change": 0.39,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27205.0,
-        "change": 0.44,
+        "price": 27197.0,
+        "change": 0.41,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51683.0,
-        "change": 0.58,
+        "price": 51675.0,
+        "change": 0.56,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2777.2,
-        "change": 0.6,
+        "price": 2776.5,
+        "change": 0.58,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.58,
-        "change": -0.28,
+        "price": 90.74,
+        "change": -0.1,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4136.2,
-        "change": 1.5,
+        "price": 4140.1,
+        "change": 1.6,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 53.33,
-        "change": 2.96,
+        "price": 53.4,
+        "change": 3.09,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1558.0,
-        "change": 1.29,
+        "price": 1561.8,
+        "change": 1.53,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1042.5,
-        "change": 2.8,
+        "price": 1043.5,
+        "change": 2.9,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.0,
-        "change": 0.1,
+        "price": 3.01,
+        "change": 0.27,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 218.55,
-        "change": -1.03,
+        "price": 218.68,
+        "change": -0.9,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 75160,
-        "change": -0.61,
+        "price": 75267,
+        "change": -0.47,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2143.7,
-        "change": -3.86,
+        "price": 2147.33,
+        "change": -3.7,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 87.88,
-        "change": -1.14,
+        "price": 87.97,
+        "change": -1.03,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.55,
-        "change": -1.89,
+        "price": 10.56,
+        "change": -1.77,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.04,
-        "change": -1.71,
+        "change": -1.56,
         "type": "crypto"
       },
       {
@@ -1498,7 +1498,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Sun 8 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-08T21:16:15.606097"
+    "timestamp": "2026-11-08T21:19:49.937571"
   },
   "sticky": {
     "cnbc": [
@@ -1637,72 +1637,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7430.25,
-      "change": 28.25,
-      "change_percent": 0.38,
+      "price": 7431.0,
+      "change": 29.0,
+      "change_percent": 0.39,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27187.25,
-      "change": 102.0,
-      "change_percent": 0.38,
+      "price": 27199.25,
+      "change": 114.0,
+      "change_percent": 0.42,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51683.0,
-      "change": 298.0,
-      "change_percent": 0.58,
+      "price": 51675.0,
+      "change": 290.0,
+      "change_percent": 0.56,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2776.9,
-      "change": 16.4,
-      "change_percent": 0.59,
+      "price": 2776.5,
+      "change": 16.0,
+      "change_percent": 0.58,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.58,
-      "change": -0.25,
-      "change_percent": -0.28,
+      "price": 90.72,
+      "change": -0.11,
+      "change_percent": -0.12,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4136.2,
-      "change": 61.3,
-      "change_percent": 1.5,
+      "price": 4141.4,
+      "change": 66.5,
+      "change_percent": 1.63,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 53.35,
-      "change": 1.54,
-      "change_percent": 2.98,
+      "price": 53.44,
+      "change": 1.63,
+      "change_percent": 3.15,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1558.0,
-      "change": 19.8,
-      "change_percent": 1.29,
+      "price": 1561.8,
+      "change": 23.6,
+      "change_percent": 1.53,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1042.5,
-      "change": 28.4,
-      "change_percent": 2.8,
+      "price": 1044.5,
+      "change": 30.4,
+      "change_percent": 3.0,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.0,
-      "change": 0.0,
-      "change_percent": 0.1,
+      "price": 3.01,
+      "change": 0.01,
+      "change_percent": 0.27,
       "name": "Natural Gas Dec 26"
     }
   ],

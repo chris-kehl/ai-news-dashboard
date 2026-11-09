@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-09T03:16:05.285643",
+  "timestamp": "2026-11-09T03:18:27.996392",
   "summary": "Key topics today:\n- - Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation (r/HackerNews, 101 pts)\n- - KetchUp \u2013 Open-source SketchUp alternative built with Rust and WebGPU (r/HackerNews, 101 pts)\n- - I'm not convinced the AI bubble exists (r/HackerNews, 101 pts)\n- - A Critique of GPUI (r/HackerNews, 101 pts)\n- - Nvidia CEO Jensen Huang's letter to staff about affair (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "KRMN",
-      "price": 45.61,
-      "change": 33.48,
-      "category": "stock",
-      "text": "KRMN +33.5% momentum @ $45.61"
-    },
-    {
-      "type": "buy",
       "asset": "FLY",
       "price": 20.76,
       "change": 20.98,
@@ -49,6 +41,14 @@
       "change": -14.22,
       "category": "stock",
       "text": "NVDL -14.2% drop @ $23.71"
+    },
+    {
+      "type": "sell",
+      "asset": "BMNR",
+      "price": 18.76,
+      "change": -13.67,
+      "category": "stock",
+      "text": "BMNR -13.7% drop @ $18.76"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-09T08:15:57.113076",
+    "timestamp": "2026-11-09T08:18:19.920006",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-09T08:15:35.492001",
+    "timestamp": "2026-11-09T08:17:58.470033",
     "trending": [
-      {
-        "symbol": "KRMN",
-        "price": 45.61,
-        "change": 11.44,
-        "change_percent": 33.48,
-        "name": "Karman Holdings Inc."
-      },
       {
         "symbol": "FLY",
         "price": 20.76,
@@ -477,18 +470,18 @@
         "name": "BitMine Immersion Technologies,"
       },
       {
+        "symbol": "NVD",
+        "price": 5.17,
+        "change": 0.56,
+        "change_percent": 12.15,
+        "name": "GraniteShares 2x Short NVDA Dai"
+      },
+      {
         "symbol": "MSTR",
         "price": 128.93,
         "change": -13.61,
         "change_percent": -9.55,
         "name": "Strategy Inc"
-      },
-      {
-        "symbol": "2513.HK",
-        "price": 432.6,
-        "change": -43.4,
-        "change_percent": -9.12,
-        "name": "Z.AI"
       },
       {
         "symbol": "AMD",
@@ -531,6 +524,13 @@
         "change": 0.7,
         "change_percent": 1.34,
         "name": "Rocket Lab Corporation"
+      },
+      {
+        "symbol": "ETH-USD",
+        "price": 2095.59,
+        "change": -25.39,
+        "change_percent": -1.2,
+        "name": "Ethereum USD"
       },
       {
         "symbol": ".RUT",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-09T08:15:53.273378",
+    "timestamp": "2026-11-09T08:18:16.515078",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 25.06,
-        "change": -2.26,
+        "price": 24.9,
+        "change": -2.89,
         "type": "index"
       },
       {
@@ -1016,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7408.75,
-        "change": 0.09,
+        "price": 7402.75,
+        "change": 0.01,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26939.5,
-        "change": -0.54,
+        "price": 26902.0,
+        "change": -0.68,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51627.0,
-        "change": 0.47,
+        "price": 51592.0,
+        "change": 0.4,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2781.1,
-        "change": 0.75,
+        "price": 2780.4,
+        "change": 0.72,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 90.03,
-        "change": -0.88,
+        "price": 89.97,
+        "change": -0.95,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4101.0,
-        "change": 0.64,
+        "price": 4100.7,
+        "change": 0.63,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.33,
-        "change": 0.75,
+        "price": 52.28,
+        "change": 0.64,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1541.6,
+        "price": 1541.5,
         "change": -4.93,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1026.5,
-        "change": -9.04,
+        "price": 1027.0,
+        "change": -8.99,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.01,
-        "change": -14.77,
+        "change": -14.83,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 212.38,
-        "change": -4.47,
+        "price": 212.91,
+        "change": -4.14,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 73769,
-        "change": -2.72,
+        "price": 73877,
+        "change": -2.59,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2091.05,
-        "change": -6.51,
+        "price": 2095.55,
+        "change": -6.33,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 85.64,
-        "change": -3.84,
+        "price": 85.87,
+        "change": -3.59,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.27,
-        "change": -4.16,
+        "price": 10.3,
+        "change": -3.92,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.85,
-        "change": -3.94,
+        "price": 7.87,
+        "change": -3.61,
         "type": "crypto"
       },
       {
@@ -1514,7 +1514,7 @@
     "changePercent": 1.35,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 9 Nov: 26,989.99, up +1.35% -- BULLISH. strong +1.35% move. Counter: price below SMA20, RSI 30.6 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-09T03:16:03.470142"
+    "timestamp": "2026-11-09T03:18:26.292135"
   },
   "sticky": {
     "cnbc": [
@@ -1653,72 +1653,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7407.5,
-      "change": 5.5,
-      "change_percent": 0.07,
+      "price": 7403.0,
+      "change": 1.0,
+      "change_percent": 0.01,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26930.75,
-      "change": -154.5,
-      "change_percent": -0.57,
+      "price": 26898.0,
+      "change": -187.25,
+      "change_percent": -0.69,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51614.0,
-      "change": 229.0,
-      "change_percent": 0.45,
+      "price": 51592.0,
+      "change": 207.0,
+      "change_percent": 0.4,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2780.3,
-      "change": 19.8,
+      "price": 2780.4,
+      "change": 19.9,
       "change_percent": 0.72,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 90.02,
-      "change": -0.81,
-      "change_percent": -0.89,
+      "price": 89.96,
+      "change": -0.87,
+      "change_percent": -0.96,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4101.0,
-      "change": 26.1,
-      "change_percent": 0.64,
+      "price": 4100.2,
+      "change": 25.3,
+      "change_percent": 0.62,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.33,
-      "change": 0.39,
-      "change_percent": 0.76,
+      "price": 52.26,
+      "change": 0.32,
+      "change_percent": 0.62,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1541.8,
-      "change": -79.7,
-      "change_percent": -4.92,
+      "price": 1541.3,
+      "change": -80.2,
+      "change_percent": -4.95,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1026.0,
-      "change": -102.5,
-      "change_percent": -9.08,
+      "price": 1027.0,
+      "change": -101.5,
+      "change_percent": -8.99,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.01,
       "change": -0.52,
-      "change_percent": -14.77,
+      "change_percent": -14.83,
       "name": "Natural Gas Dec 26"
     }
   ],

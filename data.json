@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-09T22:16:35.958540",
+  "timestamp": "2026-11-09T22:22:48.589280",
   "summary": "Key topics today:\n- - Claude Fable 5.2 and Mythos 5.2 (r/HackerNews, 101 pts)\n- - A primer on GPUs and kernel optimization (r/HackerNews, 101 pts)\n- - Muse Ember: Our smallest, most efficient model (r/HackerNews, 101 pts)\n- - Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far (r/HackerNews, 101 pts)\n- - The Race to Build a \"Find My\" for AI Chips (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -35,12 +35,12 @@
       "text": "AMD +25.8% momentum @ $508.58"
     },
     {
-      "type": "buy",
-      "asset": "ACHR",
-      "price": 4.81,
-      "change": 24.29,
+      "type": "sell",
+      "asset": "ACAD",
+      "price": 16.5,
+      "change": -22.32,
       "category": "stock",
-      "text": "ACHR +24.3% momentum @ $4.81"
+      "text": "ACAD -22.3% drop @ $16.50"
     },
     {
       "type": "watch",
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-10T03:16:11.641379",
+    "timestamp": "2026-11-10T03:22:35.280619",
     "prices": [
       {
         "name": "Bittensor",
@@ -293,20 +293,12 @@
   },
   "news": [
     {
-      "title": "Russell Brand sentenced to 10-and-a-half years in prison for rape and sexual assault",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd6dl18dmyo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc News",
-      "category": "bbc_news",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "The disgraced entertainer was sentenced on Monday following a four-week trial at Southwark Crown Court."
-    },
-    {
-      "title": "Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
+      "title": "Russell Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
       "url": "https://www.bbc.co.uk/news/articles/c95ynylr8j6xo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Tue, 10 Nov 2026 ",
-      "description": "Goldsmith accuses the convicted rapist of \"violence, coercive control and abuse\" while the two were together."
+      "description": "Goldsmith accuses the disgraced entertainer of \"violence, coercive control and abuse\" while the two were together."
     },
     {
       "title": "What happened inside court as Brand was sentenced",
@@ -339,6 +331,14 @@
       "category": "bbc_news",
       "published": "Tue, 10 Nov 2026 ",
       "description": "The president says the US is keeping \"status quo\" with Iran but remains \u201clocked and loaded\u201d should the situation in the Middle East change."
+    },
+    {
+      "title": "The superpower battle over energy \u2013 and what it means for your bills",
+      "url": "https://www.bbc.co.uk/news/articles/cw62y2z53pg1o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "A tug-of-war between China and the US could have a big impact on energy costs, but who will win?"
     },
     {
       "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-10T03:15:43.478369",
+    "timestamp": "2026-11-10T03:22:10.178672",
     "trending": [
       {
         "symbol": "RKLB",
@@ -448,11 +448,11 @@
         "name": "Rocket Lab Corporation"
       },
       {
-        "symbol": "ACHR",
-        "price": 4.81,
-        "change": 0.94,
-        "change_percent": 24.29,
-        "name": "Archer Aviation Inc."
+        "symbol": "ACAD",
+        "price": 16.5,
+        "change": -4.74,
+        "change_percent": -22.32,
+        "name": "ACADIA Pharmaceuticals Inc."
       },
       {
         "symbol": "ASTS",
@@ -497,6 +497,13 @@
         "name": "Zeta Global Holdings Corp."
       },
       {
+        "symbol": "SKYD",
+        "price": 8.7,
+        "change": 0.55,
+        "change_percent": 6.75,
+        "name": "Skydance Corporation"
+      },
+      {
         "symbol": "HIMS",
         "price": 22.94,
         "change": -1.12,
@@ -520,8 +527,8 @@
       {
         "symbol": ".SPX",
         "price": 7549.94,
-        "change": 196.21,
-        "change_percent": 2.67,
+        "change": 173.08,
+        "change_percent": 2.35,
         "name": "S&P 500"
       },
       {
@@ -960,7 +967,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-10T03:16:05.568931",
+    "timestamp": "2026-11-10T03:22:30.787102",
     "items": [
       {
         "symbol": "SPX",
@@ -994,104 +1001,110 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7581.5,
-        "change": 0.1,
+        "price": 7577.5,
+        "change": 0.04,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27990.75,
-        "change": -0.08,
+        "price": 27962.25,
+        "change": -0.19,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52644.0,
-        "change": 0.28,
+        "price": 52630.0,
+        "change": 0.25,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2852.8,
-        "change": 0.14,
+        "price": 2849.6,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.98,
-        "change": -1.0,
+        "price": 85.97,
+        "change": -1.01,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4121.6,
-        "change": 0.17,
+        "price": 4120.8,
+        "change": 0.15,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 53.03,
-        "change": 0.64,
+        "price": 52.97,
+        "change": 0.54,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1577.1,
-        "change": 0.99,
+        "price": 1575.8,
+        "change": 0.9,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1036.5,
-        "change": 1.47,
+        "price": 1037.5,
+        "change": 1.57,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.2,
-        "change": -0.53,
+        "change": -0.56,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 220.82,
-        "change": 2.19,
+        "price": 221.48,
+        "change": 2.33,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 74705,
-        "change": -0.25,
+        "price": 74774,
+        "change": -0.12,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2118.6,
-        "change": -0.86,
+        "price": 2120.47,
+        "change": -0.85,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 86.05,
-        "change": -1.41,
+        "price": 86.01,
+        "change": -1.62,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.57,
-        "change": 0.65,
+        "price": 10.58,
+        "change": 0.56,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.57,
-        "change": 7.34,
+        "price": 8.6,
+        "change": 7.52,
         "type": "crypto"
       },
       {
         "symbol": "RKLB",
         "price": 58.86,
         "change": 27.98,
+        "type": "mover"
+      },
+      {
+        "symbol": "ACAD",
+        "price": 16.5,
+        "change": -22.32,
         "type": "mover"
       },
       {
@@ -1131,21 +1144,15 @@
         "type": "mover"
       },
       {
-        "symbol": "ZETA",
-        "price": 32.42,
-        "change": 10.01,
-        "type": "mover"
-      },
-      {
         "symbol": "PLTR",
         "price": 169.2,
         "change": 9.17,
         "type": "mover"
       },
       {
-        "symbol": "GME",
-        "price": 25.59,
-        "change": 5.88,
+        "symbol": "SKYD",
+        "price": 8.7,
+        "change": 6.75,
         "type": "mover"
       }
     ]
@@ -1264,9 +1271,19 @@
       "author": ""
     },
     {
-      "title": "\"Art, including characters, terrain, animations, cutscenes and UI\" Bandai Namco and Monolith Soft helped out with Ocarina of Time on Switch 2",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbktsYmFhMWl1TGVNZnViX21UQUFEay1wTkRCcTMzaWVHTlV2SVZtSFdQUEowVUVqZlhESmozMkV1UFB4Z1hSSEFUekdIMzkzNG1jT3hkSmdra3JPcFp6NldwYXA1Yy1TMjVqOWxpZkcyRHR3cVM1ZmdMaUc0REI3Y1lR?oc=5",
-      "source": "Eurogamer.net",
+      "title": "Apple\u2019s $50 Intelligence Usage Packs extend access to some AI features",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEY1X0ZFY0k5R0ZvNEUzcU5qT2FYeFJhNF9WQjBZRHVrVmFUd0ZMdE45TDV6d0tRMVk0NXIzYmRYLWY5MmtvdmlFclhlTm9BQzRBQTBrUnJ1ZGtNeUtPaUkxLXZUVXVHVzV5MWxCNjAzeVp0SzFlam9lWHpYVFNwUUdBdzVJQ1RQd20teEtNTXIzNkViREVPa0lmbUpwRUVaYThBNTloN18?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 09 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU1BrSldWU3lCUUd5VUpXd2N3ejlSQUltVTR0Ql8tMUo5ZC1wdUFoaS1ZRzA2UjRBekhaRmZzd3J3d0w2SWgxZ1ROWjAwWVI2ejFid3hnb3hkUTdOelEzaFVOd0VVd2FfY2lkVEdnM0tmd3hSWXRDaFFCb19neUNRUHYwVjZkNnlGS2d3YQ?oc=5",
+      "source": "Mashable",
       "category": "business",
       "published": "Mon, 09 Nov 2026 ",
       "description": "",
@@ -1297,16 +1314,6 @@
       "title": "Google Store previews Black Friday 2026 deals, starting Nov. 19",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9HdDl1RlBXODc2QXhzUXhTZGdZUkQ3UVpPZ3NTalNfVjBzc19PeTg4Nm1neGd3NExFRmJ5aUhUbjU0LWNBVHRfbm9mbEtzQU1OZHRmdnZ1T2VXSU12OEZ5MUlrU2t0UTlnN0hqV0h6R04xVlE?oc=5",
       "source": "9to5Google",
-      "category": "business",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "The wait is almost over for this blockbuster video game. I see 35% upside in the stock",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZzRtNE1zMjNTVERUblBITFJkenAyd2w2Um0zMG9WNHhKa1RQY0hUOE5NUFVnLUg1Tkh3VlUtS3daNk91Zko4WjFOb1lmQkxlWmpXd2ZRTEgxNHE0Vk5OTVhkbjdOS3VqZDFjV0x0dHVOWDFycll5d09tdjI1clZNLVZSVHhRQzd3enZhQy03NE55U2lYVjVLNWRvalBvUWQ2ZC0xSG9DSlVTTndYY0dHX0U4ZXFTNHZTQk9QRmZBeGNMeGdrWXhB?oc=5",
-      "source": "CNBC",
       "category": "business",
       "published": "Mon, 09 Nov 2026 ",
       "description": "",
@@ -1524,7 +1531,7 @@
     "changePercent": 3.4,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Mon 9 Nov: 27,907.62, up +3.40% -- BULLISH. strong +3.4% move. Counter: price below SMA20, RSI 39.3 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-09T22:16:32.886790"
+    "timestamp": "2026-11-09T22:22:45.868678"
   },
   "sticky": {
     "cnbc": [
@@ -1663,65 +1670,65 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7581.5,
-      "change": 7.25,
-      "change_percent": 0.1,
+      "price": 7577.5,
+      "change": 3.25,
+      "change_percent": 0.04,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27990.0,
-      "change": -24.5,
-      "change_percent": -0.09,
+      "price": 27963.75,
+      "change": -50.75,
+      "change_percent": -0.18,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52645.0,
-      "change": 147.0,
-      "change_percent": 0.28,
+      "price": 52630.0,
+      "change": 132.0,
+      "change_percent": 0.25,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2852.8,
-      "change": 4.1,
-      "change_percent": 0.14,
+      "price": 2849.6,
+      "change": 0.9,
+      "change_percent": 0.03,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.98,
-      "change": -0.87,
-      "change_percent": -1.0,
+      "price": 85.97,
+      "change": -0.88,
+      "change_percent": -1.01,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4122.4,
-      "change": 7.9,
-      "change_percent": 0.19,
+      "price": 4121.1,
+      "change": 6.6,
+      "change_percent": 0.16,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 53.03,
-      "change": 0.34,
-      "change_percent": 0.64,
+      "price": 52.99,
+      "change": 0.29,
+      "change_percent": 0.55,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1577.1,
-      "change": 15.4,
-      "change_percent": 0.99,
+      "price": 1575.8,
+      "change": 14.1,
+      "change_percent": 0.9,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1036.5,
-      "change": 15.0,
-      "change_percent": 1.47,
+      "price": 1037.5,
+      "change": 16.0,
+      "change_percent": 1.57,
       "name": "Palladium Dec 26"
     },
     {

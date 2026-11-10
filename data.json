@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T03:16:09.303760",
+  "timestamp": "2026-11-10T03:17:39.002574",
   "summary": "Key topics today:\n- - Claude Fable 5.2 and Mythos 5.2 (r/HackerNews, 101 pts)\n- - CoreWeave bond yield tops 16% as AI credit stress rises (r/HackerNews, 101 pts)\n- - A primer on GPUs and kernel optimization (r/HackerNews, 101 pts)\n- - Muse Ember: Our smallest, most efficient model (r/HackerNews, 101 pts)\n- - Amazon saves millions by replacing Sonnet 4.6 with Strands Decider (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -28,19 +28,19 @@
     },
     {
       "type": "buy",
-      "asset": "FRVO",
-      "price": 11.38,
-      "change": 46.08,
-      "category": "stock",
-      "text": "FRVO +46.1% momentum @ $11.38"
-    },
-    {
-      "type": "buy",
       "asset": "AMD",
       "price": 508.58,
       "change": 25.76,
       "category": "stock",
       "text": "AMD +25.8% momentum @ $508.58"
+    },
+    {
+      "type": "sell",
+      "asset": "ACAD",
+      "price": 16.5,
+      "change": -22.32,
+      "category": "stock",
+      "text": "ACAD -22.3% drop @ $16.50"
     },
     {
       "type": "watch",
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-10T08:15:59.651020",
+    "timestamp": "2026-11-10T08:17:28.285831",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-10T08:15:37.369889",
+    "timestamp": "2026-11-10T08:17:06.493884",
     "trending": [
       {
         "symbol": "OMH",
@@ -446,13 +446,6 @@
         "change": 12.49,
         "change_percent": 93.56,
         "name": "Ohmyhome Limited"
-      },
-      {
-        "symbol": "FRVO",
-        "price": 11.38,
-        "change": 3.59,
-        "change_percent": 46.08,
-        "name": "Fervo Energy Company"
       },
       {
         "symbol": "ACAD",
@@ -476,13 +469,6 @@
         "name": "The Trade Desk, Inc."
       },
       {
-        "symbol": "WRBY",
-        "price": 30.21,
-        "change": 4.13,
-        "change_percent": 15.84,
-        "name": "Warby Parker Inc."
-      },
-      {
         "symbol": "SANM",
         "price": 149.64,
         "change": 19.41,
@@ -490,11 +476,18 @@
         "name": "Sanmina Corporation"
       },
       {
-        "symbol": "6600.HK",
-        "price": 52.45,
-        "change": 3.27,
-        "change_percent": 6.65,
-        "name": "ONEROBOTICS"
+        "symbol": "PLUG",
+        "price": 1.5,
+        "change": 0.15,
+        "change_percent": 11.11,
+        "name": "Plug Power, Inc."
+      },
+      {
+        "symbol": "ZETA",
+        "price": 32.42,
+        "change": 2.95,
+        "change_percent": 10.01,
+        "name": "Zeta Global Holdings Corp."
       },
       {
         "symbol": "HIMS",
@@ -520,8 +513,8 @@
       {
         "symbol": ".SPX",
         "price": 7549.94,
-        "change": 196.21,
-        "change_percent": 2.67,
+        "change": 173.08,
+        "change_percent": 2.35,
         "name": "S&P 500"
       },
       {
@@ -530,6 +523,20 @@
         "change": 866.69,
         "change_percent": 1.68,
         "name": "Dow Jones Industrial Average"
+      },
+      {
+        "symbol": "^KLSE",
+        "price": 1601.62,
+        "change": -14.96,
+        "change_percent": -0.93,
+        "name": "FTSE Bursa Malaysia KLCI"
+      },
+      {
+        "symbol": "^HSI",
+        "price": 24522.99,
+        "change": 41.13,
+        "change_percent": 0.17,
+        "name": "HANG SENG INDEX"
       }
     ],
     "meme_momentum": [
@@ -960,7 +967,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-10T08:15:55.103096",
+    "timestamp": "2026-11-10T08:17:24.685390",
     "items": [
       {
         "symbol": "SPX",
@@ -982,8 +989,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 19.79,
-        "change": -0.65,
+        "price": 19.78,
+        "change": -0.7,
         "type": "index"
       },
       {
@@ -994,19 +1001,19 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7592.75,
-        "change": 0.24,
+        "price": 7591.5,
+        "change": 0.23,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28029.5,
-        "change": 0.05,
+        "price": 28015.25,
+        "change": 0.0,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52752.0,
+        "price": 52748.0,
         "change": 0.48,
         "type": "future"
       },
@@ -1018,74 +1025,74 @@
       },
       {
         "symbol": "CL=F",
-        "price": 85.28,
-        "change": -1.81,
+        "price": 85.26,
+        "change": -1.83,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4125.1,
-        "change": 0.26,
+        "price": 4124.4,
+        "change": 0.24,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.9,
-        "change": 0.64,
+        "price": 52.85,
+        "change": 0.54,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1568.7,
-        "change": 0.48,
+        "price": 1567.3,
+        "change": 0.39,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1032.0,
-        "change": 1.29,
+        "price": 1032.5,
+        "change": 1.33,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.23,
-        "change": 0.34,
+        "change": 0.28,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 222.6,
-        "change": 4.55,
+        "price": 222.37,
+        "change": 4.53,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 74749,
-        "change": 1.27,
+        "price": 74712,
+        "change": 1.15,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2114.76,
-        "change": 1.03,
+        "price": 2113.77,
+        "change": 0.87,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 85.94,
-        "change": 0.16,
+        "price": 85.89,
+        "change": 0.05,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 10.64,
-        "change": 3.46,
+        "change": 3.32,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.48,
-        "change": 7.84,
+        "price": 8.49,
+        "change": 7.74,
         "type": "crypto"
       },
       {
@@ -1380,11 +1387,11 @@
       "relevance_score": 3
     },
     {
-      "title": "France accuses Iran of supermarket fridge hacking",
-      "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+      "title": "DR Congo sentences 66 soldiers to death for being 'cowards'",
+      "url": "https://www.bbc.co.uk/news/articles/cmreye1q3dnjo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "Tons of chilled and frozen food was spoiled last month as fridges and freezers in hundreds of supermarkets heated up.",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "The Congolese army's fight against rebel groups has long been hampered by disarray within its ranks.",
       "relevance_score": 3
     },
     {
@@ -1500,7 +1507,7 @@
     "changePercent": 3.4,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 10 Nov: 27,907.62, up +3.40% -- BULLISH. strong +3.4% move. Counter: price below SMA20, RSI 39.3 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-10T03:16:07.345005"
+    "timestamp": "2026-11-10T03:17:36.602383"
   },
   "sticky": {
     "cnbc": [
@@ -1639,72 +1646,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7592.75,
-      "change": 18.5,
-      "change_percent": 0.24,
+      "price": 7591.5,
+      "change": 17.25,
+      "change_percent": 0.23,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28031.0,
-      "change": 16.5,
-      "change_percent": 0.06,
+      "price": 28012.0,
+      "change": -2.5,
+      "change_percent": -0.01,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52752.0,
-      "change": 254.0,
+      "price": 52749.0,
+      "change": 251.0,
       "change_percent": 0.48,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2857.7,
-      "change": 9.0,
-      "change_percent": 0.32,
+      "price": 2857.5,
+      "change": 8.8,
+      "change_percent": 0.31,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.27,
-      "change": -1.58,
-      "change_percent": -1.82,
+      "price": 85.29,
+      "change": -1.56,
+      "change_percent": -1.8,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4125.1,
-      "change": 10.6,
-      "change_percent": 0.26,
+      "price": 4124.3,
+      "change": 9.8,
+      "change_percent": 0.24,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.9,
-      "change": 0.34,
-      "change_percent": 0.64,
+      "price": 52.85,
+      "change": 0.29,
+      "change_percent": 0.54,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1568.7,
-      "change": 7.5,
-      "change_percent": 0.48,
+      "price": 1567.3,
+      "change": 6.1,
+      "change_percent": 0.39,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1032.0,
-      "change": 13.1,
-      "change_percent": 1.29,
+      "price": 1032.5,
+      "change": 13.6,
+      "change_percent": 1.33,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.23,
       "change": 0.01,
-      "change_percent": 0.34,
+      "change_percent": 0.28,
       "name": "Natural Gas Dec 26"
     }
   ],

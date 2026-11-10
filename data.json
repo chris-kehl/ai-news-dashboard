@@ -1,14 +1,30 @@
 {
-  "timestamp": "2026-11-10T08:31:12.540938",
+  "timestamp": "2026-11-10T08:43:46.299723",
   "summary": "Key topics today:\n- - Claude Fable 5.2 and Mythos 5.2 (r/HackerNews, 101 pts)\n- - Anthropic to Seek $1.3T Valuation in IPO (r/HackerNews, 101 pts)\n- - Fireworks AI security breach impacts Notion and their customers (r/HackerNews, 101 pts)\n- - A primer on GPUs and kernel optimization (r/HackerNews, 101 pts)\n- - AlphaProof Code (r/HackerNews, 1 pts)",
   "signals": [
     {
-      "type": "watch",
+      "type": "sell",
       "asset": "ZEC",
-      "price": 1153.64,
-      "change": -4.93,
+      "price": 1147.16,
+      "change": -5.43,
       "category": "crypto",
-      "text": "ZEC -4.9% @ $1,153.64"
+      "text": "ZEC -5.4% dump @ $1,147.16 \u2014 watch support"
+    },
+    {
+      "type": "watch",
+      "asset": "SOL",
+      "price": 84.01,
+      "change": -2.74,
+      "category": "crypto",
+      "text": "SOL -2.7% @ $84.01"
+    },
+    {
+      "type": "watch",
+      "asset": "ETH",
+      "price": 2061.81,
+      "change": -2.61,
+      "category": "crypto",
+      "text": "ETH -2.6% @ $2,061.81"
     },
     {
       "type": "buy",
@@ -85,14 +101,6 @@
       "created": ""
     },
     {
-      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-      "created": ""
-    },
-    {
       "title": "Ableton Live 13",
       "subreddit": "HackerNews",
       "score": 1,
@@ -101,11 +109,19 @@
       "created": ""
     },
     {
-      "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+      "title": "Don't buy AR glasses",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://github.com/HolyArrs/HolyArrs",
+      "url": "https://blog.yaros.ae/dont-buy-ar-glasses/",
+      "created": ""
+    },
+    {
+      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
       "created": ""
     },
     {
@@ -117,98 +133,110 @@
       "created": ""
     },
     {
-      "title": "USPS now offers official ZIP Code boundary polygons",
+      "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://postalpro.usps.com/zcb",
+      "url": "https://github.com/HolyArrs/HolyArrs",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-10T13:31:00.993617",
+    "timestamp": "2026-11-10T13:43:30.937267",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 219.62,
-        "change_24h": -1.41,
-        "market_cap": 2573158479
+        "price": 217.29,
+        "change_24h": -2.22,
+        "market_cap": 2545016700
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 74248,
-        "change_24h": -0.44,
-        "market_cap": 1493147267254
+        "price": 73759,
+        "change_24h": -1.15,
+        "market_cap": 1483146070191
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2095.93,
-        "change_24h": -1.0,
-        "market_cap": 256136478074
+        "price": 2061.81,
+        "change_24h": -2.61,
+        "market_cap": 251862041095
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999099,
+        "price": 0.999124,
         "change_24h": 0.0,
-        "market_cap": 176885007069
+        "market_cap": 176889835158
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 686.64,
-        "change_24h": 0.4,
-        "market_cap": 90300263256
+        "price": 683.04,
+        "change_24h": -0.12,
+        "market_cap": 89800254096
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999544,
+        "price": 0.999541,
         "change_24h": 0.01,
-        "market_cap": 70014192741
+        "market_cap": 70009899287
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.078,
-        "change_24h": -1.41,
-        "market_cap": 68470520059
+        "price": 1.067,
+        "change_24h": -2.41,
+        "market_cap": 67752914283
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 84.69,
-        "change_24h": -1.98,
-        "market_cap": 50062728996
+        "price": 84.01,
+        "change_24h": -2.74,
+        "market_cap": 49642687020
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.318833,
-        "change_24h": 0.39,
-        "market_cap": 30300087932
+        "price": 0.318436,
+        "change_24h": 0.27,
+        "market_cap": 30264364047
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
-        "price": 1.04,
+        "price": 1.039,
         "change_24h": 0,
-        "market_cap": 27440133426
+        "market_cap": 27432174052
       },
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1153.64,
-        "change_24h": -4.93,
-        "market_cap": 19650106103
+        "price": 1147.16,
+        "change_24h": -5.43,
+        "market_cap": 19509116349
       }
     ],
     "news": [
+      {
+        "title": "Here\u2019s what happened in crypto today",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 10 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here\u2019s what happened in crypto today\" class=\"type:primaryImage\"></p><"
+      },
+      {
+        "title": "Bitcoin\u2019s \u2018best buying opportunity ever\u2019 has arrived: Mark Moss",
+        "url": "https://cointelegraph.com/magazine/bitcoins-best-buying-opportunity-ever-has-arrived-mark-moss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 10 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M706AM1558Y70YWGC5XVGNF0/mark-moss-trade-secrets.png\" alt=\"Bitcoin\u2019s \u2018best buying opportunity ever\u2019 has arrived: Mark Mos"
+      },
       {
         "title": "Bitcoin may benefit as global tightening slows, Binance Research says",
         "url": "https://cointelegraph.com/markets/bitcoin-price-global-tightening-binance-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -246,16 +274,10 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M72A03Z2PT2DV3G2XDQ2KCP2/car-exchange-smartphone-blockchain-bitgo-us.jpg\" alt=\"BitGo Q3 profit nearly doubles on crypto g"
       },
       {
-        "title": "BlackRock Bitcoin ETF outflows hit $1.66B over seven trading sessions",
-        "url": "https://cointelegraph.com/markets/blackrock-ibit-bitcoin-etf-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3%",
+        "url": "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3",
         "published": "Tue, 10 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7232GA99A62ZXE0BWPQXX71/hi-blackrock-issues-rare-warningis-bitcoins-future-at-risk-from-quantum-tech-1.jpg\" alt=\"BlackRo"
-      },
-      {
-        "title": "Securitize agrees to buy River One to expand into asset-backed lending",
-        "url": "https://cointelegraph.com/news/securitize-river-one-asset-backed-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Tue, 10 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1HFDYJCKJWQTKRMYKMVPJFP/hi-how-ondo-finance-plans-to-bring-tokenized-us-stocks-to-solana-3.jpg\" alt=\"Securitize agrees t"
+        "description": "A December rate hike appears completely assured, with Fed Governor Chris Waller suggesting even a 50-basis-point move could be appropriate."
       },
       {
         "title": "Ripple Prime head Marc Asch to step down, Noel Kimmel named successor",
@@ -274,12 +296,6 @@
         "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report",
         "published": "Tue, 10 Nov 2026 ",
         "description": "Bitcoin slipped despite a Monday rebound in U.S. stocks, with spot ETFs losing $201 million as traders await October inflation data later today."
-      },
-      {
-        "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
-        "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase",
-        "published": "Tue, 10 Nov 2026 ",
-        "description": "Fed Governor Waller backs December tightening even if inflation cools, while falling oil prices offer some relief and Anthropic withdraws IPO pricing details."
       }
     ]
   },
@@ -325,12 +341,12 @@
       "description": "Benjamin Netanyahu's main political rival, Gadi Eisenkot, has first chance to build a new government and oust the prime minister."
     },
     {
-      "title": "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8g8p53x6ko?at_medium=RSS&at_campaign=rss",
+      "title": "Iran rejects French claims it was behind supermarket fridge hacking",
+      "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Tue, 10 Nov 2026 ",
-      "description": "The contents of the calendar, including hair clips and keychains, have been widely criticised on social media."
+      "description": "Tons of chilled and frozen food was spoiled last month as fridges and freezers in hundreds of supermarkets heated up."
     },
     {
       "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
@@ -349,20 +365,20 @@
       "description": "Kyiv, Washington and Moscow have all sent delegations to the United Arab Emirates for the first trilateral talks since February."
     },
     {
-      "title": "'Cruise for life' ship seized in Singapore",
-      "url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Tue, 10 Nov 2026 ",
-      "description": "The Odyssey was meant to take guests around the world for years, but the trip was cut short after its operator ran out of money."
-    },
-    {
       "title": "DR Congo sentences 66 soldiers to death for being 'cowards'",
       "url": "https://www.bbc.co.uk/news/articles/cmreye1q3dnjo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
       "published": "Tue, 10 Nov 2026 ",
       "description": "The Congolese army's fight against rebel groups has long been hampered by disarray within its ranks."
+    },
+    {
+      "title": "'Cruise for life' ship seized in Singapore",
+      "url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "The Odyssey was meant to take guests around the world for years, but the trip was cut short after its operator ran out of money."
     },
     {
       "title": "Anthropic to raise $64bn in major stock market listing",
@@ -373,20 +389,20 @@
       "description": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78."
     },
     {
-      "title": "LIVE:  Secretary Hegseth holds news conference: ABC News Live",
+      "title": "Hegseth dismisses impeachment effort as 'political spectacle'",
+      "url": "https://abcnews.com/US/hegseth-dismisses-impeachment-effort-political-spectacle/story?id=138002466",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "Republican Rep. Thomas Massie introduced articles of impeachment against Hegseth on the House floor Monday afternoon."
+    },
+    {
+      "title": "LIVE:  ABC News Live",
       "url": "https://abcnews.com/video/41463246/",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Tue, 10 Nov 2026 ",
       "description": "24/7 coverage of breaking news and live events"
-    },
-    {
-      "title": "US refueling tankers moved to Germany due to unspecified Iran threat, source says",
-      "url": "https://abcnews.com/International/refueling-tankers-moved-uk-germany-due-unspecified-iran/story?id=138004946",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Tue, 10 Nov 2026 ",
-      "description": "\"We take proactive measures to ensure our aircraft, our people, and our installations remain safe and secure,\" a U.S. official told ABC News."
     },
     {
       "title": "Anthropic values itself at nearly $1.3 trillion, according to new IPO filing",
@@ -413,24 +429,24 @@
       "description": "Five months after Buffalo Police Officer Marc Hurst was shot six times while on duty, he celebrated a moment that once seemed far from certain: marrying his fiancee, Haley."
     },
     {
-      "title": "WATCH:  Woman living the 'dream' to save Arctic foxes in need",
+      "title": "WATCH:  Woman living the 'dream' to save foxes in need",
       "url": "https://abcnews.com/video/138004318/",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Tue, 10 Nov 2026 ",
-      "description": "ABC News' Danny New talks to a woman who's on a mission to save Arctic foxes at a sanctuary in upstate New York."
+      "description": "ABC News' Danny New talks to a woman who's on a mission to save foxes at a sanctuary in upstate New York."
     },
     {
-      "title": "Seven days of chaos in the ER: How this country's healthcare system is unraveling",
-      "url": "https://www.npr.org/2026/11/10/g-s1-152693/healthcare-ethiopia-conflict-emergency-room",
+      "title": "The average cost for a new vehicle in the U.S. hits a record high: over $51,000",
+      "url": "https://www.npr.org/2026/11/10/nx-s1-6026659/average-vehicle-price-record-high",
       "source": "Npr",
       "category": "npr",
       "published": "Tue, 10 Nov 2026 ",
-      "description": "Renewed fighting has pushed Ethiopia's healthcare system close to collapse: \"The whole emergency (room) was flooded with war trauma patients,\" one surgeon says of a brutal week in September."
+      "description": "Vehicle transaction prices are up to a new record high, according to the Kelley Blue Book \u2014 and some buyers are extending their car loans to finance them."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-10T13:30:37.577542",
+    "timestamp": "2026-11-10T13:43:07.988556",
     "trending": [
       {
         "symbol": "QBTS",
@@ -966,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-10T13:30:57.297569",
+    "timestamp": "2026-11-10T13:43:26.658010",
     "items": [
       {
         "symbol": "SPX",
@@ -988,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 20.69,
-        "change": 3.87,
+        "price": 21.42,
+        "change": 7.53,
         "type": "index"
       },
       {
@@ -1000,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7572.25,
-        "change": -0.03,
+        "price": 7539.0,
+        "change": -0.47,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27886.25,
-        "change": -0.46,
+        "price": 27693.25,
+        "change": -1.15,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52676.0,
-        "change": 0.34,
+        "price": 52518.0,
+        "change": 0.04,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2846.4,
-        "change": -0.08,
+        "price": 2823.5,
+        "change": -0.88,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 84.97,
-        "change": -2.16,
+        "price": 84.92,
+        "change": -2.22,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4081.3,
-        "change": -0.81,
+        "price": 4053.6,
+        "change": -1.48,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.28,
-        "change": -0.54,
+        "price": 51.7,
+        "change": -1.64,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1558.5,
-        "change": -0.17,
+        "price": 1548.7,
+        "change": -0.8,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1029.5,
-        "change": 1.04,
+        "price": 1022.0,
+        "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.26,
-        "change": 1.37,
+        "price": 3.25,
+        "change": 0.9,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 219.24,
-        "change": -1.66,
+        "price": 217.29,
+        "change": -2.22,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 74236,
-        "change": -0.63,
+        "price": 73759,
+        "change": -1.15,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2092.51,
-        "change": -1.27,
+        "price": 2061.81,
+        "change": -2.61,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 84.5,
-        "change": -2.38,
+        "price": 84.01,
+        "change": -2.74,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.5,
-        "change": -1.0,
+        "price": 10.41,
+        "change": -1.56,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.35,
-        "change": -4.29,
+        "price": 8.29,
+        "change": -4.32,
         "type": "crypto"
       },
       {
@@ -1158,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "Nvidia CEO's affair with alleged spy aided $7.5 billion in China chip shipments, Information reports",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUWZQSk5PbzdVdVhLaVFuakFlTy16TkhEdzcyaDJ6dmQyeDh1UFpBWFk3VjNrT24yZDgtNVU3cUZZODZyTFNxS3JScWdYWmxzcGFLOHNvVEJWSlBVckZHelJDcENpb0t1QkVyRkNON2hXX2hjcWRHN3piNFJxVWRDSEN3VHRWNVJZdHVRUHlhbFVUQ242emtCUXl5cmV4RVlnSWNjeEU1UklHZ3pBWGNCNUo5clRaWkVjRjNJUnVMbmlhUQ?oc=5",
-      "source": "Reuters",
+      "title": "Nvidia CEO\u2019s affair with an alleged Chinese spy could be a problem for the economy",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3lyMzJwdnl2WkRzbnM2UjAwT3ZSTUZDQTgzbzBiNnJnZWVaRXloREtmSl85dGhjRUZnd2lvUlpkWTFja3BoMHZwbDJIZXl0MWdkdnpwRGlwUHpkMUZ1Vzd4NnpKMWdrN29yczBZa19MSk41Y1lFZTJIT2NfSlVtQTUtMmROZFFqRm9BcFN3QVdpbEtWN29qM3hPOUVUTWI5QkdBQUdRSEhsZnM2NlJjRVZn?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1178,9 +1194,9 @@
       "author": ""
     },
     {
-      "title": "SoftBank swings to $7 billion loss after U.S. data center hit and Intel share decline",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41dzNVNXpCZ19zaUpDN1o2dVNwbmcyR2VXRDUtaktZRFJVYWJydkxydFQ2SENvNk1YaFo2YXZiZXBTM3BPUEtya19rWm41a1A0THJOQnNLSUdpNG41czhEb1Z3TDZTLVNkdHRuQjNvSXJva185Z1hZS05B?oc=5",
-      "source": "CNBC",
+      "title": "Inflation report to provide 1st snapshot of prices since midterm elections",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSXJaMUN1bndKWmd5WVhLY2ZOQlVGcXVmQi1jT3pkUF9EOXVKcGgwR2ZINDdPOHNpbFhvVkttYk0zOHE0TVJvak5NczI3R01KbTE3M2R1YkR3NWkyZXFCb2oyRl9FanlRX29sUDVFT0NMalVNVXI4QWx2c2hlN0tCMkJ4RktmS0ZHZTQ3cDJOczFkR0VycFBvbVhzUjdhQ3QyeXg0VGpBVjAydjFWbVVz0gG0AUFVX3lxTE1KU0NVdG1scWg3SktyVm9QZEJLdjdzd3F6UXR6R1pFVXdiai14aWhhMnJxQmpuU2FHNy1ZQUk3WmVjYV9LNjVRRW5YNG9JX3pWc1h5TWY4VzN2am5Ra1FOWUNEXzNXRUl2ajFrMWFWLTh0NWtwRzJHNl9SMXlSaE9XOXdHLUtNTG5QajVxTEhpMlpjM2kwWHdKd0RkaDFub0cwbGRHNGdPVFJxcWZpeC0zdC1iSw?oc=5",
+      "source": "ABC News - Breaking News, Latest News and Videos",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1188,8 +1204,8 @@
       "author": ""
     },
     {
-      "title": "Stock Market Today: Oil Prices Fall to $90 a Barrel on Trump Iran Comments; Investors Await CPI Report",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAycGFzVmI4Q3NSQ2ZMTC1DdDR0M2R3SG1OZm1DMHZ6OG9qa3dJUllpSThRa1RlYm5uWGZrVDE1VHJZU0xJdlBFRWpZSnhzU2hUMlJ1UDdJXzFxamNqTDE5bkgwUXowRV9JdUhyckdOclgyMHlaZFE2RlZR?oc=5",
+      "title": "Brent at $90 a Barrel as Trump Plays Down Need For Further Iran Strikes",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGtQeENiZTdiN1dPVDFNWjY0SGlydGRDM0tVLWdUN1U3SzBjc3I1NWlseXhZQXRXbXNYcFJ0Y0lTSGctWUxiMXdUSDJTLVFjOEhJcU9USVhWVjlURUpaWndnRnFCYnNYdHJ6ZDlWTTFvSlNHVm1wdWJ6U2l1bDZVakdObE1yUUE1dUNLd3JWclpHTWhPRTZWSW1DWk9FTGs?oc=5",
       "source": "WSJ",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
@@ -1208,8 +1224,8 @@
       "author": ""
     },
     {
-      "title": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXVKNll2bkFUUU5EVDg4eTF6a3YwZ0pIS0d4bGFTdkItMkl3SkFCbGRiZFdzSmlidHZZN3I1YzF1VkVXYlM0dDJrRlRPeDRGYXp6cVBuRGVjbl9vNWxrdlRYLTl4NTRxMnRFcGtuOUROekFvUUsxdTE1R3IwWmRKRVlUVFpFTlY0WXNlWTZTa1hIdmV1?oc=5",
+      "title": "SoftBank Logs $7 Billion Loss After US Data Center Costs Swell",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSktxUDVpOWtGcDFyOFMxRGNrbGxGLWFhNkRZMTFTZ2VkWENFblBZM3BGLWtrUHlUdHJtRjBOa2NlT1Q0ekNaQjA2R21ZR3V0UFJYci0zQkZIVUNWbjBtZ2o2Z0xTdzVOU3QtSTB3dGxzVWtrei1hQ1h4UzRuU2JYVWFCRDhGcDRhX09iWm51Q2FmbzZUVkQ3SFBJcTZKSzlra2ZZX2tKSEZiWXdkSUxnMmxxZzIzSDhJdkpZeVFXaElxTy11?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
@@ -1218,9 +1234,9 @@
       "author": ""
     },
     {
-      "title": "FDA warns GLP-1 drugs carry potential risk of rare eye condition",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPejlibFhNODd0NUZ2RDAwY0N6VG9FemJsUW5acG5zVEJfNVNSc1FGQzVTd2FtX0tjZDZKeUt5dGpyM1JRSXZKQWt2YV9MZXhQcXlpUHlGZUtUWmF5RkZhdmtrUlJIVzQ5ZUNTbTJvaVZDSWI1OXZOQ0ROdVNoSDA2d0NOZ1Byakc2STY1YkoyNV9ZZUFvc2dN?oc=5",
-      "source": "STAT",
+      "title": "How GM is trying to talk used car shoppers into buying new vehicles",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GODdMMDEyZDhiQ1VJeWtCRVh4X0tneFNOVkFrYURGX3pKSGtXQXBVSWlfb2ptQ255cDBDTXNuWmpYU3hWN2hsQ2lVaG5ad2ZmTUFZQkRyUmtpbWRVelpyc0RsRmRUUTMyZHNYSmZoSi1pa3JZ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1228,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "\u2018We Used to Be a Wealthy City\u2019: Auto Woes Slam German Towns",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcTZJX2lVWXk4Z3B5dzV5X3VvaDJ5cGhWQWxzVFVFc0pJM01QNkp5OVJieXVDMmZIanFWSUptTTBpeVJkTEN1NWl1QjFYVXl1YXd2NHAwcVhwdy02SHJLVlBoUHdQWWlYc0pWZVlzQzVhcERpTU5xSmhMOWVJWFdUbG95VQ?oc=5",
-      "source": "The New York Times",
+      "title": "Fed\u2019s Waller Backs December Rate Hike, Says Open to Larger Move",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObVpnOE9acjhRMXQ2dFNMV3FIZG9iVnIxNTFWOUp1X21oRkkyVUpoS3ZLV0p1TXdfb2RDclQybzZYTTlURlpyQ0tGeHItSnpuX3dHSjJ3Y1VFY3UxQ0puRERreU5rdDNUUUt0WU5kUjdBcjlkc1p0dkpXd0tIR3VLMUFUZlY5OEMxZHpmOUxvRjZNNUJFVG9QcnVKRQ?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1386,19 +1402,27 @@
       "relevance_score": 3
     },
     {
+      "title": "Pentagon Chief Hegseth calls US House impeachment effort a \u2018farce\u2019",
+      "url": "https://www.aljazeera.com/news/2026/11/10/pentagon-chief-hegseth-calls-us-house-impeachment-effort-a-farce?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "Hegseth condemns impeachment resolution against him as &#039;sabotage&#039;, defending his actions and policy decisions.",
+      "relevance_score": 3
+    },
+    {
+      "title": "Bangladesh prosecutor warns Hasina faces execution if she returns",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/bangladesh-prosecutor-warns-hasina-faces-execution-if-she-returns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "Bangladesh\u2019s International Crimes Tribunal has said ousted PM Sheikh Hasina will be executed if she returns home.",
+      "relevance_score": 3
+    },
+    {
       "title": "Why the GCC is setting up an advanced military command base in Kuwait",
       "url": "https://www.aljazeera.com/news/2026/11/10/gcc-agrees-to-set-up-advanced-military-command-headquarters-in-kuwait?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Tue, 10 Nov 2026 ",
       "description": "Gulf leaders emphasised the need to strengthen defence coordination to confront present and future regional challenges.",
-      "relevance_score": 3
-    },
-    {
-      "title": "Who moves first in Iran-US diplomacy?",
-      "url": "https://www.aljazeera.com/opinions/2026/11/10/who-moves-first-in-iran-us-diplomacy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Tue, 10 Nov 2026 ",
-      "description": "Breaking the deadlock requires coordinated, verifiable concessions, not demands for one side to act first.",
       "relevance_score": 3
     },
     {
@@ -1415,6 +1439,14 @@
       "source": "Bbc World",
       "published": "Tue, 10 Nov 2026 ",
       "description": "Benjamin Netanyahu's main political rival, Gadi Eisenkot, has first chance to build a new government and oust the prime minister.",
+      "relevance_score": 3
+    },
+    {
+      "title": "Iran rejects French claims it was behind supermarket fridge hacking",
+      "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "Tons of chilled and frozen food was spoiled last month as fridges and freezers in hundreds of supermarkets heated up.",
       "relevance_score": 3
     },
     {
@@ -1525,15 +1557,22 @@
     }
   ],
   "nasdaq_data": {
-    "price": 27907.62,
-    "change": 3.4,
-    "changePercent": 3.4,
-    "signal": "BULLISH",
-    "analysis": "NASDAQ-100 (NDX) Tue 10 Nov: 27,907.62, up +3.40% -- BULLISH. strong +3.4% move. Counter: price below SMA20, RSI 39.3 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-10T08:31:10.486822"
+    "price": 25744.34,
+    "change": -1.44,
+    "changePercent": -1.44,
+    "signal": "NEUTRAL",
+    "analysis": "NASDAQ-100 data unavailable.",
+    "timestamp": "2026-11-10T08:43:40.371637"
   },
   "sticky": {
     "cnbc": [
+      {
+        "title": "Consumer prices rose 0.4% in October, more than expected",
+        "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+        "source": "CNBC",
+        "published": "2026-11-10T13:33:35",
+        "description": ""
+      },
       {
         "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia\u2019s China problem",
         "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
@@ -1542,17 +1581,10 @@
         "description": "The allegations against Jensen Huang have brought new attention to the Nvidia CEO's potential influence over U.S. policy on chip sales to China."
       },
       {
-        "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-        "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-        "source": "CNBC",
-        "published": "2026-11-09T21:03:55",
-        "description": "The CPI headline reading is expected to show an increase of 0.3% while the core is forecast to increase 0.2%."
-      },
-      {
         "title": "Pete Hegseth decries impeachment push, defends Iran war handling",
         "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
         "source": "CNBC",
-        "published": "2026-11-10T13:29:48",
+        "published": "2026-11-10T13:42:08",
         "description": "Secretary of Defense Pete Hegseth railed against the Republican congressman who introduced articles of impeachment against him."
       },
       {
@@ -1561,6 +1593,13 @@
         "source": "CNBC",
         "published": "2026-11-10T13:19:13",
         "description": "The cliche is one of those smart-sounding rules of thumb that proves true just often enough to remain a Wall Street clich\u00e9 in good standing."
+      },
+      {
+        "title": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
+        "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
+        "source": "CNBC",
+        "published": "2026-11-10T13:41:57",
+        "description": "Rep. John Moolenaar, R-Mich., is the chairman of the\u00a0Select Committee on China and told CNBC he expects answers about Jensen Huang's relationship."
       },
       {
         "title": "Anthropic sets IPO price range of $70 to $78, looks to start trading  Nov. 19, sources say",
@@ -1575,13 +1614,6 @@
         "source": "CNBC",
         "published": "2026-11-10T09:48:09",
         "description": "The agency has found evidence of a potential increased risk of a rare eye condition linked to the use of GLP-1 drugs used for weight management and diabetes."
-      },
-      {
-        "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
-        "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
-        "source": "CNBC",
-        "published": "2026-11-10T09:00:01",
-        "description": "The policymaker said he \"is leaning toward\" a rate increase in December and could support a half-point hike depending on inflation data."
       },
       {
         "title": "Trump's 2028 successors are already fighting over who to blame for GOP midterm wipeout",
@@ -1669,72 +1701,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7572.25,
-      "change": -2.0,
-      "change_percent": -0.03,
+      "price": 7540.0,
+      "change": -34.25,
+      "change_percent": -0.45,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27885.75,
-      "change": -128.75,
-      "change_percent": -0.46,
+      "price": 27707.5,
+      "change": -307.0,
+      "change_percent": -1.1,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52676.0,
-      "change": 178.0,
-      "change_percent": 0.34,
+      "price": 52503.0,
+      "change": 5.0,
+      "change_percent": 0.01,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2846.4,
-      "change": -2.3,
-      "change_percent": -0.08,
+      "price": 2823.7,
+      "change": -25.0,
+      "change_percent": -0.88,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 84.97,
-      "change": -1.88,
-      "change_percent": -2.16,
+      "price": 84.87,
+      "change": -1.98,
+      "change_percent": -2.28,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4084.6,
-      "change": -29.9,
-      "change_percent": -0.73,
+      "price": 4053.0,
+      "change": -61.5,
+      "change_percent": -1.49,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.26,
-      "change": -0.3,
-      "change_percent": -0.57,
+      "price": 51.7,
+      "change": -0.86,
+      "change_percent": -1.64,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1557.7,
-      "change": -3.5,
-      "change_percent": -0.22,
+      "price": 1546.3,
+      "change": -14.9,
+      "change_percent": -0.95,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1029.5,
-      "change": 10.6,
-      "change_percent": 1.04,
+      "price": 1022.0,
+      "change": 3.1,
+      "change_percent": 0.3,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.26,
-      "change": 0.04,
-      "change_percent": 1.37,
+      "price": 3.25,
+      "change": 0.03,
+      "change_percent": 0.9,
       "name": "Natural Gas Dec 26"
     }
   ],

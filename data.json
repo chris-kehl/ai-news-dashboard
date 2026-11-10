@@ -1,22 +1,14 @@
 {
-  "timestamp": "2026-11-10T06:01:07.038728",
-  "summary": "Key topics today:\n- - Claude Fable 5.2 and Mythos 5.2 (r/HackerNews, 101 pts)\n- - Fireworks AI security breach impacts Notion and their customers (r/HackerNews, 101 pts)\n- - A primer on GPUs and kernel optimization (r/HackerNews, 101 pts)\n- - CoreWeave bond yield tops 16% as AI credit stress rises (r/HackerNews, 101 pts)\n- - Muse Ember: Our smallest, most efficient model (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-10T06:16:23.607551",
+  "summary": "Key topics today:\n- - Claude Fable 5.2 and Mythos 5.2 (r/HackerNews, 101 pts)\n- - Fireworks AI security breach impacts Notion and their customers (r/HackerNews, 101 pts)\n- - AI usage generates a fragile codebase (r/HackerNews, 101 pts)\n- - A primer on GPUs and kernel optimization (r/HackerNews, 101 pts)\n- - CoreWeave bond yield tops 16% as AI credit stress rises (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "ZEC",
-      "price": 1143.23,
-      "change": -4.18,
+      "price": 1153.39,
+      "change": -4.26,
       "category": "crypto",
-      "text": "ZEC -4.2% @ $1,143.23"
-    },
-    {
-      "type": "buy",
-      "asset": "OMH",
-      "price": 25.84,
-      "change": 93.56,
-      "category": "stock",
-      "text": "OMH +93.6% momentum @ $25.84"
+      "text": "ZEC -4.3% @ $1,153.39"
     },
     {
       "type": "buy",
@@ -33,6 +25,14 @@
       "change": 25.76,
       "category": "stock",
       "text": "AMD +25.8% momentum @ $508.58"
+    },
+    {
+      "type": "buy",
+      "asset": "SENS",
+      "price": 9.8,
+      "change": 22.65,
+      "category": "stock",
+      "text": "SENS +22.6% momentum @ $9.80"
     },
     {
       "type": "watch",
@@ -58,6 +58,14 @@
       "score": 101,
       "comments": 0,
       "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "created": ""
+    },
+    {
+      "title": "AI usage generates a fragile codebase",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
       "created": ""
     },
     {
@@ -115,83 +123,75 @@
       "comments": 0,
       "url": "https://maurycyz.com/projects/fading/",
       "created": ""
-    },
-    {
-      "title": "Locating the source of a mysterious beep",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-10T11:00:57.329935",
+    "timestamp": "2026-11-10T11:15:59.002900",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 218.65,
-        "change_24h": 1.21,
-        "market_cap": 2561288206
+        "price": 219.38,
+        "change_24h": 1.48,
+        "market_cap": 2569303328
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 74161,
-        "change_24h": 0.09,
-        "market_cap": 1491573543119
+        "price": 74279,
+        "change_24h": 0.29,
+        "market_cap": 1493569572126
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2089.46,
-        "change_24h": -0.8,
-        "market_cap": 255393484043
+        "price": 2096.23,
+        "change_24h": -0.42,
+        "market_cap": 256122733831
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999114,
+        "price": 0.999127,
         "change_24h": -0.0,
-        "market_cap": 176887371692
+        "market_cap": 176889042718
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 687.62,
-        "change_24h": 1.03,
-        "market_cap": 90447015564
+        "price": 688.74,
+        "change_24h": 1.21,
+        "market_cap": 90567257962
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999541,
+        "price": 0.999602,
         "change_24h": 0.01,
-        "market_cap": 70023686638
+        "market_cap": 70026872582
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.08,
-        "change_24h": -0.41,
-        "market_cap": 68621303598
+        "price": 1.083,
+        "change_24h": 0.45,
+        "market_cap": 68745294154
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 84.43,
-        "change_24h": -1.6,
-        "market_cap": 49943516678
+        "price": 84.67,
+        "change_24h": -1.36,
+        "market_cap": 50052303123
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.31886,
-        "change_24h": 0.48,
-        "market_cap": 30304211727
+        "price": 0.319095,
+        "change_24h": 0.55,
+        "market_cap": 30324042703
       },
       {
         "name": "Figure Heloc",
@@ -203,12 +203,18 @@
       {
         "name": "Zcash",
         "symbol": "ZEC",
-        "price": 1143.23,
-        "change_24h": -4.18,
-        "market_cap": 19475938370
+        "price": 1153.39,
+        "change_24h": -4.26,
+        "market_cap": 19640345159
       }
     ],
     "news": [
+      {
+        "title": "Ex-employee sues Ethereum Foundation and Vitalik Buterin over firing",
+        "url": "https://cointelegraph.com/news/ex-employee-sues-ethereum-foundation-vitalik-buterin-over-firing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 10 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M72FWR1NA57RHTK5MYEQ38F1/lawsuit-editorial-illustration.jpeg\" alt=\"Ex-employee sues Ethereum Foundation and Vitalik Buter"
+      },
       {
         "title": "Bitcoin price eyes $74K as Fed rate-hike bets hit 96% after Waller speech",
         "url": "https://cointelegraph.com/markets/bitcoin-price-eyes-74k-fed-rate-hike-expected-after-waller-speech?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -250,12 +256,6 @@
         "url": "https://cointelegraph.com/news/openai-builds-kill-switch-stop-rogue-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Tue, 10 Nov 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M71N7GC9GWKMNHVENCJ5D0PB/hi-how-to-launch-and-push-prediction-markets-moonpay.jpg\" alt=\"OpenAI builds kill switch to stop"
-      },
-      {
-        "title": "HIVE, MARA mine more Bitcoin but earn less as crypto prices fall",
-        "url": "https://cointelegraph.com/markets/hives-bitcoin-output-jumps-49-but-mining-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Tue, 10 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M71EDYRZ1KBPHBPK0G449WJN/bitcoin-miner.jpg\" alt=\"HIVE, MARA mine more Bitcoin but earn less as crypto prices fall\" class="
       },
       {
         "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
@@ -413,32 +413,25 @@
       "description": "The construction will include physical walls, access roads and vehicle barriers, according to Trump administration plans."
     },
     {
-      "title": "WATCH:  What to expect from Bills-Vikings showdown",
-      "url": "https://abcnews.com/video/137992496/",
+      "title": "WATCH:  Officer shot 6 times celebrates wedding",
+      "url": "https://abcnews.com/video/138004494/",
       "source": "Abc News",
       "category": "abc_news",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "ESPN's Cameron Wolfe helps preview the matchup."
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "Five months after Buffalo Police Officer Marc Hurst was shot six times while on duty, he celebrated a moment that once seemed far from certain: marrying his fiancee, Haley."
     },
     {
-      "title": "WATCH:  'Love is Blind' season 11, Erika Kirk: Here's what's trending",
-      "url": "https://abcnews.com/video/137995258/",
+      "title": "WATCH:  Woman living the 'dream' to save Arctic foxes in need",
+      "url": "https://abcnews.com/video/138004318/",
       "source": "Abc News",
       "category": "abc_news",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "ABC's Rocsi Diaz takes a look at what's buzzing, including the Netflix series reunion not holding back and Erika Kirk speaking out after Dave Chappelle joked about her husband's assassination."
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "ABC News' Danny New talks to a woman who's on a mission to save Arctic foxes at a sanctuary in upstate New York."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-10T11:00:35.554340",
+    "timestamp": "2026-11-10T11:15:37.573176",
     "trending": [
-      {
-        "symbol": "OMH",
-        "price": 25.84,
-        "change": 12.49,
-        "change_percent": 93.56,
-        "name": "Ohmyhome Limited"
-      },
       {
         "symbol": "QBTS",
         "price": 11.47,
@@ -468,6 +461,13 @@
         "name": "The Trade Desk, Inc."
       },
       {
+        "symbol": "AAON",
+        "price": 62.87,
+        "change": 8.45,
+        "change_percent": 15.53,
+        "name": "AAON, Inc."
+      },
+      {
         "symbol": "SANM",
         "price": 149.64,
         "change": 19.41,
@@ -475,11 +475,11 @@
         "name": "Sanmina Corporation"
       },
       {
-        "symbol": "PLUG",
-        "price": 1.5,
-        "change": 0.15,
-        "change_percent": 11.11,
-        "name": "Plug Power, Inc."
+        "symbol": "CRWV",
+        "price": 48.98,
+        "change": 5.32,
+        "change_percent": 12.19,
+        "name": "CoreWeave, Inc."
       },
       {
         "symbol": "HIMS",
@@ -496,11 +496,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "^GDAXI",
-        "price": 26572.53,
-        "change": 752.17,
-        "change_percent": 2.91,
-        "name": "DAX                           P"
+        "symbol": "SE",
+        "price": 77.96,
+        "change": 2.33,
+        "change_percent": 3.08,
+        "name": "Sea Limited"
       },
       {
         "symbol": "TTWO",
@@ -525,17 +525,17 @@
       },
       {
         "symbol": "CL=F",
-        "price": 85.46,
-        "change": -1.39,
-        "change_percent": -1.6,
+        "price": 85.65,
+        "change": -1.2,
+        "change_percent": -1.38,
         "name": "Crude Oil Dec 26"
       },
       {
-        "symbol": "^KLSE",
-        "price": 1604.07,
-        "change": -12.51,
-        "change_percent": -0.77,
-        "name": "FTSE Bursa Malaysia KLCI"
+        "symbol": "ONON",
+        "price": 37.53,
+        "change": -0.01,
+        "change_percent": -0.03,
+        "name": "On Holding AG"
       }
     ],
     "meme_momentum": [
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-10T11:00:53.884225",
+    "timestamp": "2026-11-10T11:15:54.995306",
     "items": [
       {
         "symbol": "SPX",
@@ -988,8 +988,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 20.09,
-        "change": 0.85,
+        "price": 20.04,
+        "change": 0.6,
         "type": "index"
       },
       {
@@ -1006,98 +1006,98 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 27914.0,
+        "price": 27915.0,
         "change": -0.36,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52656.0,
+        "price": 52657.0,
         "change": 0.3,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2849.0,
-        "change": 0.01,
+        "price": 2848.3,
+        "change": -0.01,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.45,
-        "change": -1.61,
+        "price": 85.77,
+        "change": -1.24,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4082.8,
-        "change": -0.77,
+        "price": 4081.0,
+        "change": -0.81,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.35,
-        "change": -0.4,
+        "price": 52.37,
+        "change": -0.38,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1556.1,
-        "change": -0.33,
+        "price": 1555.4,
+        "change": -0.37,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1030.5,
-        "change": 1.14,
+        "price": 1029.5,
+        "change": 1.04,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.25,
-        "change": 0.9,
+        "price": 3.24,
+        "change": 0.75,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 218.53,
-        "change": 1.2,
+        "price": 219.38,
+        "change": 1.48,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 74161,
-        "change": 0.09,
+        "price": 74294,
+        "change": 0.3,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2089.46,
-        "change": -0.8,
+        "price": 2096.8,
+        "change": -0.4,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 84.43,
-        "change": -1.6,
+        "price": 84.71,
+        "change": -1.34,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.44,
-        "change": 0.22,
+        "price": 10.47,
+        "change": 0.53,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.29,
-        "change": 3.75,
+        "price": 8.32,
+        "change": 4.2,
         "type": "crypto"
       },
       {
-        "symbol": "OMH",
-        "price": 25.84,
-        "change": 93.56,
+        "symbol": "QBTS",
+        "price": 11.47,
+        "change": 26.74,
         "type": "mover"
       },
       {
@@ -1119,9 +1119,9 @@
         "type": "mover"
       },
       {
-        "symbol": "PLUG",
-        "price": 1.5,
-        "change": 11.11,
+        "symbol": "CRWV",
+        "price": 48.98,
+        "change": 12.19,
         "type": "mover"
       },
       {
@@ -1188,6 +1188,16 @@
       "author": ""
     },
     {
+      "title": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXVKNll2bkFUUU5EVDg4eTF6a3YwZ0pIS0d4bGFTdkItMkl3SkFCbGRiZFdzSmlidHZZN3I1YzF1VkVXYlM0dDJrRlRPeDRGYXp6cVBuRGVjbl9vNWxrdlRYLTl4NTRxMnRFcGtuOUROekFvUUsxdTE1R3IwWmRKRVlUVFpFTlY0WXNlWTZTa1hIdmV1?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Investors Brush Off Election, Selloff and Even Nvidia\u2019s Spy Scandal to Buy Stocks",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQzZBYnFiMzhxMGpQVVRoMWdFdFVIWGFfLS1LNC1JXzBtWWNiRnpDVEhnN3ZpVXZ3SmN3Qmw5RXhyVDFRWGsyMG5DbXk2R1JtMGlYUWJYSUs3STNWRk5iUENQY295bDViSHQ5aXNTMzZ4QmU3a0w3ak53SUtDVU5BMXFpNUxObGY1eGZtTDlHRlR1ZDh2TGJEMzJ5bUU0VDJzQ3VYOHBBZXNjV1Z4UTc3aWZERE9lbzlYa0d4cDB1eFE?oc=5",
       "source": "WSJ",
@@ -1198,29 +1208,9 @@
       "author": ""
     },
     {
-      "title": "Nvidia Intervened in US Probe of Megaspeed Chip Smuggling",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeXNPUU9vdEUwTnhJZGx5WGo1dXU4d0NRRldncEtnMTNMbFpRUzJYM1FUUllYTGI1bEFMWjdTdHczUTRZcmVZaFhTbXdrZXo1UGE0ekthOWs4eVpPQVZmM3AtLVZ2MWVkSkR5Y1dJTEV4NFl5M0t4RkVmV2MyLS1CMG80WHE3aW1LYkN0LS1adTJiQkc1N1lkSUZydFJIWFZRa1dZRVl4bHBhRXdh?oc=5",
-      "source": "Bloomberg.com",
-      "category": "business",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Exxon signs preliminary agreement with Venezuela to assess oil opportunities",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPc0NYVUk4a3pTQzdDU0xDWkNNQjQxaEh4QjIxQTdBaVdXWkJZM2ZEX1E2bzFFcnE1UmNheEJJV25RazNfeFBzd08zNmdCSmkyal9yLXZ1S1BiNnNZVmVkTC1WYXBTNklGdlhTdjJVV1JwMjNmdUxodFFGbXo4dk1LbDVnMGRlQ0VPNmljblVqNEFxYjZvV3Bsb0lVSkJjYzFSOWZPY2trU0dsbVo3dmdjNXA1cnNjYUNyazlLWHduSmVWWXVnNmc?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Mon, 09 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq trade mixed ahead of key inflation data",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQREVVTENmTlJlY1Bnc0hHM044UjZReF9oT2s4c1lpSnVGdEtmYmN1eGZqRE5RSWszazktSkR0NmhpNW5hd2MzR1ZiSzNmdTU4UGI4aEFuMHpqSHZ3TVZnbjJRSlhBYWxsRk5sNERlSVhGM01RVlNfMW9hVkkwa3BsOHBJeGdxVWU4cmVxZDFrLTZnbW42NzFZOXBKOFhxTjNRYUFTUXVDS2ZLaUhZSElyT1VSOUFURGV0YWRwZ2ZqZy1feUdEdXdLaA?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Justice Department took over chip probe after Nvidia contacted federal investigators",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUFVqYlB6VDBEVEVsaHhMRHdxaVRqNDJTUmktb2dxTGhMOUFVVmtMOFYyVGRZc012NnpoTnU4ZmdLenplT3l5RGlnT29DVXRsbXJfVUoycDd2V3d1WGpObjNLdDlfZXRpNmtGTktrSFo0VDRmSjJydnNlUm1YM29wWTVqSmUzS3BqTGc4THlRN2VwaXVqOW44MTdWTWJ3QzBRMFBUbWZCNkhRSF9CbkxGNG9yS09QTXM?oc=5",
+      "source": "NBC News",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1228,11 +1218,21 @@
       "author": ""
     },
     {
-      "title": "Brent Crashes 7% on Iran Peace Hopes Despite Fresh Saudi Pipeline Attack",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMVkwSk8xdlE0dTF6dGk0Rnp3elNCYkdJV1ZLb2otcnlSa3JfcWhyV1Z0Y1dCeHcxUUxpZzdXYlBRUEQwZTRqdU9GZ21XZ3JXMmVfRzBFbWk0OHJXWmhVc0cybnp1eWZDTTB1S09PLUZ2VjQ5elFhWXVnajlJWEhsa2FpYXkyUlVPSDFtNHRVaTBmcFg2UUU3UEpfTEctWkgxMjIxaEhodW05akVFdmFRTEVuV00zZ0RGaU9xRThZWTVVMGRuVVHSAcsBQVVfeXFMTy03cmFMdmxqNkJ5NG9HM0dDVDBWNzBmd00yWkg5enA2a09Cek16bnYxRXdHQ00tWEhUYTBUUVVYWUxpTUo2ZE5MQzYtLTMtb1N1cGRjN2w4UnNoT3ZieElqS1VYZGFxSUxLbm1yNXpJd3ZLYUZJQ0gtRUJybWdVTWloTmdPMnlEdlFVWlBQdkJ3MjVfSzdtRTU2d0JNV21VQWJobzJTM2NKUkJ4RG4zRUhqeWNfMk5YQ25NM1hBRmoxcF80MnFKTDZBMmM?oc=5",
-      "source": "Crude Oil Prices Today | OilPrice.com",
+      "title": "Morning Bid: Anthropic IPO - Please try again",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CeC1RN1hvWlBLQ0hHeVpIRS1lOU14N1J6a1pDc1FPRG84VnZ0Zi1fZEo0VUZoVWJyemFNaFQzcmd4djB5TlJNS3JITXBlMWxfYnZ4dDJUS1FhZS1jVjhQMEpReXFuMlZOU3lURE5pcWtoTHlLbk8xWEEtMWNMZ0U?oc=5",
+      "source": "Reuters",
       "category": "business",
-      "published": "Mon, 09 Nov 2026 ",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Exxon Strikes Preliminary Deal to Return to Venezuela",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMnFaeURESFFwUWRYeXZsQVM0WEZHZE12Q005b2k1ZVJzdjN3R2hxcm84eHFOZDZzWm9BMFp0aHZscmY3V04zd2VNN3VlYnlJVzRKbUhHY2Naa2JXTnp4a0xIT1ZDRjFTc0NKeEd1TGRxUUVqSWpMN1EzT2gxX0hjRjllSE43TVBieUVVNTNnUEluTDJ4QXZrWm5udE9rNTg?oc=5",
+      "source": "The New York Times",
+      "category": "business",
+      "published": "Tue, 10 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1280,11 +1280,11 @@
       "author": ""
     },
     {
-      "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU1BrSldWU3lCUUd5VUpXd2N3ejlSQUltVTR0Ql8tMUo5ZC1wdUFoaS1ZRzA2UjRBekhaRmZzd3J3d0w2SWgxZ1ROWjAwWVI2ejFid3hnb3hkUTdOelEzaFVOd0VVd2FfY2lkVEdnM0tmd3hSWXRDaFFCb19neUNRUHYwVjZkNnlGS2d3YQ?oc=5",
-      "source": "Mashable",
+      "title": "Inject Ocarina Of Time Remake Speedruns Straight Into My Veins",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1ZUUxmSi1hX2hlZzU5SUhFcGV0ZWs4QTFyVTRsUC1NQXB4YklENmF2VndpTE1wYWwwUjJfaEJTeE50aWplczY0RUlXQkRMa2s2UTRUOVQ4UHN6NUxmaUxQRnF3YVRPYTA1SWtzY2w4Z014bkRSb3JWMXZVQ28?oc=5",
+      "source": "Aftermath",
       "category": "business",
-      "published": "Tue, 10 Nov 2026 ",
+      "published": "Mon, 09 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1300,21 +1300,21 @@
       "author": ""
     },
     {
-      "title": "Nintendo Switch 2 System Update 23.5.0 Is Now Live, Here Are The Full Patch Notes",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNalhheUxZbmxjRkxOUUlpaUN6dGxONk9MODlWbmEtMF9sT1gwSzJIRGxKcWdOZlc4NHVKT0FKUEFMQ295elEzeUgtQWFFM3V1ak5ldE82UXo4d3JSZXVQMnE4N09VajhzUmpyN3YwZE1INUxsMkpVM28tY0ZTejFKaGZJT20zMk5oMWFYUy1lOTZZbkNsTmw1SF9UVGlyRGxVbzktY1FabHkySVNVUjRDMlZtdmdQSmZBZE9MTGkwZw?oc=5",
-      "source": "Nintendo Life",
-      "category": "business",
-      "published": "Tue, 10 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "iPhone Duo \u2018crackgate\u2019 could be at an end, as leaker claims Apple has figured out why some screens have been randomly breaking",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZGc0NG9ISHFOM3JOSWI2Z21GcHp6dEwyUVJZdlVZSmFoS3BLaHJVNXJGWWpYeEFHS3hKeEZaZW14LUFBVWpvQWhmOXlHN2pGSGk0cHRMZEpjZFNhTnhMRUFPSnNDSm9iREk4QW1RVFUyOW1HcU5MTU56bl9qcC03YkU0VG9GTmJQelpPcXQtSGFFMlpja0gzMVZES28wWXg5WDV2UHNST3lnYTFrYk9ackFLcVZMc1VjVFNkLUw5elYwWUx1dkZ1Rk5HaVVLNHY3Zm5aN3NONWZkM3VJWkw5ZWtNMUpIc05qSVdkb24xYVVQZWpldnc?oc=5",
       "source": "Tom's Guide",
       "category": "business",
       "published": "Mon, 09 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Nintendo Switch 2 and Switch update 23.5.0 out now, patch notes - new gifting feature and more",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM0FBUlk5Y0ZzYnVBbEE0QzFiMFJIQl85Q2RRUGZVRFVJUUJSU2ZVTzdvUmZxVmpJSlBKS2NSQ2V6QnJPOGhfSk5yaWxlT0M4YUZNOG9KNWs0Q0d3NlJ5c0ljT3o5cWdZbFA4a2V3YUNyVUdsN1MyWmQwTnc3QkpVMDk4cGhkUmdHTnY3UmRXZWY0dGtFWUFUSUFLelJhQmNwb2NPd0Q2SkJCaWNkNmVSSk5EMEdPNW9PcTZMSEpCRFA?oc=5",
+      "source": "Nintendo Everything",
+      "category": "business",
+      "published": "Tue, 10 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1362,6 +1362,22 @@
       "relevance_score": 6
     },
     {
+      "title": "France summons Iran\u2019s ambassador over supermarket fridge \u2018sabotage\u2019",
+      "url": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "The French government said it is seeking tough sanctions to deter further cyberattacks across Europe.",
+      "relevance_score": 5
+    },
+    {
+      "title": "France orders military Earth-observation satellites for more than \u20ac1.5 billion",
+      "url": "https://www.defensenews.com/global/europe/2026/11/10/france-orders-military-earth-observation-satellites-for-more-than-e1-5-billion/",
+      "source": "Defense News",
+      "published": "Tue, 10 Nov 2026 ",
+      "description": "France ordered two military Earth-observation satellites from Airbus and Thales Alenia Space for more than \u20ac1.5 billion (US$1.7 billion).",
+      "relevance_score": 4
+    },
+    {
       "title": "Firm bets on converted fishing trawlers to tackle Russian submarines in the Arctic",
       "url": "https://www.defensenews.com/global/europe/2026/11/09/firm-bets-on-converted-fishing-trawlers-to-tackle-russian-submarines-in-the-arctic/",
       "source": "Defense News",
@@ -1404,100 +1420,100 @@
   ],
   "github": [
     {
+      "name": "openclaw/openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+      "stars": 394277,
+      "language": "TypeScript",
+      "url": "https://github.com/openclaw/openclaw",
+      "updated": "2026-11-10T11:16:16Z"
+    },
+    {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 300433,
+      "stars": 300458,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-10T10:09:11Z"
+      "updated": "2026-11-10T11:15:20Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 262214,
+      "stars": 262224,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-10T10:10:48Z"
+      "updated": "2026-11-10T11:15:49Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 200305,
+      "stars": 200323,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-10T10:07:02Z"
+      "updated": "2026-11-10T11:11:09Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 188036,
+      "stars": 188064,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-10T10:10:00Z"
+      "updated": "2026-11-10T11:15:08Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 187976,
+      "stars": 187977,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-10T10:05:30Z"
+      "updated": "2026-11-10T10:33:59Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168729,
+      "stars": 168730,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-10T09:40:51Z"
+      "updated": "2026-11-10T11:09:02Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 160820,
+      "stars": 160823,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-10T09:55:23Z"
+      "updated": "2026-11-10T10:35:18Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149296,
+      "stars": 149300,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-10T09:40:53Z"
+      "updated": "2026-11-10T11:00:31Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 145274,
+      "stars": 145302,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-10T10:07:02Z"
+      "updated": "2026-11-10T11:12:24Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 110761,
+      "stars": 110777,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-10T10:09:22Z"
+      "updated": "2026-11-10T11:13:05Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 107176,
+      "stars": 107202,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-10T10:10:47Z"
-    },
-    {
-      "name": "career-ops-hq/career-ops",
-      "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 81580,
-      "language": "JavaScript",
-      "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-10T10:11:27Z"
+      "updated": "2026-11-10T11:16:18Z"
     }
   ],
   "nasdaq_data": {
@@ -1506,7 +1522,7 @@
     "changePercent": 3.4,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Tue 10 Nov: 27,907.62, up +3.40% -- BULLISH. strong +3.4% move. Counter: price below SMA20, RSI 39.3 weak, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-10T06:01:05.559673"
+    "timestamp": "2026-11-10T06:16:21.325570"
   },
   "sticky": {
     "cnbc": [
@@ -1539,18 +1555,18 @@
         "description": "The agency has found evidence of a potential increased risk of a rare eye condition linked to the use of GLP-1 drugs used for weight management and diabetes."
       },
       {
-        "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
-        "url": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
-        "source": "CNBC",
-        "published": "2026-11-09T23:31:17",
-        "description": "PepsiCo plans to cut about 1,000 jobs across North America as it streamlines operations and works to revive sales in its home market."
-      },
-      {
         "title": "Trump\u2019s C-SPAN call marks latest surprise post-midterm appearance",
         "url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
         "source": "CNBC",
         "published": "2026-11-10T06:19:09",
         "description": "Trump called C-SPAN's new primetime show unannounced after a surprise White House briefing-room and ballroom appearances."
+      },
+      {
+        "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
+        "url": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
+        "source": "CNBC",
+        "published": "2026-11-09T23:31:17",
+        "description": "PepsiCo plans to cut about 1,000 jobs across North America as it streamlines operations and works to revive sales in its home market."
       },
       {
         "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
@@ -1645,72 +1661,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7573.5,
-      "change": -0.75,
-      "change_percent": -0.01,
+      "price": 7574.5,
+      "change": 0.25,
+      "change_percent": 0.0,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27912.5,
-      "change": -102.0,
+      "price": 27915.0,
+      "change": -99.5,
       "change_percent": -0.36,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52656.0,
-      "change": 158.0,
+      "price": 52658.0,
+      "change": 160.0,
       "change_percent": 0.3,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2849.0,
-      "change": 0.3,
-      "change_percent": 0.01,
+      "price": 2848.3,
+      "change": -0.4,
+      "change_percent": -0.01,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.46,
-      "change": -1.39,
-      "change_percent": -1.6,
+      "price": 85.77,
+      "change": -1.08,
+      "change_percent": -1.24,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4082.8,
-      "change": -31.7,
-      "change_percent": -0.77,
+      "price": 4081.0,
+      "change": -33.5,
+      "change_percent": -0.81,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.35,
-      "change": -0.21,
-      "change_percent": -0.4,
+      "price": 52.37,
+      "change": -0.2,
+      "change_percent": -0.38,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1556.1,
-      "change": -5.1,
-      "change_percent": -0.33,
+      "price": 1555.4,
+      "change": -5.8,
+      "change_percent": -0.37,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1030.5,
-      "change": 11.6,
-      "change_percent": 1.14,
+      "price": 1029.5,
+      "change": 10.6,
+      "change_percent": 1.04,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.25,
-      "change": 0.03,
-      "change_percent": 0.9,
+      "price": 3.24,
+      "change": 0.02,
+      "change_percent": 0.75,
       "name": "Natural Gas Dec 26"
     }
   ],

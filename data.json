@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T00:16:08.778057",
+  "timestamp": "2026-11-11T00:19:24.972454",
   "summary": "Key topics today:\n- - Tracking Anthropic-discovered vulnerabilities (r/HackerNews, 101 pts)\n- - Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives (r/HackerNews, 101 pts)\n- - AI is becoming an information gateway. Audiences still don\u2019t want it making news (r/HackerNews, 101 pts)\n- - LLMs Play Zachtronics' TIS-100 (r/HackerNews, 101 pts)\n- - AI usage generates a fragile codebase (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "SOXL",
-      "price": 56.06,
-      "change": 21.95,
-      "category": "stock",
-      "text": "SOXL +21.9% momentum @ $56.06"
-    },
-    {
-      "type": "buy",
       "asset": "AMD",
       "price": 515.21,
       "change": 14.74,
@@ -49,6 +41,14 @@
       "change": 13.04,
       "category": "stock",
       "text": "AVGO +13.0% momentum @ $331.98"
+    },
+    {
+      "type": "buy",
+      "asset": "AMC",
+      "price": 3.46,
+      "change": 10.19,
+      "category": "stock",
+      "text": "AMC +10.2% momentum @ $3.46"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-11T05:15:59.702991",
+    "timestamp": "2026-11-11T05:19:13.615891",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-11T05:15:37.366379",
+    "timestamp": "2026-11-11T05:18:51.698004",
     "trending": [
-      {
-        "symbol": "SOXL",
-        "price": 56.06,
-        "change": 10.09,
-        "change_percent": 21.95,
-        "name": "Direxion Daily Semiconductor Bu"
-      },
       {
         "symbol": "AVGO",
         "price": 331.98,
@@ -468,6 +461,13 @@
         "change": -17.75,
         "change_percent": -9.51,
         "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "MRVL",
+        "price": 154.39,
+        "change": 13.19,
+        "change_percent": 9.34,
+        "name": "Marvell Technology, Inc."
       },
       {
         "symbol": "IREN",
@@ -505,6 +505,13 @@
         "name": "Rigetti Computing, Inc."
       },
       {
+        "symbol": "SNDK",
+        "price": 859.99,
+        "change": 24.93,
+        "change_percent": 2.99,
+        "name": "Sandisk Corporation"
+      },
+      {
         "symbol": "NOW",
         "price": 99.61,
         "change": -2.36,
@@ -517,13 +524,6 @@
         "change": 2.32,
         "change_percent": 1.82,
         "name": "SK hynix Inc."
-      },
-      {
-        "symbol": "ORCL",
-        "price": 117.98,
-        "change": 1.88,
-        "change_percent": 1.62,
-        "name": "Oracle Corporation"
       },
       {
         "symbol": "COST",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-11T05:15:55.757247",
+    "timestamp": "2026-11-11T05:19:09.797924",
     "items": [
       {
         "symbol": "SPX",
@@ -1028,8 +1028,8 @@
       },
       {
         "symbol": "YM=F",
-        "price": 52478.0,
-        "change": 0.31,
+        "price": 52467.0,
+        "change": 0.29,
         "type": "future"
       },
       {
@@ -1040,32 +1040,32 @@
       },
       {
         "symbol": "CL=F",
-        "price": 86.52,
-        "change": 0.56,
+        "price": 86.43,
+        "change": 0.45,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 4057.4,
-        "change": 0.67,
+        "price": 4060.5,
+        "change": 0.75,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 52.61,
-        "change": 2.95,
+        "price": 52.7,
+        "change": 3.13,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1569.4,
-        "change": 1.98,
+        "price": 1571.0,
+        "change": 2.09,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1042.5,
-        "change": 2.38,
+        "price": 1045.5,
+        "change": 2.67,
         "type": "future"
       },
       {
@@ -1076,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 219.37,
-        "change": -1.2,
+        "price": 219.67,
+        "change": -0.95,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 73669,
-        "change": -1.48,
+        "price": 73720,
+        "change": -1.4,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2061.21,
-        "change": -2.93,
+        "price": 2062.94,
+        "change": -2.8,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 82.69,
-        "change": -3.99,
+        "price": 82.81,
+        "change": -3.79,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.34,
-        "change": -2.58,
+        "price": 10.35,
+        "change": -2.41,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.43,
-        "change": -1.69,
+        "price": 8.44,
+        "change": -1.34,
         "type": "crypto"
       },
       {
@@ -1126,12 +1126,6 @@
         "symbol": "NVDA",
         "price": 168.89,
         "change": -9.51,
-        "type": "mover"
-      },
-      {
-        "symbol": "IREN",
-        "price": 19.73,
-        "change": -8.83,
         "type": "mover"
       },
       {
@@ -1169,6 +1163,12 @@
         "price": 12.15,
         "change": 3.4,
         "type": "mover"
+      },
+      {
+        "symbol": "SNDK",
+        "price": 859.99,
+        "change": 2.99,
+        "type": "mover"
       }
     ]
   },
@@ -1194,11 +1194,11 @@
       "author": ""
     },
     {
-      "title": "Bonds reel as hot inflation fuels jumbo Fed hike fears",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON2pqenNYSWUzSVBxc3U2RlhRT29TZGNJWFVMRVVQa0NkaDd6STY3VzhiZTB1b0RPcXB4c0ZEM1RwaGdkZUpkZHp2Q0ZCenBZZF90eTZFMnJvT2F4elJlZlMzOFFiaTVfUmxxNVcxNFZLOVpRY1ZHTjFITVpqVlJHdDJ6UXVUNXU4Z2NoOGZrVjB0QQ?oc=5",
-      "source": "Reuters",
+      "title": "Stock Market Today: Dow Dips As Yields Soar; Nvidia Dives; Anthropic Seeks This IPO Price",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU2RaejE5V2Q0THo0YjhnUW84VFVkenl4aFZpZ2h1S3FJb2o3czNaSEF1LWNCYXdMY1N3Z1ZOYU81S29oUzJ4a2NMdXJrN1NxMzVvOXFEWXc5eTc4aEhPQlVIUVAwTVJ3enlGNEFBRlNmRDRDWDNQUmg5eVpPck1GRnhzR25XSi1rQkJYTjRsQ3FDVWdST2FkcUVzMlNBaUtqRGlsWVRtbl9GU3hFbWs3Tms4dDNDbEk?oc=5",
+      "source": "Investor's Business Daily",
       "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
+      "published": "Tue, 10 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1214,19 +1214,19 @@
       "author": ""
     },
     {
-      "title": "Toyota brings Japan\u2019s tiny trucks that Trump loves to America",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMUM2a1VFSHNUUW9ScUpjaWhqOVJzTGhNN1UwTnl5TXpqZ1B1bVRvQ3FoVzQ0bzBFeExXcTN5YUg0amdCbUxmdWlUYmRXdjllMGFLWjg1U3dkWGdqTEhYblNtU2IzN2dJb2p0enVnenVYWHRCQXFzdkhZVkpYcTBlZFJNbkQ?oc=5",
-      "source": "Financial Times",
+      "title": "Toyota Plans to Sell a Kei Pickup Truck in the U.S.",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Gck1RZFJ2ZTRjX1ZmcVlaVjM5cmQtLTNLN3l3YTljX0NiSEttdHBDYklPTFY5QkVLbTZERzAzU0pBZUhZdnZTazRZS3YwanRaVHBYZ1h5MHJGQ2Q0ZWExb0IyaEVISjIwbEJOSXV3Z2xaME1oOXFQeVRjUGY?oc=5",
+      "source": "The New York Times",
       "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
+      "published": "Tue, 10 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Anthropic\u2019s Giant IPO Will Tie It Closer to Nvidia",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40WWRMa0xmRm9vTGdfM2E0MXRhQUtaMmc1QnZzdm4tVG5zSlJsMWxnRzJsMXhxdlJHcC1hb0NTTF8tU25OODhVdjd4Z2JpYnpHQ3BnNktJbUZQcnFrbEJ4UW5EOXR4YVI2TXU5SnhWWXp1Y3AyeVpwVQ?oc=5",
-      "source": "The New York Times",
+      "title": "Nvidia selloff deepens, adding to AI jitters",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOG9OZzJuZm1xMUpsNTF6M2dFN2VIbG1PaTRBU25xdUNtRnk2ZDg2c05UdERqUHQwcjN6OGhuZUoxajU0aFNGVWhLekxITjdwV1BwUFNucUdMaHp1N1UwWmhVYXI1Q3ZQUUFjVTBGbG1IUXVHTWlTQUU5TUlJc1RMYWREUkhwaFpKWFNyMW83a0k5dw?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1244,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "Fossil CEO says turnaround is ahead of plan as sales return to growth",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBzQ2l6Z2JLM0NPbVpZRGxxd1owMFRrRUJZaTdWYy1jNFFYY3FHeXoteWc0SXk2dTJHX0UxWnlVRE1WN3RNTzJTWGEtdE9UaDB5bk80Tm9qYjExcEJ4Wmdmc19GUWYtWEMxc3V1WmU5VHdhV2c?oc=5",
-      "source": "CNBC",
+      "title": "Traders Who Rushed to Safety of Bonds Get Rattled in Reversal",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUnlwUmR4R1lSbTI5NHBoQ2pIOXp5VjFsbTJSYjBQWE92Z0F3QzhnVEo1dkVuM3NOWHZubDRoNDRGNnFCeWhLOTFmSkZabFB0YWQ0YU5JeF9WZGVrT2JYUHkxR2IxNGNOMF91bHo2RzVZYjFuNDlaM1Nkb25PeEZ4ZWt4TFZrWG9BYTBaR0liSHZzRkxvcHQwa2kzMnZnRVNXbS1zc2xqY2c1eUZEX29FZXdR?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1266,9 +1266,9 @@
       "author": ""
     },
     {
-      "title": "Google Fi adds support for a second 5G network, won\u2019t say which one",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOFB5UFRhNjZjaFdkMGhaTjBwb19zZ1lkMThsVURmam9OX2xkTXFMelF3WEJrVTduOERVQWhicU1oY3dJUzhFZ3FPV0dDTk9Sd1IxMWc1TkhZcWRyVVFTcUprWkY5TTlpckY0S2dDMHZ0RWd1SHktNXFCbjN5Z2NfU2pWaktPc3hETHhRVHQ0SmY2ZThmTVVGS3NpM2kxYzN5WldHQzJ0UEU?oc=5",
-      "source": "Ars Technica",
+      "title": "SpaceX launches Starlink Mini 2 with a swappable battery for $999",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdjRVbzZNX09mcXIxNHF0aE1ET0pYcHNkY1lDOHE3b01fNzRWVXNNcmhVVVRGZG1wMFZoWGtpOWZiTnhaaWVYLXlKOW9PMkQ0bDMyak5RaVdjSl90bjFmRjJVRm9BaC00c2RxdHdjY0pJeGMwNUJDNXhVYkJkRDlhcnVNZ1lnaF96RWZpYTJENA?oc=5",
+      "source": "Interesting Engineering",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1276,9 +1276,9 @@
       "author": ""
     },
     {
-      "title": "SpaceX launches Starlink Mini 2 with a swappable battery for $999",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdjRVbzZNX09mcXIxNHF0aE1ET0pYcHNkY1lDOHE3b01fNzRWVXNNcmhVVVRGZG1wMFZoWGtpOWZiTnhaaWVYLXlKOW9PMkQ0bDMyak5RaVdjSl90bjFmRjJVRm9BaC00c2RxdHdjY0pJeGMwNUJDNXhVYkJkRDlhcnVNZ1lnaF96RWZpYTJENA?oc=5",
-      "source": "Interesting Engineering",
+      "title": "Google Fi adds support for a second 5G network, won\u2019t say which one",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOFB5UFRhNjZjaFdkMGhaTjBwb19zZ1lkMThsVURmam9OX2xkTXFMelF3WEJrVTduOERVQWhicU1oY3dJUzhFZ3FPV0dDTk9Sd1IxMWc1TkhZcWRyVVFTcUprWkY5TTlpckY0S2dDMHZ0RWd1SHktNXFCbjN5Z2NfU2pWaktPc3hETHhRVHQ0SmY2ZThmTVVGS3NpM2kxYzN5WldHQzJ0UEU?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Tue, 10 Nov 2026 ",
       "description": "",
@@ -1402,11 +1402,11 @@
       "relevance_score": 4
     },
     {
-      "title": "El Salvador fires missiles on Haitian gang hideout",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/el-salvador-fires-missiles-on-haitian-gang-hideout?traffic_source=rss",
+      "title": "US charges three men for allegedly plotting attack on UK base",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/us-charges-three-men-for-allegedly-plotting-attack-on-uk-base?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Wed, 11 Nov 2026 ",
-      "description": "El Salvador\u2019s military fired rockets at a compound allegedly belonging to the leader of Haiti\u2019s 400 Mawozo gang.",
+      "description": "The US has charged three men over alleged involvement in a plot to attack a Royal Air Force Base in Fairford, UK.",
       "relevance_score": 4
     },
     {
@@ -1562,7 +1562,7 @@
     "changePercent": -0.6,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 11 Nov: 27,740.79, down -0.60% -- BEARISH. price below SMA20, RSI 35.6 weak, MACD bearish, modest -0.6% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-11T00:16:06.912811"
+    "timestamp": "2026-11-11T00:19:23.106503"
   },
   "sticky": {
     "cnbc": [
@@ -1715,9 +1715,9 @@
     },
     {
       "symbol": "YM=F",
-      "price": 52478.0,
-      "change": 163.0,
-      "change_percent": 0.31,
+      "price": 52467.0,
+      "change": 152.0,
+      "change_percent": 0.29,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
@@ -1729,44 +1729,44 @@
     },
     {
       "symbol": "CL=F",
-      "price": 86.52,
-      "change": 0.48,
-      "change_percent": 0.56,
+      "price": 86.43,
+      "change": 0.39,
+      "change_percent": 0.45,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 4057.9,
-      "change": 27.7,
-      "change_percent": 0.69,
+      "price": 4060.5,
+      "change": 30.3,
+      "change_percent": 0.75,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 52.61,
-      "change": 1.51,
-      "change_percent": 2.95,
+      "price": 52.7,
+      "change": 1.6,
+      "change_percent": 3.13,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1569.4,
-      "change": 30.5,
-      "change_percent": 1.98,
+      "price": 1571.0,
+      "change": 32.1,
+      "change_percent": 2.09,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1042.5,
-      "change": 24.2,
-      "change_percent": 2.38,
+      "price": 1045.5,
+      "change": 27.2,
+      "change_percent": 2.67,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.29,
       "change": -0.01,
-      "change_percent": -0.15,
+      "change_percent": -0.18,
       "name": "Natural Gas Dec 26"
     }
   ],

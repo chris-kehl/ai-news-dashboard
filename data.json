@@ -1,22 +1,30 @@
 {
-  "timestamp": "2026-11-12T07:17:35.123293",
-  "summary": "Key topics today:\n- - United Airlines bans AI agents from booking flights on behalf of travelers (r/HackerNews, 201 pts)\n- - My AI agents found an unmapped Maya site? (r/HackerNews, 201 pts)\n- - Anthropic IPO (r/HackerNews, 101 pts)\n- - Nvidia is preparing to oust Jensen Huang (r/HackerNews, 101 pts)\n- - I gave an agent a lakehouse and control of my garden (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-12T07:31:06.141602",
+  "summary": "Key topics today:\n- - United Airlines bans AI agents from booking flights on behalf of travelers (r/HackerNews, 201 pts)\n- - My AI agents found an unmapped Maya site? (r/HackerNews, 201 pts)\n- - Huawei releases MACaQ, its internal quantizer for local inference (r/HackerNews, 201 pts)\n- - Anthropic IPO (r/HackerNews, 101 pts)\n- - Nvidia is preparing to oust Jensen Huang (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "TAO",
-      "price": 211.68,
-      "change": -3.64,
+      "price": 209.96,
+      "change": -4.19,
       "category": "crypto",
-      "text": "TAO -3.6% @ $211.68"
+      "text": "TAO -4.2% @ $209.96"
     },
     {
       "type": "watch",
       "asset": "BNB",
-      "price": 663.78,
-      "change": -2.37,
+      "price": 659.07,
+      "change": -3.05,
       "category": "crypto",
-      "text": "BNB -2.4% @ $663.78"
+      "text": "BNB -3.0% @ $659.07"
+    },
+    {
+      "type": "watch",
+      "asset": "HYPE",
+      "price": 70.22,
+      "change": -2.44,
+      "category": "crypto",
+      "text": "HYPE -2.4% @ $70.22"
     },
     {
       "type": "buy",
@@ -49,6 +57,14 @@
       "change": null,
       "category": "sentiment",
       "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
+    },
+    {
+      "type": "watch",
+      "asset": "EDGE AI",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "Edge AI trend \u2014 local inference plays"
     }
   ],
   "reddit": [
@@ -66,6 +82,14 @@
       "score": 201,
       "comments": 0,
       "url": "https://pietromiotti.com/latest/maya-site",
+      "created": ""
+    },
+    {
+      "title": "Huawei releases MACaQ, its internal quantizer for local inference",
+      "subreddit": "HackerNews",
+      "score": 201,
+      "comments": 0,
+      "url": "https://github.com/huawei-csl/MACaQ",
       "created": ""
     },
     {
@@ -123,83 +147,75 @@
       "comments": 0,
       "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
       "created": ""
-    },
-    {
-      "title": "93% of paint splatters are valid Perl programs (2019)",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.mcmillen.dev/sigbovik/",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-12T12:17:27.253098",
+    "timestamp": "2026-11-12T12:30:57.743597",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 211.68,
-        "change_24h": -3.64,
-        "market_cap": 2479413883
+        "price": 209.96,
+        "change_24h": -4.19,
+        "market_cap": 2461826402
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 72995,
-        "change_24h": -1.16,
-        "market_cap": 1467715664367
+        "price": 72747,
+        "change_24h": -1.52,
+        "market_cap": 1463479371720
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 2025.67,
-        "change_24h": -1.28,
-        "market_cap": 247465557118
+        "price": 2018.27,
+        "change_24h": -1.63,
+        "market_cap": 246707297461
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999025,
-        "change_24h": -0.03,
-        "market_cap": 175710487493
+        "price": 0.999046,
+        "change_24h": -0.02,
+        "market_cap": 175695267694
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 663.78,
-        "change_24h": -2.37,
-        "market_cap": 87295565936
+        "price": 659.07,
+        "change_24h": -3.05,
+        "market_cap": 86673617341
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999453,
-        "change_24h": -0.02,
-        "market_cap": 69409732402
+        "price": 0.999475,
+        "change_24h": -0.01,
+        "market_cap": 69394928894
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 1.038,
-        "change_24h": -1.51,
-        "market_cap": 65917215477
+        "price": 1.033,
+        "change_24h": -1.88,
+        "market_cap": 65598390622
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 82.63,
-        "change_24h": -1.23,
-        "market_cap": 48872020825
+        "price": 82.14,
+        "change_24h": -1.76,
+        "market_cap": 48601323693
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.31626,
-        "change_24h": -0.22,
-        "market_cap": 30059850773
+        "price": 0.316025,
+        "change_24h": -0.26,
+        "market_cap": 30037530408
       },
       {
         "name": "Figure Heloc",
@@ -211,12 +227,18 @@
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 70.88,
-        "change_24h": -1.61,
-        "market_cap": 16970621085
+        "price": 70.22,
+        "change_24h": -2.44,
+        "market_cap": 16808145236
       }
     ],
     "news": [
+      {
+        "title": "EU DeFi proposals could push users to riskier platforms, says Coinbase exec",
+        "url": "https://cointelegraph.com/news/eu-defi-riskier-platforms-coinbase-exec?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 12 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M75BK9Y513FMAWX2Y3DCZ3SX/hi-coinbase-hosts-active-stablecoin-traders.jpg\" alt=\"EU DeFi proposals could push users to risk"
+      },
       {
         "title": "Stablecoin supply falls $14.2B in biggest 30-day drop since June 2022",
         "url": "https://cointelegraph.com/markets/stablecoin-supply-drops-worst-slump-since-mid-2022?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -258,12 +280,6 @@
         "url": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Thu, 12 Nov 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M772C3WKZ2V15SYTV41CF4T1/hi-a-fake-crypto-job-interview-nearly-installed-malware-on-my-computer.jpg\" alt=\"Binance CSO unw"
-      },
-      {
-        "title": "MSCI confirms Strategy\u2019s removal from indexes at end of November",
-        "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 12 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M76H4XXFRZZF8PWNZVYPMH4D/hi-the-bitcoin-treasury-model-is-breaking-but-microstrategys-isnt-heres-why.jpg\" alt=\"MSCI confi"
       },
       {
         "title": "Bitcoin weakness erases September's bullish signal",
@@ -341,7 +357,7 @@
       "description": "Following a ceremony marking Veterans Day, a group that included Defence Secretary Pete Hegseth was shouted at to be quiet."
     },
     {
-      "title": "New York building collapse kills at least four people",
+      "title": "New York City building collapse kills several people",
       "url": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
@@ -381,7 +397,7 @@
       "description": "The girls started vomiting after eating oranges brought in by a fellow pupil - police are travelling to the village they came from."
     },
     {
-      "title": "At least 6 dead, multiple injured after building collapses in Brooklyn",
+      "title": "At least 8 dead, multiple injured after building collapses in Brooklyn",
       "url": "https://abcnews.com/US/rescue-operations-underway-after-building-collapses-brooklyn-new/story?id=138059620",
       "source": "Abc News",
       "category": "abc_news",
@@ -438,7 +454,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-12T12:17:05.713764",
+    "timestamp": "2026-11-12T12:30:36.294081",
     "trending": [
       {
         "symbol": "DPU",
@@ -974,7 +990,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-12T12:17:23.233470",
+    "timestamp": "2026-11-12T12:30:53.808355",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +1012,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.21,
-        "change": 4.12,
+        "price": 18.36,
+        "change": 4.97,
         "type": "index"
       },
       {
@@ -1008,98 +1024,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7608.5,
-        "change": -0.42,
+        "price": 7615.75,
+        "change": -0.32,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28209.0,
-        "change": -0.93,
+        "price": 28270.25,
+        "change": -0.71,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52590.0,
-        "change": 0.02,
+        "price": 52645.0,
+        "change": 0.13,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2849.5,
-        "change": -0.15,
+        "price": 2853.2,
+        "change": -0.02,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.71,
-        "change": -0.95,
+        "price": 85.85,
+        "change": -0.79,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3950.8,
-        "change": -1.24,
+        "price": 3952.8,
+        "change": -1.19,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.96,
-        "change": -1.78,
+        "price": 51.09,
+        "change": -1.52,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1525.8,
-        "change": -0.86,
+        "price": 1531.6,
+        "change": -0.48,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1015.0,
-        "change": -2.75,
+        "price": 1016.0,
+        "change": -2.65,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.27,
-        "change": 1.84,
+        "price": 3.28,
+        "change": 1.93,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 211.38,
-        "change": -3.77,
+        "price": 209.96,
+        "change": -4.31,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 72994,
-        "change": -1.26,
+        "price": 72747,
+        "change": -1.53,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2025.21,
-        "change": -1.39,
+        "price": 2018.27,
+        "change": -1.65,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 82.53,
-        "change": -1.47,
+        "price": 82.14,
+        "change": -1.89,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.99,
-        "change": -3.66,
+        "price": 9.94,
+        "change": -3.85,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.48,
-        "change": -1.0,
+        "price": 8.43,
+        "change": -1.08,
         "type": "crypto"
       },
       {
@@ -1176,8 +1192,8 @@
       "author": ""
     },
     {
-      "title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWt2M09CMmZEV2FtdDlsblRCTGFFZDZfcWNtSjdGQndIUlR1ajhVcFJGcTJuSzhQYzZsM0FyODI1dE9PaFR4TXU4dS10OERzWFhoSFhSeU8wNFh5RWgyNjM5QnRDVS1pZ2pHNUhseGVuUjdCTjJoajRQZjlmbzNkbkFscGFvTHRsV04zcldlcU5USkcyeExYemUwVkREeXR2SDdEWWNmOEhQeDREblduQlF3?oc=5",
+      "title": "Stocks Slide on Nvidia Troubles, Oil Edges Lower: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYmF2Z05ObnRwSVdvWGJrWC1XZlIzVXlYMTV3eVRwQWlScGY3TGpuamVOTEpremJZQnhJU3hkOWl2ck4xNFdzQWM1VTh2OEVBQ3FCTzNiYThfOTlzSHpqX0hHeWQ3dzZTcnRsVzYtMzFWeElmZVdVWUdQcnhIbEp1SS1lejVoM2Y1OGdScGpLbzJPVWhk?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
@@ -1186,9 +1202,39 @@
       "author": ""
     },
     {
-      "title": "Nvidia\u2019s Huang crisis hits a struggling chip comeback stuck below a giant wall: Chart of the Day",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdUFwZU9lM3EyZERKcmZMNXgzUmY4cnVLMDJvQjlYTHVtMDRVaGR4MW93OVJlTE5yMi15bFJHc3hkNlo2Y0d6ZWNCcDA2LWMxd3ZnQmZOM3Q3ZFd2NzYtd19LRkwwZExMa2dsa1ExazZLTVRPdHdyMWZLSDJ0SjQwLXlqTE05MWRuRGxORVNEWjRKNS1BZGpHT0tLZEhFbDhBa0VJVnNBbW1VX0M0M2xWNi1oSFJmY3JlX0g1ZWR4MFVDYjJyc0E?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOFZuR1d1MTZQNzk4NW9hbHFXV21kYV9QZ0gwQ21ScFJJVlBFd2ViWkRhMkNsUUs5ekxPM05lem5hYWp2T2Y4djFtcVdXUk1LYmREcGk2VDVGUTVaZUdtUHBTRE9jMEx5WUk1RllFTTVMZWN4Z3NjRlJhM2VTR0M4aVhxZ05fR3hkM21B?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "European stocks hit record high after Nvidia storm rattles Asia",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1ODl5LXpyQ0RZanVjSnZGS1NjS1ljMjZvdW9xY3ZSSUxvNkY2Z3dCMThiSjdKNHI1TFRCZnBIRHdYY0UxTGh0QjRZX3Y2S25sY0k4M0dKN3VZdGNMSGk5N0tPUmVJa3ozWXRCcmluOWxVVjVfblRLdmttMA?oc=5",
+      "source": "Reuters",
+      "category": "business",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Nvidia Stock Sinks as Jensen Huang Ouster Report Sends Investors Toward AMD, Broadcom - Broadcom (NASDAQ",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObTFTMVpaa04yajI5ay1ta1lWaWtQX0ZCb29TTTRkRS1QdlVoMzVLckpMS3ZnWWJkTlptbHp4c01XR1lvMEFwcW9IWDNxWFQxeldlZ2hLejhZS00zX2VTNE9mV1ZncElVclk0N1FBTFdOZHN0ZlppbUNPSS02TlgtZjdpcUlNZzl0a1BJcVhpMm0zeVQzNVNGb3RKN0RpQmJFRWtUU0w1SVYwdTNEMElSXw?oc=5",
+      "source": "Benzinga",
+      "category": "business",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "A Romanov sapphire bracelet sells for $4.9 million at a Geneva auction",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRGhGVmU4WWxRbVdhTU1uSEVsdDgxMzVKS2duVzN6bXd5Ql9WU2J2ZURDZ0hFb3puSzJNakVGc0NCRWV4OWI4aDRmR3hQcF9PenFQckl0bFhEM0dvRU9fdTE3X0VLLVdmTEdXbThrS2tUdFVtbl9RN1U2UUlwTmtfSjBvLU5xeFVnNUVGUWZxVzVRVnZRdGRLcEFLY1VwN0pURFVHaXA2dzQxQdIBrwFBVV95cUxOLS1hVlJKVHlhcHZpbVFob3ZTNXpCQXlUWUR4YkJObFNfUGo4VkxFODNnSFpkRFlTd1ZEUUxfbFNZX0o4ZmZKeUV0eElYQ1JCNlJkYXExWjUyQUdPZTluVWxNTWZHeXFYNHBLYXIyOWc0Wmp2cmNEcWtpRHZJN2dRQXdUVi1OdDYwcUQ4UkgyeW9EOWhJVzdXR3VhaF8zM1VzeUgyMVlQVTVBRFRvSVEw?oc=5",
+      "source": "ABC News - Breaking News, Latest News and Videos",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1206,39 +1252,9 @@
       "author": ""
     },
     {
-      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUZXNlhzbF9jX0NZZU1MQ1lnSUVTQjcyOWtuVThsempEY2F3WHNhZ2lGQVU5MXpaa2NuVGhoOUwtWVBSTnczZThFQW9LTHJhSnlBVjRicTg1aWQzazdnajNnWldtTEdLSURhaDQtdThYVUFZbEJCUzlxZlJUdm01ZVV2QWVXZERWRnpYeVdHWXV0dWFFZUN4MlZCUEZackdBU1VuTWNLakdLR2dlVnBR?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Record credit card balances, fewer trips to McDonald\u2019s: More signs of strain ahead of the holidays",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNkwxR0tMSEhVaGUzbVdYMUdjaDg5SXY3S3VMQXRQNUNFMlFYd3pwd3ppTkd3akpHT2JlLUlpM0ktem5KU0RldUo3d3FsWGlrekxXTGloY0F5TVdvaXBUc1cwaWZUb09iUDRpRVo4MnJUc1RhRTNlU2M0WDdyalpKbld6XzBZb0UzUEk4RWtobEdlUzdKYUs5VWc1c3k3QVZScEhYUzg2UGo?oc=5",
-      "source": "NBC News",
-      "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Scoop: Lutnick stalled curbing Nvidia chip sales to China \u2014 again \u2014 after Oval Office showdown",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPa01VNnZpTE10OFNfTFRXZDZzeUJwSjFkNmlhVjFwUVExM3RmaUlNOG1jWm1aYXJMRHkyb2s1WGdMQU9IQUN6RE5kVi1ub3JkQ0wxVnc2YWFvY2VzTWRiX0FZeVlpdDNsMzBhcWpzOVhqNVh4UUFCa2cySy1ZSlkwTGRxbHVjcEU?oc=5",
-      "source": "Axios",
-      "category": "business",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Anthropic's IPO is said to be multiple times oversubscribed as roadshow gets under way",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKWGZ4ck1uamZJQ3p5MmN3eVFwQ1dyQjMzd0VXV3M3ZmljNHlCM2daclNuN0pBdzlzLXZpb2Y4THdVNVpna0Rpc0FYQ3hxTjJWcFBEMWdodjFNZ2o5Y0xTUS0yNW94MUt4cllBaUVnby0yRUZa?oc=5",
-      "source": "Quartz",
+      "title": "Nasdaq 100 Advances 3% as Easing AI Anxiety Draws Dip Buyers In",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTWhFb0Z4UU5tNk9GTTVCYW9hallXVDZiRkhNMjFubzVVbmt1RXY4ekdtSFdZSTV4cEhqYkNrMlM0TW9keklFMHBOUDVzTTNhNXhJX2ZuVWRjSTFheURwb1NlU1F5b3Q0SXJWaGdzMzlEZHE5N3UzeE5jSzJIbkpoc2tqdkNKZG0zczBSYndTNm5GUFVUeEM1OHB2LUlnRktreFhueUxleGRwTWp0S1RZcWFQRQ?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1248,9 +1264,9 @@
   ],
   "tech_business": [
     {
-      "title": "Intel\u2019s Gonna Have a Hard Time Beating AMD\u2019s Next-Gen Gaming CPUs",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qT1dUdlpGZE1aX2laMWd1a3REOTQ5TEo3WHFkVXFZZlR3bzJ2Z0l0OVJiRGdhOWtTU3hOYWpUd1hFbzBnc1ZFbzMwanZKZjVvRUh2VFUyRWlYM2NrcG90NA?oc=5",
-      "source": "Gizmodo",
+      "title": "Apple is shuttering its 28-year-old online community forum",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQblFqMFc1UlNBTDg5ZnBmRXJkdHMtQXBqMkRaVHdKalpuWVNOWkdqSExPaGJOdDYyczZrZjk0QmhqNGlrT0dTQnNDc0NuV2haME82MjZhRTJMMzVwc25Rc2pKWmk3aFdOdmN5bDNKSXZhM000WTdvRTYtRkxIaHNZV1dSUG9saFFUSG01X1lnSDRiOE5zcUR0N1VBdnJPc0NR?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1258,9 +1274,9 @@
       "author": ""
     },
     {
-      "title": "Hands on with Home Assistant\u2019s new \u2018smart home multi-tool\u2019",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZzlBNjJtSUFwMVFQU1B3TmlVWTBxcDNlSnZTOXl3WHNxMnRpTDFTZzJKYkxQS0pXRTlIMjhYb1YzQ1duXzkta1BEVUJ0dDVVYTJ4WEdVb3R2Y1ZqLU5UQlVnakpNdHJiUkpEck82RU9ReDBDUVQxUFQ3WjJGTVl5NQ?oc=5",
-      "source": "The Verge",
+      "title": "Intel\u2019s Gonna Have a Hard Time Beating AMD\u2019s Next-Gen Gaming CPUs",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qT1dUdlpGZE1aX2laMWd1a3REOTQ5TEo3WHFkVXFZZlR3bzJ2Z0l0OVJiRGdhOWtTU3hOYWpUd1hFbzBnc1ZFbzMwanZKZjVvRUh2VFUyRWlYM2NrcG90NA?oc=5",
+      "source": "Gizmodo",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1278,9 +1294,9 @@
       "author": ""
     },
     {
-      "title": "Apple is shuttering its 28-year-old online community forum",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQblFqMFc1UlNBTDg5ZnBmRXJkdHMtQXBqMkRaVHdKalpuWVNOWkdqSExPaGJOdDYyczZrZjk0QmhqNGlrT0dTQnNDc0NuV2haME82MjZhRTJMMzVwc25Rc2pKWmk3aFdOdmN5bDNKSXZhM000WTdvRTYtRkxIaHNZV1dSUG9saFFUSG01X1lnSDRiOE5zcUR0N1VBdnJPc0NR?oc=5",
-      "source": "Ars Technica",
+      "title": "Hands on with Home Assistant\u2019s new \u2018smart home multi-tool\u2019",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZzlBNjJtSUFwMVFQU1B3TmlVWTBxcDNlSnZTOXl3WHNxMnRpTDFTZzJKYkxQS0pXRTlIMjhYb1YzQ1duXzkta1BEVUJ0dDVVYTJ4WEdVb3R2Y1ZqLU5UQlVnakpNdHJiUkpEck82RU9ReDBDUVQxUFQ3WjJGTVl5NQ?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1288,11 +1304,21 @@
       "author": ""
     },
     {
-      "title": "Microsoft's Patch Tuesday can't break stuff if it won't install",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZFV2UjVVX05vNnFsM1pGbTRLNWJIelAtcWJLeHh1Rnk1MVFpWHNBNFAtc0NYRXBVRmNXOHYzVHVIMGROVWhvYzFxdGh0MWd0cURPRG5OYWZXanphc0lxTTdUTnpsMkdvZzdXLWN4eS1GZkhRZjE5R3pZNUJCVTVzQTYwb3d2ZWh1azdoa1Y2SmNaSTZZTkYzMlZYMUFES1VJQ3kxLTJNM1FMTmlYQ3Q4aFRtLTF2V290QzI2ag?oc=5",
-      "source": "The Register",
+      "title": "Microsoft confirms Windows security updates installation issues",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdWZ0MFhYUmdlQ0U5c0J6OW5xQmVyMGtWUVNZOVEtdjRWSmhHVmQtbW1kbV9DQ2dpZUpLVkVvdHRRR0xkRXg2UTJzQWhld3ZkakxXOHBnYkpiSERNM1dqdGhwNUZ3X0xVbWtBZ1VQT2hzczBPa3JDbzFZSHF4N2VpMDlKTFNvTHZCZkllLXJtOE50M1N1M2RESy1mSjRZRmp6SDM3dHNkVU9TNnQ2TmdsekoyMkdrZVY0ZXU2WDg4LURIcjR0OS1vVnBSOW5PeGVMSU9j0gHYAUFVX3lxTE45b1BRXzFPRE5jb2MzT01TLUZqUkpvd2RFYTVmaDh3OWMyWGh1SGlPQlJQcXI1RmZFT1hJYWxJU1JjMllVOWUwb190NW90bUhHNld0Tl9tTnFGZjl5a2VCRklDOFpXYlAtajB5RkNvNmVRMTF6elNQTk9SWHgtbE4tTUtaSVZUYlMtY3hjdHBLSHNfOVhvbDNIeWh2Ym8zSXVpUThpRWJxTTVraXl6QkNDZ25PWUh4dEVZeXp2TmI5dDVXZEl1TWdFYmdIMVQyelFrTHNUdkZwaQ?oc=5",
+      "source": "BleepingComputer",
       "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "GTA 6 preorders top $1 billion as Hollywood eyes record launch weekend",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92RGloZ1BMRFV1cDI1UndXNXpFTTNUVFhrWHU5ZzhNb2tzQTRmWk5udGlvZmlrc3ZIUFNwR1dhaG84Q1l4TlJKbUxFRzhpMG1ndFVfN1Jzd1VtT2RTVnd2bXd0WGdCblkwc00tUlFB?oc=5",
+      "source": "Mashable",
+      "category": "business",
+      "published": "Thu, 12 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1311,16 +1337,6 @@
       "title": "\u2018GTA 6\u2019 Pre-Loads Are Slowing Down The Internet, Warns ISP",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZDE0aGMxRk9vR2Rwa1o3NV9vendjenZRX1I2X1B2dkU5VVNqcDhnaFpiTERMMUZTODZSdzNBMUJIUlVCb29DZTNRS21oZUI3SXNLc01ZR3h5VGZwYmNTcXgzdzhlX0NpejlhN0IyOGtFekdWclkzU0syWnNPVkc0TmtvY0YyNmxuZEFUUGVheDhKYWh3TWROei1jd0w1emNkVWFaU0ktNFB6QQ?oc=5",
       "source": "Forbes",
-      "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "AMD Radeon SSD Write Bug Gets A Fix From \u2018necanditool\u2019, Whose Open-Source Tool Stops atieclxx.exe Copying Itself Every Second",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCbG5yXzJaX3o4NVUzTDNtenJMSG9WcndpREo0TUhRZVdCWGZla2xuOHF1SHJibzhLX05lZy03TTluZW9BbGM1SVcycVBzOHdFWElxYW84ZXZGYlNGdmJFNjhjN3Vla0hZZ01IR2hlOUtjYzR0bHhuSUFmU21SbXfSAYQBQVVfeXFMTWdmRDlqdVViZzN1S3U5SmI5OHk2b25QMm9pQUpOV2oyaVdBUU5xRWNlQjRpVUoxWFhKbnFjSVI2T01KYlMtdjlTbGJBdElSUlJTcnJ6RW13NXN4Z0VWdDN3RmpVMzNjZFdKVFhkQVRGQnNDUHhwTHNjLXJXRzhSckRtNl83?oc=5",
-      "source": "Wccftech",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1386,14 +1402,6 @@
       "relevance_score": 6
     },
     {
-      "title": "US envoys arrive in Moscow for Russia-Ukraine talks with Putin",
-      "url": "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "The meeting with Kushner and Witkoff comes after two days of trilateral talks in the UAE yielded no breakthrough.",
-      "relevance_score": 6
-    },
-    {
       "title": "US soldier arrested in UK for suspected \u2018espionage\u2019 for Russia",
       "url": "https://www.defensenews.com/global/europe/2026/11/10/us-soldier-arrested-in-uk-for-suspected-espionage-for-russia/",
       "source": "Defense News",
@@ -1434,19 +1442,19 @@
       "relevance_score": 3
     },
     {
-      "title": "From the UK to the Gulf, are US overseas bases becoming liabilities?",
-      "url": "https://www.aljazeera.com/news-analysis/2026/11/12/from-the-uk-to-the-gulf-are-us-overseas-bases-becoming-liabilities?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "For decades, these bases allowed the US to wage faraway wars. Now, Iran has changed that calculation.",
-      "relevance_score": 2
-    },
-    {
       "title": "Guard appears to rebuke Hegseth\u2019s delegation at Tomb of the Unknown Soldier",
       "url": "https://www.defensenews.com/news/pentagon-congress/2026/11/11/guard-appears-to-rebuke-hegseths-delegation-at-tomb-of-the-unknown-soldier/",
       "source": "Defense News",
       "published": "Thu, 12 Nov 2026 ",
       "description": "The U.S. Army sentinel moved toward the group and, from a distance, shouted toward them: \"All visitors will maintain an atmosphere of silence and respect at all times.\"",
+      "relevance_score": 1
+    },
+    {
+      "title": "British woman missing from cruise ship in Atlantic",
+      "url": "https://www.bbc.co.uk/news/articles/cmy0enrkwkklo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "The 72-year-old was last seen aboard the Tui ship on Monday as it headed towards the Caribbean.",
       "relevance_score": 1
     }
   ],
@@ -1554,7 +1562,7 @@
     "changePercent": 2.28,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 12 Nov: 28,374.25, up +2.28% -- BULLISH. strong +2.28% move. Counter: price below SMA20, RSI 45.8 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-12T07:17:33.655578"
+    "timestamp": "2026-11-12T07:31:04.086275"
   },
   "sticky": {
     "cnbc": [
@@ -1619,11 +1627,11 @@
     "bloomberg": [],
     "wallstreetbets": [
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Nvidia, CoreWeave to Decline - www.marketscreener.com",
+        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Nvidia, CoreWeave to Decline - marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeW40LS1OVlN3eUQ1ZVAxN0RDdlgtN1VsRFJHN25RZU16VUUwUG14UGJiYkRpU1NiSjYtWGt4QnRzMXN6emk5TVVKRko0RnV3X0lOWFlDUDY1N19QUGh4OE53ZnN1N0VyRFpzOVF2eGU3Ti1MbGN2cEI2cHF3d0JMVDQ3SERRTXJZREFXcWxtb2VNbmtiR3VSX0IyU2xWVGZkVDlvc2RoVTJSZ0t5TTJRQk5abWxVZjJQcFl1ZXVhcUVjZm82dFBIN2dqX3dDdGotZjFCRDByX2hHV0ViZURn?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-11-12T12:12:43",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Nvidia, CoreWeave to Decline&nbsp;&nbsp;www.marketscreener.com"
+        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Thursday; Nvidia, CoreWeave to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
         "title": "WallStreetBets\u2019 Favorite AI Stocks Bounced Back Before The Bell - Finimize",
@@ -1675,90 +1683,90 @@
         "description": "Wall Street bets Democratic sweep will empower moderates in Washington&nbsp;&nbsp;Financial Times"
       },
       {
-        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-13T07:00:00",
-        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
-      },
-      {
         "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Wednesday; CoreWeave, Nebius Group to Open Higher - marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPOHN6U0h5dkQ5cHpQd2xYaGRHb2VpNlF5WDRnN3huSmV5MmpCUlI4WktpbjdpbDFlZ0d2LTVtb09JclZkbndKamR6QldRYmxkWUVqQW9hV2Y2ajFyT1NxTzZfQUx2VzRBUnh0UHdYaTBrQ1A3QmN0ck9xc05EWk5EdTRfQlItUzhyNmxkRC1ZbGlRQjl3WDBZUTYxVXNBTUpER2U3UG1NQlNnUGwzRlpZdTNNUF9uRDdSV1N4dC02M2ZqamhIeWdFb19sQWZyMkptaDJDWkRZdlpmYkZmTVM0UE05eTM?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-11-11T11:42:25",
         "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Wednesday; CoreWeave, Nebius Group to Open Higher&nbsp;&nbsp;marketscreener.com"
+      },
+      {
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7608.25,
-      "change": -32.25,
-      "change_percent": -0.42,
+      "price": 7616.25,
+      "change": -24.25,
+      "change_percent": -0.32,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28210.0,
-      "change": -263.25,
-      "change_percent": -0.92,
+      "price": 28273.25,
+      "change": -200.0,
+      "change_percent": -0.7,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52587.0,
-      "change": 9.0,
-      "change_percent": 0.02,
+      "price": 52645.0,
+      "change": 67.0,
+      "change_percent": 0.13,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2849.7,
-      "change": -4.0,
-      "change_percent": -0.14,
+      "price": 2853.3,
+      "change": -0.4,
+      "change_percent": -0.01,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.71,
-      "change": -0.82,
-      "change_percent": -0.95,
+      "price": 85.85,
+      "change": -0.68,
+      "change_percent": -0.79,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3951.5,
-      "change": -49.0,
-      "change_percent": -1.22,
+      "price": 3952.8,
+      "change": -47.7,
+      "change_percent": -1.19,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.96,
-      "change": -0.92,
-      "change_percent": -1.78,
+      "price": 51.09,
+      "change": -0.79,
+      "change_percent": -1.52,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1525.8,
-      "change": -13.2,
-      "change_percent": -0.86,
+      "price": 1531.6,
+      "change": -7.4,
+      "change_percent": -0.48,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1015.0,
-      "change": -28.7,
-      "change_percent": -2.75,
+      "price": 1016.0,
+      "change": -27.7,
+      "change_percent": -2.65,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.27,
+      "price": 3.28,
       "change": 0.06,
-      "change_percent": 1.84,
+      "change_percent": 1.93,
       "name": "Natural Gas Dec 26"
     }
   ],

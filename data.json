@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T22:16:25.106669",
+  "timestamp": "2026-11-11T22:20:41.595739",
   "summary": "Key topics today:\n- - United Airlines bans AI agents from booking flights on behalf of travelers (r/HackerNews, 201 pts)\n- - My AI agents found an unmapped Maya site? (r/HackerNews, 201 pts)\n- - Huawei releases MACaQ, its internal quantizer for local inference (r/HackerNews, 201 pts)\n- - Nvidia is preparing to oust Jensen Huang (r/HackerNews, 101 pts)\n- - Atuin Threads: All your agent sessions on every machine (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -27,20 +27,20 @@
       "text": "AZTA +19.4% momentum @ $48.90"
     },
     {
+      "type": "sell",
+      "asset": "BGSI",
+      "price": 77.18,
+      "change": -14.46,
+      "category": "stock",
+      "text": "BGSI -14.5% drop @ $77.18"
+    },
+    {
       "type": "buy",
       "asset": "SNDK",
       "price": 977.69,
       "change": 10.29,
       "category": "stock",
       "text": "SNDK +10.3% momentum @ $977.69"
-    },
-    {
-      "type": "buy",
-      "asset": "AMD",
-      "price": 552.9,
-      "change": 8.71,
-      "category": "stock",
-      "text": "AMD +8.7% momentum @ $552.90"
     },
     {
       "type": "watch",
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-12T03:16:05.432264",
+    "timestamp": "2026-11-12T03:20:32.872768",
     "prices": [
       {
         "name": "Bittensor",
@@ -429,16 +429,16 @@
       "description": "President Donald Trump spoke at a Veterans Day ceremony at Arlington National Cemetery honoring fallen soldiers and addressed the war with Iran."
     },
     {
-      "title": "Democrat Scott Colom wins the closest Senate race in the country",
-      "url": "https://www.npr.org/2026/11/11/nx-s1-6037840/democrat-scott-colom-wins-the-closest-senate-race-in-the-country",
+      "title": "World's fastest ocean liner is sunk to break another record: largest artificial reef",
+      "url": "https://www.npr.org/2026/11/11/nx-s1-6030853/ss-united-states-artificial-reef-sinking",
       "source": "Npr",
       "category": "npr",
       "published": "Wed, 11 Nov 2026 ",
-      "description": "Mississippi hadn't elected a Democrat to the U.S. Senate in more than 40 years."
+      "description": "The SS United States broke trans-Atlantic speed records. On Wednesday, it was sunk off the Florida coast and will become a diving destination and home for marine life."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-12T03:15:39.574745",
+    "timestamp": "2026-11-12T03:20:09.987608",
     "trending": [
       {
         "symbol": "AZTA",
@@ -446,6 +446,13 @@
         "change": 7.95,
         "change_percent": 19.41,
         "name": "Azenta, Inc."
+      },
+      {
+        "symbol": "BGSI",
+        "price": 77.18,
+        "change": -13.05,
+        "change_percent": -14.46,
+        "name": "Boyd Group Services Inc."
       },
       {
         "symbol": "SNDK",
@@ -469,13 +476,6 @@
         "name": "Tetra Tech, Inc."
       },
       {
-        "symbol": "AVGO",
-        "price": 345.22,
-        "change": 25.74,
-        "change_percent": 8.06,
-        "name": "Broadcom Inc."
-      },
-      {
         "symbol": "ZM",
         "price": 98.08,
         "change": 6.37,
@@ -490,11 +490,11 @@
         "name": "AEVEX Corp."
       },
       {
-        "symbol": "NVD",
-        "price": 5.87,
-        "change": 0.25,
-        "change_percent": 4.45,
-        "name": "GraniteShares 2x Short NVDA Dai"
+        "symbol": "BABA",
+        "price": 101.52,
+        "change": -3.86,
+        "change_percent": -3.66,
+        "name": "Alibaba Group Holding Limited"
       },
       {
         "symbol": "NVDA",
@@ -502,6 +502,13 @@
         "change": -4.94,
         "change_percent": -2.76,
         "name": "NVIDIA Corporation"
+      },
+      {
+        "symbol": "GOOGM",
+        "price": 42.74,
+        "change": 0.69,
+        "change_percent": 1.64,
+        "name": "Alphabet Inc. - Depositary Shar"
       },
       {
         "symbol": "AAPL",
@@ -537,13 +544,6 @@
         "change": 0.03,
         "change_percent": 0.25,
         "name": "Corteva, Inc."
-      },
-      {
-        "symbol": "DGII",
-        "price": 66.96,
-        "change": -0.17,
-        "change_percent": -0.25,
-        "name": "Digi International Inc."
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-12T03:16:01.205838",
+    "timestamp": "2026-11-12T03:20:29.137566",
     "items": [
       {
         "symbol": "SPX",
@@ -1008,50 +1008,50 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7620.25,
-        "change": 1.01,
+        "price": 7619.5,
+        "change": 1.0,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28313.0,
-        "change": 1.72,
+        "price": 28304.75,
+        "change": 1.69,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52655.0,
+        "price": 52653.0,
         "change": 0.65,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2857.5,
+        "price": 2857.6,
         "change": 1.01,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.72,
-        "change": -0.37,
+        "price": 85.68,
+        "change": -0.42,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3986.3,
-        "change": -1.09,
+        "price": 3987.2,
+        "change": -1.07,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 51.53,
-        "change": 0.84,
+        "price": 51.57,
+        "change": 0.92,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1538.0,
-        "change": -0.06,
+        "price": 1538.6,
+        "change": -0.02,
         "type": "future"
       },
       {
@@ -1063,43 +1063,43 @@
       {
         "symbol": "NG=F",
         "price": 3.28,
-        "change": -0.46,
+        "change": -0.42,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 214.77,
-        "change": -2.53,
+        "price": 215.01,
+        "change": -2.45,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 73659,
-        "change": -0.14,
+        "price": 73733,
+        "change": -0.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2050.95,
-        "change": -0.66,
+        "price": 2052.34,
+        "change": -0.57,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 83.11,
-        "change": -0.54,
+        "price": 83.15,
+        "change": -0.41,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 10.13,
-        "change": -2.78,
+        "change": -2.72,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.56,
-        "change": 0.71,
+        "price": 8.58,
+        "change": 1.1,
         "type": "crypto"
       },
       {
@@ -1166,19 +1166,9 @@
   },
   "business": [
     {
-      "title": "Nvidia live updates: Nvidia stock tanks in after-hours after allegations of a second affair surface",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxORXJGN3VRS0JCdkxWaTMzYWhuVjh1b2Q4QWtsZDJWSFozTVdONzZJWnVvdGE0NWZJQTFyamExSGlUNXZTUDJ6ZWZ5WlVPa0huVGJPMUZXNUc5bzZyX0F6VjAtQzdmNnZMN3czOF9uWTU1SzZJMnJtdDBRMXZROXdCOVhmQjU4OTd4bEFIbDBDeHRFT0Zoc29kY2Z6Nnhnd0NyanBYcXBuX1VvdDdTT2FZaGdHbmZ2VDZaU18yUEtRZjBJdkxzeXJReFhaeVlPbWE1eFJTRDFUS0hCSjJVM2lQTHczUFRiUHp3VmJB?oc=5",
-      "source": "Yahoo Finance",
-      "category": "business",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Anthropic IPO Is \u2018Jenga Block\u2019 Holding Up Next Leg of AI Trade",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMGdCeFJuSW5EWTJkTy1ERGxfeVdsRDRDMFBQcmM3UXB2dlhWQlhMQ1ZGdEdxd05BcTZyZDI0RVpWb3F5XzB2a2tIOWwwQWF3Y05pU3JVd3pCTUFqMWFXM1VUcmtEaGhhcWh6MHZQYzU0U1hJejMxOElDLWZwYzlubFk4TG9zYUkwSHZaUXlvTnI1WF9qemV2TXd5TXluNmtZc015dFNXbDVqcnFlOGhlTQ?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV0NCNjVPR0M2THpMdkhiTW5jZUlmVXJzNHk4YjZYeWtGZHc3Vk81V3czUXBBVjktcXlSLWs3MFdyWkRtcmRpV1BmY1hKckhyU3RYWEdsTWlGcnhFVFVNakRLLWZvREpURHJnRVVSdmZEcHJWU2p5YWJZX1pEWGRWRDB1aw?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1216,9 +1206,9 @@
       "author": ""
     },
     {
-      "title": "SpaceX Starship Flight 15 live updates: T-2 days to SpaceX's 1st-ever double Starship landing attempt",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR2NsZVpDNUticGl0NTB1VUJYUHhVVTlkTHN3RnZCcXNZTHZ5d0JNaGZGMGlxdV9HS1A5VF9QNl9sMm5HT3NIVVZObDVJMnk1dDhuRHJ6WE95eXhkNVJDS3JRdThhREpIdnZCUG5PRnF3R0hscjZOWFJDRHNPdERlVVZSTU9mc2xXcXlmbGI2RHFzcUp2SUl2YnhEOEF5SVBEelhaSy1oc0xMV3JxLVRkd1FXSGoxLTdTR3Z1OA?oc=5",
-      "source": "Space",
+      "title": "Anthropic's IPO is said to be multiple times oversubscribed as roadshow gets under way",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKWGZ4ck1uamZJQ3p5MmN3eVFwQ1dyQjMzd0VXV3M3ZmljNHlCM2daclNuN0pBdzlzLXZpb2Y4THdVNVpna0Rpc0FYQ3hxTjJWcFBEMWdodjFNZ2o5Y0xTUS0yNW94MUt4cllBaUVnby0yRUZa?oc=5",
+      "source": "Quartz",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1231,6 +1221,16 @@
       "source": "WSJ",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "SpaceX Starship Flight 15 live updates: T-2 days to SpaceX's 1st-ever double Starship landing attempt",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR2NsZVpDNUticGl0NTB1VUJYUHhVVTlkTHN3RnZCcXNZTHZ5d0JNaGZGMGlxdV9HS1A5VF9QNl9sMm5HT3NIVVZObDVJMnk1dDhuRHJ6WE95eXhkNVJDS3JRdThhREpIdnZCUG5PRnF3R0hscjZOWFJDRHNPdERlVVZSTU9mc2xXcXlmbGI2RHFzcUp2SUl2YnhEOEF5SVBEelhaSy1oc0xMV3JxLVRkd1FXSGoxLTdTR3Z1OA?oc=5",
+      "source": "Space",
+      "category": "business",
+      "published": "Wed, 11 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1498,7 +1498,7 @@
     "changePercent": 2.28,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Wed 11 Nov: 28,374.25, up +2.28% -- BULLISH. strong +2.28% move. Counter: price below SMA20, RSI 45.8 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-11T22:16:22.831102"
+    "timestamp": "2026-11-11T22:20:39.621322"
   },
   "sticky": {
     "cnbc": [
@@ -1626,27 +1626,27 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Monday; AMD to Advance, Nvidia to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Wall Street Bets: Navitas, Duolingo And Fiserv Get Upgrades While CleanSpark Faces Texas Headwinds - TradingView",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQMVoycktmbERDNnVuWkJxZXphSWpMOVNtREdZZExnd2ExYkdlZVFuOU9QWS1vMDdqblRNVk1FYmduZ1R0MTBGRVJWSWFaRWtXeGNRS2hYRG5CdzREemtuZC1xSXM2VHUyc2hFQ3JZMHpLTkRfQ3lwcXRTSXBBNE5QNkZhbXlsZWZjVGJOcG1pcFZaWWluYnVIbnBnUE5kNlE5Z2l0dkNhQjRDMlB3Q0xLR2w0WWVTUGNnUEo3OGRLRlRLeDRiVF9kWGpCbi13WmRHSGtxVkxGcFBTbV8xZklqSW94ZG5MWHZYaEstOHR3?oc=5",
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-11-05T08:58:40",
-        "description": "Wall Street Bets: Navitas, Duolingo And Fiserv Get Upgrades While CleanSpark Faces Texas Headwinds&nbsp;&nbsp;TradingView"
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7620.0,
-      "change": 75.75,
+      "price": 7619.75,
+      "change": 75.5,
       "change_percent": 1.0,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28312.0,
-      "change": 476.75,
-      "change_percent": 1.71,
+      "price": 28308.25,
+      "change": 473.0,
+      "change_percent": 1.7,
       "name": "Nasdaq 100 Dec 26"
     },
     {
@@ -1658,37 +1658,37 @@
     },
     {
       "symbol": "RTY=F",
-      "price": 2857.5,
-      "change": 28.6,
+      "price": 2857.6,
+      "change": 28.7,
       "change_percent": 1.01,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.72,
-      "change": -0.32,
-      "change_percent": -0.37,
+      "price": 85.68,
+      "change": -0.36,
+      "change_percent": -0.42,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3986.9,
-      "change": -43.3,
-      "change_percent": -1.07,
+      "price": 3987.3,
+      "change": -42.9,
+      "change_percent": -1.06,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 51.54,
-      "change": 0.44,
-      "change_percent": 0.87,
+      "price": 51.57,
+      "change": 0.47,
+      "change_percent": 0.92,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1538.0,
-      "change": -0.9,
-      "change_percent": -0.06,
+      "price": 1538.6,
+      "change": -0.3,
+      "change_percent": -0.02,
       "name": "Platinum Jan 27"
     },
     {
@@ -1701,8 +1701,8 @@
     {
       "symbol": "NG=F",
       "price": 3.28,
-      "change": -0.02,
-      "change_percent": -0.46,
+      "change": -0.01,
+      "change_percent": -0.42,
       "name": "Natural Gas Dec 26"
     }
   ],

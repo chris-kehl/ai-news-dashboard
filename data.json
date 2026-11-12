@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T18:16:27.103641",
+  "timestamp": "2026-11-12T18:23:20.679082",
   "summary": "Key topics today:\n- - Chinese frontier AI models carry the fingerprint of export-controlled GPUs (r/HackerNews, 301 pts)\n- - Foundation Models framework (r/HackerNews, 101 pts)\n- - AI is turning Apple's app review process into a nightmare for synth developers (r/HackerNews, 101 pts)\n- - I'm making LLMs work on small and old devices (r/HackerNews, 101 pts)\n- - Anthropic IPO (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "XLAB",
-      "price": 2.27,
-      "change": 118.27,
-      "category": "stock",
-      "text": "XLAB +118.3% momentum @ $2.27"
-    },
-    {
-      "type": "buy",
       "asset": "AMD",
       "price": 585.3,
       "change": 13.6,
@@ -49,6 +41,14 @@
       "change": -8.14,
       "category": "stock",
       "text": "BABA -8.1% drop @ $94.36"
+    },
+    {
+      "type": "sell",
+      "asset": "MSTR",
+      "price": 114.41,
+      "change": -5.5,
+      "category": "stock",
+      "text": "MSTR -5.5% drop @ $114.41"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-12T23:16:17.706349",
+    "timestamp": "2026-11-12T23:23:12.067169",
     "prices": [
       {
         "name": "Bittensor",
@@ -226,6 +226,12 @@
     ],
     "news": [
       {
+        "title": "Maple Finance\u2019s strategy rift sends co-founder, COO to the exits",
+        "url": "https://cointelegraph.com/news/maple-finance-strategy-rift-co-founder-coo-exit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 12 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78W1BXY18T2XKFJB5NNN63C/image-1.png\" alt=\"Maple Finance\u2019s strategy rift sends co-founder, COO to the exits\" class=\"type:"
+      },
+      {
         "title": "NK hackers join memecoin trenches, xStocks adds Hong Kong equities: Asia Express",
         "url": "https://cointelegraph.com/magazine/nk-hackers-join-memecoin-trenches-xstocks-adds-hong-kong-equities-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Thu, 12 Nov 2026 ",
@@ -268,19 +274,13 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7859A9F3JFAC903AM8D1SAR/hi-beyond-bitcoin-the-future-of-digital-assets-bitcoin-price-us-iran-960x640.webp\" alt=\"Bitcoin"
       },
       {
-        "title": "Jensen Huang resigns as Nvidia CEO, exits board; shares plunge",
-        "url": "https://cointelegraph.com/news/jensen-huang-resigns-nvidia-ceo-board-member?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 12 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M78FFGSYBN954VJZWS39264X/jensen-with-exact-cointelegraph-branding-1.png\" alt=\"Jensen Huang resigns as Nvidia CEO, exits b"
-      },
-      {
         "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
         "url": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
         "published": "Thu, 12 Nov 2026 ",
         "description": "Federal authorities say they've taken infrastructure used in the FaceStealer scheme used to steal as much as $400 million in crypto assets."
       },
       {
-        "title": "U.S. President names CFTC, SEC nominees for first time in a year",
+        "title": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
         "url": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year",
         "published": "Thu, 12 Nov 2026 ",
         "description": "U.S. President Donald Trump has named two potential commissioners each to the Securities and Exchange Commission and Commodity Futures Trading Commission."
@@ -301,20 +301,52 @@
   },
   "news": [
     {
-      "title": "US envoys meet Zelensky in Dublin after talks with Putin in Moscow",
-      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
+      "title": "How AI visionary Jensen Huang was undone by his own bad decisions",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
       "published": "Thu, 12 Nov 2026 ",
-      "description": "US envoy Steve Witkoff says President Putin has agreed to European negotiators joining the next round of Ukraine talks."
+      "description": "Zoe Kleinman explains how the man who built Nvidia from the ground up lost everything in a matter of days."
     },
     {
       "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
       "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
+      "source": "Bbc News",
+      "category": "bbc_news",
       "published": "Thu, 12 Nov 2026 ",
       "description": "The attack is thought to be the first time Ukrainian drones have attacked a Russian ship in an open stretch of the Baltic Sea."
+    },
+    {
+      "title": "US envoys meet Zelensky in Dublin after talks with Putin in Moscow",
+      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "US envoy Steve Witkoff says President Putin has agreed to European negotiators joining the next round of Ukraine talks."
+    },
+    {
+      "title": "Microsoft users report outages amid tech giant 'connectivity issues'",
+      "url": "https://www.bbc.co.uk/news/articles/c5gm3g9ldz8xo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "Users worldwide report issues after tech giant says its infrastructure has been hit by \"elevated load\""
+    },
+    {
+      "title": "Can Burnham avoid another Labour welfare rebellion?",
+      "url": "https://www.bbc.co.uk/news/articles/c95y100nrm41o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "Any revolt among MPs is likely to be smaller than the one that badly damaged Keir Starmer's government."
+    },
+    {
+      "title": "What we know about Brooklyn building collapse that killed eight people",
+      "url": "https://www.bbc.co.uk/news/articles/cm20v66jq611o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc News",
+      "category": "bbc_news",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "Two construction workers and two children were killed when a residential building fell into an adjacent construction site on Wednesday."
     },
     {
       "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
@@ -411,50 +443,11 @@
       "category": "npr",
       "published": "Thu, 12 Nov 2026 ",
       "description": "Jensen Huang, CEO of Nvidia, the leading AI chipmaker, resigned after admitting an extramarital affair with a woman the U.S. says is a Chinese spy. This espionage tactic is known as a honey trap."
-    },
-    {
-      "title": "'Punch in the gut': Homes sales fall to their lowest in 16 years",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "Existing homes sales in October declined 8.8% from a year earlier, according to the National Association of Realtors."
-    },
-    {
-      "title": "Casualties continue to rise after Brooklyn building collapses",
-      "url": "https://www.npr.org/sections/the-picture-show/2026/11/12/g-s1-153229/brooklyn-building-collapse-photos",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "First responders continue to search for survivors after a building in Brooklyn collapsed, leaving at least eight dead and dozens injured."
-    },
-    {
-      "title": "Democrats want to stop Trump's arch, golf course and more. What are their options?",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6034539/democrats-congress-trump-arch-ballroom-funding-oversight",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "As Trump's arch and other projects make their way through the courts, many critics are looking to Congress to stop them. Democrats have a few tools, including funding and oversight."
-    },
-    {
-      "title": "The SS United States takes its final voyage to the bottom of the Gulf of Mexico",
-      "url": "https://www.npr.org/2026/11/12/g-s1-153219/the-deliberate-sinking-of-the-ss-united-states",
-      "source": "Npr",
-      "category": "npr",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "A ship bigger than the Titanic is being sunk off the coast of Florida to make an artificial reef."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-12T23:15:55.355645",
+    "timestamp": "2026-11-12T23:22:50.834900",
     "trending": [
-      {
-        "symbol": "XLAB",
-        "price": 2.27,
-        "change": 1.23,
-        "change_percent": 118.27,
-        "name": "Exascale Labs Holdings Inc."
-      },
       {
         "symbol": "BABA",
         "price": 94.36,
@@ -489,6 +482,13 @@
         "change": 1.31,
         "change_percent": 3.12,
         "name": "Alphabet Inc. - Depositary Shar"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 3880.2,
+        "change": -120.3,
+        "change_percent": -3.01,
+        "name": "Gold Dec 26"
       },
       {
         "symbol": "SMCI",
@@ -533,11 +533,11 @@
         "name": "RUSS 2K"
       },
       {
-        "symbol": "NVDA",
-        "price": 166.19,
-        "change": -2.7,
-        "change_percent": -1.6,
-        "name": "NVIDIA Corporation"
+        "symbol": "MRLN",
+        "price": 0.96,
+        "change": 0.01,
+        "change_percent": 1.3,
+        "name": "Merlin, Inc."
       },
       {
         "symbol": ".DJI",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-12T23:16:13.190239",
+    "timestamp": "2026-11-12T23:23:08.153195",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7628.5,
-        "change": -0.16,
+        "price": 7629.75,
+        "change": -0.14,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28468.75,
-        "change": -0.02,
+        "price": 28474.5,
+        "change": 0.0,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52423.0,
+        "price": 52424.0,
         "change": -0.29,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2810.1,
-        "change": -1.53,
+        "price": 2809.7,
+        "change": -1.54,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 88.9,
-        "change": 2.74,
+        "price": 88.85,
+        "change": 2.68,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3882.5,
-        "change": -2.95,
+        "price": 3879.9,
+        "change": -3.01,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 49.97,
-        "change": -3.69,
+        "price": 49.94,
+        "change": -3.74,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1518.8,
-        "change": -1.31,
+        "price": 1519.3,
+        "change": -1.28,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 993.0,
-        "change": -4.86,
+        "price": 994.0,
+        "change": -4.76,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.36,
-        "change": 4.45,
+        "price": 3.35,
+        "change": 4.26,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 212.5,
-        "change": -0.28,
+        "price": 211.91,
+        "change": -0.76,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 71415,
-        "change": -2.79,
+        "price": 71286,
+        "change": -3.06,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2015.47,
-        "change": -1.1,
+        "price": 2013.13,
+        "change": -1.37,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 81.63,
-        "change": -0.93,
+        "price": 81.47,
+        "change": -1.41,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.09,
-        "change": 0.35,
+        "price": 10.08,
+        "change": 0.15,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.35,
-        "change": -0.81,
+        "price": 8.34,
+        "change": -1.04,
         "type": "crypto"
       },
       {
@@ -1147,6 +1147,12 @@
         "type": "mover"
       },
       {
+        "symbol": "GC=F",
+        "price": 3879.9,
+        "change": -3.01,
+        "type": "mover"
+      },
+      {
         "symbol": "SMCI",
         "price": 26.99,
         "change": -2.88,
@@ -1162,12 +1168,6 @@
         "symbol": "NU",
         "price": 11.83,
         "change": -2.07,
-        "type": "mover"
-      },
-      {
-        "symbol": "MSFT",
-        "price": 523.0,
-        "change": -1.91,
         "type": "mover"
       }
     ]
@@ -1224,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "Colette Kress named Nvidia interim CEO as Jensen Huang's abrupt resignation raises investor concerns",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQalBfVFQ4LUhaMURVa2puS2NzSWNoemxiQi1mdnFsZTAwaWUwejZ0MG4xb1ZkRTh4bElpN0ZlOHJkaWtVdjJoT2ZodE1rcDRSczZvOHd4c1JsSTF1R21xSXBVRTZraXV5LWdJMDltQnNYZlFYVjRGY1F4c092S3FNN3J6b2lSLXRxQ0pkdEctSUk4alJTTFA3WkVTSWwxNU5VdmNXNDRyeEVkTnQ3YXk1b3B4elZOQVU0WW9sT1l0RUplQnVjeW1zVzRyN3PSAdIBQVVfeXFMTkxjRWg3QWthVTV2SXBfck42bF9yRjNGd0Q4cG04Wk1LQ2ZPZmVtZ1hDOEdHZzhQSFJfNlExYVVCZUNVNTFiZjVkd29qZk1Vd1NRbGNBa01CNmd3cjQyRFhnbGhDTkw1cVVhakd3aUFaLS05T2owT0RuclB3VzZtZ2hXd1R6SnM3cUgtRFBQSVB0UEZPbGduT1JnZG9BODlGandRdUJXTDZjcWlHLTgyd1U5UUM2OGt1OVZfZzd6TXNhWW9kMlhPem5udkVyejRmYlVR?oc=5",
-      "source": "Fox Business",
+      "title": "SpaceX plans over $74 billion investment in Texas, Arizona AI campuses",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdlQwLUxxTENmenRpSFFXVlNUeVkzeURtNWxCZ1RuVEQwdENKV0g3MndreVZsZFYwVGtpT3Q3SDJZU0pHTGI1WFFYWERreFJmbzVjaUtOR2NjUURRMTVHNVlKdGE0VkdRVzRvekpIcHdmRGdOV2kwRXVmbWl1blRIV1VKSjQ4c19FSVFTUWZNM2ptQ0ZaMW96a2UyTFphWjNsSnc3ZmJZdWhHNWpiS19hTDhYSk9vNkpkeng1N3prZ1Y3b1lI?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1244,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "SpaceX plans over $74 billion investment in Texas, Arizona AI campuses",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdlQwLUxxTENmenRpSFFXVlNUeVkzeURtNWxCZ1RuVEQwdENKV0g3MndreVZsZFYwVGtpT3Q3SDJZU0pHTGI1WFFYWERreFJmbzVjaUtOR2NjUURRMTVHNVlKdGE0VkdRVzRvekpIcHdmRGdOV2kwRXVmbWl1blRIV1VKSjQ4c19FSVFTUWZNM2ptQ0ZaMW96a2UyTFphWjNsSnc3ZmJZdWhHNWpiS19hTDhYSk9vNkpkeng1N3prZ1Y3b1lI?oc=5",
-      "source": "Reuters",
+      "title": "Donald Trump Jr. ends Kalshi advisory role",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYUZEdG1qdGtFWDlRR1RuOU5RbzRBWTlNVG5KTTBSUGhDT0JiT194ZXM2LU01Q3JVMlJXRFBTMjVwZlZtSXNubGhPdDdScmxJdHRFNXhYQURlNVVJUW42YzAtcnhFck1BdmFlaVlqeEp0TjYzcGxuWGZpbXgxLUdQWjhR?oc=5",
+      "source": "Politico",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1256,9 +1256,9 @@
   ],
   "tech_business": [
     {
-      "title": "Outlook outage: Microsoft reports 'issues' with Teams and email",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcjZSX2hZVHVlY0d2clcySTg2UEhUcnc0MlkxQmdNOGhDcWJnMkpxOXY5UWJ3T2JUUGdrZDkyeTVTeFBZb3psd3Y1NEJiMU9nbWFBX2ZLSEduWlNmWnpuZkVfYlRNR0RiNDBraFpSV0lzOUFrX1FaNXdCNkFFTktFTkZNN01CYzJTakc2OVFB0gGTAUFVX3lxTFBya0ZHS3VKZzZLZFFRMzlBQVFfaW9kT2syZGZxVFh1UlBPdXhaUDdlODhVT1dRSlFoSXl0Q1ZzVFJnMXRmX0hDOHZYeEJBdUs2VEY1YW9oenU0dkduS0dkS1VzMnVUd1ltSExvMEV4cXZCa2NlXzdvZGdZbUV6c3RhekdQOGs0aFczV1l1X2xwMVJoWQ?oc=5",
-      "source": "ABC News - Breaking News, Latest News and Videos",
+      "title": "Major Microsoft Outlook Outage Leaves People With Email Jobs Unable to Email",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWTEycUFvNHRyM0VUODM2ZTlvRlJVZlpETng5b1BUdEhKdExzX09pN1I4eldjSXZvd21GUTJmOXNIb1JHVGJ0SXp2SVFMM0ZZVFhDSnNXbHRkZXFHbVhDRmVrclhkcm5hRENPNGVpS0QzNXNhTjVQZ3ZSRWZablJpM1N6eXNhcGh0NDdGNTlxaXFTTzBuQ3l3?oc=5",
+      "source": "WIRED",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1286,16 +1286,6 @@
       "author": ""
     },
     {
-      "title": "Apple adjusts iPhone and Apple Watch trade-in values, adds Samsung foldables",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaXBOTHRmdmpBNDgwOXJvVU9GLW5ITHNOTS1yVXpZRkNuMGItdTEwOVFOSzZwNXJha0Q1Um5hWkhEeld5WjRISmlxdFVIZkMtMHBiWWY5UXA1c3BSeG01U0R1N1pHbmx2dUlMME92a1laWWh5LS1NSlBUTVh6MUlIdHRkdURTeTFNcENrcnE1WU9SYl9LaHVhdlJaQ2tUaTNfZ3hnZ0xNb0RzT3M?oc=5",
-      "source": "9to5Mac",
-      "category": "business",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "One UI 9.5 beta update looks almost ready for the Galaxy S26",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRmhLbEhucUlhclJPaUJDOEliWlBRVTFNQ01CNi04NzVHc3dveHVsdFFuZHZ3bFpVUFN4RzAtUWJOR3lvVzNzYmo2QTlacjY2SENINFF2Xy1nMFZ2M0pRdEczUUFYNTN4TUhiLUMwRjdqWldtTy1uT1FQdXFVWW9JR1NzZVc?oc=5",
       "source": "SamMobile",
@@ -1306,11 +1296,11 @@
       "author": ""
     },
     {
-      "title": "'I think we're on the brink of a revolution': Google researcher hails AI agents after they found what looks like an ancient Maya site in Mexico",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSkFzdXhjaDlOTHltWEJoVWZ1OHkyUG85ZlNadFZjZnFLdGM4b2VhSWVzZGloSkZwcFk0MTRmc2FwVnJrVlkxX3JJWjlBd0FGMFIyckZCdGtxdzZ0SnFNVFZ1enBEaVNpWTVfenNkcTZPVWdsUHdwVFdrdm9tTjZkWWxFN1FkczZZQlNKNHZITUNabkFUdVE?oc=5",
-      "source": "Yahoo Tech",
+      "title": "Apple adjusts iPhone and Apple Watch trade-in values, adds Samsung foldables",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaXBOTHRmdmpBNDgwOXJvVU9GLW5ITHNOTS1yVXpZRkNuMGItdTEwOVFOSzZwNXJha0Q1Um5hWkhEeld5WjRISmlxdFVIZkMtMHBiWWY5UXA1c3BSeG01U0R1N1pHbmx2dUlMME92a1laWWh5LS1NSlBUTVh6MUlIdHRkdURTeTFNcENrcnE1WU9SYl9LaHVhdlJaQ2tUaTNfZ3hnZ0xNb0RzT3M?oc=5",
+      "source": "9to5Mac",
       "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
+      "published": "Thu, 12 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1331,6 +1321,16 @@
       "source": "Reuters",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcHNkQ3h6dFZOTXM1Wk04SzN6dUtuTEZWZ3VRc1AzaHhWcUgybUR4TmZ0a2Q3TktGajhoSUZLZm9nVUwxQjQyeXQ1SGVDQ3hqaXB4Q1FaaFVBanpYTXZPSWFLNFRRR25fVmhFU3JOYWRVUzVBQlZxRE9kSGtQR2ZRSzVZb1NDN0pneUEzWEh3OEdjMkUweTdVRFlIUFBqQdIBowFBVV95cUxPcEoyQ19NMjF5Mkpra0NRVWg5SUUwWDE1QXh0Tllfbm8tU2RoeklfaE9jOFhOeU13VUNVcHJfckVpSVpfUzR2SUdJMWlGaGdlUEVXakNlUDVjMUtHT1FZMlA2T1NDYWt5QWJDVlZhTHhzd3E5VXNnV3dzUnNMcDVjYjE0WW1WNlY3bHdkSVVZWG5wQlBZSEVtWU83SVNhTFltbFhZ?oc=5",
+      "source": "XBOX Wire",
+      "category": "business",
+      "published": "Tue, 10 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1402,11 +1402,11 @@
       "relevance_score": 4
     },
     {
-      "title": "Regional security dominates European talks in Dublin amid hybrid attacks",
-      "url": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks?traffic_source=rss",
+      "title": "Russian court jails rights lawyer for 12 years on treason charge",
+      "url": "https://www.aljazeera.com/news/2026/11/12/russian-court-jails-rights-lawyer-for-12-years-on-treason-charge?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Thu, 12 Nov 2026 ",
-      "description": "European nations discuss security collaboration and an envoy for Ukraine peace talks during the summit in Ireland.",
+      "description": "Prosecutors say the woman shared security details with Ukraine, while her lawyers argue the information was not secret.",
       "relevance_score": 4
     },
     {
@@ -1562,7 +1562,7 @@
     "changePercent": -0.3,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Thu 12 Nov: 28,289.19, down -0.30% -- BEARISH. price below SMA20, RSI 45.3 neutral-bearish, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-12T18:16:24.347843"
+    "timestamp": "2026-11-12T18:23:18.288954"
   },
   "sticky": {
     "cnbc": [
@@ -1701,22 +1701,22 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7629.0,
-      "change": -11.5,
-      "change_percent": -0.15,
+      "price": 7629.75,
+      "change": -10.75,
+      "change_percent": -0.14,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28462.75,
-      "change": -10.5,
-      "change_percent": -0.04,
+      "price": 28474.25,
+      "change": 1.0,
+      "change_percent": 0.0,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52428.0,
-      "change": -150.0,
+      "price": 52424.0,
+      "change": -154.0,
       "change_percent": -0.29,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
@@ -1729,44 +1729,44 @@
     },
     {
       "symbol": "CL=F",
-      "price": 88.91,
-      "change": 2.38,
-      "change_percent": 2.75,
+      "price": 88.85,
+      "change": 2.32,
+      "change_percent": 2.68,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3882.4,
-      "change": -118.1,
-      "change_percent": -2.95,
+      "price": 3879.9,
+      "change": -120.6,
+      "change_percent": -3.01,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 49.97,
-      "change": -1.92,
-      "change_percent": -3.69,
+      "price": 49.94,
+      "change": -1.94,
+      "change_percent": -3.74,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1518.8,
-      "change": -20.2,
-      "change_percent": -1.31,
+      "price": 1519.3,
+      "change": -19.7,
+      "change_percent": -1.28,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 993.0,
-      "change": -50.7,
-      "change_percent": -4.86,
+      "price": 994.0,
+      "change": -49.7,
+      "change_percent": -4.76,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.36,
+      "price": 3.35,
       "change": 0.14,
-      "change_percent": 4.45,
+      "change_percent": 4.26,
       "name": "Natural Gas Dec 26"
     }
   ],

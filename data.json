@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T08:16:16.676198",
+  "timestamp": "2026-11-12T08:22:18.004170",
   "summary": "Key topics today:\n- - United Airlines bans AI agents from booking flights on behalf of travelers (r/HackerNews, 201 pts)\n- - My AI agents found an unmapped Maya site? (r/HackerNews, 201 pts)\n- - Huawei releases MACaQ, its internal quantizer for local inference (r/HackerNews, 201 pts)\n- - Anthropic IPO (r/HackerNews, 101 pts)\n- - Nvidia is preparing to oust Jensen Huang (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,11 +28,19 @@
     },
     {
       "type": "buy",
-      "asset": "DPU",
-      "price": 1.59,
-      "change": 15.22,
+      "asset": "NBIS",
+      "price": 154.69,
+      "change": 9.36,
       "category": "stock",
-      "text": "DPU +15.2% momentum @ $1.59"
+      "text": "NBIS +9.4% momentum @ $154.69"
+    },
+    {
+      "type": "buy",
+      "asset": "FRMI",
+      "price": 1.81,
+      "change": 9.04,
+      "category": "stock",
+      "text": "FRMI +9.0% momentum @ $1.81"
     },
     {
       "type": "buy",
@@ -41,14 +49,6 @@
       "change": 8.72,
       "category": "stock",
       "text": "FPS +8.7% momentum @ $24.57"
-    },
-    {
-      "type": "buy",
-      "asset": "AMD",
-      "price": 552.9,
-      "change": 8.71,
-      "category": "stock",
-      "text": "AMD +8.7% momentum @ $552.90"
     },
     {
       "type": "watch",
@@ -117,6 +117,14 @@
       "created": ""
     },
     {
+      "title": "I gave an agent a lakehouse and control of my garden",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://jatorre.github.io/garden/",
+      "created": ""
+    },
+    {
       "title": "Why Writing Correct Software Is Hard",
       "subreddit": "HackerNews",
       "score": 1,
@@ -139,20 +147,12 @@
       "comments": 0,
       "url": "https://codeberg.org/wvhulle/bootvine",
       "created": ""
-    },
-    {
-      "title": "Tim Peters has died",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-12T13:16:07.479143",
+    "timestamp": "2026-11-12T13:21:53.680919",
     "prices": [
       {
         "name": "Bittensor",
@@ -454,14 +454,21 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-12T13:15:38.504752",
+    "timestamp": "2026-11-12T13:21:32.434570",
     "trending": [
       {
-        "symbol": "DPU",
-        "price": 1.59,
-        "change": 0.21,
-        "change_percent": 15.22,
-        "name": "Nexpu Ltd."
+        "symbol": "NBIS",
+        "price": 154.69,
+        "change": 13.24,
+        "change_percent": 9.36,
+        "name": "Nebius Group N.V."
+      },
+      {
+        "symbol": "FRMI",
+        "price": 1.81,
+        "change": 0.15,
+        "change_percent": 9.04,
+        "name": "Fermi Inc."
       },
       {
         "symbol": "FPS",
@@ -469,27 +476,6 @@
         "change": 1.97,
         "change_percent": 8.72,
         "name": "Forgent Power Solutions, Inc."
-      },
-      {
-        "symbol": "TTEK",
-        "price": 37.61,
-        "change": -3.48,
-        "change_percent": -8.47,
-        "name": "Tetra Tech, Inc."
-      },
-      {
-        "symbol": "PZZA",
-        "price": 19.19,
-        "change": -1.56,
-        "change_percent": -7.52,
-        "name": "Papa John's International, Inc."
-      },
-      {
-        "symbol": "TE",
-        "price": 2.13,
-        "change": -0.16,
-        "change_percent": -6.99,
-        "name": "T1 Energy Inc."
       },
       {
         "symbol": "YETI",
@@ -534,11 +520,25 @@
         "name": "Alphabet Inc. - Depositary Shar"
       },
       {
+        "symbol": "FIGR",
+        "price": 24.19,
+        "change": -0.33,
+        "change_percent": -1.35,
+        "name": "Figure Technology Solutions, In"
+      },
+      {
         "symbol": ".SPX",
         "price": 7619.38,
         "change": 98.45,
         "change_percent": 1.31,
         "name": "S&P 500"
+      },
+      {
+        "symbol": "LUNR",
+        "price": 12.18,
+        "change": 0.14,
+        "change_percent": 1.16,
+        "name": "Intuitive Machines, Inc."
       },
       {
         "symbol": ".RUT",
@@ -990,7 +990,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-12T13:15:56.844357",
+    "timestamp": "2026-11-12T13:21:49.839533",
     "items": [
       {
         "symbol": "SPX",
@@ -1012,8 +1012,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 19.08,
-        "change": 9.09,
+        "price": 18.97,
+        "change": 8.46,
         "type": "index"
       },
       {
@@ -1024,122 +1024,110 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7603.75,
-        "change": -0.48,
+        "price": 7582.75,
+        "change": -0.76,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28166.5,
-        "change": -1.08,
+        "price": 28042.25,
+        "change": -1.51,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52583.0,
-        "change": 0.01,
+        "price": 52429.0,
+        "change": -0.28,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2847.0,
-        "change": -0.23,
+        "price": 2833.8,
+        "change": -0.7,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.68,
-        "change": -0.98,
+        "price": 87.2,
+        "change": 0.77,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3943.0,
-        "change": -1.44,
+        "price": 3936.7,
+        "change": -1.59,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.97,
-        "change": -1.77,
+        "price": 50.78,
+        "change": -2.13,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1533.7,
-        "change": -0.34,
+        "price": 1526.5,
+        "change": -0.81,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1011.0,
-        "change": -3.13,
+        "price": 1005.5,
+        "change": -3.66,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.3,
-        "change": 2.52,
+        "price": 3.29,
+        "change": 2.21,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 207.07,
-        "change": -5.82,
+        "price": 206.59,
+        "change": -6.24,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 72540,
-        "change": -1.89,
+        "price": 72517,
+        "change": -1.82,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2004.06,
-        "change": -2.45,
+        "price": 2006.91,
+        "change": -2.29,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 81.53,
-        "change": -3.08,
+        "price": 81.49,
+        "change": -3.37,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.91,
-        "change": -4.25,
+        "price": 9.89,
+        "change": -4.36,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.32,
-        "change": -2.74,
+        "price": 8.3,
+        "change": -3.14,
         "type": "crypto"
       },
       {
-        "symbol": "DPU",
-        "price": 1.59,
-        "change": 15.22,
+        "symbol": "NBIS",
+        "price": 154.69,
+        "change": 9.36,
         "type": "mover"
       },
       {
-        "symbol": "FPS",
-        "price": 24.57,
-        "change": 8.72,
-        "type": "mover"
-      },
-      {
-        "symbol": "TTEK",
-        "price": 37.61,
-        "change": -8.47,
-        "type": "mover"
-      },
-      {
-        "symbol": "TE",
-        "price": 2.13,
-        "change": -6.99,
+        "symbol": "FRMI",
+        "price": 1.81,
+        "change": 9.04,
         "type": "mover"
       },
       {
@@ -1176,6 +1164,18 @@
         "symbol": "LLY",
         "price": 1437.29,
         "change": 1.79,
+        "type": "mover"
+      },
+      {
+        "symbol": "GOOGM",
+        "price": 42.74,
+        "change": 1.64,
+        "type": "mover"
+      },
+      {
+        "symbol": "FIGR",
+        "price": 24.19,
+        "change": -1.35,
         "type": "mover"
       }
     ]
@@ -1232,9 +1232,19 @@
       "author": ""
     },
     {
-      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUZXNlhzbF9jX0NZZU1MQ1lnSUVTQjcyOWtuVThsempEY2F3WHNhZ2lGQVU5MXpaa2NuVGhoOUwtWVBSTnczZThFQW9LTHJhSnlBVjRicTg1aWQzazdnajNnWldtTEdLSURhaDQtdThYVUFZbEJCUzlxZlJUdm01ZVV2QWVXZERWRnpYeVdHWXV0dWFFZUN4MlZCUEZackdBU1VuTWNLakdLR2dlVnBR?oc=5",
-      "source": "TechCrunch",
+      "title": "Poundland set for more time to secure a rescue deal as emergency talks continue",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEWTAxeW5RS2RldkxaeEoySTNmZWR6WF9KRnZzRExJcXdBSTlDU3F6V0V6ZVA3a3R1bTZJM01UQndVM0UyWXRNb3hwSkhWTTdzdExXMjktYlUwc1U?oc=5",
+      "source": "BBC",
+      "category": "business",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Tech rises as CoreWeave results reignite AI trade: AlphaCheck",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRXA4bkZhVmdEcjlSV0pkenR6MV9iWU95Rk1qY1IySTNnSHUxQ0p2cnNRV0x6bFZwRDA5d0RHZlRicWx1eFBYNnVlODY3Z0x1emFudndSdTg2ZjNsOVVYel80aUg4S0dpTFBCLUozWmFfZ1ByLXo3V01fdHpaTkU5SWRMVkJRZzhINXdlYlJIMUlfODdoUGlwODlpODJNNTl5M2YyUzk3cUpxOHpUbHg3NEppZHc?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1245,16 +1255,6 @@
       "title": "Anthropic's IPO is said to be multiple times oversubscribed as roadshow gets under way",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKWGZ4ck1uamZJQ3p5MmN3eVFwQ1dyQjMzd0VXV3M3ZmljNHlCM2daclNuN0pBdzlzLXZpb2Y4THdVNVpna0Rpc0FYQ3hxTjJWcFBEMWdodjFNZ2o5Y0xTUS0yNW94MUt4cllBaUVnby0yRUZa?oc=5",
       "source": "Quartz",
-      "category": "business",
-      "published": "Wed, 11 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Record credit card balances, fewer trips to McDonald\u2019s: More signs of strain ahead of the holidays",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNkwxR0tMSEhVaGUzbVdYMUdjaDg5SXY3S3VMQXRQNUNFMlFYd3pwd3ppTkd3akpHT2JlLUlpM0ktem5KU0RldUo3d3FsWGlrekxXTGloY0F5TVdvaXBUc1cwaWZUb09iUDRpRVo4MnJUc1RhRTNlU2M0WDdyalpKbld6XzBZb0UzUEk4RWtobEdlUzdKYUs5VWc1c3k3QVZScEhYUzg2UGo?oc=5",
-      "source": "NBC News",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1284,9 +1284,9 @@
       "author": ""
     },
     {
-      "title": "Samsung and Apple are both working on bigger wide foldables, new rumor claims - GSMArena.com news",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTnZUTW9uRjRYU2xQX2hWWGx1dEFBc213a1hKTk0wWXIzQnNHMzZXZzBXRkVLNmFhS0pwdV84WDBaVmNYeGNtb1dNOEFzVDNFTGllM2VBc19WenBvTjBPQ0JZYWloemM0WkdBSURSMzVWT0R6eGtpd1VKOVJQMHpTOHRkQ3FiQTh5NWdybFBlRHh3U0VLbkdFbkZkM3FvQ05JcF9LOXpENm5OSEtSVkpHN0hQOHZLSjDSAbMBQVVfeXFMTXJjVWZndmVjQkdkNmR4Y0dWamZvM2NFdV9taUpGSk5lWVh4a0NtUUpITjZSei1GdTV1REJhT0dKWldWLWcwNkp2R1NDcVM3MV9GUFdkTDNQNUNSUEhEdWRUNDNRdHRRQ0MzekxSbzBQRFhmTkNHRHRxREQxY2ZSQ3BWTUh0cHJubWNNRlNhcm9KdFVjaHdkRmlsaUkyM251UlUxWkVHSFJTUlRJM09zVUI1bWc?oc=5",
-      "source": "GSMArena.com",
+      "title": "Intel\u2019s Gonna Have a Hard Time Beating AMD\u2019s Next-Gen Gaming CPUs",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qT1dUdlpGZE1aX2laMWd1a3REOTQ5TEo3WHFkVXFZZlR3bzJ2Z0l0OVJiRGdhOWtTU3hOYWpUd1hFbzBnc1ZFbzMwanZKZjVvRUh2VFUyRWlYM2NrcG90NA?oc=5",
+      "source": "Gizmodo",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1294,9 +1294,9 @@
       "author": ""
     },
     {
-      "title": "Intel\u2019s Gonna Have a Hard Time Beating AMD\u2019s Next-Gen Gaming CPUs",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qT1dUdlpGZE1aX2laMWd1a3REOTQ5TEo3WHFkVXFZZlR3bzJ2Z0l0OVJiRGdhOWtTU3hOYWpUd1hFbzBnc1ZFbzMwanZKZjVvRUh2VFUyRWlYM2NrcG90NA?oc=5",
-      "source": "Gizmodo",
+      "title": "Samsung and Apple are both working on bigger wide foldables, new rumor claims - GSMArena.com news",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTnZUTW9uRjRYU2xQX2hWWGx1dEFBc213a1hKTk0wWXIzQnNHMzZXZzBXRkVLNmFhS0pwdV84WDBaVmNYeGNtb1dNOEFzVDNFTGllM2VBc19WenBvTjBPQ0JZYWloemM0WkdBSURSMzVWT0R6eGtpd1VKOVJQMHpTOHRkQ3FiQTh5NWdybFBlRHh3U0VLbkdFbkZkM3FvQ05JcF9LOXpENm5OSEtSVkpHN0hQOHZLSjDSAbMBQVVfeXFMTXJjVWZndmVjQkdkNmR4Y0dWamZvM2NFdV9taUpGSk5lWVh4a0NtUUpITjZSei1GdTV1REJhT0dKWldWLWcwNkp2R1NDcVM3MV9GUFdkTDNQNUNSUEhEdWRUNDNRdHRRQ0MzekxSbzBQRFhmTkNHRHRxREQxY2ZSQ3BWTUh0cHJubWNNRlNhcm9KdFVjaHdkRmlsaUkyM251UlUxWkVHSFJTUlRJM09zVUI1bWc?oc=5",
+      "source": "GSMArena.com",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1470,98 +1470,98 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 301671,
+      "stars": 301705,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-12T12:14:18Z"
+      "updated": "2026-11-12T13:20:59Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 262868,
+      "stars": 262880,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-12T12:15:47Z"
-    },
-    {
-      "name": "n8n-io/n8n",
-      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, ",
-      "stars": 210277,
-      "language": "TypeScript",
-      "url": "https://github.com/n8n-io/n8n",
-      "updated": "2026-11-12T12:15:12Z"
+      "updated": "2026-11-12T13:09:54Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 201110,
+      "stars": 201132,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-12T12:14:06Z"
+      "updated": "2026-11-12T13:21:59Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 189475,
+      "stars": 189519,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-12T12:11:40Z"
+      "updated": "2026-11-12T13:21:22Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 188002,
+      "stars": 188003,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-12T11:44:53Z"
+      "updated": "2026-11-12T13:16:48Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168897,
+      "stars": 168900,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-12T11:37:19Z"
+      "updated": "2026-11-12T13:21:02Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161030,
+      "stars": 161037,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-12T12:13:18Z"
+      "updated": "2026-11-12T13:16:08Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149400,
+      "stars": 149402,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-12T12:13:42Z"
+      "updated": "2026-11-12T12:51:08Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 146458,
+      "stars": 146485,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-12T12:15:58Z"
+      "updated": "2026-11-12T13:21:28Z"
+    },
+    {
+      "name": "stablyai/orca",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
+      "stars": 123035,
+      "language": "TypeScript",
+      "url": "https://github.com/stablyai/orca",
+      "updated": "2026-11-12T13:21:55Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 111237,
+      "stars": 111250,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-12T12:10:23Z"
+      "updated": "2026-11-12T13:21:48Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 108670,
+      "stars": 108712,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-12T12:09:45Z"
+      "updated": "2026-11-12T13:20:52Z"
     }
   ],
   "nasdaq_data": {
@@ -1570,7 +1570,7 @@
     "changePercent": 2.28,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 12 Nov: 28,374.25, up +2.28% -- BULLISH. strong +2.28% move. Counter: price below SMA20, RSI 45.8 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-12T08:16:14.126309"
+    "timestamp": "2026-11-12T08:22:16.021728"
   },
   "sticky": {
     "cnbc": [
@@ -1580,6 +1580,13 @@
         "source": "CNBC",
         "published": "2026-11-12T12:05:42",
         "description": "Nvidia's board met on Wednesday to discuss whether to oust Jensen Huang as CEO."
+      },
+      {
+        "title": "Trump says \u2018we don\u2019t need a deal with Iran\u2019",
+        "url": "https://www.cnbc.com/2026/11/12/trump-iran-deal-hormuz-strait.html",
+        "source": "CNBC",
+        "published": "2026-11-12T13:21:19",
+        "description": "Trump directed Vice President JD Vance to instead focus his attention on corruption and crime in Democratic cities and states."
       },
       {
         "title": "Nebius falls 10% as company expects increased 2026 capex spend, issues weak outlook",
@@ -1596,6 +1603,13 @@
         "description": "Unions spent millions of dollars and mobilized thousands of members to get out the vote for Democrats in the midterm election. Now they want to see action."
       },
       {
+        "title": "\u2018A dark day for Nvidia\u2019: Here\u2019s what analysts are saying as markets brace for news on Huang's fate",
+        "url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html",
+        "source": "CNBC",
+        "published": "2026-11-12T13:08:28",
+        "description": "The company's board convened Wednesday evening after reports emerged of Huang engaging in an affair with an employee."
+      },
+      {
         "title": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
         "url": "https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html",
         "source": "CNBC",
@@ -1610,25 +1624,11 @@
         "description": "U.S. officials are accusing two top officials of a Canadian company of operating a scheme to illegally import prescription drugs, court records show."
       },
       {
-        "title": "Scott Colom wins Mississippi Senate election over incumbent Republican Hyde-Smith",
-        "url": "https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html",
+        "title": "Nvidia board meeting to decide CEO Jensen Huang\u2019s fate stretches into evening",
+        "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
         "source": "CNBC",
-        "published": "2026-11-12T12:56:27",
-        "description": "Scott Colom will be the first Democrat elected to the Senate from the state since 1982, and Mississippi's first Black senator since Reconstruction."
-      },
-      {
-        "title": "Ukraine warns of fresh Starshield disruptions as U.S. envoys arrive in Moscow for talks with Putin",
-        "url": "https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html",
-        "source": "CNBC",
-        "published": "2026-11-12T11:23:04",
-        "description": "Starshield is SpaceX's military-grade satellite network designed for government and national security use, building on the technology developed for Starlink."
-      },
-      {
-        "title": "Jensen Huang affair in DC: Resignation calls and moves to tighten Nvidia China exports",
-        "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
-        "source": "CNBC",
-        "published": "2026-11-12T12:03:39",
-        "description": "Huang was notably opposed to strict export controls on AI chips to China, which ruffled feathers with congressional China hawks."
+        "published": "2026-11-12T06:11:16",
+        "description": "Nvidia's board is meeting days after CEO Jensen Huang admitted to an affair with a woman who is believed by U.S. intelligence of being a Chinese spy."
       }
     ],
     "yahoo_finance": [],
@@ -1709,72 +1709,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7604.25,
-      "change": -36.25,
-      "change_percent": -0.47,
+      "price": 7583.0,
+      "change": -57.5,
+      "change_percent": -0.75,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28162.75,
-      "change": -310.5,
-      "change_percent": -1.09,
+      "price": 28043.25,
+      "change": -430.0,
+      "change_percent": -1.51,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52588.0,
-      "change": 10.0,
-      "change_percent": 0.02,
+      "price": 52434.0,
+      "change": -144.0,
+      "change_percent": -0.27,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2847.2,
-      "change": -6.5,
-      "change_percent": -0.23,
+      "price": 2833.4,
+      "change": -20.3,
+      "change_percent": -0.71,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.68,
-      "change": -0.85,
-      "change_percent": -0.98,
+      "price": 87.24,
+      "change": 0.71,
+      "change_percent": 0.82,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3943.0,
-      "change": -57.5,
-      "change_percent": -1.44,
+      "price": 3935.2,
+      "change": -65.3,
+      "change_percent": -1.63,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.97,
-      "change": -0.91,
-      "change_percent": -1.75,
+      "price": 50.78,
+      "change": -1.1,
+      "change_percent": -2.12,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1533.9,
-      "change": -5.1,
-      "change_percent": -0.33,
+      "price": 1526.5,
+      "change": -12.5,
+      "change_percent": -0.81,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1011.0,
-      "change": -32.7,
-      "change_percent": -3.13,
+      "price": 1005.5,
+      "change": -38.2,
+      "change_percent": -3.66,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.3,
-      "change": 0.08,
-      "change_percent": 2.58,
+      "price": 3.29,
+      "change": 0.07,
+      "change_percent": 2.18,
       "name": "Natural Gas Dec 26"
     }
   ],

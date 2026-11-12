@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T07:16:28.314774",
+  "timestamp": "2026-11-12T07:17:35.123293",
   "summary": "Key topics today:\n- - United Airlines bans AI agents from booking flights on behalf of travelers (r/HackerNews, 201 pts)\n- - My AI agents found an unmapped Maya site? (r/HackerNews, 201 pts)\n- - Anthropic IPO (r/HackerNews, 101 pts)\n- - Nvidia is preparing to oust Jensen Huang (r/HackerNews, 101 pts)\n- - I gave an agent a lakehouse and control of my garden (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -20,27 +20,27 @@
     },
     {
       "type": "buy",
+      "asset": "DPU",
+      "price": 1.59,
+      "change": 15.22,
+      "category": "stock",
+      "text": "DPU +15.2% momentum @ $1.59"
+    },
+    {
+      "type": "buy",
+      "asset": "FPS",
+      "price": 24.57,
+      "change": 8.72,
+      "category": "stock",
+      "text": "FPS +8.7% momentum @ $24.57"
+    },
+    {
+      "type": "buy",
       "asset": "AMD",
       "price": 552.9,
       "change": 8.71,
       "category": "stock",
       "text": "AMD +8.7% momentum @ $552.90"
-    },
-    {
-      "type": "sell",
-      "asset": "TTEK",
-      "price": 37.61,
-      "change": -8.47,
-      "category": "stock",
-      "text": "TTEK -8.5% drop @ $37.61"
-    },
-    {
-      "type": "sell",
-      "asset": "PZZA",
-      "price": 19.19,
-      "change": -7.52,
-      "category": "stock",
-      "text": "PZZA -7.5% drop @ $19.19"
     },
     {
       "type": "watch",
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-12T12:16:00.246156",
+    "timestamp": "2026-11-12T12:17:27.253098",
     "prices": [
       {
         "name": "Bittensor",
@@ -365,7 +365,7 @@
       "description": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza."
     },
     {
-      "title": "US envoys arrive in Moscow for Ukraine talks with Vladimir Putin",
+      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
       "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
@@ -429,17 +429,31 @@
       "description": "David Muir speaks with \"The Resilient\" \u2013 a band made up of wounded soldiers \u2013 backstage at Bob Woodruff's annual Stand Up for Heroes, raising millions for veterans and military families."
     },
     {
-      "title": "How Scott Colom defied the odds to go from district attorney to Mississippi's Democratic US Senator",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6037438/scott-colom-defied-the-odds-mississippi-democratic-senator",
+      "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
+      "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
       "source": "Npr",
       "category": "npr",
       "published": "Thu, 12 Nov 2026 ",
-      "description": "In a state that hasn't had a Democrat in office since 1980 and hasn't sent a Black Senator to Washington since the 1870s, Colom's win represents a massive upset in state politics."
+      "description": "After more than a week of counting ballots, Scott Colom has narrowly won the Mississippi Senate seat. And, the White House has sent a letter warning Democrats who plan to investigate the administration."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-12T12:15:37.020187",
+    "timestamp": "2026-11-12T12:17:05.713764",
     "trending": [
+      {
+        "symbol": "DPU",
+        "price": 1.59,
+        "change": 0.21,
+        "change_percent": 15.22,
+        "name": "Nexpu Ltd."
+      },
+      {
+        "symbol": "FPS",
+        "price": 24.57,
+        "change": 1.97,
+        "change_percent": 8.72,
+        "name": "Forgent Power Solutions, Inc."
+      },
       {
         "symbol": "TTEK",
         "price": 37.61,
@@ -455,18 +469,18 @@
         "name": "Papa John's International, Inc."
       },
       {
-        "symbol": "AVEX",
-        "price": 12.13,
-        "change": 0.57,
-        "change_percent": 4.93,
-        "name": "AEVEX Corp."
+        "symbol": "TE",
+        "price": 2.13,
+        "change": -0.16,
+        "change_percent": -6.99,
+        "name": "T1 Energy Inc."
       },
       {
-        "symbol": "SIE.DE",
-        "price": 282.95,
-        "change": 11.4,
-        "change_percent": 4.2,
-        "name": "SIEMENS AG                    N"
+        "symbol": "YETI",
+        "price": 42.79,
+        "change": -3.04,
+        "change_percent": -6.63,
+        "name": "YETI Holdings, Inc."
       },
       {
         "symbol": "BABA",
@@ -504,25 +518,11 @@
         "name": "Alphabet Inc. - Depositary Shar"
       },
       {
-        "symbol": "AAPL",
-        "price": 355.63,
-        "change": 4.94,
-        "change_percent": 1.41,
-        "name": "Apple Inc."
-      },
-      {
         "symbol": ".SPX",
         "price": 7619.38,
         "change": 98.45,
         "change_percent": 1.31,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "GC=F",
-        "price": 3952.9,
-        "change": -47.6,
-        "change_percent": -1.19,
-        "name": "Gold Dec 26"
       },
       {
         "symbol": ".RUT",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-12T12:15:54.853202",
+    "timestamp": "2026-11-12T12:17:23.233470",
     "items": [
       {
         "symbol": "SPX",
@@ -996,8 +996,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 18.2,
-        "change": 4.06,
+        "price": 18.21,
+        "change": 4.12,
         "type": "index"
       },
       {
@@ -1008,98 +1008,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7607.25,
-        "change": -0.44,
+        "price": 7608.5,
+        "change": -0.42,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28206.25,
-        "change": -0.94,
+        "price": 28209.0,
+        "change": -0.93,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52574.0,
-        "change": -0.01,
+        "price": 52590.0,
+        "change": 0.02,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2849.7,
-        "change": -0.14,
+        "price": 2849.5,
+        "change": -0.15,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.83,
-        "change": -0.81,
+        "price": 85.71,
+        "change": -0.95,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3951.6,
-        "change": -1.22,
+        "price": 3950.8,
+        "change": -1.24,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.97,
-        "change": -1.76,
+        "price": 50.96,
+        "change": -1.78,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1526.1,
-        "change": -0.84,
+        "price": 1525.8,
+        "change": -0.86,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1014.0,
-        "change": -2.85,
+        "price": 1015.0,
+        "change": -2.75,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.28,
-        "change": 1.99,
+        "price": 3.27,
+        "change": 1.84,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 211.68,
-        "change": -3.65,
+        "price": 211.38,
+        "change": -3.77,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 72995,
-        "change": -1.23,
+        "price": 72994,
+        "change": -1.26,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 2025.67,
-        "change": -1.35,
+        "price": 2025.21,
+        "change": -1.39,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 82.63,
-        "change": -1.32,
+        "price": 82.53,
+        "change": -1.47,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 10.0,
-        "change": -3.6,
+        "price": 9.99,
+        "change": -3.66,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.48,
-        "change": -0.85,
+        "change": -1.0,
         "type": "crypto"
       },
       {
@@ -1288,9 +1288,9 @@
       "author": ""
     },
     {
-      "title": "End of PlayStation Plus on PC: Finish Your Games by Early December",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQemx2VWFsUWxlWkpWSlA2WXhjZGxmWVBjQ1RTQkdJbVpGVV9wLXhiYS1TZnBGTmRPYVprbDUwTVhqd2dsRkJjRGZIeS16TXJFZzJObUd1UTMtT3Q4RkJ4LUs3R0YybnF4RjNYQWRTQTZTeUlhMzVmVk85VWc1UTM3Y3ZsRHVjWHVreHczOGlSdkU5NlluZWpZ?oc=5",
-      "source": "PCMag",
+      "title": "Microsoft's Patch Tuesday can't break stuff if it won't install",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZFV2UjVVX05vNnFsM1pGbTRLNWJIelAtcWJLeHh1Rnk1MVFpWHNBNFAtc0NYRXBVRmNXOHYzVHVIMGROVWhvYzFxdGh0MWd0cURPRG5OYWZXanphc0lxTTdUTnpsMkdvZzdXLWN4eS1GZkhRZjE5R3pZNUJCVTVzQTYwb3d2ZWh1azdoa1Y2SmNaSTZZTkYzMlZYMUFES1VJQ3kxLTJNM1FMTmlYQ3Q4aFRtLTF2V290QzI2ag?oc=5",
+      "source": "The Register",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1298,9 +1298,9 @@
       "author": ""
     },
     {
-      "title": "Microsoft's Patch Tuesday can't break stuff if it won't install",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZFV2UjVVX05vNnFsM1pGbTRLNWJIelAtcWJLeHh1Rnk1MVFpWHNBNFAtc0NYRXBVRmNXOHYzVHVIMGROVWhvYzFxdGh0MWd0cURPRG5OYWZXanphc0lxTTdUTnpsMkdvZzdXLWN4eS1GZkhRZjE5R3pZNUJCVTVzQTYwb3d2ZWh1azdoa1Y2SmNaSTZZTkYzMlZYMUFES1VJQ3kxLTJNM1FMTmlYQ3Q4aFRtLTF2V290QzI2ag?oc=5",
-      "source": "The Register",
+      "title": "End of PlayStation Plus on PC: Finish Your Games by Early December",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQemx2VWFsUWxlWkpWSlA2WXhjZGxmWVBjQ1RTQkdJbVpGVV9wLXhiYS1TZnBGTmRPYVprbDUwTVhqd2dsRkJjRGZIeS16TXJFZzJObUd1UTMtT3Q4RkJ4LUs3R0YybnF4RjNYQWRTQTZTeUlhMzVmVk85VWc1UTM3Y3ZsRHVjWHVreHczOGlSdkU5NlluZWpZ?oc=5",
+      "source": "PCMag",
       "category": "business",
       "published": "Wed, 11 Nov 2026 ",
       "description": "",
@@ -1362,6 +1362,22 @@
       "relevance_score": 8
     },
     {
+      "title": "Xi Jinping says Taiwan\u2019s \u2018complete reunification\u2019 with China will happen",
+      "url": "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "Chinese president says the tide of history &#039;cannot be stopped&#039; as Taiwan rejects &#039;one country, two systems&#039;.",
+      "relevance_score": 7
+    },
+    {
+      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Thu, 12 Nov 2026 ",
+      "description": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
+      "relevance_score": 7
+    },
+    {
       "title": "Inside Warhound\u2019s plan to engineer a better military working dog",
       "url": "https://www.defensenews.com/industry/techwatch/2026/11/11/inside-warhounds-plan-to-engineer-a-better-military-working-dog/",
       "source": "Defense News",
@@ -1394,14 +1410,6 @@
       "relevance_score": 4
     },
     {
-      "title": "US envoys arrive in Moscow for Ukraine talks with Vladimir Putin",
-      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
-      "relevance_score": 4
-    },
-    {
       "title": "Who is Scott Colom, Mississippi\u2019s first Black senator in 150 years?",
       "url": "https://www.aljazeera.com/news/2026/11/12/who-is-scott-colom-mississippis-first-black-senator-in-150-years?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1415,14 +1423,6 @@
       "source": "Al Jazeera",
       "published": "Thu, 12 Nov 2026 ",
       "description": "Nvidia CEO is under investigation for an affair with a woman whom US intelligence believes to be a Chinese spy.",
-      "relevance_score": 3
-    },
-    {
-      "title": "India bypasses own rules to buy Israeli phone-hacking tech",
-      "url": "https://www.aljazeera.com/features/2026/11/12/india-bypasses-own-rules-to-buy-israeli-phone-hacking-tech?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 12 Nov 2026 ",
-      "description": "India&#039;s expansive surveillance capabilities extend beyond cloning phones to accessing cloud-based data of tech giants.",
       "relevance_score": 3
     },
     {
@@ -1554,7 +1554,7 @@
     "changePercent": 2.28,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Thu 12 Nov: 28,374.25, up +2.28% -- BULLISH. strong +2.28% move. Counter: price below SMA20, RSI 45.8 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-12T07:16:26.087895"
+    "timestamp": "2026-11-12T07:17:33.655578"
   },
   "sticky": {
     "cnbc": [
@@ -1693,72 +1693,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7607.25,
-      "change": -33.25,
-      "change_percent": -0.44,
+      "price": 7608.25,
+      "change": -32.25,
+      "change_percent": -0.42,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28205.75,
-      "change": -267.5,
-      "change_percent": -0.94,
+      "price": 28210.0,
+      "change": -263.25,
+      "change_percent": -0.92,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52574.0,
-      "change": -4.0,
-      "change_percent": -0.01,
+      "price": 52587.0,
+      "change": 9.0,
+      "change_percent": 0.02,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2849.5,
-      "change": -4.2,
-      "change_percent": -0.15,
+      "price": 2849.7,
+      "change": -4.0,
+      "change_percent": -0.14,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.83,
-      "change": -0.7,
-      "change_percent": -0.81,
+      "price": 85.71,
+      "change": -0.82,
+      "change_percent": -0.95,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3951.7,
-      "change": -48.8,
+      "price": 3951.5,
+      "change": -49.0,
       "change_percent": -1.22,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.97,
-      "change": -0.91,
-      "change_percent": -1.76,
+      "price": 50.96,
+      "change": -0.92,
+      "change_percent": -1.78,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1526.1,
-      "change": -12.9,
-      "change_percent": -0.84,
+      "price": 1525.8,
+      "change": -13.2,
+      "change_percent": -0.86,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1014.0,
-      "change": -29.7,
-      "change_percent": -2.85,
+      "price": 1015.0,
+      "change": -28.7,
+      "change_percent": -2.75,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.29,
-      "change": 0.07,
-      "change_percent": 2.24,
+      "price": 3.27,
+      "change": 0.06,
+      "change_percent": 1.84,
       "name": "Natural Gas Dec 26"
     }
   ],

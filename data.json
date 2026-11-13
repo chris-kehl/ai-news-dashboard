@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-13T16:16:09.016981",
+  "timestamp": "2026-11-13T16:22:08.015965",
   "summary": "Key topics today:\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - OpenAI disbands its robotics team as its general models start running robots (r/HackerNews, 301 pts)\n- - $11.4M in Nvidia hardware vanishes during shipment from CA to TX (r/HackerNews, 101 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)\n- - Perplexity Decider v1.3: Training, eval, and use cases (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -30,25 +30,25 @@
       "type": "sell",
       "asset": "SPCE",
       "price": 1.84,
-      "change": -36.06,
+      "change": -35.89,
       "category": "stock",
-      "text": "SPCE -36.1% drop @ $1.84"
+      "text": "SPCE -35.9% drop @ $1.84"
+    },
+    {
+      "type": "buy",
+      "asset": "LFTO",
+      "price": 24.44,
+      "change": 31.75,
+      "category": "stock",
+      "text": "LFTO +31.8% momentum @ $24.44"
     },
     {
       "type": "buy",
       "asset": "MOD",
-      "price": 135.75,
-      "change": 27.26,
+      "price": 135.66,
+      "change": 27.18,
       "category": "stock",
-      "text": "MOD +27.3% momentum @ $135.75"
-    },
-    {
-      "type": "sell",
-      "asset": "SOXL",
-      "price": 58.32,
-      "change": -11.68,
-      "category": "stock",
-      "text": "SOXL -11.7% drop @ $58.32"
+      "text": "MOD +27.2% momentum @ $135.66"
     },
     {
       "type": "watch",
@@ -101,14 +101,6 @@
       "created": ""
     },
     {
-      "title": "Models can now transmit viruses in weight-space",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
-      "created": ""
-    },
-    {
       "title": "No AI Slop: A Manifesto",
       "subreddit": "HackerNews",
       "score": 101,
@@ -122,6 +114,14 @@
       "score": 101,
       "comments": 0,
       "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "created": ""
+    },
+    {
+      "title": "Models can now transmit viruses in weight-space",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-13T21:15:59.895854",
+    "timestamp": "2026-11-13T21:21:59.355320",
     "prices": [
       {
         "name": "Bittensor",
@@ -389,20 +389,12 @@
       "description": "German reforms mean foreign and domestic intelligence services will have greater powers to combat espionage, terrorism and sabotage."
     },
     {
-      "title": "LIVE:  FAA issues nationwide ground stop: ABC News Live",
+      "title": "LIVE:  Tanker, riverboat collide in New Orleans: ABC News Live",
       "url": "https://abcnews.com/video/41463246/",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Fri, 13 Nov 2026 ",
       "description": "24/7 coverage of breaking news and live events"
-    },
-    {
-      "title": "Tanker collides with riverboat with 129 passengers on board in New Orleans: Officials",
-      "url": "https://abcnews.com/US/vessel-collision-port-new-orleans-emergency-crews-responding/story?id=138119847",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "The incident occurred Friday on the Mississippi River."
     },
     {
       "title": "Nationwide ground stop ordered at airports: FAA",
@@ -411,6 +403,14 @@
       "category": "abc_news",
       "published": "Fri, 13 Nov 2026 ",
       "description": "The Federal Aviation Administration ordered a nationwide ground stop Friday for all airlines \"due to extraordinary circumstances and for reasons of safety.\""
+    },
+    {
+      "title": "Tanker collides with riverboat with 129 passengers on board in New Orleans: Officials",
+      "url": "https://abcnews.com/US/vessel-collision-port-new-orleans-emergency-crews-responding/story?id=138119847",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "The incident occurred Friday on the Mississippi River."
     },
     {
       "title": "Man accused in White House Correspondents' dinner shooting charged with terrorism",
@@ -446,21 +446,35 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-13T21:15:37.223807",
+    "timestamp": "2026-11-13T21:21:36.359455",
     "trending": [
       {
         "symbol": "SPCE",
         "price": 1.84,
         "change": -1.03,
-        "change_percent": -36.06,
+        "change_percent": -35.89,
         "name": "Virgin Galactic Holdings, Inc."
       },
       {
+        "symbol": "LFTO",
+        "price": 24.44,
+        "change": 5.89,
+        "change_percent": 31.75,
+        "name": "Liftoff Mobile, Inc."
+      },
+      {
         "symbol": "MOD",
-        "price": 135.75,
-        "change": 29.08,
-        "change_percent": 27.26,
+        "price": 135.66,
+        "change": 28.99,
+        "change_percent": 27.18,
         "name": "Modine Manufacturing Company"
+      },
+      {
+        "symbol": "BBAI",
+        "price": 1.91,
+        "change": -0.39,
+        "change_percent": -16.96,
+        "name": "BigBear.ai, Inc."
       },
       {
         "symbol": "SOXL",
@@ -468,6 +482,13 @@
         "change": -7.71,
         "change_percent": -11.68,
         "name": "Direxion Daily Semiconductor Bu"
+      },
+      {
+        "symbol": "LAC",
+        "price": 1.49,
+        "change": -0.16,
+        "change_percent": -9.7,
+        "name": "Lithium Americas Corp."
       },
       {
         "symbol": "SNDK",
@@ -492,24 +513,10 @@
       },
       {
         "symbol": "NU",
-        "price": 13.21,
-        "change": 0.89,
-        "change_percent": 7.22,
+        "price": 13.22,
+        "change": 0.9,
+        "change_percent": 7.31,
         "name": "Nu Holdings Ltd."
-      },
-      {
-        "symbol": "MU",
-        "price": 778.31,
-        "change": -32.99,
-        "change_percent": -4.07,
-        "name": "Micron Technology, Inc."
-      },
-      {
-        "symbol": "VKTX",
-        "price": 29.22,
-        "change": 0.78,
-        "change_percent": 2.74,
-        "name": "Viking Therapeutics, Inc."
       },
       {
         "symbol": "META",
@@ -517,13 +524,6 @@
         "change": 12.92,
         "change_percent": 2.05,
         "name": "Meta Platforms, Inc."
-      },
-      {
-        "symbol": "QQQ",
-        "price": 679.89,
-        "change": -10.49,
-        "change_percent": -1.52,
-        "name": "Invesco QQQ Trust, Series 1"
       },
       {
         "symbol": "^IXIC",
@@ -541,8 +541,8 @@
       },
       {
         "symbol": ".RUT",
-        "price": 2790.5,
-        "change": -8.56,
+        "price": 2790.489,
+        "change": -8.57,
         "change_percent": -0.31,
         "name": "RUSS 2K"
       },
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-13T21:15:55.435460",
+    "timestamp": "2026-11-13T21:21:55.180791",
     "items": [
       {
         "symbol": "SPX",
@@ -1010,104 +1010,104 @@
       },
       {
         "symbol": "RUT",
-        "price": 2790.5,
+        "price": 2790.489,
         "change": -0.31,
         "type": "index"
       },
       {
         "symbol": "ES=F",
-        "price": 7546.75,
-        "change": -0.9,
+        "price": 7566.5,
+        "change": -0.64,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27811.0,
-        "change": -2.02,
+        "price": 27944.5,
+        "change": -1.55,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52256.0,
-        "change": -0.26,
+        "price": 52337.0,
+        "change": -0.1,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2784.7,
-        "change": -0.81,
+        "price": 2791.3,
+        "change": -0.57,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 89.15,
-        "change": 0.46,
+        "price": 88.99,
+        "change": 0.28,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3879.5,
-        "change": -0.15,
+        "price": 3874.6,
+        "change": -0.28,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 48.69,
-        "change": -2.56,
+        "price": 48.6,
+        "change": -2.74,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1491.8,
-        "change": -1.73,
+        "price": 1491.2,
+        "change": -1.77,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1001.0,
-        "change": 1.14,
+        "price": 1000.0,
+        "change": 1.04,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.24,
-        "change": -2.93,
+        "change": -2.99,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 214.62,
-        "change": 1.41,
+        "price": 214.29,
+        "change": 1.14,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 68573,
-        "change": -4.08,
+        "price": 68412,
+        "change": -4.34,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1937.97,
-        "change": -3.88,
+        "price": 1932.55,
+        "change": -4.16,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 79.57,
-        "change": -2.29,
+        "price": 79.3,
+        "change": -2.64,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.9,
-        "change": -1.49,
+        "price": 9.88,
+        "change": -1.75,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.34,
-        "change": -0.02,
+        "price": 8.33,
+        "change": -0.1,
         "type": "crypto"
       },
       {
@@ -1117,9 +1117,15 @@
         "type": "mover"
       },
       {
+        "symbol": "LFTO",
+        "price": 24.44,
+        "change": 31.75,
+        "type": "mover"
+      },
+      {
         "symbol": "MOD",
-        "price": 135.71,
-        "change": 27.22,
+        "price": 135.66,
+        "change": 27.18,
         "type": "mover"
       },
       {
@@ -1129,9 +1135,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SNDK",
-        "price": 885.01,
-        "change": -9.48,
+        "symbol": "LAC",
+        "price": 1.49,
+        "change": -9.7,
+        "type": "mover"
+      },
+      {
+        "symbol": "DELL",
+        "price": 344.53,
+        "change": -7.8,
         "type": "mover"
       },
       {
@@ -1157,18 +1169,6 @@
         "price": 3.25,
         "change": -4.97,
         "type": "mover"
-      },
-      {
-        "symbol": "VKTX",
-        "price": 29.22,
-        "change": 2.74,
-        "type": "mover"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 167.99,
-        "change": -2.56,
-        "type": "mover"
       }
     ]
   },
@@ -1184,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYWY5MnRXdTRCaHJZT3BKRWs4TzQxdUR3NEZzQ3ZsTmxCLW9wcFJJMzFaLS1pVGhtb3BabWdhN3pvQUhPU0FNbDJMV2I0a3BWaGtuQWpxVVNxRTZIUGhNS3c5RG5oVHNGaGg3XzJDdkE1V0RBWFJKVzMzTFVnN3otc0xZNWhCWWducmlfS2dXZ3lGcUtWcFJQWkxnejVqWjFxTlZKbENDamJfUQ?oc=5",
-      "source": "AP News",
+      "title": "The Microsoft Outage Is a Warning for the World",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNN1JPWl9pbzJKaWdNRmlqNU1iQnhhUDVSZkF5QklIQnYzRUdNcjdyLVJzb0tTcUhBb1h3eXBPd29yMWppUmRyTU1TWmpRZWMteUs1SkxlOG5iSHdpSGdzaXZFRHBGTjVCYWZWTGlxZU82ZkdkYUV5M0lueDVTcEN2NW1B?oc=5",
+      "source": "WIRED",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
       "description": "",
@@ -1224,29 +1224,29 @@
       "author": ""
     },
     {
-      "title": "Export-banned Nvidia chips are behind China\u2019s most powerful AI models\u2014uh oh, Jensen!",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2RjMXJ5cnYyUmVXT3FXVVVIeENJN0hQT3E0ZTg1YlpRSEItczBNaW1SZzlIM2hBNEZldVVzUjEwQzRDczhvVkQwMjZlLXh4U1pqd1NFcTFJOHh6MUMtQktSVmFmZUtzTUowb2hCdU1tVzY5NFFwWURpT3c5RW9zMUJOVHNvcG5aVG9lTUIzVUNqMW8yWkNzcXpidmtNRnlia3hySVpfbGRfQ3phbjJmbGZuYlhwS0E?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "US Senate Banking Committee chair calls on Jensen Huang, Lutnick to testify",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObWhFaS12YTJmTFZLWF94WFZXRndrbWxyWkhSX2FLSXFvSFBFbGR6emtfcmVPckRNZjlKYWYwX21Ha3hubnhEUmQ4bW91UndSbmZFRkd5blZyOFdqaC0yRHZXOFhWQjJuOTdrQlZJVXB4S2tvWFI0aVBpdU1mMjRnNy1TU1ZxajZ1WlNBdm9fWDFNNVpDMUFVb0hGSUVOYUE3Ui1USTRSX2w3T0dCWXZiTmpiMA?oc=5",
-      "source": "Reuters",
-      "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3YzFhcmZuU0oyRVF4U2pEZ2dfclNxcWlDVFFrdXEzbU1SX3E0THA3Qlh0SE1jalBZQkhjLTJKN0M2QjYxS1pxYWR6cllqTG81a1dlVXhlMzlmSnZMTjcyNndEWnAwTjVnZ2I1RHhRUjBBejUyaU82OE9mSkthQQ?oc=5",
       "source": "CNN",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Exclusive: OpenAI disbands its stand-alone robotics team as its general models start running robots",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdUpabzdVdVRFd0RUN0pnVTJuQUtkYThSdzlhc3FHSmxmTnZETWNyajZGcGEtVHFvYmxMTGJMa0VHaGxEMVh5bmY1MXlVTDlWTHVBWlotdkJ0ZmRSdk9GRzh0ZTNrZElwYzlLWmp0ZkZqRFZKOEI5RkdDdkVHYzVUWFpOU2NqTnJGTmF3R0dTQTRGaDFXZl9jQ2s5bEd4dHJFZFRyQ3hrcw?oc=5",
+      "source": "Fortune",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "What the Nvidia scandal means for the company's earnings next week",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQamtxZ1JjdTA3UF8zODVhLVE4NDNCZWczZmE1REtITGRpTURvLVpGemMtaGJIRy15U1lQal9CVFBjanlXLW5xUzNuS2x0NVM4REhHVVZadGVrejN2bkdUVHZzTjhDWEpvWnl2RWdGM2Q0UDVGWjZ5TkJCZFB3YlJsa3RPV25LNWxUOGFpNEJRdm9iN3hrbm0tNHphZmRRTGxjV1M4UUJkODdKM21kcktzeUtsREptZDhiRmVmLXd5UmQ2bFk?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
       "description": "",
@@ -1266,9 +1266,9 @@
       "author": ""
     },
     {
-      "title": "Rockstar says GTA 6 PS5 Pro build ran at 60 fps with major performance compromises",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUERqNVh5MkdBTnp0enNfaTRCbEZTQWR1a0RwUm9NRVNmcmJka29MMlFQMUNrcEJHQjJlb0k0T0l6OFNIcUNmMFVtemdfUDREUUhEOXhpUXl6eDd1NEtQa19xMl93Y1ZHZmlxV1JFOHA0TG9EQlQ5NHRuWXY5X0VLUlRKUFdlSlRzaWJRTU0yU2VUSlN3SjlPdjk0a2VuNFBLQjlhZUZnRkQyNkhfUloyT1lBMG9hNGt6UlZwaUttUHpqNDV2UGc?oc=5",
-      "source": "Notebookcheck",
+      "title": "New Apple TV 4K and HomeView now available: Here\u2019s everything you need to know",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ2tlRVdLOUFKb1FfdG5YSUE4emFhTlpyTFRTNGdBUnJJaG55ZmMzZUV2QnNTVGhNTzZrQi14QS1MNzMyNW1VNHRzTVlMVjBNTHlPWEZuWTJ3aG5oNkk3MGVvYThZbDhYaVlVZTl1LXRFX25XOWhUeHVtQUdkTWt1TFpLSGFpRi1HWnBzaTZfUU9xR1UxS0RPRUpDSU01cmUzaG5kbUdrMzg5c1pq?oc=5",
+      "source": "9to5Mac",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
       "description": "",
@@ -1296,11 +1296,11 @@
       "author": ""
     },
     {
-      "title": "GTA 6 needs $1.9bn opening weekend to satisfy investors, says Bank of America",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZFhvc1l0SmFZdUtvVFk4cktPMXpJVERObjVxWUY2MHF5M0xuNklNcVBfV1BsSlVQU0pSeG5ibWJJY3RuTWlFNGdmNHhKdXcwUXFieDlXbFlSbmpVeFNmemRFb09MZjl6Y1AxeHFKZkQ5OHF0UWE4d1U5MFFVV296TGNNVTZMNkNaYWV6NDZkWnhraW1DN1VWWk1zSEJUUVdBcjg4LVhrMDhCNHFvZzRKRVZFZDVtLUdjT2ZvVDhVdFRwajV1ZVZNTDh6RHJ5dEQxM20ybndTU2xLMUdKSXg4?oc=5",
-      "source": "Proactive financial news",
+      "title": "Rockstar says GTA 6 PS5 Pro build ran at 60 fps with major performance compromises",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUERqNVh5MkdBTnp0enNfaTRCbEZTQWR1a0RwUm9NRVNmcmJka29MMlFQMUNrcEJHQjJlb0k0T0l6OFNIcUNmMFVtemdfUDREUUhEOXhpUXl6eDd1NEtQa19xMl93Y1ZHZmlxV1JFOHA0TG9EQlQ5NHRuWXY5X0VLUlRKUFdlSlRzaWJRTU0yU2VUSlN3SjlPdjk0a2VuNFBLQjlhZUZnRkQyNkhfUloyT1lBMG9hNGt6UlZwaUttUHpqNDV2UGc?oc=5",
+      "source": "Notebookcheck",
       "category": "business",
-      "published": "Thu, 12 Nov 2026 ",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1316,19 +1316,19 @@
       "author": ""
     },
     {
-      "title": "Pixel\u2019s November update is breaking AOD, lock screen, and notifications for some users",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6dHJONmMxVzBCRnhOMFBWbzVLenlmQWxzSWxFV2R3bXJDT0lLdExKdjNDampoTDduRU1lc05JTXpiLVpMNHNSSi1EZklHd0I4NDJHVjc4MFZITnREWERkTUdFWU9BWF9zVHo0SjhZVjdzXzIxenhIcWxBaXN4QQ?oc=5",
-      "source": "Android Authority",
+      "title": "Siri AI Coming to Older Apple TV 4K Models in tvOS 27.2.1",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LQTV0cnRGSFZ3cUV5OF84OFlIR1hiWFZCRUVGOEd4NnM4RlVuX3B5dDE1WUY0XzdVWEV1WHc0ZGRGOEVmUm5YYlBNZE54U0JOZk1MUG9tSUpTekwwVVJXQzJzUWROTEZJ?oc=5",
+      "source": "MacRumors",
       "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
+      "published": "Thu, 12 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Siri AI Coming to Older Apple TV 4K Models in tvOS 27.2.1",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LQTV0cnRGSFZ3cUV5OF84OFlIR1hiWFZCRUVGOEd4NnM4RlVuX3B5dDE1WUY0XzdVWEV1WHc0ZGRGOEVmUm5YYlBNZE54U0JOZk1MUG9tSUpTekwwVVJXQzJzUWROTEZJ?oc=5",
-      "source": "MacRumors",
+      "title": "GTA 6 needs $1.9bn opening weekend to satisfy investors, says Bank of America",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZFhvc1l0SmFZdUtvVFk4cktPMXpJVERObjVxWUY2MHF5M0xuNklNcVBfV1BsSlVQU0pSeG5ibWJJY3RuTWlFNGdmNHhKdXcwUXFieDlXbFlSbmpVeFNmemRFb09MZjl6Y1AxeHFKZkQ5OHF0UWE4d1U5MFFVV296TGNNVTZMNkNaYWV6NDZkWnhraW1DN1VWWk1zSEJUUVdBcjg4LVhrMDhCNHFvZzRKRVZFZDVtLUdjT2ZvVDhVdFRwajV1ZVZNTDh6RHJ5dEQxM20ybndTU2xLMUdKSXg4?oc=5",
+      "source": "Proactive financial news",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
       "description": "",
@@ -1530,7 +1530,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 13 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-13T16:16:06.311219"
+    "timestamp": "2026-11-13T16:22:05.908988"
   },
   "sticky": {
     "cnbc": [
@@ -1556,6 +1556,13 @@
         "description": "Jensen Huang\u2019s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family\u2019s financial ties to the chipmaker."
       },
       {
+        "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+        "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+        "source": "CNBC",
+        "published": "2026-11-13T21:18:30",
+        "description": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers."
+      },
+      {
         "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
         "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
         "source": "CNBC",
@@ -1575,13 +1582,6 @@
         "source": "CNBC",
         "published": "2026-11-13T19:30:36",
         "description": "By deploying a persistent covered call strategy, investors can leverage the exact fear driving the stock down to generate robust, risk-reducing income."
-      },
-      {
-        "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-        "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-        "source": "CNBC",
-        "published": "2026-11-13T15:44:16",
-        "description": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus."
       },
       {
         "title": "Retirees sometimes tap savings for one-off expenses. Here\u2019s what advisors say to consider first",
@@ -1669,72 +1669,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7548.0,
-      "change": -67.25,
-      "change_percent": -0.88,
+      "price": 7567.25,
+      "change": -48.0,
+      "change_percent": -0.63,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27822.25,
-      "change": -562.25,
-      "change_percent": -1.98,
+      "price": 27947.25,
+      "change": -437.25,
+      "change_percent": -1.54,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52264.0,
-      "change": -126.0,
-      "change_percent": -0.24,
+      "price": 52338.0,
+      "change": -52.0,
+      "change_percent": -0.1,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2785.9,
-      "change": -21.4,
-      "change_percent": -0.76,
+      "price": 2791.4,
+      "change": -15.9,
+      "change_percent": -0.57,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 89.18,
-      "change": 0.44,
-      "change_percent": 0.5,
+      "price": 88.99,
+      "change": 0.25,
+      "change_percent": 0.28,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3880.0,
-      "change": -5.3,
-      "change_percent": -0.14,
+      "price": 3874.4,
+      "change": -10.9,
+      "change_percent": -0.28,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 48.72,
-      "change": -1.25,
-      "change_percent": -2.51,
+      "price": 48.6,
+      "change": -1.37,
+      "change_percent": -2.74,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1491.8,
-      "change": -26.3,
-      "change_percent": -1.73,
+      "price": 1491.2,
+      "change": -26.9,
+      "change_percent": -1.77,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1001.0,
-      "change": 11.3,
-      "change_percent": 1.14,
+      "price": 1000.0,
+      "change": 10.3,
+      "change_percent": 1.04,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.24,
       "change": -0.1,
-      "change_percent": -2.9,
+      "change_percent": -2.99,
       "name": "Natural Gas Dec 26"
     }
   ],

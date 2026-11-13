@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T23:16:06.871605",
+  "timestamp": "2026-11-12T23:19:58.661017",
   "summary": "Key topics today:\n- - Chinese frontier AI models carry the fingerprint of export-controlled GPUs (r/HackerNews, 301 pts)\n- - Edge0-145B: Frontier AI Capabilities on Your Own Computer (r/HackerNews, 101 pts)\n- - Nvidia employees petition to bring back Jensen Huang (r/HackerNews, 101 pts)\n- - Foundation Models framework (r/HackerNews, 101 pts)\n- - Former Nvidia CEO Huang had a relationship with a second employee, sources say (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -43,12 +43,12 @@
       "text": "MSTR -5.5% drop @ $114.41"
     },
     {
-      "type": "watch",
-      "asset": "TSLA",
-      "price": 397.45,
-      "change": 4.65,
+      "type": "sell",
+      "asset": "MSTR",
+      "price": 114.41,
+      "change": -5.5,
       "category": "stock",
-      "text": "TSLA +4.7% @ $397.45"
+      "text": "MSTR -5.5% drop @ $114.41"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-13T04:15:58.165751",
+    "timestamp": "2026-11-13T04:19:49.159719",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,8 +446,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-13T04:15:35.423522",
+    "timestamp": "2026-11-13T04:19:27.557251",
     "trending": [
+      {
+        "symbol": "MSTR",
+        "price": 114.41,
+        "change": -6.66,
+        "change_percent": -5.5,
+        "name": "Strategy Inc"
+      },
       {
         "symbol": "TSLA",
         "price": 397.45,
@@ -470,6 +477,13 @@
         "name": "SELLAS Life Sciences Group, Inc"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 1935.84,
+        "change": -81.5,
+        "change_percent": -4.04,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": "CSCO",
         "price": 102.01,
         "change": 3.86,
@@ -477,25 +491,11 @@
         "name": "Cisco Systems, Inc."
       },
       {
-        "symbol": "GOOG",
-        "price": 295.35,
-        "change": 10.43,
-        "change_percent": 3.66,
-        "name": "Alphabet Inc."
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 68780.27,
-        "change": -2591.49,
-        "change_percent": -3.63,
+        "price": 68949.79,
+        "change": -2421.98,
+        "change_percent": -3.39,
         "name": "Bitcoin USD"
-      },
-      {
-        "symbol": "MOD",
-        "price": 106.1,
-        "change": 3.03,
-        "change_percent": 2.94,
-        "name": "Modine Manufacturing Company"
       },
       {
         "symbol": "SMCI",
@@ -510,13 +510,6 @@
         "change": 8.42,
         "change_percent": 2.26,
         "name": "Applied Materials, Inc."
-      },
-      {
-        "symbol": "SPCX",
-        "price": 139.94,
-        "change": -3.15,
-        "change_percent": -2.2,
-        "name": "Space Exploration Technologies "
       },
       {
         "symbol": "NU",
@@ -538,6 +531,13 @@
         "change": -47.2,
         "change_percent": -1.66,
         "name": "RUSS 2K"
+      },
+      {
+        "symbol": "COIN",
+        "price": 130.67,
+        "change": -1.46,
+        "change_percent": -1.1,
+        "name": "Coinbase Global, Inc."
       },
       {
         "symbol": ".DJI",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-13T04:15:53.791954",
+    "timestamp": "2026-11-13T04:19:45.284999",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,26 +1016,26 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7623.75,
-        "change": -0.22,
+        "price": 7619.25,
+        "change": -0.28,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 28371.5,
-        "change": -0.36,
+        "price": 28332.5,
+        "change": -0.49,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52485.0,
-        "change": -0.18,
+        "price": 52477.0,
+        "change": -0.19,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2808.3,
-        "change": -1.59,
+        "price": 2807.5,
+        "change": -1.62,
         "type": "future"
       },
       {
@@ -1046,68 +1046,68 @@
       },
       {
         "symbol": "GC=F",
-        "price": 3925.6,
-        "change": -1.87,
+        "price": 3922.0,
+        "change": -1.96,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 50.44,
-        "change": -2.77,
+        "price": 50.33,
+        "change": -2.99,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1538.5,
-        "change": -0.03,
+        "price": 1537.1,
+        "change": -0.12,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 1011.0,
-        "change": -3.13,
+        "price": 1010.0,
+        "change": -3.23,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.35,
-        "change": 4.17,
+        "change": 4.04,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 203.1,
-        "change": -5.52,
+        "price": 204.11,
+        "change": -5.12,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 68757,
-        "change": -6.73,
+        "price": 68927,
+        "change": -6.48,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1930.67,
-        "change": -5.93,
+        "price": 1936.39,
+        "change": -5.64,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 78.26,
-        "change": -5.82,
+        "price": 78.46,
+        "change": -5.58,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.69,
-        "change": -4.11,
+        "price": 9.71,
+        "change": -3.86,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.04,
-        "change": -6.14,
+        "price": 8.06,
+        "change": -5.95,
         "type": "crypto"
       },
       {
@@ -1129,15 +1129,15 @@
         "type": "mover"
       },
       {
-        "symbol": "SLS",
-        "price": 8.03,
-        "change": -4.06,
+        "symbol": "ETH-USD",
+        "price": 1934.78,
+        "change": -4.09,
         "type": "mover"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 1937.38,
-        "change": -3.96,
+        "symbol": "SLS",
+        "price": 8.03,
+        "change": -4.06,
         "type": "mover"
       },
       {
@@ -1154,8 +1154,8 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 68900.33,
-        "change": -3.46,
+        "price": 68926.74,
+        "change": -3.43,
         "type": "mover"
       },
       {
@@ -1204,21 +1204,21 @@
       "author": ""
     },
     {
-      "title": "Home sales in worst slump since the aftermath of the Great Recession",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQmttNnNqVm1jQmstQ2pvWl9aOUYzaklQNmpYaEFuMVdyLUdyWEZqOWU4R0luSldvNlhURDcyeng0VG5NQTVSejFOTFhmOEJlSUt1aGRadmg2c1FSTGdCb2tpbzVuRnJYbXRvYkFsQ0xrUlB3Ui1IMFZyZklhcGpoWW9Rc09Menk0LXBGVlV0MkpsMW53R01kckdKVnRtMWRZc0kzaEFvdk51MnNDbGF3?oc=5",
-      "source": "The Washington Post",
-      "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "FBI says US has seized $1.2 billion worth of cryptocurrency stolen from Binance",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVVR6OGpNNDlNSDhSWURaM3luS2Y4cWNhNHR6TldxR0hPMERZQm45bFNYQWhaSkswN1NXTFBfWXJiWHFIcW9HWEtWX1hsWGVZOEtmd0k3ZnBMNk4ydU1IRTlSZUFUd09pUkttMGFXdkVENTNweGQwVUJqd29TWUlZcTNXbXFiUXFaV1NwYzlsMGxGTlpvczdva094ZFo5UGplY0dyZ0l30gGrAUFVX3lxTE9FRldvdGxfRURTbDY0d1hHUHZqbjc3TFM5UU1acjl6VmUzNHpWbE1Da0NCRm0xU1FFT09SS1JGSHBVRU1CQ1FyTllHeXk2NTQ3TEtLNWpRVmJpamFqdzFqQ2dybVJmN0ZfOVhzUHQyWFRYRl9KSkxMd2NqQldkV1lYeWJnZzZrdjdSaWVIMGxEWHZFV1lTemdJV0l1SGtoNTJtdkgxc1VtckpERQ?oc=5",
       "source": "ABC News - Breaking News, Latest News and Videos",
       "category": "business",
       "published": "Thu, 12 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Home sales in worst slump since the aftermath of the Great Recession",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQmttNnNqVm1jQmstQ2pvWl9aOUYzaklQNmpYaEFuMVdyLUdyWEZqOWU4R0luSldvNlhURDcyeng0VG5NQTVSejFOTFhmOEJlSUt1aGRadmg2c1FSTGdCb2tpbzVuRnJYbXRvYkFsQ0xrUlB3Ui1IMFZyZklhcGpoWW9Rc09Menk0LXBGVlV0MkpsMW53R01kckdKVnRtMWRZc0kzaEFvdk51MnNDbGF3?oc=5",
+      "source": "The Washington Post",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1562,7 +1562,7 @@
     "changePercent": -0.3,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Thu 12 Nov: 28,289.19, down -0.30% -- BEARISH. price below SMA20, RSI 45.3 neutral-bearish, MACD bearish. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-12T23:16:04.640193"
+    "timestamp": "2026-11-12T23:19:55.697303"
   },
   "sticky": {
     "cnbc": [
@@ -1572,6 +1572,13 @@
         "source": "CNBC",
         "published": "2026-11-12T22:47:28",
         "description": "The woman with whom Jensen Huang reportedly had a relationship also owned stakes in companies that provided computing power to Huawei, a key Nvidia competitor."
+      },
+      {
+        "title": "As Nvidia reels from Huang's affairs, who stands to gain?",
+        "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
+        "source": "CNBC",
+        "published": "2026-11-13T03:59:40",
+        "description": "That shift comes as Nvidia grapples with the fallout from Huang's resignation, following revelations about his multiple affairs."
       },
       {
         "title": "Widespread Microsoft outage takes down Outlook and other 365 services",
@@ -1607,13 +1614,6 @@
         "source": "CNBC",
         "published": "2026-11-12T20:01:29",
         "description": "Nvidia stock fell 5% on Thursday following the departure of CEO Jensen Huang. Some see it as a signal to sell, others an opportunity to buy."
-      },
-      {
-        "title": "The world's super-rich are piling into alternative investments. Here's why",
-        "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
-        "source": "CNBC",
-        "published": "2026-11-13T02:25:02",
-        "description": "Alternative investments now account for 60% of single-family office portfolios, surpassing traditional assets for the first time, according to BNY Wealth."
       },
       {
         "title": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
@@ -1701,30 +1701,30 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7623.5,
-      "change": -17.0,
-      "change_percent": -0.22,
+      "price": 7619.0,
+      "change": -21.5,
+      "change_percent": -0.28,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 28370.75,
-      "change": -102.5,
-      "change_percent": -0.36,
+      "price": 28331.0,
+      "change": -142.25,
+      "change_percent": -0.5,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52485.0,
-      "change": -93.0,
-      "change_percent": -0.18,
+      "price": 52477.0,
+      "change": -101.0,
+      "change_percent": -0.19,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2808.3,
-      "change": -45.4,
-      "change_percent": -1.59,
+      "price": 2807.5,
+      "change": -46.2,
+      "change_percent": -1.62,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
@@ -1736,37 +1736,37 @@
     },
     {
       "symbol": "GC=F",
-      "price": 3925.6,
-      "change": -74.9,
-      "change_percent": -1.87,
+      "price": 3922.2,
+      "change": -78.3,
+      "change_percent": -1.96,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 50.44,
-      "change": -1.44,
-      "change_percent": -2.78,
+      "price": 50.33,
+      "change": -1.55,
+      "change_percent": -2.99,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1538.5,
-      "change": -0.5,
-      "change_percent": -0.03,
+      "price": 1537.1,
+      "change": -1.9,
+      "change_percent": -0.12,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 1011.0,
-      "change": -32.7,
-      "change_percent": -3.13,
+      "price": 1010.0,
+      "change": -33.7,
+      "change_percent": -3.23,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.35,
       "change": 0.13,
-      "change_percent": 4.17,
+      "change_percent": 4.04,
       "name": "Natural Gas Dec 26"
     }
   ],

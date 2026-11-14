@@ -1,14 +1,22 @@
 {
-  "timestamp": "2026-11-14T02:31:07.036286",
-  "summary": "Key topics today:\n- - Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)\n- - Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video] (r/HackerNews, 101 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-14T02:47:26.107804",
+  "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)\n- - Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video] (r/HackerNews, 101 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
       "asset": "SOL",
-      "price": 75.31,
-      "change": -6.43,
+      "price": 75.04,
+      "change": -6.41,
       "category": "crypto",
-      "text": "SOL -6.4% dump @ $75.31 \u2014 watch support"
+      "text": "SOL -6.4% dump @ $75.04 \u2014 watch support"
+    },
+    {
+      "type": "watch",
+      "asset": "XRP",
+      "price": 0.980225,
+      "change": -4.66,
+      "category": "crypto",
+      "text": "XRP -4.7% @ $0.98"
     },
     {
       "type": "watch",
@@ -17,14 +25,6 @@
       "change": 4.54,
       "category": "crypto",
       "text": "FIGR_HELOC +4.5% @ $1.05"
-    },
-    {
-      "type": "watch",
-      "asset": "XRP",
-      "price": 0.985466,
-      "change": -4.36,
-      "category": "crypto",
-      "text": "XRP -4.4% @ $0.99"
     },
     {
       "type": "sell",
@@ -53,7 +53,7 @@
   ],
   "reddit": [
     {
-      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
       "subreddit": "HackerNews",
       "score": 301,
       "comments": 0,
@@ -93,6 +93,14 @@
       "created": ""
     },
     {
+      "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+      "created": ""
+    },
+    {
       "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
       "subreddit": "HackerNews",
       "score": 101,
@@ -109,14 +117,6 @@
       "created": ""
     },
     {
-      "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
-      "created": ""
-    },
-    {
       "title": "Ggml v1.0.0",
       "subreddit": "HackerNews",
       "score": 1,
@@ -125,95 +125,95 @@
       "created": ""
     },
     {
-      "title": "FAA issues national ground stop \u2013\u00a0lifted 4.5 hours later",
+      "title": "Terminal borders that don't cost a cell",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "url": "https://www.joshka.net/cell-borders/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T07:30:59.086724",
+    "timestamp": "2026-11-14T07:46:58.643787",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 207.07,
-        "change_24h": -1.54,
-        "market_cap": 2427923938
+        "price": 206.96,
+        "change_24h": -1.45,
+        "market_cap": 2426444932
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 67175,
-        "change_24h": -2.69,
-        "market_cap": 1351010723981
+        "price": 66996,
+        "change_24h": -2.59,
+        "market_cap": 1347483463987
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1896.3,
-        "change_24h": -2.33,
-        "market_cap": 231762745028
+        "price": 1891.59,
+        "change_24h": -2.54,
+        "market_cap": 231221475060
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999219,
-        "change_24h": 0.0,
-        "market_cap": 175261043297
+        "price": 0.999204,
+        "change_24h": -0.0,
+        "market_cap": 175259520553
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 616.46,
-        "change_24h": -2.78,
-        "market_cap": 81070761847
+        "price": 614.42,
+        "change_24h": -2.87,
+        "market_cap": 80814621889
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999607,
-        "change_24h": 0.01,
-        "market_cap": 68984560260
+        "price": 0.999577,
+        "change_24h": 0.0,
+        "market_cap": 68980173428
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 0.985466,
-        "change_24h": -4.36,
-        "market_cap": 62593432980
+        "price": 0.980225,
+        "change_24h": -4.66,
+        "market_cap": 62272101247
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 75.31,
-        "change_24h": -6.43,
-        "market_cap": 44550802865
+        "price": 75.04,
+        "change_24h": -6.41,
+        "market_cap": 44392595999
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.312493,
-        "change_24h": 0.48,
-        "market_cap": 29698780262
+        "price": 0.312413,
+        "change_24h": 0.52,
+        "market_cap": 29692938494
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.046,
         "change_24h": 4.54,
-        "market_cap": 27861646045
+        "market_cap": 27861988977
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 69.35,
-        "change_24h": -3.31,
-        "market_cap": 16486139991
+        "price": 69.46,
+        "change_24h": -3.39,
+        "market_cap": 16512460750
       }
     ],
     "news": [
@@ -293,12 +293,12 @@
   },
   "news": [
     {
-      "title": "What we know about the longest US nationwide flight ground stop since 9/11",
+      "title": "What we know about the US ground stop and what to do if you're affected",
       "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Sat, 14 Nov 2026 ",
-      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack or a Microsoft outage."
+      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
     },
     {
       "title": "Young people should have legal guarantee to job or training, review author tells BBC",
@@ -346,10 +346,10 @@
       "source": "Bbc World",
       "category": "bbc_world",
       "published": "Sat, 14 Nov 2026 ",
-      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack or a Microsoft outage."
+      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
     },
     {
-      "title": "Microsoft says services fully restored after for day-long global outage",
+      "title": "Microsoft says services fully restored after day-long global outage",
       "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "category": "bbc_world",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T07:30:36.782603",
+    "timestamp": "2026-11-14T07:46:23.707746",
     "trending": [
       {
         "symbol": "SPCE",
@@ -485,8 +485,8 @@
       {
         "symbol": "XRP-USD",
         "price": 0.98,
-        "change": -0.02,
-        "change_percent": -2.47,
+        "change": -0.03,
+        "change_percent": -2.83,
         "name": "XRP USD"
       },
       {
@@ -960,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T07:30:54.909633",
+    "timestamp": "2026-11-14T07:46:50.783119",
     "items": [
       {
         "symbol": "SPX",
@@ -1054,38 +1054,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 206.99,
-        "change": -1.56,
+        "price": 206.96,
+        "change": -1.52,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 67149,
-        "change": -2.61,
+        "price": 66996,
+        "change": -2.56,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1894.87,
-        "change": -2.36,
+        "price": 1891.59,
+        "change": -2.51,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.35,
+        "price": 75.04,
         "change": -6.34,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.57,
-        "change": -3.56,
+        "price": 9.54,
+        "change": -3.8,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.0,
-        "change": -3.66,
+        "price": 7.99,
+        "change": -3.86,
         "type": "crypto"
       },
       {
@@ -1125,15 +1125,15 @@
         "type": "mover"
       },
       {
-        "symbol": "PLTR",
-        "price": 167.99,
-        "change": -2.56,
+        "symbol": "XRP-USD",
+        "price": 0.98,
+        "change": -2.92,
         "type": "mover"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 0.99,
-        "change": -2.37,
+        "symbol": "PLTR",
+        "price": 167.99,
+        "change": -2.56,
         "type": "mover"
       },
       {
@@ -1152,9 +1152,9 @@
   },
   "business": [
     {
-      "title": "College football teams scrambling to find alternate travel plans after FAA lifts ground-stop order",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONV9HVkdIcU93bVBJd1hqV0xzNjBhY3VmaEd2bjNKb2J4cjVDU1hZbzFKMzVsZFEzSWJ5T0RuNjBVT3U0V05EWmJCdmV4LTB5ekFtZF9jZ0hIai1QS2F6N1NBTnR6V0FPb1hnZ2h4MmtVa0tQM1VJeDcxeUs1Rm9VdGJCUEpKekZZSTNlOUZaNFk2QUxJMHFBN1dkT1d2aVA0a1hZSml6cw?oc=5",
-      "source": "CBS Sports",
+      "title": "What to Know About Friday\u2019s Nationwide Ground Stop",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ3ZnWGY2YWY1TW9QakM0dTdtNFRBcW9qVDc3aGJlV25yb0Q3S0szQ2otUy1IREYyWGgyMllrQW1xY2RRQlJMRlhnRHFEVFlwcFJyQ0FMLWFVTFdwbzdQVzRXR3FQc0lTQlFodFlzcnFkRk13emQ0Z05KRVQwa2lhbkVSS2FvZw?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1202,6 +1202,16 @@
       "author": ""
     },
     {
+      "title": "Family Dollar to pay $63 million to settle allegations that it routinely overcharged customers",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYjJaa1d3XzBUVGtTRHNGZlg4REFRMkxBUWhwcEhSaXVWN0dqZTNJM0ZYZDB4V1gzUTJjV0E0Qld3Y3Z0UWhPWFNncjhtZXhNb1hYRGpkTlZMZjBDWUFpdnlFUVNBVlRXcEVXSVdhb3NVSXBsX0E3VllMOHNkWXJTcVR6dUdXS3pVaXI0NkJObWF2c2s0eHYzSV80SEJsaEtRUF9kN1dGYnQ?oc=5",
+      "source": "AP News",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Tesla Opens Sales Of Autonomous Cybercab For \u2018Select\u2019 Customers",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMThvUmpYTW5TY3k5M3dGODhWa0RtOS1XY1ZHMVBBMEl0eU5UTVBLbWNZLVRTeFhBWnQzMjRMSF8zNV9oMWRUbzRhN0tieHJkblRyc0lZdnJQYmJ1aThMUGptc3VqbU1Fc0VqUldRUUptODA5VU5uZHhoS0FRS240MlB3MVpLRTE4d3cwODBMdndrS19GYkJEbExXSHZ6SVdOcjhuMkR5ek0?oc=5",
       "source": "WSJ",
@@ -1217,16 +1227,6 @@
       "source": "NBC News",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Ari Emanuel Blames FAA Issues On Pete Buttigieg",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZXhlWWZ2dzlwcVpOTWdiTHJlWDJRVXJHc1pGcnc3WjMzbkZJY0Fld0pQVnMzNi1ySkhER3ZjTHJZUjk3R3dpSFEzMGFFV1hVZ0ZQY3JHbGZ5ZnY2QVVRSG1GZGRzX25LRmxodGNpUng5Q0x4SGxNVzdkbGJCbTNwRWEyZmhDcHRENG1lRUp3?oc=5",
-      "source": "Deadline",
-      "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1294,21 +1294,21 @@
       "author": ""
     },
     {
-      "title": "Another Linux kernel developer steps back from some duties due to overload",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2JRZ0NvSXo4Q0thc3B2OGw2b2czNDE2b3c4eFhIeFVxc2cwdmg4SzBFbEs0WXJCcFRBNDN0MlBPTGxBQ2hxTXY1MzJqcVI4b1NSS3RTWHJGSkU0ZTRuQl95RXU2VU5PQlQ1U1RBQWtvN2xBeGdpY3Q3RmNmSE9JaU5jVG5nRmxMaUtiOXRiWldyQWFYU1ZkSjI2c2FIY0s4WTVtVU91UHdDRlB4RkxHWVBBbVp1Z1NGVnU5M1dFb0Y2SHNNQTQwS1lMbw?oc=5",
-      "source": "The Register",
-      "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Even Grand Theft Auto's original creators haven't been able to play GTA 6",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xa25uZ25Ya2hyRWFTd0dZRHItbGJmTjdKSld5VDNmQnRhd0Y2ZWNTYUN3bVZOZmxCSFpIX2loa25yRWxrTEVybnh1ZGVDbklmdVVBSy1CZzRJUk0?oc=5",
       "source": "BBC",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Another Linux kernel developer steps back from some duties due to overload",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2JRZ0NvSXo4Q0thc3B2OGw2b2czNDE2b3c4eFhIeFVxc2cwdmg4SzBFbEs0WXJCcFRBNDN0MlBPTGxBQ2hxTXY1MzJqcVI4b1NSS3RTWHJGSkU0ZTRuQl95RXU2VU5PQlQ1U1RBQWtvN2xBeGdpY3Q3RmNmSE9JaU5jVG5nRmxMaUtiOXRiWldyQWFYU1ZkSjI2c2FIY0s4WTVtVU91UHdDRlB4RkxHWVBBbVp1Z1NGVnU5M1dFb0Y2SHNNQTQwS1lMbw?oc=5",
+      "source": "The Register",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1424,106 +1424,106 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "published": "Sat, 14 Nov 2026 ",
-      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack or a Microsoft outage.",
+      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
       "relevance_score": 1
     }
   ],
   "github": [
     {
+      "name": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars": 458258,
+      "language": "TypeScript",
+      "url": "https://github.com/morluto/rea",
+      "updated": "2026-11-14T07:47:12Z"
+    },
+    {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 302558,
+      "stars": 302571,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-14T06:39:17Z"
+      "updated": "2026-11-14T07:43:14Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 263266,
+      "stars": 263271,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-14T06:37:44Z"
+      "updated": "2026-11-14T07:41:56Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 201630,
+      "stars": 201636,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-14T06:37:49Z"
+      "updated": "2026-11-14T07:42:42Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 190475,
+      "stars": 190493,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-14T06:36:57Z"
+      "updated": "2026-11-14T07:36:45Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 188021,
+      "stars": 188022,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-14T06:34:24Z"
+      "updated": "2026-11-14T07:37:41Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168956,
+      "stars": 168957,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-14T06:26:29Z"
+      "updated": "2026-11-14T06:58:09Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161128,
+      "stars": 161131,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-14T06:30:46Z"
+      "updated": "2026-11-14T07:37:05Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149476,
+      "stars": 149477,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-14T06:26:51Z"
+      "updated": "2026-11-14T07:22:56Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 147383,
+      "stars": 147402,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-14T06:37:32Z"
+      "updated": "2026-11-14T07:43:16Z"
     },
     {
-      "name": "jaywcjlove/awesome-mac",
-      "description": "\uf8ff This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories f",
-      "stars": 118492,
-      "language": "Swift",
-      "url": "https://github.com/jaywcjlove/awesome-mac",
-      "updated": "2026-11-14T06:30:33Z"
+      "name": "stablyai/orca",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
+      "stars": 124535,
+      "language": "TypeScript",
+      "url": "https://github.com/stablyai/orca",
+      "updated": "2026-11-14T07:47:21Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 111630,
+      "stars": 111644,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-14T06:38:54Z"
-    },
-    {
-      "name": "pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 109762,
-      "language": "Rust",
-      "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-14T06:41:07Z"
+      "updated": "2026-11-14T07:42:39Z"
     }
   ],
   "nasdaq_data": {
@@ -1532,7 +1532,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 14 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-14T02:31:05.369444"
+    "timestamp": "2026-11-14T02:47:23.872163"
   },
   "sticky": {
     "cnbc": [

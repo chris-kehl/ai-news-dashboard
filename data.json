@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-14T07:16:12.031697",
+  "timestamp": "2026-11-14T07:23:10.878582",
   "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)\n- - Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video] (r/HackerNews, 101 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,14 +28,6 @@
     },
     {
       "type": "sell",
-      "asset": "SPCE",
-      "price": 1.84,
-      "change": -35.89,
-      "category": "stock",
-      "text": "SPCE -35.9% drop @ $1.84"
-    },
-    {
-      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
@@ -49,6 +41,14 @@
       "change": -7.95,
       "category": "stock",
       "text": "HOOD -8.0% drop @ $77.86"
+    },
+    {
+      "type": "sell",
+      "asset": "UAL",
+      "price": 109.31,
+      "change": -7.65,
+      "category": "stock",
+      "text": "UAL -7.7% drop @ $109.31"
     }
   ],
   "reddit": [
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T12:16:03.024154",
+    "timestamp": "2026-11-14T12:22:58.954741",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T12:15:37.755525",
+    "timestamp": "2026-11-14T12:22:35.608843",
     "trending": [
-      {
-        "symbol": "SPCE",
-        "price": 1.84,
-        "change": -1.03,
-        "change_percent": -35.89,
-        "name": "Virgin Galactic Holdings, Inc."
-      },
       {
         "symbol": "UAL",
         "price": 109.31,
@@ -469,6 +462,13 @@
         "name": "Delta Air Lines, Inc."
       },
       {
+        "symbol": "TPL",
+        "price": 291.91,
+        "change": 10.49,
+        "change_percent": 3.73,
+        "name": "Texas Pacific Land Corporation"
+      },
+      {
         "symbol": "SOL-USD",
         "price": 75.71,
         "change": -2.39,
@@ -476,25 +476,25 @@
         "name": "Solana USD"
       },
       {
-        "symbol": ".RUT",
-        "price": 2790.49,
-        "change": -55.77,
-        "change_percent": -1.96,
-        "name": "Russell 2000"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 67137.56,
-        "change": -1111.71,
-        "change_percent": -1.63,
+        "price": 67077.58,
+        "change": -1171.69,
+        "change_percent": -1.72,
         "name": "Bitcoin USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 0.99,
         "change": -0.02,
-        "change_percent": -1.5,
+        "change_percent": -1.61,
         "name": "XRP USD"
+      },
+      {
+        "symbol": "LHX",
+        "price": 272.35,
+        "change": -4.24,
+        "change_percent": -1.53,
+        "name": "L3Harris Technologies, Inc."
       },
       {
         "symbol": "^IXIC",
@@ -505,8 +505,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 1905.4,
-        "change": -22.19,
+        "price": 1905.5,
+        "change": -22.09,
         "change_percent": -1.15,
         "name": "Ethereum USD"
       },
@@ -516,6 +516,13 @@
         "change": -57.71,
         "change_percent": -0.76,
         "name": "S&P 500"
+      },
+      {
+        "symbol": ".RUT",
+        "price": 2790.489,
+        "change": -8.57,
+        "change_percent": -0.31,
+        "name": "RUSS 2K"
       },
       {
         "symbol": ".DJI",
@@ -953,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T12:15:55.898382",
+    "timestamp": "2026-11-14T12:22:54.278581",
     "items": [
       {
         "symbol": "SPX",
@@ -1047,38 +1054,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 207.58,
-        "change": -2.64,
+        "price": 207.08,
+        "change": -2.46,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 67156,
-        "change": -3.26,
+        "price": 67110,
+        "change": -3.13,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1906.44,
-        "change": -2.82,
+        "price": 1905.63,
+        "change": -2.67,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.77,
-        "change": -6.17,
+        "price": 75.72,
+        "change": -6.12,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.6,
-        "change": -4.0,
+        "price": 9.58,
+        "change": -3.99,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 8.04,
-        "change": -4.52,
+        "price": 8.03,
+        "change": -4.42,
         "type": "crypto"
       },
       {
@@ -1118,21 +1125,21 @@
         "type": "mover"
       },
       {
-        "symbol": "^RUT",
-        "price": 2790.49,
-        "change": -1.96,
-        "type": "mover"
-      },
-      {
         "symbol": "BTC-USD",
-        "price": 67128.75,
-        "change": -1.64,
+        "price": 67050.72,
+        "change": -1.76,
         "type": "mover"
       },
       {
         "symbol": "XRP-USD",
         "price": 0.99,
-        "change": -1.5,
+        "change": -1.7,
+        "type": "mover"
+      },
+      {
+        "symbol": "LHX",
+        "price": 272.35,
+        "change": -1.53,
         "type": "mover"
       },
       {
@@ -1155,9 +1162,9 @@
       "author": ""
     },
     {
-      "title": "In Jensen Huang\u2019s Ouster, Tech Billionaires See a Mistake\u2014and a Lesson",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQkFZaWU0ZEdlakM1WnlreGY5X19qOTNjVjFlWTJXZWFwZkl6QlNYdUlYZ1JCNkNtQ0U3T04zaDNPYnNyd0NqZUtTYlJlRkhwaUwwYl82aWpUaEZ3Y2FCcGh6UHdXaW5FUmZEZU93NE81U0UyYVhia1JXdnVZUG1kYW1UbGZWTlJsQVh6bGZFMkZtY0I3SEdCNHFlVUlsYU1rRUNF?oc=5",
-      "source": "WSJ",
+      "title": "Nvidia scandal hits Trump\u2019s political vulnerabilities after Democratic sweep",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONV9KTEtTalpUbDZVME91ak1OQzR5SDZaTS1CLTA1Uk1iZ1VTRU9DMDM1RjdnUkZ0YkQxQ2V3QlVsSzY3SkRzRWVTa3JKUlgxMEI5M3N0Y1BPLXVMTjVjNFhBakJXZk9ibEV6Y3p2U3JHb3dpSzFsM1V3eXc0RFhsRnZaNk16YjVCa3lyeDh5MVlBZVU0Yks1VHpfMW4wUl9DdEI5THA5UndPczZtSUhoV1pYUW5nZ3ZLS2xDcVhBREFPTHhkRVE?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1165,9 +1172,9 @@
       "author": ""
     },
     {
-      "title": "How the Microsoft outage impacted courts and governments",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1yUnhQZ1hSOVFGajVoZXJDcE1TbWhCa2RJU0ExblA5WElCZVczWnh0VlpBdXljcnlDM2cxZWh1dW50ZXQ1M3pTWE4tamZGMWk2X2VXZmVETC1pd1M0WDBYQXo2Ri16QlVrVnFMdjBpamUxdVdaNWVLMjhn?oc=5",
-      "source": "Axios",
+      "title": "Microsoft says services fully restored after global outage",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcVpSTUpTQVVaR0dJSEFmSzNEQWduRC1WRVNmOGt1cms0VFRjR3VvaC1GVTNaUjdmcW9LRWd4ZzJaaEpIU29kVjB0NzZGNko1UjIzdVlIQWlzdzF6Zk0xeVk4bVhUdDI0Z3d0UFlsMXVkTUhaNjZ4NXI2SldiU1JYS0R1NjJVRlBDYmt5cjdGbVV0UVkzQ3dZdEp2TWVjNm15WTcxQ3A2LW0zc0ZWX3c?oc=5",
+      "source": "The Guardian",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1205,21 +1212,21 @@
       "author": ""
     },
     {
-      "title": "EXCLUSIVE: Investors flock to Anthropic IPO but question durability of AI lead",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOckJYSDVUWDh1cTJPb3ptd2pLZmxuNXBtSEJkN0F0WWFucUZuWDgtQ0dZbzZITDBWY3dhSWZqcjcyZl9FdGpHdHJsX1dkbVowTkZ3OWRKd3pwN2NIMnBGZ1AtbDFkMkl6Vm1RZFNsZ2VDOU1nLUVmY2d4UHV2U01ER1pJTmdlSGFDdmsyM2ZhbXlXYVdEb01ERlNybGxWY0RsYlo4QlNxa0NCaUNpQjQw?oc=5",
-      "source": "Reuters",
+      "title": "AI company behind FAA\u2019s SMART tool denies link to ground stop, Duffy confirms",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWXVXRE54ZzE0YWRsQlUtNmE4LUR3a0hjVGh3QXRSYTB6cHc1VlU2Sk10WEw1VWdVd3ZyTmw2Z25veTNJM2VWM3ZhV2VEdkxVSU1BWlk5MUkyMTJ3Y0NqS1dSd016UjBHS3NvV2NGeHZHUTNINkt5ZE9iLUxNQkx2YUNQdGhOMzlVb3fSAY8BQVVfeXFMTjFyanBTRHZFU3U5MUd1dnh0S2FxX0xDcVR0aUg5S2JNeHI5RFlBYkRlcVJ6Rnk3ZjV1X0czMkxKWnNiSTRpXzdPQ0pFMF9DazEyaG02eU1Va2pOQ3AyRS1ZblR4aFN1VHV6Zi1Qdlh5WUZPSnNLTGVYMTA1ZzFRVkgxelVRMXE2X3lMZ1E2c0k?oc=5",
+      "source": "The Hill",
       "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
+      "published": "Sat, 14 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Donald Trump will not raise Nvidia spy issue with Xi Jinping at summit, officials say",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkI1ZVNvLXc5RXBHWkJ0Z3p2UDNiM2I0Y0dFS2VEajRHaURMYk5lN0ZDQktjZnNqVTFkUHZCMHhGT0E2aGFkTFhOcm9NU2YxODlwNElTRDhXOURZWGFiczhhZEsyazlzYlN0Vi1WQVVKLVpRaXdmakJ6MUpuQUoxQ3NRQV8?oc=5",
-      "source": "Financial Times",
+      "title": "EXCLUSIVE: Investors flock to Anthropic IPO but question durability of AI lead",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOckJYSDVUWDh1cTJPb3ptd2pLZmxuNXBtSEJkN0F0WWFucUZuWDgtQ0dZbzZITDBWY3dhSWZqcjcyZl9FdGpHdHJsX1dkbVowTkZ3OWRKd3pwN2NIMnBGZ1AtbDFkMkl6Vm1RZFNsZ2VDOU1nLUVmY2d4UHV2U01ER1pJTmdlSGFDdmsyM2ZhbXlXYVdEb01ERlNybGxWY0RsYlo4QlNxa0NCaUNpQjQw?oc=5",
+      "source": "Reuters",
       "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1297,11 +1304,11 @@
       "author": ""
     },
     {
-      "title": "GTA 6 PS5 Codes Potentially Being Stolen from Physical Copies Using Flashlight Trick",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeDNMSXNyclc1R2dGUXdhQld1WS1iNVYyTm05Yl9tQnZCQXlEYlFlTXVXLWNEVGFtcnZhZnJNeEhKbkxZaG50SUY5VW4zWHp5NWRhZGNMc09hc2JnYkp5dFlGMUlibUVDT2JfeUVQel9RMnJHbDZiMzBhakwwbk8xc2lYQ3NfTk9JUVN2QlJKdGFEeVZ5NlExVlhPMC1QRzFlOHhtSEtZclFnN2xfT0pMTVZnUjZJSG9lU1lfYXVXS01IUQ?oc=5",
-      "source": "Push Square",
+      "title": "After 3 Weeks and More Than 451,000 Folds, the iPhone Duo's Hinge Is Finally Starting to Fail",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOR1RydlN6dGdpdzJES3BBczhFS3ViSHFPT1ZwRjNxbDgxdnRWNTBUTXNmRGpVdHhrWFlGWnNwTWUzLWgyXy00V3FyNFQ5LTNTTk5yZ0xoZWtjMmxBNjY3REE1SDJwaHM2dEpZdXc4eHBNeE5lX0dGUy1lVU55cDVUbkJn?oc=5",
+      "source": "CNET",
       "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1315,6 +1322,14 @@
       "published": "Sat, 14 Nov 2026 ",
       "description": "Kyiv seeks to break reliance on Starlink as Moscow develops its own satellite constellation for military communications.",
       "relevance_score": 13
+    },
+    {
+      "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+      "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 14 Nov 2026 ",
+      "description": "Zelenskyy says the US asked for the first time whether Kyiv would cede land to Moscow in exchange for the NATO bid.",
+      "relevance_score": 10
     },
     {
       "title": "Drones incoming! New innovations on offer in UAS tech | Defense News Weekly Full Episode 11.10.26",
@@ -1363,14 +1378,6 @@
       "published": "Fri, 13 Nov 2026 ",
       "description": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says.",
       "relevance_score": 4
-    },
-    {
-      "title": "Qatar and Turkiye sign a mutual defence pact: What do we know?",
-      "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sat, 14 Nov 2026 ",
-      "description": "Analysts say the pact, agreed amid the US-Iran war, aims to deter attacks rather than build an offensive alliance.",
-      "relevance_score": 3
     },
     {
       "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
@@ -1525,7 +1532,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 14 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-14T07:16:09.705116"
+    "timestamp": "2026-11-14T07:23:05.596145"
   },
   "sticky": {
     "cnbc": [

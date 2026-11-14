@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-13T21:31:25.315266",
+  "timestamp": "2026-11-13T21:37:21.645921",
   "summary": "Key topics today:\n- - Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)\n- - Perplexity Decider v1.3: Training, eval, and use cases (r/HackerNews, 101 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "SPCE",
+      "price": 1.84,
+      "change": -35.89,
+      "category": "stock",
+      "text": "SPCE -35.9% drop @ $1.84"
+    },
+    {
+      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
@@ -36,19 +44,11 @@
     },
     {
       "type": "sell",
-      "asset": "UAL",
-      "price": 109.31,
-      "change": -7.65,
+      "asset": "HTZ",
+      "price": 1.5,
+      "change": -8.54,
       "category": "stock",
-      "text": "UAL -7.7% drop @ $109.31"
-    },
-    {
-      "type": "sell",
-      "asset": "SPCE",
-      "price": 2.67,
-      "change": -6.97,
-      "category": "stock",
-      "text": "SPCE -7.0% drop @ $2.67"
+      "text": "HTZ -8.5% drop @ $1.50"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T02:31:12.775021",
+    "timestamp": "2026-11-14T02:37:10.728650",
     "prices": [
       {
         "name": "Bittensor",
@@ -389,28 +389,20 @@
       "description": "The DHS secretary said there were no indications of a cyberattack."
     },
     {
+      "title": "LIVE:  ABC News Live",
+      "url": "https://abcnews.com/video/41463246/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "24/7 coverage of breaking news and live events"
+    },
+    {
       "title": "Trump to meet with Putin and Xi in China next week, US officials say",
       "url": "https://abcnews.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Fri, 13 Nov 2026 ",
       "description": "Trump will participate in the first-ever trilateral meeting between the leaders of the U.S., China, and Russia on the sidelines of the APEC Summit in China next week."
-    },
-    {
-      "title": "'Miracle': All rescued from capsized New Orleans riverboat in tanker collision",
-      "url": "https://abcnews.com/US/vessel-collision-port-new-orleans-emergency-crews-responding/story?id=138119847",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "The incident occurred Friday on the Mississippi River."
-    },
-    {
-      "title": "Microsoft apologizes for email disruption, says AI agents not responsible",
-      "url": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "Microsoft is reporting \"issues\" with users accessing Outlook and Teams."
     },
     {
       "title": "Authorities say DC gunman held long-standing feud with building management",
@@ -427,6 +419,14 @@
       "category": "abc_news",
       "published": "Fri, 13 Nov 2026 ",
       "description": "ABC News' Danny New reports on a group of middle schoolers in Maryland who are about to get the snow day of their lives in the form of a class trip to Antarctica."
+    },
+    {
+      "title": "WATCH:  41-year-old firefighter\u2019s life saved by heart transplant",
+      "url": "https://abcnews.com/video/138107216/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Fri, 13 Nov 2026 ",
+      "description": "Nico Ratto, a dad of two from New Jersey, spent 45 days hospitalized before receiving a lifesaving heart transplant."
     },
     {
       "title": "DHS head Markwayne Mullin says there is not a threat to the U.S. amid FAA ground stop",
@@ -446,8 +446,22 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T02:30:42.896006",
+    "timestamp": "2026-11-14T02:36:44.463322",
     "trending": [
+      {
+        "symbol": "SPCE",
+        "price": 1.84,
+        "change": -1.03,
+        "change_percent": -35.89,
+        "name": "Virgin Galactic Holdings, Inc."
+      },
+      {
+        "symbol": "HTZ",
+        "price": 1.5,
+        "change": -0.14,
+        "change_percent": -8.54,
+        "name": "Hertz Global Holdings, Inc"
+      },
       {
         "symbol": "UAL",
         "price": 109.31,
@@ -456,25 +470,11 @@
         "name": "United Airlines Holdings, Inc."
       },
       {
-        "symbol": "SPCE",
-        "price": 2.67,
-        "change": -0.2,
-        "change_percent": -6.97,
-        "name": "Virgin Galactic Holdings, Inc."
-      },
-      {
         "symbol": "AAL",
         "price": 13.17,
         "change": -0.93,
         "change_percent": -6.6,
         "name": "American Airlines Group, Inc."
-      },
-      {
-        "symbol": "HTZ",
-        "price": 1.54,
-        "change": -0.1,
-        "change_percent": -6.1,
-        "name": "Hertz Global Holdings, Inc"
       },
       {
         "symbol": "DAL",
@@ -519,6 +519,13 @@
         "name": "State Street SPDR S&P 500 ETF T"
       },
       {
+        "symbol": "SPCX",
+        "price": 139.11,
+        "change": -0.64,
+        "change_percent": -0.46,
+        "name": "Space Exploration Technologies "
+      },
+      {
         "symbol": ".RUT",
         "price": 2790.489,
         "change": -8.57,
@@ -531,13 +538,6 @@
         "change": -138.94,
         "change_percent": -0.26,
         "name": "Dow Jones Industrial Average"
-      },
-      {
-        "symbol": "SPCX",
-        "price": 139.94,
-        "change": 0.19,
-        "change_percent": 0.14,
-        "name": "Space Exploration Technologies "
       }
     ],
     "meme_momentum": [
@@ -547,6 +547,20 @@
         "change": -10.73,
         "change_percent": -8.77,
         "name": "Strategy Inc"
+      },
+      {
+        "symbol": "HOOD",
+        "price": 77.86,
+        "change": -6.72,
+        "change_percent": -7.95,
+        "name": "Robinhood Markets, Inc."
+      },
+      {
+        "symbol": "COIN",
+        "price": 127.65,
+        "change": -8.62,
+        "change_percent": -6.33,
+        "name": "Coinbase Global, Inc."
       },
       {
         "symbol": "NVDA",
@@ -563,18 +577,11 @@
         "name": "BlackBerry Limited"
       },
       {
-        "symbol": "COIN",
-        "price": 130.67,
-        "change": -5.6,
-        "change_percent": -4.11,
-        "name": "Coinbase Global, Inc."
-      },
-      {
-        "symbol": "HOOD",
-        "price": 81.35,
-        "change": -3.23,
-        "change_percent": -3.82,
-        "name": "Robinhood Markets, Inc."
+        "symbol": "AMC",
+        "price": 3.25,
+        "change": -0.17,
+        "change_percent": -4.97,
+        "name": "AMC Entertainment Holdings, Inc"
       },
       {
         "symbol": "AMD",
@@ -584,11 +591,11 @@
         "name": "Advanced Micro Devices, Inc."
       },
       {
-        "symbol": "AMC",
-        "price": 3.34,
-        "change": -0.08,
-        "change_percent": -2.34,
-        "name": "AMC Entertainment Holdings, Inc"
+        "symbol": "PLTR",
+        "price": 167.99,
+        "change": -4.41,
+        "change_percent": -2.56,
+        "name": "Palantir Technologies Inc."
       },
       {
         "symbol": "GME",
@@ -596,13 +603,6 @@
         "change": 0.3,
         "change_percent": 1.17,
         "name": "GameStop Corporation"
-      },
-      {
-        "symbol": "PLTR",
-        "price": 171.58,
-        "change": -0.82,
-        "change_percent": -0.48,
-        "name": "Palantir Technologies Inc."
       },
       {
         "symbol": "TSLA",
@@ -868,6 +868,13 @@
         "name": "Honeywell International Inc."
       },
       {
+        "symbol": "META",
+        "price": 641.69,
+        "change": 12.92,
+        "change_percent": 2.05,
+        "name": "Meta Platforms, Inc."
+      },
+      {
         "symbol": "TXN",
         "price": 303.6,
         "change": -6.21,
@@ -894,13 +901,6 @@
         "change": -0.33,
         "change_percent": -0.86,
         "name": "Nike, Inc."
-      },
-      {
-        "symbol": "META",
-        "price": 623.61,
-        "change": -5.16,
-        "change_percent": -0.82,
-        "name": "Meta Platforms, Inc."
       },
       {
         "symbol": "GOOGL",
@@ -968,7 +968,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T02:31:04.462698",
+    "timestamp": "2026-11-14T02:37:05.402395",
     "items": [
       {
         "symbol": "SPX",
@@ -1062,39 +1062,51 @@
       },
       {
         "symbol": "TAO",
-        "price": 212.32,
-        "change": 1.39,
+        "price": 213.16,
+        "change": 2.01,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 67174,
-        "change": -4.72,
+        "price": 67314,
+        "change": -4.29,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1894.5,
-        "change": -5.39,
+        "price": 1895.61,
+        "change": -4.97,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.65,
-        "change": -6.46,
+        "price": 75.57,
+        "change": -6.18,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 9.63,
-        "change": -3.93,
+        "change": -3.44,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.04,
-        "change": -3.14,
+        "change": -2.72,
         "type": "crypto"
+      },
+      {
+        "symbol": "SPCE",
+        "price": 1.84,
+        "change": -35.89,
+        "type": "mover"
+      },
+      {
+        "symbol": "HTZ",
+        "price": 1.5,
+        "change": -8.54,
+        "type": "mover"
       },
       {
         "symbol": "UAL",
@@ -1103,21 +1115,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SPCE",
-        "price": 2.67,
-        "change": -6.97,
-        "type": "mover"
-      },
-      {
         "symbol": "AAL",
         "price": 13.17,
         "change": -6.6,
-        "type": "mover"
-      },
-      {
-        "symbol": "HTZ",
-        "price": 1.54,
-        "change": -6.1,
         "type": "mover"
       },
       {
@@ -1134,8 +1134,14 @@
       },
       {
         "symbol": "AMC",
-        "price": 3.34,
-        "change": -2.34,
+        "price": 3.25,
+        "change": -4.97,
+        "type": "mover"
+      },
+      {
+        "symbol": "PLTR",
+        "price": 167.99,
+        "change": -2.56,
         "type": "mover"
       },
       {
@@ -1149,18 +1155,12 @@
         "price": 25136.27,
         "change": -1.3,
         "type": "mover"
-      },
-      {
-        "symbol": "GME",
-        "price": 25.85,
-        "change": 1.17,
-        "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "FAA ground stop live updates: Nearly 5,000 flights canceled, no indication of 'nefarious' act",
+      "title": "FAA ground stop live updates: Duffy blames 'overloaded' routers; thousands of flights canceled",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOGROdmRiMmNwZTRXQXBGUm5KRkVlY0V0QVhQbDNHVmdUNHFDZlZJS3ZJTFdnWmhzRms2dEVqR3E5ZnRENWtSbE1DbGE0WnF3d3ZYTjhodmpKY1JLZUV0WTRRSTQ5Y0tpR3QyMDdQbGRBSVQ3dnVNYjZacVZOYXhoc0JsclROME04QzF5RG1QWlcxeWIxSmlBTXdaMy1kNUo2cmZoc1BHNNIBrAFBVV95cUxOZVZnaUc1S2JtM3hVRFhKWVlPZWlWdlRSeV9MamxJLXNxN1IwYnotZEQxeVNsNlBPV3VnY0JKWWdhUzlfUFZvcHVRQ0R3RVhqUzRWbHBJby00dnFYdF9tcUZRc3JGdFZFTElkZnlTQUxqMVFEekZEdVBUa3lTNlJ0Z01kQ3NBWHE0aFhNQlpLSnUzQVJKZnJBYm5walZMeFJkZFg1S2ItS0U5YmtC?oc=5",
       "source": "ABC News - Breaking News, Latest News and Videos",
       "category": "business",
@@ -1180,9 +1180,9 @@
       "author": ""
     },
     {
-      "title": "SpaceX launches milestone Starship flight to demonstrate full reusability of orbit-class rocket",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSZjU2emJ2X21oRkFSWllCbXlQSVBWMVJPLTdqMzJ2V0VFVmxsOFN1anZZblpZSFhxZ2xjSE1uU2psLWFQcFcxUVhZNExCS0Z2X2Y0WkpSNk1MemVSNExKRndCVTBEVzRzUEJ0SUxDbEsweFBGN0g4?oc=5",
-      "source": "CBS News",
+      "title": "EXCLUSIVE: Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONzdHUzc1NjBCWjJNbldoNEhWS3RkQzJNdHJGTXFfX0h0YWR5QjhHbjdkd3NENnU2eXZpMktjMWRzT216Y2tMbnB0dS04T25QZEtxQmNpZzQ2SjNXRHNwQ2h4ckdOdkJ3d19IRDBYaUs5dzZzc2o2WmliV3hnRjNSN3VyM0trT1hxMEh4M2ppd3RBQ2RXTVUtWE40MmI0S2Z1d0ZBVjZGV2FSa2tDVEpDWU02WXR0QjBOdHRmTHJRV09faXc?oc=5",
+      "source": "Reuters",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1190,9 +1190,9 @@
       "author": ""
     },
     {
-      "title": "EXCLUSIVE: Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONzdHUzc1NjBCWjJNbldoNEhWS3RkQzJNdHJGTXFfX0h0YWR5QjhHbjdkd3NENnU2eXZpMktjMWRzT216Y2tMbnB0dS04T25QZEtxQmNpZzQ2SjNXRHNwQ2h4ckdOdkJ3d19IRDBYaUs5dzZzc2o2WmliV3hnRjNSN3VyM0trT1hxMEh4M2ppd3RBQ2RXTVUtWE40MmI0S2Z1d0ZBVjZGV2FSa2tDVEpDWU02WXR0QjBOdHRmTHJRV09faXc?oc=5",
-      "source": "Reuters",
+      "title": "SpaceX launches milestone Starship flight to demonstrate full reusability of orbit-class rocket",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSZjU2emJ2X21oRkFSWllCbXlQSVBWMVJPLTdqMzJ2V0VFVmxsOFN1anZZblpZSFhxZ2xjSE1uU2psLWFQcFcxUVhZNExCS0Z2X2Y0WkpSNk1MemVSNExKRndCVTBEVzRzUEJ0SUxDbEsweFBGN0g4?oc=5",
+      "source": "CBS News",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1532,7 +1532,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 13 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-13T21:31:20.403352"
+    "timestamp": "2026-11-13T21:37:18.782440"
   },
   "sticky": {
     "cnbc": [
@@ -1540,7 +1540,7 @@
         "title": "FAA lifts ground stop after four hours, but flight cancellations will stretch into the weekend",
         "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
         "source": "CNBC",
-        "published": "2026-11-14T01:54:38",
+        "published": "2026-11-14T02:33:48",
         "description": "The Federal Aviation Administration issued a nationwide ground stop on Friday afternoon, disrupting thousands of departing of flights."
       },
       {

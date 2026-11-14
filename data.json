@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-14T03:16:07.115393",
+  "timestamp": "2026-11-14T03:19:43.671963",
   "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)\n- - Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video] (r/HackerNews, 101 pts)\n- - After 600 experiments, here's what I discovered about JEPA world models (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
-      "asset": "SMMT",
-      "price": 14.15,
-      "change": -14.96,
-      "category": "stock",
-      "text": "SMMT -15.0% drop @ $14.15"
-    },
-    {
-      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
       "category": "stock",
       "text": "MSTR -8.8% drop @ $111.62"
+    },
+    {
+      "type": "sell",
+      "asset": "HOOD",
+      "price": 77.86,
+      "change": -7.95,
+      "category": "stock",
+      "text": "HOOD -8.0% drop @ $77.86"
     }
   ],
   "reddit": [
@@ -109,11 +109,11 @@
       "created": ""
     },
     {
-      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+      "url": "https://news.ycombinator.com/item?id=50494696",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T08:15:58.517313",
+    "timestamp": "2026-11-14T08:19:35.361358",
     "prices": [
       {
         "name": "Bittensor",
@@ -218,6 +218,12 @@
     ],
     "news": [
       {
+        "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
+        "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Sat, 14 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7CHQ8H5VMWGN9MBP9CQVNVC/layoffs-fired-human-resource-hr-leaving-quit-people-ai-2.jpg\" alt=\"MegaETH parent cuts 20% of st"
+      },
+      {
         "title": "Bitcoin ETFs shed $2.35B in 2 weeks, BlackRock\u2019s losing streak hits 11",
         "url": "https://cointelegraph.com/markets/bitcoin-etf-outflows-2-35-billion-blackrock-11-session-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Sat, 14 Nov 2026 ",
@@ -258,12 +264,6 @@
         "url": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Fri, 13 Nov 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7AWR4AB715ADV7EW9WZVKDA/hi-how-a-small-crypto-trader-turned-k-into-m-using-a-high-risk-high-precision-strategy-metaplane"
-      },
-      {
-        "title": "Bitcoin holds below $70K as stocks slip despite a cooler US PPI print",
-        "url": "https://cointelegraph.com/markets/bitcoin-below-70k-stocks-slip-cooler-us-ppi-print?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Fri, 13 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7AS165R9P1Y8G39SM0M5CFQ/bitcoin-crypto-desk-graph-chart-1280x853.webp\" alt=\"Bitcoin holds below $70K as stocks slip desp"
       },
       {
         "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T08:15:36.340224",
+    "timestamp": "2026-11-14T08:19:13.398781",
     "trending": [
       {
         "symbol": "SPCE",
@@ -446,20 +446,6 @@
         "change": -1.03,
         "change_percent": -35.89,
         "name": "Virgin Galactic Holdings, Inc."
-      },
-      {
-        "symbol": "SMMT",
-        "price": 14.15,
-        "change": -2.49,
-        "change_percent": -14.96,
-        "name": "Summit Therapeutics Inc."
-      },
-      {
-        "symbol": "HTZ",
-        "price": 1.5,
-        "change": -0.14,
-        "change_percent": -8.54,
-        "name": "Hertz Global Holdings, Inc"
       },
       {
         "symbol": "UAL",
@@ -483,18 +469,32 @@
         "name": "Delta Air Lines, Inc."
       },
       {
+        "symbol": "SOL-USD",
+        "price": 75.53,
+        "change": -2.57,
+        "change_percent": -3.29,
+        "name": "Solana USD"
+      },
+      {
         "symbol": "XRP-USD",
-        "price": 0.98,
+        "price": 0.99,
         "change": -0.02,
-        "change_percent": -2.45,
+        "change_percent": -2.21,
         "name": "XRP USD"
       },
       {
-        "symbol": "LHX",
-        "price": 272.35,
-        "change": -4.24,
-        "change_percent": -1.53,
-        "name": "L3Harris Technologies, Inc."
+        "symbol": "KO",
+        "price": 99.25,
+        "change": 1.68,
+        "change_percent": 1.72,
+        "name": "Coca-Cola Company (The)"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 67236.49,
+        "change": -1012.78,
+        "change_percent": -1.48,
+        "name": "Bitcoin USD"
       },
       {
         "symbol": "^IXIC",
@@ -504,18 +504,18 @@
         "name": "NASDAQ Composite"
       },
       {
+        "symbol": "ETH-USD",
+        "price": 1902.95,
+        "change": -24.64,
+        "change_percent": -1.28,
+        "name": "Ethereum USD"
+      },
+      {
         "symbol": ".SPX",
         "price": 7561.67,
         "change": -57.71,
         "change_percent": -0.76,
         "name": "S&P 500"
-      },
-      {
-        "symbol": "SPCX",
-        "price": 139.11,
-        "change": -0.64,
-        "change_percent": -0.46,
-        "name": "Space Exploration Technologies "
       },
       {
         "symbol": ".RUT",
@@ -960,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T08:15:53.914530",
+    "timestamp": "2026-11-14T08:19:30.946494",
     "items": [
       {
         "symbol": "SPX",
@@ -1054,38 +1054,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 207.27,
-        "change": -1.32,
+        "price": 207.65,
+        "change": -1.11,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 67206,
-        "change": -2.15,
+        "price": 67229,
+        "change": -2.02,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1900.58,
-        "change": -1.7,
+        "price": 1902.61,
+        "change": -1.47,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.34,
-        "change": -5.58,
+        "price": 75.48,
+        "change": -5.4,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.57,
-        "change": -3.17,
+        "price": 9.59,
+        "change": -2.8,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.05,
-        "change": -2.79,
+        "change": -2.5,
         "type": "crypto"
       },
       {
@@ -1132,20 +1132,20 @@
       },
       {
         "symbol": "XRP-USD",
-        "price": 0.98,
-        "change": -2.51,
+        "price": 0.99,
+        "change": -2.25,
         "type": "mover"
       },
       {
-        "symbol": "LHX",
-        "price": 272.35,
-        "change": -1.53,
+        "symbol": "BTC-USD",
+        "price": 67177.68,
+        "change": -1.57,
         "type": "mover"
       },
       {
-        "symbol": "^IXIC",
-        "price": 25136.27,
-        "change": -1.3,
+        "symbol": "ETH-USD",
+        "price": 1901.42,
+        "change": -1.36,
         "type": "mover"
       }
     ]
@@ -1192,9 +1192,9 @@
       "author": ""
     },
     {
-      "title": "Bessent blames Lutnick\u2019s commerce department for failure to blacklist Megaspeed",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTlNPelNpMlZ1dllCNWdFUHpZcC1wLXpVVjZrYjJyZkZqdFZCZWtpYzcwa3hvNmN2cXV5elZPQ3lXRFdwaXZFT3VhMkZDWnBHZ0ppVlVMM09vNENlQWI5ak9aZFpWSTBCdHJENEM5SXN3YnpLWnZnYk9KSnJPcjE1M1E3bXI?oc=5",
-      "source": "Financial Times",
+      "title": "Bessent blames Lutnick's department for Nvidia chip sales to Megaspeed",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BVk1tMWk0N1FhdDBYZEFVWlJOYzhoM0ppOVFaYjN1czdmdmNidVplRTYxVHdLNktGVmJ1VG9yYVA3N2dvSWFKVFlwT3l4RWtCWm5UQ2NmSUtFcFU?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
       "description": "",
@@ -1202,19 +1202,9 @@
       "author": ""
     },
     {
-      "title": "Family Dollar to pay $63 million to settle allegations that it routinely overcharged customers",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYjJaa1d3XzBUVGtTRHNGZlg4REFRMkxBUWhwcEhSaXVWN0dqZTNJM0ZYZDB4V1gzUTJjV0E0Qld3Y3Z0UWhPWFNncjhtZXhNb1hYRGpkTlZMZjBDWUFpdnlFUVNBVlRXcEVXSVdhb3NVSXBsX0E3VllMOHNkWXJTcVR6dUdXS3pVaXI0NkJObWF2c2s0eHYzSV80SEJsaEtRUF9kN1dGYnQ?oc=5",
-      "source": "AP News",
-      "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "In China, Nvidia scandal stirs defiance and skepticism",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdkdRT1FYWUJBT0dCOUxQb2hKNVE0ZG81UVhLdUpnWVEwNEVFclN6NWhuN1o2dVE2cHptRXBLR25IS29TVGxvcTExSGR3WmdfWnhET0FVTGpzSDVrS25QUTBRZDFudHpZOU9LY29LeXZ6eDRsNkVBaFFtcUxhM3RaWk1talRnYWs?oc=5",
-      "source": "NBC News",
+      "title": "Family Dollar to pay $63M settlement after Utah, FTC allege company overcharged customers",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU0pyaEFCVVZMVzQwTFVaWVNWTUVkOC1IbG5PRE9OOWFPZmNHTU9zbFpUTUMtMWRVYUVCQWlwbHM3TWxhbXBpa0p5U0xtUnU0SUI1d0lheHF2T2FpRlctNkQ2MXBvZ0FWMkxfbDBBQjdWNkNxMlFrYWljcjFaRFMwNjZFaTMtS180VUdsTGdTMXk0Wl9xaFA3c0dMdnU0MmFZdTQ3aVdaV3VmZVF0R3pSTkhIN3A0aXZNYmUyVXpWT0NYdw?oc=5",
+      "source": "KSL News",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
       "description": "",
@@ -1227,6 +1217,16 @@
       "source": "WSJ",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "In China, Nvidia scandal stirs defiance and skepticism",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdkdRT1FYWUJBT0dCOUxQb2hKNVE0ZG81UVhLdUpnWVEwNEVFclN6NWhuN1o2dVE2cHptRXBLR25IS29TVGxvcTExSGR3WmdfWnhET0FVTGpzSDVrS25QUTBRZDFudHpZOU9LY29LeXZ6eDRsNkVBaFFtcUxhM3RaWk1talRnYWs?oc=5",
+      "source": "NBC News",
+      "category": "business",
+      "published": "Fri, 13 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1274,11 +1274,11 @@
       "author": ""
     },
     {
-      "title": "I\u2019d rather use Android XR glasses over Meta Ray-Bans for the app alone",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV1dXdnppUV95ejljLUZPRDdVMHY0RHhWNXFEY29lTjVBNk5Ec2VkSXNXT2NlNFRoczV2MXVEUExWZUVMNkk4V2RvYzE4VzB5TXB4MHB0ODVpU21iNmhXSlNBN05LV0FOc2dUNnVhdlJMVDA3aEZrSEswemhqa0RTN2d3aU91ajI3bHRnUjlzQTJOR2k0dS1oU0ctbGIxTDVuekMzaGdWdw?oc=5",
-      "source": "9to5Google",
+      "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS1pzQ0xHSkEtOE1rc19BaTVmR3RUSkJuWXBwV1p2bkxxbXA2czRCMHpYampxaHdGZlRrZmNKZTVZdjBMUHIyQWhaRklFbnpnNlpjV1dBaHU0TmZnWG13al8zLWUxN0RZMGlPaFVfci1zSjhsYzdzUTZndTBTdUNWRlFqa3VLcTJtM3dsSV9GeVY4T0NzQ25nZTV5OUNVNm1kbVVhX1BUZVB5RnZHXzFOcHh2UE1EaVNHSHNIRQ?oc=5",
+      "source": "Ars Technica",
       "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
+      "published": "Thu, 12 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1532,7 +1532,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 14 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-14T03:16:05.045667"
+    "timestamp": "2026-11-14T03:19:41.621343"
   },
   "sticky": {
     "cnbc": [
@@ -1579,18 +1579,18 @@
         "description": "The test flight is SpaceX's first attempt to \u200bcatch both the Super Heavy booster and upper stage spacecraft of the rocket at its launch site in Starbase, Texas."
       },
       {
-        "title": "Nvidia stock suffers longest weekly losing streak since 2012 as market value sinks by $1.7 trillion",
-        "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
-        "source": "CNBC",
-        "published": "2026-11-13T22:18:43",
-        "description": "Jensen Huang's resignation added to Nvidia's market woes, with the stock already in a downward slide since early October."
-      },
-      {
         "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
         "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
         "source": "CNBC",
         "published": "2026-11-13T23:42:18",
         "description": "Jensen Huang\u2019s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family's financial ties to the chipmaker."
+      },
+      {
+        "title": "After Jensen Huang\u2019s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
+        "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+        "source": "CNBC",
+        "published": "2026-11-13T19:53:38",
+        "description": "Advisors say investors should weigh their Nvidia exposure, time horizon and risk tolerance before reacting to the leadership change."
       }
     ],
     "yahoo_finance": [],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-14T06:16:09.262846",
+  "timestamp": "2026-11-14T06:18:04.769517",
   "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth (r/HackerNews, 301 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)\n- - Jonathan Blow \u2013 If AI solved coding, why is my software still the same? [video] (r/HackerNews, 101 pts)\n- - Extending LLDB to Debug Applications That Span CPUs and GPUs (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
-      "asset": "SMMT",
-      "price": 14.15,
-      "change": -14.96,
-      "category": "stock",
-      "text": "SMMT -15.0% drop @ $14.15"
-    },
-    {
-      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
       "category": "stock",
       "text": "MSTR -8.8% drop @ $111.62"
+    },
+    {
+      "type": "sell",
+      "asset": "HOOD",
+      "price": 77.86,
+      "change": -7.95,
+      "category": "stock",
+      "text": "HOOD -8.0% drop @ $77.86"
     }
   ],
   "reddit": [
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T11:16:00.516539",
+    "timestamp": "2026-11-14T11:17:56.558829",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T11:15:37.312861",
+    "timestamp": "2026-11-14T11:17:34.018167",
     "trending": [
       {
         "symbol": "SPCE",
@@ -446,13 +446,6 @@
         "change": -1.03,
         "change_percent": -35.89,
         "name": "Virgin Galactic Holdings, Inc."
-      },
-      {
-        "symbol": "SMMT",
-        "price": 14.15,
-        "change": -2.49,
-        "change_percent": -14.96,
-        "name": "Summit Therapeutics Inc."
       },
       {
         "symbol": "UAL",
@@ -476,6 +469,13 @@
         "name": "Delta Air Lines, Inc."
       },
       {
+        "symbol": "SOL-USD",
+        "price": 75.83,
+        "change": -2.27,
+        "change_percent": -2.9,
+        "name": "Solana USD"
+      },
+      {
         "symbol": "XRP-USD",
         "price": 0.99,
         "change": -0.02,
@@ -483,9 +483,16 @@
         "name": "XRP USD"
       },
       {
+        "symbol": ".RUT",
+        "price": 2790.49,
+        "change": -55.77,
+        "change_percent": -1.96,
+        "name": "Russell 2000"
+      },
+      {
         "symbol": "BTC-USD",
-        "price": 67205.41,
-        "change": -1043.86,
+        "price": 67203.64,
+        "change": -1045.63,
         "change_percent": -1.53,
         "name": "Bitcoin USD"
       },
@@ -498,8 +505,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 1906.16,
-        "change": -21.43,
+        "price": 1906.28,
+        "change": -21.31,
         "change_percent": -1.11,
         "name": "Ethereum USD"
       },
@@ -509,20 +516,6 @@
         "change": -57.71,
         "change_percent": -0.76,
         "name": "S&P 500"
-      },
-      {
-        "symbol": ".RUT",
-        "price": 2790.489,
-        "change": -8.57,
-        "change_percent": -0.31,
-        "name": "RUSS 2K"
-      },
-      {
-        "symbol": "SCHD",
-        "price": 36.12,
-        "change": 0.1,
-        "change_percent": 0.28,
-        "name": "Schwab US Dividend Equity ETF"
       },
       {
         "symbol": ".DJI",
@@ -960,7 +953,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T11:15:55.654353",
+    "timestamp": "2026-11-14T11:17:51.880244",
     "items": [
       {
         "symbol": "SPX",
@@ -1054,38 +1047,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 207.02,
-        "change": -2.19,
+        "price": 207.05,
+        "change": -2.27,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 67219,
-        "change": -2.97,
+        "price": 67204,
+        "change": -3.04,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1905.79,
-        "change": -2.32,
+        "price": 1905.88,
+        "change": -2.41,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.79,
-        "change": -5.78,
+        "price": 75.78,
+        "change": -5.83,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 9.61,
-        "change": -3.48,
+        "change": -3.58,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 8.02,
-        "change": -4.65,
+        "change": -4.74,
         "type": "crypto"
       },
       {
@@ -1125,21 +1118,21 @@
         "type": "mover"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 0.99,
-        "change": -2.04,
-        "type": "mover"
-      },
-      {
         "symbol": "^RUT",
         "price": 2790.49,
         "change": -1.96,
         "type": "mover"
       },
       {
+        "symbol": "XRP-USD",
+        "price": 0.99,
+        "change": -1.95,
+        "type": "mover"
+      },
+      {
         "symbol": "BTC-USD",
-        "price": 67194.51,
-        "change": -1.55,
+        "price": 67212.14,
+        "change": -1.52,
         "type": "mover"
       },
       {
@@ -1315,6 +1308,14 @@
     }
   ],
   "defense": [
+    {
+      "title": "Ukraine, Russia race to build military satellite networks as war rages on",
+      "url": "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Sat, 14 Nov 2026 ",
+      "description": "Kyiv seeks to break reliance on Starlink as Moscow develops its own satellite constellation for military communications.",
+      "relevance_score": 13
+    },
     {
       "title": "Drones incoming! New innovations on offer in UAS tech | Defense News Weekly Full Episode 11.10.26",
       "url": "https://www.defensenews.com/video/2026/11/13/drones-incoming-new-innovations-on-offer-in-uas-tech-defense-news-weekly-full-episode-11-10-26/",
@@ -1524,7 +1525,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 14 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-14T06:16:06.967353"
+    "timestamp": "2026-11-14T06:18:02.842587"
   },
   "sticky": {
     "cnbc": [

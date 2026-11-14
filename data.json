@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-14T13:31:11.409713",
-  "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (r/HackerNews, 201 pts)\n- - Generative AI uses more energy on non-English text (r/HackerNews, 101 pts)\n- - Show HN: Agweb \u2013 a browser for agents that stays out of your way (r/HackerNews, 101 pts)\n- - Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-14T13:37:38.002931",
+  "summary": "Key topics today:\n- - Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs (r/HackerNews, 301 pts)\n- - Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM (r/HackerNews, 201 pts)\n- - Generative AI uses more energy on non-English text (r/HackerNews, 101 pts)\n- - Show HN: Agweb \u2013 a browser for agents that stays out of your way (r/HackerNews, 101 pts)\n- - Claude asked to renumber pages deletes professor's syllabus, year of notes (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
@@ -45,10 +45,18 @@
     {
       "type": "sell",
       "asset": "ZEC-USD",
-      "price": 855.31,
-      "change": -8.24,
+      "price": 853.0,
+      "change": -8.49,
       "category": "stock",
-      "text": "ZEC-USD -8.2% drop @ $855.31"
+      "text": "ZEC-USD -8.5% drop @ $853.00"
+    },
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
@@ -85,11 +93,11 @@
       "created": ""
     },
     {
-      "title": "Unsloth Qwen3.8-27B Quantizations \u2013 Dynamic v3.1 Update",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
       "created": ""
     },
     {
@@ -136,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-14T18:30:59.910979",
+    "timestamp": "2026-11-14T18:37:13.247717",
     "prices": [
       {
         "name": "Bittensor",
@@ -341,14 +349,6 @@
       "description": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
     },
     {
-      "title": "What we know about the ground stop and what to do if you're affected",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Sat, 14 Nov 2026 ",
-      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
-    },
-    {
       "title": "Italy fines Meta \u20ac805m over accessing users' photos",
       "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -371,6 +371,14 @@
       "category": "bbc_world",
       "published": "Sat, 14 Nov 2026 ",
       "description": "The attempt follows an unsuccessful effort to catch of the rocket\u2019s booster which instead came down in the ocean."
+    },
+    {
+      "title": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
+      "url": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Sat, 14 Nov 2026 ",
+      "description": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution."
     },
     {
       "title": "FAA ground stop live updates: 'Zero evidence of anything nefarious,' FAA head says",
@@ -438,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-14T18:30:37.204684",
+    "timestamp": "2026-11-14T18:36:50.941673",
     "trending": [
       {
         "symbol": "SMMT",
@@ -449,17 +457,10 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 855.31,
-        "change": -76.79,
-        "change_percent": -8.24,
+        "price": 853.0,
+        "change": -79.1,
+        "change_percent": -8.49,
         "name": "Zcash USD"
-      },
-      {
-        "symbol": "ADA-USD",
-        "price": 0.16,
-        "change": -0.01,
-        "change_percent": -7.73,
-        "name": "Cardano USD"
       },
       {
         "symbol": "UAL",
@@ -469,38 +470,45 @@
         "name": "United Airlines Holdings, Inc."
       },
       {
+        "symbol": "ADA-USD",
+        "price": 0.16,
+        "change": -0.01,
+        "change_percent": -7.5,
+        "name": "Cardano USD"
+      },
+      {
         "symbol": "SOL-USD",
-        "price": 72.68,
-        "change": -5.42,
-        "change_percent": -6.94,
+        "price": 72.65,
+        "change": -5.45,
+        "change_percent": -6.97,
         "name": "Solana USD"
       },
       {
         "symbol": "DOGE-USD",
         "price": 0.06,
         "change": -0.0,
-        "change_percent": -6.4,
+        "change_percent": -6.48,
         "name": "Dogecoin USD"
       },
       {
         "symbol": "XLM-USD",
         "price": 0.14,
         "change": -0.01,
-        "change_percent": -6.08,
+        "change_percent": -5.84,
         "name": "Stellar USD"
       },
       {
         "symbol": "XRP-USD",
         "price": 0.96,
         "change": -0.05,
-        "change_percent": -5.1,
+        "change_percent": -5.23,
         "name": "XRP USD"
       },
       {
         "symbol": "ETH-USD",
-        "price": 1840.37,
-        "change": -87.22,
-        "change_percent": -4.52,
+        "price": 1838.17,
+        "change": -89.42,
+        "change_percent": -4.64,
         "name": "Ethereum USD"
       },
       {
@@ -512,9 +520,9 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 65883.41,
-        "change": -2365.86,
-        "change_percent": -3.47,
+        "price": 65844.2,
+        "change": -2405.07,
+        "change_percent": -3.52,
         "name": "Bitcoin USD"
       },
       {
@@ -974,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-14T18:30:55.546188",
+    "timestamp": "2026-11-14T18:37:09.205102",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 194.09,
-        "change": -9.26,
+        "price": 194.77,
+        "change": -9.16,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 65825,
-        "change": -4.33,
+        "price": 65847,
+        "change": -4.34,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
         "price": 1838.67,
-        "change": -5.1,
+        "change": -5.19,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 72.6,
-        "change": -9.16,
+        "change": -9.21,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.13,
-        "change": -8.34,
+        "price": 9.14,
+        "change": -8.44,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.48,
-        "change": -11.0,
+        "price": 7.49,
+        "change": -10.93,
         "type": "crypto"
       },
       {
@@ -1110,8 +1118,8 @@
       },
       {
         "symbol": "ZEC-USD",
-        "price": 857.7,
-        "change": -7.98,
+        "price": 855.42,
+        "change": -8.23,
         "type": "mover"
       },
       {
@@ -1122,20 +1130,20 @@
       },
       {
         "symbol": "SOL-USD",
-        "price": 72.75,
-        "change": -6.85,
+        "price": 72.76,
+        "change": -6.83,
         "type": "mover"
       },
       {
         "symbol": "DOGE-USD",
         "price": 0.06,
-        "change": -6.32,
+        "change": -6.29,
         "type": "mover"
       },
       {
         "symbol": "XLM-USD",
         "price": 0.14,
-        "change": -5.89,
+        "change": -5.72,
         "type": "mover"
       },
       {
@@ -1158,17 +1166,17 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 1842.53,
-        "change": -4.41,
+        "price": 1841.04,
+        "change": -4.49,
         "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "US air travel schedule should recover from ground stop by the end of Sunday, FAA says",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQzlDRHBLSTNHTHRtbnpudnNXdXZpYnpEQ1hhLVNrU3ZRM0xRNm9NcUx2NjRIVFVOQVJKWXZGZzZCZ0hTcEdjd1ppTkFIelBlc282aU05SS1YYU45WTNwRUx1RzBCX3hwNW9Ed20wQ1JmQ3hHVmFSUktDSjM1eklkYTFPN3FkWUR0V1pUSjRIMHk3MjJjX0VrSm8zaFJ6a2paSnRwNzVrQlZpZw?oc=5",
-      "source": "AP News",
+      "title": "Thousands of Flights Are Canceled After Friday\u2019s Nationwide Ground Stop: Live Updates",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeTRaYmRMM2tYYnJxcUpmYjNRQXpXdzd4Sjl0ZVNXNkRFWTBmTjJQUEFlVTdvWGNrN2FsVnotSnJXZ0RQbE13c1FjLWV6algtb3FmWTI1MGdqZ1d5Q1JFY3A0WnU1U2U1ZnFBRnFXQTVkRGY1eFBrSmZPSGlrd2RLdzA5NA?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1176,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Nvidia scandal hits Trump\u2019s political vulnerabilities after Democratic sweep",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONV9KTEtTalpUbDZVME91ak1OQzR5SDZaTS1CLTA1Uk1iZ1VTRU9DMDM1RjdnUkZ0YkQxQ2V3QlVsSzY3SkRzRWVTa3JKUlgxMEI5M3N0Y1BPLXVMTjVjNFhBakJXZk9ibEV6Y3p2U3JHb3dpSzFsM1V3eXc0RFhsRnZaNk16YjVCa3lyeDh5MVlBZVU0Yks1VHpfMW4wUl9DdEI5THA5UndPczZtSUhoV1pYUW5nZ3ZLS2xDcVhBREFPTHhkRVE?oc=5",
-      "source": "The Washington Post",
+      "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa01uZk9qV2Rxd1NnaGlxbGpwNlRMMUJUMzZDXzJDcDhDQ1hidlFqOHo5Qm5ZTXBSUXdFQzJDd21LVmwzOTJOT20zUG9kVmRZS09LbkZ6RkxyUW9DVUJ1VE1aaWpZc1ZqdmVNUk1ORUI5dmVMZjhWS0dJaDAxN2NCQlp0Mmh3UHBueWRuOGc1UdIBlAFBVV95cUxOcHpRUE1XYktjaFk5RmZuVXpfeThGVVE2Y1N3cnZOenVXQkVYejdldFVubGtCMk5JZkU5SVhTcUt6Q0pBVnVrNExoY2p5Qk9kWUJ0eks4Wk4xMlNsb0RleEF1Qmo3VDlXSE8wTkg3Vk1CR3M5LWYtNTVsRmRzWFVPUVg1OVdhSVpaRXRpTXBBZXB6Ujhr?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1206,16 +1214,6 @@
       "author": ""
     },
     {
-      "title": "Should You Really Buy Nvidia Stock After CEO Jensen Huang's Exit? Wall Street Has a Clear Answer for Investors.",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV3plLXNLZ2ZqNThVTTZUQkxQYVhRSDltQzdNdVVIUTJ5NDhWellrUWpidWVwQ1A2Vlo3WFVEY3B2VEd6U214SkYxdk4zQXZCM3VtQUlpbDM4dlNSSjctZVJZMTVaZXZuT3BmMTYyT09VNDlPWnR5UDJPbUNRMkRnaFZmaHlOVG0tWlBJSmQ4NHI3V09ZamROTURsZzh4ZV9RN0E?oc=5",
-      "source": "The Motley Fool",
-      "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "SpaceX Starship Flight 15 live updates: Starship heat shield looks good for landing attempt today",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSW9jTGlpdkhxZk9CNzBUbEpnY0oxV2hRbFUxajd3TW96M3YtdGtKXzlJbHJBZzk3VEtDS2R1b1lEamNLbG5MTDRzUnFQdmlhNWVBbWNQVHpFRnI0YzhqdHRiRlBMYklYMWo5UFpma0pUZFFHc0VvcmthNENYTmRmdFBseU8xSkJTaTZvcmZPUFVCVDNwdXJqb1duTlV4dC1jQmdHajF1SnBDUGtELS0tdUZrQWhvYXQtRXcyUQ?oc=5",
       "source": "Space",
@@ -1236,9 +1234,19 @@
       "author": ""
     },
     {
-      "title": "Jensen Huang's $145 billion question: What California divorce law says Lori Huang could get",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcGtEVUVoTGMxTEZ2ZjBkeHVadHpmaXk5eWN3Q3VlWXU5Vjc3SjNmeVVMelpyOG9XRnVhMFNDZGxLNFgxVGJrTlQ1blZRYXBTVTB3UGdONm9QTFVqVmVxVW5FMTVvOFJiajlnOElCUTAwdHh2Ni1YUloyVVlKMVVBdkNacU1DNHRqX3RjSkpNdVRiM2I1Qno5VEp5TmNydw?oc=5",
-      "source": "Fortune",
+      "title": "Retailers are turning to entertainment to win shoppers\u2019 attention",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBnMW95dUZxVzlzX2ZNUGxCYS13LXM4TGtTMkhDRUR0bV91NzFPbURKX0k4ektPM21ZRDZLckI5blBLX0Y2SnBFM1NkZGktU2w4YUpwZm9ZR0I3VzhrU2g3aDQ0dlBjQ2ZJTXN6bkRCSW03dXk2Q0HSAXtBVV95cUxPSW1wTElEZTYzVDg5OGtkQVlsQlBWUnlBSkF4cDFJVGptR0Vpa190N0x1bnVrVWpTN1o5bm0tQml2SXlleFBYUkYwa1h6R0l1WmR4ejJoX2hoclc1SjJnVGNIMkZIY0xMX3lZb1pad01VbDBNRjRqd3kxa3c?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Sat, 14 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Wall Street Makes Its Pitch for Anthropic\u2019s I.P.O.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pZEk3aEVERVZjMlBZYkI0WC11RjNlbVNaaUlya3A3dFFXWjNGbVlLQW1iZjU5R1E3WlY2blpERFl0MjNzSWdzQmpSc0JqWDhsOXJDYWhybjNiYWdjQ2RhQmF3VExyZGl5bVU1cHpMSGtSSThnRFpWdUJldw?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1308,21 +1316,21 @@
       "author": ""
     },
     {
-      "title": "\u2018GTA 6\u2019 Reveals Jason And Lucia\u2019s Limited Crime Options To Start",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOUJ5eFFIMzRzVnlOcm5JYWVUbUF0eVloSVVLRkZHMEl5YVZaSjRUaUU5ZDVNS3ZoU0JLaFNSRDVWS0M5Z3R2bTJmTkNIMkNYVUlTS2NJVDFDYlBtMzJ0OTByalVleUVQNzV1ekZ3UkZtMEZKT2hTaFpFbHp0c05OZktoTDdxWk5rS1VYUTJYek44MlJIM1dtNlNxRlBQdVR1bDF6SUFrNGJja21QbENDQnlR?oc=5",
-      "source": "Forbes",
-      "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Apple releases tvOS 27.2.1 and HomePod 27.2.1, here\u2019s what\u2019s new",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRmFPTWZUdExqTXpzbDVCeWl5OEZDMmxQY0gyUVJ4eGp2Y2RoZWtBUUxpbm1xNmtZRk5NRXdBRV9XWWtYcE8ydzNKU1V6bVpMNXlJTEZVUTlfNkVNNVNQRU1KaDYzOExobTl3bkIyUlIydkhLNDNVNFY2UlBVOTJLS1JMS3A4alZJTUtVOXVaVlc0V1dWZXZWcA?oc=5",
       "source": "9to5Mac",
       "category": "business",
       "published": "Fri, 13 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Olivia Rodrigo Could Match Billie Eilish\u2019s Rare Grammy Feat",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdjJVOGZtUU52MURGMUNvdl9SaHoxT0JPWHVNQldMYVIyeFdGamZKd1oxU0lENmxrdExRYzkzc2U3aXYzOXRXOG51Skk5bnUxeWUtTnFzSEhZVlZNYmhFeS1zU1RXbmVYOGE5aWtOVmdrNmlmTmxpRXpJbnNYdU9tQkd6SDBHOVBxQW85ZG1oVFVZRXlWVUxMNERMSGtQVHplU2l4UnJqby1CMVl2QXZGMElR?oc=5",
+      "source": "Forbes",
+      "category": "business",
+      "published": "Sat, 14 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1426,11 +1434,11 @@
       "relevance_score": 1
     },
     {
-      "title": "What we know about the ground stop and what to do if you're affected",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
       "published": "Sat, 14 Nov 2026 ",
-      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+      "description": "The 52-year-old general\u2019s provocative posts and military threats have fuelled rumours of a dynastic succession.",
       "relevance_score": 1
     }
   ],
@@ -1438,58 +1446,58 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 302803,
+      "stars": 302854,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-14T17:29:16Z"
+      "updated": "2026-11-14T18:36:39Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 263336,
+      "stars": 263349,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-14T17:26:38Z"
+      "updated": "2026-11-14T18:34:02Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-      "stars": 201745,
+      "stars": 201759,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-14T17:29:36Z"
+      "updated": "2026-11-14T18:34:00Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 190741,
+      "stars": 190774,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-14T17:30:44Z"
+      "updated": "2026-11-14T18:35:28Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 188023,
+      "stars": 188027,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-14T17:14:37Z"
+      "updated": "2026-11-14T18:23:30Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 168967,
+      "stars": 168968,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-14T17:14:36Z"
+      "updated": "2026-11-14T18:19:14Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161159,
+      "stars": 161157,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-14T17:23:14Z"
+      "updated": "2026-11-14T18:30:24Z"
     },
     {
       "name": "langchain-ai/langchain",
@@ -1502,34 +1510,34 @@
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 147618,
+      "stars": 147648,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-14T17:28:19Z"
+      "updated": "2026-11-14T18:33:12Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 111744,
+      "stars": 111757,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-14T17:26:11Z"
+      "updated": "2026-11-14T18:26:40Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 110060,
+      "stars": 110092,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-14T17:31:17Z"
+      "updated": "2026-11-14T18:35:34Z"
     },
     {
       "name": "career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 82532,
+      "stars": 82550,
       "language": "JavaScript",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-14T17:28:55Z"
+      "updated": "2026-11-14T18:32:45Z"
     }
   ],
   "nasdaq_data": {
@@ -1538,7 +1546,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sat 14 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-14T13:31:09.437420"
+    "timestamp": "2026-11-14T13:37:35.761434"
   },
   "sticky": {
     "cnbc": [
@@ -1546,7 +1554,7 @@
         "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT\u2019s Duffy",
         "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
         "source": "CNBC",
-        "published": "2026-11-14T18:17:18",
+        "published": "2026-11-14T18:32:47",
         "description": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday."
       },
       {

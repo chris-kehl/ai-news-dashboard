@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T04:01:08.825135",
+  "timestamp": "2026-11-15T04:10:03.003573",
   "summary": "Key topics today:\n- - 500 Lines or Less A 3D Modeller (r/HackerNews, 101 pts)\n- - Astro Spiral: Greatest Car Stunt Was Also First Computer-Modeled Stunt (r/HackerNews, 101 pts)\n- - Generative AI uses more energy on non-English text (r/HackerNews, 101 pts)\n- - SpaceX catches the Starship to end Flight 15 (r/HackerNews, 1 pts)\n- - Memory Safety Bugs in Rust Standard Library (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
+      "asset": "MSTR",
+      "price": 111.62,
+      "change": -8.77,
+      "category": "stock",
+      "text": "MSTR -8.8% drop @ $111.62"
+    },
+    {
+      "type": "sell",
       "asset": "HOOD",
       "price": 77.86,
       "change": -7.95,
       "category": "stock",
       "text": "HOOD -8.0% drop @ $77.86"
-    },
-    {
-      "type": "sell",
-      "asset": "COIN",
-      "price": 127.65,
-      "change": -6.33,
-      "category": "stock",
-      "text": "COIN -6.3% drop @ $127.65"
     }
   ],
   "reddit": [
@@ -125,18 +125,18 @@
       "created": ""
     },
     {
-      "title": "Show HN: Gawain \u2013 Require type hints on all Python variables",
+      "title": "Disk encryption on NetBSD \u2013 achieving secrecy",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://github.com/matheuzgomes/gawain",
+      "url": "https://netbsd.org/~nia/disk-encrypt/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-15T09:00:59.857194",
+    "timestamp": "2026-11-15T09:09:53.875214",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,35 +438,49 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-15T09:00:36.995893",
+    "timestamp": "2026-11-15T09:09:31.167479",
     "trending": [
       {
+        "symbol": "MSTR",
+        "price": 111.62,
+        "change": -10.73,
+        "change_percent": -8.77,
+        "name": "Strategy Inc"
+      },
+      {
         "symbol": "XRP-USD",
-        "price": 0.96,
-        "change": 0.04,
-        "change_percent": 4.75,
+        "price": 0.97,
+        "change": 0.05,
+        "change_percent": 5.98,
         "name": "XRP USD"
       },
       {
-        "symbol": "GLD",
-        "price": 355.45,
-        "change": -9.72,
-        "change_percent": -2.66,
-        "name": "SPDR Gold Shares"
-      },
-      {
         "symbol": "ETH-USD",
-        "price": 1811.2,
-        "change": 42.08,
-        "change_percent": 2.38,
+        "price": 1835.7,
+        "change": 66.58,
+        "change_percent": 3.76,
         "name": "Ethereum USD"
       },
       {
+        "symbol": "SOL-USD",
+        "price": 72.14,
+        "change": 1.96,
+        "change_percent": 2.8,
+        "name": "Solana USD"
+      },
+      {
         "symbol": "BTC-USD",
-        "price": 65215.51,
-        "change": 1087.46,
-        "change_percent": 1.7,
+        "price": 65905.62,
+        "change": 1777.57,
+        "change_percent": 2.77,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "^KS11",
+        "price": 5290.53,
+        "change": -84.83,
+        "change_percent": -1.58,
+        "name": "KOSPI Composite Index"
       },
       {
         "symbol": "LHX",
@@ -481,27 +495,6 @@
         "change": -3.49,
         "change_percent": -1.51,
         "name": "Take-Two Interactive Software, "
-      },
-      {
-        "symbol": "UBER",
-        "price": 69.69,
-        "change": -0.99,
-        "change_percent": -1.4,
-        "name": "Uber Technologies, Inc."
-      },
-      {
-        "symbol": "^TWII",
-        "price": 43675.12,
-        "change": 583.25,
-        "change_percent": 1.35,
-        "name": "TSEC CAPITALIZATION WEIGHTED ST"
-      },
-      {
-        "symbol": "SOL-USD",
-        "price": 70.99,
-        "change": 0.81,
-        "change_percent": 1.16,
-        "name": "Solana USD"
       },
       {
         "symbol": "SPCX",
@@ -532,18 +525,18 @@
         "name": "DJIA"
       },
       {
+        "symbol": "test",
+        "price": 38.35,
+        "change": 0.02,
+        "change_percent": 0.05,
+        "name": "YieldMax TSLA Performance & Dis"
+      },
+      {
         "symbol": "ANTH.PVT",
         "price": 589.01,
         "change": 0.0,
         "change_percent": 0.0,
         "name": "Anthropic"
-      },
-      {
-        "symbol": "CL=F",
-        "price": 88.56,
-        "change": -0.0,
-        "change_percent": -0.0,
-        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +967,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-15T09:00:55.753468",
+    "timestamp": "2026-11-15T09:09:49.877455",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,39 +1061,51 @@
       },
       {
         "symbol": "TAO",
-        "price": 188.15,
-        "change": -9.06,
+        "price": 191.2,
+        "change": -7.93,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64770,
-        "change": -3.26,
+        "price": 65770,
+        "change": -1.93,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1802.01,
-        "change": -4.86,
+        "price": 1828.3,
+        "change": -3.75,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.74,
-        "change": -5.93,
-        "type": "crypto"
-      },
-      {
-        "symbol": "LINK",
-        "price": 9.1,
+        "price": 71.84,
         "change": -4.75,
         "type": "crypto"
       },
       {
-        "symbol": "AVAX",
-        "price": 7.14,
-        "change": -10.92,
+        "symbol": "LINK",
+        "price": 9.22,
+        "change": -3.88,
         "type": "crypto"
+      },
+      {
+        "symbol": "AVAX",
+        "price": 7.25,
+        "change": -9.78,
+        "type": "crypto"
+      },
+      {
+        "symbol": "MSTR",
+        "price": 111.62,
+        "change": -8.77,
+        "type": "mover"
+      },
+      {
+        "symbol": "XRP-USD",
+        "price": 0.97,
+        "change": 5.87,
+        "type": "mover"
       },
       {
         "symbol": "BB",
@@ -1115,9 +1120,21 @@
         "type": "mover"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 0.96,
-        "change": 4.75,
+        "symbol": "ETH-USD",
+        "price": 1832.58,
+        "change": 3.59,
+        "type": "mover"
+      },
+      {
+        "symbol": "SOL-USD",
+        "price": 72.1,
+        "change": 2.74,
+        "type": "mover"
+      },
+      {
+        "symbol": "BTC-USD",
+        "price": 65862.49,
+        "change": 2.7,
         "type": "mover"
       },
       {
@@ -1127,39 +1144,15 @@
         "type": "mover"
       },
       {
-        "symbol": "ETH-USD",
-        "price": 1811.75,
-        "change": 2.41,
-        "type": "mover"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 65227.41,
-        "change": 1.71,
+        "symbol": "^KS11",
+        "price": 5290.53,
+        "change": -1.58,
         "type": "mover"
       },
       {
         "symbol": "LHX",
         "price": 272.35,
         "change": -1.53,
-        "type": "mover"
-      },
-      {
-        "symbol": "TTWO",
-        "price": 227.82,
-        "change": -1.51,
-        "type": "mover"
-      },
-      {
-        "symbol": "UBER",
-        "price": 69.69,
-        "change": -1.4,
-        "type": "mover"
-      },
-      {
-        "symbol": "^TWII",
-        "price": 43675.12,
-        "change": 1.35,
         "type": "mover"
       }
     ]
@@ -1176,19 +1169,19 @@
       "author": ""
     },
     {
-      "title": "SpaceX\u2019s Starship returns from orbit and is captured by launchpad arms in a dramatic first",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUy1hcVFMUVFOc0lrZWNVT3lvV1gzbVl1MHE0am1WaFBYRjlJWWtJNnEwZERmdGxLZHdLUFhhaUJoZ3BPeTZRZ0ZtNzBJcmFqTTVjcnBtb2pUblpLTm5nWXBnazdHZTBDNUM1cmJYTjlwNnk5TkllVEd4bnJQSGxJanU3OHBhMmpRRnN5b3F4Q1BQRV9ud001RHc3cEo0d1pJbWNZSnhMc0hZSV9RV3JmUW5KT2ZxY3JoRGc?oc=5",
-      "source": "NBC News",
+      "title": "SpaceX\u2019s Starship captured by launchpad arms in dramatic first",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ3pDcjZESTJxUDB0bndxZWtKSUhKa3praWV6SFFuT2htZEhlWmJuZGVkME9obTRWUTc4cW5xLXpzQUw5bldDazlSMXljLXh0Y1J3LWNhTHBkSXg1bjlqQlhTZ0MzcTFDUXc2cE9FUGRjT0Y2VUZ0ZVJLOXB4R3ZWemRMNHQ4Y29feTFXMnY2RmFqQ3B5WnRVRnlfMXhXTjNQdjEyaC1B0gGrAUFVX3lxTE0yRktOVWpBQ3lJdExfOUs2Rl9hM0htdV82MWlsMUkyWS15eVd1WDN5RFhfd2J2U0Y0NlVFXzZ6c21vaWNNVTV2cERDVFhqY01lUWpTOURDT1hCVnlQdE43clZNZXR4NWVubmlCRHpZOURSbzRoSHFkQnRDbkl6YmlfNDhwUW5nWFpYY0pRYUY2c0R0anY4cU1qM1FkazNqUlB1N19aSFZEZ3puZw?oc=5",
+      "source": "Al Jazeera",
       "category": "business",
-      "published": "Sat, 14 Nov 2026 ",
+      "published": "Sun, 15 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
       "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNHZ3T21XRUxwQWdPcURMSUlDZFdycUdxWFJMdXo0anNPRS14VURoWFhHRkl4VHlZZ19QV2NsUEg4Z3RNUmlqWm40RUxwMDQ3MU1oZHUyaGcxc2tQRHM3VjdYS2NvT3Z1djFrV194SE1hT3lZV01PZmF0aUlkMlRmNklWcWlkelJWMHM3NGo4S1E?oc=5",
-      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUXp2MmF6T0R2alBCWHR4SXRzWFVvN2lXRVlRaHRvdzBhbFlsenRnU0JBQmFJeWVVLVVVZzFESlJaMzdSZFpjN184R3Vpc1M1SmRkSFpkZ2htM0JaSXlBZ3U1Tnd3Z24wemRCRUVQa3ZtdUczRVp6VUg5RzRKSFc1d0tQZV8xc0ZTb1lSbld5WE9mVWVfTHFPYXhVRVJid0UycjVnZnczOHhIV194OXl0UzhWc2xQNzJ6eU9J?oc=5",
+      "source": "TechCrunch",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1288,9 +1281,9 @@
       "author": ""
     },
     {
-      "title": "Hot Wheels Legends Tour keeps turning dreams into reality",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX2hsblNudWhrUXRlX0poNVNkdkdsaURDdmpnR0Z0UllJMXVzd3V6bkE1Ql83YS11NHVJR093OXJwcVZzc0NiNlczQlFLeDJ5VEhBS203RjNsUUt5dW4tcnBFemU3YUUwOGg3QlRiVWRQeUFuaWhMdUdJUXlOWWdZOFRiMnJvTHpwTm43d21wSQ?oc=5",
-      "source": "RACER - Racing News",
+      "title": "Google's AI glasses will have one surprising thing they're not allowed to see",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVFNWaGxMLUoxanFHZWZPc0MwamZia2VObE5jSUVVQ3VsWFM0cUp6ckJkUEx1dzAzNHpTNjFaMVJtM0NkOG56LXczMV9qYmRtanBlWU9ERlJxVnZ5MzdCbU96T3ZkdUN6NmJqMl9OR2NxcjB1MXM5UFQ1ejV6SEhiWkZqVWVtMUplMUxVV2puTW9adDV4QVJvaXpmODBtRmxDV1lpYVo1OVR5bDZ2dW96ak1YaFJsSFk?oc=5",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1298,9 +1291,9 @@
       "author": ""
     },
     {
-      "title": "Google's AI glasses will have one surprising thing they're not allowed to see",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVFNWaGxMLUoxanFHZWZPc0MwamZia2VObE5jSUVVQ3VsWFM0cUp6ckJkUEx1dzAzNHpTNjFaMVJtM0NkOG56LXczMV9qYmRtanBlWU9ERlJxVnZ5MzdCbU96T3ZkdUN6NmJqMl9OR2NxcjB1MXM5UFQ1ejV6SEhiWkZqVWVtMUplMUxVV2puTW9adDV4QVJvaXpmODBtRmxDV1lpYVo1OVR5bDZ2dW96ak1YaFJsSFk?oc=5",
-      "source": "PhoneArena",
+      "title": "Hot Wheels Legends Tour keeps turning dreams into reality",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX2hsblNudWhrUXRlX0poNVNkdkdsaURDdmpnR0Z0UllJMXVzd3V6bkE1Ql83YS11NHVJR093OXJwcVZzc0NiNlczQlFLeDJ5VEhBS203RjNsUUt5dW4tcnBFemU3YUUwOGg3QlRiVWRQeUFuaWhMdUdJUXlOWWdZOFRiMnJvTHpwTm43d21wSQ?oc=5",
+      "source": "RACER - Racing News",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
       "description": "",
@@ -1530,7 +1523,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 15 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-15T04:01:06.946059"
+    "timestamp": "2026-11-15T04:10:00.896773"
   },
   "sticky": {
     "cnbc": [

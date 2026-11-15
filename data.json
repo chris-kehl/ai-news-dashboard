@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T15:16:29.510367",
+  "timestamp": "2026-11-15T15:18:46.960744",
   "summary": "Key topics today:\n- - Show HN: db-branch \u2013 database branches in seconds for AI agents and CI, via ZFS (r/HackerNews, 201 pts)\n- - Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video] (r/HackerNews, 101 pts)\n- - Understanding Positional Embeddings in Modern LLMs (r/HackerNews, 101 pts)\n- - Parents pay $75k for Alpha's AI school. Half of its students missed math target (r/HackerNews, 101 pts)\n- - What thousands of conversations look like inside a language model (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -20,19 +20,19 @@
     },
     {
       "type": "sell",
+      "asset": "CRWV",
+      "price": 53.13,
+      "change": -12.57,
+      "category": "stock",
+      "text": "CRWV -12.6% drop @ $53.13"
+    },
+    {
+      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
       "category": "stock",
       "text": "MSTR -8.8% drop @ $111.62"
-    },
-    {
-      "type": "sell",
-      "asset": "BE",
-      "price": 191.99,
-      "change": -8.34,
-      "category": "stock",
-      "text": "BE -8.3% drop @ $191.99"
     },
     {
       "type": "watch",
@@ -85,14 +85,6 @@
       "created": ""
     },
     {
-      "title": "All AI-generated code should be Open Source",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-      "created": ""
-    },
-    {
       "title": "A short explainer on how El Ni\u00f1o works [video]",
       "subreddit": "HackerNews",
       "score": 1,
@@ -101,7 +93,7 @@
       "created": ""
     },
     {
-      "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+      "title": "The MacBook Pro's OLED PWM problem",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
@@ -123,12 +115,20 @@
       "comments": 0,
       "url": "https://joshblais.com/blog/emacs-as-my-browser/",
       "created": ""
+    },
+    {
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://prog21.dadgum.com/116.html",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-15T20:16:03.721974",
+    "timestamp": "2026-11-15T20:18:33.220253",
     "prices": [
       {
         "name": "Bittensor",
@@ -357,14 +357,6 @@
       "description": "Han Won-seok, 34, confessed to using a hidden camera and AI to get a near-perfect mark on the significant test."
     },
     {
-      "title": "Ronaldinho makes comeback in Ravenna win",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ckregz4g823xo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Sun, 15 Nov 2026 ",
-      "description": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derby against Forli."
-    },
-    {
       "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
       "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -427,10 +419,18 @@
       "category": "npr",
       "published": "Sun, 15 Nov 2026 ",
       "description": "Officials are seeking at least $1 million in damages from the owners of the tanker that hit a cruise ship last week. The incident was dubbed \"the miracle on the Mississippi\" after no one was killed."
+    },
+    {
+      "title": "Laws limiting coal miners' exposure to toxic dust are in danger of being rolled back",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6039311/laws-limiting-coal-miners-exposure-to-toxic-dust-are-in-danger-of-being-rolled-back",
+      "source": "Npr",
+      "category": "npr",
+      "published": "Sun, 15 Nov 2026 ",
+      "description": "Coal miners who are exposed to silica dust are at a higher risk of black lung disease. Despite decades of advocacy, new efforts to regulate the toxic dust are under threat."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-15T20:15:40.297402",
+    "timestamp": "2026-11-15T20:18:09.991039",
     "trending": [
       {
         "symbol": "SMMT",
@@ -440,6 +440,13 @@
         "name": "Summit Therapeutics Inc."
       },
       {
+        "symbol": "CRWV",
+        "price": 53.13,
+        "change": -7.64,
+        "change_percent": -12.57,
+        "name": "CoreWeave, Inc."
+      },
+      {
         "symbol": "BE",
         "price": 191.99,
         "change": -17.48,
@@ -447,11 +454,11 @@
         "name": "Bloom Energy Corporation"
       },
       {
-        "symbol": "BB",
-        "price": 8.9,
-        "change": -0.5,
-        "change_percent": -5.32,
-        "name": "BlackBerry Limited"
+        "symbol": "NVDA",
+        "price": 162.85,
+        "change": -10.88,
+        "change_percent": -6.26,
+        "name": "NVIDIA Corporation"
       },
       {
         "symbol": "SKYD",
@@ -459,13 +466,6 @@
         "change": -0.38,
         "change_percent": -4.81,
         "name": "Skydance Corporation"
-      },
-      {
-        "symbol": "CEG",
-        "price": 280.2,
-        "change": 5.47,
-        "change_percent": 1.99,
-        "name": "Constellation Energy Corporatio"
       },
       {
         "symbol": "^KS11",
@@ -489,18 +489,11 @@
         "name": "TSEC CAPITALIZATION WEIGHTED ST"
       },
       {
-        "symbol": "BTC-USD",
-        "price": 64657.55,
-        "change": 529.5,
-        "change_percent": 0.83,
-        "name": "Bitcoin USD"
-      },
-      {
-        "symbol": "EURUSD=X",
-        "price": 1.1,
-        "change": -0.01,
-        "change_percent": -0.57,
-        "name": "EUR/USD"
+        "symbol": "HRL",
+        "price": 22.09,
+        "change": 0.14,
+        "change_percent": 0.64,
+        "name": "Hormel Foods Corporation"
       },
       {
         "symbol": "SPCX",
@@ -536,6 +529,13 @@
         "change": 0.0,
         "change_percent": 0.0,
         "name": "Anthropic"
+      },
+      {
+        "symbol": "CL=F",
+        "price": 88.56,
+        "change": -0.0,
+        "change_percent": -0.0,
+        "name": "Crude Oil Dec 26"
       }
     ],
     "meme_momentum": [
@@ -966,7 +966,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-15T20:15:59.160017",
+    "timestamp": "2026-11-15T20:18:29.255600",
     "items": [
       {
         "symbol": "SPX",
@@ -1060,38 +1060,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 190.14,
-        "change": -0.56,
+        "price": 190.27,
+        "change": -0.4,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64733,
-        "change": -1.16,
+        "price": 64709,
+        "change": -1.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1817.12,
-        "change": -0.49,
+        "price": 1817.73,
+        "change": -0.25,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 71.24,
-        "change": -0.79,
+        "price": 71.31,
+        "change": -0.55,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.18,
-        "change": 1.96,
+        "price": 9.19,
+        "change": 2.24,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.19,
-        "change": -2.51,
+        "change": -2.14,
         "type": "crypto"
       },
       {
@@ -1168,9 +1168,9 @@
       "author": ""
     },
     {
-      "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWElqY2Q5cFBEQ1UtUklpRjRlZlVPLXBPSzNVcThPUTk2QktDc25fS1NlaWdrSURWdFFETlVxWnpNOWIyT1c1cGxwNXE0YTNoR1BOVVJMbHBRZy1kWWh2ZXRvdUh2Y2JMcEh5bDFnLWlrYnNFWDNFel9YVi1UbThMUmNnYzQ?oc=5",
-      "source": "Financial Times",
+      "title": "Bessent Says Nvidia Needs \u2018Dramatic Shakeup\u2019 After Huang Ouster",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS1ZOWlF3ZUlxWGYyZm9kX3NnZUsyNEpjYXhKaWMxY3hPbnRvSlJYeHc3ak9lejRYcHdmWjB2dk54cmMweklHdXdpVDdmRm9yNE91LWJKV2VoUC16bF9sdzRTM2NhWk5MMnBROXJ2UHA2SU0tSDNpeEZLZkxJZGg4T1laVHUyU1Fid0dtYjQ3c0tHMFRsOVp3TndoeEUzaElUSkxVT3hlOGQyZTVPZDF3emxB?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 15 Nov 2026 ",
       "description": "",
@@ -1188,9 +1188,9 @@
       "author": ""
     },
     {
-      "title": "Bessent Says Nvidia Needs \u2018Dramatic Shakeup\u2019 With Huang Out",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS1ZOWlF3ZUlxWGYyZm9kX3NnZUsyNEpjYXhKaWMxY3hPbnRvSlJYeHc3ak9lejRYcHdmWjB2dk54cmMweklHdXdpVDdmRm9yNE91LWJKV2VoUC16bF9sdzRTM2NhWk5MMnBROXJ2UHA2SU0tSDNpeEZLZkxJZGg4T1laVHUyU1Fid0dtYjQ3c0tHMFRsOVp3TndoeEUzaElUSkxVT3hlOGQyZTVPZDF3emxB?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWElqY2Q5cFBEQ1UtUklpRjRlZlVPLXBPSzNVcThPUTk2QktDc25fS1NlaWdrSURWdFFETlVxWnpNOWIyT1c1cGxwNXE0YTNoR1BOVVJMbHBRZy1kWWh2ZXRvdUh2Y2JMcEh5bDFnLWlrYnNFWDNFel9YVi1UbThMUmNnYzQ?oc=5",
+      "source": "Financial Times",
       "category": "business",
       "published": "Sun, 15 Nov 2026 ",
       "description": "",
@@ -1538,7 +1538,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 15 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-15T15:16:26.940825"
+    "timestamp": "2026-11-15T15:18:44.836816"
   },
   "sticky": {
     "cnbc": [

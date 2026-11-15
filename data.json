@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-15T10:16:13.860931",
-  "summary": "Key topics today:\n- - Understanding Positional Embeddings in Modern LLMs (r/HackerNews, 101 pts)\n- - What thousands of conversations look like inside a language model (r/HackerNews, 101 pts)\n- - 500 Lines or Less A 3D Modeller (r/HackerNews, 101 pts)\n- - The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use (r/HackerNews, 1 pts)\n- - Things That Turbo Pascal Is Smaller Than (2011) (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-15T10:23:58.658027",
+  "summary": "Key topics today:\n- - Understanding Positional Embeddings in Modern LLMs (r/HackerNews, 101 pts)\n- - What thousands of conversations look like inside a language model (r/HackerNews, 101 pts)\n- - GPU says 35% busy. Busy doing what? (r/HackerNews, 101 pts)\n- - The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use (r/HackerNews, 1 pts)\n- - All AI-generated code should be Open Source (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
+      "asset": "DJT",
+      "price": 4.64,
+      "change": -10.6,
+      "category": "stock",
+      "text": "DJT -10.6% drop @ $4.64"
+    },
+    {
+      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
       "category": "stock",
       "text": "MSTR -8.8% drop @ $111.62"
-    },
-    {
-      "type": "sell",
-      "asset": "HOOD",
-      "price": 77.86,
-      "change": -7.95,
-      "category": "stock",
-      "text": "HOOD -8.0% drop @ $77.86"
     }
   ],
   "reddit": [
@@ -69,11 +69,11 @@
       "created": ""
     },
     {
-      "title": "500 Lines or Less A 3D Modeller",
+      "title": "GPU says 35% busy. Busy doing what?",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+      "url": "https://tensward.com/blog/gpu-busy-doing-what",
       "created": ""
     },
     {
@@ -82,6 +82,22 @@
       "score": 1,
       "comments": 0,
       "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "created": ""
+    },
+    {
+      "title": "All AI-generated code should be Open Source",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "created": ""
+    },
+    {
+      "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
       "created": ""
     },
     {
@@ -101,27 +117,11 @@
       "created": ""
     },
     {
-      "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
-      "created": ""
-    },
-    {
       "title": "A NES emulator written in Odin",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://lucypero.com/lucynes.html",
-      "created": ""
-    },
-    {
-      "title": "All AI-generated code should be Open Source",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-15T15:16:04.204182",
+    "timestamp": "2026-11-15T15:23:49.305328",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-15T15:15:38.360904",
+    "timestamp": "2026-11-15T15:23:26.413861",
     "trending": [
       {
         "symbol": "SMMT",
@@ -448,6 +448,13 @@
         "name": "Summit Therapeutics Inc."
       },
       {
+        "symbol": "DJT",
+        "price": 4.64,
+        "change": -0.55,
+        "change_percent": -10.6,
+        "name": "Trump Media & Technology Group "
+      },
+      {
         "symbol": "BB",
         "price": 8.9,
         "change": -0.5,
@@ -455,25 +462,11 @@
         "name": "BlackBerry Limited"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 0.96,
-        "change": 0.04,
-        "change_percent": 4.65,
-        "name": "XRP USD"
-      },
-      {
         "symbol": "ETH-USD",
-        "price": 1807.69,
-        "change": 38.57,
-        "change_percent": 2.18,
+        "price": 1808.45,
+        "change": 39.33,
+        "change_percent": 2.22,
         "name": "Ethereum USD"
-      },
-      {
-        "symbol": "^KS11",
-        "price": 5290.53,
-        "change": -84.83,
-        "change_percent": -1.58,
-        "name": "KOSPI Composite Index"
       },
       {
         "symbol": "LHX",
@@ -490,13 +483,6 @@
         "name": "Take-Two Interactive Software, "
       },
       {
-        "symbol": "SOL-USD",
-        "price": 71.18,
-        "change": 1.0,
-        "change_percent": 1.43,
-        "name": "Solana USD"
-      },
-      {
         "symbol": "^TWII",
         "price": 43675.12,
         "change": 583.25,
@@ -505,10 +491,17 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 64646.2,
-        "change": 518.15,
-        "change_percent": 0.81,
+        "price": 64711.15,
+        "change": 583.1,
+        "change_percent": 0.91,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "NKE",
+        "price": 37.99,
+        "change": -0.33,
+        "change_percent": -0.86,
+        "name": "Nike, Inc."
       },
       {
         "symbol": "SPCX",
@@ -544,6 +537,13 @@
         "change": 0.0,
         "change_percent": 0.0,
         "name": "Anthropic"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 3886.3,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "Gold Dec 26"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-15T15:15:57.494200",
+    "timestamp": "2026-11-15T15:23:45.585271",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,44 +1068,50 @@
       },
       {
         "symbol": "TAO",
-        "price": 189.99,
-        "change": -4.6,
+        "price": 190.47,
+        "change": -4.13,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64619,
-        "change": -1.39,
+        "price": 64706,
+        "change": -1.09,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1806.86,
-        "change": -1.82,
+        "price": 1808.22,
+        "change": -1.54,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 71.14,
-        "change": -3.73,
+        "change": -3.37,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.17,
-        "change": -1.14,
+        "price": 9.19,
+        "change": -0.52,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.15,
-        "change": -6.6,
+        "price": 7.17,
+        "change": -6.28,
         "type": "crypto"
       },
       {
         "symbol": "SMMT",
         "price": 14.15,
         "change": -14.96,
+        "type": "mover"
+      },
+      {
+        "symbol": "DJT",
+        "price": 4.64,
+        "change": -10.6,
         "type": "mover"
       },
       {
@@ -1121,12 +1127,6 @@
         "type": "mover"
       },
       {
-        "symbol": "XRP-USD",
-        "price": 0.95,
-        "change": 4.56,
-        "type": "mover"
-      },
-      {
         "symbol": "PLTR",
         "price": 167.99,
         "change": -2.56,
@@ -1134,8 +1134,8 @@
       },
       {
         "symbol": "ETH-USD",
-        "price": 1805.62,
-        "change": 2.06,
+        "price": 1806.32,
+        "change": 2.1,
         "type": "mover"
       },
       {
@@ -1157,9 +1157,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SOL-USD",
-        "price": 71.06,
-        "change": 1.26,
+        "symbol": "GME",
+        "price": 25.85,
+        "change": 1.17,
         "type": "mover"
       }
     ]
@@ -1298,21 +1298,21 @@
       "author": ""
     },
     {
-      "title": "NYT Strands hints, answers for November 14, 2026",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuSW5mdkFXVGpkNW1tOXlYV0MyS0pFcUJ5UVYzMi1zV0p4bjUtTWVVcWJKUVdQamwwMXc2aU9rQ1gzR0stUE85TGowNU91OU9CQ09MMUl4dFRxWFFGQ1p0TE5neUZBTjZ5bXc0ajA1SnRKTGZyVElv?oc=5",
-      "source": "Mashable",
-      "category": "business",
-      "published": "Sun, 15 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Some physical GTA 6 boxes are missing codes, with Rockstar refusing to help",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeV9MU3ZNaXNVbFVWQjctLUdGX252U3dkUVpTSV9XZ2RGY2JvTjV0RjhRMWUwUWdUM2N3a04tMFJremZsd05xVHV5SmIxZk9oNjJ5SkU1UmRwOUtHbEdVQlF0SWRFX1JuUW5WRUpuYk1uNmh1eU1GZ0NjcV82SDdZVENzLVFpRkQ0ampMTFEzMlo4clFuUzVWU01jUHdqdzFCUVRqU1Z0VjBUZkRYN2pFZ1R1Q1BaQjFGVjhR?oc=5",
       "source": "Notebookcheck",
       "category": "business",
       "published": "Sat, 14 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "NYT Strands hints, answers for November 14, 2026",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuSW5mdkFXVGpkNW1tOXlYV0MyS0pFcUJ5UVYzMi1zV0p4bjUtTWVVcWJKUVdQamwwMXc2aU9rQ1gzR0stUE85TGowNU91OU9CQ09MMUl4dFRxWFFGQ1p0TE5neUZBTjZ5bXc0ajA1SnRKTGZyVElv?oc=5",
+      "source": "Mashable",
+      "category": "business",
+      "published": "Sun, 15 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,7 +1554,7 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 15 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-15T10:16:11.633620"
+    "timestamp": "2026-11-15T10:23:56.619036"
   },
   "sticky": {
     "cnbc": [

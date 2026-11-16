@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-16T17:16:19.264653",
+  "timestamp": "2026-11-16T17:20:29.830034",
   "summary": "Key topics today:\n- - OpenAI: Strengthening the fight against online child sexual abuse (r/HackerNews, 101 pts)\n- - Nvidia was in trouble before the Jensen Huang mess (r/HackerNews, 101 pts)\n- - Outages reported at Bank of America, Chase, U.S. Bank, Wells Fargo and Zelle (r/HackerNews, 1 pts)\n- - Carnegie Mellon is putting computer science courses on YouTube for free (r/HackerNews, 1 pts)\n- - Rust changed me as a developer (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "type": "buy",
+      "asset": "GMM",
+      "price": 2.01,
+      "change": 86.11,
+      "category": "stock",
+      "text": "GMM +86.1% momentum @ $2.01"
+    },
+    {
+      "type": "buy",
       "asset": "GDHG",
       "price": 1.58,
       "change": 73.63,
       "category": "stock",
       "text": "GDHG +73.6% momentum @ $1.58"
-    },
-    {
-      "type": "buy",
-      "asset": "CGON",
-      "price": 84.78,
-      "change": 20.86,
-      "category": "stock",
-      "text": "CGON +20.9% momentum @ $84.78"
     },
     {
       "type": "buy",
@@ -93,19 +93,19 @@
       "created": ""
     },
     {
-      "title": "Jiff 1.0: A datetime library for Rust",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://burntsushi.net/jiff/",
-      "created": ""
-    },
-    {
       "title": "Spamhaus new email sender requirements in November",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.spamhaus.org/sender-guidelines/",
+      "created": ""
+    },
+    {
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://burntsushi.net/jiff/",
       "created": ""
     },
     {
@@ -128,7 +128,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-16T22:16:09.086264",
+    "timestamp": "2026-11-16T22:20:15.790723",
     "prices": [
       {
         "name": "Bittensor",
@@ -421,30 +421,30 @@
       "description": "Here are the nominees for Album of the Year and Song of the Year at the 2027 Grammys."
     },
     {
-      "title": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+      "title": "California sues OpenAI over hacking risks",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
       "source": "Npr",
       "category": "npr",
       "published": "Mon, 16 Nov 2026 ",
-      "description": "The new rule closes a loophole that existed that allowed Chinese companies to still access advanced AI chips remotely, despite U.S. restrictions on their physical sale to China."
+      "description": "The state's attorney general started investigating OpenAI after the Hugging Face attack and now says this attack was \"entirely foreseeable\" due to OpenAI's poor security practices."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-16T22:15:42.324496",
+    "timestamp": "2026-11-16T22:19:50.931695",
     "trending": [
+      {
+        "symbol": "GMM",
+        "price": 2.01,
+        "change": 0.93,
+        "change_percent": 86.11,
+        "name": "Global Mofy AI Limited"
+      },
       {
         "symbol": "GDHG",
         "price": 1.58,
         "change": 0.67,
         "change_percent": 73.63,
         "name": "Golden Heaven Group Holdings Lt"
-      },
-      {
-        "symbol": "CGON",
-        "price": 84.78,
-        "change": 14.63,
-        "change_percent": 20.86,
-        "name": "CG Oncology, Inc."
       },
       {
         "symbol": "^VIX",
@@ -461,11 +461,32 @@
         "name": "AST SpaceMobile, Inc."
       },
       {
-        "symbol": "TSM",
-        "price": 373.45,
-        "change": -32.04,
-        "change_percent": -7.9,
-        "name": "Taiwan Semiconductor Manufactur"
+        "symbol": "RCAT",
+        "price": 3.53,
+        "change": -0.41,
+        "change_percent": -10.29,
+        "name": "Red Cat Holdings, Inc."
+      },
+      {
+        "symbol": "INFQ",
+        "price": 7.9,
+        "change": -0.83,
+        "change_percent": -9.51,
+        "name": "Infleqtion, Inc."
+      },
+      {
+        "symbol": "INTC",
+        "price": 55.47,
+        "change": -5.73,
+        "change_percent": -9.36,
+        "name": "Intel Corporation"
+      },
+      {
+        "symbol": "POWL",
+        "price": 151.2,
+        "change": 9.43,
+        "change_percent": 6.65,
+        "name": "Powell Industries, Inc."
       },
       {
         "symbol": "^IXIC",
@@ -489,32 +510,11 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "SPY",
-        "price": 739.95,
-        "change": -17.17,
-        "change_percent": -2.27,
-        "name": "State Street SPDR S&P 500 ETF T"
-      },
-      {
-        "symbol": "VOO",
-        "price": 680.26,
-        "change": -15.74,
-        "change_percent": -2.26,
-        "name": "Vanguard S&P 500 ETF"
-      },
-      {
         "symbol": ".RUT",
         "price": 2742.941,
         "change": -47.55,
         "change_percent": -1.7,
         "name": "RUSS 2K"
-      },
-      {
-        "symbol": "JPM",
-        "price": 338.21,
-        "change": -4.61,
-        "change_percent": -1.34,
-        "name": "JP Morgan Chase & Co."
       },
       {
         "symbol": ".DJI",
@@ -952,7 +952,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-16T22:16:01.499607",
+    "timestamp": "2026-11-16T22:20:11.432895",
     "items": [
       {
         "symbol": "SPX",
@@ -1046,38 +1046,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 192.4,
-        "change": -0.7,
+        "price": 192.1,
+        "change": -0.91,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 65409,
-        "change": 0.37,
+        "price": 65386,
+        "change": 0.31,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1833.87,
-        "change": 0.57,
+        "price": 1833.23,
+        "change": 0.34,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 72.06,
-        "change": -0.16,
+        "price": 72.08,
+        "change": -0.27,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 9.19,
-        "change": -0.89,
+        "change": -1.02,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.19,
-        "change": -1.44,
+        "change": -1.57,
         "type": "crypto"
       },
       {
@@ -1204,9 +1204,9 @@
       "author": ""
     },
     {
-      "title": "Defying court order, Energy Department again forces Michigan coal plant to stay open past retirement",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdldSQ3dreWhDY3ZRMWVkbmdWQ1pjOWE1Tzk2VTdnMFhPS3h6c09fU3VoaS1Gc3ZNWXVoczcwUUwyTmNWNnZvS2Y0MzQyQVZBWFFKSVYtVTFxNk52SDVHRUpLVHpwT0NZR1pZX2ZheTZSN0lobXlFZTJZT3dpV3RiYVZ0Ri1kVV9NNFJzUXF2Zmo1UEZfaHBtZWNNUEJRMzZT?oc=5",
-      "source": "AP News",
+      "title": "Fed Chairman Highlights Economic Uncertainty of A.I. Boom",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBYTdqekVHWUZKSGtDNktJaDFJZTgxX3VmdW9qVUphVVl2SjdUSUtyd2kzUVhoUnhVVm5kOTgxY2h3MmlqdUplcmQ3WDNjVEYxRGN4aUVFUFBUcWdsZWVWTzJNX2ZoNV85MWxxMEJDZ213ZFlZTEpSWkFUR3ZGdw?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1214,9 +1214,9 @@
       "author": ""
     },
     {
-      "title": "Visa, Mastercard urge approval of $38 billion swipe fee settlement",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNLTFGeUFSVURBbGFBUm9RQUZVSHFVcExFeVVlSXBYa0lCaWhLbWUzOGxKV19rd1IzNElEOTdNQmxWdnNBNmViUGduLThmRlJWNzJDOEFZOEdzV3NVNWJmZ1Jrb0syXzZodWNVMXNySUtfeGtoYzFCUklnUFpsN2JzbnZheFJJczg1LUNqNG1zc01qeUFkME8xZ1RwUURMVGhIaDNyRmN1Zk9HZjNqR0hfTUlyVXE?oc=5",
-      "source": "Reuters",
+      "title": "Warren Buffett takes another step toward giving away his entire fortune",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeVdlS0t3Q2JjN1ZhSDRBalJYSTFSTUlRTkdvc0VoanN4UkpCZmVFa2JDdXBJYXoxaExoRnlRQlluWU1USnVBQkFwY2lybmhGSkFiOVA3TTNxSDNhUERBQU1NeDV5eHZTMGJCODQwT0pteXJGOFpKejVsSWYxd1FGdEg1Wl9XRi1EVmttZnJiS0VLcENfV08xdUZQY25EajIydWVseG9OZ0lnaV95TlE?oc=5",
+      "source": "Fox Business",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1225,16 +1225,6 @@
     }
   ],
   "tech_business": [
-    {
-      "title": "Google Maps can now create trip itineraries for you",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBFUGVUSTZZVnZCallCS3c1bENEZDM5cDRrOVlPa21XSExrSld0cDFMcEhZR0lKeWo3SWVtUFAyOXlmTmVqUlhnT0FQbTFKeXQxRzJnQnhMWXM0RWZtNllIY0x5SVhXM3Q1LXN4bzhiSEt4a2c2eTdhcENB?oc=5",
-      "source": "The Verge",
-      "category": "business",
-      "published": "Mon, 16 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
     {
       "title": "New Apple TV 4K's A19 Chip Has One Core Switched Off",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd2FhVGZhLW5kMmlEbTFKSDNWQmtxbnU2NVp0cXpvOFQwZFJ4dkdSb0s5Rk9ad3VzbHVmZXFQZ19yZzVLUDRrYXc0VUJZNndianZzdVQyX3BOcWZNNXR2UW1GQ0h2XzBkb1VxTDFHTWxhREFwLWVRNHJSaENUbVBYd2hB?oc=5",
@@ -1256,9 +1246,9 @@
       "author": ""
     },
     {
-      "title": "Apple to Let Users Face-Unlock iPhone Duo, Addressing Key Drawback",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaS1qX2lXTFNMeFRLM2NNV2tNalNwc3diMTdaUGcwbTE4WENOTGFzM3dTdF9fWmxrVHZPRUNZSS10aTlreTdrckVfQW1qT2stdXNha3ZPVmVmTzZBYV9pMXFPY25zUk9Ham1IbE9UbGU5Nmlpa0lYMjBBTE5HTnNJM0duN0pRR0pDV2xvU3NnMnpUUTR2R3N2OGFlaWlxdV9MMGpYdnVLMVk5YVBVdUd4Ujc3MmFyWE0?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Apple is adding face unlock to the iPhone Duo \u2014 without new hardware",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPY0xWaG5qajZNNHpjdm43dlFFUnBxV01DdHhQV1VYSWZ6ZExYN1lITEpiZTJBU1BPenphWktPbHJPUDd1amdGZDFtT3FWVTVpMGxQRU1YV3E2NU5DTllfU0Q0T0xRSGV4SHZCMVBoUFJNajk4d1NDaXBFb28yZ3hTck1JVVhhdjA?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1269,6 +1259,16 @@
       "title": "Samsung\u2019s \u2018Galaxy Studio\u2019 headphones leak with touch controls, two colors",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSnJCTkdJX0lkdFFQZWpKNUVPQ1ZXMnA2ZWM5V3JiWTdaa19qNlYxb3pLNHBnZE41b1dCbTYxR0E4ODhWNEhhY2RRZG5xdU1NQkpZYmxWWlR0eTg5dGNzMXA5dElPd20zSlR0QU53b2Z5VTctMnB1aXlNZnF0N2RJMGZBXzQ5NmNjeHZ1SWo1OXprQ0tIWV9lVEZVR2VmMnpmUHo2WGhTOA?oc=5",
       "source": "9to5Google",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Google Maps can now build trip itineraries with real-time details about each stop",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMW5oQ1JrRUlFMGUtZUg1NmVEbVJfOVUydlBaR1NMeExxSktVcTRBZlJyZHBKTUlHOTZuUTc1bHJkbEVhQUo5OHNibGNqQS04M0VsM1hEZUpmYi1qY0t0NmJpTGp6MTg4WkQ2UlliWnE3V1BvUDY4WWlCc1BsNEhDYUNwUWt4ejhXdzdPUnQxX21XckJaVllkaFZZd1A2QnUzRi1wWE1fUHQtMDRKY2d2d0Vvd1hlQUE?oc=5",
+      "source": "TechCrunch",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1296,9 +1296,9 @@
       "author": ""
     },
     {
-      "title": "Apple Early Black Friday Deals Are Live at Amazon \u2014 Save on AirPods, iPads, and Apple Watches",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wcVdxbHdWNFY4Z1JxN1VDbTgxU054c24yTGZ1blIxaTg3V2Z1U3BCdVcybGwtVjVJRkcwdzNLaVpmbWttWmFEMXhkcENwdjFob1E5bmZmNUZ4azluTWJjclhFWGFWNDl0SWc?oc=5",
-      "source": "IGN",
+      "title": "Apple and OpenEvidence launch experimental health chat app",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUTJIWldKX3NmaVZIRnh4RE5zQ3UyNGFNZGlHdTl2OGZfSzdWWlhVMk5raTNKeEl1RS0yYy1EMEpWeUxUY2Z0Q3BRMGNRbDRlLWotVGxGbmRSUlhSVzFoYWZVYkxhRWRfMko3aDEwMU5MZWlMS2d2akF1d0t5Ynh4UXVyZ09OQnRKNzVuaTJoMDlPbVlUXzN3?oc=5",
+      "source": "STAT",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1500,7 +1500,7 @@
     "changePercent": -2.67,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 16 Nov: 27,197.15, down -2.67% -- BEARISH. price below SMA20, RSI 33.6 weak, MACD bearish, strong -2.67% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-16T17:16:16.544585"
+    "timestamp": "2026-11-16T17:20:27.460952"
   },
   "sticky": {
     "cnbc": [
@@ -1533,6 +1533,13 @@
         "description": ""
       },
       {
+        "title": "Market's Nvidia obsession obscuring an opportunity in this name",
+        "url": "https://www.cnbc.com/2026/11/16/disney-options-trade-before-earnings.html",
+        "source": "CNBC",
+        "published": "2026-11-16T18:56:49",
+        "description": "Investors might be overlooking Disney earnings."
+      },
+      {
         "title": "This Anthropic proxy play is getting traders' attention \u2013 here's where they see it going",
         "url": "https://www.cnbc.com/2026/11/16/anthropic-proxy-destiny-tech100-fund.html",
         "source": "CNBC",
@@ -1543,7 +1550,7 @@
         "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
         "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
         "source": "CNBC",
-        "published": "2026-11-16T22:07:51",
+        "published": "2026-11-16T22:19:02",
         "description": "Oil prices are falling as forecasts project a surplus in oil in the fourth quarter"
       },
       {
@@ -1552,13 +1559,6 @@
         "source": "CNBC",
         "published": "2026-11-16T22:11:09",
         "description": "Two OpenAI models in July gained unauthorized access to Hugging Face's internal systems to find information for use in cheating on an evaluation."
-      },
-      {
-        "title": "Market's Nvidia obsession obscuring an opportunity in this name",
-        "url": "https://www.cnbc.com/2026/11/16/disney-options-trade-before-earnings.html",
-        "source": "CNBC",
-        "published": "2026-11-16T18:56:49",
-        "description": "Investors might be overlooking Disney earnings."
       }
     ],
     "yahoo_finance": [],

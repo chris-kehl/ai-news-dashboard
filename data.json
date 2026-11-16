@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-16T18:02:08.084520",
-  "summary": "Key topics today:\n- - OpenAI: Strengthening the fight against online child sexual abuse (r/HackerNews, 101 pts)\n- - Nvidia was in trouble before the Jensen Huang mess (r/HackerNews, 101 pts)\n- - Carnegie Mellon is putting computer science courses on YouTube for free (r/HackerNews, 1 pts)\n- - How to Break into Security, Ptacek Edition (r/HackerNews, 1 pts)\n- - Rust changed me as a developer (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-16T18:10:18.379415",
+  "summary": "Key topics today:\n- - OpenAI: Strengthening the fight against online child sexual abuse (r/HackerNews, 101 pts)\n- - Nvidia was in trouble before the Jensen Huang mess (r/HackerNews, 101 pts)\n- - Carnegie Mellon is putting computer science courses on YouTube for free (r/HackerNews, 1 pts)\n- - BugMeNot Has Closed (r/HackerNews, 1 pts)\n- - How to Break into Security, Ptacek Edition (2012) (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -20,14 +20,6 @@
     },
     {
       "type": "buy",
-      "asset": "GMM",
-      "price": 2.01,
-      "change": 86.11,
-      "category": "stock",
-      "text": "GMM +86.1% momentum @ $2.01"
-    },
-    {
-      "type": "buy",
       "asset": "GDHG",
       "price": 1.58,
       "change": 73.63,
@@ -41,6 +33,14 @@
       "change": 18.7,
       "category": "stock",
       "text": "^VIX +18.7% momentum @ $22.91"
+    },
+    {
+      "type": "sell",
+      "asset": "ASTS",
+      "price": 28.58,
+      "change": -17.16,
+      "category": "stock",
+      "text": "ASTS -17.2% drop @ $28.58"
     },
     {
       "type": "watch",
@@ -77,7 +77,15 @@
       "created": ""
     },
     {
-      "title": "How to Break into Security, Ptacek Edition",
+      "title": "BugMeNot Has Closed",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://www.bugmenot.com/",
+      "created": ""
+    },
+    {
+      "title": "How to Break into Security, Ptacek Edition (2012)",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
@@ -90,14 +98,6 @@
       "score": 1,
       "comments": 0,
       "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
-      "created": ""
-    },
-    {
-      "title": "BugMeNot Has Closed",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://www.bugmenot.com/",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-16T23:01:21.377514",
+    "timestamp": "2026-11-16T23:09:53.131997",
     "prices": [
       {
         "name": "Bittensor",
@@ -218,6 +218,12 @@
     ],
     "news": [
       {
+        "title": "Custodia Bank loses Supreme Court bid for direct Fed payment access",
+        "url": "https://cointelegraph.com/news/custodia-bank-loses-supreme-court-bid-for-direct-fed-payment-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 16 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7K7K4XWRM18K351JQ17SMMQ/hi-traditional-bank-account-vs-bitcoin-custodial-storage.jpg\" alt=\"Custodia Bank loses Supreme C"
+      },
+      {
         "title": "German lawmakers back crypto freezes outside criminal cases",
         "url": "https://cointelegraph.com/news/german-lawmakers-back-crypto-freezes-outside-criminal-cases?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Mon, 16 Nov 2026 ",
@@ -258,12 +264,6 @@
         "url": "https://cointelegraph.com/news/nvidia-turmoil-tests-bitcoin-miners-ai-funding-plans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Mon, 16 Nov 2026 ",
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JEWHRV64CGR31PRV4XXWS7/hi-the-power-in-energy-and-how-new-technologies-can-shift-bitcoin-ai.jpg\" alt=\"Nvidia turmoil te"
-      },
-      {
-        "title": "Safe wallet reportedly loses $6.5M as Zodiac suspects key compromise",
-        "url": "https://cointelegraph.com/news/safe-wallet-reportedly-loses-millions-after-key-compromise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 16 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JKHE8AKT8EG64S6TQC9CZW/hi-why-spot-the-typo-is-no-longer-enough-for-crypto-security-1.png\" alt=\"Safe wallet reportedly"
       },
       {
         "title": "Former Robinhood engineer pleads guilty to insider trading scheme on Hyperliquid",
@@ -438,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-16T23:00:41.586454",
+    "timestamp": "2026-11-16T23:09:26.708387",
     "trending": [
-      {
-        "symbol": "GMM",
-        "price": 2.01,
-        "change": 0.93,
-        "change_percent": 86.11,
-        "name": "Global Mofy AI Limited"
-      },
       {
         "symbol": "GDHG",
         "price": 1.58,
@@ -490,13 +483,6 @@
         "name": "Intel Corporation"
       },
       {
-        "symbol": "POWL",
-        "price": 151.2,
-        "change": 9.43,
-        "change_percent": 6.65,
-        "name": "Powell Industries, Inc."
-      },
-      {
         "symbol": "^IXIC",
         "price": 24509.76,
         "change": -856.33,
@@ -525,11 +511,25 @@
         "name": "RUSS 2K"
       },
       {
+        "symbol": "JPM",
+        "price": 338.21,
+        "change": -4.61,
+        "change_percent": -1.34,
+        "name": "JP Morgan Chase & Co."
+      },
+      {
         "symbol": ".DJI",
         "price": 51608.17,
         "change": -688.92,
         "change_percent": -1.32,
         "name": "Dow Jones Industrial Average"
+      },
+      {
+        "symbol": "DIS",
+        "price": 118.7,
+        "change": 0.47,
+        "change_percent": 0.4,
+        "name": "Walt Disney Company (The)"
       }
     ],
     "meme_momentum": [
@@ -960,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-16T23:01:02.973322",
+    "timestamp": "2026-11-16T23:09:46.074557",
     "items": [
       {
         "symbol": "SPX",
@@ -1054,45 +1054,39 @@
       },
       {
         "symbol": "TAO",
-        "price": 191.27,
-        "change": -2.12,
+        "price": 191.54,
+        "change": -1.37,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 65299,
-        "change": -0.04,
+        "price": 65221,
+        "change": 0.01,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1827.6,
-        "change": -0.25,
+        "price": 1825.23,
+        "change": -0.23,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 71.72,
-        "change": -1.22,
+        "price": 71.61,
+        "change": -1.1,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.15,
+        "price": 9.14,
         "change": -1.55,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.14,
-        "change": -1.91,
+        "price": 7.12,
+        "change": -2.01,
         "type": "crypto"
-      },
-      {
-        "symbol": "GMM",
-        "price": 2.01,
-        "change": 86.11,
-        "type": "mover"
       },
       {
         "symbol": "GDHG",
@@ -1104,12 +1098,6 @@
         "symbol": "^VIX",
         "price": 22.91,
         "change": 18.7,
-        "type": "mover"
-      },
-      {
-        "symbol": "ASTS",
-        "price": 28.58,
-        "change": -17.16,
         "type": "mover"
       },
       {
@@ -1125,9 +1113,9 @@
         "type": "mover"
       },
       {
-        "symbol": "POWL",
-        "price": 151.2,
-        "change": 6.65,
+        "symbol": "INTC",
+        "price": 55.47,
+        "change": -9.36,
         "type": "mover"
       },
       {
@@ -1147,6 +1135,18 @@
         "price": 24509.76,
         "change": -3.38,
         "type": "mover"
+      },
+      {
+        "symbol": "AMC",
+        "price": 3.23,
+        "change": -3.29,
+        "type": "mover"
+      },
+      {
+        "symbol": "NFLX",
+        "price": 60.75,
+        "change": -3.09,
+        "type": "mover"
       }
     ]
   },
@@ -1162,9 +1162,9 @@
       "author": ""
     },
     {
-      "title": "United Airlines experiencing a widespread system outage, airline says",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWdVNQc3RhVm1FaTNNOXdkNXlfaHZ3NE10blRxN215NUNwbW1KdmlqOWRmQlZrY0RtbDJmaC1OeUpVU3ptTDZTWUF6anZMbmRScEd0YTA1NVhIMGNwc01uLXU4ZlhVRGc?oc=5",
-      "source": "CNN",
+      "title": "United Airlines reports system outage affecting departing flights",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wTlhrZmN6ZENfcU1OeEVIbFF3VkU1UnFCN2p5aGZ6THVORmJtZFlqcVc2TGFTSWlhTjZWMnU0WGIteGZ5bmZRdTQyRlhXcXl6Q2RxX056MTE4Z01MeFJLRWN0YTNtNmd2SU9qcGtUbHLSAXZBVV95cUxNM0ZDcHdCekNXcnV3dllnN0tqNmd6ajllRnl2anpTbUJTTGRNOWlXQURFOHZBN08wMVhBb0pHNnRYRlFEc0hUY2V5bHdhZGJ3MkFhMjB6NzlSRUNBUi1wUFBDcHloXzRzYlNNTXVhVmptVmFscnh3?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1182,16 +1182,6 @@
       "author": ""
     },
     {
-      "title": "Nasdaq falls more than 2%, extending slide to third day as Nvidia drags down AI trade",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln0gF8QVVfeXFMUG1YMkpQVmR5RkUzM0x4dkxzdjZsbV9MUTZWbl92M3BvT1lfWWYwX3RxZjBIMHd1cGdBYndYbkdXVmk4Y2hObFVKVUVlT0xmdTBNR21qd3M1YV80ZFI1eFQtbUpqbG1kQUpqSlVDc3hWbVJRUV8yU2lhcmRpeA?oc=5",
-      "source": "CNBC",
-      "category": "business",
-      "published": "Mon, 16 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "What we know about what caused the FAA's nationwide ground stop",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaW8xRjJ5aVF4T09CZHdOUjd1eGpPZDY4NHFsLW9FVHc3NXl4M0hLV1dWMGlpeTlseFZzZ2dUUEZWRXF0dUhmaTZwTnVLWjFST3pqdUtmdlduTjZpNGpTLWVSUFR6ZnRFV1REQmF5dTdPMXlUOVBrWE1rNnNEblNFSlhXWQ?oc=5",
       "source": "Axios",
@@ -1202,8 +1192,8 @@
       "author": ""
     },
     {
-      "title": "The Investors Set to Win Big in Anthropic\u2019s IPO",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWGJLdWJHSUxsNW9wWEdzVEVVazhoUF9JelpHaWVfS2l2N0NUQ1VLdktRdlZnMW1taDQ0cGpuQ3pWVGZaMW9jc3JTZmJ3WDQtZnBVeEtwbjB2QW90OGlVV3hXWGVhQVJpMGJfR3h1S0JrdnVGdXBiZm1yemh5VkRfV2NGcXozRWdQcUNUUFdraFVjQnliVEU5Qw?oc=5",
+      "title": "Stock Market Today: Nasdaq Slides 1.5% as Nvidia Drama Continues to Unfold \u2014 Live Updates",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdy10SlNMRlFPdjFwZnBNZEwybjZLOGwxdENoX2wxZWpLTlB0bXNvbFctREtRcThZUXcxRUV6ZXlYSVZjR0d1MVNEaHNvVDJfVXVvZEN6MFJMMUF0VnNTMHFTWmtIZzVKMWxCM1BMU3l6UEJUWWVnbzNvTG13TmhQUjNPZlJYQlU?oc=5",
       "source": "WSJ",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
@@ -1212,9 +1202,9 @@
       "author": ""
     },
     {
-      "title": "California sues ChatGPT maker OpenAI over rogue hacking incidents",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUm9lT3diMkJDOXJsTUJ3T0ZXQ3NqcFgxd2RHZDROdWJVaUtHWTNZT24zS3hMN0tRTkJuMFpOOVgwV3E2bDBDdFljYldPQjlHSlpOQmFGTF9tR0ltVkxubDVhaUN3TS16eHlsUXQtNERMeFF5N1lVRVV0N1pUME5sXzVUdWxBQmhFWHJhbXhBZHVuM3h4Ri1JOGNSYzZ4MDRpalpaNjM4c1pveGVFcUtv?oc=5",
-      "source": "NBC News",
+      "title": "California sues OpenAI, alleges it endangered the public by building AI without safeguards",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOVDUyUWJxQ21xTm9UblI2QmZKc2JBajhidWVtTXRvbDYxdDBmZF9KYUdiNExtMUlIZUo0LTlfTjNrNUN6RGxvMG94N2xyRXhIMGhHWGI5MWRBcmJDa3QxUG45VWh2ZkVvMzhGLWt4cm5VbTh4elR6S1E3eE9IUWFvUXVvc0hQT2lvQWxaRUJERHhCTEEyT192bW9zUW9jQnNFSDM0RmJ6RDA1a3l0Ykh6MThXNGYxRGh2WFRVT2lFanBvWnpwNWpqVURMS2k5SGVhbnAxQzU3TQ?oc=5",
+      "source": "Los Angeles Times",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1230,9 +1220,100 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "Nvidia Stock Falls Again. It Doesn\u2019t Need a Jensen Huang Comeback to Thrive.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcVZqLW05Y1FaS0xnVEM2T3EwUGlwZ21LSHJUQVdYWnMwcVczbDFYWE91MlQtcHNhdWhlbVdVUnE5a1JqeUE4aEpOSUtlTEdBMnJnMFl0UVdXOUNodGJCNDRSbzlLbXpZVXljR3QwVGdYWTVDNldJRHRPUXRqZFV6RWxHZlV2RWFsZGc?oc=5",
+      "source": "Barron's",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
-  "tech_business": [],
+  "tech_business": [
+    {
+      "title": "New Apple TV 4K's A19 Chip Has One Core Switched Off",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd2FhVGZhLW5kMmlEbTFKSDNWQmtxbnU2NVp0cXpvOFQwZFJ4dkdSb0s5Rk9ad3VzbHVmZXFQZ19yZzVLUDRrYXc0VUJZNndianZzdVQyX3BOcWZNNXR2UW1GQ0h2XzBkb1VxTDFHTWxhREFwLWVRNHJSaENUbVBYd2hB?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Google says Russian speakers pulled off first-ever fully automated AI cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQ3dXZ19OWEdSOVg1MGpaVTExaktQc3Joc3NLcGdWeUliY0xuS19WREpFMkpjcC10Y3FFc0lpRjVQdUxpNk54YXl6c2ZYQzhLZE1pMXZuLVJ2ZHplRXFYNVVNVTlpX1Q2MUhSQ3ZQRjBIZ0JMYWZ3QmtiZEVaUHNub1VRdUlNbVJoV05XeWNZQVF0aWRlZFVqN3E3YmFtZzVRSDYxVzdrcmZXSi1vNWFr?oc=5",
+      "source": "POLITICO.eu",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Apple is adding face unlock to the iPhone Duo \u2014 without new hardware",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPY0xWaG5qajZNNHpjdm43dlFFUnBxV01DdHhQV1VYSWZ6ZExYN1lITEpiZTJBU1BPenphWktPbHJPUDd1amdGZDFtT3FWVTVpMGxQRU1YV3E2NU5DTllfU0Q0T0xRSGV4SHZCMVBoUFJNajk4d1NDaXBFb28yZ3hTck1JVVhhdjA?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Samsung\u2019s \u2018Galaxy Studio\u2019 headphones leak with touch controls, two colors",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSnJCTkdJX0lkdFFQZWpKNUVPQ1ZXMnA2ZWM5V3JiWTdaa19qNlYxb3pLNHBnZE41b1dCbTYxR0E4ODhWNEhhY2RRZG5xdU1NQkpZYmxWWlR0eTg5dGNzMXA5dElPd20zSlR0QU53b2Z5VTctMnB1aXlNZnF0N2RJMGZBXzQ5NmNjeHZ1SWo1OXprQ0tIWV9lVEZVR2VmMnpmUHo2WGhTOA?oc=5",
+      "source": "9to5Google",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The Apple Watch Series 12 is cheaper than ever ahead of Black Friday",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRzVoaGNVcVVNLWIyRzAtN1doSGloWFE1cm9TU2VGblRoaW84QW1tUjZ1VFJiZ1F3bDdTcHFrUTVjZzlWSnBQV1FPM0RKMXVIVTRheTVzYmFRdVdIYmZZZ1BQcFJEWEl4UlZ2bUFfaGUtdVNRNXBFQ09hX3VtZUdpODVVNHVBX2ZIbXJGejNB?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Apple Early Black Friday Deals Are Live at Amazon \u2014 Save on AirPods, iPads, and Apple Watches",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wcVdxbHdWNFY4Z1JxN1VDbTgxU054c24yTGZ1blIxaTg3V2Z1U3BCdVcybGwtVjVJRkcwdzNLaVpmbWttWmFEMXhkcENwdjFob1E5bmZmNUZ4azluTWJjclhFWGFWNDl0SWc?oc=5",
+      "source": "IGN",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Google Maps can now build trip itineraries with real-time details about each stop",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMW5oQ1JrRUlFMGUtZUg1NmVEbVJfOVUydlBaR1NMeExxSktVcTRBZlJyZHBKTUlHOTZuUTc1bHJkbEVhQUo5OHNibGNqQS04M0VsM1hEZUpmYi1qY0t0NmJpTGp6MTg4WkQ2UlliWnE3V1BvUDY4WWlCc1BsNEhDYUNwUWt4ejhXdzdPUnQxX21XckJaVllkaFZZd1A2QnUzRi1wWE1fUHQtMDRKY2d2d0Vvd1hlQUE?oc=5",
+      "source": "TechCrunch",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The biggest entertainment event of the year isn\u2019t a movie \u2014 it\u2019s \u2018Grand Theft Auto VI\u2019",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZEw1T2VYX205VmdHTVM0QVNvcE81NDFXQldPVHluMTg5NkdLRHhtWUNPeU5oX3ptTDhhR3hyU0FWN3FEa1VuUUhUdkl2amtoa3k1OVhCR1o5WGtXRGJzWWpCLTEzYzBnbzFqaGJDcG95ZzhNREI2bDd4OHBaY3JXUmlNel9YcU0?oc=5",
+      "source": "CNN",
+      "category": "business",
+      "published": "Mon, 16 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    }
+  ],
   "defense": [
     {
       "title": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
@@ -1280,14 +1361,6 @@
       "source": "Al Jazeera",
       "published": "Mon, 16 Nov 2026 ",
       "description": "Pentagon defends Steve Feinberg, amid claims in Bloomberg he encouraged defence contractors to use a specific banker.",
-      "relevance_score": 4
-    },
-    {
-      "title": "London Palestine Film Festival returns for 27th year",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/london-palestine-film-festival-returns-for-27th-year?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Mon, 16 Nov 2026 ",
-      "description": "Since 1999, the London Palestine Film Festival has brought Palestinian stories to the big screen.",
       "relevance_score": 4
     },
     {
@@ -1435,7 +1508,7 @@
     "changePercent": -2.67,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 16 Nov: 27,197.15, down -2.67% -- BEARISH. price below SMA20, RSI 33.6 weak, MACD bearish, strong -2.67% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-16T18:01:53.284535"
+    "timestamp": "2026-11-16T18:10:15.666687"
   },
   "sticky": {
     "cnbc": [
@@ -1454,6 +1527,13 @@
         "description": "CNBC's Eamon Javers reported there was no indication of bad actors involved and likewise no indication that a bug was impacting multiple banks at the same time."
       },
       {
+        "title": "Aschenbrenner\u2019s Situational Awareness made AI bets again before October rout",
+        "url": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
+        "source": "CNBC",
+        "published": "2026-11-16T23:05:12",
+        "description": "Leopold Aschenbrenner's hedge fund, which almost collapsed over the summer, bought AI stocks before shares began tumbling."
+      },
+      {
         "title": "Berkshire Hathaway raised its stake in Delta in the third quarter. It also trimmed a key bank holding",
         "url": "https://www.cnbc.com/2026/11/16/berkshire-hathaway-raised-its-stake-in-delta-air-in-the-third-quarter.html",
         "source": "CNBC",
@@ -1461,11 +1541,11 @@
         "description": "Berkshire Hathaway added to several stock positions in the third quarter while trimming others, including Bank of America."
       },
       {
-        "title": "United Airlines reports system outage affecting departing flights",
+        "title": "United Airlines resolves system outage that affected departing flights",
         "url": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
         "source": "CNBC",
-        "published": "2026-11-16T22:51:58",
-        "description": "United Airlines said Monday that a widespread system outage was affecting departing flights."
+        "published": "2026-11-16T23:08:01",
+        "description": "The airline said there was no impact on flights in progress and there was no indication the outage was a cyberattack."
       },
       {
         "title": "Kalshi plans to launch stock trading soon",
@@ -1487,13 +1567,6 @@
         "source": "CNBC",
         "published": "2026-11-16T22:11:09",
         "description": "Two OpenAI models in July gained unauthorized access to Hugging Face's internal systems to find information for use in cheating on an evaluation."
-      },
-      {
-        "title": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could \u2018disappoint\u2019",
-        "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
-        "source": "CNBC",
-        "published": "2026-11-16T18:46:07",
-        "description": ""
       }
     ],
     "yahoo_finance": [],

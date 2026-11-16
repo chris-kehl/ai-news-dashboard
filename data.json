@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T21:16:41.477176",
+  "timestamp": "2026-11-15T21:23:51.297059",
   "summary": "Key topics today:\n- - What's Next for Nvidia? (r/HackerNews, 101 pts)\n- - Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video] (r/HackerNews, 101 pts)\n- - \"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs (r/HackerNews, 101 pts)\n- - Understanding Positional Embeddings in Modern LLMs (r/HackerNews, 101 pts)\n- - Old Bitly links are being hijacked (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -28,27 +28,27 @@
     },
     {
       "type": "sell",
+      "asset": "SMMT",
+      "price": 14.15,
+      "change": -14.96,
+      "category": "stock",
+      "text": "SMMT -15.0% drop @ $14.15"
+    },
+    {
+      "type": "sell",
+      "asset": "SNDK",
+      "price": 885.01,
+      "change": -9.48,
+      "category": "stock",
+      "text": "SNDK -9.5% drop @ $885.01"
+    },
+    {
+      "type": "sell",
       "asset": "MSTR",
       "price": 111.62,
       "change": -8.77,
       "category": "stock",
       "text": "MSTR -8.8% drop @ $111.62"
-    },
-    {
-      "type": "sell",
-      "asset": "BE",
-      "price": 191.99,
-      "change": -8.34,
-      "category": "stock",
-      "text": "BE -8.3% drop @ $191.99"
-    },
-    {
-      "type": "sell",
-      "asset": "HOOD",
-      "price": 77.86,
-      "change": -7.95,
-      "category": "stock",
-      "text": "HOOD -8.0% drop @ $77.86"
     },
     {
       "type": "watch",
@@ -117,19 +117,19 @@
       "created": ""
     },
     {
-      "title": "Mini.nvim Is Now on Tangled",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://tangled.org/nvim-mini.org/mini.nvim",
-      "created": ""
-    },
-    {
       "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "created": ""
+    },
+    {
+      "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
       "created": ""
     },
     {
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-16T02:16:23.414803",
+    "timestamp": "2026-11-16T02:23:29.531264",
     "prices": [
       {
         "name": "Bittensor",
@@ -381,14 +381,6 @@
       "description": "Han Won-seok, 34, confessed to using a hidden camera and AI to get a near-perfect mark on the significant test."
     },
     {
-      "title": "Pope Leo rides in helicopter cockpit during Peru trip",
-      "url": "https://www.bbc.co.uk/news/videos/c6pw4rl00lrjo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Sun, 15 Nov 2026 ",
-      "description": "The Pope took to the skies before arriving in Cusco on the penultimate day of his Latin America tour."
-    },
-    {
       "title": "FAA ground stop live updates: Flight cancellations continue into Monday",
       "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
       "source": "Abc News",
@@ -443,11 +435,40 @@
       "category": "npr",
       "published": "Sun, 15 Nov 2026 ",
       "description": "Congress recently gave the Department of Transportation $12.5 billion to upgrade the aging air traffic control system. President Trump wants more.<br><br>"
+    },
+    {
+      "title": "Far from home. Voyager 1 is now farther than anything man has sent into space",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
+      "source": "Npr",
+      "category": "npr",
+      "published": "Sun, 15 Nov 2026 ",
+      "description": "NASA's Voyager 1, which is the furthest man-made object from Earth, is set to reach a new milestone this week. On Wednesday, the probe will be roughly 16 billion miles from Earth."
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-16T02:15:51.308473",
+    "timestamp": "2026-11-16T02:23:01.624650",
     "trending": [
+      {
+        "symbol": "SMMT",
+        "price": 14.15,
+        "change": -2.49,
+        "change_percent": -14.96,
+        "name": "Summit Therapeutics Inc."
+      },
+      {
+        "symbol": "SNDK",
+        "price": 885.01,
+        "change": -92.68,
+        "change_percent": -9.48,
+        "name": "Sandisk Corporation"
+      },
+      {
+        "symbol": "MSTR",
+        "price": 111.62,
+        "change": -10.73,
+        "change_percent": -8.77,
+        "name": "Strategy Inc"
+      },
       {
         "symbol": "BE",
         "price": 191.99,
@@ -456,45 +477,38 @@
         "name": "Bloom Energy Corporation"
       },
       {
-        "symbol": "^KS11",
-        "price": 5130.1,
-        "change": -212.63,
-        "change_percent": -3.98,
-        "name": "KOSPI Composite Index"
+        "symbol": "HOOD",
+        "price": 77.86,
+        "change": -6.72,
+        "change_percent": -7.95,
+        "name": "Robinhood Markets, Inc."
       },
       {
-        "symbol": "SI=F",
-        "price": 47.74,
-        "change": -1.29,
-        "change_percent": -2.62,
-        "name": "Silver Dec 26"
+        "symbol": "COIN",
+        "price": 127.65,
+        "change": -8.62,
+        "change_percent": -6.33,
+        "name": "Coinbase Global, Inc."
       },
       {
-        "symbol": "^N225",
-        "price": 60065.64,
-        "change": -1076.71,
-        "change_percent": -1.76,
-        "name": "Nikkei 225"
+        "symbol": "MU",
+        "price": 778.31,
+        "change": -32.99,
+        "change_percent": -4.07,
+        "name": "Micron Technology, Inc."
       },
       {
-        "symbol": "LHX",
-        "price": 272.35,
-        "change": -4.24,
-        "change_percent": -1.53,
-        "name": "L3Harris Technologies, Inc."
-      },
-      {
-        "symbol": "XRP-USD",
-        "price": 0.97,
-        "change": -0.01,
-        "change_percent": -0.85,
-        "name": "XRP USD"
+        "symbol": "AMD",
+        "price": 534.06,
+        "change": -18.84,
+        "change_percent": -3.41,
+        "name": "Advanced Micro Devices, Inc."
       },
       {
         "symbol": "BTC-USD",
-        "price": 64904.09,
-        "change": -410.46,
-        "change_percent": -0.63,
+        "price": 64983.23,
+        "change": -331.32,
+        "change_percent": -0.51,
         "name": "Bitcoin USD"
       },
       {
@@ -503,13 +517,6 @@
         "change": -0.64,
         "change_percent": -0.46,
         "name": "Space Exploration Technologies "
-      },
-      {
-        "symbol": "CL=F",
-        "price": 88.18,
-        "change": -0.38,
-        "change_percent": -0.43,
-        "name": "Crude Oil Dec 26"
       },
       {
         "symbol": ".SPX",
@@ -527,17 +534,10 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 27958.25,
-        "change": -76.5,
-        "change_percent": -0.27,
+        "price": 27961.25,
+        "change": -73.5,
+        "change_percent": -0.26,
         "name": "Nasdaq 100 Dec 26"
-      },
-      {
-        "symbol": "ES=F",
-        "price": 7573.75,
-        "change": -9.25,
-        "change_percent": -0.12,
-        "name": "E-Mini S&P 500 Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -547,11 +547,11 @@
         "name": "DJIA"
       },
       {
-        "symbol": "YM=F",
-        "price": 52413.0,
-        "change": -5.0,
-        "change_percent": -0.01,
-        "name": "Mini Dow Jones Indus.-$5 Dec 26"
+        "symbol": "ES=F",
+        "price": 7576.5,
+        "change": -6.5,
+        "change_percent": -0.09,
+        "name": "E-Mini S&P 500 Dec 26"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-16T02:16:16.101706",
+    "timestamp": "2026-11-16T02:23:23.855610",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,104 +1016,128 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7573.5,
-        "change": -0.13,
+        "price": 7576.25,
+        "change": -0.09,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27955.25,
+        "price": 27957.5,
         "change": -0.28,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 52417.0,
-        "change": -0.0,
+        "price": 52450.0,
+        "change": 0.06,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2791.6,
-        "change": -0.21,
+        "price": 2792.9,
+        "change": -0.16,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 88.18,
-        "change": -0.43,
+        "price": 88.08,
+        "change": -0.54,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3881.1,
-        "change": -0.13,
+        "price": 3883.5,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 47.76,
-        "change": -2.59,
+        "price": 47.71,
+        "change": -2.69,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1473.9,
-        "change": -0.98,
+        "price": 1476.3,
+        "change": -0.82,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 985.0,
-        "change": -2.09,
+        "price": 987.0,
+        "change": -1.89,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.15,
-        "change": -2.32,
+        "price": 3.16,
+        "change": -2.2,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 191.78,
-        "change": 3.18,
+        "price": 192.29,
+        "change": 1.79,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64946,
-        "change": 1.69,
+        "price": 65019,
+        "change": 1.06,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1818.77,
-        "change": 2.41,
+        "price": 1823.42,
+        "change": 1.41,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 71.96,
-        "change": 2.69,
+        "price": 72.27,
+        "change": 2.11,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.21,
-        "change": 2.44,
+        "price": 9.25,
+        "change": 2.01,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.21,
-        "change": 2.65,
+        "price": 7.24,
+        "change": 1.65,
         "type": "crypto"
+      },
+      {
+        "symbol": "SNDK",
+        "price": 885.01,
+        "change": -9.48,
+        "type": "mover"
+      },
+      {
+        "symbol": "MSTR",
+        "price": 111.62,
+        "change": -8.77,
+        "type": "mover"
       },
       {
         "symbol": "BE",
         "price": 191.99,
         "change": -8.34,
+        "type": "mover"
+      },
+      {
+        "symbol": "HOOD",
+        "price": 77.86,
+        "change": -7.95,
+        "type": "mover"
+      },
+      {
+        "symbol": "COIN",
+        "price": 127.65,
+        "change": -6.33,
         "type": "mover"
       },
       {
@@ -1129,9 +1153,15 @@
         "type": "mover"
       },
       {
-        "symbol": "^KS11",
-        "price": 5129.58,
-        "change": -3.99,
+        "symbol": "MU",
+        "price": 778.31,
+        "change": -4.07,
+        "type": "mover"
+      },
+      {
+        "symbol": "AMD",
+        "price": 534.06,
+        "change": -3.41,
         "type": "mover"
       },
       {
@@ -1139,40 +1169,20 @@
         "price": 167.99,
         "change": -2.56,
         "type": "mover"
-      },
-      {
-        "symbol": "^N225",
-        "price": 60069.92,
-        "change": -1.75,
-        "type": "mover"
-      },
-      {
-        "symbol": "LHX",
-        "price": 272.35,
-        "change": -1.53,
-        "type": "mover"
-      },
-      {
-        "symbol": "GME",
-        "price": 25.85,
-        "change": 1.17,
-        "type": "mover"
-      },
-      {
-        "symbol": "BTC-USD",
-        "price": 64909.56,
-        "change": -0.62,
-        "type": "mover"
-      },
-      {
-        "symbol": "SPCX",
-        "price": 139.11,
-        "change": -0.46,
-        "type": "mover"
       }
     ]
   },
   "business": [
+    {
+      "title": "Musk, Uber Co-founder Join Call For Jensen Huang's Return To Nvidia",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc01SNVE4enpSbVRyUW5QamJkcWkzZVdLdm85RlI3UVhBZzAxTmVxWDJsMllmcWdqV2dxaVgxS0g5TWp6OWdjcFpqRXBVanZRdklDNndEY2F6R0RrWk5LZWZiQXZhZVpoUUJPeE90M04zRkFtcm9GbXlnXzhwc3NBM05kM3ZMVlhNNVpUNDI5UFFkZlZoSHBZazIxRXlkR0RxT011VU9JSQ?oc=5",
+      "source": "Barron's",
+      "category": "business",
+      "published": "Sun, 15 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
     {
       "title": "Thousands of US flights cancelled or delayed two days after grounding of planes nationwide",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVZnZOVmtTbGt0SFlQd0txVDlHaEhyNF95UGNTSlUtTjN0N3V3c1R3NFJLSHdpMTkxdEhFRHhJNFY5QUJYMDdISHVMUG5SNTJUS1J2X2pudGpfOWc?oc=5",
@@ -1187,16 +1197,6 @@
       "title": "Anthropic Is About to Become the World\u2019s Most Important AI Stock",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ0FXWUttSDRhNUNacC1GM0hiUWtnSVRoamZreG5QRkFqNlZVTHdSUjNNeHNCNmhGWWZBcGxiaTBIcDhvSDZxNExuclFYRlBJTXFuRXdjd2xzNkdpZ2RkblFZYlFNNnBkcHdfU0VRQXhvaWNaamU2SUNNdDNCVTctZnB5cUZiVmFuXy1aWFNqRWlXQ3pZSl9NcGQ1MFFnWEZBTHdaZE9GNGI5cEJSaG1pQkhGNA?oc=5",
       "source": "Bloomberg",
-      "category": "business",
-      "published": "Sun, 15 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Musk, Uber Co-founder Join Call For Jensen Huang's Return To Nvidia",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc01SNVE4enpSbVRyUW5QamJkcWkzZVdLdm85RlI3UVhBZzAxTmVxWDJsMllmcWdqV2dxaVgxS0g5TWp6OWdjcFpqRXBVanZRdklDNndEY2F6R0RrWk5LZWZiQXZhZVpoUUJPeE90M04zRkFtcm9GbXlnXzhwc3NBM05kM3ZMVlhNNVpUNDI5UFFkZlZoSHBZazIxRXlkR0RxT011VU9JSQ?oc=5",
-      "source": "Barron's",
       "category": "business",
       "published": "Sun, 15 Nov 2026 ",
       "description": "",
@@ -1296,16 +1296,6 @@
       "author": ""
     },
     {
-      "title": "The tech products we enthusiastically recommend this holiday season",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUWtOOENqN1hqUGJmYmt1T050dWJ3YUdNbW54dzhaNEZrZXhFdjA4T0NqZlZZc1ltTDZMc2NETmx0ZFFxbFlVTlhWdURxWVZoQ3JpWFJPb25MbUc1ZU5kS2ItTWFBT2FRX18zQ2ZOY2NabzVvVWdzMUlhcTVmRHNTd0Ftdng2c1NMRTNSYmZHQ2pmcVJjOVdYNGx0R2pWcTlPZEVMbw?oc=5",
-      "source": "TechCrunch",
-      "category": "business",
-      "published": "Sun, 15 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Astronauts including Sen. Mark Kelly celebrate the opening of L.A.'s new air and space museum with plenty of kids",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNkhGdUhtR0o3SWhMRElmV0ZJcnpXM08yeHdUUGVPSW44WXZmdmhjUFJxMEhxN2JBa3ZmNTNXUEl3ZWlkbDBwREdZYktUY1A0M1V3U2R1VUphdmptUFRhU1VDdW0tbnhGWFJ4ZkZfSDdXY0l0T3RMMWV6cDNTd2NjWjJwb2swMklNbHJpS3dkVDRlUkUwSWxESGJBcXdHSEtLbndZLVBxMW5ETEV4d1hxNk8yOUZZcU1yWXZBTVU4ZEk?oc=5",
       "source": "Los Angeles Times",
@@ -1319,6 +1309,16 @@
       "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd1o3QjBQeUxxMXBSWFBUZ3pGaTJxMFZiN1JBdmh4bEV5NjVGeFpsTGFHaDZMTXlrNkZqUGdSSUVWTXh6NEhjb1lNV2xDWkU4Um53RkI2QjBVQVJvRW80ZjVCVHhzbXloaE00RDJJYzN5SmRJN2FfRTFiNm96V3hsSlFXdzJmUVpDYTVhZVRjMU1wTVNaM0ViNjhLMk51U0I1NzVMZQ?oc=5",
       "source": "The Guardian",
+      "category": "business",
+      "published": "Sun, 15 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The tech products we enthusiastically recommend this holiday season",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUWtOOENqN1hqUGJmYmt1T050dWJ3YUdNbW54dzhaNEZrZXhFdjA4T0NqZlZZc1ltTDZMc2NETmx0ZFFxbFlVTlhWdURxWVZoQ3JpWFJPb25MbUc1ZU5kS2ItTWFBT2FRX18zQ2ZOY2NabzVvVWdzMUlhcTVmRHNTd0Ftdng2c1NMRTNSYmZHQ2pmcVJjOVdYNGx0R2pWcTlPZEVMbw?oc=5",
+      "source": "TechCrunch",
       "category": "business",
       "published": "Sun, 15 Nov 2026 ",
       "description": "",
@@ -1367,6 +1367,14 @@
       "source": "Defense News",
       "published": "Thu, 12 Nov 2026 ",
       "description": "The measures call for enhanced cooperation between the U.S. and Israel on weapons technology development.",
+      "relevance_score": 7
+    },
+    {
+      "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "published": "Sun, 15 Nov 2026 ",
+      "description": "He has been showing support for injured veterans in Ukraine and praising the country's resilience.",
       "relevance_score": 7
     },
     {
@@ -1546,16 +1554,23 @@
     "changePercent": -1.22,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 15 Nov: 27,943.74, down -1.22% -- BEARISH. price below SMA20, RSI 40.7 neutral-bearish, MACD bearish, strong -1.22% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-15T21:16:38.054610"
+    "timestamp": "2026-11-15T21:23:45.490919"
   },
   "sticky": {
     "cnbc": [
       {
-        "title": "Bessent calls for \u2018dramatic shakeup\u2019 at Nvidia, urges outside CEO",
-        "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+        "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+        "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
         "source": "CNBC",
-        "published": "2026-11-15T18:10:18",
-        "description": "Bessent has criticized Howard Lutnick\u2019s department over suspected chip diversion to China while defending President Donald Trump\u2019s handling of the matter."
+        "published": "2026-11-16T01:54:56",
+        "description": "Calls for Jensen Huang's return as Nvidia CEO are growing, with tech executives and major shareholders backing a potential comeback following his resignation."
+      },
+      {
+        "title": "China\u2019s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
+        "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+        "source": "CNBC",
+        "published": "2026-11-16T02:14:03",
+        "description": "The investment slump deepened and retail sales again lagged industrial output, with the property market downturn eroding household wealth for a fifth year."
       },
       {
         "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
@@ -1563,13 +1578,6 @@
         "source": "CNBC",
         "published": "2026-11-16T01:02:48",
         "description": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war."
-      },
-      {
-        "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
-        "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
-        "source": "CNBC",
-        "published": "2026-11-16T01:54:56",
-        "description": "Calls for Jensen Huang's return as Nvidia CEO are growing, with tech executives and major shareholders backing a potential comeback following his resignation."
       },
       {
         "title": "Anthropic\u2019s IPO lands as the embattled AI trade looks for a much-needed bright spot",
@@ -1685,72 +1693,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7573.25,
-      "change": -9.75,
-      "change_percent": -0.13,
+      "price": 7576.25,
+      "change": -6.75,
+      "change_percent": -0.09,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27950.0,
-      "change": -84.75,
-      "change_percent": -0.3,
+      "price": 27952.75,
+      "change": -82.0,
+      "change_percent": -0.29,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 52413.0,
-      "change": -5.0,
-      "change_percent": -0.01,
+      "price": 52450.0,
+      "change": 32.0,
+      "change_percent": 0.06,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2791.3,
-      "change": -6.2,
-      "change_percent": -0.22,
+      "price": 2792.8,
+      "change": -4.7,
+      "change_percent": -0.17,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 88.18,
-      "change": -0.38,
-      "change_percent": -0.43,
+      "price": 88.08,
+      "change": -0.48,
+      "change_percent": -0.54,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3880.2,
-      "change": -6.1,
-      "change_percent": -0.16,
+      "price": 3883.5,
+      "change": -2.8,
+      "change_percent": -0.07,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
       "price": 47.72,
-      "change": -1.31,
-      "change_percent": -2.66,
+      "change": -1.32,
+      "change_percent": -2.68,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1473.2,
-      "change": -15.3,
-      "change_percent": -1.03,
+      "price": 1476.0,
+      "change": -12.5,
+      "change_percent": -0.84,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 984.5,
-      "change": -21.5,
-      "change_percent": -2.14,
+      "price": 987.0,
+      "change": -19.0,
+      "change_percent": -1.89,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.15,
-      "change": -0.08,
-      "change_percent": -2.32,
+      "price": 3.16,
+      "change": -0.07,
+      "change_percent": -2.2,
       "name": "Natural Gas Dec 26"
     }
   ],

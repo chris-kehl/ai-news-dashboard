@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17T16:01:15.722832",
+  "timestamp": "2026-11-17T16:07:25.584275",
   "summary": "Key topics today:\n- - Show HN: TrnRT \u2013 An open-source LLM inference engine for AWS Trainium (r/HackerNews, 201 pts)\n- - GPT\u20116.2 Astra and Sol (r/HackerNews, 101 pts)\n- - MAI Code 2 and Code 2 Flash (r/HackerNews, 101 pts)\n- - What is the best harness for each model? (r/HackerNews, 101 pts)\n- - Launch HN: StarSling (YC P25) \u2013 Self-improving CI for agent-volume repos (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -29,18 +29,18 @@
     {
       "type": "buy",
       "asset": "BILL",
-      "price": 64.96,
+      "price": 64.97,
       "change": 19.25,
       "category": "stock",
-      "text": "BILL +19.2% momentum @ $64.96"
+      "text": "BILL +19.2% momentum @ $64.97"
     },
     {
-      "type": "buy",
-      "asset": "ACM",
-      "price": 80.5,
-      "change": 14.18,
+      "type": "sell",
+      "asset": "NXT",
+      "price": 78.48,
+      "change": -17.42,
       "category": "stock",
-      "text": "ACM +14.2% momentum @ $80.50"
+      "text": "NXT -17.4% drop @ $78.48"
     },
     {
       "type": "watch",
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-17T21:01:05.528174",
+    "timestamp": "2026-11-17T21:07:16.371504",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-17T21:00:41.756355",
+    "timestamp": "2026-11-17T21:06:52.522792",
     "trending": [
       {
         "symbol": "SLS",
@@ -449,38 +449,45 @@
       },
       {
         "symbol": "BILL",
-        "price": 64.96,
-        "change": 10.48,
+        "price": 64.97,
+        "change": 10.49,
         "change_percent": 19.25,
         "name": "BILL Holdings, Inc."
       },
       {
-        "symbol": "ACM",
-        "price": 80.5,
-        "change": 10.0,
-        "change_percent": 14.18,
-        "name": "AECOM"
+        "symbol": "NXT",
+        "price": 78.48,
+        "change": -16.55,
+        "change_percent": -17.42,
+        "name": "Nextpower Inc."
       },
       {
         "symbol": "CRM",
-        "price": 194.53,
-        "change": -23.31,
-        "change_percent": -10.7,
+        "price": 194.62,
+        "change": -23.22,
+        "change_percent": -10.66,
         "name": "Salesforce, Inc."
       },
       {
         "symbol": "NOW",
-        "price": 92.84,
-        "change": -9.41,
-        "change_percent": -9.2,
+        "price": 92.86,
+        "change": -9.39,
+        "change_percent": -9.18,
         "name": "ServiceNow, Inc."
       },
       {
         "symbol": "NKE",
-        "price": 35.82,
-        "change": -2.17,
-        "change_percent": -5.71,
+        "price": 35.85,
+        "change": -2.14,
+        "change_percent": -5.63,
         "name": "Nike, Inc."
+      },
+      {
+        "symbol": "NVDA",
+        "price": 155.46,
+        "change": -7.39,
+        "change_percent": -4.54,
+        "name": "NVIDIA Corporation"
       },
       {
         "symbol": "SNAP",
@@ -491,51 +498,37 @@
       },
       {
         "symbol": "UNH",
-        "price": 389.61,
-        "change": -17.85,
-        "change_percent": -4.38,
+        "price": 389.76,
+        "change": -17.7,
+        "change_percent": -4.34,
         "name": "UnitedHealth Group Incorporated"
       },
       {
-        "symbol": "MSFT",
-        "price": 506.24,
-        "change": -17.64,
-        "change_percent": -3.37,
-        "name": "Microsoft Corporation"
-      },
-      {
-        "symbol": "HD",
-        "price": 339.16,
-        "change": -9.53,
-        "change_percent": -2.73,
-        "name": "Home Depot, Inc. (The)"
+        "symbol": ".DJI",
+        "price": 50759.42,
+        "change": -1588.13,
+        "change_percent": -3.03,
+        "name": "Dow Jones Industrial Average"
       },
       {
         "symbol": "DIS",
-        "price": 116.9,
-        "change": -2.07,
-        "change_percent": -1.74,
+        "price": 116.96,
+        "change": -2.01,
+        "change_percent": -1.69,
         "name": "Walt Disney Company (The)"
       },
       {
-        "symbol": ".DJI",
-        "price": 50761.92,
-        "change": -846.25,
-        "change_percent": -1.64,
-        "name": "DJIA"
-      },
-      {
         "symbol": ".RUT",
-        "price": 2705.857,
-        "change": -37.08,
-        "change_percent": -1.35,
+        "price": 2702.097,
+        "change": -40.84,
+        "change_percent": -1.49,
         "name": "RUSS 2K"
       },
       {
         "symbol": ".SPX",
-        "price": 7340.9,
-        "change": -75.69,
-        "change_percent": -1.02,
+        "price": 7340.53,
+        "change": -76.06,
+        "change_percent": -1.03,
         "name": "S&P 500"
       },
       {
@@ -974,17 +967,17 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-17T21:01:01.812377",
+    "timestamp": "2026-11-17T21:07:12.717122",
     "items": [
       {
         "symbol": "SPX",
-        "price": 7340.9,
-        "change": -1.02,
+        "price": 7340.53,
+        "change": -1.03,
         "type": "index"
       },
       {
         "symbol": "DJI",
-        "price": 50761.92,
+        "price": 50759.42,
         "change": -1.64,
         "type": "index"
       },
@@ -996,110 +989,110 @@
       },
       {
         "symbol": "VIX",
-        "price": 25.55,
-        "change": 11.52,
+        "price": 25.5,
+        "change": 11.31,
         "type": "index"
       },
       {
         "symbol": "RUT",
-        "price": 2706.081,
-        "change": -1.34,
+        "price": 2702.536,
+        "change": -1.47,
         "type": "index"
       },
       {
         "symbol": "ES=F",
-        "price": 7337.5,
-        "change": -1.36,
+        "price": 7345.5,
+        "change": -1.26,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26922.25,
-        "change": -1.33,
+        "price": 26996.75,
+        "change": -1.05,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 50747.0,
-        "change": -1.79,
+        "price": 50737.0,
+        "change": -1.81,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2710.7,
-        "change": -1.48,
+        "price": 2708.4,
+        "change": -1.56,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 85.63,
-        "change": -0.1,
+        "price": 85.69,
+        "change": -0.03,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3849.1,
-        "change": -0.1,
+        "price": 3850.3,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 47.09,
-        "change": 0.65,
+        "price": 47.16,
+        "change": 0.8,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1417.8,
-        "change": -2.09,
+        "price": 1418.0,
+        "change": -2.07,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 967.5,
-        "change": -0.44,
+        "price": 967.0,
+        "change": -0.49,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.18,
-        "change": 2.02,
+        "price": 3.19,
+        "change": 2.05,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 190.52,
-        "change": 0.04,
+        "price": 191.46,
+        "change": 0.51,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 63868,
-        "change": -1.67,
+        "price": 64029,
+        "change": -1.42,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1794.04,
-        "change": -1.22,
+        "price": 1802.44,
+        "change": -0.87,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 72.87,
-        "change": 2.29,
+        "price": 73.24,
+        "change": 2.72,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.13,
-        "change": 0.24,
+        "price": 9.17,
+        "change": 0.75,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.12,
-        "change": -0.3,
+        "price": 7.15,
+        "change": 0.26,
         "type": "crypto"
       },
       {
@@ -1109,9 +1102,9 @@
         "type": "mover"
       },
       {
-        "symbol": "ACM",
-        "price": 80.56,
-        "change": 14.27,
+        "symbol": "BILL",
+        "price": 64.97,
+        "change": 19.25,
         "type": "mover"
       },
       {
@@ -1145,9 +1138,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SNAP",
-        "price": 5.49,
-        "change": 4.47,
+        "symbol": "NVDA",
+        "price": 155.46,
+        "change": -4.54,
         "type": "mover"
       },
       {
@@ -1157,18 +1150,18 @@
         "type": "mover"
       },
       {
-        "symbol": "MSFT",
-        "price": 506.24,
-        "change": -3.37,
+        "symbol": "^DJI",
+        "price": 50759.42,
+        "change": -3.03,
         "type": "mover"
       }
     ]
   },
   "business": [
     {
-      "title": "Jensen Huang Is Willing to Return as Nvidia CEO If Board Allows It",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUDhHWUU2NndLcmRrRWV3VnhTX1J6T0g0WFpXY2pZUkp5SWFIckpDclYxTXFxMEhPNXV3SEZZWmtkOVZlR1d2Tm9ycnBlb1Q4R2FkaXlieWMwakdqdFRQNTdxZ0VwSGI5aVl6NThXcENJb25wWWJRU0I3MTRJR214SVBBbUR5TkFTZnZWdDZWYWg2UlN2Rk9aREJ4WHB4SXQyVjVIYmR0bkhPNVpTS1lN?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Jensen Huang Says He Would Return as Nvidia CEO if Asked",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTjI2WlkxTmMzSkt5elM5dU1XRkoxbXhWUTJMOU12TmQ4RUt2QjFMYnNYX1dIa1F5ODlRbjQ1MlhzS3BnS2k2cFBwbVhRancteG84TUhIN2VGdU9kVlJ2WWFvQ0h3TUw2eFZuWG5BTzVWXzJqWFRLV1NaUlo4WUVDQUdmeHRkTkU?oc=5",
+      "source": "The New York Times",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1176,9 +1169,9 @@
       "author": ""
     },
     {
-      "title": "FAA pauses installation of new routers after ground stop",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lOUR5Z2FVYl9wcUNQU1VzNkN4LVk0d3lCMzQ2X1hPaEdFdVl1VkZnVk83cndNcjZzNExYdHJ1cVE1M3JtUVVJUUVaQjNueC1UZk9WbHBpQUhMZG1EeG9iVUEwQTFVVXQ0c0YyYtIBckFVX3lxTFAxcllCeTNjOS1HNXRaU2VOaW90eXdiZjF4S0ZjY3ZCRURfOG00WjhaU192Skk4QjlVM0pMaTl2RkdydjRSZWJQOE9meVhMTzhBNWdBd0JOZHFIYWYxczFmMHV3LWh1cWlBYjN3S1JPcVhYZw?oc=5",
-      "source": "CNBC",
+      "title": "Sean Duffy\u2019s attacks on past FAA ground stop resurface",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ZMmIyZWxGanVMbm4zdGhnTFBVWUs3QmdnUTRIM2tUY1FiRGl6UWRhTVU3bVZLcFVZLVRqS3VPQjJldlVWdTkwRE5SNFhlQ3BYSEQzaG1zWDdTZG5nMXpIYVRCSjNKdjJJQkktV1RZSUtUM1UtTHlVSQ?oc=5",
+      "source": "CNN",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1186,18 +1179,8 @@
       "author": ""
     },
     {
-      "title": "Inside the $900bn data centre bet behind Anthropic\u2019s IPO",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaXdpVWZiRFU5dElrTVNCZDRuT1FrS3RucmlrMUhBaHFxSFc2Y2NwM2I0Sjg2SXlmQTAwdHhMRWp1M0FkbFNLbmloSl91SXVzWk03MzBlRWlLM3ozS2g1T3FNNkJfN09FUmQyaUV3MFd4eElaS19EOXRiUzFodHMxNjZaX08?oc=5",
-      "source": "Financial Times",
-      "category": "business",
-      "published": "Tue, 17 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Nvidia earnings live: Nvidia to report Q3 results after the bell with Colette Kress to host first call as interim CEO",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOSXZmeGxteXhISDdpYWJ5RllBWVZCeHVZRE1KUWdfVW1QemtGbXZVQ2QyZFZzMWV3dUMwcEkxdzZVelc3M28wMnR3QTFNSFo2SDRsMGtzNE96NjhMUXZQZEsyVHB6OGhvVTRoTDFPeUQ2bk9VekF4STZNZWxrWmp3MXRmbGdubUdJZmdaMXR3UGZRUDJhV3oydm5lbUdHR2UzR0p2LWhMTHZKeWFXbkpOdG9Ia2dNcVpiRFlDR1pGSEtLOW5aVDUzemM1ZnBWbTBFSTIyX0VVeE9XRWg0VjFjd0I3N19HVGpZdHRVcEthbHFPblZlM1pHUmwyQnVXV0JpeXVn?oc=5",
+      "title": "There's 'no difference' between buying Anthropic's IPO and Amazon's IPO: Kevin O'Leary",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcWdoaElWZFVjaVc3dTdpdE54R1lhRm5iR1liaHAtYi02TEJQci1pZzBjYXF5T0dzUjZFeVlCYUliMzZRcGx4YUM1QmlqeHFZb3BuMTNJR2ZyOTdOU05rbHVUOXg4Y0RmRGZ3TlVFUWxNeklJa1poT2x2TnliMmpmaTg1Ykd5OGpmYWtUWDBlMURxUUdQUjJKN1l6S2ZBSlVkREk2TnFPZVdDT3hLUVpvZm80NVVqbW95ZVVNWGI1UnQtR25WVnZzZkpCcFlwMEo2YnhZdWsxQmpfN0k?oc=5",
       "source": "Yahoo Finance",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
@@ -1206,9 +1189,9 @@
       "author": ""
     },
     {
-      "title": "Wall Street falters ahead of Nvidia earnings, Anthropic debut",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOemNySVhGbms1VkxVYXFsTFdtdVh1MjNQQk16Y1ZfNGFHMFhDRWUtZldZRzJzSWxpNlBLWVpTenJnU2FHZndaVUlEclFtQVNvTzJBWTNpM1p0N3dmWjlyMEFKbkowZkpSanhVcEVLUjZfOWxNcW5OZVFuLTNFNF93ZDd4b0wxX1VzNlJPODdqc0xob1ZrR0xuQkJ6bExvNDdQMk5saFVSdkVBZw?oc=5",
-      "source": "Reuters",
+      "title": "Nvidia earnings live updates: Wall Street braces for first report since Huang's ouster",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9iM3pFNTMyc0NDSXdVbjV1RFhtMjMybWRUcWtGOGRsVllWSS1Yd2Y0emU4MXNVbUpoUUUxTVZ5ck8xem1nNjVuNUl2VVFzLXNMZU1nZlRPNDJTRG9uaFhkbXpSdzNhQW9lWDZQbUtHUnRZeDBlaUl2Y3pDcErSAYIBQVVfeXFMTXV5dkdmRTlzLVlhbUdHREtUSWs2M09MRm8yYldyTkhnZllMWUdFZHh4cVo1Z0FlUmRld3ZnUmVuMV9OanU0em9oTmF2MjNoNGZ0T282eDZialBxU3g1Nkt5aFVrSzdHbmh0Y1I5aFZhRDZjQWdWX0Q3aXNVaV9DeFA2UQ?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1216,9 +1199,29 @@
       "author": ""
     },
     {
-      "title": "Facing Criticism, Trump Administration Says It\u2019s Investigating Megaspeed",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTjlYNkZqS1JmMS1aX1ktNU5VODNFTTZ6MHJDM1hWVmhoWEFxS0RfVzBVRlhxcnVNc09xWlhROFVvbzZGd2xkMmtYR0ZteTVuLXVlX042dmFzUVp3aTlUZUJLQy1ycDF6ckNON2dUWXlTMDB6S2JxRkNnMEVIMlQ4dE1DRDFGanVqZ0RsSHBKaWpyV0J1?oc=5",
-      "source": "The New York Times",
+      "title": "Stocks Fall in Countdown to Nvidia\u2019s Earnings Test: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSHFoREFNUWJRYTJxR0pTRnpHM2Q1NlhjQ1pjN0w3U1FWM09sclNuMlVNLWx4YXF0TURpOEdtSk9sc3BXTEpBakhLd21neWhod2pvZ1hRNVAtZWxNTlZmUXl4TXNJQ0MyTTFqa0tpRGVmOVpQZlRidlZzYkFLYnlNSXduLUtPSXo3QUJ0aVhlM0xWVFNh?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Tue, 17 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Commerce, DOJ defend probe of Nvidia-linked firm as blacklist pressure mounts",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX2lRZExHWGsyXzk1UklndTh6TnZ2My1OR0hQQXhpaVhKSmVBVTVkNjJfaWFPME44ZlhxbkRGTFM0ZjNjdV9MVS1ldjVza1RVTlNlUldwVnZvaFpKOWlwWk1YWWxUVE5QQUp5MVNCVVdzN0trZVFuLWwzcFFlZlJPem5CRXN2eEc2SVlTNkNwbFRzQnlwc0Vlamk5anRHaE1VLXdZbFoyWkZBdTM0V3JVRjZ1N2hKSEVXYk9yUktVUnFwUGk4MTFz?oc=5",
+      "source": "Politico",
+      "category": "business",
+      "published": "Tue, 17 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Fed official Lisa Cook refuses to attend White House firing hearing, citing bias",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWnFMSGJVWDllNG5oN1NENTBUazVCSTA4d3h1NHhkejJxekNvYnlJTlV5VlIwS3cyQkJINUpvcFcyM1Q5Z0xOMUJqdTVneDV1UWFRbmQwSWR0dHR0Wkpzd1NsM3R1T2k3YlE4NWVxRjZNQWdZSkJjU01wbVZHY2ZpazVlZ081eUFEVDVjUEk2THlVanVMWEZUN1JBbkxEYnZEREkxcVlZclk4SGxiQnNOb3hxRXZTbWpMejFTcVY0bDRhMlFJcktN?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1229,16 +1232,6 @@
       "title": "Apple services, including iCloud, App Store, Apple Music, and more, hit by outage",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSk8wWVhKbFhaQ0ZxVGNYUmlERkotWEFkOFNkLWFCaDlJbmRSdDYxMnVaREVLSVh6WGJxMURwR25uM2E3ZWROU2VGUkFHRGlEcVBfR2pnWWtzNUQwWGwyVUtCVy0yNmRIQkdaWWZ1eXZsRDB1Sm1nZVllZ2VmSVQ2b1FoN21kTldteDJidE85YkZmMW9ZNGZ1VmNVMVd2NlZBdWFlTi1qdE1nQQ?oc=5",
       "source": "TechCrunch",
-      "category": "business",
-      "published": "Tue, 17 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Spending slowed for retailers in October as high prices gave shoppers pause",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUnhodTU0QTZJVUtLNU5HT216MHpfWkQ1Q0QybkhIVzlEcDF3a29mX2E1X19PbGY2a0RON0J0bUN3ZFFWSi12M1lDTmxMQm9DMVZULUk1UDl4UHNoaG1oa054Z1Ewd2NUeHA1NzhFWDd5Rk1LSEJOOVV3bGNkeGswd3JQWkhvVHJVSEZLR25kOXVyMExzeVRV?oc=5",
-      "source": "AP News",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1278,16 +1271,6 @@
       "author": ""
     },
     {
-      "title": "You can now assign Gemini \u2018tasks\u2019 for free in six countries",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBieE1yRHFqZi1JdnZUZGkzTE0td2wzcVB4MWpjMDRDS0JSMHg1WG9RXy1CV3ltN1BKVzBpWkFscUUyQVQ4T3l0RmEwVGZXZ2lVTG9IYWk3Yms4dWpWb0JIZFhR?oc=5",
-      "source": "9to5Google",
-      "category": "business",
-      "published": "Tue, 17 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Google makes it easier to use Gemini without training AI on your data",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb291c3Q3S0JBZVg5R3FWNzB6UG5zS0hzYWVYUDZKMTJhYmNHR0dUVEc2VlNsVUZJRi1TOHFyNDJ0TGF0cjhWekpuRTlVYzlzNTNQaG9CYUhLUFdhUURPUU0tZVhZT3p6MElldGFlWG02UDFwTU5KSkhUeEtISFdsbzBrbkFkQk8zdVlLRzI1Y0RuMGFsOXd6eXh5Zlg3MGNxTHBnNlhjVGJyeDNXelEybm5pRWlBTDA?oc=5",
       "source": "Ars Technica",
@@ -1308,9 +1291,9 @@
       "author": ""
     },
     {
-      "title": "iPhone Duo gets one of Face ID\u2019s best features with upcoming iOS 27.3 update",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZW83d3gzQV92ZldabFU4RVd0Q0g2R1kwRDYyMTdSVDV5M0NLWnR5V0J4bmZSYUlGc3pCM3c4ZktOQTRIVVlxcjNUQW5xTTcxNnNHUTZ5ZTcyVVlJeEJyaXVRZ3Rhd28wYU9IWDJCenBuelhSRkw5WnhzdDRtV29LUVZvSzJEdXU3dEgyYlkxaXZiY3BYOGEtMlJkVlJHTDFNcVJiNWtsempZWDg?oc=5",
-      "source": "9to5Mac",
+      "title": "It appears Samsung is returning to edge-to-edge displays in preparation for the iPhone 20 Pro",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWVBWaXpSSkg4N1B1WFJnRHdFd2ttQi1jUWlFbkhadHlkV1dzM0JhN042dFBKVzZUZW5iMi1UaTBJMENGMURESXZLZ3Ruc1JEd1cySnpiOFJuaUNpM2RnbHZVbGhZaEFadUtxYnVpV0xWbnpWYzJrckN4dXFOb1ExYW50UWpkSzFUOHBNWE9WdEZYcmFFbXIwUG5pOG4xRjgxaTYzdmdNMWl3UHRW?oc=5",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1318,9 +1301,19 @@
       "author": ""
     },
     {
-      "title": "Grand Theft Auto VI Revs Up for a Worldwide Takeover",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcHI5Zm5VaXktajRJNnl3MG1nN0N4am9oV2VYbUc2Ym5wMUZIdF83RXNCanBUWVdLRk5LSlhIaGhyUlVpVWN0ZlFLNmp1RjRwajlodUdwaWptd0hjaVBwZEQzX0ZUdG15ejNIUUx0dGlDdEJZS1dqbk1NcGZtSnZCLS1pbw?oc=5",
-      "source": "The New York Times",
+      "title": "The Game Awards Nominations 2026: \u2018GTA 6\u2019 Lands Game of the Year Nom Ahead of Thursday Release",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT0JTUFlEMy1QZ3FfekNuQWFlTW5Uc2lLMXVYOWU2dnVtTTlvX2dsZnlVZl9sQ3pCelhZcUkyYmhIUnIwVmNVTVF2MEhmbERJSGVDRzFXSUZ6YWlPczRNLU91cW9YVG1xZjZCTHN5WFE4RGxveThFY2E1cXRFU1BSMnNBQ2VzX0JWRHc?oc=5",
+      "source": "Variety",
+      "category": "business",
+      "published": "Tue, 17 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Take-Two lays off Firaxis employees on eve of Grand Theft Auto VI launch",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeFRCbUVieWgxNFcwMzloNDdsNWI3a3AxRVNheWVQODhYM1RqUjFMeFVkSG9DRTJKc3hPT1ZTXzFFVWxQcGE1ZVhvQVY2Xy1NUDg1T0RSeUhQTGxtNUliY3FXZEZTVlJJd3BsNVY4ZVZhbm1PNDlnbjFTR2ZnRmxzU0JWSFBUR2xYdnpYSDZ1VElqMkt4cmx4d2hWVENFbTUzbDlMV0s2Y3RFakhtYlI0cQ?oc=5",
+      "source": "Game Developer",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1344,6 +1337,14 @@
       "published": "Tue, 17 Nov 2026 ",
       "description": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked.",
       "relevance_score": 10
+    },
+    {
+      "title": "US Navy chief says Iran war has put \u2018strain\u2019 on maritime forces",
+      "url": "https://www.aljazeera.com/news/2026/11/17/us-navy-chief-says-iran-war-has-put-strain-on-maritime-forces?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Tue, 17 Nov 2026 ",
+      "description": "Lawmakers hound Hung Cao over expanding war, opaque leadership shake-ups, and low crew morale at confirmation hearing.",
+      "relevance_score": 7
     },
     {
       "title": "Russian military plane crashes killing all 19 on board",
@@ -1530,7 +1531,7 @@
     "changePercent": -0.72,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 17 Nov: 27,001.78, down -0.72% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, modest -0.72% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-17T16:01:13.622040"
+    "timestamp": "2026-11-17T16:07:23.500664"
   },
   "sticky": {
     "cnbc": [
@@ -1669,72 +1670,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7337.75,
-      "change": -101.25,
-      "change_percent": -1.36,
+      "price": 7343.75,
+      "change": -95.25,
+      "change_percent": -1.28,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26922.75,
-      "change": -361.5,
-      "change_percent": -1.32,
+      "price": 26996.75,
+      "change": -287.5,
+      "change_percent": -1.05,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 50749.0,
-      "change": -921.0,
-      "change_percent": -1.78,
+      "price": 50731.0,
+      "change": -939.0,
+      "change_percent": -1.82,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2710.8,
-      "change": -40.6,
-      "change_percent": -1.48,
+      "price": 2708.1,
+      "change": -43.3,
+      "change_percent": -1.57,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 85.63,
-      "change": -0.09,
-      "change_percent": -0.1,
+      "price": 85.69,
+      "change": -0.03,
+      "change_percent": -0.03,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3849.4,
-      "change": -3.6,
-      "change_percent": -0.09,
+      "price": 3850.3,
+      "change": -2.7,
+      "change_percent": -0.07,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 47.09,
-      "change": 0.31,
-      "change_percent": 0.65,
+      "price": 47.15,
+      "change": 0.37,
+      "change_percent": 0.79,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1417.8,
-      "change": -30.2,
-      "change_percent": -2.09,
+      "price": 1418.0,
+      "change": -30.0,
+      "change_percent": -2.07,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 967.5,
-      "change": -4.3,
-      "change_percent": -0.44,
+      "price": 967.0,
+      "change": -4.8,
+      "change_percent": -0.49,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.18,
-      "change": 0.06,
-      "change_percent": 2.02,
+      "price": 3.19,
+      "change": 0.07,
+      "change_percent": 2.08,
       "name": "Natural Gas Dec 26"
     }
   ],

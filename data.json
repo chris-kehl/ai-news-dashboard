@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17T09:16:15.001879",
+  "timestamp": "2026-11-17T09:19:16.445136",
   "summary": "Key topics today:\n- - Regulatory Capture by Anthropic Through METR (r/HackerNews, 101 pts)\n- - How the Claude Code team thinks about verification (r/HackerNews, 101 pts)\n- - Carnegie Mellon is putting computer science courses on YouTube for free (r/HackerNews, 1 pts)\n- - New Evidence Shows School Phone Bans Are Gradually Improving Test Scores (r/HackerNews, 1 pts)\n- - VisualBasic.World: A gallery of Planet Source Code programs from 1997 to 2012 (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,14 +27,6 @@
       "text": "TAO +3.2% @ $194.54"
     },
     {
-      "type": "buy",
-      "asset": "GMM",
-      "price": 2.01,
-      "change": 86.11,
-      "category": "stock",
-      "text": "GMM +86.1% momentum @ $2.01"
-    },
-    {
       "type": "sell",
       "asset": "AAOI",
       "price": 45.16,
@@ -49,6 +41,14 @@
       "change": -13.84,
       "category": "stock",
       "text": "AMD -13.8% drop @ $504.28"
+    },
+    {
+      "type": "sell",
+      "asset": "COHR",
+      "price": 203.43,
+      "change": -12.34,
+      "category": "stock",
+      "text": "COHR -12.3% drop @ $203.43"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-17T14:16:05.810741",
+    "timestamp": "2026-11-17T14:19:05.878557",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-17T14:15:40.653147",
+    "timestamp": "2026-11-17T14:18:40.013246",
     "trending": [
-      {
-        "symbol": "GMM",
-        "price": 2.01,
-        "change": 0.93,
-        "change_percent": 86.11,
-        "name": "Global Mofy AI Limited"
-      },
       {
         "symbol": "AAOI",
         "price": 45.16,
@@ -512,6 +505,13 @@
         "name": "S&P 500"
       },
       {
+        "symbol": "UNH",
+        "price": 412.02,
+        "change": 6.89,
+        "change_percent": 1.7,
+        "name": "UnitedHealth Group Incorporated"
+      },
+      {
         "symbol": ".RUT",
         "price": 2742.941,
         "change": -47.55,
@@ -526,18 +526,18 @@
         "name": "DJIA"
       },
       {
+        "symbol": "YM=F",
+        "price": 51249.0,
+        "change": -421.0,
+        "change_percent": -0.81,
+        "name": "Mini Dow Jones Indus.-$5 Dec 26"
+      },
+      {
         "symbol": "DIS",
         "price": 118.7,
         "change": 0.47,
         "change_percent": 0.4,
         "name": "Walt Disney Company (The)"
-      },
-      {
-        "symbol": "LEN",
-        "price": 83.79,
-        "change": 0.21,
-        "change_percent": 0.25,
-        "name": "Lennar Corporation"
       },
       {
         "symbol": "HD",
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-17T14:16:00.389617",
+    "timestamp": "2026-11-17T14:19:02.115409",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7429.75,
-        "change": -0.12,
+        "price": 7428.75,
+        "change": -0.14,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27375.25,
+        "price": 27373.5,
         "change": 0.33,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 51257.0,
-        "change": -0.8,
+        "price": 51242.0,
+        "change": -0.83,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2738.6,
-        "change": -0.47,
+        "price": 2738.7,
+        "change": -0.46,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 87.11,
-        "change": 1.62,
+        "price": 87.17,
+        "change": 1.69,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3862.1,
-        "change": 0.24,
+        "price": 3858.5,
+        "change": 0.14,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 47.35,
-        "change": 1.22,
+        "price": 47.36,
+        "change": 1.23,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1435.2,
-        "change": -0.88,
+        "price": 1432.6,
+        "change": -1.06,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 985.5,
-        "change": 1.41,
+        "price": 984.0,
+        "change": 1.26,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.06,
-        "change": -2.11,
+        "change": -1.86,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 194.66,
-        "change": 3.2,
+        "price": 194.57,
+        "change": 3.01,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64975,
-        "change": 0.99,
+        "price": 64967,
+        "change": 0.83,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1824.86,
-        "change": 0.38,
+        "price": 1823.99,
+        "change": 0.25,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 73.89,
-        "change": 3.77,
+        "price": 73.85,
+        "change": 3.58,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.34,
-        "change": 1.83,
+        "price": 9.32,
+        "change": 1.5,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.27,
-        "change": 1.96,
+        "change": 1.78,
         "type": "crypto"
       },
       {
@@ -1166,8 +1166,8 @@
       },
       {
         "symbol": "YM=F",
-        "price": 51264.0,
-        "change": -0.79,
+        "price": 51243.0,
+        "change": -0.83,
         "type": "mover"
       }
     ]
@@ -1204,9 +1204,9 @@
       "author": ""
     },
     {
-      "title": "Disney turns to job cuts in latest cost blitz",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVTV3Q3c5eXh4UHN2d2w5cjhzcTlrM3lXUXpDdFJEejNzX3d1QzJGVkVGaUVPVFZrTmpZSFNuUnZEWERUMEZoZ0tnZVZycWdRZWg0NEY5QmJPNTBIZlRWd3BCNlNpcG16RUN2aUJvdWhzaDVacFhFMEFTdU12MEwtRXdMb1Q?oc=5",
-      "source": "Financial Times",
+      "title": "Disney theme parks and streaming services thrive as new CEO seeks $3 billion in cost savings",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSUtmclp6cXdFd2YwMkhFRkVKd0J4bEdiRXRaTndpTjFTX21XU0JRUkVLQmJNZldFTTlJYmt3Qkl6bUd3cUdLLS1PRnZFU1JWM3pkRVdoZmhFUFI0OFM1VmxGN2tpR2F0OGhOTGZfOGRlSFBPZ2xmV3lxUl9qODFhOXhjTXo4cWd3NVNpY1VaRU1sQy10RGRZdWFMem5mUnc?oc=5",
+      "source": "AP News",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1234,9 +1234,9 @@
       "author": ""
     },
     {
-      "title": "1.5-hour-long system outage forces United Airlines to delay departing flights",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2xoSnd5Sm9rYTl5eFVRVzc2MFlNSk5qNUJRckg2X0tVazZEZG4wNTVVYW9JeWNyY1J6TWlKS0VURXd1c1JzUUdYU01WQzhQNWhkOEVCOXo4TTlLSnFNanUzVW9BYkZMOVBSb3ZfRnFMWXZFSGp1ZE5vSF9MTEd3VmxSTGI0YlR1VlE?oc=5",
-      "source": "AP News",
+      "title": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SS3JxeW90T240aEQ1WW5aWFk3M1NDeWhfb0tfTmNraGwwNE1rOExjOXByREE5cjBLS3ptWDZkRXRjbjNXVnR2ZUppRTRiaXhqTVpZbFRzRnhjQzI3NHlyUUo4VjJJamFDZ2RpU2dCTzE3MldfWmfSAXtBVV95cUxObjVfOW9nalRJSExPdmJEb2szZFJydVRpQ0ozVkwwbG9YNHNiUzhJbWhDUFpRUi13YzhGaGRZYmRpQ0duM0RWZ1RneWpYUzNxREQ2RUZLb2dLMmUzZlFOYmJzektMMFZzRV9VaU9vSG1DSVIzV3JYdGViUWs?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
       "description": "",
@@ -1244,8 +1244,8 @@
       "author": ""
     },
     {
-      "title": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SS3JxeW90T240aEQ1WW5aWFk3M1NDeWhfb0tfTmNraGwwNE1rOExjOXByREE5cjBLS3ptWDZkRXRjbjNXVnR2ZUppRTRiaXhqTVpZbFRzRnhjQzI3NHlyUUo4VjJJamFDZ2RpU2dCTzE3MldfWmfSAXtBVV95cUxObjVfOW9nalRJSExPdmJEb2szZFJydVRpQ0ozVkwwbG9YNHNiUzhJbWhDUFpRUi13YzhGaGRZYmRpQ0duM0RWZ1RneWpYUzNxREQ2RUZLb2dLMmUzZlFOYmJzektMMFZzRV9VaU9vSG1DSVIzV3JYdGViUWs?oc=5",
+      "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9QTzNuX1BGWUJiUFl0OU9kcWlLS1pRdnYwczFWN1BaVGFPdVlSMkNSLVZqRFVqcDgxNGZkN2pKUzBxSmxfck9MQW4wS19Nc1R4M1dobFhwd1h5cEoyc0tZM2EwaVVNVUFrUVphSGVMc296bEM5a1HSAXtBVV95cUxOcXZSZnVHbzQ0NUU4OFFNZGIyRGJfTW9kS24wMTh2WEhWMmJsQ18xdTFRU1N6cXNsNlJZUG5STGRQLTlnNmZXLU5uLUF0bG1TOUY0R3YyS2JWMEZvb3hURi1pTnJrdkd6LVZJR3hMeHozaEhmZVNldmxwQTQ?oc=5",
       "source": "CNBC",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
@@ -1266,19 +1266,19 @@
       "author": ""
     },
     {
-      "title": "Google beta lets you test \u2018Create My Widget\u2019 on Pixel 10 and 11 now",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xTmlOaEhCY1k5ZDJLakdiWTh6NW51YklINUlMUzhtNjZKUU81UURFb0VDMHJSbjFwNHJkTF9fLWI0cWxzS2QxbVdzRkZzRVN6a0RvZll6S3hhb08yOHBiS2tWR1B3bmhGVjVPOFB4Yw?oc=5",
+      "title": "Google\u2019s new \u2018Fast Switch\u2019 feature leaks, lets you use one number on two Android phones",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUTdIVlU3SVJDdy1kMkR6VXh3Nmt5TEJ2WV9FRmdRcXpKeFp6YkJDU0wwX3NTU0NmZmt0VmNKN2ZWZmZBclh0VWtobFBjNE9DZFVVRnJiZkRyMkJSUzFUd1NGTEg4N0E0RXlWRHNlXzBLTVVNaTRwV1BsOVE4UjNWMVBmOXAwNE0?oc=5",
       "source": "9to5Google",
       "category": "business",
-      "published": "Mon, 16 Nov 2026 ",
+      "published": "Tue, 17 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Apple to Let Users Face-Unlock iPhone Duo, Addressing Key Drawback",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaS1qX2lXTFNMeFRLM2NNV2tNalNwc3diMTdaUGcwbTE4WENOTGFzM3dTdF9fWmxrVHZPRUNZSS10aTlreTdrckVfQW1qT2stdXNha3ZPVmVmTzZBYV9pMXFPY25zUk9Ham1IbE9UbGU5Nmlpa0lYMjBBTE5HTnNJM0duN0pRR0pDV2xvU3NnMnpUUTR2R3N2OGFlaWlxdV9MMGpYdnVLMVk5YVBVdUd4Ujc3MmFyWE0?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Google beta lets you test \u2018Create My Widget\u2019 on Pixel 10 and 11 now",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xTmlOaEhCY1k5ZDJLakdiWTh6NW51YklINUlMUzhtNjZKUU81UURFb0VDMHJSbjFwNHJkTF9fLWI0cWxzS2QxbVdzRkZzRVN6a0RvZll6S3hhb08yOHBiS2tWR1B3bmhGVjVPOFB4Yw?oc=5",
+      "source": "9to5Google",
       "category": "business",
       "published": "Mon, 16 Nov 2026 ",
       "description": "",
@@ -1296,41 +1296,41 @@
       "author": ""
     },
     {
-      "title": "The Motorola Signature 27 Is A Beast",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZSU85cFB0UDcyUmdJTm5xU2xRN3p6RnRQZnFhczA4WVUyTFNkRkNSSXVma2hQWHVrS01keTlsLUJvZlNfMkk0N0ZnNWxZOUpmbzlFdmdwVUYzUEFmM25tZXUtN1VzUWdoQW9fcFpVR0k3Zw?oc=5",
-      "source": "Engadget",
+      "title": "Microsoft's Windows 11 hidden performance boost trick can ironically slow your system down",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd29jZVFZbDlXYmcyV1c2TGhsSFN5ZFQ4RURjZ2xJVWZFRVNjaldQdDlvYTBZeW95UV9fOVEtV1cxUFFxQS03anBjMXpjUDBkWDhqWE5uYXJKTDUwX1A0Sm52T3V2djVzWlp6MUVNQjZDR0Y3RW9zWVFxWUx2WjRyMGpMYVlQTGJmTW5idF91dzB0OUNKUVdsUHYtMFpsWk5lbFNrOE9tOEU4b1I0ZVJZQm5yMWphd0NrNWc?oc=5",
+      "source": "Neowin",
       "category": "business",
-      "published": "Fri, 13 Nov 2026 ",
+      "published": "Sun, 15 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Hands-on: Google and Samsung\u2019s vision for Android XR glasses is 20/20",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sVGZHZnRPX2p4Wm5OMkZPSUloc3VnaHVsYVVKRUNPQ1o5MGJVR0VjWEl1dnhhS0tlTmttMDdISGNJdWRJT1hmVlpHVXM4ajBNOC1WOTgwaDJ1TVA0VmVYMkJWLS02LU5qZWc?oc=5",
-      "source": "9to5Google",
+      "title": "Weekly poll results: GrapheneOS support was a great move for the Motorola Signature 27 - GSMArena.com news",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORDBPanJfZVM2WVh4eDFLd1lTajk4bjBpVWRnTmRfNHFHV2ZURHl4TFljSUtmU1FxWUg4S3JDbzNzSTljR1BjOFpzYVR5Szh6MmVWSFByNnN2YmxENnVKMG9mVGh1WFh6WFBNbHJJc2Jmem05U3B2SU1NMHRfUkRxS1V0aVh5ZFVxdkF0S2xXalRRS3BOTWNCeGlkVXNPS054b2xaamhoMDNUYVZGUkU2a3M1SzFYVW95YXUzTVJFZTBBTnPSAb8BQVVfeXFMUDBBeEhoV1N6Tllnelh1bnpqSE9SX25fSG1PQXc5Njk0OEg5OFVHM0RwYVZwMGtsMGhDcjVMcjRqZHpfWUpYZW92cnRqTlV4ZUdmeGswaUtfWlZ2Rzg0X1BJWVppbGFLSUhkYjVvY2RmWWpEVXRDTWJDNDNEMjJmOXd3czJsaHRQbFhyV3NaVmFMRnZuSE1TWWNkcGlhUFdiZXlac3pqMS1ocUpUUjI4U1E5WTdEemd3TnNrN0pNREU?oc=5",
+      "source": "GSMArena.com",
       "category": "business",
-      "published": "Thu, 12 Nov 2026 ",
+      "published": "Sun, 15 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "'iPhone 20 Pro' Rumored to Be Based on iPhone Air",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1hWbFBFWVhJWjdUMlRhU2p1S2k5N18zb25HTzI0Sng0ODJTd01OZkZLYTBQMFl0ZFRYbFg1WDNfTUtMd2dJZnJ6QTJQMU5qT1NQX25sVW1lWGtQOTloN2lzSHVCNkdWNXJadjJPbklZUlY0eXk0aDFoWTdfUVllN3U4MA?oc=5",
-      "source": "MacRumors",
+      "title": "It appears Samsung is returning to edge-to-edge displays in preparation for the iPhone 20 Pro",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWVBWaXpSSkg4N1B1WFJnRHdFd2ttQi1jUWlFbkhadHlkV1dzM0JhN042dFBKVzZUZW5iMi1UaTBJMENGMURESXZLZ3Ruc1JEd1cySnpiOFJuaUNpM2RnbHZVbGhZaEFadUtxYnVpV0xWbnpWYzJrckN4dXFOb1ExYW50UWpkSzFUOHBNWE9WdEZYcmFFbXIwUG5pOG4xRjgxaTYzdmdNMWl3UHRW?oc=5",
+      "source": "PhoneArena",
       "category": "business",
-      "published": "Mon, 16 Nov 2026 ",
+      "published": "Tue, 17 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "Android Fast Switch looks like Google\u2019s answer to iPhone Handoff",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oR21LTWNsTGdTUXFJajZsSlR6SW1LZXp0a0NHOG91N3JqaV92OHBhaHBOaUptSDNFa3pWRURmX3lBeFpvUVRORGJiT0Y0RGpaTWR6VWJ0MklWWkJidl9DbXlHYXZ3bko1eFh5X04tRVV4anZNcDRUQg?oc=5",
-      "source": "Android Authority",
+      "title": "Grand Theft Auto VI Revs Up for a Worldwide Takeover",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcHI5Zm5VaXktajRJNnl3MG1nN0N4am9oV2VYbUc2Ym5wMUZIdF83RXNCanBUWVdLRk5LSlhIaGhyUlVpVWN0ZlFLNmp1RjRwajlodUdwaWptd0hjaVBwZEQzX0ZUdG15ejNIUUx0dGlDdEJZS1dqbk1NcGZtSnZCLS1pbw?oc=5",
+      "source": "The New York Times",
       "category": "business",
-      "published": "Mon, 16 Nov 2026 ",
+      "published": "Tue, 17 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1554,16 +1554,16 @@
     "changePercent": -2.67,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Tue 17 Nov: 27,197.15, down -2.67% -- BEARISH. price below SMA20, RSI 33.6 weak, MACD bearish, strong -2.67% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-17T09:16:12.710183"
+    "timestamp": "2026-11-17T09:19:13.149401"
   },
   "sticky": {
     "cnbc": [
       {
-        "title": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
-        "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
+        "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
+        "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
         "source": "CNBC",
-        "published": "2026-11-17T13:53:04",
-        "description": "Steve Eisman is appearing on \"Squawk Box\" on Tuesday."
+        "published": "2026-11-17T14:18:08",
+        "description": ""
       },
       {
         "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
@@ -1580,6 +1580,13 @@
         "description": "Trump threatens Iran and responds to a tax leak report as his Asia trip begins."
       },
       {
+        "title": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
+        "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
+        "source": "CNBC",
+        "published": "2026-11-17T13:53:04",
+        "description": "Steve Eisman is appearing on \"Squawk Box\" on Tuesday."
+      },
+      {
         "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
         "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
         "source": "CNBC",
@@ -1592,13 +1599,6 @@
         "source": "CNBC",
         "published": "2026-11-17T06:59:42",
         "description": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024."
-      },
-      {
-        "title": "Investors look to Nvidia's earnings and Anthropic's IPO to refresh the tech rally",
-        "url": "https://www.cnbc.com/2026/11/17/nvidia-earnings-anthropic-ipo-tech-rally.html",
-        "source": "CNBC",
-        "published": "2026-11-17T13:11:40",
-        "description": "How the market set-up is more favorable for the Anthropic IPO than the lead-up to SpaceX's debut."
       },
       {
         "title": "Trump\u2019s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
@@ -1693,44 +1693,44 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7429.75,
-      "change": -9.25,
-      "change_percent": -0.12,
+      "price": 7428.5,
+      "change": -10.5,
+      "change_percent": -0.14,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27375.25,
-      "change": 91.0,
+      "price": 27375.0,
+      "change": 90.75,
       "change_percent": 0.33,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 51259.0,
-      "change": -411.0,
-      "change_percent": -0.8,
+      "price": 51241.0,
+      "change": -429.0,
+      "change_percent": -0.83,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2738.8,
-      "change": -12.6,
-      "change_percent": -0.46,
+      "price": 2738.5,
+      "change": -12.9,
+      "change_percent": -0.47,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 87.13,
-      "change": 1.41,
-      "change_percent": 1.64,
+      "price": 87.19,
+      "change": 1.47,
+      "change_percent": 1.71,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3863.0,
-      "change": 10.0,
-      "change_percent": 0.26,
+      "price": 3859.6,
+      "change": 6.6,
+      "change_percent": 0.17,
       "name": "Gold Dec 26"
     },
     {
@@ -1742,23 +1742,23 @@
     },
     {
       "symbol": "PL=F",
-      "price": 1435.3,
-      "change": -12.7,
-      "change_percent": -0.88,
+      "price": 1433.5,
+      "change": -14.5,
+      "change_percent": -1.0,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 985.0,
-      "change": 13.2,
-      "change_percent": 1.36,
+      "price": 984.0,
+      "change": 12.2,
+      "change_percent": 1.26,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.06,
-      "change": -0.07,
-      "change_percent": -2.11,
+      "price": 3.07,
+      "change": -0.06,
+      "change_percent": -1.83,
       "name": "Natural Gas Dec 26"
     }
   ],

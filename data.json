@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-18T01:16:13.637752",
-  "summary": "Key topics today:\n- - Harvard researchers find AI coding agents shifted the bottleneck to code review (r/HackerNews, 201 pts)\n- - Google's AI answers reducing search traffic by 40% (r/HackerNews, 101 pts)\n- - GPT\u20116.2 Astra and Sol (r/HackerNews, 101 pts)\n- - Nvidia stopped disclosing Singapore sales as revenues hit $104B (r/HackerNews, 101 pts)\n- - MAI Code 2 and Code 2 Flash (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-18T01:22:02.927690",
+  "summary": "Key topics today:\n- - Harvard researchers find AI coding agents shifted the bottleneck to code review (r/HackerNews, 201 pts)\n- - GPT\u20116.2 Astra and Sol (r/HackerNews, 101 pts)\n- - Google's AI answers reducing search traffic by 40% (r/HackerNews, 101 pts)\n- - Nvidia stopped disclosing Singapore sales as revenues hit $104B (r/HackerNews, 101 pts)\n- - MAI Code 2 and Code 2 Flash (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
@@ -36,19 +36,19 @@
     },
     {
       "type": "buy",
-      "asset": "BILL",
-      "price": 64.88,
-      "change": 19.09,
-      "category": "stock",
-      "text": "BILL +19.1% momentum @ $64.88"
-    },
-    {
-      "type": "buy",
       "asset": "AZI",
       "price": 0.73,
       "change": 18.7,
       "category": "stock",
       "text": "AZI +18.7% momentum @ $0.73"
+    },
+    {
+      "type": "sell",
+      "asset": "MSTR",
+      "price": 96.5,
+      "change": -13.55,
+      "category": "stock",
+      "text": "MSTR -13.6% drop @ $96.50"
     }
   ],
   "reddit": [
@@ -61,19 +61,19 @@
       "created": ""
     },
     {
-      "title": "Google's AI answers reducing search traffic by 40%",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://revscope.co/blog/search-seo-geo-2026/",
-      "created": ""
-    },
-    {
       "title": "GPT\u20116.2 Astra and Sol",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "created": ""
+    },
+    {
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-18T06:16:01.491771",
+    "timestamp": "2026-11-18T06:21:36.785436",
     "prices": [
       {
         "name": "Bittensor",
@@ -298,7 +298,7 @@
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Wed, 18 Nov 2026 ",
-      "description": "The prime ministers tells the BBC he wants to get \"stuck in\" after the Milburn report proposes wide-ranging changes to help unemployed young people."
+      "description": "The prime minister tells the BBC he wants to get \"stuck in\" after the Milburn report proposes wide-ranging changes to help unemployed young people."
     },
     {
       "title": "Chris Mason: Milburn may have gifted Labour MPs a moral argument for welfare reform",
@@ -438,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-18T06:15:39.144186",
+    "timestamp": "2026-11-18T06:21:14.471612",
     "trending": [
       {
         "symbol": "SLS",
@@ -446,13 +446,6 @@
         "change": 11.29,
         "change_percent": 143.64,
         "name": "SELLAS Life Sciences Group, Inc"
-      },
-      {
-        "symbol": "BILL",
-        "price": 64.88,
-        "change": 10.4,
-        "change_percent": 19.09,
-        "name": "BILL Holdings, Inc."
       },
       {
         "symbol": "AZI",
@@ -504,10 +497,17 @@
         "name": "NVIDIA Corporation"
       },
       {
+        "symbol": "COHR",
+        "price": 210.86,
+        "change": -7.29,
+        "change_percent": -3.34,
+        "name": "Coherent Corp."
+      },
+      {
         "symbol": "GC=F",
-        "price": 3788.3,
-        "change": -75.9,
-        "change_percent": -1.96,
+        "price": 3785.4,
+        "change": -78.8,
+        "change_percent": -2.04,
         "name": "Gold Dec 26"
       },
       {
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-18T06:15:57.671392",
+    "timestamp": "2026-11-18T06:21:33.115583",
     "items": [
       {
         "symbol": "SPX",
@@ -1008,98 +1008,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7371.75,
-        "change": 0.17,
+        "price": 7372.25,
+        "change": 0.18,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 27183.0,
-        "change": 0.4,
+        "price": 27188.0,
+        "change": 0.42,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 50833.0,
-        "change": 0.04,
+        "price": 50829.0,
+        "change": 0.03,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2709.9,
-        "change": -0.05,
+        "price": 2709.3,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 84.68,
-        "change": -1.55,
+        "price": 84.62,
+        "change": -1.62,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3788.0,
-        "change": -1.97,
+        "price": 3786.8,
+        "change": -2.0,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 45.93,
-        "change": -2.87,
+        "price": 45.92,
+        "change": -2.9,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1398.8,
-        "change": -1.92,
+        "price": 1397.9,
+        "change": -1.98,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 951.5,
-        "change": -2.37,
+        "price": 951.0,
+        "change": -2.42,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.18,
-        "change": -0.78,
+        "price": 3.19,
+        "change": -0.62,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 195.9,
-        "change": 1.26,
+        "price": 196.23,
+        "change": 1.69,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 64616,
-        "change": -0.11,
+        "price": 64651,
+        "change": 0.11,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1811.11,
-        "change": -1.11,
+        "price": 1811.18,
+        "change": -0.88,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 74.97,
-        "change": 3.19,
+        "price": 75.01,
+        "change": 3.51,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 9.23,
-        "change": 0.65,
+        "change": 0.82,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 7.18,
-        "change": -0.05,
+        "change": 0.03,
         "type": "crypto"
       },
       {
@@ -1118,12 +1118,6 @@
         "symbol": "AAOI",
         "price": 45.22,
         "change": -9.36,
-        "type": "mover"
-      },
-      {
-        "symbol": "NBIS",
-        "price": 106.04,
-        "change": -8.5,
         "type": "mover"
       },
       {
@@ -1157,6 +1151,12 @@
         "type": "mover"
       },
       {
+        "symbol": "COHR",
+        "price": 210.86,
+        "change": -3.34,
+        "type": "mover"
+      },
+      {
         "symbol": "AMC",
         "price": 3.18,
         "change": -2.15,
@@ -1166,9 +1166,9 @@
   },
   "business": [
     {
-      "title": "Asian Stocks to Fall, Nvidia Sales Outlook Beats: Markets Wrap",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHhZZG5FcFhON3BCMkRyY201M2FVdVRTaUF2a29ScWc3ZTd4TkI1Zm44SXNOcmZoOE9tN29nalFxMllaQV9ZQVp5SFNKbFlmVWtxVmtjdGl4WVVRRnpFeVZaVjVCVGozeFVWYzF6NnM1dERENnQ5SWpLTlNsejBDS21mS2k2aUhQeHZHNU80V2dvbG9h?oc=5",
-      "source": "Bloomberg",
+      "title": "Stock futures rise as Nvidia gains on earnings beat and solid outlook: Live updates",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAwTDVScDA1ZzNHQi1GT1RaRFVzYTJPa2lHVVJyVzR6RlhfaGZNbG5Va1BFblNtYm54eG82YWl4dlA3SkltcC1WSmdCVEUtMlVKNXlCVDNVcG8wRnBaNkc0UVctakctUDdZUDJsNEp4dWN0Z0Vsczlv0gF8QVVfeXFMT014TXpKZ2hKbVhJT0dVekl1Z2tCbjE3MnMtLWhMUG1DaUc3UUd0emE1R2xPd2pDZXMzVXhGbHFVRmdWRm1iRWJnejN6YjJJYlpDWkxJOVhDS3RuRGUyQkhHZ2wzSzJJdnVrNDVqcHQxb2ZXVkUwSVRJcjE4RA?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Wed, 18 Nov 2026 ",
       "description": "",
@@ -1176,9 +1176,9 @@
       "author": ""
     },
     {
-      "title": "Nvidia rejects Jensen Huang\u2019s offer to return as CEO despite pressure from Silicon Valley",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObnhLd21OYlROQnV3Z2ZRc29BZlRubWM4T2tVN3d3ektLVUdiMXNSS1dhclFQNVZrUEVrdG5rUHFUY0ozQWJJRjFFVlFvVjJ0SC15eEdoUm1JUEdwY2FZdTgyNmNDQnozOWRXSGJBRlVHaC13M09mZ0U3em9hYkp2V1BFWHJvR2ViRFZGcEk5RE8yTWNwUmM5dlhBMC1oMGYzYzE3TXl5akNYTGlOb2c?oc=5",
-      "source": "AP News",
+      "title": "Jensen Huang agrees to testify in Senate",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYUVubGYyMjBZZXk2aUo5UXM5RGpNU3NmREM0NVcyQ0tpcDdxem9xM1BQUnhDWjdjTE1DcloyR2J6cDhSc2UzOHJ0eWFDbjU1cUdEVXc2dTM1Vkk5eUdFU0d5LW10MVVFUkVHZnBGYjZwcVRvZkhDZ1ZCWTVmSmF4U0hmZkxVNmtMaktKS0g0N3FJX25qM3k5dVdIMmd3RFpQenpsMjFNcmZVSGc?oc=5",
+      "source": "Politico",
       "category": "business",
       "published": "Wed, 18 Nov 2026 ",
       "description": "",
@@ -1196,11 +1196,21 @@
       "author": ""
     },
     {
-      "title": "A guide to the recent tech outages affecting airlines, banking and more",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94dEgzNU52MklCWk9peXNFUUg0bjhGTmhIdGRkcXRybXNjSG5YS2NDRnVQSkVXb195cnJGSUFyM2pydElsWkE2dGxIOUVrOUZWdGJCc3p0SmVPLWhpN2JNUGc0ZTRPMVRsa3Z1TERTWDNGTnpQ?oc=5",
-      "source": "SFGATE",
+      "title": "Interim Nvidia CEO Says It\u2019s No Longer Sending AI Chips to China",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVk5ZV2dpR3EyVEtJcVdSZTBCVGl6UE1qZ1gzNWdiaHJ3WGR1S3NUd2VRcWVzUWhjanFicXVzNi1zRWZNel9EdlVOaC1uMUFCckRXMkRGWkRZeHdZUnE4VTdtUkZ2N0dITkRYa040X29HanoxODdGVXV3NzEyOGhnR1VOb2VwcFNIcHFJQlFrNXM3T1hqQlN5WnB0MHJTU0R2cTZOUnBNbV9Ubm81clFKM0x5cHRxdw?oc=5",
+      "source": "Bloomberg",
       "category": "business",
       "published": "Wed, 18 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "How to Tell If It\u2019s a Cyberattack or Just an Outage",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUVRiZUNSNVJhVVpYYTRHdGktNWY2UWc3eV81emd3bGw5eEhNVmZ2cTdoTnlzN2oxeWZyLTIzVmZSMS1JeGRSNXZhcThfdEFOc3psQUVhelRWdWtUT2pzZ0IzTXBWRUgwaHpBQWtPZkhlU05HVmYxZEhPUGRxVFpNY1o1RUUxUQ?oc=5",
+      "source": "WIRED",
+      "category": "business",
+      "published": "Tue, 17 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1216,8 +1226,8 @@
       "author": ""
     },
     {
-      "title": "Nvidia is abandoning China after Jensen Huang\u2019s ouster",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdnRIYmFRMXJud2Y0bDNwTjVVSUlBN1FKNTNqMWhib1UxVHhqME1faU43TWluTWRlbEp4Q0RaRkF3VVNqRFlmc3BoX21xQ1Fob0EyX0w3ZmYwSElKUjlYNDJ1WkVCRGZtZnVSdDRhQWVid1F2Mzd0ZFpITzhFb1FwSnZTZUpPZ1VCbHpfRTY4Nl9iQQ?oc=5",
+      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang\u2019s exit",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcDRWN3ZsWTVWNkNia01rdTdxR0c4bnVsTS0xUFBWbG9EUWZCWnFKQVhWV0dXVUdVNmJhM3VpTFM4UWJDOGYxUVl2LTd5ZUlWWGVFX0RubWFRYThfV2lVU0tpWDJJM0V2cHljbUVqR3dBRE5yb2hscXBmU0I2NzRhRjBDS3dONmNCYnZrelRDWFRoNTFNS0t3cXRvVXRIcVBEa25YVjAxWHJ6ek56cERNbEFGY2I?oc=5",
       "source": "TechCrunch",
       "category": "business",
       "published": "Tue, 17 Nov 2026 ",
@@ -1226,21 +1236,11 @@
       "author": ""
     },
     {
-      "title": "Waymo temporarily pulls driverless taxis from all US freeways",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56cms1aDVBNHRUbmJyMEhQaDgtZWZ2OEVvenVyWHIzN19zWWp5UkR5bEN0YzNjWFBiaHhHclpTUTlSRzl5b3lHT1dPLXZkdHlJMndEY2Nxalk1T0k?oc=5",
-      "source": "BBC",
+      "title": "Waymo suspends all driverless taxi rides on freeways after ban in California",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWDB2R0RQRGVXUFMtd0M3YUoyRXlSaDZVWVBWRVBKT3gwc3MxQjN3a01fREpMdDFwWXRJaFZuQ0sxTUJzYXkyMGMwOGs5YVUxeUwwd2owRnRuRFl0NWxuT0VHZ2k0eHF1Q0tTc0NoVi1mYTQtM1NrQUUyZ0VzcngzQjZ1M1d6QWRwNzlnQm5qQ0JUVmNXN2NEQ3U5eFpJN3pGSTVUTmRtN1VHc1E?oc=5",
+      "source": "AP News",
       "category": "business",
       "published": "Wed, 18 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Apple outages appear to be resolved after internal update takes popular services offline",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS01oRGJLdFFiNUtzYUdLbTJHTGlFNTJsVkRudElwQjJWMU8teDQ1bUpONW5NMlBXTUZWeUxockJMVjN0bHNmdXZhWHlBbHY1STk3Zm9zcmdVcTVKbmxfM0dLdVR4SU5idUwwZjAwczFxNkNKVVpoZnctb0M3TG5xVjJpdHBGbDhKaERscDFOTDNQbE9UU2hLeGwyNHMzSmdkSmhxWg?oc=5",
-      "source": "NBC News",
-      "category": "business",
-      "published": "Tue, 17 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1422,42 +1422,34 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 305715,
+      "stars": 305769,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-18T05:13:49Z"
+      "updated": "2026-11-18T06:21:26Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 264281,
+      "stars": 264292,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-18T05:13:43Z"
-    },
-    {
-      "name": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "stars": 227657,
-      "language": "TypeScript",
-      "url": "https://github.com/anomalyco/opencode",
-      "updated": "2026-11-18T05:15:18Z"
+      "updated": "2026-11-18T06:21:27Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
-      "stars": 202696,
+      "stars": 202709,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-18T05:10:00Z"
+      "updated": "2026-11-18T06:21:28Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 193307,
+      "stars": 193366,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-18T05:15:27Z"
+      "updated": "2026-11-18T06:21:09Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
@@ -1465,55 +1457,63 @@
       "stars": 188082,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-18T04:22:17Z"
+      "updated": "2026-11-18T06:12:50Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 169317,
+      "stars": 169308,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-18T05:16:16Z"
+      "updated": "2026-11-18T06:21:33Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161387,
+      "stars": 161390,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-18T04:55:31Z"
+      "updated": "2026-11-18T06:14:06Z"
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
-      "stars": 149822,
+      "stars": 149826,
       "language": "Python",
       "url": "https://github.com/langchain-ai/langchain",
-      "updated": "2026-11-18T04:57:42Z"
+      "updated": "2026-11-18T06:17:39Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 149750,
+      "stars": 149776,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-18T05:06:00Z"
-    },
-    {
-      "name": "openai/codex",
-      "description": "Lightweight coding agent that runs in your terminal",
-      "stars": 135693,
-      "language": "Rust",
-      "url": "https://github.com/openai/codex",
-      "updated": "2026-11-18T05:15:46Z"
+      "updated": "2026-11-18T06:20:32Z"
     },
     {
       "name": "stablyai/orca",
       "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
-      "stars": 128059,
+      "stars": 128126,
       "language": "TypeScript",
       "url": "https://github.com/stablyai/orca",
-      "updated": "2026-11-18T05:14:35Z"
+      "updated": "2026-11-18T06:21:31Z"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
+      "stars": 112857,
+      "language": "Python",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "updated": "2026-11-18T06:19:59Z"
+    },
+    {
+      "name": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
+      "stars": 112383,
+      "language": "Rust",
+      "url": "https://github.com/pbakaus/impeccable",
+      "updated": "2026-11-18T06:21:13Z"
     }
   ],
   "nasdaq_data": {
@@ -1522,7 +1522,7 @@
     "changePercent": -0.72,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Wed 18 Nov: 27,001.78, down -0.72% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, modest -0.72% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-18T01:16:09.059899"
+    "timestamp": "2026-11-18T01:22:01.051621"
   },
   "sticky": {
     "cnbc": [
@@ -1661,72 +1661,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7372.25,
-      "change": 13.25,
+      "price": 7372.0,
+      "change": 13.0,
       "change_percent": 0.18,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 27184.75,
-      "change": 109.25,
+      "price": 27185.0,
+      "change": 109.5,
       "change_percent": 0.4,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 50833.0,
-      "change": 18.0,
-      "change_percent": 0.04,
+      "price": 50829.0,
+      "change": 14.0,
+      "change_percent": 0.03,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2709.9,
-      "change": -1.3,
-      "change_percent": -0.05,
+      "price": 2709.4,
+      "change": -1.8,
+      "change_percent": -0.07,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 84.68,
-      "change": -1.33,
-      "change_percent": -1.55,
+      "price": 84.62,
+      "change": -1.39,
+      "change_percent": -1.62,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3787.7,
-      "change": -76.5,
-      "change_percent": -1.98,
+      "price": 3786.0,
+      "change": -78.2,
+      "change_percent": -2.02,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 45.93,
-      "change": -1.36,
-      "change_percent": -2.87,
+      "price": 45.92,
+      "change": -1.37,
+      "change_percent": -2.9,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1398.7,
-      "change": -27.5,
-      "change_percent": -1.93,
+      "price": 1397.6,
+      "change": -28.6,
+      "change_percent": -2.01,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 951.5,
-      "change": -23.1,
-      "change_percent": -2.37,
+      "price": 951.0,
+      "change": -23.6,
+      "change_percent": -2.42,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.18,
+      "price": 3.19,
       "change": -0.02,
-      "change_percent": -0.78,
+      "change_percent": -0.62,
       "name": "Natural Gas Dec 26"
     }
   ],

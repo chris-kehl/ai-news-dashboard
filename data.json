@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19T16:16:37.154380",
+  "timestamp": "2026-11-19T16:24:19.380420",
   "summary": "Key topics today:\n- - Anthropic hits $2T in Nasdaq debut (r/HackerNews, 101 pts)\n- - Claude solves two open problems in the physics of black holes (r/HackerNews, 101 pts)\n- - Pete warden on local AI, open models, voice interfaces, the future of hardware (r/HackerNews, 101 pts)\n- - Fuck Your AI Safeguards (r/HackerNews, 101 pts)\n- - Chrome AI features wasting much bandwidth (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -20,19 +20,19 @@
     },
     {
       "type": "buy",
+      "asset": "^VIX",
+      "price": 28.97,
+      "change": 17.96,
+      "category": "stock",
+      "text": "^VIX +18.0% momentum @ $28.97"
+    },
+    {
+      "type": "buy",
       "asset": "ANT",
       "price": 97.17,
       "change": 17.07,
       "category": "stock",
       "text": "ANT +17.1% momentum @ $97.17"
-    },
-    {
-      "type": "buy",
-      "asset": "^VIX",
-      "price": 28.66,
-      "change": 16.69,
-      "category": "stock",
-      "text": "^VIX +16.7% momentum @ $28.66"
     },
     {
       "type": "watch",
@@ -93,19 +93,19 @@
       "created": ""
     },
     {
-      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
-      "created": ""
-    },
-    {
       "title": "Garage Door Spam",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://blog.harrison.page/garage-door-spam/",
+      "created": ""
+    },
+    {
+      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
       "created": ""
     },
     {
@@ -126,31 +126,9 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [
-    {
-      "author": "@Reuters",
-      "text": "Houthi attacks on Saudi Arabia https://reut.rs/4jsrDRe",
-      "url": "http://nitter.mizuki.st/Reuters/status/2123517991207731687#m",
-      "date": "Thu, 19 Nov 2026 20:45:16 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@Reuters",
-      "text": "Accenture launches plan to cut 950 Meta-linked jobs in Portugal https://reut.rs/3WUrkG7",
-      "url": "http://nitter.mizuki.st/Reuters/status/2123516707310309848#m",
-      "date": "Thu, 19 Nov 2026 20:40:10 GMT",
-      "likes": 0
-    },
-    {
-      "author": "@Reuters",
-      "text": "COMMENTARY: Funds dump copper but Shanghai has run out of metal https://reut.rs/4AM9xQc",
-      "url": "http://nitter.mizuki.st/Reuters/status/2123515438604636557#m",
-      "date": "Thu, 19 Nov 2026 20:35:08 GMT",
-      "likes": 0
-    }
-  ],
+  "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-19T21:16:06.735376",
+    "timestamp": "2026-11-19T21:24:09.986543",
     "prices": [
       {
         "name": "Bittensor",
@@ -452,7 +430,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-19T21:15:41.533239",
+    "timestamp": "2026-11-19T21:23:49.244630",
     "trending": [
       {
         "symbol": "INSM",
@@ -462,18 +440,18 @@
         "name": "Insmed Incorporated"
       },
       {
+        "symbol": "^VIX",
+        "price": 28.97,
+        "change": 4.41,
+        "change_percent": 17.96,
+        "name": "CBOE Volatility Index"
+      },
+      {
         "symbol": "ANT",
         "price": 97.17,
         "change": 14.17,
         "change_percent": 17.07,
         "name": "Anthropic, PBC Class A Common Stock"
-      },
-      {
-        "symbol": "^VIX",
-        "price": 28.66,
-        "change": 4.1,
-        "change_percent": 16.69,
-        "name": "CBOE Volatility Index"
       },
       {
         "symbol": "PDD",
@@ -512,9 +490,9 @@
       },
       {
         "symbol": "VOO",
-        "price": 658.01,
-        "change": -15.18,
-        "change_percent": -2.25,
+        "price": 657.95,
+        "change": -15.24,
+        "change_percent": -2.26,
         "name": "Vanguard S&P 500 ETF"
       },
       {
@@ -526,8 +504,8 @@
       },
       {
         "symbol": ".RUT",
-        "price": 2655.138,
-        "change": -59.17,
+        "price": 2655.105,
+        "change": -59.2,
         "change_percent": -2.18,
         "name": "RUSS 2K"
       },
@@ -974,7 +952,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-19T21:16:02.937479",
+    "timestamp": "2026-11-19T21:24:06.458007",
     "items": [
       {
         "symbol": "SPX",
@@ -1002,104 +980,104 @@
       },
       {
         "symbol": "RUT",
-        "price": 2655.138,
+        "price": 2655.105,
         "change": -2.18,
         "type": "index"
       },
       {
         "symbol": "ES=F",
-        "price": 7185.5,
-        "change": -2.11,
+        "price": 7197.5,
+        "change": -1.95,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26525.0,
-        "change": -2.43,
+        "price": 26590.25,
+        "change": -2.19,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 49118.0,
-        "change": -2.3,
+        "price": 49167.0,
+        "change": -2.2,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2658.5,
-        "change": -2.33,
+        "price": 2660.4,
+        "change": -2.26,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 83.14,
-        "change": -0.14,
+        "price": 83.15,
+        "change": -0.13,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3660.9,
-        "change": -2.16,
+        "price": 3661.8,
+        "change": -2.14,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 43.81,
-        "change": -2.65,
+        "price": 43.83,
+        "change": -2.6,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1343.2,
-        "change": -1.24,
+        "price": 1345.7,
+        "change": -1.06,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 913.0,
-        "change": -3.9,
+        "price": 913.5,
+        "change": -3.85,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.24,
-        "change": -3.97,
+        "change": -3.86,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 191.87,
-        "change": 0.74,
+        "price": 191.22,
+        "change": 0.03,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 61921,
-        "change": -0.71,
+        "price": 61573,
+        "change": -1.42,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1754.45,
-        "change": 0.13,
+        "price": 1743.76,
+        "change": -0.86,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 72.7,
-        "change": -0.31,
+        "price": 72.44,
+        "change": -0.76,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.94,
-        "change": -0.9,
+        "price": 8.87,
+        "change": -1.82,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.93,
-        "change": -0.39,
+        "price": 6.9,
+        "change": -1.28,
         "type": "crypto"
       },
       {
@@ -1152,8 +1130,8 @@
       },
       {
         "symbol": "VOO",
-        "price": 658.01,
-        "change": -2.25,
+        "price": 657.95,
+        "change": -2.26,
         "type": "mover"
       },
       {
@@ -1166,9 +1144,9 @@
   },
   "business": [
     {
-      "title": "Anthropic IPO live: Anthropic stock begins trading in record $81B raise with $1.5T valuation",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV3BLQkZqa19uTmlTOGE1UXJoQzFvaVhHOXUzRzRLTUVWN1VWMzFyZTBzX05CUk8xUzlzNThUbkdxZXZlYk9hUFlSS0QxdENEOWxSaE5LSTNiVVU0OVdGOGY5Tmw0Rk5rTnIxeVA5anBwYjJwYXoyV01tTFplNjFtZFRmZTE3REZrWndQTzJES2t4Q3lUYm05SUNmRGdpU0xHeWU0WnZYa3ZDMzhjNGFnelFyR2pTS3d3a3pmM0lhTEZqTnBpaWs4d1lmeHFYSjJWR3A4U2ZVVjhpSE9iZHc?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Anthropic closes first day at $97.17 per share in landmark moment for AI: IPO live updates",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14U2NHa0M5c3U5aU1rSFlveXQ5SU04X0Jjb29RdVBJeXJ4OVQzRl9zVkMzNVN6SVJZREJYOVJycWVia2hlamstS3FGbDZnY293TTZTUnZGSVJBY1IyUlhWejUwZUp2c3lVbFJsZVFabVMxMDhtNUHSAXtBVV95cUxPYjZZVENYd3lLenZiVHE3azkwQXo1ejJvU2doaVMtSThZckRKTTNCU1pPdXJUWGdhRDdCaTNaczRTanF1VUczcUt3THIteXB3VFdkM0JzSUJfZ3UzNVpRQi1NSS1SajdaMkxwdk1nanhCaFdJZ3VzUGxhSUE?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1176,9 +1154,9 @@
       "author": ""
     },
     {
-      "title": "Walmart\u2019s Digital Sales Are Now Driving Its Growth, Not Stores",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOb1NMeEgtRlBKbmh5MGpoTmJfNUUtLS1QNUgxeTJnUlh2NTJvSjY3dndxekJzZXFxRFF3TkkxLWxpUG4zSmxTVGdyUFh6bC1uem5EWkprRWlQS01JdkNaT2xXd3l5eTM2bE9HU3IxR1BadWhwNHRmQ2xhRjhTZ0NRSHlhcUZUT1RBN2c?oc=5",
-      "source": "WSJ",
+      "title": "Walmart raises full-year outlook as wealthier shoppers fuel sales growth",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdnBfU1R3UV90NDBVcDRuN1RmRTVZVEw3eWRQaGMtX2VMR3htWGlLV21NdTFrYm9KeWQ2MjBrc3lDOENqSzJzZzRWUUJOTU4tRFNVQzg2VFJ3RUR5dVBXTWkzYW84aWxPRmIxdjdVOUgyWVlsUXo5dWxnN1BiLVplRGpEaDBYM25YNmlkVVBfeVFlTDZwQnVlQTNVUXEwSHpORDYzblpKWdIBrAFBVV95cUxQODlRcnZGd3I5dGVXY25OOG1tVVhDUm0yS3RsRy1WSlo4YkUzNzNiVW94QkNXOG8yMTFHR0xoTEZGYlVpNi05N1ZSdTNTaEREeDdOWk5OTVVJNjMzTDdxR1BESldRcTBVUXRJNXFMbzVnM0ZBUmU3UERCU3ItUE83bTZYeGZBSnJQOVloTmRVa2E4R05LMG5WTzJoaGJNMjNCOV9oeVlhc2pvdWtZ?oc=5",
+      "source": "Fox Business",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1196,18 +1174,8 @@
       "author": ""
     },
     {
-      "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TbEk0NDY0UEtDbGFEY3hpX0lQWXY4RUMzNllqWllsTmQ5Wl8xeXpFVTdmQmpvX3hLZXkxUWpabzBaUHFieXkydmFtODZxVnctTDBZTkhYWHFDVWlsZF9HYTE1Q0NoQzdEWmtZLXRkdENBRjNVOG1zSGNwUHg3UdIBgwFBVV95cUxPalZ2a1NfTW5MM3ItZWxEbmlRODJpc0FwVE5KSmExazY4WlhGMEotZ1htWTduNVB1S0JibUVMSnVwc3BjSzBzdVFhdVdSc1NSMElhd3NNQ3laXzRiU2JkRmRHMkFjZlVWeTQ1dWtRcHFzTF96dlV0R3lreFhENWZUcGtUWQ?oc=5",
-      "source": "CNBC",
-      "category": "business",
-      "published": "Thu, 19 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5",
+      "title": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNc1pDUGRULVJNeGdkT21ERVNzMEl6RHJKTEtLRWFFQjFpYjdxWU5NMmM3Zl8zUzlHQUd3UzJlNE1UV2tlZnZFTEZrNnRKSWU1Y1lkSU1ISmF6U1JGNWNEeUJETVpHNDI5QTEwMWJTTmRraUgyaDR2RUJ1UlRadVJZMW9MUTZCeXdpZHRZRWl1X1VIZ0xBbllSWEUxMGxmdmllVFgxbmxuTmljOFFBTUkyUGR2NDRfTmM0Rm5xcXFxaHk?oc=5",
       "source": "Reuters",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
@@ -1216,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Seth Meyers Says Markwayne Mullin's Latest Comment On Outages 'Makes No F**kin Sense'",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcUtuc0g1OHhxVFc0Qnl0U3FWbHYxOVlKUFYyNE9RN1ZOUnpSRUNjQ2p1MkZQSDFDVXpLQTBibF90RUh5Nm1IQUpjdmduaWFBQk9Ja0tjNS1ySF83XzVuMFVaSDVZVFV0S0JjdnNvYTM3U0Jlc1h5OFFjRHhRVFlWWUd4ZTBSb29WRE1Td3JOSXQ0QmI5bUI0anJaVFVGUdIBowFBVV95cUxOTHk3QnVwbjg0cmI0OHE4eVA4NVdWSHQ0RC1HSHlucEJ2YkdQaXFOb0EzOUZJVi0zMHBHVU5lbGU4LWRWd1YzOThKQWNZeXRCMWk1N1BYN0tzdl85aDVrMmVoXzBHejcwMFBUVklFeklIWDJGTm41RTc2dzlXOGNQaDBEVWxhYzNjam1CdTFIV2lQZU9iT2ZqZC1TX1d1T2tLaGFj?oc=5",
-      "source": "HuffPost",
+      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTy1UWkp5QmtjYW0wNmgzMm04Y295STZlSUdvQ3FwYzhoV01XY3R4S04xLUFPbnFpU0c1SU9iekhxNXlMZE4tS1FRSnRkeDBmSlVRcGZwc2FEOU80US1hZzZ5M2UyalFjZEE0Zmd6cjc3U1MxTzJfdFFtaXJEa1M3UnZJU1V3aVh6YXF0c3BVVkxDMmZtb1lPaHBNM0NIY2g0OUpOQW9tcW0?oc=5",
+      "source": "WSJ",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1244,6 +1212,16 @@
       "description": "",
       "score": 0,
       "author": ""
+    },
+    {
+      "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbkp6di1ZYkMzQlhjTmkxbHFwNzIzLWMyc3NKXzBqSV9hZ05wODRRYUhjYl9pSmIyNENPaHpXWmlScUpaYXhfT3AyQ1hKYVhWZnhHRVp1a0g2dkVGWmpYa2lXdmdjaE1TUTQwbFlyNjJVNjVkRmlIbWt3WHhWYjNJWXNGSG9RcFkwYUFRZzdYMVNpQXVnZllfU0ZlZEc0QnFsQ1RnWk9tUmc5d2luUVVSaWRKMA?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
     }
   ],
   "tech_business": [
@@ -1251,6 +1229,16 @@
       "title": "\u2018GTA VI\u2019 Beats \u2018The Odyssey\u2019 Revenue On Release Day, Estimate Says",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNV012NXdVeHBkM01Td25PaVJBN0VRX05CVVVERkJLNXFqOG42Zzk5MzVTZ3lpbVpZaXVRR1JTTmxIRFdINjJkNTZ0S3JYN3hjRGtOQ3FNMHc4NjdReWdjRU16R3NXdzVybDRBV3BrZTNVYkRfVEE4WjE4aWlFVTMwcklSLTZzOEFkTERGU24xTFRRSWVjZ3F6SXc2YzduV1ZaYmlrSFRPRU5zZ25KYlBEWF8tVnpKdjBWMXRTYzBrMU5EWFZsWTJYajFOSkR6bW1ObUczUVBkQ3JuM0tzbEVUUjU4Sjd4dk1GczhN?oc=5",
       "source": "Forbes",
+      "category": "business",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "First Google Pixel, now Galaxy phones are getting a massive iPhone-inspired upgrade",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0WTFnVEtIMXkxSzFmdWhHYklJSENTNXYzZ01Kd1R6RDZFZFFEMjB2WGx2c1cxWUxCSldBSlkwTDk1eXF3VUp4SDgwS0c1Y2M0S0QyVmdsYWh3REhtYTZtWnZPdnVLTXRsLUpFR3AxSmhtMUJ0SEE?oc=5",
+      "source": "PhoneArena",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1316,16 +1304,6 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "Galaxy S25, S24 series get November 2026 security update",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdXhvUXdhMGFBRzdWajBiWXZGcC1SbW5hUEkyRXd5ZTB3QW91WWRCY1dsUHBHbEVlY19sVHlRRWpJemRQZk83U1NDa1dvMjZwdHpiaGFWTUlBTFB4Mkg0WThNQVExRGNHbkM2Mnhoa0FMYW9WOTU2YkhmR3oyVHV6a2FyUWJQclRNdFN0QUgtYWw?oc=5",
-      "source": "SamMobile",
-      "category": "business",
-      "published": "Thu, 19 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "defense": [
@@ -1346,6 +1324,14 @@
       "relevance_score": 8
     },
     {
+      "title": "Jerusalem Daily: Israel launches ground offensive in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/jerusalem-daily-israel-launches-ground-offensive-in-gaza-2?traffic_source=rss",
+      "source": "Al Jazeera",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "Israel launches its first major ground offensive in central Gaza, pushing beyond the \u2018Yellow Line\u2019 it controls",
+      "relevance_score": 8
+    },
+    {
       "title": "New tools for troops to gun down drones | Defense News Weekly Full Episode 11.17.26",
       "url": "https://www.defensenews.com/video/2026/11/19/new-tools-for-troops-to-gun-down-drones-defense-news-weekly-full-episode-11-17-26/",
       "source": "Defense News",
@@ -1360,14 +1346,6 @@
       "published": "Thu, 19 Nov 2026 ",
       "description": "\u201cDoD does not have an overarching plan that links munitions production and funding to requirements,\u201d warned the Government Accountability Office study.",
       "relevance_score": 7
-    },
-    {
-      "title": "Senate Republicans in US reject measure to limit Trump\u2019s war powers in Iran",
-      "url": "https://www.aljazeera.com/news/2026/11/19/senate-republicans-in-us-reject-measure-to-limit-trumps-war-powers-in-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Thu, 19 Nov 2026 ",
-      "description": "The resolution was defeated 51-48. Three Republicans broke rank, voting against the measure.",
-      "relevance_score": 6
     },
     {
       "title": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
@@ -1386,12 +1364,12 @@
       "relevance_score": 5
     },
     {
-      "title": "European leaders unite in Berlin to reaffirm support for Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/11/19/european-leaders-unite-in-berlin-to-reaffirm-support-for-ukraine?traffic_source=rss",
+      "title": "Ten killed in Pakistan as bus crashes into gas tanker",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/ten-killed-in-pakistan-as-bus-crashes-into-gas-tanker?traffic_source=rss",
       "source": "Al Jazeera",
       "published": "Thu, 19 Nov 2026 ",
-      "description": "German chancellor warns peace talks without Europe&#039;s involvement are doomed to fail, urging unity with Ukraine.",
-      "relevance_score": 5
+      "description": "Ten people were killed and at least 27 more injured after a passenger bus collided with an LPG tanker in Pakistan.",
+      "relevance_score": 4
     },
     {
       "title": "Denmark ratifies Trump deal over Greenland, hoping to end conflict",
@@ -1538,10 +1516,17 @@
     "changePercent": -2.21,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Thu 19 Nov: 26,517.05, down -2.21% -- BEARISH. price below SMA20, RSI 36.3 weak, MACD bearish, strong -2.21% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-19T16:16:34.878854"
+    "timestamp": "2026-11-19T16:24:17.045305"
   },
   "sticky": {
     "cnbc": [
+      {
+        "title": "Gap names new Athleta CEO, lowers full-year guidance",
+        "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+        "source": "CNBC",
+        "published": "2026-11-19T21:22:23",
+        "description": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings."
+      },
       {
         "title": "AMD dives on short-seller report of alleged China exposure",
         "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
@@ -1560,7 +1545,7 @@
         "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
         "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
         "source": "CNBC",
-        "published": "2026-11-19T21:08:45",
+        "published": "2026-11-19T21:21:24",
         "description": "Members of Congress have pushed in the wake of the Jensen Huang scandal for legislation to tighten export controls on chip sales to China."
       },
       {
@@ -1585,17 +1570,10 @@
         "description": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter."
       },
       {
-        "title": "Jensen Huang's \u2014 and Nvidia's \u2014 legal exposure balloons",
-        "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
-        "source": "CNBC",
-        "published": "2026-11-19T18:44:34",
-        "description": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney."
-      },
-      {
         "title": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
         "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
         "source": "CNBC",
-        "published": "2026-11-19T21:15:45",
+        "published": "2026-11-19T21:16:41",
         "description": "Brokerage firms may put future IPO limits in place for investors who sell their Anthropic stake too soon."
       }
     ],
@@ -1652,6 +1630,13 @@
         "description": "Wall Street Bets on Shielding Indian Real Estate from Climate Disaster&nbsp;&nbsp;Bloomberg.com"
       },
       {
+        "title": "Wall Street meets Reddit: What are the upsides and risks of social investing? - The Pennsylvania State University",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXFIYUZXSjB5bXlxQXZWVU1UcXRkSHZ2MlJGa3R1OUYxdVg5dXRZV3BlVHhHX1RnMnV2REJtVXU3eHpQSzdoVUh2OVNlbTFtakdXR3VaMUFJcFRGUWZEaVZjUnVVZmNfLTVyN2g2T091QVh3NE80TmxHZy15ZVdCZ3Q5TlpIZFU2VnlSVXMwMmgtTHA3dkVMZUJ0bUpCeFVNeVlxT3RoeW1EZEs3?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2024-06-17T07:00:00",
+        "description": "Wall Street meets Reddit: What are the upsides and risks of social investing?&nbsp;&nbsp;The Pennsylvania State University"
+      },
+      {
         "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Monday; AMD to Advance, Nvidia to Decline - marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPeTlNOFhhQk12U094eFZQcHhzRFRaTnNnQzA2VlJlbXZvMHdZYVZKTG1OcXRidzJYMkhINW15Rkl0TDZlaDdBT1RSd2RVRFFfelJwODItSFY3eExCcDRiRmdMVEQ1YU5yeXBsQldERFFYcWxfZzhnM01icVZ1MzZpRFljVXJFd0QtVU96VFBhUFBrcmNCaFdtOHQ1aFhFQnh6eFVGMjEtUVNPcUl0MGRmWm9nY0JTVGdrQU5MRUNwU0otYXloYVVId0tnWjExMC1FNE1BQXFIMUtuUQ?oc=5",
         "source": "r/wallstreetbets",
@@ -1659,90 +1644,83 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Monday; AMD to Advance, Nvidia to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Dow Jones forecast: Dow surges 1,200 points as Wall Street bets on political gridlock - Beinsure",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSU1KZzAxMW9Kb2pTbWQyNmctNlMtdklrek90aDFpM1dhVmNnMHNnS29ZWU9Tc0R5emdLM3JfN0phcjRvLWtKYS1fVXdzTER5My04cGw4a08wREVHWWFJclJDVWxvU0pGeE5lWlFjYkhlaS05ZVJHQko4NnBvRHQyTjE0dVZ3enJaMERWTw?oc=5",
+        "title": "Inside the Reddit army that\u2019s crushing Wall Street | CNN Business - CNN",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBVOVBBN0wtTW9nMmU5R0V4Z0RYUWtIMTRoSFZWc0tpa3U4eWRTOTNvWGJnbnNUUDhWdWVNbm9oakV3T2dPTjNhd3JNYWIyYXhvUmlhTnBzXzYzNzR6bkhjV2RGZGM0Q0VPU1ktMHZnV29zam9OdF8tbzJ3?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-11-04T08:00:00",
-        "description": "Dow Jones forecast: Dow surges 1,200 points as Wall Street bets on political gridlock&nbsp;&nbsp;Beinsure"
-      },
-      {
-        "title": "Wall Street meets Reddit: What are the upsides and risks of social investing? - The Pennsylvania State University",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXFIYUZXSjB5bXlxQXZWVU1UcXRkSHZ2MlJGa3R1OUYxdVg5dXRZV3BlVHhHX1RnMnV2REJtVXU3eHpQSzdoVUh2OVNlbTFtakdXR3VaMUFJcFRGUWZEaVZjUnVVZmNfLTVyN2g2T091QVh3NE80TmxHZy15ZVdCZ3Q5TlpIZFU2VnlSVXMwMmgtTHA3dkVMZUJ0bUpCeFVNeVlxT3RoeW1EZEs3?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2024-06-17T07:00:00",
-        "description": "Wall Street meets Reddit: What are the upsides and risks of social investing?&nbsp;&nbsp;The Pennsylvania State University"
+        "published": "2021-01-29T08:00:00",
+        "description": "Inside the Reddit army that\u2019s crushing Wall Street | CNN Business&nbsp;&nbsp;CNN"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7185.25,
-      "change": -155.25,
-      "change_percent": -2.11,
+      "price": 7197.5,
+      "change": -143.0,
+      "change_percent": -1.95,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26521.25,
-      "change": -665.5,
-      "change_percent": -2.45,
+      "price": 26589.5,
+      "change": -597.25,
+      "change_percent": -2.2,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 49115.0,
-      "change": -1158.0,
-      "change_percent": -2.3,
+      "price": 49167.0,
+      "change": -1106.0,
+      "change_percent": -2.2,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2658.6,
-      "change": -63.4,
-      "change_percent": -2.33,
+      "price": 2660.5,
+      "change": -61.5,
+      "change_percent": -2.26,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 83.14,
-      "change": -0.12,
-      "change_percent": -0.14,
+      "price": 83.15,
+      "change": -0.11,
+      "change_percent": -0.13,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3660.2,
-      "change": -81.7,
-      "change_percent": -2.18,
+      "price": 3661.8,
+      "change": -80.1,
+      "change_percent": -2.14,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 43.78,
-      "change": -1.22,
-      "change_percent": -2.72,
+      "price": 43.83,
+      "change": -1.17,
+      "change_percent": -2.6,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1343.2,
-      "change": -16.9,
-      "change_percent": -1.24,
+      "price": 1345.7,
+      "change": -14.4,
+      "change_percent": -1.06,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 913.0,
-      "change": -37.1,
-      "change_percent": -3.9,
+      "price": 913.5,
+      "change": -36.6,
+      "change_percent": -3.85,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.24,
       "change": -0.13,
-      "change_percent": -3.94,
+      "change_percent": -3.86,
       "name": "Natural Gas Dec 26"
     }
   ],

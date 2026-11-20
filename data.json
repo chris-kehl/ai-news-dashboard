@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-11-20T05:32:20.881203",
+  "timestamp": "2026-11-20T05:46:45.910261",
   "summary": "Key topics today:\n- - Claude solves two open problems in the physics of black holes (r/HackerNews, 101 pts)\n- - Pete Warden on local AI, open models, voice interfaces, the future of hardware (r/HackerNews, 101 pts)\n- - Weight-Space Programming builds neural networks like a 1990s researcher (r/HackerNews, 101 pts)\n- - Anthropic\u2019s Nasdaq debut (r/HackerNews, 101 pts)\n- - ChatGPT for SNES (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "watch",
       "asset": "HYPE",
-      "price": 65.0,
-      "change": -4.91,
+      "price": 65.26,
+      "change": -4.51,
       "category": "crypto",
-      "text": "HYPE -4.9% @ $65.00"
+      "text": "HYPE -4.5% @ $65.26"
     },
     {
       "type": "watch",
       "asset": "TAO",
-      "price": 186.76,
-      "change": -4.85,
+      "price": 189.06,
+      "change": -3.93,
       "category": "crypto",
-      "text": "TAO -4.8% @ $186.76"
+      "text": "TAO -3.9% @ $189.06"
     },
     {
       "type": "watch",
-      "asset": "SOL",
-      "price": 72.0,
-      "change": -3.26,
+      "asset": "BNB",
+      "price": 575.17,
+      "change": -2.57,
       "category": "crypto",
-      "text": "SOL -3.3% @ $72.00"
+      "text": "BNB -2.6% @ $575.17"
     },
     {
       "type": "buy",
@@ -101,14 +101,6 @@
       "created": ""
     },
     {
-      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://github.com/openssl/openssl/pull/33652",
-      "created": ""
-    },
-    {
       "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "subreddit": "HackerNews",
       "score": 1,
@@ -117,11 +109,11 @@
       "created": ""
     },
     {
-      "title": "FFmpeg 9.1 'Gauss'",
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://ffmpeg.org/download.html#release_9.1",
+      "url": "https://github.com/openssl/openssl/pull/33652",
       "created": ""
     },
     {
@@ -130,6 +122,14 @@
       "score": 1,
       "comments": 0,
       "url": "https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver",
+      "created": ""
+    },
+    {
+      "title": "FFmpeg 9.1 'Gauss'",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://ffmpeg.org/download.html#release_9.1",
       "created": ""
     },
     {
@@ -144,87 +144,93 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-20T10:32:11.810822",
+    "timestamp": "2026-11-20T10:46:01.870540",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 186.76,
-        "change_24h": -4.85,
-        "market_cap": 2191313724
+        "price": 189.06,
+        "change_24h": -3.93,
+        "market_cap": 2218216733
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 61860,
-        "change_24h": -3.0,
-        "market_cap": 1244278128924
+        "price": 62182,
+        "change_24h": -2.52,
+        "market_cap": 1250763844919
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1749.73,
-        "change_24h": -2.98,
-        "market_cap": 213880569282
+        "price": 1757.66,
+        "change_24h": -2.55,
+        "market_cap": 214852742791
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.99916,
+        "price": 0.999179,
         "change_24h": -0.01,
-        "market_cap": 175098913124
+        "market_cap": 175102006251
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 572.03,
-        "change_24h": -3.03,
-        "market_cap": 75227247476
+        "price": 575.17,
+        "change_24h": -2.57,
+        "market_cap": 75640769350
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999628,
-        "change_24h": 0.0,
-        "market_cap": 68458995818
+        "price": 0.999612,
+        "change_24h": -0.0,
+        "market_cap": 68457475983
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 0.961308,
-        "change_24h": -1.99,
-        "market_cap": 61059025598
+        "price": 0.966107,
+        "change_24h": -1.5,
+        "market_cap": 61349932984
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 72.0,
-        "change_24h": -3.26,
-        "market_cap": 42612652999
+        "price": 72.57,
+        "change_24h": -2.54,
+        "market_cap": 42947088698
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.307445,
-        "change_24h": -1.51,
-        "market_cap": 29222105288
+        "price": 0.30764,
+        "change_24h": -1.52,
+        "market_cap": 29234766020
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.016,
         "change_24h": 0,
-        "market_cap": 27388996746
+        "market_cap": 27388545721
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 65.0,
-        "change_24h": -4.91,
-        "market_cap": 15450444578
+        "price": 65.26,
+        "change_24h": -4.51,
+        "market_cap": 15512767114
       }
     ],
     "news": [
+      {
+        "title": "Bitcoin nears repeat of chart pattern that preceded 2023\u2019s $25K retest",
+        "url": "https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Fri, 20 Nov 2026 ",
+        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7W5JM0BJ0Z5FQEW9GD5YQE3/article-covers-252484-bitcoin-price-chart-death-cross-back-late-cycle-fears-960x640.webp\" alt=\"B"
+      },
       {
         "title": "BlackRock\u2019s IBIT loses record $541M amid Anthropic market debut",
         "url": "https://cointelegraph.com/markets/blackrock-ibit-record-single-day-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -268,12 +274,6 @@
         "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7TW6KD0H9BEVC27QRWR5CP8/asia-express-jacket.png\" alt=\"Binance\u2019s $6.5B freeze order, Hong Kong \u2018suspicious\u2019 of HYPE: Asia"
       },
       {
-        "title": "MoonPay seeks US bank charter for stablecoin, custody services",
-        "url": "https://cointelegraph.com/news/moonpay-seeks-us-bank-charter-for-stablecoin-custody-services?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 19 Nov 2026 ",
-        "description": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7TRZBKZ9CRA2JGQ7AM7G08Z/hi-company-wants-to-launch-digital-currency-bank-stablecoin-eu-1.png\" alt=\"MoonPay seeks US bank"
-      },
-      {
         "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
         "url": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
         "published": "Fri, 20 Nov 2026 ",
@@ -309,7 +309,7 @@
       "description": "BBC political editor Chris Mason looks at the potential agreements between the UK and EU that could be reached on food, energy and youth mobility."
     },
     {
-      "title": "Secret UK cyber operation shielded tens of thousands of fridges from hackers",
+      "title": "Secret UK cyber operation protected tens of thousands of fridges from hackers",
       "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -401,7 +401,7 @@
       "url": "https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517",
       "source": "Abc News",
       "category": "abc_news",
-      "published": "Thu, 19 Nov 2026 ",
+      "published": "Fri, 20 Nov 2026 ",
       "description": "The Justice Department is giving up on its controversial lawsuit that sought to potentially block the certification of Alaska's U.S. Senate race."
     },
     {
@@ -446,7 +446,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-20T10:31:47.993573",
+    "timestamp": "2026-11-20T10:45:38.952374",
     "trending": [
       {
         "symbol": "INSM",
@@ -484,13 +484,6 @@
         "name": "Nikkei 225"
       },
       {
-        "symbol": "^VIX",
-        "price": 29.51,
-        "change": 1.07,
-        "change_percent": 3.76,
-        "name": "CBOE Volatility Index"
-      },
-      {
         "symbol": "INTU",
         "price": 310.02,
         "change": -10.77,
@@ -498,18 +491,25 @@
         "name": "Intuit Inc."
       },
       {
-        "symbol": "GC=F",
-        "price": 3576.0,
-        "change": -109.5,
-        "change_percent": -2.97,
-        "name": "Gold Dec 26"
-      },
-      {
         "symbol": "AMD",
         "price": 489.19,
         "change": -14.22,
         "change_percent": -2.82,
         "name": "Advanced Micro Devices, Inc."
+      },
+      {
+        "symbol": "GC=F",
+        "price": 3587.2,
+        "change": -98.3,
+        "change_percent": -2.67,
+        "name": "Gold Dec 26"
+      },
+      {
+        "symbol": "^VIX",
+        "price": 29.17,
+        "change": 0.73,
+        "change_percent": 2.57,
+        "name": "CBOE Volatility Index"
       },
       {
         "symbol": ".DJI",
@@ -534,23 +534,23 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 26230.0,
-        "change": -370.25,
-        "change_percent": -1.39,
+        "price": 26326.75,
+        "change": -273.5,
+        "change_percent": -1.03,
         "name": "Nasdaq 100 Dec 26"
       },
       {
         "symbol": "ES=F",
-        "price": 7155.5,
-        "change": -41.75,
-        "change_percent": -0.58,
+        "price": 7172.75,
+        "change": -24.5,
+        "change_percent": -0.34,
         "name": "E-Mini S&P 500 Dec 26"
       },
       {
         "symbol": "YM=F",
-        "price": 49195.0,
-        "change": 15.0,
-        "change_percent": 0.03,
+        "price": 49293.0,
+        "change": 113.0,
+        "change_percent": 0.23,
         "name": "Mini Dow Jones Indus.-$5 Dec 26"
       }
     ],
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-20T10:32:08.047193",
+    "timestamp": "2026-11-20T10:45:58.310654",
     "items": [
       {
         "symbol": "SPX",
@@ -1004,8 +1004,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 29.2,
-        "change": 2.67,
+        "price": 28.64,
+        "change": 0.7,
         "type": "index"
       },
       {
@@ -1016,98 +1016,98 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7155.75,
-        "change": -0.58,
+        "price": 7175.25,
+        "change": -0.31,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26235.25,
-        "change": -1.37,
+        "price": 26337.0,
+        "change": -0.99,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 49194.0,
-        "change": 0.03,
+        "price": 49312.0,
+        "change": 0.27,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2658.5,
-        "change": -0.18,
+        "price": 2664.9,
+        "change": 0.06,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 81.11,
-        "change": -2.52,
+        "price": 81.27,
+        "change": -2.33,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3577.9,
-        "change": -2.92,
+        "price": 3590.7,
+        "change": -2.57,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 42.24,
-        "change": -4.7,
+        "price": 42.6,
+        "change": -3.88,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1301.3,
-        "change": -3.44,
+        "price": 1306.9,
+        "change": -3.02,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 895.5,
-        "change": -2.31,
+        "price": 902.0,
+        "change": -1.6,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.59,
-        "change": 9.88,
+        "change": 9.94,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 186.96,
-        "change": -4.81,
+        "price": 189.06,
+        "change": -3.93,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 61894,
-        "change": -2.94,
+        "price": 62202,
+        "change": -2.54,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1750.26,
-        "change": -2.96,
+        "price": 1758.56,
+        "change": -2.55,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 72.02,
-        "change": -3.26,
+        "price": 72.62,
+        "change": -2.57,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.85,
-        "change": -3.56,
+        "price": 8.91,
+        "change": -3.12,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.9,
-        "change": -2.39,
+        "price": 6.94,
+        "change": -1.88,
         "type": "crypto"
       },
       {
@@ -1141,27 +1141,27 @@
         "type": "mover"
       },
       {
-        "symbol": "^VIX",
-        "price": 29.52,
-        "change": 3.8,
-        "type": "mover"
-      },
-      {
         "symbol": "INTU",
         "price": 310.02,
         "change": -3.36,
         "type": "mover"
       },
       {
-        "symbol": "GC=F",
-        "price": 3578.1,
-        "change": -2.91,
-        "type": "mover"
-      },
-      {
         "symbol": "AMD",
         "price": 489.19,
         "change": -2.82,
+        "type": "mover"
+      },
+      {
+        "symbol": "^VIX",
+        "price": 29.22,
+        "change": 2.74,
+        "type": "mover"
+      },
+      {
+        "symbol": "GC=F",
+        "price": 3590.9,
+        "change": -2.57,
         "type": "mover"
       },
       {
@@ -1204,11 +1204,11 @@
       "author": ""
     },
     {
-      "title": "New cars cost over $50K. Why Hyundai is doubling down on affordability",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOVdNM1NfSlNZV2c2R2llXzVuNzlkeUZUTVVDZVRoNHNoZnM3YmNIVHZGT2J6c3ZsMXlrUEJWOUxWeUNsQUtRLWxyOVpQV2ZNME9rWXczLUs0UjVZX01RRVhUNXBIWl9NYjdsc2ZhQ3A5TURKT0czRm1Mc1p2eE93aVRuV05RbE1pa1dJOERLRU5OREZYNFVpa1RtMWhUNjNJRnpKMzA0a0hmejQxejBmUkVFNFk4WWs?oc=5",
+      "title": "Hyundai unveils new Elantra at the LA Auto Show. I'd wait for it",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZUk4NmdJWFFQRUp5QW0tbWtGVXRfQWNzZGhiVnlEVkpUQU5YUFZxNDdEc05oTXppUExJTERsNHVXaHVob0hiUHdGWjNkajN3QXg4eVpjeWxGYWpUdG9wS1dRS3QyWG9NdFRYZVg0SXlYSnFCMUtFWDA3bkE0SFc5Y2VmcjlpV3RoQWZkYURtcTVNdC1UaHhkTTl5Rm4tN3E2Wm5JWXJaNnBpcU8tcjVqX04wVVNpVjQ?oc=5",
       "source": "USA Today",
       "category": "business",
-      "published": "Fri, 20 Nov 2026 ",
+      "published": "Thu, 19 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1244,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "Stock Market Today, Nov. 19: Dow Plunges 1,100 Points as the S&P 500 Suffers Its 6th Straight Day of Losses",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVh4Wm5XZk1VNWd4YmtfRFp3cW1iR0M2ZURsVWdjc3N5VzQwSlljV3dYdHRxYWFMVmRqay1JV0g0VEZtMElCeU5qdnA1YlVBMFNEMlJ2NTYxYWhJSmlXTUpUbTkyQlFvQzhSNkV1VXhQMV85Sk5NeDVQcks0ZnYxejhQdmhfREEwcVhBYkt1WTlnYzRW?oc=5",
-      "source": "Yahoo Finance",
+      "title": "California targets Nvidia in China AI chip probe",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LcjVzcGZXYnU1NGFZcXhHTkpaeHVCbkFtZ2JWd2VidTVYSTdrZVl5VGRCMzE5WldSU0xLajIyN1ljYWdmWWtmbWw5OXpBYnIwNUVuU0xGX1k5WFE?oc=5",
+      "source": "BBC",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1286,11 +1286,41 @@
       "author": ""
     },
     {
-      "title": "How To Fix All Projects At Jason\u2019s House In GTA 6",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZG9hSS1QaXBmdWc4aGZmQ2F0ZE1HWkRWY2NzNWxUbGpTbVZZYU9jY29IT0dkSFlfN0NFazZKMWg4UW9rNE1JdkpWWmowdlVjRDJ2SUtBel9Ub2g1RDdtSG1ONW01ZVpLemNDT0lZVDd3bm5qZVVHbWlOb2tWdmNoMkJEVWlqUnhYLXlv?oc=5",
-      "source": "GameSpot",
+      "title": "PS5 vs. Xbox Series X for GTA 6? Here's How the Hardware and Prices Stack Up",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMGxDRzdRZTRoUU1QcS1jQXhqNllrRm1kN1RTN2NYN0dRTVh0Q3FOSVEwbVV5N2dFeFM3Ym0xUk03eFVZUDZSUVNlWlpjN0laUW1OZ3ZiZWltRExONmJ1THctdHd6N0ZSdy03T3Nkc3E2QVUyeTJMRzFmOWM2U2o2eFVzdnJad190Nl9aZ3dlS3c?oc=5",
+      "source": "PCMag",
       "category": "business",
-      "published": "Wed, 18 Nov 2026 ",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "OLED iMac plans may be cancelled by Apple for two reasons",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbzhjMlN3a21hTG9BdDN4bHJMM1NDTGdNUkMwYnNpLThzQnZRZUZYUGN5WlhQLVh6QmpaeE44d0paRmJVMldFVVY5Q1FlTEJvZUdxUEowMHZ0eFE0aGtOVDJDQjFlRTFYXzJwRjNKelFsSW9zTTlPczlDUU85ZGphdUNtcHB0a3FsdW4zSC1mdU1jcW8?oc=5",
+      "source": "9to5Mac",
+      "category": "business",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "GTA 6 Jason\u2019s House: How to fix all projects around Jason\u2019s House",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdmFYbEhvemNnQnVyVjJpMml5UkpodV9RU2c3a1pRODE1ME9yd01mN3pHNzZyUFBxYS03UXdnTmt2U1BxeEczYTVveEdxT3ZpYlZBSE9ZanppOVJ6bDVaREd0aEYtay1RWGlWM25WOTBOVVZSd1lzaGhMNFNPcGFzOHlZT3JOZGJlcXgyaDZialNoQ0haRC03anQwMVdTQWhLdy02ZkdlWFI?oc=5",
+      "source": "Video Games Chronicle",
+      "category": "business",
+      "published": "Thu, 19 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "The Vice City Heat: Miami\u2019s NBA team goes all in on \u2018Grand Theft Auto VI\u2019 collaboration",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdUcxQ1RFX3RZeDZHRWUtb21xRGdNUUkya3V6V0xOMjhjXzF6WXE0aEJYWElBaGdwRldZM3dkTTZnenVTeDZ3d2h3Sk16SFkxVTlrVWFYRkszXzBQZTd6LXdSN0labGkzT1h0ZFB6empTSlUxcWRQU1BVVUpsV3pCbHVESVpUdVk1QnMwTEJlNm90c1IyMUE?oc=5",
+      "source": "AP News",
+      "category": "business",
+      "published": "Thu, 19 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1299,36 +1329,6 @@
       "title": "GTA 6 Launch Day Hits Different for Fired Rockstar Workers",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOUxWLW9zaV9QekthX3dwTTVOd2EySmk5Y1BXWEFBcGFkNXZSOFhmb2MzT1Q5ZVRWWDh2aW1TWTJLQ2g3WlJXOHh5cnhCS2JOWGFpMHBubmFCYXNUX0lzb25xLV9BMmh2UU1qME5fWWdMUkhmUmQtYVBONTl6bGtER3ZaWGx4TEdLWE9iTzBCbkVhUkFTbXVR?oc=5",
       "source": "CNET",
-      "category": "business",
-      "published": "Thu, 19 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "GTA 6's Big Miami Heat Game Led To Black Friday-Like Crowds Trying To Buy All The Merch",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY1NzOEFDbHF1STFRMFRpX1RKSk4tODZNWUtRRHBqeEo4T1d5MmticXJ5U2hFc3U0eExiazJnY2NkN1FtX0NQbWRCZUlNU1Q0SzNqMnI1NTBDNXlvWHFSenBWRUVmMWxsTi1nVW9LbmxLQlo1eWRXN3NvaW1BWGlyNmtqem9weTUzT1hqMzllUEw4ZFNTZXBjNVppS3FCM3VqOWE3LUlyQWhjZjFkdy12MEVmbWdlTEE?oc=5",
-      "source": "Kotaku",
-      "category": "business",
-      "published": "Thu, 19 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Exclusive: Galaxy Studio Has an 870mAh Battery, Wear Detection and a 3.5mm Jack",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9CNjczUUVtS2NmNGliWURNQjE3UlM0eml6N2RNdmtQZE5waEE0cFAxOW1VMWJPZnZ2T1dTQzNzZ0xrbzFpVktyMTFvV0dSMUNhRG5DcUd5SnBLdzhGR3U3SzBwMGJaOFZVQ29SZGJFX2l4QVJqOWVFNQ?oc=5",
-      "source": "SammyGuru",
-      "category": "business",
-      "published": "Wed, 18 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Some Gamers Are Pissed That \u2018GTA VI\u2019 Makes Them Be Nice to Their Girlfriend",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeThwemE2YzFMdlNoakh1ekcxcWFKekVId3dEaEgyM2VWT3R0WVl0RThSYTNBM3F6S1M2S0xqbkVtcVo5OXpURXQ5TWFVTFExRlFNYmdyWHNrWC1RV0dWWXkwYUVlNUt6Q2w5aFV3c3c2ZVRvZ2NoOHRiX0xJUWlLUW5VTGtDZGptQ0tfQ0RQenlJa1JjNXpaNFBHZnNZenZHeXV0cA?oc=5",
-      "source": "Rolling Stone",
       "category": "business",
       "published": "Thu, 19 Nov 2026 ",
       "description": "",
@@ -1446,98 +1446,98 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 307459,
+      "stars": 307481,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-20T09:40:58Z"
+      "updated": "2026-11-20T10:45:40Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 264856,
+      "stars": 264864,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-20T09:43:00Z"
-    },
-    {
-      "name": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "stars": 228135,
-      "language": "TypeScript",
-      "url": "https://github.com/anomalyco/opencode",
-      "updated": "2026-11-20T09:43:08Z"
+      "updated": "2026-11-20T10:42:17Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
-      "stars": 204655,
+      "stars": 204697,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-20T09:43:14Z"
+      "updated": "2026-11-20T10:44:59Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 195172,
+      "stars": 195194,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-20T09:42:33Z"
+      "updated": "2026-11-20T10:41:19Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 188119,
+      "stars": 188120,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-20T08:40:02Z"
+      "updated": "2026-11-20T10:33:18Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 169308,
+      "stars": 169310,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-20T09:40:22Z"
+      "updated": "2026-11-20T10:37:08Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161552,
+      "stars": 161559,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-20T09:18:50Z"
+      "updated": "2026-11-20T10:38:12Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 150835,
+      "stars": 150858,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-20T09:41:39Z"
+      "updated": "2026-11-20T10:42:16Z"
     },
     {
-      "name": "stablyai/orca",
-      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and ",
-      "stars": 130338,
+      "name": "earendil-works/pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "stars": 123012,
       "language": "TypeScript",
-      "url": "https://github.com/stablyai/orca",
-      "updated": "2026-11-20T09:42:08Z"
+      "url": "https://github.com/earendil-works/pi",
+      "updated": "2026-11-20T10:45:23Z"
+    },
+    {
+      "name": "paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "stars": 115338,
+      "language": "TypeScript",
+      "url": "https://github.com/paperclipai/paperclip",
+      "updated": "2026-11-20T10:45:32Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 113705,
+      "stars": 113734,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-20T09:40:57Z"
+      "updated": "2026-11-20T10:43:47Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 113439,
+      "stars": 113450,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-20T09:41:56Z"
+      "updated": "2026-11-20T10:46:16Z"
     }
   ],
   "nasdaq_data": {
@@ -1546,7 +1546,7 @@
     "changePercent": -2.21,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 20 Nov: 26,517.05, down -2.21% -- BEARISH. price below SMA20, RSI 36.3 weak, MACD bearish, strong -2.21% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-20T05:32:19.385656"
+    "timestamp": "2026-11-20T05:46:43.853661"
   },
   "sticky": {
     "cnbc": [
@@ -1572,11 +1572,11 @@
         "description": "Kushner said President Donald Trump is open to such a guarantee, but its form and whether Russia and Ukraine would accept it remain unclear."
       },
       {
-        "title": "Gap names new Athleta CEO, lowers full-year guidance",
-        "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+        "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+        "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
         "source": "CNBC",
-        "published": "2026-11-19T23:54:20",
-        "description": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings."
+        "published": "2026-11-20T06:00:01",
+        "description": "Iceland\u2019s famed Blue Lagoon geothermal spa is going public in a $110 million IPO, tapping investor interest in tourism and the booming wellness industry."
       },
       {
         "title": "Jensen Huang's \u2014 and Nvidia's \u2014 legal exposure balloons",
@@ -1586,25 +1586,25 @@
         "description": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney."
       },
       {
+        "title": "Gap names new Athleta CEO, lowers full-year guidance",
+        "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+        "source": "CNBC",
+        "published": "2026-11-19T23:54:20",
+        "description": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings."
+      },
+      {
+        "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
+        "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
+        "source": "CNBC",
+        "published": "2026-11-19T21:40:31",
+        "description": "Intuit is offloading a segment that has slowed down revenue growth, for less than a third of what it paid to acquire Mailchimp in 2021."
+      },
+      {
         "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
         "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
         "source": "CNBC",
         "published": "2026-11-20T03:56:17",
         "description": "The permitting bill's Senate passage is a key step to it becoming law, but it would also need to clear the House before heading to President Trump's desk."
-      },
-      {
-        "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
-        "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
-        "source": "CNBC",
-        "published": "2026-11-20T06:00:01",
-        "description": "Iceland\u2019s famed Blue Lagoon geothermal spa is going public in a $110 million IPO, tapping investor interest in tourism and the booming wellness industry."
-      },
-      {
-        "title": "AMD dives on short seller report of alleged China exposure",
-        "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-        "source": "CNBC",
-        "published": "2026-11-20T00:08:34",
-        "description": "AMD closed down over 7% after a short seller alleged that its firmware showed up at a blacklisted Chinese company. AMD said it complies with U.S. law."
       }
     ],
     "yahoo_finance": [],
@@ -1685,72 +1685,72 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7156.75,
-      "change": -40.5,
-      "change_percent": -0.56,
+      "price": 7174.75,
+      "change": -22.5,
+      "change_percent": -0.31,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26241.75,
-      "change": -358.5,
-      "change_percent": -1.35,
+      "price": 26337.5,
+      "change": -262.75,
+      "change_percent": -0.99,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 49194.0,
-      "change": 14.0,
-      "change_percent": 0.03,
+      "price": 49312.0,
+      "change": 132.0,
+      "change_percent": 0.27,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2658.6,
-      "change": -4.7,
-      "change_percent": -0.18,
+      "price": 2664.9,
+      "change": 1.6,
+      "change_percent": 0.06,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 81.11,
-      "change": -2.1,
-      "change_percent": -2.52,
+      "price": 81.26,
+      "change": -1.95,
+      "change_percent": -2.34,
       "name": "Crude Oil Dec 26"
     },
     {
       "symbol": "GC=F",
-      "price": 3577.8,
-      "change": -107.7,
-      "change_percent": -2.92,
+      "price": 3591.0,
+      "change": -94.5,
+      "change_percent": -2.56,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 42.24,
-      "change": -2.08,
-      "change_percent": -4.7,
+      "price": 42.61,
+      "change": -1.71,
+      "change_percent": -3.85,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1301.3,
-      "change": -46.3,
-      "change_percent": -3.44,
+      "price": 1306.3,
+      "change": -41.3,
+      "change_percent": -3.06,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 895.5,
-      "change": -21.2,
-      "change_percent": -2.31,
+      "price": 902.0,
+      "change": -14.7,
+      "change_percent": -1.6,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.59,
       "change": 0.32,
-      "change_percent": 9.85,
+      "change_percent": 9.94,
       "name": "Natural Gas Dec 26"
     }
   ],

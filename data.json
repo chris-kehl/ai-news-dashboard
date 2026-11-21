@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T21:17:11.537056",
+  "timestamp": "2026-11-20T21:22:42.676607",
   "summary": "Key topics today:\n- - Restricting AI agents in mobile operating systems platforms from capturing data (r/HackerNews, 201 pts)\n- - Language Models Can Rewrite Their Own Weights (r/HackerNews, 101 pts)\n- - Vibecoding an inference chip (r/HackerNews, 101 pts)\n- - The Hungry Butler Effect: Concealed Commercial Incentives in LLMs (r/HackerNews, 101 pts)\n- - US SEC's Nvidia probe is examining potential accounting issues \u2013 sources (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
-      "asset": "SOXL",
-      "price": 45.3,
-      "change": -8.04,
-      "category": "stock",
-      "text": "SOXL -8.0% drop @ $45.30"
-    },
-    {
-      "type": "sell",
       "asset": "AMD",
       "price": 489.19,
       "change": -7.72,
       "category": "stock",
       "text": "AMD -7.7% drop @ $489.19"
+    },
+    {
+      "type": "sell",
+      "asset": "^IXIC",
+      "price": 22617.73,
+      "change": -7.42,
+      "category": "stock",
+      "text": "^IXIC -7.4% drop @ $22617.73"
     }
   ],
   "reddit": [
@@ -134,9 +134,31 @@
     }
   ],
   "world_reddit": [],
-  "world_x": [],
+  "world_x": [
+    {
+      "author": "@BBCWorld",
+      "text": "They were fined $811m for conning detained migrants, but the scams didn't stop https://bbc.in/3V0rgnK",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2123946095805952106#m",
+      "date": "Sat, 21 Nov 2026 01:06:24 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "ANC fights to keep control of South Africa's key cities after election setback https://bbc.in/4zxDi6c",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2123938736786300977#m",
+      "date": "Sat, 21 Nov 2026 00:37:10 GMT",
+      "likes": 0
+    },
+    {
+      "author": "@BBCWorld",
+      "text": "Mamdani announces plan to close New York's Rikers Island jail by 2032 https://bbc.in/4eSbZMu",
+      "url": "https://nitter.kareem.one/BBCWorld/status/2123930863847051397#m",
+      "date": "Sat, 21 Nov 2026 00:05:53 GMT",
+      "likes": 0
+    }
+  ],
   "crypto": {
-    "timestamp": "2026-11-21T02:16:55.178981",
+    "timestamp": "2026-11-21T02:22:25.176113",
     "prices": [
       {
         "name": "Bittensor",
@@ -438,7 +460,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-21T02:16:19.858166",
+    "timestamp": "2026-11-21T02:22:03.028362",
     "trending": [
       {
         "symbol": "^VIX",
@@ -446,13 +468,6 @@
         "change": 7.45,
         "change_percent": 26.2,
         "name": "CBOE Volatility Index"
-      },
-      {
-        "symbol": "SOXL",
-        "price": 45.3,
-        "change": -3.96,
-        "change_percent": -8.04,
-        "name": "Direxion Daily Semiconductor Bu"
       },
       {
         "symbol": "^IXIC",
@@ -476,6 +491,20 @@
         "name": "S&P 500"
       },
       {
+        "symbol": ".RUT",
+        "price": 2581.79,
+        "change": -132.52,
+        "change_percent": -4.88,
+        "name": "Russell 2000"
+      },
+      {
+        "symbol": ".DJI",
+        "price": 48147.33,
+        "change": -2050.84,
+        "change_percent": -4.09,
+        "name": "Dow Jones Industrial Average"
+      },
+      {
         "symbol": "ZS",
         "price": 205.71,
         "change": 7.88,
@@ -490,13 +519,6 @@
         "name": "NVIDIA Corporation"
       },
       {
-        "symbol": ".RUT",
-        "price": 2581.79,
-        "change": -73.32,
-        "change_percent": -2.76,
-        "name": "RUSS 2K"
-      },
-      {
         "symbol": "CRWD",
         "price": 243.46,
         "change": 6.43,
@@ -504,38 +526,24 @@
         "name": "CrowdStrike Holdings, Inc."
       },
       {
-        "symbol": "SNDK",
-        "price": 94.39,
-        "change": -2.63,
-        "change_percent": -2.71,
-        "name": "Sandisk Corporation"
+        "symbol": "GPN",
+        "price": 83.52,
+        "change": -2.1,
+        "change_percent": -2.45,
+        "name": "Global Payments Inc."
       },
       {
-        "symbol": "MU",
-        "price": 690.44,
-        "change": -14.83,
-        "change_percent": -2.1,
-        "name": "Micron Technology, Inc."
-      },
-      {
-        "symbol": "AVGO",
-        "price": 346.65,
-        "change": -7.4,
-        "change_percent": -2.09,
-        "name": "Broadcom Inc."
-      },
-      {
-        "symbol": ".DJI",
-        "price": 48147.33,
-        "change": -949.73,
-        "change_percent": -1.93,
-        "name": "DJIA"
+        "symbol": "VOO",
+        "price": 658.01,
+        "change": -13.3,
+        "change_percent": -1.98,
+        "name": "Vanguard S&P 500 ETF"
       },
       {
         "symbol": "BTC-USD",
-        "price": 58904.5,
-        "change": 101.9,
-        "change_percent": 0.17,
+        "price": 58828.12,
+        "change": 25.52,
+        "change_percent": 0.04,
         "name": "Bitcoin USD"
       }
     ],
@@ -967,7 +975,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-21T02:16:50.115150",
+    "timestamp": "2026-11-21T02:22:22.037027",
     "items": [
       {
         "symbol": "SPX",
@@ -1061,38 +1069,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 179.93,
-        "change": -4.51,
+        "price": 179.73,
+        "change": -4.5,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 58941,
-        "change": -4.11,
+        "price": 58869,
+        "change": -4.43,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1623.67,
-        "change": -6.35,
+        "price": 1621.28,
+        "change": -6.64,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
         "price": 68.68,
-        "change": -4.55,
+        "change": -4.69,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.55,
-        "change": -3.49,
+        "price": 8.54,
+        "change": -3.54,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.49,
-        "change": -5.76,
+        "price": 6.5,
+        "change": -5.87,
         "type": "crypto"
       },
       {
@@ -1219,9 +1227,9 @@
       "author": ""
     },
     {
-      "title": "Dan Ives Just Delivered Great News for AI Stocks. Here\u2019s the Part That Matters.",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPc0t4OVYwWGhwM1pwUnEyNTBKZGdQVHg3Rl9CNUxVbDBITnBxUk9BNWNwUWpFVlZkMGo2V1RFR29uX3lIT1didi00RWF6OThZaTlmSjNDcmJ5aUxfTHpkZnBiQ0RMSlpFWDR0RkVreEU4M2ZSRVpyTWJnODdSRnkwRXl5RUFJdC1FVmdQZGhTVkVvUVlWV1V0NFJwZW9qNjZES1hVWnJiUlhiMXJJMGRBMXBDVUJRLXpTbUlrWg?oc=5",
-      "source": "The Motley Fool",
+      "title": "Ex-GM CEO on Mary Barra succession planning: 'It's going to be tough'",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONHA3TTN4NVVOQnlpY1JHaVhuYkVjcTY0MEJTQTB3TXBLVnlmR0RwUG0tODQ1ZmJhT0tqeERieVFCZkVfTDJ5cjFiYl90OWJKTGs2QUdzMnZlQ296TkZmQk55NDBabGZhMmZoeXZGNTBjVkFWT2ZRM3ZOOF9Va1NjTnpvSdIBiAFBVV95cUxOSDd2ZC1jTEdCZkFXTVpWRU1EaDFCa1ZfNktkTFl1bXpXZHM4eEhRbG5vdE9hdGtsYndTTXJnbmhjZEhxQ0xCTGxUalJCOU1sOFVPWWsyMFJrZzJBb2UxMHl4LVl4aWxtNUx0NEFOWGoxZFh6cV80X2lmMC01ai16MTVtSWY4VHJx?oc=5",
+      "source": "CNBC",
       "category": "business",
       "published": "Fri, 20 Nov 2026 ",
       "description": "",
@@ -1229,11 +1237,11 @@
       "author": ""
     },
     {
-      "title": "Chips are crashing like it's 2008 as the Nasdaq 100 nears a bear market",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQmc2cHN6ZXN3Y1BKcGNfazRTNUNYTWp2enR1RVp4d2VEWnE4NE4yWFhwQkpYSDRMdzU5U3RTQTdtMzFOSGtVYmd4RnZNYWthSGdPUVY2MmRab3FUX0lLQWdZZ19tSmh0NktIWUxLMXVQRVl3dDByUExZbzVENzhiY25vRTl2cnNJcEtkR202Q0tIdlFWWURQTEFDaHVORU1FYkR6MXJQaFpZdTU3Q1hvcjRPdXU3NXI3ekZKclJycmVROU84Q0E?oc=5",
-      "source": "Yahoo Finance",
+      "title": "Using AI, mathematician claims to have solved one of math\u2019s great mysteries",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWnR2Ny1uWG1YVUdRQmI2QlEyUkFoalhFZFp3Rng1ZWVlRVR4SHVzaHFnRnZuNWFfRmM5YkpVNFJCSmNHWFk2WDJia1lfOG1mYVY5MHZjY2F1d05XMlhHRUVlVklvc2RiWUR4aURGLWh4MGJMZWFsOW1Obm0taDVHek54Tk1GckZpYl80QXRncVNIbmxLdHlWUkZqMGJfSktFQ0hFV1VJWVQzZDZjbHN6Z3I0LS1aVGNJTElMZ2QzWHo2QQ?oc=5",
+      "source": "The Washington Post",
       "category": "business",
-      "published": "Fri, 20 Nov 2026 ",
+      "published": "Sat, 21 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1291,16 +1299,6 @@
       "author": ""
     },
     {
-      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRUgzUHhaOXVyOElQMmNmcFBvZnZyVjZTTUFiVnZIc0pkcU1Dbk00cUMwcXBibWNTOUZUZXE0enJVTEtoTWJRTHVoa2tqcnZaMU9mUHhfRkFQeHhwbjRid0lxeHV3MWpVcnNfWWlHZ0xqOHV4MjVURlBDWEE3MldXUHliZlBMT2ZVVF9BckItWUNJRVBtcF82Zjg2emcxZzdQUGQ3cGN0SERIQ2c?oc=5",
-      "source": "The Verge",
-      "category": "business",
-      "published": "Fri, 20 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "6 things you should buy \u2014 and 5 things you definitely shouldn\u2019t \u2014 during Black Friday and Cyber Monday 2026",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVi10MzdkYlJhVDFXYnA2X2l5Y1hBcmdvQTg3QUQzVlJnSjhPZzNqemJRU3BnQUV5MGItSHhpOXlTb3Z3T3JpblExYXZleDJTWndEMW14R0NuRnY0M3lZakM2X280Q0Q5X0pjSUtwMWVFLWkxeUQ2bjE4OGpQd2pQeUUzNWlCSlBzY1p0SVdER0dERWxhZTM4V3VQVDQ?oc=5",
       "source": "NBC News",
@@ -1311,9 +1309,19 @@
       "author": ""
     },
     {
-      "title": "iOS 27.3: New features, release date, more",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5JMll6YnNLRXhiNk1KdlBiOVJuX3B2aGFNa2twT1J4ekxHYlhqTUZLZ0RUdHktQnA1b1RSaDhZUzBZNDNFUnB5RkV1OEhVUW9vVFpVdDVxY2UwRHpUeVRwMDdjenprNm40UzZpMTVNTlNDSkxjbEdtdWNxYw?oc=5",
-      "source": "9to5Mac",
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRUgzUHhaOXVyOElQMmNmcFBvZnZyVjZTTUFiVnZIc0pkcU1Dbk00cUMwcXBibWNTOUZUZXE0enJVTEtoTWJRTHVoa2tqcnZaMU9mUHhfRkFQeHhwbjRid0lxeHV3MWpVcnNfWWlHZ0xqOHV4MjVURlBDWEE3MldXUHliZlBMT2ZVVF9BckItWUNJRVBtcF82Zjg2emcxZzdQUGQ3cGN0SERIQ2c?oc=5",
+      "source": "The Verge",
+      "category": "business",
+      "published": "Fri, 20 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "A visual tour of \u2018Grand Theft Auto VI\u2019s\u2019 stunningly realized Miami",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeGhKV0xIVE1UajJRRnVTSjdsSS1Od0M1UU9DSWc1VzJ6OTFDWWlfZDkxRWtUTkU3eTBIWW5yWTJnaDFKQUw0NHZDa3RoRlluZXJibXBhVDR3U1N6YUY3RFJPMVZBb0JvZkx0ZDBqT0JORG9EQVh5cnF1ZUluS2tkc0w0eTJXd1ktdm84OHFTS1cyMTJzYTlNTlh3SVhzeFV6T0VvTGNXMDE4WmQ0Y2JZUE5kQWRzTG5zTkNB?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Fri, 20 Nov 2026 ",
       "description": "",
@@ -1531,7 +1539,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Fri 20 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-20T21:17:05.577386"
+    "timestamp": "2026-11-20T21:22:40.631656"
   },
   "sticky": {
     "cnbc": [

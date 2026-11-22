@@ -1,15 +1,7 @@
 {
-  "timestamp": "2026-11-22T14:01:24.531499",
+  "timestamp": "2026-11-22T14:12:38.900832",
   "summary": "Key topics today:\n- - Show HN: I built a game where you are an LLM's subagent (r/HackerNews, 201 pts)\n- - 87% of the Anthropic power will come from gas and 11% from coal in 2028 (r/HackerNews, 101 pts)\n- - Data Processing Incidents on Inference Providers (r/HackerNews, 101 pts)\n- - Perplexity and Intelligence (r/HackerNews, 1 pts)\n- - Toyota, Nissan, and Honda to standardize parts to lower costs (r/HackerNews, 1 pts)",
   "signals": [
-    {
-      "type": "watch",
-      "asset": "HYPE",
-      "price": 62.51,
-      "change": 2.71,
-      "category": "crypto",
-      "text": "HYPE +2.7% @ $62.51"
-    },
     {
       "type": "watch",
       "asset": "FIGR_HELOC",
@@ -17,6 +9,14 @@
       "change": 2.68,
       "category": "crypto",
       "text": "FIGR_HELOC +2.7% @ $1.06"
+    },
+    {
+      "type": "watch",
+      "asset": "TAO",
+      "price": 189.92,
+      "change": 2.01,
+      "category": "crypto",
+      "text": "TAO +2.0% @ $189.92"
     },
     {
       "type": "sell",
@@ -125,81 +125,81 @@
       "created": ""
     },
     {
-      "title": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+      "title": "Inside PyPy: First Contact with RPython",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://news.ycombinator.com/item?id=50555002",
+      "url": "https://bernsteinbear.com/blog/inside-pypy-first-contact-with-rpython/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-22T19:01:13.858406",
+    "timestamp": "2026-11-22T19:12:27.880908",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 189.82,
-        "change_24h": 1.94,
-        "market_cap": 2227143447
+        "price": 189.92,
+        "change_24h": 2.01,
+        "market_cap": 2228407813
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 60707,
-        "change_24h": 1.08,
-        "market_cap": 1221176039299
+        "price": 60632,
+        "change_24h": 0.7,
+        "market_cap": 1219660845804
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1712.55,
-        "change_24h": 1.93,
-        "market_cap": 209344952757
+        "price": 1712.48,
+        "change_24h": 1.74,
+        "market_cap": 209337338766
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.998658,
-        "change_24h": 0.02,
-        "market_cap": 174608989134
+        "price": 0.998722,
+        "change_24h": 0.03,
+        "market_cap": 174620233988
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 558.03,
-        "change_24h": 1.96,
-        "market_cap": 73386354476
+        "price": 556.68,
+        "change_24h": 1.52,
+        "market_cap": 73209038168
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999292,
-        "change_24h": 0.01,
-        "market_cap": 68447932967
+        "price": 0.999332,
+        "change_24h": 0.02,
+        "market_cap": 68450677385
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 0.928421,
-        "change_24h": -0.59,
-        "market_cap": 58970158360
+        "price": 0.927532,
+        "change_24h": -0.77,
+        "market_cap": 58913690495
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 70.32,
-        "change_24h": -0.51,
-        "market_cap": 41630960453
+        "price": 70.23,
+        "change_24h": -0.63,
+        "market_cap": 41577709087
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.304904,
-        "change_24h": 0.05,
-        "market_cap": 28981678421
+        "price": 0.305018,
+        "change_24h": 0.1,
+        "market_cap": 28992453080
       },
       {
         "name": "Figure Heloc",
@@ -211,9 +211,9 @@
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 62.51,
-        "change_24h": 2.71,
-        "market_cap": 14857350855
+        "price": 62.26,
+        "change_24h": 1.75,
+        "market_cap": 14797416234
       }
     ],
     "news": [
@@ -298,7 +298,7 @@
       "source": "Bbc News",
       "category": "bbc_news",
       "published": "Sun, 22 Nov 2026 ",
-      "description": "COP31 climate talks fail to make breakthrough on tackling climate change after a row about mentioning fossil fuels."
+      "description": "The talks fail to make breakthrough on tackling climate change after a row about mentioning fossil fuels."
     },
     {
       "title": "Boss of British Gas owner Centrica 'hugely concerned' over impact of soaring energy bills",
@@ -341,6 +341,14 @@
       "description": "The wife of the disgraced comedian says she will stick to the \"parameters\", after reading out a message from her inmate husband."
     },
     {
+      "title": "What's next after no deal at COP31 climate talks?",
+      "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+      "source": "Bbc World",
+      "category": "bbc_world",
+      "published": "Sun, 22 Nov 2026 ",
+      "description": "The COP31 climate summit in Turkey has formally come to an end after countries failed to agree a deal."
+    },
+    {
       "title": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
       "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -357,20 +365,12 @@
       "description": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos."
     },
     {
-      "title": "Three killed and dozens missing after fire at Indonesian factory",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-      "source": "Bbc World",
-      "category": "bbc_world",
-      "published": "Sun, 22 Nov 2026 ",
-      "description": "At least three people were killed and many more feared dead after a fire at a confectionary factory."
-    },
-    {
-      "title": "DNI Clayton: Putin is 'not America's friend in Ukraine'",
-      "url": "https://abcnews.com/Politics/dni-clayton-putin-americas-friend-ukraine/story?id=138356905",
+      "title": "Equipment outage in Atlanta causes over 1,300 Delta flight delays",
+      "url": "https://abcnews.com/US/equipment-outage-atlanta-causes-1300-delta-flight-delays/story?id=138360900",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Sun, 22 Nov 2026 ",
-      "description": "The director of national intelligence appeared on ABC's \"This Week\" Sunday."
+      "description": "Hundreds of Delta Air Lines flights in and out of Atlanta's Hartsfield-Jackson Atlanta International Airport were delayed on Sunday due to a technical issue."
     },
     {
       "title": "LIVE:  ABC News Live",
@@ -381,12 +381,12 @@
       "description": "24/7 coverage of breaking news and live events"
     },
     {
-      "title": "West Coast bracing for more coastal flooding as Thanksgiving travel week begins",
-      "url": "https://abcnews.com/US/west-coast-bracing-coastal-flooding-thanksgiving-travel-week/story?id=138357189",
+      "title": "DNI Clayton: Putin is 'not America's friend in Ukraine'",
+      "url": "https://abcnews.com/Politics/dni-clayton-putin-americas-friend-ukraine/story?id=138356905",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Sun, 22 Nov 2026 ",
-      "description": "With millions of people preparing to travel for the Thanksgiving holiday, the Pacific Northwest and Northern California coasts are bracing for severe weather."
+      "description": "The director of national intelligence appeared on ABC's \"This Week\" Sunday."
     },
     {
       "title": "Multiple people shot at 'large' party in California, sheriff's office says",
@@ -438,15 +438,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-22T19:00:45.959426",
+    "timestamp": "2026-11-22T19:11:59.312567",
     "trending": [
-      {
-        "symbol": "SPCX",
-        "price": 127.79,
-        "change": -15.71,
-        "change_percent": -10.95,
-        "name": "Space Exploration Technologies "
-      },
       {
         "symbol": "APP",
         "price": 348.29,
@@ -469,11 +462,11 @@
         "name": "Once Upon a Farm, PBC"
       },
       {
-        "symbol": "DAL",
-        "price": 80.01,
-        "change": -4.87,
-        "change_percent": -5.74,
-        "name": "Delta Air Lines, Inc."
+        "symbol": "^TWII",
+        "price": 36033.29,
+        "change": -2393.6,
+        "change_percent": -6.23,
+        "name": "TSEC CAPITALIZATION WEIGHTED ST"
       },
       {
         "symbol": "NFLX",
@@ -518,11 +511,11 @@
         "name": "Visa Inc."
       },
       {
-        "symbol": "MA",
-        "price": 625.59,
-        "change": -17.78,
-        "change_percent": -2.76,
-        "name": "Mastercard Incorporated"
+        "symbol": "AAPL",
+        "price": 342.56,
+        "change": -9.89,
+        "change_percent": -2.81,
+        "name": "Apple Inc."
       },
       {
         "symbol": ".RUT",
@@ -537,6 +530,13 @@
         "change": -949.73,
         "change_percent": -1.93,
         "name": "DJIA"
+      },
+      {
+        "symbol": "EURUSD=X",
+        "price": 1.1,
+        "change": -0.0,
+        "change_percent": -0.02,
+        "name": "EUR/USD"
       },
       {
         "symbol": "ES=F",
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-22T19:01:09.636601",
+    "timestamp": "2026-11-22T19:12:22.249140",
     "items": [
       {
         "symbol": "SPX",
@@ -1068,38 +1068,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 189.82,
-        "change": 1.95,
+        "price": 189.92,
+        "change": 2.04,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 60707,
-        "change": 1.07,
+        "price": 60641,
+        "change": 0.73,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1712.55,
-        "change": 1.96,
+        "price": 1712.65,
+        "change": 1.75,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.32,
-        "change": -0.51,
+        "price": 70.26,
+        "change": -0.61,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.81,
-        "change": 2.35,
+        "price": 8.8,
+        "change": 2.1,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 6.68,
-        "change": 0.98,
+        "change": 0.68,
         "type": "crypto"
       },
       {
@@ -1109,21 +1109,9 @@
         "type": "mover"
       },
       {
-        "symbol": "SPCX",
-        "price": 127.79,
-        "change": -10.95,
-        "type": "mover"
-      },
-      {
         "symbol": "APP",
         "price": 348.29,
         "change": -10.9,
-        "type": "mover"
-      },
-      {
-        "symbol": "ARKK",
-        "price": 64.22,
-        "change": -9.63,
         "type": "mover"
       },
       {
@@ -1145,6 +1133,12 @@
         "type": "mover"
       },
       {
+        "symbol": "^TWII",
+        "price": 36033.29,
+        "change": -6.23,
+        "type": "mover"
+      },
+      {
         "symbol": "NFLX",
         "price": 56.73,
         "change": -5.17,
@@ -1160,6 +1154,12 @@
         "symbol": "AXP",
         "price": 301.7,
         "change": -4.34,
+        "type": "mover"
+      },
+      {
+        "symbol": "^KS11",
+        "price": 4869.96,
+        "change": -3.9,
         "type": "mover"
       }
     ]
@@ -1216,9 +1216,9 @@
       "author": ""
     },
     {
-      "title": "New Report Claims Jensen Huang Regularly Threatened Nvidia Staff With Over-The-Top Violence",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0JDWklpVUExWmNhdU8tNWJGV0V0R3hodC1JMHBRUm0zUFl6Qjk3SXlKX21yWjlrOUJXMVFMSDdmT1FJc0VBMnpCQy0tYVQ3TlNvX3VqMnBvT0w3WXRyMi16RFlNV1A1ZlNVM21RZUUtZG1la0g2R3luQmFEdnJBaFV2bHRvTVppekR3dEY4T2tWOEdxVnRGdUJuN2pYcGNkN2VHYjI4a3NQMFJmQ0RrVFdCdnV0RUd6QmlCam93?oc=5",
-      "source": "Kotaku",
+      "title": "The S&P 500 Just Entered Correction Territory. Here's What It Means for Investors Right Now.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWUlOVXBkQS1POEJDU2lQekREZ25RVTczblRnSVg0M2lCeGFKT1Jad2t2ZDVhWm5SNmNxRnJmWWx3eUZzeHRqNTRSX0U4d05BUms4Z2ExeVpNWjdsWHd3RnR6OFBENVpFSGRaYWRad2E2V1NQZGlWRUViX3JIUTIzSGpEWEw3aV9FZ2MtbFRPeGZqNGJwVXQtYUxn?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sat, 21 Nov 2026 ",
       "description": "",
@@ -1236,9 +1236,9 @@
       "author": ""
     },
     {
-      "title": "The S&P 500 Just Entered Correction Territory. Here's What It Means for Investors Right Now.",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWUlOVXBkQS1POEJDU2lQekREZ25RVTczblRnSVg0M2lCeGFKT1Jad2t2ZDVhWm5SNmNxRnJmWWx3eUZzeHRqNTRSX0U4d05BUms4Z2ExeVpNWjdsWHd3RnR6OFBENVpFSGRaYWRad2E2V1NQZGlWRUViX3JIUTIzSGpEWEw3aV9FZ2MtbFRPeGZqNGJwVXQtYUxn?oc=5",
-      "source": "Yahoo Finance",
+      "title": "New Report Claims Jensen Huang Regularly Threatened Nvidia Staff With Over-The-Top Violence",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0JDWklpVUExWmNhdU8tNWJGV0V0R3hodC1JMHBRUm0zUFl6Qjk3SXlKX21yWjlrOUJXMVFMSDdmT1FJc0VBMnpCQy0tYVQ3TlNvX3VqMnBvT0w3WXRyMi16RFlNV1A1ZlNVM21RZUUtZG1la0g2R3luQmFEdnJBaFV2bHRvTVppekR3dEY4T2tWOEdxVnRGdUJuN2pYcGNkN2VHYjI4a3NQMFJmQ0RrVFdCdnV0RUd6QmlCam93?oc=5",
+      "source": "Kotaku",
       "category": "business",
       "published": "Sat, 21 Nov 2026 ",
       "description": "",
@@ -1546,7 +1546,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 22 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-22T14:01:21.843351"
+    "timestamp": "2026-11-22T14:12:36.066804"
   },
   "sticky": {
     "cnbc": [

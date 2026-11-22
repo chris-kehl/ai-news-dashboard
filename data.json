@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-22T16:01:43.549501",
+  "timestamp": "2026-11-22T16:07:36.320026",
   "summary": "Key topics today:\n- - Show HN: I built a game where you are an LLM's subagent (r/HackerNews, 201 pts)\n- - Agentics: Mushy Software (r/HackerNews, 101 pts)\n- - 87% of the Anthropic power will come from gas and 11% from coal in 2028 (r/HackerNews, 101 pts)\n- - Data Processing Incidents on Inference Providers (r/HackerNews, 101 pts)\n- - What Happened to Silicon Valley? (r/HackerNews, 1 pts)",
   "signals": [
     {
@@ -27,12 +27,12 @@
       "text": "ETH +2.1% @ $1,718.34"
     },
     {
-      "type": "buy",
-      "asset": "^VIX",
-      "price": 35.89,
-      "change": 26.2,
+      "type": "sell",
+      "asset": "ANT",
+      "price": 88.91,
+      "change": -20.26,
       "category": "stock",
-      "text": "^VIX +26.2% momentum @ $35.89"
+      "text": "ANT -20.3% drop @ $88.91"
     },
     {
       "type": "sell",
@@ -125,26 +125,26 @@
       "created": ""
     },
     {
-      "title": "Nyx, the Oldest Internet Service Provider",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://nyx.net/",
-      "created": ""
-    },
-    {
       "title": "I joined the NTP Pool, but not with my Stratum 1 Pi",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
       "created": ""
+    },
+    {
+      "title": "Nyx, the Oldest Internet Service Provider",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://nyx.net/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-22T21:01:23.530292",
+    "timestamp": "2026-11-22T21:07:27.302724",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,14 +446,14 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-22T21:00:48.022268",
+    "timestamp": "2026-11-22T21:06:55.812586",
     "trending": [
       {
-        "symbol": "^VIX",
-        "price": 35.89,
-        "change": 7.45,
-        "change_percent": 26.2,
-        "name": "CBOE Volatility Index"
+        "symbol": "ANT",
+        "price": 88.91,
+        "change": -22.59,
+        "change_percent": -20.26,
+        "name": "Anthropic, PBC"
       },
       {
         "symbol": "MU",
@@ -470,18 +470,18 @@
         "name": "Applovin Corporation"
       },
       {
+        "symbol": "UBER",
+        "price": 63.47,
+        "change": -5.29,
+        "change_percent": -7.69,
+        "name": "Uber Technologies, Inc."
+      },
+      {
         "symbol": "OFRM",
         "price": 12.17,
         "change": 0.79,
         "change_percent": 6.94,
         "name": "Once Upon a Farm, PBC"
-      },
-      {
-        "symbol": "^TWII",
-        "price": 36033.29,
-        "change": -2393.6,
-        "change_percent": -6.23,
-        "name": "TSEC CAPITALIZATION WEIGHTED ST"
       },
       {
         "symbol": "NFLX",
@@ -540,18 +540,18 @@
         "name": "DJIA"
       },
       {
-        "symbol": "ES=F",
-        "price": 6935.0,
-        "change": 0.0,
-        "change_percent": 0.0,
-        "name": "E-Mini S&P 500 Dec 26"
-      },
-      {
         "symbol": "NQ=F",
         "price": 25126.5,
         "change": 0.0,
         "change_percent": 0.0,
         "name": "Nasdaq 100 Dec 26"
+      },
+      {
+        "symbol": "ES=F",
+        "price": 6935.0,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "E-Mini S&P 500 Dec 26"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-22T21:01:12.993265",
+    "timestamp": "2026-11-22T21:07:23.766017",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,39 +1076,45 @@
       },
       {
         "symbol": "TAO",
-        "price": 190.4,
-        "change": 2.69,
+        "price": 191.01,
+        "change": 2.97,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 60837,
-        "change": 0.81,
+        "price": 60953,
+        "change": 0.89,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1718.57,
-        "change": 2.08,
+        "price": 1721.82,
+        "change": 2.18,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.1,
-        "change": -0.48,
+        "price": 70.25,
+        "change": -0.35,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.8,
-        "change": 2.03,
+        "price": 8.82,
+        "change": 2.23,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.67,
-        "change": 0.53,
+        "price": 6.68,
+        "change": 0.65,
         "type": "crypto"
+      },
+      {
+        "symbol": "ANT",
+        "price": 88.91,
+        "change": -20.26,
+        "type": "mover"
       },
       {
         "symbol": "AMC",
@@ -1141,12 +1147,6 @@
         "type": "mover"
       },
       {
-        "symbol": "^TWII",
-        "price": 36033.29,
-        "change": -6.23,
-        "type": "mover"
-      },
-      {
         "symbol": "NFLX",
         "price": 56.73,
         "change": -5.17,
@@ -1174,19 +1174,9 @@
   },
   "business": [
     {
-      "title": "Delta Air Lines announces automated services for flights back online, rebooking, refunding travelers",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQY0RsNzdjQlFwdjBKdk43Z2ZGZDVKazZONmJ3czg0RmsyNmJKSUl1dEJfVHQ0NmxDbW16ZGpUdHdjN21HTTNkOHZZeG5CMXZ2STJ3ekd5YVBsc05mVjIzanRlNXFWRGVvX1M1Tktrckd4bVp3YU1pMlBwSVFRTnViOURMUmQ2ZF9CYjNIS1hydHpYaUN4bTNJc2piLXY5TUpZQkY1akRQZHl2d3cwTndWaVd2d25zdkpXdURjRllnYXA3dXVxRnM0TlVtYlhuQWtNOFpqYVNNN051dHdRa0ttd1psWWlRZTlB0gH8AUFVX3lxTE1Udk5CbkVnclRyTGxxNDhkVG5iYjJWR2pPOEJXdC1aZmQzS3JYRmNsQ1QzTDh4VWlScTlzYXg2b0psVUQxRXBBUThlTW8wOVcwVFFzR0x5NzNvT04tQ0lJNWNEOXZ1Q3ljUjBTNGQzTXd5WGhzNWFnbjZxRmpmNVFJQlFlVTJ5SGhrLXNTN2VxY0JJMUJFM2h1QlJaQXBWSjMzczgzeVNiMFF6Y1RYMWNZQktPZVR2eGRYaFhISENvQnVVWURBRmJzbHZENHVtZXFqOGNFbmpmTW1BVTJ0ZjVfbWl1YURJbW53SXk2YURua05hZ1JDb2VqMW95NA?oc=5",
+      "title": "Delta delays \u2018not related to any FAA air traffic systems,\u2019 administration says",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQY0RsNzdjQlFwdjBKdk43Z2ZGZDVKazZONmJ3czg0RmsyNmJKSUl1dEJfVHQ0NmxDbW16ZGpUdHdjN21HTTNkOHZZeG5CMXZ2STJ3ekd5YVBsc05mVjIzanRlNXFWRGVvX1M1Tktrckd4bVp3YU1pMlBwSVFRTnViOURMUmQ2ZF9CYjNIS1hydHpYaUN4bTNJc2piLXY5TUpZQkY1akRQZHl2d3cwTndWaVd2d25zdkpXdURjRllnYXA3dXVxRnM0TlVtYlhuQWtNOFpqYVNNN051dHdRa0ttd1psWWlRZTlB?oc=5",
       "source": "WSB-TV",
-      "category": "business",
-      "published": "Sun, 22 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZjc4cHQ0TnRGd25uNTM5MUw5Zk5WUUdIV09nY3ltNDNBR2pvemJNRl9TOTZnR2lNay1CdTl1RHhPZEhtVmdTWE1qdS1SZVVmWURldUhJTTgxTktCX0xsMTdPNGpKS0JkYV9fUXpaY0NqLWlBa0tlVElTSmpnV1NzVGZ3Z0RSWW9XTFkwVm9YdW5WOWNRQU92MzUyekxmNjZWUnkyZ1VNdl9FMy13eTN5SFhIVG14TG5DZHZyYVR2VUxwOHkzeWRz?oc=5",
-      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1204,8 +1194,18 @@
       "author": ""
     },
     {
-      "title": "Strong Earnings Prove No Match for the Crumbling AI Trade",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSWdMSHNxSjRIMWY2c1JVckdnZFBHRG1XOThWbXFwQ25lT0ZaRTdTc1NKWkVrSHl2bTRPM241dkI2UHQtQWl5NHd3T3FHb3pnRXc4QmlLYzdQVEJRZmpNeDNUbldVU0dJSWppNXIyLVlwS0hJenlvY0VMQVBkbVdtcUlFcG9lWkFMUVd3M1QyYWdJbG9YX3cxWU5lNW0zbEdieWtydzFzVzdUbXls?oc=5",
+      "title": "Trump\u2019s meme coin gala raises eyebrows \u2014 even in MAGA circles",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96V0NPOVRQM2xMcFdVZ2d1Z052MExvaGg1MWNxYWJ6WlRoRWpQXzNrUDVjQlNROTB3bjVsbjkyUVIzandPYXNsejZwVlVIOWF2TkR1SE1OeFFDMk1LNHJqdg?oc=5",
+      "source": "MS NOW",
+      "category": "business",
+      "published": "Sun, 22 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Investors Brave Stock Market \u2018Fragility\u2019 as AI Trade Falters",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTnVJSXZOc19yY1dPSG12MGpNT29BU3g1X1c2TjliWWE4V0tGejk1cWdlRUJaZUI5bmhyT0RFTVZlWDNidmEwX01XYU1kT3ZVdFlVX2YzTGZqQnJEdlBVeEhZQTJXT2JmNkdWZ1J3b3FQeTh2N3VvWmJQNFMweEJpV3NhbEkxWGVQWUN4NmZsOXNHOHJWZE1VUUFXNHlRUHliakRwakRKbTl4ZDZYUUE?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
@@ -1224,9 +1224,19 @@
       "author": ""
     },
     {
-      "title": "Trump\u2019s meme coin gala raises eyebrows \u2014 even in MAGA circles",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96V0NPOVRQM2xMcFdVZ2d1Z052MExvaGg1MWNxYWJ6WlRoRWpQXzNrUDVjQlNROTB3bjVsbjkyUVIzandPYXNsejZwVlVIOWF2TkR1SE1OeFFDMk1LNHJqdg?oc=5",
-      "source": "MS NOW",
+      "title": "Bessent says we \"need answers\" on role Nvidia played in sending AI chips to China, suggests Alice Huang is \"kind of a canard\"",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ0w1SkRVbmd2cF9NcmxBeHYyeTdIdjQwR3c0VG5KT0g1UHlxRm15S1B4ZE1KbUVXOHhlMXhuS1VOeEFnd3VkQmNES2ZpekFDbERtQzFJUVNYXzJHZ0VvdDlUZFVQTWsxOUlJeWRGQnI4ZElsMTc3eklnUDRBcEFmLXF4Z3o?oc=5",
+      "source": "CBS News",
+      "category": "business",
+      "published": "Sun, 22 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "A battered stock market looks for the bottom: What to watch this week",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcU03UEttMkt2VHk0czNiZGxHNnB0MTR6Z2lvN01WUEF4VXZaejRWdV9IZ1d1b2YxUTc5bG9NUXVscVV4RjZ1TmdEdGtzWDdlb0JsQzhIWUozSHhGVFNSYW55aWpaalN4V1NlU21GWUpjYURFVU9YajkwZ3ltNXhvM2kwRW51T2RtYzVtajM4M3RvRmYwLUNQU1RHN0hjYmlsR3JGdTQ2WVNoMThMNTNwZmI0VlB5NXhaYzZoLWxralZSSGM?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1239,16 +1249,6 @@
       "source": "USA Today",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "New Report Claims Jensen Huang Regularly Threatened Nvidia Staff With Over-The-Top Violence",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0JDWklpVUExWmNhdU8tNWJGV0V0R3hodC1JMHBRUm0zUFl6Qjk3SXlKX21yWjlrOUJXMVFMSDdmT1FJc0VBMnpCQy0tYVQ3TlNvX3VqMnBvT0w3WXRyMi16RFlNV1A1ZlNVM21RZUUtZG1la0g2R3luQmFEdnJBaFV2bHRvTVppekR3dEY4T2tWOEdxVnRGdUJuN2pYcGNkN2VHYjI4a3NQMFJmQ0RrVFdCdnV0RUd6QmlCam93?oc=5",
-      "source": "Kotaku",
-      "category": "business",
-      "published": "Sat, 21 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1286,9 +1286,9 @@
       "author": ""
     },
     {
-      "title": "GTA 6 players spent over eight hours in Leonida on launch day, and over half of active console players joined them",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13UjdpUFdhUkhmOThuMTBHUngzTUlIbVZHRzhwWjVjeXdLeHN0czZMLVNlQ2puWF9TLUhsSHF5X0NFMGlnMEE2ZFBRM1dDUmJZSmpLTU1CdWVhSHBkdlJtNUdCQmduMHN2UmlJTW1R?oc=5",
-      "source": "Eurogamer.net",
+      "title": "Nintendo\u2019s Switch 2 console is $50 off for Black Friday",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc2hDb0FNS1RyTXZTNEM5TVA0bExHN1YwLWh2TE5iTmpIUFIzNWs1NEVocXd4YUI3OUdDWHlCN2szU1BCNGZTTjRyekFvcTJLVXRxaVhBUG5PVWhBcWFOVnpINDh3cDNyRTRRMHZFODNrSmJrVHNfa0QydUNkOXhmbnp5WW5GRC1Rc0x5QzBDTnljS29mZzFHN05FS0RGQlpPZjJid1VXbXl2RDlGcTJN?oc=5",
+      "source": "The Verge",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1306,9 +1306,9 @@
       "author": ""
     },
     {
-      "title": "Nintendo\u2019s Switch 2 console is $50 off for Black Friday",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc2hDb0FNS1RyTXZTNEM5TVA0bExHN1YwLWh2TE5iTmpIUFIzNWs1NEVocXd4YUI3OUdDWHlCN2szU1BCNGZTTjRyekFvcTJLVXRxaVhBUG5PVWhBcWFOVnpINDh3cDNyRTRRMHZFODNrSmJrVHNfa0QydUNkOXhmbnp5WW5GRC1Rc0x5QzBDTnljS29mZzFHN05FS0RGQlpPZjJid1VXbXl2RDlGcTJN?oc=5",
-      "source": "The Verge",
+      "title": "Apple Reportedly Plans to Release These Products in February or March",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56NjF1ajNibWlhT1phckNqbmVEWUE4MzFmMDNMQ2xjekYxV0RkTlQ2angyLTZSZzExZVNwc3N6ekhJeGpzVVJEcHlIQzZfeldSMUllU0Q1TVVjMEFBanR5R29vTWJUQnRVLTl4cm1LRklwZ2JyTFN4dFdkTjFORjQ?oc=5",
+      "source": "MacRumors",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1316,11 +1316,11 @@
       "author": ""
     },
     {
-      "title": "Apple Reportedly Plans to Release These Products in February or March",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56NjF1ajNibWlhT1phckNqbmVEWUE4MzFmMDNMQ2xjekYxV0RkTlQ2angyLTZSZzExZVNwc3N6ekhJeGpzVVJEcHlIQzZfeldSMUllU0Q1TVVjMEFBanR5R29vTWJUQnRVLTl4cm1LRklwZ2JyTFN4dFdkTjFORjQ?oc=5",
-      "source": "MacRumors",
+      "title": "GTA VI Sales Just Blew GTA V Sales Out of the Water",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQM1R2VE9hcnBFRE92Uzg0M3BsTmFjNDFCNEtkRUFxWk1CQ3QzUkVNcC1LMkFkOXAtYWZLX3FjVFdFSndZaWlOX1BfZ004aXZMYjNzdmt4N18wUDlTQnFsaWRaRHZfVDhjRWdQQmJRM19sbnBWMTJuZjh3bkpkc3c4NUcybFBEcmV2WlU1MlVVOWc?oc=5",
+      "source": "Newser",
       "category": "business",
-      "published": "Sun, 22 Nov 2026 ",
+      "published": "Sat, 21 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1546,7 +1546,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 22 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-22T16:01:35.529864"
+    "timestamp": "2026-11-22T16:07:33.934751"
   },
   "sticky": {
     "cnbc": [
@@ -1667,11 +1667,11 @@
         "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       },
       {
-        "title": "The Index Looks Fine. The Heat Map Does Not. - Money Morning",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlllTzNRb2FLY3ctZUJ0eUItOUhxWmFFSUZwSmdPQnFQdk5scUN4eGVDQXdaYkpRUGxocVRGazNPcTlsOXZNMWwydUF5Y0pTYWk3azVaT1RXSHZVZEdXZkYtWTlyS2tqc1AzTEFXakRTcFNTVUlTaUtRT1hIZTRnc3RWQ0hWN1dPXzlz?oc=5",
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-11-20T10:07:08",
-        "description": "The Index Looks Fine. The Heat Map Does Not.&nbsp;&nbsp;Money Morning"
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; GreenPower Motor, Nebius Group to Advance - marketscreener.com",

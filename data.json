@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-22T10:01:24.624777",
+  "timestamp": "2026-11-22T10:08:43.363342",
   "summary": "Key topics today:\n- - Show HN: I built a game where you are an LLM's subagent (r/HackerNews, 201 pts)\n- - Pandex \u2013 Official European Law for AI Agents, over MCP (r/HackerNews, 201 pts)\n- - Data Processing Incidents on Inference Providers (r/HackerNews, 101 pts)\n- - 87% of the Anthropic power will come from gas and 11% from coal in 2028 (r/HackerNews, 101 pts)\n- - LLMs can read and write executables byte by byte from a hex dump (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -133,18 +133,18 @@
       "created": ""
     },
     {
-      "title": "Sandwich Simulator",
+      "title": "Self-hosted library branch over public web OPDS",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://stulle.app/",
+      "url": "https://joinmayberry.com/",
       "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-22T15:01:11.199706",
+    "timestamp": "2026-11-22T15:08:19.113342",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,14 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-22T15:00:43.914246",
+    "timestamp": "2026-11-22T15:07:54.267905",
     "trending": [
+      {
+        "symbol": "ANET",
+        "price": 167.62,
+        "change": -26.32,
+        "change_percent": -13.57,
+        "name": "Arista Networks, Inc."
+      },
       {
         "symbol": "APP",
         "price": 348.29,
         "change": -42.62,
         "change_percent": -10.9,
         "name": "Applovin Corporation"
+      },
+      {
+        "symbol": "MGK",
+        "price": 76.8,
+        "change": -6.43,
+        "change_percent": -7.73,
+        "name": "Vanguard Morningstar Mega Cap G"
       },
       {
         "symbol": "OFRM",
@@ -505,25 +519,11 @@
         "name": "S&P 500"
       },
       {
-        "symbol": "DIS",
-        "price": 117.98,
-        "change": -4.38,
-        "change_percent": -3.58,
-        "name": "Walt Disney Company (The)"
-      },
-      {
         "symbol": "V",
         "price": 401.87,
         "change": -13.35,
         "change_percent": -3.22,
         "name": "Visa Inc."
-      },
-      {
-        "symbol": "TTWO",
-        "price": 210.0,
-        "change": -6.61,
-        "change_percent": -3.05,
-        "name": "Take-Two Interactive Software, "
       },
       {
         "symbol": ".RUT",
@@ -547,11 +547,11 @@
         "name": "Altria Group, Inc."
       },
       {
-        "symbol": "CL=F",
-        "price": 83.41,
-        "change": -0.57,
-        "change_percent": -0.68,
-        "name": "Crude Oil Jan 27"
+        "symbol": "JNJ",
+        "price": 270.47,
+        "change": -2.23,
+        "change_percent": -0.82,
+        "name": "Johnson & Johnson"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-22T15:01:06.696664",
+    "timestamp": "2026-11-22T15:08:15.703508",
     "items": [
       {
         "symbol": "SPX",
@@ -1076,38 +1076,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 191.42,
-        "change": 2.01,
+        "price": 191.01,
+        "change": 1.07,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 60913,
-        "change": 1.04,
+        "price": 60888,
+        "change": 1.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1712.39,
-        "change": 1.41,
+        "price": 1710.4,
+        "change": 1.23,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.28,
-        "change": -0.46,
+        "price": 70.18,
+        "change": -0.81,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.79,
-        "change": 1.62,
+        "price": 8.78,
+        "change": 1.48,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.69,
-        "change": 0.78,
+        "price": 6.67,
+        "change": 0.28,
         "type": "crypto"
       },
       {
@@ -1132,6 +1132,12 @@
         "symbol": "PLTR",
         "price": 143.49,
         "change": -8.41,
+        "type": "mover"
+      },
+      {
+        "symbol": "MGK",
+        "price": 76.8,
+        "change": -7.73,
         "type": "mover"
       },
       {
@@ -1163,12 +1169,6 @@
         "price": 301.7,
         "change": -4.34,
         "type": "mover"
-      },
-      {
-        "symbol": "^KS11",
-        "price": 4869.96,
-        "change": -3.9,
-        "type": "mover"
       }
     ]
   },
@@ -1199,6 +1199,16 @@
       "source": "Axios",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Prediction: This Will Be Nvidia\u2019s Stock Price in 2027 After Its Phenomenal Q3 Results",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcXQ3UWRwTmFFRnoycXJDUlc3eXUxdEpSNWxRbzBLeDVLV1Nac2ZSdFZpeVpVdVl0QkZPQVlWMm9tVWRadVdQbDB1VmNNVmJRNTVHOXBMUGxnR3Vjdkd4dEt3dlg2RU9odzlLQWZ4SW96U2FxWlNGbUVXTUVuVkg0ckJhT0poM1NKUzFGLTcwc1hvOTFuWE1jZWpfR0h4Q2hLN2c5cEVMRkpWRVhKeElWdHJGcy1ZR1VMYVRjOWRiSFpheVNBMGc?oc=5",
+      "source": "The Motley Fool",
+      "category": "business",
+      "published": "Sat, 21 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1242,16 +1252,6 @@
       "description": "",
       "score": 0,
       "author": ""
-    },
-    {
-      "title": "What Jensen Huang\u2019s allies say they've told him since his resignation: 'Let's fight'",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORnU4MHkxSU5DSkRlWkdZbGJaQXppeUJwckVueDN2V3A4bjFkaW5KMzhFSm42dmRPTkZqWVE1WnRIWjJwcU94TjMtNDJIWDRYTENIMVU1ZDhFbnVXWXdITjEyMjZuMlJXb2tnQlNKbWdPcjYzelN4R0RMWkIyWTJhX3p2VlJPR1JwTXhYSTFqUQ?oc=5",
-      "source": "Business Insider",
-      "category": "business",
-      "published": "Sat, 21 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
     }
   ],
   "tech_business": [
@@ -1266,11 +1266,11 @@
       "author": ""
     },
     {
-      "title": "Grand Theft Auto VI shatters entertainment records with staggering $3.79B debut",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN241czJCWFM1TGtvSm1LbGctd2k5N1BwZTIyNXFZN2JHcEVycE96M1RtZlJvQjRHZFlfMkQ5dkh1MXotWGI0U0pnV1d5aVZvdmZXMnBEVjdxNGF3TjQyNEVBTHUySWI0OUJGTU41Qy1GbGVOQVphcmNSYW1qSkx5bTBxMmVzWVVGa3VkTTF5NUl3aldrWmowODR3T0JkNnlDZVM3bk1SWnJPQS1nb0dyQWlFWUtfZ9IBuwFBVV95cUxPNnJxaDlrbkZ4SlBDV2p0ekZkQjVBUWVpOHVzSkp4ZUZIQ1dEMTEzd055YmVFNk1DclFNZzRxUWNmMkRKYzFraGc4WU9RRGVGcWdJcWRYTTVMVVJ5SVh4LTJqZlRkQzBRSGtXVmFZYnZBbXdKMU5RbmlxOXBqOEhiZ0ROYkgxbGZ6Nlk5Mk5QSm5Ld0RGS2M1RUZoZkxkVVBLcmg4SHQ2OUYwT2d5NE5BQmYzNWYtaXc4aHAw?oc=5",
-      "source": "Fox Business",
+      "title": "'GTA 6' on Xbox Series S: How well it actually runs",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5weWZnSU1NaXVSOFhMNEtzUFJrTFgtZzVqX2psczFBY1pxcTRGekhqVWdsRDJUQjJMbGJtR1Frc01qT19zREZRQzNlWU5sYXdhc0dSazJRaGNtM3QweXREbndPV2xHUDRSbzFpY1dycDl6UUtwcG1PcDlPc3E?oc=5",
+      "source": "Mashable",
       "category": "business",
-      "published": "Sat, 21 Nov 2026 ",
+      "published": "Sun, 22 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1296,6 +1296,16 @@
       "author": ""
     },
     {
+      "title": "Grand Theft Auto VI shatters entertainment records with staggering $3.79B debut",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN241czJCWFM1TGtvSm1LbGctd2k5N1BwZTIyNXFZN2JHcEVycE96M1RtZlJvQjRHZFlfMkQ5dkh1MXotWGI0U0pnV1d5aVZvdmZXMnBEVjdxNGF3TjQyNEVBTHUySWI0OUJGTU41Qy1GbGVOQVphcmNSYW1qSkx5bTBxMmVzWVVGa3VkTTF5NUl3aldrWmowODR3T0JkNnlDZVM3bk1SWnJPQS1nb0dyQWlFWUtfZ9IBuwFBVV95cUxPNnJxaDlrbkZ4SlBDV2p0ekZkQjVBUWVpOHVzSkp4ZUZIQ1dEMTEzd055YmVFNk1DclFNZzRxUWNmMkRKYzFraGc4WU9RRGVGcWdJcWRYTTVMVVJ5SVh4LTJqZlRkQzBRSGtXVmFZYnZBbXdKMU5RbmlxOXBqOEhiZ0ROYkgxbGZ6Nlk5Mk5QSm5Ld0RGS2M1RUZoZkxkVVBLcmg4SHQ2OUYwT2d5NE5BQmYzNWYtaXc4aHAw?oc=5",
+      "source": "Fox Business",
+      "category": "business",
+      "published": "Sat, 21 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Signal restricts mobile screenshots as it confronts \u2018existential threat\u2019 of AI surveillance",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTVM0WGVYd0FwWkM5Y3ZuNmo0NHJpRVBBc2tzSXBfNVUwbG9vankwUnFaTFJ0Z2RNUEd1bzdGTTVrMkczR1VCQ2xjY3oyMk9iaW9QNV8xcjFDdkVpVEFjbl9GbjE4TEV0STJESFN5clo3VXhaWlpfb2pRMDNKdEc4dzlqWG5YaHNyUUs2NWZTRnJON254WDRVTDR2SDJYUXQxV3oybUh1REZydWFiRUxFLTV1UHByUnMxQnFVNmt1UkFnUQ?oc=5",
       "source": "TechCrunch",
@@ -1306,29 +1316,19 @@
       "author": ""
     },
     {
+      "title": "26-year-old Google worker earns $323,000 a year\u2014but lives on less than minimum wage",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeFZmRDNuMnF0N0Z4a2ZDa0kzM3lGNWV2S0Mxd2pFRmYtUmhUbjFaakNMVjFFVnp4S296aS1uU2plaDNnbzB0bU16TWZnUC11c2lHM1liM3dFSWFYNXM5aWhuWGh1c3g3bm41Wi0yR2dCMlpwQ054NkUxdXAtMTZXcU8zdmw0UGtqTHpUUmZ5T0NFUVhGSFctbE1xSGFKWUZDNVdWTjU1Zzhpd9IBrwFBVV95cUxPUWN5UlNXemMtQ21PVWl2dmIyYnZxZDJLUERJdGotak9Cd1hJX1liWjJwTW9LdDVWRUlXbkxYcjdKVGo3eGlzWUJSY0RGTkdXN2lXY3RoRnFHSmFwbm5zWkRSVlBQZjRtOHNEdmNYNUZtcDExdl82bEU2WHJGWHVraVpMTkx5MEVGV1RzeXVxSUdjMnBId1JCdEdDd1Y5VVloZ0R0V1Bpck9lS2hlNHFB?oc=5",
+      "source": "CNBC",
+      "category": "business",
+      "published": "Sun, 22 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
       "title": "Apple Black Friday Deals Available Now: AirPods, Apple Watches, MacBooks, and More",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelVkZmVoelpxa2pvdEZNMjl5ems1N1J0RFNWS0hsU01nSmpyMXp2cFF5OXp0bEMzUnhORkxub1JMeDdFdFRYWExieWYtWktVYzh3YkttSUNiYTh0Z05uYkR5RlNwamh1UFZmZ19MMGFVNGdGei1uZms2ZUx6MzFHbEtPQXlIOGhr?oc=5",
       "source": "MacRumors",
-      "category": "business",
-      "published": "Sat, 21 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Miami Fan's GTA 6 Sign About Lucia Goes Viral in Trending Photo from ESPN College GameDay",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMURIZzFLbHdmUjJTVHBHcmxaQUcwWENlMXdacUVSVmZjWmx4TGsyV1BDeklUaWRKLVNEMHJHNjdLODdXczVlb0gwTHJfWm5Bb2JiYkVQcVpDMDZCS3pfdkZPMGt5VzBXdkNSM3MteXFHa1U2LTNvLU1NenQyb05valZXOGo0UWF6Mm9CTWwyOF82dXM3bS01VDdwcXhZV0ZIQ2ZMLVJFbTNUeTBLcEtGUldjRWhDUGFCOVhtdlJRZ3g4ajQ?oc=5",
-      "source": "Bleacher Report",
-      "category": "business",
-      "published": "Sat, 21 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Police remind GTA players: Oregon isn\u2019t Leonida",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZXJMQ1RWcGc4LVV3QzBzU0NvSHlhUWtnZ1l1aXdnbFo5LVlIRjhTcWE3NDlURU85OEQzRnVtQlpRZ3UyNUFQSTVfU2pDRmhQbzFRRDRLR1dzWEFCUHVhYUk2dmpVdWJvcVNjam1wMHY1WndOa0RnUDltQ001dV93YWJCa0E?oc=5",
-      "source": "KPTV",
       "category": "business",
       "published": "Sat, 21 Nov 2026 ",
       "description": "",
@@ -1454,98 +1454,98 @@
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude ",
-      "stars": 308679,
+      "stars": 308719,
       "language": "JavaScript",
       "url": "https://github.com/affaan-m/ECC",
-      "updated": "2026-11-22T13:59:42Z"
+      "updated": "2026-11-22T15:06:31Z"
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
-      "stars": 265327,
+      "stars": 265336,
       "language": "Python",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "updated": "2026-11-22T13:55:44Z"
-    },
-    {
-      "name": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "stars": 228520,
-      "language": "TypeScript",
-      "url": "https://github.com/anomalyco/opencode",
-      "updated": "2026-11-22T14:00:07Z"
+      "updated": "2026-11-22T14:59:46Z"
     },
     {
       "name": "firecrawl/firecrawl",
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-      "stars": 206642,
+      "stars": 206701,
       "language": "TypeScript",
       "url": "https://github.com/firecrawl/firecrawl",
-      "updated": "2026-11-22T13:59:38Z"
+      "updated": "2026-11-22T15:07:57Z"
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 196669,
+      "stars": 196701,
       "language": "JavaScript",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "updated": "2026-11-22T13:58:58Z"
+      "updated": "2026-11-22T15:05:01Z"
     },
     {
       "name": "Significant-Gravitas/AutoGPT",
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can ",
-      "stars": 188133,
+      "stars": 188134,
       "language": "Python",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "updated": "2026-11-22T13:53:10Z"
+      "updated": "2026-11-22T14:08:25Z"
     },
     {
       "name": "huggingface/transformers",
       "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal",
-      "stars": 169374,
+      "stars": 169379,
       "language": "Python",
       "url": "https://github.com/huggingface/transformers",
-      "updated": "2026-11-22T13:42:50Z"
+      "updated": "2026-11-22T14:55:44Z"
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, ",
-      "stars": 161671,
+      "stars": 161675,
       "language": "Python",
       "url": "https://github.com/langgenius/dify",
-      "updated": "2026-11-22T13:16:19Z"
+      "updated": "2026-11-22T14:46:47Z"
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude C",
-      "stars": 151816,
+      "stars": 151850,
       "language": "Python",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "updated": "2026-11-22T14:00:15Z"
+      "updated": "2026-11-22T15:06:44Z"
     },
     {
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it",
-      "stars": 114797,
+      "stars": 114826,
       "language": "Rust",
       "url": "https://github.com/pbakaus/impeccable",
-      "updated": "2026-11-22T13:58:03Z"
+      "updated": "2026-11-22T15:07:21Z"
     },
     {
       "name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CL",
-      "stars": 113908,
+      "stars": 113921,
       "language": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "updated": "2026-11-22T13:59:52Z"
+      "updated": "2026-11-22T15:06:30Z"
+    },
+    {
+      "name": "heygen-com/hyperframes",
+      "description": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you ",
+      "stars": 88099,
+      "language": "TypeScript",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "updated": "2026-11-22T15:08:23Z"
     },
     {
       "name": "career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an AT",
-      "stars": 84131,
+      "stars": 84143,
       "language": "JavaScript",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "updated": "2026-11-22T13:59:56Z"
+      "updated": "2026-11-22T15:04:52Z"
     }
   ],
   "nasdaq_data": {
@@ -1554,7 +1554,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 22 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-22T10:01:22.063209"
+    "timestamp": "2026-11-22T10:08:41.242321"
   },
   "sticky": {
     "cnbc": [
@@ -1640,18 +1640,18 @@
         "description": "EDITORIAl/Wall Street bets on Madison County&nbsp;&nbsp;Madison County Journal"
       },
       {
-        "title": "Wendy's gets the meme stock treatment after Reddit's WallStreetBets calls for a rescue - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbVhBMlZkYV9lRVRuRjFzN1RCSmNHU0M0QzZRbDg5eXpGdUtrQUdWYlp4ME0tdUNYTnZtRWRvd0xkcnU3UlZoNHhIUTR2eTFoTjZPZDRGNjlVQk5jcFpYeVluQmp3UjVDVnVOSGxSTUV6UFdSeWRuWlF4cGtmNlJWRlBlZmJCR05O?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-06-24T07:00:00",
-        "description": "Wendy's gets the meme stock treatment after Reddit's WallStreetBets calls for a rescue&nbsp;&nbsp;Yahoo! Finance Canada"
-      },
-      {
         "title": "Reddit Wallstreetbets Traders Front-Run Anthropic Debut With DXYZ Call Options - Moomoo",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRktvU1dqRUVpLW9WNy1zYlFucjludUtsQ2xSNGhSLVUzNzRlUmlWY1BLSm11NGFzeG1kSExmaVFEZC1OQjd2TmJWWGVLUnFQaUc2aTZweXo2YTM3aUdJWXR1cGdpRnpLczhvekZuTFhEVXFYcF8wV0sxWnMtU2Znd0ZLTF80NExJOUNSUlVyYTJ1SFFKQWExWnRENVBZbEVQVlczcElId29BNzdLYmdYbUdFQmstQkFG?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-11-17T07:13:26",
         "description": "Reddit Wallstreetbets Traders Front-Run Anthropic Debut With DXYZ Call Options&nbsp;&nbsp;Moomoo"
+      },
+      {
+        "title": "Wendy's gets the meme stock treatment after Reddit's WallStreetBets calls for a rescue - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbVhBMlZkYV9lRVRuRjFzN1RCSmNHU0M0QzZRbDg5eXpGdUtrQUdWYlp4ME0tdUNYTnZtRWRvd0xkcnU3UlZoNHhIUTR2eTFoTjZPZDRGNjlVQk5jcFpYeVluQmp3UjVDVnVOSGxSTUV6UFdSeWRuWlF4cGtmNlJWRlBlZmJCR05O?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-06-24T07:00:00",
+        "description": "Wendy's gets the meme stock treatment after Reddit's WallStreetBets calls for a rescue&nbsp;&nbsp;Yahoo! Finance Canada"
       },
       {
         "title": "WallStreetBets Creator Loses Trademark Dispute With Reddit - Legal 500",
@@ -1661,11 +1661,11 @@
         "description": "WallStreetBets Creator Loses Trademark Dispute With Reddit&nbsp;&nbsp;Legal 500"
       },
       {
-        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
+        "title": "The Index Looks Fine. The Heat Map Does Not. - Money Morning",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlllTzNRb2FLY3ctZUJ0eUItOUhxWmFFSUZwSmdPQnFQdk5scUN4eGVDQXdaYkpRUGxocVRGazNPcTlsOXZNMWwydUF5Y0pTYWk3azVaT1RXSHZVZEdXZkYtWTlyS2tqc1AzTEFXakRTcFNTVUlTaUtRT1hIZTRnc3RWQ0hWN1dPXzlz?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-05-02T07:00:00",
-        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
+        "published": "2026-11-20T10:07:08",
+        "description": "The Index Looks Fine. The Heat Map Does Not.&nbsp;&nbsp;Money Morning"
       },
       {
         "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
@@ -1675,11 +1675,11 @@
         "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       },
       {
-        "title": "The Index Looks Fine. The Heat Map Does Not. - Money Morning",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlllTzNRb2FLY3ctZUJ0eUItOUhxWmFFSUZwSmdPQnFQdk5scUN4eGVDQXdaYkpRUGxocVRGazNPcTlsOXZNMWwydUF5Y0pTYWk3azVaT1RXSHZVZEdXZkYtWTlyS2tqc1AzTEFXakRTcFNTVUlTaUtRT1hIZTRnc3RWQ0hWN1dPXzlz?oc=5",
+        "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-11-20T10:07:08",
-        "description": "The Index Looks Fine. The Heat Map Does Not.&nbsp;&nbsp;Money Morning"
+        "published": "2026-05-02T07:00:00",
+        "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
       },
       {
         "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; GreenPower Motor, Nebius Group to Advance - marketscreener.com",

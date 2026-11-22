@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-22T12:16:26.260003",
+  "timestamp": "2026-11-22T12:18:46.234129",
   "summary": "Key topics today:\n- - Show HN: I built a game where you are an LLM's subagent (r/HackerNews, 201 pts)\n- - Pandex \u2013 Official European Law for AI Agents, over MCP (r/HackerNews, 201 pts)\n- - 87% of the Anthropic power will come from gas and 11% from coal in 2028 (r/HackerNews, 101 pts)\n- - Data Processing Incidents on Inference Providers (r/HackerNews, 101 pts)\n- - LLMs can read and write executables byte by byte from a hex dump (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -36,19 +36,19 @@
     },
     {
       "type": "sell",
+      "asset": "CRWV",
+      "price": 39.51,
+      "change": -17.39,
+      "category": "stock",
+      "text": "CRWV -17.4% drop @ $39.51"
+    },
+    {
+      "type": "sell",
       "asset": "NVDA",
       "price": 125.53,
       "change": -16.85,
       "category": "stock",
       "text": "NVDA -16.9% drop @ $125.53"
-    },
-    {
-      "type": "sell",
-      "asset": "AMC",
-      "price": 2.57,
-      "change": -14.62,
-      "category": "stock",
-      "text": "AMC -14.6% drop @ $2.57"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-22T17:16:00.518421",
+    "timestamp": "2026-11-22T17:18:37.519265",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,14 +446,28 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-22T17:15:38.420062",
+    "timestamp": "2026-11-22T17:18:16.737374",
     "trending": [
+      {
+        "symbol": "CRWV",
+        "price": 39.51,
+        "change": -8.32,
+        "change_percent": -17.39,
+        "name": "CoreWeave, Inc."
+      },
       {
         "symbol": "APP",
         "price": 348.29,
         "change": -42.62,
         "change_percent": -10.9,
         "name": "Applovin Corporation"
+      },
+      {
+        "symbol": "ARKK",
+        "price": 64.22,
+        "change": -6.84,
+        "change_percent": -9.63,
+        "name": "ARK Innovation ETF"
       },
       {
         "symbol": "OFRM",
@@ -468,13 +482,6 @@
         "change": -2393.6,
         "change_percent": -6.23,
         "name": "TSEC CAPITALIZATION WEIGHTED ST"
-      },
-      {
-        "symbol": "TENB",
-        "price": 41.99,
-        "change": -2.69,
-        "change_percent": -6.02,
-        "name": "Tenable Holdings, Inc."
       },
       {
         "symbol": "NFLX",
@@ -519,13 +526,6 @@
         "name": "Visa Inc."
       },
       {
-        "symbol": "TTWO",
-        "price": 210.0,
-        "change": -6.61,
-        "change_percent": -3.05,
-        "name": "Take-Two Interactive Software, "
-      },
-      {
         "symbol": ".RUT",
         "price": 2581.79,
         "change": -73.32,
@@ -540,18 +540,18 @@
         "name": "DJIA"
       },
       {
-        "symbol": "GILD",
-        "price": 166.43,
-        "change": -2.55,
-        "change_percent": -1.51,
-        "name": "Gilead Sciences, Inc."
+        "symbol": "^BSESN",
+        "price": 83919.71,
+        "change": 897.96,
+        "change_percent": 1.08,
+        "name": "S&P BSE SENSEX"
       },
       {
-        "symbol": "CL=F",
-        "price": 83.41,
-        "change": -0.57,
-        "change_percent": -0.68,
-        "name": "Crude Oil Jan 27"
+        "symbol": "ES=F",
+        "price": 6935.0,
+        "change": 0.0,
+        "change_percent": 0.0,
+        "name": "E-Mini S&P 500 Dec 26"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-22T17:15:56.786724",
+    "timestamp": "2026-11-22T17:18:34.355635",
     "items": [
       {
         "symbol": "SPX",
@@ -1077,37 +1077,37 @@
       {
         "symbol": "TAO",
         "price": 190.21,
-        "change": 2.35,
+        "change": 2.4,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 60807,
-        "change": 1.06,
+        "price": 60760,
+        "change": 1.08,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1713.82,
-        "change": 1.77,
+        "price": 1712.11,
+        "change": 1.71,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.34,
-        "change": -0.51,
+        "price": 70.31,
+        "change": -0.52,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.81,
-        "change": 2.69,
+        "price": 8.8,
+        "change": 2.63,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 6.67,
-        "change": 0.97,
+        "change": 0.86,
         "type": "crypto"
       },
       {
@@ -1214,16 +1214,6 @@
       "author": ""
     },
     {
-      "title": "Trump says he'd work with Dems to cap credit card interest, fees",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93VmlHVnQwVGE3ejRNcTlLSmhLbGtPb3VwNGpxMmtPMGRjeWEtaXVIaUJCUWNuaTFpVG55ZkI4RkNDTXFPZ1NfR1dIb25McVhTeVhIc3pBbEx0X1FXdWJRLXlTcmoxeVhVTml1SVZTRWhudw?oc=5",
-      "source": "Axios",
-      "category": "business",
-      "published": "Sun, 22 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "F.A.A. Says All Delta Flights Delayed as Automated System Falters",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcUZUc1RpZ3l3U1ROTEtuY083Z1FtQm5WQ25SbmxHQlEyUzJMOGp1OHltNXlSVm1MclZqVzNpYThZOFpsdXhlTEctWmFOVkotcUJXSTZFVkEyRnBEdGx1SjNhMUREVXlWcHdtSGEwRzZRUWpzSnZfaU9kcTNjQXZVcGJB?oc=5",
       "source": "The New York Times",
@@ -1234,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "Copper Prices Are Plunging and Sending a Warning for the US Economy",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOElkaGNZcUQ5TUdHaWZXWFFmSkxneEh4dE9oQks4aW9pWlJJUVNqQ0lUeVNNM1dhODVCeVgtMld4NF9pcGdUQWNsNHBVSGlMdWhoR0s1WFVheDlVMV93TWJMcVBHeks5TVhEMVlOQ0M4blUwd1czY3FZRHVralV2R0d0TWxvOHpa?oc=5",
-      "source": "Business Insider",
+      "title": "Trump says he'd work with Dems to cap credit card interest, fees",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93VmlHVnQwVGE3ejRNcTlLSmhLbGtPb3VwNGpxMmtPMGRjeWEtaXVIaUJCUWNuaTFpVG55ZkI4RkNDTXFPZ1NfR1dIb25McVhTeVhIc3pBbEx0X1FXdWJRLXlTcmoxeVhVTml1SVZTRWhudw?oc=5",
+      "source": "Axios",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1249,6 +1239,16 @@
       "source": "Yahoo Finance",
       "category": "business",
       "published": "Sat, 21 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "From Squeezes to Meltdown, a Week of Mayhem Rocks Metals Markets",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPM3NoNGQ0d1dOQXpBRXU4RFEtcHJIRFROQlJ6bkd0dEdiXzBSWjVtZ0IyZ3FOTVF2R1htSzJPM05jNFB3MHlRak9VajdGNFAyZGVXZ2xTNm5GMVltbkJQSHJNQW9KaG4xZkFpS1p3YTluMDVxQUFtOGwwTlVGaUF6MEV5YTdzcjBScllCeGd6R01saEpZWmZCNjBLb0x5Nzg1dTVic3l4dF9PV0RjeHdMQWRsTTY?oc=5",
+      "source": "Bloomberg.com",
+      "category": "business",
+      "published": "Sun, 22 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1562,7 +1562,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 22 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-22T12:16:23.301739"
+    "timestamp": "2026-11-22T12:18:43.835350"
   },
   "sticky": {
     "cnbc": [
@@ -1669,6 +1669,20 @@
         "description": "Reddit Wallstreetbets Traders Front-Run Anthropic Debut With DXYZ Call Options&nbsp;&nbsp;Moomoo"
       },
       {
+        "title": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers - Gayety",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nQ1JoX0VmOWhhZ3l5YVRuNWtZZFd0bzc3SGhlc1d6RjlNN1EySnJKTC1Wc1BYbS1CRkIwUmh0Zzhrc1pfUlBQT0R1ZDY0RXJDQjAweWdmMHhUdXBXeEktbGNUdnNDZ19BZENLVlJQQQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-07T08:00:00",
+        "description": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers&nbsp;&nbsp;Gayety"
+      },
+      {
+        "title": "Wall Street Bets on a Year-End Rally for Stocks After Midterms - Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSm9DNTZfdkxHTjVRTlZtRE5aSXVwZ2FkbFg4WTFYajJydXhFdWhOS2prbHEtS05fbVFBNEpRZXFfSTFfYm1OZTVBR2ZVd0tqSmtVN0xCRHlqZWZfdFhFaXVKdkk4MEp6LXBmcTk0TmxOR2pDbXpmS0RFR3psbHNMZUNQV0V5bDk1dllHb1BCeFZpZjE5LTRwTThuemV3TDg?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-05T08:00:00",
+        "description": "Wall Street Bets on a Year-End Rally for Stocks After Midterms&nbsp;&nbsp;Bloomberg.com"
+      },
+      {
         "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX3NjUWZkMTlycTBlQl9XOGl2cGFFR2E2Wnh5OG9icVV5RnRIVmNZSXNRMEZWZ0tKZjhMeVlLTUZOeFpyV3hRS2tzMEFLR0NpSUF5eTBlWlFqYlpOYkdMV1RFakNWRHE4NkU0bGtyVExrWVFCMVZHNjRqdWhndmxfaTVxazBaWGZteDdNa3BwdHlxbW1NSWE5QUhmTGJBZlA5d2FuTUxpWUNmTE9DOUFLa0dSTXpTcEVtX280?oc=5",
         "source": "r/wallstreetbets",
@@ -1676,25 +1690,11 @@
         "description": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge&nbsp;&nbsp;Business Insider"
       },
       {
-        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
+        "title": "Wall Street bets Democratic sweep will empower moderates in Washington - Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZFVCcU5lMGJzcDUwaEVMSUFHdkRZVlpJT29CVmVWREkyemJFRHBkUlZ3STh4T0NKRXhRbWZzVXNwVlJUWXBEdTZnbTM2QUJxcmdSa0dXNVJiNHE1STVaaWc3ZlNFQ24tU2s5N1FsclhpWmdGdFNMdzU2VGJ6cDRGR0J2Wmg?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-05-14T07:00:00",
-        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
-      },
-      {
-        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-05-13T07:00:00",
-        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
-      },
-      {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; GreenPower Motor, Nebius Group to Advance - marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPME96ZUtvT1pEakVlc1Zhc09jdzNGNkV2Zzg3UkRWc0RJeTdUNFY0eUF3eUZZd3ktQ0JGbkFOY3FSTFVld2ZjTFg3LXFYckllbnRWN2hZbGRxblZTX00xUS1ybDhvOTJ1Q3U4Tjg0SzdZU08wNzV6QzNwWkVHWlE0M0M0QVRiQ0oxUnhmdjl0LVBCeWZ4ZlNzTjRSUDdlY01RS0FzSkYxcEt3TzNseUVDTU56NEgwOVZBZnlNSEZKT2pqX1VOVkpjbElDRUNycGtEaFU4VHBkbzM5cXBJWm0zMlcxZnU?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-18T11:36:37",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Higher Premarket Wednesday; GreenPower Motor, Nebius Group to Advance&nbsp;&nbsp;marketscreener.com"
+        "published": "2026-11-05T08:00:00",
+        "description": "Wall Street bets Democratic sweep will empower moderates in Washington&nbsp;&nbsp;Financial Times"
       }
     ]
   },

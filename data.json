@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-22T19:16:18.052360",
+  "timestamp": "2026-11-22T19:25:48.167604",
   "summary": "Key topics today:\n- - Show HN: I built a game where you are an LLM's subagent (r/HackerNews, 201 pts)\n- - A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth (r/HackerNews, 101 pts)\n- - Agent swarm trying to solve P vs. NP (r/HackerNews, 101 pts)\n- - Localcode, open source agentic coding on your Mac with one command (r/HackerNews, 101 pts)\n- - Harvard CS 2881R AI Safety (r/HackerNews, 101 pts)",
   "signals": [
     {
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "SOXL",
+      "price": 30.88,
+      "change": -37.31,
+      "category": "stock",
+      "text": "SOXL -37.3% drop @ $30.88"
+    },
+    {
+      "type": "sell",
       "asset": "AMD",
       "price": 424.39,
       "change": -19.95,
@@ -41,14 +49,6 @@
       "change": -16.85,
       "category": "stock",
       "text": "NVDA -16.9% drop @ $125.53"
-    },
-    {
-      "type": "sell",
-      "asset": "AMC",
-      "price": 2.57,
-      "change": -14.62,
-      "category": "stock",
-      "text": "AMC -14.6% drop @ $2.57"
     },
     {
       "type": "watch",
@@ -144,7 +144,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-23T00:16:08.375682",
+    "timestamp": "2026-11-23T00:25:37.674227",
     "prices": [
       {
         "name": "Bittensor",
@@ -341,7 +341,7 @@
       "description": "The prime minister will tell MPs the deal agreed on Friday is a \"choice between a broken status quo or change\"."
     },
     {
-      "title": "Boy, 7, rescued from rubble hours after Russian strike in Ukraine, rescuers say",
+      "title": "Boy, 7, pulled alive from rubble hours after Russian strike in Ukraine, rescuers say",
       "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
       "source": "Bbc News",
       "category": "bbc_news",
@@ -446,28 +446,35 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-23T00:15:42.550558",
+    "timestamp": "2026-11-23T00:25:12.974994",
     "trending": [
       {
-        "symbol": "APP",
-        "price": 348.29,
-        "change": -42.62,
-        "change_percent": -10.9,
-        "name": "Applovin Corporation"
+        "symbol": "SOXL",
+        "price": 30.88,
+        "change": -18.38,
+        "change_percent": -37.31,
+        "name": "Direxion Daily Semiconductor Bu"
       },
       {
-        "symbol": "^IXIC",
-        "price": 22617.73,
-        "change": -1812.15,
-        "change_percent": -7.42,
-        "name": "NASDAQ Composite"
+        "symbol": "NVDA",
+        "price": 125.53,
+        "change": -25.43,
+        "change_percent": -16.85,
+        "name": "NVIDIA Corporation"
       },
       {
-        "symbol": "OFRM",
-        "price": 12.17,
-        "change": 0.79,
-        "change_percent": 6.94,
-        "name": "Once Upon a Farm, PBC"
+        "symbol": "MU",
+        "price": 594.51,
+        "change": -110.76,
+        "change_percent": -15.7,
+        "name": "Micron Technology, Inc."
+      },
+      {
+        "symbol": "QQQ",
+        "price": 608.45,
+        "change": -51.06,
+        "change_percent": -7.74,
+        "name": "Invesco QQQ Trust, Series 1"
       },
       {
         "symbol": "^KS11",
@@ -506,10 +513,17 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 25809.0,
-        "change": 682.5,
-        "change_percent": 2.72,
+        "price": 25794.0,
+        "change": 667.5,
+        "change_percent": 2.66,
         "name": "Nasdaq 100 Dec 26"
+      },
+      {
+        "symbol": "ES=F",
+        "price": 7070.25,
+        "change": 135.25,
+        "change_percent": 1.95,
+        "name": "E-Mini S&P 500 Dec 26"
       },
       {
         "symbol": ".DJI",
@@ -519,11 +533,11 @@
         "name": "DJIA"
       },
       {
-        "symbol": "ES=F",
-        "price": 7068.25,
-        "change": 133.25,
-        "change_percent": 1.92,
-        "name": "E-Mini S&P 500 Dec 26"
+        "symbol": "RTY=F",
+        "price": 2631.5,
+        "change": 44.1,
+        "change_percent": 1.7,
+        "name": "E-mini Russell 2000 Index Futur"
       },
       {
         "symbol": "CL=F",
@@ -534,24 +548,10 @@
       },
       {
         "symbol": "YM=F",
-        "price": 48824.0,
-        "change": 608.0,
-        "change_percent": 1.26,
+        "price": 48861.0,
+        "change": 645.0,
+        "change_percent": 1.34,
         "name": "Mini Dow Jones Indus.-$5 Dec 26"
-      },
-      {
-        "symbol": "000001.SS",
-        "price": 3533.79,
-        "change": -43.82,
-        "change_percent": -1.22,
-        "name": "SSE Composite Index"
-      },
-      {
-        "symbol": "AUDUSD=X",
-        "price": 0.66,
-        "change": -0.0,
-        "change_percent": -0.19,
-        "name": "AUD/USD"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-23T00:16:03.856102",
+    "timestamp": "2026-11-23T00:25:33.858451",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,110 +1016,116 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7064.25,
-        "change": 1.86,
+        "price": 7071.0,
+        "change": 1.96,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 25777.0,
-        "change": 2.59,
+        "price": 25797.5,
+        "change": 2.67,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 48809.0,
-        "change": 1.23,
+        "price": 48857.0,
+        "change": 1.33,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2629.2,
-        "change": 1.62,
+        "price": 2631.5,
+        "change": 1.7,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 82.84,
-        "change": -1.36,
+        "price": 82.85,
+        "change": -1.35,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3576.2,
-        "change": 1.73,
+        "price": 3573.2,
+        "change": 1.64,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 42.01,
-        "change": 2.38,
+        "price": 41.95,
+        "change": 2.23,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1308.4,
-        "change": 1.47,
+        "price": 1306.8,
+        "change": 1.35,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 906.0,
-        "change": 1.6,
+        "price": 904.0,
+        "change": 1.38,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.63,
-        "change": 6.54,
+        "change": 6.39,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 190.6,
-        "change": 2.86,
+        "price": 190.56,
+        "change": 2.67,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 61150,
-        "change": 1.59,
+        "price": 61155,
+        "change": 1.55,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1722.08,
-        "change": 2.42,
+        "price": 1720.05,
+        "change": 2.27,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 70.64,
-        "change": 0.58,
+        "price": 70.58,
+        "change": 0.37,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 8.83,
-        "change": 2.77,
+        "price": 8.82,
+        "change": 2.57,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.67,
-        "change": 1.74,
+        "price": 6.66,
+        "change": 1.43,
         "type": "crypto"
+      },
+      {
+        "symbol": "SOXL",
+        "price": 30.88,
+        "change": -37.31,
+        "type": "mover"
+      },
+      {
+        "symbol": "NVDA",
+        "price": 125.53,
+        "change": -16.85,
+        "type": "mover"
       },
       {
         "symbol": "AMC",
         "price": 2.57,
         "change": -14.62,
-        "type": "mover"
-      },
-      {
-        "symbol": "APP",
-        "price": 348.29,
-        "change": -10.9,
         "type": "mover"
       },
       {
@@ -1135,15 +1141,9 @@
         "type": "mover"
       },
       {
-        "symbol": "^IXIC",
-        "price": 22617.73,
-        "change": -7.42,
-        "type": "mover"
-      },
-      {
-        "symbol": "OFRM",
-        "price": 12.17,
-        "change": 6.94,
+        "symbol": "QQQ",
+        "price": 608.45,
+        "change": -7.74,
         "type": "mover"
       },
       {
@@ -1166,8 +1166,8 @@
       },
       {
         "symbol": "NQ=F",
-        "price": 25789.25,
-        "change": 2.64,
+        "price": 25814.0,
+        "change": 2.74,
         "type": "mover"
       }
     ]
@@ -1214,9 +1214,9 @@
       "author": ""
     },
     {
-      "title": "Bessent says we \"need answers\" on role Nvidia played in sending AI chips to China, suggests Alice Huang is \"kind of a canard\"",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ0w1SkRVbmd2cF9NcmxBeHYyeTdIdjQwR3c0VG5KT0g1UHlxRm15S1B4ZE1KbUVXOHhlMXhuS1VOeEFnd3VkQmNES2ZpekFDbERtQzFJUVNYXzJHZ0VvdDlUZFVQTWsxOUlJeWRGQnI4ZElsMTc3eklnUDRBcEFmLXF4Z3o?oc=5",
-      "source": "CBS News",
+      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1224,9 +1224,9 @@
       "author": ""
     },
     {
-      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
-      "source": "Bloomberg.com",
+      "title": "Asian countries take steps to aid stock markets after AI rout",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN2hTbGd3Q2JhVFl6bkQyd1BqMGJ1Nnk5ckhIcFlLOTAySEZuV2ExRnVEMmpYcnZPUlVNbzdfMmhpR0F3SEhxeF92WlNSUmFuc0JobFROVmNxU3JTSDBNNDdZZk1NSDdLcGc1TnJZSjd1bDFyam5TdFBFVE00OFBIVmo4dDI3dU82SXJrWUl3LThUUlBEa1N3cm1oZTY?oc=5",
+      "source": "Yahoo Finance",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1244,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "Asian countries take steps to aid stock markets after AI rout",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX0Znb2pUb3hhWS0wd3ZSOXRsNjRUbnB0dU56cUhfSWNLTmJSX2pYTm9renFGWTRzZ3dmUGRZd1RXMDR2S294dF9kTFB0THdUbFZkc0puSWhRUW9NLUxCRHl2emQ5S0hYZzh0OG8tUGd0SXM3RUVvUUlIVkhaQW5yOHRfZWgwbktSdEU2YVJsakxCc3d3RjNvRVVLVFpTSkdzMEJrN2wxVmxMNnZTaExDOW9BVHdGV3hOZlE?oc=5",
-      "source": "Investing.com",
+      "title": "Strong Earnings Prove No Match for the Crumbling AI Trade",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSWdMSHNxSjRIMWY2c1JVckdnZFBHRG1XOThWbXFwQ25lT0ZaRTdTc1NKWkVrSHl2bTRPM241dkI2UHQtQWl5NHd3T3FHb3pnRXc4QmlLYzdQVEJRZmpNeDNUbldVU0dJSWppNXIyLVlwS0hJenlvY0VMQVBkbVdtcUlFcG9lWkFMUVd3M1QyYWdJbG9YX3cxWU5lNW0zbEdieWtydzFzVzdUbXls?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1255,6 +1255,16 @@
     }
   ],
   "tech_business": [
+    {
+      "title": "Apple Reportedly Plans to Release These Products in February or March",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56NjF1ajNibWlhT1phckNqbmVEWUE4MzFmMDNMQ2xjekYxV0RkTlQ2angyLTZSZzExZVNwc3N6ekhJeGpzVVJEcHlIQzZfeldSMUllU0Q1TVVjMEFBanR5R29vTWJUQnRVLTl4cm1LRklwZ2JyTFN4dFdkTjFORjQ?oc=5",
+      "source": "MacRumors",
+      "category": "business",
+      "published": "Sun, 22 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
     {
       "title": "GTA 6 players spent over eight hours in Leonida on launch day, and over half of active console players joined them",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13UjdpUFdhUkhmOThuMTBHUngzTUlIbVZHRzhwWjVjeXdLeHN0czZMLVNlQ2puWF9TLUhsSHF5X0NFMGlnMEE2ZFBRM1dDUmJZSmpLTU1CdWVhSHBkdlJtNUdCQmduMHN2UmlJTW1R?oc=5",
@@ -1286,19 +1296,9 @@
       "author": ""
     },
     {
-      "title": "Apple Reportedly Plans to Release These Products in February or March",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56NjF1ajNibWlhT1phckNqbmVEWUE4MzFmMDNMQ2xjekYxV0RkTlQ2angyLTZSZzExZVNwc3N6ekhJeGpzVVJEcHlIQzZfeldSMUllU0Q1TVVjMEFBanR5R29vTWJUQnRVLTl4cm1LRklwZ2JyTFN4dFdkTjFORjQ?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Sun, 22 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Apple tested a \u2018complication column\u2019 for the iPhone Duo Lock Screen, per leak",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUGE3TVY5c1ZYTV9OX3dkYnc4MUp1TTR6ejJKZWRBcFBfTXgxLWwtbDgtNW9mRzFIaHJhN2Q0ZGk0MU56WmtHRGtwR19ZbzZKcG5aMnFjVEEzc3FqcTFzQUdKSHJTaDF1MUk3TFctY29Qak9GS09RVkktYTlISlQzSVI5WUlIUW1Wb1dLSEIwWE1TVnFsbks4VU04UkRuM0tROS0tMTVoNFc1Zw?oc=5",
-      "source": "9to5Mac",
+      "title": "25 best Apple Black Friday deals today: AirPods Pro, iPhone 18 Pro, MacBook Neo, Apple Watch 12, iPad mini and more",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15eEdaSU11Q0R6eGoteGhhMUFXdFdYZFlhbnBBdUxiX2N1MzR2LUpJMDJQTnZ2MmlQeWhQc1gyZE45M3ZkaERuRnh1LXhEYk5oSWtTLU5mSmJqa3lMSVJzNTgxR194Y0hzSDZQY1ZQeVdCSzNxOU53b2JR?oc=5",
+      "source": "Tom's Guide",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1316,19 +1316,19 @@
       "author": ""
     },
     {
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVRpWGxyaWRqbnBxTllOMGFSNkxUTVJweUNGX1lLWVRXbFpSSnVadUJTYU13TktrRWhxYTU2ZlVyLTJ6YU1qQTVwZGRDN2l0ZEZYNkd5a0ZUcjEzZXplUFY2TkFnUHFUUFhjelFGbXhoc3hoVk42RWE5NDhtWjlNeUVhbmd0Q3hKUTFfOHY1MFhOYzFFaHI0bHd3?oc=5",
-      "source": "TechCrunch",
+      "title": "Apple tested a \u2018complication column\u2019 for the iPhone Duo Lock Screen, per leak",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUGE3TVY5c1ZYTV9OX3dkYnc4MUp1TTR6ejJKZWRBcFBfTXgxLWwtbDgtNW9mRzFIaHJhN2Q0ZGk0MU56WmtHRGtwR19ZbzZKcG5aMnFjVEEzc3FqcTFzQUdKSHJTaDF1MUk3TFctY29Qak9GS09RVkktYTlISlQzSVI5WUlIUW1Wb1dLSEIwWE1TVnFsbks4VU04UkRuM0tROS0tMTVoNFc1Zw?oc=5",
+      "source": "9to5Mac",
       "category": "business",
-      "published": "Fri, 20 Nov 2026 ",
+      "published": "Sun, 22 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
     },
     {
-      "title": "25 best Apple Black Friday deals today: AirPods Pro, iPhone 18 Pro, MacBook Neo, Apple Watch 12, iPad mini and more",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15eEdaSU11Q0R6eGoteGhhMUFXdFdYZFlhbnBBdUxiX2N1MzR2LUpJMDJQTnZ2MmlQeWhQc1gyZE45M3ZkaERuRnh1LXhEYk5oSWtTLU5mSmJqa3lMSVJzNTgxR194Y0hzSDZQY1ZQeVdCSzNxOU53b2JR?oc=5",
-      "source": "Tom's Guide",
+      "title": "Iconic MTV star turns 60, shares her no-guilt approach to fitness, food and aging well",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTUJBeWxFQS1rR3NFRW9iNTVhNDJfNXFTbkJ2YTlUTXhiWElmdWV4OEQxZEJHTFBiLTlFRHhPdjB1TkFlOHFPRjdEcHV6VWU0SkR3eW5GckFIVW0tb0dST3lHTnpfRTZ3YnBDbTN3dkU3WjlzNEd3SXM0YmdiVTExal9qYXoyOS02bGs3UjNRZHliMkFZRGg5c0lJb25YcmZnSENpT3k2Y9IBrAFBVV95cUxPZkpJbFNPN0p1bDlaOWdlNmZla0tlSmlVc0RrSzVqWWwyeDVGTGUyQkxMdndodWR2dFRfVzJ2cnR4UWZ5bEF1Z25nS1E4ajg1N0g4emk4aXdqN1JjYWhLUkpuX19xbXJQRngzMTN5c09xLXFXWldCNnROTXZUQVJyN2tZR2FIRDNSWERrcGhwb3lHRDdEZ0kxUkFLMEhXLUFDaUFWd1NGelNqRWNT?oc=5",
+      "source": "Fox News",
       "category": "business",
       "published": "Sun, 22 Nov 2026 ",
       "description": "",
@@ -1391,14 +1391,6 @@
       "source": "Defense News",
       "published": "Thu, 19 Nov 2026 ",
       "description": "\u201cDoD does not have an overarching plan that links munitions production and funding to requirements,\u201d warned the Government Accountability Office study.",
-      "relevance_score": 7
-    },
-    {
-      "title": "Second ship targeted in series of naval drone attacks off Libyan coast",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/second-ship-targeted-in-series-of-naval-drone-attacks-off-libyan-coast?traffic_source=rss",
-      "source": "Al Jazeera",
-      "published": "Sun, 22 Nov 2026 ",
-      "description": "A second attack has been reported on a commercial vessel flying a Maltese flag off Benghazi.",
       "relevance_score": 7
     },
     {
@@ -1546,7 +1538,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Sun 22 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-22T19:16:15.907898"
+    "timestamp": "2026-11-22T19:25:45.492972"
   },
   "sticky": {
     "cnbc": [
@@ -1685,30 +1677,30 @@
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7064.25,
-      "change": 129.25,
-      "change_percent": 1.86,
+      "price": 7070.25,
+      "change": 135.25,
+      "change_percent": 1.95,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 25779.75,
-      "change": 653.25,
-      "change_percent": 2.6,
+      "price": 25792.5,
+      "change": 666.0,
+      "change_percent": 2.65,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 48805.0,
-      "change": 589.0,
-      "change_percent": 1.22,
+      "price": 48859.0,
+      "change": 643.0,
+      "change_percent": 1.33,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2628.8,
-      "change": 41.4,
-      "change_percent": 1.6,
+      "price": 2631.2,
+      "change": 43.8,
+      "change_percent": 1.69,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
@@ -1720,37 +1712,37 @@
     },
     {
       "symbol": "GC=F",
-      "price": 3575.8,
-      "change": 60.4,
-      "change_percent": 1.72,
+      "price": 3573.0,
+      "change": 57.6,
+      "change_percent": 1.64,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 42.01,
-      "change": 0.98,
-      "change_percent": 2.39,
+      "price": 41.94,
+      "change": 0.9,
+      "change_percent": 2.21,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1308.4,
-      "change": 19.0,
-      "change_percent": 1.47,
+      "price": 1308.1,
+      "change": 18.7,
+      "change_percent": 1.45,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 906.0,
-      "change": 14.3,
-      "change_percent": 1.6,
+      "price": 904.0,
+      "change": 12.3,
+      "change_percent": 1.38,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.63,
       "change": 0.22,
-      "change_percent": 6.51,
+      "change_percent": 6.36,
       "name": "Natural Gas Jan 27"
     }
   ],

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-23T09:16:23.570916",
-  "summary": "Key topics today:\n- - GLM-5.4: Toward Generalized Coding with Our First Loop Transformer (r/HackerNews, 101 pts)\n- - Jensen Huang Reinstated as Nvidia CEO (r/HackerNews, 101 pts)\n- - A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth (r/HackerNews, 101 pts)\n- - Nvidia Reinstates Jensen Huang as CEO (r/HackerNews, 101 pts)\n- - Win4wine \u2013 Run Windows Shell as the Linux Desktop on Wine (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-23T09:21:24.343491",
+  "summary": "Key topics today:\n- - Jensen Huang Reinstated as Nvidia CEO (r/HackerNews, 101 pts)\n- - GLM-5.4: Toward Generalized Coding with Our First Loop Transformer (r/HackerNews, 101 pts)\n- - A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth (r/HackerNews, 101 pts)\n- - Nvidia Reinstates Jensen Huang as CEO (r/HackerNews, 101 pts)\n- - Win4wine \u2013 Run Windows Shell as the Linux Desktop on Wine (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "buy",
@@ -28,6 +28,14 @@
     },
     {
       "type": "sell",
+      "asset": "APLD",
+      "price": 11.49,
+      "change": -20.48,
+      "category": "stock",
+      "text": "APLD -20.5% drop @ $11.49"
+    },
+    {
+      "type": "sell",
       "asset": "AMD",
       "price": 424.39,
       "change": -19.95,
@@ -41,31 +49,23 @@
       "change": -16.85,
       "category": "stock",
       "text": "NVDA -16.9% drop @ $125.53"
-    },
-    {
-      "type": "sell",
-      "asset": "NVDA",
-      "price": 125.53,
-      "change": -16.85,
-      "category": "stock",
-      "text": "NVDA -16.9% drop @ $125.53"
     }
   ],
   "reddit": [
-    {
-      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://z.ai/blog/glm-5.4",
-      "created": ""
-    },
     {
       "title": "Jensen Huang Reinstated as Nvidia CEO",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
       "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "created": ""
+    },
+    {
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://z.ai/blog/glm-5.4",
       "created": ""
     },
     {
@@ -136,7 +136,7 @@
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-23T14:16:08.924382",
+    "timestamp": "2026-11-23T14:21:14.381718",
     "prices": [
       {
         "name": "Bittensor",
@@ -373,20 +373,20 @@
       "description": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'."
     },
     {
+      "title": "LIVE:  Nvidia reinstates Jensen Huang: ABC News Live",
+      "url": "https://abcnews.com/video/41463246/",
+      "source": "Abc News",
+      "category": "abc_news",
+      "published": "Mon, 23 Nov 2026 ",
+      "description": "24/7 coverage of breaking news and live events"
+    },
+    {
       "title": "Nvidia reinstates Jensen Huang as CEO",
       "url": "https://abcnews.com/Business/nvidia-reinstates-jensen-huang-ceo/story?id=138375516",
       "source": "Abc News",
       "category": "abc_news",
       "published": "Mon, 23 Nov 2026 ",
       "description": "Nvidia reinstated Jensen Huang as president and CEO, the company announced on Monday."
-    },
-    {
-      "title": "LIVE:  ABC News Live",
-      "url": "https://abcnews.com/video/41463246/",
-      "source": "Abc News",
-      "category": "abc_news",
-      "published": "Fri, 20 Nov 2026 ",
-      "description": "24/7 coverage of breaking news and live events"
     },
     {
       "title": "Ukrainian naval drones sank Russia's Merkury warship in Libya, Zelenskyy confirms",
@@ -438,8 +438,15 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-23T14:15:43.311253",
+    "timestamp": "2026-11-23T14:20:49.370164",
     "trending": [
+      {
+        "symbol": "APLD",
+        "price": 11.49,
+        "change": -2.96,
+        "change_percent": -20.48,
+        "name": "Applied Digital Corporation"
+      },
       {
         "symbol": "NVDA",
         "price": 125.53,
@@ -462,25 +469,18 @@
         "name": "Invivyd, Inc."
       },
       {
+        "symbol": "HPE",
+        "price": 40.91,
+        "change": -4.87,
+        "change_percent": -10.64,
+        "name": "Hewlett Packard Enterprise Comp"
+      },
+      {
         "symbol": "TSLA",
         "price": 345.82,
         "change": -37.9,
         "change_percent": -9.88,
         "name": "Tesla, Inc."
-      },
-      {
-        "symbol": "GOOGL",
-        "price": 265.29,
-        "change": -17.15,
-        "change_percent": -6.07,
-        "name": "Alphabet Inc."
-      },
-      {
-        "symbol": "SPXC",
-        "price": 136.29,
-        "change": -8.14,
-        "change_percent": -5.64,
-        "name": "SPX Technologies, Inc."
       },
       {
         "symbol": "GOOG",
@@ -539,11 +539,11 @@
         "name": "Zscaler, Inc."
       },
       {
-        "symbol": "CVS",
-        "price": 80.84,
-        "change": -0.51,
-        "change_percent": -0.63,
-        "name": "CVS Health Corporation"
+        "symbol": "BRL=X",
+        "price": 5.96,
+        "change": 0.03,
+        "change_percent": 0.48,
+        "name": "USD/BRL"
       }
     ],
     "meme_momentum": [
@@ -974,7 +974,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-23T14:16:04.711246",
+    "timestamp": "2026-11-23T14:21:10.797194",
     "items": [
       {
         "symbol": "SPX",
@@ -990,8 +990,8 @@
       },
       {
         "symbol": "VIX",
-        "price": 27.48,
-        "change": -23.43,
+        "price": 26.88,
+        "change": -25.1,
         "type": "index"
       },
       {
@@ -1002,99 +1002,105 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7220.0,
-        "change": 4.11,
+        "price": 7226.75,
+        "change": 4.21,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26793.25,
-        "change": 6.63,
+        "price": 26810.75,
+        "change": 6.7,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 49381.0,
-        "change": 2.42,
+        "price": 49370.0,
+        "change": 2.39,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2666.9,
-        "change": 3.07,
+        "price": 2668.1,
+        "change": 3.12,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 82.1,
-        "change": -1.57,
+        "price": 81.95,
+        "change": -1.75,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3655.1,
-        "change": 3.97,
+        "price": 3655.5,
+        "change": 3.99,
         "type": "future"
       },
       {
         "symbol": "SI=F",
-        "price": 43.1,
-        "change": 4.93,
+        "price": 43.24,
+        "change": 5.3,
         "type": "future"
       },
       {
         "symbol": "PL=F",
-        "price": 1331.1,
-        "change": 3.22,
+        "price": 1331.0,
+        "change": 3.21,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 902.5,
-        "change": 1.05,
+        "price": 903.0,
+        "change": 1.11,
         "type": "future"
       },
       {
         "symbol": "NG=F",
         "price": 3.51,
-        "change": -6.24,
+        "change": -6.35,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 199.54,
-        "change": 4.32,
+        "price": 201.54,
+        "change": 5.65,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 63250,
-        "change": 4.23,
+        "price": 63548,
+        "change": 4.88,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1796.72,
-        "change": 5.37,
+        "price": 1815.97,
+        "change": 6.58,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 75.87,
-        "change": 8.13,
+        "price": 76.68,
+        "change": 9.22,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.29,
-        "change": 5.87,
+        "price": 9.42,
+        "change": 7.26,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 7.03,
-        "change": 5.49,
+        "price": 7.1,
+        "change": 6.68,
         "type": "crypto"
+      },
+      {
+        "symbol": "APLD",
+        "price": 11.49,
+        "change": -20.48,
+        "type": "mover"
       },
       {
         "symbol": "NVDA",
@@ -1139,12 +1145,6 @@
         "type": "mover"
       },
       {
-        "symbol": "GOOGL",
-        "price": 265.29,
-        "change": -6.07,
-        "type": "mover"
-      },
-      {
         "symbol": "GOOG",
         "price": 264.0,
         "change": -5.44,
@@ -1180,16 +1180,6 @@
       "author": ""
     },
     {
-      "title": "Trump urges Nvidia to reinstate Jensen Huang, calling him \u2018best thing\u2019 for U.S.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWlhuUEVYcUhfSzZoYm1EM3RHZ1NmdkJkZ0JqX01MZzZJbzRZdFdMVl8tV1BGWG5Ba1FwWnlwVUNUVVNiN25OQ2JPLUN3TGotNjd3UEMyVGcyc0lIVWJsWDFvN2FodTdwSnVzWnhsRXNpc3NrNHVNOGlEdGFUVVBOdHV3VGFwOVJ0eVBWSEQwaUk3QkFodnhSNWc2QmJhN3h5eGR6enBWcUxFbnVsZ0RhUDJFa25BWUQ0Vnh6NThn?oc=5",
-      "source": "The Washington Post",
-      "category": "business",
-      "published": "Mon, 23 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVy1Pa3puQ1RUS0xLT3pTdTBrdUc0Q0J4TkFqMW81cXpOdUpQSU9LV2wtNlJIS19wOG9uMEVEUlZkZUNIQXJBcXdNeWdaV0JiXzF4WGluNWtSaVU4T09reFVtYkc0dXJOZkFLXzFMUGNzOVl1SHRVaG5PR3dvVnpwR3VTbGJibEloRHVzcjQxYWc5UWxZdWR5OWdmdGE5UTh0c1NSRF9vc09YUk1aVHNFNmFVZw?oc=5",
       "source": "Bloomberg.com",
@@ -1203,6 +1193,16 @@
       "title": "Catering giant Compass Group to shift main stock market listing to US in further blow to UK",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03NEpzVkhMNXdXUDlmZ25nbU93MklVUUJPZ1E4MVlhMEk3ZmtBUGJ6S0FDbFBXUENFMldxeHphRGpTbGpORm1zQjNXUGEyM1Y1ejJEbFZUTmJUR1E?oc=5",
       "source": "BBC",
+      "category": "business",
+      "published": "Mon, 23 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Trump urges Nvidia to reinstate Jensen Huang, calling him \u2018best thing\u2019 for U.S.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWlhuUEVYcUhfSzZoYm1EM3RHZ1NmdkJkZ0JqX01MZzZJbzRZdFdMVl8tV1BGWG5Ba1FwWnlwVUNUVVNiN25OQ2JPLUN3TGotNjd3UEMyVGcyc0lIVWJsWDFvN2FodTdwSnVzWnhsRXNpc3NrNHVNOGlEdGFUVVBOdHV3VGFwOVJ0eVBWSEQwaUk3QkFodnhSNWc2QmJhN3h5eGR6enBWcUxFbnVsZ0RhUDJFa25BWUQ0Vnh6NThn?oc=5",
+      "source": "The Washington Post",
       "category": "business",
       "published": "Mon, 23 Nov 2026 ",
       "description": "",
@@ -1230,9 +1230,9 @@
       "author": ""
     },
     {
-      "title": "Trump hosts private dinner for largest owners of his meme coin",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXVidE4wWjBSODFQSG5weXZmek5Nb3c2YnNHZEUzb21yMjhNZkhKeFJqeDBHVzNJd2VFTDJnNHJZZndYeFhnRXo1dGYwRHBlZlBCUmg5a1Buc0kzQnVlVEQwVk1rS3hIOHZKZ0dFTG84VXBIV29qQ0hBSFpOWTl5MWRxQ0pKdk9qbnFDbzdLaXkyMV9FTi1SYmJzZnkwcndpZ2dFeGJ3WXA2d9IBrwFBVV95cUxOY0NnVnZEaGVETUk3NEJPT0NSU0w2bUpseXF0ZVpwR1NDYW5BZ2NYN19YLWxPdkt3U190VTBMR3VOSWJNSXFVQkhjRjBpMm1iUEc2ZkxwWWJrb0puMzhxVV9OZlpHZUR0bjlyNGJmRVI3bFI5U2tGTkdpNk9oSnBlSC1sZ19LY2Y4d0h6WDJueTVBVzh5VFZrWHZYcTlzNWlFN0hVZFJldkI4NmVlSjFF?oc=5",
-      "source": "Al Jazeera",
+      "title": "Morgan Stanley\u2019s Wilson Says Buying Opportunity Too Good to Miss",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPajdKUjNXaTVpOHJlM0xZR0ptb1czVllHN2V6UzR0bG94dEFsYUpCLU82NHRma1lWWFhtQVV2SUc3M1RlbmFLY3J6QTRkcXFKRlhtM2NxQjg3bDNXc0xoRGVLeExnOUxGVUs1aVhhNVMwald4dF9lWE5veV9OX2hjVjJZenlaT0FMeDV1VG1Ca0VBMjh4MjRtaWxDLXdILWpSalZ6VS1jOWt6VW9RWThXU3FQMThHdw?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Mon, 23 Nov 2026 ",
       "description": "",
@@ -1380,6 +1380,14 @@
       "relevance_score": 8
     },
     {
+      "title": "A race for lifesaving battlefield drones | Defense News Weekly Full Episode 11.24.26",
+      "url": "https://www.defensenews.com/video/2026/11/23/a-race-for-lifesaving-battlefield-drones-defense-news-weekly-full-episode-11-24-26/",
+      "source": "Defense News",
+      "published": "Mon, 23 Nov 2026 ",
+      "description": "While Ukrainian innovators pioneer frontline aerial drone evacuation, DARPA develops AI-assisted robots to find and assess injured troops and civilians. The race to save lives is on.",
+      "relevance_score": 7
+    },
+    {
       "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
       "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
       "source": "Bbc World",
@@ -1401,14 +1409,6 @@
       "source": "Defense News",
       "published": "Mon, 23 Nov 2026 ",
       "description": "In the wake of a mass casualty event, DARPA hopes to send in drones to find, assess and start coordinating care for victims. Who won this year\u2019s Triage Challenge?",
-      "relevance_score": 4
-    },
-    {
-      "title": "Dutch defense-industry plan targets 40% growth, \u20ac15 billion revenue by 2030",
-      "url": "https://www.defensenews.com/global/europe/2026/11/20/dutch-defense-industry-plan-targets-40-growth-e15-billion-revenue-by-2030/",
-      "source": "Defense News",
-      "published": "Fri, 20 Nov 2026 ",
-      "description": "The nation of 18 million punches above its weight in several key defense technology areas.",
       "relevance_score": 4
     },
     {
@@ -1548,7 +1548,7 @@
     "changePercent": -5.61,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Mon 23 Nov: 25,028.98, down -5.61% -- BEARISH. price below SMA20, RSI 31.3 weak, MACD bearish, strong -5.61% selloff. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-23T09:16:16.979210"
+    "timestamp": "2026-11-23T09:21:21.777475"
   },
   "sticky": {
     "cnbc": [
@@ -1556,8 +1556,8 @@
         "title": "Nvidia reinstates Jensen Huang as CEO. Stock skyrockets 27%",
         "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
         "source": "CNBC",
-        "published": "2026-11-23T14:11:41",
-        "description": ""
+        "published": "2026-11-23T14:20:33",
+        "description": "The Nvidia board said it had input from senior levels of the U.S. government."
       },
       {
         "title": "SpaceX sued by Oregon and Virginia over AI deepfake porn, Grok safety claims",
@@ -1676,83 +1676,83 @@
         "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       },
       {
-        "title": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Friday; Sandisk, AMD to Decline - marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdXM4czMtWktiSlhUeVJrcnlBbjhjV0pfbWE5ZW40ckptZFh5ckFpWkNCT3ZENk13V3prbVBqMHBrOG40T01TWjhySExoOGFQSkhkdWZUd0I3WE14QkpfNGVaeUp3QzFVTThKMVVBZzVrNmRUbmtoaXVNN3Rkd09WWS1TQThiYngzMWQ0eEc2NUhsWGtQUWl5TkRwM0t0dUN4bUFlR1hMRlBlc0Etdk1jVHB3TWc5cHRBMURfZWJEenFOTDlXWWZGMExmaERrXzdrNENMQg?oc=5",
+        "title": "The Index Looks Fine. The Heat Map Does Not. - Money Morning",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlllTzNRb2FLY3ctZUJ0eUItOUhxWmFFSUZwSmdPQnFQdk5scUN4eGVDQXdaYkpRUGxocVRGazNPcTlsOXZNMWwydUF5Y0pTYWk3azVaT1RXSHZVZEdXZkYtWTlyS2tqc1AzTEFXakRTcFNTVUlTaUtRT1hIZTRnc3RWQ0hWN1dPXzlz?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-11-20T11:34:20",
-        "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Friday; Sandisk, AMD to Decline&nbsp;&nbsp;marketscreener.com"
+        "published": "2026-11-20T10:07:08",
+        "description": "The Index Looks Fine. The Heat Map Does Not.&nbsp;&nbsp;Money Morning"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7216.5,
-      "change": 281.5,
-      "change_percent": 4.06,
+      "price": 7230.25,
+      "change": 295.25,
+      "change_percent": 4.26,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26808.0,
-      "change": 1681.5,
-      "change_percent": 6.69,
+      "price": 26815.0,
+      "change": 1688.5,
+      "change_percent": 6.72,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 49380.0,
-      "change": 1164.0,
+      "price": 49377.0,
+      "change": 1161.0,
       "change_percent": 2.41,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2666.9,
-      "change": 79.5,
-      "change_percent": 3.07,
+      "price": 2668.3,
+      "change": 80.9,
+      "change_percent": 3.13,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 82.1,
-      "change": -1.31,
-      "change_percent": -1.57,
+      "price": 81.95,
+      "change": -1.46,
+      "change_percent": -1.75,
       "name": "Crude Oil Jan 27"
     },
     {
       "symbol": "GC=F",
-      "price": 3656.3,
-      "change": 140.9,
-      "change_percent": 4.01,
+      "price": 3656.0,
+      "change": 140.6,
+      "change_percent": 4.0,
       "name": "Gold Dec 26"
     },
     {
       "symbol": "SI=F",
-      "price": 43.1,
-      "change": 2.03,
-      "change_percent": 4.95,
+      "price": 43.24,
+      "change": 2.17,
+      "change_percent": 5.28,
       "name": "Silver Dec 26"
     },
     {
       "symbol": "PL=F",
-      "price": 1331.1,
-      "change": 41.5,
-      "change_percent": 3.22,
+      "price": 1330.0,
+      "change": 40.4,
+      "change_percent": 3.13,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 903.5,
-      "change": 10.4,
-      "change_percent": 1.16,
+      "price": 903.0,
+      "change": 9.9,
+      "change_percent": 1.11,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
       "price": 3.51,
-      "change": -0.23,
-      "change_percent": -6.24,
+      "change": -0.24,
+      "change_percent": -6.38,
       "name": "Natural Gas Jan 27"
     }
   ],

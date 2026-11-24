@@ -1,39 +1,49 @@
 {
-  "timestamp": "2026-11-23T21:55:42.665182",
+  "timestamp": "2026-11-23T22:10:15.944875",
   "summary": "No summary available. Scraper needs configuration.",
   "signals": [],
   "reddit": [],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-24T02:53:18.692666",
+    "timestamp": "2026-11-24T03:08:07.104975",
     "prices": [],
     "news": []
   },
   "news": [],
   "stocks": {
-    "timestamp": "2026-11-24T02:44:45.722707",
+    "timestamp": "2026-11-24T02:59:38.137691",
     "trending": [],
-    "meme_momentum": [],
-    "dow30": [],
+    "meme_momentum": [
+      {
+        "symbol": "HOOD",
+        "price": 67.37,
+        "change": -1.28,
+        "change_percent": -1.86,
+        "name": "Robinhood Markets, Inc."
+      }
+    ],
+    "dow30": [
+      {
+        "symbol": "IBM",
+        "price": 233.0,
+        "change": 9.12,
+        "change_percent": 4.07,
+        "name": "International Business Machines"
+      },
+      {
+        "symbol": "UNH",
+        "price": 336.08,
+        "change": 5.6,
+        "change_percent": 1.69,
+        "name": "UnitedHealth Group Incorporated"
+      }
+    ],
     "nd100": []
   },
   "ticker": {
-    "timestamp": "2026-11-24T02:51:45.814185",
-    "items": [
-      {
-        "symbol": "SI=F",
-        "price": 42.94,
-        "change": -0.56,
-        "type": "future"
-      },
-      {
-        "symbol": "COIN",
-        "price": 108.78,
-        "change": -0.08,
-        "type": "mover"
-      }
-    ]
+    "timestamp": "2026-11-24T03:06:40.282263",
+    "items": []
   },
   "business": [],
   "tech_business": [],
@@ -45,7 +55,7 @@
     "changePercent": -1.44,
     "signal": "NEUTRAL",
     "analysis": "NASDAQ-100 data unavailable.",
-    "timestamp": "2026-11-23T21:55:05.041857"
+    "timestamp": "2026-11-23T22:09:43.095238"
   },
   "sticky": {
     "cnbc": [],

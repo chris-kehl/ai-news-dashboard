@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-26T12:16:08.138855",
-  "summary": "Key topics today:\n- - GPT-6.2 Astra is the first model to beat Googlers' code golf records (r/HackerNews, 201 pts)\n- - The New York Times warns photographers not to update Photoshop over AI features (r/HackerNews, 101 pts)\n- - An algebraic quantization of gravity from the null cone (r/HackerNews, 101 pts)\n- - Much shorter version of GRH Lean verification from Anthropic (r/HackerNews, 101 pts)\n- - Euro-Office comes to your desktop with the Nextcloud Office Desktop app (r/HackerNews, 1 pts)",
+  "timestamp": "2026-11-26T12:21:36.906672",
+  "summary": "Key topics today:\n- - GPT-6.2 Astra is the first model to beat Googlers' code golf records (r/HackerNews, 201 pts)\n- - The New York Times warns photographers not to update Photoshop over AI features (r/HackerNews, 101 pts)\n- - An algebraic quantization of gravity from the null cone (r/HackerNews, 101 pts)\n- - One guy is doing an hunger strike at Anthropic, currently in his 3rd day (r/HackerNews, 101 pts)\n- - Euro-Office comes to your desktop with the Nextcloud Office Desktop app (r/HackerNews, 1 pts)",
   "signals": [
     {
       "type": "watch",
@@ -28,14 +28,6 @@
     },
     {
       "type": "buy",
-      "asset": "IMB.L",
-      "price": 3432.0,
-      "change": 20.17,
-      "category": "stock",
-      "text": "IMB.L +20.2% momentum @ $3432.00"
-    },
-    {
-      "type": "buy",
       "asset": "AMC",
       "price": 3.21,
       "change": 12.24,
@@ -49,6 +41,14 @@
       "change": -10.46,
       "category": "stock",
       "text": "AMD -10.5% drop @ $406.03"
+    },
+    {
+      "type": "sell",
+      "asset": "NVDA",
+      "price": 149.3,
+      "change": -9.54,
+      "category": "stock",
+      "text": "NVDA -9.5% drop @ $149.30"
     },
     {
       "type": "watch",
@@ -85,11 +85,11 @@
       "created": ""
     },
     {
-      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "title": "One guy is doing an hunger strike at Anthropic, currently in his 3rd day",
       "subreddit": "HackerNews",
       "score": 101,
       "comments": 0,
-      "url": "https://github.com/lsernau/grh-lean",
+      "url": "https://twitter.com/ElliotC1/status/2125689373337489419",
       "created": ""
     },
     {
@@ -101,11 +101,19 @@
       "created": ""
     },
     {
-      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what\u2019s now happening",
+      "title": "NP_R \u2260 PAR_R",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
-      "url": "https://scottaaronson.blog/?p=10379",
+      "url": "https://github.com/samueleverett01/bss-permanent-separations",
+      "created": ""
+    },
+    {
+      "title": "AMD Specific Patches for Llama.cpp",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://devnull.land/amd-specific-llama-cpp",
       "created": ""
     },
     {
@@ -117,34 +125,26 @@
       "created": ""
     },
     {
+      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what\u2019s now happening",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://scottaaronson.blog/?p=10379",
+      "created": ""
+    },
+    {
       "title": "Tell HN: Happy Thanksgiving",
       "subreddit": "HackerNews",
       "score": 1,
       "comments": 0,
       "url": "https://news.ycombinator.com/item?id=50655664",
       "created": ""
-    },
-    {
-      "title": "Curiosity Is No Solo Act",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
-      "created": ""
-    },
-    {
-      "title": "1Password Security Incident",
-      "subreddit": "HackerNews",
-      "score": 1,
-      "comments": 0,
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-26T17:15:59.031017",
+    "timestamp": "2026-11-26T17:21:27.495552",
     "prices": [
       {
         "name": "Bittensor",
@@ -446,15 +446,8 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-26T17:15:36.679281",
+    "timestamp": "2026-11-26T17:21:04.301186",
     "trending": [
-      {
-        "symbol": "IMB.L",
-        "price": 3432.0,
-        "change": 576.0,
-        "change_percent": 20.17,
-        "name": "IMPERIAL BRANDS PLC ORD 10P"
-      },
       {
         "symbol": "VERA",
         "price": 29.5,
@@ -471,16 +464,16 @@
       },
       {
         "symbol": "NVDA.TO",
-        "price": 33.33,
-        "change": -1.18,
-        "change_percent": -3.42,
+        "price": 33.26,
+        "change": -1.25,
+        "change_percent": -3.62,
         "name": "NVIDIA CDR (CAD HEDGED)"
       },
       {
         "symbol": "BRL=X",
-        "price": 5.75,
+        "price": 5.74,
         "change": -0.16,
-        "change_percent": -2.68,
+        "change_percent": -2.7,
         "name": "USD/BRL"
       },
       {
@@ -499,9 +492,9 @@
       },
       {
         "symbol": "^GSPTSE",
-        "price": 34394.22,
-        "change": 431.92,
-        "change_percent": 1.27,
+        "price": 34397.67,
+        "change": 435.37,
+        "change_percent": 1.28,
         "name": "S&P/TSX Composite index"
       },
       {
@@ -513,9 +506,9 @@
       },
       {
         "symbol": "ENB.TO",
-        "price": 66.41,
-        "change": 0.5,
-        "change_percent": 0.76,
+        "price": 66.42,
+        "change": 0.51,
+        "change_percent": 0.77,
         "name": "ENBRIDGE INC"
       },
       {
@@ -548,10 +541,17 @@
       },
       {
         "symbol": "BTC-USD",
-        "price": 60486.77,
-        "change": 108.57,
+        "price": 60487.25,
+        "change": 109.05,
         "change_percent": 0.18,
         "name": "Bitcoin USD"
+      },
+      {
+        "symbol": "EURUSD=X",
+        "price": 1.1,
+        "change": 0.0,
+        "change_percent": 0.11,
+        "name": "EUR/USD"
       }
     ],
     "meme_momentum": [
@@ -982,7 +982,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-26T17:15:54.331411",
+    "timestamp": "2026-11-26T17:21:21.632458",
     "items": [
       {
         "symbol": "SPX",
@@ -1016,37 +1016,37 @@
       },
       {
         "symbol": "ES=F",
-        "price": 7244.0,
-        "change": 0.37,
+        "price": 7241.5,
+        "change": 0.33,
         "type": "future"
       },
       {
         "symbol": "NQ=F",
-        "price": 26266.0,
-        "change": -0.04,
+        "price": 26257.0,
+        "change": -0.07,
         "type": "future"
       },
       {
         "symbol": "YM=F",
-        "price": 50517.0,
-        "change": 0.91,
+        "price": 50498.0,
+        "change": 0.87,
         "type": "future"
       },
       {
         "symbol": "RTY=F",
-        "price": 2724.2,
-        "change": 1.3,
+        "price": 2723.1,
+        "change": 1.26,
         "type": "future"
       },
       {
         "symbol": "CL=F",
-        "price": 84.39,
-        "change": 2.85,
+        "price": 84.59,
+        "change": 3.1,
         "type": "future"
       },
       {
         "symbol": "GC=F",
-        "price": 3598.2,
+        "price": 3598.3,
         "change": 1.02,
         "type": "future"
       },
@@ -1058,63 +1058,57 @@
       },
       {
         "symbol": "PL=F",
-        "price": 1285.3,
-        "change": 2.11,
+        "price": 1285.6,
+        "change": 2.14,
         "type": "future"
       },
       {
         "symbol": "PA=F",
-        "price": 877.0,
-        "change": 2.21,
+        "price": 877.5,
+        "change": 2.27,
         "type": "future"
       },
       {
         "symbol": "NG=F",
-        "price": 3.59,
-        "change": 8.03,
+        "price": 3.6,
+        "change": 8.31,
         "type": "future"
       },
       {
         "symbol": "TAO",
-        "price": 181.87,
-        "change": 2.77,
+        "price": 181.81,
+        "change": 2.45,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 60514,
-        "change": 2.21,
+        "price": 60493,
+        "change": 1.91,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1692.65,
-        "change": 2.04,
+        "price": 1693.06,
+        "change": 1.81,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 71.04,
-        "change": 3.63,
+        "price": 70.97,
+        "change": 3.26,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
-        "price": 9.18,
-        "change": 4.51,
+        "price": 9.19,
+        "change": 4.19,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
         "price": 6.59,
-        "change": 2.17,
+        "change": 1.88,
         "type": "crypto"
-      },
-      {
-        "symbol": "IMB.L",
-        "price": 3432.0,
-        "change": 20.17,
-        "type": "mover"
       },
       {
         "symbol": "AMC",
@@ -1126,6 +1120,12 @@
         "symbol": "^KS11",
         "price": 4697.51,
         "change": -6.16,
+        "type": "mover"
+      },
+      {
+        "symbol": "NVDA.TO",
+        "price": 33.26,
+        "change": -3.62,
         "type": "mover"
       },
       {
@@ -1149,7 +1149,7 @@
       {
         "symbol": "MXN=X",
         "price": 19.72,
-        "change": 1.4,
+        "change": 1.39,
         "type": "mover"
       },
       {
@@ -1160,8 +1160,8 @@
       },
       {
         "symbol": "^GSPTSE",
-        "price": 34390.49,
-        "change": 1.26,
+        "price": 34398.07,
+        "change": 1.28,
         "type": "mover"
       },
       {
@@ -1174,9 +1174,9 @@
   },
   "business": [
     {
-      "title": "Trump Says Revised GDP Numbers \u2018Fake,\u2019 Calls for Investigation",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR1Vua2tUbUlVUWhkOUNkaThiaG5UcnRiTHoyQWluZ1JOUkZLMG5Mdl8zdk5GMDBXSk9mb0YtZmJnOGRRTE1WbWpvQXdkTzBBeWtJOTI4dkZpUzRVVWtENTdsek5pX0Y5emNGOEZoa2JoamV4T0VXWHJYS1ZsRzJfUjlYZHc5aWVTQmZqN0pHT2YxdkdsN2o4ZzRYUTdyRVlsaGZfbG9jckRYTHFzNmNZ?oc=5",
-      "source": "Bloomberg",
+      "title": "Trump demands probe into preelection GDP data, alleges \u2018purposeful\u2019 error",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS2xlSFJjT0RSdHc5VXdIR0FScUREd081MU85bUpGdWZBNjNnTklJRVBMTnR6cF9MTThQZzh1RzdZR1htS0Zoc0xQUHM4T0RoRmk1d3BqdlI5d3UxckVTUjJxV1dGVmNCVERjSkRnTGpSY1VROGFnR2ctV2lpN1pMM1JxbUV5Z1hv0gGOAUFVX3lxTE5yd2tfQ29MRXA5R1FkTVFOa1FORWFURzh5MU5lWUZoQnNBZWRBSmNpb2diVUpmNVF3anFmWFA4d1ozVDUwTjhiRTMxVjluZ3lSMmVuMDF6VHBNVHRQeFQ1VEZFTmdnY1lMVU80SDFBQ3lydVlTbFpNVFZmT2QzTHZ5ZlFlejc0RDkxNWo3RVE?oc=5",
+      "source": "The Hill",
       "category": "business",
       "published": "Thu, 26 Nov 2026 ",
       "description": "",
@@ -1184,9 +1184,9 @@
       "author": ""
     },
     {
-      "title": "Global stocks rise and tech shares rebound as US closes for Thanksgiving",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUWgxNlNVb3lob01KbTdBS015MjdBZnpzbk9QYnhKMXdSN2VEZGFwTGJTN0hQSmNOX2lUdXE2Y2pDdHNMb1haLU1INnUwZ0EzbDhZLXRxd0NEbmxrb3JHWjRiUjE4M3lCYThaRkZEM3E5NVVPNXRiQTFKMGtwdERHeEUyVlk4ekVmWHBMRjQ3Nzc?oc=5",
-      "source": "AP News",
+      "title": "Stocks, Nasdaq Futures Climb as AI Trade Rebounds: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeEQtTUQwY0ZyTEpubU1fOUV6eVQzR2llam9uaF9UUnQ5LVNvcWJFT0dRYW9NRHM2cDQtYkpaOF9rS1ZuVE8zaDhmYWk0S1IzdU1sOER5aWJLOTQteFZFTjRkMUJwUTdta0ZnemNITTBEa1VVb1c1MGJkUnZoMFRKNDZjM1d6SDBqZ1g2NDZTenZfSEZK?oc=5",
+      "source": "Bloomberg",
       "category": "business",
       "published": "Thu, 26 Nov 2026 ",
       "description": "",
@@ -1256,9 +1256,9 @@
   ],
   "tech_business": [
     {
-      "title": "From minimalist to maximalist: Ars staffers show off their home offices",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXY3U0NRSW9RTDJQZzlvWW10Si1JeDhuRHJkbGxwU0tndktYX3ZJcnNrZFpjeUkxbXo5RTRzQnp6M2xHUXAxc0VYcnZhTzFTeExLdE1nUTRMV2g3MDdHTF9ZQU9rRWNJN1hUajVlanpfR3pfYUE0NGFsaUVycG12a2FWaERTSk82ZVFIVHQzc3FrTmh1aG82YnN5U000UE15T3ZNYjhiYzV3bGJqT2xFUjR3?oc=5",
-      "source": "Ars Technica",
+      "title": "34 best Apple Black Friday deals live \u2014 lowest prices ever on AirPods Pro 3, MacBook Neo, Apple Watch 12 and more",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeEJEU2FvTFdMVW8xYmFaTFoxVnVtekloWDJBQnpWeGctYnY2bjdjUTFrQVF5VHpfZWllUWk1eVdfTldEODhORDRDQVZzbFVfOVhXT0VpMmxuTTRqMHhWN0NvTWlxR2dqQ2syRE1VQkVGQWZmNnM5bzNHMmlzRXlpMlU3SWtHWlpJZUlIUU14b1FXeC1TcnRUazA0NDV1YWs?oc=5",
+      "source": "Tom's Guide",
       "category": "business",
       "published": "Thu, 26 Nov 2026 ",
       "description": "",
@@ -1266,9 +1266,9 @@
       "author": ""
     },
     {
-      "title": "Every Great Black Friday Apple Deal We\u2019ve Found on iPads, AirPods, and More",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlNjdOdnFqOXdGX00zak9FbWIyOXFuWmpsVDM0aHRtdmp6b1dsSTlvOXpjeVdxQl9UVWZXUVZ1T2dPYzlpeXNFZC1oTkctWlJYanNWcUdRalp5X0RBeG1Idkp0QXZJNVpIbTd4Y1RNcV9MTGJCaTdDTVB4Yw?oc=5",
-      "source": "The New York Times",
+      "title": "From minimalist to maximalist: Ars staffers show off their home offices",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXY3U0NRSW9RTDJQZzlvWW10Si1JeDhuRHJkbGxwU0tndktYX3ZJcnNrZFpjeUkxbXo5RTRzQnp6M2xHUXAxc0VYcnZhTzFTeExLdE1nUTRMV2g3MDdHTF9ZQU9rRWNJN1hUajVlanpfR3pfYUE0NGFsaUVycG12a2FWaERTSk82ZVFIVHQzc3FrTmh1aG82YnN5U000UE15T3ZNYjhiYzV3bGJqT2xFUjR3?oc=5",
+      "source": "Ars Technica",
       "category": "business",
       "published": "Thu, 26 Nov 2026 ",
       "description": "",
@@ -1306,29 +1306,29 @@
       "author": ""
     },
     {
-      "title": "Amazon Sweetens Black Friday Deals on PROLED MacBook Pro",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaUpPVEkzLWdVc1JEUElkRjRqVlpkdGV0eFNxaGMta0dsZE9yZTVHUGh1QVc1RTFGMnJyS1lKRms4RElSbjNaM3FKUUdYeGdESjhVamxhOU5uRmdBOFdCWDBkNUJ2OEJPZ25rTEJjcE5kT2lOZEZNU0I4aEFvMTM3ZUVn?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Wed, 25 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
-      "title": "Galaxy S27 Ultra Release Date: Samsung To Swap Camera Hardware For AI",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWHltUzVoZzgwM0I3UmI0S3F0bkt0MFJFcS1IckY4VVd2aVlLVl9HaU9zUWRaT3Exek5OZGhpSHRmaXdaLTVPS0xZbUVmLWswSDl1YWhDTkk5dEJGTE9YSVppUE9VSW5hVDZVUWcxRk1feWl0Q3FIRFJ2R2ZIeXRBejI4dlFoWGU5eUhDNUtLcXNrLUhRa24xZC11UDA4ZXVEQVpyOG5fRkcwQ1AyTEdzT21rU0ktMnN1R0xDWmFybw?oc=5",
-      "source": "Forbes",
-      "category": "business",
-      "published": "Wed, 25 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Apple MacBook Pro (M6) Review: Probably Everything You Need",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBnSHFJcGxhSFdJMWNiRnI3d0ZkamtkbTAzNEVZTmM4NHQ2UmRDZkJDNlQ3NlhFdnBDbTFBMlBlal9ka1Q1MDM2Y093OWxnU3NPc2JnUDBVcHpIcTRJVzg2c1Q5djZDaGFVVEtzc2JkRVJGZw?oc=5",
       "source": "BGR",
+      "category": "business",
+      "published": "Wed, 25 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "WhatsApp now lets you schedule messages in group and individual chats",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQi1zbFNYSnc2M2djcktDZ0RrZ282b0QxbkVwRnpnQkVXRE1yazZVbVFHMHY2RjE1RXZDS29oU0RnYzNBX29hcFNZNlhDdzgtTzc3c1VLUXNXTFJuM2s1ZG5jNHdpVDRweGo1cExhMzRnRHRHNXNQUk9Ja0JaWTlUSkk4MGRiNFluSllWSGdoQ0xIdTU5NTA1dEtNLTBmNmlRUWg5V0JUMA?oc=5",
+      "source": "TechCrunch",
+      "category": "business",
+      "published": "Wed, 25 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "After 24 Hours With Kodak\u2019s SlideTag, Buying One for the Whole Family Is My Big Black Friday Splurge",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5tVmtmT1BpR3FyUEF3Si1iT2NObVFDM3NTOWdoSXpITjhuZ3lpUDNhZ29KUWFzcC1PdmxRcTduX2s2QzVJaFpiMGNPX2ZCTmhWWDdtSzMyY2l3SjcyeW8wNFZNQ1loQk9Ia2ZQa1Q1LUtOZUhnR29V?oc=5",
+      "source": "CNET",
       "category": "business",
       "published": "Wed, 25 Nov 2026 ",
       "description": "",
@@ -1562,7 +1562,7 @@
     "changePercent": -0.64,
     "signal": "BEARISH",
     "analysis": "NASDAQ-100 (NDX) Thu 26 Nov: 26,046.90, down -0.64% -- BEARISH. price below SMA20, RSI 46.4 neutral-bearish, MACD bearish, modest -0.64% down. Counter: none. Watch for SMA20 reclaim to flip bias.",
-    "timestamp": "2026-11-26T12:16:05.712651"
+    "timestamp": "2026-11-26T12:21:34.637293"
   },
   "sticky": {
     "cnbc": [
@@ -1634,13 +1634,6 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Wednesday; Dell Technologies, Sandisk to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Trending Industry Today: MARA Holdings Leads Gains In WallStreetBets Stocks - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYTkzMU5QYVBtX3BZYkpqRmF0VFJyVFMtU190bzBYRW1vc1IwWm1Sa003MGp1bUVWeGJZRjdZS1k5TkZHN1dGNDlqV0h3b3dOOWZjN1dxVVdGczFkNDNfVEZZX1hJcG9kQ01lNy1Ha0llTC1FQnFxZFpNT0I1a2ZYQTB0T0dESUIzRE5fNTJvTExBUXZaV0ZjaUZfbjlMQmlPZFdVWDBzbUhEYkprbTd1R19vQUtUSWlZd1E?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-23T15:10:01",
-        "description": "Trending Industry Today: MARA Holdings Leads Gains In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
-      },
-      {
         "title": "WallStreetBets Favorites Slipped Before Friday\u2019s Open - Finimize",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTGxxbkhQaTQ5ODZ0d1Zybnk3SnJDWEVzWDFfX05Ua1FGZnZVbndxaEd4am1PMHRpRUNBbk1lVHdKanNiR19vQXhidGpBLTJMOThDdDF0YWFNQTVKUU51X3FmNE8yRGg3OXdjb2IzT24tcThLejB2QXVUbmhIRk90NDFQZTlpSkp1NXpn?oc=5",
         "source": "r/wallstreetbets",
@@ -1648,25 +1641,11 @@
         "description": "WallStreetBets Favorites Slipped Before Friday\u2019s Open&nbsp;&nbsp;Finimize"
       },
       {
-        "title": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers - Gayety",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nQ1JoX0VmOWhhZ3l5YVRuNWtZZFd0bzc3SGhlc1d6RjlNN1EySnJKTC1Wc1BYbS1CRkIwUmh0Zzhrc1pfUlBQT0R1ZDY0RXJDQjAweWdmMHhUdXBXeEktbGNUdnNDZ19BZENLVlJQQQ?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-07T08:00:00",
-        "description": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers&nbsp;&nbsp;Gayety"
-      },
-      {
         "title": "WallStreetBets Creator Loses Trademark Dispute With Reddit - Legal 500",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRURpWE5aMFA5TUItam41MWVnNkpQbTFucnNLUUgwM0VsSWZwRUprMndHWXVLRm5zcjRVdldlVTA0WmlXYzdOOHlEWHF2c29PM204VWZJV0FkSmpTMmlOVzBVR202cTNyY2ZDUVVuNm5fUVgxeGJja1RZcHhWenVtdlQ2MG5RdldWZUlFZ3VvVHhtR3dPLVd0a245MlQ4eUZGbTVHZ1hUUjVBYW9pQXFFNFhkOTFTTzNqZy1xLTY3SXFXd1NmVkQwTFhwMzU?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-23T06:20:46",
         "description": "WallStreetBets Creator Loses Trademark Dispute With Reddit&nbsp;&nbsp;Legal 500"
-      },
-      {
-        "title": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow - Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWlGa2VFZEtfUjBPVDJKZUVxOHUtTDVqN21tVTNyWHdscnR6YVExWTFGU0htYjBDZDltUVBCVkpNT0oyaWZsd01Xc2hDeUU4cDdmb0hBY0Q2dnRGUmYzMGY5c2psLUx5ckNmdFJPX2lpa3plRF8yTEtYak1tOURwMEFRZ1gxeUpuYTdRbVoyQWpZOEdOQTZnRjNObGMxY0lobHZpLUJWMi01dGJCVEJtRUdpUXE?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-07-02T07:00:00",
-        "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;Bloomberg.com"
       },
       {
         "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
@@ -1683,61 +1662,82 @@
         "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
       },
       {
-        "title": "Wall Street bets Democratic sweep will empower moderates in Washington - Financial Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZFVCcU5lMGJzcDUwaEVMSUFHdkRZVlpJT29CVmVWREkyemJFRHBkUlZ3STh4T0NKRXhRbWZzVXNwVlJUWXBEdTZnbTM2QUJxcmdSa0dXNVJiNHE1STVaaWc3ZlNFQ24tU2s5N1FsclhpWmdGdFNMdzU2VGJ6cDRGR0J2Wmg?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-05T08:00:00",
-        "description": "Wall Street bets Democratic sweep will empower moderates in Washington&nbsp;&nbsp;Financial Times"
-      },
-      {
         "title": "Rocket Lab's (NASDAQ: RKLB) $3.57 Billion Backlog Fuels Wall Street Bets On A Near-Double By 2027 - Foreign Policy Journal",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYjA2WXNMR0xVdWZQQXVsSldmNUdER1JVZmNITWxoU0taYTJhZXlvXzBScmZ2Y2JWektObU9jb1d2VWJSZXBpWlREQmZlcWNlMmFlRUxxTWFObDV1SkY2YW5UeVU0ZTBCR1lNVm0teWljZU10S3ZvRjhZN0ZTVDVxSjhPNVpxWEJCeEVHMUVlNFh4TmY3R2hBUmdxNnRXU3RWYk91OFozVnM4RWZEdUFRZDlsSGtzbVc3bHI1ZW9tR19jdUt0dkZ2OXA3N0JraWNMT0xNeVhlbXg?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-11-25T16:57:46",
         "description": "Rocket Lab's (NASDAQ: RKLB) $3.57 Billion Backlog Fuels Wall Street Bets On A Near-Double By 2027&nbsp;&nbsp;Foreign Policy Journal"
+      },
+      {
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
+      },
+      {
+        "title": "Social Buzz: Wallstreetbets Stocks Advance Premarket Monday; Nebius Group, Nvidia to Open Higher - marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOblpUMHVUX25HUE9Ma3JsMXd1S2xUbnk5dHlaeTJDOTBaTWp3Q29pTlRkV1pFVk42aGlrb3Zpd1VxcE80ZlZIZDgzV3lwVU0tWkN0X2lBVVlGM0YxSGRQTUxWem1jLXRiSmhHMFllOXpFXzVTb3RkZ0tyWGtzZUdFUG5nbTNOclA0X1o4QVNObkdwdzY3SEVKMm5nOTFNcE5RZW9WRHgxbUVDT3BmZzhkQVlKcTM1Q0wydmg4ZHF4OWd5WGVrdE1CSjY2cTlXREktNHh4emZndUlEMzNzRWxn?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-23T11:35:13",
+        "description": "Social Buzz: Wallstreetbets Stocks Advance Premarket Monday; Nebius Group, Nvidia to Open Higher&nbsp;&nbsp;marketscreener.com"
+      },
+      {
+        "title": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWmlPLUhzT0ZnOW1VZFRnQTc1ME42UEdiRUhWT2t5c1E1a0VEMjFOOE83blgycmc1MlFydnprSVo4QVhzd1NHOXZkY2hBSkVpWUJ0MVk2N0FiY2ZDVEV3dm1mMGRUd05ONUp0cHZxMTJQRFRVN3h2a3BtNjloNkh2ZHFuX3F4aUg4bTJ0M0ViRQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-01-29T08:00:00",
+        "description": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "The Index Looks Fine. The Heat Map Does Not. - Money Morning",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlllTzNRb2FLY3ctZUJ0eUItOUhxWmFFSUZwSmdPQnFQdk5scUN4eGVDQXdaYkpRUGxocVRGazNPcTlsOXZNMWwydUF5Y0pTYWk3azVaT1RXSHZVZEdXZkYtWTlyS2tqc1AzTEFXakRTcFNTVUlTaUtRT1hIZTRnc3RWQ0hWN1dPXzlz?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-20T10:07:08",
+        "description": "The Index Looks Fine. The Heat Map Does Not.&nbsp;&nbsp;Money Morning"
       }
     ]
   },
   "futures": [
     {
       "symbol": "ES=F",
-      "price": 7244.25,
-      "change": 26.75,
-      "change_percent": 0.37,
+      "price": 7241.5,
+      "change": 24.0,
+      "change_percent": 0.33,
       "name": "E-Mini S&P 500 Dec 26"
     },
     {
       "symbol": "NQ=F",
-      "price": 26266.0,
-      "change": -9.75,
-      "change_percent": -0.04,
+      "price": 26256.25,
+      "change": -19.5,
+      "change_percent": -0.07,
       "name": "Nasdaq 100 Dec 26"
     },
     {
       "symbol": "YM=F",
-      "price": 50516.0,
-      "change": 455.0,
-      "change_percent": 0.91,
+      "price": 50498.0,
+      "change": 437.0,
+      "change_percent": 0.87,
       "name": "Mini Dow Jones Indus.-$5 Dec 26"
     },
     {
       "symbol": "RTY=F",
-      "price": 2724.2,
-      "change": 34.9,
-      "change_percent": 1.3,
+      "price": 2723.0,
+      "change": 33.7,
+      "change_percent": 1.25,
       "name": "E-mini Russell 2000 Index Futur"
     },
     {
       "symbol": "CL=F",
-      "price": 84.37,
-      "change": 2.32,
-      "change_percent": 2.83,
+      "price": 84.59,
+      "change": 2.54,
+      "change_percent": 3.1,
       "name": "Crude Oil Jan 27"
     },
     {
       "symbol": "GC=F",
-      "price": 3598.2,
-      "change": 36.3,
+      "price": 3598.3,
+      "change": 36.4,
       "change_percent": 1.02,
       "name": "Gold Dec 26"
     },
@@ -1750,23 +1750,23 @@
     },
     {
       "symbol": "PL=F",
-      "price": 1285.3,
-      "change": 26.6,
-      "change_percent": 2.11,
+      "price": 1285.6,
+      "change": 26.9,
+      "change_percent": 2.14,
       "name": "Platinum Jan 27"
     },
     {
       "symbol": "PA=F",
-      "price": 877.0,
-      "change": 19.0,
-      "change_percent": 2.21,
+      "price": 877.5,
+      "change": 19.5,
+      "change_percent": 2.27,
       "name": "Palladium Dec 26"
     },
     {
       "symbol": "NG=F",
-      "price": 3.59,
-      "change": 0.27,
-      "change_percent": 8.0,
+      "price": 3.6,
+      "change": 0.28,
+      "change_percent": 8.31,
       "name": "Natural Gas Jan 27"
     }
   ],

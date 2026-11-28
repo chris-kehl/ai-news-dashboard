@@ -1,14 +1,22 @@
 {
-  "timestamp": "2026-11-27T18:54:40.924742",
-  "summary": "Key topics today:\n- - GPT 6.2 Astra Solves a Historical Mystery (r/HackerNews, 101 pts)\n- - Build your own amp modeler: $78 DIY pedal kit from TONE3000 (r/HackerNews, 101 pts)\n- - Michael Nielsen took down his book on neural nets (r/HackerNews, 101 pts)\n- - Prospero: Bloat-free, native AI coding harness with ImGui (r/HackerNews, 101 pts)\n- - Group chat where your AI talks behind your back (r/HackerNews, 101 pts)",
+  "timestamp": "2026-11-27T19:01:24.405073",
+  "summary": "Key topics today:\n- - GPT 6.2 Astra Solves a Historical Mystery (r/HackerNews, 101 pts)\n- - Build your own amp modeler: $78 DIY pedal kit from TONE3000 (r/HackerNews, 101 pts)\n- - Michael Nielsen took down his book on neural nets (r/HackerNews, 101 pts)\n- - Prospero: Bloat-free, native AI coding harness with ImGui (r/HackerNews, 101 pts)\n- - Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10 (r/HackerNews, 101 pts)",
   "signals": [
     {
       "type": "sell",
       "asset": "FIGR_HELOC",
       "price": 1.005,
-      "change": -5.45,
+      "change": -5.65,
       "category": "crypto",
-      "text": "FIGR_HELOC -5.5% dump @ $1.00 \u2014 watch support"
+      "text": "FIGR_HELOC -5.7% dump @ $1.00 \u2014 watch support"
+    },
+    {
+      "type": "watch",
+      "asset": "HYPE",
+      "price": 63.54,
+      "change": 2.1,
+      "category": "crypto",
+      "text": "HYPE +2.1% @ $63.54"
     },
     {
       "type": "buy",
@@ -33,6 +41,14 @@
       "change": 12.17,
       "category": "stock",
       "text": "ANT +12.2% momentum @ $91.88"
+    },
+    {
+      "type": "watch",
+      "asset": "AI SECTOR",
+      "price": null,
+      "change": null,
+      "category": "sentiment",
+      "text": "AI sector chatter up \u2014 watch NVDA, MSFT, TAO"
     }
   ],
   "reddit": [
@@ -69,22 +85,6 @@
       "created": ""
     },
     {
-      "title": "Group chat where your AI talks behind your back",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://construct22.com/",
-      "created": ""
-    },
-    {
-      "title": "AI made self-hosting fun again",
-      "subreddit": "HackerNews",
-      "score": 101,
-      "comments": 0,
-      "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "created": ""
-    },
-    {
       "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
       "subreddit": "HackerNews",
       "score": 101,
@@ -98,6 +98,14 @@
       "score": 101,
       "comments": 0,
       "url": "https://sessiongraph.ai/",
+      "created": ""
+    },
+    {
+      "title": "Claude sabotaging ML research tasks?",
+      "subreddit": "HackerNews",
+      "score": 101,
+      "comments": 0,
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
       "created": ""
     },
     {
@@ -115,89 +123,97 @@
       "comments": 0,
       "url": "https://github.com/convex/convex-backend-skill/issues/64",
       "created": ""
+    },
+    {
+      "title": "Source Control from Hell",
+      "subreddit": "HackerNews",
+      "score": 1,
+      "comments": 0,
+      "url": "https://frantic.im/git/",
+      "created": ""
     }
   ],
   "world_reddit": [],
   "world_x": [],
   "crypto": {
-    "timestamp": "2026-11-27T23:54:30.853284",
+    "timestamp": "2026-11-28T00:01:12.523997",
     "prices": [
       {
         "name": "Bittensor",
         "symbol": "TAO",
-        "price": 186.45,
-        "change_24h": 1.54,
-        "market_cap": 2186744618
+        "price": 186.9,
+        "change_24h": 1.69,
+        "market_cap": 2192891255
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "price": 59804,
-        "change_24h": -1.02,
-        "market_cap": 1203003432241
+        "price": 59869,
+        "change_24h": -1.07,
+        "market_cap": 1204430694909
       },
       {
         "name": "Ethereum",
         "symbol": "ETH",
-        "price": 1659.34,
-        "change_24h": -1.53,
-        "market_cap": 202846347224
+        "price": 1661.27,
+        "change_24h": -1.58,
+        "market_cap": 203101175403
       },
       {
         "name": "Tether",
         "symbol": "USDT",
-        "price": 0.999285,
+        "price": 0.999265,
         "change_24h": 0.03,
-        "market_cap": 173891847197
+        "market_cap": 173888479786
       },
       {
         "name": "BNB",
         "symbol": "BNB",
-        "price": 553.87,
-        "change_24h": 0.18,
-        "market_cap": 72832520093
+        "price": 554.29,
+        "change_24h": 0.12,
+        "market_cap": 72894480412
       },
       {
         "name": "USDC",
         "symbol": "USDC",
-        "price": 0.999729,
+        "price": 0.999746,
         "change_24h": 0.02,
-        "market_cap": 69187978566
+        "market_cap": 69189250881
       },
       {
         "name": "XRP",
         "symbol": "XRP",
-        "price": 0.947316,
-        "change_24h": 0.5,
-        "market_cap": 60168736117
+        "price": 0.948061,
+        "change_24h": 0.56,
+        "market_cap": 60217614016
       },
       {
         "name": "Solana",
         "symbol": "SOL",
-        "price": 71.47,
-        "change_24h": 0.69,
-        "market_cap": 42320561767
+        "price": 71.6,
+        "change_24h": 0.89,
+        "market_cap": 42406444868
       },
       {
         "name": "TRON",
         "symbol": "TRX",
-        "price": 0.30063,
-        "change_24h": -1.06,
-        "market_cap": 28576683728
+        "price": 0.300613,
+        "change_24h": -1.04,
+        "market_cap": 28576385354
       },
       {
         "name": "Figure Heloc",
         "symbol": "FIGR_HELOC",
         "price": 1.005,
-        "change_24h": -5.45,
-        "market_cap": 27570503903
+        "change_24h": -5.65,
+        "market_cap": 27569394349
       },
       {
         "name": "Hyperliquid",
         "symbol": "HYPE",
-        "price": 63.2,
-        "change_24h": 1.64,
-        "market_cap": 15016063741
+        "price": 63.54,
+        "change_24h": 2.1,
+        "market_cap": 15100078406
       }
     ],
     "news": [
@@ -422,7 +438,7 @@
     }
   ],
   "stocks": {
-    "timestamp": "2026-11-27T23:54:04.691869",
+    "timestamp": "2026-11-28T00:00:44.643655",
     "trending": [
       {
         "symbol": "LAES",
@@ -944,7 +960,7 @@
     ]
   },
   "ticker": {
-    "timestamp": "2026-11-27T23:54:26.888512",
+    "timestamp": "2026-11-28T00:01:05.455732",
     "items": [
       {
         "symbol": "SPX",
@@ -1038,38 +1054,38 @@
       },
       {
         "symbol": "TAO",
-        "price": 186.49,
-        "change": 1.57,
+        "price": 186.9,
+        "change": 1.68,
         "type": "crypto"
       },
       {
         "symbol": "BTC",
-        "price": 59853,
-        "change": -1.03,
+        "price": 59869,
+        "change": -1.06,
         "type": "crypto"
       },
       {
         "symbol": "ETH",
-        "price": 1660.53,
-        "change": -1.51,
+        "price": 1661.27,
+        "change": -1.57,
         "type": "crypto"
       },
       {
         "symbol": "SOL",
-        "price": 71.52,
-        "change": 0.79,
+        "price": 71.6,
+        "change": 0.89,
         "type": "crypto"
       },
       {
         "symbol": "LINK",
         "price": 9.36,
-        "change": 0.84,
+        "change": 1.01,
         "type": "crypto"
       },
       {
         "symbol": "AVAX",
-        "price": 6.6,
-        "change": 0.24,
+        "price": 6.61,
+        "change": 0.31,
         "type": "crypto"
       },
       {
@@ -1167,8 +1183,8 @@
     },
     {
       "title": "Nvidia Blackwell Chips Turn Up at China Site Tied to Alice Huang",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV3pxZ1JQb19TUl83aU9NZDBDQlV3M2ZPOFg3bVlSVXgxZHlMWTVObzlmNTBWa0w4YXB0M1VoemRXYTg5cEtITl9jMzJQLVZuWEQyM005alFFYzB0bDNtSW1SS1V1cjF6MlhYSmNJWEZUeFpfOGR4bWJlc0M3Y2tjbWExUUwyekhoWV9EM0JNd2dRVFdJMEY2Q3h3?oc=5",
-      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOajRDYnpkT2kwWEdlR2REeG93cnBZdkdsYmo3dTFmaVp3enZYN3Jid0RYVWZwNXJvcE00OG5FNjdwd0MzQXpFV1gzeUxkdnhxTVNoaGVNRmpnRllMTGY4emNtNW9VYnc4RWZVX0I2WExQNy1Ha21aV0FNWWVUb0FacnFLM01rUWRudjBCdGJpbGxCVUx3dl9KMEtZb0pyYURCTG1iWW5xUmNpaDlnc0lsMVpldmV6QQ?oc=5",
+      "source": "Bloomberg.com",
       "category": "business",
       "published": "Fri, 27 Nov 2026 ",
       "description": "",
@@ -1218,9 +1234,9 @@
   ],
   "tech_business": [
     {
-      "title": "The 50+ Best Apple Black Friday Deals Still Available on AirPods, iPads, and More",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1CaXRWM21oOVhEVHpxaVZiWDJ0ak95Q0ZqcjV1d3BacXBJNGlZS2tuYTV4V2N1VDEtQkM3Nk1zdW5qd2ZwOTZEazQ2MDhIRlRrcGE5RU9lNlVsNjJ3eFlNNjdWTGUwYXl5QmpLdVROdjQxVGlqVTI1QUNR?oc=5",
-      "source": "MacRumors",
+      "title": "Apple Black Friday deals have landed on MacBooks, iPads, Studio Display",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMTlrYjVEYlBxQnhaY1lNVVBnbFloSUl4SXdjek9scWtndFJwTUFmcEszX3UyNnJTQkxQenVJTVJfZEs5dEQ0T1pBMVk1NGhPZUdhSHlpaVlpbUFrdVFYbVk2ODVWSHdiRXFEd2JCS1piMG1VOE9IcTROdE5aY3V0WE00Z2pRVzdvMUZBeTdOdlJYVFNiQm0xdWVyMjV5am1uNzhfazZibHdXdm9wck1lQzFLSDg0R1ExeUZV?oc=5",
+      "source": "AppleInsider",
       "category": "business",
       "published": "Fri, 27 Nov 2026 ",
       "description": "",
@@ -1228,9 +1244,9 @@
       "author": ""
     },
     {
-      "title": "Yooka-Laylee dev explains why Impossible Lair Definitive Edition is skipping Xbox",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa2VmVGN6TFlhZEN2bGpyZ3lBR0dZczFLQVhNVDdXLTc2ZWtQWEpWLXlqTlN5bjBlX3UyXzRfd2QwQ2Y0b0VtNTI2S3hBWExsdkx0MlBlNnFBdkV2T21DLUpCZnRTYnNIRWFyeHVIQnFPUkZRSEdzMTVYeGY0QmlHbUlybDdrUFdtTnZYT0NGd1BVRVU?oc=5",
-      "source": "TrueAchievements",
+      "title": "Yooka-Laylee Developer Issues Statement On Why Definitive Edition Is Skipping Xbox",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTUV5VndETUtKaFNwdGpseTFxM1pYa2Qzb0FQNGNfQkZvaENkb2hITGhhZHVnQjd1cWtUOWxzbkoyUjVNaEtCMk41QmlJaElLQXktWEdza2tQVTJ0bGhXMTBMbWdKZEE2SnRSdFlYaTNIT2lqYW5Eak9KdkNlcmY5bjAyb05CSVZVSi12UnNCTmFHQTczLXNjbGlJZ3ZoaG84dHdNTFVnZ29hQVJucGVZd2dyRDlLZ0VzRFk3Ng?oc=5",
+      "source": "Pure Xbox",
       "category": "business",
       "published": "Fri, 27 Nov 2026 ",
       "description": "",
@@ -1248,9 +1264,9 @@
       "author": ""
     },
     {
-      "title": "I\u2019ve found the 9 best Black Friday gaming laptop deals with up to $1,200 off Asus, Lenovo, Alienware, HP and more",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdk9QN1pvejhrcjA3aVZuZ1htZW1RVXR0Vk5LejgzYVNENG4xRkEwXzFTS2FzbkFXcFlCcFFLQWhGTXhwdjdzTHlOcGIycWJQcUVZcUp4djc4Z0t1WVZpeldJSXJlRTcwQzNUa09VV2xYUFdrMU55S2tiVjhDdWJoVnl5elNucWs1LXBMQ3dLN1k2aU5kbTBaWWRoU0RmSkF3c1E?oc=5",
-      "source": "Tom's Guide",
+      "title": "Here are the 29 best Black Friday laptop deals on products we\u2019ve tested and love",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcThabkx1aGxrT0c3ZFhjOHJMb1JDMnAwNGpnd29RTnFFUndTZmZib1dDY1Z1TGRxNTJhRVI1WndCWFVFOTQzUHY5WWhGSDBhd29BOUFELWFlbDZydnpKQTVhRW9nVTRYQkF6aEpZVnI3akMxUmRYX3c2VEd6a3JTbFZEaFNvbHg5RVBNaXpQbEE?oc=5",
+      "source": "CNN",
       "category": "business",
       "published": "Fri, 27 Nov 2026 ",
       "description": "",
@@ -1278,21 +1294,21 @@
       "author": ""
     },
     {
-      "title": "Apple Has iPads Running macOS Internally, Says Gurman",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORDBOd1dZUl9Wb2NURmpNc3BjNVllSUVlaDR5M0hCd2F6UmRBc0xYZVE3NTB1ZDNDSHZxOGR6ZER6SXp1ZHhQdG15OEU2NnZJRU42TXplSUJ0UTFiRkVrOGIxQjJ6NXptUF9wNDA1VkZoa3V3NU8tRWpaTy1iYXRvNWI5N0M?oc=5",
-      "source": "MacRumors",
-      "category": "business",
-      "published": "Wed, 25 Nov 2026 ",
-      "description": "",
-      "score": 0,
-      "author": ""
-    },
-    {
       "title": "Phone Maker Nothing to Launch Earbuds and Case With AI Recording",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQc0FDUDJvQlJ5TXFzeUNSM1VKdjBBRGx4eEhSUGhpeXJTRjJYTFhtU0pwbi1UQmpTdXRYc2l3OVM5dExZRXliWUFKMlE0WVVqMDZBX1ZYaWxMdjhPUFB1SjFrMVJPd1RRRkhCTzlNMzkxRlNmU0hlaFhhNGM5aTBGRlN1SEdvVmlNUmNrYnh4Q3pfTlMzMVVEclZFZGxLR2ZXdkNxamp1dU5ZMnZwcmxGNmNranVTRWQ4b2xHRE5WRXNKQQ?oc=5",
       "source": "Bloomberg.com",
       "category": "business",
       "published": "Mon, 23 Nov 2026 ",
+      "description": "",
+      "score": 0,
+      "author": ""
+    },
+    {
+      "title": "Wordle today: The answer and hints for November 27, 2026",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBYVHB3Z2dZYVBBakxZS1ZHZndjYjk2b3RXQ09IcVkxUmFhZVNCZXpFdzByZjNtUU5ha0lkTjJaLUZFSU1XT1RySmlvUDRwUUxMakc1dEpvYXFDUl9aWUhTOFFyRW81QllBN0pzeDdqM0VsZGxMZG93YmNSRQ?oc=5",
+      "source": "Mashable",
+      "category": "business",
+      "published": "Fri, 27 Nov 2026 ",
       "description": "",
       "score": 0,
       "author": ""
@@ -1492,7 +1508,7 @@
     "changePercent": 2.61,
     "signal": "BULLISH",
     "analysis": "NASDAQ-100 (NDX) Fri 27 Nov: 26,726.39, up +2.61% -- BULLISH. strong +2.61% move. Counter: price below SMA20, RSI 48.4 neutral-bearish, MACD bearish. Ride momentum with stops below session low.",
-    "timestamp": "2026-11-27T18:54:38.301338"
+    "timestamp": "2026-11-27T19:01:21.741488"
   },
   "sticky": {
     "cnbc": [
@@ -1571,13 +1587,6 @@
         "description": "S&P 500 Slides Into Correction as Wall Street Bets on a Recession the Data Don't Show&nbsp;&nbsp;BigGo Finance"
       },
       {
-        "title": "Trending Industry Today: MARA Holdings Leads Gains In WallStreetBets Stocks - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYTkzMU5QYVBtX3BZYkpqRmF0VFJyVFMtU190bzBYRW1vc1IwWm1Sa003MGp1bUVWeGJZRjdZS1k5TkZHN1dGNDlqV0h3b3dOOWZjN1dxVVdGczFkNDNfVEZZX1hJcG9kQ01lNy1Ha0llTC1FQnFxZFpNT0I1a2ZYQTB0T0dESUIzRE5fNTJvTExBUXZaV0ZjaUZfbjlMQmlPZFdVWDBzbUhEYkprbTd1R19vQUtUSWlZd1E?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-23T15:10:01",
-        "description": "Trending Industry Today: MARA Holdings Leads Gains In WallStreetBets Stocks&nbsp;&nbsp;Moomoo"
-      },
-      {
         "title": "Wall Street Bets: Grandstand Limited, Churchill Downs, Bally\u2019s, Genius Sports - CDC Gaming",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQWVPNFh1X2tTRWJoSWtZalBfdjJmREU5LUFRME5tX1FUSktad2RSQ3VoNVRXN2Y4ZzJLcURocFZoZDB4Z3dVdXJLY2MzWHVNYU5QM1BWdE85cHNHRDZjTDNRV2NMNkp4VWplVjJaREVKUUh3akJRdkV5UEJPbDZicGV6cHNGWTdBYkpPdWs2WlJ5UVcxQjFEcEIxaw?oc=5",
         "source": "r/wallstreetbets",
@@ -1585,25 +1594,11 @@
         "description": "Wall Street Bets: Grandstand Limited, Churchill Downs, Bally\u2019s, Genius Sports&nbsp;&nbsp;CDC Gaming"
       },
       {
-        "title": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers - Gayety",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nQ1JoX0VmOWhhZ3l5YVRuNWtZZFd0bzc3SGhlc1d6RjlNN1EySnJKTC1Wc1BYbS1CRkIwUmh0Zzhrc1pfUlBQT0R1ZDY0RXJDQjAweWdmMHhUdXBXeEktbGNUdnNDZ19BZENLVlJQQQ?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-07T08:00:00",
-        "description": "Grindr CEO George Arison\u2019s WallStreetBets AMA: Key Answers&nbsp;&nbsp;Gayety"
-      },
-      {
         "title": "WallStreetBets Creator Loses Trademark Dispute With Reddit - Legal 500",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRURpWE5aMFA5TUItam41MWVnNkpQbTFucnNLUUgwM0VsSWZwRUprMndHWXVLRm5zcjRVdldlVTA0WmlXYzdOOHlEWHF2c29PM204VWZJV0FkSmpTMmlOVzBVR202cTNyY2ZDUVVuNm5fUVgxeGJja1RZcHhWenVtdlQ2MG5RdldWZUlFZ3VvVHhtR3dPLVd0a245MlQ4eUZGbTVHZ1hUUjVBYW9pQXFFNFhkOTFTTzNqZy1xLTY3SXFXd1NmVkQwTFhwMzU?oc=5",
         "source": "r/wallstreetbets",
         "published": "2026-09-23T06:20:46",
         "description": "WallStreetBets Creator Loses Trademark Dispute With Reddit&nbsp;&nbsp;Legal 500"
-      },
-      {
-        "title": "WallStreetBets\u2019 Favorite AI Stocks Bounced Back Before The Bell - Finimize",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcV94WXVzU0xKOEpJcFZHQ3JmeEZkM292Nms5YmpETmgzdUgwUnJVYXpKOXZRUHF3eGYwZDhQOTZqTEt6ZzBJcHBiaDR0V2pPdU43ZGJFWlZrbk5rMDd1RFk0VFRVTTdtck1FUk9Zb1VlZDFQLV83UUFaNUZfalRaVTFfMnpSZWNsWXhoQnhnMzIzMUh6Mmc?oc=5",
-        "source": "r/wallstreetbets",
-        "published": "2026-11-11T08:00:00",
-        "description": "WallStreetBets\u2019 Favorite AI Stocks Bounced Back Before The Bell&nbsp;&nbsp;Finimize"
       },
       {
         "title": "WallStreetBets moderator reveals why he thinks the Reddit community gives traders a key edge - Business Insider",
@@ -1620,11 +1615,32 @@
         "description": "Social Buzz: Wallstreetbets Stocks Mostly Lower Premarket Wednesday; Dell Technologies, Sandisk to Decline&nbsp;&nbsp;marketscreener.com"
       },
       {
-        "title": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow - Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWlGa2VFZEtfUjBPVDJKZUVxOHUtTDVqN21tVTNyWHdscnR6YVExWTFGU0htYjBDZDltUVBCVkpNT0oyaWZsd01Xc2hDeUU4cDdmb0hBY0Q2dnRGUmYzMGY5c2psLUx5ckNmdFJPX2lpa3plRF8yTEtYak1tOURwMEFRZ1gxeUpuYTdRbVoyQWpZOEdOQTZnRjNObGMxY0lobHZpLUJWMi01dGJCVEJtRUdpUXE?oc=5",
+        "title": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case - InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamhjV1dVQVpDeDFDWXpsc3ZuT1ZJcDN3cmxKN0dJaGZrZ2ljcmlLUW1qOGxWMXhhR1pBTzcyV2xVOGgwT0RyVVBHY3JMMkcwVFFHVjQtMkpzUzRkUWRmWlkzUW9lX1B3a0hDckh1NDFLRUM4a2ptVUVXVURQdGlWVE1sMXRjVUdDV0JUZ1B1SV82ek1xSmFkWlJrZUNKTmo5Um5GYTQzLVo1TzdZVGdFU0Q4Y2I?oc=5",
         "source": "r/wallstreetbets",
-        "published": "2026-07-02T07:00:00",
-        "description": "Wall Street Bets Rallying Markets Will Absorb Every Market Blow&nbsp;&nbsp;Bloomberg.com"
+        "published": "2026-05-14T07:00:00",
+        "description": "WallStreetBets takes on the SEC \u2014 and makes a surprisingly sharp case&nbsp;&nbsp;InvestmentNews"
+      },
+      {
+        "title": "Rocket Lab's (NASDAQ: RKLB) $3.57 Billion Backlog Fuels Wall Street Bets On A Near-Double By 2027 - Foreign Policy Journal",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYjA2WXNMR0xVdWZQQXVsSldmNUdER1JVZmNITWxoU0taYTJhZXlvXzBScmZ2Y2JWektObU9jb1d2VWJSZXBpWlREQmZlcWNlMmFlRUxxTWFObDV1SkY2YW5UeVU0ZTBCR1lNVm0teWljZU10S3ZvRjhZN0ZTVDVxSjhPNVpxWEJCeEVHMUVlNFh4TmY3R2hBUmdxNnRXU3RWYk91OFozVnM4RWZEdUFRZDlsSGtzbVc3bHI1ZW9tR19jdUt0dkZ2OXA3N0JraWNMT0xNeVhlbXg?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-11-25T16:57:46",
+        "description": "Rocket Lab's (NASDAQ: RKLB) $3.57 Billion Backlog Fuels Wall Street Bets On A Near-Double By 2027&nbsp;&nbsp;Foreign Policy Journal"
+      },
+      {
+        "title": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting - TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTNhWDlFOENfSUYzTHhCTkh2S3BHbmRpRXQ2aEF1ZEx6VW0wSGlleTFNRUJ5YWc2UXNnWS1kaTVrcjVZVUxqWjg2NklUVzdReHV4c0tUM3hseEUtRS0zYlFFYS1NalVrMG1fLU5ycG9wX3FnYWtIOTd6bDBiTngzeVdLSXpUVGVyX3BDYkNIX0pPb1BzaDNaTkRvUG5vQTREYVBJYTVZMjFUdE0wRUVlX2tB?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-05-13T07:00:00",
+        "description": "r/WallStreetBets really hates the SEC\u2019s proposal to weaken quarterly reporting&nbsp;&nbsp;TechCrunch"
+      },
+      {
+        "title": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWmlPLUhzT0ZnOW1VZFRnQTc1ME42UEdiRUhWT2t5c1E1a0VEMjFOOE83blgycmc1MlFydnprSVo4QVhzd1NHOXZkY2hBSkVpWUJ0MVk2N0FiY2ZDVEV3dm1mMGRUd05ONUp0cHZxMTJQRFRVN3h2a3BtNjloNkh2ZHFuX3F4aUg4bTJ0M0ViRQ?oc=5",
+        "source": "r/wallstreetbets",
+        "published": "2026-01-29T08:00:00",
+        "description": "WallStreetBets Founder Cries Foul After Reddit Cracks Down on Miami Convention&nbsp;&nbsp;Yahoo Finance"
       }
     ]
   },
